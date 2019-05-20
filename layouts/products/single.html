@@ -151,7 +151,7 @@
 
 {{ $currentPage := . }}
 {{ $menu := .Params.menu_name }}
-{{ $productJson := (index $.Site.Data.products.products "docs" ) }}
+{{ $productName := .Params.product_name }}
 
 <!-- init idx -->
 {{ .Scratch.Add "idx" 0 }}
@@ -163,6 +163,8 @@
       <div class="column is-3">
         <!-- left sidebar area start -->
         <div class="kd-left-sidebar">
+          {{ if $productName }}
+          {{ $productJson := (index $.Site.Data.products.products $productName ) }}
           <div class="kd-version">
             <!-- <p><span><i class="fa fa-sliders" aria-hidden="true"></i></span> 0.11.0</p> -->
             <div class="control has-icons-left">
@@ -187,6 +189,7 @@
               </span>
             </div>
           </div>
+          {{ end }}
 
           {{ if isset .Params "menu_name" }}
             {{ $sectionMenuId := .Params.section_menu_id }}
