@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                      
+                        
+                          <a href="/products/kubed/0.5.0/" class=" navbar-item">Welcome</a>
+                        
+                      
+                        
+                          <a href="/products/kubed/0.5.0/concepts/" class=" navbar-item">Concepts</a>
+                        
+                      
+                        
+                          <a href="/products/kubed/0.5.0/setup/" class=" navbar-item">Setup</a>
+                        
+                      
+                        
+                          <a href="/products/kubed/0.5.0/guides/" class=" is-active  navbar-item">Guides</a>
+                        
+                      
+                        
+                          <a href="/products/kubed/0.5.0/reference/" class=" navbar-item">Reference</a>
+                        
+                      
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+          
+          <div class="kd-version">
+            
+            <div class="control has-icons-left">
+              <div class="select">
+                
+                
+                <select>
+                  
+                    
+                    
+                      
+                        <option>master</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.10.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.9.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.8.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.7.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >0.5.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option>0.2.0</option>
+                      
+                    
+                  
+                </select>
+              </div>
+              <span class="icon is-left">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          
+
+          
+            
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+
+                  
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+              
+
+                
+              
+
+                
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="ccaf4784aef7f0f40d9d998d5cb37cc7-1" >
+  <label for="ccaf4784aef7f0f40d9d998d5cb37cc7-1"><a href="/products/kubed/0.5.0/guides/">Guides</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="ccaf4784aef7f0f40d9d998d5cb37cc7-2" >
+  <label for="ccaf4784aef7f0f40d9d998d5cb37cc7-2"><a>Disaster Recovery</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+      
+        
+          <li ><a href="/products/kubed/0.5.0/guides/disaster-recovery/cluster-snapshot/">Cluster Snapshots</a></li>
+        
+      
+        
+          <li ><a href="/products/kubed/0.5.0/guides/disaster-recovery/recycle-bin/">Recycle Bin</a></li>
+        
+      
+        
+          <li ><a href="/products/kubed/0.5.0/guides/disaster-recovery/stash/">Backup Volumes</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="ccaf4784aef7f0f40d9d998d5cb37cc7-3" checked>
+  <label for="ccaf4784aef7f0f40d9d998d5cb37cc7-3"><a>Cluster Events</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+      
+        
+          <li ><a href="/products/kubed/0.5.0/guides/cluster-events/event-forwarder/">Event Forwarder</a></li>
+        
+      
+        
+          <li class="is-active"><a href="/products/kubed/0.5.0/guides/cluster-events/notifiers/">Notifiers</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="ccaf4784aef7f0f40d9d998d5cb37cc7-4" >
+  <label for="ccaf4784aef7f0f40d9d998d5cb37cc7-4"><a>Configuration Syncer</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+      
+        
+          <li ><a href="/products/kubed/0.5.0/guides/config-syncer/intra-cluster/">Across Namespaces</a></li>
+        
+      
+        
+          <li ><a href="/products/kubed/0.5.0/guides/config-syncer/inter-cluster/">Across Clusters</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="ccaf4784aef7f0f40d9d998d5cb37cc7-5" >
+  <label for="ccaf4784aef7f0f40d9d998d5cb37cc7-5"><a href="/products/kubed/0.5.0/guides/janitors/">Janitors</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="ccaf4784aef7f0f40d9d998d5cb37cc7-6" >
+  <label for="ccaf4784aef7f0f40d9d998d5cb37cc7-6"><a href="/products/kubed/0.5.0/guides/apiserver/">API Server</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="ccaf4784aef7f0f40d9d998d5cb37cc7-7" >
+  <label for="ccaf4784aef7f0f40d9d998d5cb37cc7-7"><a href="/products/kubed/0.5.0/guides/monitoring/">Monitoring</a></label>
+</div>
+
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<blockquote>
+<p>New to Kubed? Please start <a href="/products/kubed/0.5.0/concepts/README">here</a>.</p>
+</blockquote>
+
+<h1 id="supported-notifiers">Supported Notifiers</h1>
+
+<p>Kubed can send notifications via Email, SMS or Chat for various operations using <a href="https://github.com/appscode/go-notify">appscode/go-notify</a> library. To connect to these services, you need to create a Secret with the appropriate keys. Then pass the secret name to Kubed by setting <code>notifierSecretName</code> field in Kubed cluster config. Also, set <code>clusterName</code> to a meaningful name for you. This cluster name will be prefixed to any notification sent via Email/SMS/Chat so that you can identify the source easily.</p>
+
+<h2 id="hipchat">Hipchat</h2>
+
+<p>To receive chat notifications in Hipchat, create a Secret with the following key:</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>HIPCHAT_AUTH_TOKEN</td>
+<td><code>Required</code> Hipchat <a href="https://developer.atlassian.com/hipchat/guide/hipchat-rest-api/api-access-tokens">api access token</a>. You can use room notification tokens, if you are planning to send notifications to a single room.</td>
+</tr>
+
+<tr>
+<td>HIPCHAT_BASE_URL</td>
+<td><code>Optional</code> Base url of Hipchat server</td>
+</tr>
+
+<tr>
+<td>HIPCHAT_CA_CERT_DATA</td>
+<td><code>Optional</code> PEM encoded CA certificate used by Hipchat server</td>
+</tr>
+
+<tr>
+<td>HIPCHAT_INSECURE_SKIP_VERIFY</td>
+<td><code>Optional</code> If set to <code>true</code>, skips SSL verification</td>
+</tr>
+</tbody>
+</table>
+
+<pre><code class="language-console">$ echo -n 'your-hipchat-auth-token' &gt; HIPCHAT_AUTH_TOKEN
+$ kubectl create secret generic notifier-config -n kube-system \
+    --from-file=./HIPCHAT_AUTH_TOKEN
+secret &quot;notifier-config&quot; created
+</code></pre>
+
+<pre><code class="language-yaml">apiVersion: v1
+data:
+  HIPCHAT_AUTH_TOKEN: eW91ci1oaXBjaGF0LWF1dGgtdG9rZW4=
+kind: Secret
+metadata:
+  creationTimestamp: 2017-07-25T01:54:37Z
+  name: notifier-config
+  namespace: kube-system
+  resourceVersion: &quot;2244&quot;
+  selfLink: /api/v1/namespaces/kube-system/secrets/notifier-config
+  uid: 372bc159-70dc-11e7-9b0b-080027503732
+type: Opaque
+</code></pre>
+
+<p>Now, to receive notifications via Hipchat, configure receiver as below:</p>
+
+<ul>
+<li>notifier: <code>Hipchat</code></li>
+<li>to: a list of chat room names</li>
+</ul>
+
+<pre><code class="language-yaml">clusterName: unicorn
+recycleBin:
+  handleUpdates: false
+  path: /tmp/kubed/trash
+  receivers:
+  - notifier: Hipchat
+    to:
+    - ops-alerts
+  ttl: 168h
+notifierSecretName: notifier-config
+</code></pre>
+
+<h2 id="mailgun">Mailgun</h2>
+
+<p>To receive email notifications via Mailgun, create a Secret with the following keys:</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>MAILGUN_DOMAIN</td>
+<td><code>Required</code> domain name for Mailgun account</td>
+</tr>
+
+<tr>
+<td>MAILGUN_API_KEY</td>
+<td><code>Required</code> Mailgun API Key</td>
+</tr>
+
+<tr>
+<td>MAILGUN_FROM</td>
+<td><code>Required</code> sender email address</td>
+</tr>
+
+<tr>
+<td>MAILGUN_PUBLIC_API_KEY</td>
+<td><code>Optional</code> Mailgun public API Key</td>
+</tr>
+</tbody>
+</table>
+
+<pre><code class="language-console">$ echo -n 'your-mailgun-domain' &gt; MAILGUN_DOMAIN
+$ echo -n 'no-reply@example.com' &gt; MAILGUN_FROM
+$ echo -n 'your-mailgun-api-key' &gt; MAILGUN_API_KEY
+$ echo -n 'your-mailgun-public-api-key' &gt; MAILGUN_PUBLIC_API_KEY
+$ kubectl create secret generic notifier-config -n kube-system \
+    --from-file=./MAILGUN_DOMAIN \
+    --from-file=./MAILGUN_FROM \
+    --from-file=./MAILGUN_API_KEY \
+    --from-file=./MAILGUN_PUBLIC_API_KEY
+secret &quot;notifier-config&quot; created
+</code></pre>
+
+<pre><code class="language-yaml">apiVersion: v1
+data:
+  MAILGUN_API_KEY: eW91ci1tYWlsZ3VuLWFwaS1rZXk=
+  MAILGUN_DOMAIN: eW91ci1tYWlsZ3VuLWRvbWFpbg==
+  MAILGUN_FROM: bm8tcmVwbHlAZXhhbXBsZS5jb20=
+  MAILGUN_PUBLIC_API_KEY: bWFpbGd1bi1wdWJsaWMtYXBpLWtleQ==
+kind: Secret
+metadata:
+  creationTimestamp: 2017-07-25T01:31:24Z
+  name: notifier-config
+  namespace: kube-system
+  resourceVersion: &quot;714&quot;
+  selfLink: /api/v1/namespaces/kube-system/secrets/notifier-config
+  uid: f8e91037-70d8-11e7-9b0b-080027503732
+type: Opaque
+</code></pre>
+
+<p>Now, to receive notifications via Mailgun, configure receiver as below:
+ - notifier: <code>Mailgun</code>
+ - to: a list of email addresses</p>
+
+<pre><code class="language-yaml">clusterName: unicorn
+recycleBin:
+  handleUpdates: false
+  path: /tmp/kubed/trash
+  receivers:
+  - notifier: Mailgun
+    to:
+    - ops-alerts@example.com
+  ttl: 168h
+notifierSecretName: notifier-config
+</code></pre>
+
+<h2 id="smtp">SMTP</h2>
+
+<p>To configure any email provider, use SMTP notifier. To receive email notifications via SMTP services, create a Secret with the following keys:</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>SMTP_HOST</td>
+<td><code>Required</code> Host address of smtp server</td>
+</tr>
+
+<tr>
+<td>SMTP_PORT</td>
+<td><code>Required</code> Port of smtp server</td>
+</tr>
+
+<tr>
+<td>SMTP_INSECURE_SKIP_VERIFY</td>
+<td><code>Required</code> If set to <code>true</code>, skips SSL verification</td>
+</tr>
+
+<tr>
+<td>SMTP_USERNAME</td>
+<td><code>Required</code> Username</td>
+</tr>
+
+<tr>
+<td>SMTP_PASSWORD</td>
+<td><code>Required</code> Password</td>
+</tr>
+
+<tr>
+<td>SMTP_FROM</td>
+<td><code>Required</code> Sender email address</td>
+</tr>
+</tbody>
+</table>
+
+<pre><code class="language-console">$ echo -n 'your-smtp-host' &gt; SMTP_HOST
+$ echo -n 'your-smtp-port' &gt; SMTP_PORT
+$ echo -n 'your-smtp-insecure-skip-verify' &gt; SMTP_INSECURE_SKIP_VERIFY
+$ echo -n 'your-smtp-username' &gt; SMTP_USERNAME
+$ echo -n 'your-smtp-password' &gt; SMTP_PASSWORD
+$ echo -n 'your-smtp-from' &gt; SMTP_FROM
+$ kubectl create secret generic notifier-config -n kube-system \
+    --from-file=./SMTP_HOST \
+    --from-file=./SMTP_PORT \
+    --from-file=./SMTP_INSECURE_SKIP_VERIFY \
+    --from-file=./SMTP_USERNAME \
+    --from-file=./SMTP_PASSWORD \
+    --from-file=./SMTP_FROM
+secret &quot;notifier-config&quot; created
+</code></pre>
+
+<p>To configure Kubed to send email notifications using a GMail account, set the Secrets like below:</p>
+
+<pre><code>$ echo -n 'smtp.gmail.com' &gt; SMTP_HOST
+$ echo -n '587' &gt; SMTP_PORT
+$ echo -n 'your-gmail-adress' &gt; SMTP_USERNAME
+$ echo -n 'your-gmail-password' &gt; SMTP_PASSWORD
+$ echo -n 'your-gmail-address' &gt; SMTP_FROM
+</code></pre>
+
+<p>Now, to receive notifications via SMTP, configure receiver as below:</p>
+
+<ul>
+<li>notifier: <code>SMTP</code></li>
+<li>to: a list of email addresses</li>
+</ul>
+
+<pre><code class="language-yaml">clusterName: unicorn
+recycleBin:
+  handleUpdates: false
+  path: /tmp/kubed/trash
+  receivers:
+  - notifier: SMTP
+    to:
+    - ops-alerts@example.com
+  ttl: 168h
+notifierSecretName: notifier-config
+</code></pre>
+
+<h2 id="twilio">Twilio</h2>
+
+<p>To receive SMS notifications via Twilio, create a Secret with the following keys:</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>TWILIO_ACCOUNT_SID</td>
+<td><code>Required</code> Twilio account SID</td>
+</tr>
+
+<tr>
+<td>TWILIO_AUTH_TOKEN</td>
+<td><code>Required</code> Twilio authentication token</td>
+</tr>
+
+<tr>
+<td>TWILIO_FROM</td>
+<td><code>Required</code> Sender mobile number</td>
+</tr>
+</tbody>
+</table>
+
+<pre><code class="language-console">$ echo -n 'your-twilio-account-sid' &gt; TWILIO_ACCOUNT_SID
+$ echo -n 'your-twilio-auth-token' &gt; TWILIO_AUTH_TOKEN
+$ echo -n 'your-twilio-from' &gt; TWILIO_FROM
+$ kubectl create secret generic notifier-config -n kube-system \
+    --from-file=./TWILIO_ACCOUNT_SID \
+    --from-file=./TWILIO_AUTH_TOKEN \
+    --from-file=./TWILIO_FROM
+secret &quot;notifier-config&quot; created
+</code></pre>
+
+<pre><code class="language-yaml">apiVersion: v1
+data:
+  TWILIO_ACCOUNT_SID: eW91ci10d2lsaW8tYWNjb3VudC1zaWQ=
+  TWILIO_AUTH_TOKEN: eW91ci10d2lsaW8tYXV0aC10b2tlbg==
+  TWILIO_FROM: eW91ci10d2lsaW8tZnJvbQ==
+kind: Secret
+metadata:
+  creationTimestamp: 2017-07-26T17:38:38Z
+  name: notifier-config
+  namespace: kube-system
+  resourceVersion: &quot;27787&quot;
+  selfLink: /api/v1/namespaces/kube-system/secrets/notifier-config
+  uid: 41f57a61-7229-11e7-af79-08002738e55e
+type: Opaque
+</code></pre>
+
+<p>Now, to receive notifications via Twilio, configure receiver as below:</p>
+
+<ul>
+<li>notifier: <code>Twilio</code></li>
+<li>to: a list of receiver mobile numbers</li>
+</ul>
+
+<pre><code class="language-yaml">clusterName: unicorn
+recycleBin:
+  handleUpdates: false
+  path: /tmp/kubed/trash
+  receivers:
+  - notifier: Twilio
+    to:
+    - +1-999-888-1234
+  ttl: 168h
+notifierSecretName: notifier-config
+</code></pre>
+
+<h2 id="slack">Slack</h2>
+
+<p>To receive chat notifications in Slack, create a Secret with the following keys:</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>SLACK_AUTH_TOKEN</td>
+<td><code>Required</code> Slack <a href="https://api.slack.com/custom-integrations/legacy-tokens">legacy auth token</a></td>
+</tr>
+</tbody>
+</table>
+
+<pre><code class="language-console">$ echo -n 'your-slack-auth-token' &gt; SLACK_AUTH_TOKEN
+$ kubectl create secret generic notifier-config -n kube-system \
+    --from-file=./SLACK_AUTH_TOKEN
+secret &quot;notifier-config&quot; created
+</code></pre>
+
+<pre><code class="language-yaml">apiVersion: v1
+data:
+  SLACK_AUTH_TOKEN: eW91ci1zbGFjay1hdXRoLXRva2Vu
+kind: Secret
+metadata:
+  creationTimestamp: 2017-07-25T01:58:58Z
+  name: notifier-config
+  namespace: kube-system
+  resourceVersion: &quot;2534&quot;
+  selfLink: /api/v1/namespaces/kube-system/secrets/notifier-config
+  uid: d2571817-70dc-11e7-9b0b-080027503732
+type: Opaque
+</code></pre>
+
+<p>Now, to receive notifications via Slack, configure receiver as below:</p>
+
+<ul>
+<li>notifier: <code>Slack</code></li>
+<li>to: a list of chat room names</li>
+</ul>
+
+<pre><code class="language-yaml">clusterName: unicorn
+recycleBin:
+  handleUpdates: false
+  path: /tmp/kubed/trash
+  receivers:
+  - notifier: Slack
+    to:
+    - '#ops-alerts'
+  ttl: 168h
+notifierSecretName: notifier-config
+</code></pre>
+
+<h2 id="plivo">Plivo</h2>
+
+<p>To receive SMS notifications via Plivo, create a Secret with the following keys:</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>PLIVO_AUTH_ID</td>
+<td><code>Required</code> Plivo auth ID</td>
+</tr>
+
+<tr>
+<td>PLIVO_AUTH_TOKEN</td>
+<td><code>Required</code> Plivo authentication token</td>
+</tr>
+
+<tr>
+<td>PLIVO_FROM</td>
+<td><code>Required</code> Sender mobile number</td>
+</tr>
+</tbody>
+</table>
+
+<pre><code class="language-console">$ echo -n 'your-plivo-auth-id' &gt; PLIVO_AUTH_ID
+$ echo -n 'your-plivo-auth-token' &gt; PLIVO_AUTH_TOKEN
+$ echo -n 'your-plivo-from' &gt; PLIVO_FROM
+$ kubectl create secret generic notifier-config -n kube-system \
+    --from-file=./PLIVO_AUTH_ID \
+    --from-file=./PLIVO_AUTH_TOKEN \
+    --from-file=./PLIVO_FROM
+secret &quot;notifier-config&quot; created
+</code></pre>
+
+<pre><code class="language-yaml">apiVersion: v1
+data:
+  PLIVO_AUTH_ID: eW91ci1wbGl2by1hdXRoLWlk
+  PLIVO_AUTH_TOKEN: eW91ci1wbGl2by1hdXRoLXRva2Vu
+  PLIVO_FROM: eW91ci1wbGl2by1mcm9t
+kind: Secret
+metadata:
+  creationTimestamp: 2017-07-25T02:00:02Z
+  name: notifier-config
+  namespace: kube-system
+  resourceVersion: &quot;2606&quot;
+  selfLink: /api/v1/namespaces/kube-system/secrets/notifier-config
+  uid: f8dade1c-70dc-11e7-9b0b-080027503732
+type: Opaque
+</code></pre>
+
+<p>Now, to receive notifications via Plivo, configure receiver as below:</p>
+
+<ul>
+<li>notifier: <code>Plivo</code></li>
+<li>to: a list of receiver mobile numbers</li>
+</ul>
+
+<pre><code class="language-yaml">clusterName: unicorn
+recycleBin:
+  handleUpdates: false
+  path: /tmp/kubed/trash
+  receivers:
+  - notifier: Plivo
+    to:
+    - +1-999-888-1234
+  ttl: 168h
+notifierSecretName: notifier-config
+</code></pre>
+
+<h2 id="pushover-net">Pushover.net</h2>
+
+<p>To receive push notifications via Pushover.net, create a Secret with the following keys:</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>PUSHOVER_TOKEN</td>
+<td><code>Required</code> Pushover.net token.</td>
+</tr>
+
+<tr>
+<td>PUSHOVER_USER_KEY</td>
+<td><code>Required</code> User key or group key.</td>
+</tr>
+
+<tr>
+<td>PUSHOVER_TITLE</td>
+<td><code>Optional</code> Message&rsquo;s title, otherwise your app&rsquo;s name is used.</td>
+</tr>
+
+<tr>
+<td>PUSHOVER_URL</td>
+<td><code>Optional</code> A supplementary URL to show with your message.</td>
+</tr>
+
+<tr>
+<td>PUSHOVER_URL_TITLE</td>
+<td><code>Optional</code> A title for the supplementary URL, otherwise just the URL is shown.</td>
+</tr>
+
+<tr>
+<td>PUSHOVER_PRIORITY</td>
+<td><code>Optional</code> Send as -2 to generate no notification/alert, -1 to always send as a quiet notification, 1 to display as high-priority and bypass the user&rsquo;s quiet hours, or 2 to also require confirmation from the user.</td>
+</tr>
+
+<tr>
+<td>PUSHOVER_SOUND</td>
+<td><code>Optional</code> The name of one of the sounds supported by device clients to override the user&rsquo;s default sound choice.</td>
+</tr>
+</tbody>
+</table>
+
+<pre><code class="language-console">$ echo -n 'your-pushover-token' &gt; PUSHOVER_TOKEN
+$ echo -n 'your-pushover-user-key' &gt; PUSHOVER_USER_KEY
+$ echo -n 'your-pushover-title' &gt; PUSHOVER_TITLE
+$ echo -n 'your-pushover-url' &gt; PUSHOVER_URL
+$ echo -n 'your-pushover-url-title' &gt; PUSHOVER_URL_TITLE
+$ echo -n 'your-pushover-priority' &gt; PUSHOVER_PRIORITY
+$ echo -n 'your-pushover-sound' &gt; PUSHOVER_SOUND
+$ kubectl create secret generic notifier-config -n kube-system \
+    --from-file=./PUSHOVER_TOKEN \
+    --from-file=./PUSHOVER_USER_KEY \
+    --from-file=./PUSHOVER_TITLE \
+    --from-file=./PUSHOVER_URL \
+    --from-file=./PUSHOVER_URL_TITLE \
+    --from-file=./PUSHOVER_PRIORITY \
+    --from-file=./PUSHOVER_SOUND
+secret &quot;notifier-config&quot; created
+</code></pre>
+
+<pre><code class="language-yaml">apiVersion: v1
+data:
+  PUSHOVER_PRIORITY: eW91ci1wdXNob3Zlci1wcmlvcml0eQ==
+  PUSHOVER_SOUND: eW91ci1wdXNob3Zlci1zb3VuZA==
+  PUSHOVER_TITLE: eW91ci1wdXNob3Zlci10aXRsZQ==
+  PUSHOVER_TOKEN: eW91ci1wdXNob3Zlci10b2tlbg==
+  PUSHOVER_URL: eW91ci1wdXNob3Zlci11cmw=
+  PUSHOVER_URL_TITLE: eW91ci1wdXNob3Zlci11cmwtdGl0bGU=
+  PUSHOVER_USER_KEY: eW91ci1wdXNob3Zlci11c2VyLWtleQ==
+kind: Secret
+metadata:
+  creationTimestamp: 2017-08-04T05:13:07Z
+  name: notifier-config
+  namespace: kube-system
+  resourceVersion: &quot;33711872&quot;
+  selfLink: /api/v1/namespaces/kube-system/secrets/notifier-config
+  uid: 99df75a8-78d3-11e7-acfa-42010af00141
+type: Opaque
+</code></pre>
+
+<p>Now, to receive notifications via Pushover.net, configure receiver as below:</p>
+
+<ul>
+<li>notifier: <code>Pushover</code></li>
+<li>to: a list of devices where notifications will be sent. If list is empty, all devices will be notified.</li>
+</ul>
+
+<pre><code class="language-yaml">clusterName: unicorn
+recycleBin:
+  handleUpdates: false
+  path: /tmp/kubed/trash
+  receivers:
+  - notifier: Pushover
+    to:
+    - my-phone
+  ttl: 168h
+notifierSecretName: notifier-config
+</code></pre>
+
+<h2 id="telegram">Telegram</h2>
+
+<p>To receive notifications in your Telegram app, please follow the steps below:</p>
+
+<ul>
+<li>Sign up for <a href="https://telegram.org/">Telegram</a>.</li>
+<li>Now, use <a href="https://t.me/botfather">@botfather</a> to create your own Telegram Bot and get the authorization token.</li>
+<li>Create a Kubernetes Secret with the following keys:</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>TELEGRAM_TOKEN</td>
+<td><code>Required</code> Telegram Bot authorization token.</td>
+</tr>
+</tbody>
+</table>
+
+<pre><code class="language-console">$ echo -n 'your-telegram-bot-token' &gt; TELEGRAM_TOKEN
+$ kubectl create secret generic notifier-config -n kube-system \
+    --from-file=./TELEGRAM_TOKEN
+secret &quot;notifier-config&quot; created
+</code></pre>
+
+<pre><code class="language-yaml">apiVersion: v1
+data:
+  TELEGRAM_TOKEN: NDkxoooooooooooooooooxJ
+kind: Secret
+metadata:
+  creationTimestamp: 2018-01-16T13:41:04Z
+  name: notifier-config
+  namespace: kube-system
+  resourceVersion: &quot;768&quot;
+  selfLink: /api/v1/namespaces/kube-system/secrets/notifier-config
+  uid: e6066076-fac2-11e7-b3e7-0800276ee39b
+type: Opaque
+</code></pre>
+
+<ul>
+<li>Add the Bot as an Admin for your channel where notifications will be sent.</li>
+</ul>
+
+<p><img src="/products/kubed/0.5.0/images/event-forwarder/telegram-bot.png" alt="telegram-bot" /></p>
+
+<p>Now, to receiver notifications in your <strong>public</strong> Telegram channels, configure receiver as below:</p>
+
+<ul>
+<li>notifier: <code>Telegram</code></li>
+<li>to: a list of channels where notifications will be sent.</li>
+</ul>
+
+<pre><code class="language-yaml">clusterName: unicorn
+recycleBin:
+  handleUpdates: false
+  path: /tmp/kubed/trash
+  receivers:
+  - notifier: Telegram
+    to:
+    - '@my-channel'
+  ttl: 168h
+notifierSecretName: notifier-config
+</code></pre>
+
+<p>To receive notifications if your <strong>private</strong> channel, follow the steps below:</p>
+
+<ul>
+<li>Create a new public channel or change your private channel to public temporarily and assign a link.</li>
+<li>Now, run the following command to determine the <code>id</code> for your channel.</li>
+</ul>
+
+<pre><code class="language-console">TOKEN=&lt;token&gt;
+curl -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d &quot;chat_id=@channelusername&amp;text=hello&quot;
+
+{&quot;ok&quot;:true,&quot;result&quot;:{&quot;message_id&quot;:10,&quot;chat&quot;:{&quot;id&quot;:-1001210429328,&quot;title&quot;:&quot;mytest&quot;,&quot;username&quot;:&quot;mytest123489&quot;,&quot;type&quot;:&quot;channel&quot;},&quot;date&quot;:1516103121,&quot;text&quot;:&quot;hello&quot;}}
+</code></pre>
+
+<ul>
+<li>Make your channel private.</li>
+</ul>
+
+<p>Now, to receiver notifications in your private Telegram channels, configure channle id as receiver like below:</p>
+
+<pre><code class="language-yaml">clusterName: unicorn
+recycleBin:
+  handleUpdates: false
+  path: /tmp/kubed/trash
+  receivers:
+  - notifier: Telegram
+    to:
+    - '-1001210429328'
+  ttl: 168h
+notifierSecretName: notifier-config
+</code></pre>
+
+<h2 id="using-multiple-notifiers">Using multiple notifiers</h2>
+
+<p>Kubed supports using different notifiers in different scenarios. First add the credentials for the different notifiers in the same Secret <code>notifier-config</code> and deploy that to Kubernetes. Then in the Kubed cluster config, specify the appropriate notifier for each feature.</p>
+
+<pre><code class="language-yaml">apiVersion: v1
+data:
+  MAILGUN_API_KEY: eW91ci1tYWlsZ3VuLWFwaS1rZXk=
+  MAILGUN_DOMAIN: eW91ci1tYWlsZ3VuLWRvbWFpbg==
+  MAILGUN_FROM: bm8tcmVwbHlAZXhhbXBsZS5jb20=
+  SLACK_AUTH_TOKEN: eW91ci1zbGFjay1hdXRoLXRva2Vu
+kind: Secret
+metadata:
+  creationTimestamp: 2017-07-25T01:58:58Z
+  name: notifier-config
+  namespace: kube-system
+  resourceVersion: &quot;2534&quot;
+  selfLink: /api/v1/namespaces/kube-system/secrets/notifier-config
+  uid: d2571817-70dc-11e7-9b0b-080027503732
+type: Opaque
+
+
+clusterName: unicorn
+eventForwarder:
+  warningEvents:
+    handle: true
+    namespaces:
+    - kube-system
+  receivers:
+  - notifier: Mailgun
+    to:
+    - ops@example.com
+  - notifier: Slack
+    to:
+    - #ops-alerts
+recycleBin:
+  handleUpdates: false
+  path: /tmp/kubed/trash
+  receivers:
+  - notifier: mailgun
+    to:
+    - ops@example.com
+  - notifier: slack
+    to:
+    - '#ops-alerts'
+  ttl: 168h
+notifierSecretName: notifier-config
+</code></pre>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<ul>
+<li>Want to keep an eye on your cluster with automated notifications? Setup Kubed <a href="/products/kubed/0.5.0/guides/cluster-events/event-forwarder">event forwarder</a>.</li>
+<li>Learn how to use Kubed to protect your Kubernetes cluster from disasters <a href="/products/kubed/0.5.0/guides/disaster-recovery/">here</a>.</li>
+<li>Need to keep configmaps/secrets synchronized across namespaces or clusters? Try <a href="/products/kubed/0.5.0/guides/config-syncer/">Kubed config syncer</a>.</li>
+<li>Out of disk space because of too much logs in Elasticsearch or metrics in InfluxDB? Configure <a href="/products/kubed/0.5.0/guides/janitors">janitors</a> to delete old data.</li>
+<li>Wondering what features are coming next? Please visit <a href="/products/kubed/0.5.0/roadmap">here</a>.</li>
+<li>Want to hack on Kubed? Check our <a href="/products/kubed/0.5.0/CONTRIBUTING">contribution guidelines</a>.</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#supported-notifiers">Supported Notifiers</a>
+<ul>
+<li><a href="#hipchat">Hipchat</a></li>
+<li><a href="#mailgun">Mailgun</a></li>
+<li><a href="#smtp">SMTP</a></li>
+<li><a href="#twilio">Twilio</a></li>
+<li><a href="#slack">Slack</a></li>
+<li><a href="#plivo">Plivo</a></li>
+<li><a href="#pushover-net">Pushover.net</a></li>
+<li><a href="#telegram">Telegram</a></li>
+<li><a href="#using-multiple-notifiers">Using multiple notifiers</a></li>
+<li><a href="#next-steps">Next Steps</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

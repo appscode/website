@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          <pre><code class="language-console">$ kubectl create -f ./docs/examples/monitoring/demo-0.yaml
+namespace &quot;demo&quot; created
+deployment &quot;prometheus-operator&quot; created
+
+$ kubectl get pods -n demo
+NAME                                  READY     STATUS    RESTARTS   AGE
+prometheus-operator-449376836-mq4p3   1/1       Running   0          1m
+</code></pre>
+
+<pre><code class="language-console">$ kubectl create -f ./docs/examples/monitoring/demo-1.yaml
+prometheus &quot;prometheus&quot; created
+service &quot;prometheus&quot; created
+
+$ kubectl get pods -n demo --watch
+NAME                                  READY     STATUS    RESTARTS   AGE
+prometheus-operator-449376836-mq4p3   1/1       Running   0          1m
+prometheus-prometheus-0   0/2       ContainerCreating   0         6s
+prometheus-prometheus-0   1/2       Running   0         25s
+prometheus-prometheus-0   2/2       Running   0         26s
+^C⏎
+</code></pre>
+
+<pre><code class="language-console">$ ./hack/deploy/minikube.sh
+
+$ kubectl get pods -l app=voyager --all-namespaces --watch
+NAMESPACE     NAME                                READY     STATUS    RESTARTS   AGE
+kube-system   voyager-operator-2464855905-gfdlq   1/1       Running   0          22s
+^C⏎
+</code></pre>
+
+<pre><code class="language-console">$ sudo nano /etc/hosts
+
+127.0.0.1       localhost
+127.0.1.1       beast
+192.168.99.100       voyager.demo
+</code></pre>
+
+<pre><code>~/g/s/g/a/v/h/deploy (d2) $ kubectl get svc -n demo
+NAME                         CLUSTER-IP   EXTERNAL-IP   PORT(S)               AGE
+prometheus                   10.0.0.142   &lt;pending&gt;     9090:30900/TCP        37m
+prometheus-operated          None         &lt;none&gt;        9090/TCP              37m
+test-server                  10.0.0.28    &lt;none&gt;        80/TCP                9m
+voyager-test-ingress         10.0.0.81    &lt;pending&gt;     80:30446/TCP          9m
+voyager-test-ingress-stats   10.0.0.36    &lt;none&gt;        56789/TCP,56790/TCP   6s
+~/g/s/g/a/v/h/deploy (d2) $
+~/g/s/g/a/v/h/deploy (d2) $ kubectl get servicemonitor -n demo
+NAME                        KIND
+voyager-demo-test-ingress   ServiceMonitor.v1alpha1.monitoring.coreos.com
+~/g/s/g/a/v/h/deploy (d2) $ kubectl get servicemonitor -n demo
+NAME                        KIND
+voyager-demo-test-ingress   ServiceMonitor.v1alpha1.monitoring.coreos.com
+~/g/s/g/a/v/h/deploy (d2) $
+~/g/s/g/a/v/h/deploy (d2) $
+~/g/s/g/a/v/h/deploy (d2) $ kubectl get servicemonitor -n demo -o yaml
+apiVersion: v1
+items:
+- apiVersion: monitoring.coreos.com/v1alpha1
+  kind: ServiceMonitor
+  metadata:
+    creationTimestamp: 2017-07-21T00:31:06Z
+    labels:
+      app: voyager
+    name: voyager-demo-test-ingress
+    namespace: demo
+    resourceVersion: &quot;4118&quot;
+    selfLink: /apis/monitoring.coreos.com/v1alpha1/namespaces/demo/servicemonitors/voyager-demo-test-ingress
+    uid: e2bc3888-6dab-11e7-87c7-080027820ec8
+  spec:
+    endpoints:
+    - path: /voyager.appscode.com/v1beta1/namespaces/demo/ingresses/test-ingress/metrics
+      port: http
+      targetPort: 0
+    namespaceSelector:
+      matchNames:
+      - demo
+    selector:
+      matchLabels:
+        feature: stats
+        origin: voyager
+        origin-api-group: voyager.appscode.com
+        origin-api-version: v1beta1
+        origin-name: test-ingress
+kind: List
+metadata: {}
+resourceVersion: &quot;&quot;
+selfLink: &quot;&quot;
+~/g/s/g/a/v/h/deploy (d2) $ kubectl get svc voyager-test-ingress-stats -n demo -o yaml
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    ingress.appscode.com/origin-api-schema: voyager.appscode.com/v1beta1
+    ingress.appscode.com/origin-name: test-ingress
+  creationTimestamp: 2017-07-21T00:31:16Z
+  labels:
+    feature: stats
+    origin: voyager
+    origin-api-group: voyager.appscode.com
+    origin-api-version: v1beta1
+    origin-name: test-ingress
+  name: voyager-test-ingress-stats
+  namespace: demo
+  resourceVersion: &quot;4182&quot;
+  selfLink: /api/v1/namespaces/demo/services/voyager-test-ingress-stats
+  uid: e8c26919-6dab-11e7-87c7-080027820ec8
+spec:
+  clusterIP: 10.0.0.36
+  ports:
+  - name: stats
+    port: 56789
+    protocol: TCP
+    targetPort: stats
+  - name: http
+    port: 56790
+    protocol: TCP
+    targetPort: http
+  selector:
+    origin: voyager
+    origin-api-group: voyager.appscode.com
+    origin-api-version: v1beta1
+    origin-name: test-ingress
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
+~/g/s/g/a/v/h/deploy (d2) $
+</code></pre>
+
+<pre><code class="language-console">$ kubectl delete deployment voyager-operator -n kube-system
+deployment &quot;voyager-operator&quot; deleted
+$ kubectl delete svc voyager-operator -n kube-system
+service &quot;voyager-operator&quot; deleted
+</code></pre>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

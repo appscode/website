@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                      
+                        
+                          <a href="/products/voyager/6.0.0/" class=" navbar-item">Welcome</a>
+                        
+                      
+                        
+                          <a href="/products/voyager/6.0.0/concepts/" class=" is-active  navbar-item">Concepts</a>
+                        
+                      
+                        
+                          <a href="/products/voyager/6.0.0/setup/" class=" navbar-item">Setup</a>
+                        
+                      
+                        
+                          <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                              Guides
+                            </a>
+                            <div class="navbar-dropdown">
+                              
+                                
+                                  <a href="/products/voyager/6.0.0/guides/certificate/" class="navbar-item">Certificate</a>
+                                
+                              
+                                
+                                  <a href="/products/voyager/6.0.0/guides/ingress/" class="navbar-item">Ingress</a>
+                                
+                              
+                            </div>
+                          </div>
+                        
+                      
+                        
+                          <a href="/products/voyager/6.0.0/reference/" class=" navbar-item">Reference</a>
+                        
+                      
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+          
+          <div class="kd-version">
+            
+            <div class="control has-icons-left">
+              <div class="select">
+                
+                
+                <select>
+                  
+                    
+                    
+                      
+                        <option>master</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >10.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >9.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >8.0.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >7.4.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.3.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.2.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.1.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >7.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >6.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >5.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option>3.2.2</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                </select>
+              </div>
+              <span class="icon is-left">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          
+
+          
+            
+            
+              
+            
+              
+                
+                  
+
+                  
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              
+            
+              
+            
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="8ff0154733382b54dc5444ac9c7ac735-1" >
+  <label for="8ff0154733382b54dc5444ac9c7ac735-1"><a href="/products/voyager/6.0.0/concepts/">Concepts</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="8ff0154733382b54dc5444ac9c7ac735-2" >
+  <label for="8ff0154733382b54dc5444ac9c7ac735-2"><a href="/products/voyager/6.0.0/concepts/overview/">Overview</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="8ff0154733382b54dc5444ac9c7ac735-3" checked>
+  <label for="8ff0154733382b54dc5444ac9c7ac735-3"><a>Types of Ingress</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/6.0.0/concepts/ingress-types/loadbalancer/">LoadBalancer</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/6.0.0/concepts/ingress-types/nodeport/">NodePort</a></li>
+        
+      
+        
+          <li class="is-active"><a href="/products/voyager/6.0.0/concepts/ingress-types/hostport/">HostPort</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/6.0.0/concepts/ingress-types/internal/">Internal</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<h1 id="hostport">HostPort</h1>
+
+<p>In <code>HostPort</code> type Ingress, HAProxy pods are run via a Kubernetes deployment named <code>voyager-${ingress-name}</code> with <code>hostNetwork: true</code>. A headless Service is also created for the HAProxy pods. To enable this, apply the <code>ingress.appscode.com/type: HostPort</code> annotation on a Ingress object.</p>
+
+<h2 id="how-it-works">How It Works</h2>
+
+<ul>
+<li>First, deploy voyager operator.</li>
+</ul>
+
+<pre><code class="language-console">curl -fsSL https://raw.githubusercontent.com/appscode/voyager/6.0.0/hack/deploy/voyager.sh \
+    | bash -s -- --provider=minikube
+</code></pre>
+
+<ul>
+<li>Now, deploy test servers using <a href="/products/voyager/6.0.0/examples/ingress/types/hostport/deploy-servers.sh">this script</a> script.</li>
+</ul>
+
+<pre><code class="language-console">curl -fsSL https://raw.githubusercontent.com/appscode/voyager/6.0.0/docs/examples/ingress/types/hostport/deploy-servers.sh | bash
+
+deployment &quot;nginx&quot; created
+service &quot;web&quot; exposed
+deployment &quot;echoserver&quot; created
+service &quot;rest&quot; exposed
+</code></pre>
+
+<ul>
+<li>Now, create an Ingress object running <code>kubectl apply -f https://raw.githubusercontent.com/appscode/voyager/6.0.0/docs/examples/ingress/types/hostport/ing.yaml</code>. Please note the annotaiton on ingress:</li>
+</ul>
+
+<pre><code class="language-yaml">  annotations:
+    ingress.appscode.com/type: HostPort
+</code></pre>
+
+<pre><code class="language-console">$ kubectl get pods,svc
+NAME                                       READY     STATUS    RESTARTS   AGE
+po/echoserver-566fcc4fdb-7fth7             1/1       Running   0          6m
+po/nginx-d5dc44cf7-m4xcg                   1/1       Running   0          6m
+po/voyager-test-ingress-668594cc46-5zswh   1/1       Running   0          4m
+
+NAME                       TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE
+svc/kubernetes             ClusterIP   10.96.0.1      &lt;none&gt;        443/TCP   1h
+svc/rest                   ClusterIP   10.103.13.42   &lt;none&gt;        80/TCP    6m
+svc/voyager-test-ingress   ClusterIP   None           &lt;none&gt;        80/TCP    4m
+svc/web                    ClusterIP   10.99.232.60   &lt;none&gt;        80/TCP    6m
+</code></pre>
+
+<ul>
+<li>Now, ssh into the minikube vm and run the following commands from host:</li>
+</ul>
+
+<pre><code class="language-console">$ minikube ssh
+
+$ curl -vv 127.0.0.1 -H &quot;Host: web.example.com&quot;
+&gt; GET / HTTP/1.1
+&gt; Host: web.example.com
+&gt; User-Agent: curl/7.53.0
+&gt; Accept: */*
+&gt;
+&lt; HTTP/1.1 200 OK
+&lt; Server: nginx/1.13.8
+&lt; Date: Thu, 28 Dec 2017 04:27:20 GMT
+&lt; Content-Type: text/html
+&lt; Content-Length: 612
+&lt; Last-Modified: Tue, 26 Dec 2017 11:11:22 GMT
+&lt; ETag: &quot;5a422e5a-264&quot;
+&lt; Accept-Ranges: bytes
+&lt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Welcome to nginx!&lt;/title&gt;
+&lt;style&gt;
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Welcome to nginx!&lt;/h1&gt;
+&lt;p&gt;If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.&lt;/p&gt;
+
+&lt;p&gt;For online documentation and support please refer to
+&lt;a href=&quot;http://nginx.org/&quot;&gt;nginx.org&lt;/a&gt;.&lt;br/&gt;
+Commercial support is available at
+&lt;a href=&quot;http://nginx.com/&quot;&gt;nginx.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Thank you for using nginx.&lt;/em&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<pre><code class="language-console">$ curl -vv 127.0.0.1 -H &quot;Host: app.example.com&quot;
+&gt; GET / HTTP/1.1
+&gt; Host: app.example.com
+&gt; User-Agent: curl/7.53.0
+&gt; Accept: */*
+&gt;
+&lt; HTTP/1.1 200 OK
+&lt; Server: nginx/1.10.0
+&lt; Date: Thu, 28 Dec 2017 04:27:39 GMT
+&lt; Content-Type: text/plain
+&lt; Transfer-Encoding: chunked
+&lt;
+CLIENT VALUES:
+client_address=172.17.0.1
+command=GET
+real path=/
+query=nil
+request_version=1.1
+request_uri=http://app.example.com:8080/
+
+SERVER VALUES:
+server_version=nginx: 1.10.0 - lua: 10001
+
+HEADERS RECEIVED:
+accept=*/*
+connection=close
+host=app.example.com
+user-agent=curl/7.53.0
+x-forwarded-for=127.0.0.1
+BODY:
+</code></pre>
+
+<p>Now, if you run <code>netstat</code>, you should port 80 is listened on by haproxy.</p>
+
+<pre><code class="language-console">$ netstat -tuln | grep 80
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN
+tcp        0      0 127.0.0.1:2380          0.0.0.0:*               LISTEN
+</code></pre>
+
+<h2 id="faq">FAQ</h2>
+
+<h2 id="does-voyager-configure-firewalls-for-hostport-ingress">Does Voyager configure firewalls for HostPort Ingress?</h2>
+
+<p>Voyager operator will configure firewall rules for HostPort Ingress for the following cloud providers: AWS, GCE/GKE .</p>
+
+<h2 id="what-iam-permissions-are-reuired-for-voyager-operator-to-configure-firewalls-for-hostport-ingress-in-aws">What IAM permissions are reuired for Voyager operator to configure firewalls for HostPort Ingress in AWS?</h2>
+
+<ul>
+<li><p>Master: For aws clusters provisioned via <a href="https://github.com/kubernetes/kops/blob/master/docs/iam_roles.md">Kops</a>, no additional permission should be needed. Master instances already has <code>ec2:*</code> iam permissions.</p></li>
+
+<li><p>Nodes: <code>Describe*</code> permissions are applied by default. Additional <code>write</code> permissions need to be applied are:</p>
+
+<pre><code>{
+&quot;Effect&quot;: &quot;Allow&quot;,
+&quot;Action&quot;: [
+	&quot;ec2:AuthorizeSecurityGroupIngress&quot;,
+	&quot;ec2:CreateRoute&quot;,
+	&quot;ec2:CreateSecurityGroup&quot;,
+	&quot;ec2:CreateTags&quot;,
+	&quot;ec2:DeleteRoute&quot;,
+	&quot;ec2:DeleteSecurityGroup&quot;,
+	&quot;ec2:ModifyInstanceAttribute&quot;,
+	&quot;ec2:RevokeSecurityGroupIngress&quot;,
+	&quot;ec2:DescribeInstances&quot;,
+	&quot;ec2:DescribeRouteTables&quot;,
+	&quot;ec2:DescribeSecurityGroups&quot;,
+	&quot;ec2:DescribeSubnets&quot;
+],
+&quot;Resource&quot;: &quot;*&quot;
+}
+</code></pre></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#hostport">HostPort</a>
+<ul>
+<li><a href="#how-it-works">How It Works</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#does-voyager-configure-firewalls-for-hostport-ingress">Does Voyager configure firewalls for HostPort Ingress?</a></li>
+<li><a href="#what-iam-permissions-are-reuired-for-voyager-operator-to-configure-firewalls-for-hostport-ingress-in-aws">What IAM permissions are reuired for Voyager operator to configure firewalls for HostPort Ingress in AWS?</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

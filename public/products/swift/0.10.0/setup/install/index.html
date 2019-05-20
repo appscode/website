@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                      
+                        
+                          <a href="/products/swift/0.10.0/" class=" navbar-item">Welcome</a>
+                        
+                      
+                        
+                          <a href="/products/swift/0.10.0/concepts/" class=" navbar-item">Concepts</a>
+                        
+                      
+                        
+                          <a href="/products/swift/0.10.0/setup/" class=" is-active  navbar-item">Setup</a>
+                        
+                      
+                        
+                          <a href="/products/swift/0.10.0/guides/" class=" navbar-item">Guides</a>
+                        
+                      
+                        
+                          <a href="/products/swift/0.10.0/reference/" class=" navbar-item">Reference</a>
+                        
+                      
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+          
+          <div class="kd-version">
+            
+            <div class="control has-icons-left">
+              <div class="select">
+                
+                
+                <select>
+                  
+                    
+                    
+                      
+                        <option>master</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.11.1</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.11.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.10.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.9.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.8.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >0.7.3</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >0.5.2</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option>0.3.2</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option>0.2.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option>0.1.0</option>
+                      
+                    
+                  
+                </select>
+              </div>
+              <span class="icon is-left">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          
+
+          
+            
+            
+              
+            
+              
+            
+              
+                
+                  
+
+                  
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              
+            
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+              
+
+                
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="8da81b160c47d60e931b599f793398ea-1" >
+  <label for="8da81b160c47d60e931b599f793398ea-1"><a href="/products/swift/0.10.0/setup/">Setup</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="8da81b160c47d60e931b599f793398ea-2" checked>
+  <label for="8da81b160c47d60e931b599f793398ea-2"><a href="/products/swift/0.10.0/setup/install/">Install</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="8da81b160c47d60e931b599f793398ea-3" >
+  <label for="8da81b160c47d60e931b599f793398ea-3"><a href="/products/swift/0.10.0/setup/rbac/">RBAC</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="8da81b160c47d60e931b599f793398ea-4" >
+  <label for="8da81b160c47d60e931b599f793398ea-4"><a href="/products/swift/0.10.0/setup/uninstall/">Uninstall</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="8da81b160c47d60e931b599f793398ea-5" >
+  <label for="8da81b160c47d60e931b599f793398ea-5"><a>Developer Guide</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/swift/0.10.0/setup/developer-guide/overview/">Overview</a></li>
+        
+      
+        
+          <li ><a href="/products/swift/0.10.0/setup/developer-guide/release/">Release</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<h1 id="installation-guide">Installation Guide</h1>
+
+<p>Swift proxy server can connect to <a href="https://github.com/kubernetes/helm">Helm</a> Tiller gRPC server in a number of different ways depending on the <a href="/products/swift/0.10.0/reference/swift_run"><code>--connector</code></a> flag.</p>
+
+<h2 id="incluster-connector"><code>incluster</code> Connector</h2>
+
+<p>Swift can proxy Tiller server running in the same Kubernetes cluster using <code>incluster</code> connector.</p>
+
+<p>Swift operator can be installed via a script or as a Helm chart.</p>
+
+<p><ul class="nav nav-tabs" id="installerTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="script-tab" data-toggle="tab" href="#script" role="tab" aria-controls="script" aria-selected="true">Script</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="helm-tab" data-toggle="tab" href="#helm" role="tab" aria-controls="helm" aria-selected="false">Helm</a>
+  </li>
+</ul>
+<div class="tab-content" id="installerTabContent">
+  <div class="tab-pane fade show active" id="script" role="tabpanel" aria-labelledby="script-tab"></p>
+
+<h3 id="using-script">Using Script</h3>
+
+<p>Swift can be installed via installer script included in the <a href="https://github.com/appscode/swift/tree/0.10.0/hack/deploy">/hack/deploy</a> folder.</p>
+
+<pre><code class="language-console">$ curl -fsSL https://raw.githubusercontent.com/appscode/swift/0.10.0/hack/deploy/swift.sh | bash
+</code></pre>
+
+<h4 id="customizing-installer">Customizing Installer</h4>
+
+<p>You can see the full list of flags available to installer using <code>-h</code> flag.</p>
+
+<pre><code class="language-console">$ curl -fsSL https://raw.githubusercontent.com/appscode/swift/0.10.0/hack/deploy/swift.sh | bash -s -- -h
+swift.sh - install Ajax friendly Helm Tiller Proxy
+
+swift.sh [options]
+
+options:
+-h, --help                         show brief help
+-n, --namespace=NAMESPACE          specify namespace (default: kube-system)
+    --rbac                         create RBAC roles and bindings (default: true)
+    --docker-registry              docker registry used to pull swift images (default: appscode)
+    --image-pull-secret            name of secret used to pull swift operator images
+    --run-on-master                run swift operator on master
+    --enable-analytics             send usage events to Google Analytics (default: true)
+    --uninstall                    uninstall swift
+</code></pre>
+
+<p>If you would like to run Swift operator pod in <code>master</code> instances, pass the <code>--run-on-master</code> flag:</p>
+
+<pre><code class="language-console">$ curl -fsSL https://raw.githubusercontent.com/appscode/swift/0.10.0/hack/deploy/swift.sh \
+    | bash -s -- --run-on-master [--rbac]
+</code></pre>
+
+<p>Swift operator will be installed in a <code>kube-system</code> namespace by default. If you would like to run Swift operator pod in <code>swift</code> namespace, pass the <code>--namespace=swift</code> flag:</p>
+
+<pre><code class="language-console">$ kubectl create namespace swift
+$ curl -fsSL https://raw.githubusercontent.com/appscode/swift/0.10.0/hack/deploy/swift.sh \
+    | bash -s -- --namespace=swift [--run-on-master] [--rbac]
+</code></pre>
+
+<p>If you are using a private Docker registry, you need to pull the following docker image:</p>
+
+<ul>
+<li><a href="https://hub.docker.com/r/appscode/swift">appscode/swift</a></li>
+</ul>
+
+<p>To pass the address of your private registry and optionally a image pull secret use flags <code>--docker-registry</code> and <code>--image-pull-secret</code> respectively.</p>
+
+<pre><code class="language-console">$ kubectl create namespace swift
+$ curl -fsSL https://raw.githubusercontent.com/appscode/swift/0.10.0/hack/deploy/swift.sh \
+    | bash -s -- --docker-registry=MY_REGISTRY [--image-pull-secret=SECRET_NAME] [--rbac]
+</code></pre>
+
+<p>For detailed instructions on how to deploy <strong>Swift in a RBAC enabled cluster</strong>, please visit <a href="/products/swift/0.10.0/setup/rbac">here</a>.</p>
+
+<p></div>
+<div class="tab-pane fade" id="helm" role="tabpanel" aria-labelledby="helm-tab"></p>
+
+<h3 id="using-helm">Using Helm</h3>
+
+<p>Swift can be installed via <a href="https://helm.sh/">Helm</a> using the <a href="https://github.com/appscode/swift/tree/0.10.0/chart/swift">chart</a> from <a href="https://github.com/appscode/charts">AppsCode Charts Repository</a>. To install the chart with the release name <code>my-release</code>:</p>
+
+<pre><code class="language-console">$ helm repo add appscode https://charts.appscode.com/stable/
+$ helm repo update
+$ helm search appscode/swift
+NAME            CHART VERSION APP VERSION DESCRIPTION
+appscode/swift  0.10.0         0.10.0       Swift by AppsCode - Ajax friendly Helm Tiller Proxy
+
+$ helm install appscode/swift --name swift --version 0.10.0
+</code></pre>
+
+<p>To see the detailed configuration options, visit <a href="https://github.com/appscode/swift/tree/0.10.0/chart/swift/">here</a>.</p>
+
+<p></div></p>
+
+<h3 id="verify-installation">Verify installation</h3>
+
+<p>To check if Swift proxy pods have started, run the following command:</p>
+
+<pre><code class="language-console">$ kubectl get pods --all-namespaces -l app=swift --watch
+</code></pre>
+
+<p>Once the proxy pods are running, you can cancel the above command by typing <code>Ctrl+C</code>.</p>
+
+<h2 id="kubeconfig-connector"><code>kubeconfig</code> Connector</h2>
+
+<p>Swift can proxy Tiller server running in a remote Kubernetes cluster using <code>kubeconfig</code> connector. In this mode, Swift open a tunnel between its own pod and Tiller server pod using Kubernetes api server. This is similar to how Helm cli connects to Tiller server today.</p>
+
+<p>For example, if you are running a <a href="https://github.com/kubernetes/minikube">Minikube</a> cluster locally, you can use the steps below to connect to a Tiller server running inside minikjube cluster from your workstation.</p>
+
+<pre><code class="language-console">$ minikube start
+
+$ helm init
+
+$ swift run --v=3 --connector=kubeconfig --kube-context=minikube
+I0806 04:38:03.261749   20867 logs.go:19] FLAG: --alsologtostderr=&quot;false&quot;
+I0806 04:38:03.261796   20867 logs.go:19] FLAG: --enable-analytics=&quot;true&quot;
+I0806 04:38:03.261809   20867 logs.go:19] FLAG: --api-domain=&quot;&quot;
+I0806 04:38:03.261826   20867 logs.go:19] FLAG: --caCertFile=&quot;&quot;
+I0806 04:38:03.261835   20867 logs.go:19] FLAG: --certFile=&quot;&quot;
+I0806 04:38:03.261845   20867 logs.go:19] FLAG: --connector=&quot;kubeconfig&quot;
+I0806 04:38:03.261853   20867 logs.go:19] FLAG: --cors-origin-allow-subdomain=&quot;false&quot;
+I0806 04:38:03.261862   20867 logs.go:19] FLAG: --cors-origin-host=&quot;&quot;
+I0806 04:38:03.261870   20867 logs.go:19] FLAG: --enable-cors=&quot;false&quot;
+I0806 04:38:03.261879   20867 logs.go:19] FLAG: --enable-java-client=&quot;false&quot;
+I0806 04:38:03.261888   20867 logs.go:19] FLAG: --help=&quot;false&quot;
+I0806 04:38:03.261897   20867 logs.go:19] FLAG: --keyFile=&quot;&quot;
+I0806 04:38:03.261905   20867 logs.go:19] FLAG: --kube-context=&quot;minikube&quot;
+I0806 04:38:03.261916   20867 logs.go:19] FLAG: --log_backtrace_at=&quot;:0&quot;
+I0806 04:38:03.261925   20867 logs.go:19] FLAG: --log_dir=&quot;&quot;
+I0806 04:38:03.261935   20867 logs.go:19] FLAG: --logtostderr=&quot;true&quot;
+I0806 04:38:03.261943   20867 logs.go:19] FLAG: --plaintext-addr=&quot;:9855&quot;
+I0806 04:38:03.261952   20867 logs.go:19] FLAG: --secure-addr=&quot;:50055&quot;
+I0806 04:38:03.261961   20867 logs.go:19] FLAG: --stderrthreshold=&quot;2&quot;
+I0806 04:38:03.261970   20867 logs.go:19] FLAG: --tiller-endpoint=&quot;&quot;
+I0806 04:38:03.261978   20867 logs.go:19] FLAG: --v=&quot;3&quot;
+I0806 04:38:03.261987   20867 logs.go:19] FLAG: --vmodule=&quot;&quot;
+I0806 04:38:03.261996   20867 logs.go:19] FLAG: --web-addr=&quot;:56790&quot;
+I0806 04:38:03.409223   20867 server.go:241] Configuration: {
+  &quot;SecureAddr&quot;: &quot;:50055&quot;,
+  &quot;PlaintextAddr&quot;: &quot;:9855&quot;,
+  &quot;EnableJavaClient&quot;: false,
+  &quot;APIDomain&quot;: &quot;&quot;,
+  &quot;CACertFile&quot;: &quot;&quot;,
+  &quot;CertFile&quot;: &quot;&quot;,
+  &quot;KeyFile&quot;: &quot;&quot;,
+  &quot;EnableCORS&quot;: false,
+  &quot;CORSOriginHost&quot;: &quot;&quot;,
+  &quot;CORSOriginAllowSubdomain&quot;: false,
+  &quot;WebAddr&quot;: &quot;:56790&quot;,
+  &quot;EnableAnalytics&quot;: true,
+  &quot;Connector&quot;: &quot;kubeconfig&quot;,
+  &quot;TillerEndpoint&quot;: &quot;&quot;,
+  &quot;KubeContext&quot;: &quot;minikube&quot;
+ }
+I0806 04:38:03.409512   20867 server.go:89] [PROXYSERVER] Sarting Proxy Server at port [::]:9855
+I0806 04:38:03.409591   20867 server.go:168] Registering endpoint: RegisterReleaseServiceHandlerFromEndpoint
+I0806 04:38:03.409506   20867 server.go:83] [GRPCSERVER] Starting gRPC Server at addr [::]:9855
+I0806 04:38:03.409737   20867 server.go:120] Registering server: *release.Server
+</code></pre>
+
+<h2 id="direct-connector"><code>direct</code> Connector</h2>
+
+<p>Swift can proxy Tiller server by directly connecting to it using <code>direct</code> connector.</p>
+
+<pre><code class="language-console">$ swift run --v=3 --connector=direct --tiller-endpoint=http://127.0.0.1:44134
+</code></pre>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#installation-guide">Installation Guide</a>
+<ul>
+<li><a href="#incluster-connector"><code>incluster</code> Connector</a>
+<ul>
+<li><a href="#using-script">Using Script</a>
+<ul>
+<li><a href="#customizing-installer">Customizing Installer</a></li>
+</ul></li>
+<li><a href="#using-helm">Using Helm</a></li>
+<li><a href="#verify-installation">Verify installation</a></li>
+</ul></li>
+<li><a href="#kubeconfig-connector"><code>kubeconfig</code> Connector</a></li>
+<li><a href="#direct-connector"><code>direct</code> Connector</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

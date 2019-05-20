@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                      
+                        
+                          <a href="/products/searchlight/5.1.1/" class=" navbar-item">Welcome</a>
+                        
+                      
+                        
+                          <a href="/products/searchlight/5.1.1/concepts/" class=" navbar-item">Concepts</a>
+                        
+                      
+                        
+                          <a href="/products/searchlight/5.1.1/setup/" class=" navbar-item">Setup</a>
+                        
+                      
+                        
+                          <a href="/products/searchlight/5.1.1/guides/" class=" is-active  navbar-item">Guides</a>
+                        
+                      
+                        
+                          <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                              Reference
+                            </a>
+                            <div class="navbar-dropdown">
+                              
+                                
+                                  <a href="/products/searchlight/5.1.1/reference/hostfacts/" class="navbar-item">Hostfacts</a>
+                                
+                              
+                                
+                                  <a href="/products/searchlight/5.1.1/reference/hyperalert/" class="navbar-item">Hyperalert</a>
+                                
+                              
+                                
+                                  <a href="/products/searchlight/5.1.1/reference/searchlight/" class="navbar-item">Searchlight</a>
+                                
+                              
+                            </div>
+                          </div>
+                        
+                      
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+          
+          <div class="kd-version">
+            
+            <div class="control has-icons-left">
+              <div class="select">
+                
+                
+                <select>
+                  
+                    
+                    
+                      
+                        <option>master</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >8.0.0-rc.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >5.1.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option>3.0.1</option>
+                      
+                    
+                  
+                </select>
+              </div>
+              <span class="icon is-left">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          
+
+          
+            
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+
+                  
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+              
+
+                
+              
+
+                
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="4949ba2155f3e5ceada4ffbef200258e-1" >
+  <label for="4949ba2155f3e5ceada4ffbef200258e-1"><a href="/products/searchlight/5.1.1/guides/">Guides</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="4949ba2155f3e5ceada4ffbef200258e-2" checked>
+  <label for="4949ba2155f3e5ceada4ffbef200258e-2"><a>Cluster Alert</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/searchlight/5.1.1/guides/cluster-alerts/node_exists/">Node Exists</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.1/guides/cluster-alerts/pod_exists/">Pod Exists</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.1/guides/cluster-alerts/ca_cert/">CA Cert</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.1/guides/cluster-alerts/component_status/">Component Status</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.1/guides/cluster-alerts/event/">Event</a></li>
+        
+      
+        
+          <li class="is-active"><a href="/products/searchlight/5.1.1/guides/cluster-alerts/env/">Env</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.1/guides/cluster-alerts/json_path/">JSON Path</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="4949ba2155f3e5ceada4ffbef200258e-3" >
+  <label for="4949ba2155f3e5ceada4ffbef200258e-3"><a>Node Alert</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/searchlight/5.1.1/guides/node-alerts/influx_query/">Influx Query</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.1/guides/node-alerts/node_status/">Node Status</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.1/guides/node-alerts/node_volume/">Node Volume</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="4949ba2155f3e5ceada4ffbef200258e-4" >
+  <label for="4949ba2155f3e5ceada4ffbef200258e-4"><a>Pod Alert</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/searchlight/5.1.1/guides/pod-alerts/influx_query/">Influx Query</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.1/guides/pod-alerts/pod_status/">Pod Status</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.1/guides/pod-alerts/pod_exec/">Pod Exec</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.1/guides/pod-alerts/pod_volume/">Pod Volume</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="4949ba2155f3e5ceada4ffbef200258e-5" >
+  <label for="4949ba2155f3e5ceada4ffbef200258e-5"><a href="/products/searchlight/5.1.1/guides/notifiers/">Notifiers</a></label>
+</div>
+
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<blockquote>
+<p>New to Searchlight? Please start <a href="/products/searchlight/5.1.1/concepts/README">here</a>.</p>
+</blockquote>
+
+<h1 id="check-env">Check env</h1>
+
+<p>Check command <code>env</code> prints the list of environment variables in searchlight-operator pods. This check command is used to test Searchlight.</p>
+
+<h2 id="spec">Spec</h2>
+
+<p><code>env</code> check command has no variables. Execution of this command can result in following states:</p>
+
+<ul>
+<li>OK</li>
+<li>WARNING</li>
+<li>CRITICAL</li>
+<li>UNKNOWN</li>
+</ul>
+
+<h2 id="tutorial">Tutorial</h2>
+
+<h3 id="before-you-begin">Before You Begin</h3>
+
+<p>At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster. If you do not already have a cluster, you can create one by using <a href="https://github.com/kubernetes/minikube">Minikube</a>.</p>
+
+<p>Now, install Searchlight operator in your cluster following the steps <a href="/products/searchlight/5.1.1/setup/install">here</a>.</p>
+
+<p>To keep things isolated, this tutorial uses a separate namespace called <code>demo</code> throughout this tutorial. Run the following command to prepare your cluster for this tutorial:</p>
+
+<pre><code class="language-console">$ kubectl create namespace demo
+namespace &quot;demo&quot; created
+
+$ kubectl get namespaces
+NAME          STATUS    AGE
+default       Active    6h
+kube-public   Active    6h
+kube-system   Active    6h
+demo          Active    4m
+</code></pre>
+
+<h3 id="create-alert">Create Alert</h3>
+
+<p>In this tutorial, we are going to create an alert to check <code>env</code>.</p>
+
+<pre><code class="language-yaml">$ cat ./docs/examples/cluster-alerts/env/demo-0.yaml
+
+apiVersion: monitoring.appscode.com/v1alpha1
+kind: ClusterAlert
+metadata:
+  name: env-demo-0
+  namespace: demo
+spec:
+  check: env
+  checkInterval: 30s
+  alertInterval: 2m
+  notifierSecretName: notifier-config
+  receivers:
+  - notifier: Mailgun
+    state: CRITICAL
+    to: [&quot;ops@example.com&quot;]
+</code></pre>
+
+<pre><code class="language-console">$ kubectl apply -f ./docs/examples/cluster-alerts/env/demo-0.yaml 
+clusteralert &quot;env-demo-0&quot; created
+
+$ kubectl describe clusteralert env-demo-0 -n demo
+Name:		env-demo-0
+Namespace:	demo
+Labels:		&lt;none&gt;
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
+  ---------	--------	-----	----			-------------	--------	------		-------
+  6m		6m		1	Searchlight operator			Warning		BadNotifier	Bad notifier config for ClusterAlert: &quot;env-demo-0&quot;. Reason: secrets &quot;notifier-config&quot; not found
+  6m		6m		1	Searchlight operator			Normal		SuccessfulSync	Applied ClusterAlert: &quot;env-demo-0&quot;
+</code></pre>
+
+<p>Voila! <code>env</code> command has been synced to Icinga2. Searchlight also logged a warning event, we have not created the notifier secret <code>notifier-config</code>. Please visit <a href="/products/searchlight/5.1.1/guides/notifiers">here</a> to learn how to configure notifier secret. Now, open IcingaWeb2 in your browser. You should see a Icinga host <code>demo@cluster</code> and Icinga service <code>env-demo-0</code>.</p>
+
+<p><img src="/products/searchlight/5.1.1/images/cluster-alerts/env/demo-0.gif" alt="Demo of check_env" /></p>
+
+<h3 id="cleaning-up">Cleaning up</h3>
+
+<p>To cleanup the Kubernetes resources created by this tutorial, run:</p>
+
+<pre><code class="language-console">$ kubectl delete ns demo
+</code></pre>
+
+<p>If you would like to uninstall Searchlight operator, please follow the steps <a href="/products/searchlight/5.1.1/setup/uninstall">here</a>.</p>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<ul>
+<li>To periodically run various checks on nodes in a Kubernetes cluster, use <a href="/products/searchlight/5.1.1/concepts/alert-types/node-alert">NodeAlerts</a>.</li>
+<li>To periodically run various checks on pods in a Kubernetes cluster, use <a href="/products/searchlight/5.1.1/concepts/alert-types/pod-alert">PodAlerts</a>.</li>
+<li>See the list of supported notifiers <a href="/products/searchlight/5.1.1/guides/notifiers">here</a>.</li>
+<li>Wondering what features are coming next? Please visit <a href="/products/searchlight/5.1.1/roadmap">here</a>.</li>
+<li>Want to hack on Searchlight? Check our <a href="/products/searchlight/5.1.1/CONTRIBUTING">contribution guidelines</a>.</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#check-env">Check env</a>
+<ul>
+<li><a href="#spec">Spec</a></li>
+<li><a href="#tutorial">Tutorial</a>
+<ul>
+<li><a href="#before-you-begin">Before You Begin</a></li>
+<li><a href="#create-alert">Create Alert</a></li>
+<li><a href="#cleaning-up">Cleaning up</a></li>
+</ul></li>
+<li><a href="#next-steps">Next Steps</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

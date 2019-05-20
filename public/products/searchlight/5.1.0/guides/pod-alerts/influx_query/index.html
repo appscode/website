@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                      
+                        
+                          <a href="/products/searchlight/5.1.0/" class=" navbar-item">Welcome</a>
+                        
+                      
+                        
+                          <a href="/products/searchlight/5.1.0/concepts/" class=" navbar-item">Concepts</a>
+                        
+                      
+                        
+                          <a href="/products/searchlight/5.1.0/setup/" class=" navbar-item">Setup</a>
+                        
+                      
+                        
+                          <a href="/products/searchlight/5.1.0/guides/" class=" is-active  navbar-item">Guides</a>
+                        
+                      
+                        
+                          <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                              Reference
+                            </a>
+                            <div class="navbar-dropdown">
+                              
+                                
+                                  <a href="/products/searchlight/5.1.0/reference/hostfacts/" class="navbar-item">Hostfacts</a>
+                                
+                              
+                                
+                                  <a href="/products/searchlight/5.1.0/reference/hyperalert/" class="navbar-item">Hyperalert</a>
+                                
+                              
+                                
+                                  <a href="/products/searchlight/5.1.0/reference/searchlight/" class="navbar-item">Searchlight</a>
+                                
+                              
+                            </div>
+                          </div>
+                        
+                      
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+          
+          <div class="kd-version">
+            
+            <div class="control has-icons-left">
+              <div class="select">
+                
+                
+                <select>
+                  
+                    
+                    
+                      
+                        <option>master</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >8.0.0-rc.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >5.1.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option>3.0.1</option>
+                      
+                    
+                  
+                </select>
+              </div>
+              <span class="icon is-left">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          
+
+          
+            
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+
+                  
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+              
+
+                
+              
+
+                
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="69cafde87bb11cf2b1e85871f9958fef-1" >
+  <label for="69cafde87bb11cf2b1e85871f9958fef-1"><a href="/products/searchlight/5.1.0/guides/">Guides</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="69cafde87bb11cf2b1e85871f9958fef-2" >
+  <label for="69cafde87bb11cf2b1e85871f9958fef-2"><a>Cluster Alert</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/searchlight/5.1.0/guides/cluster-alerts/node_exists/">Node Exists</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.0/guides/cluster-alerts/pod_exists/">Pod Exists</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.0/guides/cluster-alerts/ca_cert/">CA Cert</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.0/guides/cluster-alerts/component_status/">Component Status</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.0/guides/cluster-alerts/event/">Event</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.0/guides/cluster-alerts/env/">Env</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.0/guides/cluster-alerts/json_path/">JSON Path</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="69cafde87bb11cf2b1e85871f9958fef-3" >
+  <label for="69cafde87bb11cf2b1e85871f9958fef-3"><a>Node Alert</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/searchlight/5.1.0/guides/node-alerts/influx_query/">Influx Query</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.0/guides/node-alerts/node_status/">Node Status</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.0/guides/node-alerts/node_volume/">Node Volume</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="69cafde87bb11cf2b1e85871f9958fef-4" checked>
+  <label for="69cafde87bb11cf2b1e85871f9958fef-4"><a>Pod Alert</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li class="is-active"><a href="/products/searchlight/5.1.0/guides/pod-alerts/influx_query/">Influx Query</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.0/guides/pod-alerts/pod_status/">Pod Status</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.0/guides/pod-alerts/pod_exec/">Pod Exec</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/5.1.0/guides/pod-alerts/pod_volume/">Pod Volume</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="69cafde87bb11cf2b1e85871f9958fef-5" >
+  <label for="69cafde87bb11cf2b1e85871f9958fef-5"><a href="/products/searchlight/5.1.0/guides/notifiers/">Notifiers</a></label>
+</div>
+
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<blockquote>
+<p>New to Searchlight? Please start <a href="/products/searchlight/5.1.0/concepts/README">here</a>.</p>
+</blockquote>
+
+<h1 id="check-influx-query">Check influx_query</h1>
+
+<p>Check command <code>influx_query</code> is used to check InfluxDB query result.</p>
+
+<h2 id="spec">Spec</h2>
+
+<p><code>influx_query</code> check command has the following variables.</p>
+
+<ul>
+<li><code>influxHost</code> - URL of InfluxDB host to query</li>
+<li><code>secretName</code> - Name of Secret used for InfluxDB authentication</li>
+<li><code>A</code> - InfluxDB query (A). Query result will be assigned to variable (A)</li>
+<li><code>B</code> - InfluxDB query (B). Query result will be assigned to variable (B)</li>
+<li><code>C</code> - InfluxDB query &copy;. Query result will be assigned to variable &copy;</li>
+<li><code>D</code> - InfluxDB query (D). Query result will be assigned to variable (D)</li>
+<li><code>E</code> - InfluxDB query (E). Query result will be assigned to variable (E)</li>
+<li><code>R</code> - Equation [A+B] to get result from queries. Result will be assigned to variable &reg;</li>
+<li><code>warning</code> - Condition for warning, compare with result. (Example: R &gt; 75)</li>
+<li><code>critical</code> - Condition for critical, compare with result. (Example: R &gt; 90)</li>
+</ul>
+
+<p>Here <code>A</code>, <code>B</code>, <code>C</code>, <code>D</code>, <code>E</code> are processed as a GO template generating the final InfluxDB query. The available template variables are: PodName, PodIP and Namespace.</p>
+
+<p>Execution of this command can result in following states:</p>
+
+<ul>
+<li>OK</li>
+<li>WARNING</li>
+<li>CRITICAL</li>
+<li>UNKNOWN</li>
+</ul>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<ul>
+<li>To periodically run various checks on a Kubernetes cluster, use <a href="/products/searchlight/5.1.0/concepts/alert-types/cluster-alert">ClusterAlerts</a>.</li>
+<li>To periodically run various checks on nodes in a Kubernetes cluster, use <a href="/products/searchlight/5.1.0/concepts/alert-types/node-alert">NodeAlerts</a>.</li>
+<li>See the list of supported notifiers <a href="/products/searchlight/5.1.0/guides/notifiers">here</a>.</li>
+<li>Wondering what features are coming next? Please visit <a href="/products/searchlight/5.1.0/roadmap">here</a>.</li>
+<li>Want to hack on Searchlight? Check our <a href="/products/searchlight/5.1.0/CONTRIBUTING">contribution guidelines</a>.</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#check-influx-query">Check influx_query</a>
+<ul>
+<li><a href="#spec">Spec</a></li>
+<li><a href="#next-steps">Next Steps</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

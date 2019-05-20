@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                      
+                        
+                          <a href="/products/searchlight/7.0.0-rc.0/" class=" navbar-item">Welcome</a>
+                        
+                      
+                        
+                          <a href="/products/searchlight/7.0.0-rc.0/concepts/" class=" navbar-item">Concepts</a>
+                        
+                      
+                        
+                          <a href="/products/searchlight/7.0.0-rc.0/setup/" class=" is-active  navbar-item">Setup</a>
+                        
+                      
+                        
+                          <a href="/products/searchlight/7.0.0-rc.0/guides/" class=" navbar-item">Guides</a>
+                        
+                      
+                        
+                          <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                              Reference
+                            </a>
+                            <div class="navbar-dropdown">
+                              
+                                
+                                  <a href="/products/searchlight/7.0.0-rc.0/reference/hostfacts/" class="navbar-item">Hostfacts</a>
+                                
+                              
+                                
+                                  <a href="/products/searchlight/7.0.0-rc.0/reference/hyperalert/" class="navbar-item">Hyperalert</a>
+                                
+                              
+                                
+                                  <a href="/products/searchlight/7.0.0-rc.0/reference/searchlight/" class="navbar-item">Searchlight</a>
+                                
+                              
+                            </div>
+                          </div>
+                        
+                      
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+          
+          <div class="kd-version">
+            
+            <div class="control has-icons-left">
+              <div class="select">
+                
+                
+                <select>
+                  
+                    
+                    
+                      
+                        <option>master</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >8.0.0-rc.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >5.1.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option>3.0.1</option>
+                      
+                    
+                  
+                </select>
+              </div>
+              <span class="icon is-left">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          
+
+          
+            
+            
+              
+            
+              
+            
+              
+                
+                  
+
+                  
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              
+            
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+              
+
+                
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="504fe0ff4ff047a28ec60794b146a738-1" >
+  <label for="504fe0ff4ff047a28ec60794b146a738-1"><a href="/products/searchlight/7.0.0-rc.0/setup/">Setup</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="504fe0ff4ff047a28ec60794b146a738-2" checked>
+  <label for="504fe0ff4ff047a28ec60794b146a738-2"><a href="/products/searchlight/7.0.0-rc.0/setup/install/">Install</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="504fe0ff4ff047a28ec60794b146a738-3" >
+  <label for="504fe0ff4ff047a28ec60794b146a738-3"><a href="/products/searchlight/7.0.0-rc.0/setup/hostfacts/">Install Hostfacts</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="504fe0ff4ff047a28ec60794b146a738-4" >
+  <label for="504fe0ff4ff047a28ec60794b146a738-4"><a href="/products/searchlight/7.0.0-rc.0/setup/certificate/">Generate Certificate</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="504fe0ff4ff047a28ec60794b146a738-5" >
+  <label for="504fe0ff4ff047a28ec60794b146a738-5"><a href="/products/searchlight/7.0.0-rc.0/setup/uninstall/">Uninstall</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="504fe0ff4ff047a28ec60794b146a738-6" >
+  <label for="504fe0ff4ff047a28ec60794b146a738-6"><a>Developer Guide</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/searchlight/7.0.0-rc.0/setup/developer-guide/overview/">Overview</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0-rc.0/setup/developer-guide/release/">Release</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<blockquote>
+<p>New to Searchlight? Please start <a href="/products/searchlight/7.0.0-rc.0/concepts/README">here</a>.</p>
+</blockquote>
+
+<h1 id="installation-guide">Installation Guide</h1>
+
+<p>Searchlight operator can be installed via a script or as a Helm chart.
+<a href="https://www.youtube-nocookie.com/embed/Po4yXrQuHtQ"><img src="https://img.youtube.com/vi/Po4yXrQuHtQ/0.jpg" alt="Install Searchlight" /></a></p>
+
+<h2 id="using-script">Using Script</h2>
+
+<p>To install Searchlight in your Kubernetes cluster, run the following command:</p>
+
+<pre><code class="language-console">$ curl -fsSL https://raw.githubusercontent.com/appscode/searchlight/7.0.0-rc.0/hack/deploy/searchlight.sh | bash
+</code></pre>
+
+<p>After successful installation, you should have a <code>searchlight-operator-***</code> pod running in the <code>kube-system</code> namespace.</p>
+
+<pre><code class="language-console">$ kubectl get pods -n kube-system | grep searchlight-operator
+searchlight-operator-6945bcd777-4jdv7   3/3       Running   0          2m
+</code></pre>
+
+<h3 id="customizing-installer">Customizing Installer</h3>
+
+<p>The installer script and associated yaml files can be found in the <a href="https://github.com/appscode/searchlight/tree/7.0.0-rc.0/hack/deploy">/hack/deploy</a> folder. You can see the full list of flags available to installer using <code>-h</code> flag.</p>
+
+<pre><code class="language-console">$ curl -fsSL https://raw.githubusercontent.com/appscode/searchlight/7.0.0-rc.0/hack/deploy/searchlight.sh | bash -s -- -h
+searchlight.sh - install searchlight operator
+
+searchlight.sh [options]
+
+options:
+-h, --help                         show brief help
+-n, --namespace=NAMESPACE          specify namespace (default: kube-system)
+    --rbac                         create RBAC roles and bindings (default: true)
+    --docker-registry              docker registry used to pull searchlight images (default: appscode)
+    --image-pull-secret            name of secret used to pull searchlight operator images
+    --run-on-master                run searchlight operator on master
+    --enable-validating-webhook    enable/disable validating webhooks for Searchlight CRD
+    --icinga-api-password          password used by icinga2 api (if unset, a random password will be generated and used)
+    --enable-analytics             send usage events to Google Analytics (default: true)
+    --uninstall                    uninstall searchlight
+    --purge                        purges searchlight crd objects and crds
+</code></pre>
+
+<p>If you would like to run Searchlight operator pod in <code>master</code> instances, pass the <code>--run-on-master</code> flag:</p>
+
+<pre><code class="language-console">$ curl -fsSL https://raw.githubusercontent.com/appscode/searchlight/7.0.0-rc.0/hack/deploy/searchlight.sh \
+    | bash -s -- --run-on-master [--rbac]
+</code></pre>
+
+<p>Searchlight operator will be installed in a <code>kube-system</code> namespace by default. If you would like to run Searchlight operator pod in <code>searchlight</code> namespace, pass the <code>--namespace=searchlight</code> flag:</p>
+
+<pre><code class="language-console">$ kubectl create namespace searchlight
+$ curl -fsSL https://raw.githubusercontent.com/appscode/searchlight/7.0.0-rc.0/hack/deploy/searchlight.sh \
+    | bash -s -- --namespace=searchlight [--run-on-master] [--rbac]
+</code></pre>
+
+<p>If you are using a private Docker registry, you need to pull the following 3 docker images:</p>
+
+<ul>
+<li><a href="https://hub.docker.com/r/appscode/searchlight">appscode/searchlight</a></li>
+<li><a href="https://hub.docker.com/r/appscode/icinga">appscode/icinga</a></li>
+<li><a href="https://hub.docker.com/r/appscode/postgres">appscode/postgres</a></li>
+</ul>
+
+<p>To pass the address of your private registry and optionally a image pull secret use flags <code>--docker-registry</code> and <code>--image-pull-secret</code> respectively.</p>
+
+<pre><code class="language-console">$ kubectl create namespace searchlight
+$ curl -fsSL https://raw.githubusercontent.com/appscode/searchlight/7.0.0-rc.0/hack/deploy/searchlight.sh \
+    | bash -s -- --docker-registry=MY_REGISTRY [--image-pull-secret=SECRET_NAME] [--rbac]
+</code></pre>
+
+<p>Searchlight implements a <a href="https://kubernetes.io/docs/admin/admission-controllers/#validatingadmissionwebhook-alpha-in-18-beta-in-19">validating admission webhook</a> to validate Searchlight CRDs. This is enabled by default for Kubernetes 1.9.0 or later releases. To disable this feature, pass the <code>--enable-validating-webhook=false</code> flag.</p>
+
+<pre><code class="language-console">$ curl -fsSL https://raw.githubusercontent.com/appscode/searchlight/7.0.0-rc.0/hack/deploy/searchlight.sh \
+    | bash -s -- --enable-admission-webhook [--rbac]
+</code></pre>
+
+<h2 id="using-helm">Using Helm</h2>
+
+<p>Searchlight can be installed via <a href="https://helm.sh/">Helm</a> using the <a href="https://github.com/appscode/searchlight/blob/master/chart/searchlight">chart</a> from <a href="https://github.com/appscode/charts">AppsCode Charts Repository</a>. To install the chart with the release name <code>my-release</code>:</p>
+
+<pre><code class="language-console">$ helm repo add appscode https://charts.appscode.com/stable/
+$ helm repo update
+$ helm search appscode/searchlight
+NAME            CHART VERSION       APP VERSION DESCRIPTION
+appscode/searchlight  7.0.0-rc.0    7.0.0-rc.0  Searchlight by AppsCode - Alerts for Kubernetes
+
+# Kubernetes 1.8.x
+$ helm install appscode/searchlight --name searchlight-operator --version 7.0.0-rc.0
+
+# Kubernetes 1.9.0 or later
+$ helm install appscode/searchlight --name searchlight-operator  --version 7.0.0-rc.0 \
+  --set apiserver.ca=&quot;$(onessl get kube-ca)&quot; \
+  --set apiserver.enableValidatingWebhook=true
+</code></pre>
+
+<p>To install <code>onessl</code>, run the following commands:</p>
+
+<pre><code class="language-console"># Mac OSX amd64:
+curl -fsSL -o onessl https://github.com/kubepack/onessl/releases/download/0.3.0/onessl-darwin-amd64 \
+  &amp;&amp; chmod +x onessl \
+  &amp;&amp; sudo mv onessl /usr/local/bin/
+
+# Linux amd64:
+curl -fsSL -o onessl https://github.com/kubepack/onessl/releases/download/0.3.0/onessl-linux-amd64 \
+  &amp;&amp; chmod +x onessl \
+  &amp;&amp; sudo mv onessl /usr/local/bin/
+
+# Linux arm64:
+curl -fsSL -o onessl https://github.com/kubepack/onessl/releases/download/0.3.0/onessl-linux-arm64 \
+  &amp;&amp; chmod +x onessl \
+  &amp;&amp; sudo mv onessl /usr/local/bin/
+</code></pre>
+
+<p>To see the detailed configuration options, visit <a href="https://github.com/appscode/searchlight/tree/master/chart/searchlight">here</a>.</p>
+
+<h3 id="installing-in-gke-cluster">Installing in GKE Cluster</h3>
+
+<p>If you are installing Searchlight on a GKE cluster, you will need cluster admin permissions to install Searchlight operator. Run the following command to grant admin permision to the cluster.</p>
+
+<pre><code class="language-console"># get current google identity
+$ gcloud info | grep Account
+Account: [user@example.org]
+
+$ kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-admin --user=user@example.org
+</code></pre>
+
+<h2 id="verify-installation">Verify installation</h2>
+
+<p>To check if Searchlight operator pods have started, run the following command:</p>
+
+<pre><code class="language-console">$ kubectl get pods --all-namespaces -l app=searchlight --watch
+</code></pre>
+
+<p>Once the operator pods are running, you can cancel the above command by typing <code>Ctrl+C</code>.</p>
+
+<p>Now, to confirm CRD groups have been registered by the operator, run the following command:</p>
+
+<pre><code class="language-console">$ kubectl get crd -l app=searchlight
+</code></pre>
+
+<h2 id="accesing-icingaweb2">Accesing IcingaWeb2</h2>
+
+<p>Icinga comes with its own web dashboard called IcingaWeb. You can access IcingaWeb on your workstation by forwarding port <code>60006</code> of Searchlight operator pod.</p>
+
+<pre><code class="language-console">$ kubectl get pods --all-namespaces -l app=searchlight
+NAME                                    READY     STATUS    RESTARTS   AGE
+searchlight-operator-1987091405-ghj5b   3/3       Running   0          1m
+
+$ kubectl port-forward searchlight-operator-1987091405-ghj5b -n kube-system 60006
+Forwarding from 127.0.0.1:60006 -&gt; 60006
+E0728 04:07:28.237822   10898 portforward.go:212] Unable to create listener: Error listen tcp6 [::1]:60006: bind: cannot assign requested address
+Handling connection for 60006
+Handling connection for 60006
+^C⏎
+</code></pre>
+
+<p>Now, open URL <a href="http://127.0.0.1:60006">http://127.0.0.1:60006</a> on your browser. To login, use username <code>admin</code> and password <code>changeit</code>. If you want to change the password, read the next section.</p>
+
+<h2 id="configuring-icinga">Configuring Icinga</h2>
+
+<p>Searchlight installation scripts above creates a Secret called <code>searchlight-operator</code> to store icinga configuration. This following keys are supported in this Secret.</p>
+
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ICINGA_WEB_UI_PASSWORD</td>
+<td><em><strong>changeit</strong></em></td>
+<td>Password of <code>admin</code> user in IcingaWeb2</td>
+</tr>
+
+<tr>
+<td>ICINGA_API_PASSWORD</td>
+<td>auto-generated</td>
+<td>Password of icinga api user <code>icingaapi</code></td>
+</tr>
+
+<tr>
+<td>ICINGA_CA_CERT</td>
+<td>auto-generated</td>
+<td>PEM encoded CA certificate used for icinga api endpoint</td>
+</tr>
+
+<tr>
+<td>ICINGA_SERVER_CERT</td>
+<td>auto-generated</td>
+<td>PEM encoded certificate used for icinga api endpoint</td>
+</tr>
+
+<tr>
+<td>ICINGA_SERVER_KEY</td>
+<td>auto-generated</td>
+<td>PEM encoded private key used for icinga api endpoint</td>
+</tr>
+
+<tr>
+<td>ICINGA_IDO_PASSWORD</td>
+<td>auto-generated</td>
+<td>Password of postgres user <code>icingaido</code></td>
+</tr>
+
+<tr>
+<td>ICINGA_WEB_PASSWORD</td>
+<td>auto-generated</td>
+<td>Password of postgres user <code>icingaweb</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>To change the <code>admin</code> user login password in IcingaWeb, change the value of <code>ICINGA_WEB_UI_PASSWORD</code> key in Secret <code>searchlight-operator</code> and restart Searchlight operator pod(s).</p>
+
+<pre><code class="language-console">$ kubectl edit secret searchlight-operator -n kube-system
+# Update the value of ICINGA_WEB_UI_PASSWORD key
+
+$ kubectl get pods --all-namespaces -l app=searchlight
+NAME                                    READY     STATUS    RESTARTS   AGE
+searchlight-operator-1987091405-ghj5b   3/3       Running   0          1m
+
+$ kubectl delete pods -n kube-system searchlight-operator-1987091405-ghj5b
+pod &quot;searchlight-operator-1987091405-ghj5b&quot; deleted
+</code></pre>
+
+<h2 id="configuring-rbac">Configuring RBAC</h2>
+
+<p>Searchlight introduces the following Kubernetes objects:</p>
+
+<table>
+<thead>
+<tr>
+<th>API Group</th>
+<th>Kinds</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>monitoring.appscode.com</td>
+<td><code>ClusterAlert</code><br/><code>NodeAlert</code><br/><code>PodAlert</code><br/><code>Incident</code></td>
+</tr>
+
+<tr>
+<td>incidents.monitoring.appscode.com</td>
+<td><code>Acknowledgement</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>Searchlight installer will create 3 user facing cluster roles:</p>
+
+<table>
+<thead>
+<tr>
+<th>ClusterRole</th>
+<th>Aggregates To</th>
+<th>Desription</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>appscode:searchlight:edit</td>
+<td>admin</td>
+<td>Allows admin access to Searchlight objects, intended to be granted within a namespace using a RoleBinding. This grants ability to create incidents manually.</td>
+</tr>
+
+<tr>
+<td>appscode:searchlight:edit</td>
+<td>edit</td>
+<td>Allows edit access to Searchlight objects, intended to be granted within a namespace using a RoleBinding.</td>
+</tr>
+
+<tr>
+<td>appscode:searchlight:view</td>
+<td>view</td>
+<td>Allows read-only access to Searchlight objects, intended to be granted within a namespace using a RoleBinding.</td>
+</tr>
+</tbody>
+</table>
+
+<p>These user facing roles supports <a href="https://kubernetes.io/docs/admin/authorization/rbac/#aggregated-clusterroles">ClusterRole Aggregation</a> feature in Kubernetes 1.9 or later clusters.</p>
+
+<h2 id="using-kubectl">Using kubectl</h2>
+
+<pre><code class="language-console"># List all Searchlight objects
+$ kubectl get clusteralerts,nodealerts,podalerts --all-namespaces
+$ kubectl get ca,noa,poa --all-namespaces
+
+# List Searchlight objects for a namespace
+$ kubectl get clusteralerts,nodealerts,podalerts -n &lt;namespace&gt;
+$ kubectl get ca,noa,poa -n &lt;namespace&gt;
+
+# Get Searchlight object YAML
+$ kubectl get podalert -n &lt;namespace&gt; &lt;name&gt; -o yaml
+$ kubectl get poa -n &lt;namespace&gt; &lt;name&gt; -o yaml
+
+# Describe Searchlight object. Very useful to debug problems.
+$ kubectl describe podalert -n &lt;namespace&gt; &lt;name&gt;
+$ kubectl describe poa -n &lt;namespace&gt; &lt;name&gt;
+</code></pre>
+
+<h2 id="detect-searchlight-version">Detect Searchlight version</h2>
+
+<p>To detect Searchlight version, exec into the operator pod and run <code>searchlight version</code> command.</p>
+
+<pre><code class="language-console">$ POD_NAMESPACE=kube-system
+$ POD_NAME=$(kubectl get pods -n $POD_NAMESPACE -l app=searchlight -o jsonpath={.items[0].metadata.name})
+$ kubectl exec -it $POD_NAME -c operator -n $POD_NAMESPACE searchlight version
+
+Version = 7.0.0-rc.0
+VersionStrategy = tag
+Os = alpine
+Arch = amd64
+CommitHash = 9442863beb09a50a2c3818ab586fa5b1541fddf1
+GitBranch = release-4.0
+GitTag = 7.0.0-rc.0
+CommitTimestamp = 2017-09-26T03:00:58
+</code></pre>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#installation-guide">Installation Guide</a>
+<ul>
+<li><a href="#using-script">Using Script</a>
+<ul>
+<li><a href="#customizing-installer">Customizing Installer</a></li>
+</ul></li>
+<li><a href="#using-helm">Using Helm</a>
+<ul>
+<li><a href="#installing-in-gke-cluster">Installing in GKE Cluster</a></li>
+</ul></li>
+<li><a href="#verify-installation">Verify installation</a></li>
+<li><a href="#accesing-icingaweb2">Accesing IcingaWeb2</a></li>
+<li><a href="#configuring-icinga">Configuring Icinga</a></li>
+<li><a href="#configuring-rbac">Configuring RBAC</a></li>
+<li><a href="#using-kubectl">Using kubectl</a></li>
+<li><a href="#detect-searchlight-version">Detect Searchlight version</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

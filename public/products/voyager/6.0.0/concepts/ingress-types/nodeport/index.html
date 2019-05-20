@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                      
+                        
+                          <a href="/products/voyager/6.0.0/" class=" navbar-item">Welcome</a>
+                        
+                      
+                        
+                          <a href="/products/voyager/6.0.0/concepts/" class=" is-active  navbar-item">Concepts</a>
+                        
+                      
+                        
+                          <a href="/products/voyager/6.0.0/setup/" class=" navbar-item">Setup</a>
+                        
+                      
+                        
+                          <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                              Guides
+                            </a>
+                            <div class="navbar-dropdown">
+                              
+                                
+                                  <a href="/products/voyager/6.0.0/guides/certificate/" class="navbar-item">Certificate</a>
+                                
+                              
+                                
+                                  <a href="/products/voyager/6.0.0/guides/ingress/" class="navbar-item">Ingress</a>
+                                
+                              
+                            </div>
+                          </div>
+                        
+                      
+                        
+                          <a href="/products/voyager/6.0.0/reference/" class=" navbar-item">Reference</a>
+                        
+                      
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+          
+          <div class="kd-version">
+            
+            <div class="control has-icons-left">
+              <div class="select">
+                
+                
+                <select>
+                  
+                    
+                    
+                      
+                        <option>master</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >10.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >9.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >8.0.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >7.4.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.3.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.2.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.1.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >7.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >6.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >5.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option>3.2.2</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                </select>
+              </div>
+              <span class="icon is-left">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          
+
+          
+            
+            
+              
+            
+              
+                
+                  
+
+                  
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              
+            
+              
+            
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="4bc3d48760cd82f97bf9f10d0b212af1-1" >
+  <label for="4bc3d48760cd82f97bf9f10d0b212af1-1"><a href="/products/voyager/6.0.0/concepts/">Concepts</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="4bc3d48760cd82f97bf9f10d0b212af1-2" >
+  <label for="4bc3d48760cd82f97bf9f10d0b212af1-2"><a href="/products/voyager/6.0.0/concepts/overview/">Overview</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="4bc3d48760cd82f97bf9f10d0b212af1-3" checked>
+  <label for="4bc3d48760cd82f97bf9f10d0b212af1-3"><a>Types of Ingress</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/6.0.0/concepts/ingress-types/loadbalancer/">LoadBalancer</a></li>
+        
+      
+        
+          <li class="is-active"><a href="/products/voyager/6.0.0/concepts/ingress-types/nodeport/">NodePort</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/6.0.0/concepts/ingress-types/hostport/">HostPort</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/6.0.0/concepts/ingress-types/internal/">Internal</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<h1 id="nodeport">NodePort</h1>
+
+<p>In <code>NodePort</code> type Ingress, HAProxy pods are exposed via a NodePort type Kubernetes service named <code>voyager-${ingress-name}</code>. To enable this, apply the <code>ingress.appscode.com/type: NodePort</code> annotation on a Ingress object.</p>
+
+<h2 id="how-it-works">How It Works</h2>
+
+<ul>
+<li>First, deploy voyager operator.</li>
+</ul>
+
+<pre><code class="language-console">curl -fsSL https://raw.githubusercontent.com/appscode/voyager/6.0.0/hack/deploy/voyager.sh \
+    | bash -s -- --provider=minikube
+</code></pre>
+
+<ul>
+<li>Then, deploy and expose a test server.</li>
+</ul>
+
+<pre><code class="language-console">$ kubectl run test-server --image=gcr.io/google_containers/echoserver:1.8
+deployment &quot;test-server&quot; created
+
+$ kubectl expose deployment test-server --type=LoadBalancer --port=80 --target-port=8080
+service &quot;test-server&quot; exposed
+</code></pre>
+
+<ul>
+<li>Now, create an Ingress with <code>ingress.appscode.com/type: NodePort</code> annotation.</li>
+</ul>
+
+<pre><code class="language-yaml">$ kubectl apply -f test-ingress.yaml
+
+apiVersion: voyager.appscode.com/v1beta1
+kind: Ingress
+metadata:
+  name: test-ingress
+  namespace: default
+  annotations:
+    ingress.appscode.com/type: NodePort
+spec:
+  rules:
+  - host: voyager.appscode.test
+    http:
+      paths:
+      - path: /foo
+        backend:
+          serviceName: test-server
+          servicePort: '80'
+</code></pre>
+
+<pre><code class="language-console">$ kubectl get pods,svc
+NAME                                       READY     STATUS    RESTARTS   AGE
+po/test-server-68ddc845cd-x7dtv            1/1       Running   0          4h
+po/voyager-test-ingress-5b758664f6-4vptr   1/1       Running   0          1m
+
+NAME                       TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+svc/kubernetes             ClusterIP      10.96.0.1        &lt;none&gt;        443/TCP        2d
+svc/test-server            LoadBalancer   10.105.13.31     &lt;pending&gt;     80:30390/TCP   21h
+svc/voyager-test-ingress   NodePort       10.107.182.219   &lt;none&gt;        80:30800/TCP   39m
+</code></pre>
+
+<pre><code class="language-console">$ minikube service --url voyager-test-ingress
+http://192.168.99.100:30800
+</code></pre>
+
+<pre><code class="language-console">$ curl -v -H 'Host: voyager.appscode.test' 192.168.99.100:30800/foo
+*   Trying 192.168.99.100...
+* Connected to 192.168.99.100 (192.168.99.100) port 30800 (#0)
+&gt; GET /foo HTTP/1.1
+&gt; Host: voyager.appscode.test
+&gt; User-Agent: curl/7.47.0
+&gt; Accept: */*
+&gt;
+&lt; HTTP/1.1 200 OK
+&lt; Date: Wed, 14 Feb 2018 09:34:30 GMT
+&lt; Content-Type: text/plain
+&lt; Transfer-Encoding: chunked
+&lt; Server: echoserver
+&lt;
+
+
+Hostname: test-server-68ddc845cd-x7dtv
+
+Pod Information:
+	-no pod information available-
+
+Server values:
+	server_version=nginx: 1.13.3 - lua: 10008
+
+Request Information:
+	client_address=172.17.0.6
+	method=GET
+	real path=/foo
+	query=
+	request_version=1.1
+	request_uri=http://voyager.appscode.test:8080/foo
+
+Request Headers:
+	accept=*/*
+	connection=close
+	host=voyager.appscode.test
+	user-agent=curl/7.47.0
+	x-forwarded-for=172.17.0.1
+
+Request Body:
+	-no body in request-
+
+* Connection #0 to host 192.168.99.100 left intact
+</code></pre>
+
+<h2 id="external-ip">External IP</h2>
+
+<p>If you are using NodePort type Ingress, you can specify <a href="https://kubernetes.io/docs/concepts/services-networking/service/#external-ips"><code>externalIPs</code></a> for the NodePort service used to export HAProxy pods.</p>
+
+<p>If you are running Voyager as Ingress controller in your <code>baremetal</code> cluster and want to assing a VIP to the HAProxy service for a highly available Ingress setup, you should use this option.</p>
+
+<p>Below is an example Ingress yaml that shows how to specify externalIPs:</p>
+
+<pre><code class="language-yaml">apiVersion: voyager.appscode.com/v1beta1
+kind: Ingress
+metadata:
+  name: test-ingress
+  namespace: default
+  annotations:
+    ingress.appscode.com/type: NodePort
+spec:
+  externalIPs:
+  - a.b.c.d
+  rules:
+  - host: voyager.appscode.test
+    http:
+      paths:
+      - path: /foo
+        backend:
+          serviceName: test-server
+          servicePort: '80'
+</code></pre>
+
+<h2 id="understanding-ingress-appscode-com-use-node-port-annotation">Understanding <code>ingress.appscode.com/use-node-port</code> annotation</h2>
+
+<p>When you are using <code>NodePort</code> type Ingress, your external clients (example, web browser) can connect to your backend services in 2 ways:</p>
+
+<ul>
+<li><p>You may expose the NodePort service using an external hardware loadbalancer (like F5) or software loadbalancer like ALB in AWS. In these scenarios, the front loadbalancer will receive connections on service port from external clients (like web browser) and connect to the HAProxy NodePorts. So, HAProxy will see that incoming traffic is using Host like <code>domain:ing-port</code>. To ensure that HAProxy matches against the NodePort, use the annotation <code>ingress.appscode.com/use-node-port: &quot;false&quot;</code>. This is also considered the the default value for this annotation. So, if you do not provide this annotation, it will be considered set to <code>false</code>.</p></li>
+
+<li><p>Using the <code>NodePort</code> assigned to the HAProxy service. In this scenarios, external traffic directly hits the HAProxy NodePort service. So, HAProxy will see that incoming traffic is using Host like <code>domain:node-port</code>. To ensure that HAProxy matches against the NodePort, use the annotation <code>ingress.appscode.com/use-node-port: &quot;true&quot;</code> .
+To ensure that HAProxy service ports stay fixed, define them in the Ingress YAML following: <a href="https://github.com/appscode/voyager/blob/master/docs/guides/ingress/configuration/node-port.md">https://github.com/appscode/voyager/blob/master/docs/guides/ingress/configuration/node-port.md</a></p></li>
+</ul>
+
+<p>Below is an example Ingress with <code>ingress.appscode.com/use-node-port</code> annotation:</p>
+
+<pre><code class="language-yaml">$ kubectl apply -f test-ingress.yaml
+
+apiVersion: voyager.appscode.com/v1beta1
+kind: Ingress
+metadata:
+  name: test-ingress
+  namespace: default
+  annotations:
+    ingress.appscode.com/type: NodePort
+    ingress.appscode.com/use-node-port: &quot;true&quot;
+spec:
+  rules:
+  - host: voyager.appscode.test
+    http:
+      paths:
+      - path: /foo
+        backend:
+          serviceName: test-server
+          servicePort: '80'
+</code></pre>
+
+<pre><code class="language-console">$ curl -v -H 'Host: voyager.appscode.test:30800' 192.168.99.100:30800/foo
+*   Trying 192.168.99.100...
+* Connected to 192.168.99.100 (192.168.99.100) port 30800 (#0)
+&gt; GET /foo HTTP/1.1
+&gt; Host: voyager.appscode.test:30800
+&gt; User-Agent: curl/7.47.0
+&gt; Accept: */*
+&gt;
+&lt; HTTP/1.1 200 OK
+&lt; Date: Wed, 14 Feb 2018 09:47:43 GMT
+&lt; Content-Type: text/plain
+&lt; Transfer-Encoding: chunked
+&lt; Server: echoserver
+&lt;
+
+
+Hostname: test-server-68ddc845cd-x7dtv
+
+Pod Information:
+	-no pod information available-
+
+Server values:
+	server_version=nginx: 1.13.3 - lua: 10008
+
+Request Information:
+	client_address=172.17.0.6
+	method=GET
+	real path=/foo
+	query=
+	request_version=1.1
+	request_uri=http://voyager.appscode.test:8080/foo
+
+Request Headers:
+	accept=*/*
+	connection=close
+	host=voyager.appscode.test:30800
+	user-agent=curl/7.47.0
+	x-forwarded-for=172.17.0.1
+
+Request Body:
+	-no body in request-
+
+* Connection #0 to host 192.168.99.100 left intact
+</code></pre>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#nodeport">NodePort</a>
+<ul>
+<li><a href="#how-it-works">How It Works</a></li>
+<li><a href="#external-ip">External IP</a></li>
+<li><a href="#understanding-ingress-appscode-com-use-node-port-annotation">Understanding <code>ingress.appscode.com/use-node-port</code> annotation</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                      
+                        
+                          <a href="/products/searchlight/7.0.0/" class=" navbar-item">Welcome</a>
+                        
+                      
+                        
+                          <a href="/products/searchlight/7.0.0/concepts/" class=" navbar-item">Concepts</a>
+                        
+                      
+                        
+                          <a href="/products/searchlight/7.0.0/setup/" class=" navbar-item">Setup</a>
+                        
+                      
+                        
+                          <a href="/products/searchlight/7.0.0/guides/" class=" is-active  navbar-item">Guides</a>
+                        
+                      
+                        
+                          <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                              Reference
+                            </a>
+                            <div class="navbar-dropdown">
+                              
+                                
+                                  <a href="/products/searchlight/7.0.0/reference/hostfacts/" class="navbar-item">Hostfacts</a>
+                                
+                              
+                                
+                                  <a href="/products/searchlight/7.0.0/reference/hyperalert/" class="navbar-item">Hyperalert</a>
+                                
+                              
+                                
+                                  <a href="/products/searchlight/7.0.0/reference/searchlight/" class="navbar-item">Searchlight</a>
+                                
+                              
+                            </div>
+                          </div>
+                        
+                      
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+          
+          <div class="kd-version">
+            
+            <div class="control has-icons-left">
+              <div class="select">
+                
+                
+                <select>
+                  
+                    
+                    
+                      
+                        <option>master</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >8.0.0-rc.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >5.1.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option>3.0.1</option>
+                      
+                    
+                  
+                </select>
+              </div>
+              <span class="icon is-left">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          
+
+          
+            
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+
+                  
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+              
+
+                
+              
+
+                
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="b6968db941fc6d617fdcdde7165956a4-1" >
+  <label for="b6968db941fc6d617fdcdde7165956a4-1"><a href="/products/searchlight/7.0.0/guides/">Guides</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b6968db941fc6d617fdcdde7165956a4-2" >
+  <label for="b6968db941fc6d617fdcdde7165956a4-2"><a>Cluster Alert</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/searchlight/7.0.0/guides/cluster-alerts/node-exists/">Node Exists</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0/guides/cluster-alerts/pod-exists/">Pod Exists</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0/guides/cluster-alerts/ca-cert/">CA Cert</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0/guides/cluster-alerts/cert/">Cert</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0/guides/cluster-alerts/component-status/">Component Status</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0/guides/cluster-alerts/event/">Event</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0/guides/cluster-alerts/json-path/">JSON Path</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b6968db941fc6d617fdcdde7165956a4-3" checked>
+  <label for="b6968db941fc6d617fdcdde7165956a4-3"><a>Searchlight Plugin</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/searchlight/7.0.0/guides/plugin/builtin-plugin/">SearchlightPlugin</a></li>
+        
+      
+        
+          <li class="is-active"><a href="/products/searchlight/7.0.0/guides/plugin/webhook-plugin/">Webhook SearchlightPlugin</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b6968db941fc6d617fdcdde7165956a4-4" >
+  <label for="b6968db941fc6d617fdcdde7165956a4-4"><a>Node Alert</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/searchlight/7.0.0/guides/node-alerts/node-status/">Node Status</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0/guides/node-alerts/node-volume/">Node Volume</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b6968db941fc6d617fdcdde7165956a4-5" >
+  <label for="b6968db941fc6d617fdcdde7165956a4-5"><a>Pod Alert</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/searchlight/7.0.0/guides/pod-alerts/pod-status/">Pod Status</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0/guides/pod-alerts/pod-exec/">Pod Exec</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0/guides/pod-alerts/pod-volume/">Pod Volume</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b6968db941fc6d617fdcdde7165956a4-6" >
+  <label for="b6968db941fc6d617fdcdde7165956a4-6"><a href="/products/searchlight/7.0.0/guides/notifiers/">Notifiers</a></label>
+</div>
+
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<blockquote>
+<p>New to SearchlightPlugin? Please start <a href="/products/searchlight/7.0.0/setup/developer-guide/webhook-plugin">here</a>.</p>
+</blockquote>
+
+<h1 id="custom-webhook-check-command">Custom Webhook Check Command</h1>
+
+<p>Since 7.0.0 release, Searchlight supports adding custom check commands using http webhook server. No longer you have to build binary and attach it inside Icinga container. Simply you can write a HTTP server and register your check command with Searchlight using <code>SearchlightPlugin</code> CRD.</p>
+
+<pre><code class="language-yaml">apiVersion: monitoring.appscode.com/v1alpha1
+kind: SearchlightPlugin
+metadata:
+  name: check-pod-count
+spec:
+  webhook:
+    namespace: default
+    name: searchlight-plugin
+  alertKinds:
+  - ClusterAlert
+  arguments:
+    vars:
+      fields:
+        warning:
+          type: integer
+        critical:
+          type: integer
+  states:
+  - OK
+  - Critical
+  - Unknown
+</code></pre>
+
+<p>The <code>.spec</code> section has following parts:</p>
+
+<h2 id="spec">Spec</h2>
+
+<p>The <code>.spec</code> section determines how the webhook server will be used by Searchlight.</p>
+
+<p><strong>spec.command</strong></p>
+
+<p><code>spec.command</code> defines the check command which will be called by Icinga. To use the webhook server, skip the command field.</p>
+
+<p><strong>spec.webhook</strong></p>
+
+<p><code>spec.webhook</code> provides information of Kubernetes <code>Service</code> for the webhook server.</p>
+
+<ul>
+<li><code>spec.webhook.namespace</code> represents the namespace of Service.</li>
+<li><code>spec.webhook.name</code> represents the name of Service.</li>
+</ul>
+
+<p><strong>spec.alertKinds</strong></p>
+
+<p><code>spec.alertKinds</code> is a required field that specifies which kinds of alerts will support this <code>CheckCommand</code>.
+Possible values are: ClusterAlert, NodeAlert and PodAlert.</p>
+
+<p><strong>spec.arguments</strong></p>
+
+<p><code>spec.arguments</code> defines arguments which will be passed to check command by Icinga.</p>
+
+<ul>
+<li><p><code>spec.arguments.vars</code> defines user-defined arguments. These arguments can be provided to create alerts.</p>
+
+<ul>
+<li><p><code>spec.arguments.vars.fields</code> is the required field which provides the list of arguments with their <code>description</code> and <code>type</code>. Here,</p>
+
+<p>arguments:
+    vars:
+      fields:
+        warning:
+          type: integer
+        critical:
+          type: integer</p>
+
+<p><code>warning</code> and <code>critical</code> are registered as user-defined variables. User can provide values for these variables while creating alerts.</p>
+
+<ul>
+<li><code>spec.arguments.vars.fields[].type</code> is required field used to define variable&rsquo;s data type. Possible values are <code>integer</code>, <code>number</code>, <code>boolean</code>, <code>string</code>, <code>duration</code>.
+&gt; Note: duration will be converted to millisecond and will be passed to webhook as Int64. Example: 5m -&gt; 300000.</li>
+<li><code>spec.arguments.vars.fields[].description</code> describes the variable.</li>
+</ul></li>
+
+<li><p><code>spec.arguments.vars.required</code> represents the list of user-defined arguments required to create Alert. If any of these required arguments is not provided, Searchlight will give validation error.</p></li>
+</ul>
+
+<p>From above example, none of these variables are required. To make variable <code>critical</code> required, need to add following</p>
+
+<pre><code>      arguments:
+        vars:
+          required:
+          - critical
+</code></pre></li>
+
+<li><p><code>spec.arguments.host</code> represents the list of Icinga host variables which will be passed to check command. <a href="https://www.icinga.com/docs/icinga2/latest/doc/03-monitoring-basics/#host-runtime-macros">Here is the list</a> of available host variables.</p></li>
+</ul>
+
+<p>Suppose, you need <code>host.check_attempt</code> to be forwarded to check command, you can add like this</p>
+
+<pre><code class="language-yaml">spec:
+  arguments:
+    host:
+      attempt: check_attempt
+</code></pre>
+
+<p>Here,</p>
+
+<ul>
+<li>Icinga host variable <code>check_attempt</code> will be forwarded to webhook as variable <code>attempt</code>.</li>
+</ul>
+
+<blockquote>
+<p>Note: User can&rsquo;t provided value for these variables.</p>
+</blockquote>
+
+<p><strong>spec.states</strong></p>
+
+<p><code>spec.state</code> are the supported states for this command. Different notification receivers can be set for each state.</p>
+
+<p>Lets create above SearchlightPlugin</p>
+
+<pre><code class="language-console">$ kubectl apply -f ./docs/examples/plugins/webhook/demo-0.yaml
+searchlightplugin &quot;check-pod-count&quot; created
+</code></pre>
+
+<p align="center">
+  <img alt="lifecycle"  src="/products/searchlight/7.0.0/images/plugin/add-plugin.svg" width="581" height="362">
+</p>
+
+<p>CheckCommand <code>check-pod-count</code> is added in Icinga2 configuration. Here, <code>vars.fields</code> from <code>spec.arguments</code> are added as arguments in CheckCommand.</p>
+
+<blockquote>
+<p>Note: Webhook will be called with URL formatted as bellow:</p>
+</blockquote>
+
+<p><code>http://&lt;spec.webhook.name&gt;.&lt;spec.webhook.namespace&gt;.svc/&lt;metadata.name&gt;</code></p>
+
+<h3 id="create-clusteralert">Create ClusterAlert</h3>
+
+<p>Lets create a ClusterAlert for this CheckCommand.</p>
+
+<pre><code class="language-yaml">apiVersion: monitoring.appscode.com/v1alpha1
+kind: ClusterAlert
+metadata:
+  name: count-all-pods-demo-0
+  namespace: demo
+spec:
+  check: check-pod-count
+  vars:
+    warning: 10
+    critical: 15
+  notifierSecretName: notifier-config
+  receivers:
+  - notifier: Mailgun
+    state: Critical
+    to: [&quot;ops@example.com&quot;]
+</code></pre>
+
+<p>Here,</p>
+
+<ul>
+<li><code>spec.check</code> is the name of your custom check you added as SearchlightPlugin</li>
+<li><code>spec.vars</code> are variables those are registered when SearchlightPlugin is created with <code>spec.arguments.vars</code></li>
+</ul>
+
+<pre><code class="language-console">$ kubectl apply -f ./docs/examples/cluster-alerts/count-all-pods/demo-0.yaml
+clusteralert &quot;count-all-pods-demo-0&quot; created
+</code></pre>
+
+<p align="center">
+  <img alt="lifecycle"  src="/products/searchlight/7.0.0/images/plugin/add-alert.svg" width="581" height="362">
+</p>
+
+<p>Now periodically, Icinga will call <code>check_webhook</code> plugin under <code>hyperalert</code>.
+And this plugin will call your webhook you have registered in your SearchlightPlugin. According to the response from webhook, Service State will be determined.</p>
+
+<p align="center">
+  <img alt="lifecycle"  src="/products/searchlight/7.0.0/images/plugin/call-webhook.svg" width="581" height="362">
+</p>
+
+<p>In the example above, Service State will be <strong>Warning</strong>.</p>
+
+<h2 id="writing-webhook-server">Writing Webhook Server</h2>
+
+<p>Command <code>check_webhook</code> calls a HTTP server with user provided variables and receives response to determine service state. In this tutorial, we will see how we can write a webhook server for Searchlight. The most important part for this webhook is its <code>Response</code> type.</p>
+
+<pre><code class="language-go">package main
+
+type State int32
+
+const (
+  OK       State = iota // 0
+  Warning               // 1
+  Critical              // 2
+  Unknown               // 3
+)
+
+type Response struct {
+  Code    State  `json:&quot;code&quot;`
+  Message string `json:&quot;message,omitempty&quot;`
+}
+</code></pre>
+
+<p>Icinga2 Service State is determined according to <code>Code</code> in <code>Response</code>.</p>
+
+<blockquote>
+<p>Note: Webhook may not have any <code>Request</code> option.</p>
+</blockquote>
+
+<p>Add HTTP handler to serve request.</p>
+
+<pre><code class="language-go">package main
+
+import (
+  &quot;fmt&quot;
+  &quot;net/http&quot;
+)
+
+func main() {
+  http.HandleFunc(&quot;/check-pod-count&quot;, func(w http.ResponseWriter, r *http.Request) {
+    switch r.Method {
+    case http.MethodPost:
+      fmt.Println(&quot;do your stuff&quot;)
+      fmt.Println(&quot;write response with code&quot;)
+    default:
+      http.Error(w, &quot;&quot;, http.StatusNotImplemented)
+      return
+    }
+  })
+  http.ListenAndServe(&quot;:80&quot;, http.DefaultServeMux)
+}
+</code></pre>
+
+<p>Here,</p>
+
+<ul>
+<li>Path <code>/check-pod-count</code> only serves POST request. And return Response according to its check.</li>
+</ul>
+
+<blockquote>
+<p>Note: This webhook should listen on <code>80</code> port and serve POST request.</p>
+</blockquote>
+
+<p>Now build this server code.</p>
+
+<pre><code class="language-bash">go build -o webhook main.go
+</code></pre>
+
+<p>And build docker image and push to your registry.</p>
+
+<pre><code class="language-dockerfile">FROM ubuntu
+
+RUN set -x \
+  &amp;&amp; apt-get update
+RUN set -x \
+  &amp;&amp; apt-get install -y ca-certificates
+
+COPY webhook /usr/bin/webhook
+
+ENTRYPOINT [&quot;webhook&quot;]
+EXPOSE 80
+</code></pre>
+
+<p>Now deploy this server in Kubernetes</p>
+
+<pre><code class="language-yaml">apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: searchlight-plugin
+  labels:
+    app: searchlight-plugin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: searchlight-plugin
+  template:
+    metadata:
+      labels:
+        app: searchlight-plugin
+    spec:
+      containers:
+      - name: webhook
+        image: appscode/searchlight-plugin-go
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: searchlight-plugin
+  labels:
+    app: searchlight-plugin
+spec:
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+  selector:
+    app: searchlight-plugin
+</code></pre>
+
+<p>Here,</p>
+
+<ul>
+<li>Service <code>searchlight-plugin</code> in Namespace <code>default</code> will be used in SearchlightPlugin</li>
+</ul>
+
+<p>For a fully working version of this tutorial, visit <a href="https://github.com/appscode/searchlight-plugin">this</a>. Please note that the webhook server can be written in any programming language your prefer as long as the <code>Response</code> json format is maintained.</p>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#custom-webhook-check-command">Custom Webhook Check Command</a>
+<ul>
+<li><a href="#spec">Spec</a>
+<ul>
+<li><a href="#create-clusteralert">Create ClusterAlert</a></li>
+</ul></li>
+<li><a href="#writing-webhook-server">Writing Webhook Server</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

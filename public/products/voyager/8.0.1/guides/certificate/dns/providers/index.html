@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                      
+                        
+                          <a href="/products/voyager/8.0.1/" class=" navbar-item">Welcome</a>
+                        
+                      
+                        
+                          <a href="/products/voyager/8.0.1/concepts/" class=" navbar-item">Concepts</a>
+                        
+                      
+                        
+                          <a href="/products/voyager/8.0.1/setup/" class=" navbar-item">Setup</a>
+                        
+                      
+                        
+                          <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                              Guides
+                            </a>
+                            <div class="navbar-dropdown">
+                              
+                                
+                                  <a href="/products/voyager/8.0.1/guides/certificate/" class="navbar-item">Certificate</a>
+                                
+                              
+                                
+                                  <a href="/products/voyager/8.0.1/guides/ingress/" class="navbar-item">Ingress</a>
+                                
+                              
+                            </div>
+                          </div>
+                        
+                      
+                        
+                          <a href="/products/voyager/8.0.1/reference/" class=" navbar-item">Reference</a>
+                        
+                      
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+          
+          <div class="kd-version">
+            
+            <div class="control has-icons-left">
+              <div class="select">
+                
+                
+                <select>
+                  
+                    
+                    
+                      
+                        <option>master</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >10.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >9.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >8.0.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >7.4.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.3.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.2.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.1.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >7.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >6.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >5.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option>3.2.2</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                </select>
+              </div>
+              <span class="icon is-left">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          
+
+          
+            
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+
+                  
+                  
+                    
+
+                      
+
+                    
+                  
+                    
+                  
+                
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+              
+
+                
+              
+
+                
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+                        
+
+                            
+                              
+                                
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="3054b88f71dfb42241f03f89ca75f899-1" >
+  <label for="3054b88f71dfb42241f03f89ca75f899-1"><a href="/products/voyager/8.0.1/guides/certificate/">Certificate</a></label>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="3054b88f71dfb42241f03f89ca75f899-2" >
+  <label for="3054b88f71dfb42241f03f89ca75f899-2"><a>HTTP Challenger</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/8.0.1/guides/certificate/http/overview/">Overview</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="3054b88f71dfb42241f03f89ca75f899-3" checked>
+  <label for="3054b88f71dfb42241f03f89ca75f899-3"><a>DNS Challenger</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/8.0.1/guides/certificate/dns/route53/">AWS Route53</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/8.0.1/guides/certificate/dns/google-cloud/">Google Cloud</a></li>
+        
+      
+        
+          <li class="is-active"><a href="/products/voyager/8.0.1/guides/certificate/dns/providers/">Supported Providers</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="3054b88f71dfb42241f03f89ca75f899-4" >
+  <label for="3054b88f71dfb42241f03f89ca75f899-4"><a href="/products/voyager/8.0.1/guides/certificate/delete/">Delete</a></label>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="3054b88f71dfb42241f03f89ca75f899-5" >
+  <label for="3054b88f71dfb42241f03f89ca75f899-5"><a href="/products/voyager/8.0.1/guides/certificate/faq/">FAQ</a></label>
+</div>
+
+
+                              
+                            
+
+                        
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+                      
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<blockquote>
+<p>New to Voyager? Please start <a href="/products/voyager/8.0.1/concepts/overview">here</a>.</p>
+</blockquote>
+
+<h1 id="supported-dns-challenge-providers">Supported DNS Challenge Providers</h1>
+
+<p>To issue SSL certificate using Let&rsquo;s Encrypt DNS-01 challenge, Voyager operator requires necessary permission to add and remove a TXT record for domain <code>_acme-challenge.&lt;domain&gt;</code> to complete the DNS challenge.</p>
+
+<h2 id="supported-dns-providers">Supported DNS providers</h2>
+
+<p>Please see the list of supported providers and the keys expected in credential provider secret.</p>
+
+<h3 id="amazon-route53">Amazon Route53</h3>
+
+<ul>
+<li>Provider: <code>aws</code> or <code>route53</code></li>
+<li>Credential secret keys:
+
+<ul>
+<li><code>AWS_ACCESS_KEY_ID</code>: The access key id</li>
+<li><code>AWS_SECRET_ACCESS_KEY</code>: The secret corresponding to the access key</li>
+<li><code>AWS_HOSTED_ZONE_ID</code>: <code>Optional</code>. If AWS_HOSTED_ZONE_ID is not set, Voyager tries to determine the correct public hosted zone via the FQDN.</li>
+</ul></li>
+</ul>
+
+<p>To learn about necessary IAM permissions, please see <a href="/products/voyager/8.0.1/guides/certificate/dns/route53">here</a>.</p>
+
+<h3 id="akamai-fastdns">Akamai FastDNS</h3>
+
+<ul>
+<li>Provider: <code>fastdns</code></li>
+<li>Credential secret keys:
+
+<ul>
+<li><code>AKAMAI_HOST</code>: The Akamai API host</li>
+<li><code>AKAMAI_CLIENT_TOKEN</code>: The Akamai client token for a user or service account</li>
+<li><code>AKAMAI_CLIENT_SECRET</code>: The Akamai client secret for a user or service account</li>
+<li><code>AKAMAI_ACCESS_TOKEN</code>: THe Akamai access token for a user or service account</li>
+</ul></li>
+</ul>
+
+<h3 id="microsoft-azure">Microsoft Azure</h3>
+
+<ul>
+<li>Provider: <code>azure</code> or <code>acs</code></li>
+<li>Credential secret keys:
+
+<ul>
+<li><code>AZURE_CLIENT_ID</code>: Azure client id</li>
+<li><code>AZURE_CLIENT_SECRET</code>: The secret corresponding to the client id</li>
+<li><code>AZURE_SUBSCRIPTION_ID</code>: Azure subscription id</li>
+<li><code>AZURE_TENANT_ID</code>: Azure tenant id</li>
+<li><code>AZURE_RESOURCE_GROUP</code>: Azure resource group where domain is hosted</li>
+</ul></li>
+</ul>
+
+<h3 id="cloudflare">Cloudflare</h3>
+
+<ul>
+<li>Provider: <code>cloudflare</code></li>
+<li>Credential secret keys:
+
+<ul>
+<li><code>CLOUDFLARE_EMAIL</code>: The email of a cloudflare user</li>
+<li><code>CLOUDFLARE_API_KEY</code>: The API key corresponding to the email</li>
+</ul></li>
+</ul>
+
+<h3 id="digital-ocean">Digital Ocean</h3>
+
+<ul>
+<li>Provider: <code>digitalocean</code> or <code>do</code></li>
+<li>Credential secret keys:
+
+<ul>
+<li><code>DO_AUTH_TOKEN</code>: The write scoped api token for a DigitalOcean user</li>
+</ul></li>
+</ul>
+
+<h3 id="dnsimple">DNSimple</h3>
+
+<ul>
+<li>Provider: <code>dnsimple</code></li>
+<li>Credential secret keys:
+
+<ul>
+<li><code>DNSIMPLE_OAUTH_TOKEN</code>: The oauth token for a DNSimple user</li>
+<li><code>DNSIMPLE_BASE_URL</code>: <code>Optional</code>. The base url of DNSimple server</li>
+</ul></li>
+</ul>
+
+<h3 id="dns-made-easy">DNS Made Easy</h3>
+
+<ul>
+<li>Provider: <code>dnsmadeeasy</code></li>
+<li>Credential secret keys:
+
+<ul>
+<li><code>DNSMADEEASY_API_KEY</code>: The api key for a DNS Made Easy user</li>
+<li><code>DNSMADEEASY_API_SECRET</code>: The api secret corresponding with the api key</li>
+<li><code>DNSMADEEASY_SANDBOX</code>: <code>Optional</code>. A boolean flag, if set to <code>true</code> or <code>1</code>, requests will be sent to the sandbox API</li>
+</ul></li>
+</ul>
+
+<h3 id="dyn">Dyn</h3>
+
+<ul>
+<li>Provider: <code>dyn</code></li>
+<li>Credential secret keys:
+
+<ul>
+<li><code>DYN_CUSTOMER_NAME</code>: The customer name of a Dyn user</li>
+<li><code>DYN_USER_NAME</code>: The user name of the Dyn user</li>
+<li><code>DYN_PASSWORD</code>: The password of the Dyn user</li>
+</ul></li>
+</ul>
+
+<h3 id="gandi">Gandi</h3>
+
+<ul>
+<li>Provider: <code>gandi</code></li>
+<li>Credential secret keys:
+
+<ul>
+<li><code>GANDI_API_KEY</code>: The API key for a Gandi user</li>
+</ul></li>
+</ul>
+
+<h3 id="godaddy">GoDaddy</h3>
+
+<ul>
+<li>Provider: <code>godaddy</code></li>
+<li>Credential secret keys:
+
+<ul>
+<li><code>GODADDY_API_KEY</code>: The API key for a GoDaddy user</li>
+<li><code>GODADDY_API_SECRET</code>: The api secret for the api key</li>
+</ul></li>
+</ul>
+
+<h3 id="google-cloud-dns">Google Cloud DNS</h3>
+
+<ul>
+<li>Provider: <code>googlecloud</code> or <code>google</code> or <code>gce</code> or <code>gke</code></li>
+<li>Credential secret keys:
+
+<ul>
+<li><code>GCE_PROJECT</code>: The name of the Google Cloud project to use</li>
+<li><code>GOOGLE_SERVICE_ACCOUNT_JSON_KEY</code>: Service account json downloaded from Google Cloud console. This service account requires scope <code>https://www.googleapis.com/auth/ndev.clouddns.readwrite</code> to view and manage your DNS records hosted by Google Cloud DNS.</li>
+</ul></li>
+</ul>
+
+<p>If you are running your cluster on Google Cloud (GKE or GCE), Voyager can use default service account associated with a VM. Please see <a href="/products/voyager/8.0.1/guides/certificate/dns/google-cloud">here</a> for detailed instructions.</p>
+
+<h3 id="linode">Linode</h3>
+
+<ul>
+<li>Provider: <code>linode</code></li>
+<li>Credential secret keys:
+
+<ul>
+<li><code>LINODE_API_KEY</code>: The API key for a linode user.</li>
+</ul></li>
+</ul>
+
+<h3 id="namecheap">Namecheap</h3>
+
+<ul>
+<li>Provider: <code>namecheap</code></li>
+<li>Credential secret keys:
+
+<ul>
+<li><code>NAMECHEAP_API_USER</code>: The username of a Namecheap user</li>
+<li><code>NAMECHEAP_API_KEY</code>: The API key corresponding with the Namecheap user</li>
+</ul></li>
+</ul>
+
+<h3 id="ovh">OVH</h3>
+
+<ul>
+<li>Provider: <code>ovh</code></li>
+<li>Credential secret keys:
+
+<ul>
+<li><code>OVH_ENDPOINT</code>: The URL of the API endpoint to use</li>
+<li><code>OVH_APPLICATION_KEY</code>: The application key</li>
+<li><code>OVH_APPLICATION_SECRET</code>: The secret corresponding to the application key</li>
+<li><code>OVH_CONSUMER_KEY</code>: The consumer key</li>
+</ul></li>
+</ul>
+
+<h3 id="pdns">PDNS</h3>
+
+<ul>
+<li>Provider: <code>pdns</code></li>
+<li>Credential secret keys:
+
+<ul>
+<li><code>PDNS_API_KEY</code>: The API key to use</li>
+<li><code>PDNS_API_URL</code>: PDNS api server address</li>
+</ul></li>
+</ul>
+
+<h3 id="vultr">Vultr</h3>
+
+<ul>
+<li>Provider: <code>vultr</code></li>
+<li>Credential secret keys:
+
+<ul>
+<li><code>VULTR_API_KEY</code>: The API key to use</li>
+</ul></li>
+</ul>
+
+<h2 id="how-to-provide-dns-provider-credential">How to provide DNS provider credential</h2>
+
+<p>To provide DNS provider credential, create a secret with appropriate keys. Then pass the secret name to the <code>spec.challengeProvider.dns.credentialSecretName</code> field. Both the <code>Secret</code> and <code>Certificate</code> object must reside in the same namespace.</p>
+
+<pre><code class="language-console"># create secret for AWS route53
+kubectl create secret generic voyager-route53 --namespace default \
+  --from-literal=AWS_ACCESS_KEY_ID=INSERT_YOUR_ACCESS_KEY_ID_HERE \
+  --from-literal=AWS_SECRET_ACCESS_KEY=INSERT_YOUR_SECRET_ACCESS_KEY_HERE \
+  --from-literal=AWS_HOSTED_ZONE_ID=INSERT_YOUR_HOSTED_ZONE_ID_HERE
+
+kubectl get secret voyager-route53 -o yaml
+apiVersion: v1
+data:
+  AWS_ACCESS_KEY_ID: SU5TRVJUX1lPVVJfQUNDRVNTX0tFWV9JRF9IRVJF
+  AWS_HOSTED_ZONE_ID: SU5TRVJUX1lPVVJfSE9TVEVEX1pPTkVfSURfSEVSRQ==
+  AWS_SECRET_ACCESS_KEY: SU5TRVJUX1lPVVJfU0VDUkVUX0FDQ0VTU19LRVlfSEVSRQ==
+kind: Secret
+metadata:
+  creationTimestamp: 2017-11-27T23:17:31Z
+  name: voyager-route53
+  namespace: default
+  resourceVersion: &quot;16160&quot;
+  selfLink: /api/v1/namespaces/default/secrets/voyager-route53
+  uid: 24949869-d3c9-11e7-98b3-08002787a1b5
+type: Opaque
+</code></pre>
+
+<p>Here is an example <code>Certificate</code> CRD.</p>
+
+<pre><code class="language-yaml">apiVersion: voyager.appscode.com/v1beta1
+kind: Certificate
+metadata:
+  name: kitecipro-iam
+  namespace: default
+spec:
+  domains:
+  - kiteci.pro
+  - www.kiteci.pro
+  acmeUserSecretName: acme-account
+  challengeProvider:
+    dns:
+      provider: route53
+      credentialSecretName: voyager-route53
+  storage:
+    secret:
+      name: cert-kitecipro
+</code></pre>
+
+<p>For detailed guides on how to issue SSL certificates using Voyager, please see below:</p>
+
+<ul>
+<li><a href="/products/voyager/8.0.1/guides/certificate/dns/route53">Issue Let&rsquo;s Encrypt certificate using AWS Route53</a></li>
+<li><a href="/products/voyager/8.0.1/guides/certificate/dns/google-cloud">Issue Let&rsquo;s Encrypt certificate using Google Cloud DNS</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#supported-dns-challenge-providers">Supported DNS Challenge Providers</a>
+<ul>
+<li><a href="#supported-dns-providers">Supported DNS providers</a>
+<ul>
+<li><a href="#amazon-route53">Amazon Route53</a></li>
+<li><a href="#akamai-fastdns">Akamai FastDNS</a></li>
+<li><a href="#microsoft-azure">Microsoft Azure</a></li>
+<li><a href="#cloudflare">Cloudflare</a></li>
+<li><a href="#digital-ocean">Digital Ocean</a></li>
+<li><a href="#dnsimple">DNSimple</a></li>
+<li><a href="#dns-made-easy">DNS Made Easy</a></li>
+<li><a href="#dyn">Dyn</a></li>
+<li><a href="#gandi">Gandi</a></li>
+<li><a href="#godaddy">GoDaddy</a></li>
+<li><a href="#google-cloud-dns">Google Cloud DNS</a></li>
+<li><a href="#linode">Linode</a></li>
+<li><a href="#namecheap">Namecheap</a></li>
+<li><a href="#ovh">OVH</a></li>
+<li><a href="#pdns">PDNS</a></li>
+<li><a href="#vultr">Vultr</a></li>
+</ul></li>
+<li><a href="#how-to-provide-dns-provider-credential">How to provide DNS provider credential</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

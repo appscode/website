@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<h1 id="using-stash-with-rook-storage-service">Using Stash with Rook Storage Service</h1>
+
+<p>This tutorial will show you how to use Stash to <strong>backup</strong> and <strong>restore</strong> a Kubernetes volume in <a href="https://rook.io/">Rook</a> storage service. Here, we are going to backup the <code>/source/data</code> folder of a busybox pod into <a href="/products/stash/0.7.0-rc.5/guides/backends#aws-s3">AWS S3</a> compatible <a href="https://rook.io/docs/rook/master/object.html">Rook Object Storage</a>. Then, we will show how to recover this data into a <code>PersistentVolumeClaim</code> of <a href="https://rook.io/docs/rook/master/block.html">Rook Block Storage</a>. We will also re-deploy deployment using this recovered volume.</p>
+
+<h2 id="before-you-begin">Before You Begin</h2>
+
+<p>At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster. If you do not already have a cluster, you can create one by using <a href="https://github.com/kubernetes/minikube">Minikube</a>. Now, install <code>Stash</code> in your cluster following the steps <a href="/products/stash/0.7.0-rc.5/setup/install">here</a>.</p>
+
+<p>You should have understanding the following Stash concepts:</p>
+
+<ul>
+<li><a href="/products/stash/0.7.0-rc.5/concepts/crds/restic">Restic</a></li>
+<li><a href="/products/stash/0.7.0-rc.5/concepts/crds/repository">Repository</a></li>
+<li><a href="/products/stash/0.7.0-rc.5/concepts/crds/recovery">Recovery</a></li>
+<li><a href="/products/stash/0.7.0-rc.5/concepts/crds/snapshot">Snapshot</a></li>
+</ul>
+
+<p>Then, you will need to have a <a href="https://rook.io">Rook Storage Service</a> with <a href="https://rook.io/docs/rook/master/object.html">Object Storage</a> and <a href="https://rook.io/docs/rook/master/block.html">Block Storage</a> configured. If you do not already have a <strong>Rook Storage Service</strong> configured, you can create one by following this <a href="https://rook.io/docs/rook/master/quickstart.html">quickstart guide</a>.</p>
+
+<h2 id="backup">Backup</h2>
+
+<p>First, deploy the following <code>busybox</code> Deployment in your cluster. Here we are using a git repository as a source volume for demonstration purpose.</p>
+
+<pre><code class="language-console">$ kubectl apply -f ./docs/examples/tutorial/busybox.yaml
+deployment &quot;stash-demo&quot; created
+</code></pre>
+
+<p>Definition of <code>busybox</code> deployment:</p>
+
+<pre><code class="language-yaml">apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: stash-demo
+  name: stash-demo
+  namespace: default
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: stash-demo
+      name: busybox
+    spec:
+      containers:
+      - args:
+        - sleep
+        - &quot;3600&quot;
+        image: busybox
+        imagePullPolicy: IfNotPresent
+        name: busybox
+        volumeMounts:
+        - mountPath: /source/data
+          name: source-data
+      restartPolicy: Always
+      volumes:
+      - gitRepo:
+          repository: https://github.com/appscode/stash-data.git
+        name: source-data
+</code></pre>
+
+<p>Run the following command to confirm that <code>busybox</code> pods are running.</p>
+
+<pre><code class="language-console">$ kubectl get pods -l app=stash-demo
+NAME                         READY     STATUS    RESTARTS   AGE
+stash-demo-b66b9cdfd-j7rb5   1/1       Running   0          49s
+</code></pre>
+
+<p>You can check that the <code>/source/data/</code> directory of pod is populated with data from the volume source using this command,</p>
+
+<pre><code class="language-console">$  kubectl exec stash-demo-b66b9cdfd-j7rb5 -- ls -R /source/data/
+/source/data/:
+stash-data
+
+/source/data/stash-data:
+Eureka-by-EdgarAllanPoe.txt
+LICENSE
+README.md
+</code></pre>
+
+<p>Now, let’s backup the directory into a <a href="/products/stash/0.7.0-rc.5/guides/backends#aws-s3">AWS S3</a> compatible Rook Object Storage.</p>
+
+<p>At first, we need to create a secret for <code>Restic</code> crd. Create secret for <code>Restic</code> using following command,</p>
+
+<pre><code class="language-console">$ echo -n 'changeit' &gt; RESTIC_PASSWORD
+$ echo -n '&lt;your-rook-access-key-id-here&gt;' &gt; AWS_ACCESS_KEY_ID
+$ echo -n '&lt;your-rook-secret-access-key-here&gt;' &gt; AWS_SECRET_ACCESS_KEY
+$ kubectl create secret generic rook-restic-secret \
+      --from-file=./RESTIC_PASSWORD \
+      --from-file=./AWS_ACCESS_KEY_ID \
+      --from-file=./AWS_SECRET_ACCESS_KEY
+secret &quot;rook-restic-secret&quot; created
+</code></pre>
+
+<p>Verify that the secret has been created successfully,</p>
+
+<pre><code class="language-console">$ kubectl get secret rook-restic-secret -o yaml
+</code></pre>
+
+<pre><code class="language-yaml">apiVersion: v1
+data:
+  AWS_ACCESS_KEY_ID: &lt;base64 encoded rook access key&gt;
+  AWS_SECRET_ACCESS_KEY: &lt;base64 encoded rook secret key&gt;
+  RESTIC_PASSWORD: Y2hhbmdlaXQ=
+kind: Secret
+metadata:
+  creationTimestamp: 2018-04-12T10:32:14Z
+  name: rook-restic-secret
+  namespace: default
+  resourceVersion: &quot;2414&quot;
+  selfLink: /api/v1/namespaces/default/secrets/rook-restic-secret
+  uid: c454391b-3e3c-11e8-a7b6-080027672508
+type: Opaque
+</code></pre>
+
+<p>Now, we can create <code>Restic</code> crd. This will create a repository <code>stash-backup-repo</code> in <strong>Rook Object Storage</strong> bucket and start taking periodic backup of <code>/source/data/</code> folder.</p>
+
+<pre><code class="language-console">$ kubectl apply -f ./docs/examples/backends/rook/rook-restic.yaml
+restic &quot;rook-restic&quot; created
+</code></pre>
+
+<p>Definition of <code>Restic</code> crd for Rook Object Storage backend,</p>
+
+<pre><code class="language-yaml">apiVersion: stash.appscode.com/v1alpha1
+kind: Restic
+metadata:
+  name: rook-restic
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: stash-demo # Must match with the label of busybox pod we have created before.
+  fileGroups:
+  - path: /source/data
+    retentionPolicyName: 'keep-last-5'
+  backend:
+    s3:
+      endpoint: 'http://rook-ceph-rgw-my-store.rook' # Use your own rook object storage end point.
+      bucket: stash-backup  # Give a name of the bucket where you want to backup.
+      prefix: demo  # . Path prefix into bucket where repository will be created.(optional).
+    storageSecretName: rook-restic-secret
+  schedule: '@every 1m'
+  volumeMounts:
+  - mountPath: /source/data
+    name: source-data
+  retentionPolicies:
+  - name: 'keep-last-5'
+    keepLast: 5
+    prune: true
+</code></pre>
+
+<p>If everything goes well, A <code>Repository</code> crd with name <code>deployment.stash-demo</code> will be created for the respective repository in Rook Object Storage backend. Verify that, <code>Repository</code> is created successfully using this command,</p>
+
+<pre><code class="language-console">$ kubectl get repository deployment.stash-demo
+NAME                    AGE
+deployment.stash-demo   1m
+</code></pre>
+
+<p><code>Restic</code> will take backup of the volume periodically with a 1-minute interval. You can verify that backup is taking successfully by,</p>
+
+<pre><code class="language-console">$ kubectl get snapshots -l repository=deployment.stash-demo
+NAME                             AGE
+deployment.stash-demo-c1014ca6   10s
+</code></pre>
+
+<p>Here, <code>deployment.stash-demo-c1014ca6</code> represents the name of the successful backup <a href="/products/stash/0.7.0-rc.5/concepts/crds/snapshot">Snapshot</a> taken by Stash in <code>deployment.stash-demo</code> repository.</p>
+
+<h2 id="recover-to-persistentvolumeclaim">Recover to <code>PersistentVolumeClaim</code></h2>
+
+<p><strong>Rook Block Storage</strong> allow the users to mount persistent volume into pod using  <code>PersistentVolumeClaim</code>. Here, we will recover our backed up data into a PVC.</p>
+
+<p>At first, delete <code>Restic</code> crd so that it does not lock the restic repository while we are trying to recover from it.</p>
+
+<pre><code class="language-console">$ kubectl delete restic rook-restic
+restic &quot;rook-restic&quot; deleted
+</code></pre>
+
+<p>Now, create a <code>PersistentVolumeClaim</code> for Rook Block Storage,</p>
+
+<pre><code class="language-console">$ kubectl apply -f ./docs/examples/backends/rook/rook-pvc.yaml
+persistentvolumeclaim &quot;stash-recovered&quot; created
+</code></pre>
+
+<p>Definition of <code>PersistentVolumeClaim</code>:</p>
+
+<pre><code class="language-yaml">apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: stash-recovered
+  labels:
+    app: stash-demo
+spec:
+  storageClassName: rook-block
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+</code></pre>
+
+<p>Check cluster has provisioned the requested claim,</p>
+
+<pre><code class="language-console">$ kubectl get pvc -l app=stash-demo
+NAME              STATUS    VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+stash-recovered   Bound     pvc-a7aa73fa-3e3f-11e8-a7b6-080027672508   2Gi        RWO            rook-block     36s
+</code></pre>
+
+<p>Look at the <code>STATUS</code> filed. <code>stash-recovered</code> PVC is bounded to volume <code>pvc-a7aa73fa-3e3f-11e8-a7b6-080027672508</code>.</p>
+
+<p>Now, create a <code>Recovery</code> to recover backed up data in this PVC.</p>
+
+<pre><code class="language-console">$ kubectl apply -f ./docs/examples/backends/rook/rook-recovery.yaml
+recovery &quot;rook-recovery&quot; created
+</code></pre>
+
+<p>Definition of <code>Recovery</code> should look like below:</p>
+
+<pre><code class="language-yaml">apiVersion: stash.appscode.com/v1alpha1
+kind: Recovery
+metadata:
+  name: rook-recovery
+  namespace: default
+spec:
+  repository:
+    name: deployment.stash-demo
+    namespace: default
+  paths:
+  - /source/data
+  recoveredVolumes:
+  - mountPath: /source/data
+    persistentVolumeClaim:
+      claimName: stash-recovered
+</code></pre>
+
+<p>Wait until <code>Recovery</code> job completed its task. To verify that recovery completed successfully run,</p>
+
+<pre><code class="language-console">$ kubectl get recovery rook-recovery -o yaml
+</code></pre>
+
+<pre><code class="language-yaml">apiVersion: stash.appscode.com/v1alpha1
+kind: Recovery
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+     {&quot;apiVersion&quot;:&quot;stash.appscode.com/v1alpha1&quot;,&quot;kind&quot;:&quot;Recovery&quot;,&quot;metadata&quot;:{&quot;name&quot;:&quot;rook-recovery&quot;,&quot;namespace&quot;:&quot;default&quot;},&quot;spec&quot;:{&quot;repository&quot;:&quot;deployment.stash-demo&quot;,&quot;paths&quot;:[&quot;/source/data&quot;],&quot;recoveredVolumes&quot;:[{&quot;mountPath&quot;:&quot;/source/data&quot;,&quot;persistentVolumeClaim&quot;:{&quot;claimName&quot;:&quot;stash-recovered&quot;}}]}}
+  clusterName: &quot;&quot;
+  creationTimestamp: 2018-04-12T12:57:54Z
+  generation: 0
+  name: rook-recovery
+  namespace: default
+  resourceVersion: &quot;2315&quot;
+  selfLink: /apis/stash.appscode.com/v1alpha1/namespaces/default/recoveries/rook-recovery
+  uid: 1dbad356-3e51-11e8-b2bd-080027dbef96
+spec:
+  repository:
+    name: deployment.stash-demo
+    namespace: default
+  paths:
+  - /source/data
+  recoveredVolumes:
+  - mountPath: /source/data
+    persistentVolumeClaim:
+      claimName: stash-recovered
+status:
+  phase: Succeeded
+</code></pre>
+
+<p>Now, let&rsquo;s re-deploy the <code>busybox</code> deployment using this recovered PVC. First, delete old deployment and recovery job.</p>
+
+<pre><code class="language-console">$ kubectl delete deployment stash-demo
+deployment &quot;stash-demo&quot; deleted
+
+$ kubectl delete recovery rook-recovery
+recovery &quot;rook-recovery&quot; deleted
+</code></pre>
+
+<p>Now, mount the recovered <code>PersistentVolumeClaim</code> in <code>busybox</code> deployment instead of <code>gitRepo</code> we had mounted before then re-deploy it,</p>
+
+<pre><code class="language-console">$ kubectl apply -f ./docs/examples/backends/rook/restored-deployment.yaml
+deployment &quot;stash-demo&quot; created
+</code></pre>
+
+<pre><code class="language-yaml">apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: stash-demo
+  name: stash-demo
+  namespace: default
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: stash-demo
+      name: busybox
+    spec:
+      containers:
+      - args:
+        - sleep
+        - &quot;3600&quot;
+        image: busybox
+        imagePullPolicy: IfNotPresent
+        name: busybox
+        volumeMounts:
+        - mountPath: /source/data
+          name: source-data
+      restartPolicy: Always
+      volumes:
+      - name: source-data
+        persistentVolumeClaim:
+          claimName: stash-recovered
+</code></pre>
+
+<p>Get the pod of new deployment,</p>
+
+<pre><code class="language-console">$  kubectl get pod -l app=stash-demo
+NAME                          READY     STATUS    RESTARTS   AGE
+stash-demo-5bc57fbcfb-b45k8   1/1       Running   0          1m
+</code></pre>
+
+<p>Check the backed up data is restored in <code>/source/data/</code> directory of <code>busybox</code> pod.</p>
+
+<pre><code class="language-console">$ kubectl exec stash-demo-5bc57fbcfb-b45k8 -- ls -R /source/data/
+/source/data/:
+lost+found
+stash-data
+
+/source/data/lost+found:
+
+/source/data/stash-data:
+Eureka-by-EdgarAllanPoe.txt
+LICENSE
+README.md
+</code></pre>
+
+<h2 id="cleanup">Cleanup</h2>
+
+<pre><code class="language-console">$ kubectl delete pvc stash-recovered
+$ kubectl delete deployment stash-demo
+$ kubectl delete repository deployment.stash-demo
+</code></pre>
+
+<p>Uninstall Stash following the instructions <a href="/products/stash/0.7.0-rc.5/setup/uninstall">here</a>.</p>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#using-stash-with-rook-storage-service">Using Stash with Rook Storage Service</a>
+<ul>
+<li><a href="#before-you-begin">Before You Begin</a></li>
+<li><a href="#backup">Backup</a></li>
+<li><a href="#recover-to-persistentvolumeclaim">Recover to <code>PersistentVolumeClaim</code></a></li>
+<li><a href="#cleanup">Cleanup</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

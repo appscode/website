@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                      
+                        
+                          <a href="/products/guard/0.1.2/" class=" navbar-item">Welcome</a>
+                        
+                      
+                        
+                          <a href="/products/guard/0.1.2/concepts/" class=" navbar-item">Concepts</a>
+                        
+                      
+                        
+                          <a href="/products/guard/0.1.2/setup/" class=" navbar-item">Setup</a>
+                        
+                      
+                        
+                          <a href="/products/guard/0.1.2/guides/" class=" is-active  navbar-item">Guides</a>
+                        
+                      
+                        
+                          <a href="/products/guard/0.1.2/reference/" class=" navbar-item">Reference</a>
+                        
+                      
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+          
+          <div class="kd-version">
+            
+            <div class="control has-icons-left">
+              <div class="select">
+                
+                
+                <select>
+                  
+                    
+                    
+                      
+                        <option>master</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.4.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.3.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.2.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                </select>
+              </div>
+              <span class="icon is-left">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          
+
+          
+            
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+
+                  
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+              
+
+                
+              
+
+                
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="69425a1b1b5c9f86b1fa9e072921ccd2-1" >
+  <label for="69425a1b1b5c9f86b1fa9e072921ccd2-1"><a href="/products/guard/0.1.2/guides/">Guides</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="69425a1b1b5c9f86b1fa9e072921ccd2-2" checked>
+  <label for="69425a1b1b5c9f86b1fa9e072921ccd2-2"><a>Authenticator</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/guard/0.1.2/guides/authenticator/static_token_file/">Static Token File</a></li>
+        
+      
+        
+          <li ><a href="/products/guard/0.1.2/guides/authenticator/github/">Github</a></li>
+        
+      
+        
+          <li ><a href="/products/guard/0.1.2/guides/authenticator/google/">Google</a></li>
+        
+      
+        
+          <li class="is-active"><a href="/products/guard/0.1.2/guides/authenticator/azure/">Azure</a></li>
+        
+      
+        
+          <li ><a href="/products/guard/0.1.2/guides/authenticator/gitlab/">Gitlab</a></li>
+        
+      
+        
+          <li ><a href="/products/guard/0.1.2/guides/authenticator/ldap/">LDAP</a></li>
+        
+      
+        
+          <li ><a href="/products/guard/0.1.2/guides/authenticator/ldap_azure/">Azure AD</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="69425a1b1b5c9f86b1fa9e072921ccd2-3" >
+  <label for="69425a1b1b5c9f86b1fa9e072921ccd2-3"><a href="/products/guard/0.1.2/guides/rbac/">RBAC Roles</a></label>
+</div>
+
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<h1 id="azure-authenticator">Azure Authenticator</h1>
+
+<p>Guard installation guide can be found <a href="/products/guard/0.1.2/setup/install">here</a>. To use Azure, create a client cert with <code>Organization</code> set to <code>Azure</code>.For Azure <code>CommonName</code> is optional. To ease this process, use the Guard cli to issue a client cert/key pair.</p>
+
+<pre><code class="language-console">$ guard init client [CommonName] -o Azure
+</code></pre>
+
+<h3 id="deploy-guard-server">Deploy guard server</h3>
+
+<p>To generate installer YAMLs for guard server you can use the following command.</p>
+
+<pre><code class="language-console"># generate Kubernetes YAMLs for deploying guard server
+$ guard get installer \
+    --auth-providers = &quot;azure&quot; \
+    --azure.client-id=&lt;application_id&gt; \
+    --azure.tenant-id=&lt;tenant_id&gt; \
+    &gt; installer.yaml
+
+$ kubectl apply -f installer.yaml
+</code></pre>
+
+<blockquote>
+<p><strong>Note:</strong> guard take <code>&lt;application_secret&gt;</code> from environment variable <strong>AZURE_CLIENT_SECRET</strong></p>
+</blockquote>
+
+<p>Procedure to find <code>&lt;application_id&gt;</code>, <code>&lt;application_secret&gt;</code> are given below. Replace the <code>&lt;tenant_id&gt;</code> with your azure tenant id.</p>
+
+<h3 id="configure-azure-active-directory-app">Configure Azure Active Directory App</h3>
+
+<p><a href="https://www.youtube-nocookie.com/embed/n2kKwAFYuiM"><img src="https://img.youtube.com/vi/n2kKwAFYuiM/0.jpg" alt="Configuring Microsoft Azure auth provider for Kubernetes using Guard" /></a></p>
+
+<p>Configuring Azure AD as a auth provider requires an initial setup by <code>Global Administrator</code> of such AD. This involves a complex multi-step process. Please see the video above to setup your Azure AD.</p>
+
+<ol>
+<li><p>Sign in to the <a href="https://portal.azure.com/">Azure portal</a>. Please make sure that you are a <code>Global Administrator</code> of your Azure AD. If not, please contact your Azure AD administrator to perform these steps.</p>
+
+<p><img src="/products/guard/0.1.2/images/azure/dir-role.png" alt="aad-dir-role" /></p></li>
+
+<li><p>Create an Azure Active Directory Web App / API application</p>
+
+<p><img src="/products/guard/0.1.2/images/azure/create-app-registration.png" alt="create-app-registration" /></p></li>
+
+<li><p>Use the <strong>Application ID</strong> as <code>&lt;application_id&gt;</code></p>
+
+<p><img src="/products/guard/0.1.2/images/azure/application-id.png" alt="application-id" /></p></li>
+
+<li><p>Click on the <strong>Settings</strong>, click on the <strong>key</strong> , generate a key and use this key as <code>&lt;application_secret&gt;</code></p>
+
+<p><img src="/products/guard/0.1.2/images/azure/secret-key.png" alt="secret-key" /></p></li>
+
+<li><p>Add <strong>Microsoft Graph</strong> api with <em>application permission</em> <code>Read directory data</code> and <em>delegated permission</em> <code>Read directory data</code> and <code>Sign in and read user profile</code>.</p>
+
+<p><img src="/products/guard/0.1.2/images/azure/add-api.png" alt="add-api" />
+<img src="/products/guard/0.1.2/images/azure/add-api-2.png" alt="add-api-2" /></p></li>
+
+<li><p>Now grant grant the permission from step 5 for all account to this application by clicking the <code>Grant Permissions</code> button. Afterwards, check the permissions for this application to confirm that grant operation was successful.</p>
+
+<p><img src="/products/guard/0.1.2/images/azure/guard-grant-perm.png" alt="guard-grant-perm" />
+<img src="/products/guard/0.1.2/images/azure/guard-permissions.png" alt="guard-permissions" /></p></li>
+
+<li><p>Create a second Azure Active Directory native application</p>
+
+<p><img src="/products/guard/0.1.2/images/azure/create-native-app.png" alt="create-native-app" /></p></li>
+
+<li><p>Use the <strong>Application ID</strong> of this native app as <code>&lt;client_id&gt;</code></p>
+
+<p><img src="/products/guard/0.1.2/images/azure/client-id.png" alt="client-id" /></p></li>
+
+<li><p>Add application created at step 2 with permission <code>Access &lt;Application_Name_Created_At_Step_2&gt;</code></p>
+
+<p><img src="/products/guard/0.1.2/images/azure/add-guard-api.png" alt="add-guard-app" /></p></li>
+</ol>
+
+<h2 id="configure-kubectl">Configure kubectl</h2>
+
+<pre><code class="language-console">kubectl config set-credentials &lt;user_name&gt; --auth-provider=azure \
+  --auth-provider-arg=environment=AzurePublicCloud \
+  --auth-provider-arg=client-id=&lt;client_id&gt; \
+  --auth-provider-arg=tenant-id=&lt;tenant_id&gt; \
+  --auth-provider-arg=apiserver-id=&lt;application_id&gt;
+</code></pre>
+
+<p>Procedure to find <code>&lt;application_id&gt;</code>, <code>&lt;application_secret&gt;</code> and <code>&lt;client_id&gt;</code> are given above. Replace the <user_name> and <tenant_id> with your azure username and tenant id.</p>
+
+<p>Or You can add user in <code>.kube/config</code> file</p>
+
+<pre><code class="language-yaml">...
+users:
+- name: &lt;user_name&gt;
+  user:
+    auth-provider:
+      config:
+        apiserver-id: &lt;application_id&gt;
+        client-id: &lt;client_id&gt;
+        tenant-id: &lt;tenant_id&gt;
+        environment: AzurePublicCloud
+      name: azure
+</code></pre>
+
+<p>The access token is acquired when first <code>kubectl</code> command is executed</p>
+
+<pre><code>   $ kubectl get pods --user &lt;user_name&gt;
+
+   To sign in, use a web browser to open the page https://aka.ms/devicelogin and enter the code DEC7D48GA to authenticate.
+</code></pre>
+
+<p>After signing in a web browser, the token is stored in the configuration, and it will be reused when executing next commands.</p>
+
+<h2 id="further-reading">Further Reading:</h2>
+
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications">https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications</a></li>
+<li><a href="https://github.com/kubernetes/client-go/blob/master/plugin/pkg/client/auth/azure/README.md">https://github.com/kubernetes/client-go/blob/master/plugin/pkg/client/auth/azure/README.md</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#azure-authenticator">Azure Authenticator</a>
+<ul>
+<li>
+<ul>
+<li><a href="#deploy-guard-server">Deploy guard server</a></li>
+<li><a href="#configure-azure-active-directory-app">Configure Azure Active Directory App</a></li>
+</ul></li>
+<li><a href="#configure-kubectl">Configure kubectl</a></li>
+<li><a href="#further-reading">Further Reading:</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

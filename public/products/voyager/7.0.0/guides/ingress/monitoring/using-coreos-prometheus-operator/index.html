@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                      
+                        
+                          <a href="/products/voyager/7.0.0/" class=" navbar-item">Welcome</a>
+                        
+                      
+                        
+                          <a href="/products/voyager/7.0.0/concepts/" class=" navbar-item">Concepts</a>
+                        
+                      
+                        
+                          <a href="/products/voyager/7.0.0/setup/" class=" navbar-item">Setup</a>
+                        
+                      
+                        
+                          <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                              Guides
+                            </a>
+                            <div class="navbar-dropdown">
+                              
+                                
+                                  <a href="/products/voyager/7.0.0/guides/certificate/" class="navbar-item">Certificate</a>
+                                
+                              
+                                
+                                  <a href="/products/voyager/7.0.0/guides/ingress/" class="navbar-item">Ingress</a>
+                                
+                              
+                            </div>
+                          </div>
+                        
+                      
+                        
+                          <a href="/products/voyager/7.0.0/reference/" class=" navbar-item">Reference</a>
+                        
+                      
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+          
+          <div class="kd-version">
+            
+            <div class="control has-icons-left">
+              <div class="select">
+                
+                
+                <select>
+                  
+                    
+                    
+                      
+                        <option>master</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >10.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >9.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >8.0.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >7.4.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.3.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.2.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.1.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >7.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >6.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >5.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option>3.2.2</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                </select>
+              </div>
+              <span class="icon is-left">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          
+
+          
+            
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+
+                  
+                  
+                    
+                  
+                    
+
+                      
+
+                    
+                  
+                
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+              
+
+                
+              
+
+                
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+                        
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+                            
+                              
+                                
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="b196a63ad19002abe5be850cb7eeedff-1" >
+  <label for="b196a63ad19002abe5be850cb7eeedff-1"><a href="/products/voyager/7.0.0/guides/ingress/">Ingress</a></label>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b196a63ad19002abe5be850cb7eeedff-2" >
+  <label for="b196a63ad19002abe5be850cb7eeedff-2"><a>HTTP</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/http/single-service/">Single Service</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/http/virtual-hosting/">Virtual Hosting</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/http/source-range/">Source Range</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/http/rewrite-rules/">Rewrite Support</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/http/http2/">HTTP2</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/http/cors/">CORS</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/http/custom-http-port/">Custom HTTP Port</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/http/external-svc/">External SVC</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/http/hsts/">HSTS</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/http/statefulset-pod/">Statefulset Pod</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/http/sticky-session/">Sticky Session</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/http/blue-green-deployment/">Blue Green Deployment</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b196a63ad19002abe5be850cb7eeedff-3" >
+  <label for="b196a63ad19002abe5be850cb7eeedff-3"><a>TLS</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/tls/overview/">Overview</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/tls/aws-cert-manager/">AWS Cert Manager</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/tls/backend-tls/">Backend TLS</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b196a63ad19002abe5be850cb7eeedff-4" >
+  <label for="b196a63ad19002abe5be850cb7eeedff-4"><a>TCP</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/tcp/overview/">Overview</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/tcp/tcp-sni/">TCP SNI</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b196a63ad19002abe5be850cb7eeedff-5" >
+  <label for="b196a63ad19002abe5be850cb7eeedff-5"><a>Configuration</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/annotations/">Annotations</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/accept-proxy/">Accept Proxy</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/bind-address/">Bind Address</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/body-size/">Body Size</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/default-timeouts/">Configure Timeouts</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/custom-templates/">Custom Templates</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/error-files/">Error Files</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/default-options/">HAProxy Options</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/keep-source-ip/">Keep Source IP</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/loadbalancer-ip/">Loadbalancer IP</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/max-connections/">Max Connections</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/pod-annotations/">Pod Annotations</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/rate-limit/">Rate Limit</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/rewrite-target/">Rewrite Target</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/service-annotations/">Service Annotations</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/node-port/">Specify NodePort</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/ssl-passthrough/">Ssl Passthrough</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/ssl-redirect/">Ssl Redirect</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/whitelist/">Whitelist</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/backend-rule/">Backend Rule</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/configuration/frontend-rule/">Frontend Rule</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b196a63ad19002abe5be850cb7eeedff-6" >
+  <label for="b196a63ad19002abe5be850cb7eeedff-6"><a>DNS</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/dns/external-dns/">External DNS</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b196a63ad19002abe5be850cb7eeedff-7" >
+  <label for="b196a63ad19002abe5be850cb7eeedff-7"><a>Security</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/security/basic-auth/">Basic Auth</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/security/tls-auth/">TLS Auth</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/security/oauth/">OAuth2</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b196a63ad19002abe5be850cb7eeedff-8" checked>
+  <label for="b196a63ad19002abe5be850cb7eeedff-8"><a>Monitoring</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/monitoring/haproxy-stats/">Exposing HAProxy Stats</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/monitoring/using-builtin-prometheus/">Monitor HAProxy using Prometheus</a></li>
+        
+      
+        
+          <li class="is-active"><a href="/products/voyager/7.0.0/guides/ingress/monitoring/using-coreos-prometheus-operator/">Monitor with CoreOS Prometheus operator</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/7.0.0/guides/ingress/monitoring/operator-stats/">Monitoring Voyager operator</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b196a63ad19002abe5be850cb7eeedff-9" >
+  <label for="b196a63ad19002abe5be850cb7eeedff-9"><a href="/products/voyager/7.0.0/guides/ingress/scaling/">Scaling Ingress</a></label>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b196a63ad19002abe5be850cb7eeedff-10" >
+  <label for="b196a63ad19002abe5be850cb7eeedff-10"><a href="/products/voyager/7.0.0/guides/ingress/pod-placement/">Pod Placement</a></label>
+</div>
+
+
+                              
+                            
+
+                        
+                      
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<blockquote>
+<p>New to Voyager? Please start <a href="/products/voyager/7.0.0/concepts/overview">here</a>.</p>
+</blockquote>
+
+<h1 id="monitor-haproxy-using-coreos-prometheus-operator">Monitor HAProxy using CoreOS Prometheus operator</h1>
+
+<p>This tutorial will show you how to monitor Voyager managed HAProxy pods using Prometheus via <a href="https://github.com/coreos/prometheus-operator">CoreOS Prometheus Operator</a>.</p>
+
+<h2 id="before-you-begin">Before You Begin</h2>
+
+<p>At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster. If you do not already have a cluster, you can create one by using <a href="https://github.com/kubernetes/minikube">Minikube</a>.</p>
+
+<p>Now, deploy Voyager operator following instructions <a href="/products/voyager/7.0.0/setup/install">here</a>.</p>
+
+<p>To keep things isolated, this tutorial uses a separate namespace called <code>demo</code> throughout this tutorial. Run the following command to prepare your cluster for this tutorial:</p>
+
+<pre><code class="language-console">$ kubectl create namespace demo
+namespace &quot;demo&quot; created
+
+$ kubectl get ns
+NAME          STATUS    AGE
+default       Active    45m
+demo          Active    10s
+kube-public   Active    45m
+kube-system   Active    45m
+</code></pre>
+
+<p>Note that the yaml files that are used in this tutorial, stored in <a href="https://github.com/appscode/voyager/tree/master/docs/examples/monitoring">docs/examples</a> folder in GitHub repository <a href="https://github.com/appscode/voyager">appscode/voyager</a>.</p>
+
+<h2 id="deploy-coreos-prometheus-operator">Deploy CoreOS-Prometheus Operator</h2>
+
+<h3 id="in-rbac-enabled-cluster">In RBAC enabled cluster</h3>
+
+<p>If RBAC <em>is</em> enabled, Run the following command to prepare your cluster for this tutorial:</p>
+
+<pre><code class="language-console">$ kubectl create -f https://raw.githubusercontent.com/appscode/voyager/7.0.0/docs/examples/monitoring/coreos-operator/rbac/demo-0.yaml
+namespace &quot;demo&quot; created
+clusterrole &quot;prometheus-operator&quot; created
+serviceaccount &quot;prometheus-operator&quot; created
+clusterrolebinding &quot;prometheus-operator&quot; created
+deployment &quot;prometheus-operator&quot; created
+
+$ kubectl get pods -n demo --watch
+NAME                                   READY     STATUS    RESTARTS   AGE
+prometheus-operator-79cb9dcd4b-2njgq   1/1       Running   0          2m
+
+
+$ kubectl get crd
+NAME                                    AGE
+alertmanagers.monitoring.coreos.com     11m
+prometheuses.monitoring.coreos.com      11m
+servicemonitors.monitoring.coreos.com   11m
+</code></pre>
+
+<p>Once the Prometheus operator CRDs are registered, run the following command to create a Prometheus.</p>
+
+<pre><code class="language-console">$ kubectl create -f https://raw.githubusercontent.com/appscode/voyager/7.0.0/docs/examples/monitoring/coreos-operator/rbac/demo-1.yaml
+clusterrole &quot;prometheus&quot; created
+serviceaccount &quot;prometheus&quot; created
+clusterrolebinding &quot;prometheus&quot; created
+prometheus &quot;prometheus&quot; created
+service &quot;prometheus&quot; created
+
+# Verify RBAC stuffs
+$ kubectl get clusterroles
+NAME                  AGE
+prometheus            48s
+prometheus-operator   1m
+
+$ kubectl get clusterrolebindings
+NAME                  AGE
+prometheus            7s
+prometheus-operator   25s
+
+$ kubectl get serviceaccounts -n demo
+NAME                  SECRETS   AGE
+default               1         5m
+prometheus            1         4m
+prometheus-operator   1         5m
+</code></pre>
+
+<h3 id="in-rbac-not-enabled-cluster">In RBAC *not* enabled cluster</h3>
+
+<p>If RBAC <em>is not</em> enabled, Run the following command to prepare your cluster for this tutorial:</p>
+
+<pre><code class="language-console">$ kubectl create -f https://raw.githubusercontent.com/appscode/voyager/7.0.0/docs/examples/monitoring/coreos-operator/demo-0.yaml
+namespace &quot;demo&quot; created
+deployment &quot;prometheus-operator&quot; created
+
+$ kubectl get pods -n demo --watch
+NAME                                   READY     STATUS              RESTARTS   AGE
+prometheus-operator-5dcd844486-nprmk   0/1       ContainerCreating   0          27s
+prometheus-operator-5dcd844486-nprmk   1/1       Running   0         46s
+
+$ kubectl get crd
+NAME                                    AGE
+alertmanagers.monitoring.coreos.com     45s
+prometheuses.monitoring.coreos.com      44s
+servicemonitors.monitoring.coreos.com   44s
+</code></pre>
+
+<p>Once the Prometheus operator CRDs are registered, run the following command to create a Prometheus.</p>
+
+<pre><code class="language-console">$ kubectl create -f https://raw.githubusercontent.com/appscode/voyager/7.0.0/docs/examples/monitoring/coreos-operator/demo-1.yaml
+prometheus &quot;prometheus&quot; created
+service &quot;prometheus&quot; created
+</code></pre>
+
+<h3 id="prometheus-dashboard">Prometheus Dashboard</h3>
+
+<p>Now to open prometheus dashboard on Browser:</p>
+
+<pre><code class="language-console">$ kubectl get svc -n demo
+NAME                  TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+prometheus            LoadBalancer   10.99.201.154   &lt;pending&gt;     9090:30900/TCP   5m
+prometheus-operated   ClusterIP      None            &lt;none&gt;        9090/TCP         5m
+
+$ minikube ip
+192.168.99.100
+
+$ minikube service prometheus -n demo --url
+http://192.168.99.100:30900
+</code></pre>
+
+<p>Now, open your browser and go to the following URL: <em>http://{minikube-ip}:{prometheus-svc-nodeport}</em> to visit Prometheus Dashboard. According to the above example, this URL will be <a href="http://192.168.99.100:30900">http://192.168.99.100:30900</a>.</p>
+
+<h2 id="create-ingress">Create Ingress</h2>
+
+<p>We are going to use a nginx server as the backend. To deploy nginx server, run the following commands:</p>
+
+<pre><code class="language-console">kubectl run nginx --image=nginx -n demo
+kubectl expose deployment nginx --name=web --port=80 --target-port=80 -n demo
+</code></pre>
+
+<p>Now create Ingress <code>ing.yaml</code></p>
+
+<pre><code class="language-console">$ kubectl apply -f https://raw.githubusercontent.com/appscode/voyager/7.0.0/docs/examples/monitoring/coreos-operator/ing.yaml
+ingress &quot;stats-ing&quot; created
+</code></pre>
+
+<pre><code class="language-yaml">apiVersion: voyager.appscode.com/v1beta1
+kind: Ingress
+metadata:
+  name: stats-ing
+  namespace: demo
+  annotations:
+    ingress.appscode.com/type: 'NodePort'
+    ingress.appscode.com/stats: 'true'
+    ingress.appscode.com/monitoring-agent: 'prometheus.io/coreos-operator'
+    ingress.appscode.com/service-monitor-labels: '{&quot;app&quot;: &quot;voyager&quot;}'
+    ingress.appscode.com/service-monitor-namespace: 'demo'
+spec:
+  rules:
+  - host: voyager.appscode.test
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: web
+          servicePort: 80
+</code></pre>
+
+<p>Voyager operator watches for <code>Ingress</code> objects using Kubernetes api. When a <code>Ingress</code> object is created, Voyager operator will create a new HAProxy deployment and a NodePort Service with name <code>voyager-{ingress-name}</code>. Since <code>ingress.appscode.com/stats</code> annotation was configured, a stats service object is configured accordingly. Here,</p>
+
+<table>
+<thead>
+<tr>
+<th>Keys</th>
+<th>Value</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ingress.appscode.com/stats</td>
+<td>bool</td>
+<td><code>false</code></td>
+<td><code>Required</code>. If set, HAProxy stats will be exposed</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/monitoring-agent</td>
+<td>string</td>
+<td></td>
+<td><code>Required</code>. Indicates the monitoring agent used. Here, we are using <a href="https://coreos.com/operators/prometheus/docs/latest/">CoreOS Prometheus Operator</a>. This agent was previously identified as <code>coreos-prometheus-operator</code></td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/service-monitor-labels</td>
+<td>map</td>
+<td></td>
+<td><code>Required</code>. Indicates labels applied to service monitor.</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/service-monitor-namespace</td>
+<td>string</td>
+<td></td>
+<td><code>Required</code>. Indicates namespace where service monitors are created. This must be the same namespace of the Prometheus instance.</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/service-monitor-endpoint-port</td>
+<td>integer</td>
+<td>56790</td>
+<td><code>Optional</code>. Indicates the port used by exporter side-car to expose Prometheus metrics endpoint. If the default port 56790 is used to expose traffic, change it to an unused port.</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/service-monitor-endpoint-scrape-interval</td>
+<td>string</td>
+<td></td>
+<td><code>Optional</code>. Indicates the srace interval for HAProxy exporter endpoint</td>
+</tr>
+</tbody>
+</table>
+
+<p>You can verify it running the following commands:</p>
+
+<pre><code class="language-console">$ kubectl get pods,svc -n demo
+NAME                                      READY     STATUS    RESTARTS   AGE
+po/nginx-8586cf59-rbc7x                   1/1       Running   0          5m
+po/prometheus-operator-6c5f58dc5b-67wgb   1/1       Running   0          7m
+po/prometheus-prometheus-0                2/2       Running   0          7m
+po/voyager-stats-ing-5bf6b54949-kmc9w     2/2       Running   0          3m
+
+NAME                          TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)               AGE
+svc/prometheus                LoadBalancer   10.111.248.128   &lt;pending&gt;     9090:30900/TCP        7m
+svc/prometheus-operated       ClusterIP      None             &lt;none&gt;        9090/TCP              7m
+svc/voyager-stats-ing         NodePort       10.105.130.139   &lt;none&gt;        80:31916/TCP          3m
+svc/voyager-stats-ing-stats   ClusterIP      10.111.55.62     &lt;none&gt;        56789/TCP,56790/TCP   3m
+svc/web                       ClusterIP      10.107.186.226   &lt;none&gt;        80/TCP                5m
+</code></pre>
+
+<pre><code class="language-yaml">$ kubectl get servicemonitor -n demo
+NAME                     AGE
+voyager-demo-stats-ing   4m
+
+$ kubectl get servicemonitor -n demo voyager-demo-stats-ing -o yaml
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  clusterName: &quot;&quot;
+  creationTimestamp: 2018-02-25T22:20:48Z
+  labels:
+    app: voyager
+    monitoring.appscode.com/service: voyager-stats-ing-stats.demo
+  name: voyager-demo-stats-ing
+  namespace: demo
+  resourceVersion: &quot;1820&quot;
+  selfLink: /apis/monitoring.coreos.com/v1/namespaces/demo/servicemonitors/voyager-demo-stats-ing
+  uid: 217225cb-1a7a-11e8-a133-080027640ad5
+spec:
+  endpoints:
+  - path: /voyager.appscode.com/v1beta1/namespaces/demo/ingresses/stats-ing/metrics
+    port: http
+    targetPort: 0
+  namespaceSelector:
+    matchNames:
+    - demo
+  selector:
+    matchLabels:
+      feature: stats
+      origin: voyager
+      origin-api-group: voyager.appscode.com
+      origin-name: stats-ing
+</code></pre>
+
+<p>Now, if you go the Prometheus Dashboard, you should see that this database endpoint as one of the targets.</p>
+
+<p><img src="/products/voyager/7.0.0/images/monitoring/coreos-operator.png" alt="coreos-operator" /></p>
+
+<p><strong>Known Limitations:</strong> If the database password is updated, exporter must be restarted to use the new credentials. This issue is tracked <a href="https://github.com/kubedb/project/issues/53">here</a>.</p>
+
+<h2 id="cleaning-up">Cleaning up</h2>
+
+<p>To cleanup the Kubernetes resources created by this tutorial, run:</p>
+
+<pre><code class="language-console">$ kubectl delete ns demo
+namespace &quot;demo&quot; deleted
+</code></pre>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#monitor-haproxy-using-coreos-prometheus-operator">Monitor HAProxy using CoreOS Prometheus operator</a>
+<ul>
+<li><a href="#before-you-begin">Before You Begin</a></li>
+<li><a href="#deploy-coreos-prometheus-operator">Deploy CoreOS-Prometheus Operator</a>
+<ul>
+<li><a href="#in-rbac-enabled-cluster">In RBAC enabled cluster</a></li>
+<li><a href="#in-rbac-not-enabled-cluster">In RBAC *not* enabled cluster</a></li>
+<li><a href="#prometheus-dashboard">Prometheus Dashboard</a></li>
+</ul></li>
+<li><a href="#create-ingress">Create Ingress</a></li>
+<li><a href="#cleaning-up">Cleaning up</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

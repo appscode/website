@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                      
+                        
+                          <a href="/products/searchlight/7.0.0/" class=" navbar-item">Welcome</a>
+                        
+                      
+                        
+                          <a href="/products/searchlight/7.0.0/concepts/" class=" navbar-item">Concepts</a>
+                        
+                      
+                        
+                          <a href="/products/searchlight/7.0.0/setup/" class=" is-active  navbar-item">Setup</a>
+                        
+                      
+                        
+                          <a href="/products/searchlight/7.0.0/guides/" class=" navbar-item">Guides</a>
+                        
+                      
+                        
+                          <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                              Reference
+                            </a>
+                            <div class="navbar-dropdown">
+                              
+                                
+                                  <a href="/products/searchlight/7.0.0/reference/hostfacts/" class="navbar-item">Hostfacts</a>
+                                
+                              
+                                
+                                  <a href="/products/searchlight/7.0.0/reference/hyperalert/" class="navbar-item">Hyperalert</a>
+                                
+                              
+                                
+                                  <a href="/products/searchlight/7.0.0/reference/searchlight/" class="navbar-item">Searchlight</a>
+                                
+                              
+                            </div>
+                          </div>
+                        
+                      
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+          
+          <div class="kd-version">
+            
+            <div class="control has-icons-left">
+              <div class="select">
+                
+                
+                <select>
+                  
+                    
+                    
+                      
+                        <option>master</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >8.0.0-rc.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >5.1.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option>3.0.1</option>
+                      
+                    
+                  
+                </select>
+              </div>
+              <span class="icon is-left">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          
+
+          
+            
+            
+              
+            
+              
+            
+              
+                
+                  
+
+                  
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              
+            
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+              
+
+                
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="d76a4dd7f6aae362b842a1845aeaa465-1" >
+  <label for="d76a4dd7f6aae362b842a1845aeaa465-1"><a href="/products/searchlight/7.0.0/setup/">Setup</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="d76a4dd7f6aae362b842a1845aeaa465-2" >
+  <label for="d76a4dd7f6aae362b842a1845aeaa465-2"><a href="/products/searchlight/7.0.0/setup/install/">Install</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="d76a4dd7f6aae362b842a1845aeaa465-3" checked>
+  <label for="d76a4dd7f6aae362b842a1845aeaa465-3"><a href="/products/searchlight/7.0.0/setup/hostfacts/">Install Hostfacts</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="d76a4dd7f6aae362b842a1845aeaa465-4" >
+  <label for="d76a4dd7f6aae362b842a1845aeaa465-4"><a href="/products/searchlight/7.0.0/setup/certificate/">Generate Certificate</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="d76a4dd7f6aae362b842a1845aeaa465-5" >
+  <label for="d76a4dd7f6aae362b842a1845aeaa465-5"><a href="/products/searchlight/7.0.0/setup/uninstall/">Uninstall</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="d76a4dd7f6aae362b842a1845aeaa465-6" >
+  <label for="d76a4dd7f6aae362b842a1845aeaa465-6"><a>Developer Guide</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/searchlight/7.0.0/setup/developer-guide/overview/">Overview</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0/setup/developer-guide/release/">Release</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<blockquote>
+<p>New to Searchlight? Please start <a href="/products/searchlight/7.0.0/concepts/README">here</a>.</p>
+</blockquote>
+
+<h1 id="hostfacts">Hostfacts</h1>
+
+<p><a href="/products/searchlight/7.0.0/reference/hostfacts/hostfacts_run">Hostfacts</a> is a http server used to expose various <a href="https://github.com/appscode/searchlight/blob/29d4d2150116a284d74368931e6fdfe58efc7e6e/pkg/hostfacts/server.go#L32">node metrics</a>. This is a wrapper around the wonderful <a href="https://github.com/shirou/gopsutil">shirou/gopsutil</a> library. This is used by <a href="/products/searchlight/7.0.0/guides/node-alerts/node-volume"><code>check_node_volume</code></a> and <a href="/products/searchlight/7.0.0/guides/pod-alerts/pod-volume"><code>check_pod_volume</code></a> commands to detect disk usage stats. To use these check commands, hostfacts must be installed directly on every node in the cluster. Hostfacts can&rsquo;t be deployed using DaemonSet. This guide will walk you through how to deploy hostfacts as a Systemd service.</p>
+
+<h2 id="installation-guide">Installation Guide</h2>
+
+<p>First ssh into a Kubernetes node. If you are using <a href="https://github.com/kubernetes/minikube">Minikube</a>, run the following command:</p>
+
+<pre><code class="language-console">$ minikube ssh
+</code></pre>
+
+<h3 id="install-hostfacts">Install Hostfacts</h3>
+
+<p>Now, download and install a pre-built binary using the following command:</p>
+
+<pre><code class="language-console">curl -Lo hostfacts https://cdn.appscode.com/binaries/hostfacts/7.0.0/hostfacts-linux-amd64 \
+  &amp;&amp; chmod +x hostfacts \
+  &amp;&amp; sudo mv hostfacts /usr/bin/
+</code></pre>
+
+<p>If you are using kube-up scripts to provision Kubernetes cluster, you can find a salt formula <a href="https://github.com/appscode/kubernetes/tree/1.5.7-ac/cluster/saltbase/salt/appscode-hostfacts">here</a>.</p>
+
+<h3 id="create-systemd-service">Create Systemd Service</h3>
+
+<p>To run hostfacts server as a Systemd service, write <code>hostfacts.service</code> file in <strong>systemd directory</strong> in your node.</p>
+
+<pre><code class="language-console"># Debian/Ubuntu (example, minikube)
+$ sudo vi /lib/systemd/system/hostfacts.service
+
+# RedHat
+$ sudo vi /usr/lib/systemd/system/hostfacts.service
+</code></pre>
+
+<p>Hostfacts supports various types of authentication mechanism. Write the <code>hostfacts.service</code> accordingly.</p>
+
+<h4 id="hostfacts-without-authentication">Hostfacts without authentication</h4>
+
+<p>If you are running Kubernetes cluster inside a private network in AWS or GCP or just for testing in minikube, you may ignore authentication and SSL. In that case, use a <code>hostfacts.service</code> file like below:</p>
+
+<pre><code class="language-ini">[Unit]
+Description=Provide host facts
+
+[Service]
+ExecStart=/usr/bin/hostfacts run --v=3
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+
+<h4 id="hostfacts-with-basic-auth">Hostfacts with Basic auth</h4>
+
+<p>If you want to use a username/password pair with your Hostfacts binary, pass it via flag. Please note that, all nodes on your cluster must use the same username/password.</p>
+
+<pre><code class="language-ini">[Unit]
+Description=Provide host facts
+
+[Service]
+ExecStart=/usr/bin/hostfacts run --v=3 --username=&quot;&lt;username&gt;&quot; --password=&quot;&lt;password&gt;&quot;
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+
+<h4 id="hostfacts-with-bearer-token">Hostfacts with Bearer token</h4>
+
+<p>If you want to use a bearer token with your Hostfacts binary, pass it via flag. Please note that, all nodes on your cluster must use the same token and ca certificate if any.</p>
+
+<pre><code class="language-ini">[Unit]
+Description=Provide host facts
+
+[Service]
+ExecStart=/usr/bin/hostfacts run --v=3 --token=&quot;&lt;token&gt;&quot;
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+
+<h4 id="using-ssl">Using SSL</h4>
+
+<p>If your cluster is running inside a shared network (eg, DigitalOcean), you should enable SSL. If you want to set SSL certificate, do the following:</p>
+
+<ul>
+<li>Generate a single pair of CA certificate and key. Then generate a separate SSL certificate pair for each node in your cluster. See the steps <a href="/products/searchlight/7.0.0/setup/certificate">here</a>.</li>
+<li>Now, copy the ca.crt and node specific server.crt and server.key to the appropriate node. We recommend using folder <code>/srv/hostfacts/pki/</code>.</li>
+<li>Use flags to pass the path to node specific certificates to its hostfact binary.</li>
+</ul>
+
+<pre><code class="language-ini"># Basic auth
+ExecStart=/usr/bin/hostfacts run --v=3 --username=&quot;&lt;username&gt;&quot; --password=&quot;&lt;password&gt;&quot; --caCertFile=&quot;&lt;path to ca cert file&gt;&quot; --certFile=&quot;&lt;path to server cert file&gt;&quot; --keyFile=&quot;&lt;path to server key file&gt;&quot;
+</code></pre>
+
+<pre><code class="language-ini"># Bearer token
+ExecStart=/usr/bin/hostfacts run --v=3 --token=&quot;&lt;token&gt;&quot; --caCertFile=&quot;&lt;path to ca cert file&gt;&quot; --certFile=&quot;&lt;path to server cert file&gt;&quot; --keyFile=&quot;&lt;path to server key file&gt;&quot;
+</code></pre>
+
+<h3 id="activate-systemd-service">Activate Systemd service</h3>
+
+<pre><code class="language-console"># Configure to be automatically started at boot time
+$ sudo systemctl enable hostfacts
+
+# Start service
+$ sudo systemctl start hostfacts
+</code></pre>
+
+<h3 id="create-hostfacts-secret">Create Hostfacts Secret</h3>
+
+<p>The last step is to create a Secret so that Searchlight operator can connect to Hostfacts server. This secret must be created in the same namespace where Searchlight operator is running.</p>
+
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>HOSTFACTS_PORT</td>
+<td>56977</td>
+<td><code>Required</code> Port used by hostfacts server. To change the default value, use <code>--address</code> flag</td>
+</tr>
+
+<tr>
+<td>HOSTFACTS_USERNAME</td>
+<td></td>
+<td><code>Optional</code> Username for basic auth</td>
+</tr>
+
+<tr>
+<td>HOSTFACTS_PASSWORD</td>
+<td></td>
+<td><code>Optional</code> Password for basic auth</td>
+</tr>
+
+<tr>
+<td>HOSTFACTS_TOKEN</td>
+<td></td>
+<td><code>Optional</code> Token for bearer auth</td>
+</tr>
+
+<tr>
+<td>HOSTFACTS_CA_CERT_DATA</td>
+<td></td>
+<td><code>Optional</code> PEM encoded CA certificate used by Hostfacts server</td>
+</tr>
+</tbody>
+</table>
+
+<pre><code class="language-console">$ echo -n '' &gt; HOSTFACTS_PORT
+$ echo -n '' &gt; HOSTFACTS_USERNAME
+$ echo -n '' &gt; HOSTFACTS_PASSWORD
+$ echo -n '' &gt; HOSTFACTS_TOKEN
+$ echo -n '' &gt; HOSTFACTS_CA_CERT_DATA
+$ kubectl create secret generic hostfacts -n kube-system \
+    --from-file=./HOSTFACTS_PORT \
+    --from-file=./HOSTFACTS_USERNAME \
+    --from-file=./HOSTFACTS_PASSWORD \
+    --from-file=./HOSTFACTS_TOKEN \
+    --from-file=./HOSTFACTS_CA_CERT_DATA
+secret &quot;hostfacts&quot; created
+</code></pre>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#hostfacts">Hostfacts</a>
+<ul>
+<li><a href="#installation-guide">Installation Guide</a>
+<ul>
+<li><a href="#install-hostfacts">Install Hostfacts</a></li>
+<li><a href="#create-systemd-service">Create Systemd Service</a>
+<ul>
+<li><a href="#hostfacts-without-authentication">Hostfacts without authentication</a></li>
+<li><a href="#hostfacts-with-basic-auth">Hostfacts with Basic auth</a></li>
+<li><a href="#hostfacts-with-bearer-token">Hostfacts with Bearer token</a></li>
+<li><a href="#using-ssl">Using SSL</a></li>
+</ul></li>
+<li><a href="#activate-systemd-service">Activate Systemd service</a></li>
+<li><a href="#create-hostfacts-secret">Create Hostfacts Secret</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

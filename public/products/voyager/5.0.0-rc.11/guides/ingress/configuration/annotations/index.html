@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                      
+                        
+                          <a href="/products/voyager/5.0.0-rc.11/" class=" navbar-item">Welcome</a>
+                        
+                      
+                        
+                          <a href="/products/voyager/5.0.0-rc.11/concepts/" class=" navbar-item">Concepts</a>
+                        
+                      
+                        
+                          <a href="/products/voyager/5.0.0-rc.11/setup/" class=" navbar-item">Setup</a>
+                        
+                      
+                        
+                          <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                              Guides
+                            </a>
+                            <div class="navbar-dropdown">
+                              
+                                
+                                  <a href="/products/voyager/5.0.0-rc.11/guides/certificate/" class="navbar-item">Certificate</a>
+                                
+                              
+                                
+                                  <a href="/products/voyager/5.0.0-rc.11/guides/ingress/" class="navbar-item">Ingress</a>
+                                
+                              
+                            </div>
+                          </div>
+                        
+                      
+                        
+                          <a href="/products/voyager/5.0.0-rc.11/reference/" class=" navbar-item">Reference</a>
+                        
+                      
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+          
+          <div class="kd-version">
+            
+            <div class="control has-icons-left">
+              <div class="select">
+                
+                
+                <select>
+                  
+                    
+                    
+                      
+                        <option>master</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >10.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >9.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >8.0.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >7.4.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.3.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.2.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.1.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >7.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >6.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >5.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option>3.2.2</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                </select>
+              </div>
+              <span class="icon is-left">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          
+
+          
+            
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+
+                  
+                  
+                    
+                  
+                    
+
+                      
+
+                    
+                  
+                
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+              
+
+                
+              
+
+                
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+                        
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+                            
+                              
+                                
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="47740b68f75a3d73eb3dfb0da4a3eb1e-1" >
+  <label for="47740b68f75a3d73eb3dfb0da4a3eb1e-1"><a href="/products/voyager/5.0.0-rc.11/guides/ingress/">Ingress</a></label>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="47740b68f75a3d73eb3dfb0da4a3eb1e-2" >
+  <label for="47740b68f75a3d73eb3dfb0da4a3eb1e-2"><a>HTTP</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/http/single-service/">Single Service</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/http/virtual-hosting/">Virtual Hosting</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/http/source-range/">Source Range</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/http/rewrite-rules/">Rewrite Support</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/http/cors/">CORS</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/http/custom-http-port/">Custom HTTP Port</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/http/external-svc/">External SVC</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/http/hsts/">HSTS</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/http/statefulset-pod/">Statefulset Pod</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/http/sticky-session/">Sticky Session</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/http/blue-green-deployment/">Blue Green Deployment</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="47740b68f75a3d73eb3dfb0da4a3eb1e-3" >
+  <label for="47740b68f75a3d73eb3dfb0da4a3eb1e-3"><a>TLS</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/tls/overview/">Overview</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/tls/aws-cert-manager/">AWS Cert Manager</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/tls/backend-tls/">Backend TLS</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="47740b68f75a3d73eb3dfb0da4a3eb1e-4" >
+  <label for="47740b68f75a3d73eb3dfb0da4a3eb1e-4"><a>TCP</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/tcp/overview/">Overview</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="47740b68f75a3d73eb3dfb0da4a3eb1e-5" checked>
+  <label for="47740b68f75a3d73eb3dfb0da4a3eb1e-5"><a>Configuration</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/configuration/backend-rule/">Backend Rule</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/configuration/frontend-rule/">Frontend Rule</a></li>
+        
+      
+        
+          <li class="is-active"><a href="/products/voyager/5.0.0-rc.11/guides/ingress/configuration/annotations/">Annotations</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/configuration/node-port/">Specify NodePort</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/configuration/default-options/">HAProxy Options</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/configuration/default-timeouts/">Configure Timeouts</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/configuration/custom-templates/">Custom Templates</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="47740b68f75a3d73eb3dfb0da4a3eb1e-6" >
+  <label for="47740b68f75a3d73eb3dfb0da4a3eb1e-6"><a>Security</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/security/basic-auth/">Basic Auth</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/security/tls-auth/">TLS Auth</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="47740b68f75a3d73eb3dfb0da4a3eb1e-7" >
+  <label for="47740b68f75a3d73eb3dfb0da4a3eb1e-7"><a>Monitoring</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/5.0.0-rc.11/guides/ingress/monitoring/stats/">Stats and Prometheus</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="47740b68f75a3d73eb3dfb0da4a3eb1e-8" >
+  <label for="47740b68f75a3d73eb3dfb0da4a3eb1e-8"><a href="/products/voyager/5.0.0-rc.11/guides/ingress/scaling/">Scaling Ingress</a></label>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="47740b68f75a3d73eb3dfb0da4a3eb1e-9" >
+  <label for="47740b68f75a3d73eb3dfb0da4a3eb1e-9"><a href="/products/voyager/5.0.0-rc.11/guides/ingress/pod-placement/">Pod Placement</a></label>
+</div>
+
+
+                              
+                            
+
+                        
+                      
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<h1 id="supported-annotations">Supported Annotations</h1>
+
+<p>Voyager operator allows customization of Ingress resource using annotation keys with <code>ingress.appscode.com/</code> prefix.
+The ingress annotaiton keys are always string. Annotation values might have the following data types:</p>
+
+<table>
+<thead>
+<tr>
+<th>Value Type</th>
+<th>Description</th>
+<th>Example YAML</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>string</td>
+<td>any valid string</td>
+<td>&lsquo;v1&rsquo;; &ldquo;v2&rdquo;</td>
+</tr>
+
+<tr>
+<td>integer</td>
+<td>any valid integer</td>
+<td>&lsquo;1&rsquo;; &ldquo;2&rdquo;</td>
+</tr>
+
+<tr>
+<td>bool</td>
+<td>1, t, T, TRUE, true, True considered <em>true</em>; everything else is considered <em>false</em></td>
+<td>&lsquo;true&rsquo;</td>
+</tr>
+
+<tr>
+<td>array</td>
+<td>json formatted array of string</td>
+<td>&lsquo;[&ldquo;v1&rdquo;, &ldquo;v2&rdquo;]&rsquo;</td>
+</tr>
+
+<tr>
+<td>map</td>
+<td>json formatted string to string map</td>
+<td>&rsquo;{ &ldquo;k1&rdquo; : &ldquo;v1&rdquo;, &ldquo;k2&rdquo;: &ldquo;v2&rdquo; }&rsquo;</td>
+</tr>
+
+<tr>
+<td>enum</td>
+<td>string which has a predefined set of valid values</td>
+<td>&lsquo;E1&rsquo;; &ldquo;E2&rdquo;</td>
+</tr>
+</tbody>
+</table>
+
+<p>If you are using YAML to write your Ingress, you can use any valid YAML syntax, including multi-line string. Here is an example:</p>
+
+<pre><code class="language-yaml">annotations:
+  ingress.appscode.com/type: LoadBalancer
+  ingress.appscode.com/replicas: '2'
+  ingress.appscode.com/load-balancer-ip: '100.101.102.103'
+  ingress.appscode.com/stats: 'true'
+  ingress.appscode.com/stats-port: '2017'
+  ingress.appscode.com/stats-secret-name: my-secret
+  ingress.appscode.com/annotations-service: |
+    {
+        &quot;service.beta.kubernetes.io/aws-load-balancer-backend-protocol&quot;: &quot;http&quot;,
+        &quot;service.beta.kubernetes.io/aws-load-balancer-proxy-protocol&quot;: &quot;*&quot;,
+        &quot;service.beta.kubernetes.io/aws-load-balancer-ssl-cert&quot;: &quot;arn:aws:acm:...&quot;
+    }
+</code></pre>
+
+<p>Below is the full list of supported annotation keys, <a href="ingress-annotations.md">voyager also support standard ingress annotations</a>:</p>
+
+<table>
+<thead>
+<tr>
+<th>Keys</th>
+<th>Value</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ingress.appscode.com/type</td>
+<td>LoadBalancer, HostPort, NodePort, Internal</td>
+<td>LoadBalancer</td>
+<td><code>Required</code>. Indicates type of service used to expose HAProxy to the internet</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/replicas</td>
+<td>integer</td>
+<td>1</td>
+<td><code>Optional</code>. Indicates number of replicas of HAProxy pods</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/load-balancer-ip</td>
+<td>string</td>
+<td>x</td>
+<td><code>Optional</code>. For &ldquo;gce&rdquo;, &ldquo;gke&rdquo;, &ldquo;azure&rdquo;, &ldquo;acs&rdquo; cloud provider, if this value is set to a valid IPv4 address, it will be assigned to loadbalancer used to expose HAProxy. The IP should be pre-allocated in cloud provider account but not assigned to the load-balancer. Usually this is set to a static IP to preserve DNS configuration</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/node-selector</td>
+<td>map</td>
+<td>x</td>
+<td>Indicates which hosts are selected to run HAProxy pods. This is a recommended annotation for <code>HostPort</code> type ingress.</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/sticky-session</td>
+<td>bool</td>
+<td>false</td>
+<td><code>Optional</code>. Indicates the session affinity for the traffic. If set, session affinity will apply to all the rulses.</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/annotations-service</td>
+<td>map</td>
+<td>x</td>
+<td><code>Optional</code>. Annotaiotns applied to service used to expose HAProxy</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/annotations-pod</td>
+<td>map</td>
+<td>x</td>
+<td><code>Optional</code>. Annotations applied to pods used to run HAProxy</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/keep-source-ip</td>
+<td>bool</td>
+<td>false</td>
+<td><code>Optional</code>. If set, preserves source IP for <code>LoadBalancer</code> type ingresses. The actual configuration generated depends on the underlying cloud provider. For gce, gke, azure: Adds annotation <code>service.beta.kubernetes.io/external-traffic: OnlyLocal</code> to services used to expose HAProxy. For aws, enforces the use of the PROXY protocol.</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/accept-proxy</td>
+<td>bool</td>
+<td>false</td>
+<td><code>Optional</code>. If set, enforces the use of the PROXY protocol.</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/stats</td>
+<td>bool</td>
+<td>false</td>
+<td><code>Optional</code>. If set, HAProxy stats will be exposed</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/stats-port</td>
+<td>integer</td>
+<td>56789</td>
+<td><code>Optional</code>. Port used to expose HAProxy stats</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/stats-secret-name</td>
+<td>string</td>
+<td>x</td>
+<td><code>Optional</code>. Secret used to provide username &amp; password to secure HAProxy stats endpoint. Secret must contain keys <code>username</code> and <code>password</code></td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/stats-service-name</td>
+<td>string</td>
+<td><code>voyager-&lt;ingress-name&gt;-stats</code></td>
+<td>ClusterIP type service used to expose HAproxy stats. This allows to avoid exposing stats to internet.</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/ip</td>
+<td></td>
+<td></td>
+<td>Removed since 1.5.6. Use <code>ingress.appscode.com/load-balancer-ip</code></td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/persist</td>
+<td></td>
+<td></td>
+<td>Removed since 1.5.6.</td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/daemon.nodeSelector</td>
+<td></td>
+<td></td>
+<td>Removed since 1.5.6. Use <code>ingress.appscode.com/node-selector</code></td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/stickySession</td>
+<td></td>
+<td></td>
+<td>Removed since 1.5.6. Use <code>ingress.appscode.com/sticky-session</code></td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/annotationsService</td>
+<td></td>
+<td></td>
+<td>Removed since 1.5.6. Use <code>ingress.appscode.com/annotations-service</code></td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/annotationsPod</td>
+<td></td>
+<td></td>
+<td>Removed since 1.5.6. Use <code>ingress.appscode.com/annotations-pod</code></td>
+</tr>
+
+<tr>
+<td>ingress.appscode.com/statsSecretName</td>
+<td></td>
+<td></td>
+<td>Removed since 1.5.6. Use <code>ingress.appscode.com/stats-secret-name</code></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Following annotations for ingress are not modifiable. The configuration is applied only when an Ingress object is created.
+If you need to update these annotations, then first delete the Ingress and then recreate.</strong></p>
+
+<pre><code>ingress.appscode.com/type
+ingress.appscode.com/node-selector
+ingress.appscode.com/load-balaner-ip
+</code></pre>
+
+<p>The issue is being <a href="https://github.com/appscode/voyager/issues/143">tracked here.</a></p>
+
+<h2 id="custom-annotations-to-loadbalancer-service-or-pods">Custom Annotations to LoadBalancer Service or Pods</h2>
+
+<p>If the LoadBalancer service and Pods needs to be set custom annotations, those can be
+set via two ingress options.</p>
+
+<p><code>ingress.appscode.com/annotations-service</code>
+Json encoded annotations map that will be applied to LoadBalancer service.</p>
+
+<p>ie.</p>
+
+<pre><code>ingress.appscode.com/annotations-service = {&quot;foo&quot;: &quot;bar&quot;, &quot;service-annotation&quot;: &quot;set&quot;}
+</code></pre>
+
+<p>This will add the <code>foo:bar</code> and <code>service-annotation:set</code> to the Service annotation.</p>
+
+<p><code>ingress.appscode.com/annotations-pod</code>
+Json encoded annotations map that will be applied to LoadBalancer pods.</p>
+
+<p>ie.</p>
+
+<pre><code>ingress.appscode.com/annotations-pod = {&quot;foo&quot;: &quot;bar&quot;, &quot;pod-annotation&quot;: &quot;set&quot;}
+</code></pre>
+
+<p>This will add the <code>foo:bar</code> and <code>pod-annotation:set</code> to all the pods&rsquo; annotation.</p>
+
+<h2 id="ingress-annotations-support">Ingress Annotations Support</h2>
+
+<p>This file defines the list of supported annotations by voyager that are used in other ingress controllers.
+voyager intent to ensure maximum amount compatibility between different implementations.</p>
+
+<p>Voyager supports applying specified annotations in ingress or in backend service. If applied to ingress
+configuration will be applied on all backend of the ingress, if applied to service configurations will only apply on those backends.</p>
+
+<h2 id="ingress-annotations">Ingress Annotations</h2>
+
+<p>All following annotations are assumed to be prefixed with <code>ingress.kubernetes.io/</code>.
+Voyager also supports some particular defines annotation, <a href="#voyager-annotations">which are described here</a>.</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Details</th>
+<th>Annotation applies to</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong><a href="https://github.com/kubernetes/ingress/blob/master/docs/annotations.md#tls-related">TLS</a></strong></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>ssl-passthrough</code></td>
+<td>Pass TLS connections directly to backend; do not offload.</td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td><code>hsts</code></td>
+<td><a href="hsts.md">Enable HSTS</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td><code>hsts-max-age</code></td>
+<td><a href="hsts.md">Specifies the time (in seconds) the browser should connect to the server using the HTTPS connection.</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td><code>hsts-preload</code></td>
+<td><a href="hsts.md">Enable HSTS preload</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td><code>hsts-include-subdomains</code></td>
+<td><a href="hsts.md">HSTS rule applies to all of the site&rsquo;s sub domains</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td><strong><a href="https://github.com/kubernetes/ingress/blob/master/docs/annotations.md#authentication-related">Authentication</a></strong></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>auth-type</code></td>
+<td><a href="basic-auth.md">Enable Basic Auth</a></td>
+<td>ingress, service</td>
+</tr>
+
+<tr>
+<td><code>auth-secret</code></td>
+<td><a href="basic-auth.md">Basic Auth user secret</a></td>
+<td>ingress, service</td>
+</tr>
+
+<tr>
+<td><code>auth-realm</code></td>
+<td><a href="basic-auth.md">Basic Auth realm</a></td>
+<td>ingress, service</td>
+</tr>
+
+<tr>
+<td><strong><a href="https://github.com/kubernetes/ingress/blob/master/docs/annotations.md#miscellaneous">Miscellaneous</a></strong></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>enable-cors</code></td>
+<td><a href="cors.md">Enables CORS headers in HTTP response</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td><code>affinity</code></td>
+<td><a href="sticky-session.md">Sticky session</a>. only supported value is cookie</td>
+<td>ingress, service</td>
+</tr>
+
+<tr>
+<td><code>session-cookie-name</code></td>
+<td><a href="sticky-session.md">Sticky session cookie name to set</a></td>
+<td>ingress, service</td>
+</tr>
+
+<tr>
+<td><code>session-cookie-hash</code></td>
+<td><a href="sticky-session.md">Sticky session cookie type</a></td>
+<td>ingress, service</td>
+</tr>
+
+<tr>
+<td><code>proxy-body-size</code></td>
+<td>Maximum http request body size. This limits the advertised length of the HTTP request&rsquo;s body in bytes.</td>
+<td>ingress</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="voyager-annotations">Voyager Annotations</h2>
+
+<p>voyager supports other annotations to serve different purpose prefixed with <code>ingress.appscode.com/</code>. Annotations
+can be applied on ingress or backends.</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Details</th>
+<th>Annotation applies to</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>type</td>
+<td>Defines loadbalancer type</td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>replicas</td>
+<td><a href="/products/voyager/5.0.0-rc.11/guides/ingress/replicas-and-autoscaling">Scale load balancer replica</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>backend-weight</td>
+<td><a href="weighted.md">Weighted Loadbalancing for Canary Deployment</a></td>
+<td>pod</td>
+</tr>
+
+<tr>
+<td>annotations-service</td>
+<td><a href="annotations.md">Add Custom Annotation to LoadBalancer Service</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>annotations-pod</td>
+<td><a href="annotations.md">Add Custom Annotation to LoadBalancer Pods</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>accept-proxy</td>
+<td>Accept proxy protocol</td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>default-timeout</td>
+<td><a href="default-timeouts.md">Configure Custom Timeouts for HAProxy</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>default-option</td>
+<td><a href="default-options.md">Configure Options for HAProxy</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>backend-tls</td>
+<td><a href="backend-tls.md">TLS enabled Backend</a></td>
+<td>service, ingress</td>
+</tr>
+
+<tr>
+<td>sticky-session (deprecated)</td>
+<td><a href="sticky-session.md">Configure Sticky session to Backends</a></td>
+<td>service, ingress</td>
+</tr>
+
+<tr>
+<td>use-dns-resolver</td>
+<td><a href="external-svc.md">Supports redirects/DNS resolution for <code>ExternalName</code> type service</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>dns-resolver-nameservers</td>
+<td><a href="external-svc.md">Supports redirects/DNS resolution for <code>ExternalName</code> type service</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>dns-resolver-check-health</td>
+<td><a href="external-svc.md">Supports redirects/DNS resolution for <code>ExternalName</code> type service</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>dns-resolver-retries</td>
+<td><a href="external-svc.md">Supports redirects/DNS resolution for <code>ExternalName</code> type service</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>dns-resolver-timeout</td>
+<td><a href="external-svc.md">Supports redirects/DNS resolution for <code>ExternalName</code> type service</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>dns-resolver-hold</td>
+<td><a href="external-svc.md">Supports redirects/DNS resolution for <code>ExternalName</code> type service</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>stats</td>
+<td><a href="stats.md">Expose HAProxy stats</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>stats-port</td>
+<td><a href="stats.md">Expose HAProxy stats</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>stats-secret-name</td>
+<td><a href="stats.md">Expose HAProxy stats</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>stats-service-name</td>
+<td><a href="stats.md">Expose HAProxy stats</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>monitoring-agent</td>
+<td><a href="stats.md#using-prometheus">Expose HAProxy stats using prometheus</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>service-monitor-labels</td>
+<td><a href="stats.md#using-prometheus">Expose HAProxy stats using prometheus</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>service-monitor-namespace</td>
+<td><a href="stats.md#using-prometheus">Expose HAProxy stats using prometheus</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>service-monitor-endpoint-port</td>
+<td><a href="stats.md#using-prometheus">Expose HAProxy stats using prometheus</a></td>
+<td>ingress</td>
+</tr>
+
+<tr>
+<td>service-monitor-endpoint-scrape-interval</td>
+<td><a href="stats.md#using-prometheus">Expose HAProxy stats using prometheus</a></td>
+<td>ingress</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+
+<ul>
+<li><a href="https://github.com/kubernetes/ingress/blob/master/docs/annotations.md">kubernetes/ingress</a></li>
+<li><a href="https://github.com/appscode/voyager/issues/491">Tracking Bugs</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#supported-annotations">Supported Annotations</a>
+<ul>
+<li><a href="#custom-annotations-to-loadbalancer-service-or-pods">Custom Annotations to LoadBalancer Service or Pods</a></li>
+<li><a href="#ingress-annotations-support">Ingress Annotations Support</a></li>
+<li><a href="#ingress-annotations">Ingress Annotations</a></li>
+<li><a href="#voyager-annotations">Voyager Annotations</a></li>
+<li><a href="#acknowledgements">Acknowledgements</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

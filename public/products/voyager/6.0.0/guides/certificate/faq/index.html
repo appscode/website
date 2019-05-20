@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                      
+                        
+                          <a href="/products/voyager/6.0.0/" class=" navbar-item">Welcome</a>
+                        
+                      
+                        
+                          <a href="/products/voyager/6.0.0/concepts/" class=" navbar-item">Concepts</a>
+                        
+                      
+                        
+                          <a href="/products/voyager/6.0.0/setup/" class=" navbar-item">Setup</a>
+                        
+                      
+                        
+                          <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                              Guides
+                            </a>
+                            <div class="navbar-dropdown">
+                              
+                                
+                                  <a href="/products/voyager/6.0.0/guides/certificate/" class="navbar-item">Certificate</a>
+                                
+                              
+                                
+                                  <a href="/products/voyager/6.0.0/guides/ingress/" class="navbar-item">Ingress</a>
+                                
+                              
+                            </div>
+                          </div>
+                        
+                      
+                        
+                          <a href="/products/voyager/6.0.0/reference/" class=" navbar-item">Reference</a>
+                        
+                      
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+          
+          <div class="kd-version">
+            
+            <div class="control has-icons-left">
+              <div class="select">
+                
+                
+                <select>
+                  
+                    
+                    
+                      
+                        <option>master</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >10.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >9.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >8.0.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >7.4.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.3.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.2.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >7.1.1</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >7.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >6.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >5.0.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option>3.2.2</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                </select>
+              </div>
+              <span class="icon is-left">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          
+
+          
+            
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+
+                  
+                  
+                    
+
+                      
+
+                    
+                  
+                    
+                  
+                
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+              
+
+                
+              
+
+                
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+                        
+
+                            
+                              
+                                
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="0ef3deb2ebd02ddf128650e62f79e197-1" >
+  <label for="0ef3deb2ebd02ddf128650e62f79e197-1"><a href="/products/voyager/6.0.0/guides/certificate/">Certificate</a></label>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="0ef3deb2ebd02ddf128650e62f79e197-2" >
+  <label for="0ef3deb2ebd02ddf128650e62f79e197-2"><a>HTTP Challenger</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/6.0.0/guides/certificate/http/overview/">Overview</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="0ef3deb2ebd02ddf128650e62f79e197-3" >
+  <label for="0ef3deb2ebd02ddf128650e62f79e197-3"><a>DNS Challenger</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/voyager/6.0.0/guides/certificate/dns/route53/">AWS Route53</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/6.0.0/guides/certificate/dns/google-cloud/">Google Cloud</a></li>
+        
+      
+        
+          <li ><a href="/products/voyager/6.0.0/guides/certificate/dns/providers/">Supported Providers</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="0ef3deb2ebd02ddf128650e62f79e197-4" >
+  <label for="0ef3deb2ebd02ddf128650e62f79e197-4"><a href="/products/voyager/6.0.0/guides/certificate/delete/">Delete</a></label>
+</div>
+
+
+                              
+                            
+                              
+                                
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="0ef3deb2ebd02ddf128650e62f79e197-5" checked>
+  <label for="0ef3deb2ebd02ddf128650e62f79e197-5"><a href="/products/voyager/6.0.0/guides/certificate/faq/">FAQ</a></label>
+</div>
+
+
+                              
+                            
+
+                        
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+                      
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<blockquote>
+<p>New to Voyager? Please start <a href="/products/voyager/6.0.0/concepts/overview">here</a>.</p>
+</blockquote>
+
+<h1 id="faq">FAQ</h1>
+
+<h2 id="let-s-encrypt-faqs">Let&rsquo;s Encrypt FAQs</h2>
+
+<h3 id="how-do-i-renew-my-le-certificates">How do I renew my LE certificates?</h3>
+
+<p>LE issues certificates that are valid for 90 days. Voyager operator will try renewing your certificate 7 days prior to expiration. Once renewed certificates are issued, HAProxy will be automatically updated to use the new certificates.</p>
+
+<h3 id="i-think-i-did-everything-according-to-this-doc-but-my-certificate-is-not-issuing-how-do-i-debug">I think I did everything according to this doc but my certificate is not issuing? How do I debug?</h3>
+
+<p>To debug, describe the certificate object and check the events listed under it. Voyager will report any warning events under the certificate object.</p>
+
+<pre><code class="language-console">kubectl describe certificate &lt;name&gt; --namespace &lt;namespace&gt;
+</code></pre>
+
+<p>You can also check the logs for voyager operator pod and look for anything suspicious.</p>
+
+<pre><code class="language-console">kubectl logs -f &lt;voyager-pod-name&gt; -n kube-system
+</code></pre>
+
+<h3 id="what-are-the-rate-limits-for-let-s-encrypt">What are the rate limits for Let&rsquo;s Encrypt?</h3>
+
+<p>Please consult the official document on this matter: <a href="https://letsencrypt.org/docs/rate-limits/">https://letsencrypt.org/docs/rate-limits/</a></p>
+
+<h3 id="how-to-use-let-s-encrypt-staging-servers">How to use Let&rsquo;s Encrypt staging servers?</h3>
+
+<p>If you are just testing Voyager and want to avoid hitting the rate limits in LE productoion environment, you have 2 options:</p>
+
+<ul>
+<li>Buy a cheap domain for testing. There are lot of $0.99/yr domains available these days.</li>
+<li>You can tell voyager to use the LE staging servers for issuing the certificate. The issued certificate is not trusted, hence should not be used in production websites. But this works great for testing purposes. To use the staging environment, set the key <code>ACME_SERVER_URL</code> in your acme secret in addition to your email address.</li>
+</ul>
+
+<pre><code class="language-console">kubectl create secret generic acme-account \
+  --from-literal=ACME_EMAIL=me@example.com \
+  --from-literal=ACME_SERVER_URL=https://acme-staging.api.letsencrypt.org/directory
+</code></pre>
+
+<h3 id="where-is-my-le-account-info">Where is my LE account info?</h3>
+
+<p>Given your acme email and acme server url (if provided), voyager operator will open a new LE account. Voyager will store the account data in the acme user secret under <code>ACME_USER_PRIVATE_KEY</code> and <code>ACME_REGISTRATION_DATA</code> keys after the first successful registration. Any following interaction will LE will done using this account. This helps voyager to avoid performing repeated domain ownership challenged. We recommend that you keep a backup copy of the full secret. To be clear, if these keys are missing voyager will automatically register a new account with LE and use that.</p>
+
+<pre><code class="language-console">$ kubectl get secrets acme-account -o yaml
+apiVersion: v1
+data:
+  ACME_EMAIL: dGFt29t
+  ACME_REGISTRATION_DATA: eyJib2R5Ijp7InJlc291cmNlIjoicmVnIiwiaWQiOjI0OTc1NTYwLCJrZXkiOnsia3R5IjoiUlNBIiwibiI6IjNXRDRzY0hsUUN6N1JmbUZUNmZ3YXpIZ2UyNjhsajk5UGJmMkNwV1lSRzhlTFNHVGVBd0ZXdFVmRTRyMnItQkdjT3AtTnFtYUxBWGxGQmZTWjhtNzRnNEhPbHdPR0tYaTg1cG5hRkYxZS12MDEuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL25ldy1hdXRoeiIsInRlcm1zX29mX3NlcnZpY2UiOiJodHRwczovL2xldHNlbmNyeXB0Lm9yZy9kb2N1bWVudHMvTEUtU0EtdjEuMi1Ob3ZlbWJlci0xNS0yMDE3LnBkZiJ9
+  ACME_USER_PRIVATE_KEY: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb2dJQkFBS0NBUUVBM1dENHNjSGxRQ3o3UmZtRlQ2ZndhekhnZTI2OGxqOTlQYmYyQ3BXWVJHOGVMU0dUCmVBd0ZXdFVmRTRyMnIrQkdjT3ArTnFtYUxBWGxGQmZTWjhtNzRnNEhPbHdPR0tYaTg1cG5hRkYxU3hBL3BzNkMKMlZVK0tWQmtEczd6d200VmpZV1pXQUl1cDJPT3QxQjhzSE1zbmpuYm82d1dUeVh0TWZINVBoSUFxYnl0dUVKVgpWSklzUVh3WittaWVzOG9URUdIVjRldUgwVC9aL1NSZXpRNExUVExxN0UxNGZtK3FyOFV4b2FxTVhtSHFhNFA0b2svWWg0RHdieTFpelU1cDg9Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==
+kind: Secret
+metadata:
+  creationTimestamp: 2017-11-27T23:44:32Z
+  name: acme-account
+  namespace: default
+  resourceVersion: &quot;33187&quot;
+  selfLink: /api/v1/namespaces/default/secrets/acme-account
+  uid: eab30248-d3cc-11e7-8b04-02cf95c35e16
+type: Opaque
+</code></pre>
+
+<h3 id="how-can-i-distribute-the-issued-ssl-certificates">How can I distribute the issued ssl certificates?</h3>
+
+<p>There are several options:</p>
+
+<ul>
+<li>If you are trying to distribute the same ssl certificate across different namespaces of a cluster, you can use a tool like <a href="https://appscode.com/products/kubed">kubed</a>.</li>
+<li>If you want to distribute the issued certificates across different clusters, you can setup Voyager to issue certificates independently on each cluster. Please read the rate limiting restrictions for LE. The other option is to use <a href="https://appscode.com/products/kubed">kubed</a>.</li>
+<li>Just manually copy paste the <code>tls-***</code> secret to your destination cluster or namespace.</li>
+</ul>
+
+<h3 id="how-to-issue-certificate-with-multiple-domains">How to issue certificate with multiple domains?</h3>
+
+<p>The above example shows how to issue a SANS certificate with multiple domains. The only restriction is that all domains must be using the same DNS provider account. They can use different domain registrars.</p>
+
+<h3 id="how-to-issue-wildcard-certificates-via-let-s-encrypt">How to issue Wildcard certificates via Let&rsquo;s Encrypt?</h3>
+
+<p>Wild card certificates are not supported by Let&rsquo;s Encrypt as of Nov 2017. Wildcard certificates are <a href="https://letsencrypt.org/2017/07/06/wildcard-certificates-coming-jan-2018.html">coming to LE in 2018</a>. Once this is officially supported, we hope to integrate that in Voyager.</p>
+
+<h3 id="does-voyager-support-ocsp-stapling">Does Voyager support OCSP stapling?</h3>
+
+<p>Voyager currently does not issue certificates that use OCSP stapling. See <a href="https://github.com/appscode/voyager/issues/531">here</a> for prior discussions.</p>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#faq">FAQ</a>
+<ul>
+<li><a href="#let-s-encrypt-faqs">Let&rsquo;s Encrypt FAQs</a>
+<ul>
+<li><a href="#how-do-i-renew-my-le-certificates">How do I renew my LE certificates?</a></li>
+<li><a href="#i-think-i-did-everything-according-to-this-doc-but-my-certificate-is-not-issuing-how-do-i-debug">I think I did everything according to this doc but my certificate is not issuing? How do I debug?</a></li>
+<li><a href="#what-are-the-rate-limits-for-let-s-encrypt">What are the rate limits for Let&rsquo;s Encrypt?</a></li>
+<li><a href="#how-to-use-let-s-encrypt-staging-servers">How to use Let&rsquo;s Encrypt staging servers?</a></li>
+<li><a href="#where-is-my-le-account-info">Where is my LE account info?</a></li>
+<li><a href="#how-can-i-distribute-the-issued-ssl-certificates">How can I distribute the issued ssl certificates?</a></li>
+<li><a href="#how-to-issue-certificate-with-multiple-domains">How to issue certificate with multiple domains?</a></li>
+<li><a href="#how-to-issue-wildcard-certificates-via-let-s-encrypt">How to issue Wildcard certificates via Let&rsquo;s Encrypt?</a></li>
+<li><a href="#does-voyager-support-ocsp-stapling">Does Voyager support OCSP stapling?</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

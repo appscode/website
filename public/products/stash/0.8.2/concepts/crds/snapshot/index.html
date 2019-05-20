@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                      
+                        
+                          <a href="/products/stash/0.8.2/" class=" navbar-item">Welcome</a>
+                        
+                      
+                        
+                          <a href="/products/stash/0.8.2/concepts/" class=" is-active  navbar-item">Concepts</a>
+                        
+                      
+                        
+                          <a href="/products/stash/0.8.2/setup/" class=" navbar-item">Setup</a>
+                        
+                      
+                        
+                          <a href="/products/stash/0.8.2/guides/" class=" navbar-item">Guides</a>
+                        
+                      
+                        
+                          <a href="/products/stash/0.8.2/reference/" class=" navbar-item">Reference</a>
+                        
+                      
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+          
+          <div class="kd-version">
+            
+            <div class="control has-icons-left">
+              <div class="select">
+                
+                
+                <select>
+                  
+                    
+                    
+                      
+                        <option>master</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.8.3</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.8.2</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.8.1</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.8.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.7.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >0.6.4</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option>0.4.2</option>
+                      
+                    
+                  
+                </select>
+              </div>
+              <span class="icon is-left">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          
+
+          
+            
+            
+              
+            
+              
+                
+                  
+
+                  
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              
+            
+              
+            
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="d68a16a8585a7cae483e29b764e623fa-1" >
+  <label for="d68a16a8585a7cae483e29b764e623fa-1"><a href="/products/stash/0.8.2/concepts/">Concepts</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="d68a16a8585a7cae483e29b764e623fa-2" >
+  <label for="d68a16a8585a7cae483e29b764e623fa-2"><a>What is Stash</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/stash/0.8.2/concepts/what-is-stash/overview/">Overview</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="d68a16a8585a7cae483e29b764e623fa-3" checked>
+  <label for="d68a16a8585a7cae483e29b764e623fa-3"><a>Declarative API</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/stash/0.8.2/concepts/crds/restic/">Restic</a></li>
+        
+      
+        
+          <li ><a href="/products/stash/0.8.2/concepts/crds/repository/">Repository</a></li>
+        
+      
+        
+          <li ><a href="/products/stash/0.8.2/concepts/crds/recovery/">Recovery</a></li>
+        
+      
+        
+          <li class="is-active"><a href="/products/stash/0.8.2/concepts/crds/snapshot/">Snapshot</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<blockquote>
+<p>New to Stash? Please start <a href="/products/stash/0.8.2/concepts/README">here</a>.</p>
+</blockquote>
+
+<h1 id="snapshot">Snapshot</h1>
+
+<h2 id="what-is-snapshot">What is Snapshot</h2>
+
+<p>A <code>Snapshot</code> is a representation of <a href="https://restic.net/">restic</a> backup snapshot in a Kubernetes native way. With the help of <a href="https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/aggregated-api-servers.md">Aggregated API Servers</a>, <strong>Stash</strong> provides the users a way to <code>view</code>,<code>list</code> and <code>delete</code> snapshots from restic repositories. Now, a user can view some crucial information of snapshots like <code>creationTimestamp</code>, <code>snapshot id</code>, <code>backed up path</code>  etc. In future, this will enable the users to recover a particular snapshot using stash.</p>
+
+<h2 id="snapshot-structure">Snapshot structure</h2>
+
+<p>A sample <code>Snapshot</code> object&rsquo;s structure created by backing up a <code>Deployment</code> is shown below,</p>
+
+<pre><code class="language-yaml">apiVersion: repositories.stash.appscode.com/v1alpha1
+kind: Snapshot
+metadata:
+  creationTimestamp: 2018-04-09T06:43:03Z
+  labels:
+    repository: deployment.stash-demo
+    restic: stash-demo
+    workload-kind: Deployment
+    workload-name: stash-demo
+  name: deployment.stash-demo-11156792
+  namespace: default
+  selfLink: /apis/repositories.stash.appscode.com/v1alpha1/namespaces/default/snapshots/deployment.stash-demo-11156792
+  uid: 11156792ffe5a52ef076c4e7c74f79a4e6ad6f8d4d2a8a078cf9ee507a8f360c
+status:
+  gid: 0
+  hostname: stash-demo
+  paths:
+  - /source/data
+  tree: ab2311afd593e5ef6f95df652215c9d1102b1731b72e2784386350ae95f1a145
+  uid: 0
+  username: &quot;&quot;
+
+</code></pre>
+
+<p>Here, we are going to describe some important sections of <code>Snapshot</code> object.</p>
+
+<h3 id="snapshot-name">Snapshot Name</h3>
+
+<p><code>name</code> filed in <code>metadata</code> of a <code>Snapshot</code> object represent its name. It follows this pattern,
+<code>&lt;respective repository crd name&gt;-&lt;first 8 digits of snapshot id&gt;</code></p>
+
+<h3 id="snapshot-uid">Snapshot UID</h3>
+
+<p><code>uid</code> field in <code>metadata</code> of <code>Snapshot</code> object represents complete restic snapshot id.</p>
+
+<h3 id="creationtimestamp">CreationTimestamp</h3>
+
+<p><code>creationTimestamp</code> in <code>metadata</code> field of a <code>Snapshot</code> object represents the time when the snapshot was created.</p>
+
+<h3 id="snapshot-labels">Snapshot Labels</h3>
+
+<p>A <code>Snapshot</code> object maintains some important information using labels. These labels enable a user to filter <code>Snapshot</code> according to <code>repository</code>, <code>restic</code>, <code>workload-kind</code>, <code>workload-name</code>, <code>node-name</code> etc. Details of these labels are given below.</p>
+
+<table>
+<thead>
+<tr>
+<th>Label name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>repository</code></td>
+<td>Name of the <code>Repository</code>  where this <code>Snapshot</code> is stored.</td>
+</tr>
+
+<tr>
+<td><code>restic</code></td>
+<td>Name of the <code>Restic</code> which is responsible for this <code>Snapshot</code>.</td>
+</tr>
+
+<tr>
+<td><code>workload-kind</code></td>
+<td><code>Kind</code> of the workload for which the <code>Snapshot</code> has been created.</td>
+</tr>
+
+<tr>
+<td><code>workload-name</code></td>
+<td><code>Name</code> of the workload for which the <code>Snapshot</code> has been created.</td>
+</tr>
+
+<tr>
+<td><code>pod-name</code></td>
+<td>This <code>label</code> present when the respective workload is <code>StatefulSet</code>. It represents the pod name of the <code>StatefulSet</code> who is responsible for this <code>Snapshot</code>.</td>
+</tr>
+
+<tr>
+<td><code>node-name</code></td>
+<td>This <code>label</code> present when the respective workload is <code>DaemonSet</code>. It represents the node name where the <code>DaemonSet</code> is running.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="snapshot-status">Snapshot Status</h3>
+
+<p><code>Snapshot</code> object has following status fields,</p>
+
+<ul>
+<li><code>status.gid</code> indicates the group identifier of the user who took this backup.</li>
+<li><code>status.hostname</code> indicates the name of the host object whose data is backed up in this snapshot. For <code>Deployment</code>,<code>ReplicaSet</code> and <code>ReplicationController</code> it is workload name. For <code>DaemonSet</code> hostname is node name and for <code>StatefulSet</code> hostname is pod name.</li>
+<li><code>status.path</code> indicates the path that is backed up in this snapshot.</li>
+<li><code>status.tree</code> indicates <code>tree</code> of the restic snapshot. For more details see <a href="https://restic.readthedocs.io/en/stable/100_references.html#trees-and-data">here</a>.</li>
+<li><code>status.uid</code> indicates id of the user who took this backup. For <code>root</code> user it is 0.</li>
+<li><code>status.username</code> indicates the name of the user.</li>
+<li><code>status.tags</code> indicates tags of the snapshot.</li>
+</ul>
+
+<h2 id="working-with-snapshot">Working with Snapshot</h2>
+
+<p><strong>Listing Snapshots:</strong></p>
+
+<pre><code class="language-console"># List Snapshots of all repositories in the current namespace
+$ kubectl get snapshot
+
+# List Snapshots of a particular repository
+$ kubectl get snapshot -l repository=deployment.stash-demo
+
+# List all Snapshots of a particular workload type
+$ kubectl get snapshot -l workload-kind=Deployment
+
+# List Snapshots of a particular workload
+$ kubectl get snapshot -l workload-name=stash-demo
+
+# List all Snapshots created by a particular restic
+$ kubectl get snapshot -l restic=stash-demo
+
+# List Snapshots of a particular pod(only for StatefulSet)
+$ kubectl get snapshot -l pod-name=stash-demo-0
+
+# List Snapshots of a particular node(only for DaemonSet)
+kubectl get snapshot -l node-name=minikube
+
+# List Snapshot of specific repositories
+$ kubectl get snapshot -l 'repository in (deployment.stash-demo,statefulset.stash-demo-0)'
+</code></pre>
+
+<p><strong>Viewing information of a particular Snapshot:</strong></p>
+
+<pre><code class="language-console">$ kubectl get snapshot &lt;snapshot name&gt; -o yaml
+
+# Example:
+$ kubectl get snapshot deployment.stash-demo-3d8cd994 -o yaml
+</code></pre>
+
+<pre><code class="language-yaml">apiVersion: repositories.stash.appscode.com/v1alpha1
+kind: Snapshot
+metadata:
+  creationTimestamp: 2018-04-09T10:06:04Z
+  labels:
+    repository: deployment.stash-demo
+    restic: stash-demo
+    workload-kind: Deployment
+    workload-name: stash-demo
+  name: deployment.stash-demo-3d8cd994
+  namespace: default
+  selfLink: /apis/repositories.stash.appscode.com/v1alpha1/namespaces/default/snapshots/deployment.stash-demo-3d8cd994
+  uid: 3d8cd994a3bddcff1d16ac166601d93454d0eb31e2240801e7c1ec030e5af0bf
+status:
+  gid: 0
+  hostname: stash-demo
+  paths:
+  - /source/data
+  tree: ab2311afd593e5ef6f95df652215c9d1102b1731b72e2784386350ae95f1a145
+  uid: 0
+  username: &quot;&quot;
+</code></pre>
+
+<p><strong>Deleting a particular Snapshot:</strong></p>
+
+<pre><code class="language-console">$ kubectl delete snapshot &lt;snapshot name&gt;
+
+# Example:
+$ kubectl delete snapshot statefulset.stash-demo-0-d690726d
+snapshot &quot;statefulset.stash-demo-0-d690726d&quot; deleted
+
+</code></pre>
+
+<h2 id="precondition-for-snaphsot">Precondition for Snaphsot</h2>
+
+<ol>
+<li>Stash provides <code>Snapshots</code> listing facility with the help of aggregated api server. Stash start aggregated api server if any of the <code>ValidatingWebhook</code> and <code>MutatingWebhook</code> is enabled. If both of the webhooks are disabled or if your cluster does not support aggregated api server or webhooks, you won&rsquo;t able to list <code>Snapshot</code>.</li>
+<li>If you are using <code>hostPath</code> for <code>Restic</code> backend, stash takes help of workload pod to provide snapshot list. In this case, workload pod must be running while listing <code>Snapshot</code>.</li>
+<li>If you are using <a href="/products/stash/0.8.2/guides/offline_backup">offline backup</a> and <code>hostPath</code> as your <code>Restic</code> backend, you won&rsquo;t able to list <code>Snapshot</code>.</li>
+</ol>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<ul>
+<li>Learn how to use Stash to backup a Kubernetes deployment <a href="/products/stash/0.8.2/guides/backup">here</a>.</li>
+<li>To restore a backup see <a href="/products/stash/0.8.2/guides/restore">here</a>.</li>
+<li>Learn about the details of Recovery CRD <a href="/products/stash/0.8.2/concepts/crds/recovery">here</a>.</li>
+<li>To run backup in offline mode see <a href="/products/stash/0.8.2/guides/offline_backup">here</a></li>
+<li>See the list of supported backends and how to configure them <a href="/products/stash/0.8.2/guides/backends/overview">here</a>.</li>
+<li>See working examples for supported workload types <a href="/products/stash/0.8.2/guides/workloads">here</a>.</li>
+<li>Thinking about monitoring your backup operations? Stash works <a href="/products/stash/0.8.2/guides/monitoring/overview">out-of-the-box with Prometheus</a>.</li>
+<li>Learn about how to configure <a href="/products/stash/0.8.2/guides/rbac">RBAC roles</a>.</li>
+<li>Want to hack on Stash? Check our <a href="/products/stash/0.8.2/CONTRIBUTING">contribution guidelines</a>.</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#snapshot">Snapshot</a>
+<ul>
+<li><a href="#what-is-snapshot">What is Snapshot</a></li>
+<li><a href="#snapshot-structure">Snapshot structure</a>
+<ul>
+<li><a href="#snapshot-name">Snapshot Name</a></li>
+<li><a href="#snapshot-uid">Snapshot UID</a></li>
+<li><a href="#creationtimestamp">CreationTimestamp</a></li>
+<li><a href="#snapshot-labels">Snapshot Labels</a></li>
+<li><a href="#snapshot-status">Snapshot Status</a></li>
+</ul></li>
+<li><a href="#working-with-snapshot">Working with Snapshot</a></li>
+<li><a href="#precondition-for-snaphsot">Precondition for Snaphsot</a></li>
+<li><a href="#next-steps">Next Steps</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

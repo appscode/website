@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2D9AED" />
+    <title>KubeDB Home</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+
+  <body>
+    
+
+    
+    
+
+
+
+
+
+<header>
+  
+  <div class="header-bottom-area header-area documentation-page" id="header">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./../index.html">
+            <img src="/assets/images/logo-color-kube.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            
+            <div class="navbar-start">
+              <a href="./../pricing/index.html" class="navbar-item">
+                Commercial Support
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Database
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Item-1
+                  </a>
+                  <a class="navbar-item">
+                    Item-2
+                  </a>
+                  <a class="navbar-item">
+                    Item-3
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Item-4
+                  </a>
+                </div>
+              </div>
+
+              <a href="../documentations/welcome.html" class="navbar-item">
+                Documentation
+              </a>
+              <a class="navbar-item">
+                v 0.110
+              </a>
+              <a class="navbar-item">
+                Community
+              </a>
+            </div>
+            
+            <div class="navbar-item">
+              <div class="buttons main-menu-button">
+                <a class="button is-small">
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span
+                  >Star
+                </a>
+                <div class="star-count">
+                  565
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="documentation-menu">
+      <div class="container section">
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            
+            <div class="responsive-menu">
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav3"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            
+            <nav class="documentation-navbar">
+              <div id="acNav3" class="navbar-menu nav-menu main-menu">
+                <div class="navbar-centered">
+                  
+                  <div class="navbar-start">
+                    
+                    
+                      
+                        
+                          <a href="/products/kubed/0.6.0-rc.0/" class=" is-active  navbar-item">Welcome</a>
+                        
+                      
+                        
+                          <a href="/products/kubed/0.6.0-rc.0/concepts/" class=" navbar-item">Concepts</a>
+                        
+                      
+                        
+                          <a href="/products/kubed/0.6.0-rc.0/setup/" class=" navbar-item">Setup</a>
+                        
+                      
+                        
+                          <a href="/products/kubed/0.6.0-rc.0/guides/" class=" navbar-item">Guides</a>
+                        
+                      
+                        
+                          <a href="/products/kubed/0.6.0-rc.0/reference/" class=" navbar-item">Reference</a>
+                        
+                      
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</header>
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+          
+          <div class="kd-version">
+            
+            <div class="control has-icons-left">
+              <div class="select">
+                
+                
+                <select>
+                  
+                    
+                    
+                      
+                        <option>master</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.10.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.9.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.8.0</option>
+                      
+                    
+                  
+                    
+                    
+                      
+                        <option >0.7.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option >0.5.0</option>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+                        <option>0.2.0</option>
+                      
+                    
+                  
+                </select>
+              </div>
+              <span class="icon is-left">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          
+
+          
+            
+            
+              
+                
+                  
+
+                  
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="6b6ecbc43386b323ad9a0f2bc781eeb1-1" >
+  <label for="6b6ecbc43386b323ad9a0f2bc781eeb1-1"><a href="/products/kubed/0.6.0-rc.0/welcome/">Welcome</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="6b6ecbc43386b323ad9a0f2bc781eeb1-2" checked>
+  <label for="6b6ecbc43386b323ad9a0f2bc781eeb1-2"><a href="/products/kubed/0.6.0-rc.0/welcome/changelog/">Changelog</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="6b6ecbc43386b323ad9a0f2bc781eeb1-3" >
+  <label for="6b6ecbc43386b323ad9a0f2bc781eeb1-3"><a href="/products/kubed/0.6.0-rc.0/welcome/contributing/">Contributing</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="6b6ecbc43386b323ad9a0f2bc781eeb1-4" >
+  <label for="6b6ecbc43386b323ad9a0f2bc781eeb1-4"><a href="/products/kubed/0.6.0-rc.0/welcome/roadmap/">Roadmap</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="6b6ecbc43386b323ad9a0f2bc781eeb1-5" >
+  <label for="6b6ecbc43386b323ad9a0f2bc781eeb1-5"><a href="/products/kubed/0.6.0-rc.0/welcome/support/">Support</a></label>
+</div>
+
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+
+                
+              
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          
+
+<h1 id="change-log">Change Log</h1>
+
+<h2 id="0-6-0-rc-0-https-github-com-appscode-kubed-tree-0-6-0-rc-0-2018-03-03"><a href="https://github.com/appscode/kubed/tree/0.6.0-rc.0">0.6.0-rc.0</a> (2018-03-03)</h2>
+
+<p><a href="https://github.com/appscode/kubed/compare/0.5.0...0.6.0-rc.0">Full Changelog</a></p>
+
+<p><strong>Closed issues:</strong></p>
+
+<ul>
+<li>Cleanup indexed data <a href="https://github.com/appscode/kubed/issues/212">#212</a></li>
+<li>Delete search index when namespace is deleted <a href="https://github.com/appscode/kubed/issues/210">#210</a></li>
+<li>Allow configuring resource types for Add/Update notification <a href="https://github.com/appscode/kubed/issues/192">#192</a></li>
+<li>Used shared informer and queue <a href="https://github.com/appscode/kubed/issues/152">#152</a></li>
+<li>Use separate bleve index for Events and other kube api objects <a href="https://github.com/appscode/kubed/issues/106">#106</a></li>
+<li>Support soft loading of ClusterConfig <a href="https://github.com/appscode/kubed/issues/51">#51</a></li>
+<li>Expose Kubed api server as a UAS <a href="https://github.com/appscode/kubed/issues/19">#19</a></li>
+</ul>
+
+<p><strong>Merged pull requests:</strong></p>
+
+<ul>
+<li>Fix docs <a href="https://github.com/appscode/kubed/pull/231">#231</a></li>
+<li>Update docs for 0.6.0-rc.0 release <a href="https://github.com/appscode/kubed/pull/230">#230</a></li>
+<li>Upgrade github.com/blevesearch/bleve to 0.7.0 <a href="https://github.com/appscode/kubed/pull/229">#229</a></li>
+<li>Use github.com/json-iterator/go <a href="https://github.com/appscode/kubed/pull/228">#228</a></li>
+<li>Remove unused options field <a href="https://github.com/appscode/kubed/pull/227">#227</a></li>
+<li>Sync chart to stable charts repo <a href="https://github.com/appscode/kubed/pull/226">#226</a></li>
+<li>Generate internal types <a href="https://github.com/appscode/kubed/pull/225">#225</a></li>
+<li>Use rbac/v1 apis <a href="https://github.com/appscode/kubed/pull/224">#224</a></li>
+<li>Create user facing aggregate roles <a href="https://github.com/appscode/kubed/pull/223">#223</a></li>
+<li>Use official code generator scripts <a href="https://github.com/appscode/kubed/pull/222">#222</a></li>
+<li>Update charts to support api registration <a href="https://github.com/appscode/kubed/pull/221">#221</a></li>
+<li>Use ${} form for onessl envsubst <a href="https://github.com/appscode/kubed/pull/220">#220</a></li>
+<li>Update .gitignore file <a href="https://github.com/appscode/kubed/pull/219">#219</a></li>
+<li>Rename Stuff back to SearchResult <a href="https://github.com/appscode/kubed/pull/218">#218</a></li>
+<li>Fix locks in resource indexer <a href="https://github.com/appscode/kubed/pull/217">#217</a></li>
+<li>Move apis out of pkg package <a href="https://github.com/appscode/kubed/pull/216">#216</a></li>
+<li>Document recent changes <a href="https://github.com/appscode/kubed/pull/215">#215</a></li>
+<li>Rename searchresult to stuff <a href="https://github.com/appscode/kubed/pull/214">#214</a></li>
+<li>Add installer script <a href="https://github.com/appscode/kubed/pull/211">#211</a></li>
+<li>Add tests for RestMapper <a href="https://github.com/appscode/kubed/pull/209">#209</a></li>
+<li>Set GroupVersionKind for event handlers <a href="https://github.com/appscode/kubed/pull/208">#208</a></li>
+<li>Rename api package by version <a href="https://github.com/appscode/kubed/pull/207">#207</a></li>
+<li>Properly handle update events for trashcan <a href="https://github.com/appscode/kubed/pull/206">#206</a></li>
+<li>Use fsnotify from kutil <a href="https://github.com/appscode/kubed/pull/205">#205</a></li>
+<li>Fix NPE <a href="https://github.com/appscode/kubed/pull/204">#204</a></li>
+<li>Generate DeepCopy methods for ClusterConfig <a href="https://github.com/appscode/kubed/pull/203">#203</a></li>
+<li>Fix config validator for event forwarder <a href="https://github.com/appscode/kubed/pull/202">#202</a></li>
+<li>Transform event forwarder rules to rules format <a href="https://github.com/appscode/kubed/pull/201">#201</a></li>
+<li>Split Setup() into New() and Configure() <a href="https://github.com/appscode/kubed/pull/199">#199</a></li>
+<li>Remove reverse index <a href="https://github.com/appscode/kubed/pull/198">#198</a></li>
+<li>Update bleve to v0.6.0 <a href="https://github.com/appscode/kubed/pull/197">#197</a></li>
+<li>Turn kubed api server into an EAS <a href="https://github.com/appscode/kubed/pull/196">#196</a></li>
+<li>Allow configuring resource types for Add/Update notification <a href="https://github.com/appscode/kubed/pull/195">#195</a></li>
+<li>Use SharedInformerFactory <a href="https://github.com/appscode/kubed/pull/193">#193</a></li>
+<li>Support soft loading of ClusterConfig <a href="https://github.com/appscode/kubed/pull/125">#125</a></li>
+</ul>
+
+<h2 id="0-6-0-rc-0-https-github-com-appscode-kubed-releases-tag-0-6-0-rc-0-2018-01-16"><a href="https://github.com/appscode/kubed/releases/tag/0.6.0-rc.0">0.6.0-rc.0</a> (2018-01-16)</h2>
+
+<p>Kubed 0.6.0-rc.0 can send notifications to Telegram and fixes various issues related to janitors and cluster backup.</p>
+
+<p><strong>Changelog</strong></p>
+
+<ul>
+<li>Document valid time units for janitor TTL <a href="https://github.com/appscode/kubed/pull/188">#188</a></li>
+<li>Reset shard duration for influx janitor <a href="https://github.com/appscode/kubed/pull/187">#187</a></li>
+<li>Set min retention policy for kubed influx janitor <a href="https://github.com/appscode/kubed/pull/186">#186</a></li>
+<li>Log influx janitor result <a href="https://github.com/appscode/kubed/pull/185">#185</a></li>
+<li>Update github.com/influxdata/influxdb to v1.3.3 <a href="https://github.com/appscode/kubed/pull/184">#184</a></li>
+<li>Increase burst and qps for kube client <a href="https://github.com/appscode/kubed/pull/183">#183</a></li>
+<li>Update github.com/influxdata/influxdb to v1.1.1 <a href="https://github.com/appscode/kubed/pull/182">#182</a></li>
+<li>Update Elasticsearch client to olivere/elastic.v5 <a href="https://github.com/appscode/kubed/pull/181">#181</a></li>
+<li>Add Telegram as notifier <a href="https://github.com/appscode/kubed/pull/180">#180</a></li>
+<li>Delete all older indices prior to a date <a href="https://github.com/appscode/kubed/pull/179">#179</a></li>
+<li>Ensure bad backups are not used to overwrite last good backup <a href="https://github.com/appscode/kubed/pull/178">#178</a></li>
+</ul>
+
+<h2 id="0-4-0-https-github-com-appscode-kubed-releases-tag-0-4-0-2018-01-05"><a href="https://github.com/appscode/kubed/releases/tag/0.4.0">0.4.0</a> (2018-01-05)</h2>
+
+<p>Kubed 0.4.0 can sync confgimaps/secrets across clusters.</p>
+
+<p><strong>Changelog</strong></p>
+
+<ul>
+<li>Reorganize docs for hosting on product site <a href="https://github.com/appscode/kubed/pull/173">#173</a></li>
+<li>Add support for new DB types <a href="https://github.com/appscode/kubed/pull/172">#172</a></li>
+<li>Update docs for syncer <a href="https://github.com/appscode/kubed/pull/170">#170</a></li>
+<li>Fix analytics client-id detection <a href="https://github.com/appscode/kubed/pull/168">#168</a></li>
+<li>Auto detect AWS bucket region <a href="https://github.com/appscode/kubed/pull/166">#166</a></li>
+<li>Support hipchat server <a href="https://github.com/appscode/kubed/pull/165">#165</a></li>
+<li>Write event for syncer origin conflict <a href="https://github.com/appscode/kubed/pull/164">#164</a></li>
+<li>Fix Syncer <a href="https://github.com/appscode/kubed/pull/163">#163</a></li>
+<li>Remove unnecessary IsPreferredAPIResource api calls <a href="https://github.com/appscode/kubed/pull/162">#162</a></li>
+<li>Sync configmap/secret to selected namespaces/contexts <a href="https://github.com/appscode/kubed/pull/154">#154</a></li>
+</ul>
+
+<h2 id="0-3-1-https-github-com-appscode-kubed-releases-tag-0-3-1-2017-12-21"><a href="https://github.com/appscode/kubed/releases/tag/0.3.1">0.3.1</a> (2017-12-21)</h2>
+
+<p>Kubed 0.3.1 supports AWS S3 buckets in regions other than us-east-1.</p>
+
+<p><strong>Changelog</strong></p>
+
+<ul>
+<li>Support region for s3 backend <a href="https://github.com/appscode/kubed/issues/159">#159</a></li>
+<li>Avoid listing buckets <a href="https://github.com/appscode/kubed/issues/141">#141</a></li>
+</ul>
+
+<h2 id="0-3-0-https-github-com-appscode-kubed-releases-tag-0-3-0-2017-09-26"><a href="https://github.com/appscode/kubed/releases/tag/0.3.0">0.3.0</a> (2017-09-26)</h2>
+
+<p>Kubed 0.3.0 supports auth for Elasticsearch janitors and annotates copied configmaps &amp; secrets.</p>
+
+<p><strong>Changelog</strong></p>
+
+<ul>
+<li>Support auth for Elasticsearch janitor <a href="https://github.com/appscode/kubed/issues/64">#64</a></li>
+<li>Install kubed as a critical addon <a href="https://github.com/appscode/kubed/pull/129">#129</a></li>
+<li>Update chart to match recent convention <a href="https://github.com/appscode/kubed/pull/123">#123</a></li>
+<li>Use correct service account for RBAC installer <a href="https://github.com/appscode/kubed/pull/122">#122</a></li>
+<li>Forward CSR approved/denied events <a href="https://github.com/appscode/kubed/pull/117">#117</a></li>
+<li>Use kutil package for utils <a href="https://github.com/appscode/kubed/pull/116">#116</a></li>
+<li>Annotate copied configmaps &amp; secrets with kubed.appscode.com/origin <a href="https://github.com/appscode/kubed/pull/115">#115</a></li>
+<li>Use client-go 4.0.0 <a href="https://github.com/appscode/kubed/pull/114">#114</a></li>
+<li>Fix config object. <a href="https://github.com/appscode/kubed/pull/105">#105</a></li>
+</ul>
+
+<h2 id="0-2-0-https-github-com-appscode-kubed-releases-tag-0-2-0-2017-08-04"><a href="https://github.com/appscode/kubed/releases/tag/0.2.0">0.2.0</a> (2017-08-04)</h2>
+
+<p>Kubed 0.2.0 can send push notifications.</p>
+
+<p><strong>Notable Features</strong></p>
+
+<ul>
+<li>Send <a href="/products/kubed/0.6.0-rc.0/tutorials/notifiers#pushovernet">push notification</a> via <a href="https://pushover.net/">pushover.net</a> Thanks <a href="https://github.com/pirogoeth">Sean Johnson</a> !</li>
+<li>Add <code>clusterName</code> in config. This cluster name will be prefixed to any notification sent via Email/SMS/Chat/Push so that you can identify the source easily.</li>
+</ul>
+
+<h2 id="0-1-0-https-github-com-appscode-kubed-releases-tag-0-1-0-2017-08-01"><a href="https://github.com/appscode/kubed/releases/tag/0.1.0">0.1.0</a> (2017-08-01)</h2>
+
+<p>First public release of Kubed.</p>
+
+<p><strong>Notable Features</strong></p>
+
+<ul>
+<li>Takes periodic <a href="/products/kubed/0.6.0-rc.0/tutorials/cluster-snapshot">snapshot</a> of a Kubernetes cluster objects.</li>
+<li>Provides a <a href="/products/kubed/0.6.0-rc.0/tutorials/recycle-bin">recycle bin</a> for deleted and/or updated Kubernetes objects.</li>
+<li>Keep <a href="/products/kubed/0.6.0-rc.0/tutorials/config-syncer">ConfigMaps and Secrets synchronized across Namespaces</a>.</li>
+<li><a href="/products/kubed/0.6.0-rc.0/tutorials/event-forwarder">Forward cluster events</a> to various destinations.</li>
+<li>Setup <a href="/products/kubed/0.6.0-rc.0/tutorials/janitors">janitors</a> for Elasticsearch and InfluxDB.</li>
+<li><a href="/products/kubed/0.6.0-rc.0/tutorials/notifiers">Send notifications</a> via Email, SMS or Chat.</li>
+<li>Includes a built-in <a href="/products/kubed/0.6.0-rc.0/tutorials/apiserver">search engine</a> for your cluster objects using <a href="https://github.com/blevesearch/bleve">bleve</a>.</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#change-log">Change Log</a>
+<ul>
+<li><a href="#0-6-0-rc-0-https-github-com-appscode-kubed-tree-0-6-0-rc-0-2018-03-03"><a href="https://github.com/appscode/kubed/tree/0.6.0-rc.0">0.6.0-rc.0</a> (2018-03-03)</a></li>
+<li><a href="#0-6-0-rc-0-https-github-com-appscode-kubed-releases-tag-0-6-0-rc-0-2018-01-16"><a href="https://github.com/appscode/kubed/releases/tag/0.6.0-rc.0">0.6.0-rc.0</a> (2018-01-16)</a></li>
+<li><a href="#0-4-0-https-github-com-appscode-kubed-releases-tag-0-4-0-2018-01-05"><a href="https://github.com/appscode/kubed/releases/tag/0.4.0">0.4.0</a> (2018-01-05)</a></li>
+<li><a href="#0-3-1-https-github-com-appscode-kubed-releases-tag-0-3-1-2017-12-21"><a href="https://github.com/appscode/kubed/releases/tag/0.3.1">0.3.1</a> (2017-12-21)</a></li>
+<li><a href="#0-3-0-https-github-com-appscode-kubed-releases-tag-0-3-0-2017-09-26"><a href="https://github.com/appscode/kubed/releases/tag/0.3.0">0.3.0</a> (2017-09-26)</a></li>
+<li><a href="#0-2-0-https-github-com-appscode-kubed-releases-tag-0-2-0-2017-08-04"><a href="https://github.com/appscode/kubed/releases/tag/0.2.0">0.2.0</a> (2017-08-04)</a></li>
+<li><a href="#0-1-0-https-github-com-appscode-kubed-releases-tag-0-1-0-2017-08-01"><a href="https://github.com/appscode/kubed/releases/tag/0.1.0">0.1.0</a> (2017-08-01)</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+    <section class="cta-area section-padding pt-0">
+      <div class="container section">
+        <div class="cta-padding">
+          <div class="columns">
+            <div class="column is-6">
+              
+              <div class="cta-text">
+                <h2>Ready to get Start?</h2>
+                <p>Create a Free Account and refer your friend</p>
+              </div>
+              
+            </div>
+            <div class="column is-6 has-text-right is-mobile">
+              <div class="cta-button d-table">
+                
+                <div class="cta-button-inner d-table-cell">
+                  <a href="#" class="button kd-button kd-primary"
+                    >Try Now for FREE</a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img
+                      src="/assets/images/logo-color-appscode.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="#">
+                    <label for="email">Subscribe Our Newsletter</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="info@gmail.com"
+                        />
+                      </div>
+                      <div class="control">
+                        <a class="button kd-primary">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:+123456789"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >+123 456 789</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:appscode@gmail.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >appscode@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Voyager</a></li>
+                    <li><a href="#">KubeDB</a></li>
+                    <li><a href="#">Pharmer Stash </a></li>
+                    <li><a href="#">Service Broker</a></li>
+                    <li><a href="#">Kubed</a></li>
+                    <li><a href="#">Guard</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Searchlight</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Offerings</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Open source </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Seles Inquiry</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-2">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>All rights reserved © 2018. Appscode, Inc..</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
