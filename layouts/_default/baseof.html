@@ -152,7 +152,7 @@
                             <div class="navbar-dropdown">
                               {{ range .Children }}
                                 {{ if eq .Parent "database" }}
-                                  <a class="navbar-item" href="/docs/{{ $latestVersion }}/guides/{{ .Identifier }}/">{{ .Name }}</a>
+                                  <a class="navbar-item" href="/products/{{ $productName }}/{{ $latestVersion }}/guides/{{ .Identifier }}/">{{ .Name }}</a>
                                 {{ else }}
                                   <a href="{{.URL}}" class="navbar-item">{{ .Name }}</a>
                                 {{ end }}
@@ -161,7 +161,7 @@
                           </div>
                         {{else}}
                           {{ if eq .Name "Documentation" }}
-                            <a href="/docs/{{ $latestVersion }}/welcome/">{{ .Name }}</a>
+                            <a href="/products/{{ $productName }}/{{ $latestVersion }}/welcome/">{{ .Name }}</a>
                           {{ else }}
                             <a href="{{.URL}}" class="navbar-item">{{ .Name }}</a>
                           {{ end }}
