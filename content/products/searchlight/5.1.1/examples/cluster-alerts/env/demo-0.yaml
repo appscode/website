@@ -1,0 +1,14 @@
+apiVersion: monitoring.appscode.com/v1alpha1
+kind: ClusterAlert
+metadata:
+  name: env-demo-0
+  namespace: demo
+spec:
+  check: env
+  checkInterval: 30s
+  alertInterval: 2m
+  notifierSecretName: notifier-config
+  receivers:
+  - notifier: Mailgun
+    state: CRITICAL
+    to: ["ops@example.com"]

@@ -64,3 +64,34 @@ menu:
       parent: community
       url: "http://discourse.appscode.com"
       weight: 7
+  product_voyager:
+    - name: "Documentation"
+      weight: 20
+    - name: "Community"
+      identifier: community
+      weight: 25
+    - name: GitHub
+      identifier: github
+      parent: community
+      url: "https://github.com/kubedb"
+      weight: 3
+    - name: Twitter
+      identifier: twitter
+      parent: community
+      url: "https://twitter.com/KubeDB"
+      weight: 4
+    - name: Groups
+      identifier: groups
+      parent: community
+      url: "https://groups.google.com/forum/#!forum/kubedb"
+      weight: 5
+    - name: Slack
+      identifier: slack
+      parent: community
+      url: "http://slack.kubernetes.io/"
+      weight: 6
+    - name: Forum
+      identifier: forum
+      parent: community
+      url: "http://discourse.appscode.com"
+      weight: 7
