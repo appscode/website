@@ -1,9 +1,15 @@
 ---
 title: Voyager
-layout: project
+description : Secure HAProxy Ingress Controller for Kubernetes
 menu:
   main:
-    identifier: pricing
-    name: Commercial Support
-    weight: 10
+    parent: product
+    identifier: voyager
+    name: Voyager
+    weight: 20
+layout: project
+product_name: voyager
+docs_url: https://github.com/appscode/voyager/tree/master/docs/
+helm_url: https://github.com/appscode/voyager/tree/master/chart/voyager
+github_url: https://github.com/appscode/voyager/
 ---

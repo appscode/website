@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Incident on Run production-grade databases easily on Kubernetes</title>
+    <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/concepts/incident/</link>
+    <description>Recent content in Incident on Run production-grade databases easily on Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/concepts/incident/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Acknowledgement Concepts</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/concepts/incident/acknowledgement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/concepts/incident/acknowledgement/</guid>
+      <description>Acknowledgement Kubernetes Extended Api Server resource Acknowledgement is used to acknowledge an Incident with type Problem.
+Following is the example of Acknowledgement object
+apiVersion: incidents.monitoring.appscode.com kind: Acknowledgement metadata: name: cluster.pod-exists-demo-0.20180428-1109 namespace: demo request: comment: working on fix  When user creates this Acknowledgement object, Searchlight operator gets Incident with same name of Acknowledgement object. Operator then acknowledges Icinga notification with provided comment.
+To remove acknowledgement, you just need to delete Acknowledgement object.</description>
+    </item>
+    
+    <item>
+      <title>Incident Concepts</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/concepts/incident/incident/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/concepts/incident/incident/</guid>
+      <description>Incident What is Incident A Incident is a Kubernetes Custom Resource Definition (CRD). It provides information on notifications sent by Searchlight for alerts.
+Incident Spec As with all other Kubernetes objects, a Incident has apiVersion, kind, and metadata fields. It also has a .spec section.
+Below is an example Incident object maintained by Searchlight.
+apiVersion: monitoring.appscode.com/v1alpha1 kind: Incident metadata: name: cluster.pod-exists-demo-0.20180428-1109 namespace: demo labels: monitoring.appscode.com/alert: pod-exists-demo-0 monitoring.appscode.com/alert-type: cluster monitoring.appscode.com/recovered: true status: lastNotificationType: Recovery notifications: - type: Problem checkOutput: Found 10 pod(s) instead of 11 author: searchlight-user firstTimestamp: 20180428-1109 lastTimestamp: 20180428-1119 state: Critical - type: Acknowledgement checkOutput: Found 10 pod(s) instead of 11 author: admin comment: working on fix firstTimestamp: 20180428-1142 lastTimestamp: 20180428-1142 state: Critical - type: Recovery checkOutput: Found all pods author: searchlight-user firstTimestamp: 20180428-1237 lastTimestamp: 20180428-1237 state: Ok  Here,</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Monitoring on Run production-grade databases easily on Kubernetes</title>
+    <link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0-rc.0/guides/ingress/monitoring/</link>
+    <description>Recent content in Monitoring on Run production-grade databases easily on Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://appscode-v3-hugo.web.app/products/voyager/6.0.0-rc.0/guides/ingress/monitoring/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0-rc.0/guides/ingress/monitoring/coreos-prometheus-operator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0-rc.0/guides/ingress/monitoring/coreos-prometheus-operator/</guid>
+      <description>$ kubectl create -f ./docs/examples/monitoring/demo-0.yaml namespace &amp;quot;demo&amp;quot; created deployment &amp;quot;prometheus-operator&amp;quot; created $ kubectl get pods -n demo NAME READY STATUS RESTARTS AGE prometheus-operator-449376836-mq4p3 1/1 Running 0 1m  $ kubectl create -f ./docs/examples/monitoring/demo-1.yaml prometheus &amp;quot;prometheus&amp;quot; created service &amp;quot;prometheus&amp;quot; created $ kubectl get pods -n demo --watch NAME READY STATUS RESTARTS AGE prometheus-operator-449376836-mq4p3 1/1 Running 0 1m prometheus-prometheus-0 0/2 ContainerCreating 0 6s prometheus-prometheus-0 1/2 Running 0 25s prometheus-prometheus-0 2/2 Running 0 26s ^C⏎  $ .</description>
+    </item>
+    
+    <item>
+      <title>Exposing HAProxy Stats</title>
+      <link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0-rc.0/guides/ingress/monitoring/stats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0-rc.0/guides/ingress/monitoring/stats/</guid>
+      <description>Exposing HAProxy Stats To expose HAProxy stats, please use the following annotations:
+Stats annotations    Keys Value Default Description     ingress.appscode.com/stats bool &amp;quot;false&amp;quot; Optional. If set, HAProxy stats will be exposed   ingress.appscode.com/stats-port integer &amp;quot;56789&amp;quot; Optional. Port used to expose HAProxy stats   ingress.appscode.com/stats-secret-name string x Optional. Secret used to provide username &amp;amp; password to secure HAProxy stats endpoint. Secret must contain keys username and password   ingress.</description>
+    </item>
+    
+  </channel>
+</rss>

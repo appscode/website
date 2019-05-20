@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guides | Searchlight on Run production-grade databases easily on Kubernetes</title>
+    <link>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0/guides/</link>
+    <description>Recent content in Guides | Searchlight on Run production-grade databases easily on Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://appscode-v3-hugo.web.app/products/searchlight/7.0.0/guides/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Notifiers</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0/guides/notifiers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0/guides/notifiers/</guid>
+      <description>New to Searchlight? Please start here.
+ Supported Notifiers Searchlight can send notifications via Email, SMS or Chat for alerts using appscode/go-notify library. To connect to these services, you need to create a Secret with the appropriate keys. Then pass the secret name to Searchlight by setting spec.notifierSecretName field in ClusterAlert/NodeAlert/PodAlert objects. This Secret must exist in the same namespace where the Alert object exists. To easily synchronize this Secret across all current and future namespaces of a Kubernetes cluster, you can use kubed.</description>
+    </item>
+    
+    <item>
+      <title>Table of Contents | Guides</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0/guides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0/guides/</guid>
+      <description>Guides Guides show you how to perform tasks with Searchlight.
+ Cluster Alerts
+ ca-cert - To check expiration of CA certificate used by Kubernetes api server. component-status - To check Kubernetes component status. event - To check Kubernetes Warning events. json-path - To check any JSON HTTP response using jsonpath. node-exists - To check existence of Kubernetes nodes. pod-exists - To check existence of Kubernetes pods.  Node Alerts</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reference on Run production-grade databases easily on Kubernetes</title>
+    <link>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/reference/</link>
+    <description>Recent content in Reference on Run production-grade databases easily on Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/reference/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kubed</title>
+      <link>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/reference/kubed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/reference/kubed/</guid>
+      <description>kubed Kubed by AppsCode - A Kubernetes Cluster Operator Daemon
+Synopsis Kubed is a Kubernetes daemon to perform cluster management tasks. For more information, visit here: https://github.com/appscode/kubed/tree/master/docs
+Options  --alsologtostderr log to standard error as well as files --enable-analytics send usage events to Google Analytics (default true) -h, --help help for kubed --log.format logFormatFlag Set the log target and format. Example: &amp;quot;logger:syslog?appname=bob&amp;amp;local=7&amp;quot; or &amp;quot;logger:stdout?json=true&amp;quot; (default &amp;quot;logger:stderr&amp;quot;) --log.level levelFlag Only log messages with the given severity or above.</description>
+    </item>
+    
+    <item>
+      <title>Kubed Backup</title>
+      <link>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/reference/kubed_backup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/reference/kubed_backup/</guid>
+      <description>kubed backup Takes a backup of Kubernetes api objects
+Synopsis Takes a backup of Kubernetes api objects
+kubed backup [flags]  Options  --backup-dir string Directory where YAML files will be stored --context string Name of the kubeconfig context to use -h, --help help for backup --kubeconfig string kubeconfig file pointing at the &#39;core&#39; kubernetes server --sanitize Sanitize fields in YAML  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --enable-analytics send usage events to Google Analytics (default true) --log.</description>
+    </item>
+    
+    <item>
+      <title>Kubed Check</title>
+      <link>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/reference/kubed_check/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/reference/kubed_check/</guid>
+      <description>kubed check Check cluster config
+Synopsis Check cluster config
+kubed check [flags]  Options  --clusterconfig string Path to cluster config file -h, --help help for check  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --enable-analytics send usage events to Google Analytics (default true) --log.format logFormatFlag Set the log target and format. Example: &amp;quot;logger:syslog?appname=bob&amp;amp;local=7&amp;quot; or &amp;quot;logger:stdout?json=true&amp;quot; (default &amp;quot;logger:stderr&amp;quot;) --log.level levelFlag Only log messages with the given severity or above.</description>
+    </item>
+    
+    <item>
+      <title>Kubed Run</title>
+      <link>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/reference/kubed_run/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/reference/kubed_run/</guid>
+      <description>kubed run Launch Kubernetes Cluster Daemon
+Synopsis Launch Kubernetes Cluster Daemon
+kubed run [flags]  Options  --audit-log-format string Format of saved audits. &amp;quot;legacy&amp;quot; indicates 1-line text format for each event. &amp;quot;json&amp;quot; indicates structured json format. Requires the &#39;AdvancedAuditing&#39; feature gate. Known formats are legacy,json. (default &amp;quot;json&amp;quot;) --audit-log-maxage int The maximum number of days to retain old audit log files based on the timestamp encoded in their filename. --audit-log-maxbackup int The maximum number of old audit log files to retain.</description>
+    </item>
+    
+    <item>
+      <title>Kubed Version</title>
+      <link>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/reference/kubed_version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/reference/kubed_version/</guid>
+      <description>kubed version Prints binary version number.
+Synopsis Prints binary version number.
+kubed version [flags]  Options  -h, --help help for version --short Print just the version number.  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --enable-analytics send usage events to Google Analytics (default true) --log.format logFormatFlag Set the log target and format. Example: &amp;quot;logger:syslog?appname=bob&amp;amp;local=7&amp;quot; or &amp;quot;logger:stdout?json=true&amp;quot; (default &amp;quot;logger:stderr&amp;quot;) --log.level levelFlag Only log messages with the given severity or above.</description>
+    </item>
+    
+  </channel>
+</rss>

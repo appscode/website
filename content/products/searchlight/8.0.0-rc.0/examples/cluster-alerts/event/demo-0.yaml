@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: nginx
+  namespace: demo
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: nginx
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:bad
+        ports:
+        - containerPort: 80
+---
+apiVersion: monitoring.appscode.com/v1alpha1
+kind: ClusterAlert
+metadata:
+  name: event-demo-0
+  namespace: demo
+spec:
+  check: event
+  checkInterval: 30s
+  alertInterval: 2m
+  notifierSecretName: notifier-config
+  receivers:
+  - notifier: Mailgun
+    state: Warning
+    to: ["ops@example.com"]

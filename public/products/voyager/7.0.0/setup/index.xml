@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setup | Voyager on Run production-grade databases easily on Kubernetes</title>
+    <link>https://appscode-v3-hugo.web.app/products/voyager/7.0.0/setup/</link>
+    <description>Recent content in Setup | Voyager on Run production-grade databases easily on Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://appscode-v3-hugo.web.app/products/voyager/7.0.0/setup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install Voyager</title>
+      <link>https://appscode-v3-hugo.web.app/products/voyager/7.0.0/setup/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/voyager/7.0.0/setup/install/</guid>
+      <description>New to Voyager? Please start here.
+ Installation Guide Voyager operator can be installed via a script or as a Helm chart.
+Using Script To install Voyager in your Kubernetes cluster, pick the appropriate cluster provider and run the following command:
+# provider=acs # provider=aws # provider=azure # provider=baremetal # provider=gce # provider=gke # provider=minikube # provider=openstack # provider=metallb $ curl -fsSL https://raw.githubusercontent.com/appscode/voyager/7.0.0/hack/deploy/voyager.sh \ | bash -s -- --provider=$provider  After successful installation, you should have a voyager-operator-*** pod running in the kube-system namespace.</description>
+    </item>
+    
+    <item>
+      <title>Table of Contents | Setup</title>
+      <link>https://appscode-v3-hugo.web.app/products/voyager/7.0.0/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/voyager/7.0.0/setup/</guid>
+      <description> Setup Setup contains instructions for installing the Voyager and its various components in Kubernetes.
+ Install Voyager. Installation instructions for Voyager. Uninstall Voyager. Instructions for uninstallating Voyager. Developer Guide  Overview. Outlines everything you need to know from setting up your dev environment to how to build and test Voyager. Release process. Steps for releasing a new version of Voyager.   </description>
+    </item>
+    
+    <item>
+      <title>Uninstall Voyager</title>
+      <link>https://appscode-v3-hugo.web.app/products/voyager/7.0.0/setup/uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/voyager/7.0.0/setup/uninstall/</guid>
+      <description>New to Voyager? Please start here.
+ Uninstall Voyager To uninstall Voyager operator, run the following command:
+$ curl -fsSL https://raw.githubusercontent.com/appscode/voyager/7.0.0/hack/deploy/voyager.sh \ | bash -s -- --uninstall [--namespace=NAMESPACE] + kubectl delete deployment -l app=voyager -n kube-system deployment &amp;quot;voyager-operator&amp;quot; deleted + kubectl delete service -l app=voyager -n kube-system service &amp;quot;voyager-operator&amp;quot; deleted + kubectl delete serviceaccount -l app=voyager -n kube-system No resources found + kubectl delete clusterrolebindings -l app=voyager -n kube-system No resources found + kubectl delete clusterrole -l app=voyager -n kube-system No resources found  The above command will leave the Voyager crd objects as-is.</description>
+    </item>
+    
+  </channel>
+</rss>

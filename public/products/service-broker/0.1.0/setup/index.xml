@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setup | AppsCode Service Broker on Run production-grade databases easily on Kubernetes</title>
+    <link>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/setup/</link>
+    <description>Recent content in Setup | AppsCode Service Broker on Run production-grade databases easily on Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/setup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install | AppsCode Service Broker</title>
+      <link>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/setup/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/setup/install/</guid>
+      <description>Installation Guide Prerequisites First you need to have the software services by AppsCode installed in the cluster. Currently AppsCode Service Broker supports the following software service:
+ KubeDB  So we need to have KubeDB installed to go forward. To install KubeDB see here.
+To check the installation for AppsCode Service Broker, we have used Service Catalog. So, this document assumes that you&amp;rsquo;ve installed Service Catalog onto your cluster. If you haven&amp;rsquo;t, please see the installation instructions.</description>
+    </item>
+    
+    <item>
+      <title>Table of Contents | Setup</title>
+      <link>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/setup/</guid>
+      <description>Setup Setup contains instructions for installing the AppsCode Service Broker and its various components in Kubernetes.
+ Install AppsCode Service Broker. Installation instructions for AppsCode Service Broker. Uninstall AppsCode Service Broker. Instructions for uninstallating AppsCode Service Broker. Developer Guide  Overview. Outlines everything you need to know from setting up your dev environment to how to build and test AppsCode Service Broker. Release process. Steps for releasing a new version of AppsCode Service Broker.</description>
+    </item>
+    
+    <item>
+      <title>Uninstall | AppsCode Service Broker</title>
+      <link>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/setup/uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/setup/uninstall/</guid>
+      <description> Uninstall Service Broker To uninstall service-broker, run the following command:
+$ helm del &amp;lt;release_name&amp;gt; --purge  To uninstall AppsCode cloud services, follow the links below:
+ Uninstall KubeDB  </description>
+    </item>
+    
+  </channel>
+</rss>
