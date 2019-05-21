@@ -21,7 +21,8 @@
 openssl openssl can also be use to manually generate certificates for your cluster.
  Set HOST_IP ENV to host IP
  Generate a ca.key with 2048bit:
-openssl genrsa -out ca.key 2048   According to the ca.key generate a ca.crt sh openssl req -x509 -new -nodes -key ca.</description>
+openssl genrsa -out ca.key 2048  According to the ca.key generate a ca.crt
+openssl req -x509 -new -nodes -key ca.key -subj &amp;quot;/CN=${HOST_IP}&amp;quot; -days 10000 -out ca.</description>
     </item>
     
     <item>

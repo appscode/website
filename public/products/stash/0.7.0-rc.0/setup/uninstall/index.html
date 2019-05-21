@@ -560,12 +560,14 @@ initializerconfiguration &quot;stash-initializer&quot; deleted
 </code></pre>
 
 <ul>
-<li><p>To delete existing <code>Restic</code> objects from all namespaces, run the following command in each namespace one by one.</p>
+<li>To delete existing <code>Restic</code> objects from all namespaces, run the following command in each namespace one by one.</li>
+</ul>
 
 <pre><code>kubectl delete restic.stash.appscode.com --all --cascade=false
-</code></pre></li>
+</code></pre>
 
-<li><p>Delete the old CRD-registration.</p></li>
+<ul>
+<li>Delete the old CRD-registration.</li>
 </ul>
 
 <pre><code class="language-console">kubectl delete crd -l app=stash

@@ -540,32 +540,29 @@ No resources found</li>
 No resources found</li>
 
 <li><p>kubectl delete initializerconfiguration -l app=stash
-initializerconfiguration &ldquo;stash-initializer&rdquo; deleted</p>
+initializerconfiguration &ldquo;stash-initializer&rdquo; deleted
+```</p></li>
 
-<pre><code>
-2. Now, wait several seconds for Stash to stop running. To confirm that Stash operator pod(s) have stopped running, run:
-```console
-$ kubectl get pods --all-namespaces -l app=stash
+<li><p>Now, wait several seconds for Stash to stop running. To confirm that Stash operator pod(s) have stopped running, run:</p>
+
+<pre><code class="language-console">$ kubectl get pods --all-namespaces -l app=stash
 </code></pre></li>
 
 <li><p>To keep a copy of your existing <code>Restic</code> objects, run:</p>
 
 <pre><code class="language-console">kubectl get restic.stash.appscode.com --all-namespaces -o yaml &gt; data.yaml
-</code></pre>
+</code></pre></li>
 
-<ol>
-<li>To delete existing <code>Restic</code> objects from all namespaces, run the following command in each namespace one by one.
-```</li>
-</ol></li>
+<li><p>To delete existing <code>Restic</code> objects from all namespaces, run the following command in each namespace one by one.</p>
+
+<pre><code>kubectl delete restic.stash.appscode.com --all --cascade=false
+</code></pre></li>
+
+<li><p>Delete the old CRD-registration.</p>
+
+<pre><code class="language-console">kubectl delete crd -l app=stash
+</code></pre></li>
 </ol>
-
-<p>kubectl delete restic.stash.appscode.com &ndash;all &ndash;cascade=false</p>
-
-<pre><code>
-5. Delete the old CRD-registration.
-```console
-kubectl delete crd -l app=stash
-</code></pre>
 
         </div>
       </div>

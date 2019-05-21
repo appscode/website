@@ -558,11 +558,11 @@ E0830 16:56:46.430468       6 authentication.go:58] Unable to authenticate the r
 <ol>
 <li><p>First note the ip address in the authentication webhook config file. This is the ip address used by Kubernetes api server to connect to the guard server.</p></li>
 
-<li><p>Now check the common name(CN) and subject alternative names (SANS) in the server.crt. If that does not include the ip addressfrom step 1, we need to regenerate the server certificates.</p>
+<li><p>Now check the common name(CN) and subject alternative names (SANS) in the server.crt. If that does not include the ip addressfrom step 1, we need to regenerate the server certificates.</p></li>
+</ol>
 
 <pre><code>$ guard init server --ips=&lt;ip1&gt;,&lt;ip2&gt; --domains=&lt;dns1&gt;,&lt;dns2&gt;
-</code></pre></li>
-</ol>
+</code></pre>
 
 <p>Then regenerate the installer.yaml . This includes a Secret called <code>guard-pki</code> which is used to mount the server.crt.</p>
 

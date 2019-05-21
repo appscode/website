@@ -981,7 +981,8 @@ clusterrolebinding.rbac.authorization.k8s.io &quot;appscode:system:metrics-colle
 </code></pre>
 
 <ol>
-<li><p>Now, forward the port <code>:8443</code> to your workstation.</p>
+<li>Now, forward the port <code>:8443</code> to your workstation.</li>
+</ol>
 
 <pre><code>$ kubectl get pods -n kube-system | grep voyager
 voyager-operator-f89dcccdb-plvmt        1/1       Running   0          27m
@@ -989,9 +990,10 @@ voyager-operator-f89dcccdb-plvmt        1/1       Running   0          27m
 $ kubectl port-forward -n kube-system voyager-operator-f89dcccdb-plvmt 8443
 Forwarding from 127.0.0.1:8443 -&gt; 8443
 Forwarding from [::1]:8443 -&gt; 8443
-</code></pre></li>
+</code></pre>
 
-<li><p>Now, visit the url: <a href="https://127.0.0.1:8443/metrics">https://127.0.0.1:8443/metrics</a></p></li>
+<ol>
+<li>Now, visit the url: <a href="https://127.0.0.1:8443/metrics">https://127.0.0.1:8443/metrics</a></li>
 </ol>
 
 <p><img src="/products/voyager/9.0.0/images/monitoring/operator-metrics.png" alt="operator-metrics" /></p>

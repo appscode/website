@@ -4496,7 +4496,8 @@ Spec cert check command has the following variables:
 openssl openssl can also be use to manually generate certificates for your cluster.
  Set HOST_IP ENV to host IP
  Generate a ca.key with 2048bit:
-openssl genrsa -out ca.key 2048   According to the ca.key generate a ca.crt sh openssl req -x509 -new -nodes -key ca.</description>
+openssl genrsa -out ca.key 2048  According to the ca.key generate a ca.crt
+openssl req -x509 -new -nodes -key ca.key -subj &amp;quot;/CN=${HOST_IP}&amp;quot; -days 10000 -out ca.</description>
     </item>
     
     <item>
@@ -4510,7 +4511,8 @@ openssl genrsa -out ca.key 2048   According to the ca.key generate a ca.crt sh o
 openssl openssl can also be use to manually generate certificates for your cluster.
  Set HOST_IP ENV to host IP
  Generate a ca.key with 2048bit:
-openssl genrsa -out ca.key 2048   According to the ca.key generate a ca.crt sh openssl req -x509 -new -nodes -key ca.</description>
+openssl genrsa -out ca.key 2048  According to the ca.key generate a ca.crt
+openssl req -x509 -new -nodes -key ca.key -subj &amp;quot;/CN=${HOST_IP}&amp;quot; -days 10000 -out ca.</description>
     </item>
     
     <item>
@@ -4524,7 +4526,8 @@ openssl genrsa -out ca.key 2048   According to the ca.key generate a ca.crt sh o
 openssl openssl can also be use to manually generate certificates for your cluster.
  Set HOST_IP ENV to host IP
  Generate a ca.key with 2048bit:
-openssl genrsa -out ca.key 2048   According to the ca.key generate a ca.crt sh openssl req -x509 -new -nodes -key ca.</description>
+openssl genrsa -out ca.key 2048  According to the ca.key generate a ca.crt
+openssl req -x509 -new -nodes -key ca.key -subj &amp;quot;/CN=${HOST_IP}&amp;quot; -days 10000 -out ca.</description>
     </item>
     
     <item>
@@ -4538,7 +4541,8 @@ openssl genrsa -out ca.key 2048   According to the ca.key generate a ca.crt sh o
 openssl openssl can also be use to manually generate certificates for your cluster.
  Set HOST_IP ENV to host IP
  Generate a ca.key with 2048bit:
-openssl genrsa -out ca.key 2048   According to the ca.key generate a ca.crt sh openssl req -x509 -new -nodes -key ca.</description>
+openssl genrsa -out ca.key 2048  According to the ca.key generate a ca.crt
+openssl req -x509 -new -nodes -key ca.key -subj &amp;quot;/CN=${HOST_IP}&amp;quot; -days 10000 -out ca.</description>
     </item>
     
     <item>
@@ -4552,7 +4556,8 @@ openssl genrsa -out ca.key 2048   According to the ca.key generate a ca.crt sh o
 openssl openssl can also be use to manually generate certificates for your cluster.
  Set HOST_IP ENV to host IP
  Generate a ca.key with 2048bit:
-openssl genrsa -out ca.key 2048   According to the ca.key generate a ca.crt sh openssl req -x509 -new -nodes -key ca.</description>
+openssl genrsa -out ca.key 2048  According to the ca.key generate a ca.crt
+openssl req -x509 -new -nodes -key ca.key -subj &amp;quot;/CN=${HOST_IP}&amp;quot; -days 10000 -out ca.</description>
     </item>
     
     <item>
@@ -4566,7 +4571,8 @@ openssl genrsa -out ca.key 2048   According to the ca.key generate a ca.crt sh o
 openssl openssl can also be use to manually generate certificates for your cluster.
  Set HOST_IP ENV to host IP
  Generate a ca.key with 2048bit:
-openssl genrsa -out ca.key 2048   According to the ca.key generate a ca.crt sh openssl req -x509 -new -nodes -key ca.</description>
+openssl genrsa -out ca.key 2048  According to the ca.key generate a ca.crt
+openssl req -x509 -new -nodes -key ca.key -subj &amp;quot;/CN=${HOST_IP}&amp;quot; -days 10000 -out ca.</description>
     </item>
     
     <item>
@@ -25818,7 +25824,8 @@ Before we start, you need to have a Kubernetes cluster, and the kubectl command-
       
       <guid>https://appscode-v3-hugo.web.app/products/kubed/0.10.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image: console $ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image:
+$ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github.</description>
     </item>
     
     <item>
@@ -25828,7 +25835,8 @@ Before we start, you need to have a Kubernetes cluster, and the kubectl command-
       
       <guid>https://appscode-v3-hugo.web.app/products/kubed/0.4.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image: console $ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image:
+$ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github.</description>
     </item>
     
     <item>
@@ -25838,7 +25846,8 @@ Before we start, you need to have a Kubernetes cluster, and the kubectl command-
       
       <guid>https://appscode-v3-hugo.web.app/products/kubed/0.5.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image: console $ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image:
+$ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github.</description>
     </item>
     
     <item>
@@ -25848,7 +25857,8 @@ Before we start, you need to have a Kubernetes cluster, and the kubectl command-
       
       <guid>https://appscode-v3-hugo.web.app/products/kubed/0.6.0-rc.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image: console $ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image:
+$ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github.</description>
     </item>
     
     <item>
@@ -25858,7 +25868,8 @@ Before we start, you need to have a Kubernetes cluster, and the kubectl command-
       
       <guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image: console $ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image:
+$ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github.</description>
     </item>
     
     <item>
@@ -25868,7 +25879,8 @@ Before we start, you need to have a Kubernetes cluster, and the kubectl command-
       
       <guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image: console $ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image:
+$ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github.</description>
     </item>
     
     <item>
@@ -25878,7 +25890,8 @@ Before we start, you need to have a Kubernetes cluster, and the kubectl command-
       
       <guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.2/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image: console $ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image:
+$ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github.</description>
     </item>
     
     <item>
@@ -25888,7 +25901,8 @@ Before we start, you need to have a Kubernetes cluster, and the kubectl command-
       
       <guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image: console $ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image:
+$ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github.</description>
     </item>
     
     <item>
@@ -25898,7 +25912,8 @@ Before we start, you need to have a Kubernetes cluster, and the kubectl command-
       
       <guid>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image: console $ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image:
+$ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github.</description>
     </item>
     
     <item>
@@ -25908,7 +25923,8 @@ Before we start, you need to have a Kubernetes cluster, and the kubectl command-
       
       <guid>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image: console $ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push kubed docker image:
+$ cd ~/go/src/github.com/appscode/kubed $ env APPSCODE_ENV=prod ./hack/make.py build $ ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github.</description>
     </item>
     
     <item>
@@ -25918,8 +25934,7 @@ Before we start, you need to have a Kubernetes cluster, and the kubectl command-
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Now, first build all the binaries:
-$ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCODE_ENV=prod ./hack/make.py push; ./hack/make.py push   Build and push searchlight docker image console .</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Now, first build all the binaries: console $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCODE_ENV=prod ./hack/make.py push; ./hack/make.py push  Build and push searchlight docker image console .</description>
     </item>
     
     <item>
@@ -25929,8 +25944,7 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/5.1.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Now, first build all the binaries:
-$ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCODE_ENV=prod ./hack/make.py push; ./hack/make.py push   Build and push searchlight docker image console .</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Now, first build all the binaries: console $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCODE_ENV=prod ./hack/make.py push; ./hack/make.py push  Build and push searchlight docker image console .</description>
     </item>
     
     <item>
@@ -25940,8 +25954,7 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/5.1.1/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Now, first build all the binaries:
-$ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCODE_ENV=prod ./hack/make.py push; ./hack/make.py push   Build and push searchlight docker image console .</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Now, first build all the binaries: console $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCODE_ENV=prod ./hack/make.py push; ./hack/make.py push  Build and push searchlight docker image console .</description>
     </item>
     
     <item>
@@ -25951,8 +25964,7 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Now, first build all the binaries:
-$ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCODE_ENV=prod ./hack/make.py push; ./hack/make.py push   Build and push searchlight docker image console .</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Now, first build all the binaries: console $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCODE_ENV=prod ./hack/make.py push; ./hack/make.py push  Build and push searchlight docker image console .</description>
     </item>
     
     <item>
@@ -25962,8 +25974,7 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Now, first build all the binaries:
-$ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCODE_ENV=prod ./hack/make.py push; ./hack/make.py push   Build and push searchlight docker image console .</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Now, first build all the binaries: console $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCODE_ENV=prod ./hack/make.py push; ./hack/make.py push  Build and push searchlight docker image console .</description>
     </item>
     
     <item>
@@ -25973,8 +25984,7 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Now, first build all the binaries:
-$ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCODE_ENV=prod ./hack/make.py push; ./hack/make.py push   Build and push searchlight docker image console .</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Now, first build all the binaries: console $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCODE_ENV=prod ./hack/make.py push; ./hack/make.py push  Build and push searchlight docker image console .</description>
     </item>
     
     <item>
@@ -25984,7 +25994,8 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.6.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image: console $ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image:
+$ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github. See previous release notes to get an idea what to include there.</description>
     </item>
     
     <item>
@@ -25994,7 +26005,8 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.6.1/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image: console $ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image:
+$ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github. See previous release notes to get an idea what to include there.</description>
     </item>
     
     <item>
@@ -26004,7 +26016,8 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.6.2/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image: console $ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image:
+$ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github. See previous release notes to get an idea what to include there.</description>
     </item>
     
     <item>
@@ -26014,7 +26027,8 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.6.3/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image: console $ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image:
+$ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github. See previous release notes to get an idea what to include there.</description>
     </item>
     
     <item>
@@ -26024,7 +26038,8 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.6.4/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image: console $ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image:
+$ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github. See previous release notes to get an idea what to include there.</description>
     </item>
     
     <item>
@@ -26034,7 +26049,8 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.7.0-rc.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image: console $ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image:
+$ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github. See previous release notes to get an idea what to include there.</description>
     </item>
     
     <item>
@@ -26044,7 +26060,8 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.7.0-rc.1/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image: console $ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image:
+$ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github. See previous release notes to get an idea what to include there.</description>
     </item>
     
     <item>
@@ -26054,7 +26071,8 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.7.0-rc.2/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image: console $ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image:
+$ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github. See previous release notes to get an idea what to include there.</description>
     </item>
     
     <item>
@@ -26064,7 +26082,8 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.7.0-rc.3/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image: console $ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image:
+$ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github. See previous release notes to get an idea what to include there.</description>
     </item>
     
     <item>
@@ -26074,7 +26093,8 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.7.0-rc.4/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image: console $ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image:
+$ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github. See previous release notes to get an idea what to include there.</description>
     </item>
     
     <item>
@@ -26084,7 +26104,8 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.7.0-rc.5/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image: console $ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image:
+$ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github. See previous release notes to get an idea what to include there.</description>
     </item>
     
     <item>
@@ -26094,7 +26115,8 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.7.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image: console $ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image:
+$ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github. See previous release notes to get an idea what to include there.</description>
     </item>
     
     <item>
@@ -26104,7 +26126,8 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.8.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image: console $ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image:
+$ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github. See previous release notes to get an idea what to include there.</description>
     </item>
     
     <item>
@@ -26114,7 +26137,8 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.8.1/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image: console $ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image:
+$ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github. See previous release notes to get an idea what to include there.</description>
     </item>
     
     <item>
@@ -26124,7 +26148,8 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.8.2/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image: console $ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image:
+$ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github. See previous release notes to get an idea what to include there.</description>
     </item>
     
     <item>
@@ -26134,7 +26159,8 @@ $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCO
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.8.3/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image: console $ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  - Now, update the release notes in Github.</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Build and push stash docker image:
+$ cd ~/go/src/github.com/appscode/stash ./hack/docker/setup.sh; env APPSCODE_ENV=prod ./hack/docker/setup.sh release  Now, update the release notes in Github. See previous release notes to get an idea what to include there.</description>
     </item>
     
     <item>
@@ -34724,7 +34750,7 @@ $ curl -fsSL https://raw.githubusercontent.com/appscode/searchlight/8.0.0-rc.0/h
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.6.0/setup/uninstall/</guid>
       <description>Uninstall Stash Please follow the steps below to uninstall Stash:
- Delete the deployment and service used for Stash operator. ```console $ ./hack/deploy/uninstall.sh kubectl delete deployment -l app=stash -n kube-system deployment &amp;ldquo;stash-operator&amp;rdquo; deleted kubectl delete service -l app=stash -n kube-system service &amp;ldquo;stash-operator&amp;rdquo; deleted kubectl delete secret -l app=stash -n kube-system No resources found kubectl delete serviceaccount -l app=stash -n kube-system No resources found kubectl delete clusterrolebindings -l app=stash -n kube-system No resources found kubectl delete clusterrole -l app=stash -n kube-system No resources found kubectl delete initializerconfiguration -l app=stash initializerconfiguration &amp;ldquo;stash-initializer&amp;rdquo; deleted</description>
+ Delete the deployment and service used for Stash operator. ```console $ ./hack/deploy/uninstall.sh kubectl delete deployment -l app=stash -n kube-system deployment &amp;ldquo;stash-operator&amp;rdquo; deleted kubectl delete service -l app=stash -n kube-system service &amp;ldquo;stash-operator&amp;rdquo; deleted kubectl delete secret -l app=stash -n kube-system No resources found kubectl delete serviceaccount -l app=stash -n kube-system No resources found kubectl delete clusterrolebindings -l app=stash -n kube-system No resources found kubectl delete clusterrole -l app=stash -n kube-system No resources found kubectl delete initializerconfiguration -l app=stash initializerconfiguration &amp;ldquo;stash-initializer&amp;rdquo; deleted ```</description>
     </item>
     
     <item>
@@ -34734,7 +34760,7 @@ $ curl -fsSL https://raw.githubusercontent.com/appscode/searchlight/8.0.0-rc.0/h
       
       <guid>https://appscode-v3-hugo.web.app/products/stash/0.6.1/setup/uninstall/</guid>
       <description>Uninstall Stash Please follow the steps below to uninstall Stash:
- Delete the deployment and service used for Stash operator. ```console $ ./hack/deploy/uninstall.sh kubectl delete deployment -l app=stash -n kube-system deployment &amp;ldquo;stash-operator&amp;rdquo; deleted kubectl delete service -l app=stash -n kube-system service &amp;ldquo;stash-operator&amp;rdquo; deleted kubectl delete secret -l app=stash -n kube-system No resources found kubectl delete serviceaccount -l app=stash -n kube-system No resources found kubectl delete clusterrolebindings -l app=stash -n kube-system No resources found kubectl delete clusterrole -l app=stash -n kube-system No resources found kubectl delete initializerconfiguration -l app=stash initializerconfiguration &amp;ldquo;stash-initializer&amp;rdquo; deleted</description>
+ Delete the deployment and service used for Stash operator. ```console $ ./hack/deploy/uninstall.sh kubectl delete deployment -l app=stash -n kube-system deployment &amp;ldquo;stash-operator&amp;rdquo; deleted kubectl delete service -l app=stash -n kube-system service &amp;ldquo;stash-operator&amp;rdquo; deleted kubectl delete secret -l app=stash -n kube-system No resources found kubectl delete serviceaccount -l app=stash -n kube-system No resources found kubectl delete clusterrolebindings -l app=stash -n kube-system No resources found kubectl delete clusterrole -l app=stash -n kube-system No resources found kubectl delete initializerconfiguration -l app=stash initializerconfiguration &amp;ldquo;stash-initializer&amp;rdquo; deleted ```</description>
     </item>
     
     <item>

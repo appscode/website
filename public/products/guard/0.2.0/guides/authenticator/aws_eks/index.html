@@ -515,16 +515,16 @@ users:
 </code></pre>
 
 <ol>
-<li><p>Replace the <code>&lt;base64-encoded-ca-cert&gt;</code> with the certificate authority data, which can be retrieved by following command</p>
-
-<pre><code class="language-console">$ aws eks describe-cluster --name &lt;cluster-name&gt;  --query cluster.certificateAuthority.data
-</code></pre>
+<li>Replace the <code>&lt;base64-encoded-ca-cert&gt;</code> with the certificate authority data, which can be retrieved by following command
+<code>console
+$ aws eks describe-cluster --name &lt;cluster-name&gt;  --query cluster.certificateAuthority.data
+</code></li>
+</ol>
 
 <p>To test the configuration run</p>
 
 <pre><code class="language-console">$ kubectl get pods --all-namespaces
-</code></pre></li>
-</ol>
+</code></pre>
 
         </div>
       </div>
