@@ -375,6 +375,7 @@
       <!-- header top end -->
       {{ end }}
 
+      {{ block "header-bottom" . }}
       <!-- header bottom area start -->
       <div
         class="header-bottom-area header-area kubedb-primary-bg customize-kubedb"
@@ -456,6 +457,7 @@
         </div>
       </div>
       <!-- header bottom area end -->
+      {{ end }}
 
       {{ block "documentation-menu" . }}
       {{ end }}
