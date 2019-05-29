@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DigitalOcean on Run production-grade databases easily on Kubernetes</title>
+    <link>https://appscode-v3-hugo.web.app/products/pharmer/0.3.1/cloud/digitalocean/</link>
+    <description>Recent content in DigitalOcean on Run production-grade databases easily on Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://appscode-v3-hugo.web.app/products/pharmer/0.3.1/cloud/digitalocean/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DigitalOcean Overview</title>
+      <link>https://appscode-v3-hugo.web.app/products/pharmer/0.3.1/cloud/digitalocean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/pharmer/0.3.1/cloud/digitalocean/</guid>
+      <description>Running Kubernetes on DigitalOcean Following example will use pharmer to create a Kubernetes cluster with 1 worker nodes and 3 master nodes (i,e, 4 nodes in your cluster).
+Before you start As a prerequisite, you need to have pharmer installed. To install pharmer run the following command.
+$ mkdir -p $(go env GOPATH)/src/github.com/pharmer $ cd $(go env GOPATH)/src/github.com/pharmer $ git clone https://github.com/pharmer/pharmer $ cd pharmer $ ./hack/make.py $ pharmer -h  Pharmer storage To store your cluster and credential resource, pharmer use vfs as default storage provider.</description>
+    </item>
+    
+  </channel>
+</rss>

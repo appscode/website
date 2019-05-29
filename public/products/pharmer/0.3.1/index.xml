@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs | Pharmer on Run production-grade databases easily on Kubernetes</title>
+    <link>https://appscode-v3-hugo.web.app/products/pharmer/0.3.1/</link>
+    <description>Recent content in Docs | Pharmer on Run production-grade databases easily on Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://appscode-v3-hugo.web.app/products/pharmer/0.3.1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://appscode-v3-hugo.web.app/products/pharmer/0.3.1/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/pharmer/0.3.1/changelog/</guid>
+      <description>Change Log 0.3.1 (2019-05-24) Full Changelog
+Closed issues:
+ panic: unknown provider #484 Document flex volumes on Packet #381 Cluster bootstrapping docs #223  Merged pull requests:
+ Fix unknown credential provider error #485 (sanjid133)  0.3.0 (2019-05-17) Full Changelog
+Closed issues:
+ Support Kubernetes version 1.13 #468 Cut release for flex volumes #413 AWS Lightsail #291  Merged pull requests:
+ Fix travis tests #483 (tahsinrahman) Use official linode client and CCM, fix various bugs (#3) #482 (sanjid133) Add support for kubernetes v1.</description>
+    </item>
+    
+    <item>
+      <title>Credential | Pharmer</title>
+      <link>https://appscode-v3-hugo.web.app/products/pharmer/0.3.1/getting-started/credential/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/pharmer/0.3.1/getting-started/credential/</guid>
+      <description>Credential For creating cluster pharmer needs cloud provider&amp;rsquo;s credential, so that it can create cluster resources on that provider.
+pharmer provides an interactive shell to help user to provider credential information.
+Creating $ pharmer create credential -h Create credential object Usage: pharmer create credential [flags] Aliases: credential, credentials, cred, Credential Examples: pharmer create credential Flags: -l, --from-env Load credential data from ENV. -f, --from-file string Load credential data from file -h, --help help for credential -p, --provider string Name of the Cloud provider Global Flags: --alsologtostderr log to standard error as well as files --analytics Send analytical events to Google Guard (default true) --config-file string Path to Pharmer config file --env string Environment used to enable debugging (default &amp;quot;dev&amp;quot;) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files (default true) --stderrthreshold severity logs at or above this threshold go to stderr (default 2) -v, --v Level log level for V logs --vmodule moduleSpec comma-separated list of pattern=N settings for file-filtered logging  To import a cloud provider credential run the following command</description>
+    </item>
+    
+    <item>
+      <title>Networking | Pharmer</title>
+      <link>https://appscode-v3-hugo.web.app/products/pharmer/0.3.1/getting-started/networking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/pharmer/0.3.1/getting-started/networking/</guid>
+      <description>Pod Networking Available network provider support in pharmer * calico * flannel * weavenet
+pharmer uses calico as a default network provider. If you want to change the default network provider, you can do that with the help of following flag. --networking=&amp;lt;provider-name&amp;gt;</description>
+    </item>
+    
+  </channel>
+</rss>
