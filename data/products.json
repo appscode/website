@@ -44,6 +44,17 @@
       "starRepo": "appscode/kubed",
       "docRepo": "appscode/kubed"
     },
+    "pharmer": {
+      "url": "https://github.com/pharmer/docs.git",
+      "versions": [
+          { "branch": "master", "hostDocs": false, "v-dropdown": true },
+          { "branch": "0.3.1", "hostDocs": true, "v-dropdown": true }
+      ],
+      "latestVersion": "0.3.1",
+      "githubUrl": "https://github.com/pharmer/pharmer",
+      "starRepo": "pharmer/pharmer",
+      "docRepo": "pharmer/docs"
+    },
     "service-broker": {
       "url": "https://github.com/appscode/service-broker.git",
       "versions": [
