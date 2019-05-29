@@ -17,7 +17,9 @@
           { "branch": "0.1.0-rc.4", "hostDocs": false }
       ],
       "latestVersion": "0.4.0",
-      "githubUrl": "https://github.com/appscode/guard"
+      "githubUrl": "https://github.com/appscode/guard",
+      "starRepo": "appscode/guard",
+      "docRepo": "appscode/guard"
     },
     "kubed": {
       "url": "https://github.com/appscode/kubed.git",
@@ -38,7 +40,9 @@
           { "branch": "0.2.0", "hostDocs": false, "v-dropdown": true }
       ],
       "latestVersion": "0.10.0",
-      "githubUrl": "https://github.com/appscode/kubed"
+      "githubUrl": "https://github.com/appscode/kubed",
+      "starRepo": "appscode/kubed",
+      "docRepo": "appscode/kubed"
     },
     "service-broker": {
       "url": "https://github.com/appscode/service-broker.git",
@@ -50,10 +54,12 @@
           { "branch": "0.1.0", "hostDocs": true, "v-dropdown": true }
       ],
       "latestVersion": "0.3.1",
-      "githubUrl": "https://github.com/appscode/service-broker"
+      "githubUrl": "https://github.com/appscode/service-broker",
+      "starRepo": "appscode/service-broker",
+      "docRepo": "appscode/service-broker"
     },
     "searchlight": {
-      "url": "https://github.com/appscode/searchlight.git",
+      "url": "https://github.com/searchlight/searchlight.git",
       "versions": [
           { "branch": "master", "hostDocs": false, "v-dropdown": true },
           { "branch": "8.0.0-rc.0", "hostDocs": true, "v-dropdown": true },
@@ -66,7 +72,9 @@
           { "branch": "3.0.1", "hostDocs": false, "v-dropdown": true }
       ],
       "latestVersion": "8.0.0-rc.0",
-      "githubUrl": "https://github.com/appscode/searchlight"
+      "githubUrl": "https://github.com/searchlight/searchlight",
+      "starRepo": "searchlight/searchlight",
+      "docRepo": "searchlight/searchlight"
     },
     "stash": {
       "url": "https://github.com/stashed/docs.git",
@@ -92,7 +100,9 @@
           { "branch": "0.4.2", "hostDocs": false, "v-dropdown": true }
       ],
       "latestVersion": "0.8.3",
-      "githubUrl": "https://github.com/stashed/docs"
+      "githubUrl": "https://github.com/stashed/docs",
+      "starRepo": "stashed/stash",
+      "docRepo": "stashed/docs"
     },
     "swift": {
       "url": "https://github.com/appscode/swift.git",
@@ -118,7 +128,9 @@
           { "branch": "0.1.0", "hostDocs": false, "v-dropdown": true }
       ],
       "latestVersion": "0.11.1",
-      "githubUrl": "https://github.com/appscode/swift"
+      "githubUrl": "https://github.com/appscode/swift",
+      "starRepo": "appscode/swift",
+      "docRepo": "appscode/swift"
     },
     "voyager": {
       "url": "https://github.com/appscode/voyager.git",
@@ -155,7 +167,9 @@
           { "branch": "3.0.0", "hostDocs": false }
       ],
       "latestVersion": "10.0.0",
-      "githubUrl": "https://github.com/appscode/voyager"
+      "githubUrl": "https://github.com/appscode/voyager",
+      "starRepo": "appscode/voyager",
+      "docRepo": "appscode/voyager"
     }
   }
 }
