@@ -1,5 +1,8 @@
 {{ define "main" }}
 
+{{ $productName := .Params.product_name }}
+{{ $datasheetFormID := (index $.Site.Data.products.products $productName "datasheetFormID") }}
+
 <!-- datasheet area start -->
 <section class="section-padding">
   <div class="container section">
@@ -31,7 +34,7 @@
       </div>
       <div class="column is-6">
         <div class="form-area">
-          <script src='https://appscode.freshsales.io/web_forms/9d6f5a4d3fe306ecf3b9ca3c8e121265bcf355b2c3f198a8439cf9035bbda0e7/form.js' crossorigin='anonymous' id='fs_9d6f5a4d3fe306ecf3b9ca3c8e121265bcf355b2c3f198a8439cf9035bbda0e7'></script>
+          <script src='https://appscode.freshsales.io/web_forms/{{ $datasheetFormID }}/form.js' crossorigin='anonymous' id='fs_{{ $datasheetFormID }}'></script>
         </div>
       </div>
     </div>

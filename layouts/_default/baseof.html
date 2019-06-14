@@ -1,3 +1,5 @@
+{{ $productName := .Params.product_name }}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#2D9AED" />
-    <title>KubeDB Home</title>
+    {{ if $productName }}
+    <title>{{ index $.Site.Data.products.products $productName "name" }} Home</title>
+    {{ else }}
+    <title>AppsCode Inc.</title>
+    {{ end }}
     <!-- favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <!-- Font Awesome CSS -->
@@ -15,12 +21,16 @@
     <!-- Bulma CSS -->
     <link rel="stylesheet" href="/assets/css/bulma.min.css" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+    {{ end }}
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="/assets/css/responsive.css" />
+    {{ with $style := resources.Get "assets/css/responsive.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+    {{ end }}
   </head>
 
-  <body class="{{.Site.Data.products.products.docs.key}}">
+  <body {{if $productName}}class="{{$productName}}"{{end}}>
     <!--[if lte IE 9]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
@@ -418,6 +428,9 @@
       {{ end }}
 
       {{ block "header-bottom" . }}
+
+      {{ $productName := .Params.product_name }}
+
       <!-- header bottom area start -->
       <div
         class="header-bottom-area header-area kubedb-primary-bg customize-kubedb"
@@ -426,9 +439,15 @@
         <div class="container section">
           <nav class="navbar">
             <div class="navbar-brand">
-              <a class="navbar-item" href="index.html">
-                <img src="/assets/images/kubedb-white.png" alt="" />
-              </a>
+              {{ if $productName }}
+                <a class="navbar-item" href="{{.Site.BaseURL}}/products/{{$productName}}">
+                  <img src="/assets/images/{{$productName}}-white.png" alt="" />
+                </a>
+              {{ else }}
+                <a class="navbar-item" href="{{.Site.BaseURL}}">
+                  <img src="/assets/images/appscode-white.png" alt="" />
+                </a>
+              {{ end }}
 
               <a
                 role="button"
@@ -445,7 +464,6 @@
 
             <div id="acNav" class="navbar-menu main-menu">
               <div class="navbar-end">
-                {{ $productName := .Params.product_name }}
                 {{ if $productName }}
                   {{ if (isset $.Site.Data.products.products $productName) }}
                     <!-- nav menu start -->
@@ -683,6 +701,10 @@
 
     <!-- call to action area start -->
     {{ block "cta-install" . }}
+
+    {{ $productName := .Params.product_name }}
+    {{ if $productName }}
+    {{ $latestVersion := (index $.Site.Data.products.products $productName "latestVersion") }}
     <section class="cta-area section-padding pt-0">
       <div class="container section">
         <div class="cta-padding">
@@ -699,7 +721,7 @@
               <div class="cta-button d-table">
                 <!-- cta button start -->
                 <div class="cta-button-inner d-table-cell">
-                  <a href="#" class="button kd-button kd-primary"
+                  <a href="/products/{{ $productName }}/docs/{{ $latestVersion }}/setup/" class="button kd-button kd-primary"
                     >Try Now for FREE</a
                   >
                 </div>
@@ -710,6 +732,8 @@
         </div>
       </div>
     </section>
+    {{ end }}
+
     {{ end }}
     <!-- call to action area end -->
 
@@ -723,7 +747,7 @@
               <div class="single-footer-widget">
                 <!-- logo start -->
                 <div class="footer-logo">
-                  <a href="#"
+                  <a href="{{.Site.Params.domain_appscode}}"
                     ><img
                       src="/assets/images/logo-color-appscode.png"
                       alt=""
