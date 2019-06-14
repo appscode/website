@@ -2096,6 +2096,18 @@ To remove acknowledgement, you just need to delete Acknowledgement object.</desc
     </item>
     
     <item>
+      <title>Acknowledgement Concepts</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/concepts/incident/acknowledgement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/concepts/incident/acknowledgement/</guid>
+      <description>Acknowledgement Kubernetes Extended Api Server resource Acknowledgement is used to acknowledge an Incident with type Problem.
+Following is the example of Acknowledgement object
+apiVersion: incidents.monitoring.appscode.com kind: Acknowledgement metadata: name: cluster.pod-exists-demo-0.20180428-1109 namespace: demo request: comment: working on fix  When user creates this Acknowledgement object, Searchlight operator gets Incident with same name of Acknowledgement object. Operator then acknowledges Icinga notification with provided comment.
+To remove acknowledgement, you just need to delete Acknowledgement object.</description>
+    </item>
+    
+    <item>
       <title>Acknowledgement | Searchlight</title>
       <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/welcome/acknowledgement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2146,6 +2158,15 @@ To remove acknowledgement, you just need to delete Acknowledgement object.</desc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/welcome/acknowledgement/</guid>
+      <description> Acknowledgement  Many thanks to Icinga project.  </description>
+    </item>
+    
+    <item>
+      <title>Acknowledgement | Searchlight</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/welcome/acknowledgement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/welcome/acknowledgement/</guid>
       <description> Acknowledgement  Many thanks to Icinga project.  </description>
     </item>
     
@@ -2556,6 +2577,15 @@ $ aws sts get-caller-identity  Open ~/.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/reference/hyperalert/hyperalert_analytics_id/</guid>
+      <description>hyperalert analytics_id Synopsis hyperalert analytics_id [flags]  Options  -h, --help help for analytics_id  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.checkInterval int Icinga check_interval in second. [Format: 30, 300] (default 30) --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description>
+    </item>
+    
+    <item>
+      <title>Analytics Id</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_analytics_id/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_analytics_id/</guid>
       <description>hyperalert analytics_id Synopsis hyperalert analytics_id [flags]  Options  -h, --help help for analytics_id  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.checkInterval int Icinga check_interval in second. [Format: 30, 300] (default 30) --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description>
     </item>
     
@@ -4291,6 +4321,18 @@ Spec ca-cert check command has the following variables:
     </item>
     
     <item>
+      <title>CA Cert</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/cluster-alerts/ca-cert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/cluster-alerts/ca-cert/</guid>
+      <description>New to Searchlight? Please start here.
+ Check ca-cert Check command ca-cert checks the expiration timestamp of Kubernetes api server CA certificate. No longer you have to get a surprise that the CA certificate for your cluster has expired.
+Spec ca-cert check command has the following variables:
+ warning - Condition for warning, compare with tiem left before expiration. (Default: TTL &amp;lt; 360h) critical - Condition for critical, compare with tiem left before expiration.</description>
+    </item>
+    
+    <item>
       <title>CORS | Kubernetes Ingress</title>
       <link>https://appscode-v3-hugo.web.app/products/voyager/10.0.0/guides/ingress/http/cors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4545,6 +4587,18 @@ Spec cert check command has the following variables:
     </item>
     
     <item>
+      <title>Cert</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/cluster-alerts/cert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/cluster-alerts/cert/</guid>
+      <description>New to Searchlight? Please start here.
+ Check cert Check command cert checks the expiration timestamp of any certificate from Secrets. No longer you have to get a surprise that your certificates have expired.
+Spec cert check command has the following variables:
+ selector - Selector (label query) to filter on, supports &amp;lsquo;=&amp;rsquo;, &amp;lsquo;==&amp;rsquo;, and &amp;lsquo;!=&amp;rsquo; secretName - Name of secret from where certificates are checked secretKey - Name of secret key where certificates are kept warning - Remaining duration for Warning state.</description>
+    </item>
+    
+    <item>
       <title>Certificate</title>
       <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/setup/certificate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4625,6 +4679,21 @@ openssl req -x509 -new -nodes -key ca.key -subj &amp;quot;/CN=${HOST_IP}&amp;quo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/setup/certificate/</guid>
+      <description>New to Searchlight? Please start here.
+ Certificate This article shows you how to generate SSL certificates using openssl or easyrsa.
+openssl openssl can also be use to manually generate certificates for your cluster.
+ Set HOST_IP ENV to host IP
+ Generate a ca.key with 2048bit:
+openssl genrsa -out ca.key 2048  According to the ca.key generate a ca.crt
+openssl req -x509 -new -nodes -key ca.key -subj &amp;quot;/CN=${HOST_IP}&amp;quot; -days 10000 -out ca.</description>
+    </item>
+    
+    <item>
+      <title>Certificate</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/setup/certificate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/setup/certificate/</guid>
       <description>New to Searchlight? Please start here.
  Certificate This article shows you how to generate SSL certificates using openssl or easyrsa.
 openssl openssl can also be use to manually generate certificates for your cluster.
@@ -5325,6 +5394,19 @@ Fixed bugs:
     </item>
     
     <item>
+      <title>Changelog | Searchlight</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/welcome/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/welcome/changelog/</guid>
+      <description>Change Log 8.0.0 (2019-03-07) Full Changelog
+Fixed bugs:
+ Unknown : var &amp;ldquo;icinga.checkInterval&amp;rdquo; is not registered in SearchlightPlugin #397 Correctly handle ignored openapi prefixes #398 (tamalsaha)  Closed issues:
+ Helm chart is not operable #419  Merged pull requests:
+ Use onessl 0.10.0 #437 (tamalsaha) Update Kubernetes client libraries to 1.13.0 #436 (tamalsaha) Various fixes to installer #435 (tamalsaha) Pin go-ini dependency #434 (tamalsaha) Update webhook error message format for Kubernetes 1.</description>
+    </item>
+    
+    <item>
       <title>Changelog | Service Broker</title>
       <link>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/welcome/changelog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5932,6 +6014,17 @@ hyperalert check_ca_cert [flags]  Options  -c, --critical duration Remaining dur
     </item>
     
     <item>
+      <title>Check Ca Cert</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_ca_cert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_ca_cert/</guid>
+      <description>hyperalert check_ca_cert Check Certificate expire date
+Synopsis Check Certificate expire date
+hyperalert check_ca_cert [flags]  Options  -c, --critical duration Remaining duration for critical state. [Default: 120h] (default 120h0m0s) -h, --help help for check_ca_cert -w, --warning duration Remaining duration for warning state. [Default: 360h] (default 360h0m0s)  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.</description>
+    </item>
+    
+    <item>
       <title>Check Cert</title>
       <link>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/reference/hyperalert/hyperalert_check_cert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5959,6 +6052,17 @@ hyperalert check_cert [flags]  Options  -c, --critical duration Remaining durati
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/reference/hyperalert/hyperalert_check_cert/</guid>
+      <description>hyperalert check_cert Check Certificate expire date
+Synopsis Check Certificate expire date
+hyperalert check_cert [flags]  Options  -c, --critical duration Remaining duration for Critical state. [Default: 120h] (default 120h0m0s) -h, --help help for check_cert -H, --host string Icinga host name -k, --secretKey strings Name of secret key where certificates are kept -s, --secretName string Name of secret from where certificates are checked -l, --selector string Selector (label query) to filter on, supports &#39;=&#39;, &#39;==&#39;, and &#39;!</description>
+    </item>
+    
+    <item>
+      <title>Check Cert</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_cert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_cert/</guid>
       <description>hyperalert check_cert Check Certificate expire date
 Synopsis Check Certificate expire date
 hyperalert check_cert [flags]  Options  -c, --critical duration Remaining duration for Critical state. [Default: 120h] (default 120h0m0s) -h, --help help for check_cert -H, --host string Icinga host name -k, --secretKey strings Name of secret key where certificates are kept -s, --secretName string Name of secret from where certificates are checked -l, --selector string Selector (label query) to filter on, supports &#39;=&#39;, &#39;==&#39;, and &#39;!</description>
@@ -6031,6 +6135,17 @@ hyperalert check_component_status [flags]  Options  -n, --componentName string N
     </item>
     
     <item>
+      <title>Check Component Status</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_component_status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_component_status/</guid>
+      <description>hyperalert check_component_status Check Kubernetes Component Status
+Synopsis Check Kubernetes Component Status
+hyperalert check_component_status [flags]  Options  -n, --componentName string Name of component which should be ready -h, --help help for check_component_status -l, --selector string Selector (label query) to filter on, supports &#39;=&#39;, &#39;==&#39;, and &#39;!=&#39;.  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.</description>
+    </item>
+    
+    <item>
       <title>Check Env</title>
       <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/reference/hyperalert/hyperalert_check_env/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6081,6 +6196,15 @@ hyperalert check_component_status [flags]  Options  -n, --componentName string N
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/reference/hyperalert/hyperalert_check_env/</guid>
+      <description>hyperalert check_env Synopsis hyperalert check_env [flags]  Options  -h, --help help for check_env  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.checkInterval int Icinga check_interval in second. [Format: 30, 300] (default 30) --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description>
+    </item>
+    
+    <item>
+      <title>Check Env</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_env/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_env/</guid>
       <description>hyperalert check_env Synopsis hyperalert check_env [flags]  Options  -h, --help help for check_env  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.checkInterval int Icinga check_interval in second. [Format: 30, 300] (default 30) --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description>
     </item>
     
@@ -6145,6 +6269,17 @@ hyperalert check_event [flags]  Options  -s, --clockSkew duration Add skew with 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/reference/hyperalert/hyperalert_check_event/</guid>
+      <description>hyperalert check_event Check kubernetes events for all namespaces
+Synopsis Check kubernetes events for all namespaces
+hyperalert check_event [flags]  Options  -s, --clockSkew duration Add skew with check_interval in duration. [Default: 30s] (default 30s) -h, --help help for check_event -H, --host string Icinga host name --involvedObjectKind string Involved object kind used to select events --involvedObjectName string Involved object name used to select events --involvedObjectNamespace string Involved object namespace used to select events --involvedObjectUID string Involved object uid used to select events  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.</description>
+    </item>
+    
+    <item>
+      <title>Check Event</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_event/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_event/</guid>
       <description>hyperalert check_event Check kubernetes events for all namespaces
 Synopsis Check kubernetes events for all namespaces
 hyperalert check_event [flags]  Options  -s, --clockSkew duration Add skew with check_interval in duration. [Default: 30s] (default 30s) -h, --help help for check_event -H, --host string Icinga host name --involvedObjectKind string Involved object kind used to select events --involvedObjectName string Involved object name used to select events --involvedObjectNamespace string Involved object namespace used to select events --involvedObjectUID string Involved object uid used to select events  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.</description>
@@ -6250,6 +6385,17 @@ hyperalert check_json_path [flags]  Options  -c, --critical string Critical json
     </item>
     
     <item>
+      <title>Check Json Path</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_json_path/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_json_path/</guid>
+      <description>hyperalert check_json_path Check Json Object
+Synopsis Check Json Object
+hyperalert check_json_path [flags]  Options  -c, --critical string Critical jsonpath query which returns [true/false] -h, --help help for check_json_path -H, --host string Icinga host name -s, --secretName string Kubernetes secret name -u, --url string URL to get data -w, --warning string Warning jsonpath query which returns [true/false]  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.</description>
+    </item>
+    
+    <item>
       <title>Check Node Exists</title>
       <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/reference/hyperalert/hyperalert_check_node_exists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6310,6 +6456,17 @@ hyperalert check_node_exists [flags]  Options  -c, --count int Number of expecte
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/reference/hyperalert/hyperalert_check_node_exists/</guid>
+      <description>hyperalert check_node_exists Count Kubernetes Nodes
+Synopsis Count Kubernetes Nodes
+hyperalert check_node_exists [flags]  Options  -c, --count int Number of expected Kubernetes Node -h, --help help for check_node_exists -n, --nodeName string Name of node whose existence is checked -l, --selector string Selector (label query) to filter on, supports &#39;=&#39;, &#39;==&#39;, and &#39;!=&#39;.  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.</description>
+    </item>
+    
+    <item>
+      <title>Check Node Exists</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_node_exists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_node_exists/</guid>
       <description>hyperalert check_node_exists Count Kubernetes Nodes
 Synopsis Count Kubernetes Nodes
 hyperalert check_node_exists [flags]  Options  -c, --count int Number of expected Kubernetes Node -h, --help help for check_node_exists -n, --nodeName string Name of node whose existence is checked -l, --selector string Selector (label query) to filter on, supports &#39;=&#39;, &#39;==&#39;, and &#39;!=&#39;.  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.</description>
@@ -6382,6 +6539,17 @@ hyperalert check_node_status [flags]  Options  -h, --help help for check_node_st
     </item>
     
     <item>
+      <title>Check Node Status</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_node_status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_node_status/</guid>
+      <description>hyperalert check_node_status Check Kubernetes Node
+Synopsis Check Kubernetes Node
+hyperalert check_node_status [flags]  Options  -h, --help help for check_node_status -H, --host string Icinga host name  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.checkInterval int Icinga check_interval in second. [Format: 30, 300] (default 30) --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description>
+    </item>
+    
+    <item>
       <title>Check Pod Exec</title>
       <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/reference/hyperalert/hyperalert_check_pod_exec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6442,6 +6610,17 @@ hyperalert check_pod_exec [flags]  Options  -a, --argv string Arguments for exec
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/reference/hyperalert/hyperalert_check_pod_exec/</guid>
+      <description>hyperalert check_pod_exec Check exit code of exec command on Kubernetes container
+Synopsis Check exit code of exec command on Kubernetes container
+hyperalert check_pod_exec [flags]  Options  -a, --argv string Arguments for exec command. [Format: &#39;arg; arg; arg&#39;] -c, --cmd string Exec command. [Default: /bin/sh] (default &amp;quot;/bin/sh&amp;quot;) -C, --container string Container name in specified pod -h, --help help for check_pod_exec -H, --host string Icinga host name  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.</description>
+    </item>
+    
+    <item>
+      <title>Check Pod Exec</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_pod_exec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_pod_exec/</guid>
       <description>hyperalert check_pod_exec Check exit code of exec command on Kubernetes container
 Synopsis Check exit code of exec command on Kubernetes container
 hyperalert check_pod_exec [flags]  Options  -a, --argv string Arguments for exec command. [Format: &#39;arg; arg; arg&#39;] -c, --cmd string Exec command. [Default: /bin/sh] (default &amp;quot;/bin/sh&amp;quot;) -C, --container string Container name in specified pod -h, --help help for check_pod_exec -H, --host string Icinga host name  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.</description>
@@ -6514,6 +6693,17 @@ hyperalert check_pod_exists [flags]  Options  -c, --count int Number of Kubernet
     </item>
     
     <item>
+      <title>Check Pod Exists</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_pod_exists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_pod_exists/</guid>
+      <description>hyperalert check_pod_exists Check Kubernetes Pod(s)
+Synopsis Check Kubernetes Pod(s)
+hyperalert check_pod_exists [flags]  Options  -c, --count int Number of Kubernetes pods -h, --help help for check_pod_exists -H, --host string Icinga host name -p, --podName string Name of pod whose existence is checked -l, --selector string Selector (label query) to filter on, supports &#39;=&#39;, &#39;==&#39;, and &#39;!=&#39;.  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.</description>
+    </item>
+    
+    <item>
       <title>Check Pod Status</title>
       <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/reference/hyperalert/hyperalert_check_pod_status/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6574,6 +6764,17 @@ hyperalert check_pod_status [flags]  Options  -h, --help help for check_pod_stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/reference/hyperalert/hyperalert_check_pod_status/</guid>
+      <description>hyperalert check_pod_status Check Kubernetes Pod(s) status
+Synopsis Check Kubernetes Pod(s) status
+hyperalert check_pod_status [flags]  Options  -h, --help help for check_pod_status -H, --host string Icinga host name  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.checkInterval int Icinga check_interval in second. [Format: 30, 300] (default 30) --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description>
+    </item>
+    
+    <item>
+      <title>Check Pod Status</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_pod_status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_pod_status/</guid>
       <description>hyperalert check_pod_status Check Kubernetes Pod(s) status
 Synopsis Check Kubernetes Pod(s) status
 hyperalert check_pod_status [flags]  Options  -h, --help help for check_pod_status -H, --host string Icinga host name  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.checkInterval int Icinga check_interval in second. [Format: 30, 300] (default 30) --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description>
@@ -6646,6 +6847,17 @@ hyperalert check_volume [flags]  Options  -c, --critical float Critical level va
     </item>
     
     <item>
+      <title>Check Volume</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_volume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_volume/</guid>
+      <description>hyperalert check_volume Check kubernetes volume
+Synopsis Check kubernetes volume
+hyperalert check_volume [flags]  Options  -c, --critical float Critical level value (usage percentage) (default 95) -h, --help help for check_volume -H, --host string Icinga host name -M, --mountPoint string Mount point -s, --secretName string Kubernetes secret name -N, --volumeName string Volume name -w, --warning float Warning level value (usage percentage) (default 80)  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.</description>
+    </item>
+    
+    <item>
       <title>Check Webhook</title>
       <link>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/reference/hyperalert/hyperalert_check_webhook/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6673,6 +6885,17 @@ hyperalert check_webhook [flags]  Options  --check_command string SearchlightPlu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/reference/hyperalert/hyperalert_check_webhook/</guid>
+      <description>hyperalert check_webhook Check webhook result
+Synopsis Check webhook result
+hyperalert check_webhook [flags]  Options  --check_command string SearchlightPlugin name for this webhook check -h, --help help for check_webhook --key.0 string --key.1 string --key.10 string --key.11 string --key.12 string --key.13 string --key.14 string --key.15 string --key.16 string --key.17 string --key.18 string --key.19 string --key.2 string --key.3 string --key.4 string --key.5 string --key.6 string --key.7 string --key.8 string --key.9 string --val.0 string --val.</description>
+    </item>
+    
+    <item>
+      <title>Check Webhook</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_webhook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_check_webhook/</guid>
       <description>hyperalert check_webhook Check webhook result
 Synopsis Check webhook result
 hyperalert check_webhook [flags]  Options  --check_command string SearchlightPlugin name for this webhook check -h, --help help for check_webhook --key.0 string --key.1 string --key.10 string --key.11 string --key.12 string --key.13 string --key.14 string --key.15 string --key.16 string --key.17 string --key.18 string --key.19 string --key.2 string --key.3 string --key.4 string --key.5 string --key.6 string --key.7 string --key.8 string --key.9 string --val.0 string --val.</description>
@@ -6734,6 +6957,16 @@ ClusterAlerts  What is ClusterAlert A ClusterAlert is a Kubernetes Custom Resour
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/concepts/alert-types/cluster-alert/</guid>
+      <description>New to Searchlight? Please start here.
+ClusterAlerts  What is ClusterAlert A ClusterAlert is a Kubernetes Custom Resource Definition (CRD). It provides declarative configuration of Icinga services for cluster level alerts in a Kubernetes native way. You only need to describe the desired check command and notifier in a ClusterAlert object, and the Searchlight operator will create Icinga2 hosts, services and notifications to the desired state for you.</description>
+    </item>
+    
+    <item>
+      <title>Cluster Alert Overview</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/concepts/alert-types/cluster-alert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/concepts/alert-types/cluster-alert/</guid>
       <description>New to Searchlight? Please start here.
 ClusterAlerts  What is ClusterAlert A ClusterAlert is a Kubernetes Custom Resource Definition (CRD). It provides declarative configuration of Icinga services for cluster level alerts in a Kubernetes native way. You only need to describe the desired check command and notifier in a ClusterAlert object, and the Searchlight operator will create Icinga2 hosts, services and notifications to the desired state for you.</description>
     </item>
@@ -7089,6 +7322,19 @@ Spec component-status has the following variables:
     </item>
     
     <item>
+      <title>Component Status</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/cluster-alerts/component-status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/cluster-alerts/component-status/</guid>
+      <description>New to Searchlight? Please start here.
+ Check component-status Check command component-status is used to check status of Kubernetes components. Returns OK if components are Healthy, otherwise, returns Critical.
+Spec component-status has the following variables:
+ selector - Label selector for components whose existence are checked. componentName - Name of Kubernetes component whose existence is checked.  Execution of this command can result in following states:
+ OK Critical Unknown  Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description>
+    </item>
+    
+    <item>
       <title>Concepts | AppsCode Service Broker</title>
       <link>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7384,6 +7630,16 @@ Overview A service broker is an endpoint that manages a set of software offering
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/concepts/</guid>
+      <description>Concepts Concepts help you learn about the different parts of the Searchlight and the abstractions it uses.
+ What is Searchlight?  Overview. Provides a conceptual introduction to Searchlight, including the problems it solves and its high-level architecture.  Types of Alerts  ClusterAlerts. Introduces the concept of ClusterAlert to periodically run various checks on a Kubernetes cluster. NodeAlerts. Introduces the concept of NodeAlert to periodically run various checks on nodes in a Kubernetes cluster.</description>
+    </item>
+    
+    <item>
+      <title>Concepts | Searchlight</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/concepts/</guid>
       <description>Concepts Concepts help you learn about the different parts of the Searchlight and the abstractions it uses.
  What is Searchlight?  Overview. Provides a conceptual introduction to Searchlight, including the problems it solves and its high-level architecture.  Types of Alerts  ClusterAlerts. Introduces the concept of ClusterAlert to periodically run various checks on a Kubernetes cluster. NodeAlerts. Introduces the concept of NodeAlert to periodically run various checks on nodes in a Kubernetes cluster.</description>
     </item>
@@ -8089,6 +8345,17 @@ searchlight configure [flags]  Options  -s, --config-dir string Path to director
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/reference/searchlight/searchlight_configure/</guid>
+      <description>searchlight configure Generate icinga configuration
+Synopsis Generate icinga configuration
+searchlight configure [flags]  Options  -s, --config-dir string Path to directory containing icinga2 config. This should be an emptyDir inside Kubernetes. -h, --help help for configure  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --enable-analytics send usage events to Google Analytics (default true) --log-flush-frequency duration Maximum number of seconds between log flushes (default 5s) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files --stderrthreshold severity logs at or above this threshold go to stderr --use-kubeapiserver-fqdn-for-aks if true, uses kube-apiserver FQDN for AKS cluster to workaround https://github.</description>
+    </item>
+    
+    <item>
+      <title>Configure</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/searchlight/searchlight_configure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/searchlight/searchlight_configure/</guid>
       <description>searchlight configure Generate icinga configuration
 Synopsis Generate icinga configuration
 searchlight configure [flags]  Options  -s, --config-dir string Path to directory containing icinga2 config. This should be an emptyDir inside Kubernetes. -h, --help help for configure  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --enable-analytics send usage events to Google Analytics (default true) --log-flush-frequency duration Maximum number of seconds between log flushes (default 5s) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files --stderrthreshold severity logs at or above this threshold go to stderr --use-kubeapiserver-fqdn-for-aks if true, uses kube-apiserver FQDN for AKS cluster to workaround https://github.</description>
@@ -11453,6 +11720,17 @@ Certificate of Origin By contributing to this project you agree to the Developer
     </item>
     
     <item>
+      <title>Contributing | Searchlight</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/welcome/contributing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/welcome/contributing/</guid>
+      <description>Contribution Guidelines Want to hack on Searchlight?
+AppsCode projects are Apache 2.0 licensed and accept contributions via GitHub pull requests. This document outlines some of the conventions on development workflow, commit message formatting, contact points and other resources to make it easier to get your contribution accepted.
+Certificate of Origin By contributing to this project you agree to the Developer Certificate of Origin (DCO). This document was created by the Linux Kernel community and is a simple statement that you, as a contributor, have the legal right to make the contribution.</description>
+    </item>
+    
+    <item>
       <title>Contributing | Service Broker</title>
       <link>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/welcome/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -13434,6 +13712,18 @@ Spec event check command has the following variables:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/guides/cluster-alerts/event/</guid>
+      <description>New to Searchlight? Please start here.
+ Check event Check command event is used to check Kubernetes events. This plugin checks for all Warning events happened in the last spec.checkInterval duration.
+Spec event check command has the following variables:
+ clockSkew - Clock skew in Duration. [Default: 30s]. This time is added with spec.checkInterval while checking events involvedObjectKind - Kind of involved object used to select events involvedObjectName - Name of involved object used to select events involvedObjectNamespace - Namespace of involved object used to select events involvedObjectUID - UID of involved object used to select events  Execution of this command can result in following states:</description>
+    </item>
+    
+    <item>
+      <title>Event</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/cluster-alerts/event/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/cluster-alerts/event/</guid>
       <description>New to Searchlight? Please start here.
  Check event Check command event is used to check Kubernetes events. This plugin checks for all Warning events happened in the last spec.checkInterval duration.
 Spec event check command has the following variables:
@@ -16941,6 +17231,17 @@ Options  --alsologtostderr log to standard error as well as files --bypass-valid
     </item>
     
     <item>
+      <title>Hostfacts</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hostfacts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hostfacts/</guid>
+      <description>hostfacts Hostfacts by AppsCode - Expose node metrics
+Synopsis Hostfacts by AppsCode - Expose node metrics
+Options  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --enable-analytics send usage events to Google Analytics (default true) -h, --help help for hostfacts --log-flush-frequency duration Maximum number of seconds between log flushes (default 5s) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files --stderrthreshold severity logs at or above this threshold go to stderr --use-kubeapiserver-fqdn-for-aks if true, uses kube-apiserver FQDN for AKS cluster to workaround https://github.</description>
+    </item>
+    
+    <item>
       <title>Hyperalert</title>
       <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/reference/hyperalert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -17007,6 +17308,17 @@ hyperalert [flags]  Options  --alsologtostderr log to standard error as well as 
     </item>
     
     <item>
+      <title>Hyperalert</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/</guid>
+      <description>hyperalert AppsCode Icinga2 plugin
+Synopsis AppsCode Icinga2 plugin
+hyperalert [flags]  Options  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig -h, --help help for hyperalert --icinga.checkInterval int Icinga check_interval in second. [Format: 30, 300] (default 30) --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description>
+    </item>
+    
+    <item>
       <title>Incident Concepts</title>
       <link>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/concepts/incident/incident/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -17036,6 +17348,18 @@ apiVersion: monitoring.appscode.com/v1alpha1 kind: Incident metadata: name: clus
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/concepts/incident/incident/</guid>
+      <description>Incident What is Incident A Incident is a Kubernetes Custom Resource Definition (CRD). It provides information on notifications sent by Searchlight for alerts.
+Incident Spec As with all other Kubernetes objects, a Incident has apiVersion, kind, and metadata fields. It also has a .spec section.
+Below is an example Incident object maintained by Searchlight.
+apiVersion: monitoring.appscode.com/v1alpha1 kind: Incident metadata: name: cluster.pod-exists-demo-0.20180428-1109 namespace: demo labels: monitoring.appscode.com/alert: pod-exists-demo-0 monitoring.appscode.com/alert-type: cluster monitoring.appscode.com/recovered: true status: lastNotificationType: Recovery notifications: - type: Problem checkOutput: Found 10 pod(s) instead of 11 author: searchlight-user firstTimestamp: 20180428-1109 lastTimestamp: 20180428-1119 state: Critical - type: Acknowledgement checkOutput: Found 10 pod(s) instead of 11 author: admin comment: working on fix firstTimestamp: 20180428-1142 lastTimestamp: 20180428-1142 state: Critical - type: Recovery checkOutput: Found all pods author: searchlight-user firstTimestamp: 20180428-1237 lastTimestamp: 20180428-1237 state: Ok  Here,</description>
+    </item>
+    
+    <item>
+      <title>Incident Concepts</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/concepts/incident/incident/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/concepts/incident/incident/</guid>
       <description>Incident What is Incident A Incident is a Kubernetes Custom Resource Definition (CRD). It provides information on notifications sent by Searchlight for alerts.
 Incident Spec As with all other Kubernetes objects, a Incident has apiVersion, kind, and metadata fields. It also has a .spec section.
 Below is an example Incident object maintained by Searchlight.
@@ -17455,6 +17779,19 @@ $ kubectl get pods -n kube-system | grep searchlight-operator searchlight-operat
     
     <item>
       <title>Install</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/setup/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/setup/install/</guid>
+      <description>New to Searchlight? Please start here.
+ Installation Guide Searchlight operator can be installed via a script or as a Helm chart. 
+Script  Helm   Using Script To install Searchlight in your Kubernetes cluster, run the following command:
+$ curl -fsSL https://raw.githubusercontent.com/appscode/searchlight/8.0.0/hack/deploy/searchlight.sh | bash  After successful installation, you should have a searchlight-operator-*** pod running in the kube-system namespace.
+$ kubectl get pods -n kube-system | grep searchlight-operator searchlight-operator-6945bcd777-4jdv7 3/3 Running 0 2m  Customizing Installer The installer script and associated yaml files can be found in the /hack/deploy folder.</description>
+    </item>
+    
+    <item>
+      <title>Install</title>
       <link>https://appscode-v3-hugo.web.app/products/stash/0.6.0/setup/install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -17694,6 +18031,16 @@ $ kubectl get pods -n kube-system | grep stash-operator stash-operator-846d47f48
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/setup/hostfacts/</guid>
+      <description>New to Searchlight? Please start here.
+ Hostfacts Hostfacts is a http server used to expose various node metrics. This is a wrapper around the wonderful shirou/gopsutil library. This is used by check_node_volume and check_pod_volume commands to detect disk usage stats. To use these check commands, hostfacts must be installed directly on every node in the cluster. Hostfacts can&amp;rsquo;t be deployed using DaemonSet. This guide will walk you through how to deploy hostfacts as a Systemd service.</description>
+    </item>
+    
+    <item>
+      <title>Install Hostfacts</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/setup/hostfacts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/setup/hostfacts/</guid>
       <description>New to Searchlight? Please start here.
  Hostfacts Hostfacts is a http server used to expose various node metrics. This is a wrapper around the wonderful shirou/gopsutil library. This is used by check_node_volume and check_pod_volume commands to detect disk usage stats. To use these check commands, hostfacts must be installed directly on every node in the cluster. Hostfacts can&amp;rsquo;t be deployed using DaemonSet. This guide will walk you through how to deploy hostfacts as a Systemd service.</description>
     </item>
@@ -19272,6 +19619,18 @@ Spec json-path check command has the following variables:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/guides/cluster-alerts/json-path/</guid>
+      <description>New to Searchlight? Please start here.
+ Check json-path Check command json-path is used to check JSON HTTP response using jsonpath queries.
+Spec json-path check command has the following variables:
+ url - URL to get data secretName - Name of Kubernetes Secret used to call HTTP api. warning - Query for warning which returns [true/false]. critical - Query for critical which returns [true/false].  Query A query used in warning and critical variable must return boolean [true/false].</description>
+    </item>
+    
+    <item>
+      <title>JSON Path</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/cluster-alerts/json-path/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/cluster-alerts/json-path/</guid>
       <description>New to Searchlight? Please start here.
  Check json-path Check command json-path is used to check JSON HTTP response using jsonpath queries.
 Spec json-path check command has the following variables:
@@ -22060,6 +22419,17 @@ NodeAlert Spec As with all other Kubernetes objects, a NodeAlert needs apiVersio
     </item>
     
     <item>
+      <title>Node Alert Overview</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/concepts/alert-types/node-alert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/concepts/alert-types/node-alert/</guid>
+      <description>New to Searchlight? Please start here.
+ NodeAlerts What is NodeAlert A NodeAlert is a Kubernetes Custom Resource Definition (CRD). It provides declarative configuration of Icinga services for Nodes in a Kubernetes native way. You only need to describe the desired check command and notifier in a NodeAlert object, and the Searchlight operator will create Icinga2 hosts, services and notifications to the desired state for you.
+NodeAlert Spec As with all other Kubernetes objects, a NodeAlert needs apiVersion, kind, and metadata fields.</description>
+    </item>
+    
+    <item>
       <title>Node Exists</title>
       <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/cluster-alerts/node_exists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -22130,6 +22500,19 @@ Spec node-exists has the following variables:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/guides/cluster-alerts/node-exists/</guid>
+      <description>New to Searchlight? Please start here.
+ Check node-exists Check command node-exists is used to check existence of nodes in a Kubernetes cluster.
+Spec node-exists has the following variables:
+ selector - Label selector for nodes whose existence are checked. nodeName - Name of Kubernetes node whose existence is checked. count - Number of expected Kubernetes nodes  Execution of this command can result in following states:
+ OK Critical Unknown  Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description>
+    </item>
+    
+    <item>
+      <title>Node Exists</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/cluster-alerts/node-exists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/cluster-alerts/node-exists/</guid>
       <description>New to Searchlight? Please start here.
  Check node-exists Check command node-exists is used to check existence of nodes in a Kubernetes cluster.
 Spec node-exists has the following variables:
@@ -22210,6 +22593,18 @@ Spec node-status check command has no variables. Execution of this command can r
     </item>
     
     <item>
+      <title>Node Status</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/node-alerts/node-status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/node-alerts/node-status/</guid>
+      <description>New to Searchlight? Please start here.
+ Check node-status Check command node-status is used to check status of Kubernetes Nodes. Returns OK if a node is Ready, otherwise, returns Critical.
+Spec node-status check command has no variables. Execution of this command can result in following states:
+ OK Critical Unknown  Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description>
+    </item>
+    
+    <item>
       <title>Node Volume</title>
       <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/node-alerts/node_volume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -22275,6 +22670,18 @@ Spec node-volume check command has the following variables:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/guides/node-alerts/node-volume/</guid>
+      <description>New to Searchlight? Please start here.
+ Check node-volume Check command node-volume is used to check percentage of available space in Kubernetes Nodes.
+Spec node-volume check command has the following variables:
+ mountPoint - Mountpoint of volume whose usage stats will be checked secretName - Name of Kubernetes Secret used to pass hostfacts auth info warning - Warning level value (usage percentage defaults to 80.0) critical - Critical level value (usage percentage defaults to 95.</description>
+    </item>
+    
+    <item>
+      <title>Node Volume</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/node-alerts/node-volume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/node-alerts/node-volume/</guid>
       <description>New to Searchlight? Please start here.
  Check node-volume Check command node-volume is used to check percentage of available space in Kubernetes Nodes.
 Spec node-volume check command has the following variables:
@@ -22528,6 +22935,17 @@ hyperalert notifier [flags]  Options  -A, --alert string Kubernetes alert object
     </item>
     
     <item>
+      <title>Notifier</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_notifier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_notifier/</guid>
+      <description>hyperalert notifier AppsCode Icinga2 Notifier
+Synopsis AppsCode Icinga2 Notifier
+hyperalert notifier [flags]  Options  -A, --alert string Kubernetes alert object name -a, --author string Event author name -c, --comment string Event comment -h, --help help for notifier -H, --host string Icinga host name --output string Service output --state string Service state (OK | Warning | Critical) --time string Event time --type string Notification type (PROBLEM | ACKNOWLEDGEMENT | RECOVERY)  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.</description>
+    </item>
+    
+    <item>
       <title>Notifiers</title>
       <link>https://appscode-v3-hugo.web.app/products/kubed/0.10.0/guides/cluster-events/notifiers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -22683,6 +23101,16 @@ hyperalert notifier [flags]  Options  -A, --alert string Kubernetes alert object
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/guides/notifiers/</guid>
+      <description>New to Searchlight? Please start here.
+ Supported Notifiers Searchlight can send notifications via Email, SMS or Chat for alerts using appscode/go-notify library. To connect to these services, you need to create a Secret with the appropriate keys. Then pass the secret name to Searchlight by setting spec.notifierSecretName field in ClusterAlert/NodeAlert/PodAlert objects. This Secret must exist in the same namespace where the Alert object exists. To easily synchronize this Secret across all current and future namespaces of a Kubernetes cluster, you can use kubed.</description>
+    </item>
+    
+    <item>
+      <title>Notifiers</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/notifiers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/notifiers/</guid>
       <description>New to Searchlight? Please start here.
  Supported Notifiers Searchlight can send notifications via Email, SMS or Chat for alerts using appscode/go-notify library. To connect to these services, you need to create a Secret with the appropriate keys. Then pass the secret name to Searchlight by setting spec.notifierSecretName field in ClusterAlert/NodeAlert/PodAlert objects. This Secret must exist in the same namespace where the Alert object exists. To easily synchronize this Secret across all current and future namespaces of a Kubernetes cluster, you can use kubed.</description>
     </item>
@@ -23607,6 +24035,16 @@ This document is intended to be relative to the branch in which it is found. It 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/setup/developer-guide/overview/</guid>
+      <description>Development Guide This document is intended to be the canonical source of truth for things like supported toolchain versions for building Searchlight. If you find a requirement that this doc does not capture, please submit an issue on github.
+This document is intended to be relative to the branch in which it is found. It is guaranteed that requirements will change over time for the development branch, but release branches of Searchlight should not change.</description>
+    </item>
+    
+    <item>
+      <title>Overview | Developer Guide</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/setup/developer-guide/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/setup/developer-guide/overview/</guid>
       <description>Development Guide This document is intended to be the canonical source of truth for things like supported toolchain versions for building Searchlight. If you find a requirement that this doc does not capture, please submit an issue on github.
 This document is intended to be relative to the branch in which it is found. It is guaranteed that requirements will change over time for the development branch, but release branches of Searchlight should not change.</description>
     </item>
@@ -25108,6 +25546,17 @@ PodAlert Spec As with all other Kubernetes objects, a PodAlert needs apiVersion,
     </item>
     
     <item>
+      <title>Pod Alert Overview</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/concepts/alert-types/pod-alert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/concepts/alert-types/pod-alert/</guid>
+      <description>New to Searchlight? Please start here.
+ PodAlerts What is PodAlert A PodAlert is a Kubernetes Custom Resource Definition (CRD). It provides declarative configuration of Icinga services for Pods in a Kubernetes native way. You only need to describe the desired check command and notifier in a PodAlert object, and the Searchlight operator will create Icinga2 hosts, services and notifications to the desired state for you.
+PodAlert Spec As with all other Kubernetes objects, a PodAlert needs apiVersion, kind, and metadata fields.</description>
+    </item>
+    
+    <item>
       <title>Pod Exec</title>
       <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/pod_exec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -25173,6 +25622,18 @@ Spec pod-exec check command has the following variables:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/guides/pod-alerts/pod-exec/</guid>
+      <description>New to Searchlight? Please start here.
+ Check pod-exec Check command pod-exec is used to check status of a command run inside Kubernetes pods. Returns OK if exit code is zero, otherwise, returns Critical.
+Spec pod-exec check command has the following variables:
+ container - Container name in a Kubernetes Pod cmd - Exec command. [Default: &amp;lsquo;/bin/sh&amp;rsquo;] argv - Exec command arguments. [Format: &amp;lsquo;arg; arg; arg&amp;rsquo;]  Execution of this command can result in following states:</description>
+    </item>
+    
+    <item>
+      <title>Pod Exec</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/pod-alerts/pod-exec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/pod-alerts/pod-exec/</guid>
       <description>New to Searchlight? Please start here.
  Check pod-exec Check command pod-exec is used to check status of a command run inside Kubernetes pods. Returns OK if exit code is zero, otherwise, returns Critical.
 Spec pod-exec check command has the following variables:
@@ -25250,6 +25711,19 @@ Spec pod-exists has the following variables:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/guides/cluster-alerts/pod-exists/</guid>
+      <description>New to Searchlight? Please start here.
+ Check pod-exists Check command pod-exists is used to check existence of pods in a Kubernetes cluster.
+Spec pod-exists has the following variables:
+ selector - Label selector for pods whose existence are checked. podName - Name of Kubernetes pod whose existence is checked. count - Number of expected Kubernetes pods  Execution of this command can result in following states:
+ OK Critical Unknown  Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description>
+    </item>
+    
+    <item>
+      <title>Pod Exists</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/cluster-alerts/pod-exists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/cluster-alerts/pod-exists/</guid>
       <description>New to Searchlight? Please start here.
  Check pod-exists Check command pod-exists is used to check existence of pods in a Kubernetes cluster.
 Spec pod-exists has the following variables:
@@ -25366,6 +25840,18 @@ Spec pod-status check command has no variables. Execution of this command can re
     </item>
     
     <item>
+      <title>Pod Status</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/pod-alerts/pod-status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/pod-alerts/pod-status/</guid>
+      <description>New to Searchlight? Please start here.
+ Check pod-status Check command pod-status is used to check status of Kubernetes pods. Returns OK if status.phase of a pod is Succeeded or Running, otherwise, returns Critical.
+Spec pod-status check command has no variables. Execution of this command can result in following states:
+ OK Critical Unknown  Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description>
+    </item>
+    
+    <item>
       <title>Pod Volume</title>
       <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/pod_volume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -25431,6 +25917,18 @@ Spec pod-volume check command has the following variables:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/guides/pod-alerts/pod-volume/</guid>
+      <description>New to Searchlight? Please start here.
+ Check pod-volume Check command pod-volume is used to check percentage of available space in Kubernetes Pods.
+Spec pod-volume check command has the following variables:
+ volumeName - Name of volume whose usage stats will be checked secretName - Name of Kubernetes Secret used to pass hostfacts auth info warning - Warning level value (usage percentage defaults to 80.0) critical - Critical level value (usage percentage defaults to 95.</description>
+    </item>
+    
+    <item>
+      <title>Pod Volume</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/pod-alerts/pod-volume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/pod-alerts/pod-volume/</guid>
       <description>New to Searchlight? Please start here.
  Check pod-volume Check command pod-volume is used to check percentage of available space in Kubernetes Pods.
 Spec pod-volume check command has the following variables:
@@ -26623,6 +27121,16 @@ $ cd ~/go/src/github.com/pharmer/pharmer ./hack/release.sh  Now, update the rele
     </item>
     
     <item>
+      <title>Release | Searchlight</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/setup/developer-guide/release/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/setup/developer-guide/release/</guid>
+      <description>Release Process The following steps must be done from a Linux x64 bit machine.
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Now, first build all the binaries: console $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCODE_ENV=prod ./hack/make.py push; ./hack/make.py push  Build and push searchlight docker image console .</description>
+    </item>
+    
+    <item>
       <title>Release | Stash</title>
       <link>https://appscode-v3-hugo.web.app/products/stash/0.6.0/setup/developer-guide/release/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -27717,6 +28225,16 @@ Before You Begin To proceed with this tutorial, you have to meet following requi
     </item>
     
     <item>
+      <title>Roadmap | Searchlight</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/welcome/roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/welcome/roadmap/</guid>
+      <description>Project Status Versioning Policy There are 2 parts to versioning policy:
+ Operator version: Searchlight does not follow semver, rather the major version of operator points to the Kubernetes client-go version. You can verify this from the glide.yaml file. This means there might be breaking changes between point releases of the operator. This generally manifests as changed annotation keys or their meaning. Please always check the release notes for upgrade instructions.</description>
+    </item>
+    
+    <item>
       <title>Roadmap | Stash</title>
       <link>https://appscode-v3-hugo.web.app/products/stash/0.6.0/welcome/roadmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -28249,6 +28767,28 @@ searchlight run [flags]  Options  --audit-dynamic-configuration Enables dynamic 
     </item>
     
     <item>
+      <title>Run</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hostfacts/hostfacts_run/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hostfacts/hostfacts_run/</guid>
+      <description>hostfacts run Run server
+Synopsis Run server
+hostfacts run [flags]  Options  --address string Http server address (default &amp;quot;:56977&amp;quot;) --caCertFile string File containing CA certificate --certFile string File container server TLS certificate -h, --help help for run --keyFile string File containing server TLS private key --password string Password used for basic authentication --token string Token used for bearer authentication --username string Username used for basic authentication  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --enable-analytics send usage events to Google Analytics (default true) --log-flush-frequency duration Maximum number of seconds between log flushes (default 5s) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files --stderrthreshold severity logs at or above this threshold go to stderr --use-kubeapiserver-fqdn-for-aks if true, uses kube-apiserver FQDN for AKS cluster to workaround https://github.</description>
+    </item>
+    
+    <item>
+      <title>Run</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/searchlight/searchlight_run/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/searchlight/searchlight_run/</guid>
+      <description>searchlight run Launch Searchlight operator
+Synopsis Launch Searchlight operator
+searchlight run [flags]  Options  --audit-dynamic-configuration Enables dynamic audit configuration. This feature also requires the DynamicAuditing feature flag --audit-log-batch-buffer-size int The size of the buffer to store events before batching and writing. Only used in batch mode. (default 10000) --audit-log-batch-max-size int The maximum size of a batch. Only used in batch mode. (default 1) --audit-log-batch-max-wait duration The amount of time to wait before force writing the batch that hadn&#39;t reached the max size.</description>
+    </item>
+    
+    <item>
       <title>Scaling Ingress | Voyager</title>
       <link>https://appscode-v3-hugo.web.app/products/voyager/10.0.0/guides/ingress/scaling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -28550,6 +29090,17 @@ Options  --alsologtostderr log to standard error as well as files --bypass-valid
     </item>
     
     <item>
+      <title>Searchlight</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/searchlight/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/searchlight/</guid>
+      <description>searchlight Searchlight by AppsCode - Alerts for Kubernetes
+Synopsis Searchlight by AppsCode - Alerts for Kubernetes
+Options  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --enable-analytics send usage events to Google Analytics (default true) -h, --help help for searchlight --log-flush-frequency duration Maximum number of seconds between log flushes (default 5s) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files --stderrthreshold severity logs at or above this threshold go to stderr --use-kubeapiserver-fqdn-for-aks if true, uses kube-apiserver FQDN for AKS cluster to workaround https://github.</description>
+    </item>
+    
+    <item>
       <title>Searchlight Overview</title>
       <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/concepts/what-is-searhclight/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -28604,6 +29155,15 @@ Options  --alsologtostderr log to standard error as well as files --bypass-valid
     </item>
     
     <item>
+      <title>Searchlight Overview</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/concepts/what-is-searhclight/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/concepts/what-is-searhclight/overview/</guid>
+      <description>Searchlight Searchlight by AppsCode is a Kubernetes operator for Icinga. If you are running production workloads in Kubernetes, you probably want to be alerted when things go wrong. Icinga periodically runs various checks on a Kubernetes cluster and sends notifications if detects an issue. It also nicely supplements whitebox monitoring tools like, Prometheus with blackbox monitoring can catch problems that are otherwise invisible, and also serves as a fallback in case internal systems completely fail.</description>
+    </item>
+    
+    <item>
       <title>Searchlight Plugin</title>
       <link>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/plugin/builtin-plugin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -28631,6 +29191,17 @@ Options  --alsologtostderr log to standard error as well as files --bypass-valid
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/guides/plugin/builtin-plugin/</guid>
+      <description>New to SearchlightPlugin? Please start here.
+ Builtin Searchlight Plugin Searchlight Icinga container includes a plugin hyperalert. This plugin has following Available Commands:
+ check_ca_cert - Check Certificate expire date check_cert - Check Certificate expire date check_component_status - Check Kubernetes Component Status check_event - Check kubernetes events for all namespaces check_json_path - Check Json Object check_node_exists - Count Kubernetes Nodes check_node_status - Check Kubernetes Node check_pod_exec - Check exit code of exec command on Kubernetes container check_pod_exists - Check Kubernetes Pod(s) check_pod_status - Check Kubernetes Pod(s) status check_volume - Check kubernetes volume notifier - AppsCode Icinga2 Notifier  To use these commands, you need to register the CheckCommand first by creating SearchlightPlugin.</description>
+    </item>
+    
+    <item>
+      <title>Searchlight Plugin</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/plugin/builtin-plugin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/plugin/builtin-plugin/</guid>
       <description>New to SearchlightPlugin? Please start here.
  Builtin Searchlight Plugin Searchlight Icinga container includes a plugin hyperalert. This plugin has following Available Commands:
  check_ca_cert - Check Certificate expire date check_cert - Check Certificate expire date check_component_status - Check Kubernetes Component Status check_event - Check kubernetes events for all namespaces check_json_path - Check Json Object check_node_exists - Count Kubernetes Nodes check_node_status - Check Kubernetes Node check_pod_exec - Check exit code of exec command on Kubernetes container check_pod_exists - Check Kubernetes Pod(s) check_pod_status - Check Kubernetes Pod(s) status check_volume - Check kubernetes volume notifier - AppsCode Icinga2 Notifier  To use these commands, you need to register the CheckCommand first by creating SearchlightPlugin.</description>
@@ -31274,6 +31845,16 @@ If you have found a bug with Searchlight or want to request for new features, pl
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/welcome/support/</guid>
+      <description>Support We use Slack for public discussions. To chit chat with us or the rest of the community, join us in the AppsCode Slack team channel #searchlight_. To sign up, use our Slack inviter.
+If you have found a bug with Searchlight or want to request for new features, please file an issue.</description>
+    </item>
+    
+    <item>
+      <title>Support | Searchlight</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/welcome/support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/welcome/support/</guid>
       <description>Support We use Slack for public discussions. To chit chat with us or the rest of the community, join us in the AppsCode Slack team channel #searchlight_. To sign up, use our Slack inviter.
 If you have found a bug with Searchlight or want to request for new features, please file an issue.</description>
     </item>
@@ -34095,6 +34676,17 @@ Before You Begin At first, you need to have a Kubernetes cluster, and the kubect
     
     <item>
       <title>Table of Contents | Guides</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/</guid>
+      <description>Guides Guides show you how to perform tasks with Searchlight.
+ Cluster Alerts
+ ca-cert - To check expiration of CA certificate used by Kubernetes api server. component-status - To check Kubernetes component status. event - To check Kubernetes Warning events. json-path - To check any JSON HTTP response using jsonpath. node-exists - To check existence of Kubernetes nodes. pod-exists - To check existence of Kubernetes pods.  Node Alerts</description>
+    </item>
+    
+    <item>
+      <title>Table of Contents | Guides</title>
       <link>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/guides/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -34589,6 +35181,16 @@ Before You Begin At first, you need to have a Kubernetes cluster, and the kubect
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/setup/</guid>
+      <description>Setup Setup contains instructions for installing the Searchlight and its various components in Kubernetes.
+ Install Searchlight. Installation instructions for Searchlight. Install Hostfacts. Installation instructions for Hostfacts. Generate Certificates. Instructions for generating self-signed certificates. Uninstall Searchlight. Instructions for uninstallating Searchlight. Developer Guide  Overview. Outlines everything you need to know from setting up your dev environment to how to build and test Searchlight. Release process. Steps for releasing a new version of Searchlight.</description>
+    </item>
+    
+    <item>
+      <title>Table of Contents | Setup</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/setup/</guid>
       <description>Setup Setup contains instructions for installing the Searchlight and its various components in Kubernetes.
  Install Searchlight. Installation instructions for Searchlight. Install Hostfacts. Installation instructions for Hostfacts. Generate Certificates. Instructions for generating self-signed certificates. Uninstall Searchlight. Instructions for uninstallating Searchlight. Developer Guide  Overview. Outlines everything you need to know from setting up your dev environment to how to build and test Searchlight. Release process. Steps for releasing a new version of Searchlight.</description>
     </item>
@@ -35376,6 +35978,17 @@ $ curl -fsSL https://raw.githubusercontent.com/appscode/searchlight/7.0.0/hack/d
       <description>New to Searchlight? Please start here.
  Uninstall Searchlight To uninstall Searchlight operator, run the following command:
 $ curl -fsSL https://raw.githubusercontent.com/appscode/searchlight/8.0.0-rc.0/hack/deploy/searchlight.sh \ | bash -s -- --uninstall [--namespace=NAMESPACE] + kubectl delete deployment -l app=searchlight -n kube-system deployment &amp;quot;searchlight-operator&amp;quot; deleted + kubectl delete service -l app=searchlight -n kube-system service &amp;quot;searchlight-operator&amp;quot; deleted + kubectl delete secret -l app=searchlight -n kube-system secret &amp;quot;searchlight-operator&amp;quot; deleted + kubectl delete serviceaccount -l app=searchlight -n kube-system No resources found + kubectl delete clusterrolebindings -l app=searchlight -n kube-system No resources found + kubectl delete clusterrole -l app=searchlight -n kube-system No resources found  The above command will leave the Searchlight crd objects as-is.</description>
+    </item>
+    
+    <item>
+      <title>Uninstall</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/setup/uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/setup/uninstall/</guid>
+      <description>New to Searchlight? Please start here.
+ Uninstall Searchlight To uninstall Searchlight operator, run the following command:
+$ curl -fsSL https://raw.githubusercontent.com/appscode/searchlight/8.0.0/hack/deploy/searchlight.sh \ | bash -s -- --uninstall [--namespace=NAMESPACE] + kubectl delete deployment -l app=searchlight -n kube-system deployment &amp;quot;searchlight-operator&amp;quot; deleted + kubectl delete service -l app=searchlight -n kube-system service &amp;quot;searchlight-operator&amp;quot; deleted + kubectl delete secret -l app=searchlight -n kube-system secret &amp;quot;searchlight-operator&amp;quot; deleted + kubectl delete serviceaccount -l app=searchlight -n kube-system No resources found + kubectl delete clusterrolebindings -l app=searchlight -n kube-system No resources found + kubectl delete clusterrole -l app=searchlight -n kube-system No resources found  The above command will leave the Searchlight crd objects as-is.</description>
     </item>
     
     <item>
@@ -36964,6 +37577,39 @@ hyperalert version [flags]  Options  -h, --help help for version --short Print j
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/reference/searchlight/searchlight_version/</guid>
+      <description>searchlight version Prints binary version number.
+Synopsis Prints binary version number.
+searchlight version [flags]  Options  -h, --help help for version --short Print just the version number.  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --enable-analytics send usage events to Google Analytics (default true) --log-flush-frequency duration Maximum number of seconds between log flushes (default 5s) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files --stderrthreshold severity logs at or above this threshold go to stderr --use-kubeapiserver-fqdn-for-aks if true, uses kube-apiserver FQDN for AKS cluster to workaround https://github.</description>
+    </item>
+    
+    <item>
+      <title>Version</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hostfacts/hostfacts_version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hostfacts/hostfacts_version/</guid>
+      <description>hostfacts version Prints binary version number.
+Synopsis Prints binary version number.
+hostfacts version [flags]  Options  -h, --help help for version --short Print just the version number.  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --enable-analytics send usage events to Google Analytics (default true) --log-flush-frequency duration Maximum number of seconds between log flushes (default 5s) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files --stderrthreshold severity logs at or above this threshold go to stderr --use-kubeapiserver-fqdn-for-aks if true, uses kube-apiserver FQDN for AKS cluster to workaround https://github.</description>
+    </item>
+    
+    <item>
+      <title>Version</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/hyperalert/hyperalert_version/</guid>
+      <description>hyperalert version Prints binary version number.
+Synopsis Prints binary version number.
+hyperalert version [flags]  Options  -h, --help help for version --short Print just the version number.  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --context string Use the context in kubeconfig --icinga.checkInterval int Icinga check_interval in second. [Format: 30, 300] (default 30) --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description>
+    </item>
+    
+    <item>
+      <title>Version</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/searchlight/searchlight_version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/reference/searchlight/searchlight_version/</guid>
       <description>searchlight version Prints binary version number.
 Synopsis Prints binary version number.
 searchlight version [flags]  Options  -h, --help help for version --short Print just the version number.  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --bypass-validating-webhook-xray if true, bypasses validating webhook xray checks --enable-analytics send usage events to Google Analytics (default true) --log-flush-frequency duration Maximum number of seconds between log flushes (default 5s) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files --stderrthreshold severity logs at or above this threshold go to stderr --use-kubeapiserver-fqdn-for-aks if true, uses kube-apiserver FQDN for AKS cluster to workaround https://github.</description>
@@ -38634,6 +39280,17 @@ apiVersion: monitoring.appscode.com/v1alpha1 kind: SearchlightPlugin metadata: n
     </item>
     
     <item>
+      <title>Webhook SearchlightPlugin</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/plugin/webhook-plugin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/guides/plugin/webhook-plugin/</guid>
+      <description>New to SearchlightPlugin? Please start here.
+ Custom Webhook Check Command Since 8.0.0 release, Searchlight supports adding custom check commands using http webhook server. No longer you have to build binary and attach it inside Icinga container. Simply you can write a HTTP server and register your check command with Searchlight using SearchlightPlugin CRD.
+apiVersion: monitoring.appscode.com/v1alpha1 kind: SearchlightPlugin metadata: name: check-pod-count spec: webhook: namespace: default name: searchlight-plugin alertKinds: - ClusterAlert arguments: vars: fields: warning: type: integer critical: type: integer states: - OK - Critical - Unknown  The .</description>
+    </item>
+    
+    <item>
       <title>Weclome | Kubed</title>
       <link>https://appscode-v3-hugo.web.app/products/kubed/0.10.0/welcome/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -38804,6 +39461,15 @@ apiVersion: monitoring.appscode.com/v1alpha1 kind: SearchlightPlugin metadata: n
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0-rc.0/welcome/</guid>
+      <description>Searchlight Searchlight by AppsCode is a Kubernetes operator for Icinga. If you are running production workloads in Kubernetes, you probably want to be alerted when things go wrong. Icinga periodically runs various checks on a Kubernetes cluster and sends notifications if detects an issue. It also nicely supplements whitebox monitoring tools like, Prometheus with blackbox monitoring can catch problems that are otherwise invisible, and also serves as a fallback in case internal systems completely fail.</description>
+    </item>
+    
+    <item>
+      <title>Weclome | Searchlight</title>
+      <link>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/welcome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/searchlight/8.0.0/welcome/</guid>
       <description>Searchlight Searchlight by AppsCode is a Kubernetes operator for Icinga. If you are running production workloads in Kubernetes, you probably want to be alerted when things go wrong. Icinga periodically runs various checks on a Kubernetes cluster and sends notifications if detects an issue. It also nicely supplements whitebox monitoring tools like, Prometheus with blackbox monitoring can catch problems that are otherwise invisible, and also serves as a fallback in case internal systems completely fail.</description>
     </item>
     

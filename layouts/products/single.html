@@ -91,7 +91,7 @@
             {{ $versions := (index $productJson "versions" ) }}
 
             <div class="trial-button">
-              <a href="/products/{{ $productName }}/docs/{{ $latestVersion }}/setup/" class="button is-fullwidth">
+              <a href="/products/{{ $productName }}/{{ $latestVersion }}/setup/" class="button is-fullwidth">
                 Try Now for FREE!
               </a>
             </div>
