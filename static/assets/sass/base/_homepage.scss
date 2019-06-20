@@ -1,0 +1,36 @@
+// .hero-area{
+//   position: relative;
+//   z-index: 1;
+// }
+// .hero-area:after {
+//   position: absolute;
+//   content: "";
+//   right: 0;
+//   top: -391px;
+//   width: 35%;
+//   height: 700px;
+//   background: #00A651;
+//   border-radius: 50px;
+//   transform: rotate(147deg);
+// }
+
+// background-image: url(../images/appscode/hero-shape.png);
+.hero-area{
+  position: relative;
+  z-index: 1;
+}
+.hero-area:after{
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 100%;
+background: #333;
+  height: 100%;
+}
+// .hero-area{
+//   background-image: url(../images/appscode/hero-shape.png);
+//   background-size: cover;
+//   background-position: center;
+//   background-color: #fbfcfe;
+// }
