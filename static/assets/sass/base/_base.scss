@@ -87,6 +87,9 @@ a.navbar-item:hover {
 .customize-kubedb .main-menu a {
   color: #fff;
 }
+nav.navbar{
+  background-color: transparent;
+}
 .customize-kubedb .navbar-dropdown .navbar-item {
   color: $primary-color;
 }
@@ -455,6 +458,7 @@ a.play-icon .fa {
 .single-brand-logo {
   display: inline-block;
   max-height: 50px;
+  overflow: hidden;
 }
 
 /* brand logo area end */
