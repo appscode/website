@@ -23,25 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// menu sticky
-// Not a ton of code, but hard to
-const nav = document.querySelector('#header, .kubedb-documentation-menu');
-let topOfNav = nav.offsetTop;
-
-function fixNav() {
-  if (window.scrollY > topOfNav) {
-    document.body.style.paddingTop = nav.offsetHeight + 'px';
-    document.body.classList.add('fixed-nav');
-  } else {
-    document.body.classList.remove('fixed-nav');
-    document.body.style.paddingTop = 0;
-  }
-}
-
-window.addEventListener('scroll', fixNav);
-
-
-
 
 //bulma carousel
 bulmaCarousel.attach("#carousel-demo", {
@@ -49,6 +30,15 @@ bulmaCarousel.attach("#carousel-demo", {
   slidesToShow: 1,
   infinite: true,
   autoplay: false
+});
+
+// appscode home page bulma carousel
+bulmaCarousel.attach("#carousel-demo1", {
+  slidesToScroll: 1,
+  slidesToShow: 3,
+  infinite: true,
+  autoplay: true,
+  loop:true
 });
 
 // For FAQ Collaps Page
@@ -116,7 +106,6 @@ const spyScrolling = () => {
             }
           });
         }
-        
       }
     }
   };
@@ -152,3 +141,21 @@ tabItems.forEach(tab => {
     tabPane.classList.add("show");
   });
 });
+
+
+// menu sticky
+// Not a ton of code, but hard to
+const nav = document.querySelector("#header, .kubedb-documentation-menu");
+let topOfNav = nav.offsetTop;
+
+function fixNav() {
+  if (window.scrollY > topOfNav) {
+    document.body.style.paddingTop = nav.offsetHeight + "px";
+    document.body.classList.add("fixed-nav");
+  } else {
+    document.body.classList.remove("fixed-nav");
+    document.body.style.paddingTop = 0;
+  }
+}
+
+window.addEventListener("scroll", fixNav);
