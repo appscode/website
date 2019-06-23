@@ -156,7 +156,7 @@ h6 {
   background-color: #00a651 !important; }
 
 .is-info {
-  background-color: #1da1f2; }
+  background-color: #1da1f2 !important; }
 
 .is-blue {
   background-color: #3f19ad !important;
@@ -869,7 +869,7 @@ h6 {
   .hero-area-content .play-buttons {
     margin-top: 30px; }
     .hero-area-content .play-buttons a {
-      color: #242A31;
+      color: #242a31;
       font-size: 16px;
       font-weight: 600; }
       .hero-area-content .play-buttons a span.video-icon {
@@ -890,6 +890,9 @@ h6 {
         .hero-area-content .play-buttons a span.video-icon i.fa {
           padding-left: 5px; }
 
+body.appscode .main-menu a {
+  color: #fff; }
+
 .shap-3 {
   position: relative;
   z-index: 1; }
@@ -907,19 +910,94 @@ h6 {
 .service-content {
   padding-right: 60px; }
   .service-content h5 {
-    color: #F99A00;
+    color: #f99a00;
     font-size: 14px;
     font-weight: 600; }
   .service-content h2 {
-    color: #242A31;
+    color: #242a31;
     font-size: 36px;
     font-weight: 700;
     line-height: 54px;
     margin-bottom: 30px; }
   .service-content p {
-    color: #242A31;
+    color: #242a31;
     font-size: 16px;
     max-width: 83%; }
+
+.why-us-shape {
+  position: relative;
+  z-index: 1;
+  height: 100%; }
+  .why-us-shape::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 85%;
+    background: url(../images/appscode/why-us-shape.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-position: right bottom; }
+
+.section-title h4 {
+  color: #f99a00;
+  font-size: 14px;
+  font-weight: 600; }
+.section-title h2 {
+  font-size: 36px;
+  margin-bottom: 20px; }
+
+.ac-custom-tabs ul li {
+  margin-bottom: 30px; }
+  .ac-custom-tabs ul li a {
+    color: #242a31;
+    font-size: 24px;
+    font-family: roboto;
+    display: block;
+    padding: 15px 20px;
+    box-shadow: 0px 1px 4px rgba(26, 80, 151, 0.16);
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out; }
+    .ac-custom-tabs ul li a:hover {
+      box-shadow: 0px 8px 50px rgba(26, 80, 151, 0.16); }
+    .ac-custom-tabs ul li a span.circle-shape {
+      width: 20px;
+      height: 20px;
+      background: #00a0ff;
+      display: inline-block;
+      border-radius: 50%;
+      margin-right: 14px; }
+
+.single-testimonial-wrapper {
+  margin: 0 15px; }
+  .single-testimonial-wrapper .testimonial-msg {
+    background-color: #f5f5f5;
+    padding: 30px 20px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    min-height: 230px; }
+    .single-testimonial-wrapper .testimonial-msg p {
+      color: #393e46;
+      font-size: 18px;
+      line-height: 28px; }
+  .single-testimonial-wrapper .testimonial-client-info {
+    overflow: hidden;
+    padding: 30px 20px; }
+
+#carousel-demo1 .slider-navigation-next, #carousel-demo1 .slider-navigation-previous {
+  display: none; }
 
 /* ======================
 	Header area start
@@ -1269,14 +1347,12 @@ a.play-icon .fa {
   margin: 0;
   font-size: 12px;
   font-style: italic;
-  color: Designer at AppsCode; }
+  color: #393e46;
+  opacity: .6; }
 
 .client-info h4 {
   font-size: 16px;
   line-height: 19px; }
-
-.section-title h2 {
-  margin-bottom: 50px; }
 
 .client-thumb {
   width: 50px;
@@ -2760,6 +2836,71 @@ video {
 .mt-30 {
   margin-top: 30px; }
 
+/*==================================================
+                Theme appscode Start
+====================================================*/
+body.appscode .kubedb-primary-bg,
+body.appscode .kd-primary,
+body.appscode .fixed-nav #header,
+body.appscode .socail-link-inline li a:hover,
+body.appscode .tbl-of-contents ul a.active:before,
+body.appscode .kd-version a.dropdown-item:hover,
+body.appscode .ac-dropdown a.navbar-item:hover,
+body.appscode a.nav-link.active:after,
+body.appscode .trial-button .button,
+body.appscode .pricing-top,
+body.appscode .pricing-button .kd-button,
+body.appscode .subscription-form .button:hover,
+body.appscode .searchbar-area button,
+body.appscode .pagination-list li a.is-active {
+  background-color: #00A651; }
+
+body.appscode .kd-transparent-btn,
+body.appscode .carousel-wrapper:after,
+body.appscode .cta-text h2,
+body.appscode .main-menu-button a,
+body.appscode .navbar-link.is-active,
+body.appscode .navbar-link:hover,
+body.appscode a.navbar-item.is-active,
+body.appscode a.navbar-item:hover,
+body.appscode .customize-kubedb .navbar-dropdown .navbar-item,
+body.appscode .carousel-wrapper:after,
+body.appscode .footer-link li a:hover,
+body.appscode .accordion-item.active .accordion-header h2,
+body.appscode ul li b,
+body.appscode .full-info p b,
+body.appscode .full-info ul li p a,
+body.appscode .full-info p a,
+body.appscode .full-info a,
+body.appscode .tbl-of-contents ul a.active,
+body.appscode li.nav-item.active a,
+body.appscode .item ul li.is-active a,
+body.appscode .kd-sidebar-menu li a:hover,
+body.appscode .single-search-result h3 a {
+  color: #00A651; }
+
+body.appscode .star-count::before,
+body.appscode .subscription-form .button,
+body.appscode .accordion-item.active,
+body.appscode blockquote,
+body.appscode .input.is-active,
+body.appscode .input.is-focused,
+body.appscode .input:active,
+body.appscode .input:focus,
+body.appscode .textarea.is-active,
+body.appscode .textarea.is-focused,
+body.appscode .textarea:active,
+body.appscode .textarea:focus,
+body.appscode .subscription-form .input.is-hovered,
+body.appscode .subscription-form .input:hover {
+  border-color: #00A651; }
+
+body.appscode .pricing-top:before {
+  border-right-color: #005a2c; }
+
+/*==================================================
+                Theme appscode End
+====================================================*/
 /*==================================================
                 Theme guard Start
 ====================================================*/

@@ -400,7 +400,8 @@ a.play-icon .fa {
   margin: 0;
   font-size: $font-small;
   font-style: italic;
-  color: Designer at AppsCode;
+  color: $paragraph-color;
+  opacity: .6;
 }
 
 .client-info h4 {
@@ -408,9 +409,6 @@ a.play-icon .fa {
   line-height: 19px;
 }
 
-.section-title h2 {
-  margin-bottom: 50px;
-}
 
 .client-thumb {
   width: 50px;
