@@ -1,3 +1,43 @@
+document.addEventListener("DOMContentLoaded", function() {
+  Typed.new(".type", {
+    strings: [
+      "Voyager",
+      "Searchlight",
+      "KubeDB",
+      "Swift",
+      "Stash",
+      "Service Broker",
+      "KubeD",
+      "Pharmer",
+      "Kubevalut",
+      "Guard",
+      "KubeCI",
+      "Kubesheild"
+    ],
+    stringsElement: null,
+    // typing speed
+    typeSpeed: 60,
+    // time before typing starts
+    startDelay: 600,
+    // backspacing speed
+    backSpeed: 20,
+    // time before backspacing
+    backDelay: 500,
+    // loop
+    loop: true,
+    // false = infinite
+    loopCount: 5,
+    // show cursor
+    showCursor: false,
+    // character for cursor
+    cursorChar: "|",
+    // attribute to type (null == text)
+    attr: null,
+    // either html or text
+    contentType: "html"
+  });
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(
@@ -22,9 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-
-
-//bulma carousel
+//for products page testimonial carousel
 bulmaCarousel.attach("#carousel-demo", {
   slidesToScroll: 1,
   slidesToShow: 1,
@@ -33,12 +71,21 @@ bulmaCarousel.attach("#carousel-demo", {
 });
 
 // appscode home page bulma carousel
-bulmaCarousel.attach("#carousel-demo1", {
+bulmaCarousel.attach("#testimonial-carousel", {
   slidesToScroll: 1,
   slidesToShow: 3,
   infinite: true,
   autoplay: true,
-  loop:true
+  loop: true
+});
+
+// appscode home page logo carousel
+bulmaCarousel.attach("#logo-area", {
+  slidesToScroll: 1,
+  slidesToShow: 6,
+  infinite: true,
+  autoplay: true,
+  loop: true
 });
 
 // For FAQ Collaps Page
@@ -141,7 +188,6 @@ tabItems.forEach(tab => {
     tabPane.classList.add("show");
   });
 });
-
 
 // menu sticky
 // Not a ton of code, but hard to
