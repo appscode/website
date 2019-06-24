@@ -1,29 +1,31 @@
-.hero-shape {
+.hero-area {
   position: relative;
   z-index: 1;
-  height: 736px;
-  &::after {
+  .hero-shape {
     position: absolute;
-    content: "";
-    right: -8.5%;
-    top: -65px;
-    width: 100%;
-    height: 100%;
     background: url(../images/appscode/hero-shape.png);
     background-repeat: no-repeat;
+    content: "";
+    right: 0;
+    width: 51%;
+    height: 100%;
+    top: -66px;
+    background-position-y: bottom;
     z-index: -1;
-    background-position: right bottom;
+    min-height: 720px;
   }
 }
+
 .right-side-content-inner {
   position: absolute;
-  right: -100px;
+  right: -120px;
   top: 0;
 }
+
 .hero-area-content {
   min-height: 500px;
   .play-buttons {
-    margin-top: 30px;
+    margin-top: 50px;
     a {
       color: #242a31;
       font-size: 16px;
@@ -45,8 +47,25 @@
       }
     }
   }
+  .typing {
+    h1 {
+      font-size: 44px;
+      margin-top: 70px;
+      margin-bottom: 15px;
+      strong {
+        &::after {
+          content: "|";
+          display: inline;
+          animation: blink 0.7s infinite;
+        }
+      }
+    }
+    .hero-area-button {
+      margin-top: 30px;
+    }
+  }
 }
-body.appscode .main-menu a{
+body.appscode .main-menu a {
   color: #fff;
 }
 .shap-3 {
@@ -88,7 +107,7 @@ body.appscode .main-menu a{
 .why-us-shape {
   position: relative;
   z-index: 1;
-  height:100%;
+  height: 100%;
   &::after {
     position: absolute;
     content: "";
@@ -122,11 +141,11 @@ body.appscode .main-menu a{
         font-size: 24px;
         font-family: roboto;
         display: block;
-        padding: 15px 20px;
+        padding: 20px 20px;
         box-shadow: 0px 1px 4px rgba(26, 80, 151, 0.16);
         @include border-radius(9px);
-        @include transition(.3s);
-        &:hover{
+        @include transition(0.3s);
+        &:hover {
           box-shadow: 0px 8px 50px rgba(26, 80, 151, 0.16);
         }
         span.circle-shape {
@@ -144,7 +163,7 @@ body.appscode .main-menu a{
 
 // testimonial area style start
 .single-testimonial-wrapper {
-  margin:0 15px;
+  margin: 0 15px;
   .testimonial-msg {
     background-color: #f5f5f5;
     padding: 30px 20px;
@@ -158,11 +177,14 @@ body.appscode .main-menu a{
   }
   .testimonial-client-info {
     overflow: hidden;
-    padding: 30px 20px;
+    padding: 30px 20px 0;
   }
 }
 
-#carousel-demo1 .slider-navigation-next, #carousel-demo1 .slider-navigation-previous{
+#testimonial-carousel .slider-navigation-next,
+#testimonial-carousel .slider-navigation-previous,
+#logo-area .slider-navigation-next,
+#logo-area .slider-navigation-previous {
   display: none;
 }
 // testimonial area style end
