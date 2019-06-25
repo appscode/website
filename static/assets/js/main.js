@@ -88,7 +88,7 @@ bulmaCarousel.attach("#logo-area", {
   loop: true
 });
 
-// For FAQ Collaps Page
+// For FAQ Collapse Page
 const accordionItem = document.querySelectorAll(".accordion-item");
 const onClickAccordionHeader = e => {
   if (e.currentTarget.parentNode.classList.contains("active")) {
