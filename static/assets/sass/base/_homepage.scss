@@ -221,3 +221,32 @@
 section.our-customer-area {
   background: #fbfbfb;
 }
+
+// about us start
+.hero-area-2{
+  position: relative;
+  background: #FBFBFB;
+  z-index: -1;
+  &::after{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -2;
+    content: "";
+    background: url(../images/appscode/about-hero-bg.png);
+  }
+  .hero-area-inner-2 {
+    height: 400px;
+    h1{
+      font-size: 48px;
+      margin-bottom:20px;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+}
+// about us end

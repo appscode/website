@@ -11,7 +11,7 @@ layout: c1_tab
 ---
 AppsCode welcomes you to the  Terms of Service! Please read this document very carefully before using services. This document has been made to protect both you and AppsCode authority. Once you click “Sign up” you are agreeing your acceptance to use AppsCode Services  bound by these Terms of Service.
 
-### 1. Agreement
+## 1. Agreement
 
 - The use of Appscode services is legally bound by this Agreement and AppsCode has the right to update and change the Terms of Service from time to time without notice. Any new release and updates shall be subject to the Terms of Service. And, continued use of service after any such changes shall constitute your consent to such changes.
 
@@ -22,7 +22,7 @@ AppsCode welcomes you to the  Terms of Service! Please read this document very c
 * The failure of AppsCode to exercise or enforce any right of the Terms of Service shall not constitute a waiver of such right or provision. The Terms of Service constitutes the entire agreement between you and AppsCode and govern your use of Service, superseding any prior agreements between you and AppsCode. This may include, but not limited to, any prior versions of the AppsCode Terms of Service.
 
 
-### 2.	Account and usage
+## 2.	Account and usage
 
 * The user MUST be at least 13 years of age or beyond to use the Site and Services of AppsCode. 
 
@@ -37,7 +37,7 @@ AppsCode welcomes you to the  Terms of Service! Please read this document very c
 * Usage of AppsCode services for any illegal and unauthorized purpose violating the laws is strictly prohibited(including but not limited to copyright or trademark laws) . And, repeated exceeding of hard or soft usage limit may lead to termination of your account.
 
 
-### 3.	Content 
+## 3.	Content 
 
 * You are solely responsible for the Application or any Content you create,transmit or display and AppsCode claim no intellectual property rights over the materials you provide to the Service. You may not duplicate, copy or reuse any portion of the HTML/CSS, Javascript, or visual design elements or concepts without express written permission from AppsCode.
 
@@ -48,12 +48,12 @@ AppsCode welcomes you to the  Terms of Service! Please read this document very c
 * AppsCode does not pre-screen Content, but its designee have the right (but not the obligation) in their sole discretion to refuse or remove any Content that is available via The Service.
 
 
-### 4. Copyright 
+## 4. Copyright 
 
 While using AppsCode Service you agree to comply with the United States’ [Digital Millennium Copyright Act 1998](http://www.copyright.gov/reports/studies/dmca/dmca_executive.html). AppsCode strictly responds to DMCA and other applicable copyright laws and reserves the right to terminate accounts involved in violating as such, which includes taking down content or the Application upon receipt of valid DMCA notice. 
 
 
-### 5.	License and Restrictions
+## 5.	License and Restrictions
 
 You agree that AppsCode may use your trade names, trademarks, service marks, logos, domain names and other distinctive brand features in presentations, marketing materials, customer lists, financial reports and Web site listings (including links to your website) for the purpose of advertising or publicizing your use of the AppsCode Services.
 
@@ -62,7 +62,7 @@ AppsCode may invite you or you may choose to submit comments or ideas about the 
 You and anyone else may not be permitted to: (i) Take attempt to disable or change any security mechanisms used by or any applications running on the AppsCode Services. (ii) Replicate, modify, or create a derivative work of, reverse engineer, decompile or otherwise attempt to extract the source code of the AppsCode Services or any part thereof, unless this is expressly permitted or required by law, or unless you have been specifically told by AppsCode, in formal written statement.
 
 
-### 6.	Payment
+## 6.	Payment
 
 If you wish to avail AppsCode Paid Service, you must provide us with your credit card details to gain access to, and use of, the Paid Service.
 
@@ -73,11 +73,11 @@ If you wish to avail AppsCode Paid Service, you must provide us with your credit
 * Any late payments shall bear interest at the rate of 1.5% per month (or the highest as per the law, if it is less) and AppsCode reserves the right to suspend Client's Account for any late payment at any time.
 
 
-### 7.	Refund Policy
+## 7.	Refund Policy
 Queries, comments and requests regarding Refund Policy can be made to <support@appscode.com>
 
 
-### 8.	Liability and Indemnity
+## 8.	Liability and Indemnity
 AppsCode shall not be considered liable for the followings:
 
  *  Lost profits or opportunities of user
@@ -87,7 +87,7 @@ AppsCode shall not be considered liable for the followings:
 The extent of AppsCode liability will not, in any event, exceed the fees, if any, paid by user to company under this agreement. The foregoing limitations will apply to the maximum extent permitted by applicable law, regardless of whether company has been advised of the possibility of such damages and regardless of whether any remedy fails of its essential purpose.
 
 
-### 9.	Modification and Termination
+## 9.	Modification and Termination
 
 AppsCode reserves the right at any time to modify or discontinue, either temporarily or permanently, from the Terms or Service. Furthermore, AppsCode shall not be liable to you or to any third party services for any modification, price change, suspension or termination of services. Your continued use of the Service after any such changes constitutes your acceptance of the new Terms of Service. Please review this Agreement periodically for changes. If you do not agree to any of this Agreement or any changes to this Agreement, do not use, access or continue to access the Service or discontinue any use of the Service immediately.
 
@@ -100,7 +100,7 @@ AppsCode reserves the right at any time to modify or discontinue, either tempora
 In addition to above mentioned termination clause AppsCode may terminate any or all of the services by not less than a fourteen (14) day’s notice to you. You may terminate the provision of any or all of the Services immediately by cancelling your account with us by contacting <support@appscode.com>. In the event that either party terminates these terms (for whatever reason), we shall invoice you for your use of the Services up to and including the date of termination.
 
 
-### 10. Contractual Terms
+## 10. Contractual Terms
 
 You agree  AppsCode may provide you with notices, including those regarding changes to the Terms, by email, regular mail, or postings on the AppsCode Services. By providing AppsCode your email address, you consent to the email address usage to send you any notices required.
 
@@ -111,7 +111,7 @@ AppsCode shall not be liable for failing or delaying performance of its obligati
 The Terms, and your relationship with AppsCode under the Terms, shall be governed by the laws of the State without regard to its conflict of laws provisions. You and AppsCode agree to submit to the exclusive jurisdiction of the courts to resolve any legal matter arising from the Terms.
 
 
-### 11.  Resolution of Dispute
+## 11.  Resolution of Dispute
 
 APPSCODE SERVICE USERS ARE REQUESTED TO READ THIS SEGMENT VERY
 CAREFULLY AS IT MAY AFFECT THE USER LEGAL RIGHTS, WHICH IN TERM

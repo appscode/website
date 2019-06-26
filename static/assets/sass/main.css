@@ -1038,6 +1038,28 @@ h6 {
 section.our-customer-area {
   background: #fbfbfb; }
 
+.hero-area-2 {
+  position: relative;
+  background: #FBFBFB;
+  z-index: -1; }
+  .hero-area-2::after {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -2;
+    content: "";
+    background: url(../images/appscode/about-hero-bg.png); }
+  .hero-area-2 .hero-area-inner-2 {
+    height: 400px; }
+    .hero-area-2 .hero-area-inner-2 h1 {
+      font-size: 48px;
+      margin-bottom: 20px; }
+    .hero-area-2 .hero-area-inner-2 p {
+      font-size: 18px; }
+
 /* ======================
 	Header area start
 ========================*/
