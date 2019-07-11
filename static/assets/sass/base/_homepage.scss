@@ -10,9 +10,9 @@
     background-repeat: no-repeat;
     content: "";
     right: 0;
-    width: 51%;
+    width: 50%;
     height: 100%;
-    top: -66px;
+    top: 0;
     background-position-y: bottom;
     z-index: -1;
     min-height: 720px;
@@ -27,6 +27,10 @@
 
 .hero-area-content {
   min-height: 500px;
+  padding-right: 80px;
+  h1{
+    line-height: 67px;
+  }
   .play-buttons {
     margin-top: 50px;
     a {
@@ -50,26 +54,18 @@
       }
     }
   }
-  .typing {
-    h1 {
-      font-size: 44px;
-      margin-top: 70px;
-      margin-bottom: 15px;
-      strong {
-        &::after {
-          content: "|";
-          display: inline;
-          animation: blink 0.7s infinite;
-        }
-      }
-    }
-    .hero-area-button {
-      margin-top: 30px;
-    }
-  }
 }
 
 .shap-3 {
+  .trusted-logo{
+    .trusted-action {
+      background: #e0f2e9;
+      box-shadow: 0 1px 12px rgba(15, 80, 100, 0.12);
+      padding: 14px 24px;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+  }
   position: relative;
   z-index: 1;
   &::after {

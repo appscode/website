@@ -855,9 +855,9 @@ h6 {
     background-repeat: no-repeat;
     content: "";
     right: 0;
-    width: 51%;
+    width: 50%;
     height: 100%;
-    top: -66px;
+    top: 0;
     background-position-y: bottom;
     z-index: -1;
     min-height: 720px; }
@@ -868,7 +868,10 @@ h6 {
   top: 0; }
 
 .hero-area-content {
-  min-height: 500px; }
+  min-height: 500px;
+  padding-right: 80px; }
+  .hero-area-content h1 {
+    line-height: 67px; }
   .hero-area-content .play-buttons {
     margin-top: 50px; }
     .hero-area-content .play-buttons a {
@@ -892,20 +895,16 @@ h6 {
         -o-border-radius: 50%; }
         .hero-area-content .play-buttons a span.video-icon i.fa {
           padding-left: 5px; }
-  .hero-area-content .typing h1 {
-    font-size: 44px;
-    margin-top: 70px;
-    margin-bottom: 15px; }
-    .hero-area-content .typing h1 strong::after {
-      content: "|";
-      display: inline;
-      animation: blink 0.7s infinite; }
-  .hero-area-content .typing .hero-area-button {
-    margin-top: 30px; }
 
 .shap-3 {
   position: relative;
   z-index: 1; }
+  .shap-3 .trusted-logo .trusted-action {
+    background: #e0f2e9;
+    box-shadow: 0 1px 12px rgba(15, 80, 100, 0.12);
+    padding: 14px 24px;
+    border-radius: 4px;
+    font-size: 16px; }
   .shap-3::after {
     position: absolute;
     content: "";
