@@ -28,7 +28,7 @@
 .hero-area-content {
   min-height: 500px;
   padding-right: 80px;
-  h1{
+  h1 {
     line-height: 67px;
   }
   .play-buttons {
@@ -57,7 +57,7 @@
 }
 
 .shap-3 {
-  .trusted-logo{
+  .trusted-logo {
     .trusted-action {
       background: #e0f2e9;
       box-shadow: 0 1px 12px rgba(15, 80, 100, 0.12);
@@ -88,14 +88,14 @@
     font-weight: 600;
   }
   h2 {
-    color: #242a31;
+    color: $heading-color;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 54px;
     margin-bottom: 30px;
   }
   p {
-    color: #242a31;
+    color: $paragraph-color;
     font-size: 16px;
     max-width: 83%;
   }
@@ -219,11 +219,11 @@ section.our-customer-area {
 }
 
 // about us start
-.hero-area-2{
+.hero-area-2 {
   position: relative;
-  background: #FBFBFB;
+  background: #fbfbfb;
   z-index: -1;
-  &::after{
+  &::after {
     left: 0;
     top: 0;
     width: 100%;
@@ -236,11 +236,11 @@ section.our-customer-area {
   }
   .hero-area-inner-2 {
     height: 400px;
-    h1{
+    h1 {
       font-size: 48px;
-      margin-bottom:20px;
+      margin-bottom: 20px;
     }
-    p{
+    p {
       font-size: 18px;
     }
   }

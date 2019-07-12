@@ -168,7 +168,12 @@ body.fixed-nav #header {
   padding: 3px 0;
   width: 100%;
 }
-
+body.fixed-nav #headerWhite{
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+}
 /* github button style start */
 .lg .btn,
 .lg .social-count {

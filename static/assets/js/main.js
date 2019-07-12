@@ -151,17 +151,18 @@ tabItems.forEach(tab => {
 
 // menu sticky
 // Not a ton of code, but hard to
-const nav = document.querySelector("#header, .kubedb-documentation-menu");
+const nav = document.querySelector("#header,#headerWhite, .kubedb-documentation-menu");
 let topOfNav = nav.offsetTop;
-
-function fixNav() {
-  if (window.scrollY > topOfNav) {
-    document.body.style.paddingTop = nav.offsetHeight + "px";
-    document.body.classList.add("fixed-nav");
-  } else {
-    document.body.classList.remove("fixed-nav");
-    document.body.style.paddingTop = 0;
+  function fixNav() {
+    if (window.scrollY > topOfNav) {
+      document.body.style.paddingTop = nav.offsetHeight + "px";
+      document.body.classList.add("fixed-nav");
+    } else {
+      document.body.classList.remove("fixed-nav");
+      document.body.style.paddingTop = 0;
+    }
   }
-}
+  
+  window.addEventListener("scroll", fixNav);
 
-window.addEventListener("scroll", fixNav);
+

@@ -925,11 +925,11 @@ h6 {
   .service-content h2 {
     color: #242a31;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 54px;
     margin-bottom: 30px; }
   .service-content p {
-    color: #242a31;
+    color: #393e46;
     font-size: 16px;
     max-width: 83%; }
 
@@ -1039,7 +1039,7 @@ section.our-customer-area {
 
 .hero-area-2 {
   position: relative;
-  background: #FBFBFB;
+  background: #fbfbfb;
   z-index: -1; }
   .hero-area-2::after {
     left: 0;
@@ -1210,6 +1210,12 @@ body.fixed-nav #header {
   margin-top: 0;
   z-index: 99;
   padding: 3px 0;
+  width: 100%; }
+
+body.fixed-nav #headerWhite {
+  position: fixed;
+  top: 0;
+  z-index: 99;
   width: 100%; }
 
 /* github button style start */
