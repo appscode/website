@@ -888,11 +888,7 @@ h6 {
         text-align: center;
         line-height: 54px;
         margin-right: 30px;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%; }
+        border-radius: 50%; }
         .hero-area-content .play-buttons a span.video-icon i.fa {
           padding-left: 5px; }
 
@@ -916,10 +912,88 @@ h6 {
     background: url(../images/appscode/shape-3.png);
     background-repeat: no-repeat; }
 
+.countdown-area {
+  background-color: #fbfbfb;
+  position: relative;
+  z-index: 1; }
+  .countdown-area .right-sidebar-wrapper {
+    display: table;
+    height: 100%;
+    width: 100%; }
+    .countdown-area .right-sidebar-wrapper .right-sidebar-menu {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%; }
+      .countdown-area .right-sidebar-wrapper .right-sidebar-menu ul {
+        padding-left: 30px;
+        border-left: 1px solid #c2c2c2; }
+        .countdown-area .right-sidebar-wrapper .right-sidebar-menu ul li a {
+          display: inline-block;
+          color: #4a4a4a;
+          padding: 10px 0;
+          position: relative;
+          z-index: 1; }
+          .countdown-area .right-sidebar-wrapper .right-sidebar-menu ul li a::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background: #4d4dcb;
+            transition: 0.3s linear; }
+          .countdown-area .right-sidebar-wrapper .right-sidebar-menu ul li a:hover::after {
+            width: 100%; }
+  .countdown-area .single-count-wrapper {
+    text-align: center;
+    padding: 76px 40px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s ease-in-out; }
+    .countdown-area .single-count-wrapper:hover {
+      background: #ffffff;
+      box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16);
+      z-index: 3; }
+    .countdown-area .single-count-wrapper .count-icon {
+      max-width: 180px;
+      margin: 0 auto;
+      margin-bottom: 40px; }
+      .countdown-area .single-count-wrapper .count-icon img {
+        height: 150px;
+        width: 100%; }
+    .countdown-area .single-count-wrapper .count {
+      font-size: 48px;
+      font-weight: 700;
+      color: #1c2c41;
+      line-height: 1.5;
+      transition: 0.3s ease-in-out; }
+    .countdown-area .single-count-wrapper:hover .count {
+      color: #4d4dcb; }
+    .countdown-area .single-count-wrapper .name {
+      color: #242a31;
+      font-size: 18px;
+      margin-bottom: 20px; }
+    .countdown-area .single-count-wrapper .action-btn {
+      font-size: 18px;
+      font-weight: 500;
+      position: absolute;
+      bottom: 0;
+      transition: 0.3s ease-in-out;
+      margin-left: -50%;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden; }
+    .countdown-area .single-count-wrapper:hover .action-btn {
+      opacity: 1;
+      visibility: visible;
+      bottom: 50px; }
+
 .service-content {
   padding-right: 60px; }
   .service-content h5 {
-    color: #f99a00;
+    color: #4d4dcb;
     font-size: 14px;
     font-weight: 600; }
   .service-content h2 {
@@ -933,30 +1007,25 @@ h6 {
     font-size: 16px;
     max-width: 83%; }
 
-.why-us-shape {
+.section-title {
   position: relative;
-  z-index: 1;
-  height: 100%; }
-  .why-us-shape::after {
+  z-index: 1; }
+  .section-title h4 {
+    color: #4d4dcb;
+    font-size: 14px;
+    font-weight: 600; }
+  .section-title h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 46px;
+    font-weight: 400; }
+  .section-title .quete-icon {
+    font-size: 120px;
     position: absolute;
-    content: "";
-    right: 0;
-    top: 0;
     width: 100%;
-    height: 85%;
-    background: url(../images/appscode/why-us-shape.png);
-    background-repeat: no-repeat;
+    top: -60px;
     z-index: -1;
-    background-position: right bottom; }
-
-.section-title h4 {
-  color: #f99a00;
-  font-size: 14px;
-  font-weight: 600; }
-.section-title h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  line-height: 46px; }
+    opacity: 0.1; }
 
 .ac-custom-tabs ul li {
   margin-bottom: 30px; }
@@ -968,15 +1037,7 @@ h6 {
     padding: 20px 20px;
     box-shadow: 0px 1px 4px rgba(26, 80, 151, 0.16);
     border-radius: 9px;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    -ms-border-radius: 9px;
-    -o-border-radius: 9px;
-    transition: 0.3s ease-in-out;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -ms-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out; }
+    transition: 0.3s; }
     .ac-custom-tabs ul li a:hover {
       box-shadow: 0px 8px 50px rgba(26, 80, 151, 0.16); }
     .ac-custom-tabs ul li a span.circle-shape {
@@ -987,16 +1048,82 @@ h6 {
       border-radius: 50%;
       margin-right: 14px; }
 
+.single-solution-wrapper {
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+  min-height: 300px;
+  overflow: hidden; }
+  .single-solution-wrapper .solution-icon {
+    max-width: 30px;
+    margin-bottom: 10px; }
+  .single-solution-wrapper h4 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #242a31; }
+  .single-solution-wrapper p {
+    font-size: 16px;
+    margin-bottom: 30px; }
+  .single-solution-wrapper .inline-button {
+    width: 100px;
+    height: 100px;
+    background: #4d4dcb;
+    display: inline-block;
+    text-align: left;
+    padding-left: 40px;
+    line-height: 80px;
+    font-size: 30px;
+    color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    right: -100px;
+    bottom: -100px;
+    transition: .3s ease-in-out;
+    opacity: 0;
+    visibility: hidden; }
+  .single-solution-wrapper:hover .inline-button {
+    right: -30px;
+    bottom: -30px;
+    opacity: 1;
+    visibility: visible; }
+  .single-solution-wrapper:hover {
+    box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16); }
+  .single-solution-wrapper:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background: #4d4dcb;
+    border-radius: 4px 4px 0 0;
+    transition: .3s ease; }
+  .single-solution-wrapper:hover:after {
+    height: 6px; }
+
+.color-2:after {
+  background: #9c9ce2; }
+.color-2 .inline-button {
+  background: #9c9ce2; }
+
+.color-3:after {
+  background: #ffaf2d; }
+.color-3 .inline-button {
+  background: #ffaf2d; }
+
+.color-4:after {
+  background: #00d96a; }
+.color-4 .inline-button {
+  background: #00d96a; }
+
 .single-testimonial-wrapper {
   margin: 0 15px; }
   .single-testimonial-wrapper .testimonial-msg {
     background-color: #f5f5f5;
     padding: 30px 20px;
     border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
     min-height: 230px; }
     .single-testimonial-wrapper .testimonial-msg p {
       color: #393e46;
@@ -1036,6 +1163,24 @@ h6 {
 
 section.our-customer-area {
   background: #fbfbfb; }
+
+.cta-bg-color-1 {
+  position: relative;
+  z-index: 1; }
+  .cta-bg-color-1 h1 {
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: 400; }
+
+.cta-bg-color-1:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #1C2C41;
+  z-index: -1; }
 
 .hero-area-2 {
   position: relative;
@@ -1500,27 +1645,34 @@ a.play-icon .fa {
   font-family: "Raleway", sans-serif; }
 
 .subscription-form input {
-  background: #f8f8f8;
+  background: #F9F9F9;
   border: 1px solid #e3e3e3;
   box-shadow: none;
   font-size: 16px;
   border-radius: 4px;
-  padding: 8px 30px 8px 10px;
-  height: 40px; }
+  padding: 8px 50px 8px 10px;
+  height: 40px;
+  position: relative;
+  z-index: 1; }
 
 .subscription-form .button {
   font-family: "Roboto", sans-serif;
-  color: #fff;
+  color: #4d4dcb;
   font-size: 16px;
   height: 40px;
-  border: 1px solid #4d4dcb;
   box-shadow: none;
-  padding: 7px 15px;
   transition: 0.3s ease-in-out;
-  cursor: pointer; }
+  cursor: pointer;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  background: transparent; }
 
 .subscription-form .button:hover {
-  background-color: #2e2e9d; }
+  background-color: #2e2e9d;
+  color: #ffffff; }
 
 .subscription-form {
   margin-top: 20px; }
@@ -2926,6 +3078,7 @@ body.appscode .pricing-top,
 body.appscode .pricing-button .kd-button,
 body.appscode .subscription-form .button:hover,
 body.appscode .searchbar-area button,
+body.appscode .countdown-area .right-sidebar-menu ul li a::after,
 body.appscode .pagination-list li a.is-active {
   background-color: #00A651; }
 
@@ -2950,11 +3103,17 @@ body.appscode .tbl-of-contents ul a.active,
 body.appscode li.nav-item.active a,
 body.appscode .item ul li.is-active a,
 body.appscode .kd-sidebar-menu li a:hover,
+body.appscode .service-content h5,
+body.appscode .trusted-action a,
+body.appscode .trusted-company a,
+body.appscode .single-count-wrapper:hover .count,
+body.appscode .single-count-wrapper .action-btn,
+body.appscode .section-title h4,
+body.appscode .subscription-form .button,
 body.appscode .single-search-result h3 a {
   color: #00A651; }
 
 body.appscode .star-count::before,
-body.appscode .subscription-form .button,
 body.appscode .accordion-item.active,
 body.appscode blockquote,
 body.appscode .input.is-active,
@@ -2965,7 +3124,6 @@ body.appscode .textarea.is-active,
 body.appscode .textarea.is-focused,
 body.appscode .textarea:active,
 body.appscode .textarea:focus,
-body.appscode .subscription-form .input.is-hovered,
 body.appscode .subscription-form .input:hover {
   border-color: #00A651; }
 
@@ -2991,6 +3149,7 @@ body.guard .pricing-top,
 body.guard .pricing-button .kd-button,
 body.guard .subscription-form .button:hover,
 body.guard .searchbar-area button,
+body.guard .countdown-area .right-sidebar-menu ul li a::after,
 body.guard .pagination-list li a.is-active {
   background-color: #3498db; }
 
@@ -3015,11 +3174,17 @@ body.guard .tbl-of-contents ul a.active,
 body.guard li.nav-item.active a,
 body.guard .item ul li.is-active a,
 body.guard .kd-sidebar-menu li a:hover,
+body.guard .service-content h5,
+body.guard .trusted-action a,
+body.guard .trusted-company a,
+body.guard .single-count-wrapper:hover .count,
+body.guard .single-count-wrapper .action-btn,
+body.guard .section-title h4,
+body.guard .subscription-form .button,
 body.guard .single-search-result h3 a {
   color: #3498db; }
 
 body.guard .star-count::before,
-body.guard .subscription-form .button,
 body.guard .accordion-item.active,
 body.guard blockquote,
 body.guard .input.is-active,
@@ -3030,7 +3195,6 @@ body.guard .textarea.is-active,
 body.guard .textarea.is-focused,
 body.guard .textarea:active,
 body.guard .textarea:focus,
-body.guard .subscription-form .input.is-hovered,
 body.guard .subscription-form .input:hover {
   border-color: #3498db; }
 
@@ -3056,6 +3220,7 @@ body.kubeci .pricing-top,
 body.kubeci .pricing-button .kd-button,
 body.kubeci .subscription-form .button:hover,
 body.kubeci .searchbar-area button,
+body.kubeci .countdown-area .right-sidebar-menu ul li a::after,
 body.kubeci .pagination-list li a.is-active {
   background-color: #2c3e50; }
 
@@ -3080,11 +3245,17 @@ body.kubeci .tbl-of-contents ul a.active,
 body.kubeci li.nav-item.active a,
 body.kubeci .item ul li.is-active a,
 body.kubeci .kd-sidebar-menu li a:hover,
+body.kubeci .service-content h5,
+body.kubeci .trusted-action a,
+body.kubeci .trusted-company a,
+body.kubeci .single-count-wrapper:hover .count,
+body.kubeci .single-count-wrapper .action-btn,
+body.kubeci .section-title h4,
+body.kubeci .subscription-form .button,
 body.kubeci .single-search-result h3 a {
   color: #2c3e50; }
 
 body.kubeci .star-count::before,
-body.kubeci .subscription-form .button,
 body.kubeci .accordion-item.active,
 body.kubeci blockquote,
 body.kubeci .input.is-active,
@@ -3095,7 +3266,6 @@ body.kubeci .textarea.is-active,
 body.kubeci .textarea.is-focused,
 body.kubeci .textarea:active,
 body.kubeci .textarea:focus,
-body.kubeci .subscription-form .input.is-hovered,
 body.kubeci .subscription-form .input:hover {
   border-color: #2c3e50; }
 
@@ -3121,6 +3291,7 @@ body.kubed .pricing-top,
 body.kubed .pricing-button .kd-button,
 body.kubed .subscription-form .button:hover,
 body.kubed .searchbar-area button,
+body.kubed .countdown-area .right-sidebar-menu ul li a::after,
 body.kubed .pagination-list li a.is-active {
   background-color: #8854d0; }
 
@@ -3145,11 +3316,17 @@ body.kubed .tbl-of-contents ul a.active,
 body.kubed li.nav-item.active a,
 body.kubed .item ul li.is-active a,
 body.kubed .kd-sidebar-menu li a:hover,
+body.kubed .service-content h5,
+body.kubed .trusted-action a,
+body.kubed .trusted-company a,
+body.kubed .single-count-wrapper:hover .count,
+body.kubed .single-count-wrapper .action-btn,
+body.kubed .section-title h4,
+body.kubed .subscription-form .button,
 body.kubed .single-search-result h3 a {
   color: #8854d0; }
 
 body.kubed .star-count::before,
-body.kubed .subscription-form .button,
 body.kubed .accordion-item.active,
 body.kubed blockquote,
 body.kubed .input.is-active,
@@ -3160,7 +3337,6 @@ body.kubed .textarea.is-active,
 body.kubed .textarea.is-focused,
 body.kubed .textarea:active,
 body.kubed .textarea:focus,
-body.kubed .subscription-form .input.is-hovered,
 body.kubed .subscription-form .input:hover {
   border-color: #8854d0; }
 
@@ -3186,6 +3362,7 @@ body.kubesheild .pricing-top,
 body.kubesheild .pricing-button .kd-button,
 body.kubesheild .subscription-form .button:hover,
 body.kubesheild .searchbar-area button,
+body.kubesheild .countdown-area .right-sidebar-menu ul li a::after,
 body.kubesheild .pagination-list li a.is-active {
   background-color: #95a5a6; }
 
@@ -3210,11 +3387,17 @@ body.kubesheild .tbl-of-contents ul a.active,
 body.kubesheild li.nav-item.active a,
 body.kubesheild .item ul li.is-active a,
 body.kubesheild .kd-sidebar-menu li a:hover,
+body.kubesheild .service-content h5,
+body.kubesheild .trusted-action a,
+body.kubesheild .trusted-company a,
+body.kubesheild .single-count-wrapper:hover .count,
+body.kubesheild .single-count-wrapper .action-btn,
+body.kubesheild .section-title h4,
+body.kubesheild .subscription-form .button,
 body.kubesheild .single-search-result h3 a {
   color: #95a5a6; }
 
 body.kubesheild .star-count::before,
-body.kubesheild .subscription-form .button,
 body.kubesheild .accordion-item.active,
 body.kubesheild blockquote,
 body.kubesheild .input.is-active,
@@ -3225,7 +3408,6 @@ body.kubesheild .textarea.is-active,
 body.kubesheild .textarea.is-focused,
 body.kubesheild .textarea:active,
 body.kubesheild .textarea:focus,
-body.kubesheild .subscription-form .input.is-hovered,
 body.kubesheild .subscription-form .input:hover {
   border-color: #95a5a6; }
 
@@ -3251,6 +3433,7 @@ body.kubevault .pricing-top,
 body.kubevault .pricing-button .kd-button,
 body.kubevault .subscription-form .button:hover,
 body.kubevault .searchbar-area button,
+body.kubevault .countdown-area .right-sidebar-menu ul li a::after,
 body.kubevault .pagination-list li a.is-active {
   background-color: #0fb9b1; }
 
@@ -3275,11 +3458,17 @@ body.kubevault .tbl-of-contents ul a.active,
 body.kubevault li.nav-item.active a,
 body.kubevault .item ul li.is-active a,
 body.kubevault .kd-sidebar-menu li a:hover,
+body.kubevault .service-content h5,
+body.kubevault .trusted-action a,
+body.kubevault .trusted-company a,
+body.kubevault .single-count-wrapper:hover .count,
+body.kubevault .single-count-wrapper .action-btn,
+body.kubevault .section-title h4,
+body.kubevault .subscription-form .button,
 body.kubevault .single-search-result h3 a {
   color: #0fb9b1; }
 
 body.kubevault .star-count::before,
-body.kubevault .subscription-form .button,
 body.kubevault .accordion-item.active,
 body.kubevault blockquote,
 body.kubevault .input.is-active,
@@ -3290,7 +3479,6 @@ body.kubevault .textarea.is-active,
 body.kubevault .textarea.is-focused,
 body.kubevault .textarea:active,
 body.kubevault .textarea:focus,
-body.kubevault .subscription-form .input.is-hovered,
 body.kubevault .subscription-form .input:hover {
   border-color: #0fb9b1; }
 
@@ -3316,6 +3504,7 @@ body.pharmer .pricing-top,
 body.pharmer .pricing-button .kd-button,
 body.pharmer .subscription-form .button:hover,
 body.pharmer .searchbar-area button,
+body.pharmer .countdown-area .right-sidebar-menu ul li a::after,
 body.pharmer .pagination-list li a.is-active {
   background-color: #8e44ad; }
 
@@ -3340,11 +3529,17 @@ body.pharmer .tbl-of-contents ul a.active,
 body.pharmer li.nav-item.active a,
 body.pharmer .item ul li.is-active a,
 body.pharmer .kd-sidebar-menu li a:hover,
+body.pharmer .service-content h5,
+body.pharmer .trusted-action a,
+body.pharmer .trusted-company a,
+body.pharmer .single-count-wrapper:hover .count,
+body.pharmer .single-count-wrapper .action-btn,
+body.pharmer .section-title h4,
+body.pharmer .subscription-form .button,
 body.pharmer .single-search-result h3 a {
   color: #8e44ad; }
 
 body.pharmer .star-count::before,
-body.pharmer .subscription-form .button,
 body.pharmer .accordion-item.active,
 body.pharmer blockquote,
 body.pharmer .input.is-active,
@@ -3355,7 +3550,6 @@ body.pharmer .textarea.is-active,
 body.pharmer .textarea.is-focused,
 body.pharmer .textarea:active,
 body.pharmer .textarea:focus,
-body.pharmer .subscription-form .input.is-hovered,
 body.pharmer .subscription-form .input:hover {
   border-color: #8e44ad; }
 
@@ -3381,6 +3575,7 @@ body.searchlight .pricing-top,
 body.searchlight .pricing-button .kd-button,
 body.searchlight .subscription-form .button:hover,
 body.searchlight .searchbar-area button,
+body.searchlight .countdown-area .right-sidebar-menu ul li a::after,
 body.searchlight .pagination-list li a.is-active {
   background-color: #2ecc71; }
 
@@ -3405,11 +3600,17 @@ body.searchlight .tbl-of-contents ul a.active,
 body.searchlight li.nav-item.active a,
 body.searchlight .item ul li.is-active a,
 body.searchlight .kd-sidebar-menu li a:hover,
+body.searchlight .service-content h5,
+body.searchlight .trusted-action a,
+body.searchlight .trusted-company a,
+body.searchlight .single-count-wrapper:hover .count,
+body.searchlight .single-count-wrapper .action-btn,
+body.searchlight .section-title h4,
+body.searchlight .subscription-form .button,
 body.searchlight .single-search-result h3 a {
   color: #2ecc71; }
 
 body.searchlight .star-count::before,
-body.searchlight .subscription-form .button,
 body.searchlight .accordion-item.active,
 body.searchlight blockquote,
 body.searchlight .input.is-active,
@@ -3420,7 +3621,6 @@ body.searchlight .textarea.is-active,
 body.searchlight .textarea.is-focused,
 body.searchlight .textarea:active,
 body.searchlight .textarea:focus,
-body.searchlight .subscription-form .input.is-hovered,
 body.searchlight .subscription-form .input:hover {
   border-color: #2ecc71; }
 
@@ -3446,6 +3646,7 @@ body.service-broker .pricing-top,
 body.service-broker .pricing-button .kd-button,
 body.service-broker .subscription-form .button:hover,
 body.service-broker .searchbar-area button,
+body.service-broker .countdown-area .right-sidebar-menu ul li a::after,
 body.service-broker .pagination-list li a.is-active {
   background-color: #a5b1c2; }
 
@@ -3470,11 +3671,17 @@ body.service-broker .tbl-of-contents ul a.active,
 body.service-broker li.nav-item.active a,
 body.service-broker .item ul li.is-active a,
 body.service-broker .kd-sidebar-menu li a:hover,
+body.service-broker .service-content h5,
+body.service-broker .trusted-action a,
+body.service-broker .trusted-company a,
+body.service-broker .single-count-wrapper:hover .count,
+body.service-broker .single-count-wrapper .action-btn,
+body.service-broker .section-title h4,
+body.service-broker .subscription-form .button,
 body.service-broker .single-search-result h3 a {
   color: #a5b1c2; }
 
 body.service-broker .star-count::before,
-body.service-broker .subscription-form .button,
 body.service-broker .accordion-item.active,
 body.service-broker blockquote,
 body.service-broker .input.is-active,
@@ -3485,7 +3692,6 @@ body.service-broker .textarea.is-active,
 body.service-broker .textarea.is-focused,
 body.service-broker .textarea:active,
 body.service-broker .textarea:focus,
-body.service-broker .subscription-form .input.is-hovered,
 body.service-broker .subscription-form .input:hover {
   border-color: #a5b1c2; }
 
@@ -3511,6 +3717,7 @@ body.stash .pricing-top,
 body.stash .pricing-button .kd-button,
 body.stash .subscription-form .button:hover,
 body.stash .searchbar-area button,
+body.stash .countdown-area .right-sidebar-menu ul li a::after,
 body.stash .pagination-list li a.is-active {
   background-color: #f39c12; }
 
@@ -3535,11 +3742,17 @@ body.stash .tbl-of-contents ul a.active,
 body.stash li.nav-item.active a,
 body.stash .item ul li.is-active a,
 body.stash .kd-sidebar-menu li a:hover,
+body.stash .service-content h5,
+body.stash .trusted-action a,
+body.stash .trusted-company a,
+body.stash .single-count-wrapper:hover .count,
+body.stash .single-count-wrapper .action-btn,
+body.stash .section-title h4,
+body.stash .subscription-form .button,
 body.stash .single-search-result h3 a {
   color: #f39c12; }
 
 body.stash .star-count::before,
-body.stash .subscription-form .button,
 body.stash .accordion-item.active,
 body.stash blockquote,
 body.stash .input.is-active,
@@ -3550,7 +3763,6 @@ body.stash .textarea.is-active,
 body.stash .textarea.is-focused,
 body.stash .textarea:active,
 body.stash .textarea:focus,
-body.stash .subscription-form .input.is-hovered,
 body.stash .subscription-form .input:hover {
   border-color: #f39c12; }
 
@@ -3576,6 +3788,7 @@ body.swift .pricing-top,
 body.swift .pricing-button .kd-button,
 body.swift .subscription-form .button:hover,
 body.swift .searchbar-area button,
+body.swift .countdown-area .right-sidebar-menu ul li a::after,
 body.swift .pagination-list li a.is-active {
   background-color: #e67e22; }
 
@@ -3600,11 +3813,17 @@ body.swift .tbl-of-contents ul a.active,
 body.swift li.nav-item.active a,
 body.swift .item ul li.is-active a,
 body.swift .kd-sidebar-menu li a:hover,
+body.swift .service-content h5,
+body.swift .trusted-action a,
+body.swift .trusted-company a,
+body.swift .single-count-wrapper:hover .count,
+body.swift .single-count-wrapper .action-btn,
+body.swift .section-title h4,
+body.swift .subscription-form .button,
 body.swift .single-search-result h3 a {
   color: #e67e22; }
 
 body.swift .star-count::before,
-body.swift .subscription-form .button,
 body.swift .accordion-item.active,
 body.swift blockquote,
 body.swift .input.is-active,
@@ -3615,7 +3834,6 @@ body.swift .textarea.is-active,
 body.swift .textarea.is-focused,
 body.swift .textarea:active,
 body.swift .textarea:focus,
-body.swift .subscription-form .input.is-hovered,
 body.swift .subscription-form .input:hover {
   border-color: #e67e22; }
 
@@ -3641,6 +3859,7 @@ body.voyager .pricing-top,
 body.voyager .pricing-button .kd-button,
 body.voyager .subscription-form .button:hover,
 body.voyager .searchbar-area button,
+body.voyager .countdown-area .right-sidebar-menu ul li a::after,
 body.voyager .pagination-list li a.is-active {
   background-color: #f1c40f; }
 
@@ -3665,11 +3884,17 @@ body.voyager .tbl-of-contents ul a.active,
 body.voyager li.nav-item.active a,
 body.voyager .item ul li.is-active a,
 body.voyager .kd-sidebar-menu li a:hover,
+body.voyager .service-content h5,
+body.voyager .trusted-action a,
+body.voyager .trusted-company a,
+body.voyager .single-count-wrapper:hover .count,
+body.voyager .single-count-wrapper .action-btn,
+body.voyager .section-title h4,
+body.voyager .subscription-form .button,
 body.voyager .single-search-result h3 a {
   color: #f1c40f; }
 
 body.voyager .star-count::before,
-body.voyager .subscription-form .button,
 body.voyager .accordion-item.active,
 body.voyager blockquote,
 body.voyager .input.is-active,
@@ -3680,7 +3905,6 @@ body.voyager .textarea.is-active,
 body.voyager .textarea.is-focused,
 body.voyager .textarea:active,
 body.voyager .textarea:focus,
-body.voyager .subscription-form .input.is-hovered,
 body.voyager .subscription-form .input:hover {
   border-color: #f1c40f; }
 

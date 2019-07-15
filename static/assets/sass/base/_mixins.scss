@@ -17,6 +17,7 @@
   body.#{$name} .pricing-button .kd-button,
   body.#{$name} .subscription-form .button:hover,
   body.#{$name} .searchbar-area button,
+  body.#{$name} .countdown-area .right-sidebar-menu ul li a::after,
   body.#{$name} .pagination-list li a.is-active {
     background-color: #{$color};
   }
@@ -42,12 +43,18 @@
   body.#{$name} li.nav-item.active a,
   body.#{$name} .item ul li.is-active a,
   body.#{$name} .kd-sidebar-menu li a:hover,
+  body.#{$name} .service-content h5,
+  body.#{$name} .trusted-action a,
+  body.#{$name} .trusted-company a,
+  body.#{$name} .single-count-wrapper:hover .count,
+  body.#{$name} .single-count-wrapper .action-btn,
+  body.#{$name} .section-title h4,
+  body.#{$name} .subscription-form .button,
   body.#{$name} .single-search-result h3 a {
     color: #{$color};
   }
   // border-color
   body.#{$name} .star-count::before,
-  body.#{$name} .subscription-form .button,
   body.#{$name} .accordion-item.active,
   body.#{$name} blockquote,
   body.#{$name} .input.is-active,
@@ -58,7 +65,6 @@
   body.#{$name} .textarea.is-focused,
   body.#{$name} .textarea:active,
   body.#{$name} .textarea:focus,
-  body.#{$name} .subscription-form .input.is-hovered,
   body.#{$name} .subscription-form .input:hover {
     border-color: #{$color};
   }
@@ -74,26 +80,3 @@
   /*==================================================
                   Theme CSS prefix End
   ====================================================*/
-@mixin border-radius($border) {
-  border-radius: $border;
-  -webkit-border-radius: $border;
-  -moz-border-radius: $border;
-  -ms-border-radius: $border;
-  -o-border-radius: $border;
-}
-
-@mixin transform($deg) {
-  transform: $deg;
-  -webkit-transform: $deg;
-  -moz-transform: $deg;
-  -ms-transform: $deg;
-  -o-transform: $deg;
-}
-
-@mixin  transition($sec) {
-  transition: $sec ease-in-out  ;
-  -webkit-transition: $sec ease-in-out  ;
-  -moz-transition: $sec ease-in-out  ;
-  -ms-transition: $sec ease-in-out  ;
-  -o-transition: $sec ease-in-out  ;
-}
