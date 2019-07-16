@@ -83,6 +83,10 @@ h6 {
   background-color: #4d4dcb;
   color: #fff !important; }
 
+.ac-primary {
+  background-color: #00A651;
+  color: #fff !important; }
+
 .kubedb-primary-bg {
   background-color: #4d4dcb; }
 
@@ -90,7 +94,7 @@ h6 {
 .button {
   height: auto; }
 
-.kd-button {
+.kd-button, .ac-button {
   border: none;
   border-radius: 4px;
   padding: 12px 40px;
@@ -103,7 +107,12 @@ h6 {
   font-size: 16px; }
 
 .kd-button:hover {
-  background-color: #3e3ea1;
+  background-color: #4141c8;
+  color: #fff;
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16); }
+
+.ac-button:hover {
+  background-color: #00974a;
   color: #fff;
   box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16); }
 
@@ -1257,7 +1266,7 @@ section.our-customer-area {
 .hero-area-2 {
   position: relative;
   background: #fbfbfb;
-  z-index: -1; }
+  z-index: 1; }
   .hero-area-2::after {
     left: 0;
     top: 0;
@@ -1280,7 +1289,9 @@ section.our-customer-area {
 	Header area start
 ========================*/
 header {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08); }
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08);
+  z-index: 999;
+  position: relative; }
 
 body.fixed-nav header {
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.08); }

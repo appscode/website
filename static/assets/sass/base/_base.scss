@@ -3,6 +3,8 @@
 ========================*/
 header{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08);
+  z-index: 999;
+  position: relative;
 }
 body.fixed-nav header{
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.08);

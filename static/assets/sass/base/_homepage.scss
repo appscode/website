@@ -524,7 +524,7 @@ section.our-customer-area {
 .hero-area-2 {
   position: relative;
   background: #fbfbfb;
-  z-index: -1;
+  z-index: 1;
   &::after {
     left: 0;
     top: 0;

@@ -96,7 +96,10 @@ h6 {
   background-color: $primary-color;
   color: #fff !important;
 }
-
+.ac-primary{
+  background-color: $ac-primary-color;
+  color: #fff !important;
+}
 .kubedb-primary-bg {
   background-color: $primary-color;
 }
@@ -106,7 +109,7 @@ h6 {
   height: auto;
 }
 
-.kd-button {
+.kd-button, .ac-button {
   border: none;
   border-radius: 4px;
   padding: 12px 40px;
@@ -120,7 +123,13 @@ h6 {
 }
 
 .kd-button:hover {
-  background-color: rgb(62, 62, 161);
+  background-color: darken($primary-color, 3%);
+  color: #fff;
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16);
+}
+
+.ac-button:hover {
+  background-color: darken($ac-primary-color, 3%);
   color: #fff;
   box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16);
 }
