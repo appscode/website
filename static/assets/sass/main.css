@@ -1080,7 +1080,7 @@ h6 {
     position: absolute;
     right: -100px;
     bottom: -100px;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     opacity: 0;
     visibility: hidden; }
   .single-solution-wrapper:hover .inline-button {
@@ -1099,7 +1099,7 @@ h6 {
     height: 0;
     background: #4d4dcb;
     border-radius: 4px 4px 0 0;
-    transition: .3s ease; }
+    transition: 0.3s ease; }
   .single-solution-wrapper:hover:after {
     height: 6px; }
 
@@ -1117,6 +1117,78 @@ h6 {
   background: #00d96a; }
 .color-4 .inline-button {
   background: #00d96a; }
+
+.press-area {
+  background-color: #FBFBFB; }
+  .press-area .single-press-wrapper {
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+    transition: .3s ease-in-out; }
+    .press-area .single-press-wrapper:hover {
+      box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16); }
+      .press-area .single-press-wrapper:hover .press-content {
+        border: 1px solid white; }
+    .press-area .single-press-wrapper .press-image-1 {
+      background-image: url(../images/appscode/press/1.png); }
+    .press-area .single-press-wrapper .press-image-2 {
+      background-image: url(../images/appscode/press/2.png); }
+    .press-area .single-press-wrapper .press-image-3 {
+      background-image: url(../images/appscode/press/3.png); }
+    .press-area .single-press-wrapper .press-image-4 {
+      background-image: url(../images/appscode/press/4.png); }
+  .press-area .press-image {
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-color: #ddd; }
+  .press-area .press-content {
+    border: 1px solid #E8E9EA;
+    border-top: 1px solid transparent;
+    border-radius: 0 0 4px 4px;
+    padding: 20px; }
+    .press-area .press-content .read-meta {
+      font-size: 12px;
+      color: #67707e;
+      margin-bottom: 10px; }
+    .press-area .press-content h3 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 26px;
+      margin-bottom: 10px; }
+    .press-area .press-content p {
+      color: #393e46;
+      font-size: 15px;
+      margin-bottom: 30px; }
+    .press-area .press-content .press-button-wrapper {
+      overflow: hidden;
+      position: relative;
+      z-index: 1; }
+      .press-area .press-content .press-button-wrapper:after {
+        position: absolute;
+        content: "";
+        top: 15px;
+        width: 100%;
+        height: 1px;
+        background: #E8E9EA;
+        left: 0;
+        z-index: -1;
+        transition: 0.3s ease-in-out; }
+      .press-area .press-content .press-button-wrapper .press-button {
+        border: 1px solid #E8E9EA;
+        font-size: 13px;
+        color: #808998;
+        font-weight: 600;
+        padding: 5px 20px;
+        border-radius: 50px;
+        display: block;
+        float: right;
+        position: relative;
+        z-index: 1;
+        background: #ffffff;
+        transition: 0.3s ease-in-out; }
+        .press-area .press-content .press-button-wrapper .press-button:hover {
+          color: #393e46;
+          border: 1px solid #393e46; }
 
 .single-testimonial-wrapper {
   margin: 0 15px; }
@@ -1179,7 +1251,7 @@ section.our-customer-area {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #1C2C41;
+  background: #1c2c41;
   z-index: -1; }
 
 .hero-area-2 {
