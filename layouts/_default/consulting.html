@@ -1,0 +1,565 @@
+{{ define "header" }}
+
+<!-- header-area start -->
+<header>
+  <div class="header-top">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://appscode-v3-hugo.web.app">
+            <img src="/assets/images/logo-color-appscode.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav1"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav1" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            <div class="navbar-start">
+              <div class="navbar-item has-dropdown ac-is-hoverable">
+                <a class="navbar-link">
+                  Products
+                </a>
+
+                <div class="ac-megamenu">
+                  <div class="columns">
+                    <div class="column is-8">
+                      <div class="columns">
+                        <div class="column is-6 br-1">
+                          <a
+                            href="https://appscode-v3-hugo.web.app/products/voyager/"
+                            class="single-product-item is-voyager"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/appscode.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>Voyager</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Secure HAProxy Ingress Controller for Kubernetes
+                              </p>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://kubedb-v2-hugo.web.app"
+                            class="single-product-item is-kubedb"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/kubedb.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>KubeDB</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Run production-grade databases easily on
+                                Kubernetes
+                              </p>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://appscode-v3-hugo.web.app/products/stash/"
+                            class="single-product-item is-stash"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/appscode.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>Stash</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Backup your Kubernetes Stateful Applications
+                              </p>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://appscode-v3-hugo.web.app/products/guard/"
+                            class="single-product-item is-guard"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/appscode.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>Guard</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Kubernetes Authentication WebHook Server
+                              </p>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://kubeci-v1-hugo.web.app"
+                            class="single-product-item is-kubeci"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/appscode.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>KubeCI</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Kubernetes native CI
+                              </p>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="column is-6 br-1">
+                          <a
+                            href="https://appscode-v3-hugo.web.app/products/searchlight/"
+                            class="single-product-item is-searchlight"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/appscode.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>Searchlight</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Alerts for Kubernetes
+                              </p>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://appscode-v3-hugo.web.app/products/swift/"
+                            class="single-product-item is-swift"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/appscode.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>Swift</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Ajax friendly Helm Tiller Proxy
+                              </p>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://appscode-v3-hugo.web.app/products/service-broker/"
+                            class="single-product-item is-broker"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/kubedb.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>Service Broker</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Open Service Broker for AppsCode Cloud Services
+                              </p>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://appscode-v3-hugo.web.app/products/pharmer/"
+                            class="single-product-item is-pharmer"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/appscode.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>Pharmer</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Kubernetes Cluster Manager using Kubeadm &amp;
+                                Cluster API
+                              </p>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://kubeshield-v1-hugo.web.app"
+                            class="single-product-item is-kubeshield"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/appscode.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>KubeShield</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Secure Kubernetes
+                              </p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column is-4">
+                      <a
+                        href="https://byte.builders"
+                        class="single-product-item byte-builder kd-orange"
+                      >
+                        <div class="menu-header">
+                          <p class="intro">Introducing....</p>
+                          <h5>Byte.builders</h5>
+                        </div>
+                        <div class="menu-body">
+                          <p>
+                            The Kubernetes Cloud
+                          </p>
+                        </div>
+                        <p class="learn-more-btn">
+                          Learn more
+                          <span class="icon"
+                            ><i
+                              class="fa fa-long-arrow-right"
+                              aria-hidden="true"
+                            ></i
+                          ></span>
+                        </p>
+                      </a>
+
+                      <a
+                        href="https://appscode-v3-hugo.web.app/products/kubed/"
+                        class="single-product-item is-kubed"
+                      >
+                        <div class="menu-header">
+                          <div class="menu-logo">
+                            <img
+                              src="/assets/images/product-logo/appscode.png"
+                              alt=""
+                            />
+                          </div>
+                          <h5>Kubed</h5>
+                        </div>
+                        <div class="menu-body">
+                          <p>
+                            A Kubernetes cluster manager daemon
+                          </p>
+                        </div>
+                      </a>
+
+                      <a
+                        href="https://kubevault-v1-hugo.web.app"
+                        class="single-product-item is-kubevault"
+                      >
+                        <div class="menu-header">
+                          <div class="menu-logo">
+                            <img
+                              src="/assets/images/product-logo/appscode.png"
+                              alt=""
+                            />
+                          </div>
+                          <h5>KubeVault</h5>
+                        </div>
+                        <div class="menu-body">
+                          <p>
+                            Tools for running HashiCorp Vault on Kubernetes
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="columns has-text-centered">
+                    <div class="column">
+                      <div class="menu-bottom">
+                        <p>
+                          Explore refreshing apps and integrations for AppsCode
+                          products:
+                          <a href="https://marketplace.byte.builders">
+                            Visit the Marketplace
+                            <i
+                              class="fa fa-long-arrow-right"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a class="navbar-item">
+                Services
+              </a>
+              <a class="navbar-item">
+                Open Source
+              </a>
+              <a class="navbar-item">
+                Blog
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+            </div>
+
+            <div class="navbar-item">
+              <div class="buttons main-menu-button-top">
+                <a class="button is-small for-support">
+                  <span><img src="/assets/images/icon/chat.png" alt=""/></span
+                  >Forum
+                </a>
+                <a class="button is-small for-chat">
+                  <span><img src="/assets/images/icon/slack.png" alt=""/></span
+                  >Chat
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- header-area end -->
+
+<!-- about hero  area start -->
+<section class="hero-area-2">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-6 is-offset-3 d-table">
+          <div class="hero-area-inner-2 has-text-centered d-table-cell">
+              <h1>Consulting</h1>
+              <p>Integrated DevOps Cloud for Containerized Apps</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- about hero area end -->
+
+<!-- about start -->
+<section class="about-text-area section-padding">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <div class="about-text-inner has-text-centered">
+          <p>
+            The inventor of web browser, Marc Andreessen, once said that
+            software is eating the world. Software developers are the craftsmen
+            who will shape the future of human civilization. The vision of
+            AppsCode is to make the best tools for software development
+            available to anybody at an affordable price. We believe that human
+            knowledge belongs to the world. So, we are building an integrated
+            development platform that democratizes modern software development
+            tools
+          </p>
+          <p>
+            AppsCode has offices in both USA and Bangladesh. This allows us to
+            provide 24 x 7 technical operational support to our users and
+            customers. For any inquiries, please contact us
+            <a href="#">here.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- about end -->
+
+<!-- message start -->
+<section class="ceo-message section-padding pt-0">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-5 is-offset-1">
+        <div class="ceo-message-wrapper">
+            <h1>Message from CEO</h1>
+          <p>
+            The inventor of web browser, Marc Andreessen, once said that
+            software is eating the world. Software developers are the craftsmen
+            who will shape the future of human civilization. The vision of
+            AppsCode is to make the best tools for software development
+            available to anybody at an affordable price. We believe that human
+            knowledge belongs to the world. So, we are building an integrated
+            development platform that democratizes modern software development
+            tools. <a href="#">here.</a>
+          </p>
+          <div class="signature-image">
+            <img src="../assets/images/appscode/signature.png" alt="" />
+            <p>Tamal Shaha</p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-6 is-offset-1">
+        <div class="ceo-image">
+            <div class="dots-style"></div>
+          <img src="../assets/images/appscode/ceo.png" alt="" />
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- message end -->
+
+<!-- happy-customer start -->
+<section class="our-customer-area section-padding">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-6 is-offset-3">
+        <div class="section-title has-text-centered">
+          <h2>We Have Our Happy Customer Around the World</h2>
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-10 is-offset-1 has-text-centered">
+        <a class="single-brand-logo">
+          <img
+            src="/assets/images/brand-logo/zippo.png"
+            alt="linode"
+            class="img"
+          />
+        </a>
+        <a class="single-brand-logo">
+          <img
+            src="/assets/images/brand-logo/colour-logo.png"
+            alt="linode"
+            class="img"
+          />
+        </a>
+        <a class="single-brand-logo">
+          <img
+            src="/assets/images/brand-logo/kops.png"
+            alt="linode"
+            class="img"
+          />
+        </a>
+        <a class="single-brand-logo">
+          <img
+            src="/assets/images/brand-logo/envato.png"
+            alt="linode"
+            class="img"
+          />
+        </a>
+        <a class="single-brand-logo">
+          <img
+            src="/assets/images/brand-logo/1200px-IBM_logo.svg.png"
+            alt="linode"
+            class="img"
+          />
+        </a>
+        <a class="single-brand-logo">
+          <img
+            src="/assets/images/brand-logo/khan.png"
+            alt="linode"
+            class="img"
+          />
+        </a>
+        <a class="single-brand-logo">
+          <img
+            src="/assets/images/brand-logo/aks.png"
+            alt="linode"
+            class="img"
+          />
+        </a>
+
+        <a class="single-brand-logo">
+          <img
+            src="/assets/images/brand-logo/microsoft.png"
+            alt="linode"
+            class="img"
+          />
+        </a>
+        <a class="single-brand-logo">
+          <img
+            src="/assets/images/brand-logo/volvo.png"
+            alt="linode"
+            class="img"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- happy-customer end -->
+
+<!-- cta-area start -->
+<section class="cta-area section-padding">
+    <div class="container section">
+      <div class="cta-padding">
+        <div class="columns">
+          <div class="column is-6">
+            
+            <div class="cta-text">
+              <h2>Ready to get Start?</h2>
+              <p>Create a Free Account and refer your friend</p>
+            </div>
+            
+          </div>
+          <div class="column is-6 has-text-right is-mobile">
+            <div class="cta-button d-table">
+              
+              <div class="cta-button-inner d-table-cell">
+                <a href="/products/voyager/10.0.0/setup/" class="button kd-button kd-primary">Try Now for FREE</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- cta-area end -->
+
+{{ end }}
+
+{{ define "testimonial" }}
+<section></section>
+{{ end }}
+
+{{ define "customer-logos" }}
+<section></section>
+{{ end }}
+
+{{ define "cta-install" }}
+<section></section>
+{{ end }}
