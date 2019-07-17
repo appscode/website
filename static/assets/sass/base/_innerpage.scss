@@ -1,0 +1,139 @@
+.hero-area-2 {
+  position: relative;
+  z-index: 1;
+  &::after {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat !important;
+    position: absolute;
+    z-index: -2;
+    content: "";
+    background: url(../images/appscode/about-hero-bg.png);
+  }
+  .hero-area-inner-2 {
+    height: 400px;
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+// consultation page css start
+.illustration-area {
+  min-height: 500px;
+  background-repeat: no-repeat;
+}
+.illustration-1 {
+  background-image: url(../images/consulting-page/illustation.png);
+}
+.consulting-inner {
+  h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  p {
+    font-size: 16px;
+    line-height: 28px;
+    color: $paragraph-color;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.testimonial-area-2 {
+  background-color: #fbfbfb;
+  .testimonial-wrapper {
+    .quote-icon {
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-size: 42px;
+      line-height: 58px;
+      font-weight: 400;
+    }
+    .user-information {
+      margin-top: 30px;
+      float: right;
+      overflow: hidden;
+      h4 {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 700;
+        color: $ac-primary-color;
+      }
+      p {
+        font-size: 14px;
+        color: $paragraph-color;
+      }
+    }
+  }
+}
+
+.package-area {
+  .single-package-wrapper {
+    padding: 30px 50px;
+    h4 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+// consultation page css end
+
+// training page css start
+
+.training-wrapper-image {
+  .single-training-image-wrapper {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:nth-child(even) {
+      width: 250px;
+      height: 250px;
+      transform: translateY(-70px);
+    }
+    img {
+      transition: 0.3s ease-in-out;
+    }
+    &:hover {
+      img {
+        transform: scale(1.3);
+      }
+    }
+  }
+}
+.about-training{
+  position: relative;
+  z-index: 1;
+  .dots-shape {
+    position: absolute;
+    background-image: url(../images/training-page/dots-shape.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 200px;
+    height: 300px;
+    right: -70px;
+    top: 30%;
+  }
+}
+
+
+// training page css end
