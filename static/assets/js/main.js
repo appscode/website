@@ -22,6 +22,39 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
+// for map tabs
+// const liItems = document.querySelectorAll(".tabs-wrapper ul li");
+// liItems.forEach(liTab => {
+//   liTab.addEventListener("click", e => {
+//     e.preventDefault();
+//     const el = e.currentTarget;
+
+//     // add .is-active class to the clicked item, remove .is-active from others
+//     document.querySelectorAll(".tabs-wrapper ul li").forEach(tablink => {
+//       tablink === el
+//         ? tablink.classList.add("is-active")
+//         : tablink.classList.remove("is-active");
+//     });
+
+//     // add .is-active class to the target single-map, remove from others
+//     const elHref = el.getAttribute("href");
+//     const tabPaneTarget = document.querySelector(elHref);
+
+//     document.querySelectorAll(".single-map").forEach(tabPane => {
+//       tabPane === tabPaneTarget
+//         ? tabPane.classList.add("is-active")
+//         : tabPane.classList.remove("is-active");
+//     });
+
+//     tabPane.classList.add("is-active");
+//   });
+// });
+
+
+
+
+
 //for products page testimonial carousel
 bulmaCarousel.attach("#carousel-demo", {
   slidesToScroll: 1,
@@ -164,5 +197,4 @@ let topOfNav = nav.offsetTop;
   }
   
   window.addEventListener("scroll", fixNav);
-
 

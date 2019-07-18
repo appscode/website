@@ -1277,7 +1277,7 @@ section.our-customer-area {
     content: "";
     background: url(../images/appscode/about-hero-bg.png); }
   .hero-area-2 .hero-area-inner-2 {
-    height: 400px; }
+    height: 500px; }
     .hero-area-2 .hero-area-inner-2 h1 {
       font-size: 48px;
       margin-bottom: 20px;
@@ -1363,6 +1363,120 @@ section.our-customer-area {
     height: 300px;
     right: -70px;
     top: 30%; }
+
+.pricing-plan-area .single-pricing {
+  background-color: #ffffff;
+  border: 1px solid #E8E9EA;
+  border-radius: 4px;
+  padding: 50px 50px;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s ease-in-out; }
+  .pricing-plan-area .single-pricing:hover {
+    box-shadow: 0px 8px 50px rgba(26, 80, 151, 0.12);
+    border: 1px solid transparent; }
+  .pricing-plan-area .single-pricing .pricing-feature {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: -1; }
+    .pricing-plan-area .single-pricing .pricing-feature h5 {
+      font-size: 16px;
+      color: #00A651; }
+  .pricing-plan-area .single-pricing h2 {
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 10px; }
+  .pricing-plan-area .single-pricing h3 {
+    font-size: 24px;
+    color: #f99a00;
+    margin-bottom: 10px; }
+  .pricing-plan-area .single-pricing p {
+    font-size: 16px;
+    margin-bottom: 40px; }
+.pricing-plan-area .single-pricing.intermediate h5 {
+  color: #4D4DCB; }
+
+.feature-area-2 {
+  background-color: #fbfbfb; }
+  .feature-area-2 .single-feature {
+    padding: 0 60px; }
+    .feature-area-2 .single-feature h3 {
+      font-size: 18px;
+      margin-bottom: 10px; }
+    .feature-area-2 .single-feature p {
+      font-size: 16px; }
+  .feature-area-2 .single-feature.foundational h3 {
+    color: #00A651; }
+  .feature-area-2 .single-feature.intermediate h3 {
+    color: #4D4DCB; }
+  .feature-area-2 .single-feature.advanced h3 {
+    color: #e03056; }
+
+.cta-area-2 .cta-content h1 {
+  font-size: 73px;
+  line-height: 83px;
+  margin-bottom: 50px; }
+
+.contact-form {
+  position: relative;
+  z-index: 1;
+  margin: 60px;
+  height: 100%; }
+  .contact-form .contact-form-inner {
+    position: absolute;
+    width: 100%;
+    background: #f6f6f6;
+    padding: 30px;
+    border-radius: 4px;
+    left: 0;
+    top: 0; }
+
+.question-area .single-question-wrapper {
+  box-shadow: 0px 8px 57px rgba(26, 80, 151, 0.16);
+  padding: 35px 45px;
+  border-radius: 4px; }
+  .question-area .single-question-wrapper .support-icon {
+    max-width: 50px;
+    margin: 0 auto;
+    margin-bottom: 30px; }
+  .question-area .single-question-wrapper h4 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 400; }
+  .question-area .single-question-wrapper p {
+    font-size: 18px;
+    margin-bottom: 30px; }
+
+.location-area .office-details {
+  padding: 0 30px; }
+  .location-area .office-details h4 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 20px;
+    font-weight: 400; }
+  .location-area .office-details p span {
+    display: block; }
+
+.tabs-wrapper ul li {
+  color: #393e46;
+  display: inline-block;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer; }
+.tabs-wrapper ul li.is-active {
+  color: #00A651; }
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 700px; }
+
+.single-map {
+  display: none; }
+
+.single-map.is-active {
+  display: block; }
 
 /* ======================
 	Header area start
