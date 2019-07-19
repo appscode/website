@@ -1,0 +1,673 @@
+{{ define "header" }}
+
+<!-- header-area start -->
+<header>
+  <div class="header-top">
+    <div class="container section">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://appscode-v3-hugo.web.app">
+            <img src="/assets/images/logo-color-appscode.png" alt="" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav1"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="acNav1" class="navbar-menu main-menu">
+          <div class="navbar-end">
+            <div class="navbar-start">
+              <div class="navbar-item has-dropdown ac-is-hoverable">
+                <a class="navbar-link">
+                  Products
+                </a>
+
+                <div class="ac-megamenu">
+                  <div class="columns">
+                    <div class="column is-8">
+                      <div class="columns">
+                        <div class="column is-6 br-1">
+                          <a
+                            href="https://appscode-v3-hugo.web.app/products/voyager/"
+                            class="single-product-item is-voyager"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/appscode.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>Voyager</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Secure HAProxy Ingress Controller for Kubernetes
+                              </p>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://kubedb-v2-hugo.web.app"
+                            class="single-product-item is-kubedb"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/kubedb.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>KubeDB</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Run production-grade databases easily on
+                                Kubernetes
+                              </p>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://appscode-v3-hugo.web.app/products/stash/"
+                            class="single-product-item is-stash"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/appscode.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>Stash</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Backup your Kubernetes Stateful Applications
+                              </p>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://appscode-v3-hugo.web.app/products/guard/"
+                            class="single-product-item is-guard"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/appscode.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>Guard</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Kubernetes Authentication WebHook Server
+                              </p>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://kubeci-v1-hugo.web.app"
+                            class="single-product-item is-kubeci"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/appscode.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>KubeCI</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Kubernetes native CI
+                              </p>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="column is-6 br-1">
+                          <a
+                            href="https://appscode-v3-hugo.web.app/products/searchlight/"
+                            class="single-product-item is-searchlight"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/appscode.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>Searchlight</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Alerts for Kubernetes
+                              </p>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://appscode-v3-hugo.web.app/products/swift/"
+                            class="single-product-item is-swift"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/appscode.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>Swift</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Ajax friendly Helm Tiller Proxy
+                              </p>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://appscode-v3-hugo.web.app/products/service-broker/"
+                            class="single-product-item is-broker"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/kubedb.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>Service Broker</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Open Service Broker for AppsCode Cloud Services
+                              </p>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://appscode-v3-hugo.web.app/products/pharmer/"
+                            class="single-product-item is-pharmer"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/appscode.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>Pharmer</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Kubernetes Cluster Manager using Kubeadm &amp;
+                                Cluster API
+                              </p>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://kubeshield-v1-hugo.web.app"
+                            class="single-product-item is-kubeshield"
+                          >
+                            <div class="menu-header">
+                              <div class="menu-logo">
+                                <img
+                                  src="/assets/images/product-logo/appscode.png"
+                                  alt=""
+                                />
+                              </div>
+                              <h5>KubeShield</h5>
+                            </div>
+                            <div class="menu-body">
+                              <p>
+                                Secure Kubernetes
+                              </p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column is-4">
+                      <a
+                        href="https://byte.builders"
+                        class="single-product-item byte-builder kd-orange"
+                      >
+                        <div class="menu-header">
+                          <p class="intro">Introducing....</p>
+                          <h5>Byte.builders</h5>
+                        </div>
+                        <div class="menu-body">
+                          <p>
+                            The Kubernetes Cloud
+                          </p>
+                        </div>
+                        <p class="learn-more-btn">
+                          Learn more
+                          <span class="icon"
+                            ><i
+                              class="fa fa-long-arrow-right"
+                              aria-hidden="true"
+                            ></i
+                          ></span>
+                        </p>
+                      </a>
+
+                      <a
+                        href="https://appscode-v3-hugo.web.app/products/kubed/"
+                        class="single-product-item is-kubed"
+                      >
+                        <div class="menu-header">
+                          <div class="menu-logo">
+                            <img
+                              src="/assets/images/product-logo/appscode.png"
+                              alt=""
+                            />
+                          </div>
+                          <h5>Kubed</h5>
+                        </div>
+                        <div class="menu-body">
+                          <p>
+                            A Kubernetes cluster manager daemon
+                          </p>
+                        </div>
+                      </a>
+
+                      <a
+                        href="https://kubevault-v1-hugo.web.app"
+                        class="single-product-item is-kubevault"
+                      >
+                        <div class="menu-header">
+                          <div class="menu-logo">
+                            <img
+                              src="/assets/images/product-logo/appscode.png"
+                              alt=""
+                            />
+                          </div>
+                          <h5>KubeVault</h5>
+                        </div>
+                        <div class="menu-body">
+                          <p>
+                            Tools for running HashiCorp Vault on Kubernetes
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="columns has-text-centered">
+                    <div class="column">
+                      <div class="menu-bottom">
+                        <p>
+                          Explore refreshing apps and integrations for AppsCode
+                          products:
+                          <a href="https://marketplace.byte.builders">
+                            Visit the Marketplace
+                            <i
+                              class="fa fa-long-arrow-right"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a class="navbar-item">
+                Services
+              </a>
+              <a class="navbar-item">
+                Open Source
+              </a>
+              <a class="navbar-item">
+                Blog
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+            </div>
+
+            <div class="navbar-item">
+              <div class="buttons main-menu-button-top">
+                <a class="button is-small for-support">
+                  <span><img src="/assets/images/icon/chat.png" alt=""/></span
+                  >Forum
+                </a>
+                <a class="button is-small for-chat">
+                  <span><img src="/assets/images/icon/slack.png" alt=""/></span
+                  >Chat
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- header-area end -->
+
+<!-- about hero  area start -->
+<section class="hero-area-2">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-6 d-table">
+        <div class="hero-area-inner-2 has-text-left d-table-cell">
+          <h1>Get In Touch</h1>
+          <p>Need some help? We're here for you.</p>
+        </div>
+      </div>
+      <div class="column is-6">
+        <div class="contact-form">
+          <!-- please remove the form and add your generate form style -->
+          <div class="contact-form-inner">
+            <form action="">
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Text input" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Username</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input
+                    class="input "
+                    type="text"
+                    placeholder="Text input"
+                    value="bulma"
+                  />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-user"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fa fa-check"></i>
+                  </span>
+                </div>
+                <p class="help ">This username is available</p>
+              </div>
+
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input
+                    class="input"
+                    type="email"
+                    placeholder="Email input"
+                    value="hello@"
+                  />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fa fa-exclamation-triangle"></i>
+                  </span>
+                </div>
+                <p class="help">This email is invalid</p>
+              </div>
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input
+                    class="input"
+                    type="email"
+                    placeholder="Email input"
+                    value="hello@"
+                  />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fa fa-exclamation-triangle"></i>
+                  </span>
+                </div>
+                <p class="help">This email is invalid</p>
+              </div>
+
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input
+                    class="input"
+                    type="email"
+                    placeholder="Email input"
+                    value="hello@"
+                  />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fa fa-exclamation-triangle"></i>
+                  </span>
+                </div>
+                <p class="help">This email is invalid</p>
+              </div>
+
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" placeholder="Textarea"></textarea>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    I agree to the <a href="#">terms and conditions</a>
+                  </label>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="question" />
+                    Yes
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="question" />
+                    No
+                  </label>
+                </div>
+              </div>
+
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                  <button class="button is-text">Cancel</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- about hero area end -->
+
+<!-- contact area start -->
+<div class="contact-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-6">
+        <div class="contact-us-image">
+          <img src="../assets/images/contact-page/contact.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- contact area end -->
+
+<!-- question-area start -->
+<section class="section-padding question-area">
+  <div class="container section">
+    <div class="columns">
+      <!-- section title start -->
+      <div class="column is-8 is-offset-2 has-text-centered mb-30">
+        <div class="section-title">
+          <h2>Have a Question?</h2>
+          <p>
+            Send us a note and we will be in touch shortly.
+          </p>
+        </div>
+      </div>
+      <!-- section title end -->
+    </div>
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <div class="columns is-7 is-variable">
+          <!-- single question start -->
+          <div class="column is-6">
+            <div class="single-question-wrapper has-text-centered">
+              <div class="support-icon">
+                <img src="../assets/images/icon/customer.png" alt="" />
+              </div>
+              <h4>Need Support?</h4>
+              <p>
+                We're here to help with any issues with your account. You can
+                also check our Docs or Ask Community
+              </p>
+              <a href="#" class="button kd-button kd-primary">Send Message</a>
+            </div>
+          </div>
+          <!-- single question end -->
+
+          <!-- single question start -->
+          <div class="column is-6">
+            <div class="single-question-wrapper has-text-centered">
+              <div class="support-icon">
+                <img src="../assets/images/icon/support.png" alt="" />
+              </div>
+              <h4>Sales Inquiries</h4>
+              <p>
+                We're here to help with any issues with your account. You can
+                also check our Docs or Ask Community
+              </p>
+              <a href="#" class="button ac-button ac-primary">Send Message</a>
+            </div>
+          </div>
+          <!-- single question end -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- question-area end -->
+
+<!-- location-area start -->
+<section class="location-area section-padding">
+  <div class="container section">
+    <div class="columns">
+      <!-- section title start -->
+      <div class="column is-8 is-offset-2 has-text-centered mb-30">
+        <div class="section-title">
+          <h2>Our Office</h2>
+        </div>
+      </div>
+      <!-- section title end -->
+    </div>
+    <div class="columns">
+      <div class="column is-5">
+        <div class="country-highlight-image">
+          <img src="../assets/images/contact-page/office.png" alt="" />
+        </div>
+      </div>
+      <div class="column is-3 is-offset-1">
+        <!-- single-details start -->
+        <div class="office-details">
+          <h4>Corporate HQ AppsCode Inc.</h4>
+          <p>
+            <span>PO Box 3191 San Leandro CA 94578, USA</span>
+            <span>Phone: +1 (650) 241-8486</span>
+            <span>Email: support@appscode.com</span>
+          </p>
+        </div>
+        <!-- single-details end -->
+      </div>
+
+      <div class="column is-3">
+        <!-- single-details start -->
+        <div class="office-details">
+          <h4>Dhaka Office AppsCode Ltd..</h4>
+          <p>
+            <span
+              >Flat A2, House 4, Road 10 Sector 10, Uttara Dhaka-1230,
+              Bangladesh
+            </span>
+            <span>Phone: +880 1720-171904</span>
+            <span>Email: support@appscode.com</span>
+          </p>
+        </div>
+        <!-- single-details end -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- location-area end -->
+
+<!-- map-area start -->
+<div class="map-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-8 is-offset-2 has-text-centered">
+        <div class="tabs-wrapper">
+          <ul>
+            <li href="usa">San Leandro</li>
+            <li href="dhaka" class="is-active">Dhaka</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map-wrapper">
+    <div class="single-map is-active" id="usa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.19049567427!2d90.38724931545359!3d23.882862789618905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c46b5bbd22f9%3A0xd6602c2d16a5f203!2sAppsCode+Ltd.!5e0!3m2!1sen!2sbd!4v1563448108452!5m2!1sen!2sbd"
+        style="border:0"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="single-map" id="dhaka">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.19049567427!2d90.38724931545359!3d23.882862789618905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c46b5bbd22f9%3A0xd6602c2d16a5f203!2sAppsCode+Ltd.!5e0!3m2!1sen!2sbd!4v1563448108452!5m2!1sen!2sbd"
+        style="border:0"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>
+<!-- map-area end -->
+
+{{ end }}
+
+{{ define "testimonial" }}
+<section></section>
+{{ end }}
+
+{{ define "customer-logos" }}
+<section></section>
+{{ end }}
+
+{{ define "cta-install" }}
+<section></section>
+{{ end }}

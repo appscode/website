@@ -23,27 +23,39 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// menu sticky
-// Not a ton of code, but hard to
-const nav = document.querySelector('#header, .kubedb-documentation-menu');
-let topOfNav = nav.offsetTop;
+// for map tabs
+// const liItems = document.querySelectorAll(".tabs-wrapper ul li");
+// liItems.forEach(liTab => {
+//   liTab.addEventListener("click", e => {
+//     e.preventDefault();
+//     const el = e.currentTarget;
 
-function fixNav() {
-  if (window.scrollY > topOfNav) {
-    document.body.style.paddingTop = nav.offsetHeight + 'px';
-    document.body.classList.add('fixed-nav');
-  } else {
-    document.body.classList.remove('fixed-nav');
-    document.body.style.paddingTop = 0;
-  }
-}
+//     // add .is-active class to the clicked item, remove .is-active from others
+//     document.querySelectorAll(".tabs-wrapper ul li").forEach(tablink => {
+//       tablink === el
+//         ? tablink.classList.add("is-active")
+//         : tablink.classList.remove("is-active");
+//     });
 
-window.addEventListener('scroll', fixNav);
+//     // add .is-active class to the target single-map, remove from others
+//     const elHref = el.getAttribute("href");
+//     const tabPaneTarget = document.querySelector(elHref);
+
+//     document.querySelectorAll(".single-map").forEach(tabPane => {
+//       tabPane === tabPaneTarget
+//         ? tabPane.classList.add("is-active")
+//         : tabPane.classList.remove("is-active");
+//     });
+
+//     tabPane.classList.add("is-active");
+//   });
+// });
 
 
 
 
-//bulma carousel
+
+//for products page testimonial carousel
 bulmaCarousel.attach("#carousel-demo", {
   slidesToScroll: 1,
   slidesToShow: 1,
@@ -51,7 +63,25 @@ bulmaCarousel.attach("#carousel-demo", {
   autoplay: false
 });
 
-// For FAQ Collaps Page
+// appscode home page bulma carousel
+bulmaCarousel.attach("#testimonial-carousel", {
+  slidesToScroll: 1,
+  slidesToShow: 3,
+  infinite: true,
+  autoplay: true,
+  loop: true
+});
+
+// appscode home page logo carousel
+bulmaCarousel.attach("#logo-area", {
+  slidesToScroll: 1,
+  slidesToShow: 6,
+  infinite: true,
+  autoplay: true,
+  loop: true
+});
+
+// For FAQ Collapse Page
 const accordionItem = document.querySelectorAll(".accordion-item");
 const onClickAccordionHeader = e => {
   if (e.currentTarget.parentNode.classList.contains("active")) {
@@ -116,7 +146,6 @@ const spyScrolling = () => {
             }
           });
         }
-        
       }
     }
   };
@@ -152,3 +181,20 @@ tabItems.forEach(tab => {
     tabPane.classList.add("show");
   });
 });
+
+// menu sticky
+// Not a ton of code, but hard to
+const nav = document.querySelector("#header,#headerWhite, .kubedb-documentation-menu");
+let topOfNav = nav.offsetTop;
+  function fixNav() {
+    if (window.scrollY > topOfNav) {
+      document.body.style.paddingTop = nav.offsetHeight + "px";
+      document.body.classList.add("fixed-nav");
+    } else {
+      document.body.classList.remove("fixed-nav");
+      document.body.style.paddingTop = 0;
+    }
+  }
+  
+  window.addEventListener("scroll", fixNav);
+
