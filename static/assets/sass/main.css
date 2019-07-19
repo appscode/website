@@ -910,6 +910,10 @@ h6 {
     padding: 14px 24px;
     border-radius: 4px;
     font-size: 16px; }
+    .shap-3 .trusted-logo .trusted-action a {
+      color: #00A651; }
+  .shap-3 .trusted-logo .trusted-company a {
+    color: #00A651; }
   .shap-3::after {
     position: absolute;
     content: "";
@@ -949,7 +953,7 @@ h6 {
             bottom: 0;
             width: 0;
             height: 2px;
-            background: #4d4dcb;
+            background: #00A651;
             transition: 0.3s linear; }
           .countdown-area .right-sidebar-wrapper .right-sidebar-menu ul li a:hover::after {
             width: 100%; }
@@ -979,7 +983,7 @@ h6 {
       line-height: 1.5;
       transition: 0.3s ease-in-out; }
     .countdown-area .single-count-wrapper:hover .count {
-      color: #4d4dcb; }
+      color: #00A651; }
     .countdown-area .single-count-wrapper .name {
       color: #242a31;
       font-size: 18px;
@@ -993,7 +997,8 @@ h6 {
       margin-left: -50%;
       width: 100%;
       opacity: 0;
-      visibility: hidden; }
+      visibility: hidden;
+      color: #00A651; }
     .countdown-area .single-count-wrapper:hover .action-btn {
       opacity: 1;
       visibility: visible;
@@ -1002,7 +1007,7 @@ h6 {
 .service-content {
   padding-right: 60px; }
   .service-content h5 {
-    color: #4d4dcb;
+    color: #00A651;
     font-size: 14px;
     font-weight: 600; }
   .service-content h2 {
@@ -1020,13 +1025,13 @@ h6 {
   position: relative;
   z-index: 1; }
   .section-title h4 {
-    color: #4d4dcb;
+    color: #00A651;
     font-size: 14px;
     font-weight: 600; }
   .section-title h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    line-height: 46px;
+    line-height: 50px;
     font-weight: 400; }
   .section-title .quete-icon {
     font-size: 120px;
@@ -1275,7 +1280,7 @@ section.our-customer-area {
     position: absolute;
     z-index: -2;
     content: "";
-    background: url(../images/appscode/about-hero-bg.png); }
+    background: url(../images/appscode/about-hero-bg-2.png); }
   .hero-area-2 .hero-area-inner-2 {
     height: 500px; }
     .hero-area-2 .hero-area-inner-2 h1 {
@@ -1295,7 +1300,8 @@ section.our-customer-area {
 .consulting-inner h2 {
   font-size: 36px;
   margin-bottom: 30px;
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 50px; }
 .consulting-inner p {
   font-size: 16px;
   line-height: 28px;

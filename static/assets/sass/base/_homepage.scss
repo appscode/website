@@ -64,6 +64,12 @@
       padding: 14px 24px;
       border-radius: 4px;
       font-size: 16px;
+      a{
+        color: $ac-primary-color;
+      }
+    }
+    .trusted-company a{
+      color: $ac-primary-color;
     }
   }
   position: relative;
@@ -111,7 +117,7 @@
               bottom: 0;
               width: 0;
               height: 2px;
-              background: $primary-color;
+              background: $ac-primary-color;
               transition: 0.3s linear;
             }
             &:hover {
@@ -155,7 +161,7 @@
       transition: 0.3s ease-in-out;
     }
     &:hover .count {
-      color: $primary-color;
+      color: $ac-primary-color;
     }
     .name {
       color: #242a31;
@@ -172,6 +178,7 @@
       width: 100%;
       opacity: 0;
       visibility: hidden;
+      color: $ac-primary-color;
     }
     &:hover .action-btn {
       opacity: 1;
@@ -185,7 +192,7 @@
 .service-content {
   padding-right: 60px;
   h5 {
-    color: $primary-color;
+    color: $ac-primary-color;
     font-size: 14px;
     font-weight: 600;
   }
@@ -207,14 +214,14 @@
   position: relative;
   z-index: 1;
   h4 {
-    color: $primary-color;
+    color: $ac-primary-color;
     font-size: 14px;
     font-weight: 600;
   }
   h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    line-height: 46px;
+    line-height: 50px;
     font-weight: 400;
   }
   .quete-icon {
