@@ -493,4 +493,40 @@
   .hero-area-content.pr-115 {
     padding-right: 0;
   }
+
+  /* ==============================================
+   appscode-home page start
+==============================================*/
+  // mega-menu start
+  .ac-megamenu {
+    box-shadow: none;
+    border-radius: 4px;
+    padding: 20px;
+    background: #fff;
+    position: inherit;
+    min-width: auto;
+    top: 40px;
+    transform: translateX(-50%);;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s ease-in-out;
+    display: none;
+  }
+  // mega-menu end
+  .right-side-content-inner {
+    display: none;
+  }
+  .navbar-burger {
+    background: #fafafa;
+  }
+  .hero-area-content {
+    padding-right: 0;
+  }
+  .hero-content-inner h1 {
+    font-size: 24px;
+    line-height: 35px !important;
+  }
+  /* ==============================================
+   appscode-home page end
+==============================================*/
 }
