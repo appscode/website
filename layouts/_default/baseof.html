@@ -22,10 +22,6 @@
     <link rel="stylesheet" href="/assets/css/bulma.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/sass/main.css" />
-    <!-- Responsive CSS -->
-    {{ with $style := resources.Get "assets/css/responsive.css" | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-    {{ end }}
   </head>
 
   <body {{if $productName}}class="{{$productName}}"{{end}}>
