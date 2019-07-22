@@ -13,7 +13,7 @@
     background: url(../images/appscode/about-hero-bg-2.png);
   }
   .hero-area-inner-2 {
-    height: 500px;
+    height: 400px;
     h1 {
       font-size: 48px;
       margin-bottom: 20px;
@@ -24,7 +24,9 @@
     }
   }
 }
-
+.hero-area-2.bg-color-available:after{
+  background-color: #FBFBFB;
+}
 // consultation page css start
 .illustration-area {
   min-height: 500px;
@@ -135,7 +137,7 @@
     top: 30%;
   }
 }
-.pricing-plan-area {
+.pricing-plan-area-2 {
   .single-pricing {
     background-color: $white-color;
     border: 1px solid $border-color;
@@ -217,6 +219,13 @@
     }
   }
 }
+.ac-cta-area{
+  .cta-text{
+    h2{
+      color: $heading-color;
+    }
+  }
+}
 // training page css end
 
 // contact-us page start
@@ -236,6 +245,7 @@
   }
 }
 .question-area {
+  background-color: #FBFBFB;;
   .single-question-wrapper {
     box-shadow: 0px 8px 57px rgba(26, 80, 151, 0.16);
     padding: 35px 45px;
@@ -248,7 +258,7 @@
     h4 {
       font-size: 28px;
       margin-bottom: 30px;
-      font-weight: 400;
+      font-weight:600;
     }
     p {
       font-size: 18px;
@@ -264,7 +274,7 @@
       font-size: 24px;
       line-height: 34px;
       margin-bottom: 20px;
-      font-weight: 400;
+      font-weight: 600;
     }
     p {
       span {

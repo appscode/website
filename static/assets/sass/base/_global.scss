@@ -100,6 +100,9 @@ h6 {
   background-color: $ac-primary-color;
   color: $white-color !important;
 }
+.ac-primary-color {
+  color: $ac-primary-color;
+}
 .kubedb-primary-bg {
   background-color: $primary-color;
 }
@@ -120,6 +123,7 @@ h6 {
   transition: 0.3s;
   font-family: $font-paragraph;
   font-size: 16px;
+  min-width: 190px;
 }
 
 .kd-button:hover {

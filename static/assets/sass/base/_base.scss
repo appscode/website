@@ -176,6 +176,7 @@ body.fixed-nav #headerWhite{
   z-index: 99;
   width: 100%;
 }
+
 /* github button style start */
 .lg .btn,
 .lg .social-count {
@@ -213,10 +214,10 @@ body.fixed-nav #headerWhite{
 }
 
 .hero-content-inner h1 {
-  font-size: 36px;
+  font-size: 44px;
   font-weight: 400;
   color: $heading-color;
-  line-height: 58px;
+  line-height: 68px;
 }
 
 .hero-content-inner h1 strong {
@@ -477,7 +478,7 @@ a.play-icon .fa {
   display: inline-block;
   max-height: 50px;
   overflow: hidden;
-  margin: 0 30px 30px;
+  margin: 0 30px 40px;
   text-align: center;
 }
 
@@ -1204,6 +1205,12 @@ ul li b {
   color: $paragraph-color;
 }
 
+.appscode-style.full-info ul li p a
+.appscode-style.full-info p a,
+.appscode-style.full-info a{
+  color: $ac-primary-color;
+}
+
 /* Right Sidebar For Documentation page */
 .search-area {
   position: relative;
@@ -1652,7 +1659,9 @@ button.button.is-fullwidth {
   border: 1px solid #e2e2e2;
   background: #fff;
 }
-
+.appscode-style .item input:checked ~ label > a{
+  color: $ac-primary-color;
+}
 .kd-left-sidebar {
   margin-right: 30px;
   position: sticky;
@@ -1721,7 +1730,7 @@ span.new-item {
 .ac-megamenu {
   box-shadow: 0px 7px 26px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
-  padding: 20px;
+  padding:12px 6px 6px;
   background: #fff;
   position: absolute;
   min-width: 730px;
