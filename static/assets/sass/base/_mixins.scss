@@ -33,6 +33,7 @@
   body.#{$name} .customize-kubedb .navbar-dropdown .navbar-item,
   body.#{$name} .carousel-wrapper:after,
   body.#{$name} .footer-link li a:hover,
+  body.#{$name} .footer-inline-link a:hover,
   body.#{$name} .accordion-item.active .accordion-header h2,
   body.#{$name} ul li b,
   body.#{$name} .full-info p b,
@@ -48,8 +49,8 @@
   body.#{$name} .trusted-company a,
   body.#{$name} .single-count-wrapper:hover .count,
   body.#{$name} .single-count-wrapper .action-btn,
-  body.#{$name} .section-title h4,
   body.#{$name} .subscription-form .button,
+  body.#{$name} .section-title h4,
   body.#{$name} .single-search-result h3 a {
     color: #{$color};
   }
