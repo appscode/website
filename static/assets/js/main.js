@@ -22,6 +22,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
+// mega menu active class
+var navbarItems = document.querySelectorAll(".navbar-item");
+navbarItems.forEach(navbarItem => {
+  navbarItem.addEventListener("click", function(){
+    var megamenues = document.querySelectorAll(".navbar-item > .ac-megamenu");
+    // remove is-active class from all the megamenus except the navbar item that was clicked
+    megamenues.forEach(megamenu => {
+      // toggle classes
+      if (megamenu.parentElement === navbarItem) megamenu.classList.toggle("is-active");
+      else megamenu.classList.remove("is-active");
+    });
+  })
+})
+
 //for products page testimonial carousel
 bulmaCarousel.attach("#carousel-demo", {
   slidesToScroll: 1,
@@ -36,7 +51,8 @@ bulmaCarousel.attach("#testimonial-carousel", {
   slidesToShow: 3,
   infinite: true,
   autoplay: true,
-  loop: true
+  loop: true,
+  breakpoints: [{ changePoint: 479, slidesToShow: 1, slidesToScroll: 1 }, { changePoint: 980, slidesToShow: 2, slidesToScroll: 1 }, { changePoint: 1140, slidesToShow: 3, slidesToScroll:1 } ]
 });
 
 // appscode home page logo carousel
