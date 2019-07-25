@@ -16,15 +16,8 @@
     top: 0;
     background-position-y: bottom;
     z-index: -1;
-    min-height: 720px;
+    min-height: 640px;
   }
-}
-
-.right-side-content-inner {
-  position: absolute;
-  right: -120px;
-  top: 40px;
-  z-index: -1;
 }
 
 .hero-area-content {
@@ -57,7 +50,17 @@
     }
   }
 }
-
+.hero-right-content-wrapper {
+  position: relative;
+  z-index: 1;
+  .right-side-content-inner {
+    position: absolute;
+    right: -120px;
+    top: 10px;
+    width: 130%;
+    z-index: -1;
+  }
+}
 .shap-3 {
   .trusted-logo {
     .trusted-action {

@@ -873,13 +873,7 @@ h6 {
     top: 0;
     background-position-y: bottom;
     z-index: -1;
-    min-height: 720px; }
-
-.right-side-content-inner {
-  position: absolute;
-  right: -120px;
-  top: 40px;
-  z-index: -1; }
+    min-height: 640px; }
 
 .hero-area-content {
   min-height: 500px;
@@ -905,6 +899,16 @@ h6 {
         border-radius: 50%; }
         .hero-area-content .play-buttons a span.video-icon i.fa {
           padding-left: 5px; }
+
+.hero-right-content-wrapper {
+  position: relative;
+  z-index: 1; }
+  .hero-right-content-wrapper .right-side-content-inner {
+    position: absolute;
+    right: -120px;
+    top: 10px;
+    width: 130%;
+    z-index: -1; }
 
 .shap-3 {
   position: relative;
@@ -4264,8 +4268,8 @@ body.voyager .pricing-top:before {
                 Theme voyager End
 ====================================================*/
 /* Normal desktop :1200px. */
-/* Normal desktop :992px. */
-@media (min-width: 992px) and (max-width: 1087px) {
+/* Normal desktop :1088px. */
+@media (min-width: 1088px) and (max-width: 1500px) {
   .single-db-logo {
     margin: 10px;
     padding: 10px;
@@ -4276,9 +4280,6 @@ body.voyager .pricing-top:before {
 
   .section-padding {
     padding: 60px 0; }
-
-  .main-menu a {
-    padding: 5px 0; }
 
   .main-menu {
     padding: 20px; }
@@ -4305,17 +4306,25 @@ body.voyager .pricing-top:before {
     padding: 20px 15px; }
 
   .pricing-body li {
-    font-size: 13px; } }
+    font-size: 13px; }
+
+  .hero-area .hero-shape {
+    background-position-y: top;
+    min-height: 710px; }
+  .hero-area .hero-area-content {
+    padding-right: 0; }
+    .hero-area .hero-area-content .hero-content-inner h1 {
+      font-size: 34px;
+      line-height: 50px !important; }
+  .hero-area .hero-right-content-wrapper .right-side-content-inner {
+    right: -90px; } }
 /* Tablet desktop :768px. */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1087px) {
   .section-padding {
     padding: 60px 0; }
 
   .main-menu a {
     padding: 5px 0; }
-
-  .buttons .button:not(:last-child):not(.is-fullwidth) {
-    margin-right: 0; }
 
   .main-menu {
     padding: 20px; }
@@ -4350,8 +4359,213 @@ body.voyager .pricing-top:before {
     padding: 20px 0px; }
 
   .pricing-body li {
-    font-size: 13px; } }
-/* small mobile :767px. */
+    font-size: 13px; }
+
+  /* ==============================================
+   appscode-home page start
+==============================================*/
+  body.fixed-nav #headerWhite {
+    position: inherit;
+    top: 0;
+    z-index: 99;
+    width: 100%; }
+
+  body.fixed-nav {
+    padding-top: 0 !important; }
+
+  .ac-megamenu {
+    box-shadow: none;
+    border-radius: 4px;
+    padding: 20px;
+    background: #fff;
+    position: inherit;
+    min-width: auto;
+    top: 40px;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s ease-in-out;
+    display: none; }
+
+  .is-6.br-1 {
+    border: none; }
+
+  .ac-is-hoverable:hover > .ac-megamenu,
+  .ac-is-hoverable:hover > .ac-dropdown {
+    opacity: 0;
+    visibility: hidden;
+    max-height: none;
+    top: 0;
+    display: none; }
+
+  .ac-megamenu.is-active {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important; }
+
+  .ac-megamenu.is-active .column {
+    padding: 0; }
+
+  .navbar-burger {
+    background: rgba(144, 144, 144, 0.05); }
+
+  .hero-area-content {
+    padding-right: 0; }
+
+  .hero-content-inner h1 {
+    font-size: 34px;
+    line-height: 50px !important; }
+
+  .hero-area .hero-shape {
+    width: 70%;
+    height: 100%;
+    min-height: auto; }
+  .hero-area .hero-right-content-wrapper .right-side-content-inner {
+    right: 0;
+    top: 60px;
+    width: 100%; }
+
+  .hero-area-button .ac-transparent-btn {
+    padding: 0;
+    margin: 20px 10px 10px 0px; }
+
+  .hero-area-content .play-buttons a span.video-icon {
+    margin-right: 10px; }
+
+  .hero-area-content .play-buttons {
+    margin-top: 10px; }
+
+  .section-padding.pb-0 {
+    padding-bottom: 0; }
+
+  .section-padding.pt-0 {
+    padding-top: 0; }
+
+  .service-content {
+    padding-left: 0;
+    padding-right: 0; }
+    .service-content h2 {
+      font-size: 22px;
+      line-height: 36px; }
+    .service-content p {
+      max-width: 100%; }
+
+  .kd-button,
+  .ac-button {
+    padding: 10px 40px; }
+
+  .counter-area .single-count-wrapper .count {
+    font-size: 28px; }
+  .counter-area .single-count-wrapper .name {
+    margin-bottom: 10px; }
+
+  .cta-bg-color-1 h1 {
+    font-size: 26px;
+    line-height: 40px; }
+
+  .cta-wrapper .mt-60 {
+    margin-top: 30px; }
+
+  .footer-top {
+    padding: 50px 0 0; }
+
+  /* ==============================================
+   appscode-home page end
+==============================================*/
+  /* ==============================================
+   appscode-home inner page start
+==============================================*/
+  .hero-area-2 .hero-area-inner-2 h1 {
+    font-size: 32px;
+    margin-bottom: 6px;
+    font-weight: 400; }
+  .hero-area-2 .hero-area-inner-2 p {
+    font-size: 16px; }
+
+  .about-text-area.section-padding {
+    padding-bottom: 0; }
+
+  .about-text-inner p {
+    margin-bottom: 0; }
+
+  .ceo-message-wrapper h1 {
+    font-size: 26px; }
+
+  .section-title {
+    margin-bottom: 30px; }
+
+  .consulting-inner h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 35px; }
+
+  .testimonial-area-2 .testimonial-wrapper h1 {
+    font-size: 22px;
+    line-height: 35px; }
+  .testimonial-area-2 .testimonial-wrapper .user-information {
+    float: left; }
+
+  .package-area .single-package-wrapper {
+    padding: 0; }
+
+  .contact-form {
+    margin: 0; }
+
+  .question-area .single-question-wrapper {
+    padding: 25px; }
+    .question-area .single-question-wrapper h4 {
+      font-size: 18px;
+      margin-bottom: 5px; }
+
+  .location-area .office-details {
+    padding: 0 0; }
+    .location-area .office-details h4 {
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 10px; }
+
+  .question-area .single-question-wrapper p {
+    font-size: 15px;
+    margin-bottom: 20px; }
+
+  .map-wrapper iframe {
+    height: auto; }
+
+  .training-wrapper-image .single-training-image-wrapper {
+    margin-right: 0;
+    margin-bottom: 20px; }
+    .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
+      transform: translateY(0px); }
+
+  .pricing-plan-area-2 .single-pricing {
+    padding: 50px 20px 30px; }
+    .pricing-plan-area-2 .single-pricing h2 {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 5px; }
+
+  .feature-area-2 .single-feature {
+    padding: 0; }
+
+  .cta-area-2 .cta-content h1 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 20px; }
+
+  .counter-area .single-count-wrapper .count-icon img {
+    width: 100%;
+    min-height: 120px; }
+
+  /* ==============================================
+   appscode-home inner page end
+==============================================*/ }
+/*  mobile :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .right-side-content-inner {
+    display: none; }
+
+  .contact-form .contact-form-inner {
+    position: inherit; } }
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .navbar-brand .navbar-item {
@@ -4538,7 +4752,8 @@ body.voyager .pricing-top:before {
   .is-6.br-1 {
     border: none; }
 
-  .ac-is-hoverable:hover > .ac-megamenu, .ac-is-hoverable:hover > .ac-dropdown {
+  .ac-is-hoverable:hover > .ac-megamenu,
+  .ac-is-hoverable:hover > .ac-dropdown {
     opacity: 0;
     visibility: hidden;
     max-height: none;
@@ -4587,12 +4802,11 @@ body.voyager .pricing-top:before {
   .service-content {
     padding-left: 0;
     padding-right: 0; }
-
-  .service-content h2 {
-    font-size: 22px;
-    line-height: 36px; }
-  .service-content p {
-    max-width: 100%; }
+    .service-content h2 {
+      font-size: 22px;
+      line-height: 36px; }
+    .service-content p {
+      max-width: 100%; }
 
   .kd-button,
   .ac-button {
@@ -4623,6 +4837,8 @@ body.voyager .pricing-top:before {
     font-size: 32px;
     margin-bottom: 6px;
     font-weight: 400; }
+  .hero-area-2 .hero-area-inner-2 p {
+    font-size: 16px; }
 
   .about-text-area.section-padding {
     padding-bottom: 0; }
@@ -4636,9 +4852,6 @@ body.voyager .pricing-top:before {
   .section-title {
     margin-bottom: 30px; }
 
-  .hero-area-2 .hero-area-inner-2 p {
-    font-size: 16px; }
-
   .consulting-inner h2 {
     font-size: 22px;
     margin-bottom: 20px;
@@ -4647,7 +4860,6 @@ body.voyager .pricing-top:before {
   .testimonial-area-2 .testimonial-wrapper h1 {
     font-size: 22px;
     line-height: 35px; }
-
   .testimonial-area-2 .testimonial-wrapper .user-information {
     float: left; }
 
@@ -4662,22 +4874,20 @@ body.voyager .pricing-top:before {
 
   .question-area .single-question-wrapper {
     padding: 25px; }
-
-  .question-area .single-question-wrapper h4 {
-    font-size: 18px;
-    margin-bottom: 5px; }
+    .question-area .single-question-wrapper h4 {
+      font-size: 18px;
+      margin-bottom: 5px; }
 
   .location-area .office-details {
     padding: 0 0; }
+    .location-area .office-details h4 {
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 10px; }
 
   .question-area .single-question-wrapper p {
     font-size: 15px;
     margin-bottom: 20px; }
-
-  .location-area .office-details h4 {
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 10px; }
 
   .map-wrapper iframe {
     height: auto; }
@@ -4685,17 +4895,15 @@ body.voyager .pricing-top:before {
   .training-wrapper-image .single-training-image-wrapper {
     margin-right: 0;
     margin-bottom: 20px; }
-
-  .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
-    transform: translateY(0px); }
-
-  .pricing-plan-area-2 .single-pricing h2 {
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 5px; }
+    .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
+      transform: translateY(0px); }
 
   .pricing-plan-area-2 .single-pricing {
     padding: 50px 20px 30px; }
+    .pricing-plan-area-2 .single-pricing h2 {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 5px; }
 
   .feature-area-2 .single-feature {
     padding: 0; }
@@ -4708,7 +4916,7 @@ body.voyager .pricing-top:before {
   /* ==============================================
    appscode-home inner page end
 ==============================================*/ }
-/* Large Mobile :480px. */
+/* small Mobile :480px. */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .section-padding {
     padding: 60px 0; }
@@ -4906,7 +5114,8 @@ body.voyager .pricing-top:before {
   .is-6.br-1 {
     border: none; }
 
-  .ac-is-hoverable:hover > .ac-megamenu, .ac-is-hoverable:hover > .ac-dropdown {
+  .ac-is-hoverable:hover > .ac-megamenu,
+  .ac-is-hoverable:hover > .ac-dropdown {
     opacity: 0;
     visibility: hidden;
     max-height: none;
@@ -4994,6 +5203,11 @@ body.voyager .pricing-top:before {
     font-size: 32px;
     margin-bottom: 6px;
     font-weight: 400; }
+  .hero-area-2 .hero-area-inner-2 p {
+    font-size: 16px; }
+
+  .right-side-content-inner {
+    display: none; }
 
   .about-text-area.section-padding {
     padding-bottom: 0; }
@@ -5007,9 +5221,6 @@ body.voyager .pricing-top:before {
   .section-title {
     margin-bottom: 30px; }
 
-  .hero-area-2 .hero-area-inner-2 p {
-    font-size: 16px; }
-
   .consulting-inner h2 {
     font-size: 22px;
     margin-bottom: 20px;
@@ -5018,37 +5229,34 @@ body.voyager .pricing-top:before {
   .testimonial-area-2 .testimonial-wrapper h1 {
     font-size: 22px;
     line-height: 35px; }
-
   .testimonial-area-2 .testimonial-wrapper .user-information {
     float: left; }
 
   .package-area .single-package-wrapper {
     padding: 0; }
+    .package-area .single-package-wrapper h4 {
+      margin-bottom: 0; }
 
   .contact-form {
     margin: 0; }
-
-  .contact-form .contact-form-inner {
-    position: inherit; }
+    .contact-form .contact-form-inner {
+      position: inherit; }
 
   .question-area .single-question-wrapper {
     padding: 25px; }
-
-  .question-area .single-question-wrapper h4 {
-    font-size: 18px;
-    margin-bottom: 5px; }
+    .question-area .single-question-wrapper h4 {
+      font-size: 18px;
+      margin-bottom: 5px; }
+    .question-area .single-question-wrapper p {
+      font-size: 15px;
+      margin-bottom: 20px; }
 
   .location-area .office-details {
     padding: 0 0; }
-
-  .question-area .single-question-wrapper p {
-    font-size: 15px;
-    margin-bottom: 20px; }
-
-  .location-area .office-details h4 {
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 10px; }
+    .location-area .office-details h4 {
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 10px; }
 
   .map-wrapper iframe {
     height: auto; }
@@ -5056,17 +5264,15 @@ body.voyager .pricing-top:before {
   .training-wrapper-image .single-training-image-wrapper {
     margin-right: 0;
     margin-bottom: 20px; }
-
-  .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
-    transform: translateY(0px); }
-
-  .pricing-plan-area-2 .single-pricing h2 {
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 5px; }
+    .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
+      transform: translateY(0px); }
 
   .pricing-plan-area-2 .single-pricing {
     padding: 50px 20px 30px; }
+    .pricing-plan-area-2 .single-pricing h2 {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 5px; }
 
   .feature-area-2 .single-feature {
     padding: 0; }
@@ -5075,6 +5281,10 @@ body.voyager .pricing-top:before {
     font-size: 32px;
     line-height: 44px;
     margin-bottom: 20px; }
+
+  .reverse-row-order {
+    display: flex;
+    flex-direction: column-reverse; }
 
   /* ==============================================
    appscode-home inner page end
