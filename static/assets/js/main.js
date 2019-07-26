@@ -37,6 +37,35 @@ navbarItems.forEach(navbarItem => {
   })
 })
 
+// map area-tabs
+var tabsMenus = document.querySelectorAll(".tabs-wrapper ul li")
+tabsMenus.forEach(tabItem => {
+  tabItem.addEventListener("click", function(){
+    // remove is-active from all the menus
+     tabsMenus.forEach(tabMenu => tabMenu.classList.remove("is-active"));
+
+     // add is-active to the clicked menu
+     tabItem.classList.add("is-active");
+
+     // activate map
+     var mapId = tabItem.getAttribute("href");
+
+     var mapElemUsa = document.getElementById("usa");
+     var mapElemDhaka = document.getElementById("dhaka");
+     
+     if (mapId === "usa") {
+       mapElemDhaka.classList.remove("is-active");
+       mapElemUsa.classList.add("is-active");
+     } else {
+      mapElemUsa.classList.remove("is-active");
+      mapElemDhaka.classList.add("is-active");
+     }
+  })
+})
+
+
+
+
 //for products page testimonial carousel
 bulmaCarousel.attach("#carousel-demo", {
   slidesToScroll: 1,

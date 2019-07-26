@@ -1099,7 +1099,7 @@ h6 {
     margin-bottom: 10px; }
   .single-solution-wrapper h4 {
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #242a31; }
   .single-solution-wrapper p {
     font-size: 16px;
@@ -1321,7 +1321,7 @@ section.our-customer-area {
       font-size: 18px; }
 
 .hero-area-2.bg-color-available:after {
-  background-color: #FBFBFB; }
+  background-color: #fbfbfb; }
 
 .illustration-area {
   min-height: 500px;
@@ -1477,7 +1477,7 @@ section.our-customer-area {
     top: 0; }
 
 .question-area {
-  background-color: #FBFBFB; }
+  background-color: #fbfbfb; }
   .question-area .single-question-wrapper {
     box-shadow: 0px 8px 57px rgba(26, 80, 151, 0.16);
     padding: 35px 45px;
@@ -4320,6 +4320,9 @@ body.voyager .pricing-top:before {
     right: -90px; } }
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 1087px) {
+  p {
+    font-size: 15px; }
+
   .section-padding {
     padding: 60px 0; }
 
@@ -4390,6 +4393,11 @@ body.voyager .pricing-top:before {
   .is-6.br-1 {
     border: none; }
 
+  .single-solution-wrapper {
+    min-height: 250px; }
+    .single-solution-wrapper p {
+      font-size: 15px; }
+
   .ac-is-hoverable:hover > .ac-megamenu,
   .ac-is-hoverable:hover > .ac-dropdown {
     opacity: 0;
@@ -4426,8 +4434,7 @@ body.voyager .pricing-top:before {
     width: 100%; }
 
   .hero-area-button .ac-transparent-btn {
-    padding: 0;
-    margin: 20px 10px 10px 0px; }
+    padding: 0; }
 
   .hero-area-content .play-buttons a span.video-icon {
     margin-right: 10px; }
@@ -4448,7 +4455,8 @@ body.voyager .pricing-top:before {
       font-size: 22px;
       line-height: 36px; }
     .service-content p {
-      max-width: 100%; }
+      max-width: 100%;
+      font-size: 15px; }
 
   .kd-button,
   .ac-button {
@@ -4482,9 +4490,6 @@ body.voyager .pricing-top:before {
   .hero-area-2 .hero-area-inner-2 p {
     font-size: 16px; }
 
-  .about-text-area.section-padding {
-    padding-bottom: 0; }
-
   .about-text-inner p {
     margin-bottom: 0; }
 
@@ -4498,6 +4503,8 @@ body.voyager .pricing-top:before {
     font-size: 22px;
     margin-bottom: 20px;
     line-height: 35px; }
+  .consulting-inner p {
+    font-size: 15px; }
 
   .testimonial-area-2 .testimonial-wrapper h1 {
     font-size: 22px;
@@ -4505,8 +4512,21 @@ body.voyager .pricing-top:before {
   .testimonial-area-2 .testimonial-wrapper .user-information {
     float: left; }
 
+  .single-testimonial-wrapper .testimonial-msg p {
+    font-size: 15px; }
+
   .package-area .single-package-wrapper {
-    padding: 0; }
+    padding: 10px;
+    width: 300px;
+    margin: 0 auto; }
+    .package-area .single-package-wrapper p {
+      font-size: 15px; }
+    .package-area .single-package-wrapper h4 {
+      margin-bottom: 5px;
+      line-height: 28px; }
+
+  .single-testimonial-wrapper .testimonial-msg p {
+    font-size: 15px; }
 
   .contact-form {
     margin: 0; }
@@ -4543,9 +4563,13 @@ body.voyager .pricing-top:before {
       font-size: 24px;
       line-height: 36px;
       margin-bottom: 5px; }
+    .pricing-plan-area-2 .single-pricing p {
+      font-size: 15px; }
 
   .feature-area-2 .single-feature {
     padding: 0; }
+    .feature-area-2 .single-feature p {
+      font-size: 15px; }
 
   .cta-area-2 .cta-content h1 {
     font-size: 32px;
@@ -4561,13 +4585,36 @@ body.voyager .pricing-top:before {
 ==============================================*/ }
 /*  mobile :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+  p {
+    font-size: 15px; }
+
   .right-side-content-inner {
     display: none; }
 
   .contact-form .contact-form-inner {
-    position: inherit; } }
+    position: inherit; }
+
+  .is-mobile.has-text-centered {
+    text-align: left !important; }
+
+  .has-text-right.is-mobile {
+    text-align: left !important; }
+
+  .single-package-wrapper {
+    padding: 30px; }
+    .single-package-wrapper p {
+      font-size: 15px; }
+    .single-package-wrapper h4 {
+      margin-bottom: 10px; }
+
+  .reverse-row-order {
+    display: flex;
+    flex-direction: column-reverse; } }
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  p {
+    font-size: 15px; }
+
   .navbar-brand .navbar-item {
     padding: 0; }
 
@@ -4752,6 +4799,11 @@ body.voyager .pricing-top:before {
   .is-6.br-1 {
     border: none; }
 
+  .single-solution-wrapper {
+    min-height: 250px; }
+    .single-solution-wrapper p {
+      font-size: 15px; }
+
   .ac-is-hoverable:hover > .ac-megamenu,
   .ac-is-hoverable:hover > .ac-dropdown {
     opacity: 0;
@@ -4782,6 +4834,8 @@ body.voyager .pricing-top:before {
     width: 70%;
     height: 100%;
     min-height: auto; }
+  .hero-area .right-side-content-inner {
+    display: none; }
 
   .hero-area-button .ac-transparent-btn {
     padding: 0;
@@ -4806,7 +4860,8 @@ body.voyager .pricing-top:before {
       font-size: 22px;
       line-height: 36px; }
     .service-content p {
-      max-width: 100%; }
+      max-width: 100%;
+      font-size: 15px; }
 
   .kd-button,
   .ac-button {
@@ -4856,6 +4911,8 @@ body.voyager .pricing-top:before {
     font-size: 22px;
     margin-bottom: 20px;
     line-height: 35px; }
+  .consulting-inner p {
+    font-size: 15px; }
 
   .testimonial-area-2 .testimonial-wrapper h1 {
     font-size: 22px;
@@ -4865,6 +4922,13 @@ body.voyager .pricing-top:before {
 
   .package-area .single-package-wrapper {
     padding: 0; }
+    .package-area .single-package-wrapper p {
+      font-size: 15px; }
+    .package-area .single-package-wrapper h4 {
+      margin-bottom: 10px; }
+
+  .single-testimonial-wrapper .testimonial-msg p {
+    font-size: 15px; }
 
   .contact-form {
     margin: 0; }
@@ -4904,20 +4968,31 @@ body.voyager .pricing-top:before {
       font-size: 24px;
       line-height: 36px;
       margin-bottom: 5px; }
+    .pricing-plan-area-2 .single-pricing p {
+      font-size: 15px; }
 
   .feature-area-2 .single-feature {
     padding: 0; }
+    .feature-area-2 .single-feature p {
+      font-size: 15px; }
 
   .cta-area-2 .cta-content h1 {
     font-size: 32px;
     line-height: 44px;
     margin-bottom: 20px; }
 
+  .reverse-row-order {
+    display: flex;
+    flex-direction: column-reverse; }
+
   /* ==============================================
    appscode-home inner page end
 ==============================================*/ }
 /* small Mobile :480px. */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+  p {
+    font-size: 15px; }
+
   .section-padding {
     padding: 60px 0; }
 
@@ -5114,6 +5189,11 @@ body.voyager .pricing-top:before {
   .is-6.br-1 {
     border: none; }
 
+  .single-solution-wrapper {
+    min-height: 250px; }
+    .single-solution-wrapper p {
+      font-size: 15px; }
+
   .ac-is-hoverable:hover > .ac-megamenu,
   .ac-is-hoverable:hover > .ac-dropdown {
     opacity: 0;
@@ -5167,12 +5247,12 @@ body.voyager .pricing-top:before {
   .service-content {
     padding-left: 0;
     padding-right: 0; }
-
-  .service-content h2 {
-    font-size: 22px;
-    line-height: 36px; }
-  .service-content p {
-    max-width: 100%; }
+    .service-content h2 {
+      font-size: 22px;
+      line-height: 36px; }
+    .service-content p {
+      max-width: 100%;
+      font-size: 15px; }
 
   .kd-button,
   .ac-button {
@@ -5223,8 +5303,10 @@ body.voyager .pricing-top:before {
 
   .consulting-inner h2 {
     font-size: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     line-height: 35px; }
+  .consulting-inner p {
+    font-size: 15px; }
 
   .testimonial-area-2 .testimonial-wrapper h1 {
     font-size: 22px;
@@ -5236,6 +5318,11 @@ body.voyager .pricing-top:before {
     padding: 0; }
     .package-area .single-package-wrapper h4 {
       margin-bottom: 0; }
+    .package-area .single-package-wrapper p {
+      font-size: 15px; }
+
+  .single-testimonial-wrapper .testimonial-msg p {
+    font-size: 15px; }
 
   .contact-form {
     margin: 0; }
@@ -5273,9 +5360,13 @@ body.voyager .pricing-top:before {
       font-size: 24px;
       line-height: 36px;
       margin-bottom: 5px; }
+    .pricing-plan-area-2 .single-pricing p {
+      font-size: 15px; }
 
   .feature-area-2 .single-feature {
     padding: 0; }
+    .feature-area-2 .single-feature p {
+      font-size: 15px; }
 
   .cta-area-2 .cta-content h1 {
     font-size: 32px;
