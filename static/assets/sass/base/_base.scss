@@ -236,7 +236,7 @@ body.fixed-nav #headerWhite{
   margin-left: 15px;
 }
 .ac-transparent-btn {
-  color: $ac-primary-color;
+  color: $appscode-primary;
   font-weight: 600;
   border: none;
   background: transparent;
@@ -1212,7 +1212,7 @@ ul li b {
 .appscode-style.full-info ul li p a
 .appscode-style.full-info p a,
 .appscode-style.full-info a{
-  color: $ac-primary-color;
+  color: $appscode-primary;
 }
 
 /* Right Sidebar For Documentation page */
@@ -1664,7 +1664,7 @@ button.button.is-fullwidth {
   background: #fff;
 }
 .appscode-style .item input:checked ~ label > a{
-  color: $ac-primary-color;
+  color: $appscode-primary;
 }
 .kd-left-sidebar {
   margin-right: 30px;
@@ -1823,34 +1823,37 @@ p.intro {
   background: #fef0d9;
 }
 .single-product-item.is-voyager:hover {
-  background: #fef0d9;
+  background: transparentize($voyager-primary, .8);
+}
+.single-product-item.is-kubed:hover {
+  background: transparentize($kubed-primary, .8);
 }
 .single-product-item.is-kubedb:hover {
-  background: #aaf0d9;
+  background: transparentize($primary-color,.8);
 }
 .single-product-item.is-stash:hover {
-  background: #fefaa9;
+  background: transparentize($stash-primary, .8);
 }
-.single-product-item.is-elasticsearch:hover {
-  background: #fef0d9;
+.single-product-item.is-kubevault:hover {
+  background: transparentize($kubevault-primary, .8);
 }
 .single-product-item.is-searchlight:hover {
-  background: #fef0aa;
+  background: transparentize($searchlight-primary, .8);
 }
 .single-product-item.is-guard:hover {
-  background: #fef0d9;
+  background: transparentize($guard-primary, .8);
 }
 .single-product-item.is-broker:hover {
-  background: #fef0d9;
+  background: transparentize($service-broker-primary, .8);
 }
 .single-product-item.is-pharmer:hover {
-  background: #fef0dd;
+  background: transparentize($pharmer-primary, .8);
 }
-.single-product-item.is-postgres:hover {
-  background: #fbb0d9;
+.single-product-item.is-kubeshield:hover {
+  background: transparentize($kubesheild-primary, .8);
 }
 .single-product-item.is-swift:hover {
-  background: #fefaa9;
+  background: transparentize($swift-primary, .8);
 }
 .single-product-item .learn-more-btn {
   padding: 0;

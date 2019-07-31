@@ -51,6 +51,7 @@
   body.#{$name} .single-count-wrapper .action-btn,
   body.#{$name} .subscription-form .button,
   body.#{$name} .section-title h4,
+  body.#{$name} .hero-content-inner h4,
   body.#{$name} .single-search-result h3 a {
     color: #{$color};
   }
@@ -72,7 +73,6 @@
   body.#{$name} .pricing-top:before {
     border-right-color: darken($color, 15%);
   }
-
   /*==================================================
                   Theme #{$name} End
   ====================================================*/

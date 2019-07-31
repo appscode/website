@@ -1,4 +1,2 @@
-// Colour variable
-$appscode-primary: #00A651;
-
+// Colour include
 @include colorize-product("appscode", $appscode-primary);

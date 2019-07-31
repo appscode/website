@@ -3125,34 +3125,37 @@ p.intro {
   background: #fef0d9; }
 
 .single-product-item.is-voyager:hover {
-  background: #fef0d9; }
+  background: rgba(45, 42, 120, 0.2); }
+
+.single-product-item.is-kubed:hover {
+  background: rgba(28, 123, 212, 0.2); }
 
 .single-product-item.is-kubedb:hover {
-  background: #aaf0d9; }
+  background: rgba(77, 77, 203, 0.2); }
 
 .single-product-item.is-stash:hover {
-  background: #fefaa9; }
+  background: rgba(94, 45, 234, 0.2); }
 
-.single-product-item.is-elasticsearch:hover {
-  background: #fef0d9; }
+.single-product-item.is-kubevault:hover {
+  background: rgba(50, 108, 229, 0.2); }
 
 .single-product-item.is-searchlight:hover {
-  background: #fef0aa; }
+  background: rgba(70, 205, 207, 0.2); }
 
 .single-product-item.is-guard:hover {
-  background: #fef0d9; }
+  background: rgba(216, 78, 39, 0.2); }
 
 .single-product-item.is-broker:hover {
-  background: #fef0d9; }
+  background: rgba(41, 180, 162, 0.2); }
 
 .single-product-item.is-pharmer:hover {
-  background: #fef0dd; }
+  background: rgba(241, 133, 40, 0.2); }
 
-.single-product-item.is-postgres:hover {
-  background: #fbb0d9; }
+.single-product-item.is-kubeshield:hover {
+  background: rgba(37, 22, 199, 0.2); }
 
 .single-product-item.is-swift:hover {
-  background: #fefaa9; }
+  background: rgba(230, 126, 34, 0.2); }
 
 .single-product-item .learn-more-btn {
   padding: 0;
@@ -3452,6 +3455,7 @@ body.appscode .single-count-wrapper:hover .count,
 body.appscode .single-count-wrapper .action-btn,
 body.appscode .subscription-form .button,
 body.appscode .section-title h4,
+body.appscode .hero-content-inner h4,
 body.appscode .single-search-result h3 a {
   color: #00A651; }
 
@@ -3493,7 +3497,7 @@ body.guard .subscription-form .button:hover,
 body.guard .searchbar-area button,
 body.guard .countdown-area .right-sidebar-menu ul li a::after,
 body.guard .pagination-list li a.is-active {
-  background-color: #3498db; }
+  background-color: #D84E27; }
 
 body.guard .kd-transparent-btn,
 body.guard .carousel-wrapper:after,
@@ -3524,8 +3528,9 @@ body.guard .single-count-wrapper:hover .count,
 body.guard .single-count-wrapper .action-btn,
 body.guard .subscription-form .button,
 body.guard .section-title h4,
+body.guard .hero-content-inner h4,
 body.guard .single-search-result h3 a {
-  color: #3498db; }
+  color: #D84E27; }
 
 body.guard .star-count::before,
 body.guard .accordion-item.active,
@@ -3539,10 +3544,10 @@ body.guard .textarea.is-focused,
 body.guard .textarea:active,
 body.guard .textarea:focus,
 body.guard .subscription-form .input:hover {
-  border-color: #3498db; }
+  border-color: #D84E27; }
 
 body.guard .pricing-top:before {
-  border-right-color: #1d6fa5; }
+  border-right-color: #97371b; }
 
 /*==================================================
                 Theme guard End
@@ -3596,6 +3601,7 @@ body.kubeci .single-count-wrapper:hover .count,
 body.kubeci .single-count-wrapper .action-btn,
 body.kubeci .subscription-form .button,
 body.kubeci .section-title h4,
+body.kubeci .hero-content-inner h4,
 body.kubeci .single-search-result h3 a {
   color: #2c3e50; }
 
@@ -3637,7 +3643,7 @@ body.kubed .subscription-form .button:hover,
 body.kubed .searchbar-area button,
 body.kubed .countdown-area .right-sidebar-menu ul li a::after,
 body.kubed .pagination-list li a.is-active {
-  background-color: #8854d0; }
+  background-color: #1C7BD4; }
 
 body.kubed .kd-transparent-btn,
 body.kubed .carousel-wrapper:after,
@@ -3668,8 +3674,9 @@ body.kubed .single-count-wrapper:hover .count,
 body.kubed .single-count-wrapper .action-btn,
 body.kubed .subscription-form .button,
 body.kubed .section-title h4,
+body.kubed .hero-content-inner h4,
 body.kubed .single-search-result h3 a {
-  color: #8854d0; }
+  color: #1C7BD4; }
 
 body.kubed .star-count::before,
 body.kubed .accordion-item.active,
@@ -3683,10 +3690,10 @@ body.kubed .textarea.is-focused,
 body.kubed .textarea:active,
 body.kubed .textarea:focus,
 body.kubed .subscription-form .input:hover {
-  border-color: #8854d0; }
+  border-color: #1C7BD4; }
 
 body.kubed .pricing-top:before {
-  border-right-color: #622ea9; }
+  border-right-color: #135490; }
 
 /*==================================================
                 Theme kubed End
@@ -3709,7 +3716,7 @@ body.kubesheild .subscription-form .button:hover,
 body.kubesheild .searchbar-area button,
 body.kubesheild .countdown-area .right-sidebar-menu ul li a::after,
 body.kubesheild .pagination-list li a.is-active {
-  background-color: #95a5a6; }
+  background-color: #2516C7; }
 
 body.kubesheild .kd-transparent-btn,
 body.kubesheild .carousel-wrapper:after,
@@ -3740,8 +3747,9 @@ body.kubesheild .single-count-wrapper:hover .count,
 body.kubesheild .single-count-wrapper .action-btn,
 body.kubesheild .subscription-form .button,
 body.kubesheild .section-title h4,
+body.kubesheild .hero-content-inner h4,
 body.kubesheild .single-search-result h3 a {
-  color: #95a5a6; }
+  color: #2516C7; }
 
 body.kubesheild .star-count::before,
 body.kubesheild .accordion-item.active,
@@ -3755,10 +3763,10 @@ body.kubesheild .textarea.is-focused,
 body.kubesheild .textarea:active,
 body.kubesheild .textarea:focus,
 body.kubesheild .subscription-form .input:hover {
-  border-color: #95a5a6; }
+  border-color: #2516C7; }
 
 body.kubesheild .pricing-top:before {
-  border-right-color: #6d8082; }
+  border-right-color: #180e82; }
 
 /*==================================================
                 Theme kubesheild End
@@ -3781,7 +3789,7 @@ body.kubevault .subscription-form .button:hover,
 body.kubevault .searchbar-area button,
 body.kubevault .countdown-area .right-sidebar-menu ul li a::after,
 body.kubevault .pagination-list li a.is-active {
-  background-color: #0fb9b1; }
+  background-color: #326CE5; }
 
 body.kubevault .kd-transparent-btn,
 body.kubevault .carousel-wrapper:after,
@@ -3812,8 +3820,9 @@ body.kubevault .single-count-wrapper:hover .count,
 body.kubevault .single-count-wrapper .action-btn,
 body.kubevault .subscription-form .button,
 body.kubevault .section-title h4,
+body.kubevault .hero-content-inner h4,
 body.kubevault .single-search-result h3 a {
-  color: #0fb9b1; }
+  color: #326CE5; }
 
 body.kubevault .star-count::before,
 body.kubevault .accordion-item.active,
@@ -3827,10 +3836,10 @@ body.kubevault .textarea.is-focused,
 body.kubevault .textarea:active,
 body.kubevault .textarea:focus,
 body.kubevault .subscription-form .input:hover {
-  border-color: #0fb9b1; }
+  border-color: #326CE5; }
 
 body.kubevault .pricing-top:before {
-  border-right-color: #09726d; }
+  border-right-color: #174ab4; }
 
 /*==================================================
                 Theme kubevault End
@@ -3853,7 +3862,7 @@ body.pharmer .subscription-form .button:hover,
 body.pharmer .searchbar-area button,
 body.pharmer .countdown-area .right-sidebar-menu ul li a::after,
 body.pharmer .pagination-list li a.is-active {
-  background-color: #8e44ad; }
+  background-color: #F18528; }
 
 body.pharmer .kd-transparent-btn,
 body.pharmer .carousel-wrapper:after,
@@ -3884,8 +3893,9 @@ body.pharmer .single-count-wrapper:hover .count,
 body.pharmer .single-count-wrapper .action-btn,
 body.pharmer .subscription-form .button,
 body.pharmer .section-title h4,
+body.pharmer .hero-content-inner h4,
 body.pharmer .single-search-result h3 a {
-  color: #8e44ad; }
+  color: #F18528; }
 
 body.pharmer .star-count::before,
 body.pharmer .accordion-item.active,
@@ -3899,10 +3909,10 @@ body.pharmer .textarea.is-focused,
 body.pharmer .textarea:active,
 body.pharmer .textarea:focus,
 body.pharmer .subscription-form .input:hover {
-  border-color: #8e44ad; }
+  border-color: #F18528; }
 
 body.pharmer .pricing-top:before {
-  border-right-color: #612e76; }
+  border-right-color: #c0600d; }
 
 /*==================================================
                 Theme pharmer End
@@ -3925,7 +3935,7 @@ body.searchlight .subscription-form .button:hover,
 body.searchlight .searchbar-area button,
 body.searchlight .countdown-area .right-sidebar-menu ul li a::after,
 body.searchlight .pagination-list li a.is-active {
-  background-color: #2ecc71; }
+  background-color: #46CDCF; }
 
 body.searchlight .kd-transparent-btn,
 body.searchlight .carousel-wrapper:after,
@@ -3956,8 +3966,9 @@ body.searchlight .single-count-wrapper:hover .count,
 body.searchlight .single-count-wrapper .action-btn,
 body.searchlight .subscription-form .button,
 body.searchlight .section-title h4,
+body.searchlight .hero-content-inner h4,
 body.searchlight .single-search-result h3 a {
-  color: #2ecc71; }
+  color: #46CDCF; }
 
 body.searchlight .star-count::before,
 body.searchlight .accordion-item.active,
@@ -3971,10 +3982,10 @@ body.searchlight .textarea.is-focused,
 body.searchlight .textarea:active,
 body.searchlight .textarea:focus,
 body.searchlight .subscription-form .input:hover {
-  border-color: #2ecc71; }
+  border-color: #46CDCF; }
 
 body.searchlight .pricing-top:before {
-  border-right-color: #208e4e; }
+  border-right-color: #299d9f; }
 
 /*==================================================
                 Theme searchlight End
@@ -3997,7 +4008,7 @@ body.service-broker .subscription-form .button:hover,
 body.service-broker .searchbar-area button,
 body.service-broker .countdown-area .right-sidebar-menu ul li a::after,
 body.service-broker .pagination-list li a.is-active {
-  background-color: #a5b1c2; }
+  background-color: #29B4A2; }
 
 body.service-broker .kd-transparent-btn,
 body.service-broker .carousel-wrapper:after,
@@ -4028,8 +4039,9 @@ body.service-broker .single-count-wrapper:hover .count,
 body.service-broker .single-count-wrapper .action-btn,
 body.service-broker .subscription-form .button,
 body.service-broker .section-title h4,
+body.service-broker .hero-content-inner h4,
 body.service-broker .single-search-result h3 a {
-  color: #a5b1c2; }
+  color: #29B4A2; }
 
 body.service-broker .star-count::before,
 body.service-broker .accordion-item.active,
@@ -4043,10 +4055,10 @@ body.service-broker .textarea.is-focused,
 body.service-broker .textarea:active,
 body.service-broker .textarea:focus,
 body.service-broker .subscription-form .input:hover {
-  border-color: #a5b1c2; }
+  border-color: #29B4A2; }
 
 body.service-broker .pricing-top:before {
-  border-right-color: #7789a3; }
+  border-right-color: #1b766a; }
 
 /*==================================================
                 Theme service-broker End
@@ -4069,7 +4081,7 @@ body.stash .subscription-form .button:hover,
 body.stash .searchbar-area button,
 body.stash .countdown-area .right-sidebar-menu ul li a::after,
 body.stash .pagination-list li a.is-active {
-  background-color: #f39c12; }
+  background-color: #5E2DEA; }
 
 body.stash .kd-transparent-btn,
 body.stash .carousel-wrapper:after,
@@ -4100,8 +4112,9 @@ body.stash .single-count-wrapper:hover .count,
 body.stash .single-count-wrapper .action-btn,
 body.stash .subscription-form .button,
 body.stash .section-title h4,
+body.stash .hero-content-inner h4,
 body.stash .single-search-result h3 a {
-  color: #f39c12; }
+  color: #5E2DEA; }
 
 body.stash .star-count::before,
 body.stash .accordion-item.active,
@@ -4115,10 +4128,10 @@ body.stash .textarea.is-focused,
 body.stash .textarea:active,
 body.stash .textarea:focus,
 body.stash .subscription-form .input:hover {
-  border-color: #f39c12; }
+  border-color: #5E2DEA; }
 
 body.stash .pricing-top:before {
-  border-right-color: #b06f09; }
+  border-right-color: #3d12b8; }
 
 /*==================================================
                 Theme stash End
@@ -4172,6 +4185,7 @@ body.swift .single-count-wrapper:hover .count,
 body.swift .single-count-wrapper .action-btn,
 body.swift .subscription-form .button,
 body.swift .section-title h4,
+body.swift .hero-content-inner h4,
 body.swift .single-search-result h3 a {
   color: #e67e22; }
 
@@ -4213,7 +4227,7 @@ body.voyager .subscription-form .button:hover,
 body.voyager .searchbar-area button,
 body.voyager .countdown-area .right-sidebar-menu ul li a::after,
 body.voyager .pagination-list li a.is-active {
-  background-color: #f1c40f; }
+  background-color: #2D2A78; }
 
 body.voyager .kd-transparent-btn,
 body.voyager .carousel-wrapper:after,
@@ -4244,8 +4258,9 @@ body.voyager .single-count-wrapper:hover .count,
 body.voyager .single-count-wrapper .action-btn,
 body.voyager .subscription-form .button,
 body.voyager .section-title h4,
+body.voyager .hero-content-inner h4,
 body.voyager .single-search-result h3 a {
-  color: #f1c40f; }
+  color: #2D2A78; }
 
 body.voyager .star-count::before,
 body.voyager .accordion-item.active,
@@ -4259,10 +4274,10 @@ body.voyager .textarea.is-focused,
 body.voyager .textarea:active,
 body.voyager .textarea:focus,
 body.voyager .subscription-form .input:hover {
-  border-color: #f1c40f; }
+  border-color: #2D2A78; }
 
 body.voyager .pricing-top:before {
-  border-right-color: #aa8a0a; }
+  border-right-color: #18163f; }
 
 /*==================================================
                 Theme voyager End

@@ -1,4 +1,2 @@
-// Colour variable
-$guard-primary: #3498db;
-
+// Colour include
 @include colorize-product("guard", $guard-primary);
