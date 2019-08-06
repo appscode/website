@@ -2,8 +2,8 @@
 @media (min-width: 1200px) and (max-width: 1500px) {
 }
 
-/* Normal desktop :1088px. */
-@media (min-width: 1088px) and (max-width: 1500px) {
+/* Normal desktop :1024px. */
+@media (min-width: 1216px) and (max-width: 1407px) {
   .single-db-logo {
     margin: 10px;
     padding: 10px;
@@ -51,6 +51,12 @@
     font-size: 13px;
   }
   // appscode style start
+  .main-menu.is-bg-available .navbar-item, .main-menu.is-bg-available .navbar-link{
+    color: $link-color;
+  }
+  .is-full-height{
+    height: auto;
+  }
   .hero-area {
     .hero-shape {
       background-position-y: top;
@@ -76,8 +82,8 @@
   // appscode style end
 }
 
-/* Tablet desktop :768px. */
-@media (min-width: 768px) and (max-width: 1087px) {
+/*  desktop :768px. */
+@media (min-width: 1024px) and (max-width:1215px) {
   p {
     font-size: 15px;
   }
@@ -135,13 +141,22 @@
   /* ==============================================
    appscode-home page start
 ==============================================*/
+.is-full-height{
+  height: 100%;
+}
+.main-menu.is-bg-available .navbar-item, .main-menu.is-bg-available .navbar-link {
+  color: $link-color;
+}
   // mega-menu start
-  body.fixed-nav #headerWhite {
-    position: inherit;
+  body.fixed-nav .is-fixed-absolute {
     top: 0;
     z-index: 99;
     width: 100%;
   }
+  .main-menu {
+    overflow-y: auto;
+    max-height: 70vh;
+}
   body.fixed-nav {
     padding-top: 0 !important;
   }
@@ -200,8 +215,11 @@
   }
   // hero-area button style
   .hero-area {
+    .trusted-logo{
+      margin-top: 0;
+    }
     .hero-shape {
-      width: 70%;
+      width: 50%;
       height: 100%;
       min-height: auto;
     }
@@ -340,7 +358,7 @@
       p {
         font-size: 15px;
       }
-      h4{
+      h4 {
         margin-bottom: 5px;
         line-height: 28px;
       }
@@ -408,7 +426,7 @@
         line-height: 36px;
         margin-bottom: 5px;
       }
-      p{
+      p {
         font-size: 15px;
       }
     }
@@ -416,7 +434,7 @@
   .feature-area-2 {
     .single-feature {
       padding: 0;
-      p{
+      p {
         font-size: 15px;
       }
     }
@@ -445,8 +463,8 @@
 ==============================================*/
 }
 
-/*  mobile :768px. */
-@media (min-width: 768px) and (max-width: 991px) {
+/*  tablet :769px. */
+@media (min-width: 769px) and (max-width:1023px) {
   p {
     font-size: 15px;
   }
@@ -455,6 +473,7 @@
   }
   .contact-form {
     .contact-form-inner {
+      top: 0;
       position: inherit;
     }
   }
@@ -465,11 +484,11 @@
     text-align: left !important;
   }
   .single-package-wrapper {
-    padding:30px;
+    padding: 30px;
     p {
       font-size: 15px;
     }
-    h4{
+    h4 {
       margin-bottom: 10px;
     }
   }
@@ -480,493 +499,8 @@
   }
 }
 
-/* Large Mobile :480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  p {
-    font-size: 15px;
-  }
-  .navbar-brand .navbar-item {
-    padding: 0;
-  }
-  .has-text-right.is-mobile {
-    text-align: left !important;
-  }
-
-  .is-mobile.has-text-centered {
-    text-align: left !important;
-  }
-  .main-menu a {
-    padding: 5px 0;
-  }
-
-  .main-menu {
-    padding: 20px;
-  }
-
-  .main-menu-button .button {
-    padding: 6px 20px;
-  }
-  .navbar-item {
-    padding: 5px 0 0;
-  }
-
-  .hero-area-button {
-    margin-top: 20px;
-  }
-
-  .hero-content-inner h1 {
-    font-size: 31px;
-    line-height: 45px;
-  }
-
-  .hero-content-inner h4 {
-    margin-bottom: 10px;
-  }
-
-  .kd-transparent-btn {
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-  }
-
-  .kd-button {
-    padding: 10px 30px;
-    margin: 0;
-    height: auto;
-    font-size: 14px;
-  }
-
-  .hero-area {
-    padding: 50px 0;
-  }
-  .hero-area-img {
-    position: initial;
-  }
-  .hero-area-img img {
-    position: absolute;
-    top: 0;
-    opacity: 0.1;
-    max-width: 400px;
-    right: 0;
-  }
-
-  .feature-video {
-    padding: 100px;
-    margin-bottom: 20px;
-  }
-
-  .section-padding {
-    padding: 30px 0;
-  }
-
-  .feature-area .feature-content {
-    padding: 0;
-  }
-
-  .feature-content h2 {
-    font-size: 24px;
-    line-height: 40px;
-    margin-bottom: 15px;
-  }
-
-  .feature-content p {
-    margin-bottom: 15px;
-  }
-
-  .db-logo-area {
-    padding: 0;
-    overflow: hidden;
-  }
-
-  .single-db-logo {
-    box-shadow: none !important;
-    border: 1px solid #ebebeb !important;
-    padding: 10px;
-    margin: 10px 0 !important;
-    width: auto;
-    margin-right: 10px !important;
-    max-height: 70px;
-  }
-
-  .section-title h2 {
-    font-size: 22px;
-    margin-bottom: 30px;
-  }
-
-  .carousel-wrapper {
-    padding: 30px 15px;
-  }
-
-  .cta-padding {
-    padding: 20px;
-  }
-
-  .cta-text h2 {
-    font-size: 25px;
-  }
-
-  .cta-text p {
-    font-size: 18px;
-    margin: 0;
-  }
-
-  .footer-menu h4 {
-    margin-bottom: 0px;
-  }
-  /* ==============================================
-    Support Page Responsive Code
- ==============================================*/
-  /* Pricing table style */
-  .pricing-body li:before {
-    content: attr(data-col_name);
-    position: relative;
-    display: block;
-    float: left;
-    width: 50%;
-    text-align: left;
-    font-weight: 500;
-    font-size: 14px;
-  }
-  .pricing-body li {
-    display: inline-block;
-    text-align: left;
-    font-size: 14px;
-    height: auto;
-  }
-  .pricing-body li span:before {
-    content: ": ";
-    margin-right: 15px;
-  }
-  .single-pricing-table.details .pricing-body {
-    display: none;
-  }
-  .pricing-type .select select {
-    width: 100%;
-  }
-  .single-pricing-table .pricing-body {
-    border: 1px solid #dedede !important;
-    border-radius: 8px;
-  }
-  .pricing-body {
-    margin-bottom: 20px !important;
-  }
-  .single-pricing-table.free,
-  .single-pricing-table.gold,
-  .single-pricing-table.plutinum {
-    margin-top: 0;
-  }
-  .payment-method-area {
-    margin-top: 0;
-  }
-  .single-payment-methode {
-    margin: 0;
-    padding: 15px;
-  }
-
-  /* ==============================================
-   appscode-home page start
-==============================================*/
-  // mega-menu start
-  body.fixed-nav #headerWhite {
-    position: inherit;
-    top: 0;
-    z-index: 99;
-    width: 100%;
-  }
-  body.fixed-nav {
-    padding-top: 0 !important;
-  }
-  .ac-megamenu {
-    box-shadow: none;
-    border-radius: 4px;
-    padding: 20px;
-    background: #fff;
-    position: inherit;
-    min-width: auto;
-    top: 40px;
-    transform: translateX(-50%);
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.1s ease-in-out;
-    display: none;
-  }
-  .is-6.br-1 {
-    border: none;
-  }
-  .single-solution-wrapper {
-    min-height: 250px;
-    p {
-      font-size: 15px;
-    }
-  }
-  .ac-is-hoverable:hover > .ac-megamenu,
-  .ac-is-hoverable:hover > .ac-dropdown {
-    opacity: 0;
-    visibility: hidden;
-    max-height: none;
-    top: 0;
-    display: none;
-  }
-  .ac-megamenu.is-active {
-    opacity: 1 !important;
-    visibility: visible !important;
-    display: block !important;
-  }
-  .ac-megamenu.is-active .column {
-    padding: 0;
-  }
-  // mega-menu end
-
-  .navbar-burger {
-    background: rgba(144, 144, 144, 0.05);
-  }
-  .hero-area-content {
-    padding-right: 0;
-  }
-  .hero-content-inner {
-    h1 {
-      font-size: 24px;
-      line-height: 35px !important;
-    }
-  }
-  // hero-area button style
-  .hero-area {
-    .hero-shape {
-      width: 70%;
-      height: 100%;
-      min-height: auto;
-    }
-    .right-side-content-inner {
-      display: none;
-    }
-  }
-
-  .hero-area-button .ac-transparent-btn {
-    padding: 0;
-    margin: 20px 10px 10px 0px;
-  }
-  .hero-area-content {
-    .play-buttons {
-      a {
-        span.video-icon {
-          margin-right: 10px;
-        }
-      }
-    }
-  }
-  .hero-area-content {
-    .play-buttons {
-      margin-top: 10px;
-    }
-  }
-  .section-padding.pb-0 {
-    padding-bottom: 0;
-  }
-  .section-padding.pt-0 {
-    padding-top: 0;
-  }
-  .service-content {
-    padding-left: 0;
-    padding-right: 0;
-    h2 {
-      font-size: 22px;
-      line-height: 36px;
-    }
-    p {
-      max-width: 100%;
-      font-size: 15px;
-    }
-  }
-  .kd-button,
-  .ac-button {
-    padding: 10px 40px;
-  }
-  .counter-area {
-    .single-count-wrapper {
-      .count {
-        font-size: 28px;
-      }
-      .name {
-        margin-bottom: 10px;
-      }
-    }
-  }
-
-  .cta-bg-color-1 {
-    h1 {
-      font-size: 26px;
-      line-height: 40px;
-    }
-  }
-  .cta-wrapper {
-    .mt-60 {
-      margin-top: 30px;
-    }
-  }
-  .footer-top {
-    padding: 50px 0 0;
-  }
-  /* ==============================================
-   appscode-home page end
-==============================================*/
-  /* ==============================================
-   appscode-home inner page start
-==============================================*/
-  .hero-area-2 {
-    .hero-area-inner-2 {
-      h1 {
-        font-size: 32px;
-        margin-bottom: 6px;
-        font-weight: 400;
-      }
-      p {
-        font-size: 16px;
-      }
-    }
-  }
-  .about-text-area.section-padding {
-    padding-bottom: 0;
-  }
-  .about-text-inner p {
-    margin-bottom: 0;
-  }
-  .ceo-message-wrapper h1 {
-    font-size: 26px;
-  }
-  .section-title {
-    margin-bottom: 30px;
-  }
-  .consulting-inner {
-    h2 {
-      font-size: 22px;
-      margin-bottom: 20px;
-      line-height: 35px;
-    }
-    p {
-      font-size: 15px;
-    }
-  }
-  .testimonial-area-2 {
-    .testimonial-wrapper {
-      h1 {
-        font-size: 22px;
-        line-height: 35px;
-      }
-      .user-information {
-        float: left;
-      }
-    }
-  }
-  .package-area {
-    .single-package-wrapper {
-      padding: 0;
-      p {
-        font-size: 15px;
-      }
-      h4{
-        margin-bottom: 10px;
-      }
-    }
-  }
-  .single-testimonial-wrapper {
-    .testimonial-msg {
-      p {
-        font-size: 15px;
-      }
-    }
-  }
-  // contact form style
-  .contact-form {
-    margin: 0;
-  }
-  .contact-form {
-    .contact-form-inner {
-      position: inherit;
-    }
-  }
-  .question-area {
-    .single-question-wrapper {
-      padding: 25px;
-      h4 {
-        font-size: 18px;
-        margin-bottom: 5px;
-      }
-    }
-  }
-  .location-area {
-    .office-details {
-      padding: 0 0;
-      h4 {
-        font-size: 18px;
-        line-height: 30px;
-        margin-bottom: 10px;
-      }
-    }
-  }
-  .question-area {
-    .single-question-wrapper {
-      p {
-        font-size: 15px;
-        margin-bottom: 20px;
-      }
-    }
-  }
-  .map-wrapper {
-    iframe {
-      height: auto;
-    }
-  }
-  .training-wrapper-image {
-    .single-training-image-wrapper {
-      margin-right: 0;
-      margin-bottom: 20px;
-      &:nth-child(even) {
-        transform: translateY(0px);
-      }
-    }
-  }
-  .pricing-plan-area-2 {
-    .single-pricing {
-      padding: 50px 20px 30px;
-      h2 {
-        font-size: 24px;
-        line-height: 36px;
-        margin-bottom: 5px;
-      }
-      p{
-        font-size: 15px;
-      }
-    }
-  }
-  .feature-area-2 {
-    .single-feature {
-      padding: 0;
-      p{
-        font-size: 15px;
-      }
-    }
-  }
-  .cta-area-2 {
-    .cta-content {
-      h1 {
-        font-size: 32px;
-        line-height: 44px;
-        margin-bottom: 20px;
-      }
-    }
-  }
-  //reverse order css
-  .reverse-row-order {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  /* ==============================================
-   appscode-home inner page end
-==============================================*/
-}
-
-/* small Mobile :480px. */
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+/* small Mobile :768px. */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   p {
     font-size: 15px;
   }
@@ -1029,7 +563,7 @@
   }
 
   .hero-area {
-    padding: 0;
+    padding: 20px 0 0;
   }
   .hero-area-img {
     position: initial;
@@ -1169,15 +703,38 @@
   }
 
   /* ==============================================
+   Product page  start
+==============================================*/
+.customize-kubedb .main-menu a{
+  color: $link-color;
+}
+  /* ==============================================
+   Product page  end
+==============================================*/
+
+
+  /* ==============================================
    appscode-home page start
 ==============================================*/
   // mega-menu start
-  body.fixed-nav #headerWhite {
-    position: inherit;
+  body.fixed-nav .is-fixed-absolute {
     top: 0;
     z-index: 99;
     width: 100%;
   }
+  .main-menu {
+    overflow-y: auto;
+    max-height: 70vh;
+  }
+  .main-menu.is-bg-available .navbar-item, .main-menu.is-bg-available .navbar-link{
+    color: $link-color;
+  }
+  .main-menu.is-bg-available
+  .navbar-link:not(.is-arrowless)::after,
+  .main-menu.is-bg-available
+  .select:not(.is-multiple):not(.is-loading)::after {
+  border-color: $appscode-primary;
+}
   body.fixed-nav {
     padding-top: 0 !important;
   }
@@ -1237,14 +794,20 @@
   // hero-area button style
   .hero-area {
     .hero-shape {
-      width: 70%;
+      width: 50%;
       height: 100%;
       min-height: auto;
     }
+    .trusted-logo {
+      margin-top: 0;
+    }
+  }
+  .is-full-height {
+    height: auto;
   }
   .hero-area-button .ac-transparent-btn {
     padding: 0;
-    margin: 20px 10px 10px 0px;
+    margin: 10px 10px 10px 0px;
   }
   .hero-area-content {
     .play-buttons {
@@ -1395,6 +958,7 @@
     margin: 0;
     .contact-form-inner {
       position: inherit;
+      top: 0;
     }
   }
   .question-area {
@@ -1441,7 +1005,7 @@
         line-height: 36px;
         margin-bottom: 5px;
       }
-      p{
+      p {
         font-size: 15px;
       }
       padding: 50px 20px 30px;
@@ -1450,7 +1014,7 @@
   .feature-area-2 {
     .single-feature {
       padding: 0;
-      p{
+      p {
         font-size: 15px;
       }
     }

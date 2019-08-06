@@ -1,7 +1,7 @@
 {{ define "header" }}
 <!-- header-area start -->
-<header id="headerWhite">
-  <div class="header-top">
+<header>
+  <div class="is-fixed-absolute">
     <div class="container section">
       <nav class="navbar">
         <div class="navbar-brand">
@@ -22,7 +22,7 @@
           </a>
         </div>
 
-        <div id="acNav1" class="navbar-menu main-menu">
+        <div id="acNav1" class="navbar-menu main-menu is-bg-available">
           <div class="navbar-end">
             <div class="navbar-start">
               <div class="navbar-item has-dropdown ac-is-hoverable">
@@ -386,114 +386,113 @@
 </header>
 <!-- header-area end -->
 <!-- hero-area start -->
-<section class="hero-area">
+<section class="hero-area is-full-height">
   <div class="hero-shape"></div>
   <div class="container section">
+
+    <!-- hero-area main start -->
     <div class="columns">
-      <div class="column is-6">
-        <div class="hero-area-content d-table pt-30">
-          <div class="hero-content-inner typing d-table-cell">
-            <h1>
-              A Mission to Accelerate The transition to Containers by Building
-              an Integrated DevOps Soft-Cloud
-            </h1>
-            <div class="hero-area-button buttons">
-              <a href="/schedule-demo" class="button ac-button ac-primary"
-                >Get Start</a
-              >
-              <a href="/datasheet" class="button ac-transparent-btn"
-                >View on Github</a
-              >
+        <div class="column is-6">
+          <div class="hero-area-content d-table pt-30">
+            <div class="hero-content-inner typing d-table-cell">
+              <h1>
+                A Mission to Accelerate The transition to Containers by Building
+                an Integrated DevOps Soft-Cloud
+              </h1>
+              <div class="hero-area-button buttons">
+                <a href="/schedule-demo" class="button ac-button ac-primary"
+                  >Get Start</a
+                >
+                <a href="/datasheet" class="button ac-transparent-btn"
+                  >View on Github</a
+                >
+              </div>
+              <div class="play-buttons">
+                <a href="#"
+                  ><span class="video-icon"
+                    ><i class="fa fa-play" aria-hidden="true"></i
+                  ></span>
+                  Watch the reel</a
+                >
+              </div>
             </div>
-            <div class="play-buttons">
-              <a href="#"
-                ><span class="video-icon"
-                  ><i class="fa fa-play" aria-hidden="true"></i
-                ></span>
-                Watch the reel</a
-              >
+          </div>
+        </div>
+        <div class="column is-6 is-hidden-mobile">
+          <div class="hero-right-content-wrapper">
+            <div class="right-side-content-inner">
+              <img src="../assets/images/appscode/laptop.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-      <div class="column is-6">
-        <div class="hero-right-content-wrapper">
-          <div class="right-side-content-inner">
-            <img src="../assets/images/appscode/laptop.png" alt="" />
+    <!-- hero-area main end -->
+
+    <!-- trusted logo area start -->
+    <div class="columns trusted-logo is-multiline">
+      <div class="column is-8 is-offset-2 has-text-centered">
+        <div class="trusted-action">
+          <p>
+            Your <a href="#">news feed helps</a> you keep up with
+            <a href="#">recent activity</a> on repositories you
+            <a href="#">watch</a> and people.
+          </p>
+        </div>
+      </div>
+
+      <div class="column is-10 is-offset-1 has-text-centered">
+        <div class="trusted-company mt-20">
+          <p>Company that <a href="#">trust</a> AppsCode</p>
+          <!-- brand logo start -->
+          <div class="brand-logo-wrapper mt-10">
+            <a class="single-brand-logo">
+              <img
+                src="../assets/images/logo/trusted-logo/zippo.png"
+                alt=""
+                class="img"
+              />
+            </a>
+
+            <a class="single-brand-logo">
+              <img
+                src="../assets/images/logo/trusted-logo/colour-logo.png"
+                alt=""
+                class="img"
+              />
+            </a>
+            <a class="single-brand-logo">
+              <img
+                src="../assets/images/logo/trusted-logo/microsoft.png"
+                alt=""
+                class="img"
+              />
+            </a>
+            <a class="single-brand-logo">
+              <img
+                src="../assets/images/logo/trusted-logo/volvo.png"
+                alt=""
+                class="img"
+              />
+            </a>
+            <a class="single-brand-logo">
+              <img
+                src="../assets/images/logo/trusted-logo/tumblr_inline_pcdui455cU1r8ovh1_540.png"
+                alt=""
+                class="img"
+              />
+            </a>
           </div>
+          <!-- brand logo end -->
         </div>
       </div>
     </div>
+    <!-- trusted logo area end -->
   </div>
 </section>
 <!-- hero-area end -->
 
 <!-- shape start -->
 <div class="shap-3">
-  <!-- logo section start -->
-  <section class="trusted-logo section-padding pb-0">
-    <div class="container section">
-      <div class="columns is-multiline">
-        <div class="column is-8 is-offset-2 has-text-centered">
-          <div class="trusted-action">
-            <p>
-              Your <a href="#">news feed helps</a> you keep up with
-              <a href="#">recent activity</a> on repositories you
-              <a href="#">watch</a> and people.
-            </p>
-          </div>
-        </div>
-
-        <div class="column is-10 is-offset-1 has-text-centered">
-          <div class="trusted-company mt-20">
-            <p>Company that <a href="#">trust</a> AppsCode</p>
-            <!-- brand logo start -->
-            <div class="brand-logo-wrapper mt-10">
-              <a class="single-brand-logo">
-                <img
-                  src="../assets/images/logo/trusted-logo/zippo.png"
-                  alt=""
-                  class="img"
-                />
-              </a>
-
-              <a class="single-brand-logo">
-                <img
-                  src="../assets/images/logo/trusted-logo/colour-logo.png"
-                  alt=""
-                  class="img"
-                />
-              </a>
-              <a class="single-brand-logo">
-                <img
-                  src="../assets/images/logo/trusted-logo/microsoft.png"
-                  alt=""
-                  class="img"
-                />
-              </a>
-              <a class="single-brand-logo">
-                <img
-                  src="../assets/images/logo/trusted-logo/volvo.png"
-                  alt=""
-                  class="img"
-                />
-              </a>
-              <a class="single-brand-logo">
-                <img
-                  src="../assets/images/logo/trusted-logo/tumblr_inline_pcdui455cU1r8ovh1_540.png"
-                  alt=""
-                  class="img"
-                />
-              </a>
-            </div>
-            <!-- brand logo end -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- logo section end -->
-
   <!-- service area start -->
   <section class="section-padding">
     <div class="container section">

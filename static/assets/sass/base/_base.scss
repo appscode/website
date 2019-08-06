@@ -1,13 +1,9 @@
 /* ======================
 	Header area start
 ========================*/
-header{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08);
-  z-index: 999;
-  position: relative;
-}
 body.fixed-nav header{
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.08);
+  background-color: $white-color;
 }
 .header-area {
   padding: 3px 0;
@@ -18,7 +14,7 @@ body.fixed-nav header{
   position: relative;
   z-index: 99;
   padding: 6px 0px;
-  background-color: #fff;
+  background-color: $white-color;
 }
 
 .main-menu a {
@@ -34,14 +30,14 @@ body.fixed-nav header{
   border-radius: 2px;
   box-shadow: none;
   border: none;
-  background: #fff;
+  background: $white-color;
   color: $primary-color !important;
   font-size: 14px !important;
   transition: 0.3s ease-in-out;
 }
 
 .main-menu-button .button:hover {
-  color: #fff;
+  color: $white-color;
   background: #affafe;
 }
 
@@ -54,7 +50,7 @@ body.fixed-nav header{
 
 .button.for-support:hover {
   background: #9d0a0e;
-  color: #fff;
+  color: $white-color;
 }
 
 .button.for-chat {
@@ -66,7 +62,7 @@ body.fixed-nav header{
 
 .button.for-chat:hover {
   background: #36c5f0;
-  color: #fff;
+  color: $white-color;
 }
 
 .main-menu-button-top .button {
@@ -94,7 +90,7 @@ a.navbar-item:hover {
   background: transparent;
 }
 .customize-kubedb .main-menu a {
-  color: #fff;
+  color: $white-color;
 }
 nav.navbar{
   background-color: transparent;
@@ -113,7 +109,7 @@ nav.navbar{
   margin-top: -8px;
   height: 33px;
   position: relative;
-  color: #fff;
+  color: $white-color;
 }
 
 .star-count::after,
@@ -170,12 +166,6 @@ body.fixed-nav #header {
   padding: 3px 0;
   width: 100%;
 }
-body.fixed-nav #headerWhite{
-  position: fixed;
-  top: 0;
-  z-index: 99;
-  width: 100%;
-}
 
 /* github button style start */
 .lg .btn,
@@ -202,7 +192,7 @@ body.fixed-nav #headerWhite{
   Hero area Content Start
 ===============================*/
 .hero-area {
-  padding: 80px 0;
+  padding: 100px 0 80px;
 }
 
 .hero-content-inner h4 {
@@ -261,7 +251,7 @@ a.play-icon {
   text-align: center;
   line-height: 70px;
   border-radius: 50%;
-  color: #fff;
+  color: $white-color;
   display: inline-block;
   position: relative;
 }
@@ -476,10 +466,10 @@ a.play-icon .fa {
 /* brand logo area start */
 .single-brand-logo {
   display: inline-block;
-  max-height: 50px;
   overflow: hidden;
-  margin: 0 30px 40px;
+  margin: 10px 30px;
   text-align: center;
+  vertical-align: middle;
 }
 
 /* brand logo area end */
@@ -656,7 +646,7 @@ p.spam-message {
 
 .socail-link-inline li a:hover {
   background: $primary-color;
-  color: #fff;
+  color: $white-color;
   border: 1px solid transparent;
 }
 
@@ -796,7 +786,7 @@ p.spam-message {
 .pricing-top {
   background: $primary-color;
   box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.16);
-  color: #fff;
+  color: $white-color;
   padding: 20px;
   margin: 0 auto;
   border-radius: 0px 8px 8px 8px;
@@ -808,7 +798,7 @@ p.spam-message {
 
 .pricing-top h4 {
   font-size: 18px;
-  color: #fff;
+  color: $white-color;
 }
 
 .package-price {
@@ -981,7 +971,7 @@ p.spam-message {
 /* Faq Area style */
 
 .accordion-item {
-  background-color: #fff;
+  background-color: $white-color;
   margin-bottom: 20px;
   border-radius: 4px;
   border: 1px solid #e3e3e3;
@@ -1086,7 +1076,7 @@ p.spam-message {
   padding: 10px 30px;
 }
 .kubedb-documentation-menu {
-  background: #fff;
+  background: $white-color;
   height: 100%;
 }
 body.fixed-nav .kubedb-documentation-menu {
@@ -1223,7 +1213,7 @@ ul li b {
 }
 
 .search-area input {
-  background: #fff;
+  background: $white-color;
   border: 1px solid #e2e2e2;
   padding: 9px 40px 9px 15px;
   font-size: 15px;
@@ -1325,7 +1315,7 @@ li.nav-item.active a {
   display: none;
 }
 .sidebar-search-area {
-  background: #fff;
+  background: $white-color;
   width: 585px;
   z-index: 999;
   right: -50%;
@@ -1362,7 +1352,7 @@ li.nav-item.active a {
   padding: 20px;
 }
 .searchbar-area input {
-  background: #fff;
+  background: $white-color;
   padding: 10px;
   border: 1px solid #e2e2e2;
   height: 40px;
@@ -1380,7 +1370,7 @@ li.nav-item.active a {
   height: 100%;
   width: 60px;
   background: #4d4dcb;
-  color: #fff;
+  color: $white-color;
   border: none;
   border-radius: 3px;
   margin-left: 10px;
@@ -1489,7 +1479,7 @@ li.nav-item.active a {
 }
 .pagination-list li a.is-active {
   background: #4d4dcb;
-  color: #fff;
+  color: $white-color;
 }
 /* pagination end */
 /* right sidebar search end */
@@ -1569,7 +1559,7 @@ button.button.is-fullwidth {
 
 .kd-version a.dropdown-item:hover {
   background: $primary-color;
-  color: #fff;
+  color: $white-color;
 }
 .kd-version a.dropdown-item:first-child:hover {
   border-radius: 4px 4px 0 0;
@@ -1661,7 +1651,7 @@ button.button.is-fullwidth {
 .item input:checked ~ label,
 .item input:checked ~ .item > label {
   border: 1px solid #e2e2e2;
-  background: #fff;
+  background: $white-color;
 }
 .appscode-style .item input:checked ~ label > a{
   color: $appscode-primary;
@@ -1680,7 +1670,7 @@ button.button.is-fullwidth {
 }
 .trial-button .button {
   background-color: $primary-color;
-  color: #fff;
+  color: $white-color;
   font-size: 14px;
   height: 40px;
 }
@@ -1735,7 +1725,7 @@ span.new-item {
   box-shadow: 0px 7px 26px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
   padding:12px 6px 6px;
-  background: #fff;
+  background: $white-color;
   position: absolute;
   min-width: 730px;
   top: 40px;
@@ -1751,7 +1741,7 @@ span.new-item {
   top: 91px;
   box-shadow: 0px 7px 26px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
-  background: #fff;
+  background: $white-color;
   position: absolute;
   min-width: 200px;
   top: 40px;
@@ -1768,7 +1758,7 @@ span.new-item {
 }
 .ac-dropdown a.navbar-item:hover {
   background: $primary-color;
-  color: #fff !important;
+  color: $white-color !important;
 }
 .ac-megamenu:before,
 .ac-dropdown:before {
@@ -1777,7 +1767,7 @@ span.new-item {
   width: 14px;
   height: 0;
   border: 7px solid transparent;
-  border-bottom: 7px solid #fff;
+  border-bottom: 7px solid $white-color;
   top: -14px;
   left: 50%;
   -ms-transform: translateX(-50%);
@@ -1988,7 +1978,7 @@ li.nav-item a {
 }
 
 a.nav-link.active {
-  background-color: #fff;
+  background-color: $white-color;
   border-left: 1px solid #dbdbdb;
   border-right: 1px solid #dbdbdb;
   border-top: 1px solid #dbdbdb;
