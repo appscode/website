@@ -2025,7 +2025,7 @@ a.play-icon .fa {
   width: 30%;
   margin: 30px auto 0; }
 
-.slider:focus {
+.slider:focus, button:focus {
   outline: none;
   border: none;
   box-shadow: none; }
@@ -3511,6 +3511,27 @@ video {
 
 .mt-30 {
   margin-top: 30px; }
+
+.go-to-top {
+  position: fixed;
+  display: block;
+  font-size: 16px;
+  z-index: 999;
+  right: 20px;
+  bottom: 40px;
+  width: 40px;
+  height: 40px;
+  line-height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(0, 166, 81, 0.5);
+  border: none;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.4s linear; }
+
+.go-to-top.is-visible {
+  opacity: 1; }
 
 /*==================================================
                 Theme appscode Start
