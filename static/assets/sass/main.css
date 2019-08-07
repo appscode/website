@@ -854,8 +854,8 @@ h6 {
   font-weight: 300; }
 
 /*==================================================
-                Theme CSS prefix End
-====================================================*/
+                  Theme CSS prefix End
+  ====================================================*/
 .is-fixed-absolute {
   position: absolute;
   width: 100%;
@@ -930,7 +930,6 @@ body.fixed-nav
   height: 100vh; }
 
 .hero-area-content {
-  min-height: 500px;
   padding-right: 80px; }
   .hero-area-content h1 {
     line-height: 67px; }
@@ -3550,7 +3549,8 @@ body.appscode .pricing-button .kd-button,
 body.appscode .subscription-form .button:hover,
 body.appscode .searchbar-area button,
 body.appscode .countdown-area .right-sidebar-menu ul li a::after,
-body.appscode .pagination-list li a.is-active {
+body.appscode .pagination-list li a.is-active,
+body.appscode .single-product-feature-wrapper:after {
   background-color: #00A651; }
 
 body.appscode .kd-transparent-btn,
@@ -3603,6 +3603,9 @@ body.appscode .subscription-form .input:hover {
 body.appscode .pricing-top:before {
   border-right-color: #005a2c; }
 
+body.appscode .go-to-top {
+  background-color: rgba(0, 166, 81, 0.8); }
+
 /*==================================================
                 Theme appscode End
 ====================================================*/
@@ -3623,7 +3626,8 @@ body.guard .pricing-button .kd-button,
 body.guard .subscription-form .button:hover,
 body.guard .searchbar-area button,
 body.guard .countdown-area .right-sidebar-menu ul li a::after,
-body.guard .pagination-list li a.is-active {
+body.guard .pagination-list li a.is-active,
+body.guard .single-product-feature-wrapper:after {
   background-color: #D84E27; }
 
 body.guard .kd-transparent-btn,
@@ -3676,6 +3680,9 @@ body.guard .subscription-form .input:hover {
 body.guard .pricing-top:before {
   border-right-color: #97371b; }
 
+body.guard .go-to-top {
+  background-color: rgba(216, 78, 39, 0.8); }
+
 /*==================================================
                 Theme guard End
 ====================================================*/
@@ -3696,7 +3703,8 @@ body.kubeci .pricing-button .kd-button,
 body.kubeci .subscription-form .button:hover,
 body.kubeci .searchbar-area button,
 body.kubeci .countdown-area .right-sidebar-menu ul li a::after,
-body.kubeci .pagination-list li a.is-active {
+body.kubeci .pagination-list li a.is-active,
+body.kubeci .single-product-feature-wrapper:after {
   background-color: #2c3e50; }
 
 body.kubeci .kd-transparent-btn,
@@ -3749,6 +3757,9 @@ body.kubeci .subscription-form .input:hover {
 body.kubeci .pricing-top:before {
   border-right-color: #11181f; }
 
+body.kubeci .go-to-top {
+  background-color: rgba(44, 62, 80, 0.8); }
+
 /*==================================================
                 Theme kubeci End
 ====================================================*/
@@ -3769,7 +3780,8 @@ body.kubed .pricing-button .kd-button,
 body.kubed .subscription-form .button:hover,
 body.kubed .searchbar-area button,
 body.kubed .countdown-area .right-sidebar-menu ul li a::after,
-body.kubed .pagination-list li a.is-active {
+body.kubed .pagination-list li a.is-active,
+body.kubed .single-product-feature-wrapper:after {
   background-color: #1C7BD4; }
 
 body.kubed .kd-transparent-btn,
@@ -3822,6 +3834,9 @@ body.kubed .subscription-form .input:hover {
 body.kubed .pricing-top:before {
   border-right-color: #135490; }
 
+body.kubed .go-to-top {
+  background-color: rgba(28, 123, 212, 0.8); }
+
 /*==================================================
                 Theme kubed End
 ====================================================*/
@@ -3842,7 +3857,8 @@ body.kubesheild .pricing-button .kd-button,
 body.kubesheild .subscription-form .button:hover,
 body.kubesheild .searchbar-area button,
 body.kubesheild .countdown-area .right-sidebar-menu ul li a::after,
-body.kubesheild .pagination-list li a.is-active {
+body.kubesheild .pagination-list li a.is-active,
+body.kubesheild .single-product-feature-wrapper:after {
   background-color: #2516C7; }
 
 body.kubesheild .kd-transparent-btn,
@@ -3895,6 +3911,9 @@ body.kubesheild .subscription-form .input:hover {
 body.kubesheild .pricing-top:before {
   border-right-color: #180e82; }
 
+body.kubesheild .go-to-top {
+  background-color: rgba(37, 22, 199, 0.8); }
+
 /*==================================================
                 Theme kubesheild End
 ====================================================*/
@@ -3915,7 +3934,8 @@ body.kubevault .pricing-button .kd-button,
 body.kubevault .subscription-form .button:hover,
 body.kubevault .searchbar-area button,
 body.kubevault .countdown-area .right-sidebar-menu ul li a::after,
-body.kubevault .pagination-list li a.is-active {
+body.kubevault .pagination-list li a.is-active,
+body.kubevault .single-product-feature-wrapper:after {
   background-color: #326CE5; }
 
 body.kubevault .kd-transparent-btn,
@@ -3968,6 +3988,9 @@ body.kubevault .subscription-form .input:hover {
 body.kubevault .pricing-top:before {
   border-right-color: #174ab4; }
 
+body.kubevault .go-to-top {
+  background-color: rgba(50, 108, 229, 0.8); }
+
 /*==================================================
                 Theme kubevault End
 ====================================================*/
@@ -3988,7 +4011,8 @@ body.pharmer .pricing-button .kd-button,
 body.pharmer .subscription-form .button:hover,
 body.pharmer .searchbar-area button,
 body.pharmer .countdown-area .right-sidebar-menu ul li a::after,
-body.pharmer .pagination-list li a.is-active {
+body.pharmer .pagination-list li a.is-active,
+body.pharmer .single-product-feature-wrapper:after {
   background-color: #F18528; }
 
 body.pharmer .kd-transparent-btn,
@@ -4041,6 +4065,9 @@ body.pharmer .subscription-form .input:hover {
 body.pharmer .pricing-top:before {
   border-right-color: #c0600d; }
 
+body.pharmer .go-to-top {
+  background-color: rgba(241, 133, 40, 0.8); }
+
 /*==================================================
                 Theme pharmer End
 ====================================================*/
@@ -4061,7 +4088,8 @@ body.searchlight .pricing-button .kd-button,
 body.searchlight .subscription-form .button:hover,
 body.searchlight .searchbar-area button,
 body.searchlight .countdown-area .right-sidebar-menu ul li a::after,
-body.searchlight .pagination-list li a.is-active {
+body.searchlight .pagination-list li a.is-active,
+body.searchlight .single-product-feature-wrapper:after {
   background-color: #46CDCF; }
 
 body.searchlight .kd-transparent-btn,
@@ -4114,6 +4142,9 @@ body.searchlight .subscription-form .input:hover {
 body.searchlight .pricing-top:before {
   border-right-color: #299d9f; }
 
+body.searchlight .go-to-top {
+  background-color: rgba(70, 205, 207, 0.8); }
+
 /*==================================================
                 Theme searchlight End
 ====================================================*/
@@ -4134,7 +4165,8 @@ body.service-broker .pricing-button .kd-button,
 body.service-broker .subscription-form .button:hover,
 body.service-broker .searchbar-area button,
 body.service-broker .countdown-area .right-sidebar-menu ul li a::after,
-body.service-broker .pagination-list li a.is-active {
+body.service-broker .pagination-list li a.is-active,
+body.service-broker .single-product-feature-wrapper:after {
   background-color: #29B4A2; }
 
 body.service-broker .kd-transparent-btn,
@@ -4187,6 +4219,9 @@ body.service-broker .subscription-form .input:hover {
 body.service-broker .pricing-top:before {
   border-right-color: #1b766a; }
 
+body.service-broker .go-to-top {
+  background-color: rgba(41, 180, 162, 0.8); }
+
 /*==================================================
                 Theme service-broker End
 ====================================================*/
@@ -4207,7 +4242,8 @@ body.stash .pricing-button .kd-button,
 body.stash .subscription-form .button:hover,
 body.stash .searchbar-area button,
 body.stash .countdown-area .right-sidebar-menu ul li a::after,
-body.stash .pagination-list li a.is-active {
+body.stash .pagination-list li a.is-active,
+body.stash .single-product-feature-wrapper:after {
   background-color: #5E2DEA; }
 
 body.stash .kd-transparent-btn,
@@ -4260,6 +4296,9 @@ body.stash .subscription-form .input:hover {
 body.stash .pricing-top:before {
   border-right-color: #3d12b8; }
 
+body.stash .go-to-top {
+  background-color: rgba(94, 45, 234, 0.8); }
+
 /*==================================================
                 Theme stash End
 ====================================================*/
@@ -4280,7 +4319,8 @@ body.swift .pricing-button .kd-button,
 body.swift .subscription-form .button:hover,
 body.swift .searchbar-area button,
 body.swift .countdown-area .right-sidebar-menu ul li a::after,
-body.swift .pagination-list li a.is-active {
+body.swift .pagination-list li a.is-active,
+body.swift .single-product-feature-wrapper:after {
   background-color: #e67e22; }
 
 body.swift .kd-transparent-btn,
@@ -4333,6 +4373,9 @@ body.swift .subscription-form .input:hover {
 body.swift .pricing-top:before {
   border-right-color: #a85913; }
 
+body.swift .go-to-top {
+  background-color: rgba(230, 126, 34, 0.8); }
+
 /*==================================================
                 Theme swift End
 ====================================================*/
@@ -4353,7 +4396,8 @@ body.voyager .pricing-button .kd-button,
 body.voyager .subscription-form .button:hover,
 body.voyager .searchbar-area button,
 body.voyager .countdown-area .right-sidebar-menu ul li a::after,
-body.voyager .pagination-list li a.is-active {
+body.voyager .pagination-list li a.is-active,
+body.voyager .single-product-feature-wrapper:after {
   background-color: #2D2A78; }
 
 body.voyager .kd-transparent-btn,
@@ -4406,6 +4450,9 @@ body.voyager .subscription-form .input:hover {
 body.voyager .pricing-top:before {
   border-right-color: #18163f; }
 
+body.voyager .go-to-top {
+  background-color: rgba(45, 42, 120, 0.8); }
+
 /*==================================================
                 Theme voyager End
 ====================================================*/
@@ -4431,6 +4478,9 @@ body.voyager .pricing-top:before {
 
   .navbar-item {
     padding: 5px 0 0; }
+
+  .header-bottom-area .navbar-burger {
+    color: #fff; }
 
   .kd-transparent-btn {
     padding: 0;
@@ -4467,7 +4517,7 @@ body.voyager .pricing-top:before {
       line-height: 50px !important; }
   .hero-area .hero-right-content-wrapper .right-side-content-inner {
     right: -90px; } }
-/*  desktop :768px. */
+/*  desktop :1024px. */
 @media (min-width: 1024px) and (max-width: 1215px) {
   p {
     font-size: 15px; }
@@ -4487,6 +4537,9 @@ body.voyager .pricing-top:before {
   .navbar-item {
     padding: 5px 0 0; }
 
+  .header-bottom-area .navbar-burger {
+    color: #fff; }
+
   .kd-transparent-btn {
     padding: 0;
     margin: 0;
@@ -4505,6 +4558,13 @@ body.voyager .pricing-top:before {
   .db-logo-area {
     overflow: hidden;
     padding: 10px; }
+
+  .slider-navigation-next,
+  .slider-navigation-previous {
+    display: none; }
+
+  .client-information {
+    width: 60%; }
 
   /* support page pricing table style */
   .pricing-heading {
@@ -4528,9 +4588,13 @@ body.voyager .pricing-top:before {
     z-index: 99;
     width: 100%; }
 
-  .main-menu {
-    overflow-y: auto;
-    max-height: 70vh; }
+  .main-menu.is-bg-available .navbar-item,
+  .main-menu.is-bg-available .navbar-link {
+    color: #4a4a4a; }
+
+  .main-menu.is-bg-available .navbar-link:not(.is-arrowless)::after,
+  .main-menu.is-bg-available .select:not(.is-multiple):not(.is-loading)::after {
+    border-color: #00A651; }
 
   body.fixed-nav {
     padding-top: 0 !important; }
@@ -4552,10 +4616,29 @@ body.voyager .pricing-top:before {
   .is-6.br-1 {
     border: none; }
 
+  .ac-dropdown:before {
+    display: none;
+    top: 0; }
+
+  .ac-megamenu.is-active .column {
+    padding: 0; }
+
   .single-solution-wrapper {
     min-height: 250px; }
     .single-solution-wrapper p {
       font-size: 15px; }
+
+  .ac-dropdown a.navbar-item {
+    padding: 5px 10px; }
+
+  .ac-dropdown {
+    display: none;
+    position: inherit;
+    width: 100%;
+    box-shadow: none;
+    left: 0;
+    top: 0;
+    transform: translateX(0); }
 
   .ac-is-hoverable:hover > .ac-megamenu,
   .ac-is-hoverable:hover > .ac-dropdown {
@@ -4565,16 +4648,16 @@ body.voyager .pricing-top:before {
     top: 0;
     display: none; }
 
-  .ac-megamenu.is-active {
+  .ac-megamenu.is-active,
+  .ac-dropdown.is-active {
     opacity: 1 !important;
     visibility: visible !important;
-    display: block !important; }
+    display: block !important;
+    position: inherit; }
 
-  .ac-megamenu.is-active .column {
-    padding: 0; }
-
-  .navbar-burger {
-    background: rgba(144, 144, 144, 0.05); }
+  .main-menu {
+    overflow-y: auto;
+    max-height: 70vh; }
 
   .hero-area-content {
     padding-right: 0; }
@@ -4786,7 +4869,83 @@ body.voyager .pricing-top:before {
 
   .reverse-row-order {
     display: flex;
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse; }
+
+  body.fixed-nav .is-fixed-absolute {
+    top: 0;
+    z-index: 99;
+    width: 100%; }
+
+  .main-menu.is-bg-available .navbar-item,
+  .main-menu.is-bg-available .navbar-link {
+    color: #4a4a4a; }
+
+  .main-menu.is-bg-available .navbar-link:not(.is-arrowless)::after,
+  .main-menu.is-bg-available .select:not(.is-multiple):not(.is-loading)::after {
+    border-color: #00A651; }
+
+  body.fixed-nav {
+    padding-top: 0 !important; }
+
+  .ac-megamenu {
+    box-shadow: none;
+    border-radius: 4px;
+    padding: 20px;
+    background: #fff;
+    position: inherit;
+    min-width: auto;
+    top: 40px;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s ease-in-out;
+    display: none; }
+
+  .is-6.br-1 {
+    border: none; }
+
+  .ac-dropdown:before {
+    display: none;
+    top: 0; }
+
+  .ac-megamenu.is-active .column {
+    padding: 0; }
+
+  .single-solution-wrapper {
+    min-height: 250px; }
+    .single-solution-wrapper p {
+      font-size: 15px; }
+
+  .ac-dropdown a.navbar-item {
+    padding: 5px 10px; }
+
+  .ac-dropdown {
+    display: none;
+    position: inherit;
+    width: 100%;
+    box-shadow: none;
+    left: 0;
+    top: 0;
+    transform: translateX(0); }
+
+  .ac-is-hoverable:hover > .ac-megamenu,
+  .ac-is-hoverable:hover > .ac-dropdown {
+    opacity: 0;
+    visibility: hidden;
+    max-height: none;
+    top: 0;
+    display: none; }
+
+  .ac-megamenu.is-active,
+  .ac-dropdown.is-active {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    position: inherit; }
+
+  .main-menu {
+    overflow-y: auto;
+    max-height: 70vh; } }
 /* small Mobile :768px. */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   p {
@@ -4804,6 +4963,9 @@ body.voyager .pricing-top:before {
   .navbar-brand .navbar-item {
     padding: 0; }
 
+  .header-bottom-area .navbar-burger {
+    color: #fff; }
+
   .main-menu a {
     padding: 5px 0; }
 
@@ -4815,6 +4977,9 @@ body.voyager .pricing-top:before {
 
   .navbar-item {
     padding: 5px 0 0; }
+
+  .header-bottom-area .navbar-burger {
+    color: #fff; }
 
   .hero-area-button {
     margin-top: 20px; }
@@ -4880,6 +5045,13 @@ body.voyager .pricing-top:before {
 
   .carousel-wrapper {
     padding: 30px 15px; }
+
+  .slider-navigation-next,
+  .slider-navigation-previous {
+    display: none; }
+
+  .client-information {
+    width: 100%; }
 
   .cta-padding {
     padding: 20px; }
@@ -4985,10 +5157,6 @@ body.voyager .pricing-top:before {
     z-index: 99;
     width: 100%; }
 
-  .main-menu {
-    overflow-y: auto;
-    max-height: 70vh; }
-
   .main-menu.is-bg-available .navbar-item,
   .main-menu.is-bg-available .navbar-link {
     color: #4a4a4a; }
@@ -5017,10 +5185,29 @@ body.voyager .pricing-top:before {
   .is-6.br-1 {
     border: none; }
 
+  .ac-dropdown:before {
+    display: none;
+    top: 0; }
+
+  .ac-megamenu.is-active .column {
+    padding: 0; }
+
   .single-solution-wrapper {
     min-height: 250px; }
     .single-solution-wrapper p {
       font-size: 15px; }
+
+  .ac-dropdown a.navbar-item {
+    padding: 5px 10px; }
+
+  .ac-dropdown {
+    display: none;
+    position: inherit;
+    width: 100%;
+    box-shadow: none;
+    left: 0;
+    top: 0;
+    transform: translateX(0); }
 
   .ac-is-hoverable:hover > .ac-megamenu,
   .ac-is-hoverable:hover > .ac-dropdown {
@@ -5030,13 +5217,16 @@ body.voyager .pricing-top:before {
     top: 0;
     display: none; }
 
-  .ac-megamenu.is-active {
+  .ac-megamenu.is-active,
+  .ac-dropdown.is-active {
     opacity: 1 !important;
     visibility: visible !important;
-    display: block !important; }
+    display: block !important;
+    position: inherit; }
 
-  .ac-megamenu.is-active .column {
-    padding: 0; }
+  .main-menu {
+    overflow-y: auto;
+    max-height: 70vh; }
 
   .navbar-burger {
     background: rgba(144, 144, 144, 0.05); }

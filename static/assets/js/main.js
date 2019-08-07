@@ -22,49 +22,46 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-
 // mega menu active class
 var navbarItems = document.querySelectorAll(".navbar-item");
 navbarItems.forEach(navbarItem => {
-  navbarItem.addEventListener("click", function(){
-    var megamenues = document.querySelectorAll(".navbar-item > .ac-megamenu");
+  navbarItem.addEventListener("click", function() {
+    var megamenues = document.querySelectorAll(".navbar-item > .ac-megamenu , .navbar-item > .ac-dropdown");
     // remove is-active class from all the megamenus except the navbar item that was clicked
     megamenues.forEach(megamenu => {
       // toggle classes
-      if (megamenu.parentElement === navbarItem) megamenu.classList.toggle("is-active");
+      if (megamenu.parentElement === navbarItem)
+        megamenu.classList.toggle("is-active");
       else megamenu.classList.remove("is-active");
     });
-  })
-})
+  });
+});
 
 // map area-tabs
-var tabsMenus = document.querySelectorAll(".tabs-wrapper ul li")
+var tabsMenus = document.querySelectorAll(".tabs-wrapper ul li");
 tabsMenus.forEach(tabItem => {
-  tabItem.addEventListener("click", function(){
+  tabItem.addEventListener("click", function() {
     // remove is-active from all the menus
-     tabsMenus.forEach(tabMenu => tabMenu.classList.remove("is-active"));
+    tabsMenus.forEach(tabMenu => tabMenu.classList.remove("is-active"));
 
-     // add is-active to the clicked menu
-     tabItem.classList.add("is-active");
+    // add is-active to the clicked menu
+    tabItem.classList.add("is-active");
 
-     // activate map
-     var mapId = tabItem.getAttribute("href");
+    // activate map
+    var mapId = tabItem.getAttribute("href");
 
-     var mapElemUsa = document.getElementById("usa");
-     var mapElemDhaka = document.getElementById("dhaka");
-     
-     if (mapId === "usa") {
-       mapElemDhaka.classList.remove("is-active");
-       mapElemUsa.classList.add("is-active");
-     } else {
+    var mapElemUsa = document.getElementById("usa");
+    var mapElemDhaka = document.getElementById("dhaka");
+
+    if (mapId === "usa") {
+      mapElemDhaka.classList.remove("is-active");
+      mapElemUsa.classList.add("is-active");
+    } else {
       mapElemUsa.classList.remove("is-active");
       mapElemDhaka.classList.add("is-active");
-     }
-  })
-})
-
-
-
+    }
+  });
+});
 
 //for products page testimonial carousel
 bulmaCarousel.attach("#carousel-demo", {
@@ -81,7 +78,11 @@ bulmaCarousel.attach("#testimonial-carousel", {
   infinite: true,
   autoplay: true,
   loop: true,
-  breakpoints: [{ changePoint: 479, slidesToShow: 1, slidesToScroll: 1 }, { changePoint: 980, slidesToShow: 2, slidesToScroll: 1 }, { changePoint: 1140, slidesToShow: 3, slidesToScroll:1 } ]
+  breakpoints: [
+    { changePoint: 479, slidesToShow: 1, slidesToScroll: 1 },
+    { changePoint: 980, slidesToShow: 2, slidesToScroll: 1 },
+    { changePoint: 1140, slidesToShow: 3, slidesToScroll: 1 }
+  ]
 });
 
 // appscode home page logo carousel
@@ -194,7 +195,6 @@ tabItems.forEach(tab => {
   });
 });
 
-
 // menu sticky
 // Not a ton of code, but hard to
 const nav = document.querySelector(
@@ -216,26 +216,27 @@ window.addEventListener("scroll", fixNav);
 var basicScrollTop = function() {
   // The button
   var btnTop = document.querySelector("#goTop");
-  // Reveal the button
-  var btnReveal = function() {
-    if (window.scrollY >= 300) {
-      btnTop.classList.add("is-visible");
-    } else {
-      btnTop.classList.remove("is-visible");
-    }
-  };
-  // Smooth scroll top
-  var TopscrollTo = function() {
-    if (window.scrollY != 0) {
-      setTimeout(function() {
-        window.scrollTo(0, window.scrollY - 30);
-        TopscrollTo();
-      }, 5);
-    }
-  };
-  // Listeners
-  window.addEventListener("scroll", btnReveal);
-  btnTop.addEventListener("click", TopscrollTo);
+  if (btnTop) {
+    // Reveal the button
+    var btnReveal = function() {
+      if (window.scrollY >= 300) {
+        btnTop.classList.add("is-visible");
+      } else {
+        btnTop.classList.remove("is-visible");
+      }
+    };
+    // Smooth scroll top
+    var TopscrollTo = function() {
+      if (window.scrollY != 0) {
+        setTimeout(function() {
+          window.scrollTo(0, window.scrollY - 30);
+          TopscrollTo();
+        }, 5);
+      }
+    };
+    // Listeners
+    window.addEventListener("scroll", btnReveal);
+    btnTop.addEventListener("click", TopscrollTo); 
+  }
 };
 basicScrollTop();
-
