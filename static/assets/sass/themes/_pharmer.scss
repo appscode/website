@@ -1,5 +1,2 @@
-// Colour variable
-
-$pharmer-primary: #8e44ad;
-
+// Colour include
 @include colorize-product("pharmer", $pharmer-primary);

@@ -97,8 +97,11 @@ h6 {
   color: $white-color !important;
 }
 .ac-primary{
-  background-color: $ac-primary-color;
+  background-color: $appscode-primary;
   color: $white-color !important;
+}
+.ac-primary-color {
+  color: $appscode-primary;
 }
 .kubedb-primary-bg {
   background-color: $primary-color;
@@ -120,6 +123,7 @@ h6 {
   transition: 0.3s;
   font-family: $font-paragraph;
   font-size: 16px;
+  min-width: 190px;
 }
 
 .kd-button:hover {
@@ -129,7 +133,7 @@ h6 {
 }
 
 .ac-button:hover {
-  background-color: darken($ac-primary-color, 3%);
+  background-color: darken($appscode-primary, 3%);
   color: $white-color;
   box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16);
 }

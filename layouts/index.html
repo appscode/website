@@ -1,7 +1,7 @@
 {{ define "header" }}
 <!-- header-area start -->
-<header id="headerWhite">
-  <div class="header-top">
+<header>
+  <div class="is-fixed-absolute">
     <div class="container section">
       <nav class="navbar">
         <div class="navbar-brand">
@@ -22,7 +22,7 @@
           </a>
         </div>
 
-        <div id="acNav1" class="navbar-menu main-menu">
+        <div id="acNav1" class="navbar-menu main-menu is-bg-available">
           <div class="navbar-end">
             <div class="navbar-start">
               <div class="navbar-item has-dropdown ac-is-hoverable">
@@ -30,300 +30,326 @@
                   Products
                 </a>
 
-                <div class="ac-megamenu">
-                  <div class="columns">
-                    <div class="column is-8">
-                      <div class="columns">
-                        <div class="column is-6 br-1">
-                          <a
-                            href="https://appscode-v3-hugo.web.app/products/voyager/"
-                            class="single-product-item is-voyager"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logo/appscode.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>Voyager</h5>
+               <!-- dropdown menu start -->
+               <div class="ac-megamenu">
+                <div class="columns">
+                  <div class="column is-8">
+                    <div class="columns">
+                      <div class="column is-6 br-1">
+                        <!-- single menu item start -->
+                        <a
+                          href="{{.Site.Params.domain_appscode}}/products/voyager/"
+                          class="single-product-item is-voyager"
+                        >
+                          <div class="menu-header">
+                            <div class="menu-logo">
+                              <img
+                                src="/assets/images/product-logos/small-size/voyager.png"
+                                alt=""
+                              />
                             </div>
-                            <div class="menu-body">
-                              <p>
-                                Secure HAProxy Ingress Controller for Kubernetes
-                              </p>
+                            <h5>Voyager</h5>
+                          </div>
+                          <div class="menu-body">
+                            <p>
+                              Secure HAProxy Ingress Controller for
+                              Kubernetes
+                            </p>
+                          </div>
+                        </a>
+                        <!-- single menu item end -->
+                        <!-- single menu item start -->
+                        <a
+                          href="{{.Site.Params.domain_kubedb}}"
+                          class="single-product-item is-kubedb"
+                        >
+                          <div class="menu-header">
+                            <div class="menu-logo">
+                              <img
+                                src="/assets/images/product-logos/small-size/kubedb.png"
+                                alt=""
+                              />
                             </div>
-                          </a>
-
-                          <a
-                            href="https://kubedb-v2-hugo.web.app"
-                            class="single-product-item is-kubedb"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logo/kubedb.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>KubeDB</h5>
+                            <h5>KubeDB</h5>
+                          </div>
+                          <div class="menu-body">
+                            <p>
+                              Run production-grade databases easily on
+                              Kubernetes
+                            </p>
+                          </div>
+                        </a>
+                        <!-- single menu item end -->
+                        <!-- single menu item start -->
+                        <a
+                          href="{{.Site.Params.domain_appscode}}/products/stash/"
+                          class="single-product-item is-stash"
+                        >
+                          <div class="menu-header">
+                            <div class="menu-logo">
+                              <img
+                                src="/assets/images/product-logos/small-size/stash.png"
+                                alt=""
+                              />
                             </div>
-                            <div class="menu-body">
-                              <p>
-                                Run production-grade databases easily on
-                                Kubernetes
-                              </p>
+                            <h5>Stash</h5>
+                          </div>
+                          <div class="menu-body">
+                            <p>
+                              Backup your Kubernetes Stateful Applications
+                            </p>
+                          </div>
+                        </a>
+                        <!-- single menu item end -->
+                        <!-- single menu item start -->
+                        <a
+                          href="{{.Site.Params.domain_appscode}}/products/guard/"
+                          class="single-product-item is-guard"
+                        >
+                          <div class="menu-header">
+                            <div class="menu-logo">
+                              <img
+                                src="/assets/images/product-logos/small-size/guard.png"
+                                alt=""
+                              />
                             </div>
-                          </a>
-
-                          <a
-                            href="https://appscode-v3-hugo.web.app/products/stash/"
-                            class="single-product-item is-stash"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logo/appscode.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>Stash</h5>
+                            <h5>Guard</h5>
+                          </div>
+                          <div class="menu-body">
+                            <p>
+                              Kubernetes Authentication WebHook Server
+                            </p>
+                          </div>
+                        </a>
+                        <!-- single menu item end -->
+                        <!-- single menu item start -->
+                        <a
+                          href="{{.Site.Params.domain_kubeci}}"
+                          class="single-product-item is-kubeci"
+                        >
+                          <div class="menu-header">
+                            <div class="menu-logo">
+                              <img
+                                src="/assets/images/product-logos/small-size/appscode.png"
+                                alt=""
+                              />
                             </div>
-                            <div class="menu-body">
-                              <p>
-                                Backup your Kubernetes Stateful Applications
-                              </p>
+                            <h5>KubeCI</h5>
+                          </div>
+                          <div class="menu-body">
+                            <p>
+                              Kubernetes native CI
+                            </p>
+                          </div>
+                        </a>
+                        <!-- single menu item end -->
+                      </div>
+                      <div class="column is-6 br-1">
+                        <!-- single menu item start -->
+                        <a
+                          href="{{.Site.Params.domain_appscode}}/products/searchlight/"
+                          class="single-product-item is-searchlight"
+                        >
+                          <div class="menu-header">
+                            <div class="menu-logo">
+                              <img
+                                src="/assets/images/product-logos/small-size/searchlight.png"
+                                alt=""
+                              />
                             </div>
-                          </a>
-
-                          <a
-                            href="https://appscode-v3-hugo.web.app/products/guard/"
-                            class="single-product-item is-guard"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logo/appscode.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>Guard</h5>
+                            <h5>Searchlight</h5>
+                          </div>
+                          <div class="menu-body">
+                            <p>
+                              Alerts for Kubernetes
+                            </p>
+                          </div>
+                        </a>
+                        <!-- single menu item end -->
+                        <!-- single menu item start -->
+                        <a
+                          href="{{.Site.Params.domain_appscode}}/products/swift/"
+                          class="single-product-item is-swift"
+                        >
+                          <div class="menu-header">
+                            <div class="menu-logo">
+                              <img
+                                src="/assets/images/product-logos/small-size/appscode.png"
+                                alt=""
+                              />
                             </div>
-                            <div class="menu-body">
-                              <p>
-                                Kubernetes Authentication WebHook Server
-                              </p>
+                            <h5>Swift</h5>
+                          </div>
+                          <div class="menu-body">
+                            <p>
+                              Ajax friendly Helm Tiller Proxy
+                            </p>
+                          </div>
+                        </a>
+                        <!-- single menu item end -->
+                        <!-- single menu item start -->
+                        <a
+                          href="{{.Site.Params.domain_appscode}}/products/service-broker/"
+                          class="single-product-item is-broker"
+                        >
+                          <div class="menu-header">
+                            <div class="menu-logo">
+                              <img
+                                src="/assets/images/product-logos/small-size/service-broke.png"
+                                alt=""
+                              />
                             </div>
-                          </a>
-
-                          <a
-                            href="https://kubeci-v1-hugo.web.app"
-                            class="single-product-item is-kubeci"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logo/appscode.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>KubeCI</h5>
+                            <h5>Service Broker</h5>
+                          </div>
+                          <div class="menu-body">
+                            <p>
+                              Open Service Broker for AppsCode Cloud
+                              Services
+                            </p>
+                          </div>
+                        </a>
+                        <!-- single menu item end -->
+                        <!-- single menu item start -->
+                        <a
+                          href="{{.Site.Params.domain_appscode}}/products/pharmer/"
+                          class="single-product-item is-pharmer"
+                        >
+                          <div class="menu-header">
+                            <div class="menu-logo">
+                              <img
+                                src="/assets/images/product-logos/small-size/phamer.png"
+                                alt=""
+                              />
                             </div>
-                            <div class="menu-body">
-                              <p>
-                                Kubernetes native CI
-                              </p>
+                            <h5>Pharmer</h5>
+                          </div>
+                          <div class="menu-body">
+                            <p>
+                              Kubernetes Cluster Manager using Kubeadm &
+                              Cluster API
+                            </p>
+                          </div>
+                        </a>
+                        <!-- single menu item end -->
+                        <!-- single menu item start -->
+                        <a
+                          href="{{.Site.Params.domain_kubeshield}}"
+                          class="single-product-item is-kubeshield"
+                        >
+                          <div class="menu-header">
+                            <div class="menu-logo">
+                              <img
+                                src="/assets/images/product-logos/small-size/kubeshild.png"
+                                alt=""
+                              />
                             </div>
-                          </a>
-                        </div>
-                        <div class="column is-6 br-1">
-                          <a
-                            href="https://appscode-v3-hugo.web.app/products/searchlight/"
-                            class="single-product-item is-searchlight"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logo/appscode.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>Searchlight</h5>
-                            </div>
-                            <div class="menu-body">
-                              <p>
-                                Alerts for Kubernetes
-                              </p>
-                            </div>
-                          </a>
-
-                          <a
-                            href="https://appscode-v3-hugo.web.app/products/swift/"
-                            class="single-product-item is-swift"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logo/appscode.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>Swift</h5>
-                            </div>
-                            <div class="menu-body">
-                              <p>
-                                Ajax friendly Helm Tiller Proxy
-                              </p>
-                            </div>
-                          </a>
-
-                          <a
-                            href="https://appscode-v3-hugo.web.app/products/service-broker/"
-                            class="single-product-item is-broker"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logo/kubedb.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>Service Broker</h5>
-                            </div>
-                            <div class="menu-body">
-                              <p>
-                                Open Service Broker for AppsCode Cloud Services
-                              </p>
-                            </div>
-                          </a>
-
-                          <a
-                            href="https://appscode-v3-hugo.web.app/products/pharmer/"
-                            class="single-product-item is-pharmer"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logo/appscode.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>Pharmer</h5>
-                            </div>
-                            <div class="menu-body">
-                              <p>
-                                Kubernetes Cluster Manager using Kubeadm &amp;
-                                Cluster API
-                              </p>
-                            </div>
-                          </a>
-
-                          <a
-                            href="https://kubeshield-v1-hugo.web.app"
-                            class="single-product-item is-kubeshield"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logo/appscode.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>KubeShield</h5>
-                            </div>
-                            <div class="menu-body">
-                              <p>
-                                Secure Kubernetes
-                              </p>
-                            </div>
-                          </a>
-                        </div>
+                            <h5>KubeShield</h5>
+                          </div>
+                          <div class="menu-body">
+                            <p>
+                              Secure Kubernetes
+                            </p>
+                          </div>
+                        </a>
+                        <!-- single menu item end -->
                       </div>
                     </div>
-                    <div class="column is-4">
-                      <a
-                        href="https://byte.builders"
-                        class="single-product-item byte-builder kd-orange"
-                      >
-                        <div class="menu-header">
-                          <p class="intro">Introducing....</p>
-                          <h5>Byte.builders</h5>
-                        </div>
-                        <div class="menu-body">
-                          <p>
-                            The Kubernetes Cloud
-                          </p>
-                        </div>
-                        <p class="learn-more-btn">
-                          Learn more
-                          <span class="icon"
-                            ><i
-                              class="fa fa-long-arrow-right"
-                              aria-hidden="true"
-                            ></i
-                          ></span>
-                        </p>
-                      </a>
-
-                      <a
-                        href="https://appscode-v3-hugo.web.app/products/kubed/"
-                        class="single-product-item is-kubed"
-                      >
-                        <div class="menu-header">
-                          <div class="menu-logo">
-                            <img
-                              src="/assets/images/product-logo/appscode.png"
-                              alt=""
-                            />
-                          </div>
-                          <h5>Kubed</h5>
-                        </div>
-                        <div class="menu-body">
-                          <p>
-                            A Kubernetes cluster manager daemon
-                          </p>
-                        </div>
-                      </a>
-
-                      <a
-                        href="https://kubevault-v1-hugo.web.app"
-                        class="single-product-item is-kubevault"
-                      >
-                        <div class="menu-header">
-                          <div class="menu-logo">
-                            <img
-                              src="/assets/images/product-logo/appscode.png"
-                              alt=""
-                            />
-                          </div>
-                          <h5>KubeVault</h5>
-                        </div>
-                        <div class="menu-body">
-                          <p>
-                            Tools for running HashiCorp Vault on Kubernetes
-                          </p>
-                        </div>
-                      </a>
-                    </div>
                   </div>
-                  <div class="columns has-text-centered">
-                    <div class="column">
-                      <div class="menu-bottom">
-                        <p>
-                          Explore refreshing apps and integrations for AppsCode
-                          products:
-                          <a href="https://marketplace.byte.builders">
-                            Visit the Marketplace
-                            <i
-                              class="fa fa-long-arrow-right"
-                              aria-hidden="true"
-                            ></i
-                          ></a>
-                        </p>
+                  <div class="column is-4">
+                    <div class="columns">
+                      <div class="column is-12">
+                        <!-- single menu item start -->
+                        <a
+                          href="{{.Site.Params.domain_bytebuilders}}"
+                          class="single-product-item byte-builder kd-orange"
+                        >
+                          <div class="menu-header">
+                            <p class="intro">Introducing....</p>
+                            <h5>Byte.builders</h5>
+                          </div>
+                          <div class="menu-body">
+                            <p>
+                              The Kubernetes Cloud
+                            </p>
+                          </div>
+                          <p class="learn-more-btn">
+                            Learn more
+                            <span class="icon"
+                              ><i
+                                class="fa fa-long-arrow-right"
+                                aria-hidden="true"
+                              ></i
+                            ></span>
+                          </p>
+                        </a>
+                        <!-- single menu item end -->
+
+                        <!-- single menu item start -->
+                        <a
+                          href="{{.Site.Params.domain_appscode}}/products/kubed/"
+                          class="single-product-item is-kubed"
+                        >
+                          <div class="menu-header">
+                            <div class="menu-logo">
+                              <img
+                                src="/assets/images/product-logos/small-size/kubed.png"
+                                alt=""
+                              />
+                            </div>
+                            <h5>Kubed</h5>
+                          </div>
+                          <div class="menu-body">
+                            <p>
+                              A Kubernetes cluster manager daemon
+                            </p>
+                          </div>
+                        </a>
+                        <!-- single menu item end -->
+                        <!-- single menu item start -->
+                        <a
+                          href="{{.Site.Params.domain_kubevault}}"
+                          class="single-product-item is-kubevault"
+                        >
+                          <div class="menu-header">
+                            <div class="menu-logo">
+                              <img
+                                src="/assets/images/product-logos/small-size/kube-vault.png"
+                                alt=""
+                              />
+                            </div>
+                            <h5>KubeVault</h5>
+                          </div>
+                          <div class="menu-body">
+                            <p>
+                              Tools for running HashiCorp Vault on
+                              Kubernetes
+                            </p>
+                          </div>
+                        </a>
+                        <!-- single menu item end -->
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="columns has-text-centered">
+                  <div class="column">
+                    <div class="menu-bottom">
+                      <p>
+                        Explore refreshing apps and integrations for
+                        AppsCode products:
+                        <a href="{{.Site.Params.domain_marketplace}}">
+                          Visit the Marketplace
+                          <i
+                            class="fa fa-long-arrow-right"
+                            aria-hidden="true"
+                          ></i
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- dropdown menu end -->
               </div>
 
               <a class="navbar-item">
@@ -360,118 +386,117 @@
 </header>
 <!-- header-area end -->
 <!-- hero-area start -->
-<section class="hero-area">
+<section class="hero-area is-full-height">
   <div class="hero-shape"></div>
   <div class="container section">
+
+    <!-- hero-area main start -->
     <div class="columns">
-      <div class="column is-6">
-        <div class="hero-area-content d-table">
-          <div class="hero-content-inner typing d-table-cell">
-            <h1>
-              A Mission to Accelerate The transition to Containers by Building
-              an Integrated DevOps Soft-Cloud
-            </h1>
-            <div class="hero-area-button buttons">
-              <a href="/schedule-demo" class="button ac-button ac-primary"
-                >Get Start</a
-              >
-              <a href="/datasheet" class="button ac-transparent-btn"
-                >View on Github</a
-              >
+        <div class="column is-6">
+          <div class="hero-area-content d-table pt-30">
+            <div class="hero-content-inner typing d-table-cell">
+              <h1>
+                A Mission to Accelerate The transition to Containers by Building
+                an Integrated DevOps Soft-Cloud
+              </h1>
+              <div class="hero-area-button buttons">
+                <a href="/schedule-demo" class="button ac-button ac-primary"
+                  >Get Start</a
+                >
+                <a href="/datasheet" class="button ac-transparent-btn"
+                  >View on Github</a
+                >
+              </div>
+              <div class="play-buttons">
+                <a href="#"
+                  ><span class="video-icon"
+                    ><i class="fa fa-play" aria-hidden="true"></i
+                  ></span>
+                  Watch the reel</a
+                >
+              </div>
             </div>
-            <div class="play-buttons">
-              <a href="#"
-                ><span class="video-icon"
-                  ><i class="fa fa-play" aria-hidden="true"></i
-                ></span>
-                Watch the reel</a
-              >
+          </div>
+        </div>
+        <div class="column is-6 is-hidden-mobile">
+          <div class="hero-right-content-wrapper">
+            <div class="right-side-content-inner">
+              <img src="../assets/images/appscode/laptop.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-      <div class="column is-6">
-        <div class="hero-right-content-wrapper">
-          <div class="right-side-content-inner">
-            <img src="../assets/images/appscode/laptop.png" alt="" />
+    <!-- hero-area main end -->
+
+    <!-- trusted logo area start -->
+    <div class="columns trusted-logo is-multiline">
+      <div class="column is-8 is-offset-2 has-text-centered">
+        <div class="trusted-action">
+          <p>
+            Your <a href="#">news feed helps</a> you keep up with
+            <a href="#">recent activity</a> on repositories you
+            <a href="#">watch</a> and people.
+          </p>
+        </div>
+      </div>
+
+      <div class="column is-10 is-offset-1 has-text-centered">
+        <div class="trusted-company mt-20">
+          <p>Company that <a href="#">trust</a> AppsCode</p>
+          <!-- brand logo start -->
+          <div class="brand-logo-wrapper mt-10">
+            <a class="single-brand-logo">
+              <img
+                src="../assets/images/logo/trusted-logo/zippo.png"
+                alt=""
+                class="img"
+              />
+            </a>
+
+            <a class="single-brand-logo">
+              <img
+                src="../assets/images/logo/trusted-logo/colour-logo.png"
+                alt=""
+                class="img"
+              />
+            </a>
+            <a class="single-brand-logo">
+              <img
+                src="../assets/images/logo/trusted-logo/microsoft.png"
+                alt=""
+                class="img"
+              />
+            </a>
+            <a class="single-brand-logo">
+              <img
+                src="../assets/images/logo/trusted-logo/volvo.png"
+                alt=""
+                class="img"
+              />
+            </a>
+            <a class="single-brand-logo">
+              <img
+                src="../assets/images/logo/trusted-logo/tumblr_inline_pcdui455cU1r8ovh1_540.png"
+                alt=""
+                class="img"
+              />
+            </a>
           </div>
+          <!-- brand logo end -->
         </div>
       </div>
     </div>
+    <!-- trusted logo area end -->
   </div>
 </section>
 <!-- hero-area end -->
 
 <!-- shape start -->
 <div class="shap-3">
-  <!-- logo section start -->
-  <section class="trusted-logo section-padding pb-0">
-    <div class="container section">
-      <div class="columns is-multiline">
-        <div class="column is-8 is-offset-2 has-text-centered">
-          <div class="trusted-action">
-            <p>
-              Your <a href="#">news feed helps</a> you keep up with
-              <a href="#">recent activity</a> on repositories you
-              <a href="#">watch</a> and people.
-            </p>
-          </div>
-        </div>
-
-        <div class="column is-10 is-offset-1 has-text-centered">
-          <div class="trusted-company mt-20">
-            <p>Company that <a href="#">trust</a> AppsCode</p>
-            <!-- brand logo start -->
-            <div class="brand-logo-wrapper mt-10">
-              <a class="single-brand-logo">
-                <img
-                  src="../assets/images/logo/trusted-logo/zippo.png"
-                  alt=""
-                  class="img"
-                />
-              </a>
-
-              <a class="single-brand-logo">
-                <img
-                  src="../assets/images/logo/trusted-logo/colour-logo.png"
-                  alt=""
-                  class="img"
-                />
-              </a>
-              <a class="single-brand-logo">
-                <img
-                  src="../assets/images/logo/trusted-logo/microsoft.png"
-                  alt=""
-                  class="img"
-                />
-              </a>
-              <a class="single-brand-logo">
-                <img
-                  src="../assets/images/logo/trusted-logo/volvo.png"
-                  alt=""
-                  class="img"
-                />
-              </a>
-              <a class="single-brand-logo">
-                <img
-                  src="../assets/images/logo/trusted-logo/tumblr_inline_pcdui455cU1r8ovh1_540.png"
-                  alt=""
-                  class="img"
-                />
-              </a>
-            </div>
-            <!-- brand logo end -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- logo section end -->
-
   <!-- service area start -->
-  <section class="pb-80">
-    <div class="container">
-      <div class="columns section">
+  <section class="section-padding">
+    <div class="container section">
+      <div class="columns">
         <div class="column is-6">
           <div class="service-image">
             <img
@@ -494,7 +519,7 @@
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo
               </p>
-              <div class="mt-30">
+              <div class="mt-40">
                 <a href="#" class="button ac-button ac-primary">Learn More</a>
               </div>
             </div>
@@ -502,7 +527,7 @@
         </div>
       </div>
 
-      <div class="columns section">
+      <div class="columns">
         <div class="column is-6">
           <div class="service-content-wrapper d-table">
             <div class="service-content d-table-cell">
@@ -517,7 +542,7 @@
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo
               </p>
-              <div class="mt-30">
+              <div class="mt-40">
                 <a href="#" class="button ac-button ac-primary">Learn More</a>
               </div>
             </div>
@@ -538,14 +563,13 @@
 </div>
 <!-- shape end -->
 
-<!-- countdown-area start -->
-<section class="section-padding countdown-area">
-  <div class="counter-shape"></div>
+<!-- countdown-top-title start -->
+<section class="section-padding count-link-area">
   <div class="container section">
     <!-- section title start -->
     <div class="columns">
       <div class="column is-8 has-text-left">
-        <div class="section-title">
+        <div class="section-title mb-0">
           <h2>
             The point of using Lorem Ipsum is that it has a more- or-less normal
             distribution of letters, as opposed to using Content here
@@ -558,7 +582,7 @@
         </div>
       </div>
       <!-- right sidebar area start -->
-      <div class="column is-4 is-offset-1">
+      <div class="column is-3 is-offset-1">
         <div class="right-sidebar-wrapper">
           <div class="right-sidebar-menu">
             <ul>
@@ -572,10 +596,17 @@
       <!-- right sidebar area end -->
     </div>
     <!-- section title end -->
+  </div>
+</section>
+<!-- countdown-top-title end -->
+
+<!-- countdown start -->
+<section class="counter-area pb-100">
+  <div class="container section">
     <!-- counter start -->
-    <div class="columns is-gapless">
+    <div class="columns is-gapless is-multiline">
       <!-- single count start -->
-      <div class="column is-3">
+      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
         <div class="single-count-wrapper">
           <div class="count-icon">
             <img src="/assets/images/icon/count/enterprise.png" alt="" />
@@ -588,7 +619,7 @@
       <!-- single count end -->
 
       <!-- single count start -->
-      <div class="column is-3">
+      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
         <div class="single-count-wrapper">
           <div class="count-icon">
             <img src="/assets/images/icon/count/Octocat.png" alt="" />
@@ -601,7 +632,7 @@
       <!-- single count end -->
 
       <!-- single count start -->
-      <div class="column is-3">
+      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
         <div class="single-count-wrapper">
           <div class="count-icon">
             <img src="/assets/images/icon/count/trained.png" alt="" />
@@ -614,7 +645,7 @@
       <!-- single count end -->
 
       <!-- single count start -->
-      <div class="column is-3">
+      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
         <div class="single-count-wrapper">
           <div class="count-icon">
             <img src="/assets/images/icon/count/managed.png" alt="" />
@@ -629,15 +660,15 @@
     <!-- counter end -->
   </div>
 </section>
-<!-- countdown-area end -->
+<!-- countdown end -->
 
 <!-- service area start -->
 <section class="section-padding service-area">
   <div class="container section">
     <div class="columns">
-      <div class="column is-8 is-offset-2 has-text-centered mb-30">
+      <div class="column is-8 is-offset-2 has-text-centered">
         <!-- section title start -->
-        <div class="section-title">
+        <div class="section-title is-main-title">
           <h4>What we Do?</h4>
           <h2>Our Services</h2>
           <p>
@@ -651,12 +682,12 @@
 
     <div class="columns is-multiline">
       <!-- solution start -->
-      <div class="column is-3">
+      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
         <div class="single-solution-wrapper color-1">
           <div class="solution-icon">
             <img src="/assets/images/icon/leave-2.png" alt="" />
           </div>
-          <h4>Open Source</h4>
+          <h4><a href="#">Open Source</a></h4>
           <p>
             Build self-managed multi-host cloud contianer in minutes just with a
             single
@@ -668,12 +699,12 @@
       </div>
       <!-- solution end -->
       <!-- solution start -->
-      <div class="column is-3">
+      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
         <div class="single-solution-wrapper color-2">
           <div class="solution-icon">
             <img src="/assets/images/icon/network.png" alt="" />
           </div>
-          <h4>Subscription</h4>
+          <h4><a href="#">Subscription</a></h4>
           <p>
             Build self-managed multi-host cloud contianer in minutes just with a
             single
@@ -685,12 +716,12 @@
       </div>
       <!-- solution end -->
       <!-- solution start -->
-      <div class="column is-3">
+      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
         <div class="single-solution-wrapper color-3">
           <div class="solution-icon">
             <img src="/assets/images/icon/consulting.png" alt="" />
           </div>
-          <h4>Consulting</h4>
+          <h4><a href="#">Consulting</a></h4>
           <p>
             Build self-managed multi-host cloud contianer in minutes just with a
             single
@@ -702,12 +733,12 @@
       </div>
       <!-- solution end -->
       <!-- solution start -->
-      <div class="column is-3">
+      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
         <div class="single-solution-wrapper color-4">
           <div class="solution-icon">
             <img src="/assets/images/icon/light-bulb.png" alt="" />
           </div>
-          <h4>In-Person Training</h4>
+          <h4><a href="#">In-Person Training</a></h4>
           <p>
             Build self-managed multi-host cloud contianer in minutes just with a
             single
@@ -727,7 +758,7 @@
 <section class="press-area section-padding">
   <div class="container section">
     <div class="columns">
-      <div class="column is-8 is-offset-2 has-text-centered mb-30">
+      <div class="column is-8 is-offset-2 has-text-centered">
         <!-- section title start -->
         <div class="section-title">
           <h2>Press</h2>
@@ -737,12 +768,16 @@
     </div>
     <div class="columns is-multiline">
       <!-- single press start -->
-      <div class="column is-3">
+      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
         <div class="single-press-wrapper">
           <div class="press-image press-image-1"></div>
           <div class="press-content">
             <p class="read-meta">5 min to Read</p>
-            <h3><a href="#">Lorem Ipsum is simply dummy text of the printing and</a></h3>
+            <h3>
+              <a href="#"
+                >Lorem Ipsum is simply dummy text of the printing and</a
+              >
+            </h3>
             <p>
               There are many variations of assages of Lorem Ipsum available, but
               the majority have suffered alteration in some form, by injected
@@ -757,12 +792,16 @@
       <!-- single press end -->
 
       <!-- single press start -->
-      <div class="column is-3">
+      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
         <div class="single-press-wrapper">
           <div class="press-image press-image-2"></div>
           <div class="press-content">
             <p class="read-meta">5 min to Read</p>
-            <h3><a href="#">Lorem Ipsum is simply dummy text of the printing and</a></h3>
+            <h3>
+              <a href="#"
+                >Lorem Ipsum is simply dummy text of the printing and</a
+              >
+            </h3>
             <p>
               There are many variations of assages of Lorem Ipsum available, but
               the majority have suffered alteration in some form, by injected
@@ -777,12 +816,16 @@
       <!-- single press end -->
 
       <!-- single press start -->
-      <div class="column is-3">
+      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
         <div class="single-press-wrapper">
           <div class="press-image press-image-3"></div>
           <div class="press-content">
             <p class="read-meta">5 min to Read</p>
-            <h3><a href="#">Lorem Ipsum is simply dummy text of the printing and</a></h3>
+            <h3>
+              <a href="#"
+                >Lorem Ipsum is simply dummy text of the printing and</a
+              >
+            </h3>
             <p>
               There are many variations of assages of Lorem Ipsum available, but
               the majority have suffered alteration in some form, by injected
@@ -797,12 +840,16 @@
       <!-- single press end -->
 
       <!-- single press start -->
-      <div class="column is-3">
+      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
         <div class="single-press-wrapper">
           <div class="press-image press-image-4"></div>
           <div class="press-content">
             <p class="read-meta">5 min to Read</p>
-            <h3><a href="#">Lorem Ipsum is simply dummy text of the printing and</a></h3>
+            <h3>
+              <a href="#"
+                >Lorem Ipsum is simply dummy text of the printing and</a
+              >
+            </h3>
             <p>
               There are many variations of assages of Lorem Ipsum available, but
               the majority have suffered alteration in some form, by injected
@@ -1003,6 +1050,7 @@
   </div>
 </section>
 <!-- call to action area end -->
+
 
 {{ end }}
 {{ define "testimonial" }}
