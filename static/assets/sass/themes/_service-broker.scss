@@ -1,5 +1,2 @@
-// Colour variable
-
-$service-broker-primary: #a5b1c2;
-
+// Colour include
 @include colorize-product("service-broker", $service-broker-primary);

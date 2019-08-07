@@ -1,3 +1,22 @@
+#fixedHeader {
+  padding: 9px 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+body.fixed-nav #fixedHeader {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 1px 1px rgba(25, 76, 128, 0.08);
+  background-color: #fff;
+  padding: 9px 0;
+  top: 0;
+  z-index: 99;
+}
+.bg-white {
+  background-color: #fff;
+}
 .hero-area-2 {
   position: relative;
   z-index: 1;
@@ -13,7 +32,7 @@
     background: url(../images/appscode/about-hero-bg-2.png);
   }
   .hero-area-inner-2 {
-    height: 500px;
+    height: 400px;
     h1 {
       font-size: 48px;
       margin-bottom: 20px;
@@ -24,7 +43,9 @@
     }
   }
 }
-
+.hero-area-2.bg-color-available:after {
+  background-color: #fbfbfb;
+}
 // consultation page css start
 .illustration-area {
   min-height: 500px;
@@ -51,8 +72,8 @@
   }
 }
 .testimonial-area-2 {
-  background-color: #fbfbfb;
   .testimonial-wrapper {
+    overflow: hidden;
     .quote-icon {
       margin-bottom: 30px;
     }
@@ -69,7 +90,7 @@
         font-size: 18px;
         line-height: 28px;
         font-weight: 700;
-        color: $ac-primary-color;
+        color: $appscode-primary;
       }
       p {
         font-size: 14px;
@@ -135,7 +156,7 @@
     top: 30%;
   }
 }
-.pricing-plan-area {
+.pricing-plan-area-2 {
   .single-pricing {
     background-color: $white-color;
     border: 1px solid $border-color;
@@ -155,7 +176,7 @@
       z-index: -1;
       h5 {
         font-size: 16px;
-        color: $ac-primary-color;
+        color: $appscode-primary;
       }
     }
     h2 {
@@ -193,7 +214,7 @@
   }
   .single-feature.foundational {
     h3 {
-      color: $ac-primary-color;
+      color: $appscode-primary;
     }
   }
   .single-feature.intermediate {
@@ -217,6 +238,13 @@
     }
   }
 }
+.ac-cta-area {
+  .cta-text {
+    h2 {
+      color: $heading-color;
+    }
+  }
+}
 // training page css end
 
 // contact-us page start
@@ -232,10 +260,11 @@
     padding: 30px;
     border-radius: 4px;
     left: 0;
-    top: 0;
+    top: -400px;
   }
 }
 .question-area {
+  background-color: #fbfbfb;
   .single-question-wrapper {
     box-shadow: 0px 8px 57px rgba(26, 80, 151, 0.16);
     padding: 35px 45px;
@@ -248,7 +277,7 @@
     h4 {
       font-size: 28px;
       margin-bottom: 30px;
-      font-weight: 400;
+      font-weight: 600;
     }
     p {
       font-size: 18px;
@@ -264,7 +293,7 @@
       font-size: 24px;
       line-height: 34px;
       margin-bottom: 20px;
-      font-weight: 400;
+      font-weight: 600;
     }
     p {
       span {
@@ -285,7 +314,7 @@
       cursor: pointer;
     }
     li.is-active {
-      color: $ac-primary-color;
+      color: $appscode-primary;
     }
   }
 }
@@ -300,3 +329,62 @@
   display: block;
 }
 // contact-us page end
+
+// product page feature area start
+.single-product-feature-wrapper {
+  overflow: hidden;
+  background-color: $white-color;
+  box-shadow: 0px 1px 4px rgba(50, 112, 128, 0.16);
+  border-radius: 4px;
+  padding: 20px;
+  transition: .3s ease-in-out;
+  position: relative;
+  min-height: 280px;
+  z-index: 1;
+  &:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    transition: .3s ease-in-out;
+    background-color: $primary-color;
+  }
+  z-index: 1;
+  &:hover{
+    box-shadow: 0px 3px 28px rgba(50,152,128, .16);
+    &:after{
+      height: 5px;
+    }
+  }
+  .product-feature-icon {
+    width: 55px;
+    float: left;
+    margin-right: 25px;
+  }
+  .product-feature-content {
+    float: left;
+    width: 85%;
+  }
+  .product-feature-title {
+    margin-bottom: 10px;
+    h3 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    p {
+      font-size: 16px;
+      font-family: raleway;
+      font-weight: 600;
+    }
+  }
+  .product-feature-description {
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+// product page feature area end

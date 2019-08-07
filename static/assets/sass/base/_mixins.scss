@@ -18,7 +18,8 @@
   body.#{$name} .subscription-form .button:hover,
   body.#{$name} .searchbar-area button,
   body.#{$name} .countdown-area .right-sidebar-menu ul li a::after,
-  body.#{$name} .pagination-list li a.is-active {
+  body.#{$name} .pagination-list li a.is-active,
+  body.#{$name} .single-product-feature-wrapper:after {
     background-color: #{$color};
   }
   // font-color
@@ -33,6 +34,7 @@
   body.#{$name} .customize-kubedb .navbar-dropdown .navbar-item,
   body.#{$name} .carousel-wrapper:after,
   body.#{$name} .footer-link li a:hover,
+  body.#{$name} .footer-inline-link a:hover,
   body.#{$name} .accordion-item.active .accordion-header h2,
   body.#{$name} ul li b,
   body.#{$name} .full-info p b,
@@ -48,8 +50,9 @@
   body.#{$name} .trusted-company a,
   body.#{$name} .single-count-wrapper:hover .count,
   body.#{$name} .single-count-wrapper .action-btn,
-  body.#{$name} .section-title h4,
   body.#{$name} .subscription-form .button,
+  body.#{$name} .section-title h4,
+  body.#{$name} .hero-content-inner h4,
   body.#{$name} .single-search-result h3 a {
     color: #{$color};
   }
@@ -71,12 +74,14 @@
   body.#{$name} .pricing-top:before {
     border-right-color: darken($color, 15%);
   }
-
+  body.#{$name} .go-to-top {
+    background-color: rgba($color, 0.8);
+  }
   /*==================================================
                   Theme #{$name} End
   ====================================================*/
 }
 
-  /*==================================================
+/*==================================================
                   Theme CSS prefix End
   ====================================================*/

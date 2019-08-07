@@ -1,5 +1,2 @@
-// Colour variable
-
-$searchlight-primary: #2ecc71;
-
+// Colour include
 @include colorize-product("searchlight", $searchlight-primary);
