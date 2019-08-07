@@ -1,8 +1,8 @@
 /* Normal desktop :1200px. */
-@media (min-width: 1200px) and (max-width: 1500px) {
+@media (min-width: 1407px) and (max-width: 1500px) {
 }
 
-/* Normal desktop :1024px. */
+/* Normal desktop :1216px. */
 @media (min-width: 1216px) and (max-width: 1407px) {
   .single-db-logo {
     margin: 10px;
@@ -51,10 +51,11 @@
     font-size: 13px;
   }
   // appscode style start
-  .main-menu.is-bg-available .navbar-item, .main-menu.is-bg-available .navbar-link{
+  .main-menu.is-bg-available .navbar-item,
+  .main-menu.is-bg-available .navbar-link {
     color: $link-color;
   }
-  .is-full-height{
+  .is-full-height {
     height: auto;
   }
   .hero-area {
@@ -83,7 +84,7 @@
 }
 
 /*  desktop :768px. */
-@media (min-width: 1024px) and (max-width:1215px) {
+@media (min-width: 1024px) and (max-width: 1215px) {
   p {
     font-size: 15px;
   }
@@ -141,12 +142,13 @@
   /* ==============================================
    appscode-home page start
 ==============================================*/
-.is-full-height{
-  height: 100%;
-}
-.main-menu.is-bg-available .navbar-item, .main-menu.is-bg-available .navbar-link {
-  color: $link-color;
-}
+  .is-full-height {
+    height: 100%;
+  }
+  .main-menu.is-bg-available .navbar-item,
+  .main-menu.is-bg-available .navbar-link {
+    color: $link-color;
+  }
   // mega-menu start
   body.fixed-nav .is-fixed-absolute {
     top: 0;
@@ -156,7 +158,7 @@
   .main-menu {
     overflow-y: auto;
     max-height: 70vh;
-}
+  }
   body.fixed-nav {
     padding-top: 0 !important;
   }
@@ -215,7 +217,7 @@
   }
   // hero-area button style
   .hero-area {
-    .trusted-logo{
+    .trusted-logo {
       margin-top: 0;
     }
     .hero-shape {
@@ -461,10 +463,29 @@
   /* ==============================================
    appscode-home inner page end
 ==============================================*/
+  .customize-kubedb .main-menu a {
+    color: $link-color;
+  }
+  //feature page style start
+  .single-product-feature-wrapper {
+    .product-feature-content {
+      width: 80%;
+    }
+    .product-feature-icon {
+      width: 35px;
+      margin-right: 15px;
+      margin-top: 10px;
+    }
+    .product-feature-title h3 {
+      font-size: 22px;
+      line-height: 40px;
+    }
+  }
+  //feature page style end
 }
 
 /*  tablet :769px. */
-@media (min-width: 769px) and (max-width:1023px) {
+@media (min-width: 769px) and (max-width: 1023px) {
   p {
     font-size: 15px;
   }
@@ -491,6 +512,9 @@
     h4 {
       margin-bottom: 10px;
     }
+  }
+  .customize-kubedb .main-menu a {
+    color: $link-color;
   }
   //reverse order css
   .reverse-row-order {
@@ -705,13 +729,29 @@
   /* ==============================================
    Product page  start
 ==============================================*/
-.customize-kubedb .main-menu a{
-  color: $link-color;
-}
+  .customize-kubedb .main-menu a {
+    color: $link-color;
+  }
+  // feature-page start
+  .single-product-feature-wrapper {
+    .product-feature-title {
+      h3 {
+        font-size: 20px;
+        line-height: 35px;
+        margin-bottom: 5px;
+      }
+    }
+    .product-feature-icon {
+      margin-bottom: 10px;
+    }
+    .product-feature-content {
+      width: 100%;
+    }
+  }
+  // feature-page end
   /* ==============================================
    Product page  end
 ==============================================*/
-
 
   /* ==============================================
    appscode-home page start
@@ -726,15 +766,14 @@
     overflow-y: auto;
     max-height: 70vh;
   }
-  .main-menu.is-bg-available .navbar-item, .main-menu.is-bg-available .navbar-link{
+  .main-menu.is-bg-available .navbar-item,
+  .main-menu.is-bg-available .navbar-link {
     color: $link-color;
   }
-  .main-menu.is-bg-available
-  .navbar-link:not(.is-arrowless)::after,
-  .main-menu.is-bg-available
-  .select:not(.is-multiple):not(.is-loading)::after {
-  border-color: $appscode-primary;
-}
+  .main-menu.is-bg-available .navbar-link:not(.is-arrowless)::after,
+  .main-menu.is-bg-available .select:not(.is-multiple):not(.is-loading)::after {
+    border-color: $appscode-primary;
+  }
   body.fixed-nav {
     padding-top: 0 !important;
   }

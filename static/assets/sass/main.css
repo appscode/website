@@ -1601,24 +1601,24 @@ body.fixed-nav #fixedHeader {
   background-color: #ffffff;
   box-shadow: 0px 1px 4px rgba(50, 112, 128, 0.16);
   border-radius: 4px;
-  padding: 40px 20px 40px 40px;
+  padding: 20px;
   transition: .3s ease-in-out;
   position: relative;
-  min-height: 300px;
+  min-height: 280px;
+  z-index: 1;
   z-index: 1; }
   .single-product-feature-wrapper:after {
     position: absolute;
     content: "";
     left: 0;
     top: 0;
-    width: 0;
+    width: 100%;
     height: 0;
     transition: .3s ease-in-out;
     background-color: #4d4dcb; }
   .single-product-feature-wrapper:hover {
     box-shadow: 0px 3px 28px rgba(50, 152, 128, 0.16); }
     .single-product-feature-wrapper:hover:after {
-      width: 100%;
       height: 5px; }
   .single-product-feature-wrapper .product-feature-icon {
     width: 55px;
@@ -1628,7 +1628,7 @@ body.fixed-nav #fixedHeader {
     float: left;
     width: 85%; }
   .single-product-feature-wrapper .product-feature-title {
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
     .single-product-feature-wrapper .product-feature-title h3 {
       font-size: 28px;
       font-weight: 700;
@@ -4410,7 +4410,7 @@ body.voyager .pricing-top:before {
                 Theme voyager End
 ====================================================*/
 /* Normal desktop :1200px. */
-/* Normal desktop :1024px. */
+/* Normal desktop :1216px. */
 @media (min-width: 1216px) and (max-width: 1407px) {
   .single-db-logo {
     margin: 10px;
@@ -4450,7 +4450,8 @@ body.voyager .pricing-top:before {
   .pricing-body li {
     font-size: 13px; }
 
-  .main-menu.is-bg-available .navbar-item, .main-menu.is-bg-available .navbar-link {
+  .main-menu.is-bg-available .navbar-item,
+  .main-menu.is-bg-available .navbar-link {
     color: #4a4a4a; }
 
   .is-full-height {
@@ -4518,7 +4519,8 @@ body.voyager .pricing-top:before {
   .is-full-height {
     height: 100%; }
 
-  .main-menu.is-bg-available .navbar-item, .main-menu.is-bg-available .navbar-link {
+  .main-menu.is-bg-available .navbar-item,
+  .main-menu.is-bg-available .navbar-link {
     color: #4a4a4a; }
 
   body.fixed-nav .is-fixed-absolute {
@@ -4741,7 +4743,19 @@ body.voyager .pricing-top:before {
 
   /* ==============================================
    appscode-home inner page end
-==============================================*/ }
+==============================================*/
+  .customize-kubedb .main-menu a {
+    color: #4a4a4a; }
+
+  .single-product-feature-wrapper .product-feature-content {
+    width: 80%; }
+  .single-product-feature-wrapper .product-feature-icon {
+    width: 35px;
+    margin-right: 15px;
+    margin-top: 10px; }
+  .single-product-feature-wrapper .product-feature-title h3 {
+    font-size: 22px;
+    line-height: 40px; } }
 /*  tablet :769px. */
 @media (min-width: 769px) and (max-width: 1023px) {
   p {
@@ -4766,6 +4780,9 @@ body.voyager .pricing-top:before {
       font-size: 15px; }
     .single-package-wrapper h4 {
       margin-bottom: 10px; }
+
+  .customize-kubedb .main-menu a {
+    color: #4a4a4a; }
 
   .reverse-row-order {
     display: flex;
@@ -4948,6 +4965,15 @@ body.voyager .pricing-top:before {
   .customize-kubedb .main-menu a {
     color: #4a4a4a; }
 
+  .single-product-feature-wrapper .product-feature-title h3 {
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 5px; }
+  .single-product-feature-wrapper .product-feature-icon {
+    margin-bottom: 10px; }
+  .single-product-feature-wrapper .product-feature-content {
+    width: 100%; }
+
   /* ==============================================
    Product page  end
 ==============================================*/
@@ -4963,13 +4989,12 @@ body.voyager .pricing-top:before {
     overflow-y: auto;
     max-height: 70vh; }
 
-  .main-menu.is-bg-available .navbar-item, .main-menu.is-bg-available .navbar-link {
+  .main-menu.is-bg-available .navbar-item,
+  .main-menu.is-bg-available .navbar-link {
     color: #4a4a4a; }
 
-  .main-menu.is-bg-available
-  .navbar-link:not(.is-arrowless)::after,
-  .main-menu.is-bg-available
-  .select:not(.is-multiple):not(.is-loading)::after {
+  .main-menu.is-bg-available .navbar-link:not(.is-arrowless)::after,
+  .main-menu.is-bg-available .select:not(.is-multiple):not(.is-loading)::after {
     border-color: #00A651; }
 
   body.fixed-nav {
