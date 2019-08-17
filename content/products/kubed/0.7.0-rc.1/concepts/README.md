@@ -11,7 +11,7 @@ menu_name: product_kubed_0.7.0-rc.1
 section_menu_id: concepts
 url: /products/kubed/0.7.0-rc.1/concepts/
 aliases:
-  - /products/kubed/0.7.0-rc.1/concepts/README/
+- /products/kubed/0.7.0-rc.1/concepts/README/
 ---
 
 # Concepts

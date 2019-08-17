@@ -12,8 +12,8 @@ menu_name: product_service-broker_0.3.1
 section_menu_id: welcome
 url: /products/service-broker/0.3.1/welcome/
 aliases:
-  - /products/service-broker/0.3.1/
-  - /products/service-broker/0.3.1/README/
+- /products/service-broker/0.3.1/
+- /products/service-broker/0.3.1/README/
 ---
 
 # AppsCode Service Broker

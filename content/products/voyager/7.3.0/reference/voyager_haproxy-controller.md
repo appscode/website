@@ -9,6 +9,7 @@ product_name: voyager
 menu_name: product_voyager_7.3.0
 section_menu_id: reference
 ---
+
 ## voyager haproxy-controller
 
 Synchronizes HAProxy config

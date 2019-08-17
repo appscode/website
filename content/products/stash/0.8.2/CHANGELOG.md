@@ -12,7 +12,7 @@ menu_name: product_stash_0.8.2
 section_menu_id: welcome
 url: /products/stash/0.8.2/welcome/changelog/
 aliases:
-  - /products/stash/0.8.2/CHANGELOG/
+- /products/stash/0.8.2/CHANGELOG/
 ---
 
 # Change Log

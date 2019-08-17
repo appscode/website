@@ -9,6 +9,7 @@ product_name: guard
 menu_name: product_guard_0.1.4
 section_menu_id: reference
 ---
+
 ## guard get webhook-config
 
 Prints authentication token webhook config file

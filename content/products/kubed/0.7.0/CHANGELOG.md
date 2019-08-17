@@ -12,7 +12,7 @@ menu_name: product_kubed_0.7.0
 section_menu_id: welcome
 url: /products/kubed/0.7.0/welcome/changelog/
 aliases:
-  - /products/kubed/0.7.0/CHANGELOG/
+- /products/kubed/0.7.0/CHANGELOG/
 ---
 
 # Change Log

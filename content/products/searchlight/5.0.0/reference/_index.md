@@ -9,3 +9,4 @@ menu:
     pre: dropdown
 menu_name: product_searchlight_5.0.0
 ---
+

@@ -9,6 +9,7 @@ product_name: searchlight
 section_menu_id: reference
 menu_name: product_searchlight_8.0.0-rc.0
 ---
+
 ## hyperalert check_webhook
 
 Check webhook result

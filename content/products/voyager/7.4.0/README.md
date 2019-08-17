@@ -12,8 +12,8 @@ menu_name: product_voyager_7.4.0
 section_menu_id: welcome
 url: /products/voyager/7.4.0/welcome/
 aliases:
-  - /products/voyager/7.4.0/
-  - /products/voyager/7.4.0/README/
+- /products/voyager/7.4.0/
+- /products/voyager/7.4.0/README/
 ---
 
 # Voyager

@@ -12,8 +12,9 @@ menu_name: product_voyager_5.0.0
 section_menu_id: setup
 url: /products/voyager/5.0.0/setup/
 aliases:
-  - /products/voyager/5.0.0/setup/README/
+- /products/voyager/5.0.0/setup/README/
 ---
+
 # Setup
 
 Setup contains instructions for installing the Voyager and its various components in Kubernetes.

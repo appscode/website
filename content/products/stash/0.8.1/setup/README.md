@@ -12,8 +12,9 @@ menu_name: product_stash_0.8.1
 section_menu_id: setup
 url: /products/stash/0.8.1/setup/
 aliases:
-  - /products/stash/0.8.1/setup/README/
+- /products/stash/0.8.1/setup/README/
 ---
+
 # Setup
 
 Setup contains instructions for installing the Stash and its various components in Kubernetes.

@@ -1,4 +1,3 @@
-
 ```console
 $ kubectl create -f ./docs/examples/monitoring/demo-0.yaml
 namespace "demo" created

@@ -10,7 +10,7 @@ product_name: voyager
 menu_name: product_voyager_8.0.0
 section_menu_id: guides
 aliases:
-  - /products/voyager/8.0.0/guides/ingress/security/
+- /products/voyager/8.0.0/guides/ingress/security/
 ---
 
 > New to Voyager? Please start [here](/products/voyager/8.0.0/concepts/overview).

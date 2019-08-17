@@ -6,14 +6,13 @@ menu:
     name: Swift
     parent: reference
     weight: 0
-
 product_name: swift
 menu_name: product_swift_0.11.1
 section_menu_id: reference
 aliases:
-  - products/swift/0.11.1/reference/
-
+- /products/swift/0.11.1/reference/
 ---
+
 ## swift
 
 Swift by Appscode - Ajax friendly Helm Tiller Proxy

@@ -11,6 +11,7 @@ product_name: stash
 menu_name: product_stash_0.8.1
 section_menu_id: setup
 ---
+
 # Release Process
 
 The following steps must be done from a Linux x64 bit machine.

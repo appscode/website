@@ -12,8 +12,9 @@ menu_name: product_stash_0.8.0
 section_menu_id: welcome
 url: /products/stash/0.8.0/welcome/support/
 aliases:
-  - /products/stash/0.8.0/support/
+- /products/stash/0.8.0/support/
 ---
+
 # Support
 
 We use Slack for public discussions. To chit chat with us or the rest of the community, join us in the [AppsCode Slack team](https://appscode.slack.com/messages/C8NCX6N23/details/) channel `#stash`. To sign up, use our [Slack inviter](https://slack.appscode.com/).

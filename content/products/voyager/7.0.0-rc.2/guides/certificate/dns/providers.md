@@ -11,6 +11,7 @@ product_name: voyager
 menu_name: product_voyager_7.0.0-rc.2
 section_menu_id: guides
 ---
+
 > New to Voyager? Please start [here](/products/voyager/7.0.0-rc.2/concepts/overview).
 
 # Supported DNS Challenge Providers

@@ -12,7 +12,7 @@ menu_name: product_kubed_0.9.0
 section_menu_id: guides
 url: /products/kubed/0.9.0/guides/
 aliases:
-  - /products/kubed/0.9.0/guides/README/
+- /products/kubed/0.9.0/guides/README/
 ---
 
 # Guides

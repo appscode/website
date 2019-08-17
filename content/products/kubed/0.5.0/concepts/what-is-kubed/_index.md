@@ -9,3 +9,4 @@ menu:
     weight: 10
 menu_name: product_kubed_0.5.0
 ---
+

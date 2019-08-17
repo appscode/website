@@ -11,8 +11,9 @@ menu_name: product_searchlight_7.0.0-rc.0
 section_menu_id: concepts
 url: /products/searchlight/7.0.0-rc.0/concepts/
 aliases:
-  - /products/searchlight/7.0.0-rc.0/concepts/README/
+- /products/searchlight/7.0.0-rc.0/concepts/README/
 ---
+
 # Concepts
 
 Concepts help you learn about the different parts of the Searchlight and the abstractions it uses.

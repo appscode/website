@@ -12,7 +12,7 @@ menu_name: product_stash_0.8.3
 section_menu_id: welcome
 url: /products/stash/0.8.3/welcome/acknowledgement/
 aliases:
-  - /products/stash/0.8.3/acknowledgement/
+- /products/stash/0.8.3/acknowledgement/
 ---
 
 # Acknowledgement

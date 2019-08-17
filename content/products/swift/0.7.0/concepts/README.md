@@ -11,8 +11,9 @@ menu_name: product_swift_0.7.0
 section_menu_id: concepts
 url: /products/swift/0.7.0/concepts/
 aliases:
-  - /products/swift/0.7.0/concepts/README/
+- /products/swift/0.7.0/concepts/README/
 ---
+
 # Concepts
 
 Concepts help you learn about the different parts of the Swift and the abstractions it uses.

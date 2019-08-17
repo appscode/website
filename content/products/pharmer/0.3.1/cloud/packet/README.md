@@ -11,7 +11,7 @@ menu_name: product_pharmer_0.3.1
 section_menu_id: cloud
 url: /products/pharmer/0.3.1/cloud/packet/
 aliases:
-  - /products/pharmer/0.3.1/cloud/packet/README/
+- /products/pharmer/0.3.1/cloud/packet/README/
 ---
 
 # Running Kubernetes on [Packet](https://app.packet.net)

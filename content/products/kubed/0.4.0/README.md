@@ -12,8 +12,8 @@ menu_name: product_kubed_0.4.0
 section_menu_id: welcome
 url: /products/kubed/0.4.0/welcome/
 aliases:
-  - /products/kubed/0.4.0/
-  - /products/kubed/0.4.0/README/
+- /products/kubed/0.4.0/
+- /products/kubed/0.4.0/README/
 ---
 
 # Kubed

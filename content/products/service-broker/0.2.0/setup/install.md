@@ -10,6 +10,7 @@ product_name: service-broker
 menu_name: product_service-broker_0.2.0
 section_menu_id: guides
 ---
+
 # Installation Guide
 
 ## Prerequisites

@@ -12,7 +12,7 @@ menu_name: product_guard_0.1.2
 section_menu_id: setup
 url: /products/guard/0.1.2/setup/
 aliases:
-  - /products/guard/0.1.2/setup/README/
+- /products/guard/0.1.2/setup/README/
 ---
 
 # Setup

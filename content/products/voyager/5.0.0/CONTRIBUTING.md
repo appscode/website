@@ -12,7 +12,7 @@ menu_name: product_voyager_5.0.0
 section_menu_id: welcome
 url: /products/voyager/5.0.0/welcome/contributing/
 aliases:
-  - /products/voyager/5.0.0/CONTRIBUTING/
+- /products/voyager/5.0.0/CONTRIBUTING/
 ---
 
 # Contribution Guidelines

@@ -12,7 +12,7 @@ menu_name: product_searchlight_5.1.1
 section_menu_id: welcome
 url: /products/searchlight/5.1.1/welcome/contributing/
 aliases:
-  - /products/searchlight/5.1.1/CONTRIBUTING/
+- /products/searchlight/5.1.1/CONTRIBUTING/
 ---
 
 # Contribution Guidelines

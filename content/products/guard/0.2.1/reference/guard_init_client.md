@@ -9,6 +9,7 @@ product_name: guard
 menu_name: product_guard_0.2.1
 section_menu_id: reference
 ---
+
 ## guard init client
 
 Generate client certificate pair

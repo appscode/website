@@ -9,6 +9,7 @@ product_name: pharmer
 menu_name: product_pharmer_0.3.1
 section_menu_id: reference
 ---
+
 ## pharmer create nodegroup
 
 Create a Kubernetes cluster NodeGroup for a given cloud provider

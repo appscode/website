@@ -12,7 +12,7 @@ menu_name: product_kubed_0.7.0
 section_menu_id: welcome
 url: /products/kubed/0.7.0/welcome/support/
 aliases:
-  - /products/kubed/0.7.0/support/
+- /products/kubed/0.7.0/support/
 ---
 
 # Support

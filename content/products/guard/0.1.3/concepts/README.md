@@ -11,7 +11,7 @@ menu_name: product_guard_0.1.3
 section_menu_id: concepts
 url: /products/guard/0.1.3/concepts/
 aliases:
-  - /products/guard/0.1.3/concepts/README/
+- /products/guard/0.1.3/concepts/README/
 ---
 
 # Concepts

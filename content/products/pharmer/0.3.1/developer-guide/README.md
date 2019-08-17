@@ -12,7 +12,7 @@ menu_name: product_pharmer_0.3.1
 section_menu_id: developer-guide
 url: /products/pharmer/0.3.1/developer-guide/
 aliases:
-  - /products/pharmer/0.3.1/developer-guide/README/
+- /products/pharmer/0.3.1/developer-guide/README/
 ---
 
 ## Development Guide

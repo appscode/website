@@ -12,8 +12,9 @@ menu_name: product_stash_0.7.0-rc.2
 section_menu_id: guides
 url: /products/stash/0.7.0-rc.2/guides/
 aliases:
-  - /products/stash/0.7.0-rc.2/guides/README/
+- /products/stash/0.7.0-rc.2/guides/README/
 ---
+
 # Guides
 
 Guides show you how to perform tasks with Stash.

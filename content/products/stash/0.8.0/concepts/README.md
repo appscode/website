@@ -11,8 +11,9 @@ menu_name: product_stash_0.8.0
 section_menu_id: concepts
 url: /products/stash/0.8.0/concepts/
 aliases:
-  - /products/stash/0.8.0/concepts/README/
+- /products/stash/0.8.0/concepts/README/
 ---
+
 # Concepts
 
 Concepts help you learn about the different parts of the Stash and the abstractions it uses.

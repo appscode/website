@@ -12,8 +12,9 @@ menu_name: product_searchlight_5.1.0
 section_menu_id: setup
 url: /products/searchlight/5.1.0/setup/
 aliases:
-  - /products/searchlight/5.1.0/setup/README/
+- /products/searchlight/5.1.0/setup/README/
 ---
+
 # Setup
 
 Setup contains instructions for installing the Searchlight and its various components in Kubernetes.

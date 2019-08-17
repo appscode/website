@@ -12,8 +12,9 @@ menu_name: product_service-broker_0.3.1
 section_menu_id: welcome
 url: /products/service-broker/0.3.1/welcome/support/
 aliases:
-  - /products/service-broker/0.3.1/support/
+- /products/service-broker/0.3.1/support/
 ---
+
 # Support
 
 We use Slack for public discussions. To chit chat with us or the rest of the community, join us in the [AppsCode Slack team](https://appscode.slack.com/messages/service-broker/) channel `#service-broker`. To sign up, use our [Slack inviter](https://slack.appscode.com/).

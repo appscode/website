@@ -12,7 +12,6 @@ menu_name: product_searchlight_5.1.1
 section_menu_id: setup
 ---
 
-
 > New to Searchlight? Please start [here](/products/searchlight/5.1.1/concepts/README).
 
 # Uninstall Searchlight

@@ -9,6 +9,7 @@ product_name: searchlight
 section_menu_id: reference
 menu_name: product_searchlight_8.0.0
 ---
+
 ## hyperalert version
 
 Prints binary version number.

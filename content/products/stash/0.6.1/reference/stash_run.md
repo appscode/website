@@ -9,6 +9,7 @@ product_name: stash
 menu_name: product_stash_0.6.1
 section_menu_id: reference
 ---
+
 ## stash run
 
 Run Stash operator

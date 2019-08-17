@@ -11,6 +11,7 @@ product_name: stash
 menu_name: product_stash_0.6.2
 section_menu_id: setup
 ---
+
 # Uninstall Stash
 
 Please follow the steps below to uninstall Stash:

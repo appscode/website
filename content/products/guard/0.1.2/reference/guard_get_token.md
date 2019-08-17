@@ -9,6 +9,7 @@ product_name: guard
 menu_name: product_guard_0.1.2
 section_menu_id: reference
 ---
+
 ## guard get token
 
 Get tokens for Appscode/Azure/Github/Gitlab/Google/Ldap/Token-Auth

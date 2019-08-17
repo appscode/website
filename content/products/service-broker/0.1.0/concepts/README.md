@@ -11,8 +11,9 @@ menu_name: product_service-broker_0.1.0
 section_menu_id: concepts
 url: /products/service-broker/0.1.0/concepts/
 aliases:
-  - /products/service-broker/0.1.0/concepts/README/
+- /products/service-broker/0.1.0/concepts/README/
 ---
+
 # AppsCode Service Broker
 
 This provides an overview of the service broker implemented for installing [AppsCode](https://appscode.com/) cloud services in Kubernetes cluster.

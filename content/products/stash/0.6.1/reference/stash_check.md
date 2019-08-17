@@ -9,6 +9,7 @@ product_name: stash
 left_menu: product_stash_0.6.1
 section_menu_id: reference
 ---
+
 ## stash check
 
 Check restic backup

@@ -11,7 +11,7 @@ menu_name: product_pharmer_0.3.1
 section_menu_id: cloud
 url: /products/pharmer/0.3.1/cloud/gke/
 aliases:
-  - /products/pharmer/0.3.1/cloud/gke/README/
+- /products/pharmer/0.3.1/cloud/gke/README/
 ---
 
 # Running Kubernetes on [Google Kubernetes Engine](https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html)

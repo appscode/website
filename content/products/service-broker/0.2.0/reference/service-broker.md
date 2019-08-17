@@ -6,14 +6,13 @@ menu:
     name: Service-Broker
     parent: reference
     weight: 0
-
 product_name: service-broker
 menu_name: product_service-broker_0.2.0
 section_menu_id: reference
 aliases:
-  - products/service-broker/0.2.0/reference/
-
+- /products/service-broker/0.2.0/reference/
 ---
+
 ## service-broker
 
 

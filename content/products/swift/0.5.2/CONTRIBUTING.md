@@ -12,7 +12,7 @@ menu_name: product_swift_0.5.2
 section_menu_id: welcome
 url: /products/swift/0.5.2/welcome/contributing/
 aliases:
-  - /products/swift/0.5.2/CONTRIBUTING/
+- /products/swift/0.5.2/CONTRIBUTING/
 ---
 
 # Contribution Guidelines

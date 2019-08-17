@@ -9,6 +9,7 @@ product_name: pharmer
 menu_name: product_pharmer_0.3.1
 section_menu_id: reference
 ---
+
 ## pharmer controller
 
 Bootstrap as a Kubernetes master or node

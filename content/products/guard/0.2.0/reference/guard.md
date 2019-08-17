@@ -6,14 +6,13 @@ menu:
     name: Guard
     parent: reference
     weight: 0
-
 product_name: guard
 menu_name: product_guard_0.2.0
 section_menu_id: reference
 aliases:
-  - products/guard/0.2.0/reference/
-
+- /products/guard/0.2.0/reference/
 ---
+
 ## guard
 
 Guard by AppsCode - Kubernetes Authentication WebHook Server

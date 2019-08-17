@@ -12,8 +12,8 @@ menu_name: product_voyager_7.0.0-rc.3
 section_menu_id: welcome
 url: /products/voyager/7.0.0-rc.3/welcome/
 aliases:
-  - /products/voyager/7.0.0-rc.3/
-  - /products/voyager/7.0.0-rc.3/README/
+- /products/voyager/7.0.0-rc.3/
+- /products/voyager/7.0.0-rc.3/README/
 ---
 
 # Voyager
