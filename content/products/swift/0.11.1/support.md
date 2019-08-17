@@ -12,7 +12,7 @@ menu_name: product_swift_0.11.1
 section_menu_id: welcome
 url: /products/swift/0.11.1/welcome/support/
 aliases:
-  - /products/swift/0.11.1/support/
+- /products/swift/0.11.1/support/
 ---
 
 # Support

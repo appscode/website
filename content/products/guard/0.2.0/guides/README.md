@@ -12,7 +12,7 @@ menu_name: product_guard_0.2.0
 section_menu_id: guides
 url: /products/guard/0.2.0/guides/
 aliases:
-  - /products/guard/0.2.0/guides/README/
+- /products/guard/0.2.0/guides/README/
 ---
 
 # Guides

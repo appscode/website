@@ -12,7 +12,7 @@ menu_name: product_service-broker_0.2.0
 section_menu_id: welcome
 url: /products/service-broker/0.2.0/welcome/contributing/
 aliases:
-  - /products/service-broker/0.2.0/CONTRIBUTING/
+- /products/service-broker/0.2.0/CONTRIBUTING/
 ---
 
 # Contribution Guidelines

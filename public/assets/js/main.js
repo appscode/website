@@ -22,28 +22,48 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// mega menu active class
+var navbarItems = document.querySelectorAll(".navbar-item");
+navbarItems.forEach(navbarItem => {
+  navbarItem.addEventListener("click", function() {
+    var megamenues = document.querySelectorAll(".navbar-item > .ac-megamenu , .navbar-item > .ac-dropdown");
+    // remove is-active class from all the megamenus except the navbar item that was clicked
+    megamenues.forEach(megamenu => {
+      // toggle classes
+      if (megamenu.parentElement === navbarItem)
+        megamenu.classList.toggle("is-active");
+      else megamenu.classList.remove("is-active");
+    });
+  });
+});
 
-// menu sticky
-// Not a ton of code, but hard to
-const nav = document.querySelector('#header, .kubedb-documentation-menu');
-let topOfNav = nav.offsetTop;
+// map area-tabs
+var tabsMenus = document.querySelectorAll(".tabs-wrapper ul li");
+tabsMenus.forEach(tabItem => {
+  tabItem.addEventListener("click", function() {
+    // remove is-active from all the menus
+    tabsMenus.forEach(tabMenu => tabMenu.classList.remove("is-active"));
 
-function fixNav() {
-  if (window.scrollY > topOfNav) {
-    document.body.style.paddingTop = nav.offsetHeight + 'px';
-    document.body.classList.add('fixed-nav');
-  } else {
-    document.body.classList.remove('fixed-nav');
-    document.body.style.paddingTop = 0;
-  }
-}
+    // add is-active to the clicked menu
+    tabItem.classList.add("is-active");
 
-window.addEventListener('scroll', fixNav);
+    // activate map
+    var mapId = tabItem.getAttribute("href");
 
+    var mapElemUsa = document.getElementById("usa");
+    var mapElemDhaka = document.getElementById("dhaka");
 
+    if (mapId === "usa") {
+      mapElemDhaka.classList.remove("is-active");
+      mapElemUsa.classList.add("is-active");
+    } else {
+      mapElemUsa.classList.remove("is-active");
+      mapElemDhaka.classList.add("is-active");
+    }
+  });
+});
 
-
-//bulma carousel
+//for products page testimonial carousel
 bulmaCarousel.attach("#carousel-demo", {
   slidesToScroll: 1,
   slidesToShow: 1,
@@ -51,7 +71,30 @@ bulmaCarousel.attach("#carousel-demo", {
   autoplay: false
 });
 
-// For FAQ Collaps Page
+// appscode home page bulma carousel
+bulmaCarousel.attach("#testimonial-carousel", {
+  slidesToScroll: 1,
+  slidesToShow: 3,
+  infinite: true,
+  autoplay: true,
+  loop: true,
+  breakpoints: [
+    { changePoint: 479, slidesToShow: 1, slidesToScroll: 1 },
+    { changePoint: 980, slidesToShow: 2, slidesToScroll: 1 },
+    { changePoint: 1140, slidesToShow: 3, slidesToScroll: 1 }
+  ]
+});
+
+// appscode home page logo carousel
+bulmaCarousel.attach("#logo-area", {
+  slidesToScroll: 1,
+  slidesToShow: 6,
+  infinite: true,
+  autoplay: true,
+  loop: true
+});
+
+// For FAQ Collapse Page
 const accordionItem = document.querySelectorAll(".accordion-item");
 const onClickAccordionHeader = e => {
   if (e.currentTarget.parentNode.classList.contains("active")) {
@@ -116,7 +159,6 @@ const spyScrolling = () => {
             }
           });
         }
-        
       }
     }
   };
@@ -152,3 +194,49 @@ tabItems.forEach(tab => {
     tabPane.classList.add("show");
   });
 });
+
+// menu sticky
+// Not a ton of code, but hard to
+const nav = document.querySelector(
+  "#header,.is-fixed-absolute, #fixedHeader, .kubedb-documentation-menu"
+);
+let topOfNav = nav.offsetTop;
+function fixNav() {
+  if (window.scrollY > topOfNav) {
+    document.body.classList.add("fixed-nav");
+  } else {
+    document.body.classList.remove("fixed-nav");
+    document.body.style.paddingTop = 0;
+  }
+}
+
+window.addEventListener("scroll", fixNav);
+
+// scroll to top
+var basicScrollTop = function() {
+  // The button
+  var btnTop = document.querySelector("#goTop");
+  if (btnTop) {
+    // Reveal the button
+    var btnReveal = function() {
+      if (window.scrollY >= 300) {
+        btnTop.classList.add("is-visible");
+      } else {
+        btnTop.classList.remove("is-visible");
+      }
+    };
+    // Smooth scroll top
+    var TopscrollTo = function() {
+      if (window.scrollY != 0) {
+        setTimeout(function() {
+          window.scrollTo(0, window.scrollY - 30);
+          TopscrollTo();
+        }, 5);
+      }
+    };
+    // Listeners
+    window.addEventListener("scroll", btnReveal);
+    btnTop.addEventListener("click", TopscrollTo); 
+  }
+};
+basicScrollTop();

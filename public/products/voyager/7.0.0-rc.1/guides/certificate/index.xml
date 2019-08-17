@@ -37,9 +37,11 @@ Features  Provision free TLS certificates (including wildcard certificates) from
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://appscode-v3-hugo.web.app/products/voyager/7.0.0-rc.1/guides/certificate/delete/</guid>
-      <description>  New to Voyager? Please start here.
+      <description>New to Voyager? Please start here.
  Deleting Certificate Deleting a Kubernetes Certificate object will only delete the certificate CRD from Kubernetes. It will not delete the obtained certificate and user account secret from Kubernetes. User have to manually delete these secrets for complete cleanup.
- Delete Certificate crd.  kubectl delete certificate.voyager.appscode.com test-cert   Delete Obtained Let&amp;rsquo;s Encrypt tls certificate  kubectl delete secret tls-test-cert   Delete Let&amp;rsquo;s Encrypt user account Secret  kubectl delete secret test-user-secret  </description>
+ Delete Certificate crd.
+kubectl delete certificate.voyager.appscode.com test-cert  Delete Obtained Let&amp;rsquo;s Encrypt tls certificate
+kubectl delete secret tls-test-cert  Delete Let&amp;rsquo;s Encrypt user account Secret</description>
     </item>
     
   </channel>

@@ -12,7 +12,7 @@ menu_name: product_searchlight_7.0.0-rc.0
 section_menu_id: welcome
 url: /products/searchlight/7.0.0-rc.0/welcome/acknowledgement/
 aliases:
-  - /products/searchlight/7.0.0-rc.0/acknowledgement/
+- /products/searchlight/7.0.0-rc.0/acknowledgement/
 ---
 
 # Acknowledgement

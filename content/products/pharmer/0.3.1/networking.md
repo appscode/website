@@ -12,7 +12,7 @@ menu_name: product_pharmer_0.3.1
 section_menu_id: getting-started
 url: /products/pharmer/0.3.1/getting-started/networking/
 aliases:
-  - /products/pharmer/0.3.1/networking/
+- /products/pharmer/0.3.1/networking/
 ---
 
 # Pod Networking

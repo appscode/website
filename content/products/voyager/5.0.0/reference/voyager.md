@@ -6,14 +6,13 @@ menu:
     name: Voyager
     parent: reference
     weight: 0
-
 product_name: voyager
 menu_name: product_voyager_5.0.0
 section_menu_id: reference
 aliases:
-  - products/voyager/5.0.0/reference/
-
+- /products/voyager/5.0.0/reference/
 ---
+
 ## voyager
 
 Voyager by Appscode - Secure Ingress Controller for Kubernetes

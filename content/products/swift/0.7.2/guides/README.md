@@ -12,7 +12,7 @@ menu_name: product_swift_0.7.2
 section_menu_id: guides
 url: /products/swift/0.7.2/guides/
 aliases:
-  - /products/swift/0.7.2/guides/README/
+- /products/swift/0.7.2/guides/README/
 ---
 
 # Guides

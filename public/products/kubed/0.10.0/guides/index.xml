@@ -41,7 +41,8 @@ Please check your janitor configuration on test clusters before using in product
       <description>New to Kubed? Please start here.
  Monitoring Kubed Kubed operator exposes Prometheus ready metrics via the following endpoints on port :8443:
  /metrics: Scrape this to monitor operator.  Follow the steps below to view the metrics:
- Give system:anonymous user access to /metrics url. This is not safe to do on a production cluster.  apiVersion: rbac.authorization.k8s.io/v1 kind: ClusterRole metadata: name: appscode:system:metrics-collector rules: - nonResourceURLs: [&amp;quot;/metrics&amp;quot;] verbs: [&amp;quot;get&amp;quot;] --- apiVersion: rbac.</description>
+ Give system:anonymous user access to /metrics url. This is not safe to do on a production cluster.
+apiVersion: rbac.authorization.k8s.io/v1 kind: ClusterRole metadata: name: appscode:system:metrics-collector rules: - nonResourceURLs: [&amp;quot;/metrics&amp;quot;] verbs: [&amp;quot;get&amp;quot;] --- apiVersion: rbac.</description>
     </item>
     
     <item>

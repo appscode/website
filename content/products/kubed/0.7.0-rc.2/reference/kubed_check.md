@@ -9,6 +9,7 @@ product_name: kubed
 menu_name: product_kubed_0.7.0-rc.2
 section_menu_id: reference
 ---
+
 ## kubed check
 
 Check cluster config

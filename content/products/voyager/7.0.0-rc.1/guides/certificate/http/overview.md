@@ -11,6 +11,7 @@ product_name: voyager
 menu_name: product_voyager_7.0.0-rc.1
 section_menu_id: guides
 ---
+
 > New to Voyager? Please start [here](/products/voyager/7.0.0-rc.1/concepts/overview).
 
 # Issue Let's Encrypt certificate using HTTP-01 challenge

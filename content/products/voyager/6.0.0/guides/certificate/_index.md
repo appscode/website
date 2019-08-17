@@ -8,3 +8,4 @@ menu:
     weight: 80
 menu_name: product_voyager_6.0.0
 ---
+

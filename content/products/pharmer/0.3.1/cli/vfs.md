@@ -10,7 +10,7 @@ product_name: pharmer
 menu_name: product_pharmer_0.3.1
 section_menu_id: cli
 aliases:
-  - /products/pharmer/0.3.1/cli/
+- /products/pharmer/0.3.1/cli/
 ---
 
 ## Virtual file system (Vfs)

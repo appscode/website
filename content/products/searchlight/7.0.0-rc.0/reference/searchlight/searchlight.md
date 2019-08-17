@@ -6,15 +6,14 @@ menu:
     name: Searchlight
     parent: searchlight-cli
     weight: 0
-
 product_name: searchlight
 section_menu_id: reference
 menu_name: product_searchlight_7.0.0-rc.0
 url: /products/searchlight/7.0.0-rc.0/reference/searchlight/
 aliases:
-  - products/searchlight/7.0.0-rc.0/reference/searchlight/searchlight/
-
+- /products/searchlight/7.0.0-rc.0/reference/searchlight/searchlight/
 ---
+
 ## searchlight
 
 Searchlight by AppsCode - Alerts for Kubernetes

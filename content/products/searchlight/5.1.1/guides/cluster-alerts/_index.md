@@ -6,5 +6,6 @@ menu:
     name: Cluster Alert
     parent: guides
     weight: 15
-menu_name: product_searchlight_5.1.1 
+menu_name: product_searchlight_5.1.1
 ---
+

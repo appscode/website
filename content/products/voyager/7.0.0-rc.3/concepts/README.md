@@ -11,8 +11,9 @@ menu_name: product_voyager_7.0.0-rc.3
 section_menu_id: concepts
 url: /products/voyager/7.0.0-rc.3/concepts/
 aliases:
-  - /products/voyager/7.0.0-rc.3/concepts/README/
+- /products/voyager/7.0.0-rc.3/concepts/README/
 ---
+
 # Concepts
 
 Concepts help you learn about the different parts of the Voyager and the abstractions it uses.

@@ -27,7 +27,8 @@ This document is intended to be relative to the branch in which it is found. It 
       
       <guid>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0/setup/developer-guide/release/</guid>
       <description>Release Process The following steps must be done from a Linux x64 bit machine.
- Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Now, first build all the binaries: console $ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCODE_ENV=prod ./hack/make.py push; ./hack/make.py push  Build and push searchlight docker image console .</description>
+ Do a global replacement of tags so that docs point to the next release. Push changes to the release-x branch and apply new tag. Push all the changes to remote repo. Now, first build all the binaries:
+$ cd ~/go/src/github.com/appscode/searchlight $ ./hack/make.py build; env APPSCODE_ENV=prod ./hack/make.py push; ./hack/make.py push  Build and push searchlight docker image</description>
     </item>
     
   </channel>

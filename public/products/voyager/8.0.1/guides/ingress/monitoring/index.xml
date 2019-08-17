@@ -53,7 +53,8 @@ Now, deploy Voyager operator following instructions here.</description>
       <description>New to Voyager? Please start here.
  Monitoring Voyager operator Voyager operator exposes Prometheus ready metrics via the following endpoints on port :8443:
  /metrics: Scrape this to monitor operator.  Follow the steps below to view the metrics:
- Give system:anonymous user access to /metrics url. This is not safe to do on a production cluster.  apiVersion: rbac.authorization.k8s.io/v1 kind: ClusterRole metadata: name: appscode:system:metrics-collector rules: - nonResourceURLs: [&amp;quot;/metrics&amp;quot;] verbs: [&amp;quot;get&amp;quot;] --- apiVersion: rbac.</description>
+ Give system:anonymous user access to /metrics url. This is not safe to do on a production cluster.
+apiVersion: rbac.authorization.k8s.io/v1 kind: ClusterRole metadata: name: appscode:system:metrics-collector rules: - nonResourceURLs: [&amp;quot;/metrics&amp;quot;] verbs: [&amp;quot;get&amp;quot;] --- apiVersion: rbac.</description>
     </item>
     
     <item>
@@ -65,7 +66,8 @@ Now, deploy Voyager operator following instructions here.</description>
       <description>New to Voyager? Please start here.
  Profiling Voyager operator Voyager operator serves runtime profiling data in the format expected by the pprof visualization tool on port :8443. The handled paths all begin with /debug/pprof/.
 Follow the steps below to expose profiling data:
- Give system:anonymous user access to /debug/pprof/ paths. This is not safe to do on a production cluster.  apiVersion: rbac.authorization.k8s.io/v1 kind: ClusterRole metadata: name: appscode:system:profiler rules: - nonResourceURLs: [&amp;quot;/debug/pprof/&amp;quot;, &amp;quot;/debug/pprof/*&amp;quot;] verbs: [&amp;quot;get&amp;quot;, &amp;quot;post&amp;quot;] --- apiVersion: rbac.</description>
+ Give system:anonymous user access to /debug/pprof/ paths. This is not safe to do on a production cluster.
+apiVersion: rbac.authorization.k8s.io/v1 kind: ClusterRole metadata: name: appscode:system:profiler rules: - nonResourceURLs: [&amp;quot;/debug/pprof/&amp;quot;, &amp;quot;/debug/pprof/*&amp;quot;] verbs: [&amp;quot;get&amp;quot;, &amp;quot;post&amp;quot;] --- apiVersion: rbac.</description>
     </item>
     
   </channel>

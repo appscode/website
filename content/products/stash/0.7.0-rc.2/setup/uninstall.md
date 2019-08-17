@@ -11,6 +11,7 @@ product_name: stash
 menu_name: product_stash_0.7.0-rc.2
 section_menu_id: setup
 ---
+
 # Uninstall Stash
 
 To uninstall Stash operator, run the following command:

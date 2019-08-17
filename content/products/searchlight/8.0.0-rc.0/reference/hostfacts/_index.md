@@ -9,3 +9,4 @@ menu:
     weight: 10
 menu_name: product_searchlight_8.0.0-rc.0
 ---
+

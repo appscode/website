@@ -11,7 +11,7 @@ menu_name: product_pharmer_0.3.1
 section_menu_id: cloud
 url: /products/pharmer/0.3.1/cloud/digitalocean/
 aliases:
-  - /products/pharmer/0.3.1/cloud/digitalocean/README/
+- /products/pharmer/0.3.1/cloud/digitalocean/README/
 ---
 
 # Running Kubernetes on [DigitalOcean](https://cloud.digitalocean.com)

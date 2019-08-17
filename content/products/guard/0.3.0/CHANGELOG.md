@@ -12,7 +12,7 @@ menu_name: product_guard_0.3.0
 section_menu_id: welcome
 url: /products/guard/0.3.0/welcome/changelog/
 aliases:
-  - /products/guard/0.3.0/CHANGELOG/
+- /products/guard/0.3.0/CHANGELOG/
 ---
 
 # Change Log

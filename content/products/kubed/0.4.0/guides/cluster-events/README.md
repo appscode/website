@@ -12,7 +12,7 @@ menu_name: product_kubed_0.4.0
 section_menu_id: guides
 url: /products/kubed/0.4.0/guides/cluster-events/
 aliases:
-  - /products/kubed/0.4.0/guides/cluster-events/README
+- /products/kubed/0.4.0/guides/cluster-events/README
 ---
 
 # Cluster Events

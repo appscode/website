@@ -6,15 +6,14 @@ menu:
     name: Hostfacts
     parent: hostfacts-cli
     weight: 0
-
 product_name: searchlight
 section_menu_id: reference
 menu_name: product_searchlight_5.1.1
 url: /products/searchlight/5.1.1/reference/hostfacts/
 aliases:
-  - products/searchlight/5.1.1/reference/hostfacts/hostfacts/
-
+- /products/searchlight/5.1.1/reference/hostfacts/hostfacts/
 ---
+
 ## hostfacts
 
 Hostfacts by AppsCode - Expose node metrics

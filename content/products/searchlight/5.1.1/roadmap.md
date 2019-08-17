@@ -12,7 +12,7 @@ menu_name: product_searchlight_5.1.1
 section_menu_id: welcome
 url: /products/searchlight/5.1.1/welcome/roadmap/
 aliases:
-  - /products/searchlight/5.1.1/roadmap/
+- /products/searchlight/5.1.1/roadmap/
 ---
 
 # Project Status

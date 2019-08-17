@@ -12,7 +12,7 @@ menu_name: product_kubed_0.10.0
 section_menu_id: guides
 url: /products/kubed/0.10.0/guides/config-syncer/
 aliases:
-  - /products/kubed/0.10.0/guides/config-syncer/README
+- /products/kubed/0.10.0/guides/config-syncer/README
 ---
 
 # Configuration Syncer

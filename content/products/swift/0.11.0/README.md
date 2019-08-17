@@ -12,8 +12,8 @@ menu_name: product_swift_0.11.0
 section_menu_id: welcome
 url: /products/swift/0.11.0/welcome/
 aliases:
-  - /products/swift/0.11.0/
-  - /products/swift/0.11.0/README/
+- /products/swift/0.11.0/
+- /products/swift/0.11.0/README/
 ---
 
 # Swift

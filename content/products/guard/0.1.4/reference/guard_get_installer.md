@@ -9,6 +9,7 @@ product_name: guard
 menu_name: product_guard_0.1.4
 section_menu_id: reference
 ---
+
 ## guard get installer
 
 Prints Kubernetes objects for deploying guard server

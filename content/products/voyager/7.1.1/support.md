@@ -12,8 +12,9 @@ menu_name: product_voyager_7.1.1
 section_menu_id: welcome
 url: /products/voyager/7.1.1/welcome/support/
 aliases:
-  - /products/voyager/7.1.1/support/
+- /products/voyager/7.1.1/support/
 ---
+
 > New to Voyager? Please start [here](/products/voyager/7.1.1/concepts/overview).
 
 # Support

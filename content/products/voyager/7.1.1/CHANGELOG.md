@@ -12,7 +12,7 @@ menu_name: product_voyager_7.1.1
 section_menu_id: welcome
 url: /products/voyager/7.1.1/welcome/changelog/
 aliases:
-  - /products/voyager/7.1.1/CHANGELOG/
+- /products/voyager/7.1.1/CHANGELOG/
 ---
 
 # Change Log

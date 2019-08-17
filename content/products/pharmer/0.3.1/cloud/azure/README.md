@@ -11,7 +11,7 @@ menu_name: product_pharmer_0.3.1
 section_menu_id: cloud
 url: /products/pharmer/0.3.1/cloud/azure/
 aliases:
-  - /products/pharmer/0.3.1/cloud/azure/README/
+- /products/pharmer/0.3.1/cloud/azure/README/
 ---
 
 # Running Kubernetes on [Azure](https://azure.microsoft.com)

@@ -12,7 +12,7 @@ menu_name: product_guard_0.4.0
 section_menu_id: welcome
 url: /products/guard/0.4.0/welcome/support/
 aliases:
-  - /products/guard/0.4.0/support/
+- /products/guard/0.4.0/support/
 ---
 
 # Support

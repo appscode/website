@@ -8,3 +8,4 @@ menu:
     weight: 40
 menu_name: product_stash_0.8.2
 ---
+

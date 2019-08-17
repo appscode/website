@@ -9,6 +9,7 @@ product_name: searchlight
 section_menu_id: reference
 menu_name: product_searchlight_5.0.0
 ---
+
 ## hostfacts version
 
 Prints binary version number.

@@ -9,6 +9,7 @@ product_name: searchlight
 section_menu_id: reference
 menu_name: product_searchlight_7.0.0-rc.0
 ---
+
 ## searchlight version
 
 Prints binary version number.

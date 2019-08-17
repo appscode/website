@@ -11,6 +11,7 @@ product_name: stash
 menu_name: product_stash_0.6.3
 section_menu_id: guides
 ---
+
 > New to Stash? Please start [here](/products/stash/0.6.3/concepts/README).
 
 # Configuring RBAC

@@ -10,6 +10,7 @@ product_name: stash
 menu_name: product_stash_0.8.1
 section_menu_id: concepts
 ---
+
 > New to Stash? Please start [here](/products/stash/0.8.1/concepts/README).
 
 # Snapshot

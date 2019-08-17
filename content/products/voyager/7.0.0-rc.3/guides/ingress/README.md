@@ -11,7 +11,7 @@ menu_name: product_voyager_7.0.0-rc.3
 section_menu_id: guides
 url: /products/voyager/7.0.0-rc.3/guides/ingress/
 aliases:
-  - /products/voyager/7.0.0-rc.3/guides/ingress/README/
+- /products/voyager/7.0.0-rc.3/guides/ingress/README/
 ---
 
 # Guides

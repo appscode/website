@@ -12,7 +12,7 @@ menu_name: product_service-broker_0.3.1
 section_menu_id: welcome
 url: /products/service-broker/0.3.1/welcome/changelog/
 aliases:
-  - /products/service-broker/0.3.1/CHANGELOG/
+- /products/service-broker/0.3.1/CHANGELOG/
 ---
 
 # Change Log

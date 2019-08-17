@@ -12,7 +12,7 @@ menu_name: product_swift_0.10.0
 section_menu_id: setup
 url: /products/swift/0.10.0/setup/
 aliases:
-  - /products/swift/0.10.0/setup/README/
+- /products/swift/0.10.0/setup/README/
 ---
 
 # Setup

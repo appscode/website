@@ -9,3 +9,4 @@ menu:
     weight: 20
 menu_name: product_kubed_0.7.0-rc.2
 ---
+

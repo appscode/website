@@ -10,6 +10,7 @@ product_name: voyager
 menu_name: product_voyager_7.2.0
 section_menu_id: guides
 ---
+
 > New to Voyager? Please start [here](/products/voyager/7.2.0/concepts/overview).
 
 # Service Annotations

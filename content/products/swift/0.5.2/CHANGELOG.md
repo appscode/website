@@ -12,7 +12,7 @@ menu_name: product_swift_0.5.2
 section_menu_id: welcome
 url: /products/swift/0.5.2/welcome/changelog/
 aliases:
-  - /products/swift/0.5.2/CHANGELOG/
+- /products/swift/0.5.2/CHANGELOG/
 ---
 
 # Change Log

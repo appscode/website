@@ -9,6 +9,7 @@ product_name: stash
 menu_name: product_stash_0.6.2
 section_menu_id: reference
 ---
+
 ## stash backup
 
 Run Stash Backup

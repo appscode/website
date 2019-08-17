@@ -6,14 +6,13 @@ menu:
     name: Kubed
     parent: reference
     weight: 0
-
 product_name: kubed
 menu_name: product_kubed_0.7.0-rc.2
 section_menu_id: reference
 aliases:
-  - products/kubed/0.7.0-rc.2/reference/
-
+- /products/kubed/0.7.0-rc.2/reference/
 ---
+
 ## kubed
 
 Kubed by AppsCode - A Kubernetes Cluster Operator Daemon

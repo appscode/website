@@ -62,16 +62,6 @@ apiVersion: apps/v1beta1 kind: StatefulSet metadata: name: http spec: serviceNam
     </item>
     
     <item>
-      <title>HSTS | Kubernetes Ingress</title>
-      <link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0-rc.0/guides/ingress/http/hsts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0-rc.0/guides/ingress/http/hsts/</guid>
-      <description>HSTS HTTP Strict Transport Security (HSTS) is a web security policy mechanism which helps to protect websites against protocol downgrade attacks and cookie hijacking. It allows web servers to declare that web browsers (or other complying user agents) should only interact with it using secure HTTPS connections, and never via the insecure HTTP protocol. HSTS is an IETF standards track protocol and is specified in RFC 6797.
-The HSTS Policy is communicated by the server to the user agent via an HTTPS response header field named &amp;ldquo;Strict-Transport-Security&amp;rdquo;.</description>
-    </item>
-    
-    <item>
       <title>Header and URL Rewriting | Voayger</title>
       <link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0-rc.0/guides/ingress/http/rewrite-rules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -79,6 +69,16 @@ The HSTS Policy is communicated by the server to the user agent via an HTTPS res
       <guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0-rc.0/guides/ingress/http/rewrite-rules/</guid>
       <description>Header and URL Rewriting AppsCode Ingress support header and URL modification at the loadbalancer level. To ensure simplicity, the header and rewrite rules follow the HAProxy syntax as it is. To add some rewrite rules for a HTTP path, follow the example below:
 apiVersion: voyager.appscode.com/v1beta1 kind: Ingress metadata: name: test-ingress namespace: default spec: rules: - host: appscode.example.com http: paths: - backend: serviceName: test-service servicePort: &#39;80&#39; headerRule: - X-Forwarded-Host %[base] rewriteRule: - &amp;quot;^([^\\ :]*)\\ /(.</description>
+    </item>
+    
+    <item>
+      <title>HSTS | Kubernetes Ingress</title>
+      <link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0-rc.0/guides/ingress/http/hsts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0-rc.0/guides/ingress/http/hsts/</guid>
+      <description>HSTS HTTP Strict Transport Security (HSTS) is a web security policy mechanism which helps to protect websites against protocol downgrade attacks and cookie hijacking. It allows web servers to declare that web browsers (or other complying user agents) should only interact with it using secure HTTPS connections, and never via the insecure HTTP protocol. HSTS is an IETF standards track protocol and is specified in RFC 6797.
+The HSTS Policy is communicated by the server to the user agent via an HTTPS response header field named &amp;ldquo;Strict-Transport-Security&amp;rdquo;.</description>
     </item>
     
     <item>

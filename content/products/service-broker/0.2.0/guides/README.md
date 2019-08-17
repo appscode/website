@@ -12,8 +12,9 @@ menu_name: product_service-broker_0.2.0
 section_menu_id: guides
 url: /products/service-broker/0.2.0/guides/
 aliases:
-  - /products/service-broker/0.2.0/guides/README/
+- /products/service-broker/0.2.0/guides/README/
 ---
+
 # Guides
 
 Guides show you how to perform tasks with AppsCode Service Broker.

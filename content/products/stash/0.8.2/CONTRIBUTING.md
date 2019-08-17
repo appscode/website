@@ -12,7 +12,7 @@ menu_name: product_stash_0.8.2
 section_menu_id: welcome
 url: /products/stash/0.8.2/welcome/contributing/
 aliases:
-  - /products/stash/0.8.2/CONTRIBUTING/
+- /products/stash/0.8.2/CONTRIBUTING/
 ---
 
 # Contribution Guidelines

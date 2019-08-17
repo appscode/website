@@ -12,8 +12,8 @@ menu_name: product_guard_0.1.4
 section_menu_id: welcome
 url: /products/guard/0.1.4/welcome/
 aliases:
-  - /products/guard/0.1.4/
-  - /products/guard/0.1.4/README/
+- /products/guard/0.1.4/
+- /products/guard/0.1.4/README/
 ---
 
 # Guard

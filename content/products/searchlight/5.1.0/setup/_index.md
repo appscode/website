@@ -7,3 +7,4 @@ menu:
     weight: 30
 menu_name: product_searchlight_5.1.0
 ---
+

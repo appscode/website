@@ -12,7 +12,7 @@ menu_name: product_voyager_7.2.0
 section_menu_id: welcome
 url: /products/voyager/7.2.0/welcome/acknowledgement/
 aliases:
-  - /products/voyager/7.2.0/acknowledgement/
+- /products/voyager/7.2.0/acknowledgement/
 ---
 
 # Acknowledgement

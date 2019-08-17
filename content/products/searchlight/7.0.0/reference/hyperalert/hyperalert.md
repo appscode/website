@@ -6,15 +6,14 @@ menu:
     name: Hyperalert
     parent: hyperalert-cli
     weight: 0
-
 product_name: searchlight
 section_menu_id: reference
 menu_name: product_searchlight_7.0.0
 url: /products/searchlight/7.0.0/reference/hyperalert/
 aliases:
-  - products/searchlight/7.0.0/reference/hyperalert/hyperalert/
-
+- /products/searchlight/7.0.0/reference/hyperalert/hyperalert/
 ---
+
 ## hyperalert
 
 AppsCode Icinga2 plugin

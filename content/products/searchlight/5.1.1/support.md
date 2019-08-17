@@ -12,8 +12,9 @@ menu_name: product_searchlight_5.1.1
 section_menu_id: welcome
 url: /products/searchlight/5.1.1/welcome/support/
 aliases:
-  - /products/searchlight/5.1.1/support/
+- /products/searchlight/5.1.1/support/
 ---
+
 # Support
 
 We use Slack for public discussions. To chit chat with us or the rest of the community, join us in the [AppsCode Slack team](https://appscode.slack.com/messages/C8M7LT2QK/details/) channel `#searchlight_`. To sign up, use our [Slack inviter](https://slack.appscode.com/).

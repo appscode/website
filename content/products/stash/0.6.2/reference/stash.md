@@ -10,9 +10,9 @@ product_name: stash
 menu_name: product_stash_0.6.2
 section_menu_id: reference
 aliases:
-  - products/stash/0.6.2/reference/
-
+- /products/stash/0.6.2/reference/
 ---
+
 ## stash
 
 Stash by AppsCode - Backup your Kubernetes Volumes

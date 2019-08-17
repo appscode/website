@@ -6,5 +6,6 @@ menu:
     name: Pod Alert
     parent: guides
     weight: 25
-menu_name: product_searchlight_5.1.1 
+menu_name: product_searchlight_5.1.1
 ---
+

@@ -11,7 +11,7 @@ menu_name: product_voyager_8.0.0
 section_menu_id: guides
 url: /products/voyager/8.0.0/guides/certificate/
 aliases:
-  - /products/voyager/8.0.0/guides/certificate/README/
+- /products/voyager/8.0.0/guides/certificate/README/
 ---
 
 # Guides

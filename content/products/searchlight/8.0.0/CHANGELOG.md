@@ -12,7 +12,7 @@ menu_name: product_searchlight_8.0.0
 section_menu_id: welcome
 url: /products/searchlight/8.0.0/welcome/changelog/
 aliases:
-  - /products/searchlight/8.0.0/CHANGELOG/
+- /products/searchlight/8.0.0/CHANGELOG/
 ---
 
 # Change Log

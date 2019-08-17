@@ -9,6 +9,7 @@ product_name: kubed
 menu_name: product_kubed_0.8.0
 section_menu_id: reference
 ---
+
 ## kubed backup
 
 Takes a backup of Kubernetes api objects

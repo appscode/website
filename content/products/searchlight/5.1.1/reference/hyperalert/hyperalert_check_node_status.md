@@ -9,6 +9,7 @@ product_name: searchlight
 section_menu_id: reference
 menu_name: product_searchlight_5.1.1
 ---
+
 ## hyperalert check_node_status
 
 Check Kubernetes Node

@@ -66,6 +66,17 @@ apiVersion: apps/v1beta1 kind: StatefulSet metadata: name: http spec: serviceNam
     </item>
     
     <item>
+      <title>Header and URL Rewriting | Voayger</title>
+      <link>https://appscode-v3-hugo.web.app/products/voyager/7.1.1/guides/ingress/http/rewrite-rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode-v3-hugo.web.app/products/voyager/7.1.1/guides/ingress/http/rewrite-rules/</guid>
+      <description>New to Voyager? Please start here.
+ Header and URL Rewriting AppsCode Ingress support header and URL modification at the loadbalancer level. To ensure simplicity, the header and rewrite rules follow the HAProxy syntax as it is. To add some rewrite rules for a HTTP path, follow the example below:
+apiVersion: voyager.appscode.com/v1beta1 kind: Ingress metadata: name: test-ingress namespace: default spec: rules: - host: appscode.example.com http: paths: - backend: serviceName: test-service servicePort: &#39;80&#39; headerRules: - X-Forwarded-Host %[base] rewriteRules: - &amp;quot;^([^\\ :]*)\\ /(.</description>
+    </item>
+    
+    <item>
       <title>HSTS | Kubernetes Ingress</title>
       <link>https://appscode-v3-hugo.web.app/products/voyager/7.1.1/guides/ingress/http/hsts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -85,17 +96,6 @@ apiVersion: apps/v1beta1 kind: StatefulSet metadata: name: http spec: serviceNam
  Enable HTTP/2 on ingress resource Voyager can enable HTTP/2 from version &amp;gt;=7.1.1
 To enable http2, you must first setup a certificate (Let&amp;rsquo;s Encrypt), or use an existing one. Then create an ingress object like below:
 apiVersion: voyager.appscode.com/v1beta1 kind: Ingress metadata: name: haproxy-ingress # name of the ingress namespace: default # namespace (optional) annotations: ingress.appscode.com/replicas: &#39;2&#39; # ... other annotations spec: tls: - hosts: - host.</description>
-    </item>
-    
-    <item>
-      <title>Header and URL Rewriting | Voayger</title>
-      <link>https://appscode-v3-hugo.web.app/products/voyager/7.1.1/guides/ingress/http/rewrite-rules/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/voyager/7.1.1/guides/ingress/http/rewrite-rules/</guid>
-      <description>New to Voyager? Please start here.
- Header and URL Rewriting AppsCode Ingress support header and URL modification at the loadbalancer level. To ensure simplicity, the header and rewrite rules follow the HAProxy syntax as it is. To add some rewrite rules for a HTTP path, follow the example below:
-apiVersion: voyager.appscode.com/v1beta1 kind: Ingress metadata: name: test-ingress namespace: default spec: rules: - host: appscode.example.com http: paths: - backend: serviceName: test-service servicePort: &#39;80&#39; headerRules: - X-Forwarded-Host %[base] rewriteRules: - &amp;quot;^([^\\ :]*)\\ /(.</description>
     </item>
     
     <item>

@@ -12,7 +12,7 @@ menu_name: product_kubed_0.8.0
 section_menu_id: setup
 url: /products/kubed/0.8.0/setup/
 aliases:
-  - /products/kubed/0.8.0/setup/README/
+- /products/kubed/0.8.0/setup/README/
 ---
 
 # Setup

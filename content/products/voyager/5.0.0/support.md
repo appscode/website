@@ -12,7 +12,7 @@ menu_name: product_voyager_5.0.0
 section_menu_id: welcome
 url: /products/voyager/5.0.0/welcome/support/
 aliases:
-  - /products/voyager/5.0.0/support/
+- /products/voyager/5.0.0/support/
 ---
 
 # Support

@@ -11,7 +11,7 @@ menu_name: product_pharmer_0.3.1
 section_menu_id: cloud
 url: /products/pharmer/0.3.1/cloud/aws/
 aliases:
-  - /products/pharmer/0.3.1/cloud/aws/README/
+- /products/pharmer/0.3.1/cloud/aws/README/
 ---
 
 # Running Kubernetes on [AWS](https://aws.amazon.com)

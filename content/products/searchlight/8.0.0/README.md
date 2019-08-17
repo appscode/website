@@ -12,9 +12,10 @@ menu_name: product_searchlight_8.0.0
 section_menu_id: welcome
 url: /products/searchlight/8.0.0/welcome/
 aliases:
-  - /products/searchlight/8.0.0/
-  - /products/searchlight/8.0.0/README/
+- /products/searchlight/8.0.0/
+- /products/searchlight/8.0.0/README/
 ---
+
 # Searchlight
 
 <img src="/products/searchlight/8.0.0/images/cover.jpg">

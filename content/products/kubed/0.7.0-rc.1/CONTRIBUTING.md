@@ -12,7 +12,7 @@ menu_name: product_kubed_0.7.0-rc.1
 section_menu_id: welcome
 url: /products/kubed/0.7.0-rc.1/welcome/contributing/
 aliases:
-  - /products/kubed/0.7.0-rc.1/CONTRIBUTING/
+- /products/kubed/0.7.0-rc.1/CONTRIBUTING/
 ---
 
 # Contribution Guidelines

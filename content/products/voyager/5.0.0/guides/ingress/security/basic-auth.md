@@ -10,7 +10,7 @@ product_name: voyager
 menu_name: product_voyager_5.0.0
 section_menu_id: guides
 aliases:
-  - /products/voyager/5.0.0/guides/ingress/security/
+- /products/voyager/5.0.0/guides/ingress/security/
 ---
 
 # Basic Authentication

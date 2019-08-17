@@ -12,8 +12,9 @@ menu_name: product_service-broker_0.2.0
 section_menu_id: setup
 url: /products/service-broker/0.2.0/setup/
 aliases:
-  - /products/service-broker/0.2.0/setup/README/
+- /products/service-broker/0.2.0/setup/README/
 ---
+
 # Setup
 
 Setup contains instructions for installing the AppsCode Service Broker and its various components in Kubernetes.

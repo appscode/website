@@ -12,7 +12,7 @@ menu_name: product_guard_0.2.1
 section_menu_id: welcome
 url: /products/guard/0.2.1/welcome/contributing/
 aliases:
-  - /products/guard/0.2.1/CONTRIBUTING/
+- /products/guard/0.2.1/CONTRIBUTING/
 ---
 
 # Contribution Guidelines

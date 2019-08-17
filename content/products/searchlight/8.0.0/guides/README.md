@@ -12,8 +12,9 @@ menu_name: product_searchlight_8.0.0
 section_menu_id: guides
 url: /products/searchlight/8.0.0/guides/
 aliases:
-  - /products/searchlight/8.0.0/guides/README/
+- /products/searchlight/8.0.0/guides/README/
 ---
+
 # Guides
 
 Guides show you how to perform tasks with Searchlight.
