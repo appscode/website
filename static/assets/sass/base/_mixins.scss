@@ -78,7 +78,7 @@
     background-color: rgba($color, 0.8);
   }
   body.#{$name} .documentation-menu {
-    background-color: lighten($color, 40%);
+    background-color: scale-color($color, $lightness: 80%);
   }
   /*==================================================
                   Theme #{$name} End
