@@ -74,11 +74,15 @@ body.fixed-nav
     min-height: 640px;
   }
   .trusted-logo {
-    margin-top: 130px;
+    margin-top: 30px;
   }
 }
 .is-full-height {
   height: 100vh;
+}
+.hero-area.is-full-height{
+  padding: 100px 0 0;
+  overflow: hidden;
 }
 .hero-area-content {
   padding-right: 80px;
@@ -114,7 +118,7 @@ body.fixed-nav
   z-index: 1;
   .right-side-content-inner {
     position: absolute;
-    right: -120px;
+    right: -140px;
     top: 10px;
     width: 130%;
     z-index: -1;
