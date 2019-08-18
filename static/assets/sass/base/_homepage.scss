@@ -1,5 +1,5 @@
 // hero-area css
-.is-fixed-absolute {
+.fixed-menu {
   position: absolute;
   width: 100%;
   padding: 9px 0px;
@@ -8,7 +8,7 @@
   left: 0;
 }
 
-body.fixed-nav .is-fixed-absolute {
+body.fixed-nav .fixed-menu {
   position: fixed;
   top: 0;
   z-index: 99;

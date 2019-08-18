@@ -38,7 +38,7 @@
     <header>
       {{ block "header-top" . }}
       <!-- header top start -->
-      <div class="header-top">
+      <div class="header-top {{if not .Params.product_name}} fixed-menu{{end}}">
         <div class="container section">
           <nav class="navbar">
             <div class="navbar-brand">
@@ -436,8 +436,7 @@
 
       <!-- header bottom area start -->
       <div
-        class="header-bottom-area header-area kubedb-primary-bg customize-kubedb"
-        id="header"
+        class="header-bottom-area header-area kubedb-primary-bg customize-kubedb {{if .Params.product_name}} fixed-menu{{end}}"
       >
         <div class="container section">
           <nav class="navbar">
