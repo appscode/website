@@ -856,15 +856,15 @@ h6 {
 /*==================================================
                   Theme CSS prefix End
   ====================================================*/
-.is-fixed-absolute {
+.fixed-menu {
   position: absolute;
   width: 100%;
   padding: 9px 0px;
-  z-index: 9999;
+  z-index: 99;
   top: 0;
   left: 0; }
 
-body.fixed-nav .is-fixed-absolute {
+body.fixed-nav .fixed-menu {
   position: fixed;
   top: 0;
   z-index: 99;
@@ -1356,22 +1356,6 @@ section.our-customer-area {
   background: #1c2c41;
   z-index: -1; }
 
-#fixedHeader {
-  padding: 9px 0;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0; }
-
-body.fixed-nav #fixedHeader {
-  position: fixed;
-  width: 100%;
-  box-shadow: 0px 1px 1px rgba(25, 76, 128, 0.08);
-  background-color: #fff;
-  padding: 9px 0;
-  top: 0;
-  z-index: 99; }
-
 .bg-white {
   background-color: #fff; }
 
@@ -1784,15 +1768,17 @@ nav.navbar {
   color: #ddd !important; }
 
 /* fixd nav */
-body.fixed-nav #header {
+body.fixed-nav .fixed-menu {
   position: fixed;
-  background: #4d4dcb;
+  background-color: #ffffff;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.12);
   top: 0;
   margin-top: 0;
-  z-index: 9999;
   padding: 3px 0;
   width: 100%; }
+
+.fixed-menu-z-index {
+  z-index: 9999; }
 
 /* github button style start */
 .lg .btn,
@@ -2560,11 +2546,11 @@ p.spam-message {
 .documentation-navbar .main-menu a {
   padding: 10px 30px; }
 
-.kubedb-documentation-menu {
+.documentation-menu {
   background: #ffffff;
   height: 100%; }
 
-body.fixed-nav .kubedb-documentation-menu {
+body.fixed-nav .documentation-menu {
   position: fixed;
   width: 100%;
   height: auto;
@@ -4587,7 +4573,7 @@ body.voyager .go-to-top {
   .main-menu.is-bg-available .navbar-link {
     color: #4a4a4a; }
 
-  body.fixed-nav .is-fixed-absolute {
+  body.fixed-nav .fixed-menu {
     top: 0;
     z-index: 99;
     width: 100%; }
@@ -4875,7 +4861,7 @@ body.voyager .go-to-top {
     display: flex;
     flex-direction: column-reverse; }
 
-  body.fixed-nav .is-fixed-absolute {
+  body.fixed-nav .fixed-menu {
     top: 0;
     z-index: 99;
     width: 100%; }
@@ -5156,7 +5142,7 @@ body.voyager .go-to-top {
   /* ==============================================
    appscode-home page start
 ==============================================*/
-  body.fixed-nav .is-fixed-absolute {
+  body.fixed-nav .fixed-menu {
     top: 0;
     z-index: 99;
     width: 100%; }
