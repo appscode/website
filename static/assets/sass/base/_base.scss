@@ -31,7 +31,7 @@ body.fixed-nav header{
   box-shadow: none;
   border: none;
   background: $white-color;
-  color: $appscode-primary !important;
+  color: $primary-color !important;
   font-size: 14px !important;
   transition: 0.3s ease-in-out;
 }
@@ -80,7 +80,7 @@ body.fixed-nav header{
 a.navbar-item.is-active,
 a.navbar-item:hover {
   background: transparent;
-  color: $appscode-primary;
+  color: $primary-color;
 }
 .customize-kubedb .navbar-item.has-dropdown.is-active .navbar-link,
 .customize-kubedb .navbar-item.has-dropdown:hover .navbar-link {
@@ -96,7 +96,7 @@ nav.navbar{
   background-color: transparent;
 }
 .customize-kubedb .navbar-dropdown .navbar-item {
-  color: $appscode-primary;
+  color: $primary-color;
 }
 .navbar-dropdown {
   border-top: none;
@@ -137,7 +137,7 @@ nav.navbar{
   left: -3px;
   margin-top: -4px;
   border-width: 4px 4px 4px 0;
-  border-right-color: $appscode-primary;
+  border-right-color: $primary-color;
 }
 
 .main-menu-button .star-count::after {
@@ -220,14 +220,14 @@ body.fixed-nav .fixed-menu {
 }
 
 .kd-transparent-btn {
-  color: $appscode-primary;
+  color: $primary-color;
   font-weight: 600;
   border: none;
   background: transparent;
   margin-left: 15px;
 }
 .ac-transparent-btn {
-  color: $appscode-primary;
+  color: $primary-color;
   font-weight: 600;
   border: none;
   background: transparent;
@@ -402,7 +402,7 @@ a.play-icon .fa {
   right: 50%;
   font-size: 64px;
   z-index: 9;
-  color: $appscode-primary;
+  color: $primary-color;
   opacity: 0.6;
   width: 60px;
   padding-left: 30px;
@@ -485,7 +485,7 @@ a.play-icon .fa {
 
 .cta-text h2 {
   font-size: 36px;
-  color: $appscode-primary;
+  color: $primary-color;
   line-height: 42px;
 }
 
@@ -520,7 +520,7 @@ a.play-icon .fa {
 
 .subscription-form .button {
   font-family: $font-link;
-  color: $appscode-primary;
+  color: $primary-color;
   font-size: 16px;
   height: 40px;
   box-shadow: none;
@@ -534,7 +534,7 @@ a.play-icon .fa {
   background: transparent;
 }
 .subscription-form .button:hover {
-  background-color: darken($appscode-primary, 15%);
+  background-color: darken($primary-color, 15%);
   color: $white-color !important;
 }
 .subscription-form {
@@ -588,7 +588,7 @@ p.spam-message {
 }
 
 .footer-link li a:hover {
-  color: $appscode-primary;
+  color: $primary-color;
   padding-left: 5px;
 }
 
@@ -616,7 +616,7 @@ p.spam-message {
   transition: .3s ease-in-out;
 }
 .footer-inline-link a:hover{
-  color: $appscode-primary;
+  color: $primary-color;
 }
 
 .footer-inline-link a:last-child {
@@ -646,7 +646,7 @@ p.spam-message {
 }
 
 .socail-link-inline li a:hover {
-  background: $appscode-primary;
+  background: $primary-color;
   color: $white-color;
   border: 1px solid transparent;
 }
@@ -735,7 +735,7 @@ p.spam-message {
 /* pricing section style */
 .pricing-button .kd-button {
   padding: 8px 40px;
-  background: $appscode-primary;
+  background: $primary-color;
   width: 180px;
 }
 
@@ -785,7 +785,7 @@ p.spam-message {
   background-color: $red-color !important;
 }
 .pricing-top {
-  background: $appscode-primary;
+  background: $primary-color;
   box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.16);
   color: $white-color;
   padding: 20px;
@@ -818,7 +818,7 @@ p.spam-message {
   content: "";
   left: -12px;
   top: 0;
-  border-right: 12px solid darken($appscode-primary, 15%);
+  border-right: 12px solid darken($primary-color, 15%);
   border-top: 22px solid transparent;
 }
 
@@ -983,7 +983,7 @@ p.spam-message {
 }
 
 .accordion-item.active {
-  border: 1px solid $appscode-primary;
+  border: 1px solid $primary-color;
 }
 
 .accordion-item.active .accordion-header {
@@ -1033,7 +1033,7 @@ p.spam-message {
 }
 
 .accordion-item.active .accordion-header h2 {
-  color: $appscode-primary;
+  color: $primary-color;
 }
 
 .accordion-header h2:before,
@@ -1149,7 +1149,7 @@ body.fixed-nav .documentation-menu {
   margin-bottom: 40px;
 }
 blockquote {
-  border-left: 4px solid $appscode-primary;
+  border-left: 4px solid $primary-color;
   padding-left: 15px;
 }
 
@@ -1174,7 +1174,7 @@ blockquote {
 }
 
 ul li b {
-  color: $appscode-primary;
+  color: $primary-color;
   font-weight: 500;
 }
 
@@ -1186,12 +1186,12 @@ ul li b {
   display: inline;
 }
 .full-info p b {
-  color: $appscode-primary;
+  color: $primary-color;
 }
 .full-info ul li p a,
 .full-info p a,
 .full-info a {
-  color: $appscode-primary;
+  color: $primary-color;
   font-weight: 500;
   font-family: $font-paragraph;
 }
@@ -1203,7 +1203,7 @@ ul li b {
 .appscode-style.full-info ul li p a
 .appscode-style.full-info p a,
 .appscode-style.full-info a{
-  color: $appscode-primary;
+  color: $primary-color;
 }
 
 /* Right Sidebar For Documentation page */
@@ -1266,7 +1266,7 @@ ul li b {
 .tbl-of-contents ul a.active:before {
   width: 3px;
   height: 100%;
-  background: $appscode-primary;
+  background: $primary-color;
   content: "";
   left: -2px;
   top: 0;
@@ -1278,11 +1278,11 @@ ul li b {
 .tbl-of-contents ul a.active {
   position: relative;
   z-index: 1;
-  color: $appscode-primary;
+  color: $primary-color;
 }
 
 li.nav-item.active a {
-  color: $appscode-primary;
+  color: $primary-color;
 }
 
 /* Fixed Sidebar */
@@ -1559,7 +1559,7 @@ button.button.is-fullwidth {
 }
 
 .kd-version a.dropdown-item:hover {
-  background: $appscode-primary;
+  background: $primary-color;
   color: $white-color;
 }
 .kd-version a.dropdown-item:first-child:hover {
@@ -1596,7 +1596,7 @@ button.button.is-fullwidth {
   display: block;
 }
 .item ul li.is-active a {
-  color: $appscode-primary;
+  color: $primary-color;
 }
 .item input:checked ~ ul,
 .item input:checked ~ .item > ul {
@@ -1642,7 +1642,7 @@ button.button.is-fullwidth {
 }
 
 .kd-sidebar-menu li a:hover {
-  color: $appscode-primary;
+  color: $primary-color;
 }
 .kd-sidebar-menu .item ul {
   margin-left: 20px;
@@ -1655,7 +1655,7 @@ button.button.is-fullwidth {
   background: $white-color;
 }
 .appscode-style .item input:checked ~ label > a{
-  color: $appscode-primary;
+  color: $primary-color;
 }
 .kd-left-sidebar {
   margin-right: 30px;
@@ -1670,7 +1670,7 @@ button.button.is-fullwidth {
   border-radius: 3px 0 0 3px;
 }
 .trial-button .button {
-  background-color: $appscode-primary;
+  background-color: $primary-color;
   color: $white-color;
   font-size: 14px;
   height: 40px;
@@ -1758,7 +1758,7 @@ span.new-item {
   transition: 0.2s ease-in-out;
 }
 .ac-dropdown a.navbar-item:hover {
-  background: $appscode-primary;
+  background: $primary-color;
   color: $white-color !important;
 }
 .ac-megamenu:before,
@@ -1820,7 +1820,7 @@ p.intro {
   background: transparentize($kubed-primary, .8);
 }
 .single-product-item.is-kubedb:hover {
-  background: transparentize($appscode-primary,.8);
+  background: transparentize($primary-color,.8);
 }
 .single-product-item.is-stash:hover {
   background: transparentize($stash-primary, .8);
@@ -1991,7 +1991,7 @@ a.nav-link.active {
 a.nav-link.active:after {
   position: absolute;
   content: "";
-  background: $appscode-primary;
+  background: $primary-color;
   top: 0;
   left: 0;
   width: 100%;
@@ -2130,7 +2130,7 @@ video {
   line-height: 30px;
   border-radius: 50%;
   color: #fff;
-  background: rgba($appscode-primary, 0.5);
+  background: rgba($primary-color, 0.5);
   border: none;
   opacity: 0;
   cursor: pointer;

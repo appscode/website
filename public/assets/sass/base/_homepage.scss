@@ -43,7 +43,7 @@ body.fixed-nav .main-menu.is-bg-available .navbar-link {
 // if header-fixed and bg color white
 body.fixed-nav .main-menu.is-bg-available .navbar-item:hover,
 body.fixed-nav .main-menu.is-bg-available .navbar-link:hover {
-  color: $appscode-primary;
+  color: $primary-color;
 }
 .main-menu.is-bg-available .navbar-link:not(.is-arrowless)::after,
 .main-menu.is-bg-available .select:not(.is-multiple):not(.is-loading)::after {
@@ -128,11 +128,11 @@ body.fixed-nav
     border-radius: 4px;
     font-size: 16px;
     a {
-      color: $appscode-primary;
+      color: $primary-color;
     }
   }
   .trusted-company a {
-    color: $appscode-primary;
+    color: $primary-color;
   }
   .trusted-company p {
     font-weight: 500;
@@ -185,7 +185,7 @@ body.fixed-nav
               bottom: 0;
               width: 0;
               height: 2px;
-              background: $appscode-primary;
+              background: $primary-color;
               transition: 0.3s linear;
             }
             &:hover {
@@ -233,7 +233,7 @@ body.fixed-nav
       transition: 0.3s ease-in-out;
     }
     &:hover .count {
-      color: $appscode-primary;
+      color: $primary-color;
     }
     .name {
       color: $paragraph-color;
@@ -251,7 +251,7 @@ body.fixed-nav
       width: 100%;
       opacity: 0;
       visibility: hidden;
-      color: $appscode-primary;
+      color: $primary-color;
     }
     &:hover .action-btn {
       opacity: 1;
@@ -264,7 +264,7 @@ body.fixed-nav
 .service-content {
   padding-right: 60px;
   h5 {
-    color: $appscode-primary;
+    color: $primary-color;
     font-size: 14px;
     font-weight: 600;
   }
@@ -286,7 +286,7 @@ body.fixed-nav
   position: relative;
   z-index: 1;
   h4 {
-    color: $appscode-primary;
+    color: $primary-color;
     font-size: 14px;
     font-weight: 600;
   }

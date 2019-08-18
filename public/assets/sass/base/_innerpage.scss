@@ -90,7 +90,7 @@ body.fixed-nav #fixedHeader {
         font-size: 18px;
         line-height: 28px;
         font-weight: 700;
-        color: $appscode-primary;
+        color: $primary-color;
       }
       p {
         font-size: 14px;
@@ -176,7 +176,7 @@ body.fixed-nav #fixedHeader {
       z-index: -1;
       h5 {
         font-size: 16px;
-        color: $appscode-primary;
+        color: $primary-color;
       }
     }
     h2 {
@@ -214,7 +214,7 @@ body.fixed-nav #fixedHeader {
   }
   .single-feature.foundational {
     h3 {
-      color: $appscode-primary;
+      color: $primary-color;
     }
   }
   .single-feature.intermediate {
@@ -314,7 +314,7 @@ body.fixed-nav #fixedHeader {
       cursor: pointer;
     }
     li.is-active {
-      color: $appscode-primary;
+      color: $primary-color;
     }
   }
 }

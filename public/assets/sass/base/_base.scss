@@ -226,7 +226,7 @@ body.fixed-nav #header {
   margin-left: 15px;
 }
 .ac-transparent-btn {
-  color: $appscode-primary;
+  color: $primary-color;
   font-weight: 600;
   border: none;
   background: transparent;
@@ -1202,7 +1202,7 @@ ul li b {
 .appscode-style.full-info ul li p a
 .appscode-style.full-info p a,
 .appscode-style.full-info a{
-  color: $appscode-primary;
+  color: $primary-color;
 }
 
 /* Right Sidebar For Documentation page */
@@ -1654,7 +1654,7 @@ button.button.is-fullwidth {
   background: $white-color;
 }
 .appscode-style .item input:checked ~ label > a{
-  color: $appscode-primary;
+  color: $primary-color;
 }
 .kd-left-sidebar {
   margin-right: 30px;
@@ -2129,7 +2129,7 @@ video {
   line-height: 30px;
   border-radius: 50%;
   color: #fff;
-  background: rgba($appscode-primary, 0.5);
+  background: rgba($primary-color, 0.5);
   border: none;
   opacity: 0;
   cursor: pointer;
