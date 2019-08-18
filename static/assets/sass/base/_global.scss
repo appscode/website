@@ -93,7 +93,7 @@ h6 {
 }
 
 .kd-primary {
-  background-color: $primary-color;
+  background-color: $appscode-primary;
   color: $white-color !important;
 }
 .ac-primary{
@@ -104,7 +104,7 @@ h6 {
   color: $appscode-primary;
 }
 .kubedb-primary-bg {
-  background-color: $primary-color;
+  background-color: $appscode-primary;
 }
 
 /* button style */
@@ -127,7 +127,7 @@ h6 {
 }
 
 .kd-button:hover {
-  background-color: darken($primary-color, 3%);
+  background-color: darken($appscode-primary, 3%);
   color: $white-color;
   box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16);
 }
@@ -173,7 +173,7 @@ h6 {
 }
 .subscription-form .input.is-hovered,
 .subscription-form .input:hover {
-  border-color: #4d4dcb;
+  border-color: $appscode-primary;
 }
 .input.is-active,
 .input.is-focused,
@@ -183,7 +183,7 @@ h6 {
 .textarea.is-focused,
 .textarea:active,
 .textarea:focus {
-  border-color: $primary-color;
+  border-color: $appscode-primary;
   box-shadow: none;
 }
 .is-dark {

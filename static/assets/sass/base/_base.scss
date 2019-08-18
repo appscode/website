@@ -31,7 +31,7 @@ body.fixed-nav header{
   box-shadow: none;
   border: none;
   background: $white-color;
-  color: $primary-color !important;
+  color: $appscode-primary !important;
   font-size: 14px !important;
   transition: 0.3s ease-in-out;
 }
@@ -80,7 +80,7 @@ body.fixed-nav header{
 a.navbar-item.is-active,
 a.navbar-item:hover {
   background: transparent;
-  color: $primary-color;
+  color: $appscode-primary;
 }
 .customize-kubedb .navbar-item.has-dropdown.is-active .navbar-link,
 .customize-kubedb .navbar-item.has-dropdown:hover .navbar-link {
@@ -96,7 +96,7 @@ nav.navbar{
   background-color: transparent;
 }
 .customize-kubedb .navbar-dropdown .navbar-item {
-  color: $primary-color;
+  color: $appscode-primary;
 }
 .navbar-dropdown {
   border-top: none;
@@ -137,7 +137,7 @@ nav.navbar{
   left: -3px;
   margin-top: -4px;
   border-width: 4px 4px 4px 0;
-  border-right-color: $primary-color;
+  border-right-color: $appscode-primary;
 }
 
 .main-menu-button .star-count::after {
@@ -220,7 +220,7 @@ body.fixed-nav .fixed-menu {
 }
 
 .kd-transparent-btn {
-  color: $primary-color;
+  color: $appscode-primary;
   font-weight: 600;
   border: none;
   background: transparent;
@@ -402,7 +402,7 @@ a.play-icon .fa {
   right: 50%;
   font-size: 64px;
   z-index: 9;
-  color: $primary-color;
+  color: $appscode-primary;
   opacity: 0.6;
   width: 60px;
   padding-left: 30px;
@@ -485,7 +485,7 @@ a.play-icon .fa {
 
 .cta-text h2 {
   font-size: 36px;
-  color: $primary-color;
+  color: $appscode-primary;
   line-height: 42px;
 }
 
@@ -520,7 +520,7 @@ a.play-icon .fa {
 
 .subscription-form .button {
   font-family: $font-link;
-  color: $primary-color;
+  color: $appscode-primary;
   font-size: 16px;
   height: 40px;
   box-shadow: none;
@@ -534,7 +534,7 @@ a.play-icon .fa {
   background: transparent;
 }
 .subscription-form .button:hover {
-  background-color: darken($primary-color, 15%);
+  background-color: darken($appscode-primary, 15%);
   color: $white-color !important;
 }
 .subscription-form {
@@ -588,7 +588,7 @@ p.spam-message {
 }
 
 .footer-link li a:hover {
-  color: $primary-color;
+  color: $appscode-primary;
   padding-left: 5px;
 }
 
@@ -616,7 +616,7 @@ p.spam-message {
   transition: .3s ease-in-out;
 }
 .footer-inline-link a:hover{
-  color: $primary-color;
+  color: $appscode-primary;
 }
 
 .footer-inline-link a:last-child {
@@ -646,7 +646,7 @@ p.spam-message {
 }
 
 .socail-link-inline li a:hover {
-  background: $primary-color;
+  background: $appscode-primary;
   color: $white-color;
   border: 1px solid transparent;
 }
@@ -735,7 +735,7 @@ p.spam-message {
 /* pricing section style */
 .pricing-button .kd-button {
   padding: 8px 40px;
-  background: $primary-color;
+  background: $appscode-primary;
   width: 180px;
 }
 
@@ -785,7 +785,7 @@ p.spam-message {
   background-color: $red-color !important;
 }
 .pricing-top {
-  background: $primary-color;
+  background: $appscode-primary;
   box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.16);
   color: $white-color;
   padding: 20px;
@@ -818,7 +818,7 @@ p.spam-message {
   content: "";
   left: -12px;
   top: 0;
-  border-right: 12px solid darken($primary-color, 15%);
+  border-right: 12px solid darken($appscode-primary, 15%);
   border-top: 22px solid transparent;
 }
 
@@ -983,7 +983,7 @@ p.spam-message {
 }
 
 .accordion-item.active {
-  border: 1px solid $primary-color;
+  border: 1px solid $appscode-primary;
 }
 
 .accordion-item.active .accordion-header {
@@ -1033,7 +1033,7 @@ p.spam-message {
 }
 
 .accordion-item.active .accordion-header h2 {
-  color: $primary-color;
+  color: $appscode-primary;
 }
 
 .accordion-header h2:before,
@@ -1149,7 +1149,7 @@ body.fixed-nav .documentation-menu {
   margin-bottom: 40px;
 }
 blockquote {
-  border-left: 4px solid $primary-color;
+  border-left: 4px solid $appscode-primary;
   padding-left: 15px;
 }
 
@@ -1174,7 +1174,7 @@ blockquote {
 }
 
 ul li b {
-  color: $primary-color;
+  color: $appscode-primary;
   font-weight: 500;
 }
 
@@ -1186,12 +1186,12 @@ ul li b {
   display: inline;
 }
 .full-info p b {
-  color: $primary-color;
+  color: $appscode-primary;
 }
 .full-info ul li p a,
 .full-info p a,
 .full-info a {
-  color: $primary-color;
+  color: $appscode-primary;
   font-weight: 500;
   font-family: $font-paragraph;
 }
@@ -1266,7 +1266,7 @@ ul li b {
 .tbl-of-contents ul a.active:before {
   width: 3px;
   height: 100%;
-  background: $primary-color;
+  background: $appscode-primary;
   content: "";
   left: -2px;
   top: 0;
@@ -1278,11 +1278,11 @@ ul li b {
 .tbl-of-contents ul a.active {
   position: relative;
   z-index: 1;
-  color: $primary-color;
+  color: $appscode-primary;
 }
 
 li.nav-item.active a {
-  color: $primary-color;
+  color: $appscode-primary;
 }
 
 /* Fixed Sidebar */
@@ -1559,7 +1559,7 @@ button.button.is-fullwidth {
 }
 
 .kd-version a.dropdown-item:hover {
-  background: $primary-color;
+  background: $appscode-primary;
   color: $white-color;
 }
 .kd-version a.dropdown-item:first-child:hover {
@@ -1596,7 +1596,7 @@ button.button.is-fullwidth {
   display: block;
 }
 .item ul li.is-active a {
-  color: $primary-color;
+  color: $appscode-primary;
 }
 .item input:checked ~ ul,
 .item input:checked ~ .item > ul {
@@ -1642,7 +1642,7 @@ button.button.is-fullwidth {
 }
 
 .kd-sidebar-menu li a:hover {
-  color: $primary-color;
+  color: $appscode-primary;
 }
 .kd-sidebar-menu .item ul {
   margin-left: 20px;
@@ -1670,7 +1670,7 @@ button.button.is-fullwidth {
   border-radius: 3px 0 0 3px;
 }
 .trial-button .button {
-  background-color: $primary-color;
+  background-color: $appscode-primary;
   color: $white-color;
   font-size: 14px;
   height: 40px;
@@ -1758,7 +1758,7 @@ span.new-item {
   transition: 0.2s ease-in-out;
 }
 .ac-dropdown a.navbar-item:hover {
-  background: $primary-color;
+  background: $appscode-primary;
   color: $white-color !important;
 }
 .ac-megamenu:before,
@@ -1820,7 +1820,7 @@ p.intro {
   background: transparentize($kubed-primary, .8);
 }
 .single-product-item.is-kubedb:hover {
-  background: transparentize($primary-color,.8);
+  background: transparentize($appscode-primary,.8);
 }
 .single-product-item.is-stash:hover {
   background: transparentize($stash-primary, .8);
@@ -1991,7 +1991,7 @@ a.nav-link.active {
 a.nav-link.active:after {
   position: absolute;
   content: "";
-  background: $primary-color;
+  background: $appscode-primary;
   top: 0;
   left: 0;
   width: 100%;
