@@ -794,21 +794,21 @@
                   <h4>Have any Inquiry?</h4>
                   <ul class="all-contact-info">
                     <li>
-                      <a href="callto:+123456789"
+                      <a href="callto:{{.Site.Params.contact_phone}}"
                         ><span
                           ><i class="fa fa-phone" aria-hidden="true"></i></span
-                        >+123 456 789</a
+                        >{{.Site.Params.contact_phone}}</a
                       >
                     </li>
 
                     <li>
-                      <a href="mailto:appscode@gmail.com"
+                      <a href="mailto:{{.Site.Params.contact_email}}"
                         ><span
                           ><i
                             class="fa fa-envelope-o"
                             aria-hidden="true"
                           ></i></span
-                        >appscode@gmail.com</a
+                        >{{.Site.Params.contact_email}}</a
                       >
                     </li>
                   </ul>
@@ -823,15 +823,13 @@
                 <div class="footer-menu">
                   <h4>Products</h4>
                   <ul class="footer-link">
-                    <li><a href="#">Voyager</a></li>
-                    <li><a href="#">KubeDB</a></li>
-                    <li><a href="#">Stash</a></li>
-                    <li><a href="#">Pharmer</a></li>
-                    <li><a href="#">Service Broker</a></li>
-                    <li><a href="#">Kubed</a></li>
-                    <li><a href="#">Guard</a></li>
-                    <li><a href="#">Swift</a></li>
-                    <li><a href="#">Searchlight</a></li>
+                    <li><a href="{{.Site.Params.domain_bytebuilders}}">ByteBuilders</a></li>
+                    <li><a href="{{.Site.Params.domain_kubedb}}">KubeDB</a></li>
+                    <li><a href="/products/stash/">Stash</a></li>
+                    <li><a href="{{.Site.Params.domain_kubevault}}">KubeVault</a></li>
+                    <li><a href="/products/voyager/">Voyager</a></li>
+                    <li><a href="/products/guard/">Guard</a></li>
+                    <li><a href="/products/pharmer/">Pharmer</a></li>
                   </ul>
                 </div>
                 <!-- footer menu end -->
@@ -842,11 +840,11 @@
               <div class="single-footer-widget">
                 <!-- footer menu start -->
                 <div class="footer-menu">
-                  <h4>Offerings</h4>
+                  <h4>Services</h4>
                   <ul class="footer-link">
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Open source </a></li>
+                    <li><a href="/sonsulting/">Consulting</a></li>
+                    <li><a href="/training/">Training</a></li>
+                    <li><a href="/support/">Support</a></li>
                   </ul>
                 </div>
                 <!-- footer menu end -->
@@ -860,9 +858,8 @@
                   <h4>Company</h4>
                   <ul class="footer-link">
                     <li><a href="/about/">About Us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Seles Inquiry</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="{{.Site.Params.blog_url}}">Blog</a></li>
+                    <li><a href="/contact/">Contact Us</a></li>
                   </ul>
                 </div>
                 <!-- footer menu end -->
@@ -891,7 +888,7 @@
         <div class="container section">
           <div class="columns">
             <div class="column is-4">
-              <p>All rights reserved © 2018. Appscode, Inc..</p>
+              <p>All rights reserved © {{ now.Format "2006" }}. Appscode, Inc.</p>
             </div>
             <div class="column is-4 is-mobile has-text-centered">
               <div class="footer-inline-link">
@@ -903,28 +900,18 @@
               <div class="socail-link-inline">
                 <ul>
                   <li>
-                    <a href="#"
+                    <a href="{{.Site.Params.twitter_url}}"
                       ><i class="fa fa-twitter" aria-hidden="true"></i
                     ></a>
                   </li>
                   <li>
-                    <a href="#"
+                    <a href="{{.Site.Params.facebook_url}}"
                       ><i class="fa fa-facebook" aria-hidden="true"></i
                     ></a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><i class="fa fa-github" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
+                    <a href="{{.Site.Params.youtube_url}}"
                       ><i class="fa fa-youtube" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-twitter" aria-hidden="true"></i
                     ></a>
                   </li>
                 </ul>
