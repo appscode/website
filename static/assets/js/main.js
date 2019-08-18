@@ -198,7 +198,7 @@ tabItems.forEach(tab => {
 // menu sticky
 // Not a ton of code, but hard to
 const nav = document.querySelector(
-  "#header,.is-fixed-absolute, #fixedHeader, .kubedb-documentation-menu"
+  ".fixed-menu, .documentation-menu"
 );
 let topOfNav = nav.offsetTop;
 function fixNav() {
@@ -206,7 +206,6 @@ function fixNav() {
     document.body.classList.add("fixed-nav");
   } else {
     document.body.classList.remove("fixed-nav");
-    document.body.style.paddingTop = 0;
   }
 }
 
