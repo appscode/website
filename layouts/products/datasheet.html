@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{ $productName := .Params.product_name }}
-{{ $datasheetFormID := (index $.Site.Data.products.products $productName "datasheetFormID") }}
+{{ $datasheetFormID := (index $.Site.Data $productName "datasheetFormID") }}
 
 <!-- datasheet area start -->
 <section class="section-padding">

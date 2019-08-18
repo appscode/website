@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#2D9AED" />
     {{ if $productName }}
-    <title>{{ index $.Site.Data.products.products $productName "name" }} Home</title>
+    <title>{{ index $.Site.Data $productName "name" }} Home</title>
     {{ else }}
     <title>AppsCode Inc.</title>
     {{ end }}
@@ -21,7 +21,10 @@
     <!-- Bulma CSS -->
     <link rel="stylesheet" href="/assets/css/bulma.min.css" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/sass/main.css" />
+    {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+    {{ end }}
+    <!-- <link rel="stylesheet" href="/assets/sass/main.css" /> -->
   </head>
 
   <body {{if $productName}}class="{{$productName}}"{{end}}>
@@ -467,10 +470,10 @@
             <div id="acNav" class="navbar-menu main-menu">
               <div class="navbar-end">
                 {{ if $productName }}
-                  {{ if (isset $.Site.Data.products.products $productName) }}
+                  {{ if (isset $.Site.Data $productName) }}
                     <!-- nav menu start -->
                     <div class="navbar-start">
-                    {{ $latestVersion := (index $.Site.Data.products.products $productName "latestVersion") }}
+                    {{ $latestVersion := (index $.Site.Data $productName "latestVersion") }}
                     {{ range (index .Site.Menus (printf "product_%s" $productName)) }}
                       {{ if .HasChildren }}
                         <div class="navbar-item has-dropdown ac-is-hoverable">
@@ -496,7 +499,7 @@
                     </div>
                     <!-- nav menu end -->
 
-                    {{ $starRepo := (index $.Site.Data.products.products $productName "starRepo") }}
+                    {{ $starRepo := (index $.Site.Data $productName "starRepo") }}
                     <div class="navbar-item">
                       <div class="buttons main-menu-button">
                         <!-- Place this tag where you want the button to render. -->
@@ -706,7 +709,7 @@
 
     {{ $productName := .Params.product_name }}
     {{ if $productName }}
-    {{ $latestVersion := (index $.Site.Data.products.products $productName "latestVersion") }}
+    {{ $latestVersion := (index $.Site.Data $productName "latestVersion") }}
     <section class="cta-area section-padding pt-0">
       <div class="container section">
         <div class="cta-padding">
@@ -714,7 +717,7 @@
             <div class="column is-6">
               <!-- cta text strat -->
               <div class="cta-text">
-                <h2>Ready to get Start?</h2>
+                <h2>Ready to Get Started?</h2>
                 <p>Create a Free Account and refer your friend</p>
               </div>
               <!-- cta text end -->
