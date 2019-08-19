@@ -60,45 +60,18 @@
 
       <div class="column is-10 is-offset-1 has-text-centered">
         <div class="trusted-company mt-20">
-          <p>Company that <a href="#">trust</a> AppsCode</p>
+          <p>Company that <strong>trust</strong> AppsCode</p>
           <!-- brand logo start -->
           <div class="brand-logo-wrapper mt-10">
+            {{ range $customer := $.Site.Data.customers }}
             <a class="single-brand-logo">
               <img
-                src="/assets/images/cutomers/zippo.png"
-                alt=""
+                src="{{ $customer.logo }}"
+                alt="{{ $customer.name }}"
                 class="img"
               />
             </a>
-
-            <a class="single-brand-logo">
-              <img
-                src="/assets/images/cutomers/colour-logo.png"
-                alt=""
-                class="img"
-              />
-            </a>
-            <a class="single-brand-logo">
-              <img
-                src="/assets/images/cutomers/microsoft.png"
-                alt=""
-                class="img"
-              />
-            </a>
-            <a class="single-brand-logo">
-              <img
-                src="/assets/images/cutomers/volvo.png"
-                alt=""
-                class="img"
-              />
-            </a>
-            <a class="single-brand-logo">
-              <img
-                src="/assets/images/cutomers/tumblr_inline_pcdui455cU1r8ovh1_540.png"
-                alt=""
-                class="img"
-              />
-            </a>
+            {{ end }}
           </div>
           <!-- brand logo end -->
         </div>
@@ -493,45 +466,15 @@
     <div class="columns column is-10 is-offset-1 has-text-centered">
       <div class="column is-12">
         <div class="logo-carousel-wrapper" id="logo-area-2">
+          {{ range $customer := $.Site.Data.customers }}
           <a class="single-brand-logo">
             <img
-              src="/assets/images/cutomers/zippo.png"
-              alt="digital-ocean"
+              src="{{ $customer.logo }}"
+              alt="{{ $customer.name }}"
               class="img"
             />
           </a>
-
-          <a class="single-brand-logo">
-            <img
-              src="/assets/images/cutomers/colour-logo.png"
-              alt="linode"
-              class="img"
-            />
-          </a>
-
-          <a class="single-brand-logo">
-            <img
-              src="/assets/images/cutomers/microsoft.png"
-              alt=""
-              class="img"
-            />
-          </a>
-
-          <a class="single-brand-logo">
-            <img
-              src="/assets/images/cutomers/volvo.png"
-              alt=""
-              class="img"
-            />
-          </a>
-
-          <a class="single-brand-logo">
-            <img
-              src="/assets/images/cutomers/tumblr_inline_pcdui455cU1r8ovh1_540.png"
-              alt="linode"
-              class="img"
-            />
-          </a>
+          {{ end }}
         </div>
       </div>
     </div>
@@ -540,102 +483,26 @@
     <div class="columns">
       <div class="column is-12">
         <div class="carousel-wrapper1" id="testimonial-carousel">
-          <!-- item one start -->
-          <div class="carousel-item">
+          {{ range $user := $.Site.Data.testimonials }}
+          <!-- user start -->
+          <div class="carousel-user">
             <div class="single-testimonial-wrapper">
               <div class="testimonial-msg">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure
-                </p>
+                <p>{{ $user.testimonial }}</p>
               </div>
               <div class="testimonial-client-info">
                 <div class="client-thumb">
-                  <img src="/assets/images/customers/persons/client-2.png" alt="" />
+                  <img src="{{ $user.profile }}" alt="{{ $user.name }}" />
                 </div>
                 <div class="client-info">
-                  <h4>Alina Barlinch</h4>
-                  <p>Software Developer</p>
+                  <h4>{{ $user.name }}</h4>
+                  <p>{{ $user.job }}</p>
                 </div>
               </div>
             </div>
           </div>
-          <!-- item one end -->
-          <!-- item two start -->
-          <div class="carousel-item">
-            <div class="single-testimonial-wrapper">
-              <div class="testimonial-msg">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure
-                </p>
-              </div>
-              <div class="testimonial-client-info">
-                <div class="client-thumb">
-                  <img src="/assets/images/customers/persons/client-3.png" alt="" />
-                </div>
-                <div class="client-info">
-                  <h4>Jhon Smith</h4>
-                  <p>Founder of BSBD</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- item two end -->
-          <!-- item three start -->
-          <div class="carousel-item">
-            <div class="single-testimonial-wrapper">
-              <div class="testimonial-msg">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure
-                </p>
-              </div>
-              <div class="testimonial-client-info">
-                <div class="client-thumb">
-                  <img src="/assets/images/customers/persons/client-4.png" alt="" />
-                </div>
-                <div class="client-info">
-                  <h4>Barbily Jeson</h4>
-                  <p>Software Developer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- item three end -->
-          <!-- item three start -->
-          <div class="carousel-item">
-            <div class="single-testimonial-wrapper">
-              <div class="testimonial-msg">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure
-                </p>
-              </div>
-              <div class="testimonial-client-info">
-                <div class="client-thumb">
-                  <img src="/assets/images/customers/persons/client-4.png" alt="" />
-                </div>
-                <div class="client-info">
-                  <h4>Barbily Jeson</h4>
-                  <p>Software Developer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- item three end -->
+          <!-- user end -->
+          {{ end }}
         </div>
       </div>
     </div>

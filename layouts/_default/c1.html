@@ -88,76 +88,21 @@
     <div class="columns">
       <div class="column is-6 is-offset-3">
         <div class="section-title has-text-centered">
-          <h2>We Have Our Happy Customer Around the World</h2>
+          <h2>We Have Happy Customers Around the World</h2>
         </div>
       </div>
     </div>
     <div class="columns">
       <div class="column is-10 is-offset-1 has-text-centered">
+        {{ range $customer := $.Site.Data.customers }}
         <a class="single-brand-logo">
           <img
-            src="/assets/images/customers/zippo.png"
-            alt="linode"
+            src="{{ $customer.logo }}"
+            alt="{{ $customer.name }}"
             class="img"
           />
         </a>
-        <a class="single-brand-logo">
-          <img
-            src="/assets/images/customers/colour-logo.png"
-            alt="linode"
-            class="img"
-          />
-        </a>
-        <a class="single-brand-logo">
-          <img
-            src="/assets/images/customers/kops.png"
-            alt="linode"
-            class="img"
-          />
-        </a>
-        <a class="single-brand-logo">
-          <img
-            src="/assets/images/customers/envato.png"
-            alt="linode"
-            class="img"
-          />
-        </a>
-        <a class="single-brand-logo">
-          <img
-            src="/assets/images/customers/1200px-IBM_logo.svg.png"
-            alt="linode"
-            class="img"
-          />
-        </a>
-        <a class="single-brand-logo">
-          <img
-            src="/assets/images/customers/khan.png"
-            alt="linode"
-            class="img"
-          />
-        </a>
-        <a class="single-brand-logo">
-          <img
-            src="/assets/images/customers/aks.png"
-            alt="linode"
-            class="img"
-          />
-        </a>
-
-        <a class="single-brand-logo">
-          <img
-            src="/assets/images/customers/microsoft.png"
-            alt="linode"
-            class="img"
-          />
-        </a>
-        <a class="single-brand-logo">
-          <img
-            src="/assets/images/customers/volvo.png"
-            alt="linode"
-            class="img"
-          />
-        </a>
+        {{ end }}
       </div>
     </div>
   </div>

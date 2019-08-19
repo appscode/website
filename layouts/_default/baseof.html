@@ -369,87 +369,31 @@
         <div class="columns is-centered">
           <div class="column is-8">
             <div class="carousel-wrapper carousel" id="carousel-demo">
+              {{ range $user := $.Site.Data.testimonials }}
               <!-- single testimonial start -->
               <div class="carousel-inner">
                 <div class="single-testimonial-wrapper">
                   <div class="client-brief has-text-centered">
                     <p>
-                      My post for a new tool in autumn and were keen to get one
-                      in place and optimised ahead of the Christmas peak period.
-                      Freshdesk ensured that the implementation process was as
-                      smooth as possible, and the team were up and running
-                      within 48 hours.
+                      {{ $user.testimonial }}
                     </p>
                   </div>
                   <div class="client-information">
                     <div class="client-thumb">
                       <img
-                        src="/assets/images/customers/persons/client-1.png"
-                        alt=""
+                        src="{{ $user.profile }}"
+                        alt="{{ $user.name }}"
                       />
                     </div>
                     <div class="client-info">
-                      <h4>Anup Deb</h4>
-                      <p>Designer at AppsCode</p>
+                      <h4>{{ $user.name }}</h4>
+                      <p>{{ $user.job }} at {{ index $.Site.Data.customers $user.companyKey "name" }} </p>
                     </div>
                   </div>
                 </div>
               </div>
               <!-- single testimonial end -->
-              <!-- single testimonial start -->
-              <div class="carousel-inner">
-                <div class="single-testimonial-wrapper">
-                  <div class="client-brief has-text-centered">
-                    <p>
-                      My post for a new tool in autumn and were keen to get one
-                      in place and optimised ahead of the Christmas peak period.
-                      Freshdesk ensured that the implementation process was as
-                      smooth as possible, and the team were up and running
-                      within 48 hours.
-                    </p>
-                  </div>
-                  <div class="client-information">
-                    <div class="client-thumb">
-                      <img
-                        src="/assets/images/customers/persons/client-1.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="client-info">
-                      <h4>Anup Deb</h4>
-                      <p>Designer at AppsCode</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- single testimonial end -->
-              <!-- single testimonial start -->
-              <div class="carousel-inner">
-                <div class="single-testimonial-wrapper">
-                  <div class="client-brief has-text-centered">
-                    <p>
-                      My post for a new tool in autumn and were keen to get one
-                      in place and optimised ahead of the Christmas peak period.
-                      Freshdesk ensured that the implementation process was as
-                      smooth as possible, and the team were up and running
-                      within 48 hours.
-                    </p>
-                  </div>
-                  <div class="client-information">
-                    <div class="client-thumb">
-                      <img
-                        src="/assets/images/customers/persons/client-1.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="client-info">
-                      <h4>Anup Deb</h4>
-                      <p>Designer at AppsCode</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- single testimonial end -->
+              {{ end }}
             </div>
           </div>
         </div>
@@ -463,61 +407,19 @@
     <div class="logo-carusal-area section-padding">
       <div class="container section">
         <div class="columns is-centered">
+          {{ range $customer := $.Site.Data.customers }}
           <!-- single brand start -->
           <div class="column has-text-centered">
             <a class="single-brand-logo">
               <img
-                src="/assets/images/customers/brand-etsy.png"
-                alt=""
+                src="{{ $customer.logo }}"
+                alt="{{ $customer.name }}"
                 class="img"
               />
             </a>
           </div>
           <!-- single brand end-->
-          <!-- single brand start -->
-          <div class="column has-text-centered">
-            <a class="single-brand-logo">
-              <img
-                src="/assets/images/customers/brand-vaio.png"
-                alt=""
-                class="img"
-              />
-            </a>
-          </div>
-          <!-- single brand end-->
-          <!-- single brand start -->
-          <div class="column has-text-centered">
-            <a class="single-brand-logo">
-              <img
-                src="/assets/images/customers/google.png"
-                alt=""
-                class="img"
-              />
-            </a>
-          </div>
-          <!-- single brand end-->
-          <!-- single brand start -->
-          <div class="column has-text-centered">
-            <a class="single-brand-logo">
-              <img
-                src="/assets/images/customers/brand-audi.png"
-                alt=""
-                class="img"
-              />
-            </a>
-          </div>
-          <!-- single brand end-->
-          <!-- single brand start -->
-          <div class="column has-text-centered">
-            <a class="single-brand-logo">
-              <img
-                src="/assets/images/customers/brand-ebay.png"
-                alt=""
-                class="img"
-              />
-            </a>
-          </div>
-          <!-- single brand end-->
+          {{ end }}
         </div>
       </div>
     </div>
