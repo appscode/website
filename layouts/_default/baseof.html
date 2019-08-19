@@ -375,7 +375,7 @@
                 <div class="single-testimonial-wrapper">
                   <div class="client-brief has-text-centered">
                     <p>
-                      {{ $user.testimonial }}
+                      {{ $user.testimonial | safeHTML }}
                     </p>
                   </div>
                   <div class="client-information">
@@ -387,7 +387,7 @@
                     </div>
                     <div class="client-info">
                       <h4>{{ $user.name }}</h4>
-                      <p>{{ $user.job }} at {{ index $.Site.Data.customers $user.companyKey "name" }} </p>
+                      <p>{{ $user.job }}{{ if $user.companyKey }} at {{ index $.Site.Data.customers $user.companyKey "name" }}{{ end }}</p>
                     </div>
                   </div>
                 </div>
@@ -607,7 +607,7 @@
         <div class="container section">
           <div class="columns">
             <div class="column is-4">
-              <p>All rights reserved © {{ now.Format "2006" }}. Appscode, Inc.</p>
+              <p>© {{ now.Format "2006" }} AppsCode Inc. All rights reserved.</p>
             </div>
             <div class="column is-4 is-mobile has-text-centered">
               <div class="footer-inline-link">
