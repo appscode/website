@@ -1,31 +1,31 @@
 {
-  "key": "guard",
-  "name": "Guard",
-  "tagLine": "Kubernetes Authentication WebHook Server",
+  "key": "kubedb",
+  "name": "KubeDB",
+  "tagLine": "Run production-grade databases <br />easily on <strong>Kubernetes</strong>",
   "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
   "website": {
-    "domainKey": "domain_appscode",
-    "path": "/products/guard/"
+    "domainKey": "domain_kubedb",
+    "path": ""
   },
   "heroImage": {
-    "src": "/assets/images/products/guard/guard-hero.png",
-    "alt": "Guard"
+    "src": "/assets/images/products/kubedb/kubedb-hero.png",
+    "alt": "KubeDB"
   },
   "logo": {
-    "src": "/assets/images/products/guard/guard-logo.png",
-    "alt": "Guard"
+    "src": "/assets/images/products/kubedb/kubedb-logo.png",
+    "alt": "KubeDB"
   },
   "logoWhite": {
-    "src": "/assets/images/products/guard/guard-logo-white.png",
-    "alt": "Guard"
+    "src": "/assets/images/products/kubedb/kubedb-logo-white.png",
+    "alt": "KubeDB"
   },
   "icon": {
-    "src": "/assets/images/products/guard/guard-icon.png",
-    "alt": "Guard"
+    "src": "/assets/images/products/kubedb/kubedb-icon.png",
+    "alt": "KubeDB"
   },
-  "repoURL": "https://github.com/appscode/guard",
-  "starRepo": "appscode/guard",
-  "docRepo": "appscode/guard",
+  "repoURL": "https://github.com/kubedb/docs",
+  "starRepo": "kubedb/cli",
+  "docRepo": "kubedb/docs",
   "datasheetFormID": "9d6f5a4d3fe306ecf3b9ca3c8e121265bcf355b2c3f198a8439cf9035bbda0e7",
   "features": [
     {
@@ -84,18 +84,20 @@
     }
   ],
   "versions": [
-    { "branch": "master", "hostDocs": false, "v-dropdown": true },
-    { "branch": "0.4.0", "hostDocs": true, "v-dropdown": true },
-    { "branch": "0.3.0", "hostDocs": true, "v-dropdown": true },
-    { "branch": "0.2.1", "hostDocs": true, "v-dropdown": true },
-    { "branch": "0.2.0", "hostDocs": true },
-    { "branch": "0.1.4", "hostDocs": true },
-    { "branch": "0.1.3", "hostDocs": true },
-    { "branch": "0.1.2", "hostDocs": true },
-    { "branch": "0.1.1", "hostDocs": true },
-    { "branch": "0.1.0", "hostDocs": true },
-    { "branch": "0.1.0-rc.5", "hostDocs": true },
-    { "branch": "0.1.0-rc.4", "hostDocs": false }
+      { "branch": "master", "hostDocs": false, "v-dropdown": true },
+      { "branch": "0.12.0", "hostDocs": true, "v-dropdown": true },
+      { "branch": "0.11.0", "hostDocs": true, "v-dropdown": true },
+      { "branch": "0.10.0", "hostDocs": true, "v-dropdown": true },
+      { "branch": "0.9.0", "hostDocs": true, "v-dropdown": true },
+      { "branch": "0.9.0-rc.2", "hostDocs": true },
+      { "branch": "0.9.0-rc.1", "hostDocs": true },
+      { "branch": "0.9.0-rc.0", "hostDocs": true },
+      { "branch": "0.8.0", "hostDocs": true, "v-dropdown": true },
+      { "branch": "0.8.0-rc.0", "hostDocs": true },
+      { "branch": "0.8.0-beta.2", "hostDocs": true },
+      { "branch": "0.8.0-beta.0", "hostDocs": true },
+      { "branch": "0.7.1", "hostDocs": false },
+      { "branch": "0.6.0", "hostDocs": false, "v-dropdown": true }
   ],
-  "latestVersion": "0.4.0"
+  "latestVersion": "0.12.0"
 }

@@ -77,222 +77,52 @@
                         <div class="column is-8">
                           <div class="columns">
                             <div class="column is-6 br-1">
+                              {{ range $item := $.Site.Data.config.mainMenu.c0 }}
+                              {{ $p := (index $.Site.Data $item) }}
                               <!-- single menu item start -->
                               <a
-                                href="{{.Site.Params.domain_appscode}}/products/voyager/"
-                                class="single-product-item is-voyager"
+                                href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}"
+                                class="single-product-item is-{{ $p.key }}"
                               >
                                 <div class="menu-header">
                                   <div class="menu-logo">
                                     <img
-                                      src="/assets/images/product-logos/small-size/voyager.png"
-                                      alt=""
+                                      src="{{ $p.icon.src }}"
+                                      alt="{{ $p.icon.alt }}"
                                     />
                                   </div>
-                                  <h5>Voyager</h5>
+                                  <h5>{{ $p.name }}</h5>
                                 </div>
                                 <div class="menu-body">
-                                  <p>
-                                    Secure HAProxy Ingress Controller for
-                                    Kubernetes
-                                  </p>
+                                  <p>{{ $p.tagLine | plainify }}</p>
                                 </div>
                               </a>
                               <!-- single menu item end -->
-                              <!-- single menu item start -->
-                              <a
-                                href="{{.Site.Params.domain_kubedb}}"
-                                class="single-product-item is-kubedb"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/product-logos/small-size/kubedb.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <h5>KubeDB</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>
-                                    Run production-grade databases easily on
-                                    Kubernetes
-                                  </p>
-                                </div>
-                              </a>
-                              <!-- single menu item end -->
-                              <!-- single menu item start -->
-                              <a
-                                href="{{.Site.Params.domain_appscode}}/products/stash/"
-                                class="single-product-item is-stash"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/product-logos/small-size/stash.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <h5>Stash</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>
-                                    Backup your Kubernetes Stateful Applications
-                                  </p>
-                                </div>
-                              </a>
-                              <!-- single menu item end -->
-                              <!-- single menu item start -->
-                              <a
-                                href="{{.Site.Params.domain_appscode}}/products/guard/"
-                                class="single-product-item is-guard"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/product-logos/small-size/guard.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <h5>Guard</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>
-                                    Kubernetes Authentication WebHook Server
-                                  </p>
-                                </div>
-                              </a>
-                              <!-- single menu item end -->
-                              <!-- single menu item start -->
-                              <a
-                                href="{{.Site.Params.domain_kubeci}}"
-                                class="single-product-item is-kubeci"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/product-logos/small-size/appscode.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <h5>KubeCI</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>
-                                    Kubernetes native CI
-                                  </p>
-                                </div>
-                              </a>
-                              <!-- single menu item end -->
+                              {{ end }}
                             </div>
                             <div class="column is-6 br-1">
+                              {{ range $item := $.Site.Data.config.mainMenu.c1 }}
+                              {{ $p := (index $.Site.Data $item) }}
                               <!-- single menu item start -->
                               <a
-                                href="{{.Site.Params.domain_appscode}}/products/searchlight/"
-                                class="single-product-item is-searchlight"
+                                href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}"
+                                class="single-product-item is-{{ $p.key }}"
                               >
                                 <div class="menu-header">
                                   <div class="menu-logo">
                                     <img
-                                      src="/assets/images/product-logos/small-size/searchlight.png"
-                                      alt=""
+                                      src="{{ $p.icon.src }}"
+                                      alt="{{ $p.icon.alt }}"
                                     />
                                   </div>
-                                  <h5>Searchlight</h5>
+                                  <h5>{{ $p.name }}</h5>
                                 </div>
                                 <div class="menu-body">
-                                  <p>
-                                    Alerts for Kubernetes
-                                  </p>
+                                  <p>{{ $p.tagLine | plainify }}</p>
                                 </div>
                               </a>
                               <!-- single menu item end -->
-                              <!-- single menu item start -->
-                              <a
-                                href="{{.Site.Params.domain_appscode}}/products/swift/"
-                                class="single-product-item is-swift"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/product-logos/small-size/appscode.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <h5>Swift</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>
-                                    Ajax friendly Helm Tiller Proxy
-                                  </p>
-                                </div>
-                              </a>
-                              <!-- single menu item end -->
-                              <!-- single menu item start -->
-                              <a
-                                href="{{.Site.Params.domain_appscode}}/products/service-broker/"
-                                class="single-product-item is-broker"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/product-logos/small-size/service-broke.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <h5>Service Broker</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>
-                                    Open Service Broker for AppsCode Cloud
-                                    Services
-                                  </p>
-                                </div>
-                              </a>
-                              <!-- single menu item end -->
-                              <!-- single menu item start -->
-                              <a
-                                href="{{.Site.Params.domain_appscode}}/products/pharmer/"
-                                class="single-product-item is-pharmer"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/product-logos/small-size/phamer.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <h5>Pharmer</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>
-                                    Kubernetes Cluster Manager using Kubeadm &
-                                    Cluster API
-                                  </p>
-                                </div>
-                              </a>
-                              <!-- single menu item end -->
-                              <!-- single menu item start -->
-                              <a
-                                href="{{.Site.Params.domain_kubeshield}}"
-                                class="single-product-item is-kubeshield"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/product-logos/small-size/kubeshild.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <h5>KubeShield</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>
-                                    Secure Kubernetes
-                                  </p>
-                                </div>
-                              </a>
-                              <!-- single menu item end -->
+                              {{ end }}
                             </div>
                           </div>
                         </div>
@@ -325,49 +155,28 @@
                               </a>
                               <!-- single menu item end -->
 
+                              {{ range $item := $.Site.Data.config.mainMenu.c2 }}
+                              {{ $p := (index $.Site.Data $item) }}
                               <!-- single menu item start -->
                               <a
-                                href="{{.Site.Params.domain_appscode}}/products/kubed/"
-                                class="single-product-item is-kubed"
+                                href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}"
+                                class="single-product-item is-{{ $p.key }}"
                               >
                                 <div class="menu-header">
                                   <div class="menu-logo">
                                     <img
-                                      src="/assets/images/product-logos/small-size/kubed.png"
-                                      alt=""
+                                      src="{{ $p.icon.src }}"
+                                      alt="{{ $p.icon.alt }}"
                                     />
                                   </div>
-                                  <h5>Kubed</h5>
+                                  <h5>{{ $p.name }}</h5>
                                 </div>
                                 <div class="menu-body">
-                                  <p>
-                                    A Kubernetes cluster manager daemon
-                                  </p>
+                                  <p>{{ $p.tagLine | plainify }}</p>
                                 </div>
                               </a>
                               <!-- single menu item end -->
-                              <!-- single menu item start -->
-                              <a
-                                href="{{.Site.Params.domain_kubevault}}"
-                                class="single-product-item is-kubevault"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/product-logos/small-size/kube-vault.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <h5>KubeVault</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>
-                                    Tools for running HashiCorp Vault on
-                                    Kubernetes
-                                  </p>
-                                </div>
-                              </a>
-                              <!-- single menu item end -->
+                              {{ end }}
                             </div>
                           </div>
                         </div>
@@ -444,16 +253,13 @@
         <div class="container section">
           <nav class="navbar">
             <div class="navbar-brand">
+              {{ $p := $.Site.Data.appscode }}
               {{ if $productName }}
-                <a class="navbar-item" href="{{.Site.BaseURL}}/products/{{$productName}}">
-                  <img src="/assets/images/product-logos/{{$productName}}-white.png" alt="" />
-                </a>
-              {{ else }}
-                <a class="navbar-item" href="{{.Site.BaseURL}}">
-                  <img src="/assets/images/product-logos/appscode-white.png" alt="" />
-                </a>
+                {{ $p = (index $.Site.Data $productName) }}
               {{ end }}
-
+              <a class="navbar-item" href="{{ index $.Site.Params $p.website.domainKey }}{{ $p.website.path }}">
+                <img src="{{ $p.logoWhite.src }}" alt="{{ $p.logoWhite.alt }}" />
+              </a>
               <a
                 role="button"
                 class="navbar-burger burger"
