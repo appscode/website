@@ -94,7 +94,7 @@
                                   <h5>{{ $p.name }}</h5>
                                 </div>
                                 <div class="menu-body">
-                                  <p>{{ $p.tagLine | plainify }}</p>
+                                  <p>{{ $p.tagline | plainify }}</p>
                                 </div>
                               </a>
                               <!-- single menu item end -->
@@ -118,7 +118,7 @@
                                   <h5>{{ $p.name }}</h5>
                                 </div>
                                 <div class="menu-body">
-                                  <p>{{ $p.tagLine | plainify }}</p>
+                                  <p>{{ $p.tagline | plainify }}</p>
                                 </div>
                               </a>
                               <!-- single menu item end -->
@@ -172,7 +172,7 @@
                                   <h5>{{ $p.name }}</h5>
                                 </div>
                                 <div class="menu-body">
-                                  <p>{{ $p.tagLine | plainify }}</p>
+                                  <p>{{ $p.tagline | plainify }}</p>
                                 </div>
                               </a>
                               <!-- single menu item end -->
@@ -643,13 +643,10 @@
                 <div class="footer-menu">
                   <h4>Products</h4>
                   <ul class="footer-link">
-                    <li><a href="{{.Site.Params.domain_bytebuilders}}">ByteBuilders</a></li>
-                    <li><a href="{{.Site.Params.domain_kubedb}}">KubeDB</a></li>
-                    <li><a href="/products/stash/">Stash</a></li>
-                    <li><a href="{{.Site.Params.domain_kubevault}}">KubeVault</a></li>
-                    <li><a href="/products/voyager/">Voyager</a></li>
-                    <li><a href="/products/guard/">Guard</a></li>
-                    <li><a href="/products/pharmer/">Pharmer</a></li>
+                    {{ range $item := $.Site.Data.config.footerLinks }}
+                    {{ $p := (index $.Site.Data $item) }}
+                    <li><a href="{{index $.Site.Params $p.website.domainKey}}{{$p.website.path}}">{{$p.name}}</a></li>
+                    {{ end }}
                   </ul>
                 </div>
                 <!-- footer menu end -->
@@ -662,9 +659,9 @@
                 <div class="footer-menu">
                   <h4>Services</h4>
                   <ul class="footer-link">
-                    <li><a href="/sonsulting/">Consulting</a></li>
-                    <li><a href="/training/">Training</a></li>
-                    <li><a href="/support/">Support</a></li>
+                    <li><a href="{{.Site.Params.domain_appscode}}/sonsulting/">Consulting</a></li>
+                    <li><a href="{{.Site.Params.domain_appscode}}/training/">Training</a></li>
+                    <li><a href="{{.Site.Params.domain_appscode}}/support/">Support</a></li>
                   </ul>
                 </div>
                 <!-- footer menu end -->
@@ -677,9 +674,9 @@
                 <div class="footer-menu">
                   <h4>Company</h4>
                   <ul class="footer-link">
-                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="{{.Site.Params.domain_appscode}}/about/">About Us</a></li>
                     <li><a href="{{.Site.Params.blog_url}}">Blog</a></li>
-                    <li><a href="/contact/">Contact Us</a></li>
+                    <li><a href="{{.Site.Params.domain_appscode}}/contact/">Contact Us</a></li>
                   </ul>
                 </div>
                 <!-- footer menu end -->
@@ -692,10 +689,10 @@
                 <div class="footer-menu">
                   <h4>Legal</h4>
                   <ul class="footer-link">
-                    <li><a href="/legal/tos/">Terms of Sevice</a></li>
-                    <li><a href="/legal/privacy-policy/">Privacy Policy</a></li>
-                    <li><a href="/legal/security/">Security</a></li>
-                    <li><a href="/legal/sla/">Service Level Agreement</a></li>
+                    <li><a href="{{.Site.Params.domain_appscode}}/legal/tos/">Terms of Sevice</a></li>
+                    <li><a href="{{.Site.Params.domain_appscode}}/legal/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="{{.Site.Params.domain_appscode}}/legal/security/">Security</a></li>
+                    <li><a href="{{.Site.Params.domain_appscode}}/legal/sla/">Service Level Agreement</a></li>
                   </ul>
                 </div>
                 <!-- footer menu end -->
@@ -712,8 +709,8 @@
             </div>
             <div class="column is-4 is-mobile has-text-centered">
               <div class="footer-inline-link">
-                <a href="/legal/privacy-policy/">Privacy Policy</a>
-                <a href="/legal/tos/">Terms of Service</a>
+                <a href="{{.Site.Params.domain_appscode}}/legal/privacy-policy/">Privacy Policy</a>
+                <a href="{{.Site.Params.domain_appscode}}/legal/tos/">Terms of Service</a>
               </div>
             </div>
             <div class="column is-4 is-mobile has-text-right">
