@@ -95,6 +95,9 @@ a.navbar-item:hover {
 nav.navbar{
   background-color: transparent;
 }
+.navbar-item img{
+  max-height: 35px;
+}
 .customize-kubedb .navbar-dropdown .navbar-item {
   color: $primary-color;
 }
@@ -497,6 +500,11 @@ a.play-icon .fa {
 }
 
 /* footer area start */
+.single-footer-widget {
+  .footer-logo {
+    max-width: 160px;
+  }
+}
 .subscription-form label {
   font-size: 18px;
   font-weight: 600;
