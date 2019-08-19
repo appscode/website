@@ -202,22 +202,35 @@
                     <!-- dropdown menu end -->
                   </div>
 
-                  <a class="navbar-item">
-                    Services
-                  </a>
-                  <a class="navbar-item">
-                    Open Source
-                  </a>
-                  <a class="navbar-item">
+                  <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link">
+                          Services
+                      </a>
+
+                      <div class="navbar-dropdown">
+                          <a class="navbar-item" href="{{ $.Site.Params.domain_appscode }}/consulting/" >
+                              Consulting
+                          </a>
+                          <a class="navbar-item" href="{{ $.Site.Params.domain_appscode }}/training/" >
+                              Training
+                          </a>
+                          <a class="navbar-item" href="{{ $.Site.Params.domain_appscode }}/support/" >
+                              Support
+                          </a>
+                      </div>
+                  </div>
+
+                  <a class="navbar-item" href="{{ $.Site.Params.blog_url }}" >
                     Blog
                   </a>
-                  <a class="navbar-item">
-                    Contact
+                  <a class="navbar-item" href="{{ $.Site.Params.domain_appscode }}/contact/" >
+                    Contact Us
                   </a>
                 </div>
                 <!-- nav menu end -->
                 <div class="navbar-item">
                   <div class="buttons main-menu-button-top">
+                    <!--
                     <a class="button is-small for-support">
                       <span
                         ><img
@@ -225,6 +238,7 @@
                           alt=""/></span
                       >Forum
                     </a>
+                    -->
                     <a class="button is-small for-chat" href="{{.Site.Params.slack_url}}">
                       <span
                         ><img
