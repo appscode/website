@@ -46,7 +46,7 @@
           <nav class="navbar">
             <div class="navbar-brand">
               <a class="navbar-item" href="{{.Site.Params.domain_appscode}}">
-                <img src="/assets/images/logo-color-appscode.png" alt="" />
+                <img src="{{$.Site.Data.appscode.logo.src}}" alt="{{$.Site.Data.appscode.logo.alt}}" />
               </a>
 
               <a
@@ -578,8 +578,8 @@
                 <div class="footer-logo">
                   <a href="{{.Site.Params.domain_appscode}}"
                     ><img
-                      src="/assets/images/logo-color-appscode.png"
-                      alt=""
+                      src="{{$.Site.Data.appscode.logo.src}}"
+                      alt="{{$.Site.Data.appscode.logo.alt}}"
                       class="img"
                   /></a>
                 </div>
