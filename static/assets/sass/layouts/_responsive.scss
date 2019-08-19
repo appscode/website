@@ -257,7 +257,7 @@
       margin-top: 0;
     }
     .hero-shape {
-      width: 50%;
+      width: 100%;
       height: 100%;
       min-height: auto;
     }
@@ -980,9 +980,11 @@
   // hero-area button style
   .hero-area {
     .hero-shape {
-      width: 50%;
+      width: 100%;
       height: 100%;
       min-height: auto;
+      background-position: right;
+      top: -260px;
     }
     .trusted-logo {
       margin-top: 0;
@@ -990,6 +992,9 @@
   }
   .is-full-height {
     height: auto;
+  }
+  .hero-area.is-full-height{
+    padding: 30px 0 0;
   }
   .hero-area-button .ac-transparent-btn {
     padding: 0;

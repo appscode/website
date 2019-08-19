@@ -65,13 +65,13 @@ body.fixed-nav
     background: url(../images/appscode/hero-shape.png);
     background-repeat: no-repeat;
     content: "";
-    right: 0;
-    width: 50%;
+    left: 0;
+    width: 100%;
     height: 100%;
     top: 0;
     background-position-y: top;
     z-index: -1;
-    min-height: 640px;
+    min-height: 100%;
   }
   .trusted-logo {
     margin-top: 30px;
