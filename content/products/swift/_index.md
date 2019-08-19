@@ -7,7 +7,7 @@ menu:
     identifier: Swift
     name: Swift
     weight: 70
-layout: project
+layout: project_simple
 product_name: swift
 docs_url: https://github.com/appscode/swift/tree/master/docs
 github_url: https://github.com/appscode/swift

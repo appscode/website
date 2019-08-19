@@ -3,7 +3,126 @@
     {
       "target": "hugo",
       "public": "public",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "headers": [
+        {
+          "headers": [
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            }
+          ],
+          "source": "**"
+        },
+        {
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=360000"
+            }
+          ],
+          "source": "@(images|fonts|js_global)/**"
+        },
+        {
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=300"
+            }
+          ],
+          "source": "404.html"
+        }
+      ],
+      "redirects": [
+        {
+          "source": "/products/guard/latest/",
+          "destination": "/products/guard/0.4.0/",
+          "type": 302
+        },
+        {
+          "source": "/products/guard/latest/:rest*",
+          "destination": "/products/guard/0.4.0/:rest",
+          "type": 302
+        },
+        {
+          "source": "/products/kubed/latest/",
+          "destination": "/products/kubed/0.10.0/",
+          "type": 302
+        },
+        {
+          "source": "/products/kubed/latest/:rest*",
+          "destination": "/products/kubed/0.10.0/:rest",
+          "type": 302
+        },
+        {
+          "source": "/products/pharmer/latest/",
+          "destination": "/products/pharmer/0.3.1/",
+          "type": 302
+        },
+        {
+          "source": "/products/pharmer/latest/:rest*",
+          "destination": "/products/pharmer/0.3.1/:rest",
+          "type": 302
+        },
+        {
+          "source": "/products/searchlight/latest/",
+          "destination": "/products/searchlight/8.0.0/",
+          "type": 302
+        },
+        {
+          "source": "/products/searchlight/latest/:rest*",
+          "destination": "/products/searchlight/8.0.0/:rest",
+          "type": 302
+        },
+        {
+          "source": "/products/service-broker/latest/",
+          "destination": "/products/service-broker/0.3.1/",
+          "type": 302
+        },
+        {
+          "source": "/products/service-broker/latest/:rest*",
+          "destination": "/products/service-broker/0.3.1/:rest",
+          "type": 302
+        },
+        {
+          "source": "/products/stash/latest/",
+          "destination": "/products/stash/v0.9.0-rc.0/",
+          "type": 302
+        },
+        {
+          "source": "/products/stash/latest/:rest*",
+          "destination": "/products/stash/v0.9.0-rc.0/:rest",
+          "type": 302
+        },
+        {
+          "source": "/products/swift/latest/",
+          "destination": "/products/swift/0.11.1/",
+          "type": 302
+        },
+        {
+          "source": "/products/swift/latest/:rest*",
+          "destination": "/products/swift/0.11.1/:rest",
+          "type": 302
+        },
+        {
+          "source": "/products/voyager/latest/",
+          "destination": "/products/voyager/10.0.0/",
+          "type": 302
+        },
+        {
+          "source": "/products/voyager/latest/:rest*",
+          "destination": "/products/voyager/10.0.0/:rest",
+          "type": 302
+        }
+      ]
     }
   ]
 }

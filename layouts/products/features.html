@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{ $productName := .Params.product_name }}
-{{ $latestVersion := (index $.Site.Data.products.products $productName "latestVersion") }}
+{{ $latestVersion := (index $.Site.Data $productName "latestVersion") }}
 
 <!-- features area start -->
 <section class="hero-features">

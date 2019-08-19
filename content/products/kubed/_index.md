@@ -7,7 +7,7 @@ menu:
     identifier: kubed
     name: Kubed
     weight: 50
-layout: project
+layout: project_simple
 product_name: kubed
 docs_url: https://github.com/appscode/kubed/tree/master/docs
 github_url: https://github.com/appscode/kubed

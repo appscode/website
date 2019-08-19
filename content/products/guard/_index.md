@@ -7,7 +7,7 @@ menu:
     identifier: Guard
     name: Guard
     weight: 60
-layout: project
+layout: project_simple
 product_name: guard
 docs_url: https://github.com/appscode/guard/tree/master/docs
 github_url: https://github.com/appscode/guard
