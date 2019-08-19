@@ -66,7 +66,7 @@
             tools. <a href="#" class="ac-primary-color">here.</a>
           </p>
           <div class="signature-image">
-            <img src="../assets/images/appscode/signature.png" alt="" />
+            <img src="/assets/images/appscode/signature.png" alt="" />
             <p>Tamal Shaha</p>
           </div>
         </div>
@@ -74,7 +74,7 @@
       <div class="column is-6 is-offset-1">
         <div class="ceo-image">
           <div class="dots-style"></div>
-          <img src="../assets/images/appscode/ceo.png" alt="" />
+          <img src="/assets/images/appscode/ceo.png" alt="" />
         </div>
       </div>
     </div>
@@ -88,76 +88,21 @@
     <div class="columns">
       <div class="column is-6 is-offset-3">
         <div class="section-title has-text-centered">
-          <h2>We Have Our Happy Customer Around the World</h2>
+          <h2>We Have Happy Customers Around the World</h2>
         </div>
       </div>
     </div>
     <div class="columns">
       <div class="column is-10 is-offset-1 has-text-centered">
+        {{ range $customer := $.Site.Data.customers }}
         <a class="single-brand-logo">
           <img
-            src="/assets/images/brand-logo/zippo.png"
-            alt="linode"
+            src="{{ $customer.logo }}"
+            alt="{{ $customer.name }}"
             class="img"
           />
         </a>
-        <a class="single-brand-logo">
-          <img
-            src="/assets/images/brand-logo/colour-logo.png"
-            alt="linode"
-            class="img"
-          />
-        </a>
-        <a class="single-brand-logo">
-          <img
-            src="/assets/images/brand-logo/kops.png"
-            alt="linode"
-            class="img"
-          />
-        </a>
-        <a class="single-brand-logo">
-          <img
-            src="/assets/images/brand-logo/envato.png"
-            alt="linode"
-            class="img"
-          />
-        </a>
-        <a class="single-brand-logo">
-          <img
-            src="/assets/images/brand-logo/1200px-IBM_logo.svg.png"
-            alt="linode"
-            class="img"
-          />
-        </a>
-        <a class="single-brand-logo">
-          <img
-            src="/assets/images/brand-logo/khan.png"
-            alt="linode"
-            class="img"
-          />
-        </a>
-        <a class="single-brand-logo">
-          <img
-            src="/assets/images/brand-logo/aks.png"
-            alt="linode"
-            class="img"
-          />
-        </a>
-
-        <a class="single-brand-logo">
-          <img
-            src="/assets/images/brand-logo/microsoft.png"
-            alt="linode"
-            class="img"
-          />
-        </a>
-        <a class="single-brand-logo">
-          <img
-            src="/assets/images/brand-logo/volvo.png"
-            alt="linode"
-            class="img"
-          />
-        </a>
+        {{ end }}
       </div>
     </div>
   </div>
