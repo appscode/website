@@ -7,7 +7,7 @@ menu:
     identifier: voyager
     name: Voyager
     weight: 20
-layout: project
+layout: project_simple
 product_name: voyager
 docs_url: https://github.com/appscode/voyager/tree/master/docs/
 helm_url: https://github.com/appscode/voyager/tree/master/chart/voyager

@@ -1,0 +1,98 @@
+{{ define "main" }}
+
+{{ $productName := .Params.product_name }}
+{{ $p := index $.Site.Data .Params.product_name }}
+
+<!-- hero area start -->
+<section class="hero-area">
+  <div class="container section">
+    <div>
+      <div class="columns">
+        <div class="column is-6">
+          <!-- hero content start -->
+          <div class="hero-area-content d-table">
+            <div class="hero-content-inner d-table-cell">
+              <h4>
+                {{ index $.Site.Data $productName "name" }}
+              </h4>
+              <h1>
+                {{ $p.tagLine | safeHTML }}
+              </h1>
+              <div class="hero-area-button buttons">
+                <a href="schedule-demo" class="button kd-button kd-primary"
+                  >Schedule a Demo</a
+                >
+                {{ if $p.datasheetFormID }}
+                <a href="datasheet" class="button kd-transparent-btn"
+                  ><span
+                    ><i
+                      class="fa fa-cloud-download"
+                      aria-hidden="true"
+                    ></i></span
+                  >Download Datasheet</a
+                >
+                {{ end }}
+              </div>
+            </div>
+          </div>
+          <!-- hero content end -->
+        </div>
+        <div class="column is-6 is-hidden-mobile">
+          <!-- hero image start -->
+          <div class="hero-area-img">
+            <img src="{{ $p.heroImage.src }}" alt="{{ $p.heroImage.alt }}" class="img" />
+          </div>
+          <!-- hero image end -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- hero area end -->
+
+<!-- feature-area start -->
+<section class="product-feature-area section-padding">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-8 is-offset-2 has-text-centered">
+        <!-- section-title start -->
+        <div class="section-title is-main-title">
+          <h2>Product Features</h2>
+          {{ if $p.summary }}
+          <p>
+            {{ $p.summary }}
+          </p>
+          {{ end }}
+        </div>
+        <!-- section-title end -->
+      </div>
+    </div>
+    <div class="columns is-multiline">
+      {{ range $f := $p.features }}
+      <!-- single feature area start -->
+      <div class="column is-6">
+      <div class="single-product-feature-wrapper">
+        <div class="product-feature-icon">
+          <img src="{{ $f.icon.src }}" alt="{{ $f.icon.alt }}" />
+        </div>
+        <div class="product-feature-content">
+          <div class="product-feature-title">
+            <h3>{{ $f.title }}</h3>
+            <p>{{ $f.summary }}</p>
+          </div>
+          <div class="product-feature-description">
+            <p>
+              {{ $f.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- single feature area end -->
+      {{ end }}
+    </div>
+  </div>
+</section>
+<!-- feature-area end -->
+
+{{ end }}

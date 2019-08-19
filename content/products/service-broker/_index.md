@@ -7,7 +7,7 @@ menu:
     identifier: service-broker
     name: Service Broker
     weight: 45
-layout: project
+layout: project_simple
 product_name: service-broker
 docs_url: https://github.com/appscode/service-broker/tree/master/docs
 github_url: https://github.com/appscode/service-broker

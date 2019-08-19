@@ -7,7 +7,7 @@ menu:
     identifier: Searchlight
     name: Searchlight
     weight: 80
-layout: project
+layout: project_simple
 product_name: searchlight
 docs_url: https://github.com/appscode/searchlight/tree/master/docs
 github_url: https://github.com/appscode/searchlight
