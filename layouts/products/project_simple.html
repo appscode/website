@@ -1,6 +1,5 @@
 {{ define "main" }}
 
-{{ $productName := .Params.product_name }}
 {{ $p := index $.Site.Data .Params.product_name }}
 
 <!-- hero area start -->
@@ -13,7 +12,7 @@
           <div class="hero-area-content d-table">
             <div class="hero-content-inner d-table-cell">
               <h4>
-                {{ index $.Site.Data $productName "name" }}
+                {{ $p.name }}
               </h4>
               <h1>
                 {{ $p.tagline | safeHTML }}
