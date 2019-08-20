@@ -1,10 +1,13 @@
 {{ define "main" }}
+
+{{ $p := index $.Site.Data .Params.product_name }}
+
 <section>
   <div class="container">
     <div class="columns">
         <div class="column has-text-centered">
             <div class="schedule-title">
-                <h2>Schedule a demo with a product expert</h2>
+                <h2>Talk to a product expert about {{ $p.name }}</h2>
             </div>
         </div>
     </div>

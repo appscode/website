@@ -1,4 +1,7 @@
 {{ define "main" }}
+
+{{ $p := index $.Site.Data .Params.product_name }}
+
 <!-- hero area for page start -->
 <section class="hero-area support-page">
   <div class="container section">
@@ -60,26 +63,86 @@
           <div class="pricing-body">
             <!-- pricing content -->
             <ul>
-              <li><span>Cluster</span></li>
               <li>
-                <span>Community <br />support</span>
+                <span>
+                  <br />
+                  <br />
+                  <br />
+                </span>
               </li>
-              <li><span>Response Times</span></li>
               <li>
-                <span
-                  >Emergency patches <br />
-                  (at most weekly)</span
-                >
+                <span>
+                  Response Times <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                </span>
               </li>
-              <li><span>Unlimited Incidents</span></li>
-              <li><span>Contacts for Ticketing</span></li>
               <li>
-                <span>Remote Hands <br />(Debug via Zoom)</span>
+                <span>
+                  Support Coverage <br />
+                </span>
               </li>
-              <li><span>Production Runbook</span></li>
-              <li><span>Dedicated Private chat (Discord)</span></li>
-              <li><span>Managed Upgrades</span></li>
-              <li><span>Professional Services</span></li>
+              <li>
+                <span>
+                  Emergency patches <br />
+                </span>
+              </li>
+              <li>
+                <span>
+                  Unlimited Incidents <br />
+                </span>
+              </li>
+              <li>
+                <span>
+                  Contacts for <br />
+                  Ticketing
+                </span>
+              </li>
+              <li>
+                <span>
+                  Community Support <br />
+                </span>
+              </li>
+              <li>
+                <span>
+                  Remote Hands <br />
+                  (Debug via Zoom) <br />
+                   <br />
+                </span>
+              </li>
+              <li>
+                <span>
+                  Production Runbook
+                </span>
+              </li>
+              <li>
+                <span>
+                  Dedicated Private  <br />
+                  chat (via Slack)
+                </span>
+              </li>
+              <li>
+                <span>
+                  Phone support
+                </span>
+              </li>
+              <li>
+                <span>
+                  Architectural  <br />
+                  Guidance <br />
+                  <br />
+                </span>
+              </li>
+              <li>
+                <span>
+                  Professional Services
+                </span>
+              </li>
             </ul>
             <!-- pricing content -->
           </div>
@@ -101,7 +164,7 @@
 
             <!-- pricing button start -->
             <div class="pricing-button">
-              <a href="#" class="button kd-button kd-green">Try Now FREE</a>
+              <a href="/products/{{ $p.key }}/{{ $p.latestVersion }}/setup/" class="button kd-button kd-green">Try Now for FREE!</a>
             </div>
             <!-- pricing button end -->
           </div>
@@ -111,33 +174,78 @@
           <div class="pricing-body">
             <!-- pricing content -->
             <ul>
-              <li data-col_name="Cluster"><span>X</span></li>
+              <li>
+                <span>
+                  Recommended if you are <br />
+                  experimenting or testing <br />
+                  <br />
+                </span>
+              </li>
+              <li data-col_name="Response Time">
+                <span>
+                  X <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                </span>
+              </li>
+              <li data-col_name="Support Coverage">
+                <span>
+                  N/A
+                </span>
+              </li>
+              <li data-col_name="Emergency patches">
+                <span>
+                  X <br />
+                </span>
+              </li>
+              <li data-col_name="Unlimited Incidents">
+                <span>X</span>
+              </li>
+              <li data-col_name="Contacts for Ticketing">
+                <span>X</span>
+              </li>
               <li data-col_name="Community support">
                 <span
                   >Included <br />
                   (Slack & GitHub issues)</span
                 >
               </li>
-              <li data-col_name="Response Time"><span>X</span></li>
-              <li data-col_name="Emergency patches (at most weekly)">
-                <span>X</span>
-              </li>
-              <li data-col_name="Unlimited Incidents"><span>X</span></li>
-              <li data-col_name="Contacts for Ticketing"><span>X</span></li>
               <li data-col_name="Remote Hands (Debug via Zoom)">
+                <span>
+                  Yes <br />
+                  (charged at $200/hr) <br />
+                  <br />
+                </span>
+              </li>
+              <li data-col_name="Production Runbook">
                 <span>X</span>
               </li>
-              <li data-col_name="Production Runbook"><span>X</span></li>
-              <li data-col_name="Dedicated Private chat (Discord)">
+              <li data-col_name="Dedicated Private chat (via Slack)">
                 <span>X</span>
               </li>
-              <li data-col_name="Managed Upgrades"><span>X</span></li>
-              <li data-col_name="Professional Services"><span>X</span></li>
+              <li data-col_name="Phone support">
+                <span>X</span>
+              </li>
+              <li data-col_name="Architectural Guidance">
+                <span>
+                  X <br />
+                  <br />
+                  <br />
+                </span>
+              </li>
+              <li data-col_name="Professional Services">
+                <span>Additional fees</span>
+              </li>
             </ul>
             <!-- pricing content -->
             <!-- pricing button start -->
             <div class="pricing-button">
-              <a href="#" class="button kd-button kd-green">Buy Now</a>
+              <a href="/products/{{ $p.key }}/{{ $p.latestVersion }}/setup/" class="button kd-button kd-green">Try Now for FREE!</a>
             </div>
             <!-- pricing button end -->
           </div>
@@ -152,8 +260,8 @@
           <div class="pricing-heading">
             <!-- pricing title start -->
             <div class="pricing-top">
-              <h4>Silver</h4>
-              <div class="package-price">$220 <span>Per cluster</span></div>
+              <h4>Standard</h4>
+              <div class="package-price">$750<span>Per cluster</span></div>
             </div>
             <!-- pricing title end -->
 
@@ -162,11 +270,8 @@
               <div class="control">
                 <div class="select is-multiple custom-arrow-down">
                   <select>
-                    <option>Annual plan, paid monthly</option>
-                    <option>With options</option>
-                    <option>With options 2</option>
-                    <option>With options 3</option>
-                    <option>With options 4</option>
+                    <option>Annual plan, prepaid</option>
+                    <option>Monthly plan</option>
                   </select>
                 </div>
               </div>
@@ -175,7 +280,7 @@
 
             <!-- pricing button start -->
             <div class="pricing-button">
-              <a href="#" class="button kd-button kd-primary">Buy Now</a>
+              <a href="/products/{{$p.key}}/meet-expert/" class="button kd-button kd-primary">Contact Sales</a>
             </div>
             <!-- pricing button end -->
           </div>
@@ -185,39 +290,80 @@
           <div class="pricing-body">
             <!-- pricing content -->
             <ul>
-              <li data-col_name="Cluster"><span> One cluster</span></li>
-              <li data-col_name="Community support">
+              <li>
                 <span>
-                  Included <br />
+                  Recommended if you want <br />
+                  guaranteed support by the <br />
+                  developer
+                </span>
+              </li>
+              <li data-col_name="Response Time">
+                <span>
+                  General guidance: <br />
+                  < 48 business hours  <br />
+                  <br />
+                  System impaired:  <br />
+                  < 24 business hours <br />
+                  <br />
+                  <br />
+                  <br />
+                </span>
+              </li>
+              <li data-col_name="Support Coverage">
+                <span>
+                  Business hours <br />
+                  M-F: 9-5 pm
+                </span>
+              </li>
+              <li data-col_name="Emergency patches">
+                <span>
+                  Yes <br />
+                  (at most bi-weekly)
+                </span>
+              </li>
+              <li data-col_name="Unlimited Incidents">
+                <span>Yes</span>
+              </li>
+              <li data-col_name="Contacts for Ticketing">
+                <span>2</span>
+              </li>
+              <li data-col_name="Community support">
+                <span
+                  >Included <br />
                   (Slack & GitHub issues)</span
                 >
               </li>
-              <li data-col_name="Response Time">
-                <span> 2 business days</span>
-              </li>
-              <li data-col_name="Emergency patches (at most weekly)">
-                <span> Included</span>
-              </li>
-              <li data-col_name="Unlimited Incidents"><span> Yes</span></li>
-              <li data-col_name="Contacts for Ticketing"><span> 1</span></li>
               <li data-col_name="Remote Hands (Debug via Zoom)">
-                <span> Available via calendar <br />reservation</span>
+                <span>
+                  Yes <br />
+                  (first 1 hr/month FREE, <br />
+                  addt’l charged at $200/hr)
+                </span>
               </li>
-              <li data-col_name="Production Runbook"><span> No</span></li>
-              <li data-col_name="Dedicated Private chat (Discord)">
-                <span> Yes</span>
+              <li data-col_name="Production Runbook">
+                <span>Yes</span>
               </li>
-              <li data-col_name="Managed Upgrades">
-                <span> Additional fee</span>
+              <li data-col_name="Dedicated Private chat (via Slack)">
+                <span>Yes</span>
+              </li>
+              <li data-col_name="Phone support">
+                <span>X</span>
+              </li>
+              <li data-col_name="Architectural Guidance">
+                <span>
+                  General <br />
+                  <br />
+                  <br />
+                </span>
               </li>
               <li data-col_name="Professional Services">
-                <span> Additional fee</span>
+                <span>Additional fees</span>
               </li>
             </ul>
             <!-- pricing content -->
             <!-- pricing button start -->
             <div class="pricing-button">
-              <a href="#" class="button kd-button kd-primary">Buy Now</a>
+              <a href="/products/{{$p.key}}/meet-expert/" class="button kd-button kd-primary">Contact Sales</a>
             </div>
             <!-- pricing button end -->
           </div>
@@ -237,9 +383,22 @@
             </div>
             <!-- pricing title end -->
 
+            <!-- pricing type start -->
+            <div class="pricing-type">
+              <div class="control">
+                <div class="select is-multiple custom-arrow-down">
+                  <select>
+                    <option>Annual plan, prepaid</option>
+                    <option>Monthly plan</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <!-- pricing type end -->
+
             <!-- pricing button start -->
             <div class="pricing-button">
-              <a href="#" class="button kd-button kd-orange">Contact Sales</a>
+              <a href="/products/{{$p.key}}/meet-expert/" class="button kd-button kd-orange">Contact Sales</a>
             </div>
             <!-- pricing button end -->
           </div>
@@ -249,36 +408,79 @@
           <div class="pricing-body">
             <!-- pricing content -->
             <ul>
-              <li data-col_name="Cluster"><span>One cluster</span></li>
-              <li data-col_name="Community support">
-                <span>Critical: 4 hrs L2: 1 day</span>
+              <li>
+                <span>
+                  Recommended if you have <br />
+                  production workloads. <br />
+                  <br />
+                </span>
               </li>
               <li data-col_name="Response Time">
-                <span>Business hours M-F: 9-5pm</span>
+                <span>
+                  General guidance: <br />
+                  < 48 business hours  <br />
+                  <br />
+                  System impaired:  <br />
+                  < 24 business hours <br />
+                  <br />
+                  Production system impaired: <br />
+                  < 4 hours
+                </span>
               </li>
-              <li data-col_name="Emergency patches (at most weekly)">
-                <span>Included</span>
+              <li data-col_name="Support Coverage">
+                <span>
+                  24x5x36 <br />
+                </span>
               </li>
-              <li data-col_name="Unlimited Incidents"><span>Yes</span></li>
-              <li data-col_name="Contacts for Ticketing"><span>5</span></li>
-              <li data-col_name="Remote Hands (Debug via Zoom)">
-                <span>Included</span>
+              <li data-col_name="Emergency patches">
+                <span>
+                  Yes <br />
+                  (at most bi-weekly)
+                </span>
               </li>
-              <li data-col_name="Production Runbook"><span>Yes</span></li>
-              <li data-col_name="Dedicated Private chat (Discord)">
+              <li data-col_name="Unlimited Incidents">
                 <span>Yes</span>
               </li>
-              <li data-col_name="Managed Upgrades">
-                <span> Additional fee</span>
+              <li data-col_name="Contacts for Ticketing">
+                <span>5</span>
+              </li>
+              <li data-col_name="Community support">
+                <span
+                  >Included <br />
+                  (Slack & GitHub issues)</span
+                >
+              </li>
+              <li data-col_name="Remote Hands (Debug via Zoom)">
+                <span>
+                  Yes <br />
+                  (first 2 hrs/month FREE, <br />
+                  addt’l charged at $200/hr)
+                </span>
+              </li>
+              <li data-col_name="Production Runbook">
+                <span>Yes</span>
+              </li>
+              <li data-col_name="Dedicated Private chat (via Slack)">
+                <span>Yes</span>
+              </li>
+              <li data-col_name="Phone support">
+                <span>X</span>
+              </li>
+              <li data-col_name="Architectural Guidance">
+                <span>
+                  Contextual to your <br />
+                  use-cases <br />
+                  <br />
+                </span>
               </li>
               <li data-col_name="Professional Services">
-                <span> Additional fee</span>
+                <span>Additional fees</span>
               </li>
             </ul>
             <!-- pricing content -->
             <!-- pricing button start -->
             <div class="pricing-button">
-              <a href="#" class="button kd-button kd-orange">Contact Sales</a>
+              <a href="/products/{{$p.key}}/meet-expert/" class="button kd-button kd-orange">Contact Sales</a>
             </div>
             <!-- pricing button end -->
           </div>
@@ -300,7 +502,7 @@
 
             <!-- pricing button start -->
             <div class="pricing-button">
-              <a href="#" class="button kd-button kd-red">Contact Sales</a>
+              <a href="/products/{{$p.key}}/meet-expert/" class="button kd-button kd-red">Contact Sales</a>
             </div>
             <!-- pricing button end -->
           </div>
@@ -310,36 +512,80 @@
           <div class="pricing-body">
             <!-- pricing content -->
             <ul>
-              <li data-col_name="Cluster"><span>One cluster</span></li>
-              <li data-col_name="Community support">
-                <span>Critical: 4 hrs L2: 1 day</span>
+              <li>
+                <span>
+                  Recommended if you have <br />
+                  business and/or mission <br />
+                  critical workloads.
+                  <br />
+                </span>
               </li>
               <li data-col_name="Response Time">
-                <span>Business hours M-F: 9-5pm</span>
+                <span>
+                  General guidance: <br />
+                  < 48 business hours  <br />
+                  <br />
+                  System impaired:  <br />
+                  < 24 business hours <br />
+                  <br />
+                  Production system impaired: <br />
+                  < 2 hours
+                </span>
               </li>
-              <li data-col_name="Emergency patches (at most weekly)">
-                <span>Included</span>
+              <li data-col_name="Support Coverage">
+                <span>
+                  24x7x36 <br />
+                </span>
               </li>
-              <li data-col_name="Unlimited Incidents"><span>Yes</span></li>
-              <li data-col_name="Contacts for Ticketing"><span>5</span></li>
-              <li data-col_name="Remote Hands (Debug via Zoom)">
-                <span>Included</span>
+              <li data-col_name="Emergency patches">
+                <span>
+                  Yes <br />
+                  (as required)
+                </span>
               </li>
-              <li data-col_name="Production Runbook"><span>Yes</span></li>
-              <li data-col_name="Dedicated Private chat (Discord)">
+              <li data-col_name="Unlimited Incidents">
                 <span>Yes</span>
               </li>
-              <li data-col_name="Managed Upgrades">
-                <span> Additional fee</span>
+              <li data-col_name="Contacts for Ticketing">
+                <span>10</span>
+              </li>
+              <li data-col_name="Community support">
+                <span
+                  >Included <br />
+                  (Slack & GitHub issues)</span
+                >
+              </li>
+              <li data-col_name="Remote Hands (Debug via Zoom)">
+                <span>
+                  Included <br />
+                  (as negotiated) <br />
+                   <br />
+                </span>
+              </li>
+              <li data-col_name="Production Runbook">
+                <span>Yes</span>
+              </li>
+              <li data-col_name="Dedicated Private chat (via Slack)">
+                <span>Yes</span>
+              </li>
+              <li data-col_name="Phone support">
+                <span>Yes</span>
+              </li>
+              <li data-col_name="Architectural Guidance">
+                <span>
+                  Consultative review and <br />
+                  guidance based on your <br />
+                  applications
+                </span>
               </li>
               <li data-col_name="Professional Services">
-                <span> Additional fee</span>
+                <span>Additional fees</span>
               </li>
             </ul>
             <!-- pricing content -->
             <!-- pricing button start -->
             <div class="pricing-button">
-              <a href="#" class="button kd-button kd-red">Contact Sales</a>
+              <a href="/products/{{$p.key}}/meet-expert/" class="button kd-button kd-red">Contact Sales</a>
             </div>
             <!-- pricing button end -->
           </div>
