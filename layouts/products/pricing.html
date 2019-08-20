@@ -261,7 +261,7 @@
             <!-- pricing title start -->
             <div class="pricing-top">
               <h4>Standard</h4>
-              <div class="package-price" id="standardPrice">$750<span>Per cluster</span></div>
+              <div class="package-price" id="standardPrice"></span></div>
             </div>
             <!-- pricing title end -->
 
@@ -379,7 +379,7 @@
             <!-- pricing title start -->
             <div class="pricing-top kd-orange">
               <h4>Gold</h4>
-              <div class="package-price" id="goldPrice">$120</div>
+              <div class="package-price" id="goldPrice"></div>
             </div>
             <!-- pricing title end -->
 
@@ -770,10 +770,10 @@
 <script>
 function showStandardPrice() {
   var x = document.getElementById("standardPriceOptions").value;
-  var price = "US$ 750/mo<span>Per cluster</span>";
+  var price = "US$ 750/mo<span>(includes 2 clusters)</span>";
   if (x === "y2y") {
     // 33% discount
-    price = "US$ 6,000/yr<span>Per cluster</span>";
+    price = "US$ 6,000/yr<span>(includes 2 clusters)</span>";
   }
   document.getElementById("standardPrice").innerHTML = price;
 }
@@ -781,10 +781,10 @@ showStandardPrice();
 
 function showGoldPrice() {
   var x = document.getElementById("goldPriceOptions").value;
-  var price = "US$ 1,200/mo<span>Per cluster</span>";
+  var price = "US$ 1,200/mo<span>(includes 2 clusters)</span>";
   if (x === "y2y") {
     // 16.67% discount
-    price = "US$ 12,000/mo<span>Per cluster</span>";
+    price = "US$ 12,000/mo<span>(includes 2 clusters)</span>";
   }
   document.getElementById("goldPrice").innerHTML = price;
 }
