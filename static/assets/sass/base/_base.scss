@@ -438,12 +438,17 @@ a.play-icon .fa {
   float: left;
   overflow: hidden;
   margin-top: 5px;
+  text-align: left;
 }
 
 .client-information {
   overflow: hidden;
-  width: 30%;
+  width: 100%;
   margin: 30px auto 0;
+  text-align: center;
+}
+.client-info-inner {
+  display: inline-block;
 }
 .slider:focus, button:focus {
   outline: none;
@@ -471,9 +476,11 @@ a.play-icon .fa {
 .single-brand-logo {
   display: inline-block;
   overflow: hidden;
-  margin: 10px 30px;
+  margin: 10px 20px;
   text-align: center;
   vertical-align: middle;
+  max-width: 200px;
+  height: auto;
 }
 
 /* brand logo area end */
@@ -936,21 +943,21 @@ p.spam-message {
 }
 
 /* Payment Method section style */
-.single-payment-methode {
+.single-payment-method {
   display: inline-block;
   margin-left: 30px;
 }
 
-.single-payment-methode:first-child {
+.single-payment-method:first-child {
   margin-left: 0;
 }
 
-.payment-methode-innner-text h2 {
+.payment-method-innner-text h2 {
   color: $heading-color;
   margin-bottom: 20px;
 }
 
-.payment-methode-innner-text p {
+.payment-method-innner-text p {
   margin: 0;
 }
 
