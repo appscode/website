@@ -959,12 +959,14 @@ body.fixed-nav
 
 .hero-right-content-wrapper {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  width: 100%;
+  height: 100%; }
   .hero-right-content-wrapper .right-side-content-inner {
     position: absolute;
-    right: -140px;
+    right: -60px;
     top: 10px;
-    width: 130%;
+    width: 100%;
     z-index: -1; }
 
 .trusted-logo .trusted-action {
@@ -1225,13 +1227,13 @@ body.fixed-nav
       .press-area .single-press-wrapper:hover .press-content {
         border: 1px solid white; }
     .press-area .single-press-wrapper .press-image-1 {
-      background-image: url(../images/appscode/press/1.png); }
+      background-image: url(../images/press/1.png); }
     .press-area .single-press-wrapper .press-image-2 {
-      background-image: url(../images/appscode/press/2.png); }
+      background-image: url(../images/press/2.png); }
     .press-area .single-press-wrapper .press-image-3 {
-      background-image: url(../images/appscode/press/3.png); }
+      background-image: url(../images/press/3.png); }
     .press-area .single-press-wrapper .press-image-4 {
-      background-image: url(../images/appscode/press/4.png); }
+      background-image: url(../images/press/4.png); }
   .press-area .press-image {
     height: 200px;
     background-size: cover;
@@ -1252,11 +1254,25 @@ body.fixed-nav
       font-size: 18px;
       font-weight: 600;
       line-height: 26px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-clamp: 2;
+      -webkit-line-clamp: 2;
+      box-orient: vertical;
+      -webkit-box-orient: vertical; }
     .press-area .press-content p {
       color: #393e46;
       font-size: 15px;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-clamp: 4;
+      -webkit-line-clamp: 4;
+      box-orient: vertical;
+      -webkit-box-orient: vertical; }
     .press-area .press-content .press-button-wrapper {
       overflow: hidden;
       position: relative;
@@ -1524,16 +1540,10 @@ section.our-customer-area {
 .contact-form {
   position: relative;
   z-index: 1;
-  margin: 60px;
+  margin: 60px 60px 0;
   height: 100%; }
   .contact-form .contact-form-inner {
-    position: absolute;
-    width: 100%;
-    background: #f6f6f6;
-    padding: 30px;
-    border-radius: 4px;
-    left: 0;
-    top: -400px; }
+    margin-top: -400px; }
 
 .question-area {
   background-color: #fbfbfb; }
@@ -2010,12 +2020,17 @@ a.play-icon .fa {
 .client-info {
   float: left;
   overflow: hidden;
-  margin-top: 5px; }
+  margin-top: 5px;
+  text-align: left; }
 
 .client-information {
   overflow: hidden;
-  width: 30%;
-  margin: 30px auto 0; }
+  width: 100%;
+  margin: 30px auto 0;
+  text-align: center; }
+
+.client-info-inner {
+  display: inline-block; }
 
 .slider:focus, button:focus {
   outline: none;
@@ -2040,9 +2055,11 @@ a.play-icon .fa {
 .single-brand-logo {
   display: inline-block;
   overflow: hidden;
-  margin: 10px 30px;
+  margin: 10px 20px;
   text-align: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+  max-width: 200px;
+  height: auto; }
 
 /* brand logo area end */
 /* call to action area */
@@ -2428,18 +2445,18 @@ p.spam-message {
   border-right-color: #b20b32; }
 
 /* Payment Method section style */
-.single-payment-methode {
+.single-payment-method {
   display: inline-block;
   margin-left: 30px; }
 
-.single-payment-methode:first-child {
+.single-payment-method:first-child {
   margin-left: 0; }
 
-.payment-methode-innner-text h2 {
+.payment-method-innner-text h2 {
   color: #242a31;
   margin-bottom: 20px; }
 
-.payment-methode-innner-text p {
+.payment-method-innner-text p {
   margin: 0; }
 
 .payment-method-area {

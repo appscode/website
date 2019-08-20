@@ -21,10 +21,10 @@
     <!-- Bulma CSS -->
     <link rel="stylesheet" href="/assets/css/bulma.min.css" />
     <!-- Custom CSS -->
-    {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
+    <!-- {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-    {{ end }}
-    <!-- <link rel="stylesheet" href="/assets/sass/main.css" /> -->
+    {{ end }} -->
+    <link rel="stylesheet" href="/assets/sass/main.css" />
   </head>
 
   <body {{if $productName}}class="{{$productName}}"{{end}}>
@@ -378,16 +378,19 @@
                       {{ $user.testimonial | safeHTML }}
                     </p>
                   </div>
-                  <div class="client-information">
-                    <div class="client-thumb">
-                      <img
-                        src="{{ $user.profile }}"
-                        alt="{{ $user.name }}"
-                      />
-                    </div>
-                    <div class="client-info">
-                      <h4>{{ $user.name }}</h4>
-                      <p>{{ $user.job }}{{ if $user.companyKey }} at {{ index $.Site.Data.customers $user.companyKey "name" }}{{ end }}</p>
+                  
+                    <div class="client-information">
+                      <div class="client-info-inner">
+                      <div class="client-thumb">
+                        <img
+                          src="{{ $user.profile }}"
+                          alt="{{ $user.name }}"
+                        />
+                      </div>
+                      <div class="client-info">
+                        <h4>{{ $user.name }}</h4>
+                        <p>{{ $user.job }}{{ if $user.companyKey }} at {{ index $.Site.Data.customers $user.companyKey "name" }}{{ end }}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -407,19 +410,21 @@
     <div class="logo-carusal-area section-padding">
       <div class="container section">
         <div class="columns is-centered">
-          {{ range $customer := $.Site.Data.customers }}
-          <!-- single brand start -->
-          <div class="column has-text-centered">
-            <a class="single-brand-logo">
-              <img
-                src="{{ $customer.logo }}"
-                alt="{{ $customer.name }}"
-                class="img"
-              />
-            </a>
+          <div class="column is-10 is-offset-1 has-text-centered">
+            <!-- brand logo start -->
+            <div class="brand-logo-wrapper mt-10">
+                {{ range $customer := $.Site.Data.customers }}
+                <a class="single-brand-logo">
+                  <img
+                    src="{{ $customer.logo }}"
+                    alt="{{ $customer.name }}"
+                    class="img"
+                  />
+                </a>
+                {{ end }}
+              </div>
+            <!-- brand logo end -->
           </div>
-          <!-- single brand end-->
-          {{ end }}
         </div>
       </div>
     </div>
