@@ -1,5 +1,5 @@
 ---
 title: Schedule a Demo
-layout: schedule-demo
+layout: meet-expert
 product_name: voyager
 ---
