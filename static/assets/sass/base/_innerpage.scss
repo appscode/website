@@ -235,16 +235,10 @@
 .contact-form {
   position: relative;
   z-index: 1;
-  margin: 60px;
+  margin: 60px 60px 0;
   height: 100%;
   .contact-form-inner {
-    position: absolute;
-    width: 100%;
-    background: #f6f6f6;
-    padding: 30px;
-    border-radius: 4px;
-    left: 0;
-    top: -400px;
+    margin-top: -400px;
   }
 }
 .question-area {
