@@ -11,7 +11,7 @@
         <div class="hero-area-content d-table pr-115">
           <div class="hero-content-inner d-table-cell">
             <h1>
-              Choose best plan for take 
+              Choose best plan for take
               your business to the next level
             </h1>
             <p>
@@ -212,7 +212,7 @@
               <li data-col_name="Community support">
                 <span
                   >Included <br />
-                  (Slack & GitHub issues)</span
+                  (Public Slack & GitHub issues)</span
                 >
               </li>
               <li data-col_name="Remote Hands (Debug via Zoom)">
@@ -261,7 +261,7 @@
             <!-- pricing title start -->
             <div class="pricing-top">
               <h4>Standard</h4>
-              <div class="package-price">$750<span>Per cluster</span></div>
+              <div class="package-price" id="standardPrice">$750<span>Per cluster</span></div>
             </div>
             <!-- pricing title end -->
 
@@ -269,9 +269,9 @@
             <div class="pricing-type">
               <div class="control">
                 <div class="select is-multiple custom-arrow-down">
-                  <select>
-                    <option>Annual plan, prepaid</option>
-                    <option>Monthly plan</option>
+                  <select id="standardPriceOptions" onchange="showStandardPrice()">
+                    <option value="m2m">Monthly plan</option>
+                    <option value="y2y">Annual plan, prepaid</option>
                   </select>
                 </div>
               </div>
@@ -330,7 +330,7 @@
               <li data-col_name="Community support">
                 <span
                   >Included <br />
-                  (Slack & GitHub issues)</span
+                  (Public Slack & GitHub issues)</span
                 >
               </li>
               <li data-col_name="Remote Hands (Debug via Zoom)">
@@ -379,7 +379,7 @@
             <!-- pricing title start -->
             <div class="pricing-top kd-orange">
               <h4>Gold</h4>
-              <div class="package-price">$120</div>
+              <div class="package-price" id="goldPrice">$120</div>
             </div>
             <!-- pricing title end -->
 
@@ -387,9 +387,9 @@
             <div class="pricing-type">
               <div class="control">
                 <div class="select is-multiple custom-arrow-down">
-                  <select>
-                    <option>Annual plan, prepaid</option>
-                    <option>Monthly plan</option>
+                  <select id="goldPriceOptions" onchange="showGoldPrice()">
+                    <option value="m2m">Monthly plan</option>
+                    <option value="y2y">Annual plan, prepaid</option>
                   </select>
                 </div>
               </div>
@@ -447,7 +447,7 @@
               <li data-col_name="Community support">
                 <span
                   >Included <br />
-                  (Slack & GitHub issues)</span
+                  (Public Slack & GitHub issues)</span
                 >
               </li>
               <li data-col_name="Remote Hands (Debug via Zoom)">
@@ -496,7 +496,7 @@
             <!-- pricing title start -->
             <div class="pricing-top kd-red">
               <h4>Platinum</h4>
-              <div class="package-price">$500</div>
+              <div class="package-price"></div>
             </div>
             <!-- pricing title end -->
 
@@ -552,7 +552,7 @@
               <li data-col_name="Community support">
                 <span
                   >Included <br />
-                  (Slack & GitHub issues)</span
+                  (Public Slack & GitHub issues)</span
                 >
               </li>
               <li data-col_name="Remote Hands (Debug via Zoom)">
@@ -765,6 +765,31 @@
   </div>
 </section>
 <!-- faq area end -->
+
+
+<script>
+function showStandardPrice() {
+  var x = document.getElementById("standardPriceOptions").value;
+  var price = "US$ 750/mo<span>Per cluster</span>";
+  if (x === "y2y") {
+    // 33% discount
+    price = "US$ 6,000/yr<span>Per cluster</span>";
+  }
+  document.getElementById("standardPrice").innerHTML = price;
+}
+showStandardPrice();
+
+function showGoldPrice() {
+  var x = document.getElementById("goldPriceOptions").value;
+  var price = "US$ 1,200/mo<span>Per cluster</span>";
+  if (x === "y2y") {
+    // 16.67% discount
+    price = "US$ 12,000/mo<span>Per cluster</span>";
+  }
+  document.getElementById("goldPrice").innerHTML = price;
+}
+showGoldPrice();
+</script>
 {{ end }}
 
 {{ define "testimonial" }}
