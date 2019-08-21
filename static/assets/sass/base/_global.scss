@@ -106,7 +106,14 @@ h6 {
 .kubedb-primary-bg {
   background-color: $primary-color;
 }
-
+.tooltip.is-tooltip-primary::before{
+  background-color: darken($primary-color, 3%);
+  color: $white-color;
+  min-width: 200px;
+}
+.tooltip.is-tooltip-primary:not(.is-loading)::after{
+  border-color: darken($primary-color, 3%) transparent transparent transparent;
+}
 /* button style */
 .button {
   height: auto;

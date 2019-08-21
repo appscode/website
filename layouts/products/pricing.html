@@ -72,10 +72,11 @@
               </li>
               <li>
                 <span>
-                  Response Times <br />
+                   <br />
                   <br />
                   <br />
                   <br />
+                  Response Times
                   <br />
                   <br />
                   <br />
@@ -83,7 +84,7 @@
                 </span>
               </li>
               <li>
-                <span>
+                <span class="tooltip is-tooltip-primary is-tooltip-multiline" data-tooltip="Tooltip with a long Text. So we use is-tooltip-multiline modifier to force multiline display.">
                   Support Coverage <br />
                 </span>
               </li>
@@ -156,9 +157,11 @@
           <!-- pricing heading start -->
           <div class="pricing-heading">
             <!-- pricing title start -->
-            <div class="pricing-top kd-green">
-              <h4>Community</h4>
-              <div class="package-price">Free</div>
+            <div class="pricing-top kd-green d-table">
+              <div class="pricing-top-inner d-table-cell">
+                <h4>Community</h4>
+                <div class="package-price">Free</div>
+              </div>
             </div>
             <!-- pricing title end -->
 
@@ -183,10 +186,11 @@
               </li>
               <li data-col_name="Response Time">
                 <span>
-                  X <br />
+                   <br />
                   <br />
                   <br />
                   <br />
+                  X
                   <br />
                   <br />
                   <br />
@@ -245,7 +249,7 @@
             <!-- pricing content -->
             <!-- pricing button start -->
             <div class="pricing-button">
-              <a href="/products/{{ $p.key }}/{{ $p.latestVersion }}/setup/" class="button kd-button kd-green">Try Now for FREE!</a>
+              <a href="/products/{{ $p.key }}/{{ $p.latestVersion }}/setup/" class="button primary-transparent-btn">Try Now for FREE!</a>
             </div>
             <!-- pricing button end -->
           </div>
@@ -259,9 +263,11 @@
           <!-- pricing heading start -->
           <div class="pricing-heading">
             <!-- pricing title start -->
-            <div class="pricing-top">
+            <div class="pricing-top d-table">
+              <div class="pricing-top-inner d-table-cell">
               <h4>Standard</h4>
               <div class="package-price" id="standardPrice"></span></div>
+            </div>
             </div>
             <!-- pricing title end -->
 
@@ -299,12 +305,12 @@
               </li>
               <li data-col_name="Response Time">
                 <span>
+                  <br />
                   General guidance: <br />
                   < 48 business hours  <br />
                   <br />
                   System impaired:  <br />
                   < 24 business hours <br />
-                  <br />
                   <br />
                   <br />
                 </span>
@@ -363,7 +369,7 @@
             <!-- pricing content -->
             <!-- pricing button start -->
             <div class="pricing-button">
-              <a href="/products/{{$p.key}}/meet-expert/" class="button kd-button kd-primary">Contact Sales</a>
+              <a href="/products/{{$p.key}}/meet-expert/" class="button kubedb-transparent-btn">Contact Sales</a>
             </div>
             <!-- pricing button end -->
           </div>
@@ -375,11 +381,15 @@
       <div class="column has-text-centered">
         <div class="single-pricing-table gold">
           <!-- pricing heading start -->
+          <div class="recommended-text">Recommended</div>
           <div class="pricing-heading">
             <!-- pricing title start -->
-            <div class="pricing-top kd-orange">
+            <div class="pricing-top kd-orange d-table">
+              <div class="pricing-top-inner d-table-cell">
+                <div class="round-shape">33% Discount</div>
               <h4>Gold</h4>
               <div class="package-price" id="goldPrice"></div>
+            </div>
             </div>
             <!-- pricing title end -->
 
@@ -494,9 +504,11 @@
           <!-- pricing heading start -->
           <div class="pricing-heading">
             <!-- pricing title start -->
-            <div class="pricing-top kd-red">
+            <div class="pricing-top kd-red d-table">
+              <div class="pricing-top-inner d-table-cell">
               <h4>Platinum</h4>
               <div class="package-price"></div>
+            </div>
             </div>
             <!-- pricing title end -->
 
@@ -585,7 +597,7 @@
             <!-- pricing content -->
             <!-- pricing button start -->
             <div class="pricing-button">
-              <a href="/products/{{$p.key}}/meet-expert/" class="button kd-button kd-red">Contact Sales</a>
+              <a href="/products/{{$p.key}}/meet-expert/" class="button medium-btn red-transparent-btn">Contact Sales</a>
             </div>
             <!-- pricing button end -->
           </div>
@@ -594,6 +606,21 @@
       </div>
       <!-- pricing column end -->
     </div>
+    <!-- pricing description start -->
+    <div class="columns mt-30 pricing-description-mobile">
+      <div class="column">
+        <div class="pricing-description">
+          <ul>
+            <li><span>*</span> Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BCContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BCo popular         
+              belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</li>
+
+              <li><span>*</span> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical </li>
+              <li>*</span> Latin literature from 45 BCContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BCContrary to popular belief, </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- pricing description end -->
   </div>
 </section>
 <!-- pricing plan end -->
@@ -770,10 +797,10 @@
 <script>
 function showStandardPrice() {
   var x = document.getElementById("standardPriceOptions").value;
-  var price = "US$ 750/mo<span>(includes 2 clusters)</span>";
+  var price = "<sup>US$</sup> 750<sub>/mo</sub><span>(includes 2 clusters)</span>";
   if (x === "y2y") {
     // 33% discount
-    price = "US$ 499/mo<span>(includes 2 clusters)</span>";
+    price = "<sup>US$</sup> 499<sub>/mo</sub><span>(includes 2 clusters)</span>";
   }
   document.getElementById("standardPrice").innerHTML = price;
 }
@@ -781,10 +808,10 @@ showStandardPrice();
 
 function showGoldPrice() {
   var x = document.getElementById("goldPriceOptions").value;
-  var price = "US$ 1,200/mo<span>(includes 2 clusters)</span>";
+  var price = "<sup>US$</sup> 1,200<sub>/mo</sub><span>(includes 2 clusters)</span>";
   if (x === "y2y") {
     // 16.67% discount
-    price = "US$ 999/mo<span>(includes 2 clusters)</span>";
+    price = "<sup>US$</sup> 999<sub>/mo</sub><span>(includes 2 clusters)</span>";
   }
   document.getElementById("goldPrice").innerHTML = price;
 }
