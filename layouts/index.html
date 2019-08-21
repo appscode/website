@@ -430,7 +430,7 @@
                 </div>
                 <div class="client-info">
                   <h4>{{ $user.name }}</h4>
-                  <p>{{ $user.job }}</p>
+                  <p>{{ $user.job }}{{ if $user.companyKey }} at {{ index $.Site.Data.customers $user.companyKey "name" }}{{ end }}</p>
                 </div>
               </div>
             </div>
