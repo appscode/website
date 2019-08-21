@@ -924,13 +924,13 @@ body.fixed-nav
     z-index: -1;
     min-height: 100%; }
   .hero-area .trusted-logo {
-    margin-top: 30px; }
+    margin-top: 10px; }
 
 .is-full-height {
   height: 100vh; }
 
 .hero-area.is-full-height {
-  padding: 100px 0 0;
+  padding: 50px 0 0;
   overflow: hidden; }
 
 .hero-area-content {
@@ -1671,29 +1671,20 @@ body.fixed-nav header {
   font-size: 14px !important;
   transition: 0.3s ease-in-out; }
 
-.main-menu-button .button:hover {
-  color: #ffffff;
-  background: #affafe; }
-
-.button.for-support {
-  background: #f4e5e5;
-  border: none;
-  color: #9d0a0e;
-  transition: 0.3s ease-in-out; }
-
-.button.for-support:hover {
-  background: #9d0a0e;
-  color: #ffffff; }
+.button.for-support, .button.for-chat {
+  background: #ffffff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.17);
+  border-radius: 2px;
+  border: none; }
 
 .button.for-chat {
-  background: #affafe;
-  border: none;
-  color: #36c5f0;
-  transition: 0.3s ease-in-out; }
+  color: #36C5F0; }
 
-.button.for-chat:hover {
-  background: #36c5f0;
-  color: #ffffff; }
+.button.for-support {
+  color: #9D0A0E; }
+
+.button.for-chat:hover, .button.for-support:hover {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3); }
 
 .main-menu-button-top .button {
   padding: 7px 16px; }
@@ -2060,6 +2051,9 @@ a.play-icon .fa {
   vertical-align: middle;
   max-width: 200px;
   height: auto; }
+
+.single-brand-logo img {
+  max-height: 50px; }
 
 /* brand logo area end */
 /* call to action area */
