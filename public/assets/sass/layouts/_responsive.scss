@@ -161,7 +161,7 @@
     color: $link-color;
   }
   // mega-menu start
-  body.fixed-nav .is-fixed-absolute {
+  body.fixed-nav .fixed-menu {
     top: 0;
     z-index: 99;
     width: 100%;
@@ -257,7 +257,7 @@
       margin-top: 0;
     }
     .hero-shape {
-      width: 50%;
+      width: 100%;
       height: 100%;
       min-height: auto;
     }
@@ -558,7 +558,7 @@
     flex-direction: column-reverse;
   }
   // mega-menu start
-  body.fixed-nav .is-fixed-absolute {
+  body.fixed-nav .fixed-menu {
     top: 0;
     z-index: 99;
     width: 100%;
@@ -884,7 +884,7 @@
    appscode-home page start
 ==============================================*/
   // mega-menu start
-  body.fixed-nav .is-fixed-absolute {
+  body.fixed-nav .fixed-menu {
     top: 0;
     z-index: 99;
     width: 100%;
@@ -980,9 +980,11 @@
   // hero-area button style
   .hero-area {
     .hero-shape {
-      width: 50%;
+      width: 100%;
       height: 100%;
       min-height: auto;
+      background-position: right;
+      top: -260px;
     }
     .trusted-logo {
       margin-top: 0;
@@ -990,6 +992,9 @@
   }
   .is-full-height {
     height: auto;
+  }
+  .hero-area.is-full-height{
+    padding: 30px 0 0;
   }
   .hero-area-button .ac-transparent-btn {
     padding: 0;
