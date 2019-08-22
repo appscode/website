@@ -10,7 +10,7 @@ left_menu: legal
 layout: c1_tab
 ---
 
-AppsCode **Service Level Agreement(SLA)** is a policy applicable upon the usage of AppsCode hosted plans subjected to the AppsCode [Terms of Service](/legal/tos/). In accordance with the Terms of Service, AppsCode reserve the rights to amend the SLA. 
+AppsCode **Service Level Agreement(SLA)** is a policy applicable upon the usage of AppsCode hosted plans subjected to the AppsCode [Terms of Service](/legal/tos/). In accordance with the Terms of Service, AppsCode reserve the rights to amend the SLA.
 
 
 #### 1. Commitment of Service
@@ -40,7 +40,7 @@ otherwise due from the respective users. At discretion, AppsCode may issue the S
 Credit to the credit card used by respective user to pay for the billing cycle in which the
 Unavailability occurred. Service Credits will not entitle user to any refund or other
 payment from AppsCode. A Service Credit will be applicable and issued only if the credit
-amount for the applicable annual/monthly billing cycle is greater than one dollar 
+amount for the applicable annual/monthly billing cycle is greater than one dollar
 ($1 USD). Service Credits may not be transferred or applied to any other account.
 Unless otherwise provided in the Terms of Service, respective user’s sole and
 exclusive remedy for any unavailability, non-performance, or other failure by AppsCode
@@ -52,13 +52,13 @@ with the terms of this SLA.
 
 To receive a Service Credit, you must submit a claim by sending an email to
 <support@appscode.com> . To be eligible, the credit request must be received by us
-by the end of the second billing cycle after which the incident occurred and must include:	 
+by the end of the second billing cycle after which the incident occurred and must include:
 
 i)    the words "SLA Credit Request" in the subject line;<br>
 ii)   the dates and times of each Unavailability incident that you are claiming;<br>
 iii)  the affected AppsCode team id; and<br>
 iv)   respective user’s request logs that document the errors and corroborate your
-claimed outage<br> 
+claimed outage<br>
       - (any confidential or sensitive information in these logs should be
 removed or replaced with asterisks).
 
@@ -66,21 +66,21 @@ If the Monthly Uptime Percentage of such request is confirmed by AppsCode and is
 
 
 #### 5.	SLA Exclusions
-	
+
 The Commitment of Service is not applicable for any unavailability, suspension or
-termination of AppsCode Services, or any other AppsCode performance issues: 
+termination of AppsCode Services, or any other AppsCode performance issues:
 
 **(i)** Caused by factors outside of reasonable control, included, but not limited to, any
-major event or Internet access or related problems beyond the access and control 
-point of  AppsCode Services.  
+major event or Internet access or related problems beyond the access and control
+point of  AppsCode Services.
 **(ii)** Consequence occurred due to any actions or inactions of the user or any third party
-(other than AppsCode’s direct hosting subcontractor);   
+(other than AppsCode’s direct hosting subcontractor);
 **(iii)** is caused by user equipment, software or other technology and/or third party
 equipment, software or other technology (other than third party equipment within
-AppsCode point of authority);  
-**(iv)** due to any scheduled maintenance and/or software deployment; or   
+AppsCode point of authority);
+**(iv)** due to any scheduled maintenance and/or software deployment; or
 **(v)** as a result of AppsCode suspension and termination of respective user’s right to use
-AppsCode Services in lieu to any breach of, or otherwise in accordance with the [Terms of Service](/legal/tos/).  
+AppsCode Services in lieu to any breach of, or otherwise in accordance with the [Terms of Service](/legal/tos/).
 
 If availability is impacted by factors
 other than those used in Monthly Uptime Percentage calculation, then AppsCode may
