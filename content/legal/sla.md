@@ -1,6 +1,5 @@
 ---
-title: Service Level Agreement | AppsCode
-header: Service Level Agreement (SLA)
+title: Service Level Agreement
 menu:
   legal:
     identifier: sla

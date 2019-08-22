@@ -1,6 +1,5 @@
 ---
-title: Terms of Service | AppsCode
-header: Terms of Service
+title: Terms of Service
 menu:
   legal:
     identifier: tos

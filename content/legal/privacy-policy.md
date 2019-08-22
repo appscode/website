@@ -1,6 +1,5 @@
 ---
-title: Privacy Policy | AppsCode
-header: Privacy Policy
+title: Privacy Policy
 menu:
   legal:
     identifier: privacy-policy
