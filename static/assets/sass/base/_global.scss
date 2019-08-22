@@ -52,7 +52,6 @@ h6 a {
 pre {
   margin-bottom: 15px;
 }
-
 footer li a {
   font-family: $font-paragraph;
   font-weight: 400;
@@ -107,12 +106,15 @@ h6 {
   background-color: $primary-color;
 }
 .tooltip.is-tooltip-primary::before{
-  background-color: darken($primary-color, 3%);
+  background-color:#32325D;
   color: $white-color;
   min-width: 200px;
+  padding: 15px;
+  font-weight: 400;
+  font-style: normal;
 }
 .tooltip.is-tooltip-primary:not(.is-loading)::after{
-  border-color: darken($primary-color, 3%) transparent transparent transparent;
+  border-color: #32325D transparent transparent transparent;
 }
 /* button style */
 .button {
