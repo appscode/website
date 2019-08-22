@@ -1,5 +1,4 @@
 ---
-title: Security | AppsCode
 title: Security
 menu:
   legal:
