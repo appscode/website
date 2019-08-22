@@ -413,13 +413,15 @@
             <!-- brand logo start -->
             <div class="brand-logo-wrapper mt-10">
                 {{ range $customer := $.Site.Data.customers }}
-                <a class="single-brand-logo">
-                  <img
-                    src="{{ $customer.logo }}"
-                    alt="{{ $customer.name }}"
-                    class="img"
-                  />
-                </a>
+                  {{ if $customer.show }}
+                    <a class="single-brand-logo">
+                      <img
+                        src="{{ $customer.logo }}"
+                        alt="{{ $customer.name }}"
+                        class="img"
+                      />
+                    </a>
+                  {{ end }}
                 {{ end }}
               </div>
             <!-- brand logo end -->
