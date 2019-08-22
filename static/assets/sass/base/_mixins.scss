@@ -19,7 +19,6 @@
   body.#{$name} .searchbar-area button,
   body.#{$name} .countdown-area .right-sidebar-menu ul li a::after,
   body.#{$name} .pagination-list li a.is-active,
-  body.#{$name} .tooltip.is-tooltip-primary::before,
   body.#{$name} .pricing-button .kubedb-transparent-btn:hover,
   body.#{$name} .single-product-feature-wrapper:after {
     background-color: #{$color};
@@ -56,6 +55,7 @@
   body.#{$name} .section-title h4,
   body.#{$name} .hero-content-inner h4,
   body.#{$name} .pricing-button .kubedb-transparent-btn,
+  body.#{$name} .single-pricing-table.silver .discount-text,
   body.#{$name} .single-search-result h3 a {
     color: #{$color};
   }
@@ -75,9 +75,6 @@
   body.#{$name} .pricing-button .kubedb-transparent-btn:hover,
   body.#{$name} .subscription-form .input:hover {
     border-color: #{$color};
-  }
-  body.#{$name} .tooltip.is-tooltip-primary:not(.is-loading)::after{
-    border-color: #{$color} transparent transparent transparent;
   }
   body.#{$name} .pricing-top:before {
     border-right-color: darken($color, 15%);

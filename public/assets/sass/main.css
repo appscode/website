@@ -80,7 +80,7 @@ h6 {
   line-height: 24px; }
 
 .kd-primary {
-  background-color: #4d4dcb;
+  background-color: #00A651;
   color: #ffffff !important; }
 
 .ac-primary {
@@ -91,7 +91,15 @@ h6 {
   color: #00A651; }
 
 .kubedb-primary-bg {
-  background-color: #4d4dcb; }
+  background-color: #00A651; }
+
+.tooltip.is-tooltip-primary::before {
+  background-color: #32325D;
+  color: #ffffff;
+  min-width: 200px; }
+
+.tooltip.is-tooltip-primary:not(.is-loading)::after {
+  border-color: #32325D transparent transparent transparent; }
 
 /* button style */
 .button {
@@ -111,7 +119,7 @@ h6 {
   min-width: 190px; }
 
 .kd-button:hover {
-  background-color: #4141c8;
+  background-color: #00974a;
   color: #ffffff;
   box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16); }
 
@@ -149,7 +157,7 @@ h6 {
 
 .subscription-form .input.is-hovered,
 .subscription-form .input:hover {
-  border-color: #4d4dcb; }
+  border-color: #00A651; }
 
 .input.is-active,
 .input.is-focused,
@@ -159,7 +167,7 @@ h6 {
 .textarea.is-focused,
 .textarea:active,
 .textarea:focus {
-  border-color: #4d4dcb;
+  border-color: #00A651;
   box-shadow: none; }
 
 .is-dark {
@@ -856,15 +864,15 @@ h6 {
 /*==================================================
                   Theme CSS prefix End
   ====================================================*/
-.is-fixed-absolute {
+.fixed-menu {
   position: absolute;
   width: 100%;
   padding: 9px 0px;
-  z-index: 9999;
+  z-index: 99;
   top: 0;
   left: 0; }
 
-body.fixed-nav .is-fixed-absolute {
+body.fixed-nav .fixed-menu {
   position: fixed;
   top: 0;
   z-index: 99;
@@ -916,18 +924,22 @@ body.fixed-nav
     background: url(../images/appscode/hero-shape.png);
     background-repeat: no-repeat;
     content: "";
-    right: 0;
-    width: 50%;
+    left: 0;
+    width: 100%;
     height: 100%;
     top: 0;
     background-position-y: top;
     z-index: -1;
-    min-height: 640px; }
+    min-height: 100%; }
   .hero-area .trusted-logo {
-    margin-top: 130px; }
+    margin-top: 10px; }
 
 .is-full-height {
   height: 100vh; }
+
+.hero-area.is-full-height {
+  padding: 50px 0 0;
+  overflow: hidden; }
 
 .hero-area-content {
   padding-right: 80px; }
@@ -955,12 +967,14 @@ body.fixed-nav
 
 .hero-right-content-wrapper {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  width: 100%;
+  height: 100%; }
   .hero-right-content-wrapper .right-side-content-inner {
     position: absolute;
-    right: -120px;
+    right: -60px;
     top: 10px;
-    width: 130%;
+    width: 100%;
     z-index: -1; }
 
 .trusted-logo .trusted-action {
@@ -1161,7 +1175,7 @@ body.fixed-nav
   .single-solution-wrapper .inline-button {
     width: 100px;
     height: 100px;
-    background: #4d4dcb;
+    background: #00A651;
     display: inline-block;
     text-align: left;
     padding-left: 40px;
@@ -1189,7 +1203,7 @@ body.fixed-nav
     top: 0;
     width: 100%;
     height: 0;
-    background: #4d4dcb;
+    background: #00A651;
     border-radius: 4px 4px 0 0;
     transition: 0.3s ease; }
   .single-solution-wrapper:hover:after {
@@ -1201,9 +1215,9 @@ body.fixed-nav
   background: #0AAFFF; }
 
 .color-3:after {
-  background: #ffaf2d; }
+  background: #ff9933; }
 .color-3 .inline-button {
-  background: #ffaf2d; }
+  background: #ff9933; }
 
 .color-4:after {
   background: #00d96a; }
@@ -1221,13 +1235,13 @@ body.fixed-nav
       .press-area .single-press-wrapper:hover .press-content {
         border: 1px solid white; }
     .press-area .single-press-wrapper .press-image-1 {
-      background-image: url(../images/appscode/press/1.png); }
+      background-image: url(../images/press/1.png); }
     .press-area .single-press-wrapper .press-image-2 {
-      background-image: url(../images/appscode/press/2.png); }
+      background-image: url(../images/press/2.png); }
     .press-area .single-press-wrapper .press-image-3 {
-      background-image: url(../images/appscode/press/3.png); }
+      background-image: url(../images/press/3.png); }
     .press-area .single-press-wrapper .press-image-4 {
-      background-image: url(../images/appscode/press/4.png); }
+      background-image: url(../images/press/4.png); }
   .press-area .press-image {
     height: 200px;
     background-size: cover;
@@ -1248,11 +1262,25 @@ body.fixed-nav
       font-size: 18px;
       font-weight: 600;
       line-height: 26px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-clamp: 2;
+      -webkit-line-clamp: 2;
+      box-orient: vertical;
+      -webkit-box-orient: vertical; }
     .press-area .press-content p {
       color: #393e46;
       font-size: 15px;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-clamp: 4;
+      -webkit-line-clamp: 4;
+      box-orient: vertical;
+      -webkit-box-orient: vertical; }
     .press-area .press-content .press-button-wrapper {
       overflow: hidden;
       position: relative;
@@ -1290,10 +1318,10 @@ body.fixed-nav
     background-color: #f5f5f5;
     padding: 30px 20px;
     border-radius: 4px;
-    min-height: 230px; }
+    min-height: 210px; }
     .single-testimonial-wrapper .testimonial-msg p {
       color: #393e46;
-      font-size: 18px;
+      font-size: 15px;
       line-height: 28px; }
   .single-testimonial-wrapper .testimonial-client-info {
     overflow: hidden;
@@ -1351,22 +1379,6 @@ section.our-customer-area {
   height: 100%;
   background: #1c2c41;
   z-index: -1; }
-
-#fixedHeader {
-  padding: 9px 0;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0; }
-
-body.fixed-nav #fixedHeader {
-  position: fixed;
-  width: 100%;
-  box-shadow: 0px 1px 1px rgba(25, 76, 128, 0.08);
-  background-color: #fff;
-  padding: 9px 0;
-  top: 0;
-  z-index: 99; }
 
 .bg-white {
   background-color: #fff; }
@@ -1501,7 +1513,7 @@ body.fixed-nav #fixedHeader {
     margin-bottom: 10px; }
   .pricing-plan-area-2 .single-pricing h3 {
     font-size: 24px;
-    color: #f99a00;
+    color: #FF8000;
     margin-bottom: 10px; }
   .pricing-plan-area-2 .single-pricing p {
     font-size: 16px;
@@ -1536,16 +1548,10 @@ body.fixed-nav #fixedHeader {
 .contact-form {
   position: relative;
   z-index: 1;
-  margin: 60px;
+  margin: 60px 60px 0;
   height: 100%; }
   .contact-form .contact-form-inner {
-    position: absolute;
-    width: 100%;
-    background: #f6f6f6;
-    padding: 30px;
-    border-radius: 4px;
-    left: 0;
-    top: -400px; }
+    margin-top: -400px; }
 
 .question-area {
   background-color: #fbfbfb; }
@@ -1614,7 +1620,7 @@ body.fixed-nav #fixedHeader {
     width: 100%;
     height: 0;
     transition: .3s ease-in-out;
-    background-color: #4d4dcb; }
+    background-color: #00A651; }
   .single-product-feature-wrapper:hover {
     box-shadow: 0px 3px 28px rgba(50, 152, 128, 0.16); }
     .single-product-feature-wrapper:hover:after {
@@ -1669,33 +1675,33 @@ body.fixed-nav header {
   box-shadow: none;
   border: none;
   background: #ffffff;
-  color: #4d4dcb !important;
+  color: #00A651 !important;
   font-size: 14px !important;
   transition: 0.3s ease-in-out; }
 
-.main-menu-button .button:hover {
-  color: #ffffff;
-  background: #affafe; }
-
-.button.for-support {
-  background: #f4e5e5;
-  border: none;
-  color: #9d0a0e;
-  transition: 0.3s ease-in-out; }
-
-.button.for-support:hover {
-  background: #9d0a0e;
-  color: #ffffff; }
+.button.for-support, .button.for-chat {
+  background: #ffffff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.17);
+  border-radius: 2px;
+  border: none; }
 
 .button.for-chat {
-  background: #affafe;
-  border: none;
-  color: #36c5f0;
-  transition: 0.3s ease-in-out; }
+  color: #36C5F0; }
+
+.button.for-support {
+  color: #9D0A0E; }
 
 .button.for-chat:hover {
-  background: #36c5f0;
+  background-color: #36C6F0;
   color: #ffffff; }
+  .button.for-chat:hover img {
+    filter: invert(1); }
+
+.button.for-support:hover {
+  background-color: #9D0A0E;
+  color: #ffffff; }
+  .button.for-support:hover img {
+    filter: invert(1); }
 
 .main-menu-button-top .button {
   padding: 7px 16px; }
@@ -1710,7 +1716,7 @@ body.fixed-nav header {
 a.navbar-item.is-active,
 a.navbar-item:hover {
   background: transparent;
-  color: #4d4dcb; }
+  color: #00A651; }
 
 .customize-kubedb .navbar-item.has-dropdown.is-active .navbar-link,
 .customize-kubedb .navbar-item.has-dropdown:hover .navbar-link {
@@ -1725,8 +1731,11 @@ a.navbar-item:hover {
 nav.navbar {
   background-color: transparent; }
 
+.navbar-item img {
+  max-height: 35px; }
+
 .customize-kubedb .navbar-dropdown .navbar-item {
-  color: #4d4dcb; }
+  color: #00A651; }
 
 .navbar-dropdown {
   border-top: none; }
@@ -1764,7 +1773,7 @@ nav.navbar {
   left: -3px;
   margin-top: -4px;
   border-width: 4px 4px 4px 0;
-  border-right-color: #4d4dcb; }
+  border-right-color: #00A651; }
 
 .main-menu-button .star-count::after {
   left: -6px;
@@ -1780,15 +1789,17 @@ nav.navbar {
   color: #ddd !important; }
 
 /* fixd nav */
-body.fixed-nav #header {
+body.fixed-nav .fixed-menu {
   position: fixed;
-  background: #4d4dcb;
+  background-color: #ffffff;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.12);
   top: 0;
   margin-top: 0;
-  z-index: 9999;
   padding: 3px 0;
   width: 100%; }
+
+.fixed-menu-z-index {
+  z-index: 9999; }
 
 /* github button style start */
 .lg .btn,
@@ -1835,7 +1846,7 @@ body.fixed-nav #header {
   padding-right: 10px; }
 
 .kd-transparent-btn {
-  color: #4d4dcb;
+  color: #00A651;
   font-weight: 600;
   border: none;
   background: transparent;
@@ -1990,7 +2001,7 @@ a.play-icon .fa {
   right: 50%;
   font-size: 64px;
   z-index: 9;
-  color: #4d4dcb;
+  color: #00A651;
   opacity: 0.6;
   width: 60px;
   padding-left: 30px; }
@@ -2017,12 +2028,17 @@ a.play-icon .fa {
 .client-info {
   float: left;
   overflow: hidden;
-  margin-top: 5px; }
+  margin-top: 5px;
+  text-align: left; }
 
 .client-information {
   overflow: hidden;
-  width: 30%;
-  margin: 30px auto 0; }
+  width: 100%;
+  margin: 30px auto 0;
+  text-align: center; }
+
+.client-info-inner {
+  display: inline-block; }
 
 .slider:focus, button:focus {
   outline: none;
@@ -2047,9 +2063,14 @@ a.play-icon .fa {
 .single-brand-logo {
   display: inline-block;
   overflow: hidden;
-  margin: 10px 30px;
+  margin: 10px 20px;
   text-align: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+  max-width: 200px;
+  height: auto; }
+
+.single-brand-logo img {
+  max-height: 50px; }
 
 /* brand logo area end */
 /* call to action area */
@@ -2060,7 +2081,7 @@ a.play-icon .fa {
 
 .cta-text h2 {
   font-size: 36px;
-  color: #4d4dcb;
+  color: #00A651;
   line-height: 42px; }
 
 .cta-text p {
@@ -2070,6 +2091,9 @@ a.play-icon .fa {
   margin-bottom: 0; }
 
 /* footer area start */
+.single-footer-widget .footer-logo {
+  max-width: 160px; }
+
 .subscription-form label {
   font-size: 18px;
   font-weight: 600;
@@ -2091,7 +2115,7 @@ a.play-icon .fa {
 
 .subscription-form .button {
   font-family: "Roboto", sans-serif;
-  color: #4d4dcb;
+  color: #00A651;
   font-size: 16px;
   height: 40px;
   box-shadow: none;
@@ -2105,7 +2129,7 @@ a.play-icon .fa {
   background: transparent; }
 
 .subscription-form .button:hover {
-  background-color: #2e2e9d;
+  background-color: #005a2c;
   color: #ffffff !important; }
 
 .subscription-form {
@@ -2150,7 +2174,7 @@ p.spam-message {
   padding-bottom: 0; }
 
 .footer-link li a:hover {
-  color: #4d4dcb;
+  color: #00A651;
   padding-left: 5px; }
 
 .footer-top {
@@ -2173,7 +2197,7 @@ p.spam-message {
   transition: .3s ease-in-out; }
 
 .footer-inline-link a:hover {
-  color: #4d4dcb; }
+  color: #00A651; }
 
 .footer-inline-link a:last-child {
   margin-right: 0; }
@@ -2198,7 +2222,7 @@ p.spam-message {
   display: inline-block; }
 
 .socail-link-inline li a:hover {
-  background: #4d4dcb;
+  background: #00A651;
   color: #ffffff;
   border: 1px solid transparent; }
 
@@ -2268,24 +2292,30 @@ p.spam-message {
 
 /* pricing section style */
 .pricing-button .kd-button {
-  padding: 8px 40px;
-  background: #4d4dcb;
+  padding: 8px 20px;
+  background: #00A651;
   width: 180px; }
 
 .single-pricing-table {
   border-radius: 8px; }
 
-.single-pricing-table.silver {
+.single-pricing-table.gold {
   box-shadow: 0px 8px 47px rgba(0, 0, 0, 0.16);
   z-index: 2;
   position: relative; }
 
+.single-pricing-table.gold .pricing-heading {
+  min-height: 253px; }
+  .single-pricing-table.gold .pricing-heading .pricing-top {
+    min-height: 158px; }
+
 .pricing-heading {
   background: #e1e1e1;
-  padding: 20px 40px;
+  padding: 10px 40px;
   border-radius: 7px 7px 0 0;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  min-height: 202px; }
 
 .pricing-heading:after {
   position: absolute;
@@ -2305,33 +2335,95 @@ p.spam-message {
 .kd-button.kd-green {
   background: #00a651 !important; }
 
+.pricing-button .button {
+  font-size: 15px;
+  min-width: 190px;
+  font-family: "Roboto", sans-serif;
+  padding: 7px;
+  transition: .3s ease-in-out; }
+
 .pricing-top.kd-orange,
 .kd-button.kd-orange {
-  background-color: #f99a00 !important; }
+  background-color: #FF8000 !important; }
+
+.pricing-button .kubedb-transparent-btn {
+  color: #4D4DCB;
+  border: 1px solid #4D4DCB; }
+
+.pricing-button .kubedb-transparent-btn:hover {
+  color: #ffffff !important;
+  border: 1px solid #4D4DCB;
+  background-color: #4D4DCB; }
+
+.pricing-button .primary-transparent-btn {
+  color: #00A651;
+  border: 1px solid #00A651; }
+
+.pricing-button .primary-transparent-btn:hover {
+  color: #ffffff;
+  border: 1px solid #00A651;
+  background-color: #00A651; }
+
+.pricing-button .red-transparent-btn {
+  color: #e03056;
+  border: 1px solid #e03056; }
+
+.pricing-button .red-transparent-btn:hover {
+  color: #ffffff;
+  border: 1px solid #e03056;
+  background-color: #e03056; }
 
 .pricing-top.kd-red,
 .kd-button.kd-red {
   background-color: #e03056 !important; }
 
 .pricing-top {
-  background: #4d4dcb;
+  background: #00A651;
   box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.16);
   color: #ffffff;
-  padding: 20px;
+  padding: 10px 20px;
   margin: 0 auto;
   border-radius: 0px 8px 8px 8px;
   margin-bottom: 15px;
   position: relative;
   z-index: 1;
-  margin-top: -42px; }
+  margin-top: -32px;
+  min-height: 140px; }
+
+.round-shape {
+  background: #fff;
+  color: #FF8000;
+  font-size: 14px;
+  display: block;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 2px;
+  line-height: 1.5; }
+
+.recommended-text {
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  color: #FF8000;
+  font-size: 16px;
+  font-weight: 500; }
+
+.single-pricing-table.silver .pricing-top {
+  min-height: 100px; }
+
+.single-pricing-table.free .pricing-top, .single-pricing-table.plutinum .pricing-top {
+  margin-bottom: 30px; }
 
 .pricing-top h4 {
-  font-size: 18px;
+  font-size: 20px;
   color: #ffffff; }
 
 .package-price {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700; }
+  .package-price sup, .package-price sub {
+    font-size: 14px;
+    font-weight: 400; }
 
 .package-price span {
   display: block;
@@ -2343,13 +2435,13 @@ p.spam-message {
   content: "";
   left: -12px;
   top: 0;
-  border-right: 12px solid #2e2e9d;
+  border-right: 12px solid #005a2c;
   border-top: 22px solid transparent; }
 
 .pricing-type .select select {
   font-size: 14px;
   color: #74818d;
-  height: 40px;
+  height: 35px !important;
   border: none; }
 
 .pricing-type {
@@ -2368,7 +2460,7 @@ p.spam-message {
   right: 14px;
   position: absolute;
   top: 0;
-  line-height: 40px;
+  line-height: 35px;
   color: #74818d; }
 
 .custom-arrow-down {
@@ -2379,13 +2471,17 @@ p.spam-message {
   padding-bottom: 30px; }
 
 .pricing-body li {
-  font-size: 16px;
+  font-size: 14px;
   color: #32325d;
   border-bottom: 1px solid #dfdfdf;
   padding: 5px 20px;
   height: 60px;
   display: table;
   width: 100%; }
+
+.pricing-body ul li:first-child {
+  background-color: #fff;
+  padding-top: 10px; }
 
 .pricing-body li span {
   display: table-cell;
@@ -2394,32 +2490,38 @@ p.spam-message {
 .pricing-body li:last-child {
   border-bottom: none; }
 
-.pricing-body ul {
-  margin: 10px 0; }
-
 .single-pricing-table.details .pricing-body {
   border-radius: 8px;
-  margin-top: 242px;
+  margin-top: 252px;
   margin-right: 10px;
-  padding-bottom: 70px; }
+  padding-bottom: 70px;
+  background-color: #ffffff;
+  padding-top: 5px; }
+
+.single-pricing-table.details .pricing-body ul li:first-child {
+  padding: 5px; }
 
 .single-pricing-table.free,
-.single-pricing-table.gold,
+.single-pricing-table.silver,
 .single-pricing-table.plutinum {
-  margin-top: 81px; }
+  margin-top: 50px; }
 
-.single-pricing-table.plutinum {
-  margin-left: 10px; }
+.single-pricing-table.free {
+  margin-right: 10px; }
 
-.single-pricing-table.silver .pricing-body {
+.single-pricing-table.gold .pricing-body {
   border: none; }
 
+.single-pricing-table.silver .pricing-body {
+  border-right: 1px solid transparent; }
+
+.single-pricing-table.plutinum .pricing-body {
+  border-left: 1px solid transparent; }
+
 .single-pricing-table.free .pricing-body {
-  border-right: none;
   border-radius: 0 0 0 8px; }
 
 .single-pricing-table.gold .pricing-body {
-  border-left: none;
   border-radius: 0 0 8px 0px; }
 
 .single-pricing-table.free .pricing-top:before {
@@ -2431,19 +2533,29 @@ p.spam-message {
 .single-pricing-table.plutinum .pricing-top:before {
   border-right-color: #b20b32; }
 
+.pricing-description ul li {
+  color: #74818D;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 10px; }
+
+.pricing-description ul li:last-child {
+  margin-bottom: 0; }
+
 /* Payment Method section style */
-.single-payment-methode {
+.single-payment-method {
   display: inline-block;
   margin-left: 30px; }
 
-.single-payment-methode:first-child {
+.single-payment-method:first-child {
   margin-left: 0; }
 
-.payment-methode-innner-text h2 {
+.payment-method-innner-text h2 {
   color: #242a31;
   margin-bottom: 20px; }
 
-.payment-methode-innner-text p {
+.payment-method-innner-text p {
   margin: 0; }
 
 .payment-method-area {
@@ -2478,7 +2590,7 @@ p.spam-message {
   transition: background-color 0.2s ease-in 0s; }
 
 .accordion-item.active {
-  border: 1px solid #4d4dcb; }
+  border: 1px solid #00A651; }
 
 .accordion-item.active .accordion-header {
   color: #242a31;
@@ -2519,7 +2631,7 @@ p.spam-message {
   line-height: 26px; }
 
 .accordion-item.active .accordion-header h2 {
-  color: #4d4dcb; }
+  color: #00A651; }
 
 .accordion-header h2:before,
 .accordion-header h2:after {
@@ -2556,11 +2668,11 @@ p.spam-message {
 .documentation-navbar .main-menu a {
   padding: 10px 30px; }
 
-.kubedb-documentation-menu {
+.documentation-menu {
   background: #ffffff;
   height: 100%; }
 
-body.fixed-nav .kubedb-documentation-menu {
+body.fixed-nav .documentation-menu {
   position: fixed;
   width: 100%;
   height: auto;
@@ -2624,7 +2736,7 @@ body.fixed-nav .kubedb-documentation-menu {
   margin-bottom: 40px; }
 
 blockquote {
-  border-left: 4px solid #4d4dcb;
+  border-left: 4px solid #00A651;
   padding-left: 15px; }
 
 .full-info ul li,
@@ -2645,7 +2757,7 @@ blockquote {
   color: #707070; }
 
 ul li b {
-  color: #4d4dcb;
+  color: #00A651;
   font-weight: 500; }
 
 .full-info ul {
@@ -2656,12 +2768,12 @@ ul li b {
   display: inline; }
 
 .full-info p b {
-  color: #4d4dcb; }
+  color: #00A651; }
 
 .full-info ul li p a,
 .full-info p a,
 .full-info a {
-  color: #4d4dcb;
+  color: #00A651;
   font-weight: 500;
   font-family: "Roboto", sans-serif; }
 
@@ -2727,7 +2839,7 @@ ul li b {
 .tbl-of-contents ul a.active:before {
   width: 3px;
   height: 100%;
-  background: #4d4dcb;
+  background: #00A651;
   content: "";
   left: -2px;
   top: 0;
@@ -2738,10 +2850,10 @@ ul li b {
 .tbl-of-contents ul a.active {
   position: relative;
   z-index: 1;
-  color: #4d4dcb; }
+  color: #00A651; }
 
 li.nav-item.active a {
-  color: #4d4dcb; }
+  color: #00A651; }
 
 /* Fixed Sidebar */
 .right-sidebar-area {
@@ -2987,7 +3099,7 @@ button.button.is-fullwidth {
   border-bottom: none; }
 
 .kd-version a.dropdown-item:hover {
-  background: #4d4dcb;
+  background: #00A651;
   color: #ffffff; }
 
 .kd-version a.dropdown-item:first-child:hover {
@@ -3022,7 +3134,7 @@ button.button.is-fullwidth {
   display: block; }
 
 .item ul li.is-active a {
-  color: #4d4dcb; }
+  color: #00A651; }
 
 .item input:checked ~ ul,
 .item input:checked ~ .item > ul {
@@ -3064,7 +3176,7 @@ button.button.is-fullwidth {
   transition: 0.3s; }
 
 .kd-sidebar-menu li a:hover {
-  color: #4d4dcb; }
+  color: #00A651; }
 
 .kd-sidebar-menu .item ul {
   margin-left: 20px;
@@ -3091,7 +3203,7 @@ button.button.is-fullwidth {
   border-radius: 3px 0 0 3px; }
 
 .trial-button .button {
-  background-color: #4d4dcb;
+  background-color: #00A651;
   color: #ffffff;
   font-size: 14px;
   height: 40px; }
@@ -3175,7 +3287,7 @@ span.new-item {
   transition: 0.2s ease-in-out; }
 
 .ac-dropdown a.navbar-item:hover {
-  background: #4d4dcb;
+  background: #00A651;
   color: #ffffff !important; }
 
 .ac-megamenu:before,
@@ -3236,7 +3348,7 @@ p.intro {
   background: rgba(28, 123, 212, 0.2); }
 
 .single-product-item.is-kubedb:hover {
-  background: rgba(77, 77, 203, 0.2); }
+  background: rgba(0, 166, 81, 0.2); }
 
 .single-product-item.is-stash:hover {
   background: rgba(94, 45, 234, 0.2); }
@@ -3245,7 +3357,7 @@ p.intro {
   background: rgba(50, 108, 229, 0.2); }
 
 .single-product-item.is-searchlight:hover {
-  background: rgba(70, 205, 207, 0.2); }
+  background: rgba(17, 23, 56, 0.2); }
 
 .single-product-item.is-guard:hover {
   background: rgba(216, 78, 39, 0.2); }
@@ -3254,13 +3366,13 @@ p.intro {
   background: rgba(41, 180, 162, 0.2); }
 
 .single-product-item.is-pharmer:hover {
-  background: rgba(241, 133, 40, 0.2); }
+  background: rgba(50, 109, 230, 0.2); }
 
 .single-product-item.is-kubeshield:hover {
   background: rgba(37, 22, 199, 0.2); }
 
 .single-product-item.is-swift:hover {
-  background: rgba(230, 126, 34, 0.2); }
+  background: rgba(63, 81, 182, 0.2); }
 
 .single-product-item .learn-more-btn {
   padding: 0;
@@ -3398,7 +3510,7 @@ a.nav-link.active {
 a.nav-link.active:after {
   position: absolute;
   content: "";
-  background: #4d4dcb;
+  background: #00A651;
   top: 0;
   left: 0;
   width: 100%;
@@ -3533,88 +3645,11 @@ video {
   opacity: 1; }
 
 /*==================================================
-                Theme appscode Start
-====================================================*/
-body.appscode .kubedb-primary-bg,
-body.appscode .kd-primary,
-body.appscode.fixed-nav #header,
-body.appscode .socail-link-inline li a:hover,
-body.appscode .tbl-of-contents ul a.active:before,
-body.appscode .kd-version a.dropdown-item:hover,
-body.appscode .ac-dropdown a.navbar-item:hover,
-body.appscode a.nav-link.active:after,
-body.appscode .trial-button .button,
-body.appscode .pricing-top,
-body.appscode .pricing-button .kd-button,
-body.appscode .subscription-form .button:hover,
-body.appscode .searchbar-area button,
-body.appscode .countdown-area .right-sidebar-menu ul li a::after,
-body.appscode .pagination-list li a.is-active,
-body.appscode .single-product-feature-wrapper:after {
-  background-color: #00A651; }
-
-body.appscode .kd-transparent-btn,
-body.appscode .carousel-wrapper:after,
-body.appscode .cta-text h2,
-body.appscode .main-menu-button a,
-body.appscode .navbar-link.is-active,
-body.appscode .navbar-link:hover,
-body.appscode a.navbar-item.is-active,
-body.appscode a.navbar-item:hover,
-body.appscode .customize-kubedb .navbar-dropdown .navbar-item,
-body.appscode .carousel-wrapper:after,
-body.appscode .footer-link li a:hover,
-body.appscode .footer-inline-link a:hover,
-body.appscode .accordion-item.active .accordion-header h2,
-body.appscode ul li b,
-body.appscode .full-info p b,
-body.appscode .full-info ul li p a,
-body.appscode .full-info p a,
-body.appscode .full-info a,
-body.appscode .tbl-of-contents ul a.active,
-body.appscode li.nav-item.active a,
-body.appscode .item ul li.is-active a,
-body.appscode .kd-sidebar-menu li a:hover,
-body.appscode .service-content h5,
-body.appscode .trusted-action a,
-body.appscode .trusted-company a,
-body.appscode .single-count-wrapper:hover .count,
-body.appscode .single-count-wrapper .action-btn,
-body.appscode .subscription-form .button,
-body.appscode .section-title h4,
-body.appscode .hero-content-inner h4,
-body.appscode .single-search-result h3 a {
-  color: #00A651; }
-
-body.appscode .star-count::before,
-body.appscode .accordion-item.active,
-body.appscode blockquote,
-body.appscode .input.is-active,
-body.appscode .input.is-focused,
-body.appscode .input:active,
-body.appscode .input:focus,
-body.appscode .textarea.is-active,
-body.appscode .textarea.is-focused,
-body.appscode .textarea:active,
-body.appscode .textarea:focus,
-body.appscode .subscription-form .input:hover {
-  border-color: #00A651; }
-
-body.appscode .pricing-top:before {
-  border-right-color: #005a2c; }
-
-body.appscode .go-to-top {
-  background-color: rgba(0, 166, 81, 0.8); }
-
-/*==================================================
-                Theme appscode End
-====================================================*/
-/*==================================================
                 Theme guard Start
 ====================================================*/
 body.guard .kubedb-primary-bg,
 body.guard .kd-primary,
-body.guard.fixed-nav #header,
+body.guard.fixed-nav .fixed-menu,
 body.guard .socail-link-inline li a:hover,
 body.guard .tbl-of-contents ul a.active:before,
 body.guard .kd-version a.dropdown-item:hover,
@@ -3627,6 +3662,8 @@ body.guard .subscription-form .button:hover,
 body.guard .searchbar-area button,
 body.guard .countdown-area .right-sidebar-menu ul li a::after,
 body.guard .pagination-list li a.is-active,
+body.guard .tooltip.is-tooltip-primary::before,
+body.guard .pricing-button .kubedb-transparent-btn:hover,
 body.guard .single-product-feature-wrapper:after {
   background-color: #D84E27; }
 
@@ -3660,6 +3697,7 @@ body.guard .single-count-wrapper .action-btn,
 body.guard .subscription-form .button,
 body.guard .section-title h4,
 body.guard .hero-content-inner h4,
+body.guard .pricing-button .kubedb-transparent-btn,
 body.guard .single-search-result h3 a {
   color: #D84E27; }
 
@@ -3674,14 +3712,22 @@ body.guard .textarea.is-active,
 body.guard .textarea.is-focused,
 body.guard .textarea:active,
 body.guard .textarea:focus,
+body.guard .pricing-button .kubedb-transparent-btn,
+body.guard .pricing-button .kubedb-transparent-btn:hover,
 body.guard .subscription-form .input:hover {
   border-color: #D84E27; }
+
+body.guard .tooltip.is-tooltip-primary:not(.is-loading)::after {
+  border-color: #D84E27 transparent transparent transparent; }
 
 body.guard .pricing-top:before {
   border-right-color: #97371b; }
 
 body.guard .go-to-top {
   background-color: rgba(216, 78, 39, 0.8); }
+
+body.guard .documentation-menu {
+  background-color: #f7dcd4; }
 
 /*==================================================
                 Theme guard End
@@ -3691,7 +3737,7 @@ body.guard .go-to-top {
 ====================================================*/
 body.kubeci .kubedb-primary-bg,
 body.kubeci .kd-primary,
-body.kubeci.fixed-nav #header,
+body.kubeci.fixed-nav .fixed-menu,
 body.kubeci .socail-link-inline li a:hover,
 body.kubeci .tbl-of-contents ul a.active:before,
 body.kubeci .kd-version a.dropdown-item:hover,
@@ -3704,6 +3750,8 @@ body.kubeci .subscription-form .button:hover,
 body.kubeci .searchbar-area button,
 body.kubeci .countdown-area .right-sidebar-menu ul li a::after,
 body.kubeci .pagination-list li a.is-active,
+body.kubeci .tooltip.is-tooltip-primary::before,
+body.kubeci .pricing-button .kubedb-transparent-btn:hover,
 body.kubeci .single-product-feature-wrapper:after {
   background-color: #2c3e50; }
 
@@ -3737,6 +3785,7 @@ body.kubeci .single-count-wrapper .action-btn,
 body.kubeci .subscription-form .button,
 body.kubeci .section-title h4,
 body.kubeci .hero-content-inner h4,
+body.kubeci .pricing-button .kubedb-transparent-btn,
 body.kubeci .single-search-result h3 a {
   color: #2c3e50; }
 
@@ -3751,14 +3800,22 @@ body.kubeci .textarea.is-active,
 body.kubeci .textarea.is-focused,
 body.kubeci .textarea:active,
 body.kubeci .textarea:focus,
+body.kubeci .pricing-button .kubedb-transparent-btn,
+body.kubeci .pricing-button .kubedb-transparent-btn:hover,
 body.kubeci .subscription-form .input:hover {
   border-color: #2c3e50; }
+
+body.kubeci .tooltip.is-tooltip-primary:not(.is-loading)::after {
+  border-color: #2c3e50 transparent transparent transparent; }
 
 body.kubeci .pricing-top:before {
   border-right-color: #11181f; }
 
 body.kubeci .go-to-top {
   background-color: rgba(44, 62, 80, 0.8); }
+
+body.kubeci .documentation-menu {
+  background-color: #cdd8e4; }
 
 /*==================================================
                 Theme kubeci End
@@ -3768,7 +3825,7 @@ body.kubeci .go-to-top {
 ====================================================*/
 body.kubed .kubedb-primary-bg,
 body.kubed .kd-primary,
-body.kubed.fixed-nav #header,
+body.kubed.fixed-nav .fixed-menu,
 body.kubed .socail-link-inline li a:hover,
 body.kubed .tbl-of-contents ul a.active:before,
 body.kubed .kd-version a.dropdown-item:hover,
@@ -3781,6 +3838,8 @@ body.kubed .subscription-form .button:hover,
 body.kubed .searchbar-area button,
 body.kubed .countdown-area .right-sidebar-menu ul li a::after,
 body.kubed .pagination-list li a.is-active,
+body.kubed .tooltip.is-tooltip-primary::before,
+body.kubed .pricing-button .kubedb-transparent-btn:hover,
 body.kubed .single-product-feature-wrapper:after {
   background-color: #1C7BD4; }
 
@@ -3814,6 +3873,7 @@ body.kubed .single-count-wrapper .action-btn,
 body.kubed .subscription-form .button,
 body.kubed .section-title h4,
 body.kubed .hero-content-inner h4,
+body.kubed .pricing-button .kubedb-transparent-btn,
 body.kubed .single-search-result h3 a {
   color: #1C7BD4; }
 
@@ -3828,14 +3888,22 @@ body.kubed .textarea.is-active,
 body.kubed .textarea.is-focused,
 body.kubed .textarea:active,
 body.kubed .textarea:focus,
+body.kubed .pricing-button .kubedb-transparent-btn,
+body.kubed .pricing-button .kubedb-transparent-btn:hover,
 body.kubed .subscription-form .input:hover {
   border-color: #1C7BD4; }
+
+body.kubed .tooltip.is-tooltip-primary:not(.is-loading)::after {
+  border-color: #1C7BD4 transparent transparent transparent; }
 
 body.kubed .pricing-top:before {
   border-right-color: #135490; }
 
 body.kubed .go-to-top {
   background-color: rgba(28, 123, 212, 0.8); }
+
+body.kubed .documentation-menu {
+  background-color: #cfe5f9; }
 
 /*==================================================
                 Theme kubed End
@@ -3845,7 +3913,7 @@ body.kubed .go-to-top {
 ====================================================*/
 body.kubesheild .kubedb-primary-bg,
 body.kubesheild .kd-primary,
-body.kubesheild.fixed-nav #header,
+body.kubesheild.fixed-nav .fixed-menu,
 body.kubesheild .socail-link-inline li a:hover,
 body.kubesheild .tbl-of-contents ul a.active:before,
 body.kubesheild .kd-version a.dropdown-item:hover,
@@ -3858,6 +3926,8 @@ body.kubesheild .subscription-form .button:hover,
 body.kubesheild .searchbar-area button,
 body.kubesheild .countdown-area .right-sidebar-menu ul li a::after,
 body.kubesheild .pagination-list li a.is-active,
+body.kubesheild .tooltip.is-tooltip-primary::before,
+body.kubesheild .pricing-button .kubedb-transparent-btn:hover,
 body.kubesheild .single-product-feature-wrapper:after {
   background-color: #2516C7; }
 
@@ -3891,6 +3961,7 @@ body.kubesheild .single-count-wrapper .action-btn,
 body.kubesheild .subscription-form .button,
 body.kubesheild .section-title h4,
 body.kubesheild .hero-content-inner h4,
+body.kubesheild .pricing-button .kubedb-transparent-btn,
 body.kubesheild .single-search-result h3 a {
   color: #2516C7; }
 
@@ -3905,14 +3976,22 @@ body.kubesheild .textarea.is-active,
 body.kubesheild .textarea.is-focused,
 body.kubesheild .textarea:active,
 body.kubesheild .textarea:focus,
+body.kubesheild .pricing-button .kubedb-transparent-btn,
+body.kubesheild .pricing-button .kubedb-transparent-btn:hover,
 body.kubesheild .subscription-form .input:hover {
   border-color: #2516C7; }
+
+body.kubesheild .tooltip.is-tooltip-primary:not(.is-loading)::after {
+  border-color: #2516C7 transparent transparent transparent; }
 
 body.kubesheild .pricing-top:before {
   border-right-color: #180e82; }
 
 body.kubesheild .go-to-top {
   background-color: rgba(37, 22, 199, 0.8); }
+
+body.kubesheild .documentation-menu {
+  background-color: #cfcbf9; }
 
 /*==================================================
                 Theme kubesheild End
@@ -3922,7 +4001,7 @@ body.kubesheild .go-to-top {
 ====================================================*/
 body.kubevault .kubedb-primary-bg,
 body.kubevault .kd-primary,
-body.kubevault.fixed-nav #header,
+body.kubevault.fixed-nav .fixed-menu,
 body.kubevault .socail-link-inline li a:hover,
 body.kubevault .tbl-of-contents ul a.active:before,
 body.kubevault .kd-version a.dropdown-item:hover,
@@ -3935,6 +4014,8 @@ body.kubevault .subscription-form .button:hover,
 body.kubevault .searchbar-area button,
 body.kubevault .countdown-area .right-sidebar-menu ul li a::after,
 body.kubevault .pagination-list li a.is-active,
+body.kubevault .tooltip.is-tooltip-primary::before,
+body.kubevault .pricing-button .kubedb-transparent-btn:hover,
 body.kubevault .single-product-feature-wrapper:after {
   background-color: #326CE5; }
 
@@ -3968,6 +4049,7 @@ body.kubevault .single-count-wrapper .action-btn,
 body.kubevault .subscription-form .button,
 body.kubevault .section-title h4,
 body.kubevault .hero-content-inner h4,
+body.kubevault .pricing-button .kubedb-transparent-btn,
 body.kubevault .single-search-result h3 a {
   color: #326CE5; }
 
@@ -3982,14 +4064,22 @@ body.kubevault .textarea.is-active,
 body.kubevault .textarea.is-focused,
 body.kubevault .textarea:active,
 body.kubevault .textarea:focus,
+body.kubevault .pricing-button .kubedb-transparent-btn,
+body.kubevault .pricing-button .kubedb-transparent-btn:hover,
 body.kubevault .subscription-form .input:hover {
   border-color: #326CE5; }
+
+body.kubevault .tooltip.is-tooltip-primary:not(.is-loading)::after {
+  border-color: #326CE5 transparent transparent transparent; }
 
 body.kubevault .pricing-top:before {
   border-right-color: #174ab4; }
 
 body.kubevault .go-to-top {
   background-color: rgba(50, 108, 229, 0.8); }
+
+body.kubevault .documentation-menu {
+  background-color: #d6e2fa; }
 
 /*==================================================
                 Theme kubevault End
@@ -3999,7 +4089,7 @@ body.kubevault .go-to-top {
 ====================================================*/
 body.pharmer .kubedb-primary-bg,
 body.pharmer .kd-primary,
-body.pharmer.fixed-nav #header,
+body.pharmer.fixed-nav .fixed-menu,
 body.pharmer .socail-link-inline li a:hover,
 body.pharmer .tbl-of-contents ul a.active:before,
 body.pharmer .kd-version a.dropdown-item:hover,
@@ -4012,8 +4102,10 @@ body.pharmer .subscription-form .button:hover,
 body.pharmer .searchbar-area button,
 body.pharmer .countdown-area .right-sidebar-menu ul li a::after,
 body.pharmer .pagination-list li a.is-active,
+body.pharmer .tooltip.is-tooltip-primary::before,
+body.pharmer .pricing-button .kubedb-transparent-btn:hover,
 body.pharmer .single-product-feature-wrapper:after {
-  background-color: #F18528; }
+  background-color: #326DE6; }
 
 body.pharmer .kd-transparent-btn,
 body.pharmer .carousel-wrapper:after,
@@ -4045,8 +4137,9 @@ body.pharmer .single-count-wrapper .action-btn,
 body.pharmer .subscription-form .button,
 body.pharmer .section-title h4,
 body.pharmer .hero-content-inner h4,
+body.pharmer .pricing-button .kubedb-transparent-btn,
 body.pharmer .single-search-result h3 a {
-  color: #F18528; }
+  color: #326DE6; }
 
 body.pharmer .star-count::before,
 body.pharmer .accordion-item.active,
@@ -4059,14 +4152,22 @@ body.pharmer .textarea.is-active,
 body.pharmer .textarea.is-focused,
 body.pharmer .textarea:active,
 body.pharmer .textarea:focus,
+body.pharmer .pricing-button .kubedb-transparent-btn,
+body.pharmer .pricing-button .kubedb-transparent-btn:hover,
 body.pharmer .subscription-form .input:hover {
-  border-color: #F18528; }
+  border-color: #326DE6; }
+
+body.pharmer .tooltip.is-tooltip-primary:not(.is-loading)::after {
+  border-color: #326DE6 transparent transparent transparent; }
 
 body.pharmer .pricing-top:before {
-  border-right-color: #c0600d; }
+  border-right-color: #164ab5; }
 
 body.pharmer .go-to-top {
-  background-color: rgba(241, 133, 40, 0.8); }
+  background-color: rgba(50, 109, 230, 0.8); }
+
+body.pharmer .documentation-menu {
+  background-color: #d6e2fa; }
 
 /*==================================================
                 Theme pharmer End
@@ -4076,7 +4177,7 @@ body.pharmer .go-to-top {
 ====================================================*/
 body.searchlight .kubedb-primary-bg,
 body.searchlight .kd-primary,
-body.searchlight.fixed-nav #header,
+body.searchlight.fixed-nav .fixed-menu,
 body.searchlight .socail-link-inline li a:hover,
 body.searchlight .tbl-of-contents ul a.active:before,
 body.searchlight .kd-version a.dropdown-item:hover,
@@ -4089,8 +4190,10 @@ body.searchlight .subscription-form .button:hover,
 body.searchlight .searchbar-area button,
 body.searchlight .countdown-area .right-sidebar-menu ul li a::after,
 body.searchlight .pagination-list li a.is-active,
+body.searchlight .tooltip.is-tooltip-primary::before,
+body.searchlight .pricing-button .kubedb-transparent-btn:hover,
 body.searchlight .single-product-feature-wrapper:after {
-  background-color: #46CDCF; }
+  background-color: #111738; }
 
 body.searchlight .kd-transparent-btn,
 body.searchlight .carousel-wrapper:after,
@@ -4122,8 +4225,9 @@ body.searchlight .single-count-wrapper .action-btn,
 body.searchlight .subscription-form .button,
 body.searchlight .section-title h4,
 body.searchlight .hero-content-inner h4,
+body.searchlight .pricing-button .kubedb-transparent-btn,
 body.searchlight .single-search-result h3 a {
-  color: #46CDCF; }
+  color: #111738; }
 
 body.searchlight .star-count::before,
 body.searchlight .accordion-item.active,
@@ -4136,14 +4240,22 @@ body.searchlight .textarea.is-active,
 body.searchlight .textarea.is-focused,
 body.searchlight .textarea:active,
 body.searchlight .textarea:focus,
+body.searchlight .pricing-button .kubedb-transparent-btn,
+body.searchlight .pricing-button .kubedb-transparent-btn:hover,
 body.searchlight .subscription-form .input:hover {
-  border-color: #46CDCF; }
+  border-color: #111738; }
+
+body.searchlight .tooltip.is-tooltip-primary:not(.is-loading)::after {
+  border-color: #111738 transparent transparent transparent; }
 
 body.searchlight .pricing-top:before {
-  border-right-color: #299d9f; }
+  border-right-color: black; }
 
 body.searchlight .go-to-top {
-  background-color: rgba(70, 205, 207, 0.8); }
+  background-color: rgba(17, 23, 56, 0.8); }
+
+body.searchlight .documentation-menu {
+  background-color: #bcc3eb; }
 
 /*==================================================
                 Theme searchlight End
@@ -4153,7 +4265,7 @@ body.searchlight .go-to-top {
 ====================================================*/
 body.service-broker .kubedb-primary-bg,
 body.service-broker .kd-primary,
-body.service-broker.fixed-nav #header,
+body.service-broker.fixed-nav .fixed-menu,
 body.service-broker .socail-link-inline li a:hover,
 body.service-broker .tbl-of-contents ul a.active:before,
 body.service-broker .kd-version a.dropdown-item:hover,
@@ -4166,6 +4278,8 @@ body.service-broker .subscription-form .button:hover,
 body.service-broker .searchbar-area button,
 body.service-broker .countdown-area .right-sidebar-menu ul li a::after,
 body.service-broker .pagination-list li a.is-active,
+body.service-broker .tooltip.is-tooltip-primary::before,
+body.service-broker .pricing-button .kubedb-transparent-btn:hover,
 body.service-broker .single-product-feature-wrapper:after {
   background-color: #29B4A2; }
 
@@ -4199,6 +4313,7 @@ body.service-broker .single-count-wrapper .action-btn,
 body.service-broker .subscription-form .button,
 body.service-broker .section-title h4,
 body.service-broker .hero-content-inner h4,
+body.service-broker .pricing-button .kubedb-transparent-btn,
 body.service-broker .single-search-result h3 a {
   color: #29B4A2; }
 
@@ -4213,14 +4328,22 @@ body.service-broker .textarea.is-active,
 body.service-broker .textarea.is-focused,
 body.service-broker .textarea:active,
 body.service-broker .textarea:focus,
+body.service-broker .pricing-button .kubedb-transparent-btn,
+body.service-broker .pricing-button .kubedb-transparent-btn:hover,
 body.service-broker .subscription-form .input:hover {
   border-color: #29B4A2; }
+
+body.service-broker .tooltip.is-tooltip-primary:not(.is-loading)::after {
+  border-color: #29B4A2 transparent transparent transparent; }
 
 body.service-broker .pricing-top:before {
   border-right-color: #1b766a; }
 
 body.service-broker .go-to-top {
   background-color: rgba(41, 180, 162, 0.8); }
+
+body.service-broker .documentation-menu {
+  background-color: #d0f4f0; }
 
 /*==================================================
                 Theme service-broker End
@@ -4230,7 +4353,7 @@ body.service-broker .go-to-top {
 ====================================================*/
 body.stash .kubedb-primary-bg,
 body.stash .kd-primary,
-body.stash.fixed-nav #header,
+body.stash.fixed-nav .fixed-menu,
 body.stash .socail-link-inline li a:hover,
 body.stash .tbl-of-contents ul a.active:before,
 body.stash .kd-version a.dropdown-item:hover,
@@ -4243,6 +4366,8 @@ body.stash .subscription-form .button:hover,
 body.stash .searchbar-area button,
 body.stash .countdown-area .right-sidebar-menu ul li a::after,
 body.stash .pagination-list li a.is-active,
+body.stash .tooltip.is-tooltip-primary::before,
+body.stash .pricing-button .kubedb-transparent-btn:hover,
 body.stash .single-product-feature-wrapper:after {
   background-color: #5E2DEA; }
 
@@ -4276,6 +4401,7 @@ body.stash .single-count-wrapper .action-btn,
 body.stash .subscription-form .button,
 body.stash .section-title h4,
 body.stash .hero-content-inner h4,
+body.stash .pricing-button .kubedb-transparent-btn,
 body.stash .single-search-result h3 a {
   color: #5E2DEA; }
 
@@ -4290,14 +4416,22 @@ body.stash .textarea.is-active,
 body.stash .textarea.is-focused,
 body.stash .textarea:active,
 body.stash .textarea:focus,
+body.stash .pricing-button .kubedb-transparent-btn,
+body.stash .pricing-button .kubedb-transparent-btn:hover,
 body.stash .subscription-form .input:hover {
   border-color: #5E2DEA; }
+
+body.stash .tooltip.is-tooltip-primary:not(.is-loading)::after {
+  border-color: #5E2DEA transparent transparent transparent; }
 
 body.stash .pricing-top:before {
   border-right-color: #3d12b8; }
 
 body.stash .go-to-top {
   background-color: rgba(94, 45, 234, 0.8); }
+
+body.stash .documentation-menu {
+  background-color: #dfd5fb; }
 
 /*==================================================
                 Theme stash End
@@ -4307,7 +4441,7 @@ body.stash .go-to-top {
 ====================================================*/
 body.swift .kubedb-primary-bg,
 body.swift .kd-primary,
-body.swift.fixed-nav #header,
+body.swift.fixed-nav .fixed-menu,
 body.swift .socail-link-inline li a:hover,
 body.swift .tbl-of-contents ul a.active:before,
 body.swift .kd-version a.dropdown-item:hover,
@@ -4320,8 +4454,10 @@ body.swift .subscription-form .button:hover,
 body.swift .searchbar-area button,
 body.swift .countdown-area .right-sidebar-menu ul li a::after,
 body.swift .pagination-list li a.is-active,
+body.swift .tooltip.is-tooltip-primary::before,
+body.swift .pricing-button .kubedb-transparent-btn:hover,
 body.swift .single-product-feature-wrapper:after {
-  background-color: #e67e22; }
+  background-color: #3F51B6; }
 
 body.swift .kd-transparent-btn,
 body.swift .carousel-wrapper:after,
@@ -4353,8 +4489,9 @@ body.swift .single-count-wrapper .action-btn,
 body.swift .subscription-form .button,
 body.swift .section-title h4,
 body.swift .hero-content-inner h4,
+body.swift .pricing-button .kubedb-transparent-btn,
 body.swift .single-search-result h3 a {
-  color: #e67e22; }
+  color: #3F51B6; }
 
 body.swift .star-count::before,
 body.swift .accordion-item.active,
@@ -4367,14 +4504,22 @@ body.swift .textarea.is-active,
 body.swift .textarea.is-focused,
 body.swift .textarea:active,
 body.swift .textarea:focus,
+body.swift .pricing-button .kubedb-transparent-btn,
+body.swift .pricing-button .kubedb-transparent-btn:hover,
 body.swift .subscription-form .input:hover {
-  border-color: #e67e22; }
+  border-color: #3F51B6; }
+
+body.swift .tooltip.is-tooltip-primary:not(.is-loading)::after {
+  border-color: #3F51B6 transparent transparent transparent; }
 
 body.swift .pricing-top:before {
-  border-right-color: #a85913; }
+  border-right-color: #2b387d; }
 
 body.swift .go-to-top {
-  background-color: rgba(230, 126, 34, 0.8); }
+  background-color: rgba(63, 81, 182, 0.8); }
+
+body.swift .documentation-menu {
+  background-color: #d8dcf1; }
 
 /*==================================================
                 Theme swift End
@@ -4384,7 +4529,7 @@ body.swift .go-to-top {
 ====================================================*/
 body.voyager .kubedb-primary-bg,
 body.voyager .kd-primary,
-body.voyager.fixed-nav #header,
+body.voyager.fixed-nav .fixed-menu,
 body.voyager .socail-link-inline li a:hover,
 body.voyager .tbl-of-contents ul a.active:before,
 body.voyager .kd-version a.dropdown-item:hover,
@@ -4397,6 +4542,8 @@ body.voyager .subscription-form .button:hover,
 body.voyager .searchbar-area button,
 body.voyager .countdown-area .right-sidebar-menu ul li a::after,
 body.voyager .pagination-list li a.is-active,
+body.voyager .tooltip.is-tooltip-primary::before,
+body.voyager .pricing-button .kubedb-transparent-btn:hover,
 body.voyager .single-product-feature-wrapper:after {
   background-color: #2D2A78; }
 
@@ -4430,6 +4577,7 @@ body.voyager .single-count-wrapper .action-btn,
 body.voyager .subscription-form .button,
 body.voyager .section-title h4,
 body.voyager .hero-content-inner h4,
+body.voyager .pricing-button .kubedb-transparent-btn,
 body.voyager .single-search-result h3 a {
   color: #2D2A78; }
 
@@ -4444,14 +4592,22 @@ body.voyager .textarea.is-active,
 body.voyager .textarea.is-focused,
 body.voyager .textarea:active,
 body.voyager .textarea:focus,
+body.voyager .pricing-button .kubedb-transparent-btn,
+body.voyager .pricing-button .kubedb-transparent-btn:hover,
 body.voyager .subscription-form .input:hover {
   border-color: #2D2A78; }
+
+body.voyager .tooltip.is-tooltip-primary:not(.is-loading)::after {
+  border-color: #2D2A78 transparent transparent transparent; }
 
 body.voyager .pricing-top:before {
   border-right-color: #18163f; }
 
 body.voyager .go-to-top {
   background-color: rgba(45, 42, 120, 0.8); }
+
+body.voyager .documentation-menu {
+  background-color: #cdcbed; }
 
 /*==================================================
                 Theme voyager End
@@ -4583,7 +4739,7 @@ body.voyager .go-to-top {
   .main-menu.is-bg-available .navbar-link {
     color: #4a4a4a; }
 
-  body.fixed-nav .is-fixed-absolute {
+  body.fixed-nav .fixed-menu {
     top: 0;
     z-index: 99;
     width: 100%; }
@@ -4669,7 +4825,7 @@ body.voyager .go-to-top {
   .hero-area .trusted-logo {
     margin-top: 0; }
   .hero-area .hero-shape {
-    width: 50%;
+    width: 100%;
     height: 100%;
     min-height: auto; }
   .hero-area .hero-right-content-wrapper .right-side-content-inner {
@@ -4871,7 +5027,7 @@ body.voyager .go-to-top {
     display: flex;
     flex-direction: column-reverse; }
 
-  body.fixed-nav .is-fixed-absolute {
+  body.fixed-nav .fixed-menu {
     top: 0;
     z-index: 99;
     width: 100%; }
@@ -5152,7 +5308,7 @@ body.voyager .go-to-top {
   /* ==============================================
    appscode-home page start
 ==============================================*/
-  body.fixed-nav .is-fixed-absolute {
+  body.fixed-nav .fixed-menu {
     top: 0;
     z-index: 99;
     width: 100%; }
@@ -5239,14 +5395,19 @@ body.voyager .go-to-top {
     line-height: 35px !important; }
 
   .hero-area .hero-shape {
-    width: 50%;
+    width: 100%;
     height: 100%;
-    min-height: auto; }
+    min-height: auto;
+    background-position: right;
+    top: -260px; }
   .hero-area .trusted-logo {
     margin-top: 0; }
 
   .is-full-height {
     height: auto; }
+
+  .hero-area.is-full-height {
+    padding: 30px 0 0; }
 
   .hero-area-button .ac-transparent-btn {
     padding: 0;

@@ -36,33 +36,34 @@ body.fixed-nav header{
   transition: 0.3s ease-in-out;
 }
 
-.main-menu-button .button:hover {
-  color: $white-color;
-  background: #affafe;
+
+.button.for-support, .button.for-chat {
+  background: $white-color;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, .17);
+  border-radius: 2px;
+  border: none;
+}
+.button.for-chat {
+  color: #36C5F0;
 }
 
 .button.for-support {
-  background: #f4e5e5;
-  border: none;
-  color: #9d0a0e;
-  transition: 0.3s ease-in-out;
-}
-
-.button.for-support:hover {
-  background: #9d0a0e;
-  color: $white-color;
-}
-
-.button.for-chat {
-  background: #affafe;
-  border: none;
-  color: #36c5f0;
-  transition: 0.3s ease-in-out;
+  color: #9D0A0E;
 }
 
 .button.for-chat:hover {
-  background: #36c5f0;
+  img{
+    filter: invert(1);
+  }
+  background-color: #36C6F0;
   color: $white-color;
+}
+.button.for-support:hover{
+  background-color: #9D0A0E;
+  color: $white-color;
+  img{
+    filter: invert(1);
+  }
 }
 
 .main-menu-button-top .button {
@@ -94,6 +95,9 @@ a.navbar-item:hover {
 }
 nav.navbar{
   background-color: transparent;
+}
+.navbar-item img{
+  max-height: 35px;
 }
 .customize-kubedb .navbar-dropdown .navbar-item {
   color: $primary-color;
@@ -156,17 +160,18 @@ nav.navbar{
 }
 /* fixd nav */
 
-body.fixed-nav #header {
+body.fixed-nav .fixed-menu {
   position: fixed;
-  background: $primary-color;
+  background-color: $white-color;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.12);
   top: 0;
   margin-top: 0;
-  z-index: 9999;
   padding: 3px 0;
   width: 100%;
 }
-
+.fixed-menu-z-index{
+  z-index: 9999;
+}
 /* github button style start */
 .lg .btn,
 .lg .social-count {
@@ -434,12 +439,17 @@ a.play-icon .fa {
   float: left;
   overflow: hidden;
   margin-top: 5px;
+  text-align: left;
 }
 
 .client-information {
   overflow: hidden;
-  width: 30%;
+  width: 100%;
   margin: 30px auto 0;
+  text-align: center;
+}
+.client-info-inner {
+  display: inline-block;
 }
 .slider:focus, button:focus {
   outline: none;
@@ -467,11 +477,15 @@ a.play-icon .fa {
 .single-brand-logo {
   display: inline-block;
   overflow: hidden;
-  margin: 10px 30px;
+  margin: 10px 20px;
   text-align: center;
   vertical-align: middle;
+  max-width: 200px;
+  height: auto;
 }
-
+.single-brand-logo img{
+  max-height: 50px;
+}
 /* brand logo area end */
 
 /* call to action area */
@@ -496,6 +510,11 @@ a.play-icon .fa {
 }
 
 /* footer area start */
+.single-footer-widget {
+  .footer-logo {
+    max-width: 160px;
+  }
+}
 .subscription-form label {
   font-size: 18px;
   font-weight: 600;
@@ -733,7 +752,7 @@ p.spam-message {
 
 /* pricing section style */
 .pricing-button .kd-button {
-  padding: 8px 40px;
+  padding: 8px 20px;
   background: $primary-color;
   width: 180px;
 }
@@ -742,18 +761,24 @@ p.spam-message {
   border-radius: 8px;
 }
 
-.single-pricing-table.silver {
+.single-pricing-table.gold {
   box-shadow: 0px 8px 47px rgba(0, 0, 0, 0.16);
   z-index: 2;
   position: relative;
 }
-
+.single-pricing-table.gold .pricing-heading {
+  .pricing-top{
+    min-height: 158px;
+  }
+  min-height: 253px;
+}
 .pricing-heading {
   background: #e1e1e1;
-  padding: 20px 40px;
+  padding: 10px 40px;
   border-radius: 7px 7px 0 0;
   position: relative;
   z-index: 1;
+  min-height: 202px;
 }
 
 .pricing-heading:after {
@@ -775,10 +800,45 @@ p.spam-message {
 .kd-button.kd-green {
   background: $green-color !important;
 }
+.pricing-button .button{
+  font-size: 15px;
+  min-width: 190px;
+  font-family: $font-paragraph;
+  padding: 7px;
+  transition: .3s ease-in-out;
+}
 .pricing-top.kd-orange,
 .kd-button.kd-orange {
   background-color: $orange-color !important;
 }
+.pricing-button .kubedb-transparent-btn{
+  color: $kubedb-primary;
+  border: 1px solid $kubedb-primary;
+}
+.pricing-button .kubedb-transparent-btn:hover{
+  color: $white-color !important;
+  border: 1px solid $kubedb-primary;
+  background-color: $kubedb-primary;
+}
+.pricing-button .primary-transparent-btn{
+  color: $primary-color;
+  border: 1px solid $primary-color;
+}
+.pricing-button .primary-transparent-btn:hover{
+  color: $white-color;
+  border: 1px solid $primary-color;
+  background-color: $primary-color;
+}
+.pricing-button .red-transparent-btn{
+  color: $red-color;
+  border: 1px solid $red-color;
+}
+.pricing-button .red-transparent-btn:hover{
+  color: $white-color;
+  border: 1px solid $red-color;
+  background-color: $red-color;
+}
+
 .pricing-top.kd-red,
 .kd-button.kd-red {
   background-color: $red-color !important;
@@ -787,23 +847,51 @@ p.spam-message {
   background: $primary-color;
   box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.16);
   color: $white-color;
-  padding: 20px;
+  padding: 10px 20px;
   margin: 0 auto;
   border-radius: 0px 8px 8px 8px;
   margin-bottom: 15px;
   position: relative;
   z-index: 1;
-  margin-top: -42px;
+  margin-top: -32px;
+  min-height: 140px;
 }
-
+.round-shape {
+  background: #fff;
+  color: $orange-color;
+  font-size: 14px;
+  display: block;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 2px;
+  line-height: 1.5;
+}
+.recommended-text {
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  color: $orange-color;
+  font-size: 16px;
+  font-weight: 500;
+}
+.single-pricing-table.silver .pricing-top{
+  min-height: 100px;
+}
+.single-pricing-table.free .pricing-top, .single-pricing-table.plutinum .pricing-top{
+  margin-bottom: 30px;
+}
 .pricing-top h4 {
-  font-size: 18px;
+  font-size: 20px;
   color: $white-color;
 }
 
 .package-price {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
+  sup,sub{
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
 
 .package-price span {
@@ -824,7 +912,7 @@ p.spam-message {
 .pricing-type .select select {
   font-size: 14px;
   color: #74818d;
-  height: 40px;
+  height: 35px !important;
   border: none;
 }
 
@@ -847,7 +935,7 @@ p.spam-message {
   right: 14px;
   position: absolute;
   top: 0;
-  line-height: 40px;
+  line-height: 35px;
   color: #74818d;
 }
 
@@ -861,7 +949,7 @@ p.spam-message {
 }
 
 .pricing-body li {
-  font-size: 16px;
+  font-size: 14px;
   color: #32325d;
   border-bottom: 1px solid #dfdfdf;
   padding: 5px 20px;
@@ -869,48 +957,53 @@ p.spam-message {
   display: table;
   width: 100%;
 }
-
+.pricing-body ul li:first-child {
+  background-color: #fff;
+  padding-top: 10px;
+}
 .pricing-body li span {
   display: table-cell;
   vertical-align: middle;
 }
-
 .pricing-body li:last-child {
   border-bottom: none;
 }
 
-.pricing-body ul {
-  margin: 10px 0;
-}
-
 .single-pricing-table.details .pricing-body {
   border-radius: 8px;
-  margin-top: 242px;
+  margin-top: 252px;
   margin-right: 10px;
   padding-bottom: 70px;
+  background-color: $white-color;
+  padding-top: 5px;
 }
-
+.single-pricing-table.details .pricing-body ul li:first-child {
+  padding: 5px;
+}
 .single-pricing-table.free,
-.single-pricing-table.gold,
+.single-pricing-table.silver,
 .single-pricing-table.plutinum {
-  margin-top: 81px;
+  margin-top: 50px;
 }
 
-.single-pricing-table.plutinum {
-  margin-left: 10px;
+.single-pricing-table.free {
+  margin-right: 10px;
 }
 
-.single-pricing-table.silver .pricing-body {
+.single-pricing-table.gold .pricing-body {
   border: none;
 }
-
+.single-pricing-table.silver .pricing-body {
+  border-right: 1px solid transparent;
+}
+.single-pricing-table.plutinum .pricing-body {
+  border-left: 1px solid transparent;
+}
 .single-pricing-table.free .pricing-body {
-  border-right: none;
   border-radius: 0 0 0 8px;
 }
 
 .single-pricing-table.gold .pricing-body {
-  border-left: none;
   border-radius: 0 0 8px 0px;
 }
 
@@ -925,23 +1018,32 @@ p.spam-message {
 .single-pricing-table.plutinum .pricing-top:before {
   border-right-color: #b20b32;
 }
-
+.pricing-description ul li {
+  color: #74818D;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.pricing-description ul li:last-child{
+  margin-bottom: 0;
+}
 /* Payment Method section style */
-.single-payment-methode {
+.single-payment-method {
   display: inline-block;
   margin-left: 30px;
 }
 
-.single-payment-methode:first-child {
+.single-payment-method:first-child {
   margin-left: 0;
 }
 
-.payment-methode-innner-text h2 {
+.payment-method-innner-text h2 {
   color: $heading-color;
   margin-bottom: 20px;
 }
 
-.payment-methode-innner-text p {
+.payment-method-innner-text p {
   margin: 0;
 }
 
@@ -1075,11 +1177,11 @@ p.spam-message {
 .documentation-navbar .main-menu a {
   padding: 10px 30px;
 }
-.kubedb-documentation-menu {
+.documentation-menu {
   background: $white-color;
   height: 100%;
 }
-body.fixed-nav .kubedb-documentation-menu {
+body.fixed-nav .documentation-menu {
   position: fixed;
   width: 100%;
   height: auto;

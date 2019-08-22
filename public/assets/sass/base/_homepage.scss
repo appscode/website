@@ -1,14 +1,14 @@
 // hero-area css
-.is-fixed-absolute {
+.fixed-menu {
   position: absolute;
   width: 100%;
   padding: 9px 0px;
-  z-index: 9999;
+  z-index: 99;
   top: 0;
   left: 0;
 }
 
-body.fixed-nav .is-fixed-absolute {
+body.fixed-nav .fixed-menu {
   position: fixed;
   top: 0;
   z-index: 99;
@@ -65,20 +65,24 @@ body.fixed-nav
     background: url(../images/appscode/hero-shape.png);
     background-repeat: no-repeat;
     content: "";
-    right: 0;
-    width: 50%;
+    left: 0;
+    width: 100%;
     height: 100%;
     top: 0;
     background-position-y: top;
     z-index: -1;
-    min-height: 640px;
+    min-height: 100%;
   }
   .trusted-logo {
-    margin-top: 130px;
+    margin-top: 10px;
   }
 }
 .is-full-height {
   height: 100vh;
+}
+.hero-area.is-full-height{
+  padding: 50px 0 0;
+  overflow: hidden;
 }
 .hero-area-content {
   padding-right: 80px;
@@ -112,11 +116,13 @@ body.fixed-nav
 .hero-right-content-wrapper {
   position: relative;
   z-index: 1;
+  width: 100%;
+  height: 100%;
   .right-side-content-inner {
     position: absolute;
-    right: -120px;
+    right: -60px;
     top: 10px;
-    width: 130%;
+    width: 100%;
     z-index: -1;
   }
 }
@@ -445,16 +451,16 @@ body.fixed-nav
       }
     }
     .press-image-1 {
-      background-image: url(../images/appscode/press/1.png);
+      background-image: url(../images/press/1.png);
     }
     .press-image-2 {
-      background-image: url(../images/appscode/press/2.png);
+      background-image: url(../images/press/2.png);
     }
     .press-image-3 {
-      background-image: url(../images/appscode/press/3.png);
+      background-image: url(../images/press/3.png);
     }
     .press-image-4 {
-      background-image: url(../images/appscode/press/4.png);
+      background-image: url(../images/press/4.png);
     }
   }
   .press-image {
@@ -480,11 +486,25 @@ body.fixed-nav
       font-weight: 600;
       line-height: 26px;
       margin-bottom: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-clamp: 2;
+      -webkit-line-clamp: 2;
+      box-orient: vertical;
+      -webkit-box-orient: vertical;
     }
     p {
       color: $paragraph-color;
       font-size: 15px;
       margin-bottom: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-clamp: 4;
+      -webkit-line-clamp: 4;
+      box-orient: vertical;
+      -webkit-box-orient: vertical;
     }
 
     .press-button-wrapper {
@@ -532,10 +552,10 @@ body.fixed-nav
     background-color: #f5f5f5;
     padding: 30px 20px;
     border-radius: 4px;
-    min-height: 230px;
+    min-height: 210px;
     p {
       color: $paragraph-color;
-      font-size: 18px;
+      font-size: 15px;
       line-height: 28px;
     }
   }

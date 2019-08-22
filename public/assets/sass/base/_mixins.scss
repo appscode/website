@@ -6,7 +6,7 @@
   // background color
   body.#{$name} .kubedb-primary-bg,
   body.#{$name} .kd-primary,
-  body.#{$name}.fixed-nav #header,
+  body.#{$name}.fixed-nav .fixed-menu,
   body.#{$name} .socail-link-inline li a:hover,
   body.#{$name} .tbl-of-contents ul a.active:before,
   body.#{$name} .kd-version a.dropdown-item:hover,
@@ -19,6 +19,8 @@
   body.#{$name} .searchbar-area button,
   body.#{$name} .countdown-area .right-sidebar-menu ul li a::after,
   body.#{$name} .pagination-list li a.is-active,
+  body.#{$name} .tooltip.is-tooltip-primary::before,
+  body.#{$name} .pricing-button .kubedb-transparent-btn:hover,
   body.#{$name} .single-product-feature-wrapper:after {
     background-color: #{$color};
   }
@@ -53,6 +55,7 @@
   body.#{$name} .subscription-form .button,
   body.#{$name} .section-title h4,
   body.#{$name} .hero-content-inner h4,
+  body.#{$name} .pricing-button .kubedb-transparent-btn,
   body.#{$name} .single-search-result h3 a {
     color: #{$color};
   }
@@ -68,14 +71,22 @@
   body.#{$name} .textarea.is-focused,
   body.#{$name} .textarea:active,
   body.#{$name} .textarea:focus,
+  body.#{$name} .pricing-button .kubedb-transparent-btn,
+  body.#{$name} .pricing-button .kubedb-transparent-btn:hover,
   body.#{$name} .subscription-form .input:hover {
     border-color: #{$color};
+  }
+  body.#{$name} .tooltip.is-tooltip-primary:not(.is-loading)::after{
+    border-color: #{$color} transparent transparent transparent;
   }
   body.#{$name} .pricing-top:before {
     border-right-color: darken($color, 15%);
   }
   body.#{$name} .go-to-top {
     background-color: rgba($color, 0.8);
+  }
+  body.#{$name} .documentation-menu {
+    background-color: scale-color($color, $lightness: 80%);
   }
   /*==================================================
                   Theme #{$name} End

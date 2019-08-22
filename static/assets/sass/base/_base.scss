@@ -759,6 +759,8 @@ p.spam-message {
 
 .single-pricing-table {
   border-radius: 8px;
+  position: relative;
+  z-index: 1;
 }
 
 .single-pricing-table.gold {
@@ -865,14 +867,29 @@ p.spam-message {
   font-weight: 500;
   padding: 2px;
   line-height: 1.5;
+  margin-bottom: 10px;
 }
-.recommended-text {
+.discount-text {
   position: absolute;
-  top: -50px;
+  top: -60px;
   width: 100%;
-  color: $orange-color;
-  font-size: 16px;
-  font-weight: 500;
+  color: #242A31;
+  font-size: 18px;
+  font-weight: 600;
+  transition: .3s ease-in-out;
+}
+.discount-text.is-hide{
+  top: 0;
+}
+.single-pricing-table.silver{
+  .discount-text{
+    color: $primary-color;
+  }
+}
+.single-pricing-table.gold{
+  .discount-text{
+    color: $orange-color;
+  }
 }
 .single-pricing-table.silver .pricing-top{
   min-height: 100px;
@@ -881,13 +898,14 @@ p.spam-message {
   margin-bottom: 30px;
 }
 .pricing-top h4 {
-  font-size: 18px;
+  font-size: 20px;
   color: $white-color;
+  font-weight: 700;
 }
 
 .package-price {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 400;
   sup,sub{
     font-size: 14px;
     font-weight: 400;
@@ -965,7 +983,10 @@ p.spam-message {
   display: table-cell;
   vertical-align: middle;
 }
-
+.pricing-body li span.tooltip{
+  font-weight: 500;
+  font-style: italic;
+}
 .pricing-body li:last-child {
   border-bottom: none;
 }

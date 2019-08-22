@@ -17,7 +17,10 @@
     
     <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
     
+    <link rel="stylesheet" href="/assets/css/bulma-tooltip.min.css" />
+    
     <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
     
     <link rel="stylesheet" href="/assets/sass/main.css" />
   </head>
@@ -27,390 +30,382 @@
 
     
     
+    <header>
+      
+      
+      <div class="header-top fixed-menu">
+        <div class="container section">
+          <nav class="navbar">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://appscode-v3-hugo.web.app">
+                <img src="/assets/images/products/appscode/appscode-logo.png" alt="AppsCode" />
+              </a>
 
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav1"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
 
-<header>
-  <div class="is-fixed-absolute">
-    <div class="container section">
-      <nav class="navbar">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="https://appscode-v3-hugo.web.app">
-            <img src="/assets/images/logo-color-appscode.png" alt="" />
-          </a>
-
-          <a
-            role="button"
-            class="navbar-burger burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="acNav1"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div id="acNav1" class="navbar-menu main-menu">
-          <div class="navbar-end">
-            <div class="navbar-start">
-              <div class="navbar-item has-dropdown ac-is-hoverable">
-                <a class="navbar-link">
-                  Products
-                </a>
-
+            <div id="acNav1" class="navbar-menu main-menu">
+              <div class="navbar-end">
                 
-                <div class="ac-megamenu">
-                  <div class="columns">
-                    <div class="column is-8">
+                <div class="navbar-start">
+                  <div class="navbar-item has-dropdown ac-is-hoverable">
+                    <a class="navbar-link">
+                      Products
+                    </a>
+
+                    
+                    <div class="ac-megamenu">
                       <div class="columns">
-                        <div class="column is-6 br-1">
-                          
-                          <a
-                            href="https://appscode-v3-hugo.web.app/products/voyager/"
-                            class="single-product-item is-voyager"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logos/small-size/voyager.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>Voyager</h5>
+                        <div class="column is-8">
+                          <div class="columns">
+                            <div class="column is-6 br-1">
+                              
+                              
+                              
+                              <a
+                                href="https://kubedb-v2-hugo.web.app"
+                                class="single-product-item is-kubedb"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/kubedb/kubedb-icon.png"
+                                      alt="KubeDB"
+                                    />
+                                  </div>
+                                  <h5>KubeDB</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Run production-grade databases easily on Kubernetes</p>
+                                </div>
+                              </a>
+                              
+                              
+                              
+                              
+                              <a
+                                href="https://appscode-v3-hugo.web.app/products/stash/"
+                                class="single-product-item is-stash"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/stash/stash-icon.png"
+                                      alt="Stash"
+                                    />
+                                  </div>
+                                  <h5>Stash</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Backup your Kubernetes Stateful Applications</p>
+                                </div>
+                              </a>
+                              
+                              
+                              
+                              
+                              <a
+                                href="https://kubevault-v1-hugo.web.app"
+                                class="single-product-item is-kubevault"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/kubevault/kubevault-icon.png"
+                                      alt="KubeVault"
+                                    />
+                                  </div>
+                                  <h5>KubeVault</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Tools for running HashiCorp Vault on Kubernetes</p>
+                                </div>
+                              </a>
+                              
+                              
+                              
+                              
+                              <a
+                                href="https://appscode-v3-hugo.web.app/products/guard/"
+                                class="single-product-item is-guard"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/guard/guard-icon.png"
+                                      alt="Guard"
+                                    />
+                                  </div>
+                                  <h5>Guard</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Kubernetes Authentication WebHook Server</p>
+                                </div>
+                              </a>
+                              
+                              
                             </div>
-                            <div class="menu-body">
-                              <p>
-                                Secure HAProxy Ingress Controller for Kubernetes
-                              </p>
+                            <div class="column is-6 br-1">
+                              
+                              
+                              
+                              <a
+                                href="https://appscode-v3-hugo.web.app/products/voyager/"
+                                class="single-product-item is-voyager"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/voyager/voyager-icon.png"
+                                      alt="Voyager"
+                                    />
+                                  </div>
+                                  <h5>Voyager</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Secure HAProxy Ingress Controller for
+Kubernetes</p>
+                                </div>
+                              </a>
+                              
+                              
+                              
+                              
+                              <a
+                                href="https://appscode-v3-hugo.web.app/products/swift/"
+                                class="single-product-item is-swift"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/swift/swift-icon.png"
+                                      alt="Swift"
+                                    />
+                                  </div>
+                                  <h5>Swift</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Ajax friendly Helm Tiller Proxy</p>
+                                </div>
+                              </a>
+                              
+                              
+                              
+                              
+                              <a
+                                href="https://appscode-v3-hugo.web.app/products/searchlight/"
+                                class="single-product-item is-searchlight"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/searchlight/searchlight-icon.png"
+                                      alt="Searchlight"
+                                    />
+                                  </div>
+                                  <h5>Searchlight</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Alerts for Kubernetes</p>
+                                </div>
+                              </a>
+                              
+                              
+                              
+                              
+                              <a
+                                href="https://appscode-v3-hugo.web.app/products/service-broker/"
+                                class="single-product-item is-service-broker"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/service-broker/service-broker-icon.png"
+                                      alt="ServiceBroker"
+                                    />
+                                  </div>
+                                  <h5>ServiceBroker</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Open Service Broker for AppsCode Kubernetes Operators</p>
+                                </div>
+                              </a>
+                              
+                              
                             </div>
-                          </a>
-                          
-                          
-                          <a
-                            href="https://kubedb-v2-hugo.web.app"
-                            class="single-product-item is-kubedb"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logos/small-size/kubedb.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>KubeDB</h5>
-                            </div>
-                            <div class="menu-body">
-                              <p>
-                                Run production-grade databases easily on
-                                Kubernetes
-                              </p>
-                            </div>
-                          </a>
-                          
-                          
-                          <a
-                            href="https://appscode-v3-hugo.web.app/products/stash/"
-                            class="single-product-item is-stash"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logos/small-size/stash.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>Stash</h5>
-                            </div>
-                            <div class="menu-body">
-                              <p>
-                                Backup your Kubernetes Stateful Applications
-                              </p>
-                            </div>
-                          </a>
-                          
-                          
-                          <a
-                            href="https://appscode-v3-hugo.web.app/products/guard/"
-                            class="single-product-item is-guard"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logos/small-size/guard.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>Guard</h5>
-                            </div>
-                            <div class="menu-body">
-                              <p>
-                                Kubernetes Authentication WebHook Server
-                              </p>
-                            </div>
-                          </a>
-                          
-                          
-                          <a
-                            href="https://kubeci-v1-hugo.web.app"
-                            class="single-product-item is-kubeci"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logos/small-size/appscode.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>KubeCI</h5>
-                            </div>
-                            <div class="menu-body">
-                              <p>
-                                Kubernetes native CI
-                              </p>
-                            </div>
-                          </a>
-                          
+                          </div>
                         </div>
-                        <div class="column is-6 br-1">
-                          
-                          <a
-                            href="https://appscode-v3-hugo.web.app/products/searchlight/"
-                            class="single-product-item is-searchlight"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logos/small-size/searchlight.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>Searchlight</h5>
+                        <div class="column is-4">
+                          <div class="columns">
+                            <div class="column is-12">
+                              
+                              <a
+                                href="https://byte.builders"
+                                class="single-product-item byte-builder kd-orange"
+                              >
+                                <div class="menu-header">
+                                  <p class="intro">Introducing....</p>
+                                  <h5>Byte.builders</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>
+                                    The Kubernetes Cloud
+                                  </p>
+                                </div>
+                                <p class="learn-more-btn">
+                                  Learn more
+                                  <span class="icon"
+                                    ><i
+                                      class="fa fa-long-arrow-right"
+                                      aria-hidden="true"
+                                    ></i
+                                  ></span>
+                                </p>
+                              </a>
+                              
+
+                              
+                              
+                              
+                              <a
+                                href="https://appscode-v3-hugo.web.app/products/pharmer/"
+                                class="single-product-item is-pharmer"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/pharmer/pharmer-icon.png"
+                                      alt="Pharmer"
+                                    />
+                                  </div>
+                                  <h5>Pharmer</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Kubernetes Cluster Manager using Kubeadm &amp; Cluster API</p>
+                                </div>
+                              </a>
+                              
+                              
+                              
+                              
+                              <a
+                                href="https://appscode-v3-hugo.web.app/products/kubed/"
+                                class="single-product-item is-kubed"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/kubed/kubed-icon.png"
+                                      alt="Kubed"
+                                    />
+                                  </div>
+                                  <h5>Kubed</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Kubernetes cluster manager daemon</p>
+                                </div>
+                              </a>
+                              
+                              
                             </div>
-                            <div class="menu-body">
-                              <p>
-                                Alerts for Kubernetes
-                              </p>
-                            </div>
-                          </a>
-                          
-                          
-                          <a
-                            href="https://appscode-v3-hugo.web.app/products/swift/"
-                            class="single-product-item is-swift"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logos/small-size/appscode.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>Swift</h5>
-                            </div>
-                            <div class="menu-body">
-                              <p>
-                                Ajax friendly Helm Tiller Proxy
-                              </p>
-                            </div>
-                          </a>
-                          
-                          
-                          <a
-                            href="https://appscode-v3-hugo.web.app/products/service-broker/"
-                            class="single-product-item is-broker"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logos/small-size/service-broke.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>Service Broker</h5>
-                            </div>
-                            <div class="menu-body">
-                              <p>
-                                Open Service Broker for AppsCode Cloud Services
-                              </p>
-                            </div>
-                          </a>
-                          
-                          
-                          <a
-                            href="https://appscode-v3-hugo.web.app/products/pharmer/"
-                            class="single-product-item is-pharmer"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logos/small-size/phamer.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>Pharmer</h5>
-                            </div>
-                            <div class="menu-body">
-                              <p>
-                                Kubernetes Cluster Manager using Kubeadm &
-                                Cluster API
-                              </p>
-                            </div>
-                          </a>
-                          
-                          
-                          <a
-                            href="https://kubeshield-v1-hugo.web.app"
-                            class="single-product-item is-kubeshield"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logos/small-size/kubeshild.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>KubeShield</h5>
-                            </div>
-                            <div class="menu-body">
-                              <p>
-                                Secure Kubernetes
-                              </p>
-                            </div>
-                          </a>
-                          
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="column is-4">
-                      <div class="columns">
-                        <div class="column is-12">
-                          
-                          <a
-                            href="https://byte.builders"
-                            class="single-product-item byte-builder kd-orange"
-                          >
-                            <div class="menu-header">
-                              <p class="intro">Introducing....</p>
-                              <h5>Byte.builders</h5>
-                            </div>
-                            <div class="menu-body">
-                              <p>
-                                The Kubernetes Cloud
-                              </p>
-                            </div>
-                            <p class="learn-more-btn">
-                              Learn more
-                              <span class="icon"
-                                ><i
+                      <div class="columns has-text-centered">
+                        <div class="column">
+                          <div class="menu-bottom">
+                            <p>
+                              Explore refreshing apps and integrations for
+                              AppsCode products:
+                              <a href="https://marketplace.byte.builders">
+                                Visit the Marketplace
+                                <i
                                   class="fa fa-long-arrow-right"
                                   aria-hidden="true"
                                 ></i
-                              ></span>
+                              ></a>
                             </p>
-                          </a>
-                          
-
-                          
-                          <a
-                            href="https://appscode-v3-hugo.web.app/products/kubed/"
-                            class="single-product-item is-kubed"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logos/small-size/kubed.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>Kubed</h5>
-                            </div>
-                            <div class="menu-body">
-                              <p>
-                                A Kubernetes cluster manager daemon
-                              </p>
-                            </div>
-                          </a>
-                          
-                          
-                          <a
-                            href="https://kubevault-v1-hugo.web.app"
-                            class="single-product-item is-kubevault"
-                          >
-                            <div class="menu-header">
-                              <div class="menu-logo">
-                                <img
-                                  src="/assets/images/product-logos/small-size/kube-vault.png"
-                                  alt=""
-                                />
-                              </div>
-                              <h5>KubeVault</h5>
-                            </div>
-                            <div class="menu-body">
-                              <p>
-                                Tools for running HashiCorp Vault on Kubernetes
-                              </p>
-                            </div>
-                          </a>
-                          
+                          </div>
                         </div>
                       </div>
                     </div>
+                    
                   </div>
-                  <div class="columns has-text-centered">
-                    <div class="column">
-                      <div class="menu-bottom">
-                        <p>
-                          Explore refreshing apps and integrations for AppsCode
-                          products:
-                          <a href="https://marketplace.byte.builders">
-                            Visit the Marketplace
-                            <i
-                              class="fa fa-long-arrow-right"
-                              aria-hidden="true"
-                            ></i
-                          ></a>
-                        </p>
+
+                  <div class="navbar-item has-dropdown ac-is-hoverable">
+                      <a class="navbar-link">
+                          Services
+                      </a>
+
+                      <div class="ac-dropdown">
+                          <a class="navbar-item" href="https://appscode-v3-hugo.web.app/consulting/" >
+                              Consulting
+                          </a>
+                          <a class="navbar-item" href="https://appscode-v3-hugo.web.app/training/" >
+                              Training
+                          </a>
+                          <a class="navbar-item" href="https://appscode-v3-hugo.web.app/support/" >
+                              Support
+                          </a>
                       </div>
-                    </div>
                   </div>
+
+                  <a class="navbar-item" href="https://blog.byte.builders" >
+                    Blog
+                  </a>
+                  <a class="navbar-item" href="https://appscode-v3-hugo.web.app/contact/" >
+                    Contact Us
+                  </a>
                 </div>
                 
-              </div>
-
-              <a class="navbar-item">
-                Services
-              </a>
-              <a class="navbar-item">
-                Open Source
-              </a>
-              <a class="navbar-item">
-                Blog
-              </a>
-              <a class="navbar-item">
-                Contact
-              </a>
-            </div>
-
-            <div class="navbar-item">
-              <div class="buttons main-menu-button-top">
-                <a class="button is-small for-support">
-                  <span><img src="/assets/images/icon/chat.png" alt=""/></span
-                  >Forum
-                </a>
-                <a class="button is-small for-chat">
-                  <span><img src="/assets/images/icon/slack.png" alt=""/></span
-                  >Chat
-                </a>
+                <div class="navbar-item">
+                  <div class="buttons main-menu-button-top">
+                    <a class="button is-small for-chat" href="https://slack.appscode.com">
+                      <span
+                        ><img
+                          src="/assets/images/icon/slack.png"
+                          alt=""/></span
+                      >Slack
+                    </a>
+                    <a class="button is-small for-support" href="https://appscode.freshdesk.com">
+                      <span
+                        ><img
+                          src="/assets/images/icon/chat.png"
+                          alt=""/></span
+                      >Support
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </nav>
         </div>
-      </nav>
-    </div>
-  </div>
-</header>
+      </div>
+      
+      
 
+      
+<section></section>
+
+
+      
+      
+    </header>
+    
+    
+
+    
+    
 
 
 <section class="hero-area-2 pt-100">
@@ -459,7 +454,7 @@
       </div>
       <div class="column is-7">
         <div class="consulting-image">
-          <img src="../assets/images/consulting-page/consulting.png" alt="" />
+          <img src="/assets/images/consulting-page/consulting.png" alt="" />
         </div>
       </div>
     </div>
@@ -473,7 +468,7 @@
     <div class="columns reverse-row-order">
       <div class="column is-7">
         <div class="consulting-image">
-          <img src="../assets/images/consulting-page/review.png" alt="" />
+          <img src="/assets/images/consulting-page/review.png" alt="" />
         </div>
       </div>
       <div class="column is-5">
@@ -513,7 +508,7 @@
       <div class="column">
         <div class="testimonial-wrapper">
           <div class="quote-icon">
-            <img src="../assets/images/consulting-page/quote.png" alt="" />
+            <img src="/assets/images/consulting-page/quote.png" alt="" />
           </div>
           <h1>
             "The fact that we have a high degree of automation, CD pipelines and
@@ -583,12 +578,6 @@
 
 
 
-    
-
-    
-    
-    
-    
 
     
     
@@ -624,8 +613,8 @@
                 <div class="footer-logo">
                   <a href="https://appscode-v3-hugo.web.app"
                     ><img
-                      src="/assets/images/logo-color-appscode.png"
-                      alt=""
+                      src="/assets/images/products/appscode/appscode-logo.png"
+                      alt="AppsCode"
                       class="img"
                   /></a>
                 </div>
@@ -660,21 +649,21 @@
                   <h4>Have any Inquiry?</h4>
                   <ul class="all-contact-info">
                     <li>
-                      <a href="callto:+123456789"
+                      <a href="callto:&#43;1%28650%29241-8486"
                         ><span
                           ><i class="fa fa-phone" aria-hidden="true"></i></span
-                        >+123 456 789</a
+                        >&#43;1(650)241-8486</a
                       >
                     </li>
 
                     <li>
-                      <a href="mailto:appscode@gmail.com"
+                      <a href="mailto:support@appscode.com"
                         ><span
                           ><i
                             class="fa fa-envelope-o"
                             aria-hidden="true"
                           ></i></span
-                        >appscode@gmail.com</a
+                        >support@appscode.com</a
                       >
                     </li>
                   </ul>
@@ -689,15 +678,25 @@
                 <div class="footer-menu">
                   <h4>Products</h4>
                   <ul class="footer-link">
-                    <li><a href="#">Voyager</a></li>
-                    <li><a href="#">KubeDB</a></li>
-                    <li><a href="#">Stash</a></li>
-                    <li><a href="#">Pharmer</a></li>
-                    <li><a href="#">Service Broker</a></li>
-                    <li><a href="#">Kubed</a></li>
-                    <li><a href="#">Guard</a></li>
-                    <li><a href="#">Swift</a></li>
-                    <li><a href="#">Searchlight</a></li>
+                    
+                    
+                    <li><a href="https://kubedb-v2-hugo.web.app">KubeDB</a></li>
+                    
+                    
+                    <li><a href="https://appscode-v3-hugo.web.app/products/stash/">Stash</a></li>
+                    
+                    
+                    <li><a href="https://kubevault-v1-hugo.web.app">KubeVault</a></li>
+                    
+                    
+                    <li><a href="https://appscode-v3-hugo.web.app/products/voyager/">Voyager</a></li>
+                    
+                    
+                    <li><a href="https://appscode-v3-hugo.web.app/products/guard/">Guard</a></li>
+                    
+                    
+                    <li><a href="https://appscode-v3-hugo.web.app/products/pharmer/">Pharmer</a></li>
+                    
                   </ul>
                 </div>
                 
@@ -708,11 +707,11 @@
               <div class="single-footer-widget">
                 
                 <div class="footer-menu">
-                  <h4>Offerings</h4>
+                  <h4>Services</h4>
                   <ul class="footer-link">
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Open source </a></li>
+                    <li><a href="https://appscode-v3-hugo.web.app/sonsulting/">Consulting</a></li>
+                    <li><a href="https://appscode-v3-hugo.web.app/training/">Training</a></li>
+                    <li><a href="https://appscode-v3-hugo.web.app/support/">Support</a></li>
                   </ul>
                 </div>
                 
@@ -725,10 +724,9 @@
                 <div class="footer-menu">
                   <h4>Company</h4>
                   <ul class="footer-link">
-                    <li><a href="/about/">About Us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Seles Inquiry</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="https://appscode-v3-hugo.web.app/about/">About Us</a></li>
+                    <li><a href="https://blog.byte.builders">Blog</a></li>
+                    <li><a href="https://appscode-v3-hugo.web.app/contact/">Contact Us</a></li>
                   </ul>
                 </div>
                 
@@ -741,10 +739,10 @@
                 <div class="footer-menu">
                   <h4>Legal</h4>
                   <ul class="footer-link">
-                    <li><a href="/legal/tos/">Terms of Sevice</a></li>
-                    <li><a href="/legal/privacy-policy/">Privacy Policy</a></li>
-                    <li><a href="/legal/security/">Security</a></li>
-                    <li><a href="/legal/sla/">Service Level Agreement</a></li>
+                    <li><a href="https://appscode-v3-hugo.web.app/legal/tos/">Terms of Sevice</a></li>
+                    <li><a href="https://appscode-v3-hugo.web.app/legal/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="https://appscode-v3-hugo.web.app/legal/security/">Security</a></li>
+                    <li><a href="https://appscode-v3-hugo.web.app/legal/sla/">Service Level Agreement</a></li>
                   </ul>
                 </div>
                 
@@ -757,40 +755,30 @@
         <div class="container section">
           <div class="columns">
             <div class="column is-4">
-              <p>All rights reserved © 2018. Appscode, Inc..</p>
+              <p>© 2019 AppsCode Inc. All rights reserved.</p>
             </div>
             <div class="column is-4 is-mobile has-text-centered">
               <div class="footer-inline-link">
-                <a href="/legal/privacy-policy/">Privacy Policy</a>
-                <a href="/legal/tos/">Terms of Service</a>
+                <a href="https://appscode-v3-hugo.web.app/legal/privacy-policy/">Privacy Policy</a>
+                <a href="https://appscode-v3-hugo.web.app/legal/tos/">Terms of Service</a>
               </div>
             </div>
             <div class="column is-4 is-mobile has-text-right">
               <div class="socail-link-inline">
                 <ul>
                   <li>
-                    <a href="#"
+                    <a href="https://twitter.com/AppsCodeHQ"
                       ><i class="fa fa-twitter" aria-hidden="true"></i
                     ></a>
                   </li>
                   <li>
-                    <a href="#"
+                    <a href="https://www.facebook.com/appscode"
                       ><i class="fa fa-facebook" aria-hidden="true"></i
                     ></a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><i class="fa fa-github" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
+                    <a href="https://www.youtube.com/c/AppsCodeInc"
                       ><i class="fa fa-youtube" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-twitter" aria-hidden="true"></i
                     ></a>
                   </li>
                 </ul>

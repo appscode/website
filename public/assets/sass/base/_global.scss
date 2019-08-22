@@ -91,7 +91,16 @@ h6 {
   font-size: 14px;
   line-height: 24px;
 }
-
+.d-none{
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.d-block{
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
 .kd-primary {
   background-color: $primary-color;
   color: $white-color !important;
@@ -106,7 +115,14 @@ h6 {
 .kubedb-primary-bg {
   background-color: $primary-color;
 }
-
+.tooltip.is-tooltip-primary::before{
+  background-color:#32325D;
+  color: $white-color;
+  min-width: 200px;
+}
+.tooltip.is-tooltip-primary:not(.is-loading)::after{
+  border-color: #32325D transparent transparent transparent;
+}
 /* button style */
 .button {
   height: auto;
@@ -173,7 +189,7 @@ h6 {
 }
 .subscription-form .input.is-hovered,
 .subscription-form .input:hover {
-  border-color: #4d4dcb;
+  border-color: $primary-color;
 }
 .input.is-active,
 .input.is-focused,
