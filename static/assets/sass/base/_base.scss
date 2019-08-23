@@ -856,7 +856,7 @@ p.spam-message {
   position: relative;
   z-index: 1;
   margin-top: -32px;
-  min-height: 140px;
+  min-height: 164px;
 }
 .round-shape {
   background: #fff;
@@ -909,6 +909,9 @@ p.spam-message {
   sup,sub{
     font-size: 14px;
     font-weight: 400;
+  }
+  strong{
+    color: $white-color;
   }
 }
 
@@ -1005,7 +1008,7 @@ p.spam-message {
 .single-pricing-table.free,
 .single-pricing-table.silver,
 .single-pricing-table.plutinum {
-  margin-top: 50px;
+  margin-top: 34px;
 }
 
 .single-pricing-table.free {
