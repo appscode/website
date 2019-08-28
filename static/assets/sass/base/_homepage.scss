@@ -133,6 +133,8 @@ body.fixed-nav
     padding: 9px 24px;
     border-radius: 4px;
     font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
     a {
       color: $primary-color;
     }
@@ -593,6 +595,10 @@ body.fixed-nav
 .ceo-image {
   position: relative;
   z-index: 1;
+  img{
+    max-width: 300px;
+    margin-top: 20px;
+  }
   .dots-style {
     position: absolute;
     background: url(../images/appscode/dots.png);
@@ -602,6 +608,8 @@ body.fixed-nav
     right: 100px;
     bottom: -75px;
     z-index: -1;
+    left: 50%;
+    margin-left: -125px;
   }
 }
 
