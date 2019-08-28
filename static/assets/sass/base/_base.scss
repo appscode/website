@@ -1656,7 +1656,7 @@ li.nav-item.active a {
   padding-right: 15px;
 }
 .kd-version .button {
-  padding-left: 30px;
+  padding-left: 20px;
   height: 38px;
   background: #ebebeb;
 }
@@ -1810,10 +1810,11 @@ span.new-item {
   font-weight: 500;
   background: #e3d4d4;
   padding: 3px 10px;
-  border-radius: 50px;
+  border-radius: 4px;
   line-height: 12px;
   height: 20px;
-  margin-left: 100px;
+  position: absolute;
+  right: 30px;
 }
 /* dropdown mega menu start */
 .menu-header {
