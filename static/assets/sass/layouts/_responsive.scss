@@ -638,6 +638,12 @@
     max-height: 70vh;
   }
   // mega-menu end
+   //Searchbar position inherit
+   .sidebar-search-area{
+    position: inherit;
+    width: 100%;
+  }
+
 }
 
 /* small Mobile :768px. */
@@ -1218,6 +1224,11 @@
         margin-bottom: 20px;
       }
     }
+  }
+  //Searchbar position inherit
+  .sidebar-search-area{
+    position: inherit;
+    width: 100%;
   }
 
   //reverse order css
