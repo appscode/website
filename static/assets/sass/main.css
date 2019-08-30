@@ -5099,7 +5099,11 @@ body.voyager .documentation-menu {
 
   .main-menu {
     overflow-y: auto;
-    max-height: 70vh; } }
+    max-height: 70vh; }
+
+  .sidebar-search-area {
+    position: inherit;
+    width: 100%; } }
 /* small Mobile :768px. */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   p {
@@ -5555,6 +5559,10 @@ body.voyager .documentation-menu {
     font-size: 32px;
     line-height: 44px;
     margin-bottom: 20px; }
+
+  .sidebar-search-area {
+    position: inherit;
+    width: 100%; }
 
   .reverse-row-order {
     display: flex;
