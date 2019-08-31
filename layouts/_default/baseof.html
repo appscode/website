@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#2D9AED" />
     {{ if $productName }}
-    <title>{{ index $.Site.Data $productName "name" }} Home</title>
+    <title>{{ index $.Site.Data.products $productName "name" }} Home</title>
     {{ else }}
     <title>AppsCode Inc.</title>
     {{ end }}
@@ -23,10 +23,10 @@
     <!-- Bulma CSS -->
     <link rel="stylesheet" href="/assets/css/bulma.min.css" />
     <!-- Custom CSS -->
-    <!-- {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
+    {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-    {{ end }} -->
-    <link rel="stylesheet" href="/assets/sass/main.css" />
+    {{ end }}
+    <!-- <link rel="stylesheet" href="/assets/sass/main.css" /> -->
   </head>
 
   <body {{if $productName}}class="{{$productName}}"{{end}}>
@@ -48,7 +48,7 @@
           <nav class="navbar">
             <div class="navbar-brand">
               <a class="navbar-item" href="{{.Site.Params.domain_appscode}}">
-                <img src="{{$.Site.Data.appscode.logo.src}}" alt="{{$.Site.Data.appscode.logo.alt}}" />
+                <img src="{{$.Site.Data.products.appscode.logo.src}}" alt="{{$.Site.Data.products.appscode.logo.alt}}" />
               </a>
 
               <a
@@ -80,7 +80,7 @@
                           <div class="columns">
                             <div class="column is-6 br-1">
                               {{ range $item := $.Site.Data.config.mainMenu.c0 }}
-                              {{ $p := (index $.Site.Data $item) }}
+                              {{ $p := (index $.Site.Data.products $item) }}
                               <!-- single menu item start -->
                               <a
                                 href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}"
@@ -104,7 +104,7 @@
                             </div>
                             <div class="column is-6 br-1">
                               {{ range $item := $.Site.Data.config.mainMenu.c1 }}
-                              {{ $p := (index $.Site.Data $item) }}
+                              {{ $p := (index $.Site.Data.products $item) }}
                               <!-- single menu item start -->
                               <a
                                 href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}"
@@ -158,7 +158,7 @@
                               <!-- single menu item end -->
 
                               {{ range $item := $.Site.Data.config.mainMenu.c2 }}
-                              {{ $p := (index $.Site.Data $item) }}
+                              {{ $p := (index $.Site.Data.products $item) }}
                               <!-- single menu item start -->
                               <a
                                 href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}"
@@ -267,9 +267,9 @@
         <div class="container section">
           <nav class="navbar">
             <div class="navbar-brand">
-              {{ $p := $.Site.Data.appscode }}
+              {{ $p := $.Site.Data.products.appscode }}
               {{ if $productName }}
-                {{ $p = (index $.Site.Data $productName) }}
+                {{ $p = (index $.Site.Data.products $productName) }}
               {{ end }}
               <a class="navbar-item" href="{{ index $.Site.Params $p.website.domainKey }}{{ $p.website.path }}">
                 <img src="{{ $p.logoWhite.src }}" alt="{{ $p.logoWhite.alt }}" />
@@ -290,10 +290,10 @@
             <div id="acNav" class="navbar-menu main-menu">
               <div class="navbar-end">
                 {{ if $productName }}
-                  {{ if (isset $.Site.Data $productName) }}
+                  {{ if (isset $.Site.Data.products $productName) }}
                     <!-- nav menu start -->
                     <div class="navbar-start">
-                    {{ $latestVersion := (index $.Site.Data $productName "latestVersion") }}
+                    {{ $latestVersion := (index $.Site.Data.products $productName "latestVersion") }}
                     {{ range (index .Site.Menus (printf "product_%s" $productName)) }}
                       {{ if .HasChildren }}
                         <div class="navbar-item has-dropdown ac-is-hoverable">
@@ -319,7 +319,7 @@
                     </div>
                     <!-- nav menu end -->
 
-                    {{ $starRepo := (index $.Site.Data $productName "starRepo") }}
+                    {{ $starRepo := (index $.Site.Data.products $productName "starRepo") }}
                     <div class="navbar-item">
                       <div class="buttons main-menu-button">
                         <!-- Place this tag where you want the button to render. -->
@@ -437,7 +437,7 @@
 
     {{ $productName := .Params.product_name }}
     {{ if $productName }}
-    {{ $latestVersion := (index $.Site.Data $productName "latestVersion") }}
+    {{ $latestVersion := (index $.Site.Data.products $productName "latestVersion") }}
     <section class="cta-area section-padding pt-0">
       <div class="container section">
         <div class="cta-padding">
@@ -486,8 +486,8 @@
                 <div class="footer-logo">
                   <a href="{{.Site.Params.domain_appscode}}"
                     ><img
-                      src="{{$.Site.Data.appscode.logo.src}}"
-                      alt="{{$.Site.Data.appscode.logo.alt}}"
+                      src="{{$.Site.Data.products.appscode.logo.src}}"
+                      alt="{{$.Site.Data.products.appscode.logo.alt}}"
                       class="img"
                   /></a>
                 </div>
@@ -552,7 +552,7 @@
                   <h4>Products</h4>
                   <ul class="footer-link">
                     {{ range $item := $.Site.Data.config.footerLinks }}
-                    {{ $p := (index $.Site.Data $item) }}
+                    {{ $p := (index $.Site.Data.products $item) }}
                     <li><a href="{{index $.Site.Params $p.website.domainKey}}{{$p.website.path}}">{{$p.name}}</a></li>
                     {{ end }}
                   </ul>
