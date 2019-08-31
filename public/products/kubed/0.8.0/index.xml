@@ -1,68 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Docs | Kubed on The Kubernetes Company</title>
-    <link>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/</link>
-    <description>Recent content in Docs | Kubed on The Kubernetes Company</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://appscode-v3-hugo.web.app/products/kubed/0.8.0/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Changelog | Kubed</title>
-      <link>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/changelog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/changelog/</guid>
-      <description>Change Log 0.8.0 (2018-07-10) Full Changelog
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs | Kubed on Kubernetes Anywhere — for Everybody</title><link>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/</link><description>Recent content in Docs | Kubed on Kubernetes Anywhere — for Everybody</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode-v3-hugo.web.app/products/kubed/0.8.0/index.xml" rel="self" type="application/rss+xml"/><item><title>Changelog | Kubed</title><link>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/changelog/</guid><description>Change Log 0.8.0 (2018-07-10) Full Changelog
 Fixed bugs:
- Handle syncing for updated namespaces #299 (tamalsaha) Remove infinite spin loop from operator #294 (tamalsaha)  Merged pull requests:
- Add chart config for event forwarder and recycle bin #300 (tamalsaha) Improve logging for syncer #298 (tamalsaha) Expose webhook server to expose operator metrics #297 (tamalsaha) Remove outdated installer links #296 (tamalsaha) Use yaml file to create service account in installer script #295 (tamalsaha) Use osm 0.</description>
-    </item>
-    
-    <item>
-      <title>Contributing | Kubed</title>
-      <link>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/contributing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/contributing/</guid>
-      <description>Contribution Guidelines Want to hack on Kubed?
+Handle syncing for updated namespaces #299 (tamalsaha) Remove infinite spin loop from operator #294 (tamalsaha) Merged pull requests:
+Add chart config for event forwarder and recycle bin #300 (tamalsaha) Improve logging for syncer #298 (tamalsaha) Expose webhook server to expose operator metrics #297 (tamalsaha) Remove outdated installer links #296 (tamalsaha) Use yaml file to create service account in installer script #295 (tamalsaha) Use osm 0.</description></item><item><title>Contributing | Kubed</title><link>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/contributing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/contributing/</guid><description>Contribution Guidelines Want to hack on Kubed?
 AppsCode projects are Apache 2.0 licensed and accept contributions via GitHub pull requests. This document outlines some of the conventions on development workflow, commit message formatting, contact points and other resources to make it easier to get your contribution accepted.
-Certificate of Origin By contributing to this project you agree to the Developer Certificate of Origin (DCO). This document was created by the Linux Kernel community and is a simple statement that you, as a contributor, have the legal right to make the contribution.</description>
-    </item>
-    
-    <item>
-      <title>Roadmap | Kubed</title>
-      <link>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/roadmap/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/roadmap/</guid>
-      <description>Project Status Versioning Policy Kubed does not follow semver. Currently Kubed operator implementation is considered alpha. Please report any issues you via Github. Once released, the major version of operator is going to point to the Kubernetes client-go version. You can verify this from the glide.yaml file. This means there might be breaking changes between point releases of the operator. This generally manifests as changed annotation keys or their meaning.</description>
-    </item>
-    
-    <item>
-      <title>Support | Kubed</title>
-      <link>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/support/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/support/</guid>
-      <description>Support We use Slack for public discussions. To chit chat with us or the rest of the community, join us in the AppsCode Slack team channel #kubed. To sign up, use our Slack inviter.
-If you have found a bug with Kubed or want to request for new features, please file an issue.</description>
-    </item>
-    
-    <item>
-      <title>Weclome | Kubed</title>
-      <link>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/</guid>
-      <description>Kubed Kubed (pronounced Cube-Dee) by AppsCode is a Kubernetes Cluster Operator Daemon. From here you can learn all about Kubed&amp;rsquo;s architecture and how to deploy and use Kubed.
- Concepts. Concepts explain some significant aspect of Kubed. This is where you can learn about what Kubed does and how it does it.
- Setup. Setup contains instructions for installing the Kubed in various cloud providers.
- Guides. Guides show you how to perform tasks with Kubed.</description>
-    </item>
-    
-  </channel>
-</rss>
+Certificate of Origin By contributing to this project you agree to the Developer Certificate of Origin (DCO). This document was created by the Linux Kernel community and is a simple statement that you, as a contributor, have the legal right to make the contribution.</description></item><item><title>Roadmap | Kubed</title><link>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/roadmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/roadmap/</guid><description>Project Status Versioning Policy Kubed does not follow semver. Currently Kubed operator implementation is considered alpha. Please report any issues you via Github. Once released, the major version of operator is going to point to the Kubernetes client-go version. You can verify this from the glide.yaml file. This means there might be breaking changes between point releases of the operator. This generally manifests as changed annotation keys or their meaning.</description></item><item><title>Support | Kubed</title><link>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/support/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/support/</guid><description>Support We use Slack for public discussions. To chit chat with us or the rest of the community, join us in the AppsCode Slack team channel #kubed. To sign up, use our Slack inviter.
+If you have found a bug with Kubed or want to request for new features, please file an issue.</description></item><item><title>Weclome | Kubed</title><link>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/kubed/0.8.0/welcome/</guid><description>Kubed Kubed (pronounced Cube-Dee) by AppsCode is a Kubernetes Cluster Operator Daemon. From here you can learn all about Kubed&amp;rsquo;s architecture and how to deploy and use Kubed.
+Concepts. Concepts explain some significant aspect of Kubed. This is where you can learn about what Kubed does and how it does it.
+Setup. Setup contains instructions for installing the Kubed in various cloud providers.
+Guides. Guides show you how to perform tasks with Kubed.</description></item></channel></rss>

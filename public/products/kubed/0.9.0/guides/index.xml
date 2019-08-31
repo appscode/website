@@ -1,59 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Guides | Kubed on The Kubernetes Company</title>
-    <link>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/</link>
-    <description>Recent content in Guides | Kubed on The Kubernetes Company</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>API Server</title>
-      <link>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/apiserver/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/apiserver/</guid>
-      <description>New to Kubed? Please start here.
- Kubed API Server Kubed includes a search engine based on blevesearch/bleve. This is exposed as a Kubernetes extended api server. So, you can just use kubectl to find any object by name in a namespace.
-Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster. If you do not already have a cluster, you can create one by using Minikube.</description>
-    </item>
-    
-    <item>
-      <title>Janitors</title>
-      <link>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/janitors/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/janitors/</guid>
-      <description>New to Kubed? Please start here.
- Using Janitors Kubed includes janitors for Elasticsearch and InfluxDB. These janitors can delete data older than a configured TTL. Kubernetes supports storing cluster logs in Elasticsearch and cluster metrics in InfluxDB. You use these janitors to clean up old data from Elasticsearch and InfluxDB before those fill up your node disks.
-Please check your janitor configuration on test clusters before using in production.</description>
-    </item>
-    
-    <item>
-      <title>Monitoring</title>
-      <link>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/monitoring/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/monitoring/</guid>
-      <description>New to Kubed? Please start here.
- Monitoring Kubed Kubed operator exposes Prometheus ready metrics via the following endpoints on port :8443:
- /metrics: Scrape this to monitor operator.  Follow the steps below to view the metrics:
- Give system:anonymous user access to /metrics url. This is not safe to do on a production cluster.
-apiVersion: rbac.authorization.k8s.io/v1 kind: ClusterRole metadata: name: appscode:system:metrics-collector rules: - nonResourceURLs: [&amp;quot;/metrics&amp;quot;] verbs: [&amp;quot;get&amp;quot;] --- apiVersion: rbac.</description>
-    </item>
-    
-    <item>
-      <title>Overview</title>
-      <link>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/</guid>
-      <description>Guides This section contains guides on how to use Kubed. Please visit the links below to learn more:
- Disaster Recovery  Cluster Snapshots: This tutorial will show you how to use Kubed to take periodic snapshots of a Kubernetes cluster objects. Kubernetes Recycle Bin: Kubed provides a recycle bin for deleted and/or updated Kubernetes objects. This tutorial will show you how to use Kubed to setup a recycle bin for Kubernetes cluster objects.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Guides | Kubed on Kubernetes Anywhere — for Everybody</title><link>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/</link><description>Recent content in Guides | Kubed on Kubernetes Anywhere — for Everybody</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/index.xml" rel="self" type="application/rss+xml"/><item><title>API Server</title><link>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/apiserver/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/apiserver/</guid><description>New to Kubed? Please start here.
+Kubed API Server Kubed includes a search engine based on blevesearch/bleve. This is exposed as a Kubernetes extended api server. So, you can just use kubectl to find any object by name in a namespace.
+Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster. If you do not already have a cluster, you can create one by using Minikube.</description></item><item><title>Janitors</title><link>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/janitors/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/janitors/</guid><description>New to Kubed? Please start here.
+Using Janitors Kubed includes janitors for Elasticsearch and InfluxDB. These janitors can delete data older than a configured TTL. Kubernetes supports storing cluster logs in Elasticsearch and cluster metrics in InfluxDB. You use these janitors to clean up old data from Elasticsearch and InfluxDB before those fill up your node disks.
+Please check your janitor configuration on test clusters before using in production.</description></item><item><title>Monitoring</title><link>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/monitoring/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/monitoring/</guid><description>New to Kubed? Please start here.
+Monitoring Kubed Kubed operator exposes Prometheus ready metrics via the following endpoints on port :8443:
+/metrics: Scrape this to monitor operator. Follow the steps below to view the metrics:
+Give system:anonymous user access to /metrics url. This is not safe to do on a production cluster.
+apiVersion: rbac.authorization.k8s.io/v1 kind: ClusterRole metadata: name: appscode:system:metrics-collector rules: - nonResourceURLs: [&amp;quot;/metrics&amp;quot;] verbs: [&amp;quot;get&amp;quot;] --- apiVersion: rbac.</description></item><item><title>Overview</title><link>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/kubed/0.9.0/guides/</guid><description>Guides This section contains guides on how to use Kubed. Please visit the links below to learn more:
+Disaster Recovery Cluster Snapshots: This tutorial will show you how to use Kubed to take periodic snapshots of a Kubernetes cluster objects. Kubernetes Recycle Bin: Kubed provides a recycle bin for deleted and/or updated Kubernetes objects. This tutorial will show you how to use Kubed to setup a recycle bin for Kubernetes cluster objects.</description></item></channel></rss>

@@ -1,78 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Setup | Guard on The Kubernetes Company</title>
-    <link>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/</link>
-    <description>Recent content in Setup | Guard on The Kubernetes Company</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Install</title>
-      <link>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/install/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/install/</guid>
-      <description>New to Guard? Please start here.
- Installation Guide Guard binary works as a cli and server. In cli mode, you can use guard to generate various configuration to easily deploy Guard server. Guard server uses TLS client auth to secure the communication channel between Kubernetes api server and Guard server. You can run Guard server external to a Kubernetes cluster. This document shows you how to self-host Guard server in a Kubernetes cluster.</description>
-    </item>
-    
-    <item>
-      <title>Install Kops</title>
-      <link>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/install-kops/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/install-kops/</guid>
-      <description>New to Guard? Please start here.
- Kops Installation Guide Kops is a popular installer for production grade Kubernetes clusters. Please start here to get an overview of installation steps. This document only shows distinctions during Kops setup of guard.
-During Initialize PKI For creation of guard server config you need a free cluster ip. There is an easy trick which helps to find it in most cases: Just find out your nonMasqueradeCIDR through kops edit cluster --name &amp;lt;cluster_name&amp;gt; and then add x.</description>
-    </item>
-    
-    <item>
-      <title>Install Kubespray</title>
-      <link>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/install-kubespray/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/install-kubespray/</guid>
-      <description>New to Guard? Please start here.
- Kubespray Installation Guide Kubespray (originally called Kargo) is a preferred choice for deploying customized production grade Kubernetes clusters, particularly for those who are comfortable with Ansible. Using Kubespray, you can deploy a cluster on GCE, Azure, OpenStack, AWS, or Baremetal, along with a choice of various network plugins.
- This document shows how to configure GitHub as Kubernetes authenticator, the configuration for other authenticators should be similar.</description>
-    </item>
-    
-    <item>
-      <title>Table of Contents | Setup</title>
-      <link>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/</guid>
-      <description>Setup Setup contains instructions for installing the Guard and its various components in Kubernetes.
- Install. Installation instructions for Guard cli and server. Install in Kops. Installation instructions for Kops. Install in Kubespray. Installation instructions for Kubespray. Uninstall Guard. Instructions for uninstalling Guard. Developer Guide  Overview. Outlines everything you need to know from setting up your dev environment to how to build and test Guard. Release process. Steps for releasing a new version of Guard.</description>
-    </item>
-    
-    <item>
-      <title>Troubleshoot Guard Installer</title>
-      <link>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/troubleshooting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/troubleshooting/</guid>
-      <description>New to Guard? Please start here.
- Troubleshooting How do I debug and fix bad certificate issues? Say, you are seeing logs like below in Guard server logs:
-I0830 16:41:59.919947 1 logs.go:19] FLAG: --alsologtostderr=&amp;quot;false&amp;quot; I0830 16:41:59.919987 1 logs.go:19] FLAG: --analytics=&amp;quot;true&amp;quot; I0830 16:41:59.920016 1 logs.go:19] FLAG: --ca-cert-file=&amp;quot;/srv/guard/pki/ca.crt&amp;quot; I0830 16:41:59.920026 1 logs.go:19] FLAG: --cert-file=&amp;quot;/srv/guard/pki/tls.crt&amp;quot; I0830 16:41:59.920032 1 logs.go:19] FLAG: --help=&amp;quot;false&amp;quot; I0830 16:41:59.920039 1 logs.go:19] FLAG: --key-file=&amp;quot;/srv/guard/pki/tls.key&amp;quot; I0830 16:41:59.920067 1 logs.go:19] FLAG: --log_backtrace_at=&amp;quot;:0&amp;quot; I0830 16:41:59.</description>
-    </item>
-    
-    <item>
-      <title>Uninstall</title>
-      <link>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/uninstall/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/uninstall/</guid>
-      <description>Uninstall Guard Please follow the steps below to uninstall Guard:
- Delete the various objects created for Guard operator.
-$ curl -fsSL https://raw.githubusercontent.com/appscode/guard/0.4.0/hack/deploy/uninstall.sh | bash + kubectl delete deployment -l app=guard -n kube-system deployment &amp;quot;guard&amp;quot; deleted + kubectl delete service -l app=guard -n kube-system service &amp;quot;guard&amp;quot; deleted + kubectl delete serviceaccount -l app=guard -n kube-system No resources found + kubectl delete clusterrolebindings -l app=guard -n kube-system No resources found + kubectl delete clusterrole -l app=guard -n kube-system No resources found  Now, wait several seconds for Guard to stop running.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Setup | Guard on Kubernetes Anywhere — for Everybody</title><link>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/</link><description>Recent content in Setup | Guard on Kubernetes Anywhere — for Everybody</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/index.xml" rel="self" type="application/rss+xml"/><item><title>Install</title><link>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/install/</guid><description>New to Guard? Please start here.
+Installation Guide Guard binary works as a cli and server. In cli mode, you can use guard to generate various configuration to easily deploy Guard server. Guard server uses TLS client auth to secure the communication channel between Kubernetes api server and Guard server. You can run Guard server external to a Kubernetes cluster. This document shows you how to self-host Guard server in a Kubernetes cluster.</description></item><item><title>Install Kops</title><link>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/install-kops/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/install-kops/</guid><description>New to Guard? Please start here.
+Kops Installation Guide Kops is a popular installer for production grade Kubernetes clusters. Please start here to get an overview of installation steps. This document only shows distinctions during Kops setup of guard.
+During Initialize PKI For creation of guard server config you need a free cluster ip. There is an easy trick which helps to find it in most cases: Just find out your nonMasqueradeCIDR through kops edit cluster --name &amp;lt;cluster_name&amp;gt; and then add x.</description></item><item><title>Install Kubespray</title><link>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/install-kubespray/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/install-kubespray/</guid><description>New to Guard? Please start here.
+Kubespray Installation Guide Kubespray (originally called Kargo) is a preferred choice for deploying customized production grade Kubernetes clusters, particularly for those who are comfortable with Ansible. Using Kubespray, you can deploy a cluster on GCE, Azure, OpenStack, AWS, or Baremetal, along with a choice of various network plugins.
+This document shows how to configure GitHub as Kubernetes authenticator, the configuration for other authenticators should be similar.</description></item><item><title>Table of Contents | Setup</title><link>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/</guid><description>Setup Setup contains instructions for installing the Guard and its various components in Kubernetes.
+Install. Installation instructions for Guard cli and server. Install in Kops. Installation instructions for Kops. Install in Kubespray. Installation instructions for Kubespray. Uninstall Guard. Instructions for uninstalling Guard. Developer Guide Overview. Outlines everything you need to know from setting up your dev environment to how to build and test Guard. Release process. Steps for releasing a new version of Guard.</description></item><item><title>Troubleshoot Guard Installer</title><link>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/troubleshooting/</guid><description>New to Guard? Please start here.
+Troubleshooting How do I debug and fix bad certificate issues? Say, you are seeing logs like below in Guard server logs:
+I0830 16:41:59.919947 1 logs.go:19] FLAG: --alsologtostderr=&amp;quot;false&amp;quot; I0830 16:41:59.919987 1 logs.go:19] FLAG: --analytics=&amp;quot;true&amp;quot; I0830 16:41:59.920016 1 logs.go:19] FLAG: --ca-cert-file=&amp;quot;/srv/guard/pki/ca.crt&amp;quot; I0830 16:41:59.920026 1 logs.go:19] FLAG: --cert-file=&amp;quot;/srv/guard/pki/tls.crt&amp;quot; I0830 16:41:59.920032 1 logs.go:19] FLAG: --help=&amp;quot;false&amp;quot; I0830 16:41:59.920039 1 logs.go:19] FLAG: --key-file=&amp;quot;/srv/guard/pki/tls.key&amp;quot; I0830 16:41:59.920067 1 logs.go:19] FLAG: --log_backtrace_at=&amp;quot;:0&amp;quot; I0830 16:41:59.</description></item><item><title>Uninstall</title><link>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/uninstall/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/guard/0.4.0/setup/uninstall/</guid><description>Uninstall Guard Please follow the steps below to uninstall Guard:
+Delete the various objects created for Guard operator.
+$ curl -fsSL https://raw.githubusercontent.com/appscode/guard/0.4.0/hack/deploy/uninstall.sh | bash + kubectl delete deployment -l app=guard -n kube-system deployment &amp;quot;guard&amp;quot; deleted + kubectl delete service -l app=guard -n kube-system service &amp;quot;guard&amp;quot; deleted + kubectl delete serviceaccount -l app=guard -n kube-system No resources found + kubectl delete clusterrolebindings -l app=guard -n kube-system No resources found + kubectl delete clusterrole -l app=guard -n kube-system No resources found Now, wait several seconds for Guard to stop running.</description></item></channel></rss>

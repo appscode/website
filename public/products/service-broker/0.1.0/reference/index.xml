@@ -1,45 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Reference on The Kubernetes Company</title>
-    <link>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/reference/</link>
-    <description>Recent content in Reference on The Kubernetes Company</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/reference/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Service-Broker</title>
-      <link>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/reference/service-broker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/reference/service-broker/</guid>
-      <description>service-broker Synopsis Options  --alsologtostderr log to standard error as well as files --enable-analytics Send analytical events to Google Analytics (default true) -h, --help help for service-broker --log-flush-frequency duration Maximum number of seconds between log flushes (default 5s) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files (default true) --stderrthreshold severity logs at or above this threshold go to stderr --use-kubeapiserver-fqdn-for-aks if true, uses kube-apiserver FQDN for AKS cluster to workaround https://github.</description>
-    </item>
-    
-    <item>
-      <title>Service-Broker Run</title>
-      <link>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/reference/service-broker_run/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/reference/service-broker_run/</guid>
-      <description>service-broker run Launch AppsCode Service Broker
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reference on Kubernetes Anywhere — for Everybody</title><link>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/reference/</link><description>Recent content in Reference on Kubernetes Anywhere — for Everybody</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Service-Broker</title><link>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/reference/service-broker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/reference/service-broker/</guid><description>service-broker Synopsis Options --alsologtostderr log to standard error as well as files --enable-analytics Send analytical events to Google Analytics (default true) -h, --help help for service-broker --log-flush-frequency duration Maximum number of seconds between log flushes (default 5s) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files (default true) --stderrthreshold severity logs at or above this threshold go to stderr --use-kubeapiserver-fqdn-for-aks if true, uses kube-apiserver FQDN for AKS cluster to workaround https://github.</description></item><item><title>Service-Broker Run</title><link>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/reference/service-broker_run/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/reference/service-broker_run/</guid><description>service-broker run Launch AppsCode Service Broker
 Synopsis Launch AppsCode Service Broker
-service-broker run [flags]  Options  --async Indicates whether the broker is handling the requests asynchronously. --audit-log-batch-buffer-size int The size of the buffer to store events before batching and writing. Only used in batch mode. (default 10000) --audit-log-batch-max-size int The maximum size of a batch. Only used in batch mode. (default 1) --audit-log-batch-max-wait duration The amount of time to wait before force writing the batch that hadn&#39;t reached the max size.</description>
-    </item>
-    
-    <item>
-      <title>Service-Broker Version</title>
-      <link>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/reference/service-broker_version/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/reference/service-broker_version/</guid>
-      <description>service-broker version Prints binary version number.
+service-broker run [flags] Options --async Indicates whether the broker is handling the requests asynchronously. --audit-log-batch-buffer-size int The size of the buffer to store events before batching and writing. Only used in batch mode. (default 10000) --audit-log-batch-max-size int The maximum size of a batch. Only used in batch mode. (default 1) --audit-log-batch-max-wait duration The amount of time to wait before force writing the batch that hadn&#39;t reached the max size.</description></item><item><title>Service-Broker Version</title><link>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/reference/service-broker_version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/service-broker/0.1.0/reference/service-broker_version/</guid><description>service-broker version Prints binary version number.
 Synopsis Prints binary version number.
-service-broker version [flags]  Options  -h, --help help for version --short Print just the version number.  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --enable-analytics Send analytical events to Google Analytics (default true) --log-flush-frequency duration Maximum number of seconds between log flushes (default 5s) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files (default true) --stderrthreshold severity logs at or above this threshold go to stderr --use-kubeapiserver-fqdn-for-aks if true, uses kube-apiserver FQDN for AKS cluster to workaround https://github.</description>
-    </item>
-    
-  </channel>
-</rss>
+service-broker version [flags] Options -h, --help help for version --short Print just the version number. Options inherited from parent commands --alsologtostderr log to standard error as well as files --enable-analytics Send analytical events to Google Analytics (default true) --log-flush-frequency duration Maximum number of seconds between log flushes (default 5s) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files (default true) --stderrthreshold severity logs at or above this threshold go to stderr --use-kubeapiserver-fqdn-for-aks if true, uses kube-apiserver FQDN for AKS cluster to workaround https://github.</description></item></channel></rss>

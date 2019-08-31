@@ -1,962 +1,47 @@
-
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="theme-color" content="#2D9AED" />
-    
-    <title>Pharmer Home</title>
-    
-    
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
-    
-    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
-    
-    <link rel="stylesheet" href="/assets/css/bulma-tooltip.min.css" />
-    
-    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
-    
-    
-    <link rel="stylesheet" href="/assets/sass/main.css" />
-  </head>
-
-  <body class="pharmer">
-    
-
-    
-    
-    <header>
-      
-      
-      <div class="header-top fixed-menu-z-index">
-        <div class="container section">
-          <nav class="navbar">
-            <div class="navbar-brand">
-              <a class="navbar-item" href="https://appscode-v3-hugo.web.app">
-                <img src="/assets/images/products/appscode/appscode-logo.png" alt="AppsCode" />
-              </a>
-
-              <a
-                role="button"
-                class="navbar-burger burger"
-                aria-label="menu"
-                aria-expanded="false"
-                data-target="acNav1"
-              >
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </div>
-
-            <div id="acNav1" class="navbar-menu main-menu">
-              <div class="navbar-end">
-                
-                <div class="navbar-start">
-                  <div class="navbar-item has-dropdown ac-is-hoverable">
-                    <a class="navbar-link">
-                      Products
-                    </a>
-
-                    
-                    <div class="ac-megamenu">
-                      <div class="columns">
-                        <div class="column is-8">
-                          <div class="columns">
-                            <div class="column is-6 br-1">
-                              
-                              
-                              
-                              <a
-                                href="https://kubedb-v2-hugo.web.app"
-                                class="single-product-item is-kubedb"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/products/kubedb/kubedb-icon.png"
-                                      alt="KubeDB"
-                                    />
-                                  </div>
-                                  <h5>KubeDB</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>Run production-grade databases easily on Kubernetes</p>
-                                </div>
-                              </a>
-                              
-                              
-                              
-                              
-                              <a
-                                href="https://appscode-v3-hugo.web.app/products/stash/"
-                                class="single-product-item is-stash"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/products/stash/stash-icon.png"
-                                      alt="Stash"
-                                    />
-                                  </div>
-                                  <h5>Stash</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>Backup your Kubernetes Stateful Applications</p>
-                                </div>
-                              </a>
-                              
-                              
-                              
-                              
-                              <a
-                                href="https://kubevault-v1-hugo.web.app"
-                                class="single-product-item is-kubevault"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/products/kubevault/kubevault-icon.png"
-                                      alt="KubeVault"
-                                    />
-                                  </div>
-                                  <h5>KubeVault</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>Tools for running HashiCorp Vault on Kubernetes</p>
-                                </div>
-                              </a>
-                              
-                              
-                              
-                              
-                              <a
-                                href="https://appscode-v3-hugo.web.app/products/guard/"
-                                class="single-product-item is-guard"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/products/guard/guard-icon.png"
-                                      alt="Guard"
-                                    />
-                                  </div>
-                                  <h5>Guard</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>Kubernetes Authentication WebHook Server</p>
-                                </div>
-                              </a>
-                              
-                              
-                            </div>
-                            <div class="column is-6 br-1">
-                              
-                              
-                              
-                              <a
-                                href="https://appscode-v3-hugo.web.app/products/voyager/"
-                                class="single-product-item is-voyager"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/products/voyager/voyager-icon.png"
-                                      alt="Voyager"
-                                    />
-                                  </div>
-                                  <h5>Voyager</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>Secure HAProxy Ingress Controller for
-Kubernetes</p>
-                                </div>
-                              </a>
-                              
-                              
-                              
-                              
-                              <a
-                                href="https://appscode-v3-hugo.web.app/products/swift/"
-                                class="single-product-item is-swift"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/products/swift/swift-icon.png"
-                                      alt="Swift"
-                                    />
-                                  </div>
-                                  <h5>Swift</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>Ajax friendly Helm Tiller Proxy</p>
-                                </div>
-                              </a>
-                              
-                              
-                              
-                              
-                              <a
-                                href="https://appscode-v3-hugo.web.app/products/searchlight/"
-                                class="single-product-item is-searchlight"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/products/searchlight/searchlight-icon.png"
-                                      alt="Searchlight"
-                                    />
-                                  </div>
-                                  <h5>Searchlight</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>Alerts for Kubernetes</p>
-                                </div>
-                              </a>
-                              
-                              
-                              
-                              
-                              <a
-                                href="https://appscode-v3-hugo.web.app/products/service-broker/"
-                                class="single-product-item is-service-broker"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/products/service-broker/service-broker-icon.png"
-                                      alt="ServiceBroker"
-                                    />
-                                  </div>
-                                  <h5>ServiceBroker</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>Open Service Broker for AppsCode Kubernetes Operators</p>
-                                </div>
-                              </a>
-                              
-                              
-                            </div>
-                          </div>
-                        </div>
-                        <div class="column is-4">
-                          <div class="columns">
-                            <div class="column is-12">
-                              
-                              <a
-                                href="https://byte.builders"
-                                class="single-product-item byte-builder kd-orange"
-                              >
-                                <div class="menu-header">
-                                  <p class="intro">Introducing....</p>
-                                  <h5>Byte.builders</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>
-                                    The Kubernetes Cloud
-                                  </p>
-                                </div>
-                                <p class="learn-more-btn">
-                                  Learn more
-                                  <span class="icon"
-                                    ><i
-                                      class="fa fa-long-arrow-right"
-                                      aria-hidden="true"
-                                    ></i
-                                  ></span>
-                                </p>
-                              </a>
-                              
-
-                              
-                              
-                              
-                              <a
-                                href="https://appscode-v3-hugo.web.app/products/pharmer/"
-                                class="single-product-item is-pharmer"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/products/pharmer/pharmer-icon.png"
-                                      alt="Pharmer"
-                                    />
-                                  </div>
-                                  <h5>Pharmer</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>Kubernetes Cluster Manager using Kubeadm &amp; Cluster API</p>
-                                </div>
-                              </a>
-                              
-                              
-                              
-                              
-                              <a
-                                href="https://appscode-v3-hugo.web.app/products/kubed/"
-                                class="single-product-item is-kubed"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="/assets/images/products/kubed/kubed-icon.png"
-                                      alt="Kubed"
-                                    />
-                                  </div>
-                                  <h5>Kubed</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>Kubernetes cluster manager daemon</p>
-                                </div>
-                              </a>
-                              
-                              
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="columns has-text-centered">
-                        <div class="column">
-                          <div class="menu-bottom">
-                            <p>
-                              Explore refreshing apps and integrations for
-                              AppsCode products:
-                              <a href="https://marketplace.byte.builders">
-                                Visit the Marketplace
-                                <i
-                                  class="fa fa-long-arrow-right"
-                                  aria-hidden="true"
-                                ></i
-                              ></a>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-
-                  <div class="navbar-item has-dropdown ac-is-hoverable">
-                      <a class="navbar-link">
-                          Services
-                      </a>
-
-                      <div class="ac-dropdown">
-                          <a class="navbar-item" href="https://appscode-v3-hugo.web.app/consulting/" >
-                              Consulting
-                          </a>
-                          <a class="navbar-item" href="https://appscode-v3-hugo.web.app/training/" >
-                              Training
-                          </a>
-                          <a class="navbar-item" href="https://appscode-v3-hugo.web.app/support/" >
-                              Support
-                          </a>
-                      </div>
-                  </div>
-
-                  <a class="navbar-item" href="https://blog.byte.builders" >
-                    Blog
-                  </a>
-                  <a class="navbar-item" href="https://appscode-v3-hugo.web.app/contact/" >
-                    Contact Us
-                  </a>
-                </div>
-                
-                <div class="navbar-item">
-                  <div class="buttons main-menu-button-top">
-                    <a class="button is-small for-chat" href="https://slack.appscode.com">
-                      <span
-                        ><img
-                          src="/assets/images/icon/slack.png"
-                          alt=""/></span
-                      >Slack
-                    </a>
-                    <a class="button is-small for-support" href="https://appscode.freshdesk.com">
-                      <span
-                        ><img
-                          src="/assets/images/icon/chat.png"
-                          alt=""/></span
-                      >Support
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-      
-      
-
-      
-
-      
-
-      
-      <div
-        class="header-bottom-area header-area kubedb-primary-bg customize-kubedb  fixed-menu"
-      >
-        <div class="container section">
-          <nav class="navbar">
-            <div class="navbar-brand">
-              
-              
-                
-              
-              <a class="navbar-item" href="https://appscode-v3-hugo.web.app/products/pharmer/">
-                <img src="/assets/images/products/pharmer/pharmer-logo-white.png" alt="Pharmer" />
-              </a>
-              <a
-                role="button"
-                class="navbar-burger burger"
-                aria-label="menu"
-                aria-expanded="false"
-                data-target="acNav"
-              >
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </div>
-
-            <div id="acNav" class="navbar-menu main-menu">
-              <div class="navbar-end">
-                
-                  
-                    
-                    <div class="navbar-start">
-                    
-                    
-                      
-                        
-                          <a href="/products/pharmer/features/" class="navbar-item">Features</a>
-                        
-                      
-                    
-                      
-                        
-                          <a href="/products/pharmer/pricing/" class="navbar-item">Commercial Support</a>
-                        
-                      
-                    
-                      
-                        
-                          <a href="/products/pharmer/0.3.1/welcome/">Documentation</a>
-                        
-                      
-                    
-                      
-                        <div class="navbar-item has-dropdown ac-is-hoverable">
-                          <a class="navbar-link">Community</a>
-                          <div class="ac-dropdown">
-                            
-                              
-                                <a href="https://github.com/pharmer" class="navbar-item">GitHub</a>
-                              
-                            
-                              
-                                <a href="https://twitter.com/AppsCodeHQ" class="navbar-item">Twitter</a>
-                              
-                            
-                              
-                                <a href="http://slack.kubernetes.io/" class="navbar-item">Slack</a>
-                              
-                            
-                          </div>
-                        </div>
-                      
-                    
-                    </div>
-                    
-
-                    
-                    <div class="navbar-item">
-                      <div class="buttons main-menu-button">
-                        
-                        <a
-                          class="github-button"
-                          href="https://github.com/pharmer/pharmer"
-                          data-size="large"
-                          data-show-count="true"
-                          aria-label="Star pharmer/pharmer on GitHub"
-                        >Star</a>
-                        
-                        <script async defer src="https://buttons.github.io/buttons.js"></script>
-                      </div>
-                    </div>
-                  
-                
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-      
-      
-
-      
-
-
-
-
-<div class="documentation-menu">
-  <div class="container section">
-    <div class="columns is-centered">
-      <div class="column is-half has-text-centered">
-        
-        <div class="responsive-menu">
-          <a
-            role="button"
-            class="navbar-burger burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="acNav3"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-        
-        
-        <nav class="documentation-navbar">
-          <div id="acNav3" class="navbar-menu nav-menu main-menu">
-            <div class="navbar-centered">
-              
-              <div class="navbar-start">
-                
-                
-                  
-                    
-                      <a href="/products/pharmer/0.3.1/" class=" navbar-item">Getting Started</a>
-                    
-                  
-                    
-                      <div class="navbar-item has-dropdown ac-is-hoverable">
-                        <a class="navbar-link">
-                          Cloud
-                        </a>
-                        <div class="ac-dropdown">
-                          
-                            
-                              <a href="/products/pharmer/0.3.1/cloud/aws/" class="navbar-item">AWS</a>
-                            
-                          
-                            
-                              <a href="/products/pharmer/0.3.1/cloud/gce/" class="navbar-item">GCE</a>
-                            
-                          
-                            
-                              <a href="/products/pharmer/0.3.1/cloud/azure/" class="navbar-item">Azure</a>
-                            
-                          
-                            
-                              <a href="/products/pharmer/0.3.1/cloud/digitalocean/" class="navbar-item">DigitalOcean</a>
-                            
-                          
-                            
-                              <a href="/products/pharmer/0.3.1/cloud/eks/" class="navbar-item">Amazon EKS</a>
-                            
-                          
-                            
-                              <a href="/products/pharmer/0.3.1/cloud/linode/" class="navbar-item">Linode</a>
-                            
-                          
-                            
-                              <a href="/products/pharmer/0.3.1/cloud/gke/" class="navbar-item">GKE</a>
-                            
-                          
-                            
-                              <a href="/products/pharmer/0.3.1/cloud/aks/" class="navbar-item">Amazon AKS</a>
-                            
-                          
-                            
-                              <a href="/products/pharmer/0.3.1/cloud/packet/" class="navbar-item">Packet</a>
-                            
-                          
-                        </div>
-                      </div>
-                    
-                  
-                    
-                      <a href="/products/pharmer/0.3.1/cli/" class=" navbar-item">CLI</a>
-                    
-                  
-                    
-                      <a href="/products/pharmer/0.3.1/developer-guide/" class=" navbar-item">Developer Guide</a>
-                    
-                  
-                    
-                      <a href="/products/pharmer/0.3.1/reference/" class=" navbar-item">Reference</a>
-                    
-                  
-                    
-                      <a href="" class=" navbar-item">digitalocean</a>
-                    
-                  
-                
-              </div>
-              
-            </div>
-          </div>
-        </nav>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-
-    </header>
-    
-    
-
-    
-    
-
-
-
-
-
-
-
-
-
-<div class="documentation-area">
-  <div class="container section">
-    <div class="columns">
-      <div class="column is-3">
-        
-        <div class="kd-left-sidebar">
-          
-            
-            
-            
-            
-
-            <div class="trial-button">
-              <a href="/products/pharmer/0.3.1/setup/" class="button is-fullwidth">
-                Try Now for FREE!
-              </a>
-            </div>
-
-            <div class="kd-version">
-              <div class="dropdown">
-                <div class="dropdown-trigger">
-                  <button
-                    class="button is-fullwidth"
-                    aria-haspopup="true"
-                    aria-controls="dropdown-menu3"
-                  >
-
-                    
-                      
-                      
-                        
-                      
-                    
-                      
-                      
-                        
-                          <span><strong class="icon"><i class="fa fa-cog" aria-hidden="true"></i></strong>0.3.1</span>
-                        
-                          <span class="new-item">Latest</span>
-                        
-                        
-                      
-                    
-
-                    <span class="icon is-small">
-                      <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </span>
-                  </button>
-                </div>
-                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                  <div class="dropdown-content">
-                    
-                      
-                      
-                        
-                          <a href="https://github.com/pharmer/docs/tree/master/docs" target="_blank" class="dropdown-item">master</a>
-                        
-                      
-                    
-                      
-                      
-                        
-                          <a href="/products/pharmer/0.3.1/" class="dropdown-item">0.3.1   <div class="tag">Latest</div> </a>
-                        
-                      
-                    
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          
-
-          
-            
-            
-              
-            
-              
-                
-                  
-
-                  
-                  
-                    
-
-                      
-
-                    
-                  
-                    
-                  
-                    
-                  
-                    
-                  
-                    
-                  
-                    
-                  
-                    
-                  
-                    
-                  
-                    
-                  
-                
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-          
-
-          
-          <div class="kd-sidebar-menu">
-            
-              
-
-              
-              
-
-                
-              
-
-                
-                  
-
-                  
-                  
-
-                    
-                      
-                        
-
-                            
-                              
-                                
-
-
-
-
-
-
-<div class="item">
-  <input type="checkbox" id="d42915c2ce16e720afb9a3060f560cd8-1" checked>
-  <label for="d42915c2ce16e720afb9a3060f560cd8-1"><a href="/products/pharmer/0.3.1/cloud/aws/">Overview</a></label>
-</div>
-
-
-                              
-                            
-
-                        
-                      
-
-                    
-                    
-                  
-
-                    
-                      
-                        
-                      
-
-                    
-                    
-                  
-
-                    
-                      
-                        
-                      
-
-                    
-                    
-                  
-
-                    
-                      
-
-
-
-
-
-
-<div class="item">
-  <input type="checkbox" id="d42915c2ce16e720afb9a3060f560cd8-2" >
-  <label for="d42915c2ce16e720afb9a3060f560cd8-2"><a href="/products/pharmer/0.3.1/cloud/digitalocean/">DigitalOcean</a></label>
-</div>
-
-
-                    
-                    
-                  
-
-                    
-                      
-                        
-                      
-
-                    
-                    
-                  
-
-                    
-                      
-                        
-                      
-
-                    
-                    
-                  
-
-                    
-                      
-
-
-
-
-
-
-<div class="item">
-  <input type="checkbox" id="d42915c2ce16e720afb9a3060f560cd8-3" >
-  <label for="d42915c2ce16e720afb9a3060f560cd8-3"><a href="/products/pharmer/0.3.1/cloud/gke/">GKE</a></label>
-</div>
-
-
-                    
-                    
-                  
-
-                    
-                      
-
-
-
-
-
-
-<div class="item">
-  <input type="checkbox" id="d42915c2ce16e720afb9a3060f560cd8-4" >
-  <label for="d42915c2ce16e720afb9a3060f560cd8-4"><a href="/products/pharmer/0.3.1/cloud/aks/">Amazon AKS</a></label>
-</div>
-
-
-                    
-                    
-                  
-
-                    
-                      
-                        
-                      
-
-                    
-                    
-                  
-                  
-
-                
-              
-
-                
-              
-
-                
-              
-
-                
-              
-
-                
-              
-              
-            
-          </div>
-          
-        </div>
-        
-      </div>
-      <div class="column is-7">
-        <div class="full-info">
-          
-
-<h1 id="running-kubernetes-on-aws-https-aws-amazon-com">Running Kubernetes on <a href="https://aws.amazon.com">AWS</a></h1>
-
-<p>Following example will use <code>pharmer</code> to create a Kubernetes cluster with 1 worker nodes and 3 master nodes (i,e, 4 nodes in your cluster).</p>
-
-<h3 id="before-you-start">Before you start</h3>
-
-<p>As a prerequisite, you need to have <code>pharmer</code> installed.  To install <code>pharmer</code> run the following command.</p>
-
-<pre><code class="language-console">$ mkdir -p $(go env GOPATH)/src/github.com/pharmer
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=theme-color content=#2D9AED><title>Pharmer Home</title><link rel="shortcut icon" type=image/x-icon href=favicon.ico><link rel=stylesheet href=/assets/css/font-awesome.min.css><link rel=stylesheet href=/assets/css/bulma-carousel.min.css><link rel=stylesheet href=/assets/css/bulma-tooltip.min.css><link rel=stylesheet href=/assets/css/bulma.min.css><link rel=stylesheet href=/assets/sass/main.min.662f6c596c69aab75489b04ee489582a9984da98b06f049b1c447782060ba5b3.css></head><body class=pharmer><header><div class="header-top fixed-menu-z-index"><div class="container section"><nav class=navbar><div class=navbar-brand><a class=navbar-item href=https://appscode-v3-hugo.web.app><img src=https://cdn.appscode.com/images/products/appscode/appscode-logo.png alt=AppsCode></a>
+<a role=button class="navbar-burger burger" aria-label=menu aria-expanded=false data-target=acNav1><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=acNav1 class="navbar-menu main-menu"><div class=navbar-end><div class=navbar-start><div class="navbar-item has-dropdown ac-is-hoverable"><a class=navbar-link>Products</a><div class=ac-megamenu><div class=columns><div class="column is-8"><div class=columns><div class="column is-6 br-1"><a href=https://kubedb-v2-hugo.web.app class="single-product-item is-kubedb"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/kubedb/kubedb-icon.png alt=KubeDB></div><h5>KubeDB</h5></div><div class=menu-body><p>Run production-grade databases easily on Kubernetes</p></div></a><a href=https://appscode-v3-hugo.web.app/products/stash/ class="single-product-item is-stash"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/stash/stash-icon.png alt=Stash></div><h5>Stash</h5></div><div class=menu-body><p>Backup your Kubernetes Stateful Applications</p></div></a><a href=https://kubevault-v1-hugo.web.app class="single-product-item is-kubevault"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/kubevault/kubevault-icon.png alt=KubeVault></div><h5>KubeVault</h5></div><div class=menu-body><p>Tools for running HashiCorp Vault on Kubernetes</p></div></a><a href=https://appscode-v3-hugo.web.app/products/guard/ class="single-product-item is-guard"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/guard/guard-icon.png alt=Guard></div><h5>Guard</h5></div><div class=menu-body><p>Kubernetes Authentication WebHook Server</p></div></a></div><div class="column is-6 br-1"><a href=https://appscode-v3-hugo.web.app/products/voyager/ class="single-product-item is-voyager"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/voyager/voyager-icon.png alt=Voyager></div><h5>Voyager</h5></div><div class=menu-body><p>Secure HAProxy Ingress Controller for
+Kubernetes</p></div></a><a href=https://appscode-v3-hugo.web.app/products/swift/ class="single-product-item is-swift"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/swift/swift-icon.png alt=Swift></div><h5>Swift</h5></div><div class=menu-body><p>Ajax friendly Helm Tiller Proxy</p></div></a><a href=https://appscode-v3-hugo.web.app/products/searchlight/ class="single-product-item is-searchlight"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/searchlight/searchlight-icon.png alt=Searchlight></div><h5>Searchlight</h5></div><div class=menu-body><p>Alerts for Kubernetes</p></div></a><a href=https://appscode-v3-hugo.web.app/products/service-broker/ class="single-product-item is-service-broker"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/service-broker/service-broker-icon.png alt=ServiceBroker></div><h5>ServiceBroker</h5></div><div class=menu-body><p>Open Service Broker for AppsCode Kubernetes Operators</p></div></a></div></div></div><div class="column is-4"><div class=columns><div class="column is-12"><a href=https://byte.builders class="single-product-item byte-builder kd-orange"><div class=menu-header><p class=intro>Introducing....</p><h5>Byte.builders</h5></div><div class=menu-body><p>The Kubernetes Cloud</p></div><p class=learn-more-btn>Learn more
+<span class=icon><i class="fa fa-long-arrow-right" aria-hidden=true></i></span></p></a><a href=https://appscode-v3-hugo.web.app/products/pharmer/ class="single-product-item is-pharmer"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/pharmer/pharmer-icon.png alt=Pharmer></div><h5>Pharmer</h5></div><div class=menu-body><p>Kubernetes Cluster Manager using Kubeadm &amp; Cluster API</p></div></a><a href=https://appscode-v3-hugo.web.app/products/kubed/ class="single-product-item is-kubed"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/kubed/kubed-icon.png alt=Kubed></div><h5>Kubed</h5></div><div class=menu-body><p>Kubernetes cluster manager daemon</p></div></a></div></div></div></div><div class="columns has-text-centered"><div class=column><div class=menu-bottom><p>Explore refreshing apps and integrations for
+AppsCode products:
+<a href=https://marketplace.byte.builders>Visit the Marketplace
+<i class="fa fa-long-arrow-right" aria-hidden=true></i></a></p></div></div></div></div></div><div class="navbar-item has-dropdown ac-is-hoverable"><a class=navbar-link>Services</a><div class=ac-dropdown><a class=navbar-item href=https://appscode-v3-hugo.web.app/consulting/>Consulting</a>
+<a class=navbar-item href=https://appscode-v3-hugo.web.app/training/>Training</a>
+<a class=navbar-item href=https://appscode-v3-hugo.web.app/support/>Support</a></div></div><a class=navbar-item href=https://blog.byte.builders>Blog</a>
+<a class=navbar-item href=https://appscode-v3-hugo.web.app/contact/>Contact Us</a></div><div class=navbar-item><div class="buttons main-menu-button-top"><a class="button is-small for-chat" href=https://slack.appscode.com><span><img src=/assets/images/icon/slack.png alt></span>Slack</a>
+<a class="button is-small for-support" href=https://appscode.freshdesk.com><span><img src=/assets/images/icon/chat.png alt></span>Support</a></div></div></div></div></nav></div></div><div class="header-bottom-area header-area kubedb-primary-bg customize-kubedb  fixed-menu"><div class="container section"><nav class=navbar><div class=navbar-brand><a class=navbar-item href=https://appscode-v3-hugo.web.app/products/pharmer/><img src=https://cdn.appscode.com/images/products/pharmer/pharmer-logo-white.png alt=Pharmer></a>
+<a role=button class="navbar-burger burger" aria-label=menu aria-expanded=false data-target=acNav><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=acNav class="navbar-menu main-menu"><div class=navbar-end><div class=navbar-start><a href=/products/pharmer/features/ class=navbar-item>Features</a>
+<a href=/products/pharmer/pricing/ class=navbar-item>Commercial Support</a>
+<a href=/products/pharmer/0.3.1/welcome/>Documentation</a><div class="navbar-item has-dropdown ac-is-hoverable"><a class=navbar-link>Community</a><div class=ac-dropdown><a href=https://github.com/pharmer class=navbar-item>GitHub</a>
+<a href=https://twitter.com/AppsCodeHQ class=navbar-item>Twitter</a>
+<a href=http://slack.kubernetes.io/ class=navbar-item>Slack</a></div></div></div><div class=navbar-item><div class="buttons main-menu-button"><a class=github-button href=https://github.com/pharmer/pharmer data-size=large data-show-count=true aria-label="Star pharmer/pharmer on GitHub">Star</a>
+<script async defer src=https://buttons.github.io/buttons.js></script></div></div></div></div></nav></div></div><div class=documentation-menu><div class="container section"><div class="columns is-centered"><div class="column is-half has-text-centered"><div class=responsive-menu><a role=button class="navbar-burger burger" aria-label=menu aria-expanded=false data-target=acNav3><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><nav class=documentation-navbar><div id=acNav3 class="navbar-menu nav-menu main-menu"><div class=navbar-centered><div class=navbar-start><a href=/products/pharmer/0.3.1/ class=navbar-item>Getting Started</a><div class="navbar-item has-dropdown ac-is-hoverable"><a class=navbar-link>Cloud</a><div class=ac-dropdown><a href=/products/pharmer/0.3.1/cloud/aws/ class=navbar-item>AWS</a>
+<a href=/products/pharmer/0.3.1/cloud/gce/ class=navbar-item>GCE</a>
+<a href=/products/pharmer/0.3.1/cloud/azure/ class=navbar-item>Azure</a>
+<a href=/products/pharmer/0.3.1/cloud/digitalocean/ class=navbar-item>DigitalOcean</a>
+<a href=/products/pharmer/0.3.1/cloud/eks/ class=navbar-item>Amazon EKS</a>
+<a href=/products/pharmer/0.3.1/cloud/linode/ class=navbar-item>Linode</a>
+<a href=/products/pharmer/0.3.1/cloud/gke/ class=navbar-item>GKE</a>
+<a href=/products/pharmer/0.3.1/cloud/aks/ class=navbar-item>Amazon AKS</a>
+<a href=/products/pharmer/0.3.1/cloud/packet/ class=navbar-item>Packet</a></div></div><a href=/products/pharmer/0.3.1/cli/ class=navbar-item>CLI</a>
+<a href=/products/pharmer/0.3.1/developer-guide/ class=navbar-item>Developer Guide</a>
+<a href=/products/pharmer/0.3.1/reference/ class=navbar-item>Reference</a>
+<a href class=navbar-item>digitalocean</a></div></div></div></nav></div></div></div></div></header><div class=documentation-area><div class="container section"><div class=columns><div class="column is-3"><div class=kd-left-sidebar><div class=trial-button><a href=/products/pharmer/0.3.1/setup/ class="button is-fullwidth">Try Now for FREE!</a></div><div class=kd-version><div class=dropdown><div class=dropdown-trigger><button class="button is-fullwidth" aria-haspopup=true aria-controls=dropdown-menu3>
+<span><strong class=icon><i class="fa fa-cog" aria-hidden=true></i></strong>0.3.1</span>
+<span class=new-item>Latest</span>
+<span class="icon is-small"><i class="fa fa-angle-down" aria-hidden=true></i></span></button></div><div class=dropdown-menu id=dropdown-menu3 role=menu><div class=dropdown-content><a href=https://github.com/pharmer/docs/tree/master/docs target=_blank class=dropdown-item>master</a>
+<a href=/products/pharmer/0.3.1/ class=dropdown-item>0.3.1<div class=tag>Latest</div></a></div></div></div></div><div class=kd-sidebar-menu><div class=item><input type=checkbox id=d42915c2ce16e720afb9a3060f560cd8-1 checked>
+<label for=d42915c2ce16e720afb9a3060f560cd8-1><a href=/products/pharmer/0.3.1/cloud/aws/>Overview</a></label></div><div class=item><input type=checkbox id=d42915c2ce16e720afb9a3060f560cd8-2>
+<label for=d42915c2ce16e720afb9a3060f560cd8-2><a href=/products/pharmer/0.3.1/cloud/digitalocean/>DigitalOcean</a></label></div><div class=item><input type=checkbox id=d42915c2ce16e720afb9a3060f560cd8-3>
+<label for=d42915c2ce16e720afb9a3060f560cd8-3><a href=/products/pharmer/0.3.1/cloud/gke/>GKE</a></label></div><div class=item><input type=checkbox id=d42915c2ce16e720afb9a3060f560cd8-4>
+<label for=d42915c2ce16e720afb9a3060f560cd8-4><a href=/products/pharmer/0.3.1/cloud/aks/>Amazon AKS</a></label></div></div></div></div><div class="column is-7"><div class=full-info><h1 id=running-kubernetes-on-aws-https-aws-amazon-com>Running Kubernetes on <a href=https://aws.amazon.com>AWS</a></h1><p>Following example will use <code>pharmer</code> to create a Kubernetes cluster with 1 worker nodes and 3 master nodes (i,e, 4 nodes in your cluster).</p><h3 id=before-you-start>Before you start</h3><p>As a prerequisite, you need to have <code>pharmer</code> installed. To install <code>pharmer</code> run the following command.</p><pre><code class=language-console>$ mkdir -p $(go env GOPATH)/src/github.com/pharmer
 $ cd $(go env GOPATH)/src/github.com/pharmer
 $ git clone https://github.com/pharmer/pharmer
 $ cd pharmer
 $ ./hack/make.py
 
 $ pharmer -h
-</code></pre>
-
-<h3 id="pharmer-storage">Pharmer storage</h3>
-
-<p>To store your cluster  and credential resource, <code>pharmer</code> use <a href="/products/pharmer/0.3.1/cli/vfs">vfs</a> as default storage provider. There is another provider <a href="/products/pharmer/0.3.1/cli/xorm">postgres database</a> available for storing resources.</p>
-
-<p>To know more click <a href="/products/pharmer/0.3.1/cli/datastore">here</a></p>
-
-<p>In this document we will use local file system (<a href="/products/pharmer/0.3.1/cli/vfs">vfs</a>) as a storage provider.</p>
-
-<h3 id="credential-importing">Credential importing</h3>
-
-<h4 id="setup-iam-user">Setup IAM User</h4>
-
-<p>In order to create cluster within <a href="https://aws.amazon.com/">AWS</a>, <code>pharmer</code> needs a dedicated IAM user. <code>pharmer</code> use this user&rsquo;s API credential.</p>
-
-<p>The <code>pharmer</code> user needs following permission to works properly.</p>
-
-<p><img src="/products/pharmer/0.3.1/images/aws/pharmer-iam.png" alt="pharmer-iam" /></p>
-
-<p>If you have installed <a href="http://docs.aws.amazon.com/cli/latest/userguide/installing.html">aws cli</a> locally, then you can use the following
-command to create <code>pharmer</code> IAM user.</p>
-
-<pre><code class="language-console">$ aws iam create-group --group-name pharmer
+</code></pre><h3 id=pharmer-storage>Pharmer storage</h3><p>To store your cluster and credential resource, <code>pharmer</code> use <a href=/products/pharmer/0.3.1/cli/vfs>vfs</a> as default storage provider. There is another provider <a href=/products/pharmer/0.3.1/cli/xorm>postgres database</a> available for storing resources.</p><p>To know more click <a href=/products/pharmer/0.3.1/cli/datastore>here</a></p><p>In this document we will use local file system (<a href=/products/pharmer/0.3.1/cli/vfs>vfs</a>) as a storage provider.</p><h3 id=credential-importing>Credential importing</h3><h4 id=setup-iam-user>Setup IAM User</h4><p>In order to create cluster within <a href=https://aws.amazon.com/>AWS</a>, <code>pharmer</code> needs a dedicated IAM user. <code>pharmer</code> use this user&rsquo;s API credential.</p><p>The <code>pharmer</code> user needs following permission to works properly.</p><p><img src=/products/pharmer/0.3.1/images/aws/pharmer-iam.png alt=pharmer-iam></p><p>If you have installed <a href=http://docs.aws.amazon.com/cli/latest/userguide/installing.html>aws cli</a> locally, then you can use the following
+command to create <code>pharmer</code> IAM user.</p><pre><code class=language-console>$ aws iam create-group --group-name pharmer
 
 $ aws iam attach-group-policy --policy-arn arn:aws:iam::aws:policy/AmazonEC2FullAccess --group-name pharmer
 $ aws iam attach-group-policy --policy-arn arn:aws:iam::aws:policy/AmazonRoute53FullAccess --group-name pharmer
@@ -966,22 +51,8 @@ $ aws iam create-user --user-name pharmer
 
 $ aws iam add-user-to-group --user-name pharmer --group-name pharmer
 $ aws iam create-access-key --user-name pharmer
-</code></pre>
-
-<p>Use this access key while importing credentials on pharmer</p>
-
-<p>From command line, run the following command and paste those keys.</p>
-
-<pre><code class="language-console">$ pharmer create credential aws
-</code></pre>
-
-<p><img src="/products/pharmer/0.3.1/images/aws/aws-credential.png" alt="aws-credential" /></p>
-
-<p>Here, <code>aws</code> is the credential name, which must be unique within your storage.</p>
-
-<p>To view credential file you can run:</p>
-
-<pre><code class="language-yaml">$ pharmer get credentials aws -o yaml
+</code></pre><p>Use this access key while importing credentials on pharmer</p><p>From command line, run the following command and paste those keys.</p><pre><code class=language-console>$ pharmer create credential aws
+</code></pre><p><img src=/products/pharmer/0.3.1/images/aws/aws-credential.png alt=aws-credential></p><p>Here, <code>aws</code> is the credential name, which must be unique within your storage.</p><p>To view credential file you can run:</p><pre><code class=language-yaml>$ pharmer get credentials aws -o yaml
 apiVersion: v1beta1
 kind: Credential
 metadata:
@@ -992,62 +63,19 @@ spec:
     accessKeyID: &lt;key-id&gt;
     secretAccessKey: &lt;access-key&gt;
   provider: aws
-</code></pre>
-
-<p>Here,
- - <code>spec.data.accessKeyID</code> is the aws access key id
- - <code>spec.data.secretAccessKey</code> is the security access key that you provided which can be edited by following command:</p>
-
-<pre><code class="language-console">$ pharmer edit credential aws
-</code></pre>
-
-<p>To see the all credentials you need to run following command.</p>
-
-<pre><code class="language-console">$ pharmer get credentials
+</code></pre><p>Here,
+- <code>spec.data.accessKeyID</code> is the aws access key id
+- <code>spec.data.secretAccessKey</code> is the security access key that you provided which can be edited by following command:</p><pre><code class=language-console>$ pharmer edit credential aws
+</code></pre><p>To see the all credentials you need to run following command.</p><pre><code class=language-console>$ pharmer get credentials
 NAME         Provider       Data
 aws          aws            accessKeyID=AKIAJKUZAD3HM7OEKPNA, secretAccessKey=*****
-</code></pre>
-
-<p>You can also see the stored credential from the following location:</p>
-
-<pre><code class="language-console">~/.pharmer/store.d/$USER/credentials/aws.json
-</code></pre>
-
-<h4 id="cluster-iam-user">Cluster IAM User</h4>
-
-<p>While creating cluster within AWS <code>pharmer</code> creates following IAM roles and policies
- * <a href="https://github.com/pharmer/pharmer/blob/0.3.1/cloud/providers/aws/iam.go#L6">IAM master policy</a>
- * <a href="https://github.com/pharmer/pharmer/blob/0.3.1/cloud/providers/aws/iam.go#L77">IAM controller policy</a>
- * <a href="https://github.com/pharmer/pharmer/blob/0.3.1/cloud/providers/aws/iam.go#L160">IAM master role</a>
- * <a href="https://github.com/pharmer/pharmer/blob/0.3.1/cloud/providers/aws/iam.go#L175">IAM node policy</a>
- * <a href="https://github.com/pharmer/pharmer/blob/0.3.1/cloud/providers/aws/iam.go#L200">IAM node role</a></p>
-
-<h3 id="cluster-provisioning">Cluster provisioning</h3>
-
-<p>There are two steps to create a Kubernetes cluster using <code>pharmer</code>. In first step <code>pharmer</code> create basic configuration file with user choice. Then in second step <code>pharmer</code> applies those information to create cluster on specific provider.</p>
-
-<p>Here, we discuss how to use <code>pharmer</code> to create a Kubernetes cluster on <code>aws</code></p>
-
-<h4 id="cluster-creating">Cluster Creating</h4>
-
-<p>We want to create a cluster with following information:</p>
-
-<ul>
-<li>Provider: aws</li>
-<li>Cluster name: aws</li>
-<li>Location: us-east-1b</li>
-<li>Number of master nodes: 3</li>
-<li>Number of worker nodes: 1</li>
-<li>Worker Node sku: t2.medium (cpu: 2, memory: 4 Gb)</li>
-<li>Kubernetes version: v1.13.5</li>
-<li>Credential name: <a href="#credential-importing">aws</a></li>
-</ul>
-
-<p>For location code and sku details click <a href="https://github.com/pharmer/cloud/blob/master/data/json/apis/cloud.pharmer.io/v1/cloudproviders/aws.json">hrere</a></p>
-
-<p>Available options in <code>pharmer</code> to create a cluster are:</p>
-
-<pre><code class="language-console"> $ pharmer create cluster -h
+</code></pre><p>You can also see the stored credential from the following location:</p><pre><code class=language-console>~/.pharmer/store.d/$USER/credentials/aws.json
+</code></pre><h4 id=cluster-iam-user>Cluster IAM User</h4><p>While creating cluster within AWS <code>pharmer</code> creates following IAM roles and policies
+* <a href=https://github.com/pharmer/pharmer/blob/0.3.1/cloud/providers/aws/iam.go#L6>IAM master policy</a>
+* <a href=https://github.com/pharmer/pharmer/blob/0.3.1/cloud/providers/aws/iam.go#L77>IAM controller policy</a>
+* <a href=https://github.com/pharmer/pharmer/blob/0.3.1/cloud/providers/aws/iam.go#L160>IAM master role</a>
+* <a href=https://github.com/pharmer/pharmer/blob/0.3.1/cloud/providers/aws/iam.go#L175>IAM node policy</a>
+* <a href=https://github.com/pharmer/pharmer/blob/0.3.1/cloud/providers/aws/iam.go#L200>IAM node role</a></p><h3 id=cluster-provisioning>Cluster provisioning</h3><p>There are two steps to create a Kubernetes cluster using <code>pharmer</code>. In first step <code>pharmer</code> create basic configuration file with user choice. Then in second step <code>pharmer</code> applies those information to create cluster on specific provider.</p><p>Here, we discuss how to use <code>pharmer</code> to create a Kubernetes cluster on <code>aws</code></p><h4 id=cluster-creating>Cluster Creating</h4><p>We want to create a cluster with following information:</p><ul><li>Provider: aws</li><li>Cluster name: aws</li><li>Location: us-east-1b</li><li>Number of master nodes: 3</li><li>Number of worker nodes: 1</li><li>Worker Node sku: t2.medium (cpu: 2, memory: 4 Gb)</li><li>Kubernetes version: v1.13.5</li><li>Credential name: <a href=#credential-importing>aws</a></li></ul><p>For location code and sku details click <a href=https://github.com/pharmer/cloud/blob/master/data/json/apis/cloud.pharmer.io/v1/cloudproviders/aws.json>hrere</a></p><p>Available options in <code>pharmer</code> to create a cluster are:</p><pre><code class=language-console> $ pharmer create cluster -h
  Create a Kubernetes cluster for a given cloud provider
 
 Usage:
@@ -1084,24 +112,14 @@ Global Flags:
       --stderrthreshold severity         logs at or above this threshold go to stderr
   -v, --v Level                          log level for V logs
       --vmodule moduleSpec               comma-separated list of pattern=N settings for file-filtered logging
-</code></pre>
-
-<p>So, we need to run following command to create cluster with our information.</p>
-
-<pre><code class="language-console">$ pharmer create cluster aws-1 \
+</code></pre><p>So, we need to run following command to create cluster with our information.</p><pre><code class=language-console>$ pharmer create cluster aws-1 \
     --masters 3 \
     --provider aws \
     --zone us-east-1b \
     --nodes t2.medium=1 \
     --credential-uid aws \
     --kubernetes-version v1.13.5
-</code></pre>
-
-<p>To know about <a href="https://kubernetes.io/docs/concepts/cluster-administration/networking/">pod networks</a> supports in <code>pharmer</code> click <a href="/products/pharmer/0.3.1/networking">here</a></p>
-
-<p>The directory structure of the storage provider will be look like:</p>
-
-<pre><code class="language-console">$ tree ~/.pharmer/store.d/$USER/clusters/
+</code></pre><p>To know about <a href=https://kubernetes.io/docs/concepts/cluster-administration/networking/>pod networks</a> supports in <code>pharmer</code> click <a href=/products/pharmer/0.3.1/networking>here</a></p><p>The directory structure of the storage provider will be look like:</p><pre><code class=language-console>$ tree ~/.pharmer/store.d/$USER/clusters/
 /home/&lt;user&gt;/.pharmer/store.d/&lt;user&gt;/clusters/
 ├── aws-1
 │   ├── machine
@@ -1126,18 +144,12 @@ Global Flags:
 └── aws-1.json
 
 6 directories, 15 files
-</code></pre>
-
-<p>Here,
-  - <code>machine</code>: conntains information about the master machines to be deployed
-  - <code>machineset</code>: contains information about the machinesets to be deployed
-  - <code>pki</code>: contains the cluster certificate information containing <code>ca</code>, <code>front-proxy-ca</code>, <code>etcd/ca</code> and service account keys <code>sa</code>
-  - <code>ssh</code>: has the ssh credentials on cluster&rsquo;s nodes. With this key you can <code>ssh</code> into any node on a cluster
-  - <code>aws-1.json</code>: contains the cluster resource information</p>
-
-<p>You can view your cluster configuration file by following command.</p>
-
-<pre><code class="language-yaml">$ pharmer get cluster aws-1 -o yaml
+</code></pre><p>Here,
+- <code>machine</code>: conntains information about the master machines to be deployed
+- <code>machineset</code>: contains information about the machinesets to be deployed
+- <code>pki</code>: contains the cluster certificate information containing <code>ca</code>, <code>front-proxy-ca</code>, <code>etcd/ca</code> and service account keys <code>sa</code>
+- <code>ssh</code>: has the ssh credentials on cluster&rsquo;s nodes. With this key you can <code>ssh</code> into any node on a cluster
+- <code>aws-1.json</code>: contains the cluster resource information</p><p>You can view your cluster configuration file by following command.</p><pre><code class=language-yaml>$ pharmer get cluster aws-1 -o yaml
 apiVersion: cluster.pharmer.io/v1beta1
 kind: Cluster
 metadata:
@@ -1233,26 +245,10 @@ status:
       ip: &quot;&quot;
       port: 0
   phase: Pending
-</code></pre>
-
-<p>You can modify this configuration by:</p>
-
-<pre><code class="language-console">$ pharmer edit cluster aws-1
-</code></pre>
-
-<h4 id="applying">Applying</h4>
-
-<p>If everything looks ok, we can now apply the resources. This actually creates resources on <code>aws</code>.
-Up to now we&rsquo;ve only been working locally.</p>
-
-<p>To apply run:</p>
-
-<pre><code class="language-console">$ pharmer apply aws-1
-</code></pre>
-
-<p>Now, <code>pharmer</code> will apply that configuration, this create a Kubernetes cluster. After completing task the configuration file of the cluster will be look like</p>
-
-<pre><code class="language-yaml">$ pharmer get cluster aws-1 -o yaml
+</code></pre><p>You can modify this configuration by:</p><pre><code class=language-console>$ pharmer edit cluster aws-1
+</code></pre><h4 id=applying>Applying</h4><p>If everything looks ok, we can now apply the resources. This actually creates resources on <code>aws</code>.
+Up to now we&rsquo;ve only been working locally.</p><p>To apply run:</p><pre><code class=language-console>$ pharmer apply aws-1
+</code></pre><p>Now, <code>pharmer</code> will apply that configuration, this create a Kubernetes cluster. After completing task the configuration file of the cluster will be look like</p><pre><code class=language-yaml>$ pharmer get cluster aws-1 -o yaml
 apiVersion: cluster.pharmer.io/v1beta1
 kind: Cluster
 metadata:
@@ -1523,58 +519,23 @@ status:
       ip: &quot;&quot;
       port: 6443
   phase: Ready
-</code></pre>
-
-<p>Here,</p>
-
-<ul>
-<li><code>status.phase</code>: is ready. So, you can use your cluster from local machine.</li>
-<li><code>status.clusterApi.status.apiEndpoints</code> is the cluster&rsquo;s apiserver address</li>
-</ul>
-
-<p>To get the <code>kubectl</code> configuration file(kubeconfig) on your local filesystem run the following command.</p>
-
-<pre><code class="language-console">$ pharmer use cluster aws-1
-</code></pre>
-
-<p>If you don&rsquo;t have <code>kubectl</code> installed click <a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/">here</a></p>
-
-<p>Now you can run <code>kubectl get nodes</code> and verify that your kubernetes v1.13.5 is running.</p>
-
-<p>NAME                         STATUS   ROLES    AGE     VERSION
-ip-10-0-0-101.ec2.internal   Ready    master   5m37s   v1.13.5
-ip-10-0-0-239.ec2.internal   Ready    master   6m28s   v1.13.5
-ip-10-0-0-27.ec2.internal    Ready    node     5m37s   v1.13.5
-ip-10-0-0-71.ec2.internal    Ready    master   8m36s   v1.13.5</p>
-
-<p>You can ssh to the nodes from bastion node.</p>
-
-<p>First, ssh to bastion node</p>
-
-<pre><code class="language-console">$ cd ~/.pharmer/store.d/$USER/clusters/aws-1/ssh/
+</code></pre><p>Here,</p><ul><li><code>status.phase</code>: is ready. So, you can use your cluster from local machine.</li><li><code>status.clusterApi.status.apiEndpoints</code> is the cluster&rsquo;s apiserver address</li></ul><p>To get the <code>kubectl</code> configuration file(kubeconfig) on your local filesystem run the following command.</p><pre><code class=language-console>$ pharmer use cluster aws-1
+</code></pre><p>If you don&rsquo;t have <code>kubectl</code> installed click <a href=https://kubernetes.io/docs/tasks/tools/install-kubectl/>here</a></p><p>Now you can run <code>kubectl get nodes</code> and verify that your kubernetes v1.13.5 is running.</p><p>NAME STATUS ROLES AGE VERSION
+ip-10-0-0-101.ec2.internal Ready master 5m37s v1.13.5
+ip-10-0-0-239.ec2.internal Ready master 6m28s v1.13.5
+ip-10-0-0-27.ec2.internal Ready node 5m37s v1.13.5
+ip-10-0-0-71.ec2.internal Ready master 8m36s v1.13.5</p><p>You can ssh to the nodes from bastion node.</p><p>First, ssh to bastion node</p><pre><code class=language-console>$ cd ~/.pharmer/store.d/$USER/clusters/aws-1/ssh/
 $ ssh-add id_aws-1-sshkey
 Identity added: id_aws-1-sshkey (id_aws-1-sshkey)
 $ ssh -A ubuntu@34.205.72.251 #bastion-ip
-</code></pre>
-
-<p>Then you can ssh to any node in the cluster from bastion node using its private ip</p>
-
-<pre><code class="language-console">ubuntu@ip-10-0-1-245:~$ ssh 10.0.0.71
+</code></pre><p>Then you can ssh to any node in the cluster from bastion node using its private ip</p><pre><code class=language-console>ubuntu@ip-10-0-1-245:~$ ssh 10.0.0.71
 ubuntu@ip-10-0-0-71:~$ 
-</code></pre>
-
-<h3 id="cluster-scaling">Cluster Scaling</h3>
-
-<p>Scaling a cluster refers following meanings
+</code></pre><h3 id=cluster-scaling>Cluster Scaling</h3><p>Scaling a cluster refers following meanings
 - Add new master and worker machines
 - Increment the number of nodes of a certain machine-set and machine-deployment
 - Decrement the number of nodes of a certain machine-set and machine-deployment
 - Introduce a new machine-set and machine-deployment with a number of nodes
-- Delete existing machine, machine-set and machine-deployments</p>
-
-<p>You can see the machine and machine-sets deployed in the cluster</p>
-
-<pre><code class="language-console">$ kubectl get machines
+- Delete existing machine, machine-set and machine-deployments</p><p>You can see the machine and machine-sets deployed in the cluster</p><pre><code class=language-console>$ kubectl get machines
 NAME                   AGE
 aws-1-master-0         27m
 aws-1-master-1         27m
@@ -1584,13 +545,7 @@ t2.medium-pool-4mnwg   27m
 $ kubectl get machinesets
 NAME             AGE
 t2.medium-pool   27m
-</code></pre>
-
-<h4 id="deploy-new-master-machines">Deploy new master machines</h4>
-
-<p>You can create new master machine by the deploying the following yaml</p>
-
-<pre><code class="language-yaml">apiVersion: cluster.k8s.io/v1alpha1
+</code></pre><h4 id=deploy-new-master-machines>Deploy new master machines</h4><p>You can create new master machine by the deploying the following yaml</p><pre><code class=language-yaml>apiVersion: cluster.k8s.io/v1alpha1
 kind: Machine
 metadata:
   labels:
@@ -1618,70 +573,62 @@ spec:
 You can create new worker machines by deploying the following yaml
 
 
-</code></pre>
-
-<p>yaml
+</code></pre><p>yaml
 apiVersion: cluster.k8s.io/v1alpha1
 kind: Machine
 metadata:
-  labels:
-    cluster.k8s.io/cluster-name: aws-1
-    node-role.kubernetes.io/node: &ldquo;&rdquo;
-    set: node
-  name: new-node
-  namespace: default
+labels:
+cluster.k8s.io/cluster-name: aws-1
+node-role.kubernetes.io/node: &ldquo;&rdquo;
+set: node
+name: new-node
+namespace: default
 spec:
-  providerSpec:
-    value:
-      apiVersion: awsprovider/v1alpha1
-      kind: AWSMachineProviderSpec
-      iamInstanceProfile: node.aws-1.pharmer
-      instanceType: t2.large
-      keyName: aws-1-sshkey
-  versions:
-    kubelet: v1.13.5</p>
-
-<pre><code>
+providerSpec:
+value:
+apiVersion: awsprovider/v1alpha1
+kind: AWSMachineProviderSpec
+iamInstanceProfile: node.aws-1.pharmer
+instanceType: t2.large
+keyName: aws-1-sshkey
+versions:
+kubelet: v1.13.5</p><pre><code>
 
 #### Create new machinesets
 
 You can create new machinesets by deploying the following yaml
 
 
-</code></pre>
-
-<p>yaml
+</code></pre><p>yaml
 apiVersion: cluster.k8s.io/v1alpha1
 kind: MachineSet
 metadata:
-  name: new-machineset
-  namespace: default
+name: new-machineset
+namespace: default
 spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      cluster.k8s.io/cluster-name: aws-1
-      cluster.pharmer.io/mg: t2.medium
-  template:
-    metadata:
-      labels:
-        cluster.k8s.io/cluster-name: aws-1
-        cluster.pharmer.io/cluster: aws-1
-        cluster.pharmer.io/mg: t2.medium
-        node-role.kubernetes.io/node: &ldquo;&rdquo;
-        set: node
-    spec:
-      providerSpec:
-        value:
-          apiVersion: awsprovider/v1alpha1
-          iamInstanceProfile: node.aws-1.pharmer
-          instanceType: t2.medium
-          keyName: aws-1-sshkey
-          kind: AWSMachineProviderSpec
-      versions:
-        kubelet: v1.13.5</p>
-
-<pre><code>
+replicas: 2
+selector:
+matchLabels:
+cluster.k8s.io/cluster-name: aws-1
+cluster.pharmer.io/mg: t2.medium
+template:
+metadata:
+labels:
+cluster.k8s.io/cluster-name: aws-1
+cluster.pharmer.io/cluster: aws-1
+cluster.pharmer.io/mg: t2.medium
+node-role.kubernetes.io/node: &ldquo;&rdquo;
+set: node
+spec:
+providerSpec:
+value:
+apiVersion: awsprovider/v1alpha1
+iamInstanceProfile: node.aws-1.pharmer
+instanceType: t2.medium
+keyName: aws-1-sshkey
+kind: AWSMachineProviderSpec
+versions:
+kubelet: v1.13.5</p><pre><code>
 
 #### Create new machine-deployments
 
@@ -1689,73 +636,55 @@ You can create new machine-deployments by deploying the following yaml
 
  
 
-</code></pre>
-
-<p>yaml
+</code></pre><p>yaml
 apiVersion: cluster.k8s.io/v1alpha1
 kind: MachineDeployment
 metadata:
-  name: new-machinedeployment
-  namespace: default
+name: new-machinedeployment
+namespace: default
 spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      cluster.k8s.io/cluster-name: aws-1
-      cluster.pharmer.io/mg: t2.medium
-  template:
-    metadata:
-      labels:
-        cluster.k8s.io/cluster-name: aws-1
-        cluster.pharmer.io/cluster: aws-1
-        cluster.pharmer.io/mg: t2.medium
-        node-role.kubernetes.io/node: &ldquo;&rdquo;
-        set: node
-    spec:
-      providerSpec:
-        value:
-          apiVersion: awsprovider/v1alpha1
-          iamInstanceProfile: node.aws-1.pharmer
-          instanceType: t2.medium
-          keyName: aws-1-sshkey
-          kind: AWSMachineProviderSpec
-      versions:
-        kubelet: v1.13.5</p>
-
-<pre><code>
+replicas: 2
+selector:
+matchLabels:
+cluster.k8s.io/cluster-name: aws-1
+cluster.pharmer.io/mg: t2.medium
+template:
+metadata:
+labels:
+cluster.k8s.io/cluster-name: aws-1
+cluster.pharmer.io/cluster: aws-1
+cluster.pharmer.io/mg: t2.medium
+node-role.kubernetes.io/node: &ldquo;&rdquo;
+set: node
+spec:
+providerSpec:
+value:
+apiVersion: awsprovider/v1alpha1
+iamInstanceProfile: node.aws-1.pharmer
+instanceType: t2.medium
+keyName: aws-1-sshkey
+kind: AWSMachineProviderSpec
+versions:
+kubelet: v1.13.5</p><pre><code>
 
 #### Scale Cluster
 
 You can also update number of nodes of an existing machine-set and machine-deployment using
 
-</code></pre>
-
-<p>console
-$ kubectl edit <machineset-name>
-$ kubectl edit <machinedeployment-name></p>
-
-<pre><code>and update the `spec.replicas` field
+</code></pre><p>console
+$ kubectl edit <machineset-name>$ kubectl edit <machinedeployment-name></p><pre><code>and update the `spec.replicas` field
 
 #### Delete nodes
 
 You can delete machines using
 
-</code></pre>
-
-<p>console
-$ kubectl delete machine <machine-name></p>
-
-<pre><code>Warning: if the machine is controlled by a machineset, a new machine will be created. You should update/delete machineset in that case
+</code></pre><p>console
+$ kubectl delete machine <machine-name></p><pre><code>Warning: if the machine is controlled by a machineset, a new machine will be created. You should update/delete machineset in that case
 
 You can delete machine-set and machine-deployments using
 
-</code></pre>
-
-<p>console
-$ kubectl delete machineset <machineset-name>
-$ kubectl delete machinedeployment <machinedeployment-name></p>
-
-<pre><code>
+</code></pre><p>console
+$ kubectl delete machineset <machineset-name>$ kubectl delete machinedeployment <machinedeployment-name></p><pre><code>
 ### Cluster Upgrading
 
 #### Upgrade master machines
@@ -1766,12 +695,8 @@ You can deploy new master machines with specifying new version in `spec.version.
 
 You can upgrade worker machines by editing machine-deployment
 
-</code></pre>
-
-<p>console
-$ kubectl edit machinedeployments <machinedeployment-name></p>
-
-<pre><code>
+</code></pre><p>console
+$ kubectl edit machinedeployments <machinedeployment-name></p><pre><code>
 and updating the `spec.version.kubelet`
 
 To upgrade machinesets, you have to deploy new machinesets with specifying new version in `spec.template.spec.version.kubelet`
@@ -1781,36 +706,28 @@ After new machines are ready, you can safely delete old machine-sets
 
 To delete your cluster run
 
-</code></pre>
-
-<p>console
-$ pharmer delete cluster aws-1</p>
-
-<pre><code>
+</code></pre><p>console
+$ pharmer delete cluster aws-1</p><pre><code>
 Then, the yaml file looks like
 
 
-</code></pre>
-
-<p>yaml
+</code></pre><p>yaml
 $ pharmer get cluster a1 -o yaml
 kind: Cluster
 apiVersion: cluster.pharmer.io/v1beta1
 metadata:
-  name: aws-1
-  uid: 740dbfc4-77a5-11e9-9087-e0d55ee85d14
-  generation: 1557988811187811600
-  creationTimestamp: &lsquo;2019-05-16T06:40:11Z&rsquo;
-  deletionTimestamp: &lsquo;2019-05-16T08:18:45Z&rsquo;
+name: aws-1
+uid: 740dbfc4-77a5-11e9-9087-e0d55ee85d14
+generation: 1557988811187811600
+creationTimestamp: &lsquo;2019-05-16T06:40:11Z&rsquo;
+deletionTimestamp: &lsquo;2019-05-16T08:18:45Z&rsquo;
 &hellip;
 &hellip;
 &hellip;
 status:
-  phase: Deleting
+phase: Deleting
 &hellip;
-&hellip;</p>
-
-<pre><code>
+&hellip;</p><pre><code>
 
 Here,
 
@@ -1818,441 +735,39 @@ Here,
 
 Now, to apply delete operation of the cluster, run
 
-</code></pre>
-
-<p>console
+</code></pre><p>console
 $ pharmer apply aws-1
-```</p>
-
-<p><strong>Congratulations !!!</strong> , you&rsquo;re an official <code>pharmer</code> user now.</p>
-
-        </div>
-      </div>
-      <div class="column is-2">
-        <div class="right-sidebar-area">
-          
-          <div class="search-area">
-            <form action="#">
-              <input id="acSearch" type="text" placeholder="Search..." />
-              <button class="search-button">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </button>
-            </form>
-          </div>
-          
-
-          
-          <div class="tbl-of-contents">
-            <h4>What's on this Page</h4>
-            <nav id="TableOfContents">
-<ul>
-<li><a href="#running-kubernetes-on-aws-https-aws-amazon-com">Running Kubernetes on <a href="https://aws.amazon.com">AWS</a></a>
-<ul>
-<li>
-<ul>
-<li><a href="#before-you-start">Before you start</a></li>
-<li><a href="#pharmer-storage">Pharmer storage</a></li>
-<li><a href="#credential-importing">Credential importing</a>
-<ul>
-<li><a href="#setup-iam-user">Setup IAM User</a></li>
-<li><a href="#cluster-iam-user">Cluster IAM User</a></li>
-</ul></li>
-<li><a href="#cluster-provisioning">Cluster provisioning</a>
-<ul>
-<li><a href="#cluster-creating">Cluster Creating</a></li>
-<li><a href="#applying">Applying</a></li>
-</ul></li>
-<li><a href="#cluster-scaling">Cluster Scaling</a>
-<ul>
-<li><a href="#deploy-new-master-machines">Deploy new master machines</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  <script>
-    
-    var kdDropdown = document.querySelector(".dropdown");
-    var kdDropdownBtn = document.querySelector(".dropdown-trigger");
-      kdDropdownBtn.addEventListener("click", function(){
-        kdDropdown.classList.toggle("is-active");
-      })
-  </script>
-</div>
-
-
-
-
-
-<div class="overlay-bg"></div>
-
-
-<div class="sidebar-search-area">
-  <div class="search-area-top">
-    <h3>Search</h3>
-
-    <div class="searchbar-area">
-      <input type="search" name="search" id="searchbox" placeholder="Search..." />
-      <button onclick="queryPage(1)"><i class="fa fa-search" aria-hidden="true"></i></button>
-    </div>
-
-    <span id="searchbar-script-container" style="display:none"></span>
-
-    <div class="search-meta-information level">
-      <div class="level-left">
-      </div>
-    </div>
-  </div>
-
-  <div class="search-result-wrapper">
-  </div>
-
-  
-  <div class="pagination-area">
-    <div class="pagination-list">
-    </div>
-  </div>
-  
-</div>
-
-<script type="text/javascript">
-  var pageSize = 5;
-  var acSearch = document.querySelector("#acSearch");
-  var bodyOverlay = document.querySelector(".overlay-bg");
-  var sidebarSearch = document.querySelector(".sidebar-search-area");
-
-  acSearch.addEventListener("click", function() {
-    bodyOverlay.style.display = "block";
-    sidebarSearch.style.right = "0";
-    document.getElementById("searchbox").focus();
-    bodyOverlay.addEventListener("click", function() {
-      bodyOverlay.style.display = "none";
-      sidebarSearch.style.right = "-50%";
-    });
-  });
-
-  function encodeQueryData(data) {
-    var ret = [];
-    for (var d in data)
-      ret.push(encodeURIComponent(d) + '=' + encodeURIComponent(data[d]));
-    return ret.join('&');
-  }
-
-  document.querySelector(".searchbar-area input[type=search]").addEventListener("keyup", function(event) {
-    event.preventDefault();
-    if (event.keyCode === 13) {
-      queryPage(1);
-    }
-  });
-
-  function queryPage(idx) {
-    var q = document.getElementById("searchbox").value;
-    var cx = "015199383701854252104:jccvu4eiulw";
-    var key = "AIzaSyBo15AW3hatf4fO8actJUZ_d5qZJpx0rXM";
-    var imgSize = "small";
-    var callback = "renderResult";
-
-    var src = "https://www.googleapis.com/customsearch/v1?" + encodeQueryData({
-      q: q,
-      cx: cx,
-      key: key,
-      imgSize: imgSize,
-      callback: callback,
-      start: (idx-1)*pageSize + 1,
-      num: pageSize,
-    });
-
-    var newScript = document.createElement("script");
-    newScript.src = src;
-    e = document.getElementById("searchbar-script-container");
-    var child = e.lastElementChild;
-    if (child) {
-        e.removeChild(child);
-    }
-    e.appendChild(newScript);
-  }
-
-  function renderSearchResultEntry(e) {
-    var out = '<div class="single-search-result">' +
-      '<h3><a href="' + e.link + '">' + e.title + '</a></h3>' +
-      '<a href="' + e.link + '">' + e.htmlFormattedUrl + '</a>' +
-      '<div class="result-description-wrapper">';
-      if (e.pagemap && e.pagemap.cse_thumbnail) {
-        out += '<div class="result-thumb">' +
-            '<img src="' + e.pagemap.cse_thumbnail[0].src + '" alt="" />' +
-          '</div>';
-      }
-      out += '<div class="result-description">' +
-          '<p>'+
-            e.snippet +
-          '</p>' +
-        '</div>' +
-      '</div>' +
-    '</div>';
-    return out;
-  }
-
-  function renderResult(response) {
-    document.querySelector(".search-meta-information .level-left").innerHTML = '<div class="level-left">'+
-        '<p>'+
-          'About <span class="search-count">'+response.searchInformation.formattedTotalResults+'</span> results (<span class="time-count">'+response.searchInformation.formattedSearchTime+' </span>seconds)'+
-        '</p>'+
-      '</div>';
-
-    if (!response.items) {
-      return;
-    }
-
-    var searchResultWrapper = document.querySelector(".search-result-wrapper");
-    searchResultWrapper.innerHTML = "";
-
-    for (var i = 0; i < response.items.length; i++) {
-      searchResultWrapper.innerHTML += renderSearchResultEntry(response.items[i]);
-    }
-
-    var pager = '<ul>';
-    if (response.queries.previousPage) {
-      var pageIndex = Math.floor(response.queries.previousPage[0].startIndex/pageSize) + 1;
-      pager += '<li><a href="#" onclick="queryPage(' + pageIndex  + ')">Previous</a></li>';
-    }
-    if (response.queries.request) {
-      var pageIndex = Math.floor(response.queries.request[0].startIndex/pageSize) + 1;
-      pager += '<li><a href="#" onclick="queryPage(' + pageIndex  + ')" class="is-active">' + pageIndex + '</a></li>';
-    }
-    if (response.queries.nextPage) {
-      var pageIndex = Math.floor(response.queries.nextPage[0].startIndex/pageSize) + 1;
-      pager += '<li><a href="#" onclick="queryPage(' + pageIndex  + ')">Next</a></li>';
-    }
-    pager += '</ul>';
-    document.querySelector(".pagination-area .pagination-list").innerHTML = pager;
-  }
-</script>
-
-
-
-
-
-    
-    
-<section></section>
-
-    
-
-    
-    
-<section></section>
-
-    
-
-    
-    
-<section></section>
-
-    
-
-<button class="go-to-top" id="goTop">
-  <i class="fa fa-angle-up" aria-hidden="true"></i>
-</button>
-
-    
-    
-    <footer class="footer-area">
-      <div class="footer-top">
-        <div class="container section">
-          <div class="columns">
-            <div class="column is-4">
-              <div class="single-footer-widget">
-                
-                <div class="footer-logo">
-                  <a href="https://appscode-v3-hugo.web.app"
-                    ><img
-                      src="/assets/images/products/appscode/appscode-logo.png"
-                      alt="AppsCode"
-                      class="img"
-                  /></a>
-                </div>
-                
-
-                
-                <div class="subscription-form">
-                  <form action="https://appscode.us17.list-manage.com/subscribe/post?u=feb2bf31969a951e7449048a3&amp;id=82fb19acb9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="navbar-form" target="_blank" novalidate role="email" role="email">
-                    <label for="email">Subscribe to Our Newsletter</label>
-                    <p class="spam-message">No spam, we promise. Your mail address is secure</p>
-                    <div class="field has-addons">
-                      <div class="control">
-                        <input
-                          class="input"
-                          name="EMAIL"
-                          id="mce-EMAIL"
-                          type="email"
-                          placeholder="Your work email address"
-                          required
-                        />
-                        <button id="mc-embedded-subscribe" type="submit" name="subscribe" class="button">
-                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                          </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                
-
-                
-                <div class="contact-information">
-                  <h4>Have any Inquiry?</h4>
-                  <ul class="all-contact-info">
-                    <li>
-                      <a href="callto:&#43;1%28650%29241-8486"
-                        ><span
-                          ><i class="fa fa-phone" aria-hidden="true"></i></span
-                        >&#43;1(650)241-8486</a
-                      >
-                    </li>
-
-                    <li>
-                      <a href="mailto:support@appscode.com"
-                        ><span
-                          ><i
-                            class="fa fa-envelope-o"
-                            aria-hidden="true"
-                          ></i></span
-                        >support@appscode.com</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                
-              </div>
-            </div>
-
-            <div class="column is-2">
-              <div class="single-footer-widget">
-                
-                <div class="footer-menu">
-                  <h4>Products</h4>
-                  <ul class="footer-link">
-                    
-                    
-                    <li><a href="https://kubedb-v2-hugo.web.app">KubeDB</a></li>
-                    
-                    
-                    <li><a href="https://appscode-v3-hugo.web.app/products/stash/">Stash</a></li>
-                    
-                    
-                    <li><a href="https://kubevault-v1-hugo.web.app">KubeVault</a></li>
-                    
-                    
-                    <li><a href="https://appscode-v3-hugo.web.app/products/voyager/">Voyager</a></li>
-                    
-                    
-                    <li><a href="https://appscode-v3-hugo.web.app/products/guard/">Guard</a></li>
-                    
-                    
-                    <li><a href="https://appscode-v3-hugo.web.app/products/pharmer/">Pharmer</a></li>
-                    
-                  </ul>
-                </div>
-                
-              </div>
-            </div>
-
-            <div class="column is-2">
-              <div class="single-footer-widget">
-                
-                <div class="footer-menu">
-                  <h4>Services</h4>
-                  <ul class="footer-link">
-                    <li><a href="https://appscode-v3-hugo.web.app/sonsulting/">Consulting</a></li>
-                    <li><a href="https://appscode-v3-hugo.web.app/training/">Training</a></li>
-                    <li><a href="https://appscode-v3-hugo.web.app/support/">Support</a></li>
-                  </ul>
-                </div>
-                
-              </div>
-            </div>
-
-            <div class="column is-2">
-              <div class="single-footer-widget">
-                
-                <div class="footer-menu">
-                  <h4>Company</h4>
-                  <ul class="footer-link">
-                    <li><a href="https://appscode-v3-hugo.web.app/about/">About Us</a></li>
-                    <li><a href="https://blog.byte.builders">Blog</a></li>
-                    <li><a href="https://appscode-v3-hugo.web.app/contact/">Contact Us</a></li>
-                  </ul>
-                </div>
-                
-              </div>
-            </div>
-
-            <div class="column is-2">
-              <div class="single-footer-widget">
-                
-                <div class="footer-menu">
-                  <h4>Legal</h4>
-                  <ul class="footer-link">
-                    <li><a href="https://appscode-v3-hugo.web.app/legal/tos/">Terms of Sevice</a></li>
-                    <li><a href="https://appscode-v3-hugo.web.app/legal/privacy-policy/">Privacy Policy</a></li>
-                    <li><a href="https://appscode-v3-hugo.web.app/legal/security/">Security</a></li>
-                    <li><a href="https://appscode-v3-hugo.web.app/legal/sla/">Service Level Agreement</a></li>
-                  </ul>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="container section">
-          <div class="columns">
-            <div class="column is-4">
-              <p>© 2019 AppsCode Inc. All rights reserved.</p>
-            </div>
-            <div class="column is-4 is-mobile has-text-centered">
-              <div class="footer-inline-link">
-                <a href="https://appscode-v3-hugo.web.app/legal/privacy-policy/">Privacy Policy</a>
-                <a href="https://appscode-v3-hugo.web.app/legal/tos/">Terms of Service</a>
-              </div>
-            </div>
-            <div class="column is-4 is-mobile has-text-right">
-              <div class="socail-link-inline">
-                <ul>
-                  <li>
-                    <a href="https://twitter.com/AppsCodeHQ"
-                      ><i class="fa fa-twitter" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://www.facebook.com/appscode"
-                      ><i class="fa fa-facebook" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/c/AppsCodeInc"
-                      ><i class="fa fa-youtube" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    
-    
-
-    
-    <script src="/assets/js/bulma-carousel.min.js"></script>
-    
-    <script src="/assets/js/main.js"></script>
-  </body>
-</html>
+```</p><p><strong>Congratulations !!!</strong> , you&rsquo;re an official <code>pharmer</code> user now.</p></div></div><div class="column is-2"><div class=right-sidebar-area><div class=search-area><form action=#><input id=acSearch type=text placeholder=Search...>
+<button class=search-button>
+<i class="fa fa-search" aria-hidden=true></i></button></form></div><div class=tbl-of-contents><h4>What's on this Page</h4><nav id=TableOfContents><ul><li><a href=#running-kubernetes-on-aws-https-aws-amazon-com>Running Kubernetes on <a href=https://aws.amazon.com>AWS</a></a><ul><li><ul><li><a href=#before-you-start>Before you start</a></li><li><a href=#pharmer-storage>Pharmer storage</a></li><li><a href=#credential-importing>Credential importing</a><ul><li><a href=#setup-iam-user>Setup IAM User</a></li><li><a href=#cluster-iam-user>Cluster IAM User</a></li></ul></li><li><a href=#cluster-provisioning>Cluster provisioning</a><ul><li><a href=#cluster-creating>Cluster Creating</a></li><li><a href=#applying>Applying</a></li></ul></li><li><a href=#cluster-scaling>Cluster Scaling</a><ul><li><a href=#deploy-new-master-machines>Deploy new master machines</a></li></ul></li></ul></li></ul></li></ul></nav></div></div></div></div></div><script>var kdDropdown=document.querySelector(".dropdown");var kdDropdownBtn=document.querySelector(".dropdown-trigger");kdDropdownBtn.addEventListener("click",function(){kdDropdown.classList.toggle("is-active");})</script></div><div class=overlay-bg></div><div class=sidebar-search-area><div class=search-area-top><h3>Search</h3><div class=searchbar-area><input type=search name=search id=searchbox placeholder=Search...>
+<button onclick=queryPage(1)><i class="fa fa-search" aria-hidden=true></i></button></div><span id=searchbar-script-container style=display:none></span><div class="search-meta-information level"><div class=level-left></div></div></div><div class=search-result-wrapper></div><div class=pagination-area><div class=pagination-list></div></div></div><script type=text/javascript>var pageSize=5;var acSearch=document.querySelector("#acSearch");var bodyOverlay=document.querySelector(".overlay-bg");var sidebarSearch=document.querySelector(".sidebar-search-area");acSearch.addEventListener("click",function(){bodyOverlay.style.display="block";sidebarSearch.style.right="0";document.getElementById("searchbox").focus();bodyOverlay.addEventListener("click",function(){bodyOverlay.style.display="none";sidebarSearch.style.right="-50%";});});function encodeQueryData(data){var ret=[];for(var d in data)
+ret.push(encodeURIComponent(d)+'='+encodeURIComponent(data[d]));return ret.join('&');}
+document.querySelector(".searchbar-area input[type=search]").addEventListener("keyup",function(event){event.preventDefault();if(event.keyCode===13){queryPage(1);}});function queryPage(idx){var q=document.getElementById("searchbox").value;var cx="015199383701854252104:jccvu4eiulw";var key="AIzaSyBo15AW3hatf4fO8actJUZ_d5qZJpx0rXM";var imgSize="small";var callback="renderResult";var src="https://www.googleapis.com/customsearch/v1?"+encodeQueryData({q:q,cx:cx,key:key,imgSize:imgSize,callback:callback,start:(idx-1)*pageSize+1,num:pageSize,});var newScript=document.createElement("script");newScript.src=src;e=document.getElementById("searchbar-script-container");var child=e.lastElementChild;if(child){e.removeChild(child);}
+e.appendChild(newScript);}
+function renderSearchResultEntry(e){var out='<div class="single-search-result">'+
+'<h3><a href="'+e.link+'">'+e.title+'</a></h3>'+
+'<a href="'+e.link+'">'+e.htmlFormattedUrl+'</a>'+
+'<div class="result-description-wrapper">';if(e.pagemap&&e.pagemap.cse_thumbnail){out+='<div class="result-thumb">'+
+'<img src="'+e.pagemap.cse_thumbnail[0].src+'" alt="" />'+
+'</div>';}
+out+='<div class="result-description">'+
+'<p>'+
+e.snippet+
+'</p>'+
+'</div>'+
+'</div>'+
+'</div>';return out;}
+function renderResult(response){document.querySelector(".search-meta-information .level-left").innerHTML='<div class="level-left">'+
+'<p>'+
+'About <span class="search-count">'+response.searchInformation.formattedTotalResults+'</span> results (<span class="time-count">'+response.searchInformation.formattedSearchTime+' </span>seconds)'+
+'</p>'+
+'</div>';if(!response.items){return;}
+var searchResultWrapper=document.querySelector(".search-result-wrapper");searchResultWrapper.innerHTML="";for(var i=0;i<response.items.length;i++){searchResultWrapper.innerHTML+=renderSearchResultEntry(response.items[i]);}
+var pager='<ul>';if(response.queries.previousPage){var pageIndex=Math.floor(response.queries.previousPage[0].startIndex/pageSize)+1;pager+='<li><a href="#" onclick="queryPage('+pageIndex+')">Previous</a></li>';}
+if(response.queries.request){var pageIndex=Math.floor(response.queries.request[0].startIndex/pageSize)+1;pager+='<li><a href="#" onclick="queryPage('+pageIndex+')" class="is-active">'+pageIndex+'</a></li>';}
+if(response.queries.nextPage){var pageIndex=Math.floor(response.queries.nextPage[0].startIndex/pageSize)+1;pager+='<li><a href="#" onclick="queryPage('+pageIndex+')">Next</a></li>';}
+pager+='</ul>';document.querySelector(".pagination-area .pagination-list").innerHTML=pager;}</script><section></section><section></section><section></section><button class=go-to-top id=goTop>
+<i class="fa fa-angle-up" aria-hidden=true></i></button><footer class=footer-area><div class=footer-top><div class="container section"><div class=columns><div class="column is-4"><div class=single-footer-widget><div class=footer-logo><a href=https://appscode-v3-hugo.web.app><img src=https://cdn.appscode.com/images/products/appscode/appscode-logo.png alt=AppsCode class=img></a></div><div class=subscription-form><form action="https://appscode.us17.list-manage.com/subscribe/post?u=feb2bf31969a951e7449048a3&amp;id=82fb19acb9" method=post id=mc-embedded-subscribe-form name=mc-embedded-subscribe-form class=navbar-form target=_blank novalidate role=email role=email><label for=email>Subscribe to Our Newsletter</label><p class=spam-message>No spam, we promise. Your mail address is secure</p><div class="field has-addons"><div class=control><input class=input name=EMAIL id=mce-EMAIL type=email placeholder="Your work email address" required>
+<button id=mc-embedded-subscribe type=submit name=subscribe class=button>
+<i class="fa fa-paper-plane-o" aria-hidden=true></i></button></div></div></form></div><div class=contact-information><h4>Have any Inquiry?</h4><ul class=all-contact-info><li><a href=callto:&#43;1%28650%29241-8486><span><i class="fa fa-phone" aria-hidden=true></i></span>&#43;1(650)241-8486</a></li><li><a href=mailto:support@appscode.com><span><i class="fa fa-envelope-o" aria-hidden=true></i></span>support@appscode.com</a></li></ul></div></div></div><div class="column is-2"><div class=single-footer-widget><div class=footer-menu><h4>Products</h4><ul class=footer-link><li><a href=https://kubedb-v2-hugo.web.app>KubeDB</a></li><li><a href=https://appscode-v3-hugo.web.app/products/stash/>Stash</a></li><li><a href=https://kubevault-v1-hugo.web.app>KubeVault</a></li><li><a href=https://appscode-v3-hugo.web.app/products/voyager/>Voyager</a></li><li><a href=https://appscode-v3-hugo.web.app/products/guard/>Guard</a></li><li><a href=https://appscode-v3-hugo.web.app/products/pharmer/>Pharmer</a></li></ul></div></div></div><div class="column is-2"><div class=single-footer-widget><div class=footer-menu><h4>Services</h4><ul class=footer-link><li><a href=https://appscode-v3-hugo.web.app/sonsulting/>Consulting</a></li><li><a href=https://appscode-v3-hugo.web.app/training/>Training</a></li><li><a href=https://appscode-v3-hugo.web.app/support/>Support</a></li></ul></div></div></div><div class="column is-2"><div class=single-footer-widget><div class=footer-menu><h4>Company</h4><ul class=footer-link><li><a href=https://appscode-v3-hugo.web.app/about/>About Us</a></li><li><a href=https://blog.byte.builders>Blog</a></li><li><a href=https://appscode-v3-hugo.web.app/contact/>Contact Us</a></li></ul></div></div></div><div class="column is-2"><div class=single-footer-widget><div class=footer-menu><h4>Legal</h4><ul class=footer-link><li><a href=https://appscode-v3-hugo.web.app/legal/tos/>Terms of Sevice</a></li><li><a href=https://appscode-v3-hugo.web.app/legal/privacy-policy/>Privacy Policy</a></li><li><a href=https://appscode-v3-hugo.web.app/legal/security/>Security</a></li><li><a href=https://appscode-v3-hugo.web.app/legal/sla/>Service Level Agreement</a></li></ul></div></div></div></div></div></div><div class=footer-bottom><div class="container section"><div class=columns><div class="column is-4"><p>© 2019 AppsCode Inc. All rights reserved.</p></div><div class="column is-4 is-mobile has-text-centered"><div class=footer-inline-link><a href=https://appscode-v3-hugo.web.app/legal/privacy-policy/>Privacy Policy</a>
+<a href=https://appscode-v3-hugo.web.app/legal/tos/>Terms of Service</a></div></div><div class="column is-4 is-mobile has-text-right"><div class=socail-link-inline><ul><li><a href=https://twitter.com/AppsCodeHQ><i class="fa fa-twitter" aria-hidden=true></i></a></li><li><a href=https://www.facebook.com/appscode><i class="fa fa-facebook" aria-hidden=true></i></a></li><li><a href=https://www.youtube.com/c/AppsCodeInc><i class="fa fa-youtube" aria-hidden=true></i></a></li></ul></div></div></div></div></div></footer><script src=/assets/js/bulma-carousel.min.js></script><script src=/assets/js/main.js></script></body></html>

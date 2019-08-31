@@ -96,7 +96,10 @@ h6 {
 .tooltip.is-tooltip-primary::before {
   background-color: #32325D;
   color: #ffffff;
-  min-width: 200px; }
+  min-width: 200px;
+  padding: 15px;
+  font-weight: 400;
+  font-style: normal; }
 
 .tooltip.is-tooltip-primary:not(.is-loading)::after {
   border-color: #32325D transparent transparent transparent; }
@@ -982,7 +985,9 @@ body.fixed-nav
   box-shadow: 0 1px 12px rgba(15, 80, 100, 0.12);
   padding: 9px 24px;
   border-radius: 4px;
-  font-size: 16px; }
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto; }
   .trusted-logo .trusted-action a {
     color: #00A651; }
 .trusted-logo .trusted-company a {
@@ -1349,6 +1354,9 @@ body.fixed-nav
 .ceo-image {
   position: relative;
   z-index: 1; }
+  .ceo-image img {
+    max-width: 300px;
+    margin-top: 20px; }
   .ceo-image .dots-style {
     position: absolute;
     background: url(../images/appscode/dots.png);
@@ -1357,7 +1365,9 @@ body.fixed-nav
     width: 250px;
     right: 100px;
     bottom: -75px;
-    z-index: -1; }
+    z-index: -1;
+    left: 50%;
+    margin-left: -125px; }
 
 section.our-customer-area {
   background: #fbfbfb; }
@@ -2297,7 +2307,9 @@ p.spam-message {
   width: 180px; }
 
 .single-pricing-table {
-  border-radius: 8px; }
+  border-radius: 8px;
+  position: relative;
+  z-index: 1; }
 
 .single-pricing-table.gold {
   box-shadow: 0px 8px 47px rgba(0, 0, 0, 0.16);
@@ -2388,7 +2400,7 @@ p.spam-message {
   position: relative;
   z-index: 1;
   margin-top: -32px;
-  min-height: 140px; }
+  min-height: 164px; }
 
 .round-shape {
   background: #fff;
@@ -2398,15 +2410,26 @@ p.spam-message {
   border-radius: 50px;
   font-weight: 500;
   padding: 2px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin-bottom: 10px; }
 
-.recommended-text {
+.discount-text {
   position: absolute;
-  top: -50px;
+  top: -60px;
   width: 100%;
-  color: #FF8000;
-  font-size: 16px;
-  font-weight: 500; }
+  color: #242A31;
+  font-size: 18px;
+  font-weight: 600;
+  transition: .3s ease-in-out; }
+
+.discount-text.is-hide {
+  top: 0; }
+
+.single-pricing-table.silver .discount-text {
+  color: #00A651; }
+
+.single-pricing-table.gold .discount-text {
+  color: #FF8000; }
 
 .single-pricing-table.silver .pricing-top {
   min-height: 100px; }
@@ -2416,14 +2439,17 @@ p.spam-message {
 
 .pricing-top h4 {
   font-size: 20px;
-  color: #ffffff; }
+  color: #ffffff;
+  font-weight: 700; }
 
 .package-price {
   font-size: 26px;
-  font-weight: 700; }
+  font-weight: 400; }
   .package-price sup, .package-price sub {
     font-size: 14px;
     font-weight: 400; }
+  .package-price strong {
+    color: #ffffff; }
 
 .package-price span {
   display: block;
@@ -2487,6 +2513,10 @@ p.spam-message {
   display: table-cell;
   vertical-align: middle; }
 
+.pricing-body li span.tooltip {
+  text-decoration: underline;
+  text-decoration-style: dashed; }
+
 .pricing-body li:last-child {
   border-bottom: none; }
 
@@ -2504,7 +2534,7 @@ p.spam-message {
 .single-pricing-table.free,
 .single-pricing-table.silver,
 .single-pricing-table.plutinum {
-  margin-top: 50px; }
+  margin-top: 34px; }
 
 .single-pricing-table.free {
   margin-right: 10px; }
@@ -3074,7 +3104,7 @@ li.nav-item.active a {
   padding-right: 15px; }
 
 .kd-version .button {
-  padding-left: 30px;
+  padding-left: 20px;
   height: 38px;
   background: #ebebeb; }
 
@@ -3217,10 +3247,11 @@ span.new-item {
   font-weight: 500;
   background: #e3d4d4;
   padding: 3px 10px;
-  border-radius: 50px;
+  border-radius: 4px;
   line-height: 12px;
   height: 20px;
-  margin-left: 100px; }
+  position: absolute;
+  right: 30px; }
 
 /* dropdown mega menu start */
 .menu-header {
@@ -3662,7 +3693,6 @@ body.guard .subscription-form .button:hover,
 body.guard .searchbar-area button,
 body.guard .countdown-area .right-sidebar-menu ul li a::after,
 body.guard .pagination-list li a.is-active,
-body.guard .tooltip.is-tooltip-primary::before,
 body.guard .pricing-button .kubedb-transparent-btn:hover,
 body.guard .single-product-feature-wrapper:after {
   background-color: #D84E27; }
@@ -3698,6 +3728,7 @@ body.guard .subscription-form .button,
 body.guard .section-title h4,
 body.guard .hero-content-inner h4,
 body.guard .pricing-button .kubedb-transparent-btn,
+body.guard .single-pricing-table.silver .discount-text,
 body.guard .single-search-result h3 a {
   color: #D84E27; }
 
@@ -3716,9 +3747,6 @@ body.guard .pricing-button .kubedb-transparent-btn,
 body.guard .pricing-button .kubedb-transparent-btn:hover,
 body.guard .subscription-form .input:hover {
   border-color: #D84E27; }
-
-body.guard .tooltip.is-tooltip-primary:not(.is-loading)::after {
-  border-color: #D84E27 transparent transparent transparent; }
 
 body.guard .pricing-top:before {
   border-right-color: #97371b; }
@@ -3750,7 +3778,6 @@ body.kubeci .subscription-form .button:hover,
 body.kubeci .searchbar-area button,
 body.kubeci .countdown-area .right-sidebar-menu ul li a::after,
 body.kubeci .pagination-list li a.is-active,
-body.kubeci .tooltip.is-tooltip-primary::before,
 body.kubeci .pricing-button .kubedb-transparent-btn:hover,
 body.kubeci .single-product-feature-wrapper:after {
   background-color: #2c3e50; }
@@ -3786,6 +3813,7 @@ body.kubeci .subscription-form .button,
 body.kubeci .section-title h4,
 body.kubeci .hero-content-inner h4,
 body.kubeci .pricing-button .kubedb-transparent-btn,
+body.kubeci .single-pricing-table.silver .discount-text,
 body.kubeci .single-search-result h3 a {
   color: #2c3e50; }
 
@@ -3804,9 +3832,6 @@ body.kubeci .pricing-button .kubedb-transparent-btn,
 body.kubeci .pricing-button .kubedb-transparent-btn:hover,
 body.kubeci .subscription-form .input:hover {
   border-color: #2c3e50; }
-
-body.kubeci .tooltip.is-tooltip-primary:not(.is-loading)::after {
-  border-color: #2c3e50 transparent transparent transparent; }
 
 body.kubeci .pricing-top:before {
   border-right-color: #11181f; }
@@ -3838,7 +3863,6 @@ body.kubed .subscription-form .button:hover,
 body.kubed .searchbar-area button,
 body.kubed .countdown-area .right-sidebar-menu ul li a::after,
 body.kubed .pagination-list li a.is-active,
-body.kubed .tooltip.is-tooltip-primary::before,
 body.kubed .pricing-button .kubedb-transparent-btn:hover,
 body.kubed .single-product-feature-wrapper:after {
   background-color: #1C7BD4; }
@@ -3874,6 +3898,7 @@ body.kubed .subscription-form .button,
 body.kubed .section-title h4,
 body.kubed .hero-content-inner h4,
 body.kubed .pricing-button .kubedb-transparent-btn,
+body.kubed .single-pricing-table.silver .discount-text,
 body.kubed .single-search-result h3 a {
   color: #1C7BD4; }
 
@@ -3892,9 +3917,6 @@ body.kubed .pricing-button .kubedb-transparent-btn,
 body.kubed .pricing-button .kubedb-transparent-btn:hover,
 body.kubed .subscription-form .input:hover {
   border-color: #1C7BD4; }
-
-body.kubed .tooltip.is-tooltip-primary:not(.is-loading)::after {
-  border-color: #1C7BD4 transparent transparent transparent; }
 
 body.kubed .pricing-top:before {
   border-right-color: #135490; }
@@ -3926,7 +3948,6 @@ body.kubesheild .subscription-form .button:hover,
 body.kubesheild .searchbar-area button,
 body.kubesheild .countdown-area .right-sidebar-menu ul li a::after,
 body.kubesheild .pagination-list li a.is-active,
-body.kubesheild .tooltip.is-tooltip-primary::before,
 body.kubesheild .pricing-button .kubedb-transparent-btn:hover,
 body.kubesheild .single-product-feature-wrapper:after {
   background-color: #2516C7; }
@@ -3962,6 +3983,7 @@ body.kubesheild .subscription-form .button,
 body.kubesheild .section-title h4,
 body.kubesheild .hero-content-inner h4,
 body.kubesheild .pricing-button .kubedb-transparent-btn,
+body.kubesheild .single-pricing-table.silver .discount-text,
 body.kubesheild .single-search-result h3 a {
   color: #2516C7; }
 
@@ -3980,9 +4002,6 @@ body.kubesheild .pricing-button .kubedb-transparent-btn,
 body.kubesheild .pricing-button .kubedb-transparent-btn:hover,
 body.kubesheild .subscription-form .input:hover {
   border-color: #2516C7; }
-
-body.kubesheild .tooltip.is-tooltip-primary:not(.is-loading)::after {
-  border-color: #2516C7 transparent transparent transparent; }
 
 body.kubesheild .pricing-top:before {
   border-right-color: #180e82; }
@@ -4014,7 +4033,6 @@ body.kubevault .subscription-form .button:hover,
 body.kubevault .searchbar-area button,
 body.kubevault .countdown-area .right-sidebar-menu ul li a::after,
 body.kubevault .pagination-list li a.is-active,
-body.kubevault .tooltip.is-tooltip-primary::before,
 body.kubevault .pricing-button .kubedb-transparent-btn:hover,
 body.kubevault .single-product-feature-wrapper:after {
   background-color: #326CE5; }
@@ -4050,6 +4068,7 @@ body.kubevault .subscription-form .button,
 body.kubevault .section-title h4,
 body.kubevault .hero-content-inner h4,
 body.kubevault .pricing-button .kubedb-transparent-btn,
+body.kubevault .single-pricing-table.silver .discount-text,
 body.kubevault .single-search-result h3 a {
   color: #326CE5; }
 
@@ -4068,9 +4087,6 @@ body.kubevault .pricing-button .kubedb-transparent-btn,
 body.kubevault .pricing-button .kubedb-transparent-btn:hover,
 body.kubevault .subscription-form .input:hover {
   border-color: #326CE5; }
-
-body.kubevault .tooltip.is-tooltip-primary:not(.is-loading)::after {
-  border-color: #326CE5 transparent transparent transparent; }
 
 body.kubevault .pricing-top:before {
   border-right-color: #174ab4; }
@@ -4102,7 +4118,6 @@ body.pharmer .subscription-form .button:hover,
 body.pharmer .searchbar-area button,
 body.pharmer .countdown-area .right-sidebar-menu ul li a::after,
 body.pharmer .pagination-list li a.is-active,
-body.pharmer .tooltip.is-tooltip-primary::before,
 body.pharmer .pricing-button .kubedb-transparent-btn:hover,
 body.pharmer .single-product-feature-wrapper:after {
   background-color: #326DE6; }
@@ -4138,6 +4153,7 @@ body.pharmer .subscription-form .button,
 body.pharmer .section-title h4,
 body.pharmer .hero-content-inner h4,
 body.pharmer .pricing-button .kubedb-transparent-btn,
+body.pharmer .single-pricing-table.silver .discount-text,
 body.pharmer .single-search-result h3 a {
   color: #326DE6; }
 
@@ -4156,9 +4172,6 @@ body.pharmer .pricing-button .kubedb-transparent-btn,
 body.pharmer .pricing-button .kubedb-transparent-btn:hover,
 body.pharmer .subscription-form .input:hover {
   border-color: #326DE6; }
-
-body.pharmer .tooltip.is-tooltip-primary:not(.is-loading)::after {
-  border-color: #326DE6 transparent transparent transparent; }
 
 body.pharmer .pricing-top:before {
   border-right-color: #164ab5; }
@@ -4190,7 +4203,6 @@ body.searchlight .subscription-form .button:hover,
 body.searchlight .searchbar-area button,
 body.searchlight .countdown-area .right-sidebar-menu ul li a::after,
 body.searchlight .pagination-list li a.is-active,
-body.searchlight .tooltip.is-tooltip-primary::before,
 body.searchlight .pricing-button .kubedb-transparent-btn:hover,
 body.searchlight .single-product-feature-wrapper:after {
   background-color: #111738; }
@@ -4226,6 +4238,7 @@ body.searchlight .subscription-form .button,
 body.searchlight .section-title h4,
 body.searchlight .hero-content-inner h4,
 body.searchlight .pricing-button .kubedb-transparent-btn,
+body.searchlight .single-pricing-table.silver .discount-text,
 body.searchlight .single-search-result h3 a {
   color: #111738; }
 
@@ -4244,9 +4257,6 @@ body.searchlight .pricing-button .kubedb-transparent-btn,
 body.searchlight .pricing-button .kubedb-transparent-btn:hover,
 body.searchlight .subscription-form .input:hover {
   border-color: #111738; }
-
-body.searchlight .tooltip.is-tooltip-primary:not(.is-loading)::after {
-  border-color: #111738 transparent transparent transparent; }
 
 body.searchlight .pricing-top:before {
   border-right-color: black; }
@@ -4278,7 +4288,6 @@ body.service-broker .subscription-form .button:hover,
 body.service-broker .searchbar-area button,
 body.service-broker .countdown-area .right-sidebar-menu ul li a::after,
 body.service-broker .pagination-list li a.is-active,
-body.service-broker .tooltip.is-tooltip-primary::before,
 body.service-broker .pricing-button .kubedb-transparent-btn:hover,
 body.service-broker .single-product-feature-wrapper:after {
   background-color: #29B4A2; }
@@ -4314,6 +4323,7 @@ body.service-broker .subscription-form .button,
 body.service-broker .section-title h4,
 body.service-broker .hero-content-inner h4,
 body.service-broker .pricing-button .kubedb-transparent-btn,
+body.service-broker .single-pricing-table.silver .discount-text,
 body.service-broker .single-search-result h3 a {
   color: #29B4A2; }
 
@@ -4332,9 +4342,6 @@ body.service-broker .pricing-button .kubedb-transparent-btn,
 body.service-broker .pricing-button .kubedb-transparent-btn:hover,
 body.service-broker .subscription-form .input:hover {
   border-color: #29B4A2; }
-
-body.service-broker .tooltip.is-tooltip-primary:not(.is-loading)::after {
-  border-color: #29B4A2 transparent transparent transparent; }
 
 body.service-broker .pricing-top:before {
   border-right-color: #1b766a; }
@@ -4366,7 +4373,6 @@ body.stash .subscription-form .button:hover,
 body.stash .searchbar-area button,
 body.stash .countdown-area .right-sidebar-menu ul li a::after,
 body.stash .pagination-list li a.is-active,
-body.stash .tooltip.is-tooltip-primary::before,
 body.stash .pricing-button .kubedb-transparent-btn:hover,
 body.stash .single-product-feature-wrapper:after {
   background-color: #5E2DEA; }
@@ -4402,6 +4408,7 @@ body.stash .subscription-form .button,
 body.stash .section-title h4,
 body.stash .hero-content-inner h4,
 body.stash .pricing-button .kubedb-transparent-btn,
+body.stash .single-pricing-table.silver .discount-text,
 body.stash .single-search-result h3 a {
   color: #5E2DEA; }
 
@@ -4420,9 +4427,6 @@ body.stash .pricing-button .kubedb-transparent-btn,
 body.stash .pricing-button .kubedb-transparent-btn:hover,
 body.stash .subscription-form .input:hover {
   border-color: #5E2DEA; }
-
-body.stash .tooltip.is-tooltip-primary:not(.is-loading)::after {
-  border-color: #5E2DEA transparent transparent transparent; }
 
 body.stash .pricing-top:before {
   border-right-color: #3d12b8; }
@@ -4454,7 +4458,6 @@ body.swift .subscription-form .button:hover,
 body.swift .searchbar-area button,
 body.swift .countdown-area .right-sidebar-menu ul li a::after,
 body.swift .pagination-list li a.is-active,
-body.swift .tooltip.is-tooltip-primary::before,
 body.swift .pricing-button .kubedb-transparent-btn:hover,
 body.swift .single-product-feature-wrapper:after {
   background-color: #3F51B6; }
@@ -4490,6 +4493,7 @@ body.swift .subscription-form .button,
 body.swift .section-title h4,
 body.swift .hero-content-inner h4,
 body.swift .pricing-button .kubedb-transparent-btn,
+body.swift .single-pricing-table.silver .discount-text,
 body.swift .single-search-result h3 a {
   color: #3F51B6; }
 
@@ -4508,9 +4512,6 @@ body.swift .pricing-button .kubedb-transparent-btn,
 body.swift .pricing-button .kubedb-transparent-btn:hover,
 body.swift .subscription-form .input:hover {
   border-color: #3F51B6; }
-
-body.swift .tooltip.is-tooltip-primary:not(.is-loading)::after {
-  border-color: #3F51B6 transparent transparent transparent; }
 
 body.swift .pricing-top:before {
   border-right-color: #2b387d; }
@@ -4542,7 +4543,6 @@ body.voyager .subscription-form .button:hover,
 body.voyager .searchbar-area button,
 body.voyager .countdown-area .right-sidebar-menu ul li a::after,
 body.voyager .pagination-list li a.is-active,
-body.voyager .tooltip.is-tooltip-primary::before,
 body.voyager .pricing-button .kubedb-transparent-btn:hover,
 body.voyager .single-product-feature-wrapper:after {
   background-color: #2D2A78; }
@@ -4578,6 +4578,7 @@ body.voyager .subscription-form .button,
 body.voyager .section-title h4,
 body.voyager .hero-content-inner h4,
 body.voyager .pricing-button .kubedb-transparent-btn,
+body.voyager .single-pricing-table.silver .discount-text,
 body.voyager .single-search-result h3 a {
   color: #2D2A78; }
 
@@ -4596,9 +4597,6 @@ body.voyager .pricing-button .kubedb-transparent-btn,
 body.voyager .pricing-button .kubedb-transparent-btn:hover,
 body.voyager .subscription-form .input:hover {
   border-color: #2D2A78; }
-
-body.voyager .tooltip.is-tooltip-primary:not(.is-loading)::after {
-  border-color: #2D2A78 transparent transparent transparent; }
 
 body.voyager .pricing-top:before {
   border-right-color: #18163f; }
@@ -5101,7 +5099,11 @@ body.voyager .documentation-menu {
 
   .main-menu {
     overflow-y: auto;
-    max-height: 70vh; } }
+    max-height: 70vh; }
+
+  .sidebar-search-area {
+    position: inherit;
+    width: 100%; } }
 /* small Mobile :768px. */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   p {
@@ -5557,6 +5559,10 @@ body.voyager .documentation-menu {
     font-size: 32px;
     line-height: 44px;
     margin-bottom: 20px; }
+
+  .sidebar-search-area {
+    position: inherit;
+    width: 100%; }
 
   .reverse-row-order {
     display: flex;

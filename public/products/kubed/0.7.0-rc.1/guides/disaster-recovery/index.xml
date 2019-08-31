@@ -1,55 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Disaster Recovery | Kubernetes on The Kubernetes Company</title>
-    <link>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/</link>
-    <description>Recent content in Disaster Recovery | Kubernetes on The Kubernetes Company</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Backup &amp; Restore Persistent Volumes</title>
-      <link>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/stash/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/stash/</guid>
-      <description>New to Kubed? Please start here.
- Backup &amp;amp; Restore Persistent Volumes Stash by AppsCode is a Kubernetes operator to backup &amp;amp; restore Persistent Volumes. If you are running production workloads in Kubernetes, you might want to take backup of your disks. Traditional tools are too complex to setup and maintain in a dynamic compute environment like Kubernetes. restic is a backup program that is fast, efficient and secure with few moving parts.</description>
-    </item>
-    
-    <item>
-      <title>Cluster Snapshots</title>
-      <link>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/cluster-snapshot/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/cluster-snapshot/</guid>
-      <description>New to Kubed? Please start here.
- Cluster Snapshots Kubed supports taking periodic snapshot of a Kubernetes cluster objects. The snapshot data can be stored in various cloud providers, eg, Amazon S3, Google Cloud Storage, Microsoft Azure, OpenStack Swift and any locally mounted volumes like NFS, GlusterFS, etc. Kubed uses Kubernetes discovery api to find all available resources in a cluster and stores them in a file matching the selfLink URL for an object.</description>
-    </item>
-    
-    <item>
-      <title>Disaster Recovery | Kubernetes</title>
-      <link>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/</guid>
-      <description>Disaster Recovery This section contains guides on how to use Kubed to protect your Kubernetes cluster from disasters.
- Cluster Snapshots: This tutorial will show you how to use Kubed to take periodic snapshots of a Kubernetes cluster objects. Kubernetes Recycle Bin: Kubed provides a recycle bin for deleted and/or updated Kubernetes objects. This tutorial will show you how to use Kubed to setup a recycle bin for Kubernetes cluster objects.</description>
-    </item>
-    
-    <item>
-      <title>Recycle Bin</title>
-      <link>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/recycle-bin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/recycle-bin/</guid>
-      <description>New to Kubed? Please start here.
- Kubernetes Recycle Bin Kubed provides a recycle bin for deleted and/or updated Kubernetes objects. Once activated, any deleted and/or updated object is stored in YAML format in folder mounted inside Kubed pod. This tutorial will show you how to use Kubed to setup a recycle bin for Kubernetes cluster objects.
-Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Disaster Recovery | Kubernetes on Kubernetes Anywhere — for Everybody</title><link>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/</link><description>Recent content in Disaster Recovery | Kubernetes on Kubernetes Anywhere — for Everybody</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/index.xml" rel="self" type="application/rss+xml"/><item><title>Backup &amp; Restore Persistent Volumes</title><link>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/stash/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/stash/</guid><description>New to Kubed? Please start here.
+Backup &amp;amp; Restore Persistent Volumes Stash by AppsCode is a Kubernetes operator to backup &amp;amp; restore Persistent Volumes. If you are running production workloads in Kubernetes, you might want to take backup of your disks. Traditional tools are too complex to setup and maintain in a dynamic compute environment like Kubernetes. restic is a backup program that is fast, efficient and secure with few moving parts.</description></item><item><title>Cluster Snapshots</title><link>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/cluster-snapshot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/cluster-snapshot/</guid><description>New to Kubed? Please start here.
+Cluster Snapshots Kubed supports taking periodic snapshot of a Kubernetes cluster objects. The snapshot data can be stored in various cloud providers, eg, Amazon S3, Google Cloud Storage, Microsoft Azure, OpenStack Swift and any locally mounted volumes like NFS, GlusterFS, etc. Kubed uses Kubernetes discovery api to find all available resources in a cluster and stores them in a file matching the selfLink URL for an object.</description></item><item><title>Disaster Recovery | Kubernetes</title><link>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/</guid><description>Disaster Recovery This section contains guides on how to use Kubed to protect your Kubernetes cluster from disasters.
+Cluster Snapshots: This tutorial will show you how to use Kubed to take periodic snapshots of a Kubernetes cluster objects. Kubernetes Recycle Bin: Kubed provides a recycle bin for deleted and/or updated Kubernetes objects. This tutorial will show you how to use Kubed to setup a recycle bin for Kubernetes cluster objects.</description></item><item><title>Recycle Bin</title><link>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/recycle-bin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/kubed/0.7.0-rc.1/guides/disaster-recovery/recycle-bin/</guid><description>New to Kubed? Please start here.
+Kubernetes Recycle Bin Kubed provides a recycle bin for deleted and/or updated Kubernetes objects. Once activated, any deleted and/or updated object is stored in YAML format in folder mounted inside Kubed pod. This tutorial will show you how to use Kubed to setup a recycle bin for Kubernetes cluster objects.
+Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description></item></channel></rss>

@@ -1,50 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Pod Alert on The Kubernetes Company</title>
-    <link>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/pod-alerts/</link>
-    <description>Recent content in Pod Alert on The Kubernetes Company</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/pod-alerts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Pod Exec</title>
-      <link>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-exec/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-exec/</guid>
-      <description>New to Searchlight? Please start here.
- Check pod-exec Check command pod-exec is used to check status of a command run inside Kubernetes pods. Returns OK if exit code is zero, otherwise, returns Critical.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pod Alert on Kubernetes Anywhere — for Everybody</title><link>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/pod-alerts/</link><description>Recent content in Pod Alert on Kubernetes Anywhere — for Everybody</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/pod-alerts/index.xml" rel="self" type="application/rss+xml"/><item><title>Pod Exec</title><link>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-exec/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-exec/</guid><description>New to Searchlight? Please start here.
+Check pod-exec Check command pod-exec is used to check status of a command run inside Kubernetes pods. Returns OK if exit code is zero, otherwise, returns Critical.
 Spec pod-exec check command has the following variables:
- container - Container name in a Kubernetes Pod cmd - Exec command. [Default: &amp;lsquo;/bin/sh&amp;rsquo;] argv - Exec command arguments. [Format: &amp;lsquo;arg; arg; arg&amp;rsquo;]  Execution of this command can result in following states:</description>
-    </item>
-    
-    <item>
-      <title>Pod Status</title>
-      <link>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-status/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-status/</guid>
-      <description>New to Searchlight? Please start here.
- Check pod-status Check command pod-status is used to check status of Kubernetes pods. Returns OK if status.phase of a pod is Succeeded or Running, otherwise, returns Critical.
+container - Container name in a Kubernetes Pod cmd - Exec command. [Default: &amp;lsquo;/bin/sh&amp;rsquo;] argv - Exec command arguments. [Format: &amp;lsquo;arg; arg; arg&amp;rsquo;] Execution of this command can result in following states:</description></item><item><title>Pod Status</title><link>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-status/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-status/</guid><description>New to Searchlight? Please start here.
+Check pod-status Check command pod-status is used to check status of Kubernetes pods. Returns OK if status.phase of a pod is Succeeded or Running, otherwise, returns Critical.
 Spec pod-status check command has no variables. Execution of this command can result in following states:
- OK Critical Unknown  Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description>
-    </item>
-    
-    <item>
-      <title>Pod Volume</title>
-      <link>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-volume/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-volume/</guid>
-      <description>New to Searchlight? Please start here.
- Check pod-volume Check command pod-volume is used to check percentage of available space in Kubernetes Pods.
+OK Critical Unknown Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description></item><item><title>Pod Volume</title><link>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-volume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-volume/</guid><description>New to Searchlight? Please start here.
+Check pod-volume Check command pod-volume is used to check percentage of available space in Kubernetes Pods.
 Spec pod-volume check command has the following variables:
- volumeName - Name of volume whose usage stats will be checked secretName - Name of Kubernetes Secret used to pass hostfacts auth info warning - Warning level value (usage percentage defaults to 80.0) critical - Critical level value (usage percentage defaults to 95.</description>
-    </item>
-    
-  </channel>
-</rss>
+volumeName - Name of volume whose usage stats will be checked secretName - Name of Kubernetes Secret used to pass hostfacts auth info warning - Warning level value (usage percentage defaults to 80.0) critical - Critical level value (usage percentage defaults to 95.</description></item></channel></rss>

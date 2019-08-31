@@ -1,62 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Pod Alert on The Kubernetes Company</title>
-    <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/</link>
-    <description>Recent content in Pod Alert on The Kubernetes Company</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Pod Exec</title>
-      <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/pod_exec/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/pod_exec/</guid>
-      <description>New to Searchlight? Please start here.
- Check pod_exec Check command pod_exec is used to check status of a command run inside Kubernetes pods. Returns OK if exit code is zero, otherwise, returns CRITICAL.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pod Alert on Kubernetes Anywhere — for Everybody</title><link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/</link><description>Recent content in Pod Alert on Kubernetes Anywhere — for Everybody</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/index.xml" rel="self" type="application/rss+xml"/><item><title>Pod Exec</title><link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/pod_exec/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/pod_exec/</guid><description>New to Searchlight? Please start here.
+Check pod_exec Check command pod_exec is used to check status of a command run inside Kubernetes pods. Returns OK if exit code is zero, otherwise, returns CRITICAL.
 Spec pod_exec check command has the following variables:
- container - Container name in a Kubernetes Pod cmd - Exec command. [Default: &amp;lsquo;/bin/sh&amp;rsquo;] argv - Exec command arguments. [Format: &amp;lsquo;arg; arg; arg&amp;rsquo;]  Execution of this command can result in following states:</description>
-    </item>
-    
-    <item>
-      <title>Pod Influx Query</title>
-      <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/influx_query/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/influx_query/</guid>
-      <description>New to Searchlight? Please start here.
- Check influx_query Check command influx_query is used to check InfluxDB query result.
+container - Container name in a Kubernetes Pod cmd - Exec command. [Default: &amp;lsquo;/bin/sh&amp;rsquo;] argv - Exec command arguments. [Format: &amp;lsquo;arg; arg; arg&amp;rsquo;] Execution of this command can result in following states:</description></item><item><title>Pod Influx Query</title><link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/influx_query/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/influx_query/</guid><description>New to Searchlight? Please start here.
+Check influx_query Check command influx_query is used to check InfluxDB query result.
 Spec influx_query check command has the following variables.
- influxHost - URL of InfluxDB host to query secretName - Name of Secret used for InfluxDB authentication A - InfluxDB query (A). Query result will be assigned to variable (A) B - InfluxDB query (B). Query result will be assigned to variable (B) C - InfluxDB query &amp;copy;.</description>
-    </item>
-    
-    <item>
-      <title>Pod Status</title>
-      <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/pod_status/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/pod_status/</guid>
-      <description>New to Searchlight? Please start here.
- Check pod_status Check command pod_status is used to check status of Kubernetes pods. Returns OK if status.phase of a pod is Succeeded or Running, otherwise, returns CRITICAL.
+influxHost - URL of InfluxDB host to query secretName - Name of Secret used for InfluxDB authentication A - InfluxDB query (A). Query result will be assigned to variable (A) B - InfluxDB query (B). Query result will be assigned to variable (B) C - InfluxDB query &amp;copy;.</description></item><item><title>Pod Status</title><link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/pod_status/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/pod_status/</guid><description>New to Searchlight? Please start here.
+Check pod_status Check command pod_status is used to check status of Kubernetes pods. Returns OK if status.phase of a pod is Succeeded or Running, otherwise, returns CRITICAL.
 Spec pod_status check command has no variables. Execution of this command can result in following states:
- OK CRITICAL UNKNOWN  Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description>
-    </item>
-    
-    <item>
-      <title>Pod Volume</title>
-      <link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/pod_volume/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/pod_volume/</guid>
-      <description>New to Searchlight? Please start here.
- Check pod_volume Check command pod_volume is used to check percentage of available space in Kubernetes Pods.
+OK CRITICAL UNKNOWN Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description></item><item><title>Pod Volume</title><link>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/pod_volume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/searchlight/5.0.0/guides/pod-alerts/pod_volume/</guid><description>New to Searchlight? Please start here.
+Check pod_volume Check command pod_volume is used to check percentage of available space in Kubernetes Pods.
 Spec pod_volume check command has the following variables:
- volumeName - Name of volume whose usage stats will be checked secretName - Name of Kubernetes Secret used to pass hostfacts auth info warning - Warning level value (usage percentage defaults to 80.0) critical - Critical level value (usage percentage defaults to 95.</description>
-    </item>
-    
-  </channel>
-</rss>
+volumeName - Name of volume whose usage stats will be checked secretName - Name of Kubernetes Secret used to pass hostfacts auth info warning - Warning level value (usage percentage defaults to 80.0) critical - Critical level value (usage percentage defaults to 95.</description></item></channel></rss>

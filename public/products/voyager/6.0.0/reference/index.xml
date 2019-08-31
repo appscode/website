@@ -1,80 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Reference on The Kubernetes Company</title>
-    <link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/</link>
-    <description>Recent content in Reference on The Kubernetes Company</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Voyager</title>
-      <link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager/</guid>
-      <description>voyager Voyager by Appscode - Secure Ingress Controller for Kubernetes
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reference on Kubernetes Anywhere — for Everybody</title><link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/</link><description>Recent content in Reference on Kubernetes Anywhere — for Everybody</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Voyager</title><link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager/</guid><description>voyager Voyager by Appscode - Secure Ingress Controller for Kubernetes
 Synopsis Voyager by Appscode - Secure Ingress Controller for Kubernetes
-Options  --alsologtostderr log to standard error as well as files --analytics Send analytical events to Google Analytics (default true) -h, --help help for voyager --log.format logFormatFlag Set the log target and format. Example: &amp;quot;logger:syslog?appname=bob&amp;amp;local=7&amp;quot; or &amp;quot;logger:stdout?json=true&amp;quot; (default &amp;quot;logger:stderr&amp;quot;) --log.level levelFlag Only log messages with the given severity or above.</description>
-    </item>
-    
-    <item>
-      <title>Voyager Check</title>
-      <link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_check/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_check/</guid>
-      <description>voyager check Check Ingress
+Options --alsologtostderr log to standard error as well as files --analytics Send analytical events to Google Analytics (default true) -h, --help help for voyager --log.format logFormatFlag Set the log target and format. Example: &amp;quot;logger:syslog?appname=bob&amp;amp;local=7&amp;quot; or &amp;quot;logger:stdout?json=true&amp;quot; (default &amp;quot;logger:stderr&amp;quot;) --log.level levelFlag Only log messages with the given severity or above.</description></item><item><title>Voyager Check</title><link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_check/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_check/</guid><description>voyager check Check Ingress
 Synopsis Check Ingress
-voyager check [flags]  Options  -c, --cloud-provider string Name of cloud provider --from-file string YAML formatted file containing ingress -h, --help help for check  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --analytics Send analytical events to Google Analytics (default true) --log.format logFormatFlag Set the log target and format. Example: &amp;quot;logger:syslog?appname=bob&amp;amp;local=7&amp;quot; or &amp;quot;logger:stdout?json=true&amp;quot; (default &amp;quot;logger:stderr&amp;quot;) --log.</description>
-    </item>
-    
-    <item>
-      <title>Voyager Export</title>
-      <link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_export/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_export/</guid>
-      <description>voyager export Export Prometheus metrics for HAProxy
+voyager check [flags] Options -c, --cloud-provider string Name of cloud provider --from-file string YAML formatted file containing ingress -h, --help help for check Options inherited from parent commands --alsologtostderr log to standard error as well as files --analytics Send analytical events to Google Analytics (default true) --log.format logFormatFlag Set the log target and format. Example: &amp;quot;logger:syslog?appname=bob&amp;amp;local=7&amp;quot; or &amp;quot;logger:stdout?json=true&amp;quot; (default &amp;quot;logger:stderr&amp;quot;) --log.</description></item><item><title>Voyager Export</title><link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_export/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_export/</guid><description>voyager export Export Prometheus metrics for HAProxy
 Synopsis Export Prometheus metrics for HAProxy
-voyager export [flags]  Options  --address string Address to listen on for web interface and telemetry. (default &amp;quot;:56790&amp;quot;) --haproxy.server-metric-fields string Comma-separated list of exported server metrics. See http://cbonte.github.io/haproxy-dconv/configuration-1.5.html#9.1 (default &amp;quot;2,3,4,5,6,7,8,9,13,14,15,16,17,18,21,24,33,35,38,39,40,41,42,43,44&amp;quot;) --haproxy.timeout duration Timeout for trying to get stats from HAProxy. (default 5s) -h, --help help for export --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description>
-    </item>
-    
-    <item>
-      <title>Voyager Haproxy-Controller</title>
-      <link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_haproxy-controller/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_haproxy-controller/</guid>
-      <description>voyager haproxy-controller Synchronizes HAProxy config
+voyager export [flags] Options --address string Address to listen on for web interface and telemetry. (default &amp;quot;:56790&amp;quot;) --haproxy.server-metric-fields string Comma-separated list of exported server metrics. See http://cbonte.github.io/haproxy-dconv/configuration-1.5.html#9.1 (default &amp;quot;2,3,4,5,6,7,8,9,13,14,15,16,17,18,21,24,33,35,38,39,40,41,42,43,44&amp;quot;) --haproxy.timeout duration Timeout for trying to get stats from HAProxy. (default 5s) -h, --help help for export --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description></item><item><title>Voyager Haproxy-Controller</title><link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_haproxy-controller/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_haproxy-controller/</guid><description>voyager haproxy-controller Synchronizes HAProxy config
 Synopsis Synchronizes HAProxy config
-voyager haproxy-controller [command] [flags]  Options  --burst int The maximum burst for throttle (default 1000000) --cert-dir string Path where tls certificates are stored for HAProxy (default &amp;quot;/etc/ssl/private/haproxy&amp;quot;) -c, --cloud-provider string Name of cloud provider -h, --help help for haproxy-controller --ingress-api-version string API version of ingress resource --ingress-name string Name of ingress resource --init-only If true, exits after initial tls mount --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description>
-    </item>
-    
-    <item>
-      <title>Voyager Run</title>
-      <link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_run/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_run/</guid>
-      <description>voyager run Launch Voyager Ingress Controller
+voyager haproxy-controller [command] [flags] Options --burst int The maximum burst for throttle (default 1000000) --cert-dir string Path where tls certificates are stored for HAProxy (default &amp;quot;/etc/ssl/private/haproxy&amp;quot;) -c, --cloud-provider string Name of cloud provider -h, --help help for haproxy-controller --ingress-api-version string API version of ingress resource --ingress-name string Name of ingress resource --init-only If true, exits after initial tls mount --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description></item><item><title>Voyager Run</title><link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_run/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_run/</guid><description>voyager run Launch Voyager Ingress Controller
 Synopsis Launch Voyager Ingress Controller
-voyager run [flags]  Options  --audit-log-format string Format of saved audits. &amp;quot;legacy&amp;quot; indicates 1-line text format for each event. &amp;quot;json&amp;quot; indicates structured json format. Requires the &#39;AdvancedAuditing&#39; feature gate. Known formats are legacy,json. (default &amp;quot;json&amp;quot;) --audit-log-maxage int The maximum number of days to retain old audit log files based on the timestamp encoded in their filename. --audit-log-maxbackup int The maximum number of old audit log files to retain.</description>
-    </item>
-    
-    <item>
-      <title>Voyager Version</title>
-      <link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_version/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_version/</guid>
-      <description>voyager version Prints binary version number.
+voyager run [flags] Options --audit-log-format string Format of saved audits. &amp;quot;legacy&amp;quot; indicates 1-line text format for each event. &amp;quot;json&amp;quot; indicates structured json format. Requires the &#39;AdvancedAuditing&#39; feature gate. Known formats are legacy,json. (default &amp;quot;json&amp;quot;) --audit-log-maxage int The maximum number of days to retain old audit log files based on the timestamp encoded in their filename. --audit-log-maxbackup int The maximum number of old audit log files to retain.</description></item><item><title>Voyager Version</title><link>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode-v3-hugo.web.app/products/voyager/6.0.0/reference/voyager_version/</guid><description>voyager version Prints binary version number.
 Synopsis Prints binary version number.
-voyager version [flags]  Options  -h, --help help for version --short Print just the version number.  Options inherited from parent commands  --alsologtostderr log to standard error as well as files --analytics Send analytical events to Google Analytics (default true) --log.format logFormatFlag Set the log target and format. Example: &amp;quot;logger:syslog?appname=bob&amp;amp;local=7&amp;quot; or &amp;quot;logger:stdout?json=true&amp;quot; (default &amp;quot;logger:stderr&amp;quot;) --log.level levelFlag Only log messages with the given severity or above.</description>
-    </item>
-    
-  </channel>
-</rss>
+voyager version [flags] Options -h, --help help for version --short Print just the version number. Options inherited from parent commands --alsologtostderr log to standard error as well as files --analytics Send analytical events to Google Analytics (default true) --log.format logFormatFlag Set the log target and format. Example: &amp;quot;logger:syslog?appname=bob&amp;amp;local=7&amp;quot; or &amp;quot;logger:stdout?json=true&amp;quot; (default &amp;quot;logger:stderr&amp;quot;) --log.level levelFlag Only log messages with the given severity or above.</description></item></channel></rss>
