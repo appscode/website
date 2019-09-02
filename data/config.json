@@ -1,28 +1,24 @@
 {
-  "products": [
-    "guard",
-    "kubed",
-    "pharmer",
-    "searchlight",
-    "service-broker",
-    "stash",
-    "swift",
-    "voyager"
-  ],
   "assets": {
-    "repoURL": "https://github.com/appscode/static-assets",
     "branch": "master",
     "dirs": {
       "data": "data",
-      "images": "static/assets/images",
-      "files": "static/files"
-    }
+      "files": "static/files",
+      "images": "static/assets/images"
+    },
+    "repoURL": "https://github.com/appscode/static-assets"
   },
-  "mainMenu": {
-    "c0": ["kubedb", "stash", "kubevault", "guard"],
-    "c1": ["voyager", "swift", "searchlight", "service-broker"],
-    "c2": ["pharmer", "kubed"]
-  },
+  "clouds": [
+    "aws",
+    "azure",
+    "gce",
+    "digitalocean",
+    "linode",
+    "openstack",
+    "packet",
+    "baremetal",
+    "docker"
+  ],
   "footerLinks": [
     "kubedb",
     "stash",
@@ -30,5 +26,32 @@
     "voyager",
     "guard",
     "pharmer"
+  ],
+  "mainMenu": {
+    "c0": [
+      "kubedb",
+      "stash",
+      "kubevault",
+      "guard"
+    ],
+    "c1": [
+      "voyager",
+      "swift",
+      "searchlight",
+      "service-broker"
+    ],
+    "c2": [
+      "pharmer",
+      "kubed"
+    ]
+  },
+  "products": [
+    "guard",
+    "kubed",
+    "searchlight",
+    "service-broker",
+    "stash",
+    "swift",
+    "voyager"
   ]
 }
