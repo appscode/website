@@ -935,7 +935,7 @@ body.fixed-nav
     z-index: -1;
     min-height: 100%; }
   .hero-area .trusted-logo {
-    margin-top: 30px; }
+    margin-top: 60px; }
 
 .is-full-height {
   height: 100vh; }
@@ -1397,6 +1397,60 @@ section.our-customer-area {
   height: 100%;
   background: #1c2c41;
   z-index: -1; }
+
+.lightbox {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  display: none;
+  z-index: 99;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0; }
+  .lightbox-container {
+    position: relative;
+    max-width: 1080px;
+    margin: 7% auto;
+    display: block;
+    padding: 0 3%;
+    height: auto;
+    z-index: 10; }
+    @media screen and (max-width: 768px) {
+      .lightbox-container {
+        margin-top: 10%; } }
+    @media screen and (max-width: 414px) {
+      .lightbox-container {
+        margin-top: 13%; } }
+  .lightbox-content {
+    box-shadow: 0 1px 6px fade(black, 70%); }
+  .lightbox-close {
+    text-transform: uppercase;
+    background: transparent;
+    position: absolute;
+    font-weight: 300;
+    font-size: 32px;
+    display: block;
+    border: none;
+    color: white;
+    top: -52px;
+    right: 3%;
+    cursor: pointer; }
+
+.video-container {
+  padding-bottom: 56.25%;
+  position: relative;
+  padding-top: 30px;
+  overflow: hidden;
+  height: 0; }
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0; }
 
 .bg-white {
   background-color: #fff; }
