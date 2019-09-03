@@ -98,8 +98,8 @@
                   >
 
                     {{ range $v := $p.versions }}
-                      {{ if (index $v "v-dropdown") }}
-                        {{ if and (index $v "hostDocs") (eq $v.version $currentVersion) }}
+                      {{ if $v.show }}
+                        {{ if and $v.hostDocs (eq $v.version $currentVersion) }}
                           <span><strong class="icon"><i class="fa fa-cog" aria-hidden="true"></i></strong>{{ $v.version }}</span>
                         {{ if eq $v.version $p.latestVersion }}
                           <span class="new-item">Latest</span>
@@ -116,8 +116,8 @@
                 <div class="dropdown-menu" id="dropdown-menu3" role="menu">
                   <div class="dropdown-content">
                     {{ range $v := $p.versions }}
-                      {{ if (index $v "v-dropdown") }}
-                        {{ if (index $v "hostDocs") }}
+                      {{ if $v.show }}
+                        {{ if $v.hostDocs }}
                           <a href="/products/{{ $productName }}/{{ $v.version }}/" class="dropdown-item">{{ $v.version }}  {{ if eq $v.version $p.latestVersion }} <div class="tag">Latest</div> {{ end }}</a>
                         {{ else }}
                           <a href="https://github.com/{{ $p.docRepo }}/tree/{{ $v.version }}/docs" target="_blank" class="dropdown-item">{{ $v.version }}</a>
