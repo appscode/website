@@ -79,13 +79,11 @@
         <!-- left sidebar area start -->
         <div class="kd-left-sidebar">
           {{ if $productName }}
-            {{ $productJson := (index $.Site.Data.products $productName ) }}
-            {{ $latestVersion := (index $.Site.Data.products $productName "latestVersion") }}
-            {{ $currentBranch := (index (split .Params.menu_name "_") 2) }}
-            {{ $versions := (index $productJson "versions" ) }}
+            {{ $p := (index $.Site.Data.products $productName ) }}
+            {{ $currentVersion := (index (split .Params.menu_name "_") 2) }}
 
             <div class="trial-button">
-              <a href="/products/{{ $productName }}/{{ $latestVersion }}/setup/" class="button is-fullwidth">
+              <a href="/products/{{ $productName }}/{{ $p.latestVersion }}/setup/" class="button is-fullwidth">
                 Try Now for FREE!
               </a>
             </div>
@@ -99,12 +97,11 @@
                     aria-controls="dropdown-menu3"
                   >
 
-                    {{ range $version := $versions }}
-                      {{ $branch := (index $version "branch") }}
-                      {{ if (index $version "v-dropdown") }}
-                        {{ if and (index $version "hostDocs") (eq $branch $currentBranch) }}
-                          <span><strong class="icon"><i class="fa fa-cog" aria-hidden="true"></i></strong>{{ $branch }}</span>
-                        {{ if eq $branch $latestVersion }}
+                    {{ range $v := $p.versions }}
+                      {{ if (index $v "v-dropdown") }}
+                        {{ if and (index $v "hostDocs") (eq $v.version $currentVersion) }}
+                          <span><strong class="icon"><i class="fa fa-cog" aria-hidden="true"></i></strong>{{ $v.version }}</span>
+                        {{ if eq $v.version $p.latestVersion }}
                           <span class="new-item">Latest</span>
                         {{ end }}
                         {{ end }}
@@ -118,13 +115,12 @@
                 </div>
                 <div class="dropdown-menu" id="dropdown-menu3" role="menu">
                   <div class="dropdown-content">
-                    {{ range $version := $versions }}
-                      {{ $branch := (index $version "branch") }}
-                      {{ if (index $version "v-dropdown") }}
-                        {{ if (index $version "hostDocs") }}
-                          <a href="/products/{{ $productName }}/{{ $branch }}/" class="dropdown-item">{{ $branch }}  {{ if eq $branch $latestVersion }} <div class="tag">Latest</div> {{ end }}</a>
+                    {{ range $v := $p.versions }}
+                      {{ if (index $v "v-dropdown") }}
+                        {{ if (index $v "hostDocs") }}
+                          <a href="/products/{{ $productName }}/{{ $v.version }}/" class="dropdown-item">{{ $v.version }}  {{ if eq $v.version $p.latestVersion }} <div class="tag">Latest</div> {{ end }}</a>
                         {{ else }}
-                          <a href="https://github.com/{{ index $productJson "docRepo" }}/tree/{{ $branch }}/docs" target="_blank" class="dropdown-item">{{ $branch }}</a>
+                          <a href="https://github.com/{{ $p.docRepo }}/tree/{{ $v.version }}/docs" target="_blank" class="dropdown-item">{{ $v.version }}</a>
                         {{ end }}
                       {{ end }}
                     {{ end }}
