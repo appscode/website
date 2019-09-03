@@ -4,7 +4,7 @@ run:
 
 .PHONY: docs
 docs:
-	hugo-tools docs-aggregator
+	hugo-tools docs-aggregator --shared
 
 .PHONY: gen
 gen:
