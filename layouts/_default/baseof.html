@@ -259,6 +259,8 @@
       {{ block "header-bottom" . }}
 
       {{ $productName := .Params.product_name }}
+      {{ if $productName }}
+        {{ $p := (index $.Site.Data.products $productName) }}
 
       <!-- header bottom area start -->
       <div
@@ -267,10 +269,6 @@
         <div class="container section">
           <nav class="navbar">
             <div class="navbar-brand">
-              {{ $p := $.Site.Data.products.appscode }}
-              {{ if $productName }}
-                {{ $p = (index $.Site.Data.products $productName) }}
-              {{ end }}
               <a class="navbar-item" href="{{ index $.Site.Params $p.website.domainKey }}{{ $p.website.path }}">
                 <img src="{{ $p.logoWhite.src }}" alt="{{ $p.logoWhite.alt }}" />
               </a>
@@ -289,59 +287,55 @@
 
             <div id="acNav" class="navbar-menu main-menu">
               <div class="navbar-end">
-                {{ if $productName }}
-                  {{ if (isset $.Site.Data.products $productName) }}
-                    <!-- nav menu start -->
-                    <div class="navbar-start">
-                    {{ $latestVersion := (index $.Site.Data.products $productName "latestVersion") }}
-                    {{ range (index .Site.Menus (printf "product_%s" $productName)) }}
-                      {{ if .HasChildren }}
-                        <div class="navbar-item has-dropdown ac-is-hoverable">
-                          <a class="navbar-link">{{ .Name }}</a>
-                          <div class="ac-dropdown">
-                            {{ range .Children }}
-                              {{ if eq .Parent "database" }}
-                                <a class="navbar-item" href="/products/{{ $productName }}/{{ $latestVersion }}/guides/{{ .Identifier }}/">{{ .Name }}</a>
-                              {{ else }}
-                                <a href="{{.URL}}" class="navbar-item">{{ .Name }}</a>
-                              {{ end }}
-                            {{ end }}
-                          </div>
-                        </div>
-                      {{else}}
-                        {{ if eq .Name "Documentation" }}
-                          <a href="/products/{{ $productName }}/{{ $latestVersion }}/welcome/">{{ .Name }}</a>
-                        {{ else }}
-                          <a href="{{.URL}}" class="navbar-item">{{ .Name }}</a>
+                <!-- nav menu start -->
+                <div class="navbar-start">
+                {{ range (index .Site.Menus (printf "product_%s" $productName)) }}
+                  {{ if .HasChildren }}
+                    <div class="navbar-item has-dropdown ac-is-hoverable">
+                      <a class="navbar-link">{{ .Name }}</a>
+                      <div class="ac-dropdown">
+                        {{ range .Children }}
+                          {{ if eq .Parent "database" }}
+                            <a class="navbar-item" href="/products/{{ $productName }}/{{ $p.latestVersion }}/guides/{{ .Identifier }}/">{{ .Name }}</a>
+                          {{ else }}
+                            <a href="{{.URL}}" class="navbar-item">{{ .Name }}</a>
+                          {{ end }}
                         {{ end }}
-                      {{ end }}
-                    {{end}}
-                    </div>
-                    <!-- nav menu end -->
-
-                    {{ $starRepo := (index $.Site.Data.products $productName "starRepo") }}
-                    <div class="navbar-item">
-                      <div class="buttons main-menu-button">
-                        <!-- Place this tag where you want the button to render. -->
-                        <a
-                          class="github-button"
-                          href="https://github.com/{{ $starRepo }}"
-                          data-size="large"
-                          data-show-count="true"
-                          aria-label="Star {{ $starRepo }} on GitHub"
-                        >Star</a>
-                        <!-- Place this tag in your head or just before your close body tag. -->
-                        <script async defer src="https://buttons.github.io/buttons.js"></script>
                       </div>
                     </div>
+                  {{else}}
+                    {{ if eq .Name "Documentation" }}
+                      <a href="/products/{{ $productName }}/{{ $p.latestVersion }}/welcome/">{{ .Name }}</a>
+                    {{ else }}
+                      <a href="{{.URL}}" class="navbar-item">{{ .Name }}</a>
+                    {{ end }}
                   {{ end }}
-                {{ end }}
+                {{end}}
+                </div>
+                <!-- nav menu end -->
+
+                {{ $starRepo := (index $.Site.Data.products $productName "starRepo") }}
+                <div class="navbar-item">
+                  <div class="buttons main-menu-button">
+                    <!-- Place this tag where you want the button to render. -->
+                    <a
+                      class="github-button"
+                      href="https://github.com/{{ $starRepo }}"
+                      data-size="large"
+                      data-show-count="true"
+                      aria-label="Star {{ $starRepo }} on GitHub"
+                    >Star</a>
+                    <!-- Place this tag in your head or just before your close body tag. -->
+                    <script async defer src="https://buttons.github.io/buttons.js"></script>
+                  </div>
+                </div>
               </div>
             </div>
           </nav>
         </div>
       </div>
       <!-- header bottom area end -->
+      {{ end }}
       {{ end }}
 
       {{ block "documentation-menu" . }}
