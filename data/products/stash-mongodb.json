@@ -1,14 +1,14 @@
 {
-  "key": "stash-postgres",
-  "name": "PostgreSQL",
-  "tagline": "Postgres backup and restore plugin for Stash by AppsCode",
+  "key": "stash-mongodb",
+  "name": "MongoDB",
+  "tagline": "MongoDB backup and restore plugin for Stash by AppsCode",
   "published": true,
-  "repoURL": "https://github.com/stashed/postgres",
+  "repoURL": "https://github.com/stashed/mongodb",
   "starRepo": "stashed/stash",
-  "docRepo": "stashed/postgres",
+  "docRepo": "stashed/mongodb",
   "versions": [
-    { "branch": "master", "hostDocs": false, "show": true },
-    { "branch": "3.4", "hostDocs": true, "show": true }
+    { "version": "master", "hostDocs": false, "show": true },
+    { "version": "3.4", "hostDocs": true, "show": true }
   ],
   "latestVersion": "3.4"
 }
