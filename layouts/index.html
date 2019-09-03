@@ -165,13 +165,12 @@
       <div class="column is-8 has-text-left">
         <div class="section-title mb-0">
           <h2>
-            The point of using Lorem Ipsum is that it has a more- or-less normal
-            distribution of letters, as opposed to using Content here
+            More than 5,000 developers use AppsCode products every month to deliver value
           </h2>
           <p>
-            Build self-managed multi-host cloud contianer in minutes just with a
-            single click. Using Google's Kubernetes cotainer orchestration
-            platform you can easily build container.
+            Turbocharge your Kubernetes journey with AppsCode's open source Kubernetes operators <br />
+            and developer tools, like, KubeDB, Voyager, Stash, KubeVault, Pharmer and others. <br />
+            Join our vibrant community of users and let's get stuff done!
           </p>
         </div>
       </div>
@@ -180,9 +179,9 @@
         <div class="right-sidebar-wrapper">
           <div class="right-sidebar-menu">
             <ul>
-              <li><a href="#">Download an eBook</a></li>
-              <li><a href="#">Attend an online meetup</a></li>
-              <li><a href="#">Read the docs</a></li>
+              <li><a href="{{.Site.Params.slack_url}}">Join our slack!</a></li>
+              <li><a href="{{.Site.Params.github_url}}">Visit our Github page</a></li>
+              <li><a href="{{.Site.Params.domain_appscode}}">Read the docs</a></li>
             </ul>
           </div>
         </div>
@@ -199,18 +198,6 @@
   <div class="container section">
     <!-- counter start -->
     <div class="columns is-gapless is-multiline">
-      <!-- single count start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
-        <div class="single-count-wrapper">
-          <div class="count-icon">
-            <img src="/assets/images/icon/count/enterprise.png" alt="" />
-          </div>
-          <p class="count">200+</p>
-          <p class="name">Enterprise customers</p>
-          <a href="#" class="action-btn">Deploy AppsCode</a>
-        </div>
-      </div>
-      <!-- single count end -->
 
       <!-- single count start -->
       <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
@@ -218,9 +205,9 @@
           <div class="count-icon">
             <img src="/assets/images/icon/count/Octocat.png" alt="" />
           </div>
-          <p class="count">11,000+</p>
+          <p class="count">4,500+</p>
           <p class="name">GitHub stars</p>
-          <a href="#" class="action-btn">Deploy AppsCode</a>
+          <a href="{{.Site.Params.github_url}}" class="action-btn">Visit GitHub</a>
         </div>
       </div>
       <!-- single count end -->
@@ -231,9 +218,9 @@
           <div class="count-icon">
             <img src="/assets/images/icon/count/trained.png" alt="" />
           </div>
-          <p class="count">6,000+</p>
-          <p class="name">Users trained</p>
-          <a href="#" class="action-btn">Deploy AppsCode</a>
+          <p class="count">1,400+</p>
+          <p class="name">Developer Community</p>
+          <a href="{{.Site.Params.slack_url}}" class="action-btn">Join slack</a>
         </div>
       </div>
       <!-- single count end -->
@@ -244,12 +231,26 @@
           <div class="count-icon">
             <img src="/assets/images/icon/count/managed.png" alt="" />
           </div>
-          <p class="count">2M+</p>
+          <p class="count">3M+</p>
           <p class="name">Containers managed</p>
-          <a href="#" class="action-btn">Deploy AppsCode</a>
+          <a href="{{.Site.Params.domain_appscode}}/meet-expert/" class="action-btn">Request a demo</a>
         </div>
       </div>
       <!-- single count end -->
+
+      <!-- single count start -->
+      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
+        <div class="single-count-wrapper">
+          <div class="count-icon">
+            <img src="/assets/images/icon/count/enterprise.png" alt="" />
+          </div>
+          <p class="count">30,000+</p>
+          <p class="name">Operators deployed</p>
+          <a href="{{.Site.Params.domain_appscode}}/pricing/" class="action-btn">Get support</a>
+        </div>
+      </div>
+      <!-- single count end -->
+
     </div>
     <!-- counter end -->
   </div>
