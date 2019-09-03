@@ -1,7 +1,7 @@
 /* ======================
 	Header area start
 ========================*/
-body.fixed-nav header{
+body.fixed-nav header {
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.08);
   background-color: $white-color;
 }
@@ -36,27 +36,27 @@ body.fixed-nav header{
   transition: 0.3s ease-in-out;
 }
 
-
-.button.for-support, .button.for-chat {
+.button.for-support,
+.button.for-chat {
   background: $white-color;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, .17);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.17);
   border-radius: 2px;
   border: none;
 }
 .button.for-chat {
-  color: #36C5F0;
+  color: #36c5f0;
 }
 
 .button.for-support {
-  color: #9D0A0E;
+  color: #9d0a0e;
 }
 
 .button.for-chat:hover {
   background-color: #4A154B;
   color: $white-color;
 }
-.button.for-support:hover{
-  background-color: #9D0A0E;
+.button.for-support:hover {
+  background-color: #9d0a0e;
   color: $white-color;
   span{
     img{
@@ -92,10 +92,10 @@ a.navbar-item:hover {
 .customize-kubedb .main-menu a {
   color: $white-color;
 }
-nav.navbar{
+nav.navbar {
   background-color: transparent;
 }
-.navbar-item img{
+.navbar-item img {
   max-height: 35px;
 }
 .customize-kubedb .navbar-dropdown .navbar-item {
@@ -168,7 +168,7 @@ body.fixed-nav .fixed-menu {
   padding: 3px 0;
   width: 100%;
 }
-.fixed-menu-z-index{
+.fixed-menu-z-index {
   z-index: 9999;
 }
 /* github button style start */
@@ -419,14 +419,13 @@ a.play-icon .fa {
   font-size: $font-small;
   font-style: italic;
   color: $paragraph-color;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .client-info h4 {
   font-size: 16px;
   line-height: 19px;
 }
-
 
 .client-thumb {
   width: 50px;
@@ -453,7 +452,8 @@ a.play-icon .fa {
 .client-info-inner {
   display: inline-block;
 }
-.slider:focus, button:focus {
+.slider:focus,
+button:focus {
   outline: none;
   border: none;
   box-shadow: none;
@@ -485,7 +485,7 @@ a.play-icon .fa {
   max-width: 200px;
   height: auto;
 }
-.single-brand-logo img{
+.single-brand-logo img {
   max-height: 50px;
 }
 /* brand logo area end */
@@ -526,7 +526,7 @@ a.play-icon .fa {
 }
 
 .subscription-form input {
-  background: #F9F9F9;
+  background: #f9f9f9;
   border: 1px solid #e3e3e3;
   box-shadow: none;
   font-size: 16px;
@@ -549,7 +549,7 @@ a.play-icon .fa {
   position: absolute;
   top: 0;
   right: 0;
-  z-index:9;
+  z-index: 9;
   background: transparent;
 }
 .subscription-form .button:hover {
@@ -632,9 +632,9 @@ p.spam-message {
   color: $link-color;
   font-size: 14px;
   margin-right: 30px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-.footer-inline-link a:hover{
+.footer-inline-link a:hover {
   color: $primary-color;
 }
 
@@ -770,7 +770,7 @@ p.spam-message {
   position: relative;
 }
 .single-pricing-table.gold .pricing-heading {
-  .pricing-top{
+  .pricing-top {
     min-height: 158px;
   }
   min-height: 253px;
@@ -803,40 +803,40 @@ p.spam-message {
 .kd-button.kd-green {
   background: $green-color !important;
 }
-.pricing-button .button{
+.pricing-button .button {
   font-size: 15px;
   min-width: 190px;
   font-family: $font-paragraph;
   padding: 7px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .pricing-top.kd-orange,
 .kd-button.kd-orange {
   background-color: $orange-color !important;
 }
-.pricing-button .kubedb-transparent-btn{
+.pricing-button .kubedb-transparent-btn {
   color: $kubedb-primary;
   border: 1px solid $kubedb-primary;
 }
-.pricing-button .kubedb-transparent-btn:hover{
+.pricing-button .kubedb-transparent-btn:hover {
   color: $white-color !important;
   border: 1px solid $kubedb-primary;
   background-color: $kubedb-primary;
 }
-.pricing-button .primary-transparent-btn{
+.pricing-button .primary-transparent-btn {
   color: $primary-color;
   border: 1px solid $primary-color;
 }
-.pricing-button .primary-transparent-btn:hover{
+.pricing-button .primary-transparent-btn:hover {
   color: $white-color;
   border: 1px solid $primary-color;
   background-color: $primary-color;
 }
-.pricing-button .red-transparent-btn{
+.pricing-button .red-transparent-btn {
   color: $red-color;
   border: 1px solid $red-color;
 }
-.pricing-button .red-transparent-btn:hover{
+.pricing-button .red-transparent-btn:hover {
   color: $white-color;
   border: 1px solid $red-color;
   background-color: $red-color;
@@ -874,28 +874,29 @@ p.spam-message {
   position: absolute;
   top: -60px;
   width: 100%;
-  color: #242A31;
+  color: #242a31;
   font-size: 18px;
   font-weight: 600;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-.discount-text.is-hide{
+.discount-text.is-hide {
   top: 0;
 }
-.single-pricing-table.silver{
-  .discount-text{
+.single-pricing-table.silver {
+  .discount-text {
     color: $primary-color;
   }
 }
-.single-pricing-table.gold{
-  .discount-text{
+.single-pricing-table.gold {
+  .discount-text {
     color: $orange-color;
   }
 }
-.single-pricing-table.silver .pricing-top{
+.single-pricing-table.silver .pricing-top {
   min-height: 100px;
 }
-.single-pricing-table.free .pricing-top, .single-pricing-table.plutinum .pricing-top{
+.single-pricing-table.free .pricing-top,
+.single-pricing-table.plutinum .pricing-top {
   margin-bottom: 30px;
 }
 .pricing-top h4 {
@@ -907,11 +908,12 @@ p.spam-message {
 .package-price {
   font-size: 26px;
   font-weight: 400;
-  sup,sub{
+  sup,
+  sub {
     font-size: 14px;
     font-weight: 400;
   }
-  strong{
+  strong {
     color: $white-color;
   }
 }
@@ -987,7 +989,7 @@ p.spam-message {
   display: table-cell;
   vertical-align: middle;
 }
-.pricing-body li span.tooltip{
+.pricing-body li span.tooltip {
   text-decoration: underline;
   text-decoration-style: dashed;
 }
@@ -1045,13 +1047,13 @@ p.spam-message {
   border-right-color: #b20b32;
 }
 .pricing-description ul li {
-  color: #74818D;
+  color: #74818d;
   font-size: 14px;
   line-height: 1.6;
   font-weight: 400;
   margin-bottom: 10px;
 }
-.pricing-description ul li:last-child{
+.pricing-description ul li:last-child {
   margin-bottom: 0;
 }
 /* Payment Method section style */
@@ -1228,35 +1230,40 @@ body.fixed-nav .documentation-menu {
   padding: 0 20px;
 }
 
-.full-info h1 {
-  font-size: 32px;
-  color: $heading-color;
-  margin-bottom: 18px;
-  font-weight: 700;
-  border-bottom: 1px solid #ebebeb;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
-}
-.full-info h2 {
-  font-size: 24px;
-  font-weight: 700;
-  color: $heading-color;
-  margin-bottom: 16px;
-  margin-top: 40px;
-}
-.full-info h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: $heading-color;
-  margin-bottom: 16px;
-  margin-top: 40px;
-}
-.full-info h4 {
-  font-size: 16px;
-  font-weight: 700;
-  color: $heading-color;
-  margin-bottom: 16px;
-  margin-top: 40px;
+.full-info {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 40px;
+    font-weight: 700;
+    color: $heading-color;
+    margin-bottom: 10px;
+  }
+  h1 {
+    margin-top: 0;
+    font-size: 32px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  h6 {
+    font-size: 13px;
+  }
 }
 .full-info h2 span.share-icon {
   color: #6b6b6b;
@@ -1281,18 +1288,26 @@ blockquote {
 }
 
 .full-info ul li,
-.full-info ol li {
-  color: #4a4a4a;
+.full-info ol li,
+.full-info ol li p {
+  color: $link-color;
   display: block;
   padding-bottom: 8px;
   line-height: 1.8;
 }
-
-.full-info ul li {
+.full-info ul li:last-child,
+.full-info ol li:last-child,
+.full-info ol p:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.full-info ul li,
+.full-info ol li {
   text-indent: -22px;
 }
 
-.full-info ul li:before {
+.full-info ul li:before,
+.full-info ol li:before {
   content: "\f10c";
   font-family: fontawesome;
   font-size: 8px;
@@ -1300,12 +1315,21 @@ blockquote {
   color: #707070;
 }
 
+.full-info figure {
+  margin-bottom: 30px;
+  figcaption {
+    color: #707070;
+    font-size: 14px;
+  }
+}
+
 ul li b {
   color: $primary-color;
   font-weight: 500;
 }
 
-.full-info ul {
+.full-info ul,
+.full-info ol {
   padding: 0 0 0 30px;
 }
 .full-info ul li p {
@@ -1327,9 +1351,8 @@ ul li b {
   color: $paragraph-color;
 }
 
-.appscode-style.full-info ul li p a
-.appscode-style.full-info p a,
-.appscode-style.full-info a{
+.appscode-style.full-info ul li p a .appscode-style.full-info p a,
+.appscode-style.full-info a {
   color: $primary-color;
 }
 
@@ -1376,7 +1399,7 @@ ul li b {
   opacity: 0.7;
   font-size: 14px;
   font-family: $font-paragraph;
-  font-weight: 400;
+  font-weight: 500;
   display: block;
   padding-left: 20px;
   padding-bottom: 10px;
@@ -1781,7 +1804,7 @@ button.button.is-fullwidth {
   border: 1px solid #e2e2e2;
   background: $white-color;
 }
-.appscode-style .item input:checked ~ label > a{
+.appscode-style .item input:checked ~ label > a {
   color: $primary-color;
 }
 .kd-left-sidebar {
@@ -1853,7 +1876,7 @@ span.new-item {
 .ac-megamenu {
   box-shadow: 0px 7px 26px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
-  padding:12px 6px 6px;
+  padding: 12px 6px 6px;
   background: $white-color;
   position: absolute;
   min-width: 730px;
@@ -1942,37 +1965,37 @@ p.intro {
   background: #fef0d9;
 }
 .single-product-item.is-voyager:hover {
-  background: transparentize($voyager-primary, .8);
+  background: transparentize($voyager-primary, 0.8);
 }
 .single-product-item.is-kubed:hover {
-  background: transparentize($kubed-primary, .8);
+  background: transparentize($kubed-primary, 0.8);
 }
 .single-product-item.is-kubedb:hover {
-  background: transparentize($primary-color,.8);
+  background: transparentize($primary-color, 0.8);
 }
 .single-product-item.is-stash:hover {
-  background: transparentize($stash-primary, .8);
+  background: transparentize($stash-primary, 0.8);
 }
 .single-product-item.is-kubevault:hover {
-  background: transparentize($kubevault-primary, .8);
+  background: transparentize($kubevault-primary, 0.8);
 }
 .single-product-item.is-searchlight:hover {
-  background: transparentize($searchlight-primary, .8);
+  background: transparentize($searchlight-primary, 0.8);
 }
 .single-product-item.is-guard:hover {
-  background: transparentize($guard-primary, .8);
+  background: transparentize($guard-primary, 0.8);
 }
 .single-product-item.is-broker:hover {
-  background: transparentize($service-broker-primary, .8);
+  background: transparentize($service-broker-primary, 0.8);
 }
 .single-product-item.is-pharmer:hover {
-  background: transparentize($pharmer-primary, .8);
+  background: transparentize($pharmer-primary, 0.8);
 }
 .single-product-item.is-kubeshield:hover {
-  background: transparentize($kubesheild-primary, .8);
+  background: transparentize($kubesheild-primary, 0.8);
 }
 .single-product-item.is-swift:hover {
-  background: transparentize($swift-primary, .8);
+  background: transparentize($swift-primary, 0.8);
 }
 .single-product-item .learn-more-btn {
   padding: 0;
@@ -2039,18 +2062,26 @@ table {
 }
 
 table tr {
-  border-left: 1px solid #a9e9e9;
-  border-top: 1px solid #a9e9e9;
+  border-left: 1px solid $border-color;
+  border-top: 1px solid $border-color;
 }
 
 table td,
 table th {
-  border-right: 1px solid #a9e9e9;
-  border-bottom: 1px solid #a9e9e9;
+  border-right: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
   padding: 8px 20px;
   vertical-align: middle;
   text-align: center;
   font-size: $font-regular;
+}
+.full-info {
+  table {
+    td,
+    th {
+      text-align: left;
+    }
+  }
 }
 table tr:nth-child(even) {
   background-color: #f6f8fa;
