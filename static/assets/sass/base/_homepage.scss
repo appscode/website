@@ -74,11 +74,11 @@ body.fixed-nav
     min-height: 100%;
   }
   .trusted-logo {
-    margin-top: 60px;
+    margin-top: 50px;
   }
 }
 .is-full-height {
-  height: 100vh;
+  min-height: 100vh;
 }
 .hero-area.is-full-height{
   padding: 50px 0 0;
@@ -129,10 +129,10 @@ body.fixed-nav
   .trusted-action {
     background: #e0f2e9;
     box-shadow: 0 1px 12px rgba(15, 80, 100, 0.12);
-    padding: 6px 24px;
+    padding: 6px 30px;
     border-radius: 4px;
     font-size: 16px;
-    width: 300px;
+    display: inline-block;
     margin: 0 auto;
     a {
       color: $primary-color;
@@ -558,7 +558,14 @@ body.fixed-nav
 }
 
 // press area end
+
+
 // testimonial area style start
+.testimonial-area-2{
+  .section-title{
+    margin-bottom: 30px;
+  }
+}
 .single-testimonial-wrapper {
   margin: 0 15px;
   .testimonial-msg {

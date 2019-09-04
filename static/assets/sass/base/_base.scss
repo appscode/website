@@ -52,17 +52,16 @@ body.fixed-nav header{
 }
 
 .button.for-chat:hover {
-  img{
-    filter: invert(1);
-  }
-  background-color: #36C6F0;
+  background-color: #4A154B;
   color: $white-color;
 }
 .button.for-support:hover{
   background-color: #9D0A0E;
   color: $white-color;
-  img{
-    filter: invert(1);
+  span{
+    img{
+      filter: brightness(100);
+    }
   }
 }
 
@@ -209,10 +208,13 @@ body.fixed-nav .fixed-menu {
 }
 
 .hero-content-inner h1 {
-  font-size: 41px;
+  font-size: 44px;
   font-weight: 400;
   color: $heading-color;
   line-height: 68px;
+  b{
+    font-weight: 600;
+  }
 }
 
 .hero-content-inner h1 strong {
@@ -520,7 +522,6 @@ a.play-icon .fa {
   font-weight: 600;
   color: $heading-color;
   display: block;
-  margin-bottom: 10px;
   font-family: $font-heading;
 }
 
@@ -552,11 +553,11 @@ a.play-icon .fa {
   background: transparent;
 }
 .subscription-form .button:hover {
-  background-color: darken($primary-color, 15%);
+  background-color: $primary-color;
   color: $white-color !important;
 }
 .subscription-form {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .subscription-form input[type="email"]:focus,
