@@ -1241,9 +1241,11 @@ body.fixed-nav .documentation-menu {
     font-weight: 700;
     color: $heading-color;
     margin-bottom: 10px;
+    &:first-child{
+      margin-top: 0;
+    }
   }
   h1 {
-    margin-top: 0;
     font-size: 32px;
     border-bottom: 1px solid #ebebeb;
     padding-bottom: 10px;

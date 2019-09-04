@@ -2799,8 +2799,14 @@ body.fixed-nav .documentation-menu {
   font-weight: 700;
   color: #242a31;
   margin-bottom: 10px; }
+  .full-info h1:first-child,
+  .full-info h2:first-child,
+  .full-info h3:first-child,
+  .full-info h4:first-child,
+  .full-info h5:first-child,
+  .full-info h6:first-child {
+    margin-top: 0; }
 .full-info h1 {
-  margin-top: 0;
   font-size: 32px;
   border-bottom: 1px solid #ebebeb;
   padding-bottom: 10px;
@@ -5500,7 +5506,7 @@ body.voyager .documentation-menu {
     margin-top: 0; }
 
   .is-full-height {
-    height: auto; }
+    min-height: 100%; }
 
   .hero-area.is-full-height {
     padding: 30px 0 0; }
