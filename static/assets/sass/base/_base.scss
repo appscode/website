@@ -1307,7 +1307,10 @@ blockquote {
 .full-info ol li {
   text-indent: -22px;
 }
-
+.full-info ul li p, .full-info ol li p{
+  text-indent: 0;
+  margin-top: -25px;
+}
 .full-info ul li:before,
 .full-info ol li:before {
   content: "\f10c";
@@ -2050,7 +2053,7 @@ p.intro {
 /* image style start */
 .full-info img {
   border: 1px solid #a9e9e9;
-  padding: 50px;
+  padding: 15px;
   border-radius: 4px;
 }
 /* image style end */
