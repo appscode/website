@@ -1,0 +1,639 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=theme-color content=#2D9AED><title>Stash Home</title><link rel="shortcut icon" type=image/x-icon href=favicon.ico><link rel=stylesheet href=/assets/css/font-awesome.min.css><link rel=stylesheet href=/assets/css/bulma-carousel.min.css><link rel=stylesheet href=/assets/css/bulma-tooltip.min.css><link rel=stylesheet href=/assets/css/bulma.min.css><link rel=stylesheet href=/assets/sass/main.css></head><body class=stash><header><div class="header-top fixed-menu-z-index"><div class="container section"><nav class=navbar><div class=navbar-brand><a class=navbar-item href=https://appscode-v3-hugo.web.app><img src=https://cdn.appscode.com/images/products/appscode/appscode-logo.png alt=AppsCode></a>
+<a role=button class="navbar-burger burger" aria-label=menu aria-expanded=false data-target=acNav1><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=acNav1 class="navbar-menu main-menu"><div class=navbar-end><div class=navbar-start><div class="navbar-item has-dropdown ac-is-hoverable"><a class=navbar-link>Products</a><div class=ac-megamenu><div class=columns><div class="column is-8"><div class=columns><div class="column is-6 br-1"><a href=https://kubedb-v2-hugo.web.app class="single-product-item is-kubedb"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/kubedb/kubedb-icon.png alt=KubeDB></div><h5>KubeDB</h5></div><div class=menu-body><p>Run production-grade databases easily on Kubernetes</p></div></a><a href=https://appscode-v3-hugo.web.app/products/stash/ class="single-product-item is-stash"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/stash/stash-icon.png alt=Stash></div><h5>Stash</h5></div><div class=menu-body><p>Backup your Kubernetes Stateful Applications</p></div></a><a href=https://kubevault-v1-hugo.web.app class="single-product-item is-kubevault"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/kubevault/kubevault-icon.png alt=KubeVault></div><h5>KubeVault</h5></div><div class=menu-body><p>Tools for running HashiCorp Vault on Kubernetes</p></div></a><a href=https://appscode-v3-hugo.web.app/products/guard/ class="single-product-item is-guard"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/guard/guard-icon.png alt=Guard></div><h5>Guard</h5></div><div class=menu-body><p>Kubernetes Authentication WebHook Server</p></div></a></div><div class="column is-6 br-1"><a href=https://appscode-v3-hugo.web.app/products/voyager/ class="single-product-item is-voyager"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/voyager/voyager-icon.png alt=Voyager></div><h5>Voyager</h5></div><div class=menu-body><p>Secure HAProxy Ingress Controller for
+Kubernetes</p></div></a><a href=https://appscode-v3-hugo.web.app/products/swift/ class="single-product-item is-swift"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/swift/swift-icon.png alt=Swift></div><h5>Swift</h5></div><div class=menu-body><p>Ajax friendly Helm Tiller Proxy</p></div></a><a href=https://appscode-v3-hugo.web.app/products/searchlight/ class="single-product-item is-searchlight"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/searchlight/searchlight-icon.png alt=Searchlight></div><h5>Searchlight</h5></div><div class=menu-body><p>Alerts for Kubernetes</p></div></a><a href=https://appscode-v3-hugo.web.app/products/service-broker/ class="single-product-item is-service-broker"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/service-broker/service-broker-icon.png alt=ServiceBroker></div><h5>ServiceBroker</h5></div><div class=menu-body><p>Open Service Broker for AppsCode Kubernetes Operators</p></div></a></div></div></div><div class="column is-4"><div class=columns><div class="column is-12"><a href=https://byte.builders class="single-product-item byte-builder kd-orange"><div class=menu-header><p class=intro>Introducing....</p><h5>Byte.builders</h5></div><div class=menu-body><p>The Kubernetes Cloud</p></div><p class=learn-more-btn>Learn more
+<span class=icon><i class="fa fa-long-arrow-right" aria-hidden=true></i></span></p></a><a href=https://pharmer-v1-hugo.web.app class="single-product-item is-pharmer"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/pharmer/pharmer-icon.png alt=Pharmer></div><h5>Pharmer</h5></div><div class=menu-body><p>Kubernetes Cluster Manager using Kubeadm &amp; Cluster API</p></div></a><a href=https://appscode-v3-hugo.web.app/products/kubed/ class="single-product-item is-kubed"><div class=menu-header><div class=menu-logo><img src=https://cdn.appscode.com/images/products/kubed/kubed-icon.png alt=Kubed></div><h5>Kubed</h5></div><div class=menu-body><p>Kubernetes cluster manager daemon</p></div></a></div></div></div></div><div class="columns has-text-centered"><div class=column><div class=menu-bottom><p>Explore refreshing apps and integrations for
+AppsCode products:
+<a href=https://marketplace.byte.builders>Visit the Marketplace
+<i class="fa fa-long-arrow-right" aria-hidden=true></i></a></p></div></div></div></div></div><div class="navbar-item has-dropdown ac-is-hoverable"><a class=navbar-link>Services</a><div class=ac-dropdown><a class=navbar-item href=https://appscode-v3-hugo.web.app/consulting/>Consulting</a>
+<a class=navbar-item href=https://appscode-v3-hugo.web.app/training/>Training</a>
+<a class=navbar-item href=https://appscode-v3-hugo.web.app/support/>Support</a></div></div><a class=navbar-item href=https://blog.byte.builders>Blog</a>
+<a class=navbar-item href=https://appscode-v3-hugo.web.app/contact/>Contact Us</a></div><div class=navbar-item><div class="buttons main-menu-button-top"><a class="button is-small for-chat" href=https://slack.appscode.com><span><img src=/assets/images/icon/slack.png alt></span>Slack</a>
+<a class="button is-small for-support" href=https://appscode.freshdesk.com><span><img src=/assets/images/icon/chat.png alt></span>Support Portal</a></div></div></div></div></nav></div></div><div class="header-bottom-area header-area kubedb-primary-bg customize-kubedb  fixed-menu"><div class="container section"><nav class=navbar><div class=navbar-brand><a class=navbar-item href=https://appscode-v3-hugo.web.app/products/stash/><img src=https://cdn.appscode.com/images/products/stash/stash-logo-white.png alt=Stash></a>
+<a role=button class="navbar-burger burger" aria-label=menu aria-expanded=false data-target=acNav><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=acNav class="navbar-menu main-menu"><div class=navbar-end><div class=navbar-start><a href=/products/stash/features/ class=navbar-item>Features</a>
+<a href=/products/stash/pricing/ class=navbar-item>Commercial Support</a>
+<a href=/products/stash/v0.9.0-rc.0/welcome/>Documentation</a><div class="navbar-item has-dropdown ac-is-hoverable"><a class=navbar-link>Community</a><div class=ac-dropdown><a href=https://github.com/stashed class=navbar-item>GitHub</a>
+<a href=https://twitter.com/AppsCodeHQ class=navbar-item>Twitter</a>
+<a href=https://slack.appscode.com class=navbar-item>Slack</a></div></div></div><div class=navbar-item><div class="buttons main-menu-button"><a class=github-button href=https://github.com/stashed/stash data-size=large data-show-count=true aria-label="Star stashed/stash on GitHub">Star</a>
+<script async defer src=https://buttons.github.io/buttons.js></script></div></div></div></div></nav></div></div><div class=documentation-menu><div class="container section"><div class="columns is-centered"><div class="column is-half has-text-centered"><div class=responsive-menu><a role=button class="navbar-burger burger" aria-label=menu aria-expanded=false data-target=acNav3><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><nav class=documentation-navbar><div id=acNav3 class="navbar-menu nav-menu main-menu"><div class=navbar-centered><div class=navbar-start><a href=/products/stash/0.8.3/ class=navbar-item>Welcome</a>
+<a href=/products/stash/0.8.3/concepts/ class=navbar-item>Concepts</a>
+<a href=/products/stash/0.8.3/setup/ class=navbar-item>Setup</a>
+<a href=/products/stash/0.8.3/guides/ class="is-active  navbar-item">Guides</a>
+<a href=/products/stash/0.8.3/reference/ class=navbar-item>Reference</a>
+<a href class=navbar-item>database</a></div></div></div></nav></div></div></div></div></header><div class=documentation-area><div class="container section"><div class=columns><div class="column is-3"><div class=kd-left-sidebar><div class=trial-button><a href=/products/stash/v0.9.0-rc.0/setup/ class="button is-fullwidth">Try Now for FREE!</a></div><div class=kd-version><div class=dropdown><div class=dropdown-trigger><button class="button is-fullwidth" aria-haspopup=true aria-controls=dropdown-menu3>
+<span><strong class=icon><i class="fa fa-cog" aria-hidden=true></i></strong>0.8.3</span>
+<span class="icon is-small"><i class="fa fa-angle-down" aria-hidden=true></i></span></button></div><div class=dropdown-menu id=dropdown-menu3 role=menu><div class=dropdown-content><a href=https://github.com/stashed/docs/tree/master/docs target=_blank class=dropdown-item>master</a>
+<a href=/products/stash/v0.9.0-rc.0/ class=dropdown-item>v0.9.0-rc.0<div class=tag>Latest</div></a><a href=/products/stash/0.8.3/ class=dropdown-item>0.8.3</a>
+<a href=/products/stash/0.8.2/ class=dropdown-item>0.8.2</a>
+<a href=/products/stash/0.8.1/ class=dropdown-item>0.8.1</a>
+<a href=/products/stash/0.8.0/ class=dropdown-item>0.8.0</a>
+<a href=/products/stash/0.7.0/ class=dropdown-item>0.7.0</a>
+<a href=/products/stash/0.6.4/ class=dropdown-item>0.6.4</a>
+<a href=https://github.com/stashed/docs/tree/0.4.2/docs target=_blank class=dropdown-item>0.4.2</a></div></div></div></div><div class=kd-sidebar-menu><div class=item><input type=checkbox id=2e2e1c7d1a23597e7b2739f590e0bfc9-1>
+<label for=2e2e1c7d1a23597e7b2739f590e0bfc9-1><a href=/products/stash/0.8.3/guides/>Guides</a></label></div><div class=item><input type=checkbox id=2e2e1c7d1a23597e7b2739f590e0bfc9-2>
+<label for=2e2e1c7d1a23597e7b2739f590e0bfc9-2><a href=/products/stash/0.8.3/guides/backup/>Backup Volumes</a></label></div><div class=item><input type=checkbox id=2e2e1c7d1a23597e7b2739f590e0bfc9-3>
+<label for=2e2e1c7d1a23597e7b2739f590e0bfc9-3><a href=/products/stash/0.8.3/guides/offline_backup/>Offline Backup</a></label></div><div class=item><input type=checkbox id=2e2e1c7d1a23597e7b2739f590e0bfc9-4>
+<label for=2e2e1c7d1a23597e7b2739f590e0bfc9-4><a href=/products/stash/0.8.3/guides/restore/>Restore Volumes</a></label></div><div class=item><input type=checkbox id=2e2e1c7d1a23597e7b2739f590e0bfc9-5>
+<label for=2e2e1c7d1a23597e7b2739f590e0bfc9-5><a href=/products/stash/0.8.3/guides/workloads/>Workloads</a></label></div><div class=item><input type=checkbox id=2e2e1c7d1a23597e7b2739f590e0bfc9-6>
+<label for=2e2e1c7d1a23597e7b2739f590e0bfc9-6><a>Supported Backends</a> <span><i class="fa fa-angle-right" aria-hidden=true></i></span></label><div class=item><ul><li><a href=/products/stash/0.8.3/guides/backends/overview/>What is Backend?</a></li><li><a href=/products/stash/0.8.3/guides/backends/local/>Persistent Volumes</a></li><li><a href=/products/stash/0.8.3/guides/backends/s3/>AWS S3</a></li><li><a href=/products/stash/0.8.3/guides/backends/azure/>Azure Blob Storage</a></li><li><a href=/products/stash/0.8.3/guides/backends/gcs/>Google Cloud Storage</a></li><li><a href=/products/stash/0.8.3/guides/backends/swift/>OpenStack Swift</a></li><li><a href=/products/stash/0.8.3/guides/backends/b2/>Backblaze B2</a></li></ul></div></div><div class=item><input type=checkbox id=2e2e1c7d1a23597e7b2739f590e0bfc9-7>
+<label for=2e2e1c7d1a23597e7b2739f590e0bfc9-7><a>Platforms</a> <span><i class="fa fa-angle-right" aria-hidden=true></i></span></label><div class=item><ul><li><a href=/products/stash/0.8.3/guides/platforms/eks/>EKS</a></li><li><a href=/products/stash/0.8.3/guides/platforms/aks/>AKS</a></li><li><a href=/products/stash/0.8.3/guides/platforms/gke/>GKE</a></li><li><a href=/products/stash/0.8.3/guides/platforms/minio/>Minio</a></li><li><a href=/products/stash/0.8.3/guides/platforms/rook/>Rook</a></li></ul></div></div><div class=item><input type=checkbox id=2e2e1c7d1a23597e7b2739f590e0bfc9-8>
+<label for=2e2e1c7d1a23597e7b2739f590e0bfc9-8><a>Monitoring</a> <span><i class="fa fa-angle-right" aria-hidden=true></i></span></label><div class=item><ul><li><a href=/products/stash/0.8.3/guides/monitoring/overview/>Overview</a></li><li><a href=/products/stash/0.8.3/guides/monitoring/builtin/>Builtin Prometheus</a></li><li><a href=/products/stash/0.8.3/guides/monitoring/coreos/>Prometheus Operator</a></li><li><a href=/products/stash/0.8.3/guides/monitoring/grafana/>Using Grafana</a></li></ul></div></div><div class=item><input type=checkbox id=2e2e1c7d1a23597e7b2739f590e0bfc9-9>
+<label for=2e2e1c7d1a23597e7b2739f590e0bfc9-9><a href=/products/stash/0.8.3/guides/rbac/>RBAC</a></label></div></div></div></div><div class="column is-7"><div class=full-info><h1 id=backup-and-restore-mongodb-sharded-clusters-using-stash>Backup and Restore MongoDB Sharded Clusters using Stash</h1><p>Stash 0.9.0+ supports taking <a href=https://docs.mongodb.com/manual/tutorial/backup-sharded-cluster-with-database-dumps/>backup</a> and <a href=https://docs.mongodb.com/manual/tutorial/restore-sharded-cluster/>restores</a> MongoDB Sharded clusters in <a href=https://docs.mongodb.com/manual/administration/backup-sharded-clusters/>&ldquo;idiomatic&rdquo; way</a>. This guide will show you how you can backup and restore your MongoDB Sharded clusters with Stash.</p><h2 id=before-you-begin>Before You Begin</h2><ul><li><p>At first, you need to have a Kubernetes cluster, and the <code>kubectl</code> command-line tool must be configured to communicate with your cluster. If you do not already have a cluster, you can create one by using Minikube.</p></li><li><p>Install Stash in your cluster following the steps <a href=https://appscode.com/products/stash/0.8.3/setup/install/>here</a>.</p></li><li><p>Install <a href=https://kubedb.com>KubeDB</a> in your cluster following the steps <a href=https://kubedb.com/docs/0.12.0/setup/install/>here</a>. This step is optional. You can deploy your database using any method you want. We are using KubeDB because it automates some tasks that you have to do manually otherwise.</p></li><li><p>If you are not familiar with how Stash backup and restore databases, please check the following guide:</p><ul><li><a href=https://appscode.com/products/stash/0.8.3/guides/databases/overview/>How Stash backup and restore databases</a>.</li></ul></li></ul><p>You have to be familiar with following custom resources:</p><ul><li><a href=https://appscode.com/products/stash/0.8.3/concepts/crds/appbinding/>AppBinding</a></li><li><a href=https://appscode.com/products/stash/0.8.3/concepts/crds/function/>Function</a></li><li><a href=https://appscode.com/products/stash/0.8.3/concepts/crds/task/>Task</a></li><li><a href=https://appscode.com/products/stash/0.8.3/concepts/crds/backupconfiguration/>BackupConfiguration</a></li><li><a href=https://appscode.com/products/stash/0.8.3/concepts/crds/restoresession/>RestoreSession</a></li></ul><p>To keep things isolated, we are going to use a separate namespace called <code>demo</code> throughout this tutorial. Create <code>demo</code> namespace if you haven&rsquo;t created yet.</p><pre><code class=language-console>$ kubectl create ns demo
+namespace/demo created
+</code></pre><blockquote><p>Note: YAML files used in this tutorial are stored <a href=https://github.com/stashed/mongodb/tree/master/docs/examples>here</a>.</p></blockquote><h2 id=install-mongodb-catalog-for-stash>Install MongoDB Catalog for Stash</h2><p>Stash uses a <code>Function-Task</code> model to backup databases. We have to install MongoDB catalogs (<code>stash-mongodb</code>) for Stash. This catalog creates necessary <code>Function</code> and <code>Task</code> definitions to backup/restore MongoDB databases.</p><p>You can install the catalog either as a helm chart or you can create only the YAMLs of the respective resources.</p><p><ul class="nav nav-tabs" id=installerTab role=tablist><li class=nav-item><a class=nav-link id=helm-tab data-toggle=tab href=#helm role=tab aria-controls=helm aria-selected=false>Helm</a></li><li class=nav-item><a class="nav-link active" id=script-tab data-toggle=tab href=#script role=tab aria-controls=script aria-selected=true>Script</a></li></ul><div class=tab-content id=installerTabContent><div class="tab-pane fade" id=helm role=tabpanel aria-labelledby=helm-tab></p><h3 id=install-as-chart-release>Install as chart release</h3><p>Run the following script to install <code>stash-mongodb</code> catalog as a Helm chart.</p><pre><code class=language-console>curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/chart.sh | bash -s -- --catalog=stash-mongodb
+</code></pre><p></div></p><div class="tab-pane fade show active" id=script role=tabpanel aria-labelledby=script-tab>### Install only YAMLs
+Run the following script to install `stash-mongodb` catalog as Kubernetes YAMLs.
+```console
+curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/script.sh | bash -s -- --catalog=stash-mongodb
+```</div></div><p>Once installed, this will create <code>mongodb-backup-*</code> and <code>mongodb-restore-*</code> Functions for all supported MongoDB versions. To verify, run the following command:</p><pre><code class=language-console>$ kubectl get functions.stash.appscode.com
+NAME                    AGE
+mongodb-backup-4.1      20s
+mongodb-backup-4.0      20s
+mongodb-backup-3.6      19s
+mongodb-backup-3.4      20s
+mongodb-restore-4.1     20s
+mongodb-restore-4.0     20s
+mongodb-restore-3.6     19s
+mongodb-restore-3.4     20s
+pvc-backup              7h6m
+pvc-restore             7h6m
+update-status           7h6m
+</code></pre><p>Also, verify that the necessary <code>Task</code> have been created.</p><pre><code class=language-console>$ kubectl get tasks.stash.appscode.com
+NAME                    AGE
+mongodb-backup-4.1      2m7s
+mongodb-backup-4.0      2m7s
+mongodb-backup-3.6      2m6s
+mongodb-backup-3.4      2m7s
+mongodb-restore-4.1     2m7s
+mongodb-restore-4.0     2m7s
+mongodb-restore-3.6     2m6s
+mongodb-restore-3.4     2m7s
+pvc-backup              7h7m
+pvc-restore             7h7m
+</code></pre><p>Now, Stash is ready to backup MongoDB database.</p><h2 id=backup-sharded-mongodb-cluster>Backup Sharded MongoDB Cluster</h2><p>This section will demonstrate how to backup MongoDB cluster. We are going to use <a href=https://kubedb.com>KubeDB</a> to deploy a sample database. Then, we are going to backup this database into a GCS bucket. Finally, we are going to restore the backed up data into another MongoDB cluster.</p><h3 id=deploy-sample-mongodb-sharding>Deploy Sample MongoDB Sharding</h3><p>Let&rsquo;s deploy a sample MongoDB Sharding database and insert some data into it.</p><p><strong>Create MongoDB CRD:</strong></p><p>Below is the YAML of a sample MongoDB crd that we are going to create for this tutorial:</p><pre><code class=language-yaml>apiVersion: kubedb.com/v1alpha1
+kind: MongoDB
+metadata:
+  name: sample-mgo-sh
+  namespace: demo
+spec:
+  version: 3.6-v4
+  shardTopology:
+    configServer:
+      replicas: 3
+      storage:
+        resources:
+          requests:
+            storage: 1Gi
+        storageClassName: standard
+    mongos:
+      replicas: 2
+      strategy:
+        type: RollingUpdate
+    shard:
+      replicas: 3
+      shards: 3
+      storage:
+        resources:
+          requests:
+            storage: 1Gi
+        storageClassName: standard
+  terminationPolicy: WipeOut
+</code></pre><p>Create the above <code>MongoDB</code> crd,</p><pre><code class=language-console>$ kubectl apply -f ./docs/examples/backup/sharding/mongodb-sharding.yaml
+mongodb.kubedb.com/sample-mgo-sh created
+</code></pre><p>KubeDB will deploy a MongoDB database according to the above specification. It will also create the necessary secrets and services to access the database.</p><p>Let&rsquo;s check if the database is ready to use,</p><pre><code class=language-console>$ kubectl get mg -n demo sample-mgo-sh
+NAME            VERSION   STATUS    AGE
+sample-mgo-sh   3.6-v4    Running   35m
+</code></pre><p>The database is <code>Running</code>. Verify that KubeDB has created a Secret and a Service for this database using the following commands,</p><pre><code class=language-console>$ kubectl get secret -n demo -l=kubedb.com/name=sample-mgo-sh
+NAME                 TYPE     DATA   AGE
+sample-mgo-sh-auth   Opaque   2      36m
+sample-mgo-sh-cert   Opaque   4      36m
+
+$ kubectl get service -n demo -l=kubedb.com/name=sample-mgo-sh
+NAME                          TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)     AGE
+sample-mgo-sh                 ClusterIP   10.107.11.117   &lt;none&gt;        27017/TCP   36m
+sample-mgo-sh-configsvr-gvr   ClusterIP   None            &lt;none&gt;        27017/TCP   36m
+sample-mgo-sh-shard0-gvr      ClusterIP   None            &lt;none&gt;        27017/TCP   36m
+sample-mgo-sh-shard1-gvr      ClusterIP   None            &lt;none&gt;        27017/TCP   36m
+sample-mgo-sh-shard2-gvr      ClusterIP   None            &lt;none&gt;        27017/TCP   36m
+</code></pre><p>KubeDB creates an <a href=https://appscode.com/products/stash/0.8.3/concepts/crds/appbinding/>AppBinding</a> crd that holds the necessary information to connect with the database.</p><p><strong>Verify AppBinding:</strong></p><p>Verify that the <code>AppBinding</code> has been created successfully using the following command,</p><pre><code class=language-console>$ kubectl get appbindings -n demo
+NAME            AGE
+sample-mgo-sh   30m
+</code></pre><p>Let&rsquo;s check the YAML of the above <code>AppBinding</code>,</p><pre><code class=language-console>$ kubectl get appbindings -n demo sample-mgo-sh -o yaml
+</code></pre><pre><code class=language-yaml>apiVersion: appcatalog.appscode.com/v1alpha1
+kind: AppBinding
+metadata:
+  creationTimestamp: &quot;2019-07-18T11:18:24Z&quot;
+  generation: 1
+  labels:
+    app.kubernetes.io/component: database
+    app.kubernetes.io/instance: sample-mgo-sh
+    app.kubernetes.io/managed-by: kubedb.com
+    app.kubernetes.io/name: mongodb
+    app.kubernetes.io/version: 3.6-v4
+    kubedb.com/kind: MongoDB
+    kubedb.com/name: sample-mgo-sh
+  name: sample-mgo-sh
+  namespace: demo
+  ownerReferences:
+    - apiVersion: kubedb.com/v1alpha1
+      blockOwnerDeletion: false
+      kind: MongoDB
+      name: sample-mgo-sh
+      uid: d1e72f6d-a94c-11e9-acf7-42010a8000dc
+  resourceVersion: &quot;870217&quot;
+  selfLink: /apis/appcatalog.appscode.com/v1alpha1/namespaces/demo/appbindings/sample-mgo-sh
+  uid: c247c3bd-a94d-11e9-acf7-42010a8000dc
+spec:
+  clientConfig:
+    service:
+      name: sample-mgo-sh
+      port: 27017
+      scheme: mongodb
+  parameters:
+    configServer: cnfRepSet/sample-mgo-sh-configsvr-0.sample-mgo-sh-configsvr-gvr.demo.svc:27017,sample-mgo-sh-configsvr-1.sample-mgo-sh-configsvr-gvr.demo.svc:27017,sample-mgo-sh-configsvr-2.sample-mgo-sh-configsvr-gvr.demo.svc:27017
+    replicaSets:
+      host-0: shard0/sample-mgo-sh-shard0-0.sample-mgo-sh-shard0-gvr.demo.svc:27017,sample-mgo-sh-shard0-1.sample-mgo-sh-shard0-gvr.demo.svc:27017,sample-mgo-sh-shard0-2.sample-mgo-sh-shard0-gvr.demo.svc:27017
+      host-1: shard1/sample-mgo-sh-shard1-0.sample-mgo-sh-shard1-gvr.demo.svc:27017,sample-mgo-sh-shard1-1.sample-mgo-sh-shard1-gvr.demo.svc:27017,sample-mgo-sh-shard1-2.sample-mgo-sh-shard1-gvr.demo.svc:27017
+      host-2: shard2/sample-mgo-sh-shard2-0.sample-mgo-sh-shard2-gvr.demo.svc:27017,sample-mgo-sh-shard2-1.sample-mgo-sh-shard2-gvr.demo.svc:27017,sample-mgo-sh-shard2-2.sample-mgo-sh-shard2-gvr.demo.svc:27017
+  secret:
+    name: sample-mgo-sh-auth
+  type: kubedb.com/mongodb
+</code></pre><p>Stash uses the <code>AppBinding</code> crd to connect with the target database. It requires the following two fields to set in AppBinding&rsquo;s <code>Spec</code> section.</p><ul><li><code>spec.clientConfig.service.name</code> specifies the name of the service that connects to the database.</li><li><code>spec.secret</code> specifies the name of the secret that holds necessary credentials to access the database.</li><li><code>spec.parameters.configServer</code> specifies the dsn of config server of mongodb sharding. The dsn includes the port no too.</li><li><code>spec.parameters.replicaSets</code> contains the dsn of each replicaset of sharding. The DSNs are in key-value pair, where the keys are host-0, host-1 etc, and the values are DSN of each replicaset. If there is no sharding but only one replicaset, then ReplicaSets field contains only one key-value pair where the key is host-0 and the value is dsn of that replicaset.</li><li><code>spec.type</code> specifies the types of the app that this AppBinding is pointing to. KubeDB generated AppBinding follows the following format: <code>&lt;app group&gt;/&lt;app resource type&gt;</code>.</li></ul><h3 id=appbinding-for-ssl>AppBinding for SSL</h3><p>If <code>SSLMode</code> of the MongoDB server is either of <code>requireSSL</code> or <code>preferSSL</code>, you can provide ssl connection informatin through AppBinding Spces.</p><p>User need to provide the following fields in case of SSL is enabled,</p><ul><li><code>spec.clientConfig.caBundle</code> specifies the CA certificate that is used in <a href=https://docs.mongodb.com/manual/reference/program/mongod/index.html#cmdoption-mongod-sslcafile><code>--sslCAFile</code></a> flag of <code>mongod</code>.</li><li><code>spec.secret</code> specifies the name of the secret that holds <code>client.pem</code> file. Follow the <a href=https://docs.mongodb.com/manual/tutorial/configure-x509-client-authentication/>mongodb official doc</a> to learn how to create <code>client.pem</code> and add the subject of <code>client.pem</code> as user (with appropriate roles) to mongodb server.</li></ul><p><strong>KubeDB does these automatically</strong>. It has added the subject of <code>client.pem</code> in the mongodb server with <code>root</code> role. So, user can just use the appbinding that is created by KubeDB without doing any hurdle! See the <a href=https://github.com/kubedb/docs/blob/master/docs/guides/mongodb/tls-ssl-encryption/tls-ssl-encryption.md>MongoDB with TLS/SSL (Transport Encryption)</a> guide to learn about the ssl options in mongodb in details.</p><p>So, in KubeDB, the following <code>CRD</code> deployes a mongodb replicaset where ssl is enabled (<code>requireSSL</code> sslmode),</p><pre><code class=language-yaml>apiVersion: kubedb.com/v1alpha1
+kind: MongoDB
+metadata:
+  name: sample-mgo-sh
+  namespace: demo
+spec:
+  version: 3.6-v4
+  shardTopology:
+    configServer:
+      replicas: 3
+      storage:
+        resources:
+          requests:
+            storage: 1Gi
+        storageClassName: standard
+    mongos:
+      replicas: 2
+      strategy:
+        type: RollingUpdate
+    shard:
+      replicas: 3
+      shards: 3
+      storage:
+        resources:
+          requests:
+            storage: 1Gi
+        storageClassName: standard
+  terminationPolicy: WipeOut
+  clusterAuthMode: x509
+  sslMode: requireSSL
+</code></pre><p>After the deploy is done, kubedb will create a appbinding that will look like:</p><pre><code class=language-yaml>apiVersion: appcatalog.appscode.com/v1alpha1
+kind: AppBinding
+metadata:
+  creationTimestamp: &quot;2019-07-18T11:18:24Z&quot;
+  generation: 1
+  labels:
+    app.kubernetes.io/component: database
+    app.kubernetes.io/instance: sample-mgo-sh
+    app.kubernetes.io/managed-by: kubedb.com
+    app.kubernetes.io/name: mongodb
+    app.kubernetes.io/version: 3.6-v4
+    kubedb.com/kind: MongoDB
+    kubedb.com/name: sample-mgo-sh
+  name: sample-mgo-sh
+  namespace: demo
+  ownerReferences:
+    - apiVersion: kubedb.com/v1alpha1
+      blockOwnerDeletion: false
+      kind: MongoDB
+      name: sample-mgo-sh
+      uid: d1e72f6d-a94c-11e9-acf7-42010a8000dc
+  resourceVersion: &quot;870217&quot;
+  selfLink: /apis/appcatalog.appscode.com/v1alpha1/namespaces/demo/appbindings/sample-mgo-sh
+  uid: c247c3bd-a94d-11e9-acf7-42010a8000dc
+spec:
+  clientConfig:
+    caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM0RENDQWNpZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFoTVJJd0VBWURWUVFLRXdsTGRXSmwKWkdJNlEwRXhDekFKQmdOVkJBTVRBa05CTUI0WERURTVNRGd3TVRFd01Ua3lPVm9YRFRJNU1EY3lPVEV3TVRreQpPVm93SVRFU01CQUdBMVVFQ2hNSlMzVmlaV1JpT2tOQk1Rc3dDUVlEVlFRREV3SkRRVENDQVNJd0RRWUpLb1pJCmh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTTQvWXpwbGhNTWlkUmREZEM0ejcvOXdkNWpZaitKeVl3d0EKQTJncktvYkxkQlB1YTNWNFB2TjJOOHNCaXArOUZycFFPVXkzOFpBdmZ4a1V1YkZOUVNoS3JkNnlGbWZRQjBhbApHOHB3dkcwblJoWEdWTHI3REVaaysrSjhZQWZwbzBlOHR6K29zZDVRMkpjN3JiRlFVbVFDYzJzc0ZXcGJSdy93CjFmeWhlaldTSjVnUnBYUG96ZHhxRkloTm9sbVgrQiswWVdrVHJ0QmJlcUZibnhkTm9oVmJDYzJtaHZOdnNoMHUKdWIvY1h1anhQR3ljNzZLYTEyZVhUS3FWTm9Jczg1TkdEbzlaSXBWZUhkRG1ld1ZQZVROcFlxWE9zMTRSOTNHWgozb0FoWW5JbG5veGFrOXEreE1Td01Vd0hwL0JyL0dRSkdGRlEyVDdSWWNMUS9HclYrdGtDQXdFQUFhTWpNQ0V3CkRnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCL3dRRk1BTUJBZjh3RFFZSktvWklodmNOQVFFTEJRQUQKZ2dFQkFLMXphNHQ5NjZBejYwZmJyQWh2bW5ZTXlPNUIvVWxaT01RcGhqRWRMOVBHekpSMG1uY1FOeWNoTFNqQwpkeDFaRG1iME9iSzh3WUgrbisyaW9DWTdiRFZBSjZTaHU3SkhBeDl4NGRkOG1HR0pCN1NUMGlxL3RJbGJmK2J0ClBNUnBEYmJ5YUZTVnpacXJvdTFJNkZycUwvQXVhTThzTUg5KzYzOW5zVS9XQWtIZWVVN0hhOWdpZXNwR0QrdGoKcUowOHBXcDB5Wndaa1plK3RyVUR6QmI1Um9VaWlMTGkxZXlKN0oyZmtvNk1OcXY1UkF2R2g2Y1ROcEtCbUdKQgpvaTUvSTgyQ1ovaGVYSXdpUkFrZ2NEbXpVRW1kaEk2OUZCMlQxVTNNVGNaaWtaSnRUdW13SXpFbWFZK3NySVdtCkZCdU1MMmdCRUhibEt3NFBjdmY3dWcvOGlHRT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+    service:
+      name: sample-mgo-sh
+      port: 27017
+      scheme: mongodb
+  parameters:
+    configServer: cnfRepSet/sample-mgo-sh-configsvr-0.sample-mgo-sh-configsvr-gvr.demo.svc:27017,sample-mgo-sh-configsvr-1.sample-mgo-sh-configsvr-gvr.demo.svc:27017,sample-mgo-sh-configsvr-2.sample-mgo-sh-configsvr-gvr.demo.svc:27017
+    replicaSets:
+      host-0: shard0/sample-mgo-sh-shard0-0.sample-mgo-sh-shard0-gvr.demo.svc:27017,sample-mgo-sh-shard0-1.sample-mgo-sh-shard0-gvr.demo.svc:27017,sample-mgo-sh-shard0-2.sample-mgo-sh-shard0-gvr.demo.svc:27017
+      host-1: shard1/sample-mgo-sh-shard1-0.sample-mgo-sh-shard1-gvr.demo.svc:27017,sample-mgo-sh-shard1-1.sample-mgo-sh-shard1-gvr.demo.svc:27017,sample-mgo-sh-shard1-2.sample-mgo-sh-shard1-gvr.demo.svc:27017
+      host-2: shard2/sample-mgo-sh-shard2-0.sample-mgo-sh-shard2-gvr.demo.svc:27017,sample-mgo-sh-shard2-1.sample-mgo-sh-shard2-gvr.demo.svc:27017,sample-mgo-sh-shard2-2.sample-mgo-sh-shard2-gvr.demo.svc:27017
+  secret:
+    name: sample-mgo-sh-cert
+  type: kubedb.com/mongodb
+</code></pre><p>Here, <code>sample-mgo-sh-cert</code> contains few required certificates, and one of them is <code>client.pem</code> which is required to backup/restore ssl enabled mongodb server using stash-mongodb.</p><p><strong>Creating AppBinding Manually:</strong></p><p>If you deploy MongoDB database without KubeDB, you have to create the AppBinding crd manually in the same namespace as the service and secret of the database.</p><p><strong>Insert Sample Data:</strong></p><p>Now, we are going to exec into the database pod and create some sample data. At first, find out the database pod using the following command,</p><pre><code class=language-console>$ kubectl get pods -n demo --selector=&quot;mongodb.kubedb.com/node.mongos=sample-mgo-sh-mongos&quot;
+NAME                                   READY   STATUS    RESTARTS   AGE
+sample-mgo-sh-mongos-9459cfc44-4jthd   1/1     Running   0          60m
+sample-mgo-sh-mongos-9459cfc44-6d2st   1/1     Running   0          60m
+</code></pre><p>Now, let&rsquo;s exec into the pod and create a table,</p><pre><code class=language-console>$ kubectl get secrets -n demo sample-mgo-sh-auth -o jsonpath='{.data.\username}' | base64 -d
+root
+
+$ kubectl get secrets -n demo sample-mgo-sh-auth -o jsonpath='{.data.\password}' | base64 -d
+JJPcMxNKJev0SzgX
+
+$ kubectl exec -it -n demo sample-mgo-sh-mongos-9459cfc44-4jthd bash
+
+mongodb@sample-mgo-sh-0:/$ mongo admin -u root -p JJPcMxNKJev0SzgX
+
+mongos&gt; show dbs
+admin   0.000GB
+config  0.001GB
+
+
+mongos&gt; show users
+{
+	&quot;_id&quot; : &quot;admin.root&quot;,
+	&quot;userId&quot; : UUID(&quot;b9a1551b-83cf-4ebb-852b-dd23c890f301&quot;),
+	&quot;user&quot; : &quot;root&quot;,
+	&quot;db&quot; : &quot;admin&quot;,
+	&quot;roles&quot; : [
+		{
+			&quot;role&quot; : &quot;root&quot;,
+			&quot;db&quot; : &quot;admin&quot;
+		}
+	]
+}
+
+mongos&gt; use newdb
+switched to db newdb
+
+mongos&gt; db.movie.insert({&quot;name&quot;:&quot;batman&quot;});
+WriteResult({ &quot;nInserted&quot; : 1 })
+
+mongos&gt; db.movie.find().pretty()
+{ &quot;_id&quot; : ObjectId(&quot;5d3064bf144a1b8fda04cd4f&quot;), &quot;name&quot; : &quot;batman&quot; }
+
+mongos&gt; exit
+bye
+</code></pre><p>Now, we are ready to backup this sample database.</p><h3 id=prepare-backend>Prepare Backend</h3><p>We are going to store our backed up data into a GCS bucket. At first, we need to create a secret with GCS credentials then we need to create a <code>Repository</code> crd. If you want to use a different backend, please read the respective backend configuration doc from <a href=https://appscode.com/products/stash/0.8.3/guides/backends/overview/>here</a>.</p><p><strong>Create Storage Secret:</strong></p><p>Let&rsquo;s create a secret called <code>gcs-secret</code> with access credentials to our desired GCS bucket,</p><pre><code class=language-console>$ echo -n 'changeit' &gt; RESTIC_PASSWORD
+$ echo -n '&lt;your-project-id&gt;' &gt; GOOGLE_PROJECT_ID
+$ cat downloaded-sa-json.key &gt; GOOGLE_SERVICE_ACCOUNT_JSON_KEY
+$ kubectl create secret generic -n demo gcs-secret \
+    --from-file=./RESTIC_PASSWORD \
+    --from-file=./GOOGLE_PROJECT_ID \
+    --from-file=./GOOGLE_SERVICE_ACCOUNT_JSON_KEY
+secret/gcs-secret created
+</code></pre><p><strong>Create Repository:</strong></p><p>Now, crete a <code>Respository</code> using this secret. Below is the YAML of Repository crd we are going to create,</p><pre><code class=language-yaml>apiVersion: stash.appscode.com/v1alpha1
+kind: Repository
+metadata:
+  name: gcs-repo-sharding
+  namespace: demo
+spec:
+  backend:
+    gcs:
+      bucket: appscode-qa
+      prefix: demo/mongodb/sample-mgo-sh
+    storageSecretName: gcs-secret
+</code></pre><p>Let&rsquo;s create the <code>Repository</code> we have shown above,</p><pre><code class=language-console>$ kubectl apply -f ./docs/examples/backup/sharding/repository-sharding.yaml
+repository.stash.appscode.com/gcs-repo-sharding created
+</code></pre><p>Now, we are ready to backup our database to our desired backend.</p><h3 id=backup-mongodb-sharding>Backup MongoDB Sharding</h3><p>We have to create a <code>BackupConfiguration</code> targeting respective AppBinding crd of our desired database. Then Stash will create a CronJob to periodically backup the database.</p><p><strong>Create BackupConfiguration:</strong></p><p>Below is the YAML for <code>BackupConfiguration</code> crd to backup the <code>sample-mgo-sh</code> database we have deployed earlier.,</p><pre><code class=language-yaml>apiVersion: stash.appscode.com/v1beta1
+kind: BackupConfiguration
+metadata:
+  name: sample-mgo-sh-backup
+  namespace: demo
+spec:
+  schedule: &quot;*/5 * * * *&quot;
+  task:
+    name: mg-backup-3.6
+  repository:
+    name: gcs-repo-sharding
+  target:
+    ref:
+      apiVersion: appcatalog.appscode.com/v1alpha1
+      kind: AppBinding
+      name: sample-mgo-sh
+  retentionPolicy:
+    keepLast: 5
+    prune: true
+</code></pre><p>Here,</p><ul><li><code>spec.schedule</code> specifies that we want to backup the database at 5 minutes interval.</li><li><code>spec.task.name</code> specifies the name of the task crd that specifies the necessary Function and their execution order to backup a MongoDB database.</li><li><code>spec.target.ref</code> refers to the <code>AppBinding</code> crd that was created for <code>sample-mgo-sh</code> database.</li></ul><p>Let&rsquo;s create the <code>BackupConfiguration</code> crd we have shown above,</p><pre><code class=language-console>$ kubectl apply -f ./docs/examples/backup/sharding/backupconfiguration-sharding.yaml
+backupconfiguration.stash.appscode.com/sample-mgo-sh-backup created
+</code></pre><p><strong>Verify CronJob:</strong></p><p>If everything goes well, Stash will create a CronJob with the schedule specified in <code>spec.schedule</code> field of <code>BackupConfiguration</code> crd.</p><p>Verify that the CronJob has been created using the following command,</p><pre><code class=language-console>$ kubectl get cronjob -n demo
+NAME                   SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+sample-mgo-sh-backup   */5 * * * *   False     0        &lt;none&gt;          13s
+</code></pre><p><strong>Wait for BackupSession:</strong></p><p>The <code>sample-mgo-sh-backup</code> CronJob will trigger a backup on each schedule by creating a <code>BackpSession</code> crd.</p><p>Wait for the next schedule. Run the following command to watch <code>BackupSession</code> crd,</p><pre><code class=language-console>$ kubectl get backupsession -n demo -w
+NAME                               BACKUPCONFIGURATION      PHASE       AGE
+sample-mgo-sh-backup-1563512707   sample-mgo-sh-backup   Running     5m19s
+sample-mgo-sh-backup-1563512707   sample-mgo-sh-backup   Succeeded   5m45s
+</code></pre><p>We can see above that the backup session has succeeded. Now, we are going to verify that the backed up data has been stored in the backend.</p><p><strong>Verify Backup:</strong></p><p>Once a backup is complete, Stash will update the respective <code>Repository</code> crd to reflect the backup. Check that the repository <code>gcs-repo-sharding</code> has been updated by the following command,</p><pre><code class=language-console>$ kubectl get repository -n demo gcs-repo-sharding
+NAME                INTEGRITY   SIZE         SNAPSHOT-COUNT   LAST-SUCCESSFUL-BACKUP   AGE
+gcs-repo-sharding   true        66.453 KiB   12               1m                       20m
+</code></pre><p>Now, if we navigate to the GCS bucket, we are going to see backed up data has been stored in <code>demo/mongodb/sample-mgo-sh</code> directory as specified by <code>spec.backend.gcs.prefix</code> field of Repository crd.</p><blockquote><p>Note: Stash keeps all the backed up data encrypted. So, data in the backend will not make any sense until they are decrypted.</p></blockquote><h2 id=restore-mongodb-sharding>Restore MongoDB Sharding</h2><p>In this section, we are going to restore the database from the backup we have taken in the previous section. We are going to deploy a new sharded database and initialize it from the backup.</p><p><strong>Stop Taking Backup of the Old Database:</strong></p><p>At first, let&rsquo;s stop taking any further backup of the old database so that no backup is taken during restore process. We are going to pause the <code>BackupConfiguration</code> crd that we had created to backup the <code>sample-mgo-sh</code> database. Then, Stash will stop taking any further backup for this database.</p><p>Let&rsquo;s pause the <code>sample-mgo-sh-backup</code> BackupConfiguration,</p><pre><code class=language-console>$ kubectl patch backupconfiguration -n demo sample-mgo-sh-backup --type=&quot;merge&quot; --patch='{&quot;spec&quot;: {&quot;paused&quot;: true}}'
+backupconfiguration.stash.appscode.com/sample-mgo-sh-backup patched
+</code></pre><p>Now, wait for a moment. Stash will pause the BackupConfiguration. Verify that the BackupConfiguration has been paused,</p><pre><code class=language-console>$ kubectl get backupconfiguration -n demo sample-mgo-sh-backup
+NAME                  TASK                      SCHEDULE      PAUSED   AGE
+sample-mgo-sh-backup  mongodb-backup-3.6        */5 * * * *   true     26m
+</code></pre><p>Notice the <code>PAUSED</code> column. Value <code>true</code> for this field means that the BackupConfiguration has been paused.</p><p><strong>Deploy Restored Database:</strong></p><p>Now, we have to deploy the restored database similarly as we have deployed the original <code>sample-mgo-sh</code> database. However, this time there will be the following differences:</p><ul><li>We have to use the same secret that was used in the original database. We are going to specify it using <code>spec.databaseSecret</code> field.</li><li>We have to specify <code>spec.init</code> section to tell KubeDB that we are going to use Stash to initialize this database from backup. KubeDB will keep the database phase to <code>Initializing</code> until Stash finishes its initialization.</li></ul><p>Below is the YAML for <code>MongoDB</code> crd we are going deploy to initialize from backup,</p><pre><code class=language-yaml>apiVersion: kubedb.com/v1alpha1
+kind: MongoDB
+metadata:
+  name: restored-mgo-sh
+  namespace: demo
+spec:
+  databaseSecret:
+    secretName: sample-mgo-sh-auth
+  version: 3.6-v4
+  shardTopology:
+    configServer:
+      replicas: 3
+      storage:
+        resources:
+          requests:
+            storage: 1Gi
+        storageClassName: standard
+    mongos:
+      replicas: 2
+      strategy:
+        type: RollingUpdate
+    shard:
+      replicas: 3
+      shards: 3
+      storage:
+        resources:
+          requests:
+            storage: 1Gi
+        storageClassName: standard
+  init:
+    stashRestoreSession:
+      name: sample-mgo-sh-restore
+  terminationPolicy: WipeOut
+</code></pre><p>Here,</p><ul><li><code>spec.init.stashRestoreSession.name</code> specifies the <code>RestoreSession</code> crd name that we are going to use to restore this database.</li></ul><p>Let&rsquo;s create the above database,</p><pre><code class=language-console>$ kubectl apply -f ./docs/examples/restore/sharding/restored-mongodb-sharding.yaml
+mongodb.kubedb.com/restored-mgo-sh created
+</code></pre><p>If you check the database status, you will see it is stuck in <code>Initializing</code> state.</p><pre><code class=language-console>$ kubectl get mg -n demo restored-mgo-sh
+NAME              VERSION   STATUS         AGE
+restored-mgo-sh   3.6-v4    Initializing   48m
+</code></pre><p><strong>Create RestoreSession:</strong></p><p>Now, we need to create a <code>RestoreSession</code> crd pointing to the AppBinding for this restored database.</p><p>Check AppBinding has been created for the <code>restored-mgo-sh</code> database using the following command,</p><pre><code class=language-console>$ kubectl get appbindings -n demo restored-mgo-sh
+NAME               AGE
+restored-mgo-sh    29s
+</code></pre><p>NB. The appbinding <code>restored-mgo-sh</code> also contains <code>spec.parametrs</code> field. the number of hosts in <code>spec.parameters.replicaSets</code> needs to be similar to the old appbinding. Otherwise, the sharding recover may not be accurate.</p><blockquote><p>If you are not using KubeDB to deploy database, create the AppBinding manually.</p></blockquote><p>Below is the YAML for the <code>RestoreSession</code> crd that we are going to create to restore backed up data into <code>restored-mgo-sh</code> database.</p><pre><code class=language-yaml>apiVersion: stash.appscode.com/v1beta1
+kind: RestoreSession
+metadata:
+  name: sample-mgo-sh-restore
+  namespace: demo
+  labels:
+    kubedb.com/kind: MongoDB
+spec:
+  task:
+    name: mg-restore-3.6
+  repository:
+    name: gcs-repo-sharding
+  target:
+    ref:
+      apiVersion: appcatalog.appscode.com/v1alpha1
+      kind: AppBinding
+      name: restored-mgo-sh
+  rules:
+    - snapshots: [latest]
+</code></pre><p>Here,</p><ul><li><code>metadata.labels</code> specifies a <code>kubedb.com/kind: MongoDB</code> label that is used by KubeDB to watch this <code>RestoreSession</code>.</li><li><code>spec.task.name</code> specifies the name of the <code>Task</code> crd that specifies the Functions and their execution order to restore a MongoDB database.</li><li><code>spec.repository.name</code> specifies the <code>Repository</code> crd that holds the backend information where our backed up data has been stored.</li><li><code>spec.target.ref</code> refers to the AppBinding crd for the <code>restored-mgo-sh</code> database.</li><li><code>spec.rules</code> specifies that we are restoring from the latest backup snapshot of the database.</li></ul><blockquote><p><strong>Warning:</strong> Label <code>kubedb.com/kind: MongoDB</code> is mandatory if you are uisng KubeDB to deploy the database. Otherwise, the database will be stuck in <code>Initializing</code> state.</p></blockquote><p>Let&rsquo;s create the <code>RestoreSession</code> crd we have shown above,</p><pre><code class=language-console>$ kubectl apply -f ./docs/examples/restore/sharding/restoresession-sharding.yaml
+restoresession.stash.appscode.com/sample-mgo-sh-restore created
+</code></pre><p>Once, you have created the <code>RestoreSession</code> crd, Stash will create a job to restore. We can watch the <code>RestoreSession</code> phase to check if the restore process is succeeded or not.</p><p>Run the following command to watch <code>RestoreSession</code> phase,</p><pre><code class=language-console>$ kubectl get restoresession -n demo sample-mgo-sh-restore -w
+NAME                    REPOSITORY-NAME      PHASE       AGE
+sample-mgo-sh-restore   gcs-repo-sharding    Running     5s
+sample-mgo-sh-restore   gcs-repo-sharding    Succeeded   43s
+</code></pre><p>So, we can see from the output of the above command that the restore process succeeded.</p><p><strong>Verify Restored Data:</strong></p><p>In this section, we are going to verify that the desired data has been restored successfully. We are going to connect to <code>mongos</code> and check whether the table we had created in the original database is restored or not.</p><p>At first, check if the database has gone into <code>Running</code> state by the following command,</p><pre><code class=language-console>$ kubectl get mg -n demo restored-mgo-sh
+NAME              VERSION   STATUS    AGE
+restored-mgo-sh   3.6-v4    Running   2h
+</code></pre><p>Now, find out the <code>mongos</code> pod,</p><pre><code class=language-console>$ kubectl get pods -n demo --selector=&quot;mongodb.kubedb.com/node.mongos=restored-mgo-sh-mongos&quot;
+NAME                                      READY   STATUS    RESTARTS   AGE
+restored-mgo-sh-mongos-7bccd5d684-2z5xs   1/1     Running   0          169m
+restored-mgo-sh-mongos-7bccd5d684-vvdxb   1/1     Running   0          169m
+</code></pre><p>Now, exec into the database pod and list available tables,</p><pre><code class=language-console>$ kubectl get secrets -n demo sample-mgo-sh-auth -o jsonpath='{.data.\username}' | base64 -d
+root
+
+$ kubectl get secrets -n demo sample-mgo-sh-auth -o jsonpath='{.data.\password}' | base64 -d
+JJPcMxNKJev0SzgX
+
+$ kubectl exec -it -n demo restored-mgo-sh-mongos-7bccd5d684-2z5xs bash
+
+mongodb@restored-mgo-sh-0:/$ mongo admin -u root -p JJPcMxNKJev0SzgX
+
+mongos&gt; show dbs
+admin   0.000GB
+config  0.001GB
+newdb   0.000GB
+
+
+mongos&gt; show users
+{
+	&quot;_id&quot; : &quot;admin.root&quot;,
+	&quot;userId&quot; : UUID(&quot;a57cb466-ec66-453b-b795-654169a0f035&quot;),
+	&quot;user&quot; : &quot;root&quot;,
+	&quot;db&quot; : &quot;admin&quot;,
+	&quot;roles&quot; : [
+		{
+			&quot;role&quot; : &quot;root&quot;,
+			&quot;db&quot; : &quot;admin&quot;
+		}
+	]
+}
+
+mongos&gt; use newdb
+switched to db newdb
+
+mongos&gt; db.movie.find().pretty()
+{ &quot;_id&quot; : ObjectId(&quot;5d3064bf144a1b8fda04cd4f&quot;), &quot;name&quot; : &quot;batman&quot; }
+
+mongos&gt; exit
+bye
+</code></pre><p>So, from the above output, we can see the database <code>newdb</code> that we had created in the original database <code>sample-mgo-sh</code> is restored in the restored database <code>restored-mgo-sh</code>.</p><h2 id=backup-mongodb-sharded-cluster-and-restore-into-a-standalone-database>Backup MongoDB Sharded Cluster and Restore into a Standalone database</h2><p>It is possible to take backup of a MongoDB Sharded Cluster and restore it into a standalone database, but user need to create the appbinding for this process.</p><h3 id=backup-a-sharded-cluster>Backup a sharded cluster</h3><p>Keep all the fields of appbinding that is explained earlier in this guide, except <code>spec.parameter</code>. Do not set <code>spec.parameter.configServer</code> and <code>spec.parameter.replicaSet</code>. By doing this, the job will use <code>spec.clientConfig.service.name</code> as host, which is <code>mongos</code> router DSN. So, the backup will treat this cluster as a standalone and will skip the <a href=https://docs.mongodb.com/manual/tutorial/backup-sharded-cluster-with-database-dumps/><code>idiomatic way</code> of taking backups of a sharded cluster</a>. Then follow the rest of the procedure as described above.</p><pre><code class=language-yaml>apiVersion: appcatalog.appscode.com/v1alpha1
+kind: AppBinding
+metadata:
+  name: sample-mgo-sh-custom
+  namespace: demo
+spec:
+  clientConfig:
+    service:
+      name: sample-mgo-sh
+      port: 27017
+      scheme: mongodb
+  secret:
+    name: sample-mgo-sh-auth
+  type: kubedb.com/mongodb
+
+---
+apiVersion: stash.appscode.com/v1alpha1
+kind: Repository
+metadata:
+  name: gcs-repo-custom
+  namespace: demo
+spec:
+  backend:
+    gcs:
+      bucket: appscode-qa
+      prefix: demo/mongodb/sample-mgo-sh/standalone
+    storageSecretName: gcs-secret
+
+---
+apiVersion: stash.appscode.com/v1beta1
+kind: BackupConfiguration
+metadata:
+  name: sample-mgo-sh-backup2
+  namespace: demo
+spec:
+  schedule: &quot;*/5 * * * *&quot;
+  task:
+    name: mg-backup-3.6
+  repository:
+    name: gcs-repo-custom
+  target:
+    ref:
+      apiVersion: appcatalog.appscode.com/v1alpha1
+      kind: AppBinding
+      name: sample-mgo-sh-custom
+  retentionPolicy:
+    keepLast: 5
+    prune: true
+</code></pre><pre><code class=language-console>$ kubectl create -f ./docs/examples/backup/sharding/standalone-backup.yaml
+appbinding.appcatalog.appscode.com/sample-mgo-sh-custom created
+repository.stash.appscode.com/gcs-repo-custom created
+backupconfiguration.stash.appscode.com/sample-mgo-sh-backup2 created
+
+
+$ kubectl get backupsession -n demo
+NAME                              BACKUPCONFIGURATION    PHASE       AGE
+sample-mgo-sh-backup-1563528902   sample-mgo-sh-backup   Succeeded   35s
+
+
+$ kubectl get repository -n demo gcs-repo-custom
+NAME              INTEGRITY   SIZE         SNAPSHOT-COUNT   LAST-SUCCESSFUL-BACKUP   AGE
+gcs-repo-custom   true        22.160 KiB   4                1m                       2m
+</code></pre><h3 id=restore-to-a-standalone-database>Restore to a standalone database</h3><p>No additional configuration is needed to restore the sharded cluster to a standalone database. Follow the normal procedure of restoring a MongoDB Database.</p><p>Standalone MongoDB,</p><pre><code class=language-yaml>apiVersion: kubedb.com/v1alpha1
+kind: MongoDB
+metadata:
+  name: restored-mongodb
+  namespace: demo
+spec:
+  version: &quot;3.6-v4&quot;
+  storageType: Durable
+  databaseSecret:
+    secretName: sample-mgo-sh-auth
+  storage:
+    storageClassName: &quot;standard&quot;
+    accessModes:
+      - ReadWriteOnce
+    resources:
+      requests:
+        storage: 1Gi
+  init:
+    stashRestoreSession:
+      name: sample-mongodb-restore
+  terminationPolicy: WipeOut
+</code></pre><p>RestoreSession crd object,</p><pre><code class=language-yaml>apiVersion: stash.appscode.com/v1beta1
+kind: RestoreSession
+metadata:
+  name: sample-mongodb-restore
+  namespace: demo
+  labels:
+    kubedb.com/kind: MongoDB
+spec:
+  task:
+    name: mg-restore-3.6
+  repository:
+    name: gcs-repo-custom
+  target:
+    ref:
+      apiVersion: appcatalog.appscode.com/v1alpha1
+      kind: AppBinding
+      name: restored-mongodb
+  rules:
+    - snapshots: [latest]
+</code></pre><pre><code class=language-console>$ kubectl create -f ./docs/examples/restore/sharding/restored-standalone.yaml
+mongodb.kubedb.com/restored-mongodb created
+
+$ kubectl get mg -n demo restored-mongodb
+NAME               VERSION   STATUS         AGE
+restored-mongodb   3.6-v4    Initializing   56s
+
+$ kubectl create -f ./docs/examples/restore/sharding/restoresession-standalone.yaml
+restoresession.stash.appscode.com/sample-mongodb-restore created
+
+$ kubectl get mg -n demo restored-mongodb
+NAME               VERSION   STATUS         AGE
+restored-mongodb   3.6-v4    Running   56s
+</code></pre><p>Now, exec into the database pod and list available tables,</p><pre><code class=language-console>$ kubectl get secrets -n demo sample-mgo-sh-auth -o jsonpath='{.data.\username}' | base64 -d
+root
+
+$ kubectl get secrets -n demo sample-mgo-sh-auth -o jsonpath='{.data.\password}' | base64 -d
+JJPcMxNKJev0SzgX
+
+$ kubectl exec -it -n demo restored-mongodb-0 bash
+
+mongodb@restored-mongodb-0:/$ mongo admin -u root -p JJPcMxNKJev0SzgX
+
+&gt; show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+newdb   0.000GB
+
+&gt; show users
+{
+	&quot;_id&quot; : &quot;admin.root&quot;,
+	&quot;userId&quot; : UUID(&quot;98fa7511-2ae0-4466-bb2a-f9a7e17631ad&quot;),
+	&quot;user&quot; : &quot;root&quot;,
+	&quot;db&quot; : &quot;admin&quot;,
+	&quot;roles&quot; : [
+		{
+			&quot;role&quot; : &quot;root&quot;,
+			&quot;db&quot; : &quot;admin&quot;
+		}
+	]
+}
+
+&gt; use newdb
+switched to db newdb
+
+&gt; db.movie.find().pretty()
+{ &quot;_id&quot; : ObjectId(&quot;5d3064bf144a1b8fda04cd4f&quot;), &quot;name&quot; : &quot;batman&quot; }
+
+&gt; exit
+bye
+</code></pre><p>So, from the above output, we can see the database <code>newdb</code> that we had created in the original database <code>sample-mgo-sh</code> is restored in the restored database <code>restored-mongodb</code>.</p><h2 id=cleanup>Cleanup</h2><p>To cleanup the Kubernetes resources created by this tutorial, run:</p><pre><code class=language-console>kubectl delete restoresession -n demo sample-mgo-sh-restore sample-mongodb-restore
+kubectl delete backupconfiguration -n demo sample-mgo-sh-backup sample-mgo-sh-backup
+kubectl delete mg -n demo restored-mgo-sh restored-mgo-sh restored-mongodb
+kubectl delete repository -n demo gcs-repo-sharding gcs-repo-custom
+
+
+</code></pre><p>To cleanup the MongoDB catalogs that we had created earlier, run the following:</p><p><ul class="nav nav-tabs" id=uninstallerTab role=tablist><li class=nav-item><a class=nav-link id=helm-uninstaller-tab data-toggle=tab href=#helm-uninstaller role=tab aria-controls=helm-uninstaller aria-selected=false>Helm</a></li><li class=nav-item><a class="nav-link active" id=script-uninstaller-tab data-toggle=tab href=#script-uninstaller role=tab aria-controls=script-uninstaller aria-selected=true>Script</a></li></ul><div class=tab-content id=uninstallerTabContent><div class="tab-pane fade" id=helm-uninstaller role=tabpanel aria-labelledby=helm-uninstaller-tab></p><h3 id=uninstall-stash-mongdb-charts>Uninstall <code>stash-mongdb-*</code> charts</h3><p>Run the following script to uninstall <code>stash-mongodb</code> catalogs that was installed as a Helm chart.</p><pre><code class=language-console>curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/chart.sh | bash -s -- --uninstall --catalog=stash-mongodb
+</code></pre><p></div></p><div class="tab-pane fade show active" id=script-uninstaller role=tabpanel aria-labelledby=script-uninstaller-tab>### Uninstall `stash-mongodb` catalog YAMLs
+Run the following script to uninstall `stash-mongodb` catalog that was installed as Kubernetes YAMLs.
+```console
+curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/script.sh | bash -s -- --uninstall --catalog=stash-mongodb
+```</div></div></div></div><div class="column is-2"><div class=right-sidebar-area><div class=search-area><form action=#><input id=acSearch type=text placeholder=Search...>
+<button class=search-button>
+<i class="fa fa-search" aria-hidden=true></i></button></form></div><div class=tbl-of-contents><h4>What's on this Page</h4><nav id=TableOfContents><ul><li><a href=#backup-and-restore-mongodb-sharded-clusters-using-stash>Backup and Restore MongoDB Sharded Clusters using Stash</a><ul><li><a href=#before-you-begin>Before You Begin</a></li><li><a href=#install-mongodb-catalog-for-stash>Install MongoDB Catalog for Stash</a><ul><li><a href=#install-as-chart-release>Install as chart release</a></li></ul></li><li><a href=#backup-sharded-mongodb-cluster>Backup Sharded MongoDB Cluster</a><ul><li><a href=#deploy-sample-mongodb-sharding>Deploy Sample MongoDB Sharding</a></li><li><a href=#appbinding-for-ssl>AppBinding for SSL</a></li><li><a href=#prepare-backend>Prepare Backend</a></li><li><a href=#backup-mongodb-sharding>Backup MongoDB Sharding</a></li></ul></li><li><a href=#restore-mongodb-sharding>Restore MongoDB Sharding</a></li><li><a href=#backup-mongodb-sharded-cluster-and-restore-into-a-standalone-database>Backup MongoDB Sharded Cluster and Restore into a Standalone database</a><ul><li><a href=#backup-a-sharded-cluster>Backup a sharded cluster</a></li><li><a href=#restore-to-a-standalone-database>Restore to a standalone database</a></li></ul></li><li><a href=#cleanup>Cleanup</a><ul><li><a href=#uninstall-stash-mongdb-charts>Uninstall <code>stash-mongdb-*</code> charts</a></li></ul></li></ul></li></ul></nav></div></div></div></div></div><script>var kdDropdown=document.querySelector(".dropdown");var kdDropdownBtn=document.querySelector(".dropdown-trigger");kdDropdownBtn.addEventListener("click",function(){kdDropdown.classList.toggle("is-active");})</script></div><div class=overlay-bg></div><div class=sidebar-search-area><div class=search-area-top><h3>Search</h3><div class=searchbar-area><input type=search name=search id=searchbox placeholder=Search...>
+<button onclick=queryPage(1)><i class="fa fa-search" aria-hidden=true></i></button></div><span id=searchbar-script-container style=display:none></span><div class="search-meta-information level"><div class=level-left></div></div></div><div class=search-result-wrapper></div><div class=pagination-area><div class=pagination-list></div></div></div><script type=text/javascript>var pageSize=5;var acSearch=document.querySelector("#acSearch");var bodyOverlay=document.querySelector(".overlay-bg");var sidebarSearch=document.querySelector(".sidebar-search-area");acSearch.addEventListener("click",function(){bodyOverlay.style.display="block";sidebarSearch.style.right="0";document.getElementById("searchbox").focus();bodyOverlay.addEventListener("click",function(){bodyOverlay.style.display="none";sidebarSearch.style.right="-50%";});});function encodeQueryData(data){var ret=[];for(var d in data)
+ret.push(encodeURIComponent(d)+'='+encodeURIComponent(data[d]));return ret.join('&');}
+document.querySelector(".searchbar-area input[type=search]").addEventListener("keyup",function(event){event.preventDefault();if(event.keyCode===13){queryPage(1);}});function queryPage(idx){var q=document.getElementById("searchbox").value;var cx="015199383701854252104:jccvu4eiulw";var key="AIzaSyBo15AW3hatf4fO8actJUZ_d5qZJpx0rXM";var imgSize="small";var callback="renderResult";var src="https://www.googleapis.com/customsearch/v1?"+encodeQueryData({q:q,cx:cx,key:key,imgSize:imgSize,callback:callback,start:(idx-1)*pageSize+1,num:pageSize,});var newScript=document.createElement("script");newScript.src=src;e=document.getElementById("searchbar-script-container");var child=e.lastElementChild;if(child){e.removeChild(child);}
+e.appendChild(newScript);}
+function renderSearchResultEntry(e){var out='<div class="single-search-result">'+
+'<h3><a href="'+e.link+'">'+e.title+'</a></h3>'+
+'<a href="'+e.link+'">'+e.htmlFormattedUrl+'</a>'+
+'<div class="result-description-wrapper">';if(e.pagemap&&e.pagemap.cse_thumbnail){out+='<div class="result-thumb">'+
+'<img src="'+e.pagemap.cse_thumbnail[0].src+'" alt="" />'+
+'</div>';}
+out+='<div class="result-description">'+
+'<p>'+
+e.snippet+
+'</p>'+
+'</div>'+
+'</div>'+
+'</div>';return out;}
+function renderResult(response){document.querySelector(".search-meta-information .level-left").innerHTML='<div class="level-left">'+
+'<p>'+
+'About <span class="search-count">'+response.searchInformation.formattedTotalResults+'</span> results (<span class="time-count">'+response.searchInformation.formattedSearchTime+' </span>seconds)'+
+'</p>'+
+'</div>';if(!response.items){return;}
+var searchResultWrapper=document.querySelector(".search-result-wrapper");searchResultWrapper.innerHTML="";for(var i=0;i<response.items.length;i++){searchResultWrapper.innerHTML+=renderSearchResultEntry(response.items[i]);}
+var pager='<ul>';if(response.queries.previousPage){var pageIndex=Math.floor(response.queries.previousPage[0].startIndex/pageSize)+1;pager+='<li><a href="#" onclick="queryPage('+pageIndex+')">Previous</a></li>';}
+if(response.queries.request){var pageIndex=Math.floor(response.queries.request[0].startIndex/pageSize)+1;pager+='<li><a href="#" onclick="queryPage('+pageIndex+')" class="is-active">'+pageIndex+'</a></li>';}
+if(response.queries.nextPage){var pageIndex=Math.floor(response.queries.nextPage[0].startIndex/pageSize)+1;pager+='<li><a href="#" onclick="queryPage('+pageIndex+')">Next</a></li>';}
+pager+='</ul>';document.querySelector(".pagination-area .pagination-list").innerHTML=pager;}</script><section></section><section></section><section></section><button class=go-to-top id=goTop>
+<i class="fa fa-angle-up" aria-hidden=true></i></button><footer class=footer-area><div class=footer-top><div class="container section"><div class=columns><div class="column is-4"><div class=single-footer-widget><div class=footer-logo><a href=https://appscode-v3-hugo.web.app><img src=https://cdn.appscode.com/images/products/appscode/appscode-logo.png alt=AppsCode class=img></a></div><div class=subscription-form><form action="https://appscode.us17.list-manage.com/subscribe/post?u=feb2bf31969a951e7449048a3&amp;id=82fb19acb9" method=post id=mc-embedded-subscribe-form name=mc-embedded-subscribe-form class=navbar-form target=_blank novalidate role=email role=email><label for=email>Subscribe to Our Newsletter</label><p class=spam-message>No spam, we promise. Your mail address is secure</p><div class="field has-addons"><div class=control><input class=input name=EMAIL id=mce-EMAIL type=email placeholder="Your work email address" required>
+<button id=mc-embedded-subscribe type=submit name=subscribe class=button>
+<i class="fa fa-paper-plane-o" aria-hidden=true></i></button></div></div></form></div><div class=contact-information><h4>Have any Inquiry?</h4><ul class=all-contact-info><li><a href=callto:&#43;1%28650%29241-8486><span><i class="fa fa-phone" aria-hidden=true></i></span>&#43;1(650)241-8486</a></li><li><a href=mailto:support@appscode.com><span><i class="fa fa-envelope-o" aria-hidden=true></i></span>support@appscode.com</a></li></ul></div></div></div><div class="column is-2"><div class=single-footer-widget><div class=footer-menu><h4>Products</h4><ul class=footer-link><li><a href=https://kubedb-v2-hugo.web.app>KubeDB</a></li><li><a href=https://appscode-v3-hugo.web.app/products/stash/>Stash</a></li><li><a href=https://kubevault-v1-hugo.web.app>KubeVault</a></li><li><a href=https://appscode-v3-hugo.web.app/products/voyager/>Voyager</a></li><li><a href=https://appscode-v3-hugo.web.app/products/guard/>Guard</a></li><li><a href=https://pharmer-v1-hugo.web.app>Pharmer</a></li></ul></div></div></div><div class="column is-2"><div class=single-footer-widget><div class=footer-menu><h4>Services</h4><ul class=footer-link><li><a href=https://appscode-v3-hugo.web.app/pricing/>Commercial Support</a></li><li><a href=https://appscode-v3-hugo.web.app/consulting/>Consulting</a></li><li><a href=https://appscode-v3-hugo.web.app/training/>Training</a></li><li><a href=https://appscode-v3-hugo.web.app/support/>Support</a></li></ul></div></div></div><div class="column is-2"><div class=single-footer-widget><div class=footer-menu><h4>Company</h4><ul class=footer-link><li><a href=https://appscode-v3-hugo.web.app/about/>About Us</a></li><li><a href=https://blog.byte.builders>Blog</a></li><li><a href=https://appscode-v3-hugo.web.app/contact/>Contact Us</a></li></ul></div></div></div><div class="column is-2"><div class=single-footer-widget><div class=footer-menu><h4>Legal</h4><ul class=footer-link><li><a href=https://appscode-v3-hugo.web.app/legal/tos/>Terms of Sevice</a></li><li><a href=https://appscode-v3-hugo.web.app/legal/privacy-policy/>Privacy Policy</a></li><li><a href=https://appscode-v3-hugo.web.app/legal/security/>Security</a></li><li><a href=https://appscode-v3-hugo.web.app/legal/sla/>Service Level Agreement</a></li></ul></div></div></div></div></div></div><div class=footer-bottom><div class="container section"><div class=columns><div class="column is-4"><p>© 2019 AppsCode Inc. All rights reserved.</p></div><div class="column is-4 is-mobile has-text-centered"><div class=footer-inline-link><a href=https://appscode-v3-hugo.web.app/legal/privacy-policy/>Privacy Policy</a>
+<a href=https://appscode-v3-hugo.web.app/legal/tos/>Terms of Service</a></div></div><div class="column is-4 is-mobile has-text-right"><div class=socail-link-inline><ul><li><a href=https://twitter.com/AppsCodeHQ><i class="fa fa-twitter" aria-hidden=true></i></a></li><li><a href=https://www.facebook.com/appscode><i class="fa fa-facebook" aria-hidden=true></i></a></li><li><a href=https://www.youtube.com/c/AppsCodeInc><i class="fa fa-youtube" aria-hidden=true></i></a></li></ul></div></div></div></div></div></footer><script src=/assets/js/bulma-carousel.min.js></script><script src=/assets/js/main.js></script></body></html>
