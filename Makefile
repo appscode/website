@@ -1,6 +1,6 @@
 .PHONY: run
 run:
-	hugo server
+	hugo server --config=config.dev.yaml
 
 .PHONY: docs
 docs:
@@ -9,7 +9,7 @@ docs:
 .PHONY: gen
 gen:
 	rm -rf public
-	hugo --minify
+	hugo --minify --config=config.yaml
 
 .PHONY: deploy
 deploy: gen
