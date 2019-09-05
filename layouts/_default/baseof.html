@@ -131,6 +131,7 @@
                         <div class="column is-4">
                           <div class="columns">
                             <div class="column is-12">
+                              {{ if $.Site.Data.products.bytebuilders.published }}
                               <!-- single menu item start -->
                               <a
                                 href="{{.Site.Params.domain_bytebuilders}}"
@@ -138,11 +139,11 @@
                               >
                                 <div class="menu-header">
                                   <p class="intro">Introducing....</p>
-                                  <h5>Byte.builders</h5>
+                                  <h5>{{ $.Site.Data.products.bytebuilders.name }}</h5>
                                 </div>
                                 <div class="menu-body">
                                   <p>
-                                    The Kubernetes Cloud
+                                    {{ $.Site.Data.products.bytebuilders.tagline | plainify }}
                                   </p>
                                 </div>
                                 <p class="learn-more-btn">
@@ -156,6 +157,7 @@
                                 </p>
                               </a>
                               <!-- single menu item end -->
+                              {{ end }}
 
                               {{ range $item := $.Site.Data.config.mainMenu.c2 }}
                               {{ $p := (index $.Site.Data.products $item) }}
