@@ -63,16 +63,6 @@
           "type": 302
         },
         {
-          "source": "/products/pharmer/latest/",
-          "destination": "/products/pharmer/0.3.1/",
-          "type": 302
-        },
-        {
-          "source": "/products/pharmer/latest/:rest*",
-          "destination": "/products/pharmer/0.3.1/:rest",
-          "type": 302
-        },
-        {
           "source": "/products/searchlight/latest/",
           "destination": "/products/searchlight/8.0.0/",
           "type": 302
@@ -121,6 +111,11 @@
           "source": "/products/voyager/latest/:rest*",
           "destination": "/products/voyager/10.0.0/:rest",
           "type": 302
+        },
+        {
+          "source": "/products/cloud-deployment",
+          "destination": "https://pharmer.io",
+          "type": 301
         }
       ]
     }
