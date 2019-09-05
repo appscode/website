@@ -13,4 +13,6 @@ gen:
 
 .PHONY: deploy
 deploy: gen
+	firebase use prod
 	firebase deploy
+	firebase use default
