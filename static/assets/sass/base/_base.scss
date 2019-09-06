@@ -739,8 +739,8 @@ p.spam-message {
 .support-page .hero-content-inner h1 {
   margin-bottom: 30px;
   color: $heading-color;
-  font-weight: 600;
-  line-height: 58px;
+  font-weight: 500;
+  line-height: 64px;
 }
 
 .support-page .section-title h2 {
@@ -801,7 +801,7 @@ p.spam-message {
 }
 .pricing-top.kd-green,
 .kd-button.kd-green {
-  background: $green-color !important;
+  background: $primary-color !important;
 }
 .pricing-button .button {
   font-size: 15px;
@@ -857,7 +857,7 @@ p.spam-message {
   position: relative;
   z-index: 1;
   margin-top: -32px;
-  min-height: 164px;
+  height: 171px;
 }
 .round-shape {
   background: #fff;
@@ -893,7 +893,7 @@ p.spam-message {
   }
 }
 .single-pricing-table.silver .pricing-top {
-  min-height: 100px;
+  height: 100px;
 }
 .single-pricing-table.free .pricing-top,
 .single-pricing-table.plutinum .pricing-top {
@@ -999,7 +999,7 @@ p.spam-message {
 
 .single-pricing-table.details .pricing-body {
   border-radius: 8px;
-  margin-top: 252px;
+  margin-top: 259px;
   margin-right: 10px;
   padding-bottom: 70px;
   background-color: $white-color;

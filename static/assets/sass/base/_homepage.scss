@@ -158,6 +158,7 @@ body.fixed-nav
     z-index: -1;
     background: url(../images/appscode/shape-3.png);
     background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -442,10 +443,10 @@ body.fixed-nav
 }
 .color-4 {
   &:after {
-    background: lighten($green-color, 10%);
+    background: lighten($primary-color, 10%);
   }
   .inline-button {
-    background: lighten($green-color, 10%);
+    background: lighten($primary-color, 10%);
   }
 }
 // service area end

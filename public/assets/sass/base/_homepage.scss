@@ -442,10 +442,10 @@ body.fixed-nav
 }
 .color-4 {
   &:after {
-    background: lighten($green-color, 10%);
+    background: lighten($primary-color, 10%);
   }
   .inline-button {
-    background: lighten($green-color, 10%);
+    background: lighten($primary-color, 10%);
   }
 }
 // service area end

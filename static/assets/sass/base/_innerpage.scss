@@ -14,6 +14,7 @@
     z-index: -2;
     content: "";
     background: url(../images/appscode/about-hero-bg-2.png);
+    background-size: contain;
   }
   .hero-area-inner-2 {
     height: 400px;
@@ -37,6 +38,7 @@
 }
 .illustration-1 {
   background-image: url(../images/consulting-page/illustation.png);
+  background-size: contain;
 }
 .consulting-inner {
   h2 {
