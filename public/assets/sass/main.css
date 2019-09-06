@@ -130,7 +130,8 @@ h6 {
 .ac-button:hover {
   background-color: #00974a;
   color: #ffffff;
-  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16); }
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16);
+  transform: translateY(-2px); }
 
 .kd-button span {
   padding-left: 10px; }
@@ -157,7 +158,7 @@ h6 {
   padding-bottom: 0; }
 
 .section-title {
-  margin-bottom: 80px; }
+  margin-bottom: 50px; }
 
 .subscription-form .input.is-hovered,
 .subscription-form .input:hover {
@@ -1006,7 +1007,8 @@ body.fixed-nav
     left: -4%;
     z-index: -1;
     background: url(../images/appscode/shape-3.png);
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: contain; }
 
 .count-link-area {
   background-color: #fbfbfb;
@@ -1471,7 +1473,8 @@ section.our-customer-area {
     position: absolute;
     z-index: -2;
     content: "";
-    background: url(../images/appscode/about-hero-bg-2.png); }
+    background: url(../images/appscode/about-hero-bg-2.png);
+    background-size: contain; }
   .hero-area-2 .hero-area-inner-2 {
     height: 400px; }
     .hero-area-2 .hero-area-inner-2 h1 {
@@ -1489,7 +1492,8 @@ section.our-customer-area {
   background-repeat: no-repeat; }
 
 .illustration-1 {
-  background-image: url(../images/consulting-page/illustation.png); }
+  background-image: url(../images/consulting-page/illustation.png);
+  background-size: contain; }
 
 .consulting-inner h2 {
   font-size: 36px;
@@ -1912,7 +1916,7 @@ body.fixed-nav .fixed-menu {
   font-size: 44px;
   font-weight: 400;
   color: #242a31;
-  line-height: 68px; }
+  line-height: 80px; }
   .hero-content-inner h1 b {
     font-weight: 600; }
 
@@ -2358,8 +2362,8 @@ p.spam-message {
 .support-page .hero-content-inner h1 {
   margin-bottom: 30px;
   color: #242a31;
-  font-weight: 600;
-  line-height: 58px; }
+  font-weight: 500;
+  line-height: 64px; }
 
 .support-page .section-title h2 {
   margin-bottom: 20px; }
@@ -2412,7 +2416,7 @@ p.spam-message {
 
 .pricing-top.kd-green,
 .kd-button.kd-green {
-  background: #00a651 !important; }
+  background: #00A651 !important; }
 
 .pricing-button .button {
   font-size: 15px;
@@ -2467,7 +2471,7 @@ p.spam-message {
   position: relative;
   z-index: 1;
   margin-top: -32px;
-  min-height: 164px; }
+  height: 171px; }
 
 .round-shape {
   background: #fff;
@@ -2499,7 +2503,7 @@ p.spam-message {
   color: #FF8000; }
 
 .single-pricing-table.silver .pricing-top {
-  min-height: 100px; }
+  height: 100px; }
 
 .single-pricing-table.free .pricing-top,
 .single-pricing-table.plutinum .pricing-top {
@@ -2591,7 +2595,7 @@ p.spam-message {
 
 .single-pricing-table.details .pricing-body {
   border-radius: 8px;
-  margin-top: 252px;
+  margin-top: 259px;
   margin-right: 10px;
   padding-bottom: 70px;
   background-color: #ffffff;
@@ -4722,14 +4726,8 @@ body.voyager .documentation-menu {
   .pt-100.is-mobile-device {
     padding-top: 30px; }
 
-  .main-menu {
-    padding: 20px; }
-
   .main-menu-button .button {
     padding: 6px 20px; }
-
-  .navbar-item {
-    padding: 5px 0 0; }
 
   .header-bottom-area .navbar-burger {
     color: #fff; }
@@ -4782,9 +4780,6 @@ body.voyager .documentation-menu {
 
   .main-menu a {
     padding: 5px 0; }
-
-  .main-menu {
-    padding: 20px; }
 
   .main-menu-button .button {
     padding: 6px 20px; }
@@ -5229,16 +5224,13 @@ body.voyager .documentation-menu {
     color: #fff; }
 
   .main-menu a {
-    padding: 5px 0; }
-
-  .main-menu {
-    padding: 20px; }
+    padding: 5px 20px; }
 
   .main-menu-button .button {
     padding: 6px 20px; }
 
   .navbar-item {
-    padding: 5px 0 0; }
+    padding: 5px 20px 10px; }
 
   .header-bottom-area .navbar-burger {
     color: #fff; }
@@ -5433,11 +5425,11 @@ body.voyager .documentation-menu {
   .ac-megamenu {
     box-shadow: none;
     border-radius: 4px;
-    padding: 20px;
+    padding: 20px 30px;
     background: #fff;
     position: inherit;
     min-width: auto;
-    top: 40px;
+    top: 0px;
     transform: translateX(-50%);
     opacity: 0;
     visibility: hidden;
@@ -5460,7 +5452,7 @@ body.voyager .documentation-menu {
       font-size: 15px; }
 
   .ac-dropdown a.navbar-item {
-    padding: 5px 10px; }
+    padding: 5px 30px; }
 
   .ac-dropdown {
     display: none;
