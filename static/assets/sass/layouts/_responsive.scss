@@ -668,14 +668,14 @@
     color: #fff;
   }
   .main-menu a {
-    padding: 5px 0;
+    padding: 5px 20px;
   }
   .main-menu-button .button {
     padding: 6px 20px;
   }
 
   .navbar-item {
-    padding: 5px 0 0;
+    padding: 5px 20px 10px;
   }
   .header-bottom-area .navbar-burger {
     color: #fff;
@@ -903,11 +903,11 @@
   .ac-megamenu {
     box-shadow: none;
     border-radius: 4px;
-    padding: 20px;
+    padding: 20px 30px;
     background: #fff;
     position: inherit;
     min-width: auto;
-    top: 40px;
+    top: 0px;
     transform: translateX(-50%);
     opacity: 0;
     visibility: hidden;
@@ -931,7 +931,7 @@
     }
   }
   .ac-dropdown a.navbar-item {
-    padding: 5px 10px;
+    padding: 5px 30px;
   }
   .ac-dropdown {
     display: none;

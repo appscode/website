@@ -146,6 +146,7 @@ h6 {
   background-color: darken($primary-color, 3%);
   color: $white-color;
   box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16);
+  transform: translateY(-2px);
 }
 
 .kd-button span {
@@ -179,7 +180,7 @@ h6 {
 }
 
 .section-title {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 .subscription-form .input.is-hovered,
 .subscription-form .input:hover {
