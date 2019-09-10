@@ -73,6 +73,7 @@
   body.#{$name} .textarea:focus,
   body.#{$name} .pricing-button .kubedb-transparent-btn,
   body.#{$name} .pricing-button .kubedb-transparent-btn:hover,
+  body.#{$name} .searchbar-area input:focus,
   body.#{$name} .subscription-form .input:hover {
     border-color: #{$color};
   }

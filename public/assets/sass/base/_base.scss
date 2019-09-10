@@ -36,6 +36,11 @@ body.fixed-nav header {
   transition: 0.3s ease-in-out;
 }
 
+// docker and github button middle alignment css
+.buttons.main-menu-button {
+  margin-bottom: 0 ;
+}
+
 .button.for-support,
 .button.for-chat {
   background: $white-color;
@@ -52,14 +57,14 @@ body.fixed-nav header {
 }
 
 .button.for-chat:hover {
-  background-color: #4A154B;
+  background-color: #4a154b;
   color: $white-color;
 }
 .button.for-support:hover {
   background-color: #9d0a0e;
   color: $white-color;
-  span{
-    img{
+  span {
+    img {
       filter: brightness(100);
     }
   }
@@ -212,7 +217,7 @@ body.fixed-nav .fixed-menu {
   font-weight: 400;
   color: $heading-color;
   line-height: 80px;
-  b{
+  b {
     font-weight: 600;
   }
 }
@@ -762,6 +767,7 @@ p.spam-message {
   border-radius: 8px;
   position: relative;
   z-index: 1;
+  min-width: 180px;
 }
 
 .single-pricing-table.gold {
@@ -863,10 +869,10 @@ p.spam-message {
   background: #fff;
   color: $orange-color;
   font-size: 14px;
-  display: block;
+  display: inline-block;
   border-radius: 50px;
   font-weight: 500;
-  padding: 2px;
+  padding: 5px 25px;
   line-height: 1.5;
   margin-bottom: 10px;
 }
@@ -1231,6 +1237,7 @@ body.fixed-nav .documentation-menu {
 }
 
 .full-info {
+  overflow: hidden;
   h1,
   h2,
   h3,
@@ -1241,7 +1248,7 @@ body.fixed-nav .documentation-menu {
     font-weight: 700;
     color: $heading-color;
     margin-bottom: 10px;
-    &:first-child{
+    &:first-child {
       margin-top: 0;
     }
   }
@@ -1281,9 +1288,6 @@ body.fixed-nav .documentation-menu {
   visibility: visible;
 }
 
-.single-info {
-  margin-bottom: 40px;
-}
 blockquote {
   border-left: 4px solid $primary-color;
   padding-left: 15px;
@@ -1305,18 +1309,23 @@ blockquote {
 }
 .full-info ul li,
 .full-info ol li {
-  text-indent: -22px;
+  text-indent: -30px;
 }
-.full-info ul li p, .full-info ol li p{
+.full-info ul li p,
+.full-info ol li p {
   text-indent: 0;
-  margin-top: -25px;
+  margin-top: -30px;
 }
-.full-info ul li:before,
-.full-info ol li:before {
+.full-info ul li pre,
+.full-info ol li pre {
+  text-indent: 0px;
+  margin-left: -30px;
+}
+.full-info ul li:before {
   content: "\f10c";
   font-family: fontawesome;
   font-size: 8px;
-  margin-right: 15px;
+  margin-right: 20px;
   color: #707070;
 }
 
@@ -1355,11 +1364,34 @@ ul li b {
   margin-bottom: 15px;
   color: $paragraph-color;
 }
+.full-info p strong {
+  font-weight: 500;
+  em{
+    font-weight: 500;
+  }
+}
 
 .appscode-style.full-info ul li p a .appscode-style.full-info p a,
 .appscode-style.full-info a {
   color: $primary-color;
 }
+
+//custom ol li class start
+.full-info ol {
+  list-style: none;
+  counter-reset: order-list-counter;
+}
+.full-info ol li {
+  counter-increment: order-list-counter;
+}
+.full-info ol li::before {
+  content: counter(order-list-counter) ". ";
+  font-weight: 500;
+  font-family: $font-paragraph;
+  font-size: 15px;
+  color: $link-color;
+}
+//custom ol li class end
 
 /* Right Sidebar For Documentation page */
 .search-area {
@@ -1390,7 +1422,9 @@ ul li b {
   cursor: pointer;
   display: block;
 }
-
+.tbl-of-contents {
+  overflow: hidden;
+}
 .tbl-of-contents h4 {
   font-size: 14px;
   font-weight: 700;
@@ -1429,7 +1463,6 @@ ul li b {
   border-radius: 50px;
   transition: 0.3s ease-in-out;
 }
-
 .tbl-of-contents ul a.active {
   position: relative;
   z-index: 1;
@@ -1474,7 +1507,7 @@ li.nav-item.active a {
   background: $white-color;
   width: 585px;
   z-index: 999;
-  right: -50%;
+  right: -80%;
   position: fixed;
   top: 0;
   height: 100%;
@@ -1514,6 +1547,10 @@ li.nav-item.active a {
   height: 40px;
   border-radius: 3px;
   width: 86.6%;
+  &:focus{
+    box-shadow: none;
+    outline: none;
+  }
 }
 
 .searchbar-area {
