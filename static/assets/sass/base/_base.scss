@@ -36,6 +36,11 @@ body.fixed-nav header {
   transition: 0.3s ease-in-out;
 }
 
+// docker and github button middle alignment css
+.buttons.main-menu-button {
+  margin-bottom: 0 ;
+}
+
 .button.for-support,
 .button.for-chat {
   background: $white-color;
