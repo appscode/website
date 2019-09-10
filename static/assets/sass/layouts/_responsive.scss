@@ -25,7 +25,6 @@
     padding: 6px 20px;
   }
 
-
   .header-bottom-area .navbar-burger {
     color: #fff;
   }
@@ -41,7 +40,15 @@
     height: auto;
     font-size: 14px;
   }
-
+  // pricing page style start
+  .pricing-area-wrapper {
+    overflow-x: scroll;
+    padding-top: 64px;
+  }
+  .payment-method-innner-text.pr-140 {
+    padding-right: 0;
+  }
+  // pricing page style end
   /* support page pricing table style */
   .pricing-heading {
     padding: 20px 15px;
@@ -94,16 +101,21 @@
     padding-top: 30px;
   }
   .main-menu a {
-    padding: 5px 0;
+    padding: 5px 20px;
   }
 
-
   .main-menu-button {
+    padding: 10px 20px;
     .button {
       padding: 6px 20px;
     }
   }
-
+  .ac-dropdown {
+    padding-left: 30px;
+  }
+  .documentation-menu .ac-is-hoverable:hover .ac-dropdown {
+    top: 0;
+  }
   .navbar-item {
     padding: 5px 0 0;
   }
@@ -146,6 +158,15 @@
   .pricing-body li {
     font-size: 13px;
   }
+  // pricing page style start
+  .pricing-area-wrapper {
+    overflow-x: scroll;
+    padding-top: 64px;
+  }
+  .payment-method-innner-text.pr-140 {
+    padding-right: 0;
+  }
+  // pricing page style end
   /* ==============================================
    appscode-home page start
 ==============================================*/
@@ -514,10 +535,18 @@
     }
   }
   //feature page style end
+  // docs page style start
+  .sidebar-search-area {
+    right: -100%;
+  }
+  // docs page style end
 }
 
 /*  tablet :769px. */
 @media (min-width: 769px) and (max-width: 1023px) {
+  .navbar-burger {
+    color: $white-color;
+  }
   p {
     font-size: 15px;
   }
@@ -628,18 +657,33 @@
     visibility: visible !important;
     display: block !important;
     position: inherit;
+    padding-left: 30px;
   }
   .main-menu {
     overflow-y: auto;
     max-height: 70vh;
   }
+  // pricing page style start
+  .pricing-area-wrapper {
+    overflow-x: scroll;
+    padding-top: 64px;
+  }
+  .payment-method-innner-text.pr-140 {
+    padding-right: 0;
+  }
+  // pricing page style end
+  //documentation-menu page responsive code start
+  .documentation-menu .ac-is-hoverable:hover .ac-dropdown {
+    top: 0;
+  }
+  // documentation-menu page responsive code end
+
   // mega-menu end
-   //Searchbar position inherit
-   .sidebar-search-area{
+  //Searchbar position inherit
+  .sidebar-search-area {
     position: inherit;
     width: 100%;
   }
-
 }
 
 /* small Mobile :768px. */
@@ -857,6 +901,7 @@
 ==============================================*/
   .customize-kubedb .main-menu a {
     color: $link-color;
+    padding: 15px 21px;
   }
   // feature-page start
   .single-product-feature-wrapper {
@@ -962,6 +1007,10 @@
     overflow-y: auto;
     max-height: 70vh;
   }
+  .navbar-menu.is-active {
+    display: block;
+    border-radius: 4px;
+  }
   // mega-menu end
 
   .navbar-burger {
@@ -992,7 +1041,7 @@
   .is-full-height {
     min-height: 100%;
   }
-  .hero-area.is-full-height{
+  .hero-area.is-full-height {
     padding: 30px 0 0;
   }
   .hero-area-button .ac-transparent-btn {
@@ -1218,11 +1267,6 @@
       }
     }
   }
-  //Searchbar position inherit
-  .sidebar-search-area{
-    position: inherit;
-    width: 100%;
-  }
 
   //reverse order css
   .reverse-row-order {
@@ -1232,5 +1276,71 @@
 
   /* ==============================================
    appscode-home inner page end
+==============================================*/
+
+  /* ==============================================
+  documentation page start
+==============================================*/
+
+  //Searchbar position inherit
+  .documentation-area {
+    margin-bottom: 30px;
+  }
+  .right-sidebar-area {
+    padding: 0;
+    .search-area {
+      display: none;
+    }
+  }
+  .sidebar-search-area {
+    position: inherit;
+    width: 100%;
+    .result-thumb {
+      width: 40px;
+    }
+  }
+  .kd-left-sidebar {
+    margin-right: 0;
+  }
+  .documentation-menu .ac-is-hoverable:hover .ac-dropdown {
+    top: 0;
+  }
+  .full-info h1 {
+    font-size: 28px;
+  }
+  .full-info {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    ul {
+      padding: 0 0 0 30px;
+      li {
+        &:before {
+          margin-right: 20px;
+        }
+      }
+    }
+    ol {
+      padding: 0 0 0 30px;
+    }
+  }
+  .sidebar-search-area {
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    input {
+      width: 80%;
+    }
+  }
+
+  /* ==============================================
+  documentation page end
 ==============================================*/
 }
