@@ -3038,7 +3038,7 @@ li.nav-item.active a {
   background: #ffffff;
   width: 585px;
   z-index: 999;
-  right: -50%;
+  right: -80%;
   position: fixed;
   top: 0;
   height: 100%;
@@ -3074,6 +3074,9 @@ li.nav-item.active a {
   height: 40px;
   border-radius: 3px;
   width: 86.6%; }
+  .searchbar-area input:focus {
+    box-shadow: none;
+    outline: none; }
 
 .searchbar-area {
   position: relative;
@@ -3871,6 +3874,7 @@ body.guard .textarea:active,
 body.guard .textarea:focus,
 body.guard .pricing-button .kubedb-transparent-btn,
 body.guard .pricing-button .kubedb-transparent-btn:hover,
+body.guard .searchbar-area input:focus,
 body.guard .subscription-form .input:hover {
   border-color: #D84E27; }
 
@@ -3956,6 +3960,7 @@ body.kubed .textarea:active,
 body.kubed .textarea:focus,
 body.kubed .pricing-button .kubedb-transparent-btn,
 body.kubed .pricing-button .kubedb-transparent-btn:hover,
+body.kubed .searchbar-area input:focus,
 body.kubed .subscription-form .input:hover {
   border-color: #1C7BD4; }
 
@@ -4041,6 +4046,7 @@ body.searchlight .textarea:active,
 body.searchlight .textarea:focus,
 body.searchlight .pricing-button .kubedb-transparent-btn,
 body.searchlight .pricing-button .kubedb-transparent-btn:hover,
+body.searchlight .searchbar-area input:focus,
 body.searchlight .subscription-form .input:hover {
   border-color: #111738; }
 
@@ -4126,6 +4132,7 @@ body.service-broker .textarea:active,
 body.service-broker .textarea:focus,
 body.service-broker .pricing-button .kubedb-transparent-btn,
 body.service-broker .pricing-button .kubedb-transparent-btn:hover,
+body.service-broker .searchbar-area input:focus,
 body.service-broker .subscription-form .input:hover {
   border-color: #29B4A2; }
 
@@ -4211,6 +4218,7 @@ body.stash .textarea:active,
 body.stash .textarea:focus,
 body.stash .pricing-button .kubedb-transparent-btn,
 body.stash .pricing-button .kubedb-transparent-btn:hover,
+body.stash .searchbar-area input:focus,
 body.stash .subscription-form .input:hover {
   border-color: #5E2DEA; }
 
@@ -4296,6 +4304,7 @@ body.swift .textarea:active,
 body.swift .textarea:focus,
 body.swift .pricing-button .kubedb-transparent-btn,
 body.swift .pricing-button .kubedb-transparent-btn:hover,
+body.swift .searchbar-area input:focus,
 body.swift .subscription-form .input:hover {
   border-color: #3F51B6; }
 
@@ -4381,6 +4390,7 @@ body.voyager .textarea:active,
 body.voyager .textarea:focus,
 body.voyager .pricing-button .kubedb-transparent-btn,
 body.voyager .pricing-button .kubedb-transparent-btn:hover,
+body.voyager .searchbar-area input:focus,
 body.voyager .subscription-form .input:hover {
   border-color: #2D2A78; }
 
@@ -4473,10 +4483,18 @@ body.voyager .documentation-menu {
     padding-top: 30px; }
 
   .main-menu a {
-    padding: 5px 0; }
+    padding: 5px 20px; }
 
-  .main-menu-button .button {
-    padding: 6px 20px; }
+  .main-menu-button {
+    padding: 10px 20px; }
+    .main-menu-button .button {
+      padding: 6px 20px; }
+
+  .ac-dropdown {
+    padding-left: 30px; }
+
+  .documentation-menu .ac-is-hoverable:hover .ac-dropdown {
+    top: 0; }
 
   .navbar-item {
     padding: 5px 0 0; }
@@ -4789,7 +4807,10 @@ body.voyager .documentation-menu {
     margin-top: 10px; }
   .single-product-feature-wrapper .product-feature-title h3 {
     font-size: 22px;
-    line-height: 40px; } }
+    line-height: 40px; }
+
+  .sidebar-search-area {
+    right: -100%; } }
 /*  tablet :769px. */
 @media (min-width: 769px) and (max-width: 1023px) {
   .navbar-burger {

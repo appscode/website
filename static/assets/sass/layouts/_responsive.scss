@@ -101,15 +101,21 @@
     padding-top: 30px;
   }
   .main-menu a {
-    padding: 5px 0;
+    padding: 5px 20px;
   }
 
   .main-menu-button {
+    padding: 10px 20px;
     .button {
       padding: 6px 20px;
     }
   }
-
+  .ac-dropdown {
+    padding-left: 30px;
+  }
+  .documentation-menu .ac-is-hoverable:hover .ac-dropdown {
+    top: 0;
+  }
   .navbar-item {
     padding: 5px 0 0;
   }
@@ -529,6 +535,11 @@
     }
   }
   //feature page style end
+  // docs page style start
+  .sidebar-search-area {
+    right: -100%;
+  }
+  // docs page style end
 }
 
 /*  tablet :769px. */
