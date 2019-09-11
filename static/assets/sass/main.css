@@ -4941,8 +4941,8 @@ body.voyager .documentation-menu {
     width: 100%; } }
 /* small Mobile :768px. */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-  .main-menu-button img:not(:last-child) {
-    margin-bottom: 5px; }
+  .main-menu-button img {
+    margin-bottom: 10px; }
 
   p {
     font-size: 15px; }
@@ -5132,7 +5132,7 @@ body.voyager .documentation-menu {
 ==============================================*/
   .customize-kubedb .main-menu a {
     color: #4a4a4a;
-    padding: 15px 21px; }
+    padding: 10px 21px; }
 
   .single-product-feature-wrapper .product-feature-title h3 {
     font-size: 20px;

@@ -688,8 +688,8 @@
 
 /* small Mobile :768px. */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-  .main-menu-button img:not(:last-child) {
-    margin-bottom: 5px;
+  .main-menu-button img {
+    margin-bottom: 10px;
   }
   p {
     font-size: 15px;
@@ -904,7 +904,7 @@
 ==============================================*/
   .customize-kubedb .main-menu a {
     color: $link-color;
-    padding: 15px 21px;
+    padding: 10px 21px;
   }
   // feature-page start
   .single-product-feature-wrapper {
