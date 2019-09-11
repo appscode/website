@@ -1759,6 +1759,9 @@ body.fixed-nav header {
   font-size: 14px !important;
   transition: 0.3s ease-in-out; }
 
+.buttons.main-menu-button {
+  margin-bottom: 0; }
+
 .button.for-support,
 .button.for-chat {
   background: #ffffff;
@@ -3037,7 +3040,7 @@ li.nav-item.active a {
 .sidebar-search-area {
   background: #ffffff;
   width: 585px;
-  z-index: 999;
+  z-index: 9999;
   right: -80%;
   position: fixed;
   top: 0;
@@ -4938,6 +4941,9 @@ body.voyager .documentation-menu {
     width: 100%; } }
 /* small Mobile :768px. */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  .main-menu-button img {
+    margin-bottom: 10px; }
+
   p {
     font-size: 15px; }
 
@@ -5126,7 +5132,7 @@ body.voyager .documentation-menu {
 ==============================================*/
   .customize-kubedb .main-menu a {
     color: #4a4a4a;
-    padding: 15px 21px; }
+    padding: 10px 21px; }
 
   .single-product-feature-wrapper .product-feature-title h3 {
     font-size: 20px;
