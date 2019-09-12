@@ -2,9 +2,11 @@
 run:
 	hugo server --config=config.dev.yaml
 
+PRODUCT ?=
+
 .PHONY: docs
 docs:
-	hugo-tools docs-aggregator --shared
+	hugo-tools docs-aggregator --shared  --product=$(PRODUCT)
 
 .PHONY: gen
 gen:
