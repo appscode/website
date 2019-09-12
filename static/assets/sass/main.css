@@ -963,7 +963,7 @@ body.fixed-nav
       color: #00a651;
       text-align: center;
       line-height: 54px;
-      margin-right: 30px;
+      margin-right: 20px;
       border-radius: 50%; }
       .hero-area-content .play-buttons a span.video-icon i.fa {
         padding-left: 5px; }
@@ -3863,6 +3863,8 @@ body.guard .subscription-form .button,
 body.guard .section-title h4,
 body.guard .hero-content-inner h4,
 body.guard .pricing-button .kubedb-transparent-btn,
+body.guard .hero-area-content .play-buttons a span.video-icon,
+body.guard .hero-area-content .play-buttons a,
 body.guard .single-pricing-table.silver .discount-text,
 body.guard .single-search-result h3 a {
   color: #D84E27; }
@@ -3881,6 +3883,7 @@ body.guard .textarea:focus,
 body.guard .pricing-button .kubedb-transparent-btn,
 body.guard .pricing-button .kubedb-transparent-btn:hover,
 body.guard .searchbar-area input:focus,
+body.guard .hero-area-content .play-buttons a span.video-icon,
 body.guard .subscription-form .input:hover {
   border-color: #D84E27; }
 
@@ -3949,6 +3952,8 @@ body.kubed .subscription-form .button,
 body.kubed .section-title h4,
 body.kubed .hero-content-inner h4,
 body.kubed .pricing-button .kubedb-transparent-btn,
+body.kubed .hero-area-content .play-buttons a span.video-icon,
+body.kubed .hero-area-content .play-buttons a,
 body.kubed .single-pricing-table.silver .discount-text,
 body.kubed .single-search-result h3 a {
   color: #1C7BD4; }
@@ -3967,6 +3972,7 @@ body.kubed .textarea:focus,
 body.kubed .pricing-button .kubedb-transparent-btn,
 body.kubed .pricing-button .kubedb-transparent-btn:hover,
 body.kubed .searchbar-area input:focus,
+body.kubed .hero-area-content .play-buttons a span.video-icon,
 body.kubed .subscription-form .input:hover {
   border-color: #1C7BD4; }
 
@@ -4035,6 +4041,8 @@ body.searchlight .subscription-form .button,
 body.searchlight .section-title h4,
 body.searchlight .hero-content-inner h4,
 body.searchlight .pricing-button .kubedb-transparent-btn,
+body.searchlight .hero-area-content .play-buttons a span.video-icon,
+body.searchlight .hero-area-content .play-buttons a,
 body.searchlight .single-pricing-table.silver .discount-text,
 body.searchlight .single-search-result h3 a {
   color: #111738; }
@@ -4053,6 +4061,7 @@ body.searchlight .textarea:focus,
 body.searchlight .pricing-button .kubedb-transparent-btn,
 body.searchlight .pricing-button .kubedb-transparent-btn:hover,
 body.searchlight .searchbar-area input:focus,
+body.searchlight .hero-area-content .play-buttons a span.video-icon,
 body.searchlight .subscription-form .input:hover {
   border-color: #111738; }
 
@@ -4121,6 +4130,8 @@ body.service-broker .subscription-form .button,
 body.service-broker .section-title h4,
 body.service-broker .hero-content-inner h4,
 body.service-broker .pricing-button .kubedb-transparent-btn,
+body.service-broker .hero-area-content .play-buttons a span.video-icon,
+body.service-broker .hero-area-content .play-buttons a,
 body.service-broker .single-pricing-table.silver .discount-text,
 body.service-broker .single-search-result h3 a {
   color: #29B4A2; }
@@ -4139,6 +4150,7 @@ body.service-broker .textarea:focus,
 body.service-broker .pricing-button .kubedb-transparent-btn,
 body.service-broker .pricing-button .kubedb-transparent-btn:hover,
 body.service-broker .searchbar-area input:focus,
+body.service-broker .hero-area-content .play-buttons a span.video-icon,
 body.service-broker .subscription-form .input:hover {
   border-color: #29B4A2; }
 
@@ -4207,6 +4219,8 @@ body.stash .subscription-form .button,
 body.stash .section-title h4,
 body.stash .hero-content-inner h4,
 body.stash .pricing-button .kubedb-transparent-btn,
+body.stash .hero-area-content .play-buttons a span.video-icon,
+body.stash .hero-area-content .play-buttons a,
 body.stash .single-pricing-table.silver .discount-text,
 body.stash .single-search-result h3 a {
   color: #5E2DEA; }
@@ -4225,6 +4239,7 @@ body.stash .textarea:focus,
 body.stash .pricing-button .kubedb-transparent-btn,
 body.stash .pricing-button .kubedb-transparent-btn:hover,
 body.stash .searchbar-area input:focus,
+body.stash .hero-area-content .play-buttons a span.video-icon,
 body.stash .subscription-form .input:hover {
   border-color: #5E2DEA; }
 
@@ -4293,6 +4308,8 @@ body.swift .subscription-form .button,
 body.swift .section-title h4,
 body.swift .hero-content-inner h4,
 body.swift .pricing-button .kubedb-transparent-btn,
+body.swift .hero-area-content .play-buttons a span.video-icon,
+body.swift .hero-area-content .play-buttons a,
 body.swift .single-pricing-table.silver .discount-text,
 body.swift .single-search-result h3 a {
   color: #3F51B6; }
@@ -4311,6 +4328,7 @@ body.swift .textarea:focus,
 body.swift .pricing-button .kubedb-transparent-btn,
 body.swift .pricing-button .kubedb-transparent-btn:hover,
 body.swift .searchbar-area input:focus,
+body.swift .hero-area-content .play-buttons a span.video-icon,
 body.swift .subscription-form .input:hover {
   border-color: #3F51B6; }
 
@@ -4379,6 +4397,8 @@ body.voyager .subscription-form .button,
 body.voyager .section-title h4,
 body.voyager .hero-content-inner h4,
 body.voyager .pricing-button .kubedb-transparent-btn,
+body.voyager .hero-area-content .play-buttons a span.video-icon,
+body.voyager .hero-area-content .play-buttons a,
 body.voyager .single-pricing-table.silver .discount-text,
 body.voyager .single-search-result h3 a {
   color: #2D2A78; }
@@ -4397,6 +4417,7 @@ body.voyager .textarea:focus,
 body.voyager .pricing-button .kubedb-transparent-btn,
 body.voyager .pricing-button .kubedb-transparent-btn:hover,
 body.voyager .searchbar-area input:focus,
+body.voyager .hero-area-content .play-buttons a span.video-icon,
 body.voyager .subscription-form .input:hover {
   border-color: #2D2A78; }
 
