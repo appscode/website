@@ -2018,7 +2018,7 @@ a.play-icon .fa {
   line-height: 46px;
   font-weight: 500;
   color: #242a31;
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
 
 .feature-content p {
   font-size: 16px;
@@ -2340,12 +2340,15 @@ p.spam-message {
 .mt-100 {
   margin-top: 100px; }
 
-.hero-features {
-  background-image: url(../images/features-page/feature-bg.png);
-  background-size: auto;
-  background-position: top;
-  padding: 140px 0;
-  min-height: 600px; }
+.features-area {
+  background-image: url(../images/products/voyager/features/feature-bg.png);
+  background-size: cover;
+  background-position: center; }
+  .features-area .hero-features {
+    height: 500px;
+    padding: 50 20px;
+    max-width: 940px;
+    margin: 0 auto; }
 
 .hero-features-content h1 {
   margin-bottom: 12px; }
@@ -5066,8 +5069,8 @@ body.voyager .documentation-menu {
         Feature Page Responsive Code
 ============================================*/
   .hero-features {
-    min-height: auto;
-    padding: 70px 0; }
+    min-height: 400px;
+    padding: 50px 20px; }
 
   .pr-140 {
     padding-right: 0; }
