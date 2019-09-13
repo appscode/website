@@ -1012,7 +1012,7 @@ p.spam-message {
 
 .single-pricing-table.details .pricing-body {
   border-radius: 8px;
-  margin-top: 259px;
+  margin-top: 265px;
   margin-right: 10px;
   padding-bottom: 70px;
   background-color: $white-color;
@@ -1024,7 +1024,7 @@ p.spam-message {
 .single-pricing-table.free,
 .single-pricing-table.silver,
 .single-pricing-table.plutinum {
-  margin-top: 34px;
+  margin-top: 40px;
 }
 
 .single-pricing-table.free {
@@ -1860,6 +1860,7 @@ button.button.is-fullwidth {
   margin-right: 30px;
   position: sticky;
   top: 130px;
+  z-index: 9;
 }
 
 .kd-sidebar-menu .item label {
