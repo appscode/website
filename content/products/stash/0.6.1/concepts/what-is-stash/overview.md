@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_0.6.1
 section_menu_id: concepts
+info:
+  version: 0.6.1
 ---
 
 # Stash

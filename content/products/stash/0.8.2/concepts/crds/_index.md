@@ -8,5 +8,7 @@ menu:
     name: Declarative API
     weight: 15
 menu_name: product_stash_0.8.2
+info:
+  version: 0.8.2
 ---
 

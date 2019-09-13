@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: guides
+info:
+  version: v0.9.0-rc.0
 ---
 
 # Backup and Restore Workloads using Stash
@@ -19,10 +21,10 @@ This guide will show you how Stash backs up and restores volumes of various work
 ## Before You Begin
 
 - You should be familiar with the following `Stash` concepts:
-  - [BackupConfiguration](/products/stash/v0.9.0-rc.0/concepts/crds/backupconfiguration.md/)
-  - [BackupSession](/products/stash/v0.9.0-rc.0/concepts/crds/backupsession.md/)
-  - [RestoreSession](/products/stash/v0.9.0-rc.0/concepts/crds/restoresession.md/)
-  - [Repository](/products/stash/v0.9.0-rc.0/concepts/crds/repository.md/)
+  - [BackupConfiguration](/products/stash/v0.9.0-rc.0/concepts/crds/backupconfiguration)
+  - [BackupSession](/products/stash/v0.9.0-rc.0/concepts/crds/backupsession)
+  - [RestoreSession](/products/stash/v0.9.0-rc.0/concepts/crds/restoresession)
+  - [Repository](/products/stash/v0.9.0-rc.0/concepts/crds/repository)
 
 ## How Backup Process Works
 
@@ -82,6 +84,6 @@ The restore process consists of the following steps:
 
 ## Next Steps
 
-1. See a step by step guide to backup/restore volumes of a Deployment [here](docs/guides/latest/workloads/deployment.md).
-2. See a step by step guide to backup/restore volumes of a StatefulSet [here](docs/guides/latest/workloads/statefulset.md).
-3. See a step by step guide to backup/restore a Daemonset's volumes [here](docs/guides/latest/workloads/daemonset.md).
+1. See a step by step guide to backup/restore volumes of a Deployment [here](/products/stash/v0.9.0-rc.0/guides/latest/workloads/deployment).
+2. See a step by step guide to backup/restore volumes of a StatefulSet [here](/products/stash/v0.9.0-rc.0/guides/latest/workloads/statefulset).
+3. See a step by step guide to backup/restore a Daemonset's volumes [here](/products/stash/v0.9.0-rc.0/guides/latest/workloads/daemonset).

@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: guides
+info:
+  version: v0.9.0-rc.0
 ---
 
 # Snapshotting the volumes of a StatefulSet
@@ -205,7 +207,7 @@ metadata:
   name: statefulset-volume-snapshot
   namespace: demo
 spec:
-  schedule: "*/1 * * * *"
+  schedule: "*/5 * * * *"
   driver: VolumeSnapshotter
   target:
     ref:
@@ -222,7 +224,7 @@ spec:
 
 Here,
 
-- `spec.schedule` is a [cron expression](https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/#schedule) indicates that `BackupSession` will be created at 1 minute interval.
+- `spec.schedule` is a [cron expression](https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/#schedule) indicates that `BackupSession` will be created at 5 minute interval.
 
 - `spec.driver` indicates the name of the agent to use to back up the target. Currently, Stash supports `Restic`, `VolumeSnapshotter` drivers. The `VolumeSnapshotter` is used to backup/restore PVC using `VolumeSnapshot` API.
 
@@ -556,7 +558,7 @@ metadata:
   name: statefulset-volume-snapshot
   namespace: demo
 spec:
-  schedule: "*/1 * * * *"
+  schedule: "*/5 * * * *"
   driver: VolumeSnapshotter
   target:
     ref:

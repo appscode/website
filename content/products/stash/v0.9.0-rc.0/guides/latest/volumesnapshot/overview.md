@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: guides
+info:
+  version: v0.9.0-rc.0
 ---
 
 # How VolumeSnapshot works in Stash
@@ -24,9 +26,9 @@ This guide will show you how Stash takes snapshot of PersistentVolumeClaims and 
   - `--feature-gates=VolumeSnapshotDataSource=true`
 - Install `Stash` in your cluster following the steps [here](/products/stash/v0.9.0-rc.0/setup/install).
 - You should be familiar with the following Stash concepts:
-  - [BackupConfiguration](/products/stash/v0.9.0-rc.0/concepts/crds/backupconfiguration.md/)
-  - [BackupSession](/products/stash/v0.9.0-rc.0/concepts/crds/backupsession.md/)
-  - [RestoreSession](/products/stash/v0.9.0-rc.0/concepts/crds/restoresession.md/)
+  - [BackupConfiguration](/products/stash/v0.9.0-rc.0/concepts/crds/backupconfiguration)
+  - [BackupSession](/products/stash/v0.9.0-rc.0/concepts/crds/backupsession)
+  - [RestoreSession](/products/stash/v0.9.0-rc.0/concepts/crds/restoresession)
 - You should be also familiar with the following Kubernetes concepts:
   - [VolumeSnapshot](https://kubernetes.io/docs/concepts/storage/volume-snapshots/#volumesnapshots)
   - [VolumeSnapshotContent](https://kubernetes.io/docs/concepts/storage/volume-snapshots/#volume-snapshot-contents)

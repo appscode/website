@@ -13,6 +13,8 @@ section_menu_id: guides
 url: /products/stash/0.7.0-rc.1/guides/
 aliases:
 - /products/stash/0.7.0-rc.1/guides/README/
+info:
+  version: 0.7.0-rc.1
 ---
 
 # Guides

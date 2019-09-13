@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: guides
+info:
+  version: v0.9.0-rc.0
 ---
 
 > New to Stash? Please start [here](/products/stash/v0.9.0-rc.0/concepts/README).
@@ -64,7 +66,7 @@ spec:
         volumeMounts:
         - mountPath: /source/data
           name: source-data
-      - image: appscode/stash:v0.9.0-rc.0
+      - image: appscode/stash:{{< param "info.version" >}}
         name: stash
         imagePullPolicy: IfNotPresent
         args:

@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_0.8.0
 section_menu_id: setup
+info:
+  version: 0.8.0
 ---
 
 # Release Process

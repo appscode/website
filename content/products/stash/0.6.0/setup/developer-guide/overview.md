@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_0.6.0
 section_menu_id: setup
+info:
+  version: 0.6.0
 ---
 
 > New to Stash? Please start [here](/products/stash/0.6.0/concepts/README).

@@ -11,6 +11,8 @@ menu_name: product_stash_0.8.3
 section_menu_id: reference
 aliases:
 - /products/stash/0.8.3/reference/
+info:
+  version: 0.8.3
 ---
 
 ## stash

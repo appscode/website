@@ -9,6 +9,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: concepts
+info:
+  version: v0.9.0-rc.0
 ---
 
 >**Warning:** Recovery crd has been deprecated in **v1beta1 api** and will be removed in future version. Please use [RestoreSession](/products/stash/v0.9.0-rc.0/concepts/crds/restoresession) instead.

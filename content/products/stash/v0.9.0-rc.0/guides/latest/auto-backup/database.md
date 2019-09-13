@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: guides
+info:
+  version: v0.9.0-rc.0
 ---
 
 # Auto Backup for Database
@@ -25,10 +27,10 @@ This tutorial will show you how to configure automatic backup for PostgreSQL dat
   - [How Stash Backs up Databases](/products/stash/v0.9.0-rc.0/guides/latest/databases/overview).
   - [How Auto Backup Works in Stash](/products/stash/v0.9.0-rc.0/guides/latest/auto-backup/overview).
 - You should be familiar with the following `Stash` concepts:
-  - [BackupBlueprint](/products/stash/v0.9.0-rc.0/concepts/crds/backupblueprint.md/)
-  - [BackupConfiguration](/products/stash/v0.9.0-rc.0/concepts/crds/backupconfiguration.md/)
-  - [BackupSession](/products/stash/v0.9.0-rc.0/concepts/crds/backupsession.md/)
-  - [Repository](/products/stash/v0.9.0-rc.0/concepts/crds/repository.md/)
+  - [BackupBlueprint](/products/stash/v0.9.0-rc.0/concepts/crds/backupblueprint)
+  - [BackupConfiguration](/products/stash/v0.9.0-rc.0/concepts/crds/backupconfiguration)
+  - [BackupSession](/products/stash/v0.9.0-rc.0/concepts/crds/backupsession)
+  - [Repository](/products/stash/v0.9.0-rc.0/concepts/crds/repository)
   - [Function](/products/stash/v0.9.0-rc.0/concepts/crds/function)
   - [Task](/products/stash/v0.9.0-rc.0/concepts/crds/task)
 
@@ -43,7 +45,7 @@ namespace/demo created
 
 ## Install Postgres Catalog for Stash
 
-Stash uses a `Function-Task` model for auto-backup. We have to install Postgres catalogs (`postgres-stash`) for Stash. This catalog creates necessary `Function` and `Task` definitions.
+Stash uses a `Function-Task` model for auto-backup. We have to install Postgres catalogs (`stash-postgres`) for Stash. This catalog creates necessary `Function` and `Task` definitions.
 
 You can install the catalog either as a helm chart or you can create only the YAMLs of the respective resources.
 
@@ -61,10 +63,10 @@ You can install the catalog either as a helm chart or you can create only the YA
 
 ### Install via Helm Chart
 
-Run the following script to install `postgres-stash` catalog as a Helm chart.
+Run the following script to install `stash-postgres` catalog as a Helm chart.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/chart.sh | bash -s -- --catalog=postgres-stash
+curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/chart.sh | bash -s -- --catalog=stash-postgres
 ```
 
 </div>
@@ -75,10 +77,10 @@ curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/chart.sh | bash 
 
 ### Install via YAMLs
 
-Run the following script to install `postgres-stash` catalog as Kubernetes YAMLs.
+Run the following script to install `stash-postgres` catalog as Kubernetes YAMLs.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/script.sh | bash -s -- --catalog=postgres-stash
+curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/script.sh | bash -s -- --catalog=stash-postgres
 ```
 
 </div>
