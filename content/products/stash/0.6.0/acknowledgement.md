@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/stash/0.6.0/welcome/acknowledgement/
 aliases:
 - /products/stash/0.6.0/acknowledgement/
+info:
+  version: 0.6.0
 ---
 
 # Acknowledgement

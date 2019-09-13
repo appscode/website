@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: guides
+info:
+  version: v0.9.0-rc.0
 ---
 
 # Local Backend
@@ -70,7 +72,7 @@ spec:
 Create the `Repository` we have shown above using the following command,
 
 ```console
-$ kubectl apply -f https://github.com/stashed/docs/raw/v0.9.0-rc.0/docs/examples/guides/latest/backends/local_hostPath.yaml
+$ kubectl apply -f https://github.com/stashed/docs/raw/{{< param "info.version" >}}/docs/examples/guides/latest/backends/local_hostPath.yaml
 repository/local-repo-with-hostpath created
 ```
 
@@ -98,7 +100,7 @@ spec:
 Create the `Repository` we have shown above using the following command,
 
 ```console
-$ kubectl apply -f https://github.com/stashed/docs/raw/v0.9.0-rc.0/docs/examples/guides/latest/backends/local_pvc.yaml
+$ kubectl apply -f https://github.com/stashed/docs/raw/{{< param "info.version" >}}/docs/examples/guides/latest/backends/local_pvc.yaml
 repository/local-repo-with-pvc created
 ```
 
@@ -125,7 +127,7 @@ spec:
 Create the `Repository` we have shown above using the following command,
 
 ```console
-$ kubectl apply -f https://github.com/stashed/docs/raw/v0.9.0-rc.0/docs/examples/guides/latest/backends/local_nfs.yaml
+$ kubectl apply -f https://github.com/stashed/docs/raw/{{< param "info.version" >}}/docs/examples/guides/latest/backends/local_nfs.yaml
 repository/local-repo-with-nfs created
 ```
 
@@ -152,7 +154,7 @@ spec:
 Create the `Repository` we have shown above using the following command,
 
 ```console
-$ kubectl apply -f https://github.com/stashed/docs/raw/v0.9.0-rc.0/docs/examples/guides/latest/backends/local_gcePersistentDisk.yaml
+$ kubectl apply -f https://github.com/stashed/docs/raw/{{< param "info.version" >}}/docs/examples/guides/latest/backends/local_gcePersistentDisk.yaml
 repository/local-repo-with-gcepersistentdisk created
 ```
 
@@ -181,7 +183,7 @@ spec:
 Create the `Repository` we have shown above using the following command,
 
 ```console
-$ kubectl apply -f https://github.com/stashed/docs/raw/v0.9.0-rc.0/docs/examples/guides/latest/backends/local_awsElasticBlockStore.yaml
+$ kubectl apply -f https://github.com/stashed/docs/raw/{{< param "info.version" >}}/docs/examples/guides/latest/backends/local_awsElasticBlockStore.yaml
 repository/local-repo-with-awsebs created
 ```
 
@@ -210,7 +212,7 @@ spec:
 Create the `Repository` we have shown above using the following command,
 
 ```console
-$ kubectl apply -f https://github.com/stashed/docs/raw/v0.9.0-rc.0/docs/examples/guides/latest/backends/local_azureDisk.yaml
+$ kubectl apply -f https://github.com/stashed/docs/raw/{{< param "info.version" >}}/docs/examples/guides/latest/backends/local_azureDisk.yaml
 repository/local-repo-with-azuredisk created
 ```
 
@@ -237,7 +239,7 @@ spec:
 Create the `Repository` we have shown above using the following command,
 
 ```console
-$ kubectl apply -f https://github.com/stashed/docs/raw/v0.9.0-rc.0/docs/examples/guides/latest/backends/local_storageOS.yaml
+$ kubectl apply -f https://github.com/stashed/docs/raw/{{< param "info.version" >}}/docs/examples/guides/latest/backends/local_storageOS.yaml
 repository/local-repo-with-storageos created
 ```
 
@@ -262,7 +264,7 @@ spec:
 Create the `Repository` we have shown above using the following command,
 
 ```console
-$ kubectl apply -f https://github.com/stashed/docs/raw/v0.9.0-rc.0/docs/examples/guides/latest/backends/emptyDir.yaml
+$ kubectl apply -f https://github.com/stashed/docs/raw/{{< param "info.version" >}}/docs/examples/guides/latest/backends/emptyDir.yaml
 repository/local-repo-with-emptydir created
 ```
 

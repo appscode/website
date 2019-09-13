@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_0.7.0-rc.2
 section_menu_id: setup
+info:
+  version: 0.7.0-rc.2
 ---
 
 # Installation Guide

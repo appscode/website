@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: guides
+info:
+  version: v0.9.0-rc.0
 ---
 
 # Using Stash with Amazon EKS
@@ -23,10 +25,10 @@ This guide will show you how to use Stash to backup and restore volumes of a Kub
 - Install `Stash` in your cluster following the steps [here](/products/stash/v0.9.0-rc.0/setup/install).
 
 - You should be familiar with the following `Stash` concepts:
-  - [BackupConfiguration](/products/stash/v0.9.0-rc.0/concepts/crds/backupconfiguration.md/)
-  - [BackupSession](/products/stash/v0.9.0-rc.0/concepts/crds/backupsession.md/)
-  - [RestoreSession](/products/stash/v0.9.0-rc.0/concepts/crds/restoresession.md/)
-  - [Repository](/products/stash/v0.9.0-rc.0/concepts/crds/repository.md/)
+  - [BackupConfiguration](/products/stash/v0.9.0-rc.0/concepts/crds/backupconfiguration)
+  - [BackupSession](/products/stash/v0.9.0-rc.0/concepts/crds/backupsession)
+  - [RestoreSession](/products/stash/v0.9.0-rc.0/concepts/crds/restoresession)
+  - [Repository](/products/stash/v0.9.0-rc.0/concepts/crds/repository)
 - You will need a [AWS S3 Bucket](https://aws.amazon.com/s3/) to store the backup snapshots.
 
 To keep everything isolated, we are going to use a separate namespace called `demo` throughout this tutorial.
@@ -236,7 +238,7 @@ metadata:
 spec:
   repository:
     name: s3-repo
-  schedule: "*/1 * * * *"
+  schedule: "*/5 * * * *"
   target:
     ref:
       apiVersion: apps/v1

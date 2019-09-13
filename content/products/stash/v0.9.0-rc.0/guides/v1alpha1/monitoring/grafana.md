@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: guides
+info:
+  version: v0.9.0-rc.0
 ---
 
 # Use Grafana Dashboard
@@ -29,7 +31,7 @@ Grafana provides an elegant graphical user interface to visualize data. You can 
 We have to add our Prometheus server `prometheus-prometheus-0` as data source of grafana. We are going to use a `ClusterIP` service to connect Prometheus server with grafana. Let's create a service to select Prometheus server `prometheus-prometheus-0`,
 
 ```console
-$ kubectl apply -f https://github.com/stashed/docs/raw/v0.9.0-rc.0/docs/examples/monitoring/coreos/prometheus-service.yaml
+$ kubectl apply -f https://github.com/stashed/docs/raw/{{< param "info.version" >}}/docs/examples/monitoring/coreos/prometheus-service.yaml
 service/prometheus created
 ```
 

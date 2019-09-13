@@ -13,6 +13,8 @@ section_menu_id: setup
 url: /products/stash/v0.9.0-rc.0/setup/
 aliases:
 - /products/stash/v0.9.0-rc.0/setup/README/
+info:
+  version: v0.9.0-rc.0
 ---
 
 # Setup

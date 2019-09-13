@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/stash/0.7.0-rc.4/welcome/roadmap/
 aliases:
 - /products/stash/0.7.0-rc.4/roadmap/
+info:
+  version: 0.7.0-rc.4
 ---
 
 # Project Status

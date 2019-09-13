@@ -7,5 +7,7 @@ menu:
     name: Concepts
     weight: 20
 menu_name: product_stash_0.6.2
+info:
+  version: 0.6.2
 ---
 

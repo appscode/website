@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: guides
+info:
+  version: v0.9.0-rc.0
 ---
 
 # Backup and Restore Volumes of a DaemonSet
@@ -23,10 +25,10 @@ This guide will show you how to use Stash to backup and restore volumes of a Dae
 - Install `Stash` in your cluster following the steps [here](/products/stash/v0.9.0-rc.0/setup/install).
 
 - You should be familiar with the following `Stash` concepts:
-  - [BackupConfiguration](/products/stash/v0.9.0-rc.0/concepts/crds/backupconfiguration.md/)
-  - [BackupSession](/products/stash/v0.9.0-rc.0/concepts/crds/backupsession.md/)
-  - [RestoreSession](/products/stash/v0.9.0-rc.0/concepts/crds/restoresession.md/)
-  - [Repository](/products/stash/v0.9.0-rc.0/concepts/crds/repository.md/)
+  - [BackupConfiguration](/products/stash/v0.9.0-rc.0/concepts/crds/backupconfiguration)
+  - [BackupSession](/products/stash/v0.9.0-rc.0/concepts/crds/backupsession)
+  - [RestoreSession](/products/stash/v0.9.0-rc.0/concepts/crds/restoresession)
+  - [Repository](/products/stash/v0.9.0-rc.0/concepts/crds/repository)
 
 To keep everything isolated, we are going to use a separate namespace called `demo` throughout this tutorial.
 
@@ -168,7 +170,7 @@ metadata:
 spec:
   repository:
     name: gcs-repo
-  schedule: "*/1 * * * *"
+  schedule: "*/5 * * * *"
   target:
     ref:
       apiVersion: apps/v1
@@ -188,7 +190,7 @@ spec:
 Here,
 
 - `spec.repository` refers to the `Repository` object `gcs-repo` that holds backend information.
-- `spec.schedule` is a cron expression that indicates `BackupSession` will be created at 1 minute interval.
+- `spec.schedule` is a cron expression that indicates `BackupSession` will be created at 5 minute interval.
 - `spec.target.ref` refers to the `stash-demo` DaemonSet.
 - `spec.target.volumeMounts` specifies a list of volumes and their mountPath that contain the target paths.
 - `spec.target.paths` specifies list of file paths to backup.

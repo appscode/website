@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: guides
+info:
+  version: v0.9.0-rc.0
 ---
 
 # Monitoring Stash with builtin Prometheus
@@ -32,7 +34,7 @@ namespace/monitoring created
 Enable Prometheus monitoring using `prometheus.io/builtin` agent while installing Stash. To know details about how to enable monitoring see [here](/products/stash/v0.9.0-rc.0/guides/v1alpha1/monitoring/overview#how-to-enable-monitoring). Here, we are going to enable monitoring for `backup`, `restore` and `operator` metrics.
 
 ```console
-$ curl -fsSL https://github.com/stashed/installer/raw/v0.9.0-rc.0/deploy/stash.sh | bash -s -- \
+$ curl -fsSL https://github.com/stashed/installer/raw/{{< param "info.version" >}}/deploy/stash.sh | bash -s -- \
   --monitoring-agent=prometheus.io/builtin \
   --monitoring-backup=true \
   --monitoring-operator=true \
@@ -120,7 +122,7 @@ stash-apiserver-cert   kubernetes.io/tls   2      2m21s
 If you are using a RBAC enabled cluster, you have to give necessary RBAC permissions for Prometheus. Let's create necessary RBAC stuffs for Prometheus,
 
 ```console
-$ kubectl apply -f https://github.com/stashed/docs/raw/v0.9.0-rc.0/docs/examples/guides/latest/monitoring/builtin/prom-rbac.yaml
+$ kubectl apply -f https://github.com/stashed/docs/raw/{{< param "info.version" >}}/docs/examples/guides/latest/monitoring/builtin/prom-rbac.yaml
 clusterrole.rbac.authorization.k8s.io/stash-prometheus-server created
 serviceaccount/stash-prometheus-server created
 clusterrolebinding.rbac.authorization.k8s.io/stash-prometheus-server created
@@ -245,7 +247,7 @@ Also note that, we have provided a bearer-token file through `bearer_token_file`
 Let's create the ConfigMap we have shown above,
 
 ```console
-$ kubectl apply -f https://github.com/stashed/docs/raw/v0.9.0-rc.0/docs/examples/guides/latest/monitoring/builtin/prom-config.yaml
+$ kubectl apply -f https://github.com/stashed/docs/raw/{{< param "info.version" >}}/docs/examples/guides/latest/monitoring/builtin/prom-config.yaml
 configmap/stash-prometheus-server-conf created
 ```
 
@@ -306,7 +308,7 @@ Notice that, we have mounted `stash-apiserver-cert` secret as a volume at `/etc/
 Now, let's create the deployment,
 
 ```console
-$ kubectl apply -f https://github.com/stashed/docs/raw/v0.9.0-rc.0/docs/examples/guides/latest/monitoring/builtin/prom-deployment.yaml
+$ kubectl apply -f https://github.com/stashed/docs/raw/{{< param "info.version" >}}/docs/examples/guides/latest/monitoring/builtin/prom-deployment.yaml
 deployment.apps/stash-prometheus-server created
 ```
 
@@ -329,7 +331,7 @@ Now, we can access the dashboard at `localhost:9090`. Open [http://localhost:909
 
 **Backup and Restore Metrics:**
 
-When you perform a backup or restore using Stash, it will send respective Prometheus metrics. You can check if the metrics have been sent successfully by performing backup and restore as described [here](docs/guides/latest/workloads/deployment.md).
+When you perform a backup or restore using Stash, it will send respective Prometheus metrics. You can check if the metrics have been sent successfully by performing backup and restore as described [here](/products/stash/v0.9.0-rc.0/guides/latest/workloads/deployment).
 
 A screenshot that shows Prometheus metrics send by Stash backup and restore process is given below,
 

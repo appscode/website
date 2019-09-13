@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/stash/0.7.0-rc.3/welcome/support/
 aliases:
 - /products/stash/0.7.0-rc.3/support/
+info:
+  version: 0.7.0-rc.3
 ---
 
 # Support

@@ -12,6 +12,8 @@ section_menu_id: concepts
 url: /products/stash/v0.9.0-rc.0/concepts/
 aliases:
 - /products/stash/v0.9.0-rc.0/concepts/README/
+info:
+  version: v0.9.0-rc.0
 ---
 
 # Concepts

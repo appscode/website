@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/stash/v0.9.0-rc.0/welcome/changelog-0.9/
 aliases:
 - /products/stash/v0.9.0-rc.0/CHANGELOG-0.9/
+info:
+  version: v0.9.0-rc.0
 ---
 
 # Change Log
@@ -21,7 +23,7 @@ aliases:
 
 [Full Changelog](https://github.com/stashed/stash/compare/0.8.3...v0.9.0-rc.0)
 
-We are very excited to announce Stash `v0.9.0-rc.0`. This release introduces `v1beta1` API and a design overhaul. The new API and design enable Stash to support the use cases that were not possible before. This makes Stash more powerful, transparent, extensible and customizable. We are expecting that this new API will graduate to GA after some maturity. Check out the new architecture from [here](/products/stash/v0.9.0-rc.0/concepts/what-is-stash/architecture).
+We are very excited to announce Stash `v0.9.0-rc.0`. This release introduces `v1beta1` API and a design overhaul. The new API and design enable Stash to support the use cases that were not possible before. This makes Stash more powerful, transparent, extensible and customizable. We are expecting that this new API will graduate to GA after some maturity. Check out the new architecture from [here](https://github.com/stashed/docs/blob/v0.9.0-rc.0/docs/concepts/what-is-stash/architecture.md).
 
 ### What's New
 
@@ -31,46 +33,46 @@ This release introduces lots of new features and changes. A summary of these new
 
 The following custom resources have been introduced in this release:
 
-- [BackupConfiguration](/products/stash/v0.9.0-rc.0/concepts/crds/backupconfiguration).
-- [BackupSession](/products/stash/v0.9.0-rc.0/concepts/crds/backupsession).
-- [RestoreSession](/products/stash/v0.9.0-rc.0/concepts/crds/restoresession).
-- [Function](/products/stash/v0.9.0-rc.0/concepts/crds/function).
-- [Task](/products/stash/v0.9.0-rc.0/concepts/crds/task).
-- [BackupBlueprint](/products/stash/v0.9.0-rc.0/concepts/crds/backupblueprint).
-- [AppBinding](/products/stash/v0.9.0-rc.0/concepts/crds/appbinding).
+- [BackupConfiguration](https://github.com/stashed/docs/blob/v0.9.0-rc.0/docs/concepts/crds/backupconfiguration.md).
+- [BackupSession](https://github.com/stashed/docs/blob/v0.9.0-rc.0/docs/concepts/crds/backupsession.md).
+- [RestoreSession](https://github.com/stashed/docs/blob/v0.9.0-rc.0/docs/concepts/crds/restoresession.md).
+- [Function](https://github.com/stashed/docs/blob/v0.9.0-rc.0/docs/concepts/crds/function.md).
+- [Task](https://github.com/stashed/docs/blob/v0.9.0-rc.0/docs/concepts/crds/task.md).
+- [BackupBlueprint](https://github.com/stashed/docs/blob/v0.9.0-rc.0/docs/concepts/crds/backupblueprint.md).
+- [AppBinding](https://github.com/stashed/docs/blob/v0.9.0-rc.0/docs/concepts/crds/appbinding.md).
 
 #### New Features
 
 In addition to improving existing features, this release introduces the following new features:
 
 - **Backup & Restore Stand-alone PVC :**
-  Stash now supports taking backup of a stand-alone PVC. To learn more about how Stash takes backup of a stand-alone PVC, please visit [here](/products/stash/v0.9.0-rc.0/guides/latest/volumes/overview).
+  Stash now supports taking backup of a stand-alone PVC. To learn more about how Stash takes backup of a stand-alone PVC, please visit [here](https://github.com/stashed/docs/blob/v0.9.0-rc.0/docs/guides/latest/volumes/overview.md).
 
 - **Backup & Restore Databases :**
-  Stash now can backup PostgreSQL, MongoDB, Elasticsearch and MySQL databases in both stand-alone and clustered mode. To learn more about how Stash takes backup of a database, please visit [here](/products/stash/v0.9.0-rc.0/guides/latest/databases/overview).
+  Stash now can backup PostgreSQL, MongoDB, Elasticsearch and MySQL databases in both stand-alone and clustered mode. To learn more about how Stash takes backup of a database, please visit [here](https://github.com/stashed/docs/blob/v0.9.0-rc.0/docs/guides/latest/databases/overview.md).
 
 - **VolumeSnapshot :**
-  Now, you can take a scheduled snapshot of the volumes of a workload using Kubernetes [VolumeSnapshot](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) API. Check out how volume snapshotting works in Stash from [here](/products/stash/v0.9.0-rc.0/guides/latest/volumesnapshot/overview).
+  Now, you can take a scheduled snapshot of the volumes of a workload using Kubernetes [VolumeSnapshot](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) API. Check out how volume snapshotting works in Stash from [here](https://github.com/stashed/docs/blob/v0.9.0-rc.0/docs/guides/latest/volumesnapshot/overview.md).
 
 - **Instant Backup :**
-  You can now trigger a backup instantly. To learn how, please visit [here](/products/stash/v0.9.0-rc.0/guides/latest/volumesnapshot/overview).
+  You can now trigger a backup instantly. To learn how, please visit [here](https://github.com/stashed/docs/blob/v0.9.0-rc.0/docs/guides/latest/volumesnapshot/overview.md).
 
 - **Auto Backup :**
-  Now, Stash will let you configure a common template to backup similar types of target. You will require to add just a few annotations to the targeted workload to enable backup for it. Want to know how? Please visit [here](/products/stash/v0.9.0-rc.0/guides/latest/auto-backup/overview).
+  Now, Stash will let you configure a common template to backup similar types of target. You will require to add just a few annotations to the targeted workload to enable backup for it. Want to know how? Please visit [here](https://github.com/stashed/docs/blob/v0.9.0-rc.0/docs/guides/latest/auto-backup/overview.md).
 
 - **Support PSP Enabled Cluster :**
   Stash now supports PSP enabled cluster.
 
 - **Improved Prometheus Metrics :**
-  We have improved Prometheus metrics in this release. Check out the new metrics from [here](/products/stash/v0.9.0-rc.0/guides/latest/monitoring/overview).
+  We have improved Prometheus metrics in this release. Check out the new metrics from [here](https://github.com/stashed/docs/blob/v0.9.0-rc.0/docs/guides/latest/monitoring/overview.md).
 
 - **Support REST Server as Backend :**
-  Stash now supports REST server as backend. To learn how to configure REST backend, please visit [here](/products/stash/v0.9.0-rc.0/guides/latest/backends/rest).
+  Stash now supports REST server as backend. To learn how to configure REST backend, please visit [here](https://github.com/stashed/docs/blob/v0.9.0-rc.0/docs/guides/latest/backends/rest.md).
 
 - **KubeDB Integration :**
   Stash now seemingly integrates with [KubeDB](https://kubedb.com/). It is now recommended tool to backup & restore KubeDB supported databases.
 
-For a complete feature list of this release, please visit [here](/products/stash/v0.9.0-rc.0/concepts/what-is-stash/overview).
+For a complete feature list of this release, please visit [here](https://github.com/stashed/docs/blob/v0.9.0-rc.0/docs/concepts/what-is-stash/overview.md).
 
 ### Significant Changes
 

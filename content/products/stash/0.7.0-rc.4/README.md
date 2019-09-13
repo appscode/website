@@ -14,6 +14,8 @@ url: /products/stash/0.7.0-rc.4/welcome/
 aliases:
 - /products/stash/0.7.0-rc.4/
 - /products/stash/0.7.0-rc.4/README/
+info:
+  version: 0.7.0-rc.4
 ---
 
 # Stash

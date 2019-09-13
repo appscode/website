@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_0.6.4
 section_menu_id: guides
+info:
+  version: 0.6.4
 ---
 
 > New to Stash? Please start [here](/products/stash/0.6.4/concepts/README).

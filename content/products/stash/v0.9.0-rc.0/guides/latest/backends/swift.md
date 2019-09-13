@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: guides
+info:
+  version: v0.9.0-rc.0
 ---
 
 # OpenStack Swift
@@ -69,20 +71,18 @@ For keystone v3 application credential authentication (application credential id
 | `RESTIC_PASSWORD`        | Password used that will be used to encrypt the backup snapshots.|
 | `OS_AUTH_URL`            | URL of the Keystone server.                             |
 | `OS_APPLICATION_CREDENTIAL_ID` | The ID of the application credential used for authentication. If not provided, the application credential must be identified by its name and its owning user.|
-| `OS_APPLICATION_CREDENTIAL_SECRET` | The secret for authenticating the application credential.
-|
+| `OS_APPLICATION_CREDENTIAL_SECRET` | The secret for authenticating the application credential. |
 
 For keystone v3 application credential authentication (application credential name):
+
 | Key                      | Description                                                |
 |--------------------------|------------------------------------------------------------|
 | `RESTIC_PASSWORD`        | Password used that will be used to encrypt the backup snapshots.|
 | `OS_AUTH_URL`            | URL of the Keystone server.                             |
 | `OS_USERNAME` | User name|
 | `OS_USER_DOMAIN_NAME` | User domain name|
-| `OS_APPLICATION_CREDENTIAL_NAME` | The name of the application credential used for authentication. If provided, must be accompanied by a user object.
-|
-| `OS_APPLICATION_CREDENTIAL_SECRET` | The secret for authenticating the application credential.
-|
+| `OS_APPLICATION_CREDENTIAL_NAME` | The name of the application credential used for authentication. If provided, must be accompanied by a user object. |
+| `OS_APPLICATION_CREDENTIAL_SECRET` | The secret for authenticating the application credential. |
 
 **Token-based authentication:**
 
@@ -145,7 +145,7 @@ spec:
 Create the `Repository` we have shown above using the following command,
 
 ```console
-$ kubectl apply -f https://github.com/stashed/docs/raw/v0.9.0-rc.0/docs/examples/guides/latest/backends/swift.yaml
+$ kubectl apply -f https://github.com/stashed/docs/raw/{{< param "info.version" >}}/docs/examples/guides/latest/backends/swift.yaml
 repository/swift-repo created
 ```
 

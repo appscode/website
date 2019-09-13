@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: setup
+info:
+  version: v0.9.0-rc.0
 ---
 
 # Uninstall Stash
@@ -17,7 +19,7 @@ section_menu_id: setup
 To uninstall Stash operator, run the following command:
 
 ```console
-$ curl -fsSL https://github.com/stashed/installer/raw/v0.9.0-rc.0/deploy/stash.sh \
+$ curl -fsSL https://github.com/stashed/installer/raw/{{< param "info.version" >}}/deploy/stash.sh \
     | bash -s -- --uninstall [--namespace=NAMESPACE]
 
 + kubectl delete deployment -l app=stash -n kube-system

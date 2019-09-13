@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: guides
+info:
+  version: v0.9.0-rc.0
 ---
 
 > New to Stash? Please start [here](/products/stash/v0.9.0-rc.0/concepts/README).
@@ -42,10 +44,10 @@ You will see all snapshots taken by Stash at `/snapshot` directory of this repos
 
 ## Next Steps
 
-- Learn how to configure `Kuberntes Volume` as backend from [here](/products/stash/v0.9.0-rc.0/guides/v1beta1/backends/local).
-- Learn how to configure `AWS S3/Minio/Rook` backend from [here](/products/stash/v0.9.0-rc.0/guides/v1beta1/backends/s3).
-- Learn how to configure `Google Cloud Storage (GCS)` backend from [here](/products/stash/v0.9.0-rc.0/guides/v1beta1/backends/gcs).
-- Learn how to configure `Microsoft Azure Storage` backend from [here](/products/stash/v0.9.0-rc.0/guides/v1beta1/backends/azure).
-- Learn how to configure `OpenStack Swift` backend from [here](/products/stash/v0.9.0-rc.0/guides/v1beta1/backends/swift).
-- Learn how to configure `Backblaze B2` backend from [here](/products/stash/v0.9.0-rc.0/guides/v1beta1/backends/b2).
-- Learn how to configure `REST` backend from [here](/products/stash/v0.9.0-rc.0/guides/v1beta1/backends/rest).
+- Learn how to configure `Kuberntes Volume` as backend from [here](/products/stash/v0.9.0-rc.0/guides/latest/backends/local).
+- Learn how to configure `AWS S3/Minio/Rook` backend from [here](/products/stash/v0.9.0-rc.0/guides/latest/backends/s3).
+- Learn how to configure `Google Cloud Storage (GCS)` backend from [here](/products/stash/v0.9.0-rc.0/guides/latest/backends/gcs).
+- Learn how to configure `Microsoft Azure Storage` backend from [here](/products/stash/v0.9.0-rc.0/guides/latest/backends/azure).
+- Learn how to configure `OpenStack Swift` backend from [here](/products/stash/v0.9.0-rc.0/guides/latest/backends/swift).
+- Learn how to configure `Backblaze B2` backend from [here](/products/stash/v0.9.0-rc.0/guides/latest/backends/b2).
+- Learn how to configure `REST` backend from [here](/products/stash/v0.9.0-rc.0/guides/latest/backends/rest).

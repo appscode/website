@@ -10,6 +10,9 @@ menu:
 product_name: stash
 menu_name: product_stash_0.8.3
 section_menu_id: guides
+info:
+  subproject_version: "6.8"
+  version: v0.9.0-rc.0
 ---
 
 # Backup and Restore Elasticsearch database using Stash
