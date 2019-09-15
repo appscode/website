@@ -6,5 +6,7 @@ menu:
     name: Setup
     weight: 30
 menu_name: product_stash_0.8.1
+info:
+  version: 0.8.1
 ---
 

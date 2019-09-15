@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/searchlight/5.1.1/welcome/support/
 aliases:
 - /products/searchlight/5.1.1/support/
+info:
+  version: 5.1.1
 ---
 
 # Support

@@ -11,6 +11,8 @@ menu_name: product_stash_0.7.0-rc.4
 section_menu_id: reference
 aliases:
 - /products/stash/0.7.0-rc.4/reference/
+info:
+  version: 0.7.0-rc.4
 ---
 
 ## stash

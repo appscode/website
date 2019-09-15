@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/voyager/5.0.0-rc.11/welcome/support/
 aliases:
 - /products/voyager/5.0.0-rc.11/support/
+info:
+  version: 5.0.0-rc.11
 ---
 
 # Support

@@ -7,5 +7,7 @@ menu:
     name: Concepts
     weight: 20
 menu_name: product_swift_0.7.1
+info:
+  version: 0.7.1
 ---
 

@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/kubed/v0.11.0/welcome/contributing/
 aliases:
 - /products/kubed/v0.11.0/CONTRIBUTING/
+info:
+  version: v0.11.0
 ---
 
 # Contribution Guidelines

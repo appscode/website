@@ -7,5 +7,7 @@ menu:
     parent: guides
     weight: 25
 menu_name: product_searchlight_8.0.0-rc.0
+info:
+  version: 8.0.0-rc.0
 ---
 

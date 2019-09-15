@@ -10,6 +10,8 @@ menu:
 product_name: voyager
 menu_name: product_voyager_7.0.0-rc.3
 section_menu_id: setup
+info:
+  version: 7.0.0-rc.3
 ---
 
 ## Development Guide

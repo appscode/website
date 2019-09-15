@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/searchlight/5.0.0/welcome/acknowledgement/
 aliases:
 - /products/searchlight/5.0.0/acknowledgement/
+info:
+  version: 5.0.0
 ---
 
 # Acknowledgement

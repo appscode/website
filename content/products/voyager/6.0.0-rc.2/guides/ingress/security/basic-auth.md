@@ -11,6 +11,8 @@ menu_name: product_voyager_6.0.0-rc.2
 section_menu_id: guides
 aliases:
 - /products/voyager/6.0.0-rc.2/guides/ingress/security/
+info:
+  version: 6.0.0-rc.2
 ---
 
 # Basic Authentication

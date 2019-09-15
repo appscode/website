@@ -7,5 +7,7 @@ menu:
     name: Welcome
     weight: 10
 left_menu: product_guard_0.3.0
+info:
+  version: 0.3.0
 ---
 

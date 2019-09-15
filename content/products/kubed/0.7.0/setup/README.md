@@ -13,6 +13,8 @@ section_menu_id: setup
 url: /products/kubed/0.7.0/setup/
 aliases:
 - /products/kubed/0.7.0/setup/README/
+info:
+  version: 0.7.0
 ---
 
 # Setup

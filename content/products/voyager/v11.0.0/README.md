@@ -14,6 +14,8 @@ url: /products/voyager/v11.0.0/welcome/
 aliases:
 - /products/voyager/v11.0.0/
 - /products/voyager/v11.0.0/README/
+info:
+  version: v11.0.0
 ---
 
 # Voyager

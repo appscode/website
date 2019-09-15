@@ -9,6 +9,8 @@ menu:
 product_name: voyager
 menu_name: product_voyager_7.1.1
 section_menu_id: concepts
+info:
+  version: 7.1.1
 ---
 
 # HostPort

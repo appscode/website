@@ -8,5 +8,7 @@ menu:
     weight: 1000
     pre: dropdown
 menu_name: product_searchlight_5.0.0
+info:
+  version: 5.0.0
 ---
 

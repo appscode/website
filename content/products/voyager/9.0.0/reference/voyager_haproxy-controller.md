@@ -8,6 +8,8 @@ menu:
 product_name: voyager
 menu_name: product_voyager_9.0.0
 section_menu_id: reference
+info:
+  version: 9.0.0
 ---
 
 ## voyager haproxy-controller

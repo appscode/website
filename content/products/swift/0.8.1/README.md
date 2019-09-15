@@ -14,6 +14,8 @@ url: /products/swift/0.8.1/welcome/
 aliases:
 - /products/swift/0.8.1/
 - /products/swift/0.8.1/README/
+info:
+  version: 0.8.1
 ---
 
 # Swift

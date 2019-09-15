@@ -8,5 +8,7 @@ menu:
     name: Cluster Events
     weight: 15
 menu_name: product_kubed_v0.11.0
+info:
+  version: v0.11.0
 ---
 

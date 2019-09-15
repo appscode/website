@@ -12,6 +12,8 @@ section_menu_id: concepts
 url: /products/voyager/10.0.0/concepts/
 aliases:
 - /products/voyager/10.0.0/concepts/README/
+info:
+  version: 10.0.0
 ---
 
 # Concepts

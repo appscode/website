@@ -14,6 +14,8 @@ url: /products/swift/0.6.0/welcome/
 aliases:
 - /products/swift/0.6.0/
 - /products/swift/0.6.0/README/
+info:
+  version: 0.6.0
 ---
 
 # Swift

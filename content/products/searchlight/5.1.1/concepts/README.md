@@ -12,6 +12,8 @@ section_menu_id: concepts
 url: /products/searchlight/5.1.1/concepts/
 aliases:
 - /products/searchlight/5.1.1/concepts/README/
+info:
+  version: 5.1.1
 ---
 
 # Concepts

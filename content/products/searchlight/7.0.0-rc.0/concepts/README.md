@@ -12,6 +12,8 @@ section_menu_id: concepts
 url: /products/searchlight/7.0.0-rc.0/concepts/
 aliases:
 - /products/searchlight/7.0.0-rc.0/concepts/README/
+info:
+  version: 7.0.0-rc.0
 ---
 
 # Concepts

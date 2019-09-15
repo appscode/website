@@ -10,6 +10,8 @@ menu:
 product_name: searchlight
 menu_name: product_searchlight_5.1.0
 section_menu_id: setup
+info:
+  version: 5.1.0
 ---
 
 ## Development Guide

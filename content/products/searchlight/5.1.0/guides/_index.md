@@ -6,5 +6,7 @@ menu:
     name: Guides
     weight: 40
 menu_name: product_searchlight_5.1.0
+info:
+  version: 5.1.0
 ---
 

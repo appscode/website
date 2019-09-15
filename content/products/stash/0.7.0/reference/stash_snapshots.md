@@ -8,6 +8,8 @@ menu:
 product_name: stash
 menu_name: product_stash_0.7.0
 section_menu_id: reference
+info:
+  version: 0.7.0
 ---
 
 ## stash snapshots

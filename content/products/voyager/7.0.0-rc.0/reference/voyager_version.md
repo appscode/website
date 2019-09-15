@@ -8,6 +8,8 @@ menu:
 product_name: voyager
 menu_name: product_voyager_7.0.0-rc.0
 section_menu_id: reference
+info:
+  version: 7.0.0-rc.0
 ---
 
 ## voyager version

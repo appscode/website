@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/voyager/8.0.1/welcome/changelog/
 aliases:
 - /products/voyager/8.0.1/CHANGELOG/
+info:
+  version: 8.0.1
 ---
 
 # Change Log

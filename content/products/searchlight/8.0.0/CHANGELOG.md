@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/searchlight/8.0.0/welcome/changelog/
 aliases:
 - /products/searchlight/8.0.0/CHANGELOG/
+info:
+  version: 8.0.0
 ---
 
 # Change Log

@@ -11,6 +11,8 @@ menu_name: product_service-broker_0.1.0
 section_menu_id: reference
 aliases:
 - /products/service-broker/0.1.0/reference/
+info:
+  version: 0.1.0
 ---
 
 ## service-broker

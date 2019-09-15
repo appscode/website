@@ -13,6 +13,8 @@ section_menu_id: guides
 url: /products/kubed/v0.11.0/guides/cluster-events/
 aliases:
 - /products/kubed/v0.11.0/guides/cluster-events/README
+info:
+  version: v0.11.0
 ---
 
 # Cluster Events

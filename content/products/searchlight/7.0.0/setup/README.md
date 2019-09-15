@@ -13,6 +13,8 @@ section_menu_id: setup
 url: /products/searchlight/7.0.0/setup/
 aliases:
 - /products/searchlight/7.0.0/setup/README/
+info:
+  version: 7.0.0
 ---
 
 # Setup

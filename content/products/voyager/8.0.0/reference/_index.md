@@ -7,5 +7,7 @@ menu:
     name: Reference
     weight: 1000
 menu_name: product_voyager_8.0.0
+info:
+  version: 8.0.0
 ---
 

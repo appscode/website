@@ -8,6 +8,8 @@ menu:
 product_name: searchlight
 section_menu_id: reference
 menu_name: product_searchlight_7.0.0-rc.0
+info:
+  version: 7.0.0-rc.0
 ---
 
 ## hostfacts run

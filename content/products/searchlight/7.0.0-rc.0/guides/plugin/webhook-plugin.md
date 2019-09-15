@@ -9,6 +9,8 @@ menu:
 product_name: searchlight
 menu_name: product_searchlight_7.0.0-rc.0
 section_menu_id: guides
+info:
+  version: 7.0.0-rc.0
 ---
 
 > New to SearchlightPlugin? Please start [here](/products/searchlight/7.0.0-rc.0/setup/developer-guide/webhook-plugin).

@@ -12,6 +12,8 @@ menu_name: product_searchlight_8.0.0-rc.0
 url: /products/searchlight/8.0.0-rc.0/reference/hyperalert/
 aliases:
 - /products/searchlight/8.0.0-rc.0/reference/hyperalert/hyperalert/
+info:
+  version: 8.0.0-rc.0
 ---
 
 ## hyperalert

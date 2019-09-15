@@ -13,6 +13,8 @@ section_menu_id: setup
 url: /products/voyager/7.0.0-rc.3/setup/
 aliases:
 - /products/voyager/7.0.0-rc.3/setup/README/
+info:
+  version: 7.0.0-rc.3
 ---
 
 # Setup

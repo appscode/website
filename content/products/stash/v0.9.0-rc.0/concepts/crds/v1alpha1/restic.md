@@ -9,6 +9,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: concepts
+info:
+  version: v0.9.0-rc.0
 ---
 
 >**Warning:** Restic crd has been deprecated in **v1beta1 api** and will be removed in future version. Please use [BackupConfiguration](/products/stash/v0.9.0-rc.0/concepts/crds/backupconfiguration) instead.

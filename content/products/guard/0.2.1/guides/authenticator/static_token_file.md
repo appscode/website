@@ -10,6 +10,8 @@ menu:
 product_name: guard
 menu_name: product_guard_0.2.1
 section_menu_id: guides
+info:
+  version: 0.2.1
 ---
 
 # Static Token File Authentication

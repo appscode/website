@@ -7,5 +7,7 @@ menu:
     name: Welcome
     weight: 10
 menu_name: product_voyager_6.0.0-rc.1
+info:
+  version: 6.0.0-rc.1
 ---
 

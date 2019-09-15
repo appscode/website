@@ -10,6 +10,8 @@ menu:
 product_name: searchlight
 menu_name: product_searchlight_7.0.0-rc.0
 section_menu_id: setup
+info:
+  version: 7.0.0-rc.0
 ---
 
 # Release Process

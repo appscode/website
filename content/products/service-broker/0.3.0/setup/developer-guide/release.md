@@ -10,6 +10,8 @@ menu:
 product_name: service-broker
 menu_name: product_service-broker_0.3.0
 section_menu_id: setup
+info:
+  version: 0.3.0
 ---
 
 # Release Process

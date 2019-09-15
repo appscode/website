@@ -12,6 +12,8 @@ section_menu_id: concepts
 url: /products/kubed/v0.11.0/concepts/
 aliases:
 - /products/kubed/v0.11.0/concepts/README/
+info:
+  version: v0.11.0
 ---
 
 # Concepts

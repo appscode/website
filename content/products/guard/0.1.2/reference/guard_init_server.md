@@ -8,6 +8,8 @@ menu:
 product_name: guard
 menu_name: product_guard_0.1.2
 section_menu_id: reference
+info:
+  version: 0.1.2
 ---
 
 ## guard init server

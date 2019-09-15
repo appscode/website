@@ -13,6 +13,8 @@ section_menu_id: guides
 url: /products/kubed/0.9.0/guides/config-syncer/
 aliases:
 - /products/kubed/0.9.0/guides/config-syncer/README
+info:
+  version: 0.9.0
 ---
 
 # Configuration Syncer

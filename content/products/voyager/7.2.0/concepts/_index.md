@@ -7,5 +7,7 @@ menu:
     name: Concepts
     weight: 20
 menu_name: product_voyager_7.2.0
+info:
+  version: 7.2.0
 ---
 

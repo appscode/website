@@ -8,6 +8,8 @@ menu:
 product_name: searchlight
 section_menu_id: reference
 menu_name: product_searchlight_5.1.0
+info:
+  version: 5.1.0
 ---
 
 ## hyperalert check_env

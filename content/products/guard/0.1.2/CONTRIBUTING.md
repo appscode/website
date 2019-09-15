@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/guard/0.1.2/welcome/contributing/
 aliases:
 - /products/guard/0.1.2/CONTRIBUTING/
+info:
+  version: 0.1.2
 ---
 
 # Contribution Guidelines

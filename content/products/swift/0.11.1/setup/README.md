@@ -13,6 +13,8 @@ section_menu_id: setup
 url: /products/swift/0.11.1/setup/
 aliases:
 - /products/swift/0.11.1/setup/README/
+info:
+  version: 0.11.1
 ---
 
 # Setup

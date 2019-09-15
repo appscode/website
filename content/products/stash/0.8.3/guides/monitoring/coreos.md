@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_0.8.3
 section_menu_id: guides
+info:
+  version: 0.8.3
 ---
 
 # Monitoring Using CoreOS Prometheus Operator

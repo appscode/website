@@ -13,6 +13,8 @@ section_menu_id: setup
 url: /products/voyager/6.0.0-rc.2/setup/
 aliases:
 - /products/voyager/6.0.0-rc.2/setup/README/
+info:
+  version: 6.0.0-rc.2
 ---
 
 # Setup

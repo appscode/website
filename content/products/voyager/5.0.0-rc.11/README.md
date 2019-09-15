@@ -14,6 +14,8 @@ url: /products/voyager/5.0.0-rc.11/welcome/
 aliases:
 - /products/voyager/5.0.0-rc.11/
 - /products/voyager/5.0.0-rc.11/README/
+info:
+  version: 5.0.0-rc.11
 ---
 
 # Voyager

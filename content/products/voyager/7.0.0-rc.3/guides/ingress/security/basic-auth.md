@@ -11,6 +11,8 @@ menu_name: product_voyager_7.0.0-rc.3
 section_menu_id: guides
 aliases:
 - /products/voyager/7.0.0-rc.3/guides/ingress/security/
+info:
+  version: 7.0.0-rc.3
 ---
 
 > New to Voyager? Please start [here](/products/voyager/7.0.0-rc.3/concepts/overview).

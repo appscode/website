@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/searchlight/7.0.0/welcome/support/
 aliases:
 - /products/searchlight/7.0.0/support/
+info:
+  version: 7.0.0
 ---
 
 # Support

@@ -8,5 +8,7 @@ menu:
     name: DNS Challenger
     weight: 15
 menu_name: product_voyager_7.2.0
+info:
+  version: 7.2.0
 ---
 

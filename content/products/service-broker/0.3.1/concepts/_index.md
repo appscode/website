@@ -6,5 +6,7 @@ menu:
     name: Concepts
     weight: 20
 menu_name: product_service-broker_0.3.1
+info:
+  version: 0.3.1
 ---
 

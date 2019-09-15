@@ -7,5 +7,7 @@ menu:
     weight: 40
     pre: dropdown
 menu_name: product_voyager_6.0.0-rc.0
+info:
+  version: 6.0.0-rc.0
 ---
 

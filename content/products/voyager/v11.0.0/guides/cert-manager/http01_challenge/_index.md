@@ -8,5 +8,7 @@ menu:
     name: HTTP01 Challenge
     weight: 20
 menu_name: product_voyager_v11.0.0
+info:
+  version: v11.0.0
 ---
 

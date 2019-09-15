@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/service-broker/0.3.1/welcome/contributing/
 aliases:
 - /products/service-broker/0.3.1/CONTRIBUTING/
+info:
+  version: 0.3.1
 ---
 
 # Contribution Guidelines

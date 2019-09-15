@@ -14,6 +14,8 @@ url: /products/voyager/7.4.0/welcome/
 aliases:
 - /products/voyager/7.4.0/
 - /products/voyager/7.4.0/README/
+info:
+  version: 7.4.0
 ---
 
 # Voyager

@@ -14,6 +14,8 @@ url: /products/searchlight/8.0.0-rc.0/welcome/
 aliases:
 - /products/searchlight/8.0.0-rc.0/
 - /products/searchlight/8.0.0-rc.0/README/
+info:
+  version: 8.0.0-rc.0
 ---
 
 # Searchlight

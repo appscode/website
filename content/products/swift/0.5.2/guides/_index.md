@@ -6,5 +6,7 @@ menu:
     name: Guides
     weight: 40
 menu_name: product_swift_0.5.2
+info:
+  version: 0.5.2
 ---
 

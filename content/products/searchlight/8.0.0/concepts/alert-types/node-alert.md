@@ -9,6 +9,8 @@ menu:
 product_name: searchlight
 menu_name: product_searchlight_8.0.0
 section_menu_id: concepts
+info:
+  version: 8.0.0
 ---
 
 > New to Searchlight? Please start [here](/products/searchlight/8.0.0/concepts/README).

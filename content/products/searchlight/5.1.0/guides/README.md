@@ -13,6 +13,8 @@ section_menu_id: guides
 url: /products/searchlight/5.1.0/guides/
 aliases:
 - /products/searchlight/5.1.0/guides/README/
+info:
+  version: 5.1.0
 ---
 
 # Guides

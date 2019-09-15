@@ -13,6 +13,8 @@ section_menu_id: setup
 url: /products/searchlight/5.1.0/setup/
 aliases:
 - /products/searchlight/5.1.0/setup/README/
+info:
+  version: 5.1.0
 ---
 
 # Setup

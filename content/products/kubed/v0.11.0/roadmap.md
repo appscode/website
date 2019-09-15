@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/kubed/v0.11.0/welcome/roadmap/
 aliases:
 - /products/kubed/v0.11.0/roadmap/
+info:
+  version: v0.11.0
 ---
 
 # Project Status

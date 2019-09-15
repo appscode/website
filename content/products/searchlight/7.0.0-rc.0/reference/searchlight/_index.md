@@ -8,5 +8,7 @@ menu:
     parent: reference
     weight: 20
 menu_name: product_searchlight_7.0.0-rc.0
+info:
+  version: 7.0.0-rc.0
 ---
 

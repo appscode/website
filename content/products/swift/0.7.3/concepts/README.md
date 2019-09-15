@@ -12,6 +12,8 @@ section_menu_id: concepts
 url: /products/swift/0.7.3/concepts/
 aliases:
 - /products/swift/0.7.3/concepts/README/
+info:
+  version: 0.7.3
 ---
 
 # Concepts

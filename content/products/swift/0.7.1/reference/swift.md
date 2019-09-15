@@ -11,6 +11,8 @@ menu_name: product_swift_0.7.1
 section_menu_id: reference
 aliases:
 - /products/swift/0.7.1/reference/
+info:
+  version: 0.7.1
 ---
 
 ## swift

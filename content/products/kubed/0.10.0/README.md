@@ -14,6 +14,8 @@ url: /products/kubed/0.10.0/welcome/
 aliases:
 - /products/kubed/0.10.0/
 - /products/kubed/0.10.0/README/
+info:
+  version: 0.10.0
 ---
 
 # Kubed

@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/voyager/7.2.0/welcome/roadmap/
 aliases:
 - /products/voyager/7.2.0/roadmap/
+info:
+  version: 7.2.0
 ---
 
 # Versioning Policy

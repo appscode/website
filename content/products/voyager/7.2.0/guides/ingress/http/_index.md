@@ -7,5 +7,7 @@ menu:
     parent: ingress-guides
     weight: 10
 menu_name: product_voyager_7.2.0
+info:
+  version: 7.2.0
 ---
 

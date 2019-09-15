@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/kubed/0.7.0-rc.1/welcome/changelog/
 aliases:
 - /products/kubed/0.7.0-rc.1/CHANGELOG/
+info:
+  version: 0.7.0-rc.1
 ---
 
 # Change Log

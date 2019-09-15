@@ -10,6 +10,8 @@ menu:
 product_name: swift
 menu_name: product_swift_0.7.1
 section_menu_id: guides
+info:
+  version: 0.7.1
 ---
 
 # Securing Swift

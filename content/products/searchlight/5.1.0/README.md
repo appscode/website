@@ -14,6 +14,8 @@ url: /products/searchlight/5.1.0/welcome/
 aliases:
 - /products/searchlight/5.1.0/
 - /products/searchlight/5.1.0/README/
+info:
+  version: 5.1.0
 ---
 
 # Searchlight

@@ -11,6 +11,8 @@ menu_name: product_voyager_8.0.1
 section_menu_id: reference
 aliases:
 - /products/voyager/8.0.1/reference/
+info:
+  version: 8.0.1
 ---
 
 ## voyager

@@ -8,5 +8,7 @@ menu:
     name: What is Kubed
     weight: 10
 menu_name: product_kubed_v0.11.0
+info:
+  version: v0.11.0
 ---
 

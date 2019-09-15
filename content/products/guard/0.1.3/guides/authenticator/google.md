@@ -10,6 +10,8 @@ menu:
 product_name: guard
 menu_name: product_guard_0.1.3
 section_menu_id: guides
+info:
+  version: 0.1.3
 ---
 
 # Google Authenticator

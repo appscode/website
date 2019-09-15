@@ -7,5 +7,7 @@ menu:
     name: Reference
     weight: 1000
 menu_name: product_stash_0.8.1
+info:
+  version: 0.8.1
 ---
 

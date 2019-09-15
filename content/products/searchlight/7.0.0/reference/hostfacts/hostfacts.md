@@ -12,6 +12,8 @@ menu_name: product_searchlight_7.0.0
 url: /products/searchlight/7.0.0/reference/hostfacts/
 aliases:
 - /products/searchlight/7.0.0/reference/hostfacts/hostfacts/
+info:
+  version: 7.0.0
 ---
 
 ## hostfacts

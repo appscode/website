@@ -8,5 +8,7 @@ menu:
     parent: setup
     weight: 40
 menu_name: product_voyager_9.0.0
+info:
+  version: 9.0.0
 ---
 
