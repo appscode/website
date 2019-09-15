@@ -9,6 +9,8 @@ menu:
 product_name: guard
 menu_name: product_guard_0.1.4
 section_menu_id: concepts
+info:
+  version: 0.1.4
 ---
 
 # Guard

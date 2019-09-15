@@ -8,5 +8,7 @@ menu:
     name: Types of Alerts
     weight: 15
 menu_name: product_searchlight_8.0.0
+info:
+  version: 8.0.0
 ---
 

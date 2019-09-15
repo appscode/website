@@ -8,5 +8,7 @@ menu:
     parent: setup
     weight: 40
 menu_name: product_searchlight_8.0.0
+info:
+  version: 8.0.0
 ---
 

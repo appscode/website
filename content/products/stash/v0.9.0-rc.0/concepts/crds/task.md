@@ -9,6 +9,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: concepts
+info:
+  version: v0.9.0-rc.0
 ---
 
 > New to Stash? Please start [here](/products/stash/v0.9.0-rc.0/concepts/README).

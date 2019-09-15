@@ -9,6 +9,8 @@ menu:
 product_name: guard
 menu_name: product_guard_0.4.0
 section_menu_id: setup
+info:
+  version: 0.4.0
 ---
 
 > New to Guard? Please start [here](/products/guard/0.4.0/concepts).

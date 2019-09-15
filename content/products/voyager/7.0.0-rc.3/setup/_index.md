@@ -6,5 +6,7 @@ menu:
     name: Setup
     weight: 30
 menu_name: product_voyager_7.0.0-rc.3
+info:
+  version: 7.0.0-rc.3
 ---
 

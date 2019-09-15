@@ -12,6 +12,8 @@ section_menu_id: guides
 url: /products/voyager/5.0.0-rc.11/guides/certificate/
 aliases:
 - /products/voyager/5.0.0-rc.11/guides/certificate/README/
+info:
+  version: 5.0.0-rc.11
 ---
 
 # Guides

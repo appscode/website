@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/service-broker/0.2.0/welcome/support/
 aliases:
 - /products/service-broker/0.2.0/support/
+info:
+  version: 0.2.0
 ---
 
 # Support

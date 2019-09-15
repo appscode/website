@@ -8,5 +8,7 @@ menu:
     parent: setup
     weight: 40
 menu_name: product_stash_0.8.3
+info:
+  version: 0.8.3
 ---
 

@@ -6,5 +6,7 @@ menu:
     name: Guides
     weight: 40
 menu_name: product_kubed_0.9.0
+info:
+  version: 0.9.0
 ---
 

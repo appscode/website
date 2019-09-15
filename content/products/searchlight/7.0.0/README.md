@@ -14,6 +14,8 @@ url: /products/searchlight/7.0.0/welcome/
 aliases:
 - /products/searchlight/7.0.0/
 - /products/searchlight/7.0.0/README/
+info:
+  version: 7.0.0
 ---
 
 # Searchlight

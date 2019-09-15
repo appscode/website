@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/swift/0.8.0/welcome/contributing/
 aliases:
 - /products/swift/0.8.0/CONTRIBUTING/
+info:
+  version: 0.8.0
 ---
 
 # Contribution Guidelines

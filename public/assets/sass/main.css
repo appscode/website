@@ -2605,7 +2605,7 @@ p.spam-message {
 
 .single-pricing-table.details .pricing-body {
   border-radius: 8px;
-  margin-top: 259px;
+  margin-top: 265px;
   margin-right: 10px;
   padding-bottom: 70px;
   background-color: #ffffff;
@@ -2617,7 +2617,7 @@ p.spam-message {
 .single-pricing-table.free,
 .single-pricing-table.silver,
 .single-pricing-table.plutinum {
-  margin-top: 34px; }
+  margin-top: 40px; }
 
 .single-pricing-table.free {
   margin-right: 10px; }
@@ -3358,7 +3358,8 @@ button.button.is-fullwidth {
 .kd-left-sidebar {
   margin-right: 30px;
   position: sticky;
-  top: 130px; }
+  top: 130px;
+  z-index: 9; }
 
 .kd-sidebar-menu .item label {
   border: 1px solid transparent;
@@ -5117,7 +5118,13 @@ body.voyager .documentation-menu {
     width: 50%;
     text-align: left;
     font-weight: 500;
-    font-size: 14px; }
+    font-size: 14px;
+    margin-right: 20px; }
+
+  .pricing-body li span {
+    text-indent: -20px; }
+    .pricing-body li span br {
+      display: none; }
 
   .pricing-body li {
     display: inline-block;
@@ -5140,7 +5147,9 @@ body.voyager .documentation-menu {
     border-radius: 8px; }
 
   .pricing-body {
-    margin-bottom: 20px !important; }
+    margin-bottom: 40px !important; }
+    .pricing-body:last-child {
+      margin-bottom: 0; }
 
   .single-pricing-table.free,
   .single-pricing-table.gold,
@@ -5156,6 +5165,9 @@ body.voyager .documentation-menu {
 
   .hero-area-content.pr-115 {
     padding-right: 0; }
+
+  .single-payment-method {
+    margin-bottom: 5px; }
 
   /* ==============================================
    Product page  start

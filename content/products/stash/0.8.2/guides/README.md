@@ -13,6 +13,8 @@ section_menu_id: guides
 url: /products/stash/0.8.2/guides/
 aliases:
 - /products/stash/0.8.2/guides/README/
+info:
+  version: 0.8.2
 ---
 
 # Guides

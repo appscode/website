@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/searchlight/7.0.0-rc.0/welcome/contributing/
 aliases:
 - /products/searchlight/7.0.0-rc.0/CONTRIBUTING/
+info:
+  version: 7.0.0-rc.0
 ---
 
 # Contribution Guidelines

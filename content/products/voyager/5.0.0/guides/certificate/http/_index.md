@@ -8,5 +8,7 @@ menu:
     name: HTTP Challenger
     weight: 10
 menu_name: product_voyager_5.0.0
+info:
+  version: 5.0.0
 ---
 

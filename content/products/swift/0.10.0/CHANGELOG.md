@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/swift/0.10.0/welcome/changelog/
 aliases:
 - /products/swift/0.10.0/CHANGELOG/
+info:
+  version: 0.10.0
 ---
 
 # Change Log

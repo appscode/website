@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/voyager/7.4.0/welcome/support/
 aliases:
 - /products/voyager/7.4.0/support/
+info:
+  version: 7.4.0
 ---
 
 > New to Voyager? Please start [here](/products/voyager/7.4.0/concepts/overview).

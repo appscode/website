@@ -13,6 +13,8 @@ section_menu_id: guides
 url: /products/kubed/0.5.0/guides/
 aliases:
 - /products/kubed/0.5.0/guides/README/
+info:
+  version: 0.5.0
 ---
 
 # Guides

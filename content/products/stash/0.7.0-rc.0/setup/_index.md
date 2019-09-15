@@ -6,5 +6,7 @@ menu:
     name: Setup
     weight: 30
 menu_name: product_stash_0.7.0-rc.0
+info:
+  version: 0.7.0-rc.0
 ---
 

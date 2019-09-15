@@ -10,6 +10,8 @@ menu:
 product_name: searchlight
 menu_name: product_searchlight_5.0.0
 section_menu_id: concepts
+info:
+  version: 5.0.0
 ---
 
 # Searchlight

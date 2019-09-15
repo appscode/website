@@ -8,5 +8,7 @@ menu:
     name: What is Stash
     weight: 10
 menu_name: product_stash_0.8.0
+info:
+  version: 0.8.0
 ---
 

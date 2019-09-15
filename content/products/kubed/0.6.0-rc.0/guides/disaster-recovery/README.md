@@ -13,6 +13,8 @@ section_menu_id: guides
 url: /products/kubed/0.6.0-rc.0/guides/disaster-recovery/
 aliases:
 - /products/kubed/0.6.0-rc.0/guides/disaster-recovery/README
+info:
+  version: 0.6.0-rc.0
 ---
 
 # Disaster Recovery

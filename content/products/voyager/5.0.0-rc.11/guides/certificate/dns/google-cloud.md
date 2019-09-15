@@ -10,6 +10,8 @@ menu:
 product_name: voyager
 menu_name: product_voyager_5.0.0-rc.11
 section_menu_id: guides
+info:
+  version: 5.0.0-rc.11
 ---
 
 # Issue Let's Encrypt certificate using Google Cloud DNS

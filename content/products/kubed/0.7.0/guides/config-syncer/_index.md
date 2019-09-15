@@ -8,5 +8,7 @@ menu:
     name: Configuration Syncer
     weight: 20
 menu_name: product_kubed_0.7.0
+info:
+  version: 0.7.0
 ---
 

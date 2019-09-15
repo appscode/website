@@ -12,6 +12,8 @@ menu_name: product_searchlight_5.0.0
 url: /products/searchlight/5.0.0/reference/hyperalert/
 aliases:
 - /products/searchlight/5.0.0/reference/hyperalert/hyperalert/
+info:
+  version: 5.0.0
 ---
 
 ## hyperalert

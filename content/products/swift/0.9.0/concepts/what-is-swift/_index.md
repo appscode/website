@@ -8,5 +8,7 @@ menu:
     name: What is swift
     weight: 10
 menu_name: product_swift_0.9.0
+info:
+  version: 0.9.0
 ---
 

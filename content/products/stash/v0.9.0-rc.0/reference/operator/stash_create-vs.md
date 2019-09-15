@@ -8,6 +8,8 @@ menu:
 product_name: stash
 section_menu_id: reference
 menu_name: product_stash_v0.9.0-rc.0
+info:
+  version: v0.9.0-rc.0
 ---
 
 ## stash create-vs

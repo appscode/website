@@ -11,6 +11,8 @@ menu_name: product_kubed_0.6.0-rc.0
 section_menu_id: reference
 aliases:
 - /products/kubed/0.6.0-rc.0/reference/
+info:
+  version: 0.6.0-rc.0
 ---
 
 ## kubed

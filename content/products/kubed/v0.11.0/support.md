@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/kubed/v0.11.0/welcome/support/
 aliases:
 - /products/kubed/v0.11.0/support/
+info:
+  version: v0.11.0
 ---
 
 # Support

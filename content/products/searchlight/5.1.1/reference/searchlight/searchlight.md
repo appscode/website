@@ -12,6 +12,8 @@ menu_name: product_searchlight_5.1.1
 url: /products/searchlight/5.1.1/reference/searchlight/
 aliases:
 - /products/searchlight/5.1.1/reference/searchlight/searchlight/
+info:
+  version: 5.1.1
 ---
 
 ## searchlight

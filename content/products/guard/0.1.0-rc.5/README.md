@@ -14,6 +14,8 @@ url: /products/guard/0.1.0-rc.5/welcome/
 aliases:
 - /products/guard/0.1.0-rc.5/
 - /products/guard/0.1.0-rc.5/README/
+info:
+  version: 0.1.0-rc.5
 ---
 
 # Guard

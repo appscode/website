@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/voyager/v11.0.0/welcome/support/
 aliases:
 - /products/voyager/v11.0.0/support/
+info:
+  version: v11.0.0
 ---
 
 > New to Voyager? Please start [here](/products/voyager/v11.0.0/concepts/overview).

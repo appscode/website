@@ -13,6 +13,8 @@ section_menu_id: guides
 url: /products/service-broker/0.3.1/guides/
 aliases:
 - /products/service-broker/0.3.1/guides/README/
+info:
+  version: 0.3.1
 ---
 
 # Guides

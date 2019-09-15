@@ -13,6 +13,8 @@ section_menu_id: setup
 url: /products/voyager/8.0.1/setup/
 aliases:
 - /products/voyager/8.0.1/setup/README/
+info:
+  version: 8.0.1
 ---
 
 # Setup

@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/stash/0.7.0-rc.2/welcome/contributing/
 aliases:
 - /products/stash/0.7.0-rc.2/CONTRIBUTING/
+info:
+  version: 0.7.0-rc.2
 ---
 
 # Contribution Guidelines

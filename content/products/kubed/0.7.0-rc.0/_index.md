@@ -7,5 +7,7 @@ menu:
     name: Welcome
     weight: 10
 menu_name: product_kubed_0.7.0-rc.0
+info:
+  version: 0.7.0-rc.0
 ---
 

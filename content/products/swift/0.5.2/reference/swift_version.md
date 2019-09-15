@@ -8,6 +8,8 @@ menu:
 product_name: swift
 menu_name: product_swift_0.5.2
 section_menu_id: reference
+info:
+  version: 0.5.2
 ---
 
 ## swift version

@@ -14,6 +14,8 @@ url: /products/service-broker/0.3.1/welcome/
 aliases:
 - /products/service-broker/0.3.1/
 - /products/service-broker/0.3.1/README/
+info:
+  version: 0.3.1
 ---
 
 # AppsCode Service Broker

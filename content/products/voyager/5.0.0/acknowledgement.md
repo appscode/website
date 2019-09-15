@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/voyager/5.0.0/welcome/acknowledgement/
 aliases:
 - /products/voyager/5.0.0/acknowledgement/
+info:
+  version: 5.0.0
 ---
 
 # Acknowledgement

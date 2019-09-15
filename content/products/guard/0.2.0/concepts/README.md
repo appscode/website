@@ -12,6 +12,8 @@ section_menu_id: concepts
 url: /products/guard/0.2.0/concepts/
 aliases:
 - /products/guard/0.2.0/concepts/README/
+info:
+  version: 0.2.0
 ---
 
 # Concepts

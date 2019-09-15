@@ -9,6 +9,8 @@ menu:
 product_name: voyager
 menu_name: product_voyager_7.3.0
 section_menu_id: concepts
+info:
+  version: 7.3.0
 ---
 
 # Voyager

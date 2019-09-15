@@ -13,6 +13,8 @@ section_menu_id: guides
 url: /products/swift/0.7.2/guides/
 aliases:
 - /products/swift/0.7.2/guides/README/
+info:
+  version: 0.7.2
 ---
 
 # Guides

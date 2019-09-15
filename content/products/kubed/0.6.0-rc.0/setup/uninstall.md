@@ -10,6 +10,8 @@ menu:
 product_name: kubed
 menu_name: product_kubed_0.6.0-rc.0
 section_menu_id: setup
+info:
+  version: 0.6.0-rc.0
 ---
 
 > New to Kubed? Please start [here](/products/kubed/0.6.0-rc.0/concepts/README).

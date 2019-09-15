@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/service-broker/0.3.0/welcome/changelog/
 aliases:
 - /products/service-broker/0.3.0/CHANGELOG/
+info:
+  version: 0.3.0
 ---
 
 # Change Log

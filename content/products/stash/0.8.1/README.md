@@ -14,6 +14,8 @@ url: /products/stash/0.8.1/welcome/
 aliases:
 - /products/stash/0.8.1/
 - /products/stash/0.8.1/README/
+info:
+  version: 0.8.1
 ---
 
 # Stash

@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/guard/0.3.0/welcome/support/
 aliases:
 - /products/guard/0.3.0/support/
+info:
+  version: 0.3.0
 ---
 
 # Support

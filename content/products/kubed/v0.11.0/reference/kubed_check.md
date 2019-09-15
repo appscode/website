@@ -8,6 +8,8 @@ menu:
 product_name: kubed
 menu_name: product_kubed_v0.11.0
 section_menu_id: reference
+info:
+  version: v0.11.0
 ---
 
 ## kubed check

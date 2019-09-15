@@ -8,6 +8,8 @@ menu:
 product_name: stash
 menu_name: product_stash_0.6.0
 section_menu_id: reference
+info:
+  version: 0.6.0
 ---
 
 ## stash backup

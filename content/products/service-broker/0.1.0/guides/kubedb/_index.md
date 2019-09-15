@@ -7,5 +7,7 @@ menu:
     parent: guides
     weight: 10
 menu_name: product_service-broker_0.1.0
+info:
+  version: 0.1.0
 ---
 

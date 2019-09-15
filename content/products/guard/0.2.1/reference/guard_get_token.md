@@ -8,6 +8,8 @@ menu:
 product_name: guard
 menu_name: product_guard_0.2.1
 section_menu_id: reference
+info:
+  version: 0.2.1
 ---
 
 ## guard get token

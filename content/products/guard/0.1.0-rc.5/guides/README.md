@@ -13,6 +13,8 @@ section_menu_id: guides
 url: /products/guard/0.1.0-rc.5/guides/
 aliases:
 - /products/guard/0.1.0-rc.5/guides/README/
+info:
+  version: 0.1.0-rc.5
 ---
 
 # Guides

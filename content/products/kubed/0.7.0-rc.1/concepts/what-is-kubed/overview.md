@@ -10,6 +10,8 @@ menu:
 product_name: kubed
 menu_name: product_kubed_0.7.0-rc.1
 section_menu_id: concepts
+info:
+  version: 0.7.0-rc.1
 ---
 
 # Kubed

@@ -12,6 +12,8 @@ section_menu_id: guides
 url: /products/voyager/9.0.0/guides/ingress/
 aliases:
 - /products/voyager/9.0.0/guides/ingress/README/
+info:
+  version: 9.0.0
 ---
 
 # Guides

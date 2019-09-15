@@ -7,5 +7,7 @@ menu:
     name: Concepts
     weight: 20
 menu_name: product_guard_0.3.0
+info:
+  version: 0.3.0
 ---
 

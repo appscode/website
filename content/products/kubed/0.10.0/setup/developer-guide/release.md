@@ -10,6 +10,8 @@ menu:
 product_name: kubed
 menu_name: product_kubed_0.10.0
 section_menu_id: setup
+info:
+  version: 0.10.0
 ---
 
 # Release Process

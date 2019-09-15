@@ -12,6 +12,8 @@ menu_name: product_searchlight_7.0.0
 url: /products/searchlight/7.0.0/reference/searchlight/
 aliases:
 - /products/searchlight/7.0.0/reference/searchlight/searchlight/
+info:
+  version: 7.0.0
 ---
 
 ## searchlight

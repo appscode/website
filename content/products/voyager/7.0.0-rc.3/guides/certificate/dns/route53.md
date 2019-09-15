@@ -10,6 +10,8 @@ menu:
 product_name: voyager
 menu_name: product_voyager_7.0.0-rc.3
 section_menu_id: guides
+info:
+  version: 7.0.0-rc.3
 ---
 
 > New to Voyager? Please start [here](/products/voyager/7.0.0-rc.3/concepts/overview).

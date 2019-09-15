@@ -7,5 +7,7 @@ menu:
     name: Reference
     weight: 1000
 menu_name: product_guard_0.2.0
+info:
+  version: 0.2.0
 ---
 

@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/voyager/5.0.0-rc.11/welcome/contributing/
 aliases:
 - /products/voyager/5.0.0-rc.11/CONTRIBUTING/
+info:
+  version: 5.0.0-rc.11
 ---
 
 # Contribution Guidelines

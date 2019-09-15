@@ -13,6 +13,8 @@ section_menu_id: setup
 url: /products/guard/0.1.3/setup/
 aliases:
 - /products/guard/0.1.3/setup/README/
+info:
+  version: 0.1.3
 ---
 
 # Setup

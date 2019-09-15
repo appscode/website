@@ -7,5 +7,7 @@ menu:
     name: Welcome
     weight: 10
 menu_name: product_stash_0.8.2
+info:
+  version: 0.8.2
 ---
 

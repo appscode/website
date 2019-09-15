@@ -7,5 +7,7 @@ menu:
     name: Concepts
     weight: 20
 menu_name: product_kubed_0.4.0
+info:
+  version: 0.4.0
 ---
 

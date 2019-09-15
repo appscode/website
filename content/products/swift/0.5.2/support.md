@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/swift/0.5.2/welcome/support/
 aliases:
 - /products/swift/0.5.2/support/
+info:
+  version: 0.5.2
 ---
 
 # Support

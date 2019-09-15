@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/stash/v0.9.0-rc.0/welcome/changelog/
 aliases:
 - /products/stash/v0.9.0-rc.0/CHANGELOG/
+info:
+  version: v0.9.0-rc.0
 ---
 
 ## Current Release

@@ -8,5 +8,7 @@ menu:
     name: Disaster Recovery
     weight: 10
 menu_name: product_kubed_0.6.0-rc.0
+info:
+  version: 0.6.0-rc.0
 ---
 

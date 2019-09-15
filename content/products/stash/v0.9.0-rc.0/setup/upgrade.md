@@ -10,6 +10,8 @@ menu:
 product_name: stash
 menu_name: product_stash_v0.9.0-rc.0
 section_menu_id: setup
+info:
+  version: v0.9.0-rc.0
 ---
 
 # Upgrading Stash

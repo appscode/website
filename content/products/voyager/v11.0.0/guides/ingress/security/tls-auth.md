@@ -9,6 +9,8 @@ menu:
 product_name: voyager
 menu_name: product_voyager_v11.0.0
 section_menu_id: guides
+info:
+  version: v11.0.0
 ---
 
 > New to Voyager? Please start [here](/products/voyager/v11.0.0/concepts/overview).

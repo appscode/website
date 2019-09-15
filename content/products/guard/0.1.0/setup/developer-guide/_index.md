@@ -8,5 +8,7 @@ menu:
     parent: setup
     weight: 40
 menu_name: product_guard_0.1.0
+info:
+  version: 0.1.0
 ---
 

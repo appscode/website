@@ -12,6 +12,8 @@ section_menu_id: concepts
 url: /products/service-broker/0.2.0/concepts/
 aliases:
 - /products/service-broker/0.2.0/concepts/README/
+info:
+  version: 0.2.0
 ---
 
 # AppsCode Service Broker

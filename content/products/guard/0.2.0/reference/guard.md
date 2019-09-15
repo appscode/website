@@ -11,6 +11,8 @@ menu_name: product_guard_0.2.0
 section_menu_id: reference
 aliases:
 - /products/guard/0.2.0/reference/
+info:
+  version: 0.2.0
 ---
 
 ## guard

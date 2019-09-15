@@ -11,6 +11,8 @@ menu_name: product_voyager_8.0.1
 section_menu_id: guides
 aliases:
 - /products/voyager/8.0.1/guides/ingress/security/
+info:
+  version: 8.0.1
 ---
 
 > New to Voyager? Please start [here](/products/voyager/8.0.1/concepts/overview).

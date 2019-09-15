@@ -13,6 +13,8 @@ section_menu_id: setup
 url: /products/service-broker/0.2.0/setup/
 aliases:
 - /products/service-broker/0.2.0/setup/README/
+info:
+  version: 0.2.0
 ---
 
 # Setup

@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/guard/0.2.1/welcome/changelog/
 aliases:
 - /products/guard/0.2.1/CHANGELOG/
+info:
+  version: 0.2.1
 ---
 
 # Change Log

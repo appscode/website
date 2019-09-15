@@ -10,6 +10,8 @@ menu:
 product_name: swift
 menu_name: product_swift_0.6.0
 section_menu_id: guides
+info:
+  version: 0.6.0
 ---
 
 # API Reference

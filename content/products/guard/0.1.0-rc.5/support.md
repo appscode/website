@@ -13,6 +13,8 @@ section_menu_id: welcome
 url: /products/guard/0.1.0-rc.5/welcome/support/
 aliases:
 - /products/guard/0.1.0-rc.5/support/
+info:
+  version: 0.1.0-rc.5
 ---
 
 # Support

@@ -9,5 +9,7 @@ menu:
 product_name: voyager
 menu_name: product_voyager_6.0.0-rc.0
 section_menu_id: concepts
+info:
+  version: 6.0.0-rc.0
 ---
 
