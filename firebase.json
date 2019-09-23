@@ -94,12 +94,12 @@
         },
         {
           "source": "/products/swift/latest/",
-          "destination": "/products/swift/0.11.1/",
+          "destination": "/products/swift/v0.12.1/",
           "type": 302
         },
         {
           "source": "/products/swift/latest/:rest*",
-          "destination": "/products/swift/0.11.1/:rest",
+          "destination": "/products/swift/v0.12.1/:rest",
           "type": 302
         },
         {
