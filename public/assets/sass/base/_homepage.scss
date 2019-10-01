@@ -585,12 +585,17 @@ body.fixed-nav
     padding: 30px 20px 0;
   }
 }
-
-#testimonial-carousel .slider-navigation-next,
-#testimonial-carousel .slider-navigation-previous,
+.carousel-wrapper1 .slider-navigation-next,
+.carousel-wrapper1 .slider-navigation-previous,
 #logo-area .slider-navigation-next,
 #logo-area .slider-navigation-previous {
   display: none;
+}
+
+.slider-container {
+  .slider-item{
+    margin-bottom: 30px;
+  }
 }
 // testimonial area style end
 
