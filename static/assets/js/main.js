@@ -76,7 +76,7 @@ bulmaCarousel.attach("#testimonial-carousel", {
   slidesToScroll: 1,
   slidesToShow: 3,
   infinite: true,
-  autoplay: true,
+  autoplay: false,
   loop: true,
   breakpoints: [
     { changePoint: 479, slidesToShow: 1, slidesToScroll: 1 },
