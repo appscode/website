@@ -11,7 +11,7 @@
       <div class="column is-6 d-table">
         <div class="hero-area-inner-2 has-text-left d-table-cell">
           <h1>Get In Touch</h1>
-          <p>Need some help? We're here for you.</p>
+          <p>Send us a note and we will be in touch shortly.</p>
         </div>
       </div>
       <div class="column is-6">
@@ -44,62 +44,6 @@
 </div>
 <!-- contact area end -->
 
-<!-- question-area start -->
-<section class="section-padding question-area">
-  <div class="container section">
-    <div class="columns">
-      <!-- section title start -->
-      <div class="column is-8 is-offset-2 has-text-centered mb-30">
-        <div class="section-title is-main-title">
-          <h2>Have a Question?</h2>
-          <p>
-            Send us a note and we will be in touch shortly.
-          </p>
-        </div>
-      </div>
-      <!-- section title end -->
-    </div>
-    <div class="columns">
-      <div class="column is-8 is-offset-2">
-        <div class="columns is-6 is-variable">
-          <!-- single question start -->
-          <div class="column is-6">
-            <div class="single-question-wrapper has-text-centered">
-              <div class="support-icon">
-                <img src="/assets/images/icon/customer.png" alt="" />
-              </div>
-              <h4>Need Support?</h4>
-              <p>
-                We're here to help with any issues with your account. You can
-                also check our Docs or Ask Community
-              </p>
-              <a href="#" class="button kd-button kd-primary">Send Message</a>
-            </div>
-          </div>
-          <!-- single question end -->
-
-          <!-- single question start -->
-          <div class="column is-6">
-            <div class="single-question-wrapper has-text-centered">
-              <div class="support-icon">
-                <img src="/assets/images/icon/support.png" alt="" />
-              </div>
-              <h4>Sales Inquiries</h4>
-              <p>
-                We're here to help with any issues with your account. You can
-                also check our Docs or Ask Community
-              </p>
-              <a href="#" class="button ac-button ac-primary">Send Message</a>
-            </div>
-          </div>
-          <!-- single question end -->
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- question-area end -->
-
 <!-- location-area start -->
 <section class="location-area section-padding">
   <div class="container section">
@@ -107,7 +51,7 @@
       <!-- section title start -->
       <div class="column is-8 is-offset-2 has-text-centered mb-30">
         <div class="section-title">
-          <h2>Our Office</h2>
+          <h2>Our Offices</h2>
         </div>
       </div>
       <!-- section title end -->
@@ -123,9 +67,9 @@
         <div class="office-details">
           <h4>Corporate HQ AppsCode Inc.</h4>
           <p>
-            <span>PO Box 3191 San Leandro CA 94578, USA</span>
-            <span>Phone: +1 (650) 241-8486</span>
-            <span>Email: support@appscode.com</span>
+            <span>1560 164TH AVE APT 40, San Leandro, CA 94578, USA</span>
+            <span>Phone: {{.Site.Params.contact_phone}}</span>
+            <span>Email: {{.Site.Params.contact_email}}</span>
           </p>
         </div>
         <!-- single-details end -->
@@ -141,7 +85,7 @@
               Bangladesh
             </span>
             <span>Phone: +880 1720-171904</span>
-            <span>Email: support@appscode.com</span>
+            <span>Email: {{.Site.Params.contact_email}}</span>
           </p>
         </div>
         <!-- single-details end -->
