@@ -2,7 +2,7 @@
 title: kubectl Plugin | Stash
 menu:
   product_stash_v0.9.0-rc.1:
-    identifier: stash-kubectl-plugin
+    identifier: stash-cli
     name: Stash kubectl Plugin
     parent: cli
     weight: 10
