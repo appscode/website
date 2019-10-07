@@ -84,12 +84,12 @@
         },
         {
           "source": "/products/stash/latest/",
-          "destination": "/products/stash/v0.9.0-rc.0/",
+          "destination": "/products/stash/v0.9.0-rc.1/",
           "type": 302
         },
         {
           "source": "/products/stash/latest/:rest*",
-          "destination": "/products/stash/v0.9.0-rc.0/:rest",
+          "destination": "/products/stash/v0.9.0-rc.1/:rest",
           "type": 302
         },
         {
