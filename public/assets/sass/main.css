@@ -1352,12 +1352,6 @@ body.fixed-nav
 #logo-area .slider-navigation-previous {
   display: none; }
 
-.carousel-wrapper1:hover .slider-navigation-next, .carousel-wrapper1:hover .slider-navigation-previous {
-  opacity: 1;
-  visibility: visible; }
-  .carousel-wrapper1:hover .slider-navigation-next:hover, .carousel-wrapper1:hover .slider-navigation-previous:hover {
-    transform: scale(1); }
-
 .slider-container .slider-item {
   margin-bottom: 30px; }
 
@@ -3382,7 +3376,9 @@ button.button.is-fullwidth {
   margin-right: 30px;
   position: sticky;
   top: 130px;
-  z-index: 9; }
+  z-index: 9;
+  max-height: 75vh;
+  overflow-y: auto; }
 
 .kd-sidebar-menu .item label {
   border: 1px solid transparent;
