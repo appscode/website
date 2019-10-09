@@ -3376,8 +3376,10 @@ button.button.is-fullwidth {
   margin-right: 30px;
   position: sticky;
   top: 130px;
-  z-index: 9;
-  max-height: 75vh;
+  z-index: 9; }
+
+.kd-sidebar-menu {
+  max-height: 65vh;
   overflow-y: auto; }
 
 .kd-sidebar-menu .item label {
