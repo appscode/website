@@ -1878,6 +1878,8 @@ button.button.is-fullwidth {
   position: sticky;
   top: 130px;
   z-index: 9;
+  max-height: 75vh;
+  overflow-y: auto;
 }
 
 .kd-sidebar-menu .item label {
