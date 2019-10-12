@@ -4,7 +4,7 @@ description: An guide on how to uninstall PostgreSQL addon for Stash
 menu:
   product_stash_v0.9.0-rc.1:
     identifier: stash-postgres-uninstall
-    name: Unstall
+    name: Uninstall
     parent: stash-postgres-setup
     weight: 20
 product_name: stash
@@ -14,7 +14,7 @@ info:
   version: v0.9.0-rc.1
 ---
 
-# Unstall PostgreSQL addon for Stash
+# Uninstall PostgreSQL addon for Stash
 
 In order to uninstall PostgreSQL addon, follow the instruction given below.
 
