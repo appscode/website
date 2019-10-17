@@ -56,10 +56,10 @@
     <!-- Bulma CSS -->
     <link rel="stylesheet" href="/assets/css/bulma.min.css" />
     <!-- Custom CSS -->
-    {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
+    <!-- {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-    {{ end }}
-    <!-- <link rel="stylesheet" href="/assets/sass/main.css" /> -->
+    {{ end }} -->
+    <link rel="stylesheet" href="/assets/sass/main.css" />
   </head>
 
   <body {{if $productName}}class="{{$productName}}"{{end}}>
@@ -492,11 +492,12 @@
 
     {{ end }}
     <!-- call to action area end -->
-<!-- top to button start -->
-<button class="go-to-top" id="goTop">
-  <i class="fa fa-angle-up" aria-hidden="true"></i>
-</button>
-<!-- top to button end -->
+
+    <!-- top to button start -->
+    <button class="go-to-top" id="goTop">
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </button>
+    <!-- top to button end -->
     <!-- footer area start -->
     {{ block "footer" . }}
     <footer class="footer-area">
