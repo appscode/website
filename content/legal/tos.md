@@ -8,180 +8,241 @@ menu:
 left_menu: legal
 layout: c1_tab
 ---
-AppsCode welcomes you to the  Terms of Service! Please read this document very carefully before using services. This document has been made to protect both you and AppsCode authority. Once you click “Sign up” you are agreeing your acceptance to use AppsCode Services  bound by these Terms of Service.
 
-## 1. Agreement
+Last updated: 10/21/2019
 
-- The use of Appscode services is legally bound by this Agreement and AppsCode has the right to update and change the Terms of Service from time to time without notice. Any new release and updates shall be subject to the Terms of Service. And, continued use of service after any such changes shall constitute your consent to such changes.
+## Introduction
 
-+ To avail AppsCode services you should agree to the terms and this agreement shall be realized through the actual use of the services.Services includes ones available through this website, including this website, the AppsCode cloud computing platform, the API, the Add-ons, and any other software or services offered by AppsCode in connection to any of those.
+Welcome to **AppsCode Inc.** (“**Company**”, “**we**”, “**our**”, “**us**”)! As you have just clicked to our Terms of Service, please make a pause, grab a cup of coffee and carefully read the following pages. It will take you approximately 20 minutes.
 
-+ Your consent towards the  purchase of current AppsCode Services are not subject to the delivery of any future functionality or features or dependent upon any verbal or written public comments regarding AppsCode future releases.
+These Terms of Service (“**Terms**”, “**Terms of Service**”) govern your use of our web pages located at 
 
-* The failure of AppsCode to exercise or enforce any right of the Terms of Service shall not constitute a waiver of such right or provision. The Terms of Service constitutes the entire agreement between you and AppsCode and govern your use of Service, superseding any prior agreements between you and AppsCode. This may include, but not limited to, any prior versions of the AppsCode Terms of Service.
+- https://appscode.com
+- https://byte.builders
+- https://kubedb.com
+- https://kubevault.com
+- https://pharmer.io
+- https://kubeform.com
+- https://kubeshield.com
+- https://kube.ci
 
+and our Docker images and Helm charts (together or individually “**Service**”) published by AppsCode Inc.
 
-## 2.	Account and usage
+Our Privacy Policy also governs your use of our Service and explains how we collect, safeguard and disclose information that results from your use of our web pages. Please read it here https://appscode.com/legal/privacy-policy/.
 
-* The user MUST be at least 13 years of age or beyond to use the Site and Services of AppsCode. 
+Your agreement with us includes these Terms and our Privacy Policy (“**Agreements**”). You acknowledge that you have read and understood Agreements, and agree to be bound of them.
 
-* You may not be allowed to use AppsCode Services if you are a person barred from receiving the AppsCode Services under the laws of the United States or other countries, including the country in which you are resident or from which you use the AppsCode Services.
+If you do not agree with (or cannot comply with) Agreements, then you may not use the Service, but please let us know by emailing at support@appscode.com so we can try to find a solution. These Terms apply to all visitors, users and others who wish to access or use Service.
 
+Thank you for being responsible.
+ 
 
-* You MUST NOT use AppsCode Services to execute any action leading to  any type of injurious code which includes trojans, key loggers, viruses, malware, botnets, denial of service attacks, flood or mail bombs, logic bombs, or any activity AppsCode determines to be malicious.
+## Communications
 
+By creating an Account on our Service, you agree to subscribe to newsletters, marketing or promotional materials and other information we may send. However, you may opt out of receiving any, or all, of these communications from us by following the unsubscribe link or by emailing at.
 
-* You must provide valid and accurate information while registering for the AppsCode services. It is your responsibility to maintain security of your account and password. If you notice any unauthoriszd usage of your account immediately notify AppsCode authority. You are responsible for keeping password confidential and make sure internet service you are using is secured. You furthermore have to ensure safe and hack-free data transmission to AppsCode site. AppsCode shall maintain strict protocols and try to prevent any unauthorized access. In case of any sort of server hacks or if you fail to comply with security obligations AppsCode shall not be liable for your failure.
+## Purchases
 
-* Usage of AppsCode services for any illegal and unauthorized purpose violating the laws is strictly prohibited(including but not limited to copyright or trademark laws) . And, repeated exceeding of hard or soft usage limit may lead to termination of your account.
+If you wish to purchase any product or service made available through Service (“**Purchase**”), you may be asked to supply certain information relevant to your Purchase including, without limitation, your credit card number, the expiration date of your credit card, your billing address, and your shipping information.
 
+You represent and warrant that: (i) you have the legal right to use any credit card(s) or other payment method(s) in connection with any Purchase; and that (ii) the information you supply to us is true, correct and complete.
 
-## 3.	Content 
+We may employ the use of third party services for the purpose of facilitating payment and the completion of Purchases. By submitting your information, you grant us the right to provide the information to these third parties subject to our Privacy Policy.
 
-* You are solely responsible for the Application or any Content you create,transmit or display and AppsCode claim no intellectual property rights over the materials you provide to the Service. You may not duplicate, copy or reuse any portion of the HTML/CSS, Javascript, or visual design elements or concepts without express written permission from AppsCode.
+We reserve the right to refuse or cancel your order at any time for reasons including but not limited to: product or service availability, errors in the description or price of the product or service, error in your order or other reasons.
 
-* You agree that AppsCode has no responsibility or liability for the deletion or failure to store any Content and other communications maintained or transmitted through use of the Service. You further acknowledge that you are solely responsible for securing and backing up your Applications and any Content.
+We reserve the right to refuse or cancel your order if fraud or an unauthorized or illegal transaction is suspected. 
 
-* You shall defend AppsCode against any demand, claim, suit or progress made or brought against us by any third party alleging that Your content, or Your use of The Service in violation of this Agreement,  misappropriated by the intellectual property rights of a third party or violates applicable law, and shall indemnify AppsCode for any damages finally awarded against, and for reasonable attorney’s fees incurred by, in connection with any such claim, demand, suit or proceeding; provided, that AppsCode <btn>a)</btn> promptly gives You written notice of the claim, demand, suit or proceeding; <btn>b)</btn>gives You sole control of the defense and settlement of the claim, demand, suit or proceeding (provided that You may not settle any claim, demand, suit or proceeding unless the settlement unconditionally releases AppsCode of all liability); and <btn>c)</btn> provides to You all reasonable assistance, at Your expense.
+## Contests, Sweepstakes and Promotions
 
-* AppsCode does not pre-screen Content, but its designee have the right (but not the obligation) in their sole discretion to refuse or remove any Content that is available via The Service.
+Any contests, sweepstakes or other promotions (collectively, “**Promotions**”) made available through Service may be governed by rules that are separate from these Terms of Service. If you participate in any Promotions, please review the applicable rules as well as our Privacy Policy. If the rules for a Promotion conflict with these Terms of Service, Promotion rules will apply.
 
+## Subscriptions
 
-## 4. Copyright 
+Some parts of Service are billed on a subscription basis (“**Subscription(s)**”). You will be billed in advance on a recurring and periodic basis (“**Billing Cycle**”). Billing cycles are set either on a monthly or annual basis, depending on the type of subscription plan you select when purchasing a Subscription.
 
-While using AppsCode Service you agree to comply with the United States’ [Digital Millennium Copyright Act 1998](http://www.copyright.gov/reports/studies/dmca/dmca_executive.html). AppsCode strictly responds to DMCA and other applicable copyright laws and reserves the right to terminate accounts involved in violating as such, which includes taking down content or the Application upon receipt of valid DMCA notice. 
+At the end of each Billing Cycle, your Subscription will automatically renew under the exact same conditions unless you cancel it or AppsCode Inc. cancels it. You may cancel your Subscription renewal either through your online account management page or by contacting AppsCode Inc. customer support team.
 
+A valid payment method, including credit card or PayPal, is required to process the payment for your subcription. You shall provide AppsCode Inc. with accurate and complete billing information including full name, address, state, zip code, telephone number, and a valid payment method information. By submitting such payment information, you automatically authorize AppsCode Inc. to charge all Subscription fees incurred through your account to any such payment instruments.
 
-## 5.	License and Restrictions
+Should automatic billing fail to occur for any reason, AppsCode Inc. will issue an electronic invoice indicating that you must proceed manually, within a certain deadline date, with the full payment corresponding to the billing period as indicated on the invoice.
 
-You agree that AppsCode may use your trade names, trademarks, service marks, logos, domain names and other distinctive brand features in presentations, marketing materials, customer lists, financial reports and Web site listings (including links to your website) for the purpose of advertising or publicizing your use of the AppsCode Services.
+## Free Trial
 
-AppsCode may invite you or you may choose to submit comments or ideas about the AppsCode Services, including without limitation about how to improve the AppsCode Services . By submitting any Idea, you agree that your disclosure is gratuitous, unsolicited and without restriction and will not place AppsCode under any obligations, and that AppsCode can use the Idea without any additional compensation to you, and/or to disclose the Idea on a non-confidential basis or otherwise to anyone.
+AppsCode Inc. may, at its sole discretion, offer a Subscription with a free trial for a limited period of time (“**Free Trial**”).
 
-You and anyone else may not be permitted to: (i) Take attempt to disable or change any security mechanisms used by or any applications running on the AppsCode Services. (ii) Replicate, modify, or create a derivative work of, reverse engineer, decompile or otherwise attempt to extract the source code of the AppsCode Services or any part thereof, unless this is expressly permitted or required by law, or unless you have been specifically told by AppsCode, in formal written statement.
+You may be required to enter your billing information in order to sign up for Free Trial.
 
+If you do enter your billing information when signing up for Free Trial, you will not be charged by AppsCode Inc. until Free Trial has expired. On the last day of Free Trial period, unless you cancelled your Subscription, you will be automatically charged the applicable Subscription fees for the type of Subscription you have selected.
 
-## 6.	Payment
+At any time and without notice, AppsCode Inc. reserves the right to (i) modify Terms of Service of Free Trial offer, or (ii) cancel such Free Trial offer.
 
-If you wish to avail AppsCode Paid Service, you must provide us with your credit card details to gain access to, and use of, the Paid Service.
+## Fee Changes
 
-* We shall charge you monthly/annually as per Service Package chosen by you for Services provided by AppsCode. Charges shall be in accordance with our pricing policy. Services charged by the minute of usage can be charged at increments of at least 50 USD on daily basis at the discretion of AppsCode authority.
+AppsCode Inc., in its sole discretion and at any time, may modify Subscription fees for the Subscriptions. Any Subscription fee change will become effective at the end of the then-current Billing Cycle.
 
-* As per the extent of the law, the Client(s) shall be legible to waive any claim relating to charges unless the claim is made within thirty (30) says after the charge (without affecting any Client rights with credit card issuer). Any amendments or updates to the Service charges shall be posted to the website.
+AppsCode Inc. will provide you with a reasonable prior notice of any change in Subscription fees to give you an opportunity to terminate your Subscription before such change becomes effective.
 
-* Any late payments shall bear interest at the rate of 1.5% per month (or the highest as per the law, if it is less) and AppsCode reserves the right to suspend Client's Account for any late payment at any time.
+Your continued use of Service after Subscription fee change comes into effect constitutes your agreement to pay the modified Subscription fee amount.
 
+## Refunds
 
-## 7.	Refund Policy
-Queries, comments and requests regarding Refund Policy can be made to <support@appscode.com>
+Except when required by law, paid Subscription fees are non-refundable.
 
+## Content
 
-## 8.	Liability and Indemnity
-AppsCode shall not be considered liable for the followings:
+Content found on or through this Service are the property of AppsCode Inc. or used with permission. You may not distribute, modify, transmit, reuse, download, repost, copy, or use said Content, whether in whole or in part, for commercial purposes or for personal gain, without express advance written permission from us.
 
- *  Lost profits or opportunities of user
- *  Business interruption, data loss, incidental or consequential damages
- *  Includes user negligence and product liability 
+## Prohibited Uses
 
-The extent of AppsCode liability will not, in any event, exceed the fees, if any, paid by user to company under this agreement. The foregoing limitations will apply to the maximum extent permitted by applicable law, regardless of whether company has been advised of the possibility of such damages and regardless of whether any remedy fails of its essential purpose.
+You may use Service only for lawful purposes and in accordance with Terms. You agree not to use Service:
 
+1. In any way that violates any applicable national or international law or regulation.
 
-## 9.	Modification and Termination
+2. For the purpose of exploiting, harming, or attempting to exploit or harm minors in any way by exposing them to inappropriate content or otherwise.
 
-AppsCode reserves the right at any time to modify or discontinue, either temporarily or permanently, from the Terms or Service. Furthermore, AppsCode shall not be liable to you or to any third party services for any modification, price change, suspension or termination of services. Your continued use of the Service after any such changes constitutes your acceptance of the new Terms of Service. Please review this Agreement periodically for changes. If you do not agree to any of this Agreement or any changes to this Agreement, do not use, access or continue to access the Service or discontinue any use of the Service immediately.
+3. To transmit, or procure the sending of, any advertising or promotional material, including any “junk mail”, “chain letter,” “spam,” or any other similar solicitation.
 
-**Termination** of this Agreement with you may occur immediately and your account may be compromised, preventing you from re-registration under such circumstances:
+4. To impersonate or attempt to impersonate Company, a Company employee, another user, or any other person or entity.
 
-(i) If you fail to comply with the mentioned terms
-(ii) If AppsCode authority finds out a reasonable cause to find you doing anything beyond the law, or related to any unlawful conduct.
-(iii) Failure in making payments on time in accordance with the mentioned terms
+5. In any way that infringes upon the rights of others, or in any way is illegal, threatening, fraudulent, or harmful, or in connection with any unlawful, illegal, fraudulent, or harmful purpose or activity.
 
-In addition to above mentioned termination clause AppsCode may terminate any or all of the services by not less than a fourteen (14) day’s notice to you. You may terminate the provision of any or all of the Services immediately by cancelling your account with us by contacting <support@appscode.com>. In the event that either party terminates these terms (for whatever reason), we shall invoice you for your use of the Services up to and including the date of termination.
+6. To engage in any other conduct that restricts or inhibits anyone’s use or enjoyment of Service, or which, as determined by us, may harm or offend Company or users of Service or expose them to liability.
 
+<br />
+Additionally, you agree not to:
 
-## 10. Contractual Terms
+1. Use Service in any manner that could disable, overburden, damage, or impair Service or interfere with any other party’s use of Service, including their ability to engage in real time activities through Service.
 
-You agree  AppsCode may provide you with notices, including those regarding changes to the Terms, by email, regular mail, or postings on the AppsCode Services. By providing AppsCode your email address, you consent to the email address usage to send you any notices required.
+2. Use any robot, spider, or other automatic device, process, or means to access Service for any purpose, including monitoring or copying any of the material on Service.
 
-The Terms presents the whole legal agreement between you and AppsCode and govern your use of the AppsCode Services and completely replace any prior agreements between you and AppsCode in relation to the AppsCode Services.
+3. Use any manual process to monitor or copy any of the material on Service or for any other unauthorized purpose without our prior written consent.
 
-AppsCode shall not be liable for failing or delaying performance of its obligations resulting from any condition beyond its reasonable control, including but not limited to, governmental action, acts of terrorism, earthquake, fire, flood or other acts of God, labor conditions, power failures, and Internet disturbances.
+4. Use any device, software, or routine that interferes with the proper working of Service.
 
-The Terms, and your relationship with AppsCode under the Terms, shall be governed by the laws of the State without regard to its conflict of laws provisions. You and AppsCode agree to submit to the exclusive jurisdiction of the courts to resolve any legal matter arising from the Terms.
+5. Introduce any viruses, trojan horses, worms, logic bombs, or other material which is malicious or technologically harmful.
 
+6. Attempt to gain unauthorized access to, interfere with, damage, or disrupt any parts of Service, the server on which Service is stored, or any server, computer, or database connected to Service.
 
-## 11.  Resolution of Dispute
-
-APPSCODE SERVICE USERS ARE REQUESTED TO READ THIS SEGMENT VERY
-CAREFULLY AS IT MAY AFFECT THE USER LEGAL RIGHTS, WHICH IN TERM
-INCLUDE RIGHTS TO FILE LAWSUITS AND JURY CLAIMS
-
-Focusing the cost reduction of disputes, User and AppsCode agree upon conditions that
-any legal claim due to or related to usage of the AppsCode Services will be resolved in
-the following manner:
-
-**Informal Resolution.**
-Any Claims issue will be given effort to resolve informally. Neither of the two parties, 
-AppsCOde and respective user may initiate a formal proceeding for at least one month 
-time period after one of the parties notifies the other the Claim via formal writing. The 
-formal writing shall contain a brief statement which shall include the name, address, and
-valid contact information. Statement will include the cause of the dispute in details and
-also the remedy sought. The written document shall then be submitted to AppsCode
-authority via email  <support@appscode.com>. AppsCode shall issue notice 
-against user in the same manner. 
-
-**Formal Resolution.**
-When any Claim is not resolved informally, either of the parties are entitled to resolve the
-claim only by binding arbitration which not applicable in courts of general jurisdiction.
-
-The conclusion of the arbitration shall be conducted only under the rules of  Judicial 
- Arbitration and Mediation Service (state selected judicial service provider of choice). 
-If any conflict arise between the Mediation Service stated rules and the rules as set in 
-TOS, TOS rules shall then govern. User, in arbitration may seek any remedies otherwise 
-available to pursue user’s state’s law.
-
-To initiate arbitration following things needs to be done:
-
-(1) Write a Demand for Arbitration which includes description of Claim 
-    and amount of damages sought to be recovered.
-
-(2) Send three copies of the Demand for Arbitration, plus the appropriate filing fee to the
-    Arbitration service provider.
-
-(3) Send one copy of the demand for arbitration to AppsCode U.S. mailing address. 
-
-
-**Human Users.** If you are an individual user and you decide to initiate arbitration on
-    your own behalf as a living person, AppsCode agree to reimburse your arbitration
-    initiation fee, and any additional deposit required by Arbitration Service Provider to
-    initiate your arbitration. AppsCode also agree to pay the costs of the arbitration
-    proceeding. Other fees, such as attorney’s fees and expenses of travel to the 
-    arbitration, will be paid in accordance with Arbitration Service provider’s  Rules. 
-    The arbitration will be held at a location in your hometown area unless you and we 
-    both agree to another location or telephonic arbitration. 
-
-**Legal Entities.** If you decide to initiate arbitration on behalf of the company or legal 
-     entity you represent, you will be required to pay the arbitration initiation fee as well as
-     any additional deposit required by Arbitration Service Provider to initiate your
-     arbitration. You also agree to pay the costs of the arbitration proceeding. Other fees,
-     such as attorney’s fees and expenses of travel to the arbitration, will be paid in
-     accordance with Arbitration Service Provider Rules. The arbitration will be held at a
-     location in your hometown area unless you and we both agree to another location or
-     telephonic arbitration. 
-
-## Exceptions
-
- Notwithstanding the foregoing, the notice and 30-day negotiation period required by this
- paragraph shall not apply, however, to disputes, claims, or controversies concerning
- patents, copyrights, moral rights, trademarks, and trade secrets and claims of piracy or
- unauthorized use of the Service, including disputes involving a violation of the
- [Communications Act of 1934, 47 U.S.C. § 605](https://www.justice.gov/usam/criminal-resource-manual-1066-interception-radio-communications-47-usc-605), or the [Digital Millennium Copyright Act,
- 17 U.S.C. § 1201](http://www.copyright.gov/1201/), or the [Electronic Communications Privacy Act, 18 U.S.C. §§
- 2510-2521](https://it.ojp.gov/privacyliberty/authorities/statutes/1285), or any other statement or law governing theft of service, may be decided
- only by a court of competent jurisdiction. You may also assert an individual action in
- small claims court in lieu of arbitration.
-
-## Changes to this Section
- AppsCode will provide 30 days’ notice of any changes to this
-section. Changes will become effective on the 30th day, and will apply prospectively
-only to any claims arising after the 30th day.
+7. Attack Service via a denial-of-service attack or a distributed denial-of-service attack.
+
+8. Take any action that may damage or falsify Company rating.
+
+9. Otherwise attempt to interfere with the proper working of Service.
+
+## Analytics
+
+We may use third-party Service Providers to monitor and analyze the use of our Service.
+
+### Google Analytics
+
+Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Service. This data is shared with other Google services. Google may use the collected data to contextualise and personalise the ads of its own advertising network.
+
+For more information on the privacy practices of Google, please visit the Google Privacy Terms web page: [https://policies.google.com/privacy?hl=en](https://policies.google.com/privacy?hl=en)
+
+We also encourage you to review the Google's policy for safeguarding your data: [https://support.google.com/analytics/answer/6004245](https://support.google.com/analytics/answer/6004245).
+
+## No Use By Minors
+
+Service is intended only for access and use by individuals at least eighteen (18) years old. By accessing or using any of Company, you warrant and represent that you are at least eighteen (18) years of age and with the full authority, right, and capacity to enter into this agreement and abide by all of the terms and conditions of Terms. If you are not at least eighteen (18) years old, you are prohibited from both the access and usage of Service.
+
+## Accounts
+
+When you create an account with us, you guarantee that you are above the age of 18, and that the information you provide us is accurate, complete, and current at all times. Inaccurate, incomplete, or obsolete information may result in the immediate termination of your account on Service.
+
+You are responsible for maintaining the confidentiality of your account and password, including but not limited to the restriction of access to your computer and/or account. You agree to accept responsibility for any and all activities or actions that occur under your account and/or password, whether your password is with our Service or a third-party service. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.
+
+You may not use as a username the name of another person or entity or that is not lawfully available for use, a name or trademark that is subject to any rights of another person or entity other than you, without appropriate authorization. You may not use as a username any name that is offensive, vulgar or obscene.
+
+We reserve the right to refuse service, terminate accounts, remove or edit content, or cancel orders in our sole discretion.
+
+## Intellectual Property
+
+Service and its original content (excluding Content provided by users), features and functionality are and will remain the exclusive property of AppsCode Inc. and its licensors. Service is protected by copyright, trademark, and other laws of the United States and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of AppsCode Inc..
+
+## Copyright Policy
+
+We respect the intellectual property rights of others. It is our policy to respond to any claim that Content posted on Service infringes on the copyright or other intellectual property rights (“**Infringement**”) of any person or entity.
+
+If you are a copyright owner, or authorized on behalf of one, and you believe that the copyrighted work has been copied in a way that constitutes copyright infringement, please submit your claim via email to dmca@appscode.com, with the subject line: “Copyright Infringement” and include in your claim a detailed description of the alleged Infringement as detailed below, under “DMCA Notice and Procedure for Copyright Infringement Claims”
+
+You may be held accountable for damages (including costs and attorneys' fees) for misrepresentation or bad-faith claims on the infringement of any Content found on and/or through Service on your copyright.
+
+## DMCA Notice and Procedure for Copyright Infringement Claims
+
+You may submit a notification pursuant to the Digital Millennium Copyright Act (DMCA) by providing our Copyright Agent with the following information in writing (see 17 U.S.C 512(c)(3) for further detail):
+
+1. an electronic or physical signature of the person authorized to act on behalf of the owner of the copyright's interest;
+
+2. a description of the copyrighted work that you claim has been infringed, including the URL (i.e., web page address) of the location where the copyrighted work exists or a copy of the copyrighted work;
+
+3. identification of the URL or other specific location on Service where the material that you claim is infringing is located;
+
+4. your address, telephone number, and email address;
+
+5. a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law;
+
+6. a statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner's behalf.
+
+<br />
+You can contact our Copyright Agent via email at dmca@appscode.com
+
+## Error Reporting and Feedback
+
+You may provide us directly at support@appscode.com with information and feedback concerning errors, suggestions for improvements, ideas, problems, complaints, and other matters related to our Service (“**Feedback**”). You acknowledge and agree that: (i) you shall not retain, acquire or assert any intellectual property right or other right, title or interest in or to the Feedback; (ii) Company may have development ideas similar to the Feedback; (iii) Feedback does not contain confidential information or proprietary information from you or any third party; and (iv) Company is not under any obligation of confidentiality with respect to the Feedback. In the event the transfer of the ownership to the Feedback is not possible due to applicable mandatory laws, you grant Company and its affiliates an exclusive, transferable, irrevocable, free-of-charge, sub-licensable, unlimited and perpetual right to use (including copy, modify, create derivative works, publish, distribute and commercialize) Feedback in any manner and for any purpose.
+
+## Links To Other Web Sites
+
+Our Service may contain links to third party web sites or services that are not owned or controlled by AppsCode Inc.
+
+AppsCode Inc. has no control over, and assumes no responsibility for the content, privacy policies, or practices of any third party web sites or services. We do not warrant the offerings of any of these entities/individuals or their websites.
+
+YOU ACKNOWLEDGE AND AGREE THAT APPSCODE INC. SHALL NOT BE RESPONSIBLE OR LIABLE, DIRECTLY OR INDIRECTLY, FOR ANY DAMAGE OR LOSS CAUSED OR ALLEGED TO BE CAUSED BY OR IN CONNECTION WITH USE OF OR RELIANCE ON ANY SUCH CONTENT, GOODS OR SERVICES AVAILABLE ON OR THROUGH ANY SUCH THIRD PARTY WEB SITES OR SERVICES.
+
+WE STRONGLY ADVISE YOU TO READ THE TERMS OF SERVICE AND PRIVACY POLICIES OF ANY THIRD PARTY WEB SITES OR SERVICES THAT YOU VISIT.
+
+## Limitation Of Liability
+
+EXCEPT AS PROHIBITED BY LAW, YOU WILL HOLD US AND OUR OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS HARMLESS FOR ANY INDIRECT, PUNITIVE, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGE, HOWEVER IT ARISES (INCLUDING ATTORNEYS' FEES AND ALL RELATED COSTS AND EXPENSES OF LITIGATION AND ARBITRATION, OR AT TRIAL OR ON APPEAL, IF ANY, WHETHER OR NOT LITIGATION OR ARBITRATION IS INSTITUTED), WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE, OR OTHER TORTIOUS ACTION, OR ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT, INCLUDING WITHOUT LIMITATION ANY CLAIM FOR PERSONAL INJURY OR PROPERTY DAMAGE, ARISING FROM THIS AGREEMENT AND ANY VIOLATION BY YOU OF ANY FEDERAL, STATE, OR LOCAL LAWS, STATUTES, RULES, OR REGULATIONS, EVEN IF COMPANY HAS BEEN PREVIOUSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. EXCEPT AS PROHIBITED BY LAW, IF THERE IS LIABILITY FOUND ON THE PART OF COMPANY, IT WILL BE LIMITED TO THE AMOUNT PAID FOR THE PRODUCTS AND/OR SERVICES, AND UNDER NO CIRCUMSTANCES WILL THERE BE CONSEQUENTIAL OR PUNITIVE DAMAGES. SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF PUNITIVE, INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE PRIOR LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU.
+
+## Termination
+
+We may terminate or suspend your account and bar access to Service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of Terms.
+
+If you wish to terminate your account, you may simply discontinue using Service.
+
+All provisions of Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
+
+## Governing Law
+
+These Terms shall be governed and construed in accordance with the laws of State of California without regard to its conflict of law provisions.
+
+Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service and supersede and replace any prior agreements we might have had between us regarding Service.
+
+## Changes To Service
+
+We reserve the right to withdraw or amend our Service, and any service or material we provide via Service, in our sole discretion without notice. We will not be liable if for any reason all or any part of Service is unavailable at any time or for any period. From time to time, we may restrict access to some parts of Service, or the entire Service, to users, including registered users.
+
+## Amendments To Terms
+
+We may amend Terms at any time by posting the amended terms on this site. It is your responsibility to review these Terms periodically.
+
+Your continued use of the Platform following the posting of revised Terms means that you accept and agree to the changes. You are expected to check this page frequently so you are aware of any changes, as they are binding on you.
+
+By continuing to access or use our Service after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use Service.
+
+## Waiver And Severability
+
+No waiver by Company of any term or condition set forth in Terms shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure of Company to assert a right or provision under Terms shall not constitute a waiver of such right or provision.
+
+If any provision of Terms is held by a court or other tribunal of competent jurisdiction to be invalid, illegal or unenforceable for any reason, such provision shall be eliminated or limited to the minimum extent such that the remaining provisions of Terms will continue in full force and effect.
+
+## Acknowledgement
+
+BY USING SERVICE OR OTHER SERVICES PROVIDED BY US, YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF SERVICE AND AGREE TO BE BOUND BY THEM.
+
+## Contact Us
+
+Please send your feedback, comments, requests for technical support:
+
+By email: support@appscode.com.
