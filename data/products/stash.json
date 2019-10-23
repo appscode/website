@@ -33,12 +33,12 @@
   "datasheetFormID": "",
   "badges": [
     {
-      "url" : "github/stars/appscode/stash",
+      "url": "github/stars/appscode/stash",
       "alt": "GitHub Stars",
       "logo": "github"
     },
     {
-      "url" : "docker/pulls/appscode/stash",
+      "url": "docker/pulls/appscode/stash",
       "alt": "Docker Pulls",
       "logo": "docker"
     }
@@ -255,6 +255,7 @@
   ],
   "versions": [
     { "version": "master", "hostDocs": false, "show": true },
+    { "version": "v0.9.0-rc.2", "hostDocs": true, "show": true },
     { "version": "v0.9.0-rc.1", "hostDocs": true, "show": true },
     { "version": "v0.9.0-rc.0", "hostDocs": true, "show": true },
     { "version": "0.8.3", "hostDocs": true, "show": true },
@@ -293,10 +294,35 @@
     "Website URL": "https://www.appscode.com/products/stash"
   },
   "stripeProductID": "prod_FARXQdMCCvjfZw",
+  "plans": {
+    "Community": {
+      "price": "0"
+    },
+    "Standard_M2M": {
+      "price": "499"
+    },
+    "Standard_Y2Y": {
+      "price": "349"
+    },
+    "Golden_M2M": {
+      "price": "899"
+    },
+    "Golden_Y2Y": {
+      "price": "699"
+    }
+  },
   "subProjects": {
     "stash-cli": {
       "dir": "guides/latest/cli/reference",
       "mappings": [
+        {
+          "versions": [
+            "v0.9.0-rc.2"
+          ],
+          "subProjectVersions": [
+            "v0.2.0"
+          ]
+        },
         {
           "versions": [
             "v0.9.0-rc.1"
@@ -312,7 +338,8 @@
       "mappings": [
         {
           "versions": [
-            "v0.9.0-rc.1"
+            "v0.9.0-rc.1",
+            "v0.9.0-rc.2"
           ],
           "subProjectVersions": [
             "5.6",
@@ -340,7 +367,8 @@
       "mappings": [
         {
           "versions": [
-            "v0.9.0-rc.1"
+            "v0.9.0-rc.1",
+            "v0.9.0-rc.2"
           ],
           "subProjectVersions": [
             "3.4",
@@ -366,7 +394,8 @@
       "mappings": [
         {
           "versions": [
-            "v0.9.0-rc.1"
+            "v0.9.0-rc.1",
+            "v0.9.0-rc.2"
           ],
           "subProjectVersions": [
             "5.7.25",
@@ -381,7 +410,8 @@
       "mappings": [
         {
           "versions": [
-            "v0.9.0-rc.1"
+            "v0.9.0-rc.1",
+            "v0.9.0-rc.2"
           ],
           "subProjectVersions": [
             "9.6",
