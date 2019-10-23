@@ -34,7 +34,7 @@ In order to uninstall Elasticsearch addon, follow the instruction given below.
 Run the following script to uninstall `stash-elasticsearch` addon that was installed as Kubernetes YAMLs.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/deploy/script.sh | bash -s -- --uninstall --catalog=stash-elasticsearch
+curl -fsSL https://github.com/stashed/catalog/raw/v0.1.0/deploy/script.sh | bash -s -- --uninstall --catalog=stash-elasticsearch
 ```
 
 </div>
@@ -45,7 +45,7 @@ curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/d
 Run the following script to uninstall `stash-elasticsearch` addon that was installed as a Helm chart.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/deploy/chart.sh | bash -s -- --uninstall --catalog=stash-elasticsearch
+curl -fsSL https://github.com/stashed/catalog/raw/v0.1.0/deploy/chart.sh | bash -s -- --uninstall --catalog=stash-elasticsearch
 ```
 
 </div>
@@ -56,5 +56,5 @@ curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/d
 In order to uninstall Elasticsearch addon only for a specific database version, use `--version` flag to specify the desired version.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/deploy/chart.sh | bash -s -- --uninstall --catalog=stash-elasticsearch --version=6.5
+curl -fsSL https://github.com/stashed/catalog/raw/v0.1.0/deploy/chart.sh | bash -s -- --uninstall --catalog=stash-elasticsearch --version=6.5
 ```

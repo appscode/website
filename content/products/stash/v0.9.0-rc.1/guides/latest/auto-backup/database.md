@@ -66,7 +66,7 @@ You can install the catalog either as a helm chart or you can create only the YA
 Run the following script to install `stash-postgres` catalog as a Helm chart.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/chart.sh | bash -s -- --catalog=stash-postgres
+curl -fsSL https://github.com/stashed/catalog/raw/v0.1.0/deploy/chart.sh | bash -s -- --catalog=stash-postgres
 ```
 
 </div>
@@ -80,7 +80,7 @@ curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/chart.sh | bash 
 Run the following script to install `stash-postgres` catalog as Kubernetes YAMLs.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/script.sh | bash -s -- --catalog=stash-postgres
+curl -fsSL https://github.com/stashed/catalog/raw/v0.1.0/deploy/script.sh | bash -s -- --catalog=stash-postgres
 ```
 
 </div>
@@ -634,7 +634,7 @@ To cleanup the Postgres catalogs that we had created earlier, run the following:
 Run the following script to uninstall `postgres-stash` catalogs that were installed as a chart releases.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/chart.sh | bash -s -- --uninstall --catalog=postgres-stash
+curl -fsSL https://github.com/stashed/catalog/raw/v0.1.0/deploy/chart.sh | bash -s -- --uninstall --catalog=postgres-stash
 ```
 
 </div>
@@ -648,7 +648,7 @@ curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/chart.sh | bash 
 Run the following script to uninstall `postgres-stash` catalog that was installed as Kubernetes YAMLs.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/script.sh | bash -s -- --uninstall --catalog=postgres-stash
+curl -fsSL https://github.com/stashed/catalog/raw/v0.1.0/deploy/script.sh | bash -s -- --uninstall --catalog=postgres-stash
 ```
 
 </div>

@@ -36,7 +36,7 @@ You can install the addon either as a helm chart or you can create only the YAML
 Run the following script to install `stash-mysql` addon as Kubernetes YAMLs.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/deploy/script.sh | bash -s -- --catalog=stash-mysql
+curl -fsSL https://github.com/stashed/catalog/raw/v0.1.0/deploy/script.sh | bash -s -- --catalog=stash-mysql
 ```
 
 </div>
@@ -47,7 +47,7 @@ curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/d
 Run the following script to install `stash-mysql` addon as a Helm chart.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/deploy/chart.sh | bash -s -- --catalog=stash-mysql
+curl -fsSL https://github.com/stashed/catalog/raw/v0.1.0/deploy/chart.sh | bash -s -- --catalog=stash-mysql
 ```
 
 </div>
@@ -85,7 +85,7 @@ Now, Stash is ready to backup MySQL databases.
 In order to install `Function` and `Task` only for a specific MySQL version, use `--version` flag to specify the desired database version.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/deploy/chart.sh | bash -s -- --catalog=stash-mysql --version=8.0.14
+curl -fsSL https://github.com/stashed/catalog/raw/v0.1.0/deploy/chart.sh | bash -s -- --catalog=stash-mysql --version=8.0.14
 ```
 
 The flowing flags are available for customizing MySQL addon installation:
