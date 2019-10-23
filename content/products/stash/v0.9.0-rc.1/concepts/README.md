@@ -13,6 +13,8 @@ url: /products/stash/v0.9.0-rc.1/concepts/
 aliases:
 - /products/stash/v0.9.0-rc.1/concepts/README/
 info:
+  catalog: v0.1.0
+  cli: v0.1.0
   version: v0.9.0-rc.1
 ---
 

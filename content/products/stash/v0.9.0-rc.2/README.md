@@ -15,6 +15,8 @@ aliases:
 - /products/stash/v0.9.0-rc.2/
 - /products/stash/v0.9.0-rc.2/README/
 info:
+  catalog: v0.1.0
+  cli: v0.2.0
   version: v0.9.0-rc.2
 ---
 

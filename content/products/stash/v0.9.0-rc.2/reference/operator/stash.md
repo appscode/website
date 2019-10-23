@@ -13,6 +13,8 @@ url: /products/stash/v0.9.0-rc.2/reference/operator/
 aliases:
 - /products/stash/v0.9.0-rc.2/reference/operator/operator/
 info:
+  catalog: v0.1.0
+  cli: v0.2.0
   version: v0.9.0-rc.2
 ---
 

@@ -11,6 +11,8 @@ product_name: stash
 menu_name: product_stash_v0.9.0-rc.2
 section_menu_id: stash-addons
 info:
+  catalog: v0.1.0
+  cli: v0.2.0
   subproject_version: 3.6.13
   version: v0.9.0-rc.2
 ---
