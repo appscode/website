@@ -11,6 +11,8 @@ product_name: stash
 menu_name: product_stash_v0.9.0-rc.2
 section_menu_id: setup
 info:
+  catalog: v0.1.0
+  cli: v0.2.0
   version: v0.9.0-rc.2
 ---
 
@@ -186,7 +188,7 @@ Stash provides a CLI using kubectl plugin to work with the stash Objects quickly
 
 ```console
 # Linux amd 64-bit
-wget -O kubectl-stash https://github.com/stashed/cli/releases/download/v0.1.0/kubectl-stash-linux-amd64 \
+wget -O kubectl-stash https://github.com/stashed/cli/releases/download/{{< param "info.cli" >}}/kubectl-stash-linux-amd64 \
   && chmod +x kubectl-stash \
   && sudo mv kubectl-stash /usr/local/bin/
 ```

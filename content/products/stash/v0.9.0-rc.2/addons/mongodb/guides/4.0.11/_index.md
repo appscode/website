@@ -8,6 +8,8 @@ menu:
     weight: 55
 menu_name: product_stash_v0.9.0-rc.2
 info:
+  catalog: v0.1.0
+  cli: v0.2.0
   subproject_version: 4.0.11
   version: v0.9.0-rc.2
 ---
