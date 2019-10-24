@@ -803,7 +803,7 @@ p.spam-message {
   .pricing-top {
     min-height: 158px;
   }
-  min-height: 253px;
+  min-height: 265px;
 }
 .pricing-heading {
   background: #e1e1e1;
@@ -811,7 +811,7 @@ p.spam-message {
   border-radius: 7px 7px 0 0;
   position: relative;
   z-index: 1;
-  min-height: 202px;
+  min-height: 225px;
 }
 
 .pricing-heading:after {
@@ -925,6 +925,16 @@ p.spam-message {
 .single-pricing-table.silver .pricing-top {
   height: 100px;
 }
+.single-pricing-table.silver.is-price-not-available .pricing-top{
+  height: 171px;
+  margin-bottom: 30px;
+}
+
+.single-pricing-table.gold.is-price-not-available .pricing-top{
+  min-height: 210px;
+  margin-bottom: 30px;
+}
+
 .single-pricing-table.free .pricing-top,
 .single-pricing-table.plutinum .pricing-top {
   margin-bottom: 30px;
