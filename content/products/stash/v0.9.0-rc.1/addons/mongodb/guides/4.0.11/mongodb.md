@@ -11,6 +11,8 @@ product_name: stash
 menu_name: product_stash_v0.9.0-rc.1
 section_menu_id: stash-addons
 info:
+  catalog: v0.1.0
+  cli: v0.1.0
   subproject_version: 4.0.11
   version: v0.9.0-rc.1
 ---
@@ -409,9 +411,9 @@ Wait for the next schedule. Run the following command to watch `BackupSession` c
 
 ```console
 $ kubectl get backupsession -n demo -w
-NAME                               BACKUPCONFIGURATION     PHASE       AGE
-sample-mongodb-backup-1561974001   sample-mongodb-backup   Running     5m19s
-sample-mongodb-backup-1561974001   sample-mongodb-backup   Succeeded   5m45s
+NAME                               INVOKER-TYPE          INVOKER-NAME            PHASE       AGE
+sample-mongodb-backup-1561974001   BackupConfiguration   sample-mongodb-backup   Running     5m19s
+sample-mongodb-backup-1561974001   BackupConfiguration   sample-mongodb-backup   Succeeded   5m45s
 ```
 
 We can see above that the backup session has succeeded. Now, we are going to verify that the backed up data has been stored in the backend.

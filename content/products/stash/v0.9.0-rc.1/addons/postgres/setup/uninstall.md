@@ -11,6 +11,8 @@ product_name: stash
 menu_name: product_stash_v0.9.0-rc.1
 section_menu_id: stash-addons
 info:
+  catalog: v0.1.0
+  cli: v0.1.0
   version: v0.9.0-rc.1
 ---
 
@@ -34,7 +36,7 @@ In order to uninstall PostgreSQL addon, follow the instruction given below.
 Run the following script to uninstall `stash-postgres` addon that was installed as Kubernetes YAMLs.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/deploy/script.sh | bash -s -- --uninstall --catalog=stash-postgres
+curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.catalog" >}}/deploy/script.sh | bash -s -- --uninstall --catalog=stash-postgres
 ```
 
 </div>
@@ -45,7 +47,7 @@ curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/d
 Run the following script to uninstall `stash-postgres` addon that was installed as a Helm chart.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/deploy/chart.sh | bash -s -- --uninstall --catalog=stash-postgres
+curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.catalog" >}}/deploy/chart.sh | bash -s -- --uninstall --catalog=stash-postgres
 ```
 
 </div>
@@ -56,5 +58,5 @@ curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/d
 In order to uninstall PostgreSQL addon only for a specific database version, use `--version` flag to specify the desired version.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/deploy/chart.sh | bash -s -- --uninstall --catalog=stash-postgres --version=11.2
+curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.catalog" >}}/deploy/chart.sh | bash -s -- --uninstall --catalog=stash-postgres --version=11.2
 ```

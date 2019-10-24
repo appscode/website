@@ -59,7 +59,7 @@
     <div class="columns is-variable is-0">
       <!-- pricing column start -->
       <div class="column">
-        <div class="single-pricing-table details">
+        <div class="single-pricing-table details is-price-not-available">
           <!-- pricing body start -->
           <div class="pricing-body">
             <!-- pricing content -->
@@ -155,7 +155,7 @@
       <!-- pricing column end -->
       <!-- pricing column start -->
       <div class="column has-text-centered">
-        <div class="single-pricing-table free">
+        <div class="single-pricing-table free is-price-not-available">
           <!-- pricing heading start -->
           <div class="pricing-heading">
             <!-- pricing title start -->
@@ -261,31 +261,20 @@
       <!-- pricing column end -->
       <!-- pricing column start -->
       <div class="column has-text-centered">
-        <div class="single-pricing-table silver">
-          <div class="discount-text is-hide" id="standardPriceDiscount">Save 33%</div>
+        <div class="single-pricing-table silver is-price-not-available">
           <!-- pricing heading start -->
           <div class="pricing-heading">
             <!-- pricing title start -->
             <div class="pricing-top d-table">
               <div class="pricing-top-inner d-table-cell">
               <h4>Standard</h4>
+              <div class="package-price" id="standardPrice">
+                <span>(Priced per <strong>production</strong><sup>*</sup> Kubernetes cluster)</span>
+              </div>
               <div class="package-price" id="standardPrice"></span></div>
             </div>
             </div>
             <!-- pricing title end -->
-
-            <!-- pricing type start -->
-            <div class="pricing-type">
-              <div class="control">
-                <div class="select is-multiple custom-arrow-down">
-                  <select id="standardPriceOptions" onchange="showStandardPrice()">
-                    <option value="y2y">Annual plan, prepaid</option>
-                    <option value="m2m">Monthly plan</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <!-- pricing type end -->
 
             <!-- pricing button start -->
             <div class="pricing-button">
@@ -382,32 +371,21 @@
       <!-- pricing column end -->
       <!-- pricing column start -->
       <div class="column has-text-centered">
-        <div class="single-pricing-table gold">
+        <div class="single-pricing-table gold is-price-not-available">
           <!-- pricing heading start -->
-          <div class="discount-text" id="goldPriceDiscount">Save 20%</div>
           <div class="pricing-heading">
             <!-- pricing title start -->
             <div class="pricing-top kd-orange d-table">
               <div class="pricing-top-inner d-table-cell">
                 <div class="round-shape">BEST VALUE!</div>
               <h4>Gold</h4>
+              <div class="package-price" id="standardPrice">
+                <span>(Priced per <strong>production</strong><sup>*</sup> Kubernetes cluster)</span>
+              </div>
               <div class="package-price" id="goldPrice"></div>
             </div>
             </div>
             <!-- pricing title end -->
-
-            <!-- pricing type start -->
-            <div class="pricing-type">
-              <div class="control">
-                <div class="select is-multiple custom-arrow-down">
-                  <select id="goldPriceOptions" onchange="showGoldPrice()">
-                    <option value="y2y">Annual plan, prepaid</option>
-                    <option value="m2m">Monthly plan</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <!-- pricing type end -->
 
             <!-- pricing button start -->
             <div class="pricing-button">
@@ -503,7 +481,7 @@
       <!-- pricing column end -->
       <!-- pricing column start -->
       <div class="column has-text-centered">
-        <div class="single-pricing-table plutinum">
+        <div class="single-pricing-table plutinum is-price-not-available">
           <!-- pricing heading start -->
           <div class="pricing-heading">
             <!-- pricing title start -->
@@ -767,35 +745,6 @@
   </div>
 </section>
 <!-- faq area end -->
-
-
-<script>
-function showPrice(plan, y2y, m2m) {
-  var x = document.getElementById(plan + "PriceOptions").value;
-  var price = "<sup>US$</sup> "+m2m+"<sub>/mo</sub><span>(<strong>1</strong> production<sup>*</sup> & <strong>unlimited</strong> non-prod K8s clusters)</span>";
-  var show = false;
-  if (x === "y2y") {
-    // 16.67% discount
-    price = "<sup>US$</sup> "+y2y+"<sub>/mo</sub><span>(<strong>1</strong> production<sup>*</sup> & <strong>unlimited</strong> non-prod K8s clusters)</span>";
-    show = true;
-  }
-  document.getElementById(plan+"Price").innerHTML = price;
-
-  var discount = document.getElementById(plan + "PriceDiscount");
-  if (show) {
-    discount.classList.remove("is-hide");
-  } else {
-    discount.classList.add("is-hide");
-  }
-  discount.innerHTML = "Save "+Math.floor((m2m-y2y)/y2y*100)+"%";
-}
-
-function showStandardPrice() { showPrice('standard', 399, 599); }
-function showGoldPrice() { showPrice('gold', 799, 999); }
-
-showStandardPrice();
-showGoldPrice();
-</script>
 {{ end }}
 
 {{ define "testimonial" }}

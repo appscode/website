@@ -11,6 +11,8 @@ product_name: stash
 menu_name: product_stash_v0.9.0-rc.1
 section_menu_id: stash-addons
 info:
+  catalog: v0.1.0
+  cli: v0.1.0
   subproject_version: 7.3.2
   version: v0.9.0-rc.1
 ---
@@ -365,10 +367,10 @@ Wait for the next schedule. Run the following command to watch `BackupSession` c
 
 ```console
 $ kubectl get backupsession -n demo -w
-NAME                                     BACKUPCONFIGURATION           PHASE     AGE
-sample-elasticsearch-backup-1570098367   sample-elasticsearch-backup   Running   9s
-sample-elasticsearch-backup-1570098367   sample-elasticsearch-backup   Running   79s
-sample-elasticsearch-backup-1570098367   sample-elasticsearch-backup   Succeeded   79s
+NAME                                     INVOKER-TYPE          INVOKER-NAME                  PHASE       AGE
+sample-elasticsearch-backup-1570098367   BackupConfiguration   sample-elasticsearch-backup   Running     9s
+sample-elasticsearch-backup-1570098367   BackupConfiguration   sample-elasticsearch-backup   Running     65s
+sample-elasticsearch-backup-1570098367   BackupConfiguration   sample-elasticsearch-backup   Succeeded   79s
 ```
 
 We can see above that the backup session has succeeded. Now, we are going to verify that the backed up data has been stored in the backend.

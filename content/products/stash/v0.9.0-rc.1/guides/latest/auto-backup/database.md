@@ -11,6 +11,8 @@ product_name: stash
 menu_name: product_stash_v0.9.0-rc.1
 section_menu_id: guides
 info:
+  catalog: v0.1.0
+  cli: v0.1.0
   version: v0.9.0-rc.1
 ---
 
@@ -66,7 +68,7 @@ You can install the catalog either as a helm chart or you can create only the YA
 Run the following script to install `stash-postgres` catalog as a Helm chart.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/chart.sh | bash -s -- --catalog=stash-postgres
+curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.catalog" >}}/deploy/chart.sh | bash -s -- --catalog=stash-postgres
 ```
 
 </div>
@@ -80,7 +82,7 @@ curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/chart.sh | bash 
 Run the following script to install `stash-postgres` catalog as Kubernetes YAMLs.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/script.sh | bash -s -- --catalog=stash-postgres
+curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.catalog" >}}/deploy/script.sh | bash -s -- --catalog=stash-postgres
 ```
 
 </div>
@@ -634,7 +636,7 @@ To cleanup the Postgres catalogs that we had created earlier, run the following:
 Run the following script to uninstall `postgres-stash` catalogs that were installed as a chart releases.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/chart.sh | bash -s -- --uninstall --catalog=postgres-stash
+curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.catalog" >}}/deploy/chart.sh | bash -s -- --uninstall --catalog=postgres-stash
 ```
 
 </div>
@@ -648,7 +650,7 @@ curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/chart.sh | bash 
 Run the following script to uninstall `postgres-stash` catalog that was installed as Kubernetes YAMLs.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/master/deploy/script.sh | bash -s -- --uninstall --catalog=postgres-stash
+curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.catalog" >}}/deploy/script.sh | bash -s -- --uninstall --catalog=postgres-stash
 ```
 
 </div>

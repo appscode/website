@@ -10,6 +10,8 @@ product_name: stash
 menu_name: product_stash_v0.9.0-rc.1
 section_menu_id: concepts
 info:
+  catalog: v0.1.0
+  cli: v0.1.0
   version: v0.9.0-rc.1
 ---
 

@@ -11,6 +11,8 @@ product_name: stash
 menu_name: product_stash_v0.9.0-rc.1
 section_menu_id: stash-addons
 info:
+  catalog: v0.1.0
+  cli: v0.1.0
   version: v0.9.0-rc.1
 ---
 
@@ -36,7 +38,7 @@ You can install the addon either as a helm chart or you can create only the YAML
 Run the following script to install `stash-postgres` addon as Kubernetes YAMLs.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/deploy/script.sh | bash -s -- --catalog=stash-postgres
+curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.catalog" >}}/deploy/script.sh | bash -s -- --catalog=stash-postgres
 ```
 
 </div>
@@ -47,7 +49,7 @@ curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/d
 Run the following script to install `stash-postgres` addon as a Helm chart.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/deploy/chart.sh | bash -s -- --catalog=stash-postgres
+curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.catalog" >}}/deploy/chart.sh | bash -s -- --catalog=stash-postgres
 ```
 
 </div>
@@ -101,7 +103,7 @@ Now, Stash is ready to backup PostgreSQL databases.
 In order to install `Function` and `Task` only for a specific PostgreSQL version, use `--version` flag to specify the desired database version.
 
 ```console
-curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.version" >}}/deploy/chart.sh | bash -s -- --catalog=stash-postgres --version=11.2
+curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.catalog" >}}/deploy/chart.sh | bash -s -- --catalog=stash-postgres --version=11.2
 ```
 
 The flowing flags are available for customizing PostgreSQL addon installation:

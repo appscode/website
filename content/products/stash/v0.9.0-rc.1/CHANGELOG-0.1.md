@@ -14,6 +14,8 @@ url: /products/stash/v0.9.0-rc.1/welcome/changelog-0.1/
 aliases:
 - /products/stash/v0.9.0-rc.1/CHANGELOG-0.1/
 info:
+  catalog: v0.1.0
+  cli: v0.1.0
   version: v0.9.0-rc.1
 ---
 
