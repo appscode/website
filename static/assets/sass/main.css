@@ -2847,6 +2847,14 @@ body.fixed-nav .documentation-menu {
     .full-info h5:first-child,
     .full-info h6:first-child {
       margin-top: 0; }
+    .full-info h1 a,
+    .full-info h2 a,
+    .full-info h3 a,
+    .full-info h4 a,
+    .full-info h5 a,
+    .full-info h6 a {
+      padding-right: 10px;
+      font-size: 16px; }
   .full-info h1 {
     font-size: 32px;
     border-bottom: 1px solid #ebebeb;
@@ -2926,7 +2934,8 @@ ul li b {
 
 .full-info ul,
 .full-info ol {
-  padding: 0 0 0 30px; }
+  padding: 0 0 0 30px;
+  margin-bottom: 15px; }
 
 .full-info ul li p {
   margin: 0;
@@ -3376,6 +3385,12 @@ button.button.is-fullwidth {
 .item input:checked ~ .item > label {
   border: 1px solid #e2e2e2;
   background: #ffffff; }
+
+.item:first-child input:checked ~ label, .item:first-child input:checked ~ .item:first-child > label {
+  border: 1px solid transparent; }
+
+.item:first-child > label {
+  font-size: 22px !important; }
 
 .appscode-style .item input:checked ~ label > a {
   color: #00A651; }

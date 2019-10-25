@@ -139,7 +139,6 @@ const goToASectionSmoothly = () => {
 // add .active dynamically to TOC
 const spyScrolling = () => {
   const allHeaders = document.querySelectorAll("h1, h2, h3, h4");
-
   window.onscroll = () => {
     const scrollPos =
       document.documentElement.scrollTop || document.body.scrollTop + 100;
@@ -151,7 +150,6 @@ const spyScrolling = () => {
         const id = allHeaders[s].id;
         if (id) {
           document.querySelectorAll("#TableOfContents a").forEach(a => {
-            console.log("id: ", id);
             if (`#${id}` === a.hash) {
               a.classList.add("active");
             } else {
@@ -166,6 +164,35 @@ const spyScrolling = () => {
 
 goToASectionSmoothly();
 spyScrolling();
+
+// docs page header link create
+  const allHeaders = document.querySelectorAll('.full-info h2,.full-info h3,.full-info h4');
+  Array.from(allHeaders).forEach(el => {
+    const id = el.id;
+    const anchorTag = document.createElement('a');
+    anchorTag.setAttribute('href','#'+id);
+    anchorTag.innerHTML = '<i class="fa fa-link" aria-hidden="true"></i>';
+    el.appendChild(anchorTag)
+    el.insertBefore(anchorTag, el.childNodes[0]);
+
+    //top alignment fix
+    anchorTag.addEventListener("click", (e) => {
+      // go to the target section smoothly
+      // const targetEl = document.querySelector(e.currentTarget.hash);
+      // targetEl.offsetTop = '200px'
+      // console.log(targetEl);
+      
+      // const pos = targetEl.offsetTop;
+      // console.log(targetEl);
+      // window.scrollTo({
+      //   top: pos,
+      //   behavior: "smooth"
+      // });
+    });
+
+  })
+ 
+
 
 // tabs active class add script - setup | install page
 const tabItems = document.querySelectorAll(".nav-item .nav-link");
