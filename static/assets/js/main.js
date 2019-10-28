@@ -175,21 +175,23 @@ spyScrolling();
     el.appendChild(anchorTag)
     el.insertBefore(anchorTag, el.childNodes[0]);
 
-    //top alignment fix
-    anchorTag.addEventListener("click", (e) => {
-      // go to the target section smoothly
-      // const targetEl = document.querySelector(e.currentTarget.hash);
-      // targetEl.offsetTop = '200px'
-      // console.log(targetEl);
-      
-      // const pos = targetEl.offsetTop;
-      // console.log(targetEl);
-      // window.scrollTo({
-      //   top: pos,
-      //   behavior: "smooth"
-      // });
+    // Please uncomment "e.preventDefault();" and look the change 
+    anchorTag.addEventListener("click", e => {
+      // e.preventDefault(); 
+      const targetEl = document.querySelector(e.currentTarget.hash);
+      const pos = targetEl.offsetTop-50;
+      window.scrollTo({
+        top: pos,
+        behavior: "smooth"
+      });
     });
 
+  })
+
+// docs page left sidebar first item font-size
+  const sidebarMenu = document.querySelector('.kd-sidebar-menu');
+  document.addEventListener('DOMContentLoaded', ()=>{
+    sidebarMenu.children[0].children[1].children[0].style.fontSize = '22px'
   })
  
 
