@@ -26,7 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
 var navbarItems = document.querySelectorAll(".navbar-item");
 navbarItems.forEach(navbarItem => {
   navbarItem.addEventListener("click", function() {
-    var megamenues = document.querySelectorAll(".navbar-item > .ac-megamenu , .navbar-item > .ac-dropdown");
+    var megamenues = document.querySelectorAll(
+      ".navbar-item > .ac-megamenu , .navbar-item > .ac-dropdown"
+    );
     // remove is-active class from all the megamenus except the navbar item that was clicked
     megamenues.forEach(megamenu => {
       // toggle classes
@@ -127,7 +129,7 @@ const goToASectionSmoothly = () => {
       e.preventDefault();
       // go to the target section smoothly
       const targetEl = document.querySelector(e.currentTarget.hash);
-      const pos = targetEl.offsetTop;
+      const pos = targetEl.offsetTop - 35;
       window.scrollTo({
         top: pos,
         behavior: "smooth"
@@ -166,35 +168,35 @@ goToASectionSmoothly();
 spyScrolling();
 
 // docs page header link create
-  const allHeaders = document.querySelectorAll('.full-info h2,.full-info h3,.full-info h4');
-  Array.from(allHeaders).forEach(el => {
-    const id = el.id;
-    const anchorTag = document.createElement('a');
-    anchorTag.setAttribute('href','#'+id);
-    anchorTag.innerHTML = '<i class="fa fa-link" aria-hidden="true"></i>';
-    el.appendChild(anchorTag)
-    el.insertBefore(anchorTag, el.childNodes[0]);
+const allHeaders = document.querySelectorAll(
+  ".full-info > h2,.full-info > h3,.full-info > h4"
+);
+Array.from(allHeaders).forEach(el => {
+  const id = el.id;
+  const anchorTag = document.createElement("a");
+  anchorTag.setAttribute("href", "#" + id);
+  anchorTag.innerHTML = '<i class="fa fa-link" aria-hidden="true"></i>';
+  el.appendChild(anchorTag);
+  el.insertBefore(anchorTag, el.childNodes[0]);
 
-    // Please uncomment "e.preventDefault();" and look the change 
-    anchorTag.addEventListener("click", e => {
-      // e.preventDefault(); 
-      const targetEl = document.querySelector(e.currentTarget.hash);
-      const pos = targetEl.offsetTop-50;
-      window.scrollTo({
-        top: pos,
-        behavior: "smooth"
-      });
+  // Please uncomment "e.preventDefault();" and look the change
+  anchorTag.addEventListener("click", e => {
+    e.preventDefault();
+    const targetEl = document.querySelector(e.currentTarget.hash);
+    window.history.pushState(id, "title", "#" + id);
+    const pos = targetEl.offsetTop - 35;
+    window.scrollTo({
+      top: pos,
+      behavior: "smooth"
     });
-
-  })
+  });
+});
 
 // docs page left sidebar first item font-size
-  const sidebarMenu = document.querySelector('.kd-sidebar-menu');
-  document.addEventListener('DOMContentLoaded', ()=>{
-    sidebarMenu.children[0].children[1].children[0].style.fontSize = '22px'
-  })
- 
-
+const sidebarMenu = document.querySelector(".kd-sidebar-menu");
+document.addEventListener("DOMContentLoaded", () => {
+  sidebarMenu.children[0].children[1].children[0].style.fontSize = "22px";
+});
 
 // tabs active class add script - setup | install page
 const tabItems = document.querySelectorAll(".nav-item .nav-link");
@@ -226,9 +228,7 @@ tabItems.forEach(tab => {
 
 // menu sticky
 // Not a ton of code, but hard to
-const nav = document.querySelector(
-  ".fixed-menu, .documentation-menu"
-);
+const nav = document.querySelector(".fixed-menu, .documentation-menu");
 let topOfNav = nav.offsetTop;
 function fixNav() {
   if (window.scrollY > topOfNav) {
@@ -264,7 +264,7 @@ var basicScrollTop = function() {
     };
     // Listeners
     window.addEventListener("scroll", btnReveal);
-    btnTop.addEventListener("click", TopscrollTo); 
+    btnTop.addEventListener("click", TopscrollTo);
   }
 };
 basicScrollTop();
