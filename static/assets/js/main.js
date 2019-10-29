@@ -129,7 +129,7 @@ const goToASectionSmoothly = () => {
       e.preventDefault();
       // go to the target section smoothly
       const targetEl = document.querySelector(e.currentTarget.hash);
-      const pos = targetEl.offsetTop - 35;
+      const pos = targetEl.offsetTop;
       window.scrollTo({
         top: pos,
         behavior: "smooth"
@@ -143,7 +143,7 @@ const spyScrolling = () => {
   const allHeaders = document.querySelectorAll("h1, h2, h3, h4");
   window.onscroll = () => {
     const scrollPos =
-      document.documentElement.scrollTop || document.body.scrollTop + 100;
+      document.documentElement.scrollTop || document.body.scrollTop;
     for (let s in allHeaders) {
       if (
         allHeaders.hasOwnProperty(s) &&
