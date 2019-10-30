@@ -147,7 +147,7 @@ const spyScrolling = () => {
     for (let s in allHeaders) {
       if (
         allHeaders.hasOwnProperty(s) &&
-        allHeaders[s].offsetTop <= scrollPos
+        allHeaders[s].offsetTop <= scrollPos + 100
       ) {
         const id = allHeaders[s].id;
         if (id) {
@@ -171,7 +171,9 @@ spyScrolling();
 document.addEventListener("DOMContentLoaded", () => {
   // left sidebar menu fontSize
   const sidebarMenu = document.querySelector(".kd-sidebar-menu");
-  sidebarMenu.children[0].children[1].children[0].style.fontSize = "22px";
+  if(sidebarMenu){
+    sidebarMenu.children[0].children[1].children[0].style.fontSize = "22px";
+  }
   // docs page header link create
   const allHeaders = document.querySelectorAll(
     ".full-info > h2,.full-info > h3,.full-info > h4"
