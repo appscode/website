@@ -237,6 +237,27 @@
 </div>
 <!-- documentation area end -->
 
+<!-- improve page section start  -->
+<div class="improve-section-area">
+  <div class="container section">
+      <div class="improve-bg-color">
+      <div class="columns">
+          {{ if $productName }}
+            {{ $urlToken := (split .File.Path "/") }}
+            {{ $p := (index $.Site.Data.products $productName ) }}
+          <div class="column is-6">
+            <a href="{{ $p.repoURL }}/edit/master/docs/{{ if (gt $urlToken 3) }} {{- range after 3 $urlToken -}}{{.}}/{{- end -}}{{ end }}">Improve This Page</a>
+          </div>
+          {{ end }}
+          <!-- <div class="column is-6 has-text-right">
+            <p>Last Update 3 days ago</p>
+          </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- improve page section end -->
+
 <!-- sidebar search area start -->
 
 <!-- overlay start -->
