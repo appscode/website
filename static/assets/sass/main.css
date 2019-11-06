@@ -937,13 +937,13 @@ body.fixed-nav
     z-index: -1;
     min-height: 100%; }
   .hero-area .trusted-logo {
-    margin-top: 50px; }
+    margin-top: 20px; }
 
 .is-full-height {
   min-height: 100vh; }
 
 .hero-area.is-full-height {
-  padding: 50px 0 0;
+  padding: 70px 0 0;
   overflow: hidden; }
 
 .hero-area-content h1 {
@@ -1922,7 +1922,7 @@ body.fixed-nav .fixed-menu {
   font-size: 44px;
   font-weight: 400;
   color: #242a31;
-  line-height: 80px; }
+  line-height: 67px; }
   .hero-content-inner h1 b {
     font-weight: 600; }
 
@@ -2847,6 +2847,31 @@ body.fixed-nav .documentation-menu {
     .full-info h5:first-child,
     .full-info h6:first-child {
       margin-top: 0; }
+    .full-info h1 a,
+    .full-info h2 a,
+    .full-info h3 a,
+    .full-info h4 a,
+    .full-info h5 a,
+    .full-info h6 a {
+      font-size: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: .3s ease-in-out; }
+      .full-info h1 a svg,
+      .full-info h2 a svg,
+      .full-info h3 a svg,
+      .full-info h4 a svg,
+      .full-info h5 a svg,
+      .full-info h6 a svg {
+        padding-left: 10px; }
+    .full-info h1:hover a,
+    .full-info h2:hover a,
+    .full-info h3:hover a,
+    .full-info h4:hover a,
+    .full-info h5:hover a,
+    .full-info h6:hover a {
+      opacity: 1;
+      visibility: visible; }
   .full-info h1 {
     font-size: 32px;
     border-bottom: 1px solid #ebebeb;
@@ -2926,7 +2951,8 @@ ul li b {
 
 .full-info ul,
 .full-info ol {
-  padding: 0 0 0 30px; }
+  padding: 0 0 0 30px;
+  margin-bottom: 15px; }
 
 .full-info ul li p {
   margin: 0;
@@ -3026,8 +3052,23 @@ ul li b {
   cursor: pointer;
   display: block; }
 
-.tbl-of-contents {
-  overflow: hidden; }
+.tbl-of-contents #TableOfContents {
+  max-height: 70vh;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
+  .tbl-of-contents #TableOfContents:hover {
+    overflow-y: auto; }
+  .tbl-of-contents #TableOfContents::-webkit-scrollbar {
+    width: 4px;
+    height: 4px; }
+  .tbl-of-contents #TableOfContents::-webkit-scrollbar-track {
+    background: #F1F1F1; }
+  .tbl-of-contents #TableOfContents::-webkit-scrollbar-thumb {
+    background: #C1C1C1; }
+  .tbl-of-contents #TableOfContents::-webkit-scrollbar-thumb:hover {
+    background: #555; }
 
 .tbl-of-contents h4 {
   font-size: 14px;
@@ -3406,6 +3447,9 @@ button.button.is-fullwidth {
 .item input:checked ~ .item > label {
   border: 1px solid #e2e2e2;
   background: #ffffff; }
+
+.item:first-child input:checked ~ label, .item:first-child input:checked ~ .item:first-child > label {
+  border: 1px solid transparent; }
 
 .appscode-style .item input:checked ~ label > a {
   color: #00A651; }
