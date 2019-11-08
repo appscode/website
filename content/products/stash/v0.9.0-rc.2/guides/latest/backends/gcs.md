@@ -22,7 +22,7 @@ Stash supports [Google Cloud Storage(GCS)](https://cloud.google.com/storage/) as
 
 In order to use Google Cloud Storage as backend, you have to create a `Secret` and a `Repository` object pointing to the desired GCS bucket.
 
-> If the bucket already exists, the Google Cloud service account you provide to Stash only needs `Storage Object Creator` role permission. However, if the bucket does not exist, Stash  will create the bucket. In this case, the Google Cloud service account key used for Stash must have `Storage Object Admin` role permission. To avoid giving this elevated level of permission to Stash, create the bucket manually (either from GCP console or gcloud cli) ahead of time.
+> If the bucket already exists, the Google Cloud service account you provide to Stash only needs `Storage Object Creator` role permission. However, if the bucket does not exist, Stash  will create the bucket during the first backup. In this case, the Google Cloud service account key used for Stash must have `Storage Object Admin` role permission. To avoid giving this elevated level of permission to Stash, create the bucket manually (either from GCP console or gcloud cli) ahead of time.
 
 #### Create Storage Secret
 
@@ -87,5 +87,5 @@ Now, we are ready to use this backend to backup our desired data using Stash.
 ## Next Steps
 
 - Learn how to use Stash to backup workloads data from [here](/products/stash/v0.9.0-rc.2/guides/latest/workloads/overview).
-- Learn how to use Stash to backup databases from [here](/products/stash/v0.9.0-rc.2/guides/latest/databases/overview).
+- Learn how to use Stash to backup databases from [here](/products/stash/v0.9.0-rc.2/guides/latest/addons/overview).
 - Learn how to use Stash to backup stand-alone PVC from [here](/products/stash/v0.9.0-rc.2/guides/latest/volumes/overview).

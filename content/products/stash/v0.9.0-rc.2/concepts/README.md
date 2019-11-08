@@ -36,7 +36,7 @@ This concept section is divided into the following modules:
   - [Function](/products/stash/v0.9.0-rc.2/concepts/crds/function) introduces the concept of `Function` crd that represents a step of a backup or restore process.
   - [Task](/products/stash/v0.9.0-rc.2/concepts/crds/task) introduces the concept of `Task` crd which specifies an ordered collection of multiple `Function`s and their parameters that make up a complete backup or restore process.
   - [BackupBlueprint](/products/stash/v0.9.0-rc.2/concepts/crds/backupblueprint) introduces the concept of `BackupBlueprint` crd that specifies a blueprint for `Repository` and `BackupConfiguration` object which provides an option to share backup configuration across similar targets.
-  - [AppBinding](/products/stash/v0.9.0-rc.2/concepts/appbinding) introduces the concept of `AppBinding` crd which holds the information that are necessary to connect with an application like database.
+  - [AppBinding](/products/stash/v0.9.0-rc.2/concepts/crds/appbinding) introduces the concept of `AppBinding` crd which holds the information that are necessary to connect with an application like database.
   - [Snapshot](/products/stash/v0.9.0-rc.2/concepts/crds/snapshot) introduces the concept of `Snapshot` object that represents backed up snapshots in a Kubernetes native way.
 
 - v1alpha1 API

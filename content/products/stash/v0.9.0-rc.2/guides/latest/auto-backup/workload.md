@@ -86,7 +86,7 @@ spec:
     prune: true
 ```
 
-Note that we have used some variables (format: `${<variable name>}`) in `backend.gcs.prefix` field. Stash will substitute these variables with values from the respective target. Since the resolved prefix will be different for different workload, the backed up data will be stored in different directory inside the bucket. To know which variable you can use in this `prefix` field, please visit [here](/products/stash/v0.9.0-rc.2/concepts/crds/backupconfiguration_blueprint#repository-blueprint).
+Note that we have used some variables (format: `${<variable name>}`) in `backend.gcs.prefix` field. Stash will substitute these variables with values from the respective target. Since the resolved prefix will be different for different workload, the backed up data will be stored in different directory inside the bucket. To know which variable you can use in this `prefix` field, please visit [here](/products/stash/v0.9.0-rc.2/concepts/crds/backupblueprint#repository-blueprint).
 
 Let's create the `BackupBlueprint` that we have shown above,
 
