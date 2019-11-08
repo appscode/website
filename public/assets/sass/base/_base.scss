@@ -216,7 +216,7 @@ body.fixed-nav .fixed-menu {
   font-size: 44px;
   font-weight: 400;
   color: $heading-color;
-  line-height: 80px;
+  line-height: 67px;
   b {
     font-weight: 600;
   }
@@ -430,6 +430,7 @@ a.play-icon .fa {
 .client-info h4 {
   font-size: 16px;
   line-height: 19px;
+  margin-bottom: 3px;
 }
 
 .client-thumb {
@@ -571,7 +572,7 @@ button:focus {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 9;
+  z-index: 9 !important;
   background: transparent;
 }
 .subscription-form .button:hover {
@@ -803,7 +804,7 @@ p.spam-message {
   .pricing-top {
     min-height: 158px;
   }
-  min-height: 253px;
+  min-height: 265px;
 }
 .pricing-heading {
   background: #e1e1e1;
@@ -811,7 +812,7 @@ p.spam-message {
   border-radius: 7px 7px 0 0;
   position: relative;
   z-index: 1;
-  min-height: 202px;
+  min-height: 225px;
 }
 
 .pricing-heading:after {
@@ -925,6 +926,16 @@ p.spam-message {
 .single-pricing-table.silver .pricing-top {
   height: 100px;
 }
+.single-pricing-table.silver.is-price-not-available .pricing-top{
+  height: 171px;
+  margin-bottom: 30px;
+}
+
+.single-pricing-table.gold.is-price-not-available .pricing-top{
+  min-height: 210px;
+  margin-bottom: 30px;
+}
+
 .single-pricing-table.free .pricing-top,
 .single-pricing-table.plutinum .pricing-top {
   margin-bottom: 30px;
@@ -1275,6 +1286,19 @@ body.fixed-nav .documentation-menu {
     &:first-child {
       margin-top: 0;
     }
+    a{
+      svg{
+        padding-left: 10px;
+      }
+      font-size: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: .3s ease-in-out;
+    }
+    &:hover a{
+      opacity: 1;
+      visibility: visible;
+    }
   }
   h1 {
     font-size: 32px;
@@ -1296,6 +1320,13 @@ body.fixed-nav .documentation-menu {
   }
   h6 {
     font-size: 13px;
+  }
+  .highlight{
+    pre{
+      code{
+        color: #f1f1f1;
+      }
+    }
   }
 }
 .full-info h2 span.share-icon {
@@ -1369,6 +1400,7 @@ ul li b {
 .full-info ul,
 .full-info ol {
   padding: 0 0 0 30px;
+  margin-bottom: 15px;
 }
 .full-info ul li p {
   margin: 0;
@@ -1398,6 +1430,45 @@ ul li b {
 .appscode-style.full-info ul li p a .appscode-style.full-info p a,
 .appscode-style.full-info a {
   color: $primary-color;
+}
+
+//code block style
+.code-block-heading {
+  display: flex;
+  justify-content: space-between;
+  background: #f0f3f6;
+  padding: 10px;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+  border: 1px solid #d1d5d9;
+  border-bottom: transparent;
+  h4 {
+    font-size: 16px;
+    font-family: $font-paragraph;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .copy-and-download{
+    .download-here,.copy-here {
+      background: transparent;
+      border: none;
+      color: #9aa2ad;
+      font-size: 20px;
+      cursor: copy;
+    }
+    .download-here{
+      cursor: pointer;
+    }
+  }
+ 
+}
+.highlight {
+  pre {
+    background-color: #1c2c41 !important;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  margin-bottom: 40px;
 }
 
 //custom ol li class start
@@ -1447,8 +1518,31 @@ ul li b {
   display: block;
 }
 .tbl-of-contents {
-  overflow: hidden;
+  #TableOfContents{
+    max-height: 70vh;
+    /* width */
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+  
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #F1F1F1;
+    }
+  
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #C1C1C1;
+    }
+  
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
 }
+
 .tbl-of-contents h4 {
   font-size: 14px;
   font-weight: 700;
@@ -1870,6 +1964,10 @@ button.button.is-fullwidth {
   border: 1px solid #e2e2e2;
   background: $white-color;
 }
+.item:first-child input:checked ~ label, .item:first-child input:checked ~ .item:first-child > label{
+  border: 1px solid transparent;
+}
+
 .appscode-style .item input:checked ~ label > a {
   color: $primary-color;
 }
@@ -2372,3 +2470,21 @@ video {
   opacity: 1;
 }
 //  go to top area end
+
+// improve section start
+.improve-section-area{
+  padding-bottom: 80px;
+} 
+.improve-bg-color{
+  background-color: #FBFDFF;
+  padding: 0 20px !important;
+  a{
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    font-family: $font-heading;
+  }
+  p{
+    font-size: 16px !important;
+    color: #74818D !important;
+  }
+}

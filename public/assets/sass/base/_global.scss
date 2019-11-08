@@ -8,6 +8,15 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: $primary-color;
+}
+
+::selection {
+  color: #fff;
+  background: $primary-color;
+}
 li b {
   font-family: $font-paragraph;
 }
@@ -121,6 +130,7 @@ h6 {
 .button {
   height: auto;
 }
+
 .kd-button, .ac-button {
   border: none;
   border-radius: 4px;
