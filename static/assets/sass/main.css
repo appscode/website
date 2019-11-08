@@ -7,6 +7,15 @@ body {
   font-weight: 400;
   font-style: normal; }
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: #00A651; }
+
+::selection {
+  color: #fff;
+  background: #00A651; }
+
 li b {
   font-family: "Roboto", sans-serif; }
 
@@ -982,7 +991,6 @@ body.fixed-nav
 
 .trusted-logo .trusted-action {
   background: #e0f2e9;
-  box-shadow: 0 1px 12px rgba(15, 80, 100, 0.12);
   padding: 6px 30px;
   border-radius: 4px;
   font-size: 16px;
@@ -1128,6 +1136,12 @@ body.fixed-nav
     margin-bottom: 20px;
     line-height: 50px;
     font-weight: 400; }
+  .section-title p a {
+    color: #00A651;
+    text-decoration: underline;
+    transition: .3s ease-in-out; }
+    .section-title p a:hover {
+      color: #00c862; }
   .section-title .quete-icon {
     font-size: 120px;
     position: absolute;
@@ -1482,7 +1496,7 @@ section.our-customer-area {
     height: 400px; }
     .hero-area-2 .hero-area-inner-2 h1 {
       font-size: 48px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       font-weight: 400; }
     .hero-area-2 .hero-area-inner-2 p {
       font-size: 18px; }
@@ -1522,7 +1536,10 @@ section.our-customer-area {
   .testimonial-area-2 .testimonial-wrapper .user-information {
     margin-top: 30px;
     float: right;
-    overflow: hidden; }
+    overflow: hidden;
+    align-items: center; }
+    .testimonial-area-2 .testimonial-wrapper .user-information figure {
+      margin-right: 15px; }
     .testimonial-area-2 .testimonial-wrapper .user-information h4 {
       font-size: 18px;
       line-height: 28px;
@@ -1536,7 +1553,7 @@ section.our-customer-area {
   padding: 30px 50px; }
   .package-area .single-package-wrapper h4 {
     font-size: 18px;
-    margin-bottom: 20px; }
+    margin-bottom: 5px; }
   .package-area .single-package-wrapper p {
     font-size: 16px; }
 
@@ -2102,7 +2119,8 @@ a.play-icon .fa {
 
 .client-info h4 {
   font-size: 16px;
-  line-height: 19px; }
+  line-height: 19px;
+  margin-bottom: 3px; }
 
 .client-thumb {
   width: 50px;
@@ -2887,6 +2905,8 @@ body.fixed-nav .documentation-menu {
     font-size: 15px; }
   .full-info h6 {
     font-size: 13px; }
+  .full-info .highlight pre code {
+    color: #f1f1f1; }
 
 .full-info h2 span.share-icon {
   color: #6b6b6b;
@@ -3058,8 +3078,6 @@ ul li b {
   /* Track */
   /* Handle */
   /* Handle on hover */ }
-  .tbl-of-contents #TableOfContents:hover {
-    overflow-y: auto; }
   .tbl-of-contents #TableOfContents::-webkit-scrollbar {
     width: 4px;
     height: 4px; }
