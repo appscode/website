@@ -285,5 +285,5 @@ If `volumeClaimTemplates` is specified in a RestoreSession, Stash creates the PV
 ## Next Steps
 
 - Learn how restore of workloads data works from [here](/products/stash/v0.9.0-rc.2/guides/latest/workloads/overview).
-- Learn how restore of databases works from [here](/products/stash/v0.9.0-rc.2/guides/latest/databases/overview).
+- Learn how restore of databases works from [here](/products/stash/v0.9.0-rc.2/guides/latest/addons/overview).
 - Learn how restore stand-alone PVC works from [here](/products/stash/v0.9.0-rc.2/guides/latest/volumes/overview).

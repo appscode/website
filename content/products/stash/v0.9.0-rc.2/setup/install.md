@@ -169,7 +169,7 @@ repositories.stash.appscode.com      5s
 restics.stash.appscode.com           5s
 ```
 
-Now, you are ready to [take your first backup](/products/stash/v0.9.0-rc.2/guides/README) using Stash.
+Now, you are ready to [take your first backup](/products/stash/v0.9.0-rc.2/guides/latest/README) using Stash.
 
 
 ## Configuring RBAC
@@ -208,7 +208,7 @@ To detect Stash version, exec into the operator pod and run `stash version` comm
 ```console
 $ POD_NAMESPACE=kube-system
 $ POD_NAME=$(kubectl get pods -n $POD_NAMESPACE -l app=stash -o jsonpath={.items[0].metadata.name})
-$ kubectl exec -it $POD_NAME -c operator -n $POD_NAMESPACE stash version
+$ kubectl exec -it $POD_NAME -c operator -n $POD_NAMESPACE /stash version
 
 Version = {{< param "info.version" >}}
 VersionStrategy = tag

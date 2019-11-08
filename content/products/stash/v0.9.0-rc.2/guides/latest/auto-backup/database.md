@@ -23,18 +23,19 @@ This tutorial will show you how to configure automatic backup for PostgreSQL dat
 ## Before You Begin
 
 - At first, you need to have a Kubernetes cluster, and the `kubectl` command-line tool must be configured to communicate with your cluster. If you do not already have a cluster, you can create one by using [Minikube](https://github.com/kubernetes/minikube).
-- Install `Stash` in your cluster following the steps [here](/products/stash/v0.9.0-rc.2/setup/install).
-- Install [KubeDB](https://kubedb.com) in your cluster following the steps [here](https://kubedb.com/docs/0.12.0/setup/install/). This step is optional. You can deploy your database using any method you want. We are using `KubeDB` because it automates some tasks that you have to do manually otherwise.
-- If you are not familiar with how Stash backup databases and how auto-backup works, please check the following guides:
-  - [How Stash Backs up Databases](/products/stash/v0.9.0-rc.2/guides/latest/databases/overview).
-  - [How Auto Backup Works in Stash](/products/stash/v0.9.0-rc.2/guides/latest/auto-backup/overview).
-- You should be familiar with the following `Stash` concepts:
-  - [BackupBlueprint](/products/stash/v0.9.0-rc.2/concepts/crds/backupblueprint)
-  - [BackupConfiguration](/products/stash/v0.9.0-rc.2/concepts/crds/backupconfiguration)
-  - [BackupSession](/products/stash/v0.9.0-rc.2/concepts/crds/backupsession)
-  - [Repository](/products/stash/v0.9.0-rc.2/concepts/crds/repository)
-  - [Function](/products/stash/v0.9.0-rc.2/concepts/crds/function)
-  - [Task](/products/stash/v0.9.0-rc.2/concepts/crds/task)
+- Install Stash in your cluster following the steps [here](/products/stash/v0.9.0-rc.2/setup/install).
+- Install PostgreSQL addon for Stash following the steps [here](/products/stash/v0.9.0-rc.2/addons/postgres/setup/install).
+- Install [KubeDB](https://kubedb.com) in your cluster following the steps [here](https://kubedb.com/docs/setup/install/). This step is optional. You can deploy your database using any method you want. We are using KubeDB because KubeDB simplifies many of the difficult or tedious management tasks of running a production grade databases on private and public clouds.
+- If you are not familiar with how Stash backup and restore PostgreSQL databases, please check the following guide [here](/products/stash/v0.9.0-rc.2/addons/postgres/overview).
+
+You should be familiar with the following `Stash` concepts:
+
+- [BackupBlueprint](/products/stash/v0.9.0-rc.2/concepts/crds/backupblueprint)
+- [BackupConfiguration](/products/stash/v0.9.0-rc.2/concepts/crds/backupconfiguration)
+- [BackupSession](/products/stash/v0.9.0-rc.2/concepts/crds/backupsession)
+- [Repository](/products/stash/v0.9.0-rc.2/concepts/crds/repository)
+- [Function](/products/stash/v0.9.0-rc.2/concepts/crds/function)
+- [Task](/products/stash/v0.9.0-rc.2/concepts/crds/task)
 
 To keep everything isolated, we are going to use a separate namespace called `demo` throughout this tutorial.
 
@@ -44,89 +45,6 @@ namespace/demo created
 ```
 
 > **Note:** YAML files used in this tutorial are stored in [docs/examples/guides/latest/auto-backup/database](/products/stash/v0.9.0-rc.2/examples/guides/latest/auto-backup/database) directory of [stashed/docs](https://github.com/stashed/docs) repository.
-
-## Install Postgres Catalog for Stash
-
-Stash uses a `Function-Task` model for auto-backup. We have to install Postgres catalogs (`stash-postgres`) for Stash. This catalog creates necessary `Function` and `Task` definitions.
-
-You can install the catalog either as a helm chart or you can create only the YAMLs of the respective resources.
-
-<ul class="nav nav-tabs" id="installerTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link" id="helm-tab" data-toggle="tab" href="#helm" role="tab" aria-controls="helm" aria-selected="false">Helm</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" id="script-tab" data-toggle="tab" href="#script" role="tab" aria-controls="script" aria-selected="true">Script</a>
-  </li>
-</ul>
-<div class="tab-content" id="installerTabContent">
- <!-- ------------ Helm Tab Begins----------- -->
-  <div class="tab-pane fade" id="helm" role="tabpanel" aria-labelledby="helm-tab">
-
-### Install via Helm Chart
-
-Run the following script to install `stash-postgres` catalog as a Helm chart.
-
-```console
-curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.catalog" >}}/deploy/chart.sh | bash -s -- --catalog=stash-postgres
-```
-
-</div>
-<!-- ------------ Helm Tab Ends----------- -->
-
-<!-- ------------ Script Tab Begins----------- -->
-<div class="tab-pane fade show active" id="script" role="tabpanel" aria-labelledby="script-tab">
-
-### Install via YAMLs
-
-Run the following script to install `stash-postgres` catalog as Kubernetes YAMLs.
-
-```console
-curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.catalog" >}}/deploy/script.sh | bash -s -- --catalog=stash-postgres
-```
-
-</div>
-<!-- ------------ Script Tab Ends----------- -->
-</div>
-
-Once installed, this will create `postgres-backup-*` and `postgres-recovery-*` Functions for all supported PostgreSQL versions. To verify, run the following command:
-
-```console
-$ kubectl get functions.stash.appscode.com
-NAME                    AGE
-postgres-backup-10.2    20s
-postgres-backup-10.6    20s
-postgres-backup-11.1    19s
-postgres-backup-9.6     20s
-postgres-restore-10.2   20s
-postgres-restore-10.6   20s
-postgres-restore-11.1   19s
-postgres-restore-9.6    20s
-postgres-backup-11.2    19s
-postgres-restore-11.2   19s
-pvc-backup              7h6m
-pvc-restore             7h6m
-update-status           7h6m
-```
-
-Also, verify that the necessary `Task` have been created,
-
-```console
-$ kubectl get tasks.stash.appscode.com
-NAME                    AGE
-postgres-backup-10.2    2m7s
-postgres-backup-10.6    2m7s
-postgres-backup-11.1    2m6s
-postgres-backup-9.6     2m7s
-postgres-restore-10.2   2m7s
-postgres-restore-10.6   2m7s
-postgres-restore-11.1   2m6s
-postgres-restore-9.6    m7s
-postgres-backup-11.2    2m6s
-postgres-restore-11.2   2m6s
-pvc-backup              7h7m
-pvc-restore             7h7m
-```
 
 ## Prepare Backup Blueprint
 
@@ -327,7 +245,7 @@ Here, we can see `AppBinding` `sample-postgres-2` has been created for our secon
 
 ## Backup
 
-Now, we are going to add auto-backup specific annotation to the `AppBinding` of our desired database. Stash watches for `AppBinding` crd. Once it finds an `AppBinding` with auto-backup annotation, it will create a `Repository` and a `BackupConfiguration` crd according to respective `BackupBlueprint`. Then, rest of the backup process will proceed as normal database backup as described [here](/products/stash/v0.9.0-rc.2/guides/latest/databases/overview).
+Now, we are going to add auto-backup specific annotation to the `AppBinding` of our desired database. Stash watches for `AppBinding` crd. Once it finds an `AppBinding` with auto-backup annotation, it will create a `Repository` and a `BackupConfiguration` crd according to respective `BackupBlueprint`. Then, rest of the backup process will proceed as normal database backup as described [here](/products/stash/v0.9.0-rc.2/guides/latest/addons/overview).
 
 ### Backup First PostgreSQL Sample
 
@@ -617,45 +535,5 @@ kubectl delete -n demo repository/postgres-sample-postgres-2
 
 kubectl delete -n demo backupblueprint/postgres-backup-blueprint
 ```
-
-To cleanup the Postgres catalogs that we had created earlier, run the following:
-
-<ul class="nav nav-tabs" id="uninstallerTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link" id="helm-uninstaller-tab" data-toggle="tab" href="#helm-uninstaller" role="tab" aria-controls="helm-uninstaller" aria-selected="false">Helm</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" id="script-uninstaller-tab" data-toggle="tab" href="#script-uninstaller" role="tab" aria-controls="script-uninstaller" aria-selected="true">Script</a>
-  </li>
-</ul>
-<div class="tab-content" id="uninstallerTabContent">
- <!-- ------------ Helm Tab Begins----------- -->
-  <div class="tab-pane fade" id="helm-uninstaller" role="tabpanel" aria-labelledby="helm-uninstaller-tab">
-
-### Uninstall  `postgres-stash-*` charts
-
-Run the following script to uninstall `postgres-stash` catalogs that were installed as a chart releases.
-
-```console
-curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.catalog" >}}/deploy/chart.sh | bash -s -- --uninstall --catalog=postgres-stash
-```
-
-</div>
-<!-- ------------ Helm Tab Ends----------- -->
-
-<!-- ------------ Script Tab Begins----------- -->
-<div class="tab-pane fade show active" id="script-uninstaller" role="tabpanel" aria-labelledby="script-uninstaller-tab">
-
-### Uninstall `postgres-stash` catalog YAMLs
-
-Run the following script to uninstall `postgres-stash` catalog that was installed as Kubernetes YAMLs.
-
-```console
-curl -fsSL https://github.com/stashed/catalog/raw/{{< param "info.catalog" >}}/deploy/script.sh | bash -s -- --uninstall --catalog=postgres-stash
-```
-
-</div>
-<!-- ------------ Script Tab Ends----------- -->
-</div>
 
 If you would like to uninstall Stash operator, please follow the steps [here](/products/stash/v0.9.0-rc.2/setup/uninstall).

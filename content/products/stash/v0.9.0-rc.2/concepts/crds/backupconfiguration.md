@@ -212,5 +212,5 @@ For some targets (i.e. some databases), Stash can't directly pipe the dumped dat
 ## Next Steps
 
 - Learn how to configure `BackupConfiguration` to backup workloads data from [here](/products/stash/v0.9.0-rc.2/guides/latest/workloads/overview).
-- Learn how to configure `BackupConfiguration` to backup databases from [here](/products/stash/v0.9.0-rc.2/guides/latest/databases/overview).
+- Learn how to configure `BackupConfiguration` to backup databases from [here](/products/stash/v0.9.0-rc.2/guides/latest/addons/overview).
 - Learn how to configure `BackupConfiguration` to backup stand-alone PVC from [here](/products/stash/v0.9.0-rc.2/guides/latest/volumes/overview).
