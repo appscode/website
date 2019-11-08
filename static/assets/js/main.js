@@ -174,10 +174,16 @@ document.addEventListener("DOMContentLoaded", () => {
   if(sidebarMenu){
     sidebarMenu.children[0].children[1].children[0].style.fontSize = "22px";
   }
-  // docs page header link create
+  
   const allHeaders = document.querySelectorAll(
     ".full-info > h2,.full-info > h3,.full-info > h4"
   );
+   // docs-page -> right sidebar (content > 20) then show a scroll 
+  if((allHeaders.length) > 20){
+    let rightSidebarArea =  document.querySelector('.right-sidebar-area');
+    rightSidebarArea.style.position = 'inherit'
+  }
+  // docs page header link create
   Array.from(allHeaders).forEach(el => {
     const id = el.id;
     const anchorTag = document.createElement("a");
