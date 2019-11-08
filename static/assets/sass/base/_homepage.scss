@@ -128,7 +128,6 @@ body.fixed-nav
 .trusted-logo {
   .trusted-action {
     background: #e0f2e9;
-    box-shadow: 0 1px 12px rgba(15, 80, 100, 0.12);
     padding: 6px 30px;
     border-radius: 4px;
     font-size: 16px;
@@ -308,6 +307,16 @@ body.fixed-nav
     margin-bottom: 20px;
     line-height: 50px;
     font-weight: 400;
+  }
+  p{
+    a{
+      color: $primary-color;
+      text-decoration: underline;
+      transition: .3s ease-in-out;
+      &:hover{
+        color: scale-color($primary-color, $lightness: 10%);
+      }
+    }
   }
   .quete-icon {
     font-size: 120px;

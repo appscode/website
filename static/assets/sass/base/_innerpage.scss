@@ -20,7 +20,7 @@
     height: 400px;
     h1 {
       font-size: 48px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       font-weight: 400;
     }
     p {
@@ -72,6 +72,10 @@
       margin-top: 30px;
       float: right;
       overflow: hidden;
+      align-items: center;
+      figure{
+        margin-right: 15px;
+      }
       h4 {
         font-size: 18px;
         line-height: 28px;
@@ -91,7 +95,7 @@
     padding: 30px 50px;
     h4 {
       font-size: 18px;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
     }
     p {
       font-size: 16px;
