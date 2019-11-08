@@ -7,6 +7,15 @@ body {
   font-weight: 400;
   font-style: normal; }
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: #00A651; }
+
+::selection {
+  color: #fff;
+  background: #00A651; }
+
 li b {
   font-family: "Roboto", sans-serif; }
 

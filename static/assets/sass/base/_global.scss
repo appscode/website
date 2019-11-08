@@ -8,6 +8,15 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: $primary-color;
+}
+
+::selection {
+  color: #fff;
+  background: $primary-color;
+}
 li b {
   font-family: $font-paragraph;
 }
