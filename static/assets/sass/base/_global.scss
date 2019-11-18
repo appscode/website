@@ -206,6 +206,9 @@ h6 {
   border-color: $primary-color;
   box-shadow: none;
 }
+video:focus{
+  outline: none;
+}
 .is-dark {
   background-color: #32325d;
 }

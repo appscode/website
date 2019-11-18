@@ -62,7 +62,7 @@ body.fixed-nav
   z-index: 1;
   .hero-shape {
     position: absolute;
-    background: url(../images/appscode/hero-shape.png);
+    background: url(../images/appscode/hero-shape.webp);
     background-repeat: no-repeat;
     content: "";
     left: 0;
@@ -155,7 +155,7 @@ body.fixed-nav
     top: 10px;
     left: -4%;
     z-index: -1;
-    background: url(../images/appscode/shape-3.png);
+    background: url(../images/appscode/shape-3.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -227,9 +227,10 @@ body.fixed-nav
       max-width: 180px;
       margin: 0 auto;
       margin-bottom: 40px;
+      height: 170px;
       img {
-        height: 150px;
         width: 100%;
+      
       }
     }
     .count {
@@ -474,16 +475,16 @@ body.fixed-nav
       }
     }
     .press-image-1 {
-      background-image: url(../images/press/1.png);
+      background-image: url(../images/press/1.webp);
     }
     .press-image-2 {
-      background-image: url(../images/press/2.png);
+      background-image: url(../images/press/2.webp);
     }
     .press-image-3 {
-      background-image: url(../images/press/3.png);
+      background-image: url(../images/press/3.webp);
     }
     .press-image-4 {
-      background-image: url(../images/press/4.png);
+      background-image: url(../images/press/4.webp);
     }
   }
   .press-image {
@@ -634,7 +635,7 @@ body.fixed-nav
   }
   .dots-style {
     position: absolute;
-    background: url(../images/appscode/dots.png);
+    background: url(../images/appscode/dots.webp);
     background-repeat: no-repeat;
     height: 150px;
     width: 250px;
