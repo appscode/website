@@ -82,7 +82,7 @@ spec:
   tempDir:
     disableCache: false
     medium: Memory
-    size: 2Gi
+    sizeLimit: 2Gi
 status:
   totalHosts: 5
   phase: Succeeded
