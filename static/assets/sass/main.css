@@ -2874,10 +2874,7 @@ body.fixed-nav .documentation-menu {
     .full-info h4 a,
     .full-info h5 a,
     .full-info h6 a {
-      font-size: 16px;
-      opacity: 0;
-      visibility: hidden;
-      transition: .3s ease-in-out; }
+      font-size: 16px; }
       .full-info h1 a svg,
       .full-info h2 a svg,
       .full-info h3 a svg,
@@ -2885,6 +2882,15 @@ body.fixed-nav .documentation-menu {
       .full-info h5 a svg,
       .full-info h6 a svg {
         padding-left: 10px; }
+      .full-info h1 a.hash-tag,
+      .full-info h2 a.hash-tag,
+      .full-info h3 a.hash-tag,
+      .full-info h4 a.hash-tag,
+      .full-info h5 a.hash-tag,
+      .full-info h6 a.hash-tag {
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s ease-in-out; }
     .full-info h1:hover a,
     .full-info h2:hover a,
     .full-info h3:hover a,

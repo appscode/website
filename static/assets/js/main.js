@@ -187,6 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
   Array.from(allHeaders).forEach(el => {
     const id = el.id;
     const anchorTag = document.createElement("a");
+    anchorTag.className = 'hash-tag'
     anchorTag.setAttribute("href", "#" + id);
     anchorTag.innerHTML = `<svg width="25" height="13" viewBox="0 0 52.965 52.973">
     <g id="broken-link" transform="translate(-0.004)">

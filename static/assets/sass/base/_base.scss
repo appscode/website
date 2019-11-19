@@ -1291,10 +1291,13 @@ body.fixed-nav .documentation-menu {
         padding-left: 10px;
       }
       font-size: 16px;
-      opacity: 0;
-      visibility: hidden;
-      transition: .3s ease-in-out;
+      &.hash-tag{
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s ease-in-out;
+      }
     }
+
     &:hover a{
       opacity: 1;
       visibility: visible;
