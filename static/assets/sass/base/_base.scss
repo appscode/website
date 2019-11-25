@@ -49,11 +49,17 @@ body.fixed-nav header {
   border: none;
 }
 .button.for-chat {
-  color: #36c5f0;
+  background-color: #611F69;
+  color: #fff;
+  transition: .3s ease-in-out;
+  &:hover{
+    background-color: #4A154B;
+  }
 }
 
 .button.for-support {
-  color: #9d0a0e;
+  background-color: #80080B ;
+  color: #fff;
 }
 
 .button.for-chat:hover {
@@ -63,11 +69,6 @@ body.fixed-nav header {
 .button.for-support:hover {
   background-color: #9d0a0e;
   color: $white-color;
-  span {
-    img {
-      filter: brightness(100);
-    }
-  }
 }
 
 .main-menu-button-top .button {
