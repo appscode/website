@@ -49,6 +49,8 @@
     <meta property="og:type" content="article">
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    <!-- Onscroll animation CSS -->
+    <link rel="stylesheet" href="/assets/css/aos.css" />
     <!-- Bulma Carousel CSS -->
     <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
     <!-- Bulma tooltip CSS -->
@@ -384,7 +386,7 @@
       <div class="container section">
         <div class="columns">
           <div class="column">
-            <div class="section-title has-text-centered">
+            <div class="section-title has-text-centered" data-aos="fade-up">
               <h2>What Our Customers Say</h2>
             </div>
           </div>
@@ -397,11 +399,11 @@
               <div class="carousel-inner">
                 <div class="single-testimonial-wrapper">
                   <div class="client-brief has-text-centered">
-                    <p>
+                    <p data-aos="fade-up">
                       {{ $user.testimonial | safeHTML }}
                     </p>
                   </div>
-                    <div class="client-information">
+                    <div class="client-information" data-aos="fade-up" data-aos-duration="800">
                       <div class="client-info-inner">
                       <div class="client-thumb">
                         <img
@@ -504,7 +506,7 @@
       <div class="footer-top">
         <div class="container section">
           <div class="columns is-mobile is-multiline">
-            <div class="column is-full-mobile is-one-third-desktop is-one-third-widescreen is-one-third-tablet">
+            <div class="column is-full-mobile is-one-third-desktop is-one-third-widescreen is-one-third-tablet" data-aos="fade-up">
               <div class="single-footer-widget">
                 <!-- logo start -->
                 <div class="footer-logo">
@@ -569,7 +571,7 @@
               </div>
             </div>
 
-            <div class="column is-half-mobile">
+            <div class="column is-half-mobile" data-aos="fade-up" data-aos-duration="800">
               <div class="single-footer-widget">
                 <!-- footer menu start -->
                 <div class="footer-menu">
@@ -585,7 +587,7 @@
               </div>
             </div>
 
-            <div class="column is-half-mobile">
+            <div class="column is-half-mobile" data-aos="fade-up" data-aos-duration="1000">
               <div class="single-footer-widget">
                 <!-- footer menu start -->
                 <div class="footer-menu">
@@ -601,7 +603,7 @@
               </div>
             </div>
 
-            <div class="column is-half-mobile">
+            <div class="column is-half-mobile" data-aos="fade-up" data-aos-duration="1200">
               <div class="single-footer-widget">
                 <!-- footer menu start -->
                 <div class="footer-menu">
@@ -616,7 +618,7 @@
               </div>
             </div>
 
-            <div class="column is-half-mobile">
+            <div class="column is-half-mobile" data-aos="fade-up" data-aos-duration="1500">
               <div class="single-footer-widget">
                 <!-- footer menu start -->
                 <div class="footer-menu">
@@ -676,6 +678,8 @@
 
     <!-- Bulma Carousel JS -->
     <script src="/assets/js/bulma-carousel.min.js"></script>
+    <!-- On scroll JS -->
+    <script src="/assets/js/aos.js"></script>
     <!-- download js  -->
     <script src="https://unpkg.com/downloadjs@1.4.7/download.min.js"></script>
     <!-- clipboard js  -->
