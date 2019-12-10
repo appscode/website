@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+  //For OnScroll Animation JS 
+  AOS.init();
+
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(
     document.querySelectorAll(".navbar-burger"),
@@ -331,3 +334,14 @@ var basicScrollTop = function() {
   }
 };
 basicScrollTop();
+
+
+
+
+// docs page animation code 
+// let allContent = document.querySelectorAll('.full-info > h1,.full-info > h2,.full-info > h3 ,.full-info > h4,.full-info > h5,.full-info > h6, .full-info > ul, .full-info > ol, .full-info > p, .full-info > pre ');
+// Array.from(allContent).forEach(singleContent => {
+//   singleContent.setAttribute('data-aos','fade-up')
+// })
+
+
