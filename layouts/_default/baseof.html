@@ -50,7 +50,7 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
     <!-- Onscroll animation CSS -->
-    <link rel="stylesheet" href="/assets/css/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Bulma Carousel CSS -->
     <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
     <!-- Bulma tooltip CSS -->
@@ -58,10 +58,10 @@
     <!-- Bulma CSS -->
     <link rel="stylesheet" href="/assets/css/bulma.min.css" />
     <!-- Custom CSS -->
-    {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
+    <!-- {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-    {{ end }}
-    <!-- <link rel="stylesheet" href="/assets/sass/main.css" /> -->
+    {{ end }} -->
+    <link rel="stylesheet" href="/assets/sass/main.css" />
   </head>
 
   <body {{if $productName}}class="{{$productName}}"{{end}}>
@@ -679,7 +679,7 @@
     <!-- Bulma Carousel JS -->
     <script src="/assets/js/bulma-carousel.min.js"></script>
     <!-- On scroll JS -->
-    <script src="/assets/js/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- download js  -->
     <script src="https://unpkg.com/downloadjs@1.4.7/download.min.js"></script>
     <!-- clipboard js  -->
