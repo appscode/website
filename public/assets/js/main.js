@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+  //For OnScroll Animation JS 
+  AOS.init();
+
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(
     document.querySelectorAll(".navbar-burger"),
@@ -187,6 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
   Array.from(allHeaders).forEach(el => {
     const id = el.id;
     const anchorTag = document.createElement("a");
+    anchorTag.className = 'hash-tag'
     anchorTag.setAttribute("href", "#" + id);
     anchorTag.innerHTML = `<svg width="25" height="13" viewBox="0 0 52.965 52.973">
     <g id="broken-link" transform="translate(-0.004)">
@@ -252,8 +256,6 @@ tabItems.forEach(tab => {
         ? tabPane.classList.add("show")
         : tabPane.classList.remove("show");
     });
-
-    tabPane.classList.add("show");
   });
 });
 
@@ -332,3 +334,14 @@ var basicScrollTop = function() {
   }
 };
 basicScrollTop();
+
+
+
+
+// docs page animation code 
+// let allContent = document.querySelectorAll('.full-info > h1,.full-info > h2,.full-info > h3 ,.full-info > h4,.full-info > h5,.full-info > h6, .full-info > ul, .full-info > ol, .full-info > p, .full-info > pre ');
+// Array.from(allContent).forEach(singleContent => {
+//   singleContent.setAttribute('data-aos','fade-up')
+// })
+
+

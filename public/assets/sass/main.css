@@ -184,6 +184,9 @@ h6 {
   border-color: #00A651;
   box-shadow: none; }
 
+video:focus {
+  outline: none; }
+
 .is-dark {
   background-color: #32325d; }
 
@@ -935,7 +938,7 @@ body.fixed-nav
   z-index: 1; }
   .hero-area .hero-shape {
     position: absolute;
-    background: url(../images/appscode/hero-shape.png);
+    background: url(../images/appscode/hero-shape.webp);
     background-repeat: no-repeat;
     content: "";
     left: 0;
@@ -1014,7 +1017,7 @@ body.fixed-nav
     top: 10px;
     left: -4%;
     z-index: -1;
-    background: url(../images/appscode/shape-3.png);
+    background: url(../images/appscode/shape-3.webp);
     background-repeat: no-repeat;
     background-size: contain; }
 
@@ -1071,9 +1074,9 @@ body.fixed-nav
     .counter-area .single-count-wrapper .count-icon {
       max-width: 180px;
       margin: 0 auto;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      height: 170px; }
       .counter-area .single-count-wrapper .count-icon img {
-        height: 150px;
         width: 100%; }
     .counter-area .single-count-wrapper .count {
       font-size: 48px;
@@ -1265,13 +1268,13 @@ body.fixed-nav
       .press-area .single-press-wrapper:hover .press-content {
         border: 1px solid white; }
     .press-area .single-press-wrapper .press-image-1 {
-      background-image: url(../images/press/1.png); }
+      background-image: url(../images/press/1.webp); }
     .press-area .single-press-wrapper .press-image-2 {
-      background-image: url(../images/press/2.png); }
+      background-image: url(../images/press/2.webp); }
     .press-area .single-press-wrapper .press-image-3 {
-      background-image: url(../images/press/3.png); }
+      background-image: url(../images/press/3.webp); }
     .press-area .single-press-wrapper .press-image-4 {
-      background-image: url(../images/press/4.png); }
+      background-image: url(../images/press/4.webp); }
   .press-area .press-image {
     height: 200px;
     background-size: cover;
@@ -1390,7 +1393,7 @@ body.fixed-nav
     margin-top: 20px; }
   .ceo-image .dots-style {
     position: absolute;
-    background: url(../images/appscode/dots.png);
+    background: url(../images/appscode/dots.webp);
     background-repeat: no-repeat;
     height: 150px;
     width: 250px;
@@ -1490,7 +1493,7 @@ section.our-customer-area {
     position: absolute;
     z-index: -2;
     content: "";
-    background: url(../images/appscode/about-hero-bg-2.png);
+    background: url(../images/appscode/about-hero-bg-2.webp);
     background-size: contain; }
   .hero-area-2 .hero-area-inner-2 {
     height: 400px; }
@@ -1509,7 +1512,7 @@ section.our-customer-area {
   background-repeat: no-repeat; }
 
 .illustration-1 {
-  background-image: url(../images/consulting-page/illustation.png);
+  background-image: url(../images/consulting-page/illustation.webp);
   background-size: contain; }
 
 .consulting-inner h2 {
@@ -1782,27 +1785,26 @@ body.fixed-nav header {
 .buttons.main-menu-button {
   margin-bottom: 0; }
 
-.button.for-support,
-.button.for-chat {
+.button.for-support, .button.for-chat {
   background: #ffffff;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.17);
   border-radius: 2px;
   border: none; }
 
 .button.for-chat {
-  color: #36c5f0; }
+  color: #36C5F0; }
 
 .button.for-support {
-  color: #9d0a0e; }
+  color: #9D0A0E; }
 
 .button.for-chat:hover {
-  background-color: #4a154b;
+  background-color: #4A154B;
   color: #ffffff; }
 
 .button.for-support:hover {
-  background-color: #9d0a0e;
+  background-color: #9D0A0E;
   color: #ffffff; }
-  .button.for-support:hover span img {
+  .button.for-support:hover img {
     filter: brightness(100); }
 
 .main-menu-button-top .button {
@@ -1968,7 +1970,7 @@ body.fixed-nav .fixed-menu {
 
 /* Feature area start */
 .feature-area {
-  background-image: url(../images/bg-image/about.png);
+  background-image: url(../images/bg-image/about.webp);
   background-size: cover;
   background-position: center;
   background-color: #fbfcfe; }
@@ -2716,14 +2718,14 @@ p.spam-message {
 
 .payment-method-area {
   position: relative;
-  background-image: url(../images/shape/shape-1.png);
+  background-image: url(../images/shape/shape-1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
   margin-top: 120px; }
 
 .payment-method-area:after {
-  background-image: url(../images/shape/shape-2.png);
+  background-image: url(../images/shape/shape-2.webp);
   content: "";
   left: 0;
   top: 0;
@@ -2871,10 +2873,7 @@ body.fixed-nav .documentation-menu {
     .full-info h4 a,
     .full-info h5 a,
     .full-info h6 a {
-      font-size: 16px;
-      opacity: 0;
-      visibility: hidden;
-      transition: .3s ease-in-out; }
+      font-size: 16px; }
       .full-info h1 a svg,
       .full-info h2 a svg,
       .full-info h3 a svg,
@@ -2882,6 +2881,15 @@ body.fixed-nav .documentation-menu {
       .full-info h5 a svg,
       .full-info h6 a svg {
         padding-left: 10px; }
+      .full-info h1 a.hash-tag,
+      .full-info h2 a.hash-tag,
+      .full-info h3 a.hash-tag,
+      .full-info h4 a.hash-tag,
+      .full-info h5 a.hash-tag,
+      .full-info h6 a.hash-tag {
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s ease-in-out; }
     .full-info h1:hover a,
     .full-info h2:hover a,
     .full-info h3:hover a,
@@ -2973,6 +2981,9 @@ ul li b {
 .full-info ol {
   padding: 0 0 0 30px;
   margin-bottom: 15px; }
+
+.full-info ul.nav.nav-tabs {
+  margin-bottom: 0; }
 
 .full-info ul li p {
   margin: 0;

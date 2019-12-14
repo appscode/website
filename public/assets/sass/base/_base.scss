@@ -41,32 +41,29 @@ body.fixed-nav header {
   margin-bottom: 0 ;
 }
 
-.button.for-support,
-.button.for-chat {
+.button.for-support, .button.for-chat {
   background: $white-color;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, .17);
   border-radius: 2px;
   border: none;
 }
 .button.for-chat {
-  color: #36c5f0;
+  color: #36C5F0;
 }
 
 .button.for-support {
-  color: #9d0a0e;
+  color: #9D0A0E;
 }
 
 .button.for-chat:hover {
-  background-color: #4a154b;
+  background-color: #4A154B;
   color: $white-color;
 }
-.button.for-support:hover {
-  background-color: #9d0a0e;
+.button.for-support:hover{
+  background-color: #9D0A0E;
   color: $white-color;
-  span {
-    img {
-      filter: brightness(100);
-    }
+  img{
+    filter: brightness(100);
   }
 }
 
@@ -250,7 +247,7 @@ body.fixed-nav .fixed-menu {
 
 /* Feature area start */
 .feature-area {
-  background-image: url(../images/bg-image/about.png);
+  background-image: url(../images/bg-image/about.webp);
   background-size: cover;
   background-position: center;
   background-color: #fbfcfe;
@@ -1118,7 +1115,7 @@ p.spam-message {
 
 .payment-method-area {
   position: relative;
-  background-image: url(../images/shape/shape-1.png);
+  background-image: url(../images/shape/shape-1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -1126,7 +1123,7 @@ p.spam-message {
 }
 
 .payment-method-area:after {
-  background-image: url(../images/shape/shape-2.png);
+  background-image: url(../images/shape/shape-2.webp);
   content: "";
   left: 0;
   top: 0;
@@ -1291,10 +1288,13 @@ body.fixed-nav .documentation-menu {
         padding-left: 10px;
       }
       font-size: 16px;
-      opacity: 0;
-      visibility: hidden;
-      transition: .3s ease-in-out;
+      &.hash-tag{
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s ease-in-out;
+      }
     }
+
     &:hover a{
       opacity: 1;
       visibility: visible;
@@ -1401,6 +1401,9 @@ ul li b {
 .full-info ol {
   padding: 0 0 0 30px;
   margin-bottom: 15px;
+}
+.full-info ul.nav.nav-tabs {
+  margin-bottom: 0;
 }
 .full-info ul li p {
   margin: 0;
