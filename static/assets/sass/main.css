@@ -1785,31 +1785,27 @@ body.fixed-nav header {
 .buttons.main-menu-button {
   margin-bottom: 0; }
 
-.button.for-support,
-.button.for-chat {
+.button.for-support, .button.for-chat {
   background: #ffffff;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.17);
   border-radius: 2px;
   border: none; }
 
 .button.for-chat {
-  background-color: #611F69;
-  color: #fff;
-  transition: .3s ease-in-out; }
-  .button.for-chat:hover {
-    background-color: #4A154B; }
+  color: #36C5F0; }
 
 .button.for-support {
-  background-color: #9D0A0E;
-  color: #fff; }
+  color: #9D0A0E; }
 
 .button.for-chat:hover {
-  background-color: #4a154b;
+  background-color: #4A154B;
   color: #ffffff; }
 
 .button.for-support:hover {
-  background-color: #80080B;
+  background-color: #9D0A0E;
   color: #ffffff; }
+  .button.for-support:hover img {
+    filter: brightness(100); }
 
 .main-menu-button-top .button {
   padding: 7px 16px; }
