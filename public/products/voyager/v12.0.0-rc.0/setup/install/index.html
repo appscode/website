@@ -81,7 +81,7 @@ appscode/voyager  v12.0.0-rc.0    v12.0.0-rc.0  Voyager by AppsCode - Secure HAP
 $ helm install appscode/voyager --name voyager-operator --version v12.0.0-rc.0 \
   --namespace kube-system \
   --set cloudProvider=$provider
-</code></pre><p>To see the detailed configuration options, visit <a href=https://github.com/appscode/voyager/tree/v12.0.0-rc.0/charts/voyager>here</a>.</p><p></div><div class="tab-pane fade show active" id=script role=tabpanel aria-labelledby=script-tab></p><h2 id=using-yaml>Using YAML</h2><p>If you prefer to not use Helm, you can generate YAMLs from Voyager operator chart and deploy using <code>kubectl</code>. Here we are going to show the prodecure using Helm 3.</p><pre><code class=language-console>$ helm repo add appscode https://charts.appscode.com/stable/
+</code></pre><p>To see the detailed configuration options, visit <a href=https://github.com/appscode/voyager/tree/v12.0.0-rc.0/charts/voyager>here</a>.</p><p></div><div class="tab-pane fade" id=script role=tabpanel aria-labelledby=script-tab></p><h2 id=using-yaml>Using YAML</h2><p>If you prefer to not use Helm, you can generate YAMLs from Voyager operator chart and deploy using <code>kubectl</code>. Here we are going to show the prodecure using Helm 3.</p><pre><code class=language-console>$ helm repo add appscode https://charts.appscode.com/stable/
 $ helm repo update
 $ helm search repo appscode/voyager
 NAME              CHART VERSION APP VERSION DESCRIPTION
