@@ -94,12 +94,12 @@
         },
         {
           "source": "/products/voyager/latest/",
-          "destination": "/products/voyager/v11.0.1/",
+          "destination": "/products/voyager/v12.0.0-rc.0/",
           "type": 302
         },
         {
           "source": "/products/voyager/latest/:rest*",
-          "destination": "/products/voyager/v11.0.1/:rest",
+          "destination": "/products/voyager/v12.0.0-rc.0/:rest",
           "type": 302
         },
         {
