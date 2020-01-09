@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   //For OnScroll Animation JS 
-  AOS.init();
+  AOS.init({
+    once: true
+  });
 
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(
