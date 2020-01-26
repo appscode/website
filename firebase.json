@@ -44,12 +44,12 @@
       "redirects": [
         {
           "source": "/products/guard/latest/",
-          "destination": "/products/guard/0.4.0/",
+          "destination": "/products/guard/v0.5.0-rc.0/",
           "type": 302
         },
         {
           "source": "/products/guard/latest/:rest*",
-          "destination": "/products/guard/0.4.0/:rest",
+          "destination": "/products/guard/v0.5.0-rc.0/:rest",
           "type": 302
         },
         {
