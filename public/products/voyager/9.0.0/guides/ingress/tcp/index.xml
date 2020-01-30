@@ -3,4 +3,5 @@ TCP LoadBalancing TCP load balancing is one of the core features of Voyager Ingr
 One Simple TCP Rule Would be:
 apiVersion: voyager.appscode.com/v1beta1 kind: Ingress metadata: name: test-ingress namespace: default spec: tls: - secretName: mycert hosts: - other.example.com rules: - host: one.</description></item><item><title>TCP SNI | Kubernetes Ingress</title><link>https://appscode.com/products/voyager/9.0.0/guides/ingress/tcp/tcp-sni/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/9.0.0/guides/ingress/tcp/tcp-sni/</guid><description>New to Voyager? Please start here.
 Using TCP SNI In TCP mode, HAProxy can choose backends using Server Name Indication (SNI). This allows clients to include the hostname during SSL Hello. SNI hostname is send in plain text. So, HAProxy can choose backend based on SNI hostname even in TCP mode.
-This example demonstrates how to configure Voyager to choose backends based on SNI in TCP mode.</description></item></channel></rss>
+This example demonstrates how to configure Voyager to choose backends based on SNI in TCP mode.
+Minikube walk-through Deploy test server $ kubectl apply -f https://raw.</description></item></channel></rss>
