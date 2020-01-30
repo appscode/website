@@ -294,8 +294,8 @@ function responsiveNavbar() {
 
 // documentation page (.full-info ol li pre) tag after contain p tag we use margin buttom
 function marginTopAfterPreTag() {
-  let preTag = document.querySelectorAll(".full-info ol li pre");
-  let pTag = document.querySelector(".full-info ol li p");
+  let preTag = document.querySelectorAll(".full-info ol li pre, .full-info ul li pre");
+  let pTag = document.querySelector(".full-info ol li p,.full-info ul li p");
   preTag.forEach(pre => {
     if ((pre.nextSibling && pre.nextSibling.tagName) == pTag.tagName) {
       pre.nextSibling.style.marginTop = "20px";
