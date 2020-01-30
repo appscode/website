@@ -1,9 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hyperalert on GitHub for Kubernetes</title><link>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/</link><description>Recent content in Hyperalert on GitHub for Kubernetes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode.com/products/searchlight/5.0.0/reference/searchlight/index.xml" rel="self" type="application/rss+xml"/><item><title>Configure</title><link>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/searchlight_configure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/searchlight_configure/</guid><description>searchlight configure Generate icinga configuration
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hyperalert on GitHub for Kubernetes</title>
+    <link>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/</link>
+    <description>Recent content in Hyperalert on GitHub for Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://appscode.com/products/searchlight/5.0.0/reference/searchlight/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configure</title>
+      <link>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/searchlight_configure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/searchlight_configure/</guid>
+      <description>searchlight configure Generate icinga configuration
 Synopsis Generate icinga configuration
-searchlight configure [flags] Options -s, --config-dir string Path to directory containing icinga2 config. This should be an emptyDir inside Kubernetes. -h, --help help for configure Options inherited from parent commands --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962. --alsologtostderr log to standard error as well as files --analytics Send analytical events to Google Analytics (default true) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files (default true) --stderrthreshold severity logs at or above this threshold go to stderr (default 2) -v, --v Level log level for V logs --vmodule moduleSpec comma-separated list of pattern=N settings for file-filtered logging SEE ALSO searchlight - Searchlight by AppsCode - Alerts for Kubernetes</description></item><item><title>Run</title><link>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/searchlight_run/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/searchlight_run/</guid><description>searchlight run Run operator
+searchlight configure [flags]Options  -s, --config-dir string Path to directory containing icinga2 config. This should be an emptyDir inside Kubernetes.-h, --help help for configureOptions inherited from parent commands  --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962.--alsologtostderr log to standard error as well as files--analytics Send analytical events to Google Analytics (default true)--log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0)--log_dir string If non-empty, write log files in this directory--logtostderr log to standard error instead of files (default true)--stderrthreshold severity logs at or above this threshold go to stderr (default 2)-v, --v Level log level for V logs--vmodule moduleSpec comma-separated list of pattern=N settings for file-filtered loggingSEE ALSO  searchlight	- Searchlight by AppsCode - Alerts for Kubernetes  </description>
+    </item>
+    
+    <item>
+      <title>Run</title>
+      <link>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/searchlight_run/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/searchlight_run/</guid>
+      <description>searchlight run Run operator
 Synopsis Run operator
-searchlight run [flags] Options --api.address string The address of the Searchlight API Server (default &amp;quot;:8080&amp;quot;) --config-dir string Path to directory containing icinga2 config. This should be an emptyDir inside Kubernetes. (default &amp;quot;/srv&amp;quot;) --config-secret-name string Name of Kubernetes secret used to pass icinga credentials. (default &amp;quot;searchlight-operator&amp;quot;) -h, --help help for run --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description></item><item><title>Searchlight</title><link>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/</guid><description>searchlight Searchlight by AppsCode - Alerts for Kubernetes
+searchlight run [flags]Options  --api.address string The address of the Searchlight API Server (default &amp;quot;:8080&amp;quot;)--config-dir string Path to directory containing icinga2 config. This should be an emptyDir inside Kubernetes. (default &amp;quot;/srv&amp;quot;)--config-secret-name string Name of Kubernetes secret used to pass icinga credentials. (default &amp;quot;searchlight-operator&amp;quot;)-h, --help help for run--kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description>
+    </item>
+    
+    <item>
+      <title>Searchlight</title>
+      <link>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/</guid>
+      <description>searchlight Searchlight by AppsCode - Alerts for Kubernetes
 Synopsis Searchlight by AppsCode - Alerts for Kubernetes
-Options --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962. --alsologtostderr log to standard error as well as files --analytics Send analytical events to Google Analytics (default true) -h, --help help for searchlight --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files (default true) --stderrthreshold severity logs at or above this threshold go to stderr (default 2) -v, --v Level log level for V logs --vmodule moduleSpec comma-separated list of pattern=N settings for file-filtered logging SEE ALSO searchlight configure - Generate icinga configuration searchlight run - Run operator searchlight version - Prints binary version number.</description></item><item><title>Version</title><link>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/searchlight_version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/searchlight_version/</guid><description>searchlight version Prints binary version number.
+Options  --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962.--alsologtostderr log to standard error as well as files--analytics Send analytical events to Google Analytics (default true)-h, --help help for searchlight--log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0)--log_dir string If non-empty, write log files in this directory--logtostderr log to standard error instead of files (default true)--stderrthreshold severity logs at or above this threshold go to stderr (default 2)-v, --v Level log level for V logs--vmodule moduleSpec comma-separated list of pattern=N settings for file-filtered loggingSEE ALSO  searchlight configure	- Generate icinga configuration searchlight run	- Run operator searchlight version	- Prints binary version number.</description>
+    </item>
+    
+    <item>
+      <title>Version</title>
+      <link>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/searchlight_version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.0.0/reference/searchlight/searchlight_version/</guid>
+      <description>searchlight version Prints binary version number.
 Synopsis Prints binary version number.
-searchlight version [flags] Options -h, --help help for version Options inherited from parent commands --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962. --alsologtostderr log to standard error as well as files --analytics Send analytical events to Google Analytics (default true) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files (default true) --stderrthreshold severity logs at or above this threshold go to stderr (default 2) -v, --v Level log level for V logs --vmodule moduleSpec comma-separated list of pattern=N settings for file-filtered logging SEE ALSO searchlight - Searchlight by AppsCode - Alerts for Kubernetes</description></item></channel></rss>
+searchlight version [flags]Options  -h, --help help for versionOptions inherited from parent commands  --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962.--alsologtostderr log to standard error as well as files--analytics Send analytical events to Google Analytics (default true)--log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0)--log_dir string If non-empty, write log files in this directory--logtostderr log to standard error instead of files (default true)--stderrthreshold severity logs at or above this threshold go to stderr (default 2)-v, --v Level log level for V logs--vmodule moduleSpec comma-separated list of pattern=N settings for file-filtered loggingSEE ALSO  searchlight	- Searchlight by AppsCode - Alerts for Kubernetes  </description>
+    </item>
+    
+  </channel>
+</rss>

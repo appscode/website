@@ -1,204 +1,1722 @@
-<!doctype html><html lang=en><head><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-62096468-4','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=theme-color content="#00A651"><title>Searchlight Home</title><meta name=description content="Accelerating the transition to Containers by building a Kubernetes-native Data Platform"><meta name=author content="AppsCode Inc."><meta name=keywords content="application monitoring,attic,build docker image,cloud app,cloud deployment,cloud hosting,container applications,continuous deployment,deployment automation,git hosting,kubernetes autoscaling,nagios,network monitor,repository hosting,source code repository"><link rel=apple-touch-icon sizes=57x57 href=/assets/images/products/appscode/icons/apple-icon-57x57.png><link rel=apple-touch-icon sizes=60x60 href=/assets/images/products/appscode/icons/apple-icon-60x60.png><link rel=apple-touch-icon sizes=72x72 href=/assets/images/products/appscode/icons/apple-icon-72x72.png><link rel=apple-touch-icon sizes=76x76 href=/assets/images/products/appscode/icons/apple-icon-76x76.png><link rel=apple-touch-icon sizes=114x114 href=/assets/images/products/appscode/icons/apple-icon-114x114.png><link rel=apple-touch-icon sizes=120x120 href=/assets/images/products/appscode/icons/apple-icon-120x120.png><link rel=apple-touch-icon sizes=144x144 href=/assets/images/products/appscode/icons/apple-icon-144x144.png><link rel=apple-touch-icon sizes=152x152 href=/assets/images/products/appscode/icons/apple-icon-152x152.png><link rel=apple-touch-icon sizes=180x180 href=/assets/images/products/appscode/icons/apple-icon-180x180.png><link rel=icon type=image/png sizes=192x192 href=/assets/images/products/appscode/icons/android-icon-192x192.png><link rel=icon type=image/png sizes=32x32 href=/assets/images/products/appscode/icons/favicon-32x32.png><link rel=icon type=image/png sizes=96x96 href=/assets/images/products/appscode/icons/favicon-96x96.png><link rel=icon type=image/png sizes=16x16 href=/assets/images/products/appscode/icons/favicon-16x16.png><link rel=manifest href=/assets/images/products/appscode/icons/manifest.json><meta name=msapplication-TileColor content="#ffffff"><meta name=msapplication-TileImage content="/assets/images/products/appscode/icons/ms-icon-144x144.png"><meta name=twitter:card content="summary"><meta name=twitter:site content="@AppsCodeHQ"><meta name=twitter:title content="AppsCode Inc."><meta name=twitter:creator content="@AppsCodeHQ"><meta name=twitter:description content="Accelerating the transition to Containers by building a Kubernetes-native Data Platform"><meta name=twitter:image:src content="/assets/images/products/appscode/appscode-1280x640.png"><meta property="og:url" content="https://appscode.com"><meta property="og:title" content="AppsCode Inc."><meta property="og:description" content="Accelerating the transition to Containers by building a Kubernetes-native Data Platform"><meta property="og:site_name" content="AppsCode Inc."><meta property="og:image" content="/assets/images/products/appscode/appscode-1280x640.png"><meta property="og:type" content="article"><link rel=stylesheet href=/assets/css/font-awesome.min.css><link href=https://unpkg.com/aos@2.3.1/dist/aos.css rel=stylesheet><link rel=stylesheet href=/assets/css/bulma-carousel.min.css><link rel=stylesheet href=/assets/css/bulma-tooltip.min.css><link rel=stylesheet href=/assets/css/bulma.min.css><link rel=stylesheet href=/assets/sass/main.min.0e8b818ba1fa5baf0e6a01eebc7680b7e5835004ff37ea37fda0c762e8564d80.css></head><body class=searchlight><header><div class="header-top fixed-menu-z-index"><div class="container section"><nav class=navbar><div class=navbar-brand><a class=navbar-item href=https://appscode.com><img src=/assets/images/products/appscode/appscode.png alt=AppsCode></a>
-<a role=button class="navbar-burger burger" aria-label=menu aria-expanded=false data-target=acNav1><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=acNav1 class="navbar-menu main-menu"><div class=navbar-end><div class=navbar-start><div class="navbar-item has-dropdown ac-is-hoverable"><a class=navbar-link>Products</a><div class=ac-megamenu><div class=columns><div class="column is-8"><div class=columns><div class="column is-6 br-1"><a href=https://kubedb.com class="single-product-item is-kubedb"><div class=menu-header><div class=menu-logo><img src=/assets/images/products/kubedb/kubedb-icon.png alt=KubeDB></div><h5>KubeDB</h5></div><div class=menu-body><p>Run production-grade databases easily on Kubernetes</p></div></a><a href=https://stash.run class="single-product-item is-stash"><div class=menu-header><div class=menu-logo><img src=/assets/images/products/stash/stash-icon.png alt=Stash></div><h5>Stash</h5></div><div class=menu-body><p>Backup your Kubernetes Stateful Applications</p></div></a><a href=https://kubevault.com class="single-product-item is-kubevault"><div class=menu-header><div class=menu-logo><img src=/assets/images/products/kubevault/kubevault-icon.png alt=KubeVault></div><h5>KubeVault</h5></div><div class=menu-body><p>Tools for running HashiCorp Vault on Kubernetes</p></div></a><a href=https://appscode.com/products/guard/ class="single-product-item is-guard"><div class=menu-header><div class=menu-logo><img src=/assets/images/products/guard/guard-icon.png alt=Guard></div><h5>Guard</h5></div><div class=menu-body><p>Kubernetes Authentication WebHook Server</p></div></a></div><div class="column is-6 br-1"><a href=https://appscode.com/products/voyager/ class="single-product-item is-voyager"><div class=menu-header><div class=menu-logo><img src=/assets/images/products/voyager/voyager-icon.png alt=Voyager></div><h5>Voyager</h5></div><div class=menu-body><p>Secure HAProxy Ingress Controller for
-Kubernetes</p></div></a><a href=https://appscode.com/products/swift/ class="single-product-item is-swift"><div class=menu-header><div class=menu-logo><img src=/assets/images/products/swift/swift-icon.png alt=Swift></div><h5>Swift</h5></div><div class=menu-body><p>Ajax friendly Helm Tiller Proxy</p></div></a><a href=https://appscode.com/products/searchlight/ class="single-product-item is-searchlight"><div class=menu-header><div class=menu-logo><img src=/assets/images/products/searchlight/searchlight-icon.png alt=Searchlight></div><h5>Searchlight</h5></div><div class=menu-body><p>Alerts for Kubernetes</p></div></a><a href=https://appscode.com/products/kubed/ class="single-product-item is-kubed"><div class=menu-header><div class=menu-logo><img src=/assets/images/products/kubed/kubed-icon.png alt=Kubed></div><h5>Kubed</h5></div><div class=menu-body><p>Kubernetes cluster manager daemon</p></div></a></div></div></div><div class="column is-4"><div class=columns><div class="column is-12"><a href=https://byte.builders class="single-product-item byte-builder kd-orange"><div class=menu-header><p class=intro>Introducing....</p><h5>ByteBuilders</h5></div><div class=menu-body><p>Cloud reimagined for the age of Kubernetes</p></div><p class=learn-more-btn>Learn more
-<span class=icon><i class="fa fa-long-arrow-right" aria-hidden=true></i></span></p></a><a href=https://pharmer.io class="single-product-item is-pharmer"><div class=menu-header><div class=menu-logo><img src=/assets/images/products/pharmer/pharmer-icon.png alt=Pharmer></div><h5>Pharmer</h5></div><div class=menu-body><p>Kubernetes Cluster Manager using Kubeadm & Cluster API</p></div></a><a href=https://kubeform.com class="single-product-item is-kubeform"><div class=menu-header><div class=menu-logo><img src=/assets/images/products/kubeform/kubeform-icon.png alt=Kubeform></div><h5>Kubeform</h5></div><div class=menu-body><p>Provision cloud resources using Kubernetes CRDs & Terraform</p></div></a></div></div></div></div><div class="columns has-text-centered"><div class=column><div class=menu-bottom><p>Explore apps and integrations for AppsCode products:
-<a href=https://marketplace.byte.builders>Visit the Marketplace
-<i class="fa fa-long-arrow-right" aria-hidden=true></i></a></p></div></div></div></div></div><div class="navbar-item has-dropdown ac-is-hoverable"><a class=navbar-link>Services</a><div class=ac-dropdown><a class=navbar-item href=https://appscode.com/consulting/>Consulting</a>
-<a class=navbar-item href=https://appscode.com/training/>Training</a>
-<a class=navbar-item href=https://appscode.com/support/>Support</a></div></div><a class=navbar-item href=https://blog.byte.builders>Blog</a>
-<a class=navbar-item href=https://appscode.com/contact/>Contact Us</a></div><div class=navbar-item><div class="buttons main-menu-button-top"><a class="button is-small for-chat" href=https://slack.appscode.com><span><img src=/assets/images/icon/slack.png alt></span>Slack</a>
-<a class="button is-small for-support" href=https://appscode.freshdesk.com><span><img src=/assets/images/icon/chat.png alt></span>Support Portal</a></div></div></div></div></nav></div></div><div class="header-bottom-area header-area kubedb-primary-bg customize-kubedb fixed-menu"><div class="container section"><nav class=navbar><div class=navbar-brand><a class=navbar-item href=https://appscode.com/products/searchlight/><img src=/assets/images/products/searchlight/searchlight-white.png alt=Searchlight></a>
-<a role=button class="navbar-burger burger" aria-label=menu aria-expanded=false data-target=acNav><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=acNav class="navbar-menu main-menu"><div class=navbar-end><div class=navbar-start><a href=/products/searchlight/8.0.0/welcome/ class=navbar-item>Documentation</a><div class="navbar-item has-dropdown ac-is-hoverable"><a class=navbar-link>Community</a><div class=ac-dropdown><a href=https://github.com/searchlight/searchlight class=navbar-item>GitHub</a>
-<a href=https://twitter.com/AppsCodeHQ class=navbar-item>Twitter</a>
-<a href=https://slack.appscode.com class=navbar-item>Slack</a></div></div></div><div class=navbar-item><div class="buttons main-menu-button"><img style=height:24px alt="GitHub Stars" src="https://img.shields.io/github/stars/appscode/searchlight?style=flat&labelColor=1B3D4B&color=06A64F&logoColor=white&logo=github">
-&nbsp;&nbsp;&nbsp;
-<img style=height:24px alt="Docker Pulls" src="https://img.shields.io/docker/pulls/appscode/searchlight?style=flat&labelColor=1B3D4B&color=06A64F&logoColor=white&logo=docker"></div></div></div></div></nav></div></div><div class=documentation-menu><div class="container section"><div class=is-centered><div class="is-half has-text-centered-desktop"><div class=responsive-menu><a role=button class="navbar-burger burger" aria-label=menu aria-expanded=false data-target=acNav3><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><nav class=documentation-navbar><div id=acNav3 class="navbar-menu nav-menu main-menu"><div class=navbar-centered><div class=navbar-start><a href=/products/searchlight/7.0.0-rc.0/ class=navbar-item>Welcome</a>
-<a href=/products/searchlight/7.0.0-rc.0/concepts/ class=navbar-item>Concepts</a>
-<a href=/products/searchlight/7.0.0-rc.0/setup/ class=navbar-item>Setup</a>
-<a href=/products/searchlight/7.0.0-rc.0/guides/ class="is-active navbar-item">Guides</a><div class="navbar-item has-dropdown ac-is-hoverable"><a class=navbar-link>Reference</a><div class=ac-dropdown><a href=/products/searchlight/7.0.0-rc.0/reference/hostfacts/ class=navbar-item>Hostfacts</a>
-<a href=/products/searchlight/7.0.0-rc.0/reference/hyperalert/ class=navbar-item>Hyperalert</a>
-<a href=/products/searchlight/7.0.0-rc.0/reference/searchlight/ class=navbar-item>Searchlight</a></div></div></div></div></div></nav></div></div></div></div></header><div class=documentation-area><div class="container section"><div class=columns><div class="column is-3"><div class=kd-left-sidebar><div class=trial-button><a href=/products/searchlight/8.0.0/setup/ class="button is-fullwidth">Try Now for FREE!</a></div><div class=kd-version><div class=dropdown><div class=dropdown-trigger><button class="button is-fullwidth" aria-haspopup=true aria-controls=dropdown-menu3>
-<span class="icon is-small"><i class="fa fa-angle-down" aria-hidden=true></i></span></button></div><div class=dropdown-menu id=dropdown-menu3 role=menu><div class=dropdown-content><a href=https://github.com/searchlight/searchlight/tree/master/docs target=_blank class=dropdown-item>master</a>
-<a href=/products/searchlight/8.0.0/ class=dropdown-item>8.0.0<div class=tag>Latest</div></a><a href=/products/searchlight/8.0.0-rc.0/ class=dropdown-item>8.0.0-rc.0</a>
-<a href=/products/searchlight/7.0.0/ class=dropdown-item>7.0.0</a>
-<a href=/products/searchlight/5.1.1/ class=dropdown-item>5.1.1</a>
-<a href=https://github.com/searchlight/searchlight/tree/3.0.1/docs target=_blank class=dropdown-item>3.0.1</a></div></div></div></div><div class=kd-sidebar-menu><div class=item><input type=checkbox id=b00a9d98038202259fdc4b2fe16f02e8-1>
-<label for=b00a9d98038202259fdc4b2fe16f02e8-1><a href=/products/searchlight/7.0.0-rc.0/guides/>Guides</a></label></div><div class=item><input type=checkbox id=b00a9d98038202259fdc4b2fe16f02e8-2>
-<label for=b00a9d98038202259fdc4b2fe16f02e8-2><a>Cluster Alert</a> <span><i class="fa fa-angle-right" aria-hidden=true></i></span></label><div class=item><ul><li><a href=/products/searchlight/7.0.0-rc.0/guides/cluster-alerts/node-exists/>Node Exists</a></li><li><a href=/products/searchlight/7.0.0-rc.0/guides/cluster-alerts/pod-exists/>Pod Exists</a></li><li><a href=/products/searchlight/7.0.0-rc.0/guides/cluster-alerts/ca-cert/>CA Cert</a></li><li><a href=/products/searchlight/7.0.0-rc.0/guides/cluster-alerts/cert/>Cert</a></li><li><a href=/products/searchlight/7.0.0-rc.0/guides/cluster-alerts/component-status/>Component Status</a></li><li><a href=/products/searchlight/7.0.0-rc.0/guides/cluster-alerts/event/>Event</a></li><li><a href=/products/searchlight/7.0.0-rc.0/guides/cluster-alerts/json-path/>JSON Path</a></li></ul></div></div><div class=item><input type=checkbox id=b00a9d98038202259fdc4b2fe16f02e8-3 checked>
-<label for=b00a9d98038202259fdc4b2fe16f02e8-3><a>Searchlight Plugin</a> <span><i class="fa fa-angle-right" aria-hidden=true></i></span></label><div class=item><ul><li><a href=/products/searchlight/7.0.0-rc.0/guides/plugin/builtin-plugin/>SearchlightPlugin</a></li><li class=is-active><a href=/products/searchlight/7.0.0-rc.0/guides/plugin/webhook-plugin/>Webhook SearchlightPlugin</a></li></ul></div></div><div class=item><input type=checkbox id=b00a9d98038202259fdc4b2fe16f02e8-4>
-<label for=b00a9d98038202259fdc4b2fe16f02e8-4><a>Node Alert</a> <span><i class="fa fa-angle-right" aria-hidden=true></i></span></label><div class=item><ul><li><a href=/products/searchlight/7.0.0-rc.0/guides/node-alerts/node-status/>Node Status</a></li><li><a href=/products/searchlight/7.0.0-rc.0/guides/node-alerts/node-volume/>Node Volume</a></li></ul></div></div><div class=item><input type=checkbox id=b00a9d98038202259fdc4b2fe16f02e8-5>
-<label for=b00a9d98038202259fdc4b2fe16f02e8-5><a>Pod Alert</a> <span><i class="fa fa-angle-right" aria-hidden=true></i></span></label><div class=item><ul><li><a href=/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-status/>Pod Status</a></li><li><a href=/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-exec/>Pod Exec</a></li><li><a href=/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-volume/>Pod Volume</a></li></ul></div></div><div class=item><input type=checkbox id=b00a9d98038202259fdc4b2fe16f02e8-6>
-<label for=b00a9d98038202259fdc4b2fe16f02e8-6><a href=/products/searchlight/7.0.0-rc.0/guides/notifiers/>Notifiers</a></label></div></div></div></div><div class="column is-7"><div class=full-info><blockquote><p>New to SearchlightPlugin? Please start <a href=/products/searchlight/7.0.0-rc.0/setup/developer-guide/webhook-plugin>here</a>.</p></blockquote><h1 id=custom-webhook-check-command>Custom Webhook Check Command</h1><p>Since 7.0.0 release, Searchlight supports adding custom check commands using http webhook server. No longer you have to build binary and attach it inside Icinga container. Simply you can write a HTTP server and register your check command with Searchlight using <code>SearchlightPlugin</code> CRD.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>apiVersion</span>: monitoring.appscode.com/v1alpha1
-<span style=color:#66d9ef>kind</span>: SearchlightPlugin
-<span style=color:#66d9ef>metadata</span>:
-  <span style=color:#66d9ef>name</span>: check-pod-count
-<span style=color:#66d9ef>spec</span>:
-  <span style=color:#66d9ef>webhook</span>:
-    <span style=color:#66d9ef>namespace</span>: default
-    <span style=color:#66d9ef>name</span>: searchlight-plugin
-  <span style=color:#66d9ef>alertKinds</span>:
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-62096468-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#00A651" />
+    
+    <title>Searchlight Home</title>
+    
+    <meta name="description" content="Accelerating the transition to Containers by building a Kubernetes-native Data Platform">
+    <meta name="author" content="AppsCode Inc.">
+    <meta name="keywords" content="application monitoring, attic, build docker image, cloud app, cloud deployment, cloud hosting, container applications, continuous deployment, deployment automation, git hosting, kubernetes autoscaling, nagios, network monitor, repository hosting, source code repository">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/products/appscode/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/products/appscode/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/products/appscode/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/products/appscode/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/products/appscode/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/products/appscode/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/products/appscode/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/products/appscode/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/products/appscode/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/products/appscode/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/products/appscode/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/products/appscode/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/products/appscode/icons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/products/appscode/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/images/products/appscode/icons/ms-icon-144x144.png">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@AppsCodeHQ">
+    <meta name="twitter:title" content="AppsCode Inc.">
+    <meta name="twitter:creator" content="@AppsCodeHQ">
+    <meta name="twitter:description" content="Accelerating the transition to Containers by building a Kubernetes-native Data Platform">
+    <meta name="twitter:image:src" content="/assets/images/products/appscode/appscode-1280x640.png">
+    
+    <meta property="og:url" content="https://appscode.com">
+    <meta property="og:title" content="AppsCode Inc.">
+    <meta property="og:description" content="Accelerating the transition to Containers by building a Kubernetes-native Data Platform">
+    <meta property="og:site_name" content="AppsCode Inc.">
+    <meta property="og:image" content="/assets/images/products/appscode/appscode-1280x640.png">
+    <meta property="og:type" content="article">
+    
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma-tooltip.min.css" />
+    
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    
+    
+    <link rel="stylesheet" href="/assets/sass/main.css" />
+  </head>
+
+  <body class="searchlight">
+    
+
+    
+    
+    <header>
+      
+      
+      <div class="header-top fixed-menu-z-index">
+        <div class="container section">
+          <nav class="navbar">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://appscode.com">
+                <img src="/assets/images/products/appscode/appscode.png" alt="AppsCode" />
+              </a>
+
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav1"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+
+            <div id="acNav1" class="navbar-menu main-menu">
+              <div class="navbar-end">
+                
+                <div class="navbar-start">
+                  <div class="navbar-item has-dropdown ac-is-hoverable">
+                    <a class="navbar-link">
+                      Products
+                    </a>
+
+                    
+                    <div class="ac-megamenu">
+                      <div class="columns">
+                        <div class="column is-8">
+                          <div class="columns">
+                            <div class="column is-6 br-1">
+                              
+                              
+                              
+                              <a
+                                href="https://kubedb.com"
+                                class="single-product-item is-kubedb"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/kubedb/kubedb-icon.png"
+                                      alt="KubeDB"
+                                    />
+                                  </div>
+                                  <h5>KubeDB</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Run production-grade databases easily on Kubernetes</p>
+                                </div>
+                              </a>
+                              
+                              
+                              
+                              
+                              <a
+                                href="https://stash.run"
+                                class="single-product-item is-stash"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/stash/stash-icon.png"
+                                      alt="Stash"
+                                    />
+                                  </div>
+                                  <h5>Stash</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Backup your Kubernetes Stateful Applications</p>
+                                </div>
+                              </a>
+                              
+                              
+                              
+                              
+                              <a
+                                href="https://kubevault.com"
+                                class="single-product-item is-kubevault"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/kubevault/kubevault-icon.png"
+                                      alt="KubeVault"
+                                    />
+                                  </div>
+                                  <h5>KubeVault</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Tools for running HashiCorp Vault on Kubernetes</p>
+                                </div>
+                              </a>
+                              
+                              
+                              
+                              
+                              <a
+                                href="https://appscode.com/products/guard/"
+                                class="single-product-item is-guard"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/guard/guard-icon.png"
+                                      alt="Guard"
+                                    />
+                                  </div>
+                                  <h5>Guard</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Kubernetes Authentication WebHook Server</p>
+                                </div>
+                              </a>
+                              
+                              
+                            </div>
+                            <div class="column is-6 br-1">
+                              
+                              
+                              
+                              <a
+                                href="https://appscode.com/products/voyager/"
+                                class="single-product-item is-voyager"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/voyager/voyager-icon.png"
+                                      alt="Voyager"
+                                    />
+                                  </div>
+                                  <h5>Voyager</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Secure HAProxy Ingress Controller for
+Kubernetes</p>
+                                </div>
+                              </a>
+                              
+                              
+                              
+                              
+                              <a
+                                href="https://appscode.com/products/swift/"
+                                class="single-product-item is-swift"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/swift/swift-icon.png"
+                                      alt="Swift"
+                                    />
+                                  </div>
+                                  <h5>Swift</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Ajax friendly Helm Tiller Proxy</p>
+                                </div>
+                              </a>
+                              
+                              
+                              
+                              
+                              <a
+                                href="https://appscode.com/products/searchlight/"
+                                class="single-product-item is-searchlight"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/searchlight/searchlight-icon.png"
+                                      alt="Searchlight"
+                                    />
+                                  </div>
+                                  <h5>Searchlight</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Alerts for Kubernetes</p>
+                                </div>
+                              </a>
+                              
+                              
+                              
+                              
+                              <a
+                                href="https://appscode.com/products/kubed/"
+                                class="single-product-item is-kubed"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/kubed/kubed-icon.png"
+                                      alt="Kubed"
+                                    />
+                                  </div>
+                                  <h5>Kubed</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Kubernetes cluster manager daemon</p>
+                                </div>
+                              </a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="column is-4">
+                          <div class="columns">
+                            <div class="column is-12">
+                              
+                              
+                              <a
+                                href="https://byte.builders"
+                                class="single-product-item byte-builder kd-orange"
+                              >
+                                <div class="menu-header">
+                                  <p class="intro">Introducing....</p>
+                                  <h5>ByteBuilders</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>
+                                    Cloud reimagined for the age of Kubernetes
+                                  </p>
+                                </div>
+                                <p class="learn-more-btn">
+                                  Learn more
+                                  <span class="icon"
+                                    ><i
+                                      class="fa fa-long-arrow-right"
+                                      aria-hidden="true"
+                                    ></i
+                                  ></span>
+                                </p>
+                              </a>
+                              
+                              
+
+                              
+                              
+                              
+                              <a
+                                href="https://pharmer.io"
+                                class="single-product-item is-pharmer"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/pharmer/pharmer-icon.png"
+                                      alt="Pharmer"
+                                    />
+                                  </div>
+                                  <h5>Pharmer</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Kubernetes Cluster Manager using Kubeadm &amp; Cluster API</p>
+                                </div>
+                              </a>
+                              
+                              
+                              
+                              
+                              <a
+                                href="https://kubeform.com"
+                                class="single-product-item is-kubeform"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="/assets/images/products/kubeform/kubeform-icon.png"
+                                      alt="Kubeform"
+                                    />
+                                  </div>
+                                  <h5>Kubeform</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>Provision cloud resources using Kubernetes CRDs &amp; Terraform</p>
+                                </div>
+                              </a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                        <div class="columns has-text-centered">
+                          <div class="column">
+                            <div class="menu-bottom">
+                              <p>
+                                Explore apps and integrations for AppsCode products:
+                                <a href="https://marketplace.byte.builders">
+                                  Visit the Marketplace
+                                  <i
+                                    class="fa fa-long-arrow-right"
+                                    aria-hidden="true"
+                                  ></i
+                                ></a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      
+                    </div>
+                    
+                  </div>
+
+                  <div class="navbar-item has-dropdown ac-is-hoverable">
+                      <a class="navbar-link">
+                          Services
+                      </a>
+
+                      <div class="ac-dropdown">
+                          <a class="navbar-item" href="https://appscode.com/consulting/" >
+                              Consulting
+                          </a>
+                          <a class="navbar-item" href="https://appscode.com/training/" >
+                              Training
+                          </a>
+                          <a class="navbar-item" href="https://appscode.com/support/" >
+                              Support
+                          </a>
+                      </div>
+                  </div>
+
+                  <a class="navbar-item" href="https://blog.byte.builders" >
+                    Blog
+                  </a>
+                  <a class="navbar-item" href="https://appscode.com/contact/" >
+                    Contact Us
+                  </a>
+                </div>
+                
+                <div class="navbar-item">
+                  <div class="buttons main-menu-button-top">
+                    <a class="button is-small for-chat" href="https://slack.appscode.com">
+                      <span
+                        ><img
+                          src="/assets/images/icon/slack.png"
+                          alt=""/></span
+                      >Slack
+                    </a>
+                    <a class="button is-small for-support" href="https://appscode.freshdesk.com">
+                      <span
+                        ><img
+                          src="/assets/images/icon/chat.png"
+                          alt=""/></span
+                      >Support Portal
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      
+      
+
+      
+
+      
+      
+        
+
+      
+      <div
+        class="header-bottom-area header-area kubedb-primary-bg customize-kubedb  fixed-menu"
+      >
+        <div class="container section">
+          <nav class="navbar">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://appscode.com/products/searchlight/">
+                <img src="/assets/images/products/searchlight/searchlight-white.png" alt="Searchlight" />
+              </a>
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="acNav"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+
+            <div id="acNav" class="navbar-menu main-menu">
+              <div class="navbar-end">
+                
+                <div class="navbar-start">
+                
+                  
+                    
+                      <a href="/products/searchlight/8.0.0/welcome/" class="navbar-item">Documentation</a>
+                    
+                  
+                
+                  
+                    <div class="navbar-item has-dropdown ac-is-hoverable">
+                      <a class="navbar-link">Community</a>
+                      <div class="ac-dropdown">
+                        
+                          
+                            <a href="https://github.com/searchlight/searchlight" class="navbar-item">GitHub</a>
+                          
+                        
+                          
+                            <a href="https://twitter.com/AppsCodeHQ" class="navbar-item">Twitter</a>
+                          
+                        
+                          
+                            <a href="https://slack.appscode.com" class="navbar-item">Slack</a>
+                          
+                        
+                      </div>
+                    </div>
+                  
+                
+                </div>
+                
+
+                <div class="navbar-item">
+                  <div class="buttons main-menu-button">
+                    
+                      
+                      <img style="height:24px" alt="GitHub Stars" src="https://img.shields.io/github/stars/appscode/searchlight?style=flat&labelColor=1B3D4B&color=06A64F&logoColor=white&logo=github">
+                    
+                       &nbsp;&nbsp;&nbsp; 
+                      <img style="height:24px" alt="Docker Pulls" src="https://img.shields.io/docker/pulls/appscode/searchlight?style=flat&labelColor=1B3D4B&color=06A64F&logoColor=white&logo=docker">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      
+      
+      
+
+      
+
+
+
+
+<div class="documentation-menu">
+  <div class="container section">
+    <div class="is-centered">
+      <div class="is-half has-text-centered-desktop">
+        
+        <div class="responsive-menu">
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav3"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        
+        
+        <nav class="documentation-navbar">
+          <div id="acNav3" class="navbar-menu nav-menu main-menu">
+            <div class="navbar-centered">
+              
+              <div class="navbar-start">
+                
+                
+                  
+                    
+                      <a href="/products/searchlight/7.0.0-rc.0/" class=" navbar-item">Welcome</a>
+                    
+                  
+                    
+                      <a href="/products/searchlight/7.0.0-rc.0/concepts/" class=" navbar-item">Concepts</a>
+                    
+                  
+                    
+                      <a href="/products/searchlight/7.0.0-rc.0/setup/" class=" navbar-item">Setup</a>
+                    
+                  
+                    
+                      <a href="/products/searchlight/7.0.0-rc.0/guides/" class=" is-active  navbar-item">Guides</a>
+                    
+                  
+                    
+                      <div class="navbar-item has-dropdown ac-is-hoverable">
+                        <a class="navbar-link">
+                          Reference
+                        </a>
+                        <div class="ac-dropdown">
+                          
+                            
+                              <a href="/products/searchlight/7.0.0-rc.0/reference/hostfacts/" class="navbar-item">Hostfacts</a>
+                            
+                          
+                            
+                              <a href="/products/searchlight/7.0.0-rc.0/reference/hyperalert/" class="navbar-item">Hyperalert</a>
+                            
+                          
+                            
+                              <a href="/products/searchlight/7.0.0-rc.0/reference/searchlight/" class="navbar-item">Searchlight</a>
+                            
+                          
+                        </div>
+                      </div>
+                    
+                  
+                
+              </div>
+              
+            </div>
+          </div>
+        </nav>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </header>
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        
+        <div class="kd-left-sidebar">
+          
+            
+            
+
+            <div class="trial-button">
+              <a href="/products/searchlight/8.0.0/setup/" class="button is-fullwidth">
+                Try Now for FREE!
+              </a>
+            </div>
+
+            <div class="kd-version">
+              <div class="dropdown">
+                <div class="dropdown-trigger">
+                  <button
+                    class="button is-fullwidth"
+                    aria-haspopup="true"
+                    aria-controls="dropdown-menu3"
+                  >
+
+                    
+                      
+                        
+                      
+                    
+                      
+                        
+                      
+                    
+                      
+                        
+                      
+                    
+                      
+                        
+                      
+                    
+                      
+                    
+                      
+                        
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                        
+                      
+                    
+
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                  <div class="dropdown-content">
+                    
+                      
+                        
+                          <a href="https://github.com/searchlight/searchlight/tree/master/docs" target="_blank" class="dropdown-item">master</a>
+                        
+                      
+                    
+                      
+                        
+                          <a href="/products/searchlight/8.0.0/" class="dropdown-item">8.0.0   <div class="tag">Latest</div> </a>
+                        
+                      
+                    
+                      
+                        
+                          <a href="/products/searchlight/8.0.0-rc.0/" class="dropdown-item">8.0.0-rc.0  </a>
+                        
+                      
+                    
+                      
+                        
+                          <a href="/products/searchlight/7.0.0/" class="dropdown-item">7.0.0  </a>
+                        
+                      
+                    
+                      
+                    
+                      
+                        
+                          <a href="/products/searchlight/5.1.1/" class="dropdown-item">5.1.1  </a>
+                        
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                        
+                          <a href="https://github.com/searchlight/searchlight/tree/3.0.1/docs" target="_blank" class="dropdown-item">3.0.1</a>
+                        
+                      
+                    
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          
+
+          
+            
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+
+                  
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              
+            
+              
+            
+          
+
+          
+          <div class="kd-sidebar-menu">
+            
+              
+
+              
+              
+
+                
+              
+
+                
+              
+
+                
+              
+
+                
+                  
+
+                  
+                  
+
+                    
+                      
+
+
+
+
+  
+
+
+
+<div class="item">
+  <input type="checkbox" id="b00a9d98038202259fdc4b2fe16f02e8-1" >
+  <label for="b00a9d98038202259fdc4b2fe16f02e8-1"><a href="/products/searchlight/7.0.0-rc.0/guides/">Guides</a></label>
+</div>
+
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b00a9d98038202259fdc4b2fe16f02e8-2" >
+  <label for="b00a9d98038202259fdc4b2fe16f02e8-2"><a>Cluster Alert</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/searchlight/7.0.0-rc.0/guides/cluster-alerts/node-exists/">Node Exists</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0-rc.0/guides/cluster-alerts/pod-exists/">Pod Exists</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0-rc.0/guides/cluster-alerts/ca-cert/">CA Cert</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0-rc.0/guides/cluster-alerts/cert/">Cert</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0-rc.0/guides/cluster-alerts/component-status/">Component Status</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0-rc.0/guides/cluster-alerts/event/">Event</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0-rc.0/guides/cluster-alerts/json-path/">JSON Path</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b00a9d98038202259fdc4b2fe16f02e8-3" checked>
+  <label for="b00a9d98038202259fdc4b2fe16f02e8-3"><a>Searchlight Plugin</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/searchlight/7.0.0-rc.0/guides/plugin/builtin-plugin/">SearchlightPlugin</a></li>
+        
+      
+        
+          <li class="is-active"><a href="/products/searchlight/7.0.0-rc.0/guides/plugin/webhook-plugin/">Webhook SearchlightPlugin</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b00a9d98038202259fdc4b2fe16f02e8-4" >
+  <label for="b00a9d98038202259fdc4b2fe16f02e8-4"><a>Node Alert</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/searchlight/7.0.0-rc.0/guides/node-alerts/node-status/">Node Status</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0-rc.0/guides/node-alerts/node-volume/">Node Volume</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+                        
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b00a9d98038202259fdc4b2fe16f02e8-5" >
+  <label for="b00a9d98038202259fdc4b2fe16f02e8-5"><a>Pod Alert</a> <span><i class="fa fa-angle-right"
+              aria-hidden="true"></i></span></label>
+  <div class="item">
+    <ul>
+      
+        
+          <li ><a href="/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-status/">Pod Status</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-exec/">Pod Exec</a></li>
+        
+      
+        
+          <li ><a href="/products/searchlight/7.0.0-rc.0/guides/pod-alerts/pod-volume/">Pod Volume</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+
+                      
+
+                    
+                    
+                  
+
+                    
+                      
+
+
+
+
+
+
+<div class="item">
+  <input type="checkbox" id="b00a9d98038202259fdc4b2fe16f02e8-6" >
+  <label for="b00a9d98038202259fdc4b2fe16f02e8-6"><a href="/products/searchlight/7.0.0-rc.0/guides/notifiers/">Notifiers</a></label>
+</div>
+
+
+                    
+                    
+                  
+                  
+
+                
+              
+
+                
+              
+              
+            
+          </div>
+          
+        </div>
+        
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          <blockquote>
+<p>New to SearchlightPlugin? Please start <a href="/products/searchlight/7.0.0-rc.0/setup/developer-guide/webhook-plugin">here</a>.</p>
+</blockquote>
+<h1 id="custom-webhook-check-command">Custom Webhook Check Command</h1>
+<p>Since 7.0.0 release, Searchlight supports adding custom check commands using http webhook server. No longer you have to build binary and attach it inside Icinga container. Simply you can write a HTTP server and register your check command with Searchlight using <code>SearchlightPlugin</code> CRD.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">apiVersion</span>: monitoring.appscode.com/v1alpha1
+<span style="color:#66d9ef">kind</span>: SearchlightPlugin
+metadata:
+  <span style="color:#66d9ef">name</span>: check-pod-count
+spec:
+  webhook:
+    <span style="color:#66d9ef">namespace</span>: default
+    <span style="color:#66d9ef">name</span>: searchlight-plugin
+  alertKinds:
   - ClusterAlert
-  <span style=color:#66d9ef>arguments</span>:
-    <span style=color:#66d9ef>vars</span>:
-      <span style=color:#66d9ef>fields</span>:
-        <span style=color:#66d9ef>warning</span>:
-          <span style=color:#66d9ef>type</span>: integer
-        <span style=color:#66d9ef>critical</span>:
-          <span style=color:#66d9ef>type</span>: integer
-  <span style=color:#66d9ef>states</span>:
+  arguments:
+    vars:
+      fields:
+        warning:
+          <span style="color:#66d9ef">type</span>: integer
+        critical:
+          <span style="color:#66d9ef">type</span>: integer
+  states:
   - OK
   - Critical
   - Unknown
-</code></pre></div><p>The <code>.spec</code> section has following parts:</p><h2 id=spec>Spec</h2><p>The <code>.spec</code> section determines how the webhook server will be used by Searchlight.</p><p><strong>spec.command</strong></p><p><code>spec.command</code> defines the check command which will be called by Icinga. To use the webhook server, skip the command field.</p><p><strong>spec.webhook</strong></p><p><code>spec.webhook</code> provides information of Kubernetes <code>Service</code> for the webhook server.</p><ul><li><code>spec.webhook.namespace</code> represents the namespace of Service.</li><li><code>spec.webhook.name</code> represents the name of Service.</li></ul><p><strong>spec.alertKinds</strong></p><p><code>spec.alertKinds</code> is a required field that specifies which kinds of alerts will support this <code>CheckCommand</code>.
-Possible values are: ClusterAlert, NodeAlert and PodAlert.</p><p><strong>spec.arguments</strong></p><p><code>spec.arguments</code> defines arguments which will be passed to check command by Icinga.</p><ul><li><p><code>spec.arguments.vars</code> defines user-defined arguments. These arguments can be provided to create alerts.</p><ul><li><p><code>spec.arguments.vars.fields</code> is the required field which provides the list of arguments with their <code>description</code> and <code>type</code>. Here,</p><pre><code>arguments:
+</code></pre></div><p>The <code>.spec</code> section has following parts:</p>
+<h2 id="spec">Spec</h2>
+<p>The <code>.spec</code> section determines how the webhook server will be used by Searchlight.</p>
+<p><strong>spec.command</strong></p>
+<p><code>spec.command</code> defines the check command which will be called by Icinga. To use the webhook server, skip the command field.</p>
+<p><strong>spec.webhook</strong></p>
+<p><code>spec.webhook</code> provides information of Kubernetes <code>Service</code> for the webhook server.</p>
+<ul>
+<li><code>spec.webhook.namespace</code> represents the namespace of Service.</li>
+<li><code>spec.webhook.name</code> represents the name of Service.</li>
+</ul>
+<p><strong>spec.alertKinds</strong></p>
+<p><code>spec.alertKinds</code> is a required field that specifies which kinds of alerts will support this <code>CheckCommand</code>.
+Possible values are: ClusterAlert, NodeAlert and PodAlert.</p>
+<p><strong>spec.arguments</strong></p>
+<p><code>spec.arguments</code> defines arguments which will be passed to check command by Icinga.</p>
+<ul>
+<li>
+<p><code>spec.arguments.vars</code> defines user-defined arguments. These arguments can be provided to create alerts.</p>
+<ul>
+<li>
+<p><code>spec.arguments.vars.fields</code> is the required field which provides the list of arguments with their <code>description</code> and <code>type</code>. Here,</p>
+<pre><code>arguments:
   vars:
     fields:
       warning:
         type: integer
       critical:
         type: integer
-</code></pre><p><code>warning</code> and <code>critical</code> are registered as user-defined variables. User can provide values for these variables while creating alerts.</p><ul><li><code>spec.arguments.vars.fields[].type</code> is required field used to define variable&rsquo;s data type. Possible values are <code>integer</code>, <code>number</code>, <code>boolean</code>, <code>string</code>, <code>duration</code>.</li></ul><blockquote><p>Note: duration will be converted to millisecond and will be passed to webhook as Int64. Example: 5m -> 300000.</p></blockquote><ul><li><code>spec.arguments.vars.fields[].description</code> describes the variable.</li></ul></li><li><p><code>spec.arguments.vars.required</code> represents the list of user-defined arguments required to create Alert. If any of these required arguments is not provided, Searchlight will give validation error.</p></li></ul><p>From above example, none of these variables are required. To make variable <code>critical</code> required, need to add following</p><pre><code>        arguments:
+</code></pre>
+<p><code>warning</code> and <code>critical</code> are registered as user-defined variables. User can provide values for these variables while creating alerts.</p>
+<ul>
+<li><code>spec.arguments.vars.fields[].type</code> is required field used to define variable&rsquo;s data type. Possible values are <code>integer</code>, <code>number</code>, <code>boolean</code>, <code>string</code>, <code>duration</code>.</li>
+</ul>
+<blockquote>
+<p>Note: duration will be converted to millisecond and will be passed to webhook as Int64. Example: 5m -&gt; 300000.</p>
+</blockquote>
+<ul>
+<li><code>spec.arguments.vars.fields[].description</code> describes the variable.</li>
+</ul>
+</li>
+<li>
+<p><code>spec.arguments.vars.required</code> represents the list of user-defined arguments required to create Alert. If any of these required arguments is not provided, Searchlight will give validation error.</p>
+</li>
+</ul>
+<p>From above example, none of these variables are required. To make variable <code>critical</code> required, need to add following</p>
+<pre><code>        arguments:
           vars:
             required:
             - critical
-</code></pre></li><li><p><code>spec.arguments.host</code> represents the list of Icinga host variables which will be passed to check command. <a href=https://www.icinga.com/docs/icinga2/latest/doc/03-monitoring-basics/#host-runtime-macros>Here is the list</a> of available host variables.</p></li></ul><p>Suppose, you need <code>host.check_attempt</code> to be forwarded to check command, you can add like this</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>spec</span>:
-  <span style=color:#66d9ef>arguments</span>:
-    <span style=color:#66d9ef>host</span>:
-      <span style=color:#66d9ef>attempt</span>: check_attempt
-</code></pre></div><p>Here,</p><ul><li>Icinga host variable <code>check_attempt</code> will be forwarded to webhook as variable <code>attempt</code>.</li></ul><blockquote><p>Note: User can&rsquo;t provided value for these variables.</p></blockquote><p><strong>spec.states</strong></p><p><code>spec.state</code> are the supported states for this command. Different notification receivers can be set for each state.</p><p>Lets create above SearchlightPlugin</p><pre><code class=language-console data-lang=console>$ kubectl apply -f ./docs/examples/plugins/webhook/demo-0.yaml
+</code></pre>
+</li>
+<li>
+<p><code>spec.arguments.host</code> represents the list of Icinga host variables which will be passed to check command. <a href="https://www.icinga.com/docs/icinga2/latest/doc/03-monitoring-basics/#host-runtime-macros">Here is the list</a> of available host variables.</p>
+</li>
+</ul>
+<p>Suppose, you need <code>host.check_attempt</code> to be forwarded to check command, you can add like this</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">spec:
+  arguments:
+    host:
+      <span style="color:#66d9ef">attempt</span>: check_attempt
+</code></pre></div><p>Here,</p>
+<ul>
+<li>Icinga host variable <code>check_attempt</code> will be forwarded to webhook as variable <code>attempt</code>.</li>
+</ul>
+<blockquote>
+<p>Note: User can&rsquo;t provided value for these variables.</p>
+</blockquote>
+<p><strong>spec.states</strong></p>
+<p><code>spec.state</code> are the supported states for this command. Different notification receivers can be set for each state.</p>
+<p>Lets create above SearchlightPlugin</p>
+<pre><code class="language-console" data-lang="console">$ kubectl apply -f ./docs/examples/plugins/webhook/demo-0.yaml
 searchlightplugin &quot;check-pod-count&quot; created
-</code></pre><p align=center><img alt=lifecycle src=/products/searchlight/7.0.0-rc.0/images/plugin/add-plugin.svg width=581 height=362></p><p>CheckCommand <code>check-pod-count</code> is added in Icinga2 configuration. Here, <code>vars.fields</code> from <code>spec.arguments</code> are added as arguments in CheckCommand.</p><blockquote><p>Note: Webhook will be called with URL formatted as bellow:</p></blockquote><p><code>http://&lt;spec.webhook.name>.&lt;spec.webhook.namespace>.svc/&lt;metadata.name></code></p><h3 id=create-clusteralert>Create ClusterAlert</h3><p>Lets create a ClusterAlert for this CheckCommand.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>apiVersion</span>: monitoring.appscode.com/v1alpha1
-<span style=color:#66d9ef>kind</span>: ClusterAlert
-<span style=color:#66d9ef>metadata</span>:
-  <span style=color:#66d9ef>name</span>: count-all-pods-demo<span style=color:#ae81ff>-0</span>
-  <span style=color:#66d9ef>namespace</span>: demo
-<span style=color:#66d9ef>spec</span>:
-  <span style=color:#66d9ef>check</span>: check-pod-count
-  <span style=color:#66d9ef>vars</span>:
-    <span style=color:#66d9ef>warning</span>: <span style=color:#ae81ff>10</span>
-    <span style=color:#66d9ef>critical</span>: <span style=color:#ae81ff>15</span>
-  <span style=color:#66d9ef>notifierSecretName</span>: notifier-config
-  <span style=color:#66d9ef>receivers</span>:
-  - <span style=color:#66d9ef>notifier</span>: Mailgun
-    <span style=color:#66d9ef>state</span>: Critical
-    <span style=color:#66d9ef>to</span>: [<span style=color:#e6db74>&#34;ops@example.com&#34;</span>]
-</code></pre></div><p>Here,</p><ul><li><code>spec.check</code> is the name of your custom check you added as SearchlightPlugin</li><li><code>spec.vars</code> are variables those are registered when SearchlightPlugin is created with <code>spec.arguments.vars</code></li></ul><pre><code class=language-console data-lang=console>$ kubectl apply -f ./docs/examples/cluster-alerts/count-all-pods/demo-0.yaml
+</code></pre><p align="center">
+  <img alt="lifecycle"  src="/products/searchlight/7.0.0-rc.0/images/plugin/add-plugin.svg" width="581" height="362">
+</p>
+<p>CheckCommand <code>check-pod-count</code> is added in Icinga2 configuration. Here, <code>vars.fields</code> from <code>spec.arguments</code> are added as arguments in CheckCommand.</p>
+<blockquote>
+<p>Note: Webhook will be called with URL formatted as bellow:</p>
+</blockquote>
+<p><code>http://&lt;spec.webhook.name&gt;.&lt;spec.webhook.namespace&gt;.svc/&lt;metadata.name&gt;</code></p>
+<h3 id="create-clusteralert">Create ClusterAlert</h3>
+<p>Lets create a ClusterAlert for this CheckCommand.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">apiVersion</span>: monitoring.appscode.com/v1alpha1
+<span style="color:#66d9ef">kind</span>: ClusterAlert
+metadata:
+  <span style="color:#66d9ef">name</span>: count-all-pods-demo<span style="color:#ae81ff">-0</span>
+  <span style="color:#66d9ef">namespace</span>: demo
+spec:
+  <span style="color:#66d9ef">check</span>: check-pod-count
+  vars:
+    <span style="color:#66d9ef">warning</span>: <span style="color:#ae81ff">10</span>
+    <span style="color:#66d9ef">critical</span>: <span style="color:#ae81ff">15</span>
+  <span style="color:#66d9ef">notifierSecretName</span>: notifier-config
+  receivers:
+  - <span style="color:#66d9ef">notifier</span>: Mailgun
+    <span style="color:#66d9ef">state</span>: Critical
+    <span style="color:#66d9ef">to</span>: [<span style="color:#e6db74">&#34;ops@example.com&#34;</span>]
+</code></pre></div><p>Here,</p>
+<ul>
+<li><code>spec.check</code> is the name of your custom check you added as SearchlightPlugin</li>
+<li><code>spec.vars</code> are variables those are registered when SearchlightPlugin is created with <code>spec.arguments.vars</code></li>
+</ul>
+<pre><code class="language-console" data-lang="console">$ kubectl apply -f ./docs/examples/cluster-alerts/count-all-pods/demo-0.yaml
 clusteralert &quot;count-all-pods-demo-0&quot; created
-</code></pre><p align=center><img alt=lifecycle src=/products/searchlight/7.0.0-rc.0/images/plugin/add-alert.svg width=581 height=362></p><p>Now periodically, Icinga will call <code>check_webhook</code> plugin under <code>hyperalert</code>.
-And this plugin will call your webhook you have registered in your SearchlightPlugin. According to the response from webhook, Service State will be determined.</p><p align=center><img alt=lifecycle src=/products/searchlight/7.0.0-rc.0/images/plugin/call-webhook.svg width=581 height=362></p><p>In the example above, Service State will be <strong>Warning</strong>.</p><h2 id=writing-webhook-server>Writing Webhook Server</h2><p>Command <code>check_webhook</code> calls a HTTP server with user provided variables and receives response to determine service state. In this tutorial, we will see how we can write a webhook server for Searchlight. The most important part for this webhook is its <code>Response</code> type.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</code></pre><p align="center">
+  <img alt="lifecycle"  src="/products/searchlight/7.0.0-rc.0/images/plugin/add-alert.svg" width="581" height="362">
+</p>
+<p>Now periodically, Icinga will call <code>check_webhook</code> plugin under <code>hyperalert</code>.
+And this plugin will call your webhook you have registered in your SearchlightPlugin. According to the response from webhook, Service State will be determined.</p>
+<p align="center">
+  <img alt="lifecycle"  src="/products/searchlight/7.0.0-rc.0/images/plugin/call-webhook.svg" width="581" height="362">
+</p>
+<p>In the example above, Service State will be <strong>Warning</strong>.</p>
+<h2 id="writing-webhook-server">Writing Webhook Server</h2>
+<p>Command <code>check_webhook</code> calls a HTTP server with user provided variables and receives response to determine service state. In this tutorial, we will see how we can write a webhook server for Searchlight. The most important part for this webhook is its <code>Response</code> type.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
-<span style=color:#66d9ef>type</span> <span style=color:#a6e22e>State</span> <span style=color:#66d9ef>int32</span>
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">State</span> <span style="color:#66d9ef">int32</span>
 
-<span style=color:#66d9ef>const</span> (
-  <span style=color:#a6e22e>OK</span>       <span style=color:#a6e22e>State</span> = <span style=color:#66d9ef>iota</span> <span style=color:#75715e>// 0
-</span><span style=color:#75715e></span>  <span style=color:#a6e22e>Warning</span>               <span style=color:#75715e>// 1
-</span><span style=color:#75715e></span>  <span style=color:#a6e22e>Critical</span>              <span style=color:#75715e>// 2
-</span><span style=color:#75715e></span>  <span style=color:#a6e22e>Unknown</span>               <span style=color:#75715e>// 3
-</span><span style=color:#75715e></span>)
+<span style="color:#66d9ef">const</span> (
+  <span style="color:#a6e22e">OK</span>       <span style="color:#a6e22e">State</span> = <span style="color:#66d9ef">iota</span> <span style="color:#75715e">// 0
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">Warning</span>               <span style="color:#75715e">// 1
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">Critical</span>              <span style="color:#75715e">// 2
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">Unknown</span>               <span style="color:#75715e">// 3
+</span><span style="color:#75715e"></span>)
 
-<span style=color:#66d9ef>type</span> <span style=color:#a6e22e>Response</span> <span style=color:#66d9ef>struct</span> {
-  <span style=color:#a6e22e>Code</span>    <span style=color:#a6e22e>State</span>  <span style=color:#e6db74>`</span><span style=color:#e6db74>json:&#34;code&#34;</span><span style=color:#e6db74>`</span>
-  <span style=color:#a6e22e>Message</span> <span style=color:#66d9ef>string</span> <span style=color:#e6db74>`</span><span style=color:#e6db74>json:&#34;message,omitempty&#34;</span><span style=color:#e6db74>`</span>
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Response</span> <span style="color:#66d9ef">struct</span> {
+  <span style="color:#a6e22e">Code</span>    <span style="color:#a6e22e">State</span>  <span style="color:#e6db74">`</span><span style="color:#e6db74">json:&#34;code&#34;</span><span style="color:#e6db74">`</span>
+  <span style="color:#a6e22e">Message</span> <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">json:&#34;message,omitempty&#34;</span><span style="color:#e6db74">`</span>
 }
-</code></pre></div><p>Icinga2 Service State is determined according to <code>Code</code> in <code>Response</code>.</p><blockquote><p>Note: Webhook may not have any <code>Request</code> option.</p></blockquote><p>Add HTTP handler to serve request.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</code></pre></div><p>Icinga2 Service State is determined according to <code>Code</code> in <code>Response</code>.</p>
+<blockquote>
+<p>Note: Webhook may not have any <code>Request</code> option.</p>
+</blockquote>
+<p>Add HTTP handler to serve request.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
-<span style=color:#f92672>import</span> (
-  <span style=color:#e6db74>&#34;fmt&#34;</span>
-  <span style=color:#e6db74>&#34;net/http&#34;</span>
+<span style="color:#f92672">import</span> (
+  <span style="color:#e6db74">&#34;fmt&#34;</span>
+  <span style="color:#e6db74">&#34;net/http&#34;</span>
 )
 
-<span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
-  <span style=color:#a6e22e>http</span>.<span style=color:#a6e22e>HandleFunc</span>(<span style=color:#e6db74>&#34;/check-pod-count&#34;</span>, <span style=color:#66d9ef>func</span>(<span style=color:#a6e22e>w</span> <span style=color:#a6e22e>http</span>.<span style=color:#a6e22e>ResponseWriter</span>, <span style=color:#a6e22e>r</span> <span style=color:#f92672>*</span><span style=color:#a6e22e>http</span>.<span style=color:#a6e22e>Request</span>) {
-    <span style=color:#66d9ef>switch</span> <span style=color:#a6e22e>r</span>.<span style=color:#a6e22e>Method</span> {
-    <span style=color:#66d9ef>case</span> <span style=color:#a6e22e>http</span>.<span style=color:#a6e22e>MethodPost</span>:
-      <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#e6db74>&#34;do your stuff&#34;</span>)
-      <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#e6db74>&#34;write response with code&#34;</span>)
-    <span style=color:#66d9ef>default</span>:
-      <span style=color:#a6e22e>http</span>.<span style=color:#a6e22e>Error</span>(<span style=color:#a6e22e>w</span>, <span style=color:#e6db74>&#34;&#34;</span>, <span style=color:#a6e22e>http</span>.<span style=color:#a6e22e>StatusNotImplemented</span>)
-      <span style=color:#66d9ef>return</span>
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+  <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">HandleFunc</span>(<span style="color:#e6db74">&#34;/check-pod-count&#34;</span>, <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">w</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ResponseWriter</span>, <span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span>) {
+    <span style="color:#66d9ef">switch</span> <span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">Method</span> {
+    <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">MethodPost</span>:
+      <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;do your stuff&#34;</span>)
+      <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;write response with code&#34;</span>)
+    <span style="color:#66d9ef">default</span>:
+      <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Error</span>(<span style="color:#a6e22e">w</span>, <span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">StatusNotImplemented</span>)
+      <span style="color:#66d9ef">return</span>
     }
   })
-  <span style=color:#a6e22e>http</span>.<span style=color:#a6e22e>ListenAndServe</span>(<span style=color:#e6db74>&#34;:80&#34;</span>, <span style=color:#a6e22e>http</span>.<span style=color:#a6e22e>DefaultServeMux</span>)
+  <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ListenAndServe</span>(<span style="color:#e6db74">&#34;:80&#34;</span>, <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">DefaultServeMux</span>)
 }
-</code></pre></div><p>Here,</p><ul><li>Path <code>/check-pod-count</code> only serves POST request. And return Response according to its check.</li></ul><blockquote><p>Note: This webhook should listen on <code>80</code> port and serve POST request.</p></blockquote><p>Now build this server code.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>go build -o webhook main.go
-</code></pre></div><p>And build docker image and push to your registry.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dockerfile data-lang=dockerfile><span style=color:#66d9ef>FROM</span><span style=color:#e6db74> ubuntu</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> set -x <span style=color:#ae81ff>\
-</span><span style=color:#ae81ff></span>  <span style=color:#f92672>&amp;&amp;</span> apt-get update<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> set -x <span style=color:#ae81ff>\
-</span><span style=color:#ae81ff></span>  <span style=color:#f92672>&amp;&amp;</span> apt-get install -y ca-certificates<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>COPY</span> webhook /usr/bin/webhook<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>ENTRYPOINT</span> [<span style=color:#e6db74>&#34;webhook&#34;</span>]<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>EXPOSE</span><span style=color:#e6db74> 80</span><span style=color:#960050;background-color:#1e0010>
-</span></code></pre></div><p>Now deploy this server in Kubernetes</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>apiVersion</span>: apps/v1
-<span style=color:#66d9ef>kind</span>: Deployment
-<span style=color:#66d9ef>metadata</span>:
-  <span style=color:#66d9ef>name</span>: searchlight-plugin
-  <span style=color:#66d9ef>labels</span>:
-    <span style=color:#66d9ef>app</span>: searchlight-plugin
-<span style=color:#66d9ef>spec</span>:
-  <span style=color:#66d9ef>replicas</span>: <span style=color:#ae81ff>1</span>
-  <span style=color:#66d9ef>selector</span>:
-    <span style=color:#66d9ef>matchLabels</span>:
-      <span style=color:#66d9ef>app</span>: searchlight-plugin
-  <span style=color:#66d9ef>template</span>:
-    <span style=color:#66d9ef>metadata</span>:
-      <span style=color:#66d9ef>labels</span>:
-        <span style=color:#66d9ef>app</span>: searchlight-plugin
-    <span style=color:#66d9ef>spec</span>:
-      <span style=color:#66d9ef>containers</span>:
-      - <span style=color:#66d9ef>name</span>: webhook
-        <span style=color:#66d9ef>image</span>: appscode/searchlight-plugin-go
-        <span style=color:#66d9ef>imagePullPolicy</span>: Always
-        <span style=color:#66d9ef>ports</span>:
-        - <span style=color:#66d9ef>containerPort</span>: <span style=color:#ae81ff>80</span>
+</code></pre></div><p>Here,</p>
+<ul>
+<li>Path <code>/check-pod-count</code> only serves POST request. And return Response according to its check.</li>
+</ul>
+<blockquote>
+<p>Note: This webhook should listen on <code>80</code> port and serve POST request.</p>
+</blockquote>
+<p>Now build this server code.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">go build -o webhook main.go
+</code></pre></div><p>And build docker image and push to your registry.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> ubuntu</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> set -x <span style="color:#ae81ff">\</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  <span style="color:#f92672">&amp;&amp;</span> apt-get update<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> set -x <span style="color:#ae81ff">\</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  <span style="color:#f92672">&amp;&amp;</span> apt-get install -y ca-certificates<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> webhook /usr/bin/webhook<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENTRYPOINT</span> [<span style="color:#e6db74">&#34;webhook&#34;</span>]<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">EXPOSE</span><span style="color:#e6db74"> 80</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Now deploy this server in Kubernetes</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">apiVersion</span>: apps/v1
+<span style="color:#66d9ef">kind</span>: Deployment
+metadata:
+  <span style="color:#66d9ef">name</span>: searchlight-plugin
+  labels:
+    <span style="color:#66d9ef">app</span>: searchlight-plugin
+spec:
+  <span style="color:#66d9ef">replicas</span>: <span style="color:#ae81ff">1</span>
+  selector:
+    matchLabels:
+      <span style="color:#66d9ef">app</span>: searchlight-plugin
+  template:
+    metadata:
+      labels:
+        <span style="color:#66d9ef">app</span>: searchlight-plugin
+    spec:
+      containers:
+      - <span style="color:#66d9ef">name</span>: webhook
+        <span style="color:#66d9ef">image</span>: appscode/searchlight-plugin-go
+        <span style="color:#66d9ef">imagePullPolicy</span>: Always
+        ports:
+        - <span style="color:#66d9ef">containerPort</span>: <span style="color:#ae81ff">80</span>
 ---
-<span style=color:#66d9ef>apiVersion</span>: v1
-<span style=color:#66d9ef>kind</span>: Service
-<span style=color:#66d9ef>metadata</span>:
-  <span style=color:#66d9ef>name</span>: searchlight-plugin
-  <span style=color:#66d9ef>labels</span>:
-    <span style=color:#66d9ef>app</span>: searchlight-plugin
-<span style=color:#66d9ef>spec</span>:
-  <span style=color:#66d9ef>ports</span>:
-  - <span style=color:#66d9ef>name</span>: http
-    <span style=color:#66d9ef>port</span>: <span style=color:#ae81ff>80</span>
-    <span style=color:#66d9ef>targetPort</span>: <span style=color:#ae81ff>80</span>
-  <span style=color:#66d9ef>selector</span>:
-    <span style=color:#66d9ef>app</span>: searchlight-plugin
-</code></pre></div><p>Here,</p><ul><li>Service <code>searchlight-plugin</code> in Namespace <code>default</code> will be used in SearchlightPlugin</li></ul><p>For a fully working version of this tutorial, visit <a href=https://github.com/appscode/searchlight-plugin>this</a>. Please note that the webhook server can be written in any programming language your prefer as long as the <code>Response</code> json format is maintained.</p></div></div><div class="column is-2"><div class=right-sidebar-area><div class=search-area><form action=#><input id=acSearch type=text placeholder=Search...>
-<button class=search-button>
-<i class="fa fa-search" aria-hidden=true></i></button></form></div><div class=tbl-of-contents><h4>What's on this Page</h4><nav id=TableOfContents><ul><li><a href=#spec>Spec</a><ul><li><a href=#create-clusteralert>Create ClusterAlert</a></li></ul></li><li><a href=#writing-webhook-server>Writing Webhook Server</a></li></ul></nav></div></div></div></div></div><script>var kdDropdown=document.querySelector(".dropdown");var kdDropdownBtn=document.querySelector(".dropdown-trigger");kdDropdownBtn.addEventListener("click",function(){kdDropdown.classList.toggle("is-active");})</script></div><div class=improve-section-area><div class="container section"><div class=improve-bg-color><div class=columns><div class="column is-6"><a href=https://github.com/searchlight/searchlight/edit/master/docs/guides/plugin/webhook-plugin.md/>Improve This Page</a></div></div></div></div></div><div class=overlay-bg></div><div class=sidebar-search-area><div class=search-area-top><h3>Search</h3><div class=searchbar-area><input type=search name=search id=searchbox placeholder=Search...>
-<button onclick=queryPage(1)><i class="fa fa-search" aria-hidden=true></i></button></div><span id=searchbar-script-container style=display:none></span><div class="search-meta-information level"><div class=level-left></div></div></div><div class=search-result-wrapper></div><div class=pagination-area><div class=pagination-list></div></div></div><script type=text/javascript>var pageSize=5;var acSearch=document.querySelector("#acSearch");var bodyOverlay=document.querySelector(".overlay-bg");var sidebarSearch=document.querySelector(".sidebar-search-area");acSearch.addEventListener("click",function(){bodyOverlay.style.display="block";sidebarSearch.style.right="0";document.getElementById("searchbox").focus();bodyOverlay.addEventListener("click",function(){bodyOverlay.style.display="none";sidebarSearch.style.right="-80%";});});function encodeQueryData(data){var ret=[];for(var d in data)
-ret.push(encodeURIComponent(d)+'='+encodeURIComponent(data[d]));return ret.join('&');}
-document.querySelector(".searchbar-area input[type=search]").addEventListener("keyup",function(event){event.preventDefault();if(event.keyCode===13){queryPage(1);}});function queryPage(idx){var q=document.getElementById("searchbox").value;var cx="015199383701854252104:jccvu4eiulw";var key="AIzaSyBo15AW3hatf4fO8actJUZ_d5qZJpx0rXM";var imgSize="small";var callback="renderResult";var src="https://www.googleapis.com/customsearch/v1?"+encodeQueryData({q:q,cx:cx,key:key,imgSize:imgSize,callback:callback,start:(idx-1)*pageSize+1,num:pageSize,});var newScript=document.createElement("script");newScript.src=src;e=document.getElementById("searchbar-script-container");var child=e.lastElementChild;if(child){e.removeChild(child);}
-e.appendChild(newScript);}
-function renderSearchResultEntry(e){var out='<div class="single-search-result">'+
-'<h3><a href="'+e.link+'">'+e.title+'</a></h3>'+
-'<a href="'+e.link+'">'+e.htmlFormattedUrl+'</a>'+
-'<div class="result-description-wrapper">';if(e.pagemap&&e.pagemap.cse_thumbnail){out+='<div class="result-thumb">'+
-'<img src="'+e.pagemap.cse_thumbnail[0].src+'" alt="" />'+
-'</div>';}
-out+='<div class="result-description">'+
-'<p>'+
-e.snippet+
-'</p>'+
-'</div>'+
-'</div>'+
-'</div>';return out;}
-function renderResult(response){document.querySelector(".search-meta-information .level-left").innerHTML='<div class="level-left">'+
-'<p>'+
-'About <span class="search-count">'+response.searchInformation.formattedTotalResults+'</span> results (<span class="time-count">'+response.searchInformation.formattedSearchTime+' </span>seconds)'+
-'</p>'+
-'</div>';if(!response.items){return;}
-var searchResultWrapper=document.querySelector(".search-result-wrapper");searchResultWrapper.innerHTML="";for(var i=0;i<response.items.length;i++){searchResultWrapper.innerHTML+=renderSearchResultEntry(response.items[i]);}
-var pager='<ul>';if(response.queries.previousPage){var pageIndex=Math.floor(response.queries.previousPage[0].startIndex/pageSize)+1;pager+='<li><a href="#" onclick="queryPage('+pageIndex+')">Previous</a></li>';}
-if(response.queries.request){var pageIndex=Math.floor(response.queries.request[0].startIndex/pageSize)+1;pager+='<li><a href="#" onclick="queryPage('+pageIndex+')" class="is-active">'+pageIndex+'</a></li>';}
-if(response.queries.nextPage){var pageIndex=Math.floor(response.queries.nextPage[0].startIndex/pageSize)+1;pager+='<li><a href="#" onclick="queryPage('+pageIndex+')">Next</a></li>';}
-pager+='</ul>';document.querySelector(".pagination-area .pagination-list").innerHTML=pager;}</script><section></section><section></section><section></section><button class=go-to-top id=goTop>
-<i class="fa fa-angle-up" aria-hidden=true></i></button><footer class=footer-area><div class=footer-top><div class="container section"><div class="columns is-mobile is-multiline"><div class="column is-full-mobile is-one-third-desktop is-one-third-widescreen is-one-third-tablet" data-aos=fade-up><div class=single-footer-widget><div class=footer-logo><a href=https://appscode.com><img src=/assets/images/products/appscode/appscode.png alt=AppsCode class=img></a></div><div class=subscription-form><form action="https://appscode.us17.list-manage.com/subscribe/post?u=feb2bf31969a951e7449048a3&id=82fb19acb9" method=post id=mc-embedded-subscribe-form name=mc-embedded-subscribe-form class=navbar-form target=_blank novalidate role=email role=email><label for=email>Subscribe to Our Newsletter</label><p class=spam-message>No spam, we promise. Your mail address is secure</p><div class="field has-addons"><div class=control><input class=input name=EMAIL id=mce-EMAIL type=email placeholder="Your work email address" required>
-<button id=mc-embedded-subscribe type=submit name=subscribe class=button>
-<i class="fa fa-paper-plane-o" aria-hidden=true></i></button></div></div></form></div><div class=contact-information><h4>Have any Inquiry?</h4><ul class=all-contact-info><li><a href=callto:+1%28650%29241-8486><span><i class="fa fa-phone" aria-hidden=true></i></span>+1(650)241-8486</a></li><li><a href=mailto:support@appscode.com><span><i class="fa fa-envelope-o" aria-hidden=true></i></span>support@appscode.com</a></li></ul></div></div></div><div class="column is-half-mobile" data-aos=fade-up data-aos-duration=800><div class=single-footer-widget><div class=footer-menu><h4>Products</h4><ul class=footer-link><li><a href=https://kubedb.com>KubeDB</a></li><li><a href=https://stash.run>Stash</a></li><li><a href=https://kubevault.com>KubeVault</a></li><li><a href=https://appscode.com/products/voyager/>Voyager</a></li><li><a href=https://appscode.com/products/guard/>Guard</a></li><li><a href=https://pharmer.io>Pharmer</a></li></ul></div></div></div><div class="column is-half-mobile" data-aos=fade-up data-aos-duration=1000><div class=single-footer-widget><div class=footer-menu><h4>Services</h4><ul class=footer-link><li><a href=https://appscode.com/pricing/>Commercial Support</a></li><li><a href=https://appscode.com/consulting/>Consulting</a></li><li><a href=https://appscode.com/training/>Training</a></li><li><a href=https://appscode.com/support/>Support</a></li></ul></div></div></div><div class="column is-half-mobile" data-aos=fade-up data-aos-duration=1200><div class=single-footer-widget><div class=footer-menu><h4>Company</h4><ul class=footer-link><li><a href=https://appscode.com/about/>About Us</a></li><li><a href=https://blog.byte.builders>Blog</a></li><li><a href=https://appscode.com/contact/>Contact Us</a></li></ul></div></div></div><div class="column is-half-mobile" data-aos=fade-up data-aos-duration=1500><div class=single-footer-widget><div class=footer-menu><h4>Legal</h4><ul class=footer-link><li><a href=https://appscode.com/legal/tos/>Terms of Sevice</a></li><li><a href=https://appscode.com/legal/privacy-policy/>Privacy Policy</a></li><li><a href=https://appscode.com/legal/security/>Security</a></li><li><a href=https://appscode.com/legal/sla/>Service Level Agreement</a></li></ul></div></div></div></div></div></div><div class=footer-bottom><div class="container section"><div class=columns><div class="column is-4"><p>© 2020 AppsCode Inc. All rights reserved.</p></div><div class="column is-4 is-mobile has-text-centered"><div class=footer-inline-link><a href=https://appscode.com/legal/privacy-policy/>Privacy Policy</a>
-<a href=https://appscode.com/legal/tos/>Terms of Service</a></div></div><div class="column is-4 is-mobile has-text-right"><div class=socail-link-inline><ul><li><a href=https://twitter.com/AppsCodeHQ target=_blank rel=noopener><i class="fa fa-twitter" aria-hidden=true></i></a></li><li><a href=https://www.facebook.com/appscode target=_blank rel=noopener><i class="fa fa-facebook" aria-hidden=true></i></a></li><li><a href=https://www.youtube.com/c/AppsCodeInc target=_blank rel=noopener><i class="fa fa-youtube" aria-hidden=true></i></a></li></ul></div></div></div></div></div></footer><script src=/assets/js/bulma-carousel.min.js></script><script src=https://unpkg.com/aos@2.3.1/dist/aos.js></script><script src=https://unpkg.com/downloadjs@1.4.7/download.min.js></script><script src=https://unpkg.com/clipboard@2/dist/clipboard.min.js></script><script src=/assets/js/main.js></script><script type=text/javascript>var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();(function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;s1.src='https://embed.tawk.to/5821e34b18d9f16af02864b7/default';s1.charset='UTF-8';s1.setAttribute('crossorigin','*');s0.parentNode.insertBefore(s1,s0);})();</script></body></html>
+<span style="color:#66d9ef">apiVersion</span>: v1
+<span style="color:#66d9ef">kind</span>: Service
+metadata:
+  <span style="color:#66d9ef">name</span>: searchlight-plugin
+  labels:
+    <span style="color:#66d9ef">app</span>: searchlight-plugin
+spec:
+  ports:
+  - <span style="color:#66d9ef">name</span>: http
+    <span style="color:#66d9ef">port</span>: <span style="color:#ae81ff">80</span>
+    <span style="color:#66d9ef">targetPort</span>: <span style="color:#ae81ff">80</span>
+  selector:
+    <span style="color:#66d9ef">app</span>: searchlight-plugin
+</code></pre></div><p>Here,</p>
+<ul>
+<li>Service <code>searchlight-plugin</code> in Namespace <code>default</code> will be used in SearchlightPlugin</li>
+</ul>
+<p>For a fully working version of this tutorial, visit <a href="https://github.com/appscode/searchlight-plugin">this</a>. Please note that the webhook server can be written in any programming language your prefer as long as the <code>Response</code> json format is maintained.</p>
+
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          
+          <div class="search-area">
+            <form action="#">
+              <input id="acSearch" type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          
+
+          
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#spec">Spec</a>
+      <ul>
+        <li><a href="#create-clusteralert">Create ClusterAlert</a></li>
+      </ul>
+    </li>
+    <li><a href="#writing-webhook-server">Writing Webhook Server</a></li>
+  </ul>
+</nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    
+    var kdDropdown = document.querySelector(".dropdown");
+    var kdDropdownBtn = document.querySelector(".dropdown-trigger");
+      kdDropdownBtn.addEventListener("click", function(){
+        kdDropdown.classList.toggle("is-active");
+      })
+  </script>
+</div>
+
+
+
+<div class="improve-section-area">
+  <div class="container section">
+      <div class="improve-bg-color">
+      <div class="columns">
+          
+            
+            
+          <div class="column is-6">
+            <a href="https://github.com/searchlight/searchlight/edit/master/docs/">Improve This Page</a>
+          </div>
+          
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="overlay-bg"></div>
+
+
+<div class="sidebar-search-area">
+  <div class="search-area-top">
+    <h3>Search</h3>
+
+    <div class="searchbar-area">
+      <input type="search" name="search" id="searchbox" placeholder="Search..." />
+      <button onclick="queryPage(1)"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </div>
+
+    <span id="searchbar-script-container" style="display:none"></span>
+
+    <div class="search-meta-information level">
+      <div class="level-left">
+      </div>
+    </div>
+  </div>
+
+  <div class="search-result-wrapper">
+  </div>
+
+  
+  <div class="pagination-area">
+    <div class="pagination-list">
+    </div>
+  </div>
+  
+</div>
+
+<script type="text/javascript">
+  var pageSize = 5;
+  var acSearch = document.querySelector("#acSearch");
+  var bodyOverlay = document.querySelector(".overlay-bg");
+  var sidebarSearch = document.querySelector(".sidebar-search-area");
+
+  acSearch.addEventListener("click", function() {
+    bodyOverlay.style.display = "block";
+    sidebarSearch.style.right = "0";
+    document.getElementById("searchbox").focus();
+    bodyOverlay.addEventListener("click", function() {
+      bodyOverlay.style.display = "none";
+      sidebarSearch.style.right = "-80%";
+    });
+  });
+
+  function encodeQueryData(data) {
+    var ret = [];
+    for (var d in data)
+      ret.push(encodeURIComponent(d) + '=' + encodeURIComponent(data[d]));
+    return ret.join('&');
+  }
+
+  document.querySelector(".searchbar-area input[type=search]").addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+      queryPage(1);
+    }
+  });
+
+  function queryPage(idx) {
+    var q = document.getElementById("searchbox").value;
+    var cx = "015199383701854252104:jccvu4eiulw";
+    var key = "AIzaSyBo15AW3hatf4fO8actJUZ_d5qZJpx0rXM";
+    var imgSize = "small";
+    var callback = "renderResult";
+
+    var src = "https://www.googleapis.com/customsearch/v1?" + encodeQueryData({
+      q: q,
+      cx: cx,
+      key: key,
+      imgSize: imgSize,
+      callback: callback,
+      start: (idx-1)*pageSize + 1,
+      num: pageSize,
+    });
+
+    var newScript = document.createElement("script");
+    newScript.src = src;
+    e = document.getElementById("searchbar-script-container");
+    var child = e.lastElementChild;
+    if (child) {
+        e.removeChild(child);
+    }
+    e.appendChild(newScript);
+  }
+
+  function renderSearchResultEntry(e) {
+    var out = '<div class="single-search-result">' +
+      '<h3><a href="' + e.link + '">' + e.title + '</a></h3>' +
+      '<a href="' + e.link + '">' + e.htmlFormattedUrl + '</a>' +
+      '<div class="result-description-wrapper">';
+      if (e.pagemap && e.pagemap.cse_thumbnail) {
+        out += '<div class="result-thumb">' +
+            '<img src="' + e.pagemap.cse_thumbnail[0].src + '" alt="" />' +
+          '</div>';
+      }
+      out += '<div class="result-description">' +
+          '<p>'+
+            e.snippet +
+          '</p>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+    return out;
+  }
+
+  function renderResult(response) {
+    document.querySelector(".search-meta-information .level-left").innerHTML = '<div class="level-left">'+
+        '<p>'+
+          'About <span class="search-count">'+response.searchInformation.formattedTotalResults+'</span> results (<span class="time-count">'+response.searchInformation.formattedSearchTime+' </span>seconds)'+
+        '</p>'+
+      '</div>';
+
+    if (!response.items) {
+      return;
+    }
+
+    var searchResultWrapper = document.querySelector(".search-result-wrapper");
+    searchResultWrapper.innerHTML = "";
+
+    for (var i = 0; i < response.items.length; i++) {
+      searchResultWrapper.innerHTML += renderSearchResultEntry(response.items[i]);
+    }
+
+    var pager = '<ul>';
+    if (response.queries.previousPage) {
+      var pageIndex = Math.floor(response.queries.previousPage[0].startIndex/pageSize) + 1;
+      pager += '<li><a href="#" onclick="queryPage(' + pageIndex  + ')">Previous</a></li>';
+    }
+    if (response.queries.request) {
+      var pageIndex = Math.floor(response.queries.request[0].startIndex/pageSize) + 1;
+      pager += '<li><a href="#" onclick="queryPage(' + pageIndex  + ')" class="is-active">' + pageIndex + '</a></li>';
+    }
+    if (response.queries.nextPage) {
+      var pageIndex = Math.floor(response.queries.nextPage[0].startIndex/pageSize) + 1;
+      pager += '<li><a href="#" onclick="queryPage(' + pageIndex  + ')">Next</a></li>';
+    }
+    pager += '</ul>';
+    document.querySelector(".pagination-area .pagination-list").innerHTML = pager;
+  }
+</script>
+
+
+
+
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    
+<section></section>
+
+    
+
+    
+    <button class="go-to-top" id="goTop">
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </button>
+    
+    
+    
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container section">
+          <div class="columns is-mobile is-multiline">
+            <div class="column is-full-mobile is-one-third-desktop is-one-third-widescreen is-one-third-tablet" data-aos="fade-up">
+              <div class="single-footer-widget">
+                
+                <div class="footer-logo">
+                  <a href="https://appscode.com"
+                    ><img
+                      src="/assets/images/products/appscode/appscode.png"
+                      alt="AppsCode"
+                      class="img"
+                  /></a>
+                </div>
+                
+
+                
+                <div class="subscription-form">
+                  <form action="https://appscode.us17.list-manage.com/subscribe/post?u=feb2bf31969a951e7449048a3&amp;id=82fb19acb9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="navbar-form" target="_blank" novalidate role="email" role="email">
+                    <label for="email">Subscribe to Our Newsletter</label>
+                    <p class="spam-message">No spam, we promise. Your mail address is secure</p>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input
+                          class="input"
+                          name="EMAIL"
+                          id="mce-EMAIL"
+                          type="email"
+                          placeholder="Your work email address"
+                          required
+                        />
+                        <button id="mc-embedded-subscribe" type="submit" name="subscribe" class="button">
+                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                          </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+
+                
+                <div class="contact-information">
+                  <h4>Have any Inquiry?</h4>
+                  <ul class="all-contact-info">
+                    <li>
+                      <a href="callto:&#43;1%28650%29241-8486"
+                        ><span
+                          ><i class="fa fa-phone" aria-hidden="true"></i></span
+                        >&#43;1(650)241-8486</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="mailto:support@appscode.com"
+                        ><span
+                          ><i
+                            class="fa fa-envelope-o"
+                            aria-hidden="true"
+                          ></i></span
+                        >support@appscode.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-half-mobile" data-aos="fade-up" data-aos-duration="800">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Products</h4>
+                  <ul class="footer-link">
+                    
+                    
+                    <li><a href="https://kubedb.com">KubeDB</a></li>
+                    
+                    
+                    <li><a href="https://stash.run">Stash</a></li>
+                    
+                    
+                    <li><a href="https://kubevault.com">KubeVault</a></li>
+                    
+                    
+                    <li><a href="https://appscode.com/products/voyager/">Voyager</a></li>
+                    
+                    
+                    <li><a href="https://appscode.com/products/guard/">Guard</a></li>
+                    
+                    
+                    <li><a href="https://pharmer.io">Pharmer</a></li>
+                    
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-half-mobile" data-aos="fade-up" data-aos-duration="1000">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Services</h4>
+                  <ul class="footer-link">
+                    <li><a href="https://appscode.com/pricing/">Commercial Support</a></li>
+                    <li><a href="https://appscode.com/consulting/">Consulting</a></li>
+                    <li><a href="https://appscode.com/training/">Training</a></li>
+                    <li><a href="https://appscode.com/support/">Support</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-half-mobile" data-aos="fade-up" data-aos-duration="1200">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul class="footer-link">
+                    <li><a href="https://appscode.com/about/">About Us</a></li>
+                    <li><a href="https://blog.byte.builders">Blog</a></li>
+                    <li><a href="https://appscode.com/contact/">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="column is-half-mobile" data-aos="fade-up" data-aos-duration="1500">
+              <div class="single-footer-widget">
+                
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul class="footer-link">
+                    <li><a href="https://appscode.com/legal/tos/">Terms of Sevice</a></li>
+                    <li><a href="https://appscode.com/legal/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="https://appscode.com/legal/security/">Security</a></li>
+                    <li><a href="https://appscode.com/legal/sla/">Service Level Agreement</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container section">
+          <div class="columns">
+            <div class="column is-4">
+              <p>© 2020 AppsCode Inc. All rights reserved.</p>
+            </div>
+            <div class="column is-4 is-mobile has-text-centered">
+              <div class="footer-inline-link">
+                <a href="https://appscode.com/legal/privacy-policy/">Privacy Policy</a>
+                <a href="https://appscode.com/legal/tos/">Terms of Service</a>
+              </div>
+            </div>
+            <div class="column is-4 is-mobile has-text-right">
+              <div class="socail-link-inline">
+                <ul>
+                  <li>
+                    <a href="https://twitter.com/AppsCodeHQ"
+                       target="_blank" rel="noopener"><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/appscode"
+                      target="_blank" rel="noopener"><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/c/AppsCodeInc"
+                      target="_blank" rel="noopener"><i class="fa fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+    <script src="/assets/js/bulma-carousel.min.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script src="https://unpkg.com/downloadjs@1.4.7/download.min.js"></script>
+    
+    <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+    
+    <script src="/assets/js/main.js"></script>
+
+    
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5821e34b18d9f16af02864b7/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    
+  </body>
+</html>

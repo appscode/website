@@ -1,14 +1,72 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Setup | Searchlight on GitHub for Kubernetes</title><link>https://appscode.com/products/searchlight/5.0.0/setup/</link><description>Recent content in Setup | Searchlight on GitHub for Kubernetes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode.com/products/searchlight/5.0.0/setup/index.xml" rel="self" type="application/rss+xml"/><item><title>Certificate</title><link>https://appscode.com/products/searchlight/5.0.0/setup/certificate/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.0.0/setup/certificate/</guid><description>New to Searchlight? Please start here.
-Certificate This article shows you how to generate SSL certificates using openssl or easyrsa.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setup | Searchlight on GitHub for Kubernetes</title>
+    <link>https://appscode.com/products/searchlight/5.0.0/setup/</link>
+    <description>Recent content in Setup | Searchlight on GitHub for Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://appscode.com/products/searchlight/5.0.0/setup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Certificate</title>
+      <link>https://appscode.com/products/searchlight/5.0.0/setup/certificate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.0.0/setup/certificate/</guid>
+      <description>New to Searchlight? Please start here.
+ Certificate This article shows you how to generate SSL certificates using openssl or easyrsa.
 openssl openssl can also be use to manually generate certificates for your cluster.
-Set HOST_IP ENV to host IP
-Generate a ca.key with 2048bit:
-openssl genrsa -out ca.key 2048 According to the ca.key generate a ca.crt openssl req -x509 -new -nodes -key ca.</description></item><item><title>Install</title><link>https://appscode.com/products/searchlight/5.0.0/setup/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.0.0/setup/install/</guid><description>New to Searchlight? Please start here.
-Installation Guide Using YAML
+  Set HOST_IP ENV to host IP
+  Generate a ca.key with 2048bit:
+  openssl genrsa -out ca.key 2048According to the ca.key generate a ca.crt  openssl req -x509 -new -nodes -key ca.</description>
+    </item>
+    
+    <item>
+      <title>Install</title>
+      <link>https://appscode.com/products/searchlight/5.0.0/setup/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.0.0/setup/install/</guid>
+      <description>New to Searchlight? Please start here.
+ Installation Guide Using YAML 
 Searchlight can be installed using YAML files includes in the /hack/deploy folder.
-# Install without RBAC roles $ kubectl apply -f https://raw.githubusercontent.com/appscode/searchlight/5.0.0/hack/deploy/without-rbac.yaml # Install with RBAC roles $ kubectl apply -f https://raw.githubusercontent.com/appscode/searchlight/5.0.0/hack/deploy/with-rbac.yaml Using Helm Searchlight can be installed via Helm using the chart included in this repository. To install the chart with the release name my-release:
-$ helm repo update $ helm install stable/searchlight --name my-release To see the detailed configuration options, visit here.</description></item><item><title>Install Hostfacts</title><link>https://appscode.com/products/searchlight/5.0.0/setup/hostfacts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.0.0/setup/hostfacts/</guid><description>New to Searchlight? Please start here.
-Hostfacts Hostfacts is a http server used to expose various node metrics. This is a wrapper around the wonderful shirou/gopsutil library. This is used by check_node_volume and check_pod_volume commands to detect disk usage stats. To use these check commands, hostfacts must be installed directly on every node in the cluster. Hostfacts can&amp;rsquo;t be deployed using DaemonSet. This guide will walk you through how to deploy hostfacts as a Systemd service.</description></item><item><title>Table of Contents | Setup</title><link>https://appscode.com/products/searchlight/5.0.0/setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.0.0/setup/</guid><description>Setup Setup contains instructions for installing the Searchlight and its various components in Kubernetes.
-Install Searchlight. Installation instructions for Searchlight. Install Hostfacts. Installation instructions for Hostfacts. Generate Certificates. Instructions for generating self-signed certificates. Uninstall Searchlight. Instructions for uninstallating Searchlight. Developer Guide Overview. Outlines everything you need to know from setting up your dev environment to how to build and test Searchlight. Release process. Steps for releasing a new version of Searchlight.</description></item><item><title>Uninstall</title><link>https://appscode.com/products/searchlight/5.0.0/setup/uninstall/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.0.0/setup/uninstall/</guid><description>New to Searchlight? Please start here.
-Uninstall Searchlight Please follow the steps below to uninstall Searchlight:
-Delete the various objects created for Searchlight operator. $ curl -fsSL https://raw.githubusercontent.com/appscode/searchlight/5.0.0/hack/deploy/uninstall.sh | bash + kubectl delete deployment -l app=searchlight -n kube-system deployment &amp;quot;searchlight-operator&amp;quot; deleted + kubectl delete service -l app=searchlight -n kube-system service &amp;quot;searchlight-operator&amp;quot; deleted + kubectl delete secret -l app=searchlight -n kube-system secret &amp;quot;searchlight-operator&amp;quot; deleted + kubectl delete serviceaccount -l app=searchlight -n kube-system No resources found + kubectl delete clusterrolebindings -l app=searchlight -n kube-system No resources found + kubectl delete clusterrole -l app=searchlight -n kube-system No resources found Now, wait several seconds for Searchlight to stop running.</description></item></channel></rss>
+# Install without RBAC roles$ kubectl apply -f https://raw.githubusercontent.com/appscode/searchlight/5.0.0/hack/deploy/without-rbac.yaml# Install with RBAC roles$ kubectl apply -f https://raw.githubusercontent.com/appscode/searchlight/5.0.0/hack/deploy/with-rbac.yamlUsing Helm Searchlight can be installed via Helm using the chart included in this repository. To install the chart with the release name my-release:
+$ helm repo update$ helm install stable/searchlight --name my-releaseTo see the detailed configuration options, visit here.</description>
+    </item>
+    
+    <item>
+      <title>Install Hostfacts</title>
+      <link>https://appscode.com/products/searchlight/5.0.0/setup/hostfacts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.0.0/setup/hostfacts/</guid>
+      <description>New to Searchlight? Please start here.
+ Hostfacts Hostfacts is a http server used to expose various node metrics. This is a wrapper around the wonderful shirou/gopsutil library. This is used by check_node_volume and check_pod_volume commands to detect disk usage stats. To use these check commands, hostfacts must be installed directly on every node in the cluster. Hostfacts can&amp;rsquo;t be deployed using DaemonSet. This guide will walk you through how to deploy hostfacts as a Systemd service.</description>
+    </item>
+    
+    <item>
+      <title>Table of Contents | Setup</title>
+      <link>https://appscode.com/products/searchlight/5.0.0/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.0.0/setup/</guid>
+      <description>Setup Setup contains instructions for installing the Searchlight and its various components in Kubernetes.
+ Install Searchlight. Installation instructions for Searchlight. Install Hostfacts. Installation instructions for Hostfacts. Generate Certificates. Instructions for generating self-signed certificates. Uninstall Searchlight. Instructions for uninstallating Searchlight. Developer Guide  Overview. Outlines everything you need to know from setting up your dev environment to how to build and test Searchlight. Release process. Steps for releasing a new version of Searchlight.</description>
+    </item>
+    
+    <item>
+      <title>Uninstall</title>
+      <link>https://appscode.com/products/searchlight/5.0.0/setup/uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.0.0/setup/uninstall/</guid>
+      <description>New to Searchlight? Please start here.
+ Uninstall Searchlight Please follow the steps below to uninstall Searchlight:
+ Delete the various objects created for Searchlight operator.  $ curl -fsSL https://raw.githubusercontent.com/appscode/searchlight/5.0.0/hack/deploy/uninstall.sh | bash+ kubectl delete deployment -l app=searchlight -n kube-systemdeployment &amp;quot;searchlight-operator&amp;quot; deleted+ kubectl delete service -l app=searchlight -n kube-systemservice &amp;quot;searchlight-operator&amp;quot; deleted+ kubectl delete secret -l app=searchlight -n kube-systemsecret &amp;quot;searchlight-operator&amp;quot; deleted+ kubectl delete serviceaccount -l app=searchlight -n kube-systemNo resources found+ kubectl delete clusterrolebindings -l app=searchlight -n kube-systemNo resources found+ kubectl delete clusterrole -l app=searchlight -n kube-systemNo resources found Now, wait several seconds for Searchlight to stop running.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,8 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs | Guard on GitHub for Kubernetes</title><link>https://appscode.com/products/guard/0.2.1/</link><description>Recent content in Docs | Guard on GitHub for Kubernetes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode.com/products/guard/0.2.1/index.xml" rel="self" type="application/rss+xml"/><item><title>Changelog | Guard</title><link>https://appscode.com/products/guard/0.2.1/welcome/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/guard/0.2.1/welcome/changelog/</guid><description>Change Log 0.2.1 (2018-07-08) Full Changelog
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs | Guard on GitHub for Kubernetes</title>
+    <link>https://appscode.com/products/guard/0.2.1/</link>
+    <description>Recent content in Docs | Guard on GitHub for Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://appscode.com/products/guard/0.2.1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Changelog | Guard</title>
+      <link>https://appscode.com/products/guard/0.2.1/welcome/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/guard/0.2.1/welcome/changelog/</guid>
+      <description>Change Log 0.2.1 (2018-07-08) Full Changelog
 Closed issues:
-Support B2B auth for Azure provider by supporting both oid or upn claims in the token #170 Update kops docs #142 Merged pull requests:
-Format shell scripts #175 (tamalsaha) Use client-go v8.0.0 #173 (tamalsaha) Enable B2B auth for Azure provider by supporting either oid or upn claim in the token #172 (amanohar) Add missing image in azure #169 (nightfury1204) 0.</description></item><item><title>Contributing | Guard</title><link>https://appscode.com/products/guard/0.2.1/welcome/contributing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/guard/0.2.1/welcome/contributing/</guid><description>Contribution Guidelines Want to hack on Guard?
+ Support B2B auth for Azure provider by supporting both oid or upn claims in the token #170 Update kops docs #142  Merged pull requests:
+ Format shell scripts #175 (tamalsaha) Use client-go v8.0.0 #173 (tamalsaha) Enable B2B auth for Azure provider by supporting either oid or upn claim in the token #172 (amanohar) Add missing image in azure #169 (nightfury1204)  0.</description>
+    </item>
+    
+    <item>
+      <title>Contributing | Guard</title>
+      <link>https://appscode.com/products/guard/0.2.1/welcome/contributing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/guard/0.2.1/welcome/contributing/</guid>
+      <description>Contribution Guidelines Want to hack on Guard?
 AppsCode projects are Apache 2.0 licensed and accept contributions via GitHub pull requests. This document outlines some of the conventions on development workflow, commit message formatting, contact points and other resources to make it easier to get your contribution accepted.
-Certificate of Origin By contributing to this project you agree to the Developer Certificate of Origin (DCO). This document was created by the Linux Kernel community and is a simple statement that you, as a contributor, have the legal right to make the contribution.</description></item><item><title>Support | Guard</title><link>https://appscode.com/products/guard/0.2.1/welcome/support/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/guard/0.2.1/welcome/support/</guid><description>Support We use Slack for public discussions. To chit chat with us or the rest of the community, join us in the AppsCode Slack team channel #guard. To sign up, use our Slack inviter.
-If you have found a bug with Searchlight or want to request for new features, please file an issue.</description></item><item><title>Welcome | Guard</title><link>https://appscode.com/products/guard/0.2.1/welcome/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/guard/0.2.1/welcome/</guid><description>Guard Guard by AppsCode is a Kubernetes Webhook Authentication server. Using guard, you can log into your Kubernetes cluster using your Github or Google authentication token. Guard also sets authenticated user&amp;rsquo;s groups to his Github teams or Google groups. This allows cluster administrator to setup RBAC rules based on membership in Github teams or Google groups.
-From here you can learn all about Guard&amp;rsquo;s architecture and how to deploy and use Guard.</description></item></channel></rss>
+Certificate of Origin By contributing to this project you agree to the Developer Certificate of Origin (DCO). This document was created by the Linux Kernel community and is a simple statement that you, as a contributor, have the legal right to make the contribution.</description>
+    </item>
+    
+    <item>
+      <title>Support | Guard</title>
+      <link>https://appscode.com/products/guard/0.2.1/welcome/support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/guard/0.2.1/welcome/support/</guid>
+      <description>Support We use Slack for public discussions. To chit chat with us or the rest of the community, join us in the AppsCode Slack team channel #guard. To sign up, use our Slack inviter.
+If you have found a bug with Searchlight or want to request for new features, please file an issue.</description>
+    </item>
+    
+    <item>
+      <title>Welcome | Guard</title>
+      <link>https://appscode.com/products/guard/0.2.1/welcome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/guard/0.2.1/welcome/</guid>
+      <description>Guard Guard by AppsCode is a Kubernetes Webhook Authentication server. Using guard, you can log into your Kubernetes cluster using your Github or Google authentication token. Guard also sets authenticated user&amp;rsquo;s groups to his Github teams or Google groups. This allows cluster administrator to setup RBAC rules based on membership in Github teams or Google groups.
+From here you can learn all about Guard&amp;rsquo;s architecture and how to deploy and use Guard.</description>
+    </item>
+    
+  </channel>
+</rss>
