@@ -1,252 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Configuration on GitHub for Kubernetes</title>
-    <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/</link>
-    <description>Recent content in Configuration on GitHub for Kubernetes</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Backend Rules | Kubernetes Ingress</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/backend-rule/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/backend-rule/</guid>
-      <description>New to Voyager? Please start here.
- Backend Rules Voyager supports full spectrum of HAProxy backend rules via backendRule. Read more about HAProxy backend rules.
-apiVersion: voyager.appscode.com/v1beta1kind: Ingressmetadata:name: test-ingressnamespace: defaultspec:rules:- host: appscode.example.comhttp:paths:- path: &amp;#39;/test&amp;#39;backend:serviceName: test-serviceservicePort: &amp;#39;80&amp;#39;backendRules:- &amp;#39;acl add_url capture.req.uri -m beg /test-second&amp;#39;- &amp;#39;http-response set-header X-Added-From-Proxy added-from-proxy if add_url&amp;#39;This example will apply an acl to the server backend, and a extra header from Loadbalancer if request uri starts with /test-second.</description>
-    </item>
-    
-    <item>
-      <title>Configure Ingress Accept Proxy</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/accept-proxy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/accept-proxy/</guid>
-      <description>New to Voyager? Please start here.
- Accept Proxy If set to true, enforces the use of the PROXY protocol over any connection accepted by HAProxy. It will add the accept-proxy keyword on the bind line of the generated haproxy.cfg.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Configuration on GitHub for Kubernetes</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/</link><description>Recent content in Configuration on GitHub for Kubernetes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/index.xml" rel="self" type="application/rss+xml"/><item><title>Backend Rules | Kubernetes Ingress</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/backend-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/backend-rule/</guid><description>New to Voyager? Please start here.
+Backend Rules Voyager supports full spectrum of HAProxy backend rules via backendRule. Read more about HAProxy backend rules.
+apiVersion: voyager.appscode.com/v1beta1 kind: Ingress metadata: name: test-ingress namespace: default spec: rules: - host: appscode.example.com http: paths: - path: &amp;#39;/test&amp;#39; backend: serviceName: test-service servicePort: &amp;#39;80&amp;#39; backendRules: - &amp;#39;acl add_url capture.req.uri -m beg /test-second&amp;#39; - &amp;#39;http-response set-header X-Added-From-Proxy added-from-proxy if add_url&amp;#39; This example will apply an acl to the server backend, and a extra header from Loadbalancer if request uri starts with /test-second.</description></item><item><title>Configure Ingress Accept Proxy</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/accept-proxy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/accept-proxy/</guid><description>New to Voyager? Please start here.
+Accept Proxy If set to true, enforces the use of the PROXY protocol over any connection accepted by HAProxy. It will add the accept-proxy keyword on the bind line of the generated haproxy.cfg.
 Ingress Example First create a test-server and expose it via service:
-$ kubectl run test-server --image=gcr.io/google_containers/echoserver:1.8deployment &amp;quot;test-server&amp;quot; created$ kubectl expose deployment test-server --type=LoadBalancer --port=80 --target-port=8080service &amp;quot;test-server&amp;quot; exposedThen create the ingress:</description>
-    </item>
-    
-    <item>
-      <title>Configure Ingress Annotations</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/annotations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/annotations/</guid>
-      <description>New to Voyager? Please start here.
- Configure ingress with annotations Below is the full list of supported annotations:
-   Keys Value Default     ingress.appscode.com/type LoadBalancer, HostPort, NodePort, Internal LoadBalancer   ingress.appscode.com/api-schema {APIGroup}/{APIVersion} voyager.appscode.com/v1beta1   ingress.appscode.com/accept-proxy bool false   ingress.appscode.com/affinity cookie    ingress.appscode.com/session-cookie-hash string    ingress.appscode.com/session-cookie-name string SERVERID   ingress.appscode.com/hsts bool true   ingress.appscode.com/hsts-include-subdomains bool false   ingress.</description>
-    </item>
-    
-    <item>
-      <title>Configure Ingress Bind Address</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/bind-address/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/bind-address/</guid>
-      <description> New to Voyager? Please start here.
- </description>
-    </item>
-    
-    <item>
-      <title>Configure Ingress Body Size</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/body-size/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/body-size/</guid>
-      <description>New to Voyager? Please start here.
- Maximum Body Size You can configure maximum allowed request body size in bytes using ingress.appscode.com/proxy-body-size annotation. It will applied globally for all frontends. If request body size exceeds the specified size then it will through error with code 400.
-Ingress Example apiVersion: voyager.appscode.com/v1beta1kind: Ingressmetadata:name: test-ingressnamespace: defaultannotations:ingress.appscode.com/proxy-body-size: &amp;#34;8&amp;#34;spec:rules:- host: voyager.appscode.testhttp:paths:- path: /foobackend:serviceName: test-serverservicePort: 80It will add following to all frontends in generated haproxy.</description>
-    </item>
-    
-    <item>
-      <title>Configure Ingress Error Files</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/error-files/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/error-files/</guid>
-      <description>New to Voyager? Please start here.
- Error Files Using voayger you can configure haproxy to return a file-content or, execute a command instead of returning generated errors. To achieve this you need to create a configmap specifying the file-content or, command for different status codes. Then you have to specify the configmap name using ingress.appscode.com/errorfiles annotation. Then contents of the configmap will be mounted in the haproxy pod in path /srv/voyager/errorfiles.</description>
-    </item>
-    
-    <item>
-      <title>Configure Ingress Keep Source IP</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/keep-source-ip/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/keep-source-ip/</guid>
-      <description>New to Voyager? Please start here.
- Keep Source IP You can preserve client source IP by setting annotation ingress.appscode.com/keep-source-ip to true.
+$ kubectl run test-server --image=gcr.io/google_containers/echoserver:1.8 deployment &amp;quot;test-server&amp;quot; created $ kubectl expose deployment test-server --type=LoadBalancer --port=80 --target-port=8080 service &amp;quot;test-server&amp;quot; exposed Then create the ingress:</description></item><item><title>Configure Ingress Annotations</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/annotations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/annotations/</guid><description>New to Voyager? Please start here.
+Configure ingress with annotations Below is the full list of supported annotations:
+Keys Value Default ingress.appscode.com/type LoadBalancer, HostPort, NodePort, Internal LoadBalancer ingress.appscode.com/api-schema {APIGroup}/{APIVersion} voyager.appscode.com/v1beta1 ingress.appscode.com/accept-proxy bool false ingress.appscode.com/affinity cookie ingress.appscode.com/session-cookie-hash string ingress.appscode.com/session-cookie-name string SERVERID ingress.appscode.com/hsts bool true ingress.appscode.com/hsts-include-subdomains bool false ingress.</description></item><item><title>Configure Ingress Bind Address</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/bind-address/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/bind-address/</guid><description> New to Voyager? Please start here.</description></item><item><title>Configure Ingress Body Size</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/body-size/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/body-size/</guid><description>New to Voyager? Please start here.
+Maximum Body Size You can configure maximum allowed request body size in bytes using ingress.appscode.com/proxy-body-size annotation. It will applied globally for all frontends. If request body size exceeds the specified size then it will through error with code 400.
+Ingress Example apiVersion: voyager.appscode.com/v1beta1 kind: Ingress metadata: name: test-ingress namespace: default annotations: ingress.appscode.com/proxy-body-size: &amp;#34;8&amp;#34; spec: rules: - host: voyager.appscode.test http: paths: - path: /foo backend: serviceName: test-server servicePort: 80 It will add following to all frontends in generated haproxy.</description></item><item><title>Configure Ingress Error Files</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/error-files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/error-files/</guid><description>New to Voyager? Please start here.
+Error Files Using voayger you can configure haproxy to return a file-content or, execute a command instead of returning generated errors. To achieve this you need to create a configmap specifying the file-content or, command for different status codes. Then you have to specify the configmap name using ingress.appscode.com/errorfiles annotation. Then contents of the configmap will be mounted in the haproxy pod in path /srv/voyager/errorfiles.</description></item><item><title>Configure Ingress Keep Source IP</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/keep-source-ip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/keep-source-ip/</guid><description>New to Voyager? Please start here.
+Keep Source IP You can preserve client source IP by setting annotation ingress.appscode.com/keep-source-ip to true.
 For LoadBalancer type ingresses, the actual configuration generated depends on the underlying cloud provider.
- GCE, GKE, Azure, ACS: Sets ExternalTrafficPolicy to Local for services used to expose HAProxy. See here. AWS: Enables accept-proxy that enforces the use of the PROXY protocol over any connection accepted by any of the sockets declared on the same line.</description>
-    </item>
-    
-    <item>
-      <title>Configure Ingress Loadbalancer IP</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/loadbalancer-ip/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/loadbalancer-ip/</guid>
-      <description> New to Voyager? Please start here.
- LoadBalancer IP For LoadBalancer type ingresses, you can specify LoadBalancerIP of HAProxy services using ingress.appscode.com/load-balancer-ip annotation.
+GCE, GKE, Azure, ACS: Sets ExternalTrafficPolicy to Local for services used to expose HAProxy. See here. AWS: Enables accept-proxy that enforces the use of the PROXY protocol over any connection accepted by any of the sockets declared on the same line.</description></item><item><title>Configure Ingress Loadbalancer IP</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/loadbalancer-ip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/loadbalancer-ip/</guid><description> New to Voyager? Please start here.
+LoadBalancer IP For LoadBalancer type ingresses, you can specify LoadBalancerIP of HAProxy services using ingress.appscode.com/load-balancer-ip annotation.
 Note that, this feature is supported for cloud providers GCE, GKE, Azure, ACS and Openstack.
-Ingress Example apiVersion: voyager.appscode.com/v1beta1kind: Ingressmetadata:name: test-ingressnamespace: defaultannotations:ingress.appscode.com/load-balancer-ip: &amp;#34;78.11.24.19&amp;#34;spec:rules:- host: voyager.appscode.testhttp:paths:- path: /foobackend:serviceName: test-serverservicePort: 80</description>
-    </item>
-    
-    <item>
-      <title>Configure Ingress Max Connections</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/max-connections/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/max-connections/</guid>
-      <description>New to Voyager? Please start here.
- Maximum Connections You can specify the maximum number of concurrent connections through the ingress.appscode.com/max-connections annotation. When applied to ingress, this rule will be applied globally for all backends. To apply for a specific backend, you need to apply the annotation to associated pod.
+Ingress Example apiVersion: voyager.appscode.com/v1beta1 kind: Ingress metadata: name: test-ingress namespace: default annotations: ingress.appscode.com/load-balancer-ip: &amp;#34;78.11.24.19&amp;#34; spec: rules: - host: voyager.appscode.test http: paths: - path: /foo backend: serviceName: test-server servicePort: 80</description></item><item><title>Configure Ingress Max Connections</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/max-connections/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/max-connections/</guid><description>New to Voyager? Please start here.
+Maximum Connections You can specify the maximum number of concurrent connections through the ingress.appscode.com/max-connections annotation. When applied to ingress, this rule will be applied globally for all backends. To apply for a specific backend, you need to apply the annotation to associated pod.
 Ingress Example First create a test-server and expose it via service:
-$ kubectl run test-server --image=gcr.io/google_containers/echoserver:1.8deployment &amp;quot;test-server&amp;quot; created$ kubectl expose deployment test-server --type=LoadBalancer --port=80 --target-port=8080service &amp;quot;test-server&amp;quot; exposedThen create the ingress:</description>
-    </item>
-    
-    <item>
-      <title>Configure Ingress Pod Annotations</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/pod-annotations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/pod-annotations/</guid>
-      <description>New to Voyager? Please start here.
- Pod Annotations You can specify annotations applied to HAProxy pods through ingress annotation ingress.appscode.com/annotations-pod. You have to provide it as a json formatted string to string map.
-Ingress Example apiVersion: voyager.appscode.com/v1beta1kind: Ingressmetadata:name: test-ingressnamespace: defaultannotations:ingress.appscode.com/annotations-pod: &amp;#39;{&amp;#34;foo&amp;#34;: &amp;#34;bar&amp;#34;, &amp;#34;bar&amp;#34;:&amp;#34;foo&amp;#34;}&amp;#39;spec:rules:- host: voyager.appscode.testhttp:paths:- path: /foobackend:serviceName: test-serverservicePort: 80It will add following annotations to HAProxy pods:</description>
-    </item>
-    
-    <item>
-      <title>Configure Ingress Rate Limit</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/rate-limit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/rate-limit/</guid>
-      <description>New to Voyager? Please start here.
- Rate limiting You can define a limit on the connections that can be opened by a single client IP address through annotations. This can be used to mitigate DDoS Attacks.
-  ingress.appscode.com/limit-connection: number of concurrent connections allowed from a single IP address.
-  ingress.appscode.com/limit-rps: number of connections that may be accepted from a given IP each second.
-  ingress.appscode.com/limit-rpm: number of connections that may be accepted from a given IP each minute.</description>
-    </item>
-    
-    <item>
-      <title>Configure Ingress Rewrite Target</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/rewrite-target/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/rewrite-target/</guid>
-      <description>New to Voyager? Please start here.
- Rewrite Target In some scenarios the exposed URL in the backend service differs from the specified path in the Ingress rule. This will cause any request to return 404. In such scenarios you can set the path expected by the service using ingress.appscode.com/rewrite-target annotation. This will be applied globally for all paths.
-Ingress Example apiVersion: voyager.appscode.com/v1beta1kind: Ingressmetadata:name: test-ingressnamespace: defaultannotations:ingress.</description>
-    </item>
-    
-    <item>
-      <title>Configure Ingress Service Annotations</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/service-annotations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/service-annotations/</guid>
-      <description>New to Voyager? Please start here.
- Service Annotations You can specify annotations applied to HAProxy services through ingress annotation ingress.appscode.com/annotations-service. You have to provide it as a json formatted string to string map.
-Ingress Example apiVersion: voyager.appscode.com/v1beta1kind: Ingressmetadata:name: test-ingressnamespace: defaultannotations:ingress.appscode.com/annotations-service: &amp;#39;{&amp;#34;foo&amp;#34;: &amp;#34;bar&amp;#34;, &amp;#34;bar&amp;#34;:&amp;#34;foo&amp;#34;}&amp;#39;spec:rules:- host: voyager.appscode.testhttp:paths:- path: /foobackend:serviceName: test-serverservicePort: 80It will add following annotations to HAProxy pods:</description>
-    </item>
-    
-    <item>
-      <title>Configure Ingress Ssl Passthrough</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/ssl-passthrough/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/ssl-passthrough/</guid>
-      <description>New to Voyager? Please start here.
- SSL Passthrough The annotation ingress.appscode.com/ssl-passthrough allows to configure TLS termination in the backend and not in haproxy. When set to true, passes TLS connections directly to backend.
+$ kubectl run test-server --image=gcr.io/google_containers/echoserver:1.8 deployment &amp;quot;test-server&amp;quot; created $ kubectl expose deployment test-server --type=LoadBalancer --port=80 --target-port=8080 service &amp;quot;test-server&amp;quot; exposed Then create the ingress:</description></item><item><title>Configure Ingress Pod Annotations</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/pod-annotations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/pod-annotations/</guid><description>New to Voyager? Please start here.
+Pod Annotations You can specify annotations applied to HAProxy pods through ingress annotation ingress.appscode.com/annotations-pod. You have to provide it as a json formatted string to string map.
+Ingress Example apiVersion: voyager.appscode.com/v1beta1 kind: Ingress metadata: name: test-ingress namespace: default annotations: ingress.appscode.com/annotations-pod: &amp;#39;{&amp;#34;foo&amp;#34;: &amp;#34;bar&amp;#34;, &amp;#34;bar&amp;#34;:&amp;#34;foo&amp;#34;}&amp;#39; spec: rules: - host: voyager.appscode.test http: paths: - path: /foo backend: serviceName: test-server servicePort: 80 It will add following annotations to HAProxy pods:</description></item><item><title>Configure Ingress Rate Limit</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/rate-limit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/rate-limit/</guid><description>New to Voyager? Please start here.
+Rate limiting You can define a limit on the connections that can be opened by a single client IP address through annotations. This can be used to mitigate DDoS Attacks.
+ingress.appscode.com/limit-connection: number of concurrent connections allowed from a single IP address.
+ingress.appscode.com/limit-rps: number of connections that may be accepted from a given IP each second.
+ingress.appscode.com/limit-rpm: number of connections that may be accepted from a given IP each minute.</description></item><item><title>Configure Ingress Rewrite Target</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/rewrite-target/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/rewrite-target/</guid><description>New to Voyager? Please start here.
+Rewrite Target In some scenarios the exposed URL in the backend service differs from the specified path in the Ingress rule. This will cause any request to return 404. In such scenarios you can set the path expected by the service using ingress.appscode.com/rewrite-target annotation. This will be applied globally for all paths.
+Ingress Example apiVersion: voyager.appscode.com/v1beta1 kind: Ingress metadata: name: test-ingress namespace: default annotations: ingress.</description></item><item><title>Configure Ingress Service Annotations</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/service-annotations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/service-annotations/</guid><description>New to Voyager? Please start here.
+Service Annotations You can specify annotations applied to HAProxy services through ingress annotation ingress.appscode.com/annotations-service. You have to provide it as a json formatted string to string map.
+Ingress Example apiVersion: voyager.appscode.com/v1beta1 kind: Ingress metadata: name: test-ingress namespace: default annotations: ingress.appscode.com/annotations-service: &amp;#39;{&amp;#34;foo&amp;#34;: &amp;#34;bar&amp;#34;, &amp;#34;bar&amp;#34;:&amp;#34;foo&amp;#34;}&amp;#39; spec: rules: - host: voyager.appscode.test http: paths: - path: /foo backend: serviceName: test-server servicePort: 80 It will add following annotations to HAProxy pods:</description></item><item><title>Configure Ingress Ssl Passthrough</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/ssl-passthrough/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/ssl-passthrough/</guid><description>New to Voyager? Please start here.
+SSL Passthrough The annotation ingress.appscode.com/ssl-passthrough allows to configure TLS termination in the backend and not in haproxy. When set to true, passes TLS connections directly to backend.
 If ssl-passthrough is used, HAProxy will use tcp. For more details see here. When ssl-pasthrough is enabled, Voyager automatically converts your HTTP ingress rules to TCP rules.
-Please note that following features are not supported when using ssl-pasthrough:</description>
-    </item>
-    
-    <item>
-      <title>Configure Ingress Ssl Redirect</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/ssl-redirect/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/ssl-redirect/</guid>
-      <description>New to Voyager? Please start here.
- SSL Redirect By default voyager redirects (301) to HTTPS if TLS is enabled for that ingress. If you want to disable that behavior globally, you can use ingress.appscode.com/ssl-redirect: &amp;quot;false&amp;quot; annotation.
-When using SSL offloading outside of cluster (e.g. AWS ELB) it may be useful to enforce a redirect to HTTPS even when there is not TLS cert available. This can be achieved by using the ingress.</description>
-    </item>
-    
-    <item>
-      <title>Configure Ingress Whitelist</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/whitelist/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/whitelist/</guid>
-      <description>New to Voyager? Please start here.
- Whitelist Source Range You can specify the allowed client IP source ranges through the ingress.appscode.com/whitelist-source-range annotation. The value is a space separated list of CIDRs, e.g. 192.168.20.0/24 192.168.10.3. This rule will be applied globally for all frontends. To apply for a specific frontend, you need to manually add src acl using frontend-rules.
-Ingress Example apiVersion: voyager.appscode.com/v1beta1kind: Ingressmetadata:name: test-ingressnamespace: defaultannotations:ingress.</description>
-    </item>
-    
-    <item>
-      <title>Customize Ingress Timeouts | Kubernetes Ingress</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/default-timeouts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/default-timeouts/</guid>
-      <description>New to Voyager? Please start here.
- Customize Timeouts Custom timeouts can be configured for HAProxy via annotations. Supports all valid timeout option for defaults section of HAProxy. Read More
+Please note that following features are not supported when using ssl-pasthrough:</description></item><item><title>Configure Ingress Ssl Redirect</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/ssl-redirect/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/ssl-redirect/</guid><description>New to Voyager? Please start here.
+SSL Redirect By default voyager redirects (301) to HTTPS if TLS is enabled for that ingress. If you want to disable that behavior globally, you can use ingress.appscode.com/ssl-redirect: &amp;quot;false&amp;quot; annotation.
+When using SSL offloading outside of cluster (e.g. AWS ELB) it may be useful to enforce a redirect to HTTPS even when there is not TLS cert available. This can be achieved by using the ingress.</description></item><item><title>Configure Ingress Whitelist</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/whitelist/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/whitelist/</guid><description>New to Voyager? Please start here.
+Whitelist Source Range You can specify the allowed client IP source ranges through the ingress.appscode.com/whitelist-source-range annotation. The value is a space separated list of CIDRs, e.g. 192.168.20.0/24 192.168.10.3. This rule will be applied globally for all frontends. To apply for a specific frontend, you need to manually add src acl using frontend-rules.
+Ingress Example apiVersion: voyager.appscode.com/v1beta1 kind: Ingress metadata: name: test-ingress namespace: default annotations: ingress.</description></item><item><title>Customize Ingress Timeouts | Kubernetes Ingress</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/default-timeouts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/default-timeouts/</guid><description>New to Voyager? Please start here.
+Customize Timeouts Custom timeouts can be configured for HAProxy via annotations. Supports all valid timeout option for defaults section of HAProxy. Read More
 ingress.appscode.com/default-timeout expects a JSON encoded map of timeouts values. Valid map keys are connect, server, client, client-fin and tunnel.
 Ingress Example:
-apiVersion: voyager.appscode.com/v1beta1kind: Ingressmetadata:name: test-ingressnamespace: defaultannotations:ingress.appscode.com/default-timeout: &amp;#39;{&amp;#34;connect&amp;#34;: &amp;#34;15s&amp;#34;, &amp;#34;server&amp;#34;: &amp;#34;20s&amp;#34;}&amp;#39;spec:rules:- host: voyager.</description>
-    </item>
-    
-    <item>
-      <title>Default HAProxy Options | Kubernetes Ingress</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/default-options/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/default-options/</guid>
-      <description>New to Voyager? Please start here.
- Default HAProxy Options Voyager Supports all valid options for defaults section of HAProxy config. You can provide these options using a json encoded map in Ingress annotations like below:
-ingress.appscode.com/default-option: &#39;{&amp;quot;http-keep-alive&amp;quot;: &amp;quot;true&amp;quot;, &amp;quot;dontlognull&amp;quot;: &amp;quot;true&amp;quot;, &amp;quot;clitcpka&amp;quot;: &amp;quot;false&amp;quot;}&#39;
+apiVersion: voyager.appscode.com/v1beta1 kind: Ingress metadata: name: test-ingress namespace: default annotations: ingress.appscode.com/default-timeout: &amp;#39;{&amp;#34;connect&amp;#34;: &amp;#34;15s&amp;#34;, &amp;#34;server&amp;#34;: &amp;#34;20s&amp;#34;}&amp;#39; spec: rules: - host: voyager.</description></item><item><title>Default HAProxy Options | Kubernetes Ingress</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/default-options/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/default-options/</guid><description>New to Voyager? Please start here.
+Default HAProxy Options Voyager Supports all valid options for defaults section of HAProxy config. You can provide these options using a json encoded map in Ingress annotations like below:
+ingress.appscode.com/default-option: '{&amp;quot;http-keep-alive&amp;quot;: &amp;quot;true&amp;quot;, &amp;quot;dontlognull&amp;quot;: &amp;quot;true&amp;quot;, &amp;quot;clitcpka&amp;quot;: &amp;quot;false&amp;quot;}'
 This will be appended in the defaults section of HAProxy as:
-option http-keep-alive option dontlognull no option clitcpka If you don&amp;rsquo;t set the annotation {&amp;quot;http-server-close&amp;quot;: &amp;quot;true&amp;quot;, &amp;quot;dontlognull&amp;quot;: &amp;quot;true&amp;quot;} will be considered as default value</description>
-    </item>
-    
-    <item>
-      <title>Frontend Ingress Rules| Voyager</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/frontend-rule/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/frontend-rule/</guid>
-      <description>New to Voyager? Please start here.
- Frontend Rules Frontend rules specify a set of rules that are applied to HAProxy frontend configuration. The set of keywords are from here https://cbonte.github.io/haproxy-dconv/1.7/configuration.html#4.1. Only frontend sections can be applied here. It is up to user to provide valid sets of rules. This allows acls or other options in frontend sections in HAProxy config. Frontend rules will be mapped to spec.rules according to HAProxy port.</description>
-    </item>
-    
-    <item>
-      <title>Specify Ingress NodePort | Kubernetes Ingress</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/node-port/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/node-port/</guid>
-      <description>New to Voyager? Please start here.
- Specify NodePort If you are using a NodePort or LoadBalancer type Ingress, a NodePort or LoadBalancer type Service is used to expose HAProxy pods respectively. If no node port is specified for each HAProxy Service port, Kubernetes will randomly assign one for you.
-Since 3.2.0, you have the option to specify a NodePort for each HAProxy Service port. This allows you to guarantee that the port will not get changed, as you make changes to an Ingress object.</description>
-    </item>
-    
-    <item>
-      <title>Using Custom HAProxy Templates | Kubernetes Ingress</title>
-      <link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/custom-templates/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/custom-templates/</guid>
-      <description>New to Voyager? Please start here.
- Using Custom HAProxy Templates Since 3.2.0, Voyager can use custom templates provided by users to render HAProxy configuration. Voyager comes with a set of GO text/templates found here. These templates are mounted at /srv/voyager/templates. You can mount a ConfigMap with matching template names when installing Voyager operator to a different location and pass that to Voyager operator using --custom-templates flag. Voyager will load the built-in templates first and then load any custom templates if provided.</description>
-    </item>
-    
-  </channel>
-</rss>
+option http-keep-alive option dontlognull no option clitcpka If you don&amp;rsquo;t set the annotation {&amp;quot;http-server-close&amp;quot;: &amp;quot;true&amp;quot;, &amp;quot;dontlognull&amp;quot;: &amp;quot;true&amp;quot;} will be considered as default value</description></item><item><title>Frontend Ingress Rules| Voyager</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/frontend-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/frontend-rule/</guid><description>New to Voyager? Please start here.
+Frontend Rules Frontend rules specify a set of rules that are applied to HAProxy frontend configuration. The set of keywords are from here https://cbonte.github.io/haproxy-dconv/1.7/configuration.html#4.1. Only frontend sections can be applied here. It is up to user to provide valid sets of rules. This allows acls or other options in frontend sections in HAProxy config. Frontend rules will be mapped to spec.rules according to HAProxy port.</description></item><item><title>Specify Ingress NodePort | Kubernetes Ingress</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/node-port/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/node-port/</guid><description>New to Voyager? Please start here.
+Specify NodePort If you are using a NodePort or LoadBalancer type Ingress, a NodePort or LoadBalancer type Service is used to expose HAProxy pods respectively. If no node port is specified for each HAProxy Service port, Kubernetes will randomly assign one for you.
+Since 3.2.0, you have the option to specify a NodePort for each HAProxy Service port. This allows you to guarantee that the port will not get changed, as you make changes to an Ingress object.</description></item><item><title>Using Custom HAProxy Templates | Kubernetes Ingress</title><link>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/custom-templates/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/ingress/configuration/custom-templates/</guid><description>New to Voyager? Please start here.
+Using Custom HAProxy Templates Since 3.2.0, Voyager can use custom templates provided by users to render HAProxy configuration. Voyager comes with a set of GO text/templates found here. These templates are mounted at /srv/voyager/templates. You can mount a ConfigMap with matching template names when installing Voyager operator to a different location and pass that to Voyager operator using --custom-templates flag. Voyager will load the built-in templates first and then load any custom templates if provided.</description></item></channel></rss>

@@ -1,44 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Certificate on GitHub for Kubernetes</title>
-    <link>https://appscode.com/products/voyager/5.0.0-rc.11/guides/certificate/</link>
-    <description>Recent content in Certificate on GitHub for Kubernetes</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://appscode.com/products/voyager/5.0.0-rc.11/guides/certificate/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Certificate FAQ | Voyager</title>
-      <link>https://appscode.com/products/voyager/5.0.0-rc.11/guides/certificate/faq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/5.0.0-rc.11/guides/certificate/faq/</guid>
-      <description>FAQ Let&amp;rsquo;s Encrypt FAQs How do I renew my LE certificates? LE issues certificates that are valid for 90 days. Voyager operator will try renewing your certificate 7 days prior to expiration. Once renewed certificates are issued, HAProxy will be automatically updated to use the new certificates.
-I think I did everything according to this doc but my certificate is not issuing? How do I debug? To debug, describe the certificate object and check the events listed under it.</description>
-    </item>
-    
-    <item>
-      <title>Certificate | Voyager</title>
-      <link>https://appscode.com/products/voyager/5.0.0-rc.11/guides/certificate/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/5.0.0-rc.11/guides/certificate/</guid>
-      <description>Guides Guides show you how to use Voyager&amp;rsquo;s built-in certificate manager to issue free TLS/SSL certificates from Let&amp;rsquo;s Encrypt.
-Features  Provision free TLS certificates from Let&amp;rsquo;s Encrypt. Manage certificates declaratively using a Kubernetes Custom Resource Definition (CRD). Domain validation using ACME http-01 and dns-01 challenges. Support for many popular DNS providers. Auto Renew certificates. Use issued certificates with Ingress to secure communications.  Next Steps  Issue Let&amp;rsquo;s Encrypt certificate using HTTP-01 challenge DNS-01 chanllege providers  Issue Let&amp;rsquo;s Encrypt certificate using AWS Route53 Issue Let&amp;rsquo;s Encrypt certificate using Google Cloud DNS Supported DNS Challenge Providers   Deleting Certificate Frequently Asked Questions  </description>
-    </item>
-    
-    <item>
-      <title>Delete Certificate | Voyager</title>
-      <link>https://appscode.com/products/voyager/5.0.0-rc.11/guides/certificate/delete/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/voyager/5.0.0-rc.11/guides/certificate/delete/</guid>
-      <description>Deleting Certificate Deleting a Kubernetes Certificate object will only delete the certificate CRD from Kubernetes. It will not delete the obtained certificate and user account secret from Kubernetes. User have to manually delete these secrets for complete cleanup.
- Delete Certificate crd.  kubectl delete certificate.voyager.appscode.com test-cert Delete Obtained Let&amp;rsquo;s Encrypt tls certificate  kubectl delete secret tls-test-cert Delete Let&amp;rsquo;s Encrypt user account Secret  kubectl delete secret test-user-secret</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Certificate on GitHub for Kubernetes</title><link>https://appscode.com/products/voyager/5.0.0-rc.11/guides/certificate/</link><description>Recent content in Certificate on GitHub for Kubernetes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode.com/products/voyager/5.0.0-rc.11/guides/certificate/index.xml" rel="self" type="application/rss+xml"/><item><title>Certificate FAQ | Voyager</title><link>https://appscode.com/products/voyager/5.0.0-rc.11/guides/certificate/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/5.0.0-rc.11/guides/certificate/faq/</guid><description>FAQ Let&amp;rsquo;s Encrypt FAQs How do I renew my LE certificates? LE issues certificates that are valid for 90 days. Voyager operator will try renewing your certificate 7 days prior to expiration. Once renewed certificates are issued, HAProxy will be automatically updated to use the new certificates.
+I think I did everything according to this doc but my certificate is not issuing? How do I debug? To debug, describe the certificate object and check the events listed under it.</description></item><item><title>Certificate | Voyager</title><link>https://appscode.com/products/voyager/5.0.0-rc.11/guides/certificate/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/5.0.0-rc.11/guides/certificate/</guid><description>Guides Guides show you how to use Voyager&amp;rsquo;s built-in certificate manager to issue free TLS/SSL certificates from Let&amp;rsquo;s Encrypt.
+Features Provision free TLS certificates from Let&amp;rsquo;s Encrypt. Manage certificates declaratively using a Kubernetes Custom Resource Definition (CRD). Domain validation using ACME http-01 and dns-01 challenges. Support for many popular DNS providers. Auto Renew certificates. Use issued certificates with Ingress to secure communications. Next Steps Issue Let&amp;rsquo;s Encrypt certificate using HTTP-01 challenge DNS-01 chanllege providers Issue Let&amp;rsquo;s Encrypt certificate using AWS Route53 Issue Let&amp;rsquo;s Encrypt certificate using Google Cloud DNS Supported DNS Challenge Providers Deleting Certificate Frequently Asked Questions</description></item><item><title>Delete Certificate | Voyager</title><link>https://appscode.com/products/voyager/5.0.0-rc.11/guides/certificate/delete/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/5.0.0-rc.11/guides/certificate/delete/</guid><description>Deleting Certificate Deleting a Kubernetes Certificate object will only delete the certificate CRD from Kubernetes. It will not delete the obtained certificate and user account secret from Kubernetes. User have to manually delete these secrets for complete cleanup.
+Delete Certificate crd. kubectl delete certificate.voyager.appscode.com test-cert Delete Obtained Let&amp;rsquo;s Encrypt tls certificate kubectl delete secret tls-test-cert Delete Let&amp;rsquo;s Encrypt user account Secret kubectl delete secret test-user-secret</description></item></channel></rss>

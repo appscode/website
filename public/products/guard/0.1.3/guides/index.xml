@@ -1,45 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Guides | Guard on GitHub for Kubernetes</title>
-    <link>https://appscode.com/products/guard/0.1.3/guides/</link>
-    <description>Recent content in Guides | Guard on GitHub for Kubernetes</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://appscode.com/products/guard/0.1.3/guides/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>https://appscode.com/products/guard/0.1.3/guides/monitoring/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/guard/0.1.3/guides/monitoring/</guid>
-      <description>Prometheus monitoring Service Monitor for Prometheus-Operator Create a ServiceMonitor for Prometheus-Operator to automatically scrape Guard&amp;rsquo;s metrics endpoint.
-apiVersion: monitoring.coreos.com/v1kind: ServiceMonitormetadata:name: guardlabels:app: guardspec:endpoints:- interval: 30spath: /metricsport: apischeme: httpstlsConfig:insecureSkipVerify: truenamespaceSelector:any: trueselector:matchLabels:app: guardIf prometheus-operator and kube-prometheus is installed using CoreOS&amp;rsquo;s helm charts, the serviceMonitor can be defined in kube-prometheus&amp;rsquo;s values.yaml.
-prometheus:serviceMonitors:- name: guardlabels:prometheus: kube-prometheusselector:matchLabels:app: guardendpoints:- port: apiinterval: 30spath: /metricsscheme: httpstlsConfig:insecureSkipVerify: truenamespaceSelector:any: trueGrafana Dashboard for Guard A simple Grafana dashbord for Guard can be found here</description>
-    </item>
-    
-    <item>
-      <title>RBAC Roles | Guard</title>
-      <link>https://appscode.com/products/guard/0.1.3/guides/rbac/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/guard/0.1.3/guides/rbac/</guid>
-      <description>RBAC Roles Kubernetes 1.6+ comes with a set of pre-defined set of user-facing roles. You can create ClusterRoleBindings or RoleBindings to grant permissions to your Github teams or Google groups. Say, you have a Github team called ops. You want to make the members of this Github team admin of a cluster. You can do that using the following command:
-echo &amp;quot;kind: ClusterRoleBindingapiVersion: rbac.authorization.k8s.io/v1beta1metadata:name: ops-teamsubjects:- kind: Groupname: opsapiGroup: rbac.</description>
-    </item>
-    
-    <item>
-      <title>Table of Contents | Guides</title>
-      <link>https://appscode.com/products/guard/0.1.3/guides/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://appscode.com/products/guard/0.1.3/guides/</guid>
-      <description>Guides Guides show you how to perform tasks with Guard.
- Authenticators  Static Token File. Explains how to authenticate using static token file. Github. Explains how to use Github authenticator. Gitlab. Explains how to use Gitlab authenticator. Google. Explains how to use Google authenticator. Azure. Explains how to use Azure authenticator. LDAP. Explains how to use LDAP using simple or kerberos authentication. Azure Active Directory via LDAP. Explains how to authenticate using secure LDAP of Azure Active Directory Domain Services.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Guides | Guard on GitHub for Kubernetes</title><link>https://appscode.com/products/guard/0.1.3/guides/</link><description>Recent content in Guides | Guard on GitHub for Kubernetes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode.com/products/guard/0.1.3/guides/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://appscode.com/products/guard/0.1.3/guides/monitoring/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/guard/0.1.3/guides/monitoring/</guid><description>Prometheus monitoring Service Monitor for Prometheus-Operator Create a ServiceMonitor for Prometheus-Operator to automatically scrape Guard&amp;rsquo;s metrics endpoint.
+apiVersion: monitoring.coreos.com/v1 kind: ServiceMonitor metadata: name: guard labels: app: guard spec: endpoints: - interval: 30s path: /metrics port: api scheme: https tlsConfig: insecureSkipVerify: true namespaceSelector: any: true selector: matchLabels: app: guard If prometheus-operator and kube-prometheus is installed using CoreOS&amp;rsquo;s helm charts, the serviceMonitor can be defined in kube-prometheus&amp;rsquo;s values.yaml.
+prometheus: serviceMonitors: - name: guard labels: prometheus: kube-prometheus selector: matchLabels: app: guard endpoints: - port: api interval: 30s path: /metrics scheme: https tlsConfig: insecureSkipVerify: true namespaceSelector: any: true Grafana Dashboard for Guard A simple Grafana dashbord for Guard can be found here</description></item><item><title>RBAC Roles | Guard</title><link>https://appscode.com/products/guard/0.1.3/guides/rbac/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/guard/0.1.3/guides/rbac/</guid><description>RBAC Roles Kubernetes 1.6+ comes with a set of pre-defined set of user-facing roles. You can create ClusterRoleBindings or RoleBindings to grant permissions to your Github teams or Google groups. Say, you have a Github team called ops. You want to make the members of this Github team admin of a cluster. You can do that using the following command:
+echo &amp;quot; kind: ClusterRoleBinding apiVersion: rbac.authorization.k8s.io/v1beta1 metadata: name: ops-team subjects: - kind: Group name: ops apiGroup: rbac.</description></item><item><title>Table of Contents | Guides</title><link>https://appscode.com/products/guard/0.1.3/guides/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/guard/0.1.3/guides/</guid><description>Guides Guides show you how to perform tasks with Guard.
+Authenticators Static Token File. Explains how to authenticate using static token file. Github. Explains how to use Github authenticator. Gitlab. Explains how to use Gitlab authenticator. Google. Explains how to use Google authenticator. Azure. Explains how to use Azure authenticator. LDAP. Explains how to use LDAP using simple or kerberos authentication. Azure Active Directory via LDAP. Explains how to authenticate using secure LDAP of Azure Active Directory Domain Services.</description></item></channel></rss>
