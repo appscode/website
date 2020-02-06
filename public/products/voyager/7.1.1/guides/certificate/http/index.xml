@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HTTP Challenger on GitHub for Kubernetes</title><link>https://appscode.com/products/voyager/7.1.1/guides/certificate/http/</link><description>Recent content in HTTP Challenger on GitHub for Kubernetes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode.com/products/voyager/7.1.1/guides/certificate/http/index.xml" rel="self" type="application/rss+xml"/><item><title>Issue Let's Encrypt certificate using HTTP-01 challenge</title><link>https://appscode.com/products/voyager/7.1.1/guides/certificate/http/overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/7.1.1/guides/certificate/http/overview/</guid><description>New to Voyager? Please start here.
-Issue Let&amp;rsquo;s Encrypt certificate using HTTP-01 challenge Deploy Voyager operator Deploy Voyager operator following instructions here.
-# install without RBAC curl -fsSL https://raw.githubusercontent.com/appscode/voyager/7.1.1/hack/deploy/voyager.sh \ | bash -s -- --provider=gke If you are trying this on a RBAC enabled cluster, pass the flag --rbac to installer script.
-# install with RBAC curl -fsSL https://raw.githubusercontent.com/appscode/voyager/7.1.1/hack/deploy/voyager.sh \ | bash -s -- --provider=gke --rbac Create Ingress We are going to use a nginx server as the backend.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTTP Challenger on GitHub for Kubernetes</title>
+    <link>https://appscode.com/products/voyager/7.1.1/guides/certificate/http/</link>
+    <description>Recent content in HTTP Challenger on GitHub for Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://appscode.com/products/voyager/7.1.1/guides/certificate/http/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Issue Let&#39;s Encrypt certificate using HTTP-01 challenge</title>
+      <link>https://appscode.com/products/voyager/7.1.1/guides/certificate/http/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/voyager/7.1.1/guides/certificate/http/overview/</guid>
+      <description>New to Voyager? Please start here.
+ Issue Let&amp;rsquo;s Encrypt certificate using HTTP-01 challenge Deploy Voyager operator Deploy Voyager operator following instructions here.
+# install without RBACcurl -fsSL https://raw.githubusercontent.com/appscode/voyager/7.1.1/hack/deploy/voyager.sh \| bash -s -- --provider=gkeIf you are trying this on a RBAC enabled cluster, pass the flag --rbac to installer script.
+# install with RBACcurl -fsSL https://raw.githubusercontent.com/appscode/voyager/7.1.1/hack/deploy/voyager.sh \| bash -s -- --provider=gke --rbacCreate Ingress We are going to use a nginx server as the backend.</description>
+    </item>
+    
+  </channel>
+</rss>

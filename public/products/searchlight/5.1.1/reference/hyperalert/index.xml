@@ -1,27 +1,166 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hyperalert on GitHub for Kubernetes</title><link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/</link><description>Recent content in Hyperalert on GitHub for Kubernetes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/index.xml" rel="self" type="application/rss+xml"/><item><title>Check Ca Cert</title><link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_ca_cert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_ca_cert/</guid><description>hyperalert check_ca_cert Check Certificate expire date
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hyperalert on GitHub for Kubernetes</title>
+    <link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/</link>
+    <description>Recent content in Hyperalert on GitHub for Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Check Ca Cert</title>
+      <link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_ca_cert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_ca_cert/</guid>
+      <description>hyperalert check_ca_cert Check Certificate expire date
 Synopsis Check Certificate expire date
-hyperalert check_ca_cert [flags] Options -c, --critical duration Remaining duration for critical state. [Default: 120h] (default 120h0m0s) -h, --help help for check_ca_cert -w, --warning duration Remaining duration for warning state. [Default: 360h] (default 360h0m0s) Options inherited from parent commands --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962. --alsologtostderr log to standard error as well as files --analytics Send analytical events to Google Analytics (default true) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files --stderrthreshold severity logs at or above this threshold go to stderr -v, --v Level log level for V logs --vmodule moduleSpec comma-separated list of pattern=N settings for file-filtered logging SEE ALSO hyperalert - AppsCode Icinga2 plugin</description></item><item><title>Check Component Status</title><link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_component_status/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_component_status/</guid><description>hyperalert check_component_status Check Kubernetes Component Status
+hyperalert check_ca_cert [flags]Options  -c, --critical duration Remaining duration for critical state. [Default: 120h] (default 120h0m0s)-h, --help help for check_ca_cert-w, --warning duration Remaining duration for warning state. [Default: 360h] (default 360h0m0s)Options inherited from parent commands  --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962.--alsologtostderr log to standard error as well as files--analytics Send analytical events to Google Analytics (default true)--log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0)--log_dir string If non-empty, write log files in this directory--logtostderr log to standard error instead of files--stderrthreshold severity logs at or above this threshold go to stderr-v, --v Level log level for V logs--vmodule moduleSpec comma-separated list of pattern=N settings for file-filtered loggingSEE ALSO  hyperalert	- AppsCode Icinga2 plugin  </description>
+    </item>
+    
+    <item>
+      <title>Check Component Status</title>
+      <link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_component_status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_component_status/</guid>
+      <description>hyperalert check_component_status Check Kubernetes Component Status
 Synopsis Check Kubernetes Component Status
-hyperalert check_component_status [flags] Options -n, --componentName string Name of component which should be ready -h, --help help for check_component_status --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag). --master string The address of the Kubernetes API server (overrides any value in kubeconfig) -l, --selector string Selector (label query) to filter on, supports '=', '==', and '!</description></item><item><title>Check Env</title><link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_env/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_env/</guid><description>hyperalert check_env Synopsis hyperalert check_env [flags] Options -h, --help help for check_env Options inherited from parent commands --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962. --alsologtostderr log to standard error as well as files --analytics Send analytical events to Google Analytics (default true) --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files --stderrthreshold severity logs at or above this threshold go to stderr -v, --v Level log level for V logs --vmodule moduleSpec comma-separated list of pattern=N settings for file-filtered logging SEE ALSO hyperalert - AppsCode Icinga2 plugin</description></item><item><title>Check Event</title><link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_event/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_event/</guid><description>hyperalert check_event Check kubernetes events for all namespaces
+hyperalert check_component_status [flags]Options  -n, --componentName string Name of component which should be ready-h, --help help for check_component_status--kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).--master string The address of the Kubernetes API server (overrides any value in kubeconfig)-l, --selector string Selector (label query) to filter on, supports &#39;=&#39;, &#39;==&#39;, and &#39;!</description>
+    </item>
+    
+    <item>
+      <title>Check Env</title>
+      <link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_env/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_env/</guid>
+      <description>hyperalert check_env Synopsis hyperalert check_env [flags]Options  -h, --help help for check_envOptions inherited from parent commands  --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962.--alsologtostderr log to standard error as well as files--analytics Send analytical events to Google Analytics (default true)--log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0)--log_dir string If non-empty, write log files in this directory--logtostderr log to standard error instead of files--stderrthreshold severity logs at or above this threshold go to stderr-v, --v Level log level for V logs--vmodule moduleSpec comma-separated list of pattern=N settings for file-filtered loggingSEE ALSO  hyperalert	- AppsCode Icinga2 plugin  </description>
+    </item>
+    
+    <item>
+      <title>Check Event</title>
+      <link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_event/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_event/</guid>
+      <description>hyperalert check_event Check kubernetes events for all namespaces
 Synopsis Check kubernetes events for all namespaces
-hyperalert check_event [flags] Options -c, --checkInterval duration Icinga check_interval in duration. [Format: 30s, 5m] -s, --clockSkew duration Add skew with check_interval in duration. [Default: 30s] (default 30s) -h, --help help for check_event -H, --host string Icinga host name --involvedObjectKind string Involved object kind used to select events --involvedObjectName string Involved object name used to select events --involvedObjectNamespace string Involved object namespace used to select events --involvedObjectUID string Involved object uid used to select events --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description></item><item><title>Check Influx Query</title><link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_influx_query/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_influx_query/</guid><description>hyperalert check_influx_query Check InfluxDB Query Data
+hyperalert check_event [flags]Options  -c, --checkInterval duration Icinga check_interval in duration. [Format: 30s, 5m]-s, --clockSkew duration Add skew with check_interval in duration. [Default: 30s] (default 30s)-h, --help help for check_event-H, --host string Icinga host name--involvedObjectKind string Involved object kind used to select events--involvedObjectName string Involved object name used to select events--involvedObjectNamespace string Involved object namespace used to select events--involvedObjectUID string Involved object uid used to select events--kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description>
+    </item>
+    
+    <item>
+      <title>Check Influx Query</title>
+      <link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_influx_query/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_influx_query/</guid>
+      <description>hyperalert check_influx_query Check InfluxDB Query Data
 Synopsis Check InfluxDB Query Data
-hyperalert check_influx_query [flags] Options --A string InfluxDB query A --B string InfluxDB query B --C string InfluxDB query C --D string InfluxDB query D --E string InfluxDB query E --R string Equation to evaluate result -c, --critical string Critical query which returns [true/false] -h, --help help for check_influx_query -H, --host string Icinga host name --influxHost string URL of InfluxDB host to query --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description></item><item><title>Check Json Path</title><link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_json_path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_json_path/</guid><description>hyperalert check_json_path Check Json Object
+hyperalert check_influx_query [flags]Options  --A string InfluxDB query A--B string InfluxDB query B--C string InfluxDB query C--D string InfluxDB query D--E string InfluxDB query E--R string Equation to evaluate result-c, --critical string Critical query which returns [true/false]-h, --help help for check_influx_query-H, --host string Icinga host name--influxHost string URL of InfluxDB host to query--kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description>
+    </item>
+    
+    <item>
+      <title>Check Json Path</title>
+      <link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_json_path/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_json_path/</guid>
+      <description>hyperalert check_json_path Check Json Object
 Synopsis Check Json Object
-hyperalert check_json_path [flags] Options -c, --critical string Critical JQ query which returns [true/false] -h, --help help for check_json_path -H, --host string Icinga host name --inClusterConfig Use Kubernetes InCluserConfig --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag). --master string The address of the Kubernetes API server (overrides any value in kubeconfig) -s, --secretName string Kubernetes secret name -u, --url string URL to get data -w, --warning string Warning JQ query which returns [true/false] Options inherited from parent commands --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962.</description></item><item><title>Check Node Exists</title><link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_node_exists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_node_exists/</guid><description>hyperalert check_node_exists Count Kubernetes Nodes
+hyperalert check_json_path [flags]Options  -c, --critical string Critical JQ query which returns [true/false]-h, --help help for check_json_path-H, --host string Icinga host name--inClusterConfig Use Kubernetes InCluserConfig--kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).--master string The address of the Kubernetes API server (overrides any value in kubeconfig)-s, --secretName string Kubernetes secret name-u, --url string URL to get data-w, --warning string Warning JQ query which returns [true/false]Options inherited from parent commands  --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962.</description>
+    </item>
+    
+    <item>
+      <title>Check Node Exists</title>
+      <link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_node_exists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_node_exists/</guid>
+      <description>hyperalert check_node_exists Count Kubernetes Nodes
 Synopsis Count Kubernetes Nodes
-hyperalert check_node_exists [flags] Options -c, --count int Number of expected Kubernetes Node -h, --help help for check_node_exists --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag). --master string The address of the Kubernetes API server (overrides any value in kubeconfig) -n, --nodeName string Name of node whose existence is checked -l, --selector string Selector (label query) to filter on, supports '=', '==', and '!</description></item><item><title>Check Node Status</title><link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_node_status/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_node_status/</guid><description>hyperalert check_node_status Check Kubernetes Node
+hyperalert check_node_exists [flags]Options  -c, --count int Number of expected Kubernetes Node-h, --help help for check_node_exists--kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).--master string The address of the Kubernetes API server (overrides any value in kubeconfig)-n, --nodeName string Name of node whose existence is checked-l, --selector string Selector (label query) to filter on, supports &#39;=&#39;, &#39;==&#39;, and &#39;!</description>
+    </item>
+    
+    <item>
+      <title>Check Node Status</title>
+      <link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_node_status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_node_status/</guid>
+      <description>hyperalert check_node_status Check Kubernetes Node
 Synopsis Check Kubernetes Node
-hyperalert check_node_status [flags] Options -h, --help help for check_node_status -H, --host string Icinga host name --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag). --master string The address of the Kubernetes API server (overrides any value in kubeconfig) Options inherited from parent commands --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962.</description></item><item><title>Check Pod Exec</title><link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_pod_exec/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_pod_exec/</guid><description>hyperalert check_pod_exec Check exit code of exec command on Kubernetes container
+hyperalert check_node_status [flags]Options  -h, --help help for check_node_status-H, --host string Icinga host name--kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).--master string The address of the Kubernetes API server (overrides any value in kubeconfig)Options inherited from parent commands  --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962.</description>
+    </item>
+    
+    <item>
+      <title>Check Pod Exec</title>
+      <link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_pod_exec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_pod_exec/</guid>
+      <description>hyperalert check_pod_exec Check exit code of exec command on Kubernetes container
 Synopsis Check exit code of exec command on Kubernetes container
-hyperalert check_pod_exec [flags] Options -a, --argv string Arguments for exec command. [Format: 'arg; arg; arg'] -c, --cmd string Exec command. [Default: /bin/sh] (default &amp;quot;/bin/sh&amp;quot;) -C, --container string Container name in specified pod -h, --help help for check_pod_exec -H, --host string Icinga host name --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description></item><item><title>Check Pod Exists</title><link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_pod_exists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_pod_exists/</guid><description>hyperalert check_pod_exists Check Kubernetes Pod(s)
+hyperalert check_pod_exec [flags]Options  -a, --argv string Arguments for exec command. [Format: &#39;arg; arg; arg&#39;]-c, --cmd string Exec command. [Default: /bin/sh] (default &amp;quot;/bin/sh&amp;quot;)-C, --container string Container name in specified pod-h, --help help for check_pod_exec-H, --host string Icinga host name--kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).</description>
+    </item>
+    
+    <item>
+      <title>Check Pod Exists</title>
+      <link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_pod_exists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_pod_exists/</guid>
+      <description>hyperalert check_pod_exists Check Kubernetes Pod(s)
 Synopsis Check Kubernetes Pod(s)
-hyperalert check_pod_exists [flags] Options -c, --count int Number of Kubernetes pods -h, --help help for check_pod_exists -H, --host string Icinga host name --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag). --master string The address of the Kubernetes API server (overrides any value in kubeconfig) -p, --podName string Name of pod whose existence is checked -l, --selector string Selector (label query) to filter on, supports '=', '==', and '!</description></item><item><title>Check Pod Status</title><link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_pod_status/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_pod_status/</guid><description>hyperalert check_pod_status Check Kubernetes Pod(s) status
+hyperalert check_pod_exists [flags]Options  -c, --count int Number of Kubernetes pods-h, --help help for check_pod_exists-H, --host string Icinga host name--kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).--master string The address of the Kubernetes API server (overrides any value in kubeconfig)-p, --podName string Name of pod whose existence is checked-l, --selector string Selector (label query) to filter on, supports &#39;=&#39;, &#39;==&#39;, and &#39;!</description>
+    </item>
+    
+    <item>
+      <title>Check Pod Status</title>
+      <link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_pod_status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_pod_status/</guid>
+      <description>hyperalert check_pod_status Check Kubernetes Pod(s) status
 Synopsis Check Kubernetes Pod(s) status
-hyperalert check_pod_status [flags] Options -h, --help help for check_pod_status -H, --host string Icinga host name --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag). --master string The address of the Kubernetes API server (overrides any value in kubeconfig) Options inherited from parent commands --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962.</description></item><item><title>Check Volume</title><link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_volume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_volume/</guid><description>hyperalert check_volume Check kubernetes volume
+hyperalert check_pod_status [flags]Options  -h, --help help for check_pod_status-H, --host string Icinga host name--kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).--master string The address of the Kubernetes API server (overrides any value in kubeconfig)Options inherited from parent commands  --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962.</description>
+    </item>
+    
+    <item>
+      <title>Check Volume</title>
+      <link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_volume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_check_volume/</guid>
+      <description>hyperalert check_volume Check kubernetes volume
 Synopsis Check kubernetes volume
-hyperalert check_volume [flags] Options -c, --critical float Critical level value (usage percentage) (default 95) -h, --help help for check_volume -H, --host string Icinga host name --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag). --master string The address of the Kubernetes API server (overrides any value in kubeconfig) --nodeStat Checking Node disk size -s, --secretName string Kubernetes secret name -N, --volumeName string Volume name -w, --warning float Warning level value (usage percentage) (default 80) Options inherited from parent commands --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962.</description></item><item><title>Hyperalert</title><link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/</guid><description>hyperalert AppsCode Icinga2 plugin
+hyperalert check_volume [flags]Options  -c, --critical float Critical level value (usage percentage) (default 95)-h, --help help for check_volume-H, --host string Icinga host name--kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).--master string The address of the Kubernetes API server (overrides any value in kubeconfig)--nodeStat Checking Node disk size-s, --secretName string Kubernetes secret name-N, --volumeName string Volume name-w, --warning float Warning level value (usage percentage) (default 80)Options inherited from parent commands  --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962.</description>
+    </item>
+    
+    <item>
+      <title>Hyperalert</title>
+      <link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/</guid>
+      <description>hyperalert AppsCode Icinga2 plugin
 Synopsis AppsCode Icinga2 plugin
-hyperalert [flags] Options --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962. --alsologtostderr log to standard error as well as files --analytics Send analytical events to Google Analytics (default true) -h, --help help for hyperalert --log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0) --log_dir string If non-empty, write log files in this directory --logtostderr log to standard error instead of files --stderrthreshold severity logs at or above this threshold go to stderr -v, --v Level log level for V logs --vmodule moduleSpec comma-separated list of pattern=N settings for file-filtered logging SEE ALSO hyperalert check_ca_cert - Check Certificate expire date hyperalert check_component_status - Check Kubernetes Component Status hyperalert check_env - hyperalert check_event - Check kubernetes events for all namespaces hyperalert check_influx_query - Check InfluxDB Query Data hyperalert check_json_path - Check Json Object hyperalert check_node_exists - Count Kubernetes Nodes hyperalert check_node_status - Check Kubernetes Node hyperalert check_pod_exec - Check exit code of exec command on Kubernetes container hyperalert check_pod_exists - Check Kubernetes Pod(s) hyperalert check_pod_status - Check Kubernetes Pod(s) status hyperalert check_volume - Check kubernetes volume hyperalert notifier - AppsCode Icinga2 Notifier</description></item><item><title>Notifier</title><link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_notifier/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_notifier/</guid><description>hyperalert notifier AppsCode Icinga2 Notifier
+hyperalert [flags]Options  --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962.--alsologtostderr log to standard error as well as files--analytics Send analytical events to Google Analytics (default true)-h, --help help for hyperalert--log_backtrace_at traceLocation when logging hits line file:N, emit a stack trace (default :0)--log_dir string If non-empty, write log files in this directory--logtostderr log to standard error instead of files--stderrthreshold severity logs at or above this threshold go to stderr-v, --v Level log level for V logs--vmodule moduleSpec comma-separated list of pattern=N settings for file-filtered loggingSEE ALSO  hyperalert check_ca_cert	- Check Certificate expire date hyperalert check_component_status	- Check Kubernetes Component Status hyperalert check_env	- hyperalert check_event	- Check kubernetes events for all namespaces hyperalert check_influx_query	- Check InfluxDB Query Data hyperalert check_json_path	- Check Json Object hyperalert check_node_exists	- Count Kubernetes Nodes hyperalert check_node_status	- Check Kubernetes Node hyperalert check_pod_exec	- Check exit code of exec command on Kubernetes container hyperalert check_pod_exists	- Check Kubernetes Pod(s) hyperalert check_pod_status	- Check Kubernetes Pod(s) status hyperalert check_volume	- Check kubernetes volume hyperalert notifier	- AppsCode Icinga2 Notifier  </description>
+    </item>
+    
+    <item>
+      <title>Notifier</title>
+      <link>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_notifier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.1.1/reference/hyperalert/hyperalert_notifier/</guid>
+      <description>hyperalert notifier AppsCode Icinga2 Notifier
 Synopsis AppsCode Icinga2 Notifier
-hyperalert notifier [flags] Options -A, --alert string Kubernetes alert object name -a, --author string Event author name -c, --comment string Event comment -h, --help help for notifier -H, --host string Icinga host name --kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag). --master string The address of the Kubernetes API server (overrides any value in kubeconfig) --output string Service output --state string Service state (OK | WARNING | CRITICAL) --time string Event time --type string Notification type (PROBLEM | ACKNOWLEDGEMENT | RECOVERY) Options inherited from parent commands --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962.</description></item></channel></rss>
+hyperalert notifier [flags]Options  -A, --alert string Kubernetes alert object name-a, --author string Event author name-c, --comment string Event comment-h, --help help for notifier-H, --host string Icinga host name--kubeconfig string Path to kubeconfig file with authorization information (the master location is set by the master flag).--master string The address of the Kubernetes API server (overrides any value in kubeconfig)--output string Service output--state string Service state (OK | WARNING | CRITICAL)--time string Event time--type string Notification type (PROBLEM | ACKNOWLEDGEMENT | RECOVERY)Options inherited from parent commands  --allow_verification_with_non_compliant_keys Allow a SignatureVerifier to use keys which are technically non-compliant with RFC6962.</description>
+    </item>
+    
+  </channel>
+</rss>

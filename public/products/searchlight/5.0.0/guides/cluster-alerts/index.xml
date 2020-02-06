@@ -1,25 +1,101 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cluster Alert on GitHub for Kubernetes</title><link>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/</link><description>Recent content in Cluster Alert on GitHub for Kubernetes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/index.xml" rel="self" type="application/rss+xml"/><item><title>CA Cert</title><link>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/ca_cert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/ca_cert/</guid><description>New to Searchlight? Please start here.
-Check ca_cert Check command ca_cert checks the expiration timestamp of Kubernetes api server CA certificate. No longer you have to get a surprise that the CA certificate for your cluster has expired.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cluster Alert on GitHub for Kubernetes</title>
+    <link>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/</link>
+    <description>Recent content in Cluster Alert on GitHub for Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CA Cert</title>
+      <link>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/ca_cert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/ca_cert/</guid>
+      <description>New to Searchlight? Please start here.
+ Check ca_cert Check command ca_cert checks the expiration timestamp of Kubernetes api server CA certificate. No longer you have to get a surprise that the CA certificate for your cluster has expired.
 Spec ca_cert check command has the following variables:
-warning - Condition for warning, compare with tiem left before expiration. (Default: TTL &amp;lt; 360h) critical - Condition for critical, compare with tiem left before expiration.</description></item><item><title>Component Status</title><link>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/component_status/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/component_status/</guid><description>New to Searchlight? Please start here.
-Check component_status Check command component_status is used to check status of Kubernetes components. Returns OK if components are Healthy, otherwise, returns CRITICAL.
+ warning - Condition for warning, compare with tiem left before expiration. (Default: TTL &amp;lt; 360h) critical - Condition for critical, compare with tiem left before expiration.</description>
+    </item>
+    
+    <item>
+      <title>Component Status</title>
+      <link>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/component_status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/component_status/</guid>
+      <description>New to Searchlight? Please start here.
+ Check component_status Check command component_status is used to check status of Kubernetes components. Returns OK if components are Healthy, otherwise, returns CRITICAL.
 Spec component_status has the following variables:
-selector - Label selector for components whose existence are checked. componentName - Name of Kubernetes component whose existence is checked. Execution of this command can result in following states:
-OK CRITICAL UNKNOWN Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description></item><item><title>Env</title><link>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/env/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/env/</guid><description>New to Searchlight? Please start here.
-Check env Check command env prints the list of environment variables in searchlight-operator pods. This check command is used to test Searchlight.
+ selector - Label selector for components whose existence are checked. componentName - Name of Kubernetes component whose existence is checked.  Execution of this command can result in following states:
+ OK CRITICAL UNKNOWN  Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description>
+    </item>
+    
+    <item>
+      <title>Env</title>
+      <link>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/env/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/env/</guid>
+      <description>New to Searchlight? Please start here.
+ Check env Check command env prints the list of environment variables in searchlight-operator pods. This check command is used to test Searchlight.
 Spec env check command has no variables. Execution of this command can result in following states:
-OK WARNING CRITICAL UNKNOWN Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description></item><item><title>Event</title><link>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/event/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/event/</guid><description>New to Searchlight? Please start here.
-Check event Check command event is used to check Kubernetes events. This plugin checks for all Warning events happened in the last spec.checkInterval duration.
+ OK WARNING CRITICAL UNKNOWN  Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description>
+    </item>
+    
+    <item>
+      <title>Event</title>
+      <link>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/event/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/event/</guid>
+      <description>New to Searchlight? Please start here.
+ Check event Check command event is used to check Kubernetes events. This plugin checks for all Warning events happened in the last spec.checkInterval duration.
 Spec event check command has the following variables:
-clockSkew - Clock skew in Duration. [Default: 30s]. This time is added with spec.checkInterval while checking events involvedObjectKind - Kind of involved object used to select events involvedObjectName - Name of involved object used to select events involvedObjectNamespace - Namespace of involved object used to select events involvedObjectUID - UID of involved object used to select events Execution of this command can result in following states:</description></item><item><title>JSON Path</title><link>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/json_path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/json_path/</guid><description>New to Searchlight? Please start here.
-Check json_path Check command json_path is used to check JSON HTTP response using jq queries.
+ clockSkew - Clock skew in Duration. [Default: 30s]. This time is added with spec.checkInterval while checking events involvedObjectKind - Kind of involved object used to select events involvedObjectName - Name of involved object used to select events involvedObjectNamespace - Namespace of involved object used to select events involvedObjectUID - UID of involved object used to select events  Execution of this command can result in following states:</description>
+    </item>
+    
+    <item>
+      <title>JSON Path</title>
+      <link>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/json_path/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/json_path/</guid>
+      <description>New to Searchlight? Please start here.
+ Check json_path Check command json_path is used to check JSON HTTP response using jq queries.
 Spec json_path check command has no variables.
-url - URL to get data secretName - Name of Kubernetes Secret used to call HTTP api. inClusterConfig - Use InClusterConfig if hosted in Kubernetes warning - Warning jq query which returns [true/false] critical - Critical jq query which returns [true/false] The following keys are supported for Secret passed via secretName flag.</description></item><item><title>Node Exists</title><link>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/node_exists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/node_exists/</guid><description>New to Searchlight? Please start here.
-Check node_exists Check command node_exists is used to check existence of nodes in a Kubernetes cluster.
+ url - URL to get data secretName - Name of Kubernetes Secret used to call HTTP api. inClusterConfig - Use InClusterConfig if hosted in Kubernetes warning - Warning jq query which returns [true/false] critical - Critical jq query which returns [true/false]  The following keys are supported for Secret passed via secretName flag.</description>
+    </item>
+    
+    <item>
+      <title>Node Exists</title>
+      <link>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/node_exists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/node_exists/</guid>
+      <description>New to Searchlight? Please start here.
+ Check node_exists Check command node_exists is used to check existence of nodes in a Kubernetes cluster.
 Spec node_exists has the following variables:
-selector - Label selector for nodes whose existence are checked. nodeName - Name of Kubernetes node whose existence is checked. count - Number of expected Kubernetes nodes Execution of this command can result in following states:
-OK CRITICAL UNKNOWN Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description></item><item><title>Pod Exists</title><link>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/pod_exists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/pod_exists/</guid><description>New to Searchlight? Please start here.
-Check pod_exists Check command pod_exists is used to check existence of pods in a Kubernetes cluster.
+ selector - Label selector for nodes whose existence are checked. nodeName - Name of Kubernetes node whose existence is checked. count - Number of expected Kubernetes nodes  Execution of this command can result in following states:
+ OK CRITICAL UNKNOWN  Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description>
+    </item>
+    
+    <item>
+      <title>Pod Exists</title>
+      <link>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/pod_exists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/5.0.0/guides/cluster-alerts/pod_exists/</guid>
+      <description>New to Searchlight? Please start here.
+ Check pod_exists Check command pod_exists is used to check existence of pods in a Kubernetes cluster.
 Spec pod_exists has the following variables:
-selector - Label selector for pods whose existence are checked. podName - Name of Kubernetes pod whose existence is checked. count - Number of expected Kubernetes pods Execution of this command can result in following states:
-OK CRITICAL UNKNOWN Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description></item></channel></rss>
+ selector - Label selector for pods whose existence are checked. podName - Name of Kubernetes pod whose existence is checked. count - Number of expected Kubernetes pods  Execution of this command can result in following states:
+ OK CRITICAL UNKNOWN  Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description>
+    </item>
+    
+  </channel>
+</rss>

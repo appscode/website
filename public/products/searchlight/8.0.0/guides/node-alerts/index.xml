@@ -1,7 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Node Alert on GitHub for Kubernetes</title><link>https://appscode.com/products/searchlight/8.0.0/guides/node-alerts/</link><description>Recent content in Node Alert on GitHub for Kubernetes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode.com/products/searchlight/8.0.0/guides/node-alerts/index.xml" rel="self" type="application/rss+xml"/><item><title>Node Status</title><link>https://appscode.com/products/searchlight/8.0.0/guides/node-alerts/node-status/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/8.0.0/guides/node-alerts/node-status/</guid><description>New to Searchlight? Please start here.
-Check node-status Check command node-status is used to check status of Kubernetes Nodes. Returns OK if a node is Ready, otherwise, returns Critical.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node Alert on GitHub for Kubernetes</title>
+    <link>https://appscode.com/products/searchlight/8.0.0/guides/node-alerts/</link>
+    <description>Recent content in Node Alert on GitHub for Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://appscode.com/products/searchlight/8.0.0/guides/node-alerts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Node Status</title>
+      <link>https://appscode.com/products/searchlight/8.0.0/guides/node-alerts/node-status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/8.0.0/guides/node-alerts/node-status/</guid>
+      <description>New to Searchlight? Please start here.
+ Check node-status Check command node-status is used to check status of Kubernetes Nodes. Returns OK if a node is Ready, otherwise, returns Critical.
 Spec node-status check command has no variables. Execution of this command can result in following states:
-OK Critical Unknown Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description></item><item><title>Node Volume</title><link>https://appscode.com/products/searchlight/8.0.0/guides/node-alerts/node-volume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/searchlight/8.0.0/guides/node-alerts/node-volume/</guid><description>New to Searchlight? Please start here.
-Check node-volume Check command node-volume is used to check percentage of available space in Kubernetes Nodes.
+ OK Critical Unknown  Tutorial Before You Begin At first, you need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.</description>
+    </item>
+    
+    <item>
+      <title>Node Volume</title>
+      <link>https://appscode.com/products/searchlight/8.0.0/guides/node-alerts/node-volume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/searchlight/8.0.0/guides/node-alerts/node-volume/</guid>
+      <description>New to Searchlight? Please start here.
+ Check node-volume Check command node-volume is used to check percentage of available space in Kubernetes Nodes.
 Spec node-volume check command has the following variables:
-mountPoint - Mountpoint of volume whose usage stats will be checked secretName - Name of Kubernetes Secret used to pass hostfacts auth info warning - Warning level value (usage percentage defaults to 80.0) critical - Critical level value (usage percentage defaults to 95.</description></item></channel></rss>
+ mountPoint - Mountpoint of volume whose usage stats will be checked secretName - Name of Kubernetes Secret used to pass hostfacts auth info warning - Warning level value (usage percentage defaults to 80.0) critical - Critical level value (usage percentage defaults to 95.</description>
+    </item>
+    
+  </channel>
+</rss>

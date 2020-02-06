@@ -1,6 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Security on GitHub for Kubernetes</title><link>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/</link><description>Recent content in Security on GitHub for Kubernetes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://appscode.com/products/voyager/5.0.0/guides/ingress/security/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/rbac/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/rbac/</guid><description/></item><item><title/><link>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/restrict-namespace/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/restrict-namespace/</guid><description/></item><item><title>Basic Authentication | Kubernetes Ingress</title><link>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/basic-auth/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/basic-auth/</guid><description>Basic Authentication This example demonstrates how to configure Basic Authentication on Voyager Ingress controller.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on GitHub for Kubernetes</title>
+    <link>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/</link>
+    <description>Recent content in Security on GitHub for Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://appscode.com/products/voyager/5.0.0/guides/ingress/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/rbac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/rbac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/restrict-namespace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/restrict-namespace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Basic Authentication | Kubernetes Ingress</title>
+      <link>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/basic-auth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/basic-auth/</guid>
+      <description>Basic Authentication This example demonstrates how to configure Basic Authentication on Voyager Ingress controller.
 Using Basic Authentication Voyager Ingress read user and password from files stored on secrets, one user and password per line. Secret name, realm and type are configured with annotations in the ingress resource:
-ingress.appscode.com/auth-type: the only supported type is basic ingress.appscode.com/auth-realm: an optional string with authentication realm ingress.appscode.com/auth-secret: name of the secret Each line of the auth file should have:</description></item><item><title>TLS Authentication | Kubernetes Ingress</title><link>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/tls-auth/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/tls-auth/</guid><description>TLS Authentication This example demonstrates how to configure TLS Authentication on Voyager Ingress controller.
-Using tls auth in Ingress Using tls auth in Frontend Before diving into the deep learn about TLS Auth with HAproxy.
-SSL Client certificate management at application level Clinet side ssl certificates Using TLS Authentication Voyager Ingress read ca certificates from files stored on secrets with ca.crt key.
-ingress.kubernetes.io/auth-tls-secret: Name of secret for TLS client certification validation.</description></item></channel></rss>
+ ingress.appscode.com/auth-type: the only supported type is basic ingress.appscode.com/auth-realm: an optional string with authentication realm ingress.appscode.com/auth-secret: name of the secret  Each line of the auth file should have:</description>
+    </item>
+    
+    <item>
+      <title>TLS Authentication | Kubernetes Ingress</title>
+      <link>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/tls-auth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://appscode.com/products/voyager/5.0.0/guides/ingress/security/tls-auth/</guid>
+      <description>TLS Authentication This example demonstrates how to configure TLS Authentication on Voyager Ingress controller.
+ Using tls auth in Ingress Using tls auth in Frontend  Before diving into the deep learn about TLS Auth with HAproxy.
+ SSL Client certificate management at application level Clinet side ssl certificates  Using TLS Authentication Voyager Ingress read ca certificates from files stored on secrets with ca.crt key.
+ ingress.kubernetes.io/auth-tls-secret: Name of secret for TLS client certification validation.</description>
+    </item>
+    
+  </channel>
+</rss>
