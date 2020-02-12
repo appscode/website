@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //For OnScroll Animation JS
   AOS.init({
-    once: true
+    once: true,
+    disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
   });
 
   //Left sidebar Menu fontSize
