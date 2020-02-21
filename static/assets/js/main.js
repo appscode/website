@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //For OnScroll Animation JS
   AOS.init({
-    once: true
+    once: true,
+    disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
   });
 
   //Left sidebar Menu fontSize
@@ -308,6 +309,8 @@ function lefSidebarFirstElementFontSize() {
   const sidebarMenu = document.querySelector(".kd-sidebar-menu");
   if (sidebarMenu) {
     sidebarMenu.children[0].children[1].children[0].style.fontSize = "22px";
+    sidebarMenu.children[0].children[1].children[0].style.cursor = "default";
+    sidebarMenu.children[0].children[1].children[0].removeAttribute('href');
   }
 }
 
