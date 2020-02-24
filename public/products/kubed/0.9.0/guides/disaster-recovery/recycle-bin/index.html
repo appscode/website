@@ -60,7 +60,7 @@ $ kubectl get secret kubed-config -n kube-system -o yaml
   <span style=color:#66d9ef>namespace</span>: kube-system
   <span style=color:#66d9ef>resourceVersion</span>: <span style=color:#e6db74>&#34;32920&#34;</span>
   <span style=color:#66d9ef>selfLink</span>: /api/v1/namespaces/kube-system/secrets/kubed-config
-  <span style=color:#66d9ef>uid</span>: 0d3aa21b<span style=color:#ae81ff>-7234</span><span style=color:#ae81ff>-11e7</span>-af79-08002738e55e
+  <span style=color:#66d9ef>uid</span>: 0d3aa21b<span style=color:#ae81ff>-7234-11e7</span>-af79-08002738e55e
 <span style=color:#66d9ef>type</span>: Opaque
 </code></pre></div><p>Now, deploy Kubed operator in your cluster following the steps <a href=/products/kubed/0.9.0/setup/install>here</a>. Once the operator pod is running, go to the next section.</p><h2 id=using-recycle-bin>Using Recycle Bin</h2><p>In this tutorial, a ConfigMap will be used to show how recycle bin feature can be used.</p><p>To keep things isolated, this tutorial uses a separate namespace called <code>demo</code> throughout this tutorial. Run the following command to prepare your cluster for this tutorial:</p><pre><code class=language-console data-lang=console>$ kubectl create namespace demo
 namespace &quot;demo&quot; created
@@ -84,7 +84,7 @@ configmap &quot;omni&quot; created
   <span style=color:#66d9ef>namespace</span>: demo
   <span style=color:#66d9ef>resourceVersion</span>: <span style=color:#e6db74>&#34;34414&#34;</span>
   <span style=color:#66d9ef>selfLink</span>: /api/v1/namespaces/demo/configmaps/omni
-  <span style=color:#66d9ef>uid</span>: 3b77f592<span style=color:#ae81ff>-7237</span><span style=color:#ae81ff>-11e7</span>-af79-08002738e55e
+  <span style=color:#66d9ef>uid</span>: 3b77f592<span style=color:#ae81ff>-7237-11e7</span>-af79-08002738e55e
 </code></pre></div><p>Now, delete the ConfigMap <code>omni</code>. Kubed operator pod will notice this and stored the deleted object in YAML format in a file matching the <code>selfLink</code> for that object inside the <code>recycleBin.path</code> folder.</p><pre><code class=language-console data-lang=console># Exec into kubed operator pod
 $ kubectl exec -it $(kubectl get pods --all-namespaces -l app=kubed -o jsonpath={.items[0].metadata.name}) -n kube-system sh
 

@@ -87,7 +87,7 @@ $ kubectl get secret kubed-config -n kube-system -o yaml
   <span style=color:#66d9ef>namespace</span>: kube-system
   <span style=color:#66d9ef>resourceVersion</span>: <span style=color:#e6db74>&#34;1011&#34;</span>
   <span style=color:#66d9ef>selfLink</span>: /api/v1/namespaces/kube-system/secrets/kubed-config
-  <span style=color:#66d9ef>uid</span>: 65b97f23<span style=color:#ae81ff>-7684</span><span style=color:#ae81ff>-11e7</span>-b77d-0800274b060f
+  <span style=color:#66d9ef>uid</span>: 65b97f23<span style=color:#ae81ff>-7684-11e7</span>-b77d-0800274b060f
 <span style=color:#66d9ef>type</span>: Opaque
 </code></pre></div><p>Now, deploy Kubed operator in your cluster following the steps <a href=/products/kubed/0.7.0-rc.2/setup/install>here</a>. Once the operator pod is running, check your bucket from Google Cloud console. You should see the data from initial snapshot operation.</p><p><img src=/products/kubed/0.7.0-rc.2/images/cluster-snapshot/gcs-snapshot.png alt="GCS Snapshot"></p><h2 id=aws-s3>AWS S3</h2><p>Kubed supports Amazon S3 or <a href=https://minio.io/>Minio</a> servers as snapshot storage backend. To configure this backend, create a Secret with the following secret keys:</p><table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody><tr><td><code>AWS_ACCESS_KEY_ID</code></td><td><code>Required</code>. AWS / Minio access key ID</td></tr><tr><td><code>AWS_SECRET_ACCESS_KEY</code></td><td><code>Required</code>. AWS / Minio secret access key</td></tr><tr><td><code>CA_CERT_DATA</code></td><td><code>optional</code>. CA certificate used by storage backend. This can be used to pass a self-signed ca used with Minio server.</td></tr></tbody></table><pre><code class=language-console data-lang=console>$ echo -n '&lt;your-aws-access-key-id-here&gt;' &gt; AWS_ACCESS_KEY_ID
 $ echo -n '&lt;your-aws-secret-access-key-here&gt;' &gt; AWS_SECRET_ACCESS_KEY
@@ -157,7 +157,7 @@ $ kubectl get secret kubed-config -n kube-system -o yaml
   <span style=color:#66d9ef>namespace</span>: kube-system
   <span style=color:#66d9ef>resourceVersion</span>: <span style=color:#e6db74>&#34;1179&#34;</span>
   <span style=color:#66d9ef>selfLink</span>: /api/v1/namespaces/kube-system/secrets/kubed-config
-  <span style=color:#66d9ef>uid</span>: c0624c33<span style=color:#ae81ff>-7684</span><span style=color:#ae81ff>-11e7</span>-b77d-0800274b060f
+  <span style=color:#66d9ef>uid</span>: c0624c33<span style=color:#ae81ff>-7684-11e7</span>-b77d-0800274b060f
 <span style=color:#66d9ef>type</span>: Opaque
 </code></pre></div><p>Now, deploy Kubed operator in your cluster following the steps <a href=/products/kubed/0.7.0-rc.2/setup/install>here</a>. Once the operator pod is running, check your bucket from S3 console. You should see the data from initial snapshot operation.</p><h2 id=microsoft-azure-storage>Microsoft Azure Storage</h2><p>Kubed supports Microsoft Azure Storage as snapshot storage backend. To configure this backend, create a Secret with the following secret keys:</p><table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody><tr><td><code>AZURE_ACCOUNT_NAME</code></td><td><code>Required</code>. Azure Storage account name</td></tr><tr><td><code>AZURE_ACCOUNT_KEY</code></td><td><code>Required</code>. Azure Storage account key</td></tr></tbody></table><pre><code class=language-console data-lang=console>$ echo -n '&lt;your-azure-storage-account-name&gt;' &gt; AZURE_ACCOUNT_NAME
 $ echo -n '&lt;your-azure-storage-account-key&gt;' &gt; AZURE_ACCOUNT_KEY
@@ -216,7 +216,7 @@ $ kubectl get secret kubed-config -n kube-system -o yaml
   <span style=color:#66d9ef>namespace</span>: kube-system
   <span style=color:#66d9ef>resourceVersion</span>: <span style=color:#e6db74>&#34;1314&#34;</span>
   <span style=color:#66d9ef>selfLink</span>: /api/v1/namespaces/kube-system/secrets/kubed-config
-  <span style=color:#66d9ef>uid</span>: 06180b7b<span style=color:#ae81ff>-7685</span><span style=color:#ae81ff>-11e7</span>-b77d-0800274b060f
+  <span style=color:#66d9ef>uid</span>: 06180b7b<span style=color:#ae81ff>-7685-11e7</span>-b77d-0800274b060f
 <span style=color:#66d9ef>type</span>: Opaque
 </code></pre></div><p>Now, deploy Kubed operator in your cluster following the steps <a href=/products/kubed/0.7.0-rc.2/setup/install>here</a>. Once the operator pod is running, check your container from Azure portal. You should see the data from initial snapshot operation.</p><h2 id=openstack-swift>OpenStack Swift</h2><p>Kubed supports OpenStack Swift as snapshot storage backend. To configure this backend, create a Secret with the following secret keys:</p><table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody><tr><td><code>ST_AUTH</code></td><td>For keystone v1 authentication</td></tr><tr><td><code>ST_USER</code></td><td>For keystone v1 authentication</td></tr><tr><td><code>ST_KEY</code></td><td>For keystone v1 authentication</td></tr><tr><td><code>OS_AUTH_URL</code></td><td>For keystone v2 authentication</td></tr><tr><td><code>OS_REGION_NAME</code></td><td>For keystone v2 authentication</td></tr><tr><td><code>OS_USERNAME</code></td><td>For keystone v2 authentication</td></tr><tr><td><code>OS_PASSWORD</code></td><td>For keystone v2 authentication</td></tr><tr><td><code>OS_TENANT_ID</code></td><td>For keystone v2 authentication</td></tr><tr><td><code>OS_TENANT_NAME</code></td><td>For keystone v2 authentication</td></tr><tr><td><code>OS_AUTH_URL</code></td><td>For keystone v3 authentication</td></tr><tr><td><code>OS_REGION_NAME</code></td><td>For keystone v3 authentication</td></tr><tr><td><code>OS_USERNAME</code></td><td>For keystone v3 authentication</td></tr><tr><td><code>OS_PASSWORD</code></td><td>For keystone v3 authentication</td></tr><tr><td><code>OS_USER_DOMAIN_NAME</code></td><td>For keystone v3 authentication</td></tr><tr><td><code>OS_PROJECT_NAME</code></td><td>For keystone v3 authentication</td></tr><tr><td><code>OS_PROJECT_DOMAIN_NAME</code></td><td>For keystone v3 authentication</td></tr><tr><td><code>OS_STORAGE_URL</code></td><td>For authentication based on tokens</td></tr><tr><td><code>OS_AUTH_TOKEN</code></td><td>For authentication based on tokens</td></tr></tbody></table><pre><code class=language-console data-lang=console>$ echo -n '&lt;your-auth-url&gt;' &gt; OS_AUTH_URL
 $ echo -n '&lt;your-tenant-id&gt;' &gt; OS_TENANT_ID
@@ -241,11 +241,11 @@ secret &quot;swift-secret&quot; labeled
 <span style=color:#66d9ef>apiVersion</span>: v1
 <span style=color:#66d9ef>data</span>:
   <span style=color:#66d9ef>OS_AUTH_URL</span>: PHlvdXItYXV0aC11cmw<span style=color:#e6db74>+
-</span><span style=color:#e6db74> </span><span style=color:#e6db74> </span><span style=color:#e6db74>OS_PASSWORD: PHlvdXItcGFzc3dvcmQ+</span>
+</span><span style=color:#e6db74>  OS_PASSWORD: PHlvdXItcGFzc3dvcmQ+</span>
   <span style=color:#66d9ef>OS_REGION_NAME</span>: PHlvdXItcmVnaW9uPg==
   <span style=color:#66d9ef>OS_TENANT_ID</span>: PHlvdXItdGVuYW50LWlkPg==
   <span style=color:#66d9ef>OS_TENANT_NAME</span>: PHlvdXItdGVuYW50LW5hbWU<span style=color:#e6db74>+
-</span><span style=color:#e6db74> </span><span style=color:#e6db74> </span><span style=color:#e6db74>OS_USERNAME: PHlvdXItdXNlcm5hbWU+</span>
+</span><span style=color:#e6db74>  OS_USERNAME: PHlvdXItdXNlcm5hbWU+</span>
 <span style=color:#66d9ef>kind</span>: Secret
 <span style=color:#66d9ef>metadata</span>:
   <span style=color:#66d9ef>creationTimestamp</span>: <span style=color:#e6db74>2017-07-26T06:23:22Z</span>
@@ -287,7 +287,7 @@ $ kubectl get secret kubed-config -n kube-system -o yaml
   <span style=color:#66d9ef>namespace</span>: kube-system
   <span style=color:#66d9ef>resourceVersion</span>: <span style=color:#e6db74>&#34;1386&#34;</span>
   <span style=color:#66d9ef>selfLink</span>: /api/v1/namespaces/kube-system/secrets/kubed-config
-  <span style=color:#66d9ef>uid</span>: 2e9e3b46<span style=color:#ae81ff>-7685</span><span style=color:#ae81ff>-11e7</span>-b77d-0800274b060f
+  <span style=color:#66d9ef>uid</span>: 2e9e3b46<span style=color:#ae81ff>-7685-11e7</span>-b77d-0800274b060f
 <span style=color:#66d9ef>type</span>: Opaque
 </code></pre></div><p>Now, deploy Kubed operator in your cluster following the steps <a href=/products/kubed/0.7.0-rc.2/setup/install>here</a>. Once the operator pod is running, check your container. You should see the data from initial snapshot operation.</p><h2 id=local-backend>Local Backend</h2><p><code>Local</code> backend refers to a local path inside Kubed container. When running Kubed, mount any Kubernetes supported <a href=https://kubernetes.io/docs/concepts/storage/volumes/>persistent volume</a> and configure kubed to store snapshot data in that volume. Some examples are: <code>emptyDir</code> for testing, NFS, Ceph, GlusterFS, etc. Let&rsquo;s take a look at the cluster config. Here,</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>$ cat ./docs/examples/cluster-snapshot/local/config.yaml
 
@@ -317,7 +317,7 @@ $ kubectl get secret kubed-config -n kube-system -o yaml
   <span style=color:#66d9ef>namespace</span>: kube-system
   <span style=color:#66d9ef>resourceVersion</span>: <span style=color:#e6db74>&#34;1453&#34;</span>
   <span style=color:#66d9ef>selfLink</span>: /api/v1/namespaces/kube-system/secrets/kubed-config
-  <span style=color:#66d9ef>uid</span>: 51a10e2d<span style=color:#ae81ff>-7685</span><span style=color:#ae81ff>-11e7</span>-b77d-0800274b060f
+  <span style=color:#66d9ef>uid</span>: 51a10e2d<span style=color:#ae81ff>-7685-11e7</span>-b77d-0800274b060f
 <span style=color:#66d9ef>type</span>: Opaque
 </code></pre></div><p>Now, deploy Kubed operator in your cluster. Since, <code>snapshotter.local.path</code> is set to <code>/var/data</code>, mount your local volume at that path. You can find example installation scripts below:</p><ul><li><a href=/products/kubed/0.7.0-rc.2/examples/cluster-snapshot/local/without-rbac.yaml>Without RBAC</a></li><li><a href=/products/kubed/0.7.0-rc.2/examples/cluster-snapshot/local/with-rbac.yaml>With RBAC</a></li></ul><p>Once the operator pod is running, check your container. You should see the data from initial snapshot operation.</p><h2 id=instant-snapshot>Instant Snapshot</h2><p>To take an instant snapshot of a cluster, you can use the <code>snapshot</code> command from kubed. Download the pre-built binary from <a href=https://github.com/appscode/kubed/releases>appscode/kubed Github releases</a> and put the binary to some directory in your <code>PATH</code>.</p><pre><code class=language-console data-lang=console>$ kubed snapshot --context=minikube --backup-dir=/tmp/minikube
 

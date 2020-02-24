@@ -81,8 +81,8 @@ IP addresses from 130.211.204.1 and 130.211.204.2.</p><div class=highlight><pre 
           <span style=color:#66d9ef>serviceName</span>: test-service
           <span style=color:#66d9ef>servicePort</span>: <span style=color:#e6db74>&#39;80&#39;</span>
   <span style=color:#66d9ef>loadBalancerSourceRanges</span>:
-  - <span style=color:#ae81ff>130.211</span><span style=color:#ae81ff>.204</span><span style=color:#ae81ff>.1</span>/<span style=color:#ae81ff>32</span>
-  - <span style=color:#ae81ff>130.211</span><span style=color:#ae81ff>.204</span><span style=color:#ae81ff>.2</span>/<span style=color:#ae81ff>32</span>
+  - <span style=color:#ae81ff>130.211.204.1</span>/<span style=color:#ae81ff>32</span>
+  - <span style=color:#ae81ff>130.211.204.2</span>/<span style=color:#ae81ff>32</span>
 </code></pre></div><p>NB: Currently there is a <a href=https://github.com/kubernetes/kubernetes/issues/34218>bug in Kubernetes</a> due to which changing <code>loadBalancerSourceRanges</code> does not change SecurityGroup in AWS.</p></div></div><div class="column is-2"><div class=right-sidebar-area><div class=search-area><form action=#><input id=acSearch type=text placeholder=Search...>
 <button class=search-button>
 <i class="fa fa-search" aria-hidden=true></i></button></form></div><div class=tbl-of-contents><h4>What's on this Page</h4><nav id=TableOfContents></nav></div></div></div></div></div><script>var kdDropdown=document.querySelector(".dropdown");var kdDropdownBtn=document.querySelector(".dropdown-trigger");kdDropdownBtn.addEventListener("click",function(){kdDropdown.classList.toggle("is-active");})</script></div><div class=improve-section-area><div class="container section"><div class=improve-bg-color><div class=columns><div class="column is-6"><a href=https://github.com/appscode/voyager/edit/master/docs/guides/ingress/http/source-range.md/>Improve This Page</a></div></div></div></div></div><div class=overlay-bg></div><div class=sidebar-search-area><div class=search-area-top><h3>Search</h3><div class=searchbar-area><input type=search name=search id=searchbox placeholder=Search...>

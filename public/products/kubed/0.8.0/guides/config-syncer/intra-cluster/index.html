@@ -81,13 +81,13 @@ demo          omni                                 2         7m
 <span style=color:#66d9ef>metadata</span>:
   <span style=color:#66d9ef>annotations</span>:
     <span style=color:#66d9ef>kubectl.kubernetes.io/last-applied-configuration</span>: <span style=color:#e6db74>|
-</span><span style=color:#e6db74>     </span><span style=color:#e6db74> </span><span style=color:#e6db74>{&#34;apiVersion&#34;:&#34;v1&#34;,&#34;data&#34;:{&#34;leave&#34;:&#34;once&#34;,&#34;you&#34;:&#34;only&#34;},&#34;kind&#34;:&#34;ConfigMap&#34;,&#34;metadata&#34;:{&#34;annotations&#34;:{},&#34;name&#34;:&#34;omni&#34;,&#34;namespace&#34;:&#34;demo&#34;}}</span>
+</span><span style=color:#e6db74>      {&#34;apiVersion&#34;:&#34;v1&#34;,&#34;data&#34;:{&#34;leave&#34;:&#34;once&#34;,&#34;you&#34;:&#34;only&#34;},&#34;kind&#34;:&#34;ConfigMap&#34;,&#34;metadata&#34;:{&#34;annotations&#34;:{},&#34;name&#34;:&#34;omni&#34;,&#34;namespace&#34;:&#34;demo&#34;}}</span>
   <span style=color:#66d9ef>creationTimestamp</span>: <span style=color:#e6db74>2017-07-26T13:20:15Z</span>
   <span style=color:#66d9ef>name</span>: omni
   <span style=color:#66d9ef>namespace</span>: demo
   <span style=color:#66d9ef>resourceVersion</span>: <span style=color:#e6db74>&#34;10598&#34;</span>
   <span style=color:#66d9ef>selfLink</span>: /api/v1/namespaces/demo/configmaps/omni
-  <span style=color:#66d9ef>uid</span>: 2988e9d5<span style=color:#ae81ff>-7205</span><span style=color:#ae81ff>-11e7</span>-af79-08002738e55e
+  <span style=color:#66d9ef>uid</span>: 2988e9d5<span style=color:#ae81ff>-7205-11e7</span>-af79-08002738e55e
 </code></pre></div><p>Now, apply the <code>kubed.appscode.com/sync: ""</code> annotation to ConfigMap <code>omni</code>. Kubed operator will notice that and copy the ConfigMap in all existing namespaces.</p><pre><code class=language-console data-lang=console>$ kubectl annotate configmap omni kubed.appscode.com/sync=&quot;&quot; -n demo
 configmap &quot;omni&quot; annotated
 
@@ -105,14 +105,14 @@ kube-system   omni                                 2         1m
 <span style=color:#66d9ef>metadata</span>:
   <span style=color:#66d9ef>annotations</span>:
     <span style=color:#66d9ef>kubectl.kubernetes.io/last-applied-configuration</span>: <span style=color:#e6db74>|
-</span><span style=color:#e6db74>     </span><span style=color:#e6db74> </span><span style=color:#e6db74>{&#34;apiVersion&#34;:&#34;v1&#34;,&#34;data&#34;:{&#34;leave&#34;:&#34;once&#34;,&#34;you&#34;:&#34;only&#34;},&#34;kind&#34;:&#34;ConfigMap&#34;,&#34;metadata&#34;:{&#34;annotations&#34;:{},&#34;name&#34;:&#34;omni&#34;,&#34;namespace&#34;:&#34;demo&#34;}}</span>
+</span><span style=color:#e6db74>      {&#34;apiVersion&#34;:&#34;v1&#34;,&#34;data&#34;:{&#34;leave&#34;:&#34;once&#34;,&#34;you&#34;:&#34;only&#34;},&#34;kind&#34;:&#34;ConfigMap&#34;,&#34;metadata&#34;:{&#34;annotations&#34;:{},&#34;name&#34;:&#34;omni&#34;,&#34;namespace&#34;:&#34;demo&#34;}}</span>
     <span style=color:#66d9ef>kubed.appscode.com/sync</span>: <span style=color:#e6db74>&#34;true&#34;</span>
   <span style=color:#66d9ef>creationTimestamp</span>: <span style=color:#e6db74>2017-07-26T13:20:15Z</span>
   <span style=color:#66d9ef>name</span>: omni
   <span style=color:#66d9ef>namespace</span>: demo
   <span style=color:#66d9ef>resourceVersion</span>: <span style=color:#e6db74>&#34;11053&#34;</span>
   <span style=color:#66d9ef>selfLink</span>: /api/v1/namespaces/demo/configmaps/omni
-  <span style=color:#66d9ef>uid</span>: 2988e9d5<span style=color:#ae81ff>-7205</span><span style=color:#ae81ff>-11e7</span>-af79-08002738e55e
+  <span style=color:#66d9ef>uid</span>: 2988e9d5<span style=color:#ae81ff>-7205-11e7</span>-af79-08002738e55e
 </code></pre></div><p>Now, create a new namespace called <code>other</code>. Kubed will copy ConfigMap <code>omni</code> into that namespace.</p><pre><code class=language-console data-lang=console>$ kubectl create ns other
 namespace &quot;other&quot; created
 
@@ -140,13 +140,13 @@ other         omni                                 2         5m
 <span style=color:#66d9ef>metadata</span>:
   <span style=color:#66d9ef>annotations</span>:
     <span style=color:#66d9ef>kubectl.kubernetes.io/last-applied-configuration</span>: <span style=color:#e6db74>|
-</span><span style=color:#e6db74>     </span><span style=color:#e6db74> </span><span style=color:#e6db74>{&#34;apiVersion&#34;:&#34;v1&#34;,&#34;data&#34;:{&#34;live&#34;:&#34;once&#34;,&#34;you&#34;:&#34;only&#34;},&#34;kind&#34;:&#34;ConfigMap&#34;,&#34;metadata&#34;:{&#34;annotations&#34;:{},&#34;name&#34;:&#34;omni&#34;,&#34;namespace&#34;:&#34;demo&#34;}}</span>
+</span><span style=color:#e6db74>      {&#34;apiVersion&#34;:&#34;v1&#34;,&#34;data&#34;:{&#34;live&#34;:&#34;once&#34;,&#34;you&#34;:&#34;only&#34;},&#34;kind&#34;:&#34;ConfigMap&#34;,&#34;metadata&#34;:{&#34;annotations&#34;:{},&#34;name&#34;:&#34;omni&#34;,&#34;namespace&#34;:&#34;demo&#34;}}</span>
   <span style=color:#66d9ef>creationTimestamp</span>: <span style=color:#e6db74>2017-07-26T13:31:13Z</span>
   <span style=color:#66d9ef>name</span>: omni
   <span style=color:#66d9ef>namespace</span>: other
   <span style=color:#66d9ef>resourceVersion</span>: <span style=color:#e6db74>&#34;11594&#34;</span>
   <span style=color:#66d9ef>selfLink</span>: /api/v1/namespaces/other/configmaps/omni
-  <span style=color:#66d9ef>uid</span>: b193f40f<span style=color:#ae81ff>-7206</span><span style=color:#ae81ff>-11e7</span>-af79-08002738e55e
+  <span style=color:#66d9ef>uid</span>: b193f40f<span style=color:#ae81ff>-7206-11e7</span>-af79-08002738e55e
 </code></pre></div><p>Kubed operator notices that the source ConfigMap <code>omni</code> has been updated and propagates the change to all the copies in other namespaces.</p><h2 id=namespace-selector>Namespace Selector</h2><p>Lets&rsquo; change annotation value of source ConfigMap <code>omni</code>.</p><pre><code class=language-console data-lang=console>$ kubectl annotate configmap omni kubed.appscode.com/sync=&quot;app=kubed&quot; -n demo --overwrite
 configmap &quot;omni&quot; annotated
 

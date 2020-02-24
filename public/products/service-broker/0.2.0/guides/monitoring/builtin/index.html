@@ -43,7 +43,7 @@ namespace/monitoring created
   <span style=color:#66d9ef>creationTimestamp</span>: <span style=color:#e6db74>2019-01-09T07:03:55Z</span>
   <span style=color:#66d9ef>labels</span>:
     <span style=color:#66d9ef>app</span>: service-broker
-    <span style=color:#66d9ef>chart</span>: service-broker<span style=color:#ae81ff>-0.2</span><span style=color:#ae81ff>.0</span>
+    <span style=color:#66d9ef>chart</span>: service-broker<span style=color:#ae81ff>-0.2.0</span>
     <span style=color:#66d9ef>heritage</span>: Tiller
     <span style=color:#66d9ef>release</span>: appscode-service-broker
   <span style=color:#66d9ef>name</span>: appscode-service-broker
@@ -52,7 +52,7 @@ namespace/monitoring created
   <span style=color:#66d9ef>selfLink</span>: /api/v1/namespaces/kube-system/services/appscode-service-broker
   <span style=color:#66d9ef>uid</span>: ba851ced-13dc<span style=color:#ae81ff>-11e9</span>-85c4-0800278ac612
 <span style=color:#66d9ef>spec</span>:
-  <span style=color:#66d9ef>clusterIP</span>: <span style=color:#ae81ff>10.106</span><span style=color:#ae81ff>.25</span><span style=color:#ae81ff>.160</span>
+  <span style=color:#66d9ef>clusterIP</span>: <span style=color:#ae81ff>10.106.25.160</span>
   <span style=color:#66d9ef>ports</span>:
   - <span style=color:#66d9ef>name</span>: api
     <span style=color:#66d9ef>port</span>: <span style=color:#ae81ff>443</span>
@@ -147,7 +147,7 @@ appscode-service-broker-apiserver-cert   kubernetes.io/tls   2      3h24m
   <span style=color:#66d9ef>namespace</span>: monitoring
 <span style=color:#66d9ef>data</span>:
   <span style=color:#66d9ef>prometheus.yml</span>: |<span style=color:#e6db74>-
-</span><span style=color:#e6db74>   </span><span style=color:#e6db74> </span><span style=color:#e6db74>global:</span>
+</span><span style=color:#e6db74>    global:</span>
       <span style=color:#66d9ef>scrape_interval</span>: 30s
       <span style=color:#66d9ef>scrape_timeout</span>: 10s
       <span style=color:#66d9ef>evaluation_interval</span>: 30s
@@ -232,7 +232,7 @@ clusterrolebinding.rbac.authorization.k8s.io/prometheus created
       <span style=color:#66d9ef>serviceAccountName</span>: prometheus
       <span style=color:#66d9ef>containers</span>:
       - <span style=color:#66d9ef>name</span>: prometheus
-        <span style=color:#66d9ef>image</span>: prom/prometheus:v2<span style=color:#ae81ff>.4</span><span style=color:#ae81ff>.3</span>
+        <span style=color:#66d9ef>image</span>: prom/prometheus:v2<span style=color:#ae81ff>.4.3</span>
         <span style=color:#66d9ef>args</span>:
         - <span style=color:#e6db74>&#34;--config.file=/etc/prometheus/prometheus.yml&#34;</span>
         - <span style=color:#e6db74>&#34;--storage.tsdb.path=/prometheus/&#34;</span>

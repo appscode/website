@@ -63,13 +63,13 @@ $ kubectl apply -f installer.yaml
 </code></pre><p>Procedure to find <code>&lt;application_id></code>, <code>&lt;application_secret></code> and <code>&lt;client_id></code> are given above. Replace the &lt;user_name> and &lt;tenant_id> with your azure username and tenant id.</p><p>Or You can add user in <code>.kube/config</code> file</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>...
 <span style=color:#66d9ef>users</span>:
 - <span style=color:#66d9ef>name</span>: &lt;user_name<span style=color:#e6db74>&gt;
-</span><span style=color:#e6db74> </span><span style=color:#e6db74> </span><span style=color:#e6db74>user:</span>
+</span><span style=color:#e6db74>  user:</span>
     <span style=color:#66d9ef>auth-provider</span>:
       <span style=color:#66d9ef>config</span>:
         <span style=color:#66d9ef>apiserver-id</span>: &lt;application_id<span style=color:#e6db74>&gt;
-</span><span style=color:#e6db74>       </span><span style=color:#e6db74> </span><span style=color:#e6db74>client-id: &lt;client_id&gt;</span>
+</span><span style=color:#e6db74>        client-id: &lt;client_id&gt;</span>
         <span style=color:#66d9ef>tenant-id</span>: &lt;tenant_id<span style=color:#e6db74>&gt;
-</span><span style=color:#e6db74>       </span><span style=color:#e6db74> </span><span style=color:#e6db74>environment: AzurePublicCloud</span>
+</span><span style=color:#e6db74>        environment: AzurePublicCloud</span>
       <span style=color:#66d9ef>name</span>: azure
 </code></pre></div><p>The access token is acquired when first <code>kubectl</code> command is executed</p><pre><code>$ kubectl get pods --user &lt;user_name&gt;
 

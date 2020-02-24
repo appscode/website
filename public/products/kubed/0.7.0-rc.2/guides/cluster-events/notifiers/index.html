@@ -189,14 +189,14 @@ secret &quot;notifier-config&quot; created
   <span style=color:#66d9ef>namespace</span>: kube-system
   <span style=color:#66d9ef>resourceVersion</span>: <span style=color:#e6db74>&#34;27787&#34;</span>
   <span style=color:#66d9ef>selfLink</span>: /api/v1/namespaces/kube-system/secrets/notifier-config
-  <span style=color:#66d9ef>uid</span>: 41f57a61<span style=color:#ae81ff>-7229</span><span style=color:#ae81ff>-11e7</span>-af79-08002738e55e
+  <span style=color:#66d9ef>uid</span>: 41f57a61<span style=color:#ae81ff>-7229-11e7</span>-af79-08002738e55e
 <span style=color:#66d9ef>type</span>: Opaque
 </code></pre></div><p>Now, to receive notifications via Twilio, configure receiver as below:</p><ul><li>notifier: <code>Twilio</code></li><li>to: a list of receiver mobile numbers</li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>clusterName</span>: unicorn
 <span style=color:#66d9ef>eventForwarder</span>:
   <span style=color:#66d9ef>receivers</span>:
   - <span style=color:#66d9ef>notifier</span>: Twilio
     <span style=color:#66d9ef>to</span>:
-    - +<span style=color:#ae81ff>1</span><span style=color:#ae81ff>-999</span><span style=color:#ae81ff>-888</span><span style=color:#ae81ff>-1234</span>
+    - +<span style=color:#ae81ff>1-999-888-1234</span>
 <span style=color:#66d9ef>notifierSecretName</span>: notifier-config
 </code></pre></div><h2 id=slack>Slack</h2><p>To receive chat notifications in Slack, create a Secret with the following keys:</p><table><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>SLACK_AUTH_TOKEN</td><td><code>Required</code> Slack <a href=https://api.slack.com/custom-integrations/legacy-tokens>legacy auth token</a></td></tr></tbody></table><pre><code class=language-console data-lang=console>$ echo -n 'your-slack-auth-token' &gt; SLACK_AUTH_TOKEN
 $ kubectl create secret generic notifier-config -n kube-system \
@@ -248,7 +248,7 @@ secret &quot;notifier-config&quot; created
   <span style=color:#66d9ef>receivers</span>:
   - <span style=color:#66d9ef>notifier</span>: Plivo
     <span style=color:#66d9ef>to</span>:
-    - +<span style=color:#ae81ff>1</span><span style=color:#ae81ff>-999</span><span style=color:#ae81ff>-888</span><span style=color:#ae81ff>-1234</span>
+    - +<span style=color:#ae81ff>1-999-888-1234</span>
 <span style=color:#66d9ef>notifierSecretName</span>: notifier-config
 </code></pre></div><h2 id=pushovernet>Pushover.net</h2><p>To receive push notifications via Pushover.net, create a Secret with the following keys:</p><table><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>PUSHOVER_TOKEN</td><td><code>Required</code> Pushover.net token.</td></tr><tr><td>PUSHOVER_USER_KEY</td><td><code>Required</code> User key or group key.</td></tr><tr><td>PUSHOVER_TITLE</td><td><code>Optional</code> Message&rsquo;s title, otherwise your app&rsquo;s name is used.</td></tr><tr><td>PUSHOVER_URL</td><td><code>Optional</code> A supplementary URL to show with your message.</td></tr><tr><td>PUSHOVER_URL_TITLE</td><td><code>Optional</code> A title for the supplementary URL, otherwise just the URL is shown.</td></tr><tr><td>PUSHOVER_PRIORITY</td><td><code>Optional</code> Send as -2 to generate no notification/alert, -1 to always send as a quiet notification, 1 to display as high-priority and bypass the user&rsquo;s quiet hours, or 2 to also require confirmation from the user.</td></tr><tr><td>PUSHOVER_SOUND</td><td><code>Optional</code> The name of one of the sounds supported by device clients to override the user&rsquo;s default sound choice.</td></tr></tbody></table><pre><code class=language-console data-lang=console>$ echo -n 'your-pushover-token' &gt; PUSHOVER_TOKEN
 $ echo -n 'your-pushover-user-key' &gt; PUSHOVER_USER_KEY

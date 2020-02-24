@@ -68,7 +68,7 @@ $ kubectl expose deployment test-server --port=80 --target-port=8080
         - --provider=google
         - --email-domain=*
         - --upstream=file:///dev/<span style=color:#66d9ef>null</span>
-        - --http-address=<span style=color:#ae81ff>0.0</span><span style=color:#ae81ff>.0</span><span style=color:#ae81ff>.0</span>:<span style=color:#ae81ff>4180</span>
+        - --http-address=<span style=color:#ae81ff>0.0.0.0</span>:<span style=color:#ae81ff>4180</span>
         - --cookie-secure=<span style=color:#66d9ef>false</span>
         - --pass-id-token=<span style=color:#66d9ef>true</span>
         - --set-xauthrequest=<span style=color:#66d9ef>true</span>
@@ -79,7 +79,7 @@ $ kubectl expose deployment test-server --port=80 --target-port=8080
           <span style=color:#66d9ef>value</span>: ...
         - <span style=color:#66d9ef>name</span>: OAUTH2_PROXY_COOKIE_SECRET
           <span style=color:#66d9ef>value</span>: ...
-        <span style=color:#66d9ef>image</span>: appscode/oauth2_proxy:<span style=color:#ae81ff>2.3</span><span style=color:#ae81ff>.0</span>
+        <span style=color:#66d9ef>image</span>: appscode/oauth2_proxy:<span style=color:#ae81ff>2.3.0</span>
         <span style=color:#66d9ef>imagePullPolicy</span>: Always
         <span style=color:#66d9ef>name</span>: oauth2-proxy
         <span style=color:#66d9ef>ports</span>:
@@ -163,7 +163,7 @@ $ kubectl create secret tls tls-secret --key /tmp/tls.key --cert /tmp/tls.crt
         - --provider=google
         - --email-domain=*
         - --upstream=file:///dev/<span style=color:#66d9ef>null</span>
-        - --http-address=<span style=color:#ae81ff>0.0</span><span style=color:#ae81ff>.0</span><span style=color:#ae81ff>.0</span>:<span style=color:#ae81ff>4180</span>
+        - --http-address=<span style=color:#ae81ff>0.0.0.0</span>:<span style=color:#ae81ff>4180</span>
         - --cookie-secure=<span style=color:#66d9ef>true</span>
         - --set-xauthrequest=<span style=color:#66d9ef>true</span>
         <span style=color:#66d9ef>env</span>:
@@ -172,7 +172,7 @@ $ kubectl create secret tls tls-secret --key /tmp/tls.key --cert /tmp/tls.crt
         - <span style=color:#66d9ef>name</span>: OAUTH2_PROXY_CLIENT_SECRET
           <span style=color:#66d9ef>value</span>: ...
         - OAUTH2_PROXY_COOKIE_SECRET = ...
-        <span style=color:#66d9ef>image</span>: appscode/oauth2_proxy:<span style=color:#ae81ff>2.3</span><span style=color:#ae81ff>.0</span>
+        <span style=color:#66d9ef>image</span>: appscode/oauth2_proxy:<span style=color:#ae81ff>2.3.0</span>
         <span style=color:#66d9ef>imagePullPolicy</span>: Always
         <span style=color:#66d9ef>name</span>: oauth2-proxy
         <span style=color:#66d9ef>ports</span>:

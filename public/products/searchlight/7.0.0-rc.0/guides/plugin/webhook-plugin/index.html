@@ -97,8 +97,8 @@ And this plugin will call your webhook you have registered in your SearchlightPl
 </span><span style=color:#75715e></span>)
 
 <span style=color:#66d9ef>type</span> <span style=color:#a6e22e>Response</span> <span style=color:#66d9ef>struct</span> {
-  <span style=color:#a6e22e>Code</span>    <span style=color:#a6e22e>State</span>  <span style=color:#e6db74>`</span><span style=color:#e6db74>json:&#34;code&#34;</span><span style=color:#e6db74>`</span>
-  <span style=color:#a6e22e>Message</span> <span style=color:#66d9ef>string</span> <span style=color:#e6db74>`</span><span style=color:#e6db74>json:&#34;message,omitempty&#34;</span><span style=color:#e6db74>`</span>
+  <span style=color:#a6e22e>Code</span>    <span style=color:#a6e22e>State</span>  <span style=color:#e6db74>`json:&#34;code&#34;`</span>
+  <span style=color:#a6e22e>Message</span> <span style=color:#66d9ef>string</span> <span style=color:#e6db74>`json:&#34;message,omitempty&#34;`</span>
 }
 </code></pre></div><p>Icinga2 Service State is determined according to <code>Code</code> in <code>Response</code>.</p><blockquote><p>Note: Webhook may not have any <code>Request</code> option.</p></blockquote><p>Add HTTP handler to serve request.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
 
@@ -122,14 +122,14 @@ And this plugin will call your webhook you have registered in your SearchlightPl
 }
 </code></pre></div><p>Here,</p><ul><li>Path <code>/check-pod-count</code> only serves POST request. And return Response according to its check.</li></ul><blockquote><p>Note: This webhook should listen on <code>80</code> port and serve POST request.</p></blockquote><p>Now build this server code.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>go build -o webhook main.go
 </code></pre></div><p>And build docker image and push to your registry.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dockerfile data-lang=dockerfile><span style=color:#66d9ef>FROM</span><span style=color:#e6db74> ubuntu</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#960050;background-color:#1e0010>
+</span><span style=color:#960050;background-color:#1e0010>
 </span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> set -x <span style=color:#ae81ff>\
 </span><span style=color:#ae81ff></span>  <span style=color:#f92672>&amp;&amp;</span> apt-get update<span style=color:#960050;background-color:#1e0010>
 </span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> set -x <span style=color:#ae81ff>\
 </span><span style=color:#ae81ff></span>  <span style=color:#f92672>&amp;&amp;</span> apt-get install -y ca-certificates<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#960050;background-color:#1e0010>
+</span><span style=color:#960050;background-color:#1e0010>
 </span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>COPY</span> webhook /usr/bin/webhook<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#960050;background-color:#1e0010>
+</span><span style=color:#960050;background-color:#1e0010>
 </span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>ENTRYPOINT</span> [<span style=color:#e6db74>&#34;webhook&#34;</span>]<span style=color:#960050;background-color:#1e0010>
 </span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>EXPOSE</span><span style=color:#e6db74> 80</span><span style=color:#960050;background-color:#1e0010>
 </span></code></pre></div><p>Now deploy this server in Kubernetes</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>apiVersion</span>: apps/v1

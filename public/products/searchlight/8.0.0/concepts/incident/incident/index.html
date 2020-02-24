@@ -16,7 +16,7 @@ Kubernetes</p></div></a><a href=https://appscode.com/products/swift/ class="sing
 It provides information on notifications sent by Searchlight for alerts.</p><h2 id=incident-spec>Incident Spec</h2><p>As with all other Kubernetes objects, a Incident has <code>apiVersion</code>, <code>kind</code>, and <code>metadata</code> fields. It also has a <code>.spec</code> section.</p><p>Below is an example Incident object maintained by Searchlight.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>apiVersion</span>: monitoring.appscode.com/v1alpha1
 <span style=color:#66d9ef>kind</span>: Incident
 <span style=color:#66d9ef>metadata</span>:
-  <span style=color:#66d9ef>name</span>: cluster.pod-exists-demo<span style=color:#ae81ff>-0.20180428</span><span style=color:#ae81ff>-1109</span>
+  <span style=color:#66d9ef>name</span>: cluster.pod-exists-demo<span style=color:#ae81ff>-0.20180428-1109</span>
   <span style=color:#66d9ef>namespace</span>: demo
   <span style=color:#66d9ef>labels</span>:
     <span style=color:#66d9ef>monitoring.appscode.com/alert</span>: pod-exists-demo<span style=color:#ae81ff>-0</span>
@@ -28,21 +28,21 @@ It provides information on notifications sent by Searchlight for alerts.</p><h2 
   - <span style=color:#66d9ef>type</span>: Problem
     <span style=color:#66d9ef>checkOutput</span>: Found <span style=color:#ae81ff>10</span> pod(s) instead of <span style=color:#ae81ff>11</span>
     <span style=color:#66d9ef>author</span>: searchlight-user
-    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1109</span>
-    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1119</span>
+    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428-1109</span>
+    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428-1119</span>
     <span style=color:#66d9ef>state</span>: Critical
   - <span style=color:#66d9ef>type</span>: Acknowledgement
     <span style=color:#66d9ef>checkOutput</span>: Found <span style=color:#ae81ff>10</span> pod(s) instead of <span style=color:#ae81ff>11</span>
     <span style=color:#66d9ef>author</span>: admin
     <span style=color:#66d9ef>comment</span>: working on fix
-    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1142</span>
-    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1142</span>
+    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428-1142</span>
+    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428-1142</span>
     <span style=color:#66d9ef>state</span>: Critical
   - <span style=color:#66d9ef>type</span>: Recovery
     <span style=color:#66d9ef>checkOutput</span>: Found all pods
     <span style=color:#66d9ef>author</span>: searchlight-user
-    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1237</span>
-    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1237</span>
+    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428-1237</span>
+    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428-1237</span>
     <span style=color:#66d9ef>state</span>: Ok
 </code></pre></div><p>Here,</p><ul><li><code>metadata.name</code> represents Incident name with format <code>{host-type}.{alert-name}.{time}</code></li><li><code>metadata.namespace</code> represents Namespace where ClusterAlert is created.</li><li><code>metadata.labels</code> provides additional information on Alert and Notification</li><li><code>status</code> provides information on notifications</li><li><code>status.lastNotificationType</code> represents last type of notification that was sent</li><li><code>status.notifications</code> provides list of notifications that were sent</li></ul><h4 id=notification-list>Notification List</h4><p>Searchlight plugin <code>hyperalert</code> adds notification information in <code>status.notifications</code> when a notification is occurred in Icinga.</p><p>Lets see some examples to understand this scenario.</p><p>We have an Incident with following <code>status</code> part</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>status</span>:
   <span style=color:#66d9ef>lastNotificationType</span>: Problem
@@ -50,8 +50,8 @@ It provides information on notifications sent by Searchlight for alerts.</p><h2 
   - <span style=color:#66d9ef>type</span>: Problem
     <span style=color:#66d9ef>checkOutput</span>: Found <span style=color:#ae81ff>10</span> pod(s) instead of <span style=color:#ae81ff>11</span>
     <span style=color:#66d9ef>author</span>: searchlight-user
-    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1109</span>
-    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1109</span>
+    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428-1109</span>
+    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428-1109</span>
     <span style=color:#66d9ef>state</span>: Critical
 </code></pre></div><p>When there is no existing Incident available, Searchlight creates one. From above, we can see that, a Icinga notification of type <strong>Problem</strong> has invoked for <strong>Critical</strong> state.
 Service <code>output</code> is updated with last Service check output.</p><p>If ClusterAlert is set to send notifications on every <em>5m</em>, more notifications will be invoked with <em>5m</em> interval. Now every time a notification of type <strong>Problem</strong> is invoked, Searchlight updates
@@ -61,15 +61,15 @@ this existing notification information. Following fields are updated:</p><ul><li
   - <span style=color:#66d9ef>type</span>: Problem
     <span style=color:#66d9ef>checkOutput</span>: Found <span style=color:#ae81ff>10</span> pod(s) instead of <span style=color:#ae81ff>11</span>
     <span style=color:#66d9ef>author</span>: searchlight-user
-    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1109</span>
-    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1119</span>
+    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428-1109</span>
+    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428-1119</span>
     <span style=color:#66d9ef>state</span>: Critical
   - <span style=color:#66d9ef>type</span>: Acknowledgement
     <span style=color:#66d9ef>checkOutput</span>: Found <span style=color:#ae81ff>10</span> pod(s) instead of <span style=color:#ae81ff>11</span>
     <span style=color:#66d9ef>author</span>: admin
     <span style=color:#66d9ef>comment</span>: working on fix
-    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1142</span>
-    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1142</span>
+    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428-1142</span>
+    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428-1142</span>
     <span style=color:#66d9ef>state</span>: Critical
 </code></pre></div><p>User <code>admin</code> acknowledges this issues with comment <code>working on fix</code>. <code>status.lastNotificationType</code> is updated with last notification type.</p><p>To know how to acknowledge, see <a href=/products/searchlight/8.0.0/concepts/incident/acknowledgement>here</a>.</p><p>When this problem is fixed, another notification of type <strong>Recovery</strong> is invoked. With this notification, this Incident is locked. For furthers incidents, another new Incident object will be created.</p><p>This is the final <code>status</code> of this Incident</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>status</span>:
   <span style=color:#66d9ef>lastNotificationType</span>: Recovery
@@ -77,21 +77,21 @@ this existing notification information. Following fields are updated:</p><ul><li
   - <span style=color:#66d9ef>type</span>: Problem
     <span style=color:#66d9ef>checkOutput</span>: Found <span style=color:#ae81ff>10</span> pod(s) instead of <span style=color:#ae81ff>11</span>
     <span style=color:#66d9ef>author</span>: searchlight-user
-    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1109</span>
-    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1119</span>
+    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428-1109</span>
+    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428-1119</span>
     <span style=color:#66d9ef>state</span>: Critical
   - <span style=color:#66d9ef>type</span>: Acknowledgement
     <span style=color:#66d9ef>checkOutput</span>: Found <span style=color:#ae81ff>10</span> pod(s) instead of <span style=color:#ae81ff>11</span>
     <span style=color:#66d9ef>author</span>: admin
     <span style=color:#66d9ef>comment</span>: working on fix
-    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1142</span>
-    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1142</span>
+    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428-1142</span>
+    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428-1142</span>
     <span style=color:#66d9ef>state</span>: Critical
   - <span style=color:#66d9ef>type</span>: Recovery
     <span style=color:#66d9ef>checkOutput</span>: Found all pods
     <span style=color:#66d9ef>author</span>: searchlight-user
-    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1237</span>
-    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428</span><span style=color:#ae81ff>-1237</span>
+    <span style=color:#66d9ef>firstTimestamp</span>: <span style=color:#ae81ff>20180428-1237</span>
+    <span style=color:#66d9ef>lastTimestamp</span>: <span style=color:#ae81ff>20180428-1237</span>
     <span style=color:#66d9ef>state</span>: Ok
 </code></pre></div><p>And also, label <code>monitoring.appscode.com/recovered: true</code> is added in label. This represents that, This Incident is recovered.</p></div></div><div class="column is-2"><div class=right-sidebar-area><div class=search-area><form action=#><input id=acSearch type=text placeholder=Search...>
 <button class=search-button>

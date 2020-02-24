@@ -45,7 +45,7 @@ Kubernetes</p></div></a><a href=https://appscode.com/products/swift/ class="sing
 <label for=35071eebb2698d1f539d5ae865e617cb-10><a href=/products/voyager/7.3.0/guides/ingress/scaling/>Scaling Ingress</a></label></div><div class=item><input type=checkbox id=35071eebb2698d1f539d5ae865e617cb-11>
 <label for=35071eebb2698d1f539d5ae865e617cb-11><a href=/products/voyager/7.3.0/guides/ingress/pod-placement/>Pod Placement</a></label></div></div></div></div><div class="column is-7"><div class=full-info><blockquote><p>New to Voyager? Please start <a href=/products/voyager/7.3.0/concepts/overview>here</a>.</p></blockquote><h1 id=using-aws-certificate-manager>Using AWS Certificate Manager</h1><p>Voyager can use AWS certificate manager to terminate SSL connections for <code>LoadBalancer</code> type ingress in <code>aws</code> provider. To use this feature,
 add the following annotations to Ingress;</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>  <span style=color:#66d9ef>ingress.appscode.com/annotations-service</span>: <span style=color:#e6db74>|
-</span><span style=color:#e6db74>   </span><span style=color:#e6db74> </span><span style=color:#e6db74>{</span>
+</span><span style=color:#e6db74>    {</span>
       <span style=color:#66d9ef>&#34;service.beta.kubernetes.io/aws-load-balancer-ssl-cert&#34;: </span><span style=color:#e6db74>&#34;arn:aws:acm:...&#34;</span>,
       <span style=color:#66d9ef>&#34;service.beta.kubernetes.io/aws-load-balancer-backend-protocol&#34;: </span><span style=color:#e6db74>&#34;http&#34;</span>,
       <span style=color:#66d9ef>&#34;service.beta.kubernetes.io/aws-load-balancer-ssl-ports&#34;: </span><span style=color:#e6db74>&#34;443&#34;</span>
@@ -56,7 +56,7 @@ ELB will listen on port 80 and forward cleartext traffic to port 80.</p><div cla
 <span style=color:#66d9ef>kind</span>: Service
 <span style=color:#66d9ef>metadata</span>:
   <span style=color:#66d9ef>name</span>: &lt;ingress<span style=color:#e6db74>&gt;
-</span><span style=color:#e6db74> </span><span style=color:#e6db74> </span><span style=color:#e6db74>annotations:</span>
+</span><span style=color:#e6db74>  annotations:</span>
     <span style=color:#66d9ef>service.beta.kubernetes.io/aws-load-balancer-ssl-cert</span>: <span style=color:#e6db74>&#39;arn:aws:acm:...&#39;</span>
     <span style=color:#66d9ef>service.beta.kubernetes.io/aws-load-balancer-backend-protocol</span>: http
 <span style=color:#66d9ef>spec</span>:

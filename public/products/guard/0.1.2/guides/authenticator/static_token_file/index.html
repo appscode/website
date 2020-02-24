@@ -55,7 +55,7 @@ lskdfjldskfnkjhf,user3,7654,
 </code></pre><p>Or You can add user in .kube/config file</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>...
 <span style=color:#66d9ef>users</span>:
 - <span style=color:#66d9ef>name</span>: &lt;user_name<span style=color:#e6db74>&gt;
-</span><span style=color:#e6db74> </span><span style=color:#e6db74> </span><span style=color:#e6db74>user:</span>
+</span><span style=color:#e6db74>  user:</span>
     <span style=color:#66d9ef>token</span>: &lt;token&gt;
 </code></pre></div><pre><code class=language-console data-lang=console>$ kubectl get pods --all-namespaces --user &lt;user_name&gt;
 NAMESPACE     NAME                               READY     STATUS    RESTARTS   AGE

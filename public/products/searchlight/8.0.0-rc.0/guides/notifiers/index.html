@@ -236,7 +236,7 @@ secret &quot;notifier-config&quot; created
   <span style=color:#66d9ef>namespace</span>: demo
   <span style=color:#66d9ef>resourceVersion</span>: <span style=color:#e6db74>&#34;27787&#34;</span>
   <span style=color:#66d9ef>selfLink</span>: /api/v1/namespaces/demo/secrets/notifier-config
-  <span style=color:#66d9ef>uid</span>: 41f57a61<span style=color:#ae81ff>-7229</span><span style=color:#ae81ff>-11e7</span>-af79-08002738e55e
+  <span style=color:#66d9ef>uid</span>: 41f57a61<span style=color:#ae81ff>-7229-11e7</span>-af79-08002738e55e
 <span style=color:#66d9ef>type</span>: Opaque
 </code></pre></div><p>Now, to receiver notifications via SMTP, configure receiver as below:</p><ul><li>notifier: <code>Twilio</code></li><li>to: a list of receiver mobile numbers</li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>apiVersion</span>: monitoring.appscode.com/v1alpha1
 <span style=color:#66d9ef>kind</span>: ClusterAlert
