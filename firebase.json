@@ -93,16 +93,6 @@
           "type": 302
         },
         {
-          "source": "/products/voyager/latest/",
-          "destination": "/products/voyager/v12.0.0-rc.2/",
-          "type": 302
-        },
-        {
-          "source": "/products/voyager/latest/:rest*",
-          "destination": "/products/voyager/v12.0.0-rc.2/:rest",
-          "type": 302
-        },
-        {
           "source": "/products/cloud-deployment",
           "destination": "https://pharmer.io",
           "type": 301
@@ -120,6 +110,16 @@
         {
           "source": "/products/stash/:rest*",
           "destination": "https://stash.run/docs/:rest",
+          "type": 302
+        },
+        {
+          "source": "/products/voyager",
+          "destination": "https://voyagermesh.com",
+          "type": 301
+        },
+        {
+          "source": "/products/voyager/:rest*",
+          "destination": "https://voyagermesh.com/docs/:rest",
           "type": 302
         }
       ]
