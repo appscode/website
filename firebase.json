@@ -54,12 +54,12 @@
         },
         {
           "source": "/products/kubed/latest/",
-          "destination": "/products/kubed/v0.12.0-rc.3/",
+          "destination": "/products/kubed/v0.12.0/",
           "type": 302
         },
         {
           "source": "/products/kubed/latest/:rest*",
-          "destination": "/products/kubed/v0.12.0-rc.3/:rest",
+          "destination": "/products/kubed/v0.12.0/:rest",
           "type": 302
         },
         {
