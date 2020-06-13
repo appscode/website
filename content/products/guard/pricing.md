@@ -1,9 +1,9 @@
 ---
-title: Commercial Support
+title: Pricing
 menu:
   product_guard:
     identifier: pricing
-    name: Commercial Support
+    name: Pricing
     weight: 10
 layout: pricing
 product_name: guard
