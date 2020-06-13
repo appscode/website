@@ -1,4 +1,4 @@
 ---
-title: Commercial Support
+title: Pricing
 layout: pricing
 ---
