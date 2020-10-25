@@ -26,10 +26,19 @@
           "headers": [
             {
               "key": "Cache-Control",
-              "value": "max-age=360000"
+              "value": "public, max-age=86400"
             }
           ],
-          "source": "@(images|fonts|js_global)/**"
+          "source": "**"
+        },
+        {
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=86400"
+            }
+          ],
+          "source": "*"
         },
         {
           "headers": [
