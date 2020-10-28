@@ -52,6 +52,11 @@
       ],
       "redirects": [
         {
+          "source": "/contact/sales/",
+          "destination": "/contact/",
+          "type": 302
+        },
+        {
           "source": "/products/guard/latest/",
           "destination": "/products/guard/v0.6.1/",
           "type": 302
