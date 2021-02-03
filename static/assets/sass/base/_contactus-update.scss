@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,600;1,700&display=swap");
+
+.contact-page-body-wrapper {
+  .navbar-area {
+    position: fixed;
+    width: 100%;
+    top: 20px;
+    z-index: 9;
+    padding: 0 100px;
+
+    .navbar {
+      .navbar-brand {
+        .navbar-item {
+          img {
+          }
+        }
+
+        .navbar-burger {
+          span {
+          }
+        }
+      }
+
+      .navbar-menu {
+        .navbar-end {
+          .navbar-start {
+            margin-right: 80px;
+
+            .navbar-item {
+              font-family: Roboto;
+              font-style: normal;
+              font-size: 15px;
+              line-height: 18px;
+              color: #393e46;
+              padding: 0 30px;
+              font-weight: 500;
+              transition: 0.3s ease-in-out;
+
+              &:hover {
+                color: #0071bd;
+              }
+            }
+          }
+
+          .navbar-item {
+            .buttons {
+              .button {
+                padding: 0;
+                background-color: transparent;
+                border: 1px solid #1971bd;
+                transition: 0.3s ease-in-out;
+                &:hover{
+                  background-color: #0071bd;
+                  strong{
+                    color: #fff;
+                  }
+                }
+
+                strong {
+                  font-family: Roboto;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 15px;
+                  line-height: 18px;
+                  padding: 14px 30px;
+                  color: #1971bd;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contact-page-body {
+    height: 100vh;
+    padding: 0 100px;
+
+    .left-content {
+      width: 40%;
+      position: relative;
+      z-index: 1;
+      padding: 15vh 15px 0 0;
+      &:after {
+        position: absolute;
+        content: "";
+        left: -15vh;
+        top: 0;
+        width: calc(100% + 15vh);
+        height: 100%;
+        z-index: -1;
+        background-color: #0071bd;
+        opacity: 0.1;
+      }
+
+      h1 {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 62px;
+        line-height: 93px;
+
+        color: #393e46;
+      }
+
+      .contact-image {
+        position: absolute;
+        bottom: 10vh;
+      }
+
+      .social-link {
+        position: absolute;
+        bottom: 20px;
+
+        a {
+          display: inline-flex;
+          align-items: center;
+          color: #666666;
+          margin-right: 60px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+
+          .icon {
+            padding-right: 10px;
+            color: #666666;
+          }
+        }
+      }
+    }
+
+    .right-content {
+      width: 60%;
+      padding: 15vh 0 0 100px;
+      position: relative;
+      z-index: 1;
+      h3 {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 48px;
+        color: #393e46;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 35px;
+
+        &::after {
+          position: absolute;
+          content: "";
+          left: 0;
+          bottom: 0;
+          width: 64px;
+          height: 6px;
+          background-color: rgba(25, 113, 189, 0.16);
+        }
+      }
+
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .single-input-form {
+          width: calc(50% - 15px);
+          margin-bottom: 20px;
+          &.is-fullwidth {
+            width: 100%;
+          }
+          label {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            display: block;
+            color: #393e46;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            .is-require {
+            }
+          }
+        }
+
+        input,
+        textarea {
+          border: 1px solid #a6abbd;
+          border-radius: 4px;
+          height: 45px;
+          width: 100%;
+          padding: 0 15px;
+          font-weight: 500;
+          font-size: 15px;
+          &:focus {
+            outline: none !important;
+            border: 1px solid #0071bd;
+          }
+          &::placeholder {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            color: #a6abbd;
+          }
+        }
+        textarea {
+          height: 100px;
+        }
+        input[type="submit"] {
+          width: 230px;
+          background-color: #0071bd;
+          color: #fff;
+          cursor: pointer;
+          &:hover {
+            background-color: darken(#0071bd, $amount: 5);
+          }
+        }
+        p.is-error {
+          color: #ea3d2f;
+          font-size: 12px;
+          line-height: 1.4;
+        }
+      }
+
+      .footer-wrapper {
+        position: absolute;
+        width: calc(100% - 100px);
+        bottom: 20px;
+        .footer-content {
+          .footer-left {
+            p {
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 15px;
+              line-height: 18px;
+              color: #333333;
+            }
+          }
+
+          .footer-right {
+            a {
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 15px;
+              line-height: 18px;
+              color: #333333;
+              padding-left: 60px;
+              transition: 0.3s ease-in-out;
+              &:first-child {
+                padding-left: 0;
+              }
+              &:hover {
+                color: #0071bd;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
