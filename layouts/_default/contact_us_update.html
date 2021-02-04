@@ -33,13 +33,17 @@
         <div id="myNavbar" class="navbar-menu">
           <div class="navbar-end">
             <div class="navbar-start">
-              <a class="navbar-item"> About </a>
+              <a href="https://appscode.com/" target="_blank" class="navbar-item">
+                About
+              </a>
 
-              <a class="navbar-item"> Service </a>
+              <a href="https://appscode.com/support/" target="_blank" class="navbar-item">
+                Service
+              </a>
             </div>
             <div class="navbar-item p-0">
               <div class="buttons">
-                <a class="button is-primary">
+                <a href="https://appscode.com/contact/" class="button is-primary">
                   <strong>Contact us</strong>
                 </a>
               </div>
@@ -142,7 +146,9 @@
           <!-- single input field start  -->
           <div class="single-input-form is-fullwidth">
             <label for="message">Message<span class="is-require">*</span></label>
-            <textarea name="" id="message" placeholder="How can we help you with your Kubernetes journey?"></textarea>
+            <div class="textarea-wrapper">
+              <textarea name="" id="message" placeholder="How can we help you with your Kubernetes journey?"></textarea>
+            </div>
           </div>
           <!-- single input field end -->
 
@@ -159,8 +165,8 @@
               <p>© 2021 AppsCode Inc. All rights reserved.</p>
             </div>
             <div class="footer-right">
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
+              <a href="https://appscode.com/legal/privacy-policy/">Privacy Policy</a>
+              <a href="https://appscode.com/legal/tos/">Terms of Service</a>
             </div>
           </div>
         </div>
@@ -171,5 +177,30 @@
     <!-- body-content end -->
   </section>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(
+      document.querySelectorAll(".navbar-burger"),
+      0
+    );
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+      // Add a click event on each of them
+      $navbarBurgers.forEach((el) => {
+        el.addEventListener("click", () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle("is-active");
+          $target.classList.toggle("is-active");
+        });
+      });
+    }
+  });
+</script>
 
 </html>
