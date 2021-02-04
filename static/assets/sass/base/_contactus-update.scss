@@ -204,7 +204,8 @@
         }
 
         input,
-        .textarea-wrapper {
+        .textarea-wrapper,
+        .select {
           border: 1px solid #a6abbd;
           border-radius: 4px;
           height: 45px;
@@ -212,6 +213,7 @@
           padding: 0 15px;
           font-weight: 500;
           font-size: 15px;
+          background-color: transparent;
 
           &:focus {
             outline: none !important;
@@ -225,6 +227,23 @@
             font-size: 14px;
             line-height: 16px;
             color: #a6abbd;
+          }
+        }
+        .select {
+          border-color: #a6abbd;
+          &:hover {
+            border-color: #a6abbd;
+          }
+          select {
+            background-color: transparent;
+            border: none;
+            font-weight: 500;
+            height: 45px !important;
+            padding-left: 15px !important;
+            color: #a6abbd;
+            option[selected]{
+              color: #333;
+            }
           }
         }
 
