@@ -7742,7 +7742,8 @@ video {
 }
 
 .contact-page-body-wrapper .contact-page-body .right-content form input,
-.contact-page-body-wrapper .contact-page-body .right-content form .textarea-wrapper {
+.contact-page-body-wrapper .contact-page-body .right-content form .textarea-wrapper,
+.contact-page-body-wrapper .contact-page-body .right-content form .select {
   border: 1px solid #a6abbd;
   border-radius: 4px;
   height: 45px;
@@ -7750,16 +7751,19 @@ video {
   padding: 0 15px;
   font-weight: 500;
   font-size: 15px;
+  background-color: transparent;
 }
 
 .contact-page-body-wrapper .contact-page-body .right-content form input:focus,
-.contact-page-body-wrapper .contact-page-body .right-content form .textarea-wrapper:focus {
+.contact-page-body-wrapper .contact-page-body .right-content form .textarea-wrapper:focus,
+.contact-page-body-wrapper .contact-page-body .right-content form .select:focus {
   outline: none !important;
   border: 1px solid #0071bd;
 }
 
 .contact-page-body-wrapper .contact-page-body .right-content form input::-webkit-input-placeholder,
-.contact-page-body-wrapper .contact-page-body .right-content form .textarea-wrapper::-webkit-input-placeholder {
+.contact-page-body-wrapper .contact-page-body .right-content form .textarea-wrapper::-webkit-input-placeholder,
+.contact-page-body-wrapper .contact-page-body .right-content form .select::-webkit-input-placeholder {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -7769,7 +7773,8 @@ video {
 }
 
 .contact-page-body-wrapper .contact-page-body .right-content form input:-ms-input-placeholder,
-.contact-page-body-wrapper .contact-page-body .right-content form .textarea-wrapper:-ms-input-placeholder {
+.contact-page-body-wrapper .contact-page-body .right-content form .textarea-wrapper:-ms-input-placeholder,
+.contact-page-body-wrapper .contact-page-body .right-content form .select:-ms-input-placeholder {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -7779,7 +7784,8 @@ video {
 }
 
 .contact-page-body-wrapper .contact-page-body .right-content form input::-ms-input-placeholder,
-.contact-page-body-wrapper .contact-page-body .right-content form .textarea-wrapper::-ms-input-placeholder {
+.contact-page-body-wrapper .contact-page-body .right-content form .textarea-wrapper::-ms-input-placeholder,
+.contact-page-body-wrapper .contact-page-body .right-content form .select::-ms-input-placeholder {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -7789,13 +7795,35 @@ video {
 }
 
 .contact-page-body-wrapper .contact-page-body .right-content form input::placeholder,
-.contact-page-body-wrapper .contact-page-body .right-content form .textarea-wrapper::placeholder {
+.contact-page-body-wrapper .contact-page-body .right-content form .textarea-wrapper::placeholder,
+.contact-page-body-wrapper .contact-page-body .right-content form .select::placeholder {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   color: #a6abbd;
+}
+
+.contact-page-body-wrapper .contact-page-body .right-content form .select {
+  border-color: #a6abbd;
+}
+
+.contact-page-body-wrapper .contact-page-body .right-content form .select:hover {
+  border-color: #a6abbd;
+}
+
+.contact-page-body-wrapper .contact-page-body .right-content form .select select {
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+  height: 45px !important;
+  padding-left: 15px !important;
+  color: #a6abbd;
+}
+
+.contact-page-body-wrapper .contact-page-body .right-content form .select select option[selected] {
+  color: #333;
 }
 
 .contact-page-body-wrapper .contact-page-body .right-content form .textarea-wrapper {
