@@ -3,6 +3,7 @@
 ========================*/
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:400,400i,500,500i,700");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -8207,6 +8208,454 @@ Responsive Classes
   .contact-page-body-wrapper .contact-page-body .right-content .footer-wrapper {
     width: calc(100% - 50px);
   }
+}
+
+.hero-area-2.webinar-page::after {
+  background-color: rgba(25, 113, 189, 0.1);
+}
+
+.hero-area-2.webinar-page .container .columns .column .webinar-hero-area {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-area-2.webinar-page .container .columns .column .hero-area-inner-2 h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 62px;
+  line-height: 93px;
+  color: #393e46;
+}
+
+.hero-area-2.webinar-page .container .columns .column .hero-area-inner-2 .single-webinar-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 44px;
+}
+
+.hero-area-2.webinar-page .container .columns .column .hero-area-inner-2 .single-webinar-info:last-child {
+  margin-right: 0;
+}
+
+.hero-area-2.webinar-page .container .columns .column .hero-area-inner-2 .single-webinar-info .icon {
+  width: 34px;
+  height: 34px;
+  background: #00a651;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 15px;
+  margin-right: 15px;
+}
+
+.hero-area-2.webinar-page .container .columns .column .hero-area-inner-2 .single-webinar-info strong {
+  color: #3f3d56;
+  margin-right: 5px;
+}
+
+.hero-area-2.webinar-page .container .columns .column .hero-area-inner-2 .single-webinar-info p {
+  color: #666666;
+}
+
+.hero-area-2.webinar-page .container .columns .column .count-down-area {
+  background: #ffffff;
+  -webkit-box-shadow: 2px 4px 27px rgba(25, 113, 189, 0.16);
+          box-shadow: 2px 4px 27px rgba(25, 113, 189, 0.16);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 0;
+  position: absolute;
+  width: 85%;
+  bottom: -83px;
+}
+
+.hero-area-2.webinar-page .container .columns .column .count-down-area .signle-count {
+  border-right: 1px solid #e6e6e6;
+  text-align: center;
+  width: 25%;
+  padding: 25px 0;
+}
+
+.hero-area-2.webinar-page .container .columns .column .count-down-area .signle-count:last-child {
+  border-right: none;
+}
+
+.hero-area-2.webinar-page .container .columns .column .count-down-area .signle-count .name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.hero-area-2.webinar-page .container .columns .column .count-down-area .signle-count .unit {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 62px;
+  line-height: 62px;
+  color: #393e46;
+}
+
+.registration-form-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.registration-form-wrapper .registration-form {
+  position: absolute;
+  right: 0;
+  top: 110px;
+}
+
+.registration-form {
+  -webkit-box-shadow: 0px 4px 27px rgba(25, 113, 189, 0.16);
+          box-shadow: 0px 4px 27px rgba(25, 113, 189, 0.16);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.registration-form h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 20px;
+  color: #393e46;
+  margin-bottom: 30px;
+}
+
+.registration-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.registration-form form .radio-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #393e46;
+  margin-bottom: 15px;
+}
+
+.registration-form form .form-message {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #555555;
+}
+
+.registration-form form input[type="submit"] {
+  height: 45px;
+}
+
+.registration-form form .single-input-form {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.registration-form form .single-input-form.is-fullwidth {
+  width: 100%;
+}
+
+.registration-form form .single-input-form label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  display: block;
+  color: #393e46;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.registration-form form .single-input-form label .is-require {
+  color: #ea3d2f;
+  padding-left: 5px;
+}
+
+.registration-form form input[type="text"],
+.registration-form form input[type="number"],
+.registration-form form input[type="email"],
+.registration-form form .textarea-wrapper,
+.registration-form form .select {
+  border: 1px solid #a6abbd;
+  border-radius: 4px;
+  height: 45px;
+  width: 100%;
+  padding: 0 15px;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: transparent;
+}
+
+.registration-form form input[type="text"]:focus,
+.registration-form form input[type="number"]:focus,
+.registration-form form input[type="email"]:focus,
+.registration-form form .textarea-wrapper:focus,
+.registration-form form .select:focus {
+  outline: none !important;
+  border: 1px solid #0071bd;
+}
+
+.registration-form form input[type="text"]::-webkit-input-placeholder,
+.registration-form form input[type="number"]::-webkit-input-placeholder,
+.registration-form form input[type="email"]::-webkit-input-placeholder,
+.registration-form form .textarea-wrapper::-webkit-input-placeholder,
+.registration-form form .select::-webkit-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #a6abbd;
+}
+
+.registration-form form input[type="text"]:-ms-input-placeholder,
+.registration-form form input[type="number"]:-ms-input-placeholder,
+.registration-form form input[type="email"]:-ms-input-placeholder,
+.registration-form form .textarea-wrapper:-ms-input-placeholder,
+.registration-form form .select:-ms-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #a6abbd;
+}
+
+.registration-form form input[type="text"]::-ms-input-placeholder,
+.registration-form form input[type="number"]::-ms-input-placeholder,
+.registration-form form input[type="email"]::-ms-input-placeholder,
+.registration-form form .textarea-wrapper::-ms-input-placeholder,
+.registration-form form .select::-ms-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #a6abbd;
+}
+
+.registration-form form input[type="text"]::placeholder,
+.registration-form form input[type="number"]::placeholder,
+.registration-form form input[type="email"]::placeholder,
+.registration-form form .textarea-wrapper::placeholder,
+.registration-form form .select::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #a6abbd;
+}
+
+.registration-form form .select {
+  border-color: #a6abbd;
+}
+
+.registration-form form .select:hover {
+  border-color: #a6abbd;
+}
+
+.registration-form form .select select {
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+  height: 45px !important;
+  padding-left: 15px !important;
+  color: #a6abbd;
+}
+
+.registration-form form .select select option[selected] {
+  color: #333;
+}
+
+.registration-form form .textarea-wrapper {
+  height: 100px;
+}
+
+.registration-form form .textarea-wrapper {
+  padding: 10px 10px 10px 15px;
+}
+
+.registration-form form .textarea-wrapper:focus {
+  outline: none !important;
+  border: 1px solid #0071bd;
+}
+
+.registration-form form textarea {
+  width: 100%;
+  height: calc(100% - 0px);
+  border: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.registration-form form textarea::-webkit-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #a6abbd;
+}
+
+.registration-form form textarea:-ms-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #a6abbd;
+}
+
+.registration-form form textarea::-ms-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #a6abbd;
+}
+
+.registration-form form textarea::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #a6abbd;
+}
+
+.registration-form form textarea:focus {
+  outline: none;
+  border: none;
+}
+
+.registration-form form input[type="submit"] {
+  width: 230px;
+  background-color: #0071bd;
+  color: #fff;
+  cursor: pointer;
+}
+
+.registration-form form input[type="submit"]:hover {
+  background-color: #0062a4;
+}
+
+.registration-form form p.is-error {
+  color: #ea3d2f;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.webinar-summary-area {
+  padding-top: 150px;
+}
+
+.webinar-summary-area .container .columns .column .webinar-summary h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  color: #393e46;
+  margin-bottom: 20px;
+}
+
+.webinar-summary-area .container .columns .column .webinar-summary p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #555555;
+  margin-bottom: 30px;
+}
+
+.webinar-summary-area .container .columns .column .webinar-summary p:last-child {
+  margin-bottom: 0;
+}
+
+.webinar-summary-area .container .columns .column .speaker-info-wrapper {
+  margin-top: 30px;
+  max-width: 70%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 110px auto;
+      grid-template-columns: 110px auto;
+  grid-gap: 30px;
+}
+
+.webinar-summary-area .container .columns .column .speaker-info-wrapper .speaker-thumbnail {
+  width: 110px;
+  height: 110px;
+  border: 1px solid #a6abbd;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.webinar-summary-area .container .columns .column .speaker-info-wrapper .speaker-info h5 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #393e46;
+}
+
+.webinar-summary-area .container .columns .column .speaker-info-wrapper .speaker-info .designation {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #555555;
+  margin-bottom: 15px;
+}
+
+.webinar-summary-area .container .columns .column .speaker-info-wrapper .speaker-info .designation a {
+  font-family: Roboto;
+}
+
+.webinar-summary-area .container .columns .column .speaker-info-wrapper .speaker-info .speaker-message {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #555555;
 }
 
 /*==================================================
