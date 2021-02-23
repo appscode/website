@@ -1,0 +1,230 @@
+{{ define "header-bottom" }}
+<section></section>
+{{ end }}
+
+{{ define "main" }}
+
+<!-- hero  area start -->
+<section class="hero-area-2 webinar-page">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-8">
+        <div class="webinar-hero-area">
+          <div class="hero-area-inner-2 pt-100">
+            <h1>Kubarnetes Webinar 2021</h1>
+            <div class="is-flex">
+              <!-- single webinar info start  -->
+              <div class="single-webinar-info">
+                <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                <strong>When : </strong>
+                <p>22 February 2021</p>
+              </div>
+              <!-- single webinar info end -->
+              <!-- single webinar info start  -->
+              <div class="single-webinar-info">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <strong>Where : </strong>
+                <p>via Zoom</p>
+              </div>
+              <!-- single webinar info end -->
+            </div>
+          </div>
+
+          <!-- count-down area start  -->
+          <div class="count-down-area">
+            <!-- single count start  -->
+            <div class="signle-count">
+              <div class="name">DAYS</div>
+              <div class="unit" id="days">00</div>
+            </div>
+            <!-- single count end -->
+            <!-- single count start  -->
+            <div class="signle-count">
+              <div class="name">HOURS</div>
+              <div class="unit" id="hours">00</div>
+            </div>
+            <!-- single count end -->
+            <!-- single count start  -->
+            <div class="signle-count">
+              <div class="name">MINUTES</div>
+              <div class="unit" id="minutes">00</div>
+            </div>
+            <!-- single count end -->
+            <!-- single count start  -->
+            <div class="signle-count">
+              <div class="name">SECONDS</div>
+              <div class="unit" id="seconds">00</div>
+            </div>
+            <!-- single count end -->
+          </div>
+          <!-- count-down area end -->
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="registration-form-wrapper">
+          <!-- form start  -->
+          <div class="registration-form">
+            <h3>Registration Now</h3>
+            <form action="#">
+              <!-- single input field start  -->
+              <div class="single-input-form">
+                <label for="fname">First Name <span class="is-require">*</span></label>
+                <input type="text" placeholder="Jhon" id="fname" required />
+                <!-- if error occured  -->
+                <p class="is-error"></p>
+              </div>
+              <!-- single input field end -->
+              <!-- single input field start  -->
+              <div class="single-input-form">
+                <label for="lname">Last Name <span class="is-require">*</span></label>
+                <input type="text" placeholder="Abrar" id="lname" required />
+                <!-- if error occured  -->
+                <p class="is-error"></p>
+              </div>
+              <!-- single input field end -->
+              <!-- single input field start  -->
+              <div class="single-input-form">
+                <label for="phone">Phone <span class="is-require">*</span></label>
+                <input type="text" placeholder="Phone" placeholder="+8801 8648 41998" id="phone" required />
+                <!-- if error occured  -->
+                <p class="is-error"></p>
+              </div>
+              <!-- single input field end -->
+              <!-- single input field start  -->
+              <div class="single-input-form">
+                <label for="jobtitle">Job title <span class="is-require">*</span></label>
+                <input type="text" placeholder="Software Engineer" id="jobtitle" required />
+                <!-- if error occured  -->
+                <p class="is-error"></p>
+              </div>
+              <!-- single input field end -->
+              <!-- single input field start  -->
+              <div class="single-input-form">
+                <label for="email">Work email <span class="is-require">*</span></label>
+                <input type="email" placeholder="hello@someone.com" id="email" required />
+                <!-- if error occured  -->
+                <p class="is-error"></p>
+              </div>
+              <!-- single input field end -->
+              <label class="radio-title">Do you know kubarnates?<span class="is-require ml-10">*</span></label>
+              <!-- input field start -->
+              <div class="ac-single-radio mb-20">
+                <input class="is-checkradio ac-radio" id="yes" type="radio" name="exampleRadioInline"
+                  checked="checked" />
+                <label for="yes" class="mr-20">Yes, Sometime I used.</label>
+                <input class="is-checkradio ac-radio" id="no" type="radio" name="exampleRadioInline" />
+                <label for="no">No, I’m new user</label>
+              </div>
+              <!-- input field end -->
+              <p class="form-message">We do not published your information lorem ipsum has been the industry's standard
+                dummy
+                text eve</p>
+              <input type="submit" class="button ac-primary mt-20" value="SEND NOW">
+            </form>
+          </div>
+          <!-- form end -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- hero area end -->
+
+<script type="text/javascript">
+  function countdown(endDate) {
+    let days, hours, minutes, seconds;
+
+    endDate = new Date(endDate).getTime();
+
+    if (isNaN(endDate)) {
+      return;
+    }
+
+    setInterval(calculate, 1000);
+
+    function calculate() {
+      let startDate = new Date().getTime();
+
+      let timeRemaining = parseInt((endDate - startDate) / 1000);
+
+      if (timeRemaining >= 0) {
+        days = parseInt(timeRemaining / 86400);
+        timeRemaining = (timeRemaining % 86400);
+
+        hours = parseInt(timeRemaining / 3600);
+        timeRemaining = (timeRemaining % 3600);
+
+        minutes = parseInt(timeRemaining / 60);
+        timeRemaining = (timeRemaining % 60);
+
+        seconds = parseInt(timeRemaining);
+
+        document.getElementById("days").innerHTML = parseInt(days, 10);
+        document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+        document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+        document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+      } else {
+        return;
+      }
+    }
+  }
+
+  (function () {
+    // M/D/Y H:M:S 
+    countdown('02/30/2021 07:03:00 PM');
+  }());
+</script>
+<!-- summary area start  -->
+<section class="webinar-summary-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-8">
+        <!-- summary start  -->
+        <div class="webinar-summary">
+          <h3>Summary:</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown</p>
+
+          <!-- speaker info start  -->
+          <h3>Speaker: </h3>
+          <div class="speaker-info-wrapper">
+            <div class="speaker-thumbnail">
+              <img src="https://via.placeholder.com/600/dddddd/808080" alt="speaker-thumbnail">
+            </div>
+            <div class="speaker-info">
+              <h5>Tamal Saha</h5>
+              <p class="designation">‎Founder & CEO · <a href="http://appscode.com">‎AppsCode Inc</a></p>
+              <div class="speaker-message">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard</div>
+            </div>
+          </div>
+          <!-- speaker info end -->
+        </div>
+        <!-- summary end -->
+      </div>
+      <div class="column is-4">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- summary area start  -->
+
+
+
+{{ end }}
+
+{{ define "testimonial" }}
+<section></section>
+{{ end }}
+
+{{ define "customer-logos" }}
+<section></section>
+{{ end }}
+
+{{ define "cta-install" }}
+<section></section>
+{{ end }}

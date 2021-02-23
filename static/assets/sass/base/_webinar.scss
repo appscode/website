@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+$poppins: "Poppins", sans-serif;
+
+// hero area start
+.hero-area-2 {
+  &.webinar-page {
+    &::after {
+      background-color: rgba(25, 113, 189, 0.1);
+    }
+
+    .container {
+      .columns {
+        .column {
+          .webinar-hero-area {
+            position: relative;
+            z-index: 1;
+          }
+
+          .hero-area-inner-2 {
+            h1 {
+              font-family: $poppins;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 62px;
+              line-height: 93px;
+
+              color: #393e46;
+            }
+
+            .single-webinar-info {
+              display: flex;
+              align-items: center;
+              margin-right: 44px;
+
+              &:last-child {
+                margin-right: 0;
+              }
+
+              .icon {
+                width: 34px;
+                height: 34px;
+                background: #00a651;
+                color: #fff;
+                border-radius: 50%;
+                font-size: 14px;
+                line-height: 15px;
+                margin-right: 15px;
+
+                .fa {
+                }
+              }
+
+              strong {
+                color: #3f3d56;
+                margin-right: 5px;
+              }
+
+              p {
+                color: #666666;
+              }
+            }
+          }
+
+          .count-down-area {
+            background: #ffffff;
+            box-shadow: 2px 4px 27px rgba(25, 113, 189, 0.16);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            padding: 7px 0;
+            position: absolute;
+            width: 85%;
+            bottom: -83px;
+
+            .signle-count {
+              border-right: 1px solid #e6e6e6;
+              text-align: center;
+              width: 25%;
+              padding: 25px 0;
+
+              &:last-child {
+                border-right: none;
+              }
+
+              .name {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: #555555;
+                margin-bottom: 20px;
+              }
+
+              .unit {
+                font-family: $poppins;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 62px;
+                line-height: 62px;
+                color: #393e46;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// hero area end
+
+// registration form start
+.registration-form-wrapper {
+  position: relative;
+  z-index: 1;
+
+  .registration-form {
+    position: absolute;
+    right: 0;
+    top: 110px;
+  }
+}
+
+.registration-form {
+  box-shadow: 0px 4px 27px rgba(25, 113, 189, 0.16);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+
+  h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 20px;
+    color: #393e46;
+    margin-bottom: 30px;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .radio-title {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color: #393e46;
+      margin-bottom: 15px;
+    }
+
+    .form-message {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+      color: #555555;
+    }
+
+    input[type="submit"] {
+      height: 45px;
+    }
+
+    .single-input-form {
+      width: 100%;
+      margin-bottom: 20px;
+
+      &.is-fullwidth {
+        width: 100%;
+      }
+
+      label {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        display: block;
+        color: #393e46;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+
+        .is-require {
+          color: #ea3d2f;
+          padding-left: 5px;
+        }
+      }
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    .textarea-wrapper,
+    .select {
+      border: 1px solid #a6abbd;
+      border-radius: 4px;
+      height: 45px;
+      width: 100%;
+      padding: 0 15px;
+      font-weight: 500;
+      font-size: 15px;
+      background-color: transparent;
+
+      &:focus {
+        outline: none !important;
+        border: 1px solid #0071bd;
+      }
+
+      &::placeholder {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #a6abbd;
+      }
+    }
+
+    .select {
+      border-color: #a6abbd;
+
+      &:hover {
+        border-color: #a6abbd;
+      }
+
+      select {
+        background-color: transparent;
+        border: none;
+        font-weight: 500;
+        height: 45px !important;
+        padding-left: 15px !important;
+        color: #a6abbd;
+
+        option[selected] {
+          color: #333;
+        }
+      }
+    }
+
+    .textarea-wrapper {
+      height: 100px;
+    }
+
+    .textarea-wrapper {
+      padding: 10px 10px 10px 15px;
+
+      &:focus {
+        outline: none !important;
+        border: 1px solid #0071bd;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      height: calc(100% - 0px);
+      border: none;
+      font-weight: 500;
+      font-size: 15px;
+
+      &::placeholder {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #a6abbd;
+      }
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+
+    input[type="submit"] {
+      width: 230px;
+      background-color: #0071bd;
+      color: #fff;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken(#0071bd, $amount: 5);
+      }
+    }
+
+    p.is-error {
+      color: #ea3d2f;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+  }
+}
+
+// registration form end
+// summary area start
+.webinar-summary-area {
+  padding-top: 150px;
+
+  .container {
+    .columns {
+      .column {
+        .webinar-summary {
+          h3 {
+            font-family: $poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 22px;
+
+            color: #393e46;
+            margin-bottom: 20px;
+          }
+
+          p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            color: #555555;
+            margin-bottom: 30px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .speaker-info-wrapper {
+          margin-top: 30px;
+          max-width: 70%;
+          display: grid;
+          grid-template-columns: 110px auto;
+          grid-gap: 30px;
+
+          .speaker-thumbnail {
+            width: 110px;
+            height: 110px;
+            border: 1px solid #a6abbd;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+            }
+          }
+
+          .speaker-info {
+            h5 {
+              font-family: $poppins;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 27px;
+
+              color: #393e46;
+            }
+
+            .designation {
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 16px;
+              display: flex;
+              align-items: center;
+              color: #555555;
+              margin-bottom: 15px;
+
+              a {
+                font-family: Roboto;
+              }
+            }
+
+            .speaker-message {
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 24px;
+              color: #555555;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// summary area end
