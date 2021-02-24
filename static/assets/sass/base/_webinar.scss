@@ -6,6 +6,7 @@ $poppins: "Poppins", sans-serif;
   &.webinar-page {
     &::after {
       background-color: rgba(25, 113, 189, 0.1);
+      background-size: cover;
     }
 
     .webinar-hero-area {
