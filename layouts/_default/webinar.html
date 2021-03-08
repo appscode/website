@@ -66,19 +66,19 @@
           <!-- form start  -->
           <div class="registration-form">
             <h3>Registration Now</h3>
-            <form action="#">
+            <form action="#" method="post">
               <!-- single input field start  -->
               <div class="single-input-form">
-                <label for="fname">First Name <span class="is-require">*</span></label>
-                <input type="text" placeholder="Jhon" id="fname" required />
+                <label for="first_name">First Name <span class="is-require">*</span></label>
+                <input type="text" placeholder="Enter text" id="first_name" name="first_name" required />
                 <!-- if error occured  -->
                 <p class="is-error"></p>
               </div>
               <!-- single input field end -->
               <!-- single input field start  -->
               <div class="single-input-form">
-                <label for="lname">Last Name <span class="is-require">*</span></label>
-                <input type="text" placeholder="Abrar" id="lname" required />
+                <label for="last_name">Last Name <span class="is-require">*</span></label>
+                <input type="text" placeholder="Enter text" id="last_name" name="last_name" required />
                 <!-- if error occured  -->
                 <p class="is-error"></p>
               </div>
@@ -86,23 +86,23 @@
               <!-- single input field start  -->
               <div class="single-input-form">
                 <label for="phone">Phone <span class="is-require">*</span></label>
-                <input type="text" placeholder="Phone" placeholder="+8801 8648 41998" id="phone" required />
+                <input type="text" placeholder="Phone" placeholder="Enter text" id="phone" name="phone" required />
                 <!-- if error occured  -->
                 <p class="is-error"></p>
               </div>
               <!-- single input field end -->
               <!-- single input field start  -->
               <div class="single-input-form">
-                <label for="jobtitle">Job title <span class="is-require">*</span></label>
-                <input type="text" placeholder="Software Engineer" id="jobtitle" required />
+                <label for="job_title">Job title <span class="is-require">*</span></label>
+                <input type="text" placeholder="+1(123)-456-7890" id="job_title" name="job_title" required />
                 <!-- if error occured  -->
                 <p class="is-error"></p>
               </div>
               <!-- single input field end -->
               <!-- single input field start  -->
               <div class="single-input-form">
-                <label for="email">Work email <span class="is-require">*</span></label>
-                <input type="email" placeholder="hello@someone.com" id="email" required />
+                <label for="work_email">Work email <span class="is-require">*</span></label>
+                <input type="email" placeholder="you@company.com" id="work_email" name="work_email" required />
                 <!-- if error occured  -->
                 <p class="is-error"></p>
               </div>
@@ -131,6 +131,7 @@
 </section>
 <!-- hero area end -->
 
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
 <script type="text/javascript">
   function countdown(endDate) {
     let days, hours, minutes, seconds;
@@ -178,8 +179,34 @@
   }
 
   (function () {
-    // M/D/Y H:M:S 
-    countdown('02/28/2021 07:05:00 PM');
+    var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+    xhr.onreadystatechange = function() {
+      if(xhr.readyState === 4) {
+        if(xhr.status === 200) {
+          var result = JSON.parse(xhr.responseText);
+          document.querySelector(".hero-area-inner-2 p").innerHTML = result.title;
+          document.querySelector(".webinar-summary p").innerHTML = result.summary;
+          document.querySelector(".speaker-info h5").innerHTML = result.speaker;
+          document.querySelector(".speaker-message").innerHTML = result.speaker_bio;
+          document.querySelector(".speaker-thumbnail img").src = result.speaker_picture;
+
+          var date = new Date(result.schedule);
+          document.querySelector(".single-webinar-info p").innerHTML = dayjs(date).format('D MMM YYYY - hh:mm:ss A');
+
+          var sheetName = "" + date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+          document.querySelector(".registration-form form").action = "https://license-issuer.appscode.com/_/webinars/"+sheetName+"/register" ;
+
+          // M/D/Y H:M:S
+          // countdown('04/28/2021 07:05:00 PM');
+          countdown(result.schedule);
+        } else {
+          location.reload();
+        }
+      }
+    }
+    console.log('GET', 'https://license-issuer.appscode.com/_/webinars/');
+    xhr.open('GET', 'https://license-issuer.appscode.com/_/webinars/');
+    xhr.send();
   }());
 </script>
 <!-- summary area start  -->
@@ -194,8 +221,6 @@
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
             electronic</p>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown</p>
 
           <!-- speaker info start  -->
           <h3>Speaker: </h3>
