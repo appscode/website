@@ -33,7 +33,7 @@ $poppins: "Poppins", sans-serif;
         font-size: 36px;
         color: #666;
         line-height: 58px;
-        font-weight: 500;;
+        font-weight: 500;
       }
 
       .single-webinar-info {
@@ -117,6 +117,12 @@ $poppins: "Poppins", sans-serif;
 // hero area end
 
 // registration form start
+.registration-form-container {
+  position: sticky;
+  top: 60px;
+  transition: 0.3s ease-in-out;
+}
+
 .registration-form-wrapper {
   position: relative;
   z-index: 1;
@@ -145,17 +151,27 @@ $poppins: "Poppins", sans-serif;
   }
 
   form {
-    .radio-title {
+    label.radio-title {
       font-family: Roboto;
       font-style: normal;
       font-weight: 500;
-      font-size: 15px;
-      line-height: 18px;
-      color: #393e46;
-      margin-bottom: 15px;
+      font-size: 12px;
+      line-height: 14px;
       display: block;
-    }
+      color: #393e46;
+      margin-bottom: 6px;
+      text-transform: uppercase;
 
+      .is-require {
+        color: $red-color;
+        padding-left: 5px;
+      }
+    }
+    .ac-single-radio {
+      label {
+        font-size: 14px !important;
+      }
+    }
     .form-message {
       font-family: Roboto;
       font-style: normal;
@@ -167,6 +183,8 @@ $poppins: "Poppins", sans-serif;
 
     input[type="submit"] {
       height: 45px;
+      font-size: 14px;
+      font-weight: 500;
     }
 
     .single-input-form {
@@ -211,7 +229,7 @@ $poppins: "Poppins", sans-serif;
 
       &:focus {
         outline: none !important;
-        border: 1px solid #5ca752;
+        border: 1px solid $primary-color;
       }
 
       &::placeholder {
@@ -254,7 +272,7 @@ $poppins: "Poppins", sans-serif;
 
       &:focus {
         outline: none !important;
-        border: 1px solid #5ca752;
+        border: 1px solid $primary-color;
       }
     }
 
@@ -281,13 +299,13 @@ $poppins: "Poppins", sans-serif;
     }
 
     input[type="submit"] {
-      width: 230px;
-      background-color: #5ca752;
+      width: 100%;
+      background-color: $primary-color;
       color: #fff;
       cursor: pointer;
 
       &:hover {
-        background-color: darken(#5ca752, $amount: 5);
+        background-color: darken($primary-color, $amount: 5);
       }
     }
 
@@ -316,24 +334,30 @@ $poppins: "Poppins", sans-serif;
       margin-bottom: 20px;
     }
 
-    p {
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 28px;
-      color: #555555;
+    .summary-content {
       margin-bottom: 30px;
+      width: calc(100% - 30px);
 
-      &:last-child {
-        margin-bottom: 0;
+      p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        color: #555555;
+        margin-bottom: 15px;
+        text-align: justify;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
 
   .speaker-info-wrapper {
     margin-top: 30px;
-    max-width: 70%;
+    max-width: calc(100% - 30px);
     display: grid;
     grid-template-columns: 110px auto;
     grid-gap: 30px;
@@ -405,6 +429,7 @@ Responsive Classes
           font-size: 42px;
           line-height: 63px;
         }
+
         .single-webinar-info {
           margin-right: 0;
           flex-wrap: wrap;
@@ -415,10 +440,12 @@ Responsive Classes
       .count-down-area {
         width: 100%;
         bottom: -104px;
+
         .signle-count {
           .name {
             font-size: 14px;
           }
+
           .unit {
             font-size: 42px;
             line-height: 42px;
@@ -435,12 +462,19 @@ Responsive Classes
       top: 110px;
     }
   }
+
   .webinar-summary-area {
+    .webinar-summary {
+      .summary-content {
+        width: 100%;
+      }
+    }
     .speaker-info-wrapper {
       grid-template-columns: 100%;
       max-width: 100%;
       place-items: center;
       text-align: center;
+
       .speaker-info {
         .designation {
           text-align: center;
@@ -479,7 +513,13 @@ Responsive Classes
       top: 110px;
     }
   }
+
   .webinar-summary-area {
+    .webinar-summary {
+      .summary-content {
+        width: 100%;
+      }
+    }
     .speaker-info-wrapper {
       max-width: 100%;
     }
@@ -514,7 +554,13 @@ Responsive Classes
       top: 110px;
     }
   }
+
   .webinar-summary-area {
+    .webinar-summary {
+      .summary-content {
+        width: 100%;
+      }
+    }
     .speaker-info-wrapper {
       max-width: 100%;
     }
@@ -524,6 +570,11 @@ Responsive Classes
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .webinar-summary-area {
+    .webinar-summary {
+      .summary-content {
+        width: 100%;
+      }
+    }
     .speaker-info-wrapper {
       max-width: 100%;
     }

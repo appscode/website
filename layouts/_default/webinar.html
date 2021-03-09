@@ -11,7 +11,7 @@
       <div class="column is-8">
         <div class="webinar-hero-area">
           <div class="hero-area-inner-2">
-            <h1>Kubarnetes Webinar 2021</h1>
+            <h1>Kubernetes Webinar 2021</h1>
             <p class="subtitle">Manage production grade databases in Kubernetes using KubeDB</p>
             <div class="webinar-wrapper is-flex is-flex-wrap-wrap">
               <!-- single webinar info start  -->
@@ -62,15 +62,16 @@
         </div>
       </div>
       <div class="column is-4">
-        <div class="registration-form-wrapper">
+        <div class="registration-form-container">
+          <div class="registration-form-wrapper">
           <!-- form start  -->
           <div class="registration-form">
-            <h3>Registration Now</h3>
+            <h3>Register Now</h3>
             <form action="#" method="post">
               <!-- single input field start  -->
               <div class="single-input-form">
                 <label for="first_name">First Name <span class="is-require">*</span></label>
-                <input type="text" placeholder="Enter text" id="first_name" name="first_name" required />
+                <input type="text" placeholder="Enter your first name" id="first_name" name="first_name" required />
                 <!-- if error occured  -->
                 <p class="is-error"></p>
               </div>
@@ -78,7 +79,7 @@
               <!-- single input field start  -->
               <div class="single-input-form">
                 <label for="last_name">Last Name <span class="is-require">*</span></label>
-                <input type="text" placeholder="Enter text" id="last_name" name="last_name" required />
+                <input type="text" placeholder="Enter your last name" id="last_name" name="last_name" required />
                 <!-- if error occured  -->
                 <p class="is-error"></p>
               </div>
@@ -86,7 +87,7 @@
               <!-- single input field start  -->
               <div class="single-input-form">
                 <label for="phone">Phone <span class="is-require">*</span></label>
-                <input type="text" placeholder="Phone" placeholder="Enter text" id="phone" name="phone" required />
+                <input type="text" placeholder="Enter your phone number" id="phone" name="phone" required />
                 <!-- if error occured  -->
                 <p class="is-error"></p>
               </div>
@@ -94,7 +95,7 @@
               <!-- single input field start  -->
               <div class="single-input-form">
                 <label for="job_title">Job title <span class="is-require">*</span></label>
-                <input type="text" placeholder="+1(123)-456-7890" id="job_title" name="job_title" required />
+                <input type="text" placeholder="Enter your job title" id="job_title" name="job_title" required />
                 <!-- if error occured  -->
                 <p class="is-error"></p>
               </div>
@@ -107,7 +108,7 @@
                 <p class="is-error"></p>
               </div>
               <!-- single input field end -->
-              <label class="radio-title">Do you know kubarnates?<span class="is-require ml-10">*</span></label>
+              <label class="radio-title">DO YOU KNOW KUBERNETES<span class="is-require ml-10">*</span></label>
               <!-- input field start -->
               <div class="ac-single-radio mb-20">
                 <input class="is-checkradio ac-radio" id="yes" type="radio" name="exampleRadioInline"
@@ -120,10 +121,11 @@
               <p class="form-message">We do not published your information lorem ipsum has been the industry's standard
                 dummy
                 text eve</p>
-              <input type="submit" class="button ac-primary mt-20" value="SEND NOW">
+              <input type="submit" class="button ac-primary mt-20" value="REGISTER">
             </form>
           </div>
           <!-- form end -->
+        </div>
         </div>
       </div>
     </div>
@@ -170,7 +172,7 @@
         document.querySelector(".subtitle").style.display = "none";
         document.querySelector(".registration-form").style.display = "none";
         document.querySelector(".webinar-summary").style.display = "none";
-        document.querySelectorAll(".single-webinar-info").forEach(el=>{
+        document.querySelectorAll(".single-webinar-info").forEach(el => {
           el.style.display = "none";
         })
         return;
@@ -180,21 +182,23 @@
 
   (function () {
     var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-    xhr.onreadystatechange = function() {
-      if(xhr.readyState === 4) {
-        if(xhr.status === 200) {
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
           var result = JSON.parse(xhr.responseText);
           document.querySelector(".hero-area-inner-2 p").innerHTML = result.title;
-          document.querySelector(".webinar-summary p").innerHTML = result.summary;
+          document.querySelector(".webinar-summary .summary-content").innerHTML = result.summary;
           document.querySelector(".speaker-info h5").innerHTML = result.speaker;
           document.querySelector(".speaker-message").innerHTML = result.speaker_bio;
           document.querySelector(".speaker-thumbnail img").src = result.speaker_picture;
 
           var date = new Date(result.schedule);
-          document.querySelector(".single-webinar-info p").innerHTML = dayjs(date).format('D MMM YYYY - hh:mm:ss A');
+          document.querySelector(".single-webinar-info p").innerHTML = dayjs(date).format(
+          'D MMM YYYY - hh:mm:ss A');
 
           var sheetName = "" + date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
-          document.querySelector(".registration-form form").action = "https://license-issuer.appscode.com/_/webinars/"+sheetName+"/register" ;
+          document.querySelector(".registration-form form").action =
+            "https://license-issuer.appscode.com/_/webinars/" + sheetName + "/register";
 
           // M/D/Y H:M:S
           // countdown('04/28/2021 07:05:00 PM');
@@ -217,10 +221,10 @@
         <!-- summary start  -->
         <div class="webinar-summary">
           <h3>Summary:</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          <div class="summary-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic</p>
+            electronic</div>
 
           <!-- speaker info start  -->
           <h3>Speaker: </h3>
