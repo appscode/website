@@ -8324,6 +8324,14 @@ Responsive Classes
   color: #393e46;
 }
 
+.registration-form-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
 .registration-form-wrapper {
   position: relative;
   z-index: 1;
@@ -8353,15 +8361,25 @@ Responsive Classes
   margin-bottom: 30px;
 }
 
-.registration-form form .radio-title {
+.registration-form form label.radio-title {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
-  color: #393e46;
-  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 14px;
   display: block;
+  color: #393e46;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.registration-form form label.radio-title .is-require {
+  color: #e03056;
+  padding-left: 5px;
+}
+
+.registration-form form .ac-single-radio label {
+  font-size: 14px !important;
 }
 
 .registration-form form .form-message {
@@ -8375,6 +8393,8 @@ Responsive Classes
 
 .registration-form form input[type="submit"] {
   height: 45px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .registration-form form .single-input-form {
@@ -8424,7 +8444,7 @@ Responsive Classes
 .registration-form form .textarea-wrapper:focus,
 .registration-form form .select:focus {
   outline: none !important;
-  border: 1px solid #5ca752;
+  border: 1px solid #00A651;
 }
 
 .registration-form form input[type="text"]::-webkit-input-placeholder,
@@ -8510,7 +8530,7 @@ Responsive Classes
 
 .registration-form form .textarea-wrapper:focus {
   outline: none !important;
-  border: 1px solid #5ca752;
+  border: 1px solid #00A651;
 }
 
 .registration-form form textarea {
@@ -8563,14 +8583,14 @@ Responsive Classes
 }
 
 .registration-form form input[type="submit"] {
-  width: 230px;
-  background-color: #5ca752;
+  width: 100%;
+  background-color: #00A651;
   color: #fff;
   cursor: pointer;
 }
 
 .registration-form form input[type="submit"]:hover {
-  background-color: #53964a;
+  background-color: #008d45;
 }
 
 .registration-form form p.is-error {
@@ -8593,23 +8613,29 @@ Responsive Classes
   margin-bottom: 20px;
 }
 
-.webinar-summary-area .webinar-summary p {
+.webinar-summary-area .webinar-summary .summary-content {
+  margin-bottom: 30px;
+  width: calc(100% - 30px);
+}
+
+.webinar-summary-area .webinar-summary .summary-content p {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
   color: #555555;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  text-align: justify;
 }
 
-.webinar-summary-area .webinar-summary p:last-child {
+.webinar-summary-area .webinar-summary .summary-content p:last-child {
   margin-bottom: 0;
 }
 
 .webinar-summary-area .speaker-info-wrapper {
   margin-top: 30px;
-  max-width: 70%;
+  max-width: calc(100% - 30px);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 110px auto;
@@ -8697,6 +8723,9 @@ Responsive Classes
     right: 0;
     top: 110px;
   }
+  .webinar-summary-area .webinar-summary .summary-content {
+    width: 100%;
+  }
   .webinar-summary-area .speaker-info-wrapper {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
@@ -8728,6 +8757,9 @@ Responsive Classes
     right: 0;
     top: 110px;
   }
+  .webinar-summary-area .webinar-summary .summary-content {
+    width: 100%;
+  }
   .webinar-summary-area .speaker-info-wrapper {
     max-width: 100%;
   }
@@ -8751,12 +8783,18 @@ Responsive Classes
     right: 0;
     top: 110px;
   }
+  .webinar-summary-area .webinar-summary .summary-content {
+    width: 100%;
+  }
   .webinar-summary-area .speaker-info-wrapper {
     max-width: 100%;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .webinar-summary-area .webinar-summary .summary-content {
+    width: 100%;
+  }
   .webinar-summary-area .speaker-info-wrapper {
     max-width: 100%;
   }
