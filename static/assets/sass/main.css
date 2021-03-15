@@ -144,6 +144,89 @@ h6 {
   height: auto;
 }
 
+.ac-custom-select .ss-single-selected,
+.ac-custom-select .ss-multi-selected {
+  min-height: 45px !important;
+  border: 1px solid #a6abbd;
+  color: #393e46;
+  padding: 0 15px;
+}
+
+.ac-custom-select .ss-single-selected .ss-arrow,
+.ac-custom-select .ss-multi-selected .ss-arrow {
+  margin: 0;
+}
+
+.ac-custom-select .ss-single-selected .placeholder,
+.ac-custom-select .ss-multi-selected .placeholder {
+  font-size: 15px;
+  color: #393e46;
+  font-weight: 500;
+}
+
+.ac-custom-select .ss-single-selected .ss-values,
+.ac-custom-select .ss-multi-selected .ss-values {
+  margin-top: 3px;
+}
+
+.ac-custom-select .ss-single-selected .ss-values .ss-disabled,
+.ac-custom-select .ss-multi-selected .ss-values .ss-disabled {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #a6abbd;
+}
+
+.ac-custom-select .ss-single-selected .ss-values .ss-value,
+.ac-custom-select .ss-multi-selected .ss-values .ss-value {
+  height: 30px;
+  margin-bottom: 6px;
+  padding: 0 10px;
+  background-color: #35a651;
+}
+
+.ac-custom-select .ss-single-selected .ss-add,
+.ac-custom-select .ss-multi-selected .ss-add {
+  margin: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ac-custom-select .ss-content {
+  border: 1px solid #a6abbd;
+}
+
+.ac-custom-select .ss-content .ss-list .ss-option {
+  font-size: 14px;
+  color: #393e46;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.ac-custom-select .ss-content .ss-list .ss-option:hover {
+  background-color: #baffdc;
+  color: #00A651;
+}
+
+.ac-custom-select .ss-content .ss-list .ss-option.ss-disabled {
+  opacity: 0.5;
+}
+
+.ac-custom-select .ss-content .ss-search input {
+  border: 1px solid #a6abbd;
+}
+
+.ac-custom-select .ss-content .ss-search input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .kd-button,
 .ac-button {
   border: none;
@@ -8210,6 +8293,19 @@ Responsive Classes
   }
 }
 
+.ac-notification.is-primary {
+  background-color: #00A651;
+}
+
+.ac-notification p {
+  color: #fff;
+}
+
+.ac-notification p a {
+  color: #3273dc !important;
+  font-weight: 500;
+}
+
 .hero-area-2.webinar-page::after {
   background-color: rgba(25, 113, 189, 0.1);
   background-size: cover;
@@ -8324,14 +8420,6 @@ Responsive Classes
   color: #393e46;
 }
 
-.registration-form-container {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 60px;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
 .registration-form-wrapper {
   position: relative;
   z-index: 1;
@@ -8437,6 +8525,7 @@ Responsive Classes
   font-weight: 500;
   font-size: 15px;
   background-color: transparent;
+  color: #393e46;
 }
 
 .registration-form form input[type="text"]:focus,
@@ -8502,6 +8591,7 @@ Responsive Classes
 
 .registration-form form .select {
   border-color: #a6abbd;
+  padding: 0;
 }
 
 .registration-form form .select:hover {
@@ -8513,8 +8603,8 @@ Responsive Classes
   border: none;
   font-weight: 500;
   height: 45px !important;
-  padding-left: 15px !important;
-  color: #a6abbd;
+  color: #393e46;
+  padding-left: 15px;
 }
 
 .registration-form form .select select option[selected] {

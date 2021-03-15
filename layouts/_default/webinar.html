@@ -3,7 +3,36 @@
 {{ end }}
 
 {{ define "main" }}
+<!-- register status message start  -->
+<!-- use "is-hidden" class for hide element  -->
+<div class="ac-notification notification is-primary mb-3 is-hidden">
+  <div class="container section">
+    <div class="is-flex is-justify-content-center is-align-items-center is-justify-content-center">
+      <p><b>Registration Successfully Completed!</b> You can monitor your upcoming webinar form this <b><a
+            href="#">url</a></b></p>
+      <button onclick="displayNone()" class="delete ml-30"></button>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  // hide notification 
+  const acNotification = document.querySelector('.ac-notification');
+  const submitBtn = document.querySelector('.registration-form input[type="submit"]');
 
+  function showNotification() {
+    if (acNotification.classList.contains('is-hidden')) {
+      acNotification.classList.remove('is-hidden')
+    }
+  }
+
+  function displayNone() {
+    acNotification.style.display = "none"
+  }
+  setTimeout(() => {
+    displayNone()
+  }, 15000);
+</script>
+<!-- register end message start  -->
 <!-- hero  area start -->
 <section class="hero-area-2 webinar-page">
   <div class="container section">
@@ -64,93 +93,89 @@
       <div class="column is-4">
         <div class="registration-form-container">
           <div class="registration-form-wrapper">
-          <!-- form start  -->
-          <div class="registration-form">
-            <h3>Register Now</h3>
-            <form action="#" method="post">
-              <!-- single input field start  -->
-              <div class="single-input-form">
-                <label for="first_name">First Name <span class="is-require">*</span></label>
-                <input type="text" placeholder="Enter your first name" id="first_name" name="first_name" required />
-                <!-- if error occured  -->
-                <p class="is-error"></p>
-              </div>
-              <!-- single input field end -->
-              <!-- single input field start  -->
-              <div class="single-input-form">
-                <label for="last_name">Last Name <span class="is-require">*</span></label>
-                <input type="text" placeholder="Enter your last name" id="last_name" name="last_name" required />
-                <!-- if error occured  -->
-                <p class="is-error"></p>
-              </div>
-              <!-- single input field end -->
-              <!-- single input field start  -->
-              <div class="single-input-form">
-                <label for="work_email">Work email <span class="is-require">*</span></label>
-                <input type="email" placeholder="you@company.com" id="work_email" name="work_email" required />
-                <!-- if error occured  -->
-                <p class="is-error"></p>
-              </div>
-              <!-- single input field end -->
-              <!-- single input field start  -->
-              <div class="single-input-form">
-                <label for="phone">Phone (including country code) <span class="is-require">*</span></label>
-                <input type="text" placeholder="Enter your phone number" id="phone" name="phone" required />
-                <!-- if error occured  -->
-                <p class="is-error"></p>
-              </div>
-              <!-- single input field end -->
-              <!-- single input field start  -->
-              <div class="single-input-form">
-                <label for="job_title">Job title <span class="is-require">*</span></label>
-                <input type="text" placeholder="Enter your job title" id="job_title" name="job_title" required />
-                <!-- if error occured  -->
-                <p class="is-error"></p>
-              </div>
-              <!-- single input field end -->
-              <!-- single input field start  -->
-              <div class="single-input-form">
-                <label for="company">Company <span class="is-require">*</span></label>
-                <input type="text" placeholder="Enter company name" id="company" name="company" required />
-                <!-- if error occured  -->
-                <p class="is-error"></p>
-              </div>
-              <!-- single input field end -->
-              <!-- single input field start  -->
-              <div class="single-input-form">
-                <label for="company">Where are you running or plan to run Kubernetes? <span class="is-require">*</span></label>
-                <div class="select is-multiple">
-                  <select id="cluster_provider" name="cluster_provider" multiple size="4" required>
+            <!-- form start  -->
+            <div class="registration-form">
+              <h3>Register Now</h3>
+              <form action="#" method="post">
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="first_name">First Name <span class="is-require">*</span></label>
+                  <input type="text" placeholder="Enter your first name" id="first_name" name="first_name" required />
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
+                </div>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="last_name">Last Name <span class="is-require">*</span></label>
+                  <input type="text" placeholder="Enter your last name" id="last_name" name="last_name" required />
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
+                </div>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="work_email">Work email <span class="is-require">*</span></label>
+                  <input type="email" placeholder="you@company.com" id="work_email" name="work_email" required />
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
+                </div>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="phone">Phone (including country code) <span class="is-require">*</span></label>
+                  <input type="text" placeholder="Enter your phone number" id="phone" name="phone" required />
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
+                </div>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="job_title">Job title <span class="is-require">*</span></label>
+                  <input type="text" placeholder="Enter your job title" id="job_title" name="job_title" required />
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
+                </div>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="company">Company <span class="is-require">*</span></label>
+                  <input type="text" placeholder="Enter company name" id="company" name="company" required />
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
+                </div>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form is-select-box">
+                  <label for="company">Where are you running or plan to run Kubernetes? <span
+                      class="is-require">*</span></label>
+                  <select class="ac-custom-select" id="cluster_provider" name="cluster_provider" multiple required>
                     <option>On premises</option>
                     <option>Cloud - AWS</option>
                     <option>Cloud - Google Cloud</option>
                     <option>Cloud - Azure</option>
                     <option>Other</option>
                   </select>
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
                 </div>
-                <!-- if error occured  -->
-                <p class="is-error"></p>
-              </div>
-              <!-- single input field end -->
-              <!-- single input field start  -->
-              <div class="single-input-form">
-                <label for="company">Have you tried KubeDB/Stash already? <span class="is-require">*</span></label>
-                <div class="select">
-                  <select id="experience_level" name="experience_level" required>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="company">Have you tried KubeDB/Stash already? <span class="is-require">*</span></label>
+                  <select class="ac-custom-select" id="experience_level" name="experience_level" required>
                     <option>Already deployed in production</option>
                     <option>Tried in laptop/test cluster</option>
                     <option>Not yet</option>
                   </select>
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
                 </div>
-                <!-- if error occured  -->
-                <p class="is-error"></p>
-              </div>
-              <!-- single input field end -->
-              <!-- single input field start  -->
-              <div class="single-input-form">
-                <label for="company">How did you hear about this webinar? <span class="is-require">*</span></label>
-                <div class="select">
-                  <select id="marketing_reach" name="marketing_reach" required>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="company">How did you hear about this webinar? <span class="is-require">*</span></label>
+                  <select class="ac-custom-select" id="marketing_reach" name="marketing_reach" required>
                     <option>LinkedIn</option>
                     <option>Twitter</option>
                     <option>Mailing list</option>
@@ -158,17 +183,17 @@
                     <option>Word of mouth</option>
                     <option>Other</option>
                   </select>
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
                 </div>
-                <!-- if error occured  -->
-                <p class="is-error"></p>
-              </div>
-              <!-- single input field end -->
-              <p class="form-message">By registering, you agree to the processing of your personal data by AppsCode as described in the <a href="/legal/privacy-policy/">Privacy Statement</a>.</p>
-              <input type="submit" class="button ac-primary mt-20" value="REGISTER">
-            </form>
+                <!-- single input field end -->
+                <p class="form-message">By registering, you agree to the processing of your personal data by AppsCode as
+                  described in the <a href="/legal/privacy-policy/">Privacy Statement</a>.</p>
+                <input type="submit" onclick="showNotification()" class="button ac-primary mt-20" value="REGISTER">
+              </form>
+            </div>
+            <!-- form end -->
           </div>
-          <!-- form end -->
-        </div>
         </div>
       </div>
     </div>
@@ -237,7 +262,7 @@
 
           var date = new Date(result.schedule);
           document.querySelector(".single-webinar-info p").innerHTML = dayjs(date).format(
-          'D MMM YYYY - hh:mm:ss A');
+            'D MMM YYYY - hh:mm:ss A');
 
           var sheetName = "" + date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
           document.querySelector(".registration-form form").action =
@@ -264,7 +289,8 @@
         <!-- summary start  -->
         <div class="webinar-summary">
           <h3>Summary:</h3>
-          <div class="summary-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          <div class="summary-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
             electronic</div>
