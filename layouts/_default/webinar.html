@@ -15,7 +15,7 @@
   </div>
 </div>
 <script type="text/javascript">
-  // hide notification 
+  // hide notification
   const acNotification = document.querySelector('.ac-notification');
   const submitBtn = document.querySelector('.registration-form input[type="submit"]');
 
@@ -257,6 +257,7 @@
           document.querySelector(".hero-area-inner-2 p").innerHTML = result.title;
           document.querySelector(".webinar-summary .summary-content").innerHTML = result.summary;
           document.querySelector(".speaker-info h5").innerHTML = result.speaker;
+          document.querySelector(".speaker-info .designation").innerHTML = result.speaker_title;
           document.querySelector(".speaker-message").innerHTML = result.speaker_bio;
           document.querySelector(".speaker-thumbnail img").src = result.speaker_picture;
 
