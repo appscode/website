@@ -1,19 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
 $poppins: "Poppins", sans-serif;
 
-// notification 
-.ac-notification{
-  &.is-primary{
+// notification
+.ac-notification {
+  &.is-primary {
     background-color: $primary-color;
   }
-  p{
+
+  p {
     color: #fff;
+
     a {
       color: #3273dc !important;
       font-weight: 500;
     }
   }
 }
+
 // hero area start
 .hero-area-2 {
   &.webinar-page {
@@ -125,6 +128,25 @@ $poppins: "Poppins", sans-serif;
 }
 
 // hero area end
+.registration-form-container {
+  &.register-success,
+  &.register-failed {
+    position: sticky;
+    top: 60px;
+
+    form {
+      display: none;
+    }
+
+    .register-notification {
+      display: block;
+    }
+  }
+
+  .register-notification {
+    display: none;
+  }
+}
 
 // registration form start
 .registration-form-wrapper {
@@ -136,6 +158,16 @@ $poppins: "Poppins", sans-serif;
     right: 0;
     top: 110px;
     width: 100%;
+  }
+
+  .circle-shape {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+
+  .reg-illustration {
+    margin: 50px 0;
   }
 }
 
@@ -172,11 +204,13 @@ $poppins: "Poppins", sans-serif;
         padding-left: 5px;
       }
     }
+
     .ac-single-radio {
       label {
         font-size: 14px !important;
       }
     }
+
     .form-message {
       font-family: Roboto;
       font-style: normal;
@@ -251,6 +285,7 @@ $poppins: "Poppins", sans-serif;
     .select {
       border-color: #a6abbd;
       padding: 0;
+
       &:hover {
         border-color: #a6abbd;
       }
@@ -262,6 +297,7 @@ $poppins: "Poppins", sans-serif;
         height: 45px !important;
         color: $paragraph-color;
         padding-left: 15px;
+
         option[selected] {
           color: #333;
         }
@@ -471,6 +507,7 @@ Responsive Classes
         width: 100%;
       }
     }
+
     .speaker-info-wrapper {
       grid-template-columns: 100%;
       max-width: 100%;
@@ -522,6 +559,7 @@ Responsive Classes
         width: 100%;
       }
     }
+
     .speaker-info-wrapper {
       max-width: 100%;
     }
@@ -563,6 +601,7 @@ Responsive Classes
         width: 100%;
       }
     }
+
     .speaker-info-wrapper {
       max-width: 100%;
     }
@@ -577,6 +616,7 @@ Responsive Classes
         width: 100%;
       }
     }
+
     .speaker-info-wrapper {
       max-width: 100%;
     }

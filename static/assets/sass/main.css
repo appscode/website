@@ -8420,6 +8420,24 @@ Responsive Classes
   color: #393e46;
 }
 
+.registration-form-container.register-success, .registration-form-container.register-failed {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
+}
+
+.registration-form-container.register-success form, .registration-form-container.register-failed form {
+  display: none;
+}
+
+.registration-form-container.register-success .register-notification, .registration-form-container.register-failed .register-notification {
+  display: block;
+}
+
+.registration-form-container .register-notification {
+  display: none;
+}
+
 .registration-form-wrapper {
   position: relative;
   z-index: 1;
@@ -8430,6 +8448,16 @@ Responsive Classes
   right: 0;
   top: 110px;
   width: 100%;
+}
+
+.registration-form-wrapper .circle-shape {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.registration-form-wrapper .reg-illustration {
+  margin: 50px 0;
 }
 
 .registration-form {
