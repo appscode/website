@@ -179,12 +179,14 @@
             <script type="text/javascript">
               const regFormContainer = document.querySelector('.registration-form-container');
               if (regFormContainer.classList.contains('register-success')) {
+                regFormContainer.querySelector('form').remove();
                 regFormContainer.querySelector('h3').textContent = "Registration Success!"
                 regFormContainer.querySelector('.illustration').src = "/assets/images/webinar/success.png"
                 regFormContainer.querySelector('.status-message').innerHTML = `<span>Congratulations!</span> <br> <br>
                   You have successfully completed your registration, please check your email.`
               } else if (regFormContainer.classList.contains('register-failed')) {
                 regFormContainer.querySelector('h3').textContent = "Registration Failed!"
+                 regFormContainer.querySelector('form').remove();
                 regFormContainer.querySelector('.illustration').src = "/assets/images/webinar/failed.png"
                 regFormContainer.querySelector('.status-message').innerHTML = `<span>Sorry!</span> <br> <br>
                   Something went’s wrong and your registration is not completed, please try again later.`
