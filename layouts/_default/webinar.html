@@ -3,36 +3,6 @@
 {{ end }}
 
 {{ define "main" }}
-<!-- register status message start  -->
-<!-- use "is-hidden" class for hide element  -->
-<div class="ac-notification notification is-primary mb-3 is-hidden">
-  <div class="container section">
-    <div class="is-flex is-justify-content-center is-align-items-center is-justify-content-center">
-      <p><b>Registration Successfully Completed!</b> You can monitor your upcoming webinar form this <b><a
-            href="#">url</a></b></p>
-      <button onclick="displayNone()" class="delete ml-30"></button>
-    </div>
-  </div>
-</div>
-<script type="text/javascript">
-  // hide notification
-  const acNotification = document.querySelector('.ac-notification');
-  const submitBtn = document.querySelector('.registration-form input[type="submit"]');
-
-  function showNotification() {
-    if (acNotification.classList.contains('is-hidden')) {
-      acNotification.classList.remove('is-hidden')
-    }
-  }
-
-  function displayNone() {
-    acNotification.style.display = "none"
-  }
-  setTimeout(() => {
-    displayNone()
-  }, 15000);
-</script>
-<!-- register end message start  -->
 <!-- hero  area start -->
 <section class="hero-area-2 webinar-page">
   <div class="container section">
@@ -91,11 +61,14 @@
         </div>
       </div>
       <div class="column is-4">
+        <!-- register-success/register-failed -->
         <div class="registration-form-container">
           <div class="registration-form-wrapper">
             <!-- form start  -->
             <div class="registration-form">
               <h3>Register Now</h3>
+              <div class="circle-shape"><img src="/assets/images/webinar/circle-shape.png" alt=""></div>
+              <!-- registration form start  -->
               <form action="#" method="post">
                 <!-- single input field start  -->
                 <div class="single-input-form">
@@ -191,8 +164,33 @@
                   described in the <a href="/legal/privacy-policy/">Privacy Statement</a>.</p>
                 <input type="submit" onclick="showNotification()" class="button ac-primary mt-20" value="REGISTER">
               </form>
+              <!-- registration form end -->
+              <!-- Success/Fail message start  -->
+              <div class="register-notification">
+                <div class="reg-illustration">
+                  <img class="illustration" src="/assets/images/webinar/success.png" alt="">
+                </div>
+                <p class="status-message"></p>
+              </div>
+              <!-- Success/Fail message end -->
             </div>
             <!-- form end -->
+            <!-- JS for Registration Success & Failed Message start  -->
+            <script type="text/javascript">
+              const regFormContainer = document.querySelector('.registration-form-container');
+              if (regFormContainer.classList.contains('register-success')) {
+                regFormContainer.querySelector('h3').textContent = "Registration Success!"
+                regFormContainer.querySelector('.illustration').src = "/assets/images/webinar/success.png"
+                regFormContainer.querySelector('.status-message').innerHTML = `<span>Congratulations!</span> <br> <br>
+                  You have successfully completed your registration, please check your email.`
+              } else if (regFormContainer.classList.contains('register-failed')) {
+                regFormContainer.querySelector('h3').textContent = "Registration Failed!"
+                regFormContainer.querySelector('.illustration').src = "/assets/images/webinar/failed.png"
+                regFormContainer.querySelector('.status-message').innerHTML = `<span>Sorry!</span> <br> <br>
+                  Something went’s wrong and your registration is not completed, please try again later.`
+              }
+            </script>
+            <!-- JS for Registration Success & Failed Message end -->
           </div>
         </div>
       </div>
