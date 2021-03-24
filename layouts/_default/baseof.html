@@ -697,15 +697,17 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
   <!-- initilize Slim Select  -->
   <script type="text/javascript">
-    new SlimSelect({
-      select: '.ac-custom-select'
-    });
-    new SlimSelect({
-      select: '#experience_level'
-    });
-    new SlimSelect({
-      select: '#marketing_reach'
-    })
+    if (document.querySelector('.ac-custom-select')) {
+      new SlimSelect({
+        select: '.ac-custom-select'
+      });
+      new SlimSelect({
+        select: '#experience_level'
+      });
+      new SlimSelect({
+        select: '#marketing_reach'
+      })
+    }
   </script>
   <!-- Main JS -->
   <script src="/assets/js/main.js"></script>
