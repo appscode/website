@@ -1,0 +1,373 @@
+{{ define "main" }}
+<!-- hero  area start -->
+<section class="hero-area-2 webinar-page">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-8">
+        <div class="webinar-hero-area">
+          <div class="hero-area-inner-2">
+            <h1>AppsCode Webinar</h1>
+            <p class="subtitle">Manage production grade databases in Kubernetes using KubeDB</p>
+            <div class="webinar-wrapper is-flex is-flex-wrap-wrap">
+              <!-- single webinar info start  -->
+              <div class="single-webinar-info">
+                <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                <strong>When : </strong>
+                <p>28 Feb 2021 - 07:05:00 PM</p>
+              </div>
+              <!-- single webinar info end -->
+              <!-- single webinar info start  -->
+              <div class="single-webinar-info">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <strong>Where : </strong>
+                <p>via Zoom</p>
+              </div>
+              <!-- single webinar info end -->
+            </div>
+          </div>
+
+          <!-- count-down area start  -->
+          <div class="count-down-area">
+            <!-- single count start  -->
+            <div class="signle-count">
+              <div class="name">DAYS</div>
+              <div class="unit" id="days">00</div>
+            </div>
+            <!-- single count end -->
+            <!-- single count start  -->
+            <div class="signle-count">
+              <div class="name">HOURS</div>
+              <div class="unit" id="hours">00</div>
+            </div>
+            <!-- single count end -->
+            <!-- single count start  -->
+            <div class="signle-count">
+              <div class="name">MINUTES</div>
+              <div class="unit" id="minutes">00</div>
+            </div>
+            <!-- single count end -->
+            <!-- single count start  -->
+            <div class="signle-count">
+              <div class="name">SECONDS</div>
+              <div class="unit" id="seconds">00</div>
+            </div>
+            <!-- single count end -->
+          </div>
+          <!-- count-down area end -->
+        </div>
+      </div>
+      <div class="column is-4">
+        <!-- register-success/register-failed -->
+        <div class="registration-form-container">
+          <div class="registration-form-wrapper">
+            <!-- form start  -->
+            <div class="registration-form">
+              <h3>Register Now</h3>
+              <div class="circle-shape"><img src="/assets/images/webinar/circle-shape.png" alt=""></div>
+              <!-- registration form start  -->
+              <!-- https://stackoverflow.com/a/29014676 -->
+              <form method="post" action="#" onsubmit="return registerForWebinar();">
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="first_name">First Name <span class="is-require">*</span></label>
+                  <input type="text" placeholder="Enter your first name" id="first_name" name="first_name" required />
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
+                </div>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="last_name">Last Name <span class="is-require">*</span></label>
+                  <input type="text" placeholder="Enter your last name" id="last_name" name="last_name" required />
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
+                </div>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="work_email">Work email <span class="is-require">*</span></label>
+                  <input type="email" placeholder="you@company.com" id="work_email" name="work_email" required />
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
+                </div>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="phone">Phone (including country code) <span class="is-require">*</span></label>
+                  <input type="text" placeholder="Enter your phone number" id="phone" name="phone" required />
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
+                </div>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="job_title">Job title <span class="is-require">*</span></label>
+                  <input type="text" placeholder="Enter your job title" id="job_title" name="job_title" required />
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
+                </div>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="company">Company <span class="is-require">*</span></label>
+                  <input type="text" placeholder="Enter company name" id="company" name="company" required />
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
+                </div>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form is-select-box">
+                  <label for="company">Where are you running or plan to run Kubernetes? <span
+                      class="is-require">*</span></label>
+                  <select class="ac-custom-select" id="cluster_provider" name="cluster_provider" multiple required>
+                    <option>On premises</option>
+                    <option>Cloud - AWS</option>
+                    <option>Cloud - Google Cloud</option>
+                    <option>Cloud - Azure</option>
+                    <option>Other</option>
+                  </select>
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
+                </div>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="company">Have you tried KubeDB/Stash already? <span class="is-require">*</span></label>
+                  <select class="ac-custom-select" id="experience_level" name="experience_level" required>
+                    <option>Already deployed in production</option>
+                    <option>Tried in laptop/test cluster</option>
+                    <option>Not yet</option>
+                  </select>
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
+                </div>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="company">How did you hear about this webinar? <span class="is-require">*</span></label>
+                  <select class="ac-custom-select" id="marketing_reach" name="marketing_reach" required>
+                    <option>LinkedIn</option>
+                    <option>Twitter</option>
+                    <option>Mailing list</option>
+                    <option>Slack</option>
+                    <option>Word of mouth</option>
+                    <option>Other</option>
+                  </select>
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
+                </div>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <div class="g-recaptcha" data-sitekey="6Lc-FpQaAAAAANrpxobhTpD63WPBubftjEd1nTbz" data-callback="enableSubmit" data-expired-callback="disableSubmit" data-error-callbac="disableSubmit"></div>
+                </div>
+                <!-- single input field end -->
+                <p class="form-message">By registering, you agree to the processing of your personal data by AppsCode as
+                  described in the <a href="/legal/privacy-policy/">Privacy Statement</a>.</p>
+                <input type="submit" class="button ac-primary mt-20" value="REGISTER" disabled="true">
+              </form>
+              <!-- registration form end -->
+              <!-- Success/Fail message start  -->
+              <div class="register-notification">
+                <div class="reg-illustration">
+                  <img class="illustration" src="/assets/images/webinar/success.png" alt="">
+                </div>
+                <p class="status-message"></p>
+              </div>
+              <!-- Success/Fail message end -->
+            </div>
+            <!-- form end -->
+            <!-- JS for Registration Success & Failed Message start  -->
+            <script type="text/javascript">
+              const regFormContainer = document.querySelector('.registration-form-container');
+              if (regFormContainer.classList.contains('register-success')) {
+                regFormContainer.querySelector('form').remove();
+                regFormContainer.querySelector('h3').textContent = "Registration Successful!"
+                regFormContainer.querySelector('.illustration').src = "/assets/images/webinar/success.png"
+                regFormContainer.querySelector('.status-message').innerHTML = `<span>Congratulations!</span> <br> <br>
+                  You have successfully completed your registration, please check your email.`
+              } else if (regFormContainer.classList.contains('register-failed')) {
+                regFormContainer.querySelector('h3').textContent = "Registration Failed!"
+                regFormContainer.querySelector('form').remove();
+                regFormContainer.querySelector('.illustration').src = "/assets/images/webinar/failed.png"
+                regFormContainer.querySelector('.status-message').innerHTML = `<span>Sorry!</span> <br> <br>
+                  Something went wrong and your registration is not complete, please try again later.`
+              }
+            </script>
+            <!-- JS for Registration Success & Failed Message end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- hero area end -->
+
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+<script type="text/javascript">
+  function countdown(endDate) {
+    let days, hours, minutes, seconds;
+
+    endDate = new Date(endDate).getTime();
+
+    if (isNaN(endDate)) {
+      return;
+    }
+
+    setInterval(calculate, 1000);
+
+    function calculate() {
+      let startDate = new Date().getTime();
+
+      let timeRemaining = parseInt((endDate - startDate) / 1000);
+
+      if (timeRemaining >= 0) {
+        days = parseInt(timeRemaining / 86400);
+        timeRemaining = (timeRemaining % 86400);
+
+        hours = parseInt(timeRemaining / 3600);
+        timeRemaining = (timeRemaining % 3600);
+
+        minutes = parseInt(timeRemaining / 60);
+        timeRemaining = (timeRemaining % 60);
+
+        seconds = parseInt(timeRemaining);
+
+        document.getElementById("days").innerHTML = parseInt(days, 10);
+        document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+        document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+        document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+      } else {
+        document.querySelector(".hero-area-inner-2 h1").innerHTML = "No Webinar Found!";
+        document.querySelector(".subtitle").style.display = "none";
+        document.querySelector(".registration-form").style.display = "none";
+        document.querySelector(".webinar-summary").style.display = "none";
+        document.querySelectorAll(".single-webinar-info").forEach(el => {
+          el.style.display = "none";
+        })
+        return;
+      }
+    }
+  }
+
+  function enableSubmit() {
+    document.querySelector(".registration-form form input[type='submit']").disabled = false;
+  }
+
+  function disableSubmit() {
+    document.querySelector(".registration-form form input[type='submit']").disabled = true;
+  }
+
+  function registerForWebinar() {
+    // https://code-boxx.com/display-message-after-submitt-html-form/
+    // https://gomakethings.com/how-to-serialize-form-data-with-vanilla-js/
+
+    var form = document.querySelector(".registration-form form");
+    var data = new FormData(form);
+
+    var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        const regFormContainer = document.querySelector('.registration-form-container');
+        if (xhr.status === 200) {
+          regFormContainer.classList.add('register-success');
+        } else {
+          regFormContainer.classList.add('register-failed');
+        }
+      }
+    }
+    console.log('POST', form.action, data);
+    xhr.open('POST', form.action);
+    xhr.send(data);
+
+    // prevent form submission
+    return false;
+  }
+
+  (function () {
+    var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          var result = JSON.parse(xhr.responseText);
+          document.querySelector(".hero-area-inner-2 p").innerHTML = result.title;
+          document.querySelector(".webinar-summary .summary-content").innerHTML = result.summary;
+          document.querySelector(".speaker-info h5").innerHTML = result.speaker;
+          document.querySelector(".speaker-info .designation").innerHTML = result.speaker_title;
+          document.querySelector(".speaker-message").innerHTML = result.speaker_bio;
+          document.querySelector(".speaker-thumbnail img").src = result.speaker_picture;
+
+          var date = new Date(result.schedule);
+          document.querySelector(".single-webinar-info p").innerHTML = dayjs(date).format(
+            'D MMM YYYY - hh:mm:ss A');
+
+          var sheetName = "" + date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+          document.querySelector(".registration-form form").action =
+            "https://license-issuer.appscode.com/_/webinars/" + sheetName + "/register";
+
+          // M/D/Y H:M:S
+          // countdown('04/28/2021 07:05:00 PM');
+          countdown(result.schedule);
+        } else {
+          location.reload();
+        }
+      }
+    }
+    console.log('GET', 'https://license-issuer.appscode.com/_/webinars/');
+    xhr.open('GET', 'https://license-issuer.appscode.com/_/webinars/');
+    xhr.send();
+  }());
+</script>
+<!-- summary area start  -->
+<section class="webinar-summary-area mb-60">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-8">
+        <!-- summary start  -->
+        <div class="webinar-summary">
+          <h3>Summary:</h3>
+          <div class="summary-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic</div>
+
+          <!-- speaker info start  -->
+          <h3>Speaker: </h3>
+          <div class="speaker-info-wrapper">
+            <div class="speaker-thumbnail">
+              <img src="https://via.placeholder.com/600/dddddd/808080" alt="speaker-thumbnail">
+            </div>
+            <div class="speaker-info">
+              <h5>Tamal Saha</h5>
+              <p class="designation">‎Founder & CEO · <a href="http://appscode.com">‎AppsCode Inc</a></p>
+              <div class="speaker-message">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard</div>
+            </div>
+          </div>
+          <!-- speaker info end -->
+        </div>
+        <!-- summary end -->
+      </div>
+      <div class="column is-4">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- summary area start  -->
+
+
+
+{{ end }}
+
+{{ define "testimonial" }}
+<section></section>
+{{ end }}
+
+{{ define "customer-logos" }}
+<section></section>
+{{ end }}
+
+{{ define "cta-install" }}
+<section></section>
+{{ end }}
