@@ -1,7 +1,3 @@
-{{ define "header-bottom" }}
-<section></section>
-{{ end }}
-
 {{ define "main" }}
 <!-- hero  area start -->
 <section class="hero-area-2 webinar-page">
@@ -69,7 +65,8 @@
               <h3>Register Now</h3>
               <div class="circle-shape"><img src="/assets/images/webinar/circle-shape.png" alt=""></div>
               <!-- registration form start  -->
-              <form action="#" method="post">
+              <!-- https://stackoverflow.com/a/29014676 -->
+              <form method="post" action="#" onsubmit="return registerForWebinar();">
                 <!-- single input field start  -->
                 <div class="single-input-form">
                   <label for="first_name">First Name <span class="is-require">*</span></label>
@@ -160,9 +157,14 @@
                   <p class="is-error"></p>
                 </div>
                 <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <div class="g-recaptcha" data-sitekey="6Lc-FpQaAAAAANrpxobhTpD63WPBubftjEd1nTbz" data-callback="enableSubmit" data-expired-callback="disableSubmit" data-error-callbac="disableSubmit"></div>
+                </div>
+                <!-- single input field end -->
                 <p class="form-message">By registering, you agree to the processing of your personal data by AppsCode as
                   described in the <a href="/legal/privacy-policy/">Privacy Statement</a>.</p>
-                <input type="submit" onclick="showNotification()" class="button ac-primary mt-20" value="REGISTER">
+                <input type="submit" class="button ac-primary mt-20" value="REGISTER" disabled="true">
               </form>
               <!-- registration form end -->
               <!-- Success/Fail message start  -->
@@ -180,16 +182,16 @@
               const regFormContainer = document.querySelector('.registration-form-container');
               if (regFormContainer.classList.contains('register-success')) {
                 regFormContainer.querySelector('form').remove();
-                regFormContainer.querySelector('h3').textContent = "Registration Success!"
+                regFormContainer.querySelector('h3').textContent = "Registration Successful!"
                 regFormContainer.querySelector('.illustration').src = "/assets/images/webinar/success.png"
                 regFormContainer.querySelector('.status-message').innerHTML = `<span>Congratulations!</span> <br> <br>
                   You have successfully completed your registration, please check your email.`
               } else if (regFormContainer.classList.contains('register-failed')) {
                 regFormContainer.querySelector('h3').textContent = "Registration Failed!"
-                 regFormContainer.querySelector('form').remove();
+                regFormContainer.querySelector('form').remove();
                 regFormContainer.querySelector('.illustration').src = "/assets/images/webinar/failed.png"
                 regFormContainer.querySelector('.status-message').innerHTML = `<span>Sorry!</span> <br> <br>
-                  Something went’s wrong and your registration is not completed, please try again later.`
+                  Something went wrong and your registration is not complete, please try again later.`
               }
             </script>
             <!-- JS for Registration Success & Failed Message end -->
@@ -246,6 +248,40 @@
         return;
       }
     }
+  }
+
+  function enableSubmit() {
+    document.querySelector(".registration-form form input[type='submit']").disabled = false;
+  }
+
+  function disableSubmit() {
+    document.querySelector(".registration-form form input[type='submit']").disabled = true;
+  }
+
+  function registerForWebinar() {
+    // https://code-boxx.com/display-message-after-submitt-html-form/
+    // https://gomakethings.com/how-to-serialize-form-data-with-vanilla-js/
+
+    var form = document.querySelector(".registration-form form");
+    var data = new FormData(form);
+
+    var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        const regFormContainer = document.querySelector('.registration-form-container');
+        if (xhr.status === 200) {
+          regFormContainer.classList.add('register-success');
+        } else {
+          regFormContainer.classList.add('register-failed');
+        }
+      }
+    }
+    console.log('POST', form.action, data);
+    xhr.open('POST', form.action);
+    xhr.send(data);
+
+    // prevent form submission
+    return false;
   }
 
   (function () {
