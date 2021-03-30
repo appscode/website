@@ -177,24 +177,6 @@
               <!-- Success/Fail message end -->
             </div>
             <!-- form end -->
-            <!-- JS for Registration Success & Failed Message start  -->
-            <script type="text/javascript">
-              const regFormContainer = document.querySelector('.registration-form-container');
-              if (regFormContainer.classList.contains('register-success')) {
-                regFormContainer.querySelector('form').remove();
-                regFormContainer.querySelector('h3').textContent = "Registration Successful!"
-                regFormContainer.querySelector('.illustration').src = "/assets/images/webinar/success.png"
-                regFormContainer.querySelector('.status-message').innerHTML = `<span>Congratulations!</span> <br> <br>
-                  You have successfully completed your registration, please check your email.`
-              } else if (regFormContainer.classList.contains('register-failed')) {
-                regFormContainer.querySelector('h3').textContent = "Registration Failed!"
-                regFormContainer.querySelector('form').remove();
-                regFormContainer.querySelector('.illustration').src = "/assets/images/webinar/failed.png"
-                regFormContainer.querySelector('.status-message').innerHTML = `<span>Sorry!</span> <br> <br>
-                  Something went wrong and your registration is not complete, please try again later.`
-              }
-            </script>
-            <!-- JS for Registration Success & Failed Message end -->
           </div>
         </div>
       </div>
@@ -271,12 +253,20 @@
         const regFormContainer = document.querySelector('.registration-form-container');
         if (xhr.status === 200) {
           regFormContainer.classList.add('register-success');
+          regFormContainer.querySelector('form').remove();
+          regFormContainer.querySelector('h3').textContent = "Registration Successful!";
+          regFormContainer.querySelector('.illustration').src = "/assets/images/webinar/success.png";
+          regFormContainer.querySelector('.status-message').innerHTML = "<span>Congratulations!</span> <br> <br>You have successfully completed your registration, please check your email.";
         } else {
           regFormContainer.classList.add('register-failed');
+          regFormContainer.querySelector('h3').textContent = "Registration Failed!";
+          regFormContainer.querySelector('form').remove();
+          regFormContainer.querySelector('.illustration').src = "/assets/images/webinar/failed.png";
+          regFormContainer.querySelector('.status-message').innerHTML = "<span>Sorry!</span> <br> <br>Something went wrong and your registration is not complete, please try again later.";
         }
       }
     }
-    console.log('POST', form.action, data);
+    // console.log('POST', form.action, data);
     xhr.open('POST', form.action);
     xhr.send(data);
 
@@ -313,7 +303,7 @@
         }
       }
     }
-    console.log('GET', 'https://license-issuer.appscode.com/_/webinars/');
+    // console.log('GET', 'https://license-issuer.appscode.com/_/webinars/');
     xhr.open('GET', 'https://license-issuer.appscode.com/_/webinars/');
     xhr.send();
   }());
@@ -336,7 +326,7 @@
           <h3>Speaker: </h3>
           <div class="speaker-info-wrapper">
             <div class="speaker-thumbnail">
-              <img src="https://via.placeholder.com/600/dddddd/808080" alt="speaker-thumbnail">
+              <img src="http://via.placeholder.com/600/dddddd/808080" alt="speaker-thumbnail">
             </div>
             <div class="speaker-info">
               <h5>Tamal Saha</h5>
