@@ -66,7 +66,7 @@
               <div class="circle-shape"><img src="/assets/images/webinar/circle-shape.png" alt=""></div>
               <!-- registration form start  -->
               <!-- https://stackoverflow.com/a/29014676 -->
-              <form method="post" action="#" onsubmit="return registerForWebinar();">
+              <form method="post" action="https://license-issuer.appscode.com/_/webinars/register" onsubmit="return registerForWebinar();">
                 <!-- single input field start  -->
                 <div class="single-input-form">
                   <label for="first_name">First Name <span class="is-require">*</span></label>
@@ -111,6 +111,15 @@
                 <div class="single-input-form">
                   <label for="company">Company <span class="is-require">*</span></label>
                   <input type="text" placeholder="Enter company name" id="company" name="company" required />
+                  <!-- if error occured  -->
+                  <p class="is-error"></p>
+                </div>
+                <!-- single input field end -->
+                <!-- single input field start  -->
+                <div class="single-input-form">
+                  <label for="company">Schedule <span class="is-require">*</span></label>
+                  <select class="ac-custom-select" id="schedule" name="schedule" required>
+                  </select>
                   <!-- if error occured  -->
                   <p class="is-error"></p>
                 </div>
@@ -287,17 +296,21 @@
           document.querySelector(".speaker-message").innerHTML = result.speaker_bio;
           document.querySelector(".speaker-thumbnail img").src = result.speaker_picture;
 
-          var date = new Date(result.schedule);
+          var date = new Date(result.schedules[0]);
           document.querySelector(".single-webinar-info p").innerHTML = dayjs(date).format(
             'D MMM YYYY - hh:mm:ss A');
 
-          var sheetName = "" + date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
-          document.querySelector(".registration-form form").action =
-            "https://license-issuer.appscode.com/_/webinars/" + sheetName + "/register";
+          var select = document.querySelector(".registration-form form #schedule");
+          for (var i = 0; i < result.schedules.length; i++) {
+            var opt = document.createElement('option');
+            opt.value = result.schedules[i];
+            opt.innerHTML = dayjs(new Date(result.schedules[i])).format('D MMM YYYY - hh:mm:ss A');
+            select.appendChild(opt);
+          }
 
           // M/D/Y H:M:S
           // countdown('04/28/2021 07:05:00 PM');
-          countdown(result.schedule);
+          countdown(result.schedules[0]);
         } else {
           location.reload();
         }
