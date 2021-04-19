@@ -61,15 +61,15 @@
   <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
   <!-- Bulma tooltip CSS -->
   <link rel="stylesheet" href="/assets/css/bulma-tooltip.min.css" />
-  <!-- Slim Select CSS  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css">
   <!-- Bulma CSS -->
   <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+  {{ block "head-footer" . }}
+  {{ end }}
   <!-- Custom CSS -->
-  <!-- {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
+  {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-    {{ end }} -->
-  <link rel="stylesheet" href="/assets/sass/main.css" />
+    {{ end }}
+  <!-- <link rel="stylesheet" href="/assets/sass/main.css" /> -->
 </head>
 
 <body {{if $productName}}class="{{$productName}}" {{end}}>
@@ -694,22 +694,6 @@
   <script src="https://unpkg.com/downloadjs@1.4.7/download.min.js"></script>
   <!-- clipboard js  -->
   <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
-  <!-- Slim Select JS  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
-  <!-- initilize Slim Select  -->
-  <script type="text/javascript">
-    if (document.querySelector('.ac-custom-select')) {
-      new SlimSelect({
-        select: '.ac-custom-select'
-      });
-      new SlimSelect({
-        select: '#experience_level'
-      });
-      new SlimSelect({
-        select: '#marketing_reach'
-      })
-    }
-  </script>
   <!-- Main JS -->
   <script src="/assets/js/main.js"></script>
 
