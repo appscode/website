@@ -67,8 +67,8 @@
   {{ end }}
   <!-- Custom CSS -->
   {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-    {{ end }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+  {{ end }}
   <!-- <link rel="stylesheet" href="/assets/sass/main.css" /> -->
 </head>
 
@@ -81,6 +81,52 @@
       </p>
     <![endif]-->
 
+  <!-- notification start  -->
+  <div onclick="goToWebinarPage()" class="notification-area notification is-primary" id="notification-area" style="display:none">
+    <div class="container section">
+      <div class="notification-inner is-flex is-align-items-center is-justify-content-center">
+        <p>Join our upcoming webinar! Get your seat right now! <a href="/webinar/">Click</a> to register.</p>
+      </div>
+    </div>
+    <button class="delete" onclick="event.stopPropagation(); closeItem('#notification-area')"></button>
+  </div>
+
+  <script type="text/javascript">
+    // close action start
+    function closeItem(item) {
+      const selcetedItem = document.querySelector(item)
+      selcetedItem.style.display = 'none'
+    }
+    // close action end
+
+    // redirect to webinar pagte
+    function goToWebinarPage() {
+      window.open("/webinar/", "_blank");
+    }
+
+    (function () {
+      var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            var result = JSON.parse(xhr.responseText);
+            if (result.schedules) {
+              let endDate = new Date(result.schedules[0]).getTime();
+              let startDate = new Date().getTime();
+              let timeRemaining = parseInt((endDate - startDate) / 1000);
+              if (timeRemaining >= 0) {
+                document.querySelector('#notification-area').style.display = 'block';
+              }
+            }
+          }
+        }
+      }
+      // console.log('GET', 'https://license-issuer.appscode.com/_/webinars/');
+      xhr.open('GET', 'https://license-issuer.appscode.com/_/webinars/');
+      xhr.send();
+    }());
+  </script>
+  <!-- notification end -->
   <!-- header area start -->
   {{ block "header" . }}
   <header>
@@ -546,9 +592,9 @@
 
               <!-- subscription form start -->
               <div class="subscription-form">
-                <form
-                  method="post" action="https://listmonk.appscode.com/subscription/form" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="navbar-form"
-                  target="_blank" novalidate role="email" role="email">
+                <form method="post" action="https://listmonk.appscode.com/subscription/form"
+                  id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="navbar-form" target="_blank"
+                  novalidate role="email" role="email">
                   <label for="email">Subscribe to Our Newsletter</label>
                   <p class="spam-message">No spam, we promise. Your mail address is secure</p>
                   <div class="field has-addons">
