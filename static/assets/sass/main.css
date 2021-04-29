@@ -382,6 +382,52 @@ video:focus {
   border: none;
 }
 
+.notification-area {
+  display: block;
+  cursor: pointer;
+}
+
+.notification-area.notification {
+  padding: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.notification-area.notification .delete {
+  right: 15px;
+  top: 11px;
+}
+
+.notification-area.notification .notification-inner {
+  min-height: 45px;
+  padding: 8px 0;
+  overflow: hidden;
+}
+
+.notification-area.notification .notification-inner p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.notification-area.notification .notification-inner p a {
+  font-weight: 600 !important;
+  padding: 0 5px;
+  font-family: Roboto;
+}
+
+.notification-area.is-primary {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00a651+0,1971bd+100 */
+  background: #00a651;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #00a651 0%, #1971bd 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a651', endColorstr='#1971bd',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
 /* Deafult Margin & Padding */
 .mt-1 {
   margin-top: 1px;
