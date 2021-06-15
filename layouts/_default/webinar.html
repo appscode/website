@@ -71,7 +71,8 @@
               <div class="circle-shape"><img src="/assets/images/webinar/circle-shape.png" alt=""></div>
               <!-- registration form start  -->
               <!-- https://stackoverflow.com/a/29014676 -->
-              <form method="post" action="https://license-issuer.appscode.com/_/webinars/register" onsubmit="return registerForWebinar();">
+              <form method="post" action="https://license-issuer.appscode.com/_/webinars/register"
+                onsubmit="return registerForWebinar();">
                 <!-- single input field start  -->
                 <div class="single-input-form">
                   <label for="first_name">First Name <span class="is-require">*</span></label>
@@ -173,7 +174,9 @@
                 <!-- single input field end -->
                 <!-- single input field start  -->
                 <div class="single-input-form">
-                  <div class="g-recaptcha" data-sitekey="6Lc-FpQaAAAAANrpxobhTpD63WPBubftjEd1nTbz" data-callback="enableSubmit" data-expired-callback="disableSubmit" data-error-callbac="disableSubmit"></div>
+                  <div class="g-recaptcha" data-sitekey="6Lc-FpQaAAAAANrpxobhTpD63WPBubftjEd1nTbz"
+                    data-callback="enableSubmit" data-expired-callback="disableSubmit"
+                    data-error-callbac="disableSubmit"></div>
                 </div>
                 <!-- single input field end -->
                 <p class="form-message">By registering, you agree to the processing of your personal data by AppsCode as
@@ -275,10 +278,10 @@
   }
 
   // https://stackoverflow.com/a/38931547/244009
-  function urlencodeFormData(fd){
+  function urlencodeFormData(fd) {
     var params = new URLSearchParams();
-    for(var pair of fd.entries()){
-        typeof pair[1]=='string' && params.append(pair[0], pair[1]);
+    for (var pair of fd.entries()) {
+      typeof pair[1] == 'string' && params.append(pair[0], pair[1]);
     }
     return params.toString();
   }
@@ -298,13 +301,15 @@
           regFormContainer.querySelector('form').remove();
           regFormContainer.querySelector('h3').textContent = "Registration Successful!";
           regFormContainer.querySelector('.illustration').src = "/assets/images/webinar/success.png";
-          regFormContainer.querySelector('.status-message').innerHTML = "<span>Congratulations!</span> <br> <br>You have successfully completed your registration, please check your email.";
+          regFormContainer.querySelector('.status-message').innerHTML =
+            "<span>Congratulations!</span> <br> <br>You have successfully completed your registration, please check your email.";
         } else {
           regFormContainer.classList.add('register-failed');
           regFormContainer.querySelector('h3').textContent = "Registration Failed!";
           regFormContainer.querySelector('form').remove();
           regFormContainer.querySelector('.illustration').src = "/assets/images/webinar/failed.png";
-          regFormContainer.querySelector('.status-message').innerHTML = "<span>Sorry!</span> <br> <br>Something went wrong and your registration is not complete, please try again later.";
+          regFormContainer.querySelector('.status-message').innerHTML =
+            "<span>Sorry!</span> <br> <br>Something went wrong and your registration is not complete, please try again later.";
         }
       }
     }
