@@ -13,18 +13,19 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: Use Node.js 10.x
+      - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
-          node-version: 10.x
+          node-version: 14.x
 
       - uses: actions/checkout@v1
 
       - name: Install yq
         run: |
-          curl -fsSL -o yq https://github.com/mikefarah/yq/releases/download/3.3.0/yq_linux_amd64
-          chmod +x yq
-          sudo mv yq /usr/local/bin/yq
+          curl -fsSL -o yqq https://github.com/mikefarah/yq/releases/download/3.3.0/yq_linux_amd64
+          chmod +x yqq
+          sudo mv yqq /usr/local/bin/yqq
+          pip3 install yq
 
       - name: Install Hugo
         run: |
