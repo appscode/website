@@ -21,7 +21,7 @@ These Terms of Service (“**Terms**”, “**Terms of Service**”) govern your
 - https://byte.builders
 - https://kubedb.com
 - https://kubevault.com
-- https://pharmer.cloud
+- https://pharmer.dev
 - https://kubeform.com
 - https://kubeshield.com
 - https://kube.ci

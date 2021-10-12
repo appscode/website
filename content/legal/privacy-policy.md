@@ -15,9 +15,9 @@ Effective date: 10/21/2019
 
 Welcome to **AppsCode Inc.**
 
-AppsCode Inc. (“us”, “we”, or “our”) operates https://appscode.com, https://byte.builders, https://kubedb.com, https://kubevault.com, https://pharmer.cloud, https://kubeform.com, https://kubeshield.com, https://kube.ci and Docker images and Helm Charts (hereinafter referred to as “**Service**”).
+AppsCode Inc. (“us”, “we”, or “our”) operates https://appscode.com, https://byte.builders, https://kubedb.com, https://kubevault.com, https://pharmer.dev, https://kubeform.com, https://kubeshield.com, https://kube.ci and Docker images and Helm Charts (hereinafter referred to as “**Service**”).
 
-Our Privacy Policy governs your visit to https://appscode.com, https://byte.builders, https://kubedb.com, https://kubevault.com, https://pharmer.cloud, https://kubeform.com, https://kubeshield.com, https://kube.ci and Docker images and Helm Charts, and explains how we collect, safeguard and disclose information that results from your use of our Service. 
+Our Privacy Policy governs your visit to https://appscode.com, https://byte.builders, https://kubedb.com, https://kubevault.com, https://pharmer.dev, https://kubeform.com, https://kubeshield.com, https://kube.ci and Docker images and Helm Charts, and explains how we collect, safeguard and disclose information that results from your use of our Service. 
 
 We use your data to provide and improve Service. By using Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions.
 
@@ -31,7 +31,7 @@ Our Terms and Conditions (“**Terms**”) govern all use of our Service and tog
 - https://byte.builders
 - https://kubedb.com
 - https://kubevault.com
-- https://pharmer.cloud
+- https://pharmer.dev
 - https://kubeform.com
 - https://kubeshield.com
 - https://kube.ci
