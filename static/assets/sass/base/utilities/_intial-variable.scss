@@ -1,0 +1,153 @@
+// root colors
+:root {
+  //  color variable
+  --ac-primary: #00a651;
+  --ac-color-text: #3b3030;
+  --ac-color-label: #a6abbd;
+  --ac-color-link: #4a4a4a;
+  --ac-color-value: #393939;
+  --ac-text-heading: #1c1c1c;
+
+  --ac-black: #000000;
+  --ac-bg: #ffffff;
+  --ac-white: #ffffff;
+  --ac-white-light: #e7e7e7;
+  --ac-white-lighter: #f1f1f1;
+  --ac-gray-dark: #5f5f5f;
+  --ac-gray-light: #8d8d8d;
+  --ac-gray-lightest: #d1d1d1;
+}
+
+$ac-primary: var(--ac-primary);
+$ac-color-text: var(--ac-color-text);
+$ac-color-label: var(--ac-color-label);
+$ac-color-value: var(--ac-color-value);
+$ac-color-link: var(--ac-color-link);
+$ac-text-heading: var(--ac-text-heading);
+
+$ac-black: var(--ac-black);
+$ac-bg: var(--ac-bg);
+$ac-white: var(--ac-white);
+$ac-white-light: var(--ac-white-light);
+$ac-white-lighter: var(--ac-white-lighter);
+$ac-gray-dark: var(--ac-gray-dark);
+$ac-gray-light: var(--ac-gray-light);
+$ac-gray-lightest: var(--ac-gray-lightest);
+
+// size
+$ac-size-1: 48px;
+$ac-size-2: 36px;
+$ac-size-3: 28px;
+$ac-size-4: 22px;
+$ac-size-5: 18px;
+$ac-size-6: 16px;
+$ac-size-7: 14px;
+
+// small font size
+$font-size-medium: 16px;
+$font-size-semi-normal: 15px;
+$font-size-normal: 14px;
+$font-size-small: 13px;
+$font-size-extra-small: 12px;
+$font-size-tiny: 11px;
+
+// Base Color
+$ac-orange: #ff8000;
+$ac-yellow: #f7ad2a;
+$ac-green: #158748;
+$ac-blue: #0aafff;
+$ac-purple: #791e94;
+$ac-red: #ff3729;
+
+// Products Color
+$voyager-primary: #2d2a78;
+$guard-primary: #d84e27;
+$kubeci-primary: #2c3e50;
+$kubed-primary: #1c7bd4;
+$kubedb-primary: #4d4dcb;
+$kubesheild-primary: #2516c7;
+$kubevault-primary: #326ce5;
+$pharmer-primary: #326de6;
+$searchlight-primary: #111738;
+$servicebroker-primary: #29b4a2;
+$stash-primary: #5e2dea;
+$swift-primary: #3f51b6;
+
+// Colors Primary
+
+/* Deafult Margin & Padding view-height & view-width */
+@for $i from 0 through 100 {
+  .m-#{$i} {
+    margin: #{$i}px !important;
+  }
+
+  .mt-#{$i} {
+    margin-top: #{$i}px !important;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+
+  .ml-#{$i} {
+    margin-left: #{$i}px !important;
+  }
+
+  .mr-#{$i} {
+    margin-right: #{$i}px !important;
+  }
+
+  .p-#{$i} {
+    padding: #{$i}px !important;
+  }
+
+  .pt-#{$i} {
+    padding-top: #{$i}px !important;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+
+  .pl-#{$i} {
+    padding-left: #{$i}px !important;
+  }
+
+  .pr-#{$i} {
+    padding-right: #{$i}px !important;
+  }
+
+  .vh-#{$i} {
+    height: #{$i}vh !important;
+  }
+
+  .vw-#{$i} {
+    width: #{$i}vw !important;
+  }
+
+  .font-size-#{$i} {
+    font-size: #{$i}px !important;
+  }
+}
+
+/* Deafult height & widht */
+@for $i from 0 through 300 {
+  .height-#{$i} {
+    height: #{$i}px !important;
+  }
+
+  .width-#{$i} {
+    width: #{$i}px !important;
+  }
+}
+
+/* Deafult z-index and font-weight*/
+@for $i from 0 through 10 {
+  .z-index-#{$i} {
+    z-index: #{$i} !important;
+  }
+
+  .font-weight-#{$i*100} {
+    font-weight: #{$i * 100} !important;
+  }
+}
