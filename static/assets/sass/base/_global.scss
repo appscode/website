@@ -72,7 +72,7 @@ pre {
       .ss-disabled {
         margin: 0;
         padding: 0;
-        font-family: Roboto;
+        font-family: $ac-font-paragraph;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -277,113 +277,4 @@ video:focus {
   border: none;
 }
 
-// notification style start
-.notification-area {
-  display: block;
-  cursor: pointer;
-  &.notification {
-    padding: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    margin-top: -6px;
-    .delete {
-      right: 15px;
-      top: 11px;
-    }
-    .notification-inner {
-      min-height: 45px;
-      padding: 8px 0;
-      overflow: hidden;
-      // position: relative;
-      p {
-        // animation: mymove 5s infinite;
-        font-size: 16px;
-        color: $ac-white;
-        font-weight: 500;
-        // position: absolute;
 
-        a {
-          font-weight: 600 !important;
-          padding: 0 5px;
-          font-family: Roboto;
-        }
-      }
-    }
-  }
-  &.is-primary {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00a651+0,1971bd+100 */
-    background: #00a651; /* Old browsers */
-    background: -moz-linear-gradient(
-      45deg,
-      #00a651 0%,
-      #1971bd 100%
-    ); /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      45deg,
-      #00a651 0%,
-      #1971bd 100%
-    ); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(
-      45deg,
-      #00a651 0%,
-      #1971bd 100%
-    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a651', endColorstr='#1971bd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  }
-}
-// notification style end
-/* Deafult Margin & Padding */
-@for $i from 1 through 100 {
-  .mt-#{$i} {
-    margin-top: #{$i}px;
-  }
-
-  .mb-#{$i} {
-    margin-bottom: #{$i}px;
-  }
-
-  .ml-#{$i} {
-    margin-left: #{$i}px;
-  }
-
-  .mr-#{$i} {
-    margin-right: #{$i}px;
-  }
-
-  .pt-#{$i} {
-    padding-top: #{$i}px;
-  }
-
-  .pb-#{$i} {
-    padding-bottom: #{$i}px;
-  }
-
-  .pl-#{$i} {
-    padding-left: #{$i}px;
-  }
-
-  .pr-#{$i} {
-    padding-right: #{$i}px;
-  }
-}
-
-/* font weight */
-.f-700 {
-  font-weight: 700;
-}
-
-.f-600 {
-  font-weight: 600;
-}
-
-.f-500 {
-  font-weight: 500;
-}
-
-.f-400 {
-  font-weight: 400;
-}
-
-.f-300 {
-  font-weight: 300;
-}

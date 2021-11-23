@@ -105,7 +105,7 @@ $poppins: "Poppins", sans-serif;
         }
 
         .name {
-          font-family: Roboto;
+          font-family: $ac-font-paragraph;
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
@@ -189,7 +189,7 @@ $poppins: "Poppins", sans-serif;
 
   form {
     label.radio-title {
-      font-family: Roboto;
+      font-family: $ac-font-paragraph;
       font-style: normal;
       font-weight: 500;
       font-size: 12px;
@@ -212,7 +212,7 @@ $poppins: "Poppins", sans-serif;
     }
 
     .form-message {
-      font-family: Roboto;
+      font-family: $ac-font-paragraph;
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
@@ -235,7 +235,7 @@ $poppins: "Poppins", sans-serif;
       }
 
       label {
-        font-family: Roboto;
+        font-family: $ac-font-paragraph;
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -273,7 +273,7 @@ $poppins: "Poppins", sans-serif;
       }
 
       &::placeholder {
-        font-family: Roboto;
+        font-family: $ac-font-paragraph;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -325,7 +325,7 @@ $poppins: "Poppins", sans-serif;
       font-size: 15px;
 
       &::placeholder {
-        font-family: Roboto;
+        font-family: $ac-font-paragraph;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -380,7 +380,7 @@ $poppins: "Poppins", sans-serif;
       width: calc(100% - 30px);
 
       p {
-        font-family: Roboto;
+        font-family: $ac-font-paragraph;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -423,7 +423,7 @@ $poppins: "Poppins", sans-serif;
       }
 
       .designation {
-        font-family: Roboto;
+        font-family: $ac-font-paragraph;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -434,12 +434,12 @@ $poppins: "Poppins", sans-serif;
         margin-bottom: 15px;
 
         a {
-          font-family: Roboto;
+          font-family: $ac-font-paragraph;
         }
       }
 
       .speaker-message {
-        font-family: Roboto;
+        font-family: $ac-font-paragraph;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;

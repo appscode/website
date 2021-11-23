@@ -340,7 +340,7 @@ body.fixed-nav
       a {
         color: #242a31;
         font-size: 24px;
-        font-family: roboto;
+        font-family: $ac-font-paragraph;
         display: block;
         padding: 20px 20px;
         box-shadow: 0px 1px 4px rgba(26, 80, 151, 0.16);
@@ -622,7 +622,7 @@ body.fixed-nav
 .signature-image {
   margin-top: 40px;
   p {
-    font-family: Raleway;
+    font-family: $ac-font-heading;
     font-weight: 600;
   }
 }

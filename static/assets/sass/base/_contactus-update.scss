@@ -27,7 +27,7 @@
             margin-right: 80px;
 
             .navbar-item {
-              font-family: Roboto;
+              font-family: $ac-font-paragraph;
               font-style: normal;
               font-size: 15px;
               line-height: 18px;
@@ -59,7 +59,7 @@
                 }
 
                 strong {
-                  font-family: Roboto;
+                  font-family: $ac-font-paragraph;
                   font-style: normal;
                   font-weight: 500;
                   font-size: 15px;
@@ -121,7 +121,7 @@
           align-items: center;
           color: #666666;
           margin-right: 60px;
-          font-family: Roboto;
+          font-family: $ac-font-paragraph;
           font-style: normal;
           font-weight: 500;
           font-size: 15px;
@@ -186,7 +186,7 @@
           }
 
           label {
-            font-family: Roboto;
+            font-family: $ac-font-paragraph;
             font-style: normal;
             font-weight: 500;
             font-size: 12px;
@@ -221,7 +221,7 @@
           }
 
           &::placeholder {
-            font-family: Roboto;
+            font-family: $ac-font-paragraph;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
@@ -268,7 +268,7 @@
           font-size: 15px;
 
           &::placeholder {
-            font-family: Roboto;
+            font-family: $ac-font-paragraph;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
@@ -308,7 +308,7 @@
         .footer-content {
           .footer-left {
             p {
-              font-family: Roboto;
+              font-family: $ac-font-paragraph;
               font-style: normal;
               font-weight: normal;
               font-size: 15px;
@@ -319,7 +319,7 @@
 
           .footer-right {
             a {
-              font-family: Roboto;
+              font-family: $ac-font-paragraph;
               font-style: normal;
               font-weight: normal;
               font-size: 15px;
