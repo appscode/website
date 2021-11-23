@@ -3,7 +3,7 @@
 ========================*/
 body.fixed-nav header {
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.08);
-  background-color: $white-color;
+  background-color: $ac-white;
 }
 .header-area {
   padding: 3px 0;
@@ -14,13 +14,13 @@ body.fixed-nav header {
   position: relative;
   z-index: 99;
   padding: 6px 0px;
-  background-color: $white-color;
+  background-color: $ac-white;
 }
 
 .main-menu a {
   padding: 15px 15px;
   font-size: 14px;
-  color: $link-color;
+  color: $ac-color-link;
   font-weight: 600;
   transition: 0.3s ease-in-out;
 }
@@ -30,8 +30,8 @@ body.fixed-nav header {
   border-radius: 2px;
   box-shadow: none;
   border: none;
-  background: $white-color;
-  color: $primary-color !important;
+  background: $ac-white;
+  color: $ac-primary !important;
   font-size: 14px !important;
   transition: 0.3s ease-in-out;
 }
@@ -42,7 +42,7 @@ body.fixed-nav header {
 }
 
 .button.for-support, .button.for-chat {
-  background: $white-color;
+  background: $ac-white;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, .17);
   border-radius: 2px;
   border: none;
@@ -57,11 +57,11 @@ body.fixed-nav header {
 
 .button.for-chat:hover {
   background-color: #4A154B;
-  color: $white-color;
+  color: $ac-white;
 }
 .button.for-support:hover{
   background-color: #9D0A0E;
-  color: $white-color;
+  color: $ac-white;
   img{
     filter: brightness(100);
   }
@@ -82,7 +82,7 @@ body.fixed-nav header {
 a.navbar-item.is-active,
 a.navbar-item:hover {
   background: transparent;
-  color: $primary-color;
+  color: $ac-primary;
 }
 .customize-kubedb .navbar-item.has-dropdown.is-active .navbar-link,
 .customize-kubedb .navbar-item.has-dropdown:hover .navbar-link {
@@ -92,7 +92,7 @@ a.navbar-item:hover {
   background: transparent;
 }
 .customize-kubedb .main-menu a {
-  color: $white-color;
+  color: $ac-white;
 }
 nav.navbar {
   background-color: transparent;
@@ -101,7 +101,7 @@ nav.navbar {
   max-height: 35px;
 }
 .customize-kubedb .navbar-dropdown .navbar-item {
-  color: $primary-color;
+  color: $ac-primary;
 }
 .navbar-dropdown {
   border-top: none;
@@ -114,7 +114,7 @@ nav.navbar {
   margin-top: -8px;
   height: 33px;
   position: relative;
-  color: $white-color;
+  color: $ac-white;
 }
 
 .star-count::after,
@@ -142,7 +142,7 @@ nav.navbar {
   left: -3px;
   margin-top: -4px;
   border-width: 4px 4px 4px 0;
-  border-right-color: $primary-color;
+  border-right-color: $ac-primary;
 }
 
 .main-menu-button .star-count::after {
@@ -163,7 +163,7 @@ nav.navbar {
 
 body.fixed-nav .fixed-menu {
   position: fixed;
-  background-color: $white-color;
+  background-color: $ac-white;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.12);
   top: 0;
   margin-top: 0;
@@ -178,7 +178,7 @@ body.fixed-nav .fixed-menu {
 .lg .social-count {
   height: 16px;
   padding: 5px 10px;
-  font-size: $font-small;
+  font-size: $font-size-extra-small;
   line-height: 16px;
   box-shadow: none;
   border: none;
@@ -212,7 +212,7 @@ body.fixed-nav .fixed-menu {
 .hero-content-inner h1 {
   font-size: 44px;
   font-weight: 400;
-  color: $heading-color;
+  color: $ac-color-heading;
   line-height: 67px;
   b {
     font-weight: 600;
@@ -228,14 +228,14 @@ body.fixed-nav .fixed-menu {
 }
 
 .kd-transparent-btn {
-  color: $primary-color;
+  color: $ac-primary;
   font-weight: 600;
   border: none;
   background: transparent;
   margin-left: 15px;
 }
 .ac-transparent-btn {
-  color: $primary-color;
+  color: $ac-primary;
   font-weight: 600;
   border: none;
   background: transparent;
@@ -260,7 +260,7 @@ a.play-icon {
   text-align: center;
   line-height: 70px;
   border-radius: 50%;
-  color: $white-color;
+  color: $ac-white;
   display: inline-block;
   position: relative;
 }
@@ -328,7 +328,7 @@ a.play-icon .fa {
   font-size: 28px;
   line-height: 46px;
   font-weight: 500;
-  color: $heading-color;
+  color: $ac-color-heading;
   margin-bottom: 20px;
 }
 
@@ -410,7 +410,7 @@ a.play-icon .fa {
   right: 50%;
   font-size: 64px;
   z-index: 9;
-  color: $primary-color;
+  color: $ac-primary;
   opacity: 0.6;
   width: 60px;
   padding-left: 30px;
@@ -418,9 +418,9 @@ a.play-icon .fa {
 
 .client-info p {
   margin: 0;
-  font-size: $font-small;
+  font-size: $font-size-extra-small;
   font-style: italic;
-  color: $paragraph-color;
+  color: $ac-color-text;
   opacity: 0.6;
 }
 
@@ -487,7 +487,7 @@ button:focus {
       box-shadow: none;
       margin: 0 5px;
       &.is-active{
-        background-color:$primary-color;
+        background-color:$ac-primary;
         width: 20px;
       }
     }
@@ -520,13 +520,13 @@ button:focus {
 
 .cta-text h2 {
   font-size: 36px;
-  color: $primary-color;
+  color: $ac-primary;
   line-height: 42px;
 }
 
 .cta-text p {
   font-size: 26px;
-  color: $paragraph-color;
+  color: $ac-color-text;
   margin-top: 10px;
   margin-bottom: 0;
 }
@@ -540,9 +540,9 @@ button:focus {
 .subscription-form label {
   font-size: 18px;
   font-weight: 600;
-  color: $heading-color;
+  color: $ac-color-heading;
   display: block;
-  font-family: $font-heading;
+  font-family: $ac-font-heading;
 }
 
 .subscription-form input {
@@ -558,8 +558,8 @@ button:focus {
 }
 
 .subscription-form .button {
-  font-family: $font-link;
-  color: $primary-color;
+  font-family: $ac-color-link;
+  color: $ac-primary;
   font-size: 16px;
   height: 40px;
   box-shadow: none;
@@ -573,8 +573,8 @@ button:focus {
   background: transparent;
 }
 .subscription-form .button:hover {
-  background-color: $primary-color;
-  color: $white-color !important;
+  background-color: $ac-primary;
+  color: $ac-white !important;
 }
 .subscription-form {
   margin-top: 10px;
@@ -588,15 +588,15 @@ button:focus {
 
 .contact-information h4 {
   font-size: 18px;
-  color: $heading-color;
+  color: $ac-color-heading;
 }
 
 .all-contact-info li a,
 p.spam-message {
-  color: $link-color;
+  color: $ac-color-link;
   display: inline-block;
   font-size: 14px;
-  font-family: $font-paragraph;
+  font-family: $ac-font-paragraph;
   padding: 5px 0;
 }
 
@@ -610,12 +610,12 @@ p.spam-message {
 
 .footer-menu h4 {
   font-size: 18px;
-  color: $heading-color;
+  color: $ac-color-heading;
   margin-bottom: 14px;
 }
 
 .footer-link li a {
-  color: $link-color;
+  color: $ac-color-link;
   font-size: 14px;
   display: block;
   padding: 8px 0;
@@ -627,7 +627,7 @@ p.spam-message {
 }
 
 .footer-link li a:hover {
-  color: $primary-color;
+  color: $ac-primary;
   padding-left: 5px;
 }
 
@@ -644,18 +644,18 @@ p.spam-message {
 
 .footer-bottom p {
   font-size: 14px;
-  color: $paragraph-color;
+  color: $ac-color-text;
   margin-bottom: 0;
 }
 
 .footer-inline-link a {
-  color: $link-color;
+  color: $ac-color-link;
   font-size: 14px;
   margin-right: 30px;
   transition: 0.3s ease-in-out;
 }
 .footer-inline-link a:hover {
-  color: $primary-color;
+  color: $ac-primary;
 }
 
 .footer-inline-link a:last-child {
@@ -685,8 +685,8 @@ p.spam-message {
 }
 
 .socail-link-inline li a:hover {
-  background: $primary-color;
-  color: $white-color;
+  background: $ac-primary;
+  color: $ac-white;
   border: 1px solid transparent;
 }
 
@@ -765,7 +765,7 @@ p.spam-message {
 
 .support-page .hero-content-inner h1 {
   margin-bottom: 30px;
-  color: $heading-color;
+  color: $ac-color-heading;
   font-weight: 500;
   line-height: 64px;
 }
@@ -781,7 +781,7 @@ p.spam-message {
 /* pricing section style */
 .pricing-button .kd-button {
   padding: 8px 20px;
-  background: $primary-color;
+  background: $ac-primary;
   width: 180px;
 }
 
@@ -829,55 +829,55 @@ p.spam-message {
 }
 .pricing-top.kd-green,
 .kd-button.kd-green {
-  background: $primary-color !important;
+  background: $ac-primary !important;
 }
 .pricing-button .button {
   font-size: 15px;
   min-width: 190px;
-  font-family: $font-paragraph;
+  font-family: $ac-font-paragraph;
   padding: 7px;
   transition: 0.3s ease-in-out;
 }
 .pricing-top.kd-orange,
 .kd-button.kd-orange {
-  background-color: $orange-color !important;
+  background-color: $ac-orange !important;
 }
 .pricing-button .kubedb-transparent-btn {
   color: $kubedb-primary;
   border: 1px solid $kubedb-primary;
 }
 .pricing-button .kubedb-transparent-btn:hover {
-  color: $white-color !important;
+  color: $ac-white !important;
   border: 1px solid $kubedb-primary;
   background-color: $kubedb-primary;
 }
 .pricing-button .primary-transparent-btn {
-  color: $primary-color;
-  border: 1px solid $primary-color;
+  color: $ac-primary;
+  border: 1px solid $ac-primary;
 }
 .pricing-button .primary-transparent-btn:hover {
-  color: $white-color;
-  border: 1px solid $primary-color;
-  background-color: $primary-color;
+  color: $ac-white;
+  border: 1px solid $ac-primary;
+  background-color: $ac-primary;
 }
 .pricing-button .red-transparent-btn {
-  color: $red-color;
-  border: 1px solid $red-color;
+  color: $ac-red;
+  border: 1px solid $ac-red;
 }
 .pricing-button .red-transparent-btn:hover {
-  color: $white-color;
-  border: 1px solid $red-color;
-  background-color: $red-color;
+  color: $ac-white;
+  border: 1px solid $ac-red;
+  background-color: $ac-red;
 }
 
 .pricing-top.kd-red,
 .kd-button.kd-red {
-  background-color: $red-color !important;
+  background-color: $ac-red !important;
 }
 .pricing-top {
-  background: $primary-color;
+  background: $ac-primary;
   box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.16);
-  color: $white-color;
+  color: $ac-white;
   padding: 10px 20px;
   margin: 0 auto;
   border-radius: 0px 8px 8px 8px;
@@ -889,7 +889,7 @@ p.spam-message {
 }
 .round-shape {
   background: #fff;
-  color: $orange-color;
+  color: $ac-orange;
   font-size: 14px;
   display: inline-block;
   border-radius: 50px;
@@ -912,12 +912,12 @@ p.spam-message {
 }
 .single-pricing-table.silver {
   .discount-text {
-    color: $primary-color;
+    color: $ac-primary;
   }
 }
 .single-pricing-table.gold {
   .discount-text {
-    color: $orange-color;
+    color: $ac-orange;
   }
 }
 .single-pricing-table.silver .pricing-top {
@@ -939,7 +939,7 @@ p.spam-message {
 }
 .pricing-top h4 {
   font-size: 20px;
-  color: $white-color;
+  color: $ac-white;
   font-weight: 700;
 }
 
@@ -952,13 +952,13 @@ p.spam-message {
     font-weight: 400;
   }
   strong {
-    color: $white-color;
+    color: $ac-white;
   }
 }
 
 .package-price span {
   display: block;
-  font-size: $font-small;
+  font-size: $font-size-extra-small;
   font-weight: 400;
 }
 
@@ -967,7 +967,7 @@ p.spam-message {
   content: "";
   left: -12px;
   top: 0;
-  border-right: 12px solid darken($primary-color, 15%);
+  border-right: 12px solid darken($ac-primary, 15%);
   border-top: 22px solid transparent;
 }
 
@@ -1040,7 +1040,7 @@ p.spam-message {
   margin-top: 265px;
   margin-right: 10px;
   padding-bottom: 70px;
-  background-color: $white-color;
+  background-color: $ac-white;
   padding-top: 5px;
 }
 .single-pricing-table.details .pricing-body ul li:first-child {
@@ -1105,7 +1105,7 @@ p.spam-message {
 }
 
 .payment-method-innner-text h2 {
-  color: $heading-color;
+  color: $ac-color-heading;
   margin-bottom: 20px;
 }
 
@@ -1139,7 +1139,7 @@ p.spam-message {
 /* Faq Area style */
 
 .accordion-item {
-  background-color: $white-color;
+  background-color: $ac-white;
   margin-bottom: 20px;
   border-radius: 4px;
   border: 1px solid #e3e3e3;
@@ -1150,7 +1150,7 @@ p.spam-message {
 }
 
 .accordion-item.active {
-  border: 1px solid $primary-color;
+  border: 1px solid $ac-primary;
 }
 
 .accordion-item.active .accordion-header {
@@ -1193,14 +1193,14 @@ p.spam-message {
   position: relative;
   font-size: 16px;
   font-weight: 500;
-  color: $heading-color;
+  color: $ac-color-heading;
   margin: 0;
   user-select: none;
   line-height: 26px;
 }
 
 .accordion-item.active .accordion-header h2 {
-  color: $primary-color;
+  color: $ac-primary;
 }
 
 .accordion-header h2:before,
@@ -1244,7 +1244,7 @@ p.spam-message {
   padding: 10px 30px;
 }
 .documentation-menu {
-  background: $white-color;
+  background: $ac-white;
   height: 100%;
 }
 body.fixed-nav .documentation-menu {
@@ -1264,7 +1264,7 @@ body.fixed-nav .documentation-menu {
 }
 
 .info-title p {
-  color: $paragraph-color;
+  color: $ac-color-text;
   padding: 0 20px;
 }
 
@@ -1278,7 +1278,7 @@ body.fixed-nav .documentation-menu {
   h6 {
     margin-top: 40px;
     font-weight: 700;
-    color: $heading-color;
+    color: $ac-color-heading;
     margin-bottom: 10px;
     &:first-child {
       margin-top: 0;
@@ -1344,14 +1344,14 @@ body.fixed-nav .documentation-menu {
 }
 
 blockquote {
-  border-left: 4px solid $primary-color;
+  border-left: 4px solid $ac-primary;
   padding-left: 15px;
 }
 
 .full-info ul li,
 .full-info ol li,
 .full-info ol li p {
-  color: $link-color;
+  color: $ac-color-link;
   display: block;
   padding-bottom: 8px;
   line-height: 1.8;
@@ -1393,7 +1393,7 @@ blockquote {
 }
 
 ul li b {
-  color: $primary-color;
+  color: $ac-primary;
   font-weight: 500;
 }
 
@@ -1410,18 +1410,18 @@ ul li b {
   display: inline;
 }
 .full-info p b {
-  color: $primary-color;
+  color: $ac-primary;
 }
 .full-info ul li p a,
 .full-info p a,
 .full-info a {
-  color: $primary-color;
+  color: $ac-primary;
   font-weight: 500;
-  font-family: $font-paragraph;
+  font-family: $ac-font-paragraph;
 }
 .full-info p {
   margin-bottom: 15px;
-  color: $paragraph-color;
+  color: $ac-color-text;
 }
 .full-info p strong {
   font-weight: 500;
@@ -1432,7 +1432,7 @@ ul li b {
 
 .appscode-style.full-info ul li p a .appscode-style.full-info p a,
 .appscode-style.full-info a {
-  color: $primary-color;
+  color: $ac-primary;
 }
 
 //code block style
@@ -1447,7 +1447,7 @@ ul li b {
   border-bottom: transparent;
   h4 {
     font-size: 16px;
-    font-family: $font-paragraph;
+    font-family: $ac-font-paragraph;
     font-weight: 400;
     margin-bottom: 0;
   }
@@ -1485,9 +1485,9 @@ ul li b {
 .full-info ol li::before {
   content: counter(order-list-counter) ". ";
   font-weight: 500;
-  font-family: $font-paragraph;
+  font-family: $ac-font-paragraph;
   font-size: 15px;
-  color: $link-color;
+  color: $ac-color-link;
 }
 //custom ol li class end
 
@@ -1499,7 +1499,7 @@ ul li b {
 }
 
 .search-area input {
-  background: $white-color;
+  background: $ac-white;
   border: 1px solid #e2e2e2;
   padding: 9px 40px 9px 15px;
   font-size: 15px;
@@ -1549,16 +1549,16 @@ ul li b {
 .tbl-of-contents h4 {
   font-size: 14px;
   font-weight: 700;
-  color: $heading-color;
+  color: $ac-color-heading;
   margin-bottom: 18px;
   line-height: 1;
 }
 
 .tbl-of-contents ul li a {
-  color: $link-color;
+  color: $ac-color-link;
   opacity: 0.7;
   font-size: 14px;
-  font-family: $font-paragraph;
+  font-family: $ac-font-paragraph;
   font-weight: 500;
   display: block;
   padding-left: 20px;
@@ -1576,7 +1576,7 @@ ul li b {
 .tbl-of-contents ul a.active:before {
   width: 3px;
   height: 100%;
-  background: $primary-color;
+  background: $ac-primary;
   content: "";
   left: -2px;
   top: 0;
@@ -1587,11 +1587,11 @@ ul li b {
 .tbl-of-contents ul a.active {
   position: relative;
   z-index: 1;
-  color: $primary-color;
+  color: $ac-primary;
 }
 
 li.nav-item.active a {
-  color: $primary-color;
+  color: $ac-primary;
 }
 
 /* Fixed Sidebar */
@@ -1625,7 +1625,7 @@ li.nav-item.active a {
   display: none;
 }
 .sidebar-search-area {
-  background: $white-color;
+  background: $ac-white;
   width: 585px;
   z-index: 9999;
   right: -80%;
@@ -1662,7 +1662,7 @@ li.nav-item.active a {
   padding: 20px;
 }
 .searchbar-area input {
-  background: $white-color;
+  background: $ac-white;
   padding: 10px;
   border: 1px solid #e2e2e2;
   height: 40px;
@@ -1684,7 +1684,7 @@ li.nav-item.active a {
   height: 100%;
   width: 60px;
   background: #4d4dcb;
-  color: $white-color;
+  color: $ac-white;
   border: none;
   border-radius: 3px;
   margin-left: 10px;
@@ -1793,7 +1793,7 @@ li.nav-item.active a {
 }
 .pagination-list li a.is-active {
   background: #4d4dcb;
-  color: $white-color;
+  color: $ac-white;
 }
 /* pagination end */
 /* right sidebar search end */
@@ -1812,7 +1812,7 @@ li.nav-item.active a {
 
 .kd-version .icon {
   color: #32325d !important;
-  font-size: $font-regular;
+  font-size: 15px;
   margin-top: 2px;
 }
 
@@ -1837,7 +1837,7 @@ li.nav-item.active a {
   background: #f4e5e5;
   color: #9d0a0e;
   font-weight: 500;
-  font-family: $font-link;
+  font-family: $ac-color-link;
 }
 .dropdown-trigger span strong {
   padding-right: 15px;
@@ -1861,7 +1861,7 @@ button.button.is-fullwidth {
 .kd-version a.dropdown-item {
   padding: 7px 30px;
   border-bottom: 1px solid #ececec;
-  font-family: $font-paragraph;
+  font-family: $ac-font-paragraph;
   color: #32325d;
   transition: 0.2s ease-in-out;
   overflow: hidden;
@@ -1872,8 +1872,8 @@ button.button.is-fullwidth {
 }
 
 .kd-version a.dropdown-item:hover {
-  background: $primary-color;
-  color: $white-color;
+  background: $ac-primary;
+  color: $ac-white;
 }
 .kd-version a.dropdown-item:first-child:hover {
   border-radius: 4px 4px 0 0;
@@ -1904,12 +1904,12 @@ button.button.is-fullwidth {
 }
 .kd-sidebar-menu .item label a {
   font-weight: 600;
-  color: $link-color;
+  color: $ac-color-link;
   padding: 8px 17px;
   display: block;
 }
 .item ul li.is-active a {
-  color: $primary-color;
+  color: $ac-primary;
 }
 .item input:checked ~ ul,
 .item input:checked ~ .item > ul {
@@ -1933,7 +1933,7 @@ button.button.is-fullwidth {
 .item ul li a {
   display: block;
   padding: 6px 0;
-  font-family: $font-paragraph;
+  font-family: $ac-font-paragraph;
   font-weight: 400;
 }
 .item label {
@@ -1945,7 +1945,7 @@ button.button.is-fullwidth {
 .kd-sidebar-menu li a {
   font-size: 14px;
   font-weight: 500;
-  color: $link-color;
+  color: $ac-color-link;
   display: block;
   cursor: pointer;
   user-select: none;
@@ -1955,7 +1955,7 @@ button.button.is-fullwidth {
 }
 
 .kd-sidebar-menu li a:hover {
-  color: $primary-color;
+  color: $ac-primary;
 }
 .kd-sidebar-menu .item ul {
   margin-left: 20px;
@@ -1965,14 +1965,14 @@ button.button.is-fullwidth {
 .item input:checked ~ label,
 .item input:checked ~ .item > label {
   border: 1px solid #e2e2e2;
-  background: $white-color;
+  background: $ac-white;
 }
 .item:first-child input:checked ~ label, .item:first-child input:checked ~ .item:first-child > label{
   border: 1px solid transparent;
 }
 
 .appscode-style .item input:checked ~ label > a {
-  color: $primary-color;
+  color: $ac-primary;
 }
 .item input:checked~ul, .item input:checked~.item>ul>.item{
   margin-left: -20px;
@@ -1994,8 +1994,8 @@ button.button.is-fullwidth {
   border-radius: 3px 0 0 3px;
 }
 .trial-button .button {
-  background-color: $primary-color;
-  color: $white-color;
+  background-color: $ac-primary;
+  color: $ac-white;
   font-size: 14px;
   height: 40px;
 }
@@ -2029,13 +2029,13 @@ span.new-item {
 .menu-header h5 {
   float: left;
   font-size: 16px;
-  color: $heading-color;
+  color: $ac-color-heading;
   font-weight: 700;
 }
 
 .menu-body p {
-  font-size: $font-small;
-  color: $paragraph-color;
+  font-size: $font-size-extra-small;
+  color: $ac-color-text;
 }
 
 .single-product-item {
@@ -2051,7 +2051,7 @@ span.new-item {
   box-shadow: 0px 7px 26px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
   padding: 12px 6px 6px;
-  background: $white-color;
+  background: $ac-white;
   position: absolute;
   min-width: 480px;
   top: 40px;
@@ -2067,7 +2067,7 @@ span.new-item {
   top: 91px;
   box-shadow: 0px 7px 26px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
-  background: $white-color;
+  background: $ac-white;
   position: absolute;
   min-width: 200px;
   top: 40px;
@@ -2083,8 +2083,8 @@ span.new-item {
   transition: 0.2s ease-in-out;
 }
 .ac-dropdown a.navbar-item:hover {
-  background: $primary-color;
-  color: $white-color !important;
+  background: $ac-primary;
+  color: $ac-white !important;
 }
 .ac-megamenu:before,
 .ac-dropdown:before {
@@ -2093,7 +2093,7 @@ span.new-item {
   width: 14px;
   height: 0;
   border: 7px solid transparent;
-  border-bottom: 7px solid $white-color;
+  border-bottom: 7px solid $ac-white;
   top: -14px;
   left: 50%;
   -ms-transform: translateX(-50%);
@@ -2118,8 +2118,8 @@ span.new-item {
   top: 41px;
 }
 p.intro {
-  font-size: $font-small;
-  font-family: $font-paragraph;
+  font-size: $font-size-extra-small;
+  font-family: $ac-font-paragraph;
   color: #242a31;
   margin-top: -5px;
   margin-bottom: 10px;
@@ -2145,7 +2145,7 @@ p.intro {
   background: transparentize($kubed-primary, 0.8);
 }
 .single-product-item.is-kubedb:hover {
-  background: transparentize($primary-color, 0.8);
+  background: transparentize($ac-primary, 0.8);
 }
 .single-product-item.is-stash:hover {
   background: transparentize($stash-primary, 0.8);
@@ -2173,9 +2173,9 @@ p.intro {
 }
 .single-product-item .learn-more-btn {
   padding: 0;
-  font-size: $font-small;
+  font-size: $font-size-extra-small;
   color: #242a31;
-  font-family: $font-paragraph;
+  font-family: $ac-font-paragraph;
   margin-top: 20px;
   font-weight: 600;
   display: block;
@@ -2236,18 +2236,18 @@ table {
 }
 
 table tr {
-  border-left: 1px solid $border-color;
-  border-top: 1px solid $border-color;
+  border-left: 1px solid $ac-white-light;
+  border-top: 1px solid $ac-white-light;
 }
 
 table td,
 table th {
-  border-right: 1px solid $border-color;
-  border-bottom: 1px solid $border-color;
+  border-right: 1px solid $ac-white-light;
+  border-bottom: 1px solid $ac-white-light;
   padding: 8px 20px;
   vertical-align: middle;
   text-align: center;
-  font-size: $font-regular;
+  font-size: 15px;
 }
 .full-info {
   table {
@@ -2299,7 +2299,7 @@ li.nav-item:before {
   border-bottom-color: #dbdbdb;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  color: $link-color;
+  color: $ac-color-link;
   display: flex;
   justify-content: center;
   margin-bottom: -1px;
@@ -2312,7 +2312,7 @@ li.nav-item a {
 }
 
 a.nav-link.active {
-  background-color: $white-color;
+  background-color: $ac-white;
   border-left: 1px solid #dbdbdb;
   border-right: 1px solid #dbdbdb;
   border-top: 1px solid #dbdbdb;
@@ -2324,7 +2324,7 @@ a.nav-link.active {
 a.nav-link.active:after {
   position: absolute;
   content: "";
-  background: $primary-color;
+  background: $ac-primary;
   top: 0;
   left: 0;
   width: 100%;
@@ -2358,31 +2358,31 @@ a.nav-link.active:after {
 }
 .download-question h4 {
   font-size: 18px;
-  color: $heading-color;
+  color: $ac-color-heading;
   font-weight: 700;
 }
 
 .download-question p {
-  color: $paragraph-color;
+  color: $ac-color-text;
   font-size: 16px;
-  font-family: $font-paragraph;
+  font-family: $ac-font-paragraph;
 }
 
 .download-question p strong {
   color: #32325d;
   font-weight: 500;
-  font-family: $font-paragraph;
+  font-family: $ac-font-paragraph;
   margin: 10px 0;
   display: block;
 }
 
 .download-question a {
-  font-family: $font-paragraph;
+  font-family: $ac-font-paragraph;
   font-size: 16px;
 }
 .form-area h4 {
   font-size: 18px;
-  color: $heading-color;
+  color: $ac-color-heading;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -2390,7 +2390,7 @@ a.nav-link.active:after {
 .single-input-field label {
   display: block;
   color: #32325d;
-  font-family: $font-paragraph;
+  font-family: $ac-font-paragraph;
   font-size: 16px;
   margin-bottom: 5px;
 }
@@ -2400,7 +2400,7 @@ a.nav-link.active:after {
   border: 1px solid #c4cbd3;
   border-radius: 4px;
   font-size: 16px;
-  font-family: $font-paragraph;
+  font-family: $ac-font-paragraph;
   color: #242a31;
   width: 100%;
 }
@@ -2463,7 +2463,7 @@ video {
   line-height: 30px;
   border-radius: 50%;
   color: #fff;
-  background: rgba($primary-color, 0.5);
+  background: rgba($ac-primary, 0.5);
   border: none;
   opacity: 0;
   cursor: pointer;
@@ -2484,7 +2484,7 @@ video {
   a{
     font-size: 16px !important;
     font-weight: 700 !important;
-    font-family: $font-heading;
+    font-family: $ac-font-heading;
   }
   p{
     font-size: 16px !important;

@@ -1,38 +1,21 @@
 // root colors
-:root {
   //  color variable
-  --ac-primary: #00a651;
-  --ac-color-text: #3b3030;
-  --ac-color-label: #a6abbd;
-  --ac-color-link: #4a4a4a;
-  --ac-color-value: #393939;
-  --ac-text-heading: #1c1c1c;
+$ac-primary: #00a651;
+$ac-color-text: #3b3030;
+$ac-color-label: #a6abbd;
+$ac-color-link: #4a4a4a;
+$ac-color-value: #393939;
+$ac-color-heading: #1c1c1c;
 
-  --ac-black: #000000;
-  --ac-bg: #ffffff;
-  --ac-white: #ffffff;
-  --ac-white-light: #e7e7e7;
-  --ac-white-lighter: #f1f1f1;
-  --ac-gray-dark: #5f5f5f;
-  --ac-gray-light: #8d8d8d;
-  --ac-gray-lightest: #d1d1d1;
-}
+$ac-black: #000000;
+$ac-bg: #ffffff;
+$ac-white: #ffffff;
+$ac-white-light: #e7e7e7;
+$ac-white-lighter: #f1f1f1;
+$ac-gray-dark: #5f5f5f;
+$ac-gray-light: #8d8d8d;
+$ac-gray-lightest: #d1d1d1;
 
-$ac-primary: var(--ac-primary);
-$ac-color-text: var(--ac-color-text);
-$ac-color-label: var(--ac-color-label);
-$ac-color-value: var(--ac-color-value);
-$ac-color-link: var(--ac-color-link);
-$ac-text-heading: var(--ac-text-heading);
-
-$ac-black: var(--ac-black);
-$ac-bg: var(--ac-bg);
-$ac-white: var(--ac-white);
-$ac-white-light: var(--ac-white-light);
-$ac-white-lighter: var(--ac-white-lighter);
-$ac-gray-dark: var(--ac-gray-dark);
-$ac-gray-light: var(--ac-gray-light);
-$ac-gray-lightest: var(--ac-gray-lightest);
 
 // size
 $ac-size-1: 48px;
@@ -69,11 +52,10 @@ $kubesheild-primary: #2516c7;
 $kubevault-primary: #326ce5;
 $pharmer-primary: #326de6;
 $searchlight-primary: #111738;
-$servicebroker-primary: #29b4a2;
+$service-broker-primary: #29b4a2;
 $stash-primary: #5e2dea;
 $swift-primary: #3f51b6;
 
-// Colors Primary
 
 /* Deafult Margin & Padding view-height & view-width */
 @for $i from 0 through 100 {

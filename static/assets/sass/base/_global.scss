@@ -1,133 +1,40 @@
 /* ======================
   Global CSS start
 ========================*/
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:400,400i,500,500i,700");
-
-body {
-  font-family: $font-paragraph;
-  font-weight: 400;
-  font-style: normal;
-}
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: #fff;
-  background: $primary-color;
+  color: $ac-white;
+  background: $ac-primary;
 }
 
 ::selection {
-  color: #fff;
-  background: $primary-color;
+  color: $ac-white;
+  background: $ac-primary;
 }
 
-li b {
-  font-family: $font-paragraph;
-}
-
-a {
-  font-weight: 500;
-  -webkit-font-smoothing: antialiased;
-}
-
-p {
-  font-family: $font-paragraph;
-  font-size: $font-semi-regular;
-  font-weight: 400;
-  line-height: 1.8;
-  color: $paragraph-color;
-  -webkit-font-smoothing: antialiased;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font-heading;
-  font-weight: normal;
-  text-transform: normal;
-  font-style: normal;
-  margin-top: 0px;
-  color: $heading-color;
-  font-weight: 600;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  font-family: $font-paragraph;
-  color: inherit;
-}
 
 pre {
   margin-bottom: 15px;
   padding: 20px 15px;
 }
 
-footer li a {
-  font-family: $font-paragraph;
-  font-weight: 400;
-}
-
-a {
-  font-family: "Raleway", sans-serif;
-}
-
-h1 {
-  font-size: 36px;
-  line-height: 46px;
-}
-
-h2 {
-  font-size: 28px;
-  line-height: 38px;
-}
-
-h3 {
-  font-size: 24px;
-  line-height: 34px;
-}
-
-h4 {
-  font-size: 18px;
-  line-height: 32px;
-}
-
-h5 {
-  font-size: 16px;
-  line-height: 26px;
-}
-
-h6 {
-  font-size: 14px;
-  line-height: 24px;
-}
 
 .kd-primary {
-  background-color: $primary-color;
-  color: $white-color !important;
+  background-color: $ac-primary;
+  color: $ac-white !important;
 }
 
-.ac-primary {
-  background-color: $primary-color;
-  color: $white-color !important;
-}
 
-.ac-primary-color {
-  color: $primary-color;
-}
+
 
 .kubedb-primary-bg {
-  background-color: $primary-color;
+  background-color: $ac-primary;
 }
 
 .tooltip.is-tooltip-primary::before {
   background-color: #32325d;
-  color: $white-color;
+  color: $ac-white;
   min-width: 200px;
   padding: 15px;
   font-weight: 400;
@@ -148,7 +55,7 @@ h6 {
   .ss-multi-selected {
     min-height: 45px !important;
     border: 1px solid #a6abbd;
-    color: $paragraph-color;
+    color: $ac-color-text;
     padding: 0 15px;
 
     .ss-arrow {
@@ -156,7 +63,7 @@ h6 {
     }
     .placeholder {
       font-size: 15px;
-      color: $paragraph-color;
+      color: $ac-color-text;
       font-weight: 500;
     }
     .ss-values {
@@ -193,12 +100,12 @@ h6 {
     .ss-list {
       .ss-option {
         font-size: 14px;
-        color: $paragraph-color;
+        color: $ac-color-text;
         transition: 0.3s ease-in-out;
 
         &:hover {
-          background-color: scale-color($primary-color, $lightness: 80%);
-          color: $primary-color;
+          background-color: scale-color($ac-primary, $lightness: 80%);
+          color: $ac-primary;
         }
 
         &.ss-disabled {
@@ -228,22 +135,22 @@ h6 {
   display: inline-block;
   font-weight: 500;
   margin: 0;
-  color: $white-color;
+  color: $ac-white;
   transition: 0.3s;
-  font-family: $font-paragraph;
+  font-family: $ac-font-paragraph;
   font-size: 16px;
   min-width: 190px;
 }
 
 .kd-button:hover {
-  background-color: darken($primary-color, 3%);
-  color: $white-color;
+  background-color: darken($ac-primary, 3%);
+  color: $ac-white;
   box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16);
 }
 
 .ac-button:hover {
-  background-color: darken($primary-color, 3%);
-  color: $white-color;
+  background-color: darken($ac-primary, 3%);
+  color: $ac-white;
   box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16);
   transform: translateY(-2px);
 }
@@ -284,7 +191,7 @@ h6 {
 
 .subscription-form .input.is-hovered,
 .subscription-form .input:hover {
-  border-color: $primary-color;
+  border-color: $ac-primary;
 }
 
 .input.is-active,
@@ -295,7 +202,7 @@ h6 {
 .textarea.is-focused,
 .textarea:active,
 .textarea:focus {
-  border-color: $primary-color;
+  border-color: $ac-primary;
   box-shadow: none;
 }
 
@@ -317,16 +224,16 @@ video:focus {
 
 .is-blue {
   background-color: #3f19ad !important;
-  color: $white-color;
+  color: $ac-white;
 }
 
 .is-gold {
   background-color: #f99a00 !important;
-  color: $white-color !important;
+  color: $ac-white !important;
 }
 
 .is-marked {
-  background-color: #fff5e5 !important;
+  background-color: $ac-white-lighter !important;
 }
 
 .is-danger {
@@ -335,12 +242,12 @@ video:focus {
 
 .is-red {
   background-color: #e03056 !important;
-  color: $white-color !important;
+  color: $ac-white !important;
 }
 
 .is-dark-red {
   background-color: #8e2c4a !important;
-  color: $white-color !important;
+  color: $ac-white !important;
 }
 
 .is-light-blue {
@@ -349,7 +256,7 @@ video:focus {
 }
 
 .is-white {
-  background-color: $white-color !important;
+  background-color: $ac-white !important;
   color: #4d4f5c !important;
   border: 1px solid #e9e9f0;
 }
@@ -391,7 +298,7 @@ video:focus {
       p {
         // animation: mymove 5s infinite;
         font-size: 16px;
-        color: #ffffff;
+        color: $ac-white;
         font-weight: 500;
         // position: absolute;
 

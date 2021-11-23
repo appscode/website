@@ -1,13 +1,13 @@
 // Typography
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap");
 
-$ac-family-heading: "Roboto", sans-serif;
-$ac-family-paragraph: "Roboto", sans-serif;
+$ac-font-heading: "Roboto", sans-serif;
+$ac-font-paragraph: "Roboto", sans-serif;
 
 html,
 body {
   background-color: $ac-bg;
-  font-family: $ac-family-paragraph;
+  font-family: $ac-font-paragraph;
   font-weight: 400;
   font-size: 15px;
   color: $ac-color-text;
@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $ac-family-heading;
+  font-family: $ac-font-heading;
   font-weight: 500;
   color: $ac-color-heading;
 }
@@ -91,12 +91,12 @@ h6 {
 }
 
 a {
-  font-family: $ac-family-paragraph;
+  font-family: $ac-font-paragraph;
   color: $ac-primary;
 }
 
 hr {
-  background-color: $ac-bg-light-gray;
+  background-color: $ac-white-light;
   border: none;
   display: block;
   height: 1px;
