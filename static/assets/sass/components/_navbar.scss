@@ -1,0 +1,70 @@
+header{
+  margin-bottom: 120px;
+}
+.fixed-menu {
+  position: absolute;
+  width: 100%;
+  padding: 0px 0px;
+  z-index: 99;
+  top: 0;
+  left: 0;
+}
+
+body {
+  &.fixed-nav {
+    .fixed-menu {
+      position: fixed;
+      top: 0;
+      z-index: 99;
+      width: 100%;
+      padding: 0px 0px;
+      background: $ac-white;
+      box-shadow: 0px 1px 1px rgba(25, 76, 128, 0.08);
+    }
+  }
+}
+
+.appscode {
+  .header-top {
+    box-shadow: 0px 1px 1px rgba(25, 76, 128, 0.08);
+  }
+}
+
+.main-menu.is-bg-available .navbar-item,
+.main-menu.is-bg-available .navbar-link {
+  color: $ac-white;
+}
+
+.main-menu.is-bg-available .navbar-item:hover,
+.main-menu.is-bg-available .navbar-link:hover {
+  color: #ddd;
+}
+
+.navbar-item.has-dropdown.is-active .navbar-link,
+.navbar-item.has-dropdown:hover .navbar-link {
+  background: transparent;
+}
+
+body.fixed-nav .main-menu.is-bg-available .navbar-item,
+body.fixed-nav .main-menu.is-bg-available .navbar-link {
+  color: $ac-color-link;
+}
+
+body.fixed-nav .main-menu.is-bg-available .navbar-item:hover,
+body.fixed-nav .main-menu.is-bg-available .navbar-link:hover {
+  color: $ac-primary;
+}
+
+.main-menu.is-bg-available .navbar-link:not(.is-arrowless)::after,
+.main-menu.is-bg-available .select:not(.is-multiple):not(.is-loading)::after {
+  border-color: $ac-white;
+}
+
+body.fixed-nav
+  .main-menu.is-bg-available
+  .navbar-link:not(.is-arrowless)::after,
+body.fixed-nav
+  .main-menu.is-bg-available
+  .select:not(.is-multiple):not(.is-loading)::after {
+  border-color: $ac-color-link;
+}

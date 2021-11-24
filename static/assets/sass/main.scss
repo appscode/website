@@ -1,4 +1,4 @@
-// appsCode.com Sass Template
+// AppsCode.com Sass Template
 // Author: AppsCode
 // Version: 0.0.1
 
@@ -11,27 +11,37 @@
 
 // @import "base/_variables";
 @import "base/_global";
-@import "base/_mixins";
 @import "base/_homepage";
-@import "base/_video-palyer.scss";
+
 @import "base/_innerpage";
 @import "base/_base";
 @import "base/_contactus-update";
-@import "base/_webinar";
 
 
 // components SCSS 
+@import "components/_navbar";
 @import "components/_notificationbar";
 @import "components/_button";
+@import "components/_video-palyer";
+@import "components/_hero";
+@import "components/_trusted-logos";
+@import "components/_social-prove_countdown";
+@import "components/_press-area";
+@import "components/_testimonial";
+@import "components/_services";
+@import "components/_cta";
+@import "components/_pricing";
+@import "components/_back-to-top";
+@import "components/_footer";
 
 
+// pages SCSS
+@import "pages/_webinar";
+@import "pages/_training";
+@import "pages/_consulting";
+@import "pages/_contactus";
 
 
-
-
-
-// Theme SCSS
-@import "themes/_guard";
 // @import "themes/_kubeci";
 @import "themes/_kubed";
 // @import "themes/_kubeshield";
