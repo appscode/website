@@ -5,6 +5,10 @@
 //BASE - Base styles, variables, mixins
 @import "base/utilities/_intial-variable";
 @import "base/utilities/_typography";
+
+// mixins 
+@import "mixins/_mixin";
+
 // @import "base/_variables";
 @import "base/_global";
 @import "base/_mixins";
@@ -18,6 +22,11 @@
 
 // components SCSS 
 @import "components/_notificationbar";
+@import "components/_button";
+
+
+
+
 
 
 

@@ -127,37 +127,37 @@ pre {
   }
 }
 
-.kd-button,
-.ac-button {
-  border: none;
-  border-radius: 4px;
-  padding: 12px 40px;
-  display: inline-block;
-  font-weight: 500;
-  margin: 0;
-  color: $ac-white;
-  transition: 0.3s;
-  font-family: $ac-font-paragraph;
-  font-size: 16px;
-  min-width: 190px;
-}
+// .kd-button,
+// .ac-button {
+//   border: none;
+//   border-radius: 4px;
+//   padding: 12px 40px;
+//   display: inline-block;
+//   font-weight: 500;
+//   margin: 0;
+//   color: $ac-white;
+//   transition: 0.3s;
+//   font-family: $ac-font-paragraph;
+//   font-size: 16px;
+//   min-width: 190px;
+// }
 
-.kd-button:hover {
-  background-color: darken($ac-primary, 3%);
-  color: $ac-white;
-  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16);
-}
+// .kd-button:hover {
+//   background-color: darken($ac-primary, 3%);
+//   color: $ac-white;
+//   box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16);
+// }
 
-.ac-button:hover {
-  background-color: darken($ac-primary, 3%);
-  color: $ac-white;
-  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16);
-  transform: translateY(-2px);
-}
+// .ac-button:hover {
+//   background-color: darken($ac-primary, 3%);
+//   color: $ac-white;
+//   box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16);
+//   transform: translateY(-2px);
+// }
 
-.kd-button span {
-  padding-left: 10px;
-}
+// .kd-button span {
+//   padding-left: 10px;
+// }
 
 .img {
   max-width: 100%;

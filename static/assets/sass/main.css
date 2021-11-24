@@ -7990,42 +7990,6 @@ pre {
           box-shadow: none;
 }
 
-.kd-button,
-.ac-button {
-  border: none;
-  border-radius: 4px;
-  padding: 12px 40px;
-  display: inline-block;
-  font-weight: 500;
-  margin: 0;
-  color: #ffffff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  min-width: 190px;
-}
-
-.kd-button:hover {
-  background-color: #00974a;
-  color: #ffffff;
-  -webkit-box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16);
-}
-
-.ac-button:hover {
-  background-color: #00974a;
-  color: #ffffff;
-  -webkit-box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.16);
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
-}
-
-.kd-button span {
-  padding-left: 10px;
-}
-
 .img {
   max-width: 100%;
   height: auto;
@@ -13507,6 +13471,392 @@ Responsive Classes
   /* IE6-9 fallback on horizontal gradient */
 }
 
+.button {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.button.ac-button {
+  border-color: #00a651;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.2px;
+  color: #00a651;
+  font-weight: 500;
+  height: 48px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.button.ac-button:focus-visible {
+  outline: none;
+}
+
+.button.ac-button:hover {
+  background-color: #00a651;
+  color: #ffffff;
+}
+
+.button.ac-button.is-disabled {
+  opacity: 0.5 !important;
+}
+
+.button.ac-button .ac-icon {
+  margin-left: 25px;
+  background-color: #ffffff;
+  color: #00a651;
+  padding: 2px 6px;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+}
+
+.button.ac-button.is-normal {
+  height: 45px;
+  font-size: 15px;
+  letter-spacing: 0px;
+  font-weight: 500;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.button.ac-button.is-medium {
+  height: 58px;
+  font-size: 18px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.button.ac-button.is-transparent {
+  padding: 0;
+  height: auto;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: transparent;
+  color: #d1d1d1;
+}
+
+.button.ac-button.is-transparent.is-primary {
+  background-color: transparent;
+  color: #00a651;
+}
+
+.button.ac-button.is-transparent.is-primary:hover {
+  background-color: transparent;
+  color: #00a651;
+}
+
+.button.ac-button.is-transparent.is-danger {
+  background-color: transparent;
+  color: #ff3729;
+}
+
+.button.ac-button.is-transparent.is-danger:hover {
+  background-color: transparent;
+  color: #ff3729;
+}
+
+.button.ac-button.is-transparent.is-small {
+  letter-spacing: 0px;
+  font-size: 13px;
+}
+
+.button.ac-button.is-transparent:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.button.ac-button.is-white {
+  background-color: #ffffff;
+  border: none;
+}
+
+.button.ac-button.is-primary {
+  background-color: #00a651;
+  color: #ffffff;
+  border: none;
+}
+
+.button.ac-button.is-primary:hover {
+  background-color: #009c4c;
+  -webkit-box-shadow: 0px 6px 12px #98ffca;
+          box-shadow: 0px 6px 12px #98ffca;
+}
+
+.button.ac-button.is-primary:focus-visible {
+  outline: none;
+}
+
+.button.ac-button.is-primary.is-light {
+  background-color: #ddffed;
+  color: #00a651;
+}
+
+.button.ac-button.is-primary.is-light.is-border {
+  border: 1px solid #00a651;
+}
+
+.button.ac-button.is-primary.is-light:hover {
+  background-color: #baffdc;
+}
+
+.button.ac-button.is-primary.is-outlined {
+  background-color: transparent;
+  border: 1px solid #00a651;
+  color: #00a651;
+}
+
+.button.ac-button.is-primary.is-outlined:hover {
+  background-color: #00a651;
+  color: #ffffff;
+}
+
+.button.ac-button.is-link {
+  background-color: #0aafff;
+  color: #ffffff;
+  border: none;
+}
+
+.button.ac-button.is-link:hover {
+  background-color: #00acff;
+  -webkit-box-shadow: 0px 6px 12px #b6e7ff;
+          box-shadow: 0px 6px 12px #b6e7ff;
+}
+
+.button.ac-button.is-link:focus-visible {
+  outline: none;
+}
+
+.button.ac-button.is-link.is-light {
+  background-color: #e7f7ff;
+  color: #0aafff;
+}
+
+.button.ac-button.is-link.is-light.is-border {
+  border: 1px solid #0aafff;
+}
+
+.button.ac-button.is-link.is-light:hover {
+  background-color: #ceefff;
+}
+
+.button.ac-button.is-link.is-outlined {
+  background-color: transparent;
+  border: 1px solid #0aafff;
+  color: #0aafff;
+}
+
+.button.ac-button.is-link.is-outlined:hover {
+  background-color: #0aafff;
+  color: #ffffff;
+}
+
+.button.ac-button.is-info {
+  background-color: #0aafff;
+  color: #ffffff;
+  border: none;
+}
+
+.button.ac-button.is-info:hover {
+  background-color: #00acff;
+  -webkit-box-shadow: 0px 6px 12px #b6e7ff;
+          box-shadow: 0px 6px 12px #b6e7ff;
+}
+
+.button.ac-button.is-info:focus-visible {
+  outline: none;
+}
+
+.button.ac-button.is-info.is-light {
+  background-color: #e7f7ff;
+  color: #0aafff;
+}
+
+.button.ac-button.is-info.is-light.is-border {
+  border: 1px solid #0aafff;
+}
+
+.button.ac-button.is-info.is-light:hover {
+  background-color: #ceefff;
+}
+
+.button.ac-button.is-info.is-outlined {
+  background-color: transparent;
+  border: 1px solid #0aafff;
+  color: #0aafff;
+}
+
+.button.ac-button.is-info.is-outlined:hover {
+  background-color: #0aafff;
+  color: #ffffff;
+}
+
+.button.ac-button.is-success {
+  background-color: #00a651;
+  color: #ffffff;
+  border: none;
+}
+
+.button.ac-button.is-success:hover {
+  background-color: #009c4c;
+  -webkit-box-shadow: 0px 6px 12px #98ffca;
+          box-shadow: 0px 6px 12px #98ffca;
+}
+
+.button.ac-button.is-success:focus-visible {
+  outline: none;
+}
+
+.button.ac-button.is-success.is-light {
+  background-color: #ddffed;
+  color: #00a651;
+}
+
+.button.ac-button.is-success.is-light.is-border {
+  border: 1px solid #00a651;
+}
+
+.button.ac-button.is-success.is-light:hover {
+  background-color: #baffdc;
+}
+
+.button.ac-button.is-success.is-outlined {
+  background-color: transparent;
+  border: 1px solid #00a651;
+  color: #00a651;
+}
+
+.button.ac-button.is-success.is-outlined:hover {
+  background-color: #00a651;
+  color: #ffffff;
+}
+
+.button.ac-button.is-warning {
+  background-color: #ff8000;
+  color: #ffffff;
+  border: none;
+}
+
+.button.ac-button.is-warning:hover {
+  background-color: #f57b00;
+  -webkit-box-shadow: 0px 6px 12px #ffd9b3;
+          box-shadow: 0px 6px 12px #ffd9b3;
+}
+
+.button.ac-button.is-warning:focus-visible {
+  outline: none;
+}
+
+.button.ac-button.is-warning.is-light {
+  background-color: #fff2e6;
+  color: #ff8000;
+}
+
+.button.ac-button.is-warning.is-light.is-border {
+  border: 1px solid #ff8000;
+}
+
+.button.ac-button.is-warning.is-light:hover {
+  background-color: #ffe6cc;
+}
+
+.button.ac-button.is-warning.is-outlined {
+  background-color: transparent;
+  border: 1px solid #ff8000;
+  color: #ff8000;
+}
+
+.button.ac-button.is-warning.is-outlined:hover {
+  background-color: #ff8000;
+  color: #ffffff;
+}
+
+.button.ac-button.is-danger {
+  background-color: #ff3729;
+  color: #ffffff;
+  border: none;
+}
+
+.button.ac-button.is-danger:hover {
+  background-color: #ff2d1f;
+  -webkit-box-shadow: 0px 6px 12px #ffc3bf;
+          box-shadow: 0px 6px 12px #ffc3bf;
+}
+
+.button.ac-button.is-danger:focus-visible {
+  outline: none;
+}
+
+.button.ac-button.is-danger.is-light {
+  background-color: #ffebea;
+  color: #ff3729;
+}
+
+.button.ac-button.is-danger.is-light.is-border {
+  border: 1px solid #ff3729;
+}
+
+.button.ac-button.is-danger.is-light:hover {
+  background-color: #ffd7d4;
+}
+
+.button.ac-button.is-danger.is-outlined {
+  background-color: transparent;
+  border: 1px solid #ff3729;
+  color: #ff3729;
+}
+
+.button.ac-button.is-danger.is-outlined:hover {
+  background-color: #ff3729;
+  color: #ffffff;
+}
+
+.button.ac-button.is-green {
+  background-color: #158748;
+  color: #ffffff;
+  border: none;
+}
+
+.button.ac-button.is-green:hover {
+  background-color: #147e43;
+  -webkit-box-shadow: 0px 6px 12px #a3f1c6;
+          box-shadow: 0px 6px 12px #a3f1c6;
+}
+
+.button.ac-button.is-green:focus-visible {
+  outline: none;
+}
+
+.button.ac-button.is-green.is-light {
+  background-color: #e0faec;
+  color: #158748;
+}
+
+.button.ac-button.is-green.is-light.is-border {
+  border: 1px solid #158748;
+}
+
+.button.ac-button.is-green.is-light:hover {
+  background-color: #c2f5d9;
+}
+
+.button.ac-button.is-green.is-outlined {
+  background-color: transparent;
+  border: 1px solid #158748;
+  color: #158748;
+}
+
+.button.ac-button.is-green.is-outlined:hover {
+  background-color: #158748;
+  color: #ffffff;
+}
+
+/****************************************
+Responsive Classes
+*****************************************/
 /*==================================================
                   Theme guard Start
   ====================================================*/
