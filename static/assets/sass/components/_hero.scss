@@ -21,7 +21,7 @@
 .is-full-height {
   min-height: 100vh;
 }
-.hero-area.is-full-height{
+.hero-area.is-full-height {
   padding: 70px 0 0;
   overflow: hidden;
 }
@@ -81,4 +81,58 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+// from base
+.hero-area {
+  padding: 100px 0 80px;
+}
+.hero-content-inner {
+  h4 {
+    font-size: 14px;
+    color: #00a651;
+    letter-spacing: 7px;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+  h1 {
+    font-size: 44px;
+    font-weight: 400;
+    color: $ac-color-heading;
+    line-height: 67px;
+    b {
+      font-weight: 600;
+    }
+  }
+}
+
+.hero-content-inner {
+  h1 {
+    strong {
+      font-weight: 700;
+    }
+  }
+}
+
+.hero-area-button {
+  margin-top: 26px;
+  a {
+    span {
+      padding-right: 10px;
+    }
+  }
+}
+.kd-transparent-btn {
+  color: $ac-primary;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  margin-left: 15px;
+}
+.ac-transparent-btn {
+  color: $ac-primary;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  margin-left: 15px;
 }

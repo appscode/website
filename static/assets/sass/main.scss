@@ -15,7 +15,6 @@
 
 @import "base/_innerpage";
 @import "base/_base";
-@import "base/_contactus-update";
 
 
 // components SCSS 
@@ -24,6 +23,9 @@
 @import "components/_button";
 @import "components/_video-palyer";
 @import "components/_hero";
+@import "components/_features";
+@import "components/_tabs";
+@import "components/_tables";
 @import "components/_trusted-logos";
 @import "components/_social-prove_countdown";
 @import "components/_press-area";
@@ -31,6 +33,7 @@
 @import "components/_services";
 @import "components/_cta";
 @import "components/_pricing";
+@import "components/_faq";
 @import "components/_back-to-top";
 @import "components/_footer";
 
@@ -40,6 +43,7 @@
 @import "pages/_training";
 @import "pages/_consulting";
 @import "pages/_contactus";
+@import "pages/_documentation";
 
 
 // @import "themes/_kubeci";
