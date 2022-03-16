@@ -2,8 +2,8 @@
   "key": "kubedb",
   "name": "KubeDB",
   "fullname": "KubeDB by AppsCode",
-  "tagline": "Run production-grade Databases on <br><strong>Kubernetes</strong>",
-  "summary": "KubeDB by AppsCode simplifies and automates routine database tasks such as provisioning, patching, backup, recovery, failure detection, and repair for various popular databases on private and public clouds",
+  "tagline": "Run Production-Grade Databases on Kubernetes",
+  "summary": "KubeDB simplifies Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup, Restore for various Databases in Kubernetes on any Public & Private Cloud",
   "published": true,
   "author": "AppsCode Inc.",
   "website": {
@@ -11,13 +11,13 @@
     "path": "",
     "themeColor": "#4D4DCB"
   },
-  "keywords": "kubernetes appscode databsse high availability postgres elasticsearch etcd memecached mongodb mysql percona xtradb redis",
+  "keywords": "kubernetes, kubernetes database, database high availability, postgresql kubernetes, elasticsearch kubernetes, mysql kubernetes, etcd, mariadb kubernetes, memcached, mongodb kubernetes, percona xtradb, redis, scaling kubernetes, version upgrade kubernetes, volume expansion kubernetes, kubernetes database management",
   "heroImage": {
     "src": "/assets/images/products/kubedb/kubedb-hero.png",
     "alt": "KubeDB"
   },
   "logo": {
-    "src": "/assets/images/products/kubedb/kubedb.png",
+    "src": "/assets/images/products/kubedb/kubedb.svg",
     "alt": "KubeDB"
   },
   "logoWhite": {
@@ -25,7 +25,7 @@
     "alt": "KubeDB"
   },
   "icon": {
-    "src": "/assets/images/products/kubedb/kubedb-icon.png",
+    "src": "/assets/images/products/kubedb/kubedb-icon.svg",
     "alt": "KubeDB",
     "sizes": {
       "192x192": "/assets/images/products/kubedb/icons/android-icon-192x192.png"
@@ -161,6 +161,81 @@
       "version": "master",
       "hostDocs": false,
       "show": true
+    },
+    {
+      "version": "v2022.02.22",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.10.0",
+        "cli": "v0.25.0",
+        "community": "v0.25.0",
+        "dashboard": "v0.1.0",
+        "enterprise": "v0.12.0",
+        "installer": "v2022.02.22",
+        "schema-manager": "v0.1.0",
+        "ui-server": "v0.1.0",
+        "webhook-server": "v0.1.0"
+      }
+    },
+    {
+      "version": "v2021.12.21",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.9.2",
+        "cli": "v0.24.0",
+        "community": "v0.24.2",
+        "enterprise": "v0.11.2",
+        "installer": "v2021.12.21"
+      }
+    },
+    {
+      "version": "v2021.11.24",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.9.0",
+        "cli": "v0.24.0",
+        "community": "v0.24.0",
+        "enterprise": "v0.11.0",
+        "installer": "v2021.11.24"
+      }
+    },
+    {
+      "version": "v2021.11.18",
+      "hostDocs": true,
+      "info": {
+        "autoscaler": "v0.8.0",
+        "cli": "v0.23.0",
+        "community": "v0.23.0",
+        "enterprise": "v0.10.0",
+        "installer": "v2021.11.18"
+      }
+    },
+    {
+      "version": "v2021.09.30",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.7.0",
+        "cli": "v0.22.0",
+        "community": "v0.22.0",
+        "enterprise": "v0.9.0",
+        "installer": "v2021.09.30"
+      }
+    },
+    {
+      "version": "v2021.09.09",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.6.0",
+        "cli": "v0.21.0",
+        "community": "v0.21.0",
+        "enterprise": "v0.8.0",
+        "installer": "v2021.09.09"
+      }
     },
     {
       "version": "v2021.08.23",
@@ -453,10 +528,11 @@
       "hostDocs": false
     }
   ],
-  "latestVersion": "v2021.08.23",
+  "latestVersion": "v2022.02.22",
   "socialLinks": {
+    "slack": "https://kubernetes.slack.com/messages/C8149MREV",
     "facebook": "https://facebook.com/appscode",
-    "github": "https://github.com/kubedb/cli",
+    "github": "https://github.com/kubedb",
     "linkedin": "https://www.linkedin.com/company/appscode",
     "twitter": "https://twitter.com/KubeDB",
     "youtube": "https://www.youtube.com/c/appscodeinc"
