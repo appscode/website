@@ -70,6 +70,8 @@
   <!-- owl carousel CSS -->
   <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+  {{ block "head-footer" . }}
+  {{ end }}
   <!-- Custom CSS -->
   <!-- {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />

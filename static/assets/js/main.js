@@ -273,15 +273,31 @@ $(".yt-video").magnificPopup({
 });
 
 
-// headroomjs start
-var myElement = document.querySelector(".active-headroom");
-// construct an instance of Headroom, passing the element
-var headroom = new Headroom(myElement);
-// initialise
-headroom.init();
-// headroomjs end
+// map area-tabs
+var tabsMenus = document.querySelectorAll(".tabs-wrapper ul li");
+tabsMenus.forEach(tabItem => {
+  tabItem.addEventListener("click", function() {
+    // remove is-active from all the menus
+    tabsMenus.forEach(tabMenu => tabMenu.classList.remove("is-active"));
 
+    // add is-active to the clicked menu
+    tabItem.classList.add("is-active");
 
+    // activate map
+    var mapId = tabItem.getAttribute("href");
+
+    var mapElemUsa = document.getElementById("usa");
+    var mapElemDhaka = document.getElementById("dhaka");
+
+    if (mapId === "usa") {
+      mapElemDhaka.classList.remove("is-active");
+      mapElemUsa.classList.add("is-active");
+    } else {
+      mapElemUsa.classList.remove("is-active");
+      mapElemDhaka.classList.add("is-active");
+    }
+  });
+});
 // For FAQ Collaps Page
 const accordionItem = document.querySelectorAll(".accordion-item");
 const onClickAccordionHeader = (e) => {

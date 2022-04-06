@@ -8401,6 +8401,89 @@ strong {
 }
 
 /* brand logo area end */
+.ac-custom-select .ss-single-selected,
+.ac-custom-select .ss-multi-selected {
+  min-height: 45px !important;
+  border: 1px solid #a6abbd;
+  color: #3b3030;
+  padding: 0 15px;
+}
+
+.ac-custom-select .ss-single-selected .ss-arrow,
+.ac-custom-select .ss-multi-selected .ss-arrow {
+  margin: 0;
+}
+
+.ac-custom-select .ss-single-selected .placeholder,
+.ac-custom-select .ss-multi-selected .placeholder {
+  font-size: 15px;
+  color: #3b3030;
+  font-weight: 500;
+}
+
+.ac-custom-select .ss-single-selected .ss-values,
+.ac-custom-select .ss-multi-selected .ss-values {
+  margin-top: 3px;
+}
+
+.ac-custom-select .ss-single-selected .ss-values .ss-disabled,
+.ac-custom-select .ss-multi-selected .ss-values .ss-disabled {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #a6abbd;
+}
+
+.ac-custom-select .ss-single-selected .ss-values .ss-value,
+.ac-custom-select .ss-multi-selected .ss-values .ss-value {
+  height: 30px;
+  margin-bottom: 6px;
+  padding: 0 10px;
+  background-color: #35a651;
+}
+
+.ac-custom-select .ss-single-selected .ss-add,
+.ac-custom-select .ss-multi-selected .ss-add {
+  margin: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ac-custom-select .ss-content {
+  border: 1px solid #a6abbd;
+}
+
+.ac-custom-select .ss-content .ss-list .ss-option {
+  font-size: 14px;
+  color: #3b3030;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.ac-custom-select .ss-content .ss-list .ss-option:hover {
+  opacity: 0.8;
+  color: var(--ac-primary);
+}
+
+.ac-custom-select .ss-content .ss-list .ss-option.ss-disabled {
+  opacity: 0.5;
+}
+
+.ac-custom-select .ss-content .ss-search input {
+  border: 1px solid #a6abbd;
+}
+
+.ac-custom-select .ss-content .ss-search input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /****************************************
 Responsive Classes
 *****************************************/

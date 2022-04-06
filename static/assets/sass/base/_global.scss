@@ -302,6 +302,84 @@
 }
 
 /* brand logo area end */
+
+.ac-custom-select {
+  .ss-single-selected,
+  .ss-multi-selected {
+    min-height: 45px !important;
+    border: 1px solid #a6abbd;
+    color: $ac-color-text;
+    padding: 0 15px;
+
+    .ss-arrow {
+      margin: 0;
+    }
+    .placeholder {
+      font-size: 15px;
+      color: $ac-color-text;
+      font-weight: 500;
+    }
+    .ss-values {
+      margin-top: 3px;
+
+      .ss-disabled {
+        margin: 0;
+        padding: 0;
+        font-family: $ac-font-paragraph;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #a6abbd;
+      }
+
+      .ss-value {
+        height: 30px;
+        margin-bottom: 6px;
+        padding: 0 10px;
+        background-color: #35a651;
+      }
+    }
+
+    .ss-add {
+      margin: 4px;
+      align-items: center;
+    }
+  }
+
+  .ss-content {
+    border: 1px solid #a6abbd;
+
+    .ss-list {
+      .ss-option {
+        font-size: 14px;
+        color: $ac-color-text;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          opacity: 0.8;
+          color: $ac-primary;
+        }
+
+        &.ss-disabled {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .ss-search {
+      input {
+        border: 1px solid #a6abbd;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
 /****************************************
 Responsive Classes
 *****************************************/
@@ -436,82 +514,7 @@ Responsive Classes
 //   border-color: #32325d transparent transparent transparent;
 // }
 
-// .ac-custom-select {
-//   .ss-single-selected,
-//   .ss-multi-selected {
-//     min-height: 45px !important;
-//     border: 1px solid #a6abbd;
-//     color: $ac-color-text;
-//     padding: 0 15px;
 
-//     .ss-arrow {
-//       margin: 0;
-//     }
-//     .placeholder {
-//       font-size: 15px;
-//       color: $ac-color-text;
-//       font-weight: 500;
-//     }
-//     .ss-values {
-//       margin-top: 3px;
-
-//       .ss-disabled {
-//         margin: 0;
-//         padding: 0;
-//         font-family: $ac-font-paragraph;
-//         font-style: normal;
-//         font-weight: normal;
-//         font-size: 14px;
-//         line-height: 16px;
-//         color: #a6abbd;
-//       }
-
-//       .ss-value {
-//         height: 30px;
-//         margin-bottom: 6px;
-//         padding: 0 10px;
-//         background-color: #35a651;
-//       }
-//     }
-
-//     .ss-add {
-//       margin: 4px;
-//       align-items: center;
-//     }
-//   }
-
-//   .ss-content {
-//     border: 1px solid #a6abbd;
-
-//     .ss-list {
-//       .ss-option {
-//         font-size: 14px;
-//         color: $ac-color-text;
-//         transition: 0.3s ease-in-out;
-
-//         &:hover {
-//           opacity: 0.8;
-//           color: $ac-primary;
-//         }
-
-//         &.ss-disabled {
-//           opacity: 0.5;
-//         }
-//       }
-//     }
-
-//     .ss-search {
-//       input {
-//         border: 1px solid #a6abbd;
-
-//         &:focus {
-//           outline: none;
-//           box-shadow: none;
-//         }
-//       }
-//     }
-//   }
-// }
 
 // .img {
 //   max-width: 100%;
