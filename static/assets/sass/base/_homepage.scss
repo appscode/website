@@ -14,7 +14,7 @@ body.fixed-nav .fixed-menu {
   z-index: 99;
   width: 100%;
   padding: 9px 0px;
-  background: $white-color;
+  background: $ac-white;
   box-shadow: 0px 1px 1px rgba(25, 76, 128, 0.08);
 }
 
@@ -25,7 +25,7 @@ body.fixed-nav .fixed-menu {
 //is dark bg available in menu
 .main-menu.is-bg-available .navbar-item,
 .main-menu.is-bg-available .navbar-link {
-  color: $white-color;
+  color: $ac-white;
 }
 .main-menu.is-bg-available .navbar-item:hover,
 .main-menu.is-bg-available .navbar-link:hover {
@@ -38,16 +38,16 @@ body.fixed-nav .fixed-menu {
 // if header-fixed and bg color white
 body.fixed-nav .main-menu.is-bg-available .navbar-item,
 body.fixed-nav .main-menu.is-bg-available .navbar-link {
-  color: $link-color;
+  color: $ac-color-link;
 }
 // if header-fixed and bg color white
 body.fixed-nav .main-menu.is-bg-available .navbar-item:hover,
 body.fixed-nav .main-menu.is-bg-available .navbar-link:hover {
-  color: $primary-color;
+  color: $ac-primary;
 }
 .main-menu.is-bg-available .navbar-link:not(.is-arrowless)::after,
 .main-menu.is-bg-available .select:not(.is-multiple):not(.is-loading)::after {
-  border-color: $white-color;
+  border-color: $ac-white;
 }
 body.fixed-nav
   .main-menu.is-bg-available
@@ -55,7 +55,7 @@ body.fixed-nav
 body.fixed-nav
   .main-menu.is-bg-available
   .select:not(.is-multiple):not(.is-loading)::after {
-  border-color: $link-color;
+  border-color: $ac-color-link;
 }
 .hero-area {
   position: relative;
@@ -133,11 +133,11 @@ body.fixed-nav
     display: inline-block;
     margin: 0 auto;
     a {
-      color: $primary-color;
+      color: $ac-primary;
     }
   }
   .trusted-company a {
-    color: $primary-color;
+    color: $ac-primary;
   }
   .trusted-company p {
     font-weight: 500;
@@ -175,11 +175,11 @@ body.fixed-nav
       width: 100%;
       ul {
         padding-left: 30px;
-        border-left: 1px solid $border-color;
+        border-left: 1px solid $ac-white-light;
         li {
           a {
             display: inline-block;
-            color: $link-color;
+            color: $ac-color-link;
             padding: 10px 0;
             font-weight: 600;
             position: relative;
@@ -191,11 +191,11 @@ body.fixed-nav
               bottom: 0;
               width: 0;
               height: 2px;
-              background: $primary-color;
+              background: $ac-primary;
               transition: 0.3s linear;
             }
             &:hover {
-              color: $heading-color;
+              color: $ac-color-heading;
               &::after {
                 width: 100%;
               }
@@ -218,7 +218,7 @@ body.fixed-nav
     z-index: 1;
     transition: 0.3s ease-in-out;
     &:hover {
-      background: $white-color;
+      background: $ac-white;
       box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16);
       z-index: 3;
     }
@@ -240,10 +240,10 @@ body.fixed-nav
       transition: 0.3s ease-in-out;
     }
     &:hover .count {
-      color: $primary-color;
+      color: $ac-primary;
     }
     .name {
-      color: $paragraph-color;
+      color: $ac-color-text;
       font-size: 18px;
       font-weight: 500;
       margin-bottom: 20px;
@@ -258,7 +258,7 @@ body.fixed-nav
       width: 100%;
       opacity: 0;
       visibility: hidden;
-      color: $primary-color;
+      color: $ac-primary;
     }
     &:hover .action-btn {
       opacity: 1;
@@ -276,19 +276,19 @@ body.fixed-nav
 .service-content {
   padding-right: 60px;
   h5 {
-    color: $primary-color;
+    color: $ac-primary;
     font-size: 14px;
     font-weight: 600;
   }
   h2 {
-    color: $heading-color;
+    color: $ac-color-heading;
     font-size: 36px;
     font-weight: 400;
     line-height: 54px;
     margin-bottom: 10px;
   }
   p {
-    color: $paragraph-color;
+    color: $ac-color-text;
     font-size: 16px;
     max-width: 83%;
   }
@@ -298,7 +298,7 @@ body.fixed-nav
   position: relative;
   z-index: 1;
   h4 {
-    color: $primary-color;
+    color: $ac-primary;
     font-size: 14px;
     font-weight: 600;
   }
@@ -310,11 +310,11 @@ body.fixed-nav
   }
   p{
     a{
-      color: $primary-color;
+      color: $ac-primary;
       text-decoration: underline;
       transition: .3s ease-in-out;
       &:hover{
-        color: scale-color($primary-color, $lightness: 10%);
+        color: $ac-primary;
       }
     }
   }
@@ -393,13 +393,13 @@ body.fixed-nav
   .inline-button {
     width: 100px;
     height: 100px;
-    background: $primary-color;
+    background: $ac-primary;
     display: inline-block;
     text-align: left;
     padding-left: 40px;
     line-height: 80px;
     font-size: 30px;
-    color: $white-color;
+    color: $ac-white;
     border-radius: 50%;
     position: absolute;
     right: -100px;
@@ -424,7 +424,7 @@ body.fixed-nav
     top: 0;
     width: 100%;
     height: 0;
-    background: $primary-color;
+    background: $ac-primary;
     border-radius: 4px 4px 0 0;
     transition: 0.3s ease;
   }
@@ -436,26 +436,26 @@ body.fixed-nav
 }
 .color-2 {
   &:after {
-    background: $blue-color;
+    background: $ac-blue;
   }
   .inline-button {
-    background: $blue-color;
+    background: $ac-blue;
   }
 }
 .color-3 {
   &:after {
-    background: lighten($orange-color, 10%);
+    background: lighten(#FF8000, 10%);
   }
   .inline-button {
-    background: lighten($orange-color, 10%);
+    background: lighten(#FF8000, 10%);
   }
 }
 .color-4 {
   &:after {
-    background: lighten($primary-color, 10%);
+    background: lighten(#00A651, 10%);
   }
   .inline-button {
-    background: lighten($primary-color, 10%);
+    background: lighten(#00A651, 10%);
   }
 }
 // service area end
@@ -497,13 +497,13 @@ body.fixed-nav
     width: 100%;
   }
   .press-content {
-    border: 1px solid $border-color;
+    border: 1px solid $ac-white-light;
     border-top: 1px solid transparent;
     border-radius: 0 0 4px 4px;
     padding: 20px;
     .read-meta {
       font-size: 12px;
-      color: lighten($paragraph-color, 20%);
+      color: lighten(#4a4a4a, 20%);
       margin-bottom: 10px;
     }
     h3 {
@@ -518,9 +518,12 @@ body.fixed-nav
       -webkit-line-clamp: 2;
       box-orient: vertical;
       -webkit-box-orient: vertical;
+      a {
+        color: $ac-color-text;
+      }
     }
     p {
-      color: $paragraph-color;
+      color: $ac-color-text;
       font-size: 15px;
       margin-bottom: 30px;
       overflow: hidden;
@@ -542,15 +545,15 @@ body.fixed-nav
         top: 15px;
         width: 100%;
         height: 1px;
-        background: $border-color;
+        background: $ac-white-light;
         left: 0;
         z-index: -1;
         transition: 0.3s ease-in-out;
       }
       .press-button {
-        border: 1px solid $border-color;
+        border: 1px solid $ac-white-light;
         font-size: 13px;
-        color: lighten($paragraph-color, 30%);
+        color: lighten(#4a4a4a, 30%);
         font-weight: 600;
         padding: 5px 20px;
         border-radius: 50px;
@@ -558,11 +561,11 @@ body.fixed-nav
         float: right;
         position: relative;
         z-index: 1;
-        background: $white-color;
+        background: $ac-white;
         transition: 0.3s ease-in-out;
         &:hover {
-          color: $paragraph-color;
-          border: 1px solid $paragraph-color;
+          color: $ac-color-text;
+          border: 1px solid $ac-color-text;
         }
       }
     }
@@ -586,7 +589,7 @@ body.fixed-nav
     border-radius: 4px;
     min-height: 210px;
     p {
-      color: $paragraph-color;
+      color: $ac-color-text;
       font-size: 15px;
       line-height: 28px;
     }
@@ -657,7 +660,7 @@ section.our-customer-area {
   position: relative;
   z-index: 1;
   h1 {
-    color: $white-color;
+    color: $ac-white;
     font-size: 58px;
     font-weight: 400;
   }

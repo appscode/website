@@ -4,7 +4,7 @@ $poppins: "Poppins", sans-serif;
 // notification
 .ac-notification {
   &.is-primary {
-    background-color: $primary-color;
+    background-color: $ac-primary;
   }
 
   p {
@@ -200,7 +200,7 @@ $poppins: "Poppins", sans-serif;
       text-transform: uppercase;
 
       .is-require {
-        color: $red-color;
+        color: $ac-red;
         padding-left: 5px;
       }
     }
@@ -265,11 +265,11 @@ $poppins: "Poppins", sans-serif;
       font-weight: 500;
       font-size: 15px;
       background-color: transparent;
-      color: $paragraph-color;
+      color: $ac-color-text;
 
       &:focus {
         outline: none !important;
-        border: 1px solid $primary-color;
+        border: 1px solid $ac-primary;
       }
 
       &::placeholder {
@@ -295,7 +295,7 @@ $poppins: "Poppins", sans-serif;
         border: none;
         font-weight: 500;
         height: 45px !important;
-        color: $paragraph-color;
+        color: $ac-color-text;
         padding-left: 15px;
 
         option[selected] {
@@ -313,7 +313,7 @@ $poppins: "Poppins", sans-serif;
 
       &:focus {
         outline: none !important;
-        border: 1px solid $primary-color;
+        border: 1px solid $ac-primary;
       }
     }
 
@@ -341,12 +341,12 @@ $poppins: "Poppins", sans-serif;
 
     input[type="submit"] {
       width: 100%;
-      background-color: $primary-color;
+      background-color: $ac-primary;
       color: #fff;
       cursor: pointer;
 
       &:hover {
-        background-color: darken($primary-color, $amount: 5);
+        background-color: darken(#00A651, $amount: 5);
       }
     }
 

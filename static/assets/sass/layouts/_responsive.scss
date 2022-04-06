@@ -59,7 +59,7 @@
   // appscode style start
   .main-menu.is-bg-available .navbar-item,
   .main-menu.is-bg-available .navbar-link {
-    color: $link-color;
+    color: $ac-color-link;
   }
   .is-full-height {
     height: auto;
@@ -175,7 +175,7 @@
   }
   .main-menu.is-bg-available .navbar-item,
   .main-menu.is-bg-available .navbar-link {
-    color: $link-color;
+    color: $ac-color-link;
   }
   // mega-menu start
   body.fixed-nav .fixed-menu {
@@ -186,11 +186,11 @@
 
   .main-menu.is-bg-available .navbar-item,
   .main-menu.is-bg-available .navbar-link {
-    color: $link-color;
+    color: $ac-color-link;
   }
   .main-menu.is-bg-available .navbar-link:not(.is-arrowless)::after,
   .main-menu.is-bg-available .select:not(.is-multiple):not(.is-loading)::after {
-    border-color: $primary-color;
+    border-color: $ac-primary;
   }
   body.fixed-nav {
     padding-top: 0 !important;
@@ -517,7 +517,7 @@
    appscode-home inner page end
 ==============================================*/
   .customize-kubedb .main-menu a {
-    color: $link-color;
+    color: $ac-color-link;
   }
   //feature page style start
   .single-product-feature-wrapper {
@@ -545,7 +545,7 @@
 /*  tablet :769px. */
 @media (min-width: 769px) and (max-width: 1023px) {
   .navbar-burger {
-    color: $white-color;
+    color: $ac-white;
   }
   p {
     font-size: 15px;
@@ -575,7 +575,7 @@
     }
   }
   .customize-kubedb .main-menu a {
-    color: $link-color;
+    color: $ac-color-link;
   }
   //reverse order css
   .reverse-row-order {
@@ -591,11 +591,11 @@
 
   .main-menu.is-bg-available .navbar-item,
   .main-menu.is-bg-available .navbar-link {
-    color: $link-color;
+    color: $ac-color-link;
   }
   .main-menu.is-bg-available .navbar-link:not(.is-arrowless)::after,
   .main-menu.is-bg-available .select:not(.is-multiple):not(.is-loading)::after {
-    border-color: $primary-color;
+    border-color: $ac-primary;
   }
   body.fixed-nav {
     padding-top: 0 !important;
@@ -918,7 +918,7 @@
    Product page  start
 ==============================================*/
   .customize-kubedb .main-menu a {
-    color: $link-color;
+    color: $ac-color-link;
     padding: 10px 21px;
   }
   // feature-page start
@@ -954,11 +954,11 @@
 
   .main-menu.is-bg-available .navbar-item,
   .main-menu.is-bg-available .navbar-link {
-    color: $link-color;
+    color: $ac-color-link;
   }
   .main-menu.is-bg-available .navbar-link:not(.is-arrowless)::after,
   .main-menu.is-bg-available .select:not(.is-multiple):not(.is-loading)::after {
-    border-color: $primary-color;
+    border-color: $ac-primary;
   }
   body.fixed-nav {
     padding-top: 0 !important;
