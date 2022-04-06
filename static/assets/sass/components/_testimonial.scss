@@ -220,35 +220,33 @@ Responsive Classes
 //   padding-left: 30px;
 // }
 
-// .client-info p {
-//   margin: 0;
-//   font-size: $font-size-extra-small;
-//   font-style: italic;
-//   color: $ac-color-text;
-//   opacity: 0.6;
-// }
+.client-thumb {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin-right: 20px;
+}
 
-// .client-info h4 {
-//   font-size: 16px;
-//   line-height: 19px;
-//   margin-bottom: 3px;
-// }
-
-// .client-thumb {
-//   width: 50px;
-//   height: 50px;
-//   border-radius: 50%;
-//   overflow: hidden;
-//   float: left;
-//   margin-right: 20px;
-// }
-
-// .client-info {
-//   float: left;
-//   overflow: hidden;
-//   margin-top: 5px;
-//   text-align: left;
-// }
+.client-info {
+  float: left;
+  overflow: hidden;
+  margin-top: 5px;
+  text-align: left;
+  h4 {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 3px;
+  }
+  p {
+    margin: 0;
+    font-size: $font-size-extra-small;
+    font-style: italic;
+    color: $ac-color-text;
+    opacity: 0.6;
+  }
+}
 
 // .client-information {
 //   overflow: hidden;

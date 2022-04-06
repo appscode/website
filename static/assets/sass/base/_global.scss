@@ -109,6 +109,10 @@
   bottom: 0 !important;
 }
 
+.breadcrumb-section {
+  padding-top: 200px;
+}
+
 .cube {
   position: absolute;
   top: 80vh;
@@ -272,7 +276,32 @@
   color: $ac-white;
   background: $ac-primary;
 }
+.d-table {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
 
+.d-table-cell {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* brand logo area start */
+.single-brand-logo {
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px 20px;
+  text-align: center;
+  vertical-align: middle;
+  max-width: 200px;
+  height: auto;
+  img {
+    max-height: 50px;
+  }
+}
+
+/* brand logo area end */
 /****************************************
 Responsive Classes
 *****************************************/
@@ -487,18 +516,6 @@ Responsive Classes
 // .img {
 //   max-width: 100%;
 //   height: auto;
-// }
-
-// .d-table {
-//   display: table;
-//   height: 100%;
-//   width: 100%;
-// }
-
-// .d-table-cell {
-//   width: 100%;
-//   display: table-cell;
-//   vertical-align: middle;
 // }
 
 // .section-padding {

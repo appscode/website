@@ -583,7 +583,7 @@
 
   <!-- our customer logo area start -->
   {{ block "customer-logos" . }}
-  <div class="logo-carusal-area section-padding">
+  <div class="logo-carusal-area ssp-y-80">
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-10 is-offset-1 has-text-centered">
@@ -611,7 +611,7 @@
   {{ $productName := .Params.product_name }}
   {{ if $productName }}
   {{ $p := (index $.Site.Data.products $productName) }}
-  <section class="cta-area section-padding pt-0">
+  <section class="cta-area sp-y-80 pt-0">
     <div class="container">
       <div class="cta-padding">
         <div class="columns">
