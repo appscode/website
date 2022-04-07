@@ -587,9 +587,12 @@ $poppins: "Poppins", sans-serif;
 
     .single-speaker {
       .speaker-image {
-        width: 240px;
+        max-width: 240px;
         margin-right: 20px;
         border-radius: 4px;
+        &:last-child {
+          margin-right: 0;
+        }
         img {
         }
       }
@@ -608,177 +611,35 @@ $poppins: "Poppins", sans-serif;
   }
 }
 
+
 /****************************************
 Responsive Classes
 *****************************************/
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  .hero-area-2 {
-    &.webinar-page {
-      .hero-area-inner-2 {
-        padding-top: 80px;
-        padding-bottom: 60px;
-
-        h1 {
-          font-size: 42px;
-          line-height: 63px;
-        }
-
-        .single-webinar-info {
-          margin-right: 0;
-          flex-wrap: wrap;
-          margin-bottom: 20px;
-        }
-      }
-
-      .count-down-area {
-        width: 100%;
-        bottom: -104px;
-
-        .signle-count {
-          .name {
-            font-size: 14px;
-          }
-
-          .unit {
-            font-size: 42px;
-            line-height: 42px;
-          }
-        }
-      }
-    }
-  }
-
-  .registration-form-wrapper {
-    .registration-form {
-      position: inherit;
-      right: 0;
-      top: 110px;
-    }
-  }
-
-  .webinar-summary-area {
-    .webinar-summary {
-      .summary-content {
-        width: 100%;
-      }
-    }
-
-    .speaker-info-wrapper {
-      grid-template-columns: 100%;
-      max-width: 100%;
-      place-items: center;
-      text-align: center;
-
-      .speaker-info {
-        .designation {
-          text-align: center;
-          display: block;
-        }
-      }
-    }
-  }
+@media (max-width: 1023.98px) {
+  
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .hero-area-2 {
-    &.webinar-page {
-      .hero-area-inner-2 {
-        padding-top: 80px;
-        padding-bottom: 100px;
-
-        h1 {
-          font-size: 52px;
-          line-height: 83px;
-        }
-      }
-
-      .count-down-area {
-        width: 100%;
-        bottom: -104px;
-      }
-    }
-  }
-
-  .registration-form-wrapper {
-    .registration-form {
-      position: inherit;
-      right: 0;
-      top: 110px;
-    }
-  }
-
-  .webinar-summary-area {
-    .webinar-summary {
-      .summary-content {
-        width: 100%;
-      }
-    }
-
-    .speaker-info-wrapper {
-      max-width: 100%;
-    }
-  }
+// // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 768px) {
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .hero-area-2 {
-    &.webinar-page {
-      .hero-area-inner-2 {
-        padding-top: 80px;
-        padding-bottom: 100px;
-
-        h1 {
-          font-size: 52px;
-          line-height: 83px;
-        }
-      }
-
-      .count-down-area {
-        width: 100%;
-        bottom: -104px;
-      }
-    }
-  }
-
-  .registration-form-wrapper {
-    .registration-form {
-      position: inherit;
-      right: 0;
-      top: 110px;
-    }
-  }
-
-  .webinar-summary-area {
-    .webinar-summary {
-      .summary-content {
-        width: 100%;
-      }
-    }
-
-    .speaker-info-wrapper {
-      max-width: 100%;
-    }
-  }
+// Medium devices (tablets, 769px and up)
+@media (min-width: 769px) and (max-width: 1023.98px) {
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .webinar-summary-area {
-    .webinar-summary {
-      .summary-content {
-        width: 100%;
-      }
-    }
-
-    .speaker-info-wrapper {
-      max-width: 100%;
-    }
-  }
+// Large devices (desktops, 1024px and up)
+@media (min-width: 1024px) and (max-width: 1215px) {
+  
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1216px) and (max-width: 1407px) {
+  
+}
+
+@media (min-width: 1408px) and (max-width: 1600px) {
+  
+}
+
+@media (min-width: 1408px) {
+  
 }
