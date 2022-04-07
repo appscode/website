@@ -346,7 +346,7 @@ $poppins: "Poppins", sans-serif;
       cursor: pointer;
 
       &:hover {
-        background-color: darken(#00A651, $amount: 5);
+        background-color: darken(#00a651, $amount: 5);
       }
     }
 
@@ -451,6 +451,162 @@ $poppins: "Poppins", sans-serif;
 }
 
 // summary area end
+
+.webinar-header {
+  margin-bottom: 20px;
+  .upcoming-message {
+    h1 {
+      font-weight: 600;
+      line-height: 110%;
+      br {
+      }
+    }
+  }
+
+  .webinar-list-items {
+    .webinar-item {
+      width: 130px;
+      background-color: #ccffe5;
+      border-radius: 4px;
+      margin-right: 20px;
+      padding: 15px;
+      cursor: pointer;
+      &.is-active {
+        background-color: $ac-primary;
+        p,
+        h2 {
+          color: $ac-white;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        color: $ac-primary;
+        &.date {
+          font-size: 13px;
+        }
+      }
+
+      h2 {
+        font-size: 52px;
+        font-weight: 400;
+        text-align: center;
+        color: $ac-primary;
+        line-height: 1.029;
+      }
+    }
+  }
+}
+
+.webinar-body {
+  .webinar-video {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-top: 56.25%; /* 9 / 16 * 100 */
+    iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 0;
+    }
+  }
+
+  .webinar-title {
+    h1 {
+      font-size: 40px;
+      line-height: 130%;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+  }
+
+  .date-and-location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .date {
+      lord-icon {
+      }
+
+      span {
+        font-size: 18px;
+        color: $ac-color-text;
+        font-weight: 500;
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .webinar-summary {
+    .highlight {
+      position: relative;
+      padding-left: 25px;
+      &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 5px;
+        height: 100%;
+        background-color: $ac-primary;
+      }
+    }
+
+    p {
+      color: #636363;
+      margin-bottom: 20px;
+    }
+
+    .check-items {
+      li {
+        display: block;
+        margin-bottom: 8px;
+        lord-icon {
+        }
+
+        span {
+          margin-left: 15px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .webinar-speakers {
+    display: flex;
+    align-items: center;
+
+    .single-speaker {
+      .speaker-image {
+        width: 240px;
+        margin-right: 20px;
+        border-radius: 4px;
+        img {
+        }
+      }
+
+      .speaker-info {
+        h6 {
+        }
+
+        p {
+          font-size: 13px;
+          a {
+          }
+        }
+      }
+    }
+  }
+}
 
 /****************************************
 Responsive Classes

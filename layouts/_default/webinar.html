@@ -5,60 +5,139 @@
 
 {{ define "main" }}
 <!-- hero  area start -->
-<section class="hero-area-2 webinar-page">
+<section class="hero-area-2">
   <div class="container">
     <div class="columns">
       <div class="column is-8">
-        <div class="webinar-hero-area">
-          <div class="hero-area-inner-2">
-            <h1>Upcoming Webinar</h1>
-            <p class="subtitle">Manage production grade databases in Kubernetes using KubeDB</p>
-            <div class="webinar-wrapper is-flex is-flex-wrap-wrap">
-              <!-- single webinar info start  -->
-              <div class="single-webinar-info">
-                <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-                <strong>When : </strong>
-                <p>28 Feb 2021 - 07:05:00 PM</p>
-              </div>
-              <!-- single webinar info end -->
-              <!-- single webinar info start  -->
-              <div class="single-webinar-info">
-                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                <strong>Where : </strong>
-                <p>via Zoom</p>
-              </div>
-              <!-- single webinar info end -->
+        <div class="webinar-hero-area mt-100 mr-60">
+          <!-- webinar header start  -->
+          <div class="webinar-header is-flex is-justify-content-space-between is-align-items-center mt-10">
+            <div class="upcoming-message">
+              <h1 class="is-gradient">Upcoming <br>Webinar</h1>
             </div>
+            <!-- webinar list start  -->
+            <div class="webinar-list-items is-flex">
+              <!-- single date item start  -->
+              <div class="webinar-item is-active">
+                <p>Apr</p>
+                <h2>28</h2>
+                <p class="date">11:30:00 PM</p>
+              </div>
+              <!-- single date item end -->
+              <!-- single date item start  -->
+              <div class="webinar-item">
+                <p>Apr</p>
+                <h2>13</h2>
+                <p class="date">11:30:00 PM</p>
+              </div>
+              <!-- single date item end -->
+              <!-- single date item start  -->
+              <div class="webinar-item">
+                <p>Apr</p>
+                <h2>05</h2>
+                <p class="date">11:30:00 PM</p>
+              </div>
+              <!-- single date item end -->
+            </div>
+            <!-- webinar list end -->
           </div>
+          <!-- webinar header end -->
 
-          <!-- count-down area start  -->
-          <div class="count-down-area">
-            <!-- single count start  -->
-            <div class="signle-count">
-              <div class="name">DAYS</div>
-              <div class="unit" id="days">00</div>
+          <!-- webinar body start  -->
+          <div class="webinar-body">
+            <div class="webinar-video">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/B_7qJ1Gk9QI" title="YouTube video player"
+             frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+             allowfullscreen></iframe>
             </div>
-            <!-- single count end -->
-            <!-- single count start  -->
-            <div class="signle-count">
-              <div class="name">HOURS</div>
-              <div class="unit" id="hours">00</div>
+            <div class="webinar-title">
+              <h1>KubeDB AutoOps - Automate Day 2 Life-cycle Management for Databases on Kubernetes.</h1>
             </div>
-            <!-- single count end -->
-            <!-- single count start  -->
-            <div class="signle-count">
-              <div class="name">MINUTES</div>
-              <div class="unit" id="minutes">00</div>
+            <div class="date-and-location">
+              <p class="date">
+                <lord-icon src="https://cdn.lordicon.com/drtetngs.json" trigger="loop" colors="primary:#00a651"
+                  style="width:24px;height:24px">
+                </lord-icon><span>When: 13 Apr 2022 - 11:30:00 PM</span>
+              </p>
+              <p class="date">
+                <lord-icon src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop" style="width:24px;height:24px">
+                </lord-icon><span>Where : via Zoom </span>
+              </p>
             </div>
-            <!-- single count end -->
-            <!-- single count start  -->
-            <div class="signle-count">
-              <div class="name">SECONDS</div>
-              <div class="unit" id="seconds">00</div>
+
+            <!-- webinar summary start  -->
+            <div class="webinar-summary">
+              <p class="highlight">KubeDB manages the day-2 life cycle of any support databases via OpsRequest. But
+                currently to generate
+                an ops request, you have to identify the need for it like TLS certificates are going to expire, new
+                patch/minor/major version is available etc. Moreover, you have to apply the ops request with immediate
+                effect.</p>
+              <p>To automate these manual processes, we are going to introduce a Recommendation generator which will
+                automatically generate Ops request recommendations for you by inspecting the KubeDB resources. We are
+                also developing a generic recommendation executor called Supervisor to execute the Ops request in the
+                specified maintenance window in a more convenient and managed way.</p>
+
+              <p>We will be happy to share the progress we have accomplished so far and get feedback from you.</p>
+
+              <ul class="check-items">
+                <li>
+                  <lord-icon src="https://cdn.lordicon.com/hjeefwhm.json" trigger="loop" colors="primary:#00a651"
+                    style="width:16px;height:16px">
+                  </lord-icon><span>Introduction to Supervisor (Generic Recommendation Executor)</span>
+                </li>
+                <li>
+                  <lord-icon src="https://cdn.lordicon.com/hjeefwhm.json" trigger="loop" colors="primary:#00a651"
+                    style="width:16px;height:16px">
+                  </lord-icon><span>Introduction to Recommendation Generator for KubeDB Ops request</span>
+                </li>
+                <li>
+                  <lord-icon src="https://cdn.lordicon.com/hjeefwhm.json" trigger="loop" colors="primary:#00a651"
+                    style="width:16px;height:16px">
+                  </lord-icon><span>Demo</span>
+                </li>
+              </ul>
             </div>
-            <!-- single count end -->
+            <!-- webinar summary end -->
+
+            <!-- webinar speaker section start  -->
+            <h5 class="mb-10 mt-30">Webinar Speakers</h5>
+            <div class="webinar-speakers">
+              <!-- single speaker start  -->
+              <div class="single-speaker">
+                <div class="speaker-image"><img src="https://via.placeholder.com/600/dddddd/808080" alt=""></div>
+                <div class="speaker-info">
+                  <h6>Pulak Kanti Bhowmick</h6>
+                  <p>Software Engineers <a href="https://appscode.com">AppsCode Inc</a></p>
+                </div>
+              </div>
+              <!-- single speaker end -->
+
+              <!-- single speaker start  -->
+              <div class="single-speaker">
+                <div class="speaker-image"><img src="https://via.placeholder.com/600/dddddd/808080" alt=""></div>
+                <div class="speaker-info">
+                  <h6>Pulak Kanti Bhowmick</h6>
+                  <p>Software Engineers <a href="https://appscode.com">AppsCode Inc</a></p>
+                </div>
+              </div>
+              <!-- single speaker end -->
+
+              <!-- single speaker start  -->
+              <div class="single-speaker">
+                <div class="speaker-image"><img src="https://via.placeholder.com/600/dddddd/808080" alt=""></div>
+                <div class="speaker-info">
+                  <h6>Pulak Kanti Bhowmick</h6>
+                  <p>Software Engineers <a href="https://appscode.com">AppsCode Inc</a></p>
+                </div>
+              </div>
+              <!-- single speaker end -->
+
+            </div>
+            <!-- webinar speaker section end -->
           </div>
-          <!-- count-down area end -->
+          <!-- webinar body end -->
+
         </div>
       </div>
       <div class="column is-4">
