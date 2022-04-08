@@ -11100,14 +11100,34 @@ Responsive Classes
           align-items: center;
 }
 
-.webinar-body .webinar-speakers .single-speaker .speaker-image {
-  max-width: 240px;
+.webinar-body .webinar-speakers .single-speaker {
+  position: relative;
+  z-index: 1;
   margin-right: 20px;
+  max-width: 260px;
   border-radius: 4px;
+  overflow: hidden;
 }
 
-.webinar-body .webinar-speakers .single-speaker .speaker-image:last-child {
+.webinar-body .webinar-speakers .single-speaker:last-child {
   margin-right: 0;
+}
+
+.webinar-body .webinar-speakers .single-speaker:hover .speaker-info {
+  bottom: 0;
+}
+
+.webinar-body .webinar-speakers .single-speaker .speaker-info {
+  background-color: #ccffe5;
+  padding: 20px 15px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  bottom: -100px;
+  border-top: 5px solid var(--ac-primary);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .webinar-body .webinar-speakers .single-speaker .speaker-info p {
@@ -15206,3 +15226,4 @@ Responsive Classes
   documentation page end
 ==============================================*/
 }
+/*# sourceMappingURL=main.css.map */

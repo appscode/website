@@ -454,10 +454,12 @@ $poppins: "Poppins", sans-serif;
 
 .webinar-header {
   margin-bottom: 20px;
+
   .upcoming-message {
     h1 {
       font-weight: 600;
       line-height: 110%;
+
       br {
       }
     }
@@ -471,21 +473,26 @@ $poppins: "Poppins", sans-serif;
       margin-right: 20px;
       padding: 15px;
       cursor: pointer;
+
       &.is-active {
         background-color: $ac-primary;
+
         p,
         h2 {
           color: $ac-white;
         }
       }
+
       &:last-child {
         margin-right: 0;
       }
+
       p {
         font-size: 18px;
         font-weight: 400;
         text-align: center;
         color: $ac-primary;
+
         &.date {
           font-size: 13px;
         }
@@ -508,7 +515,9 @@ $poppins: "Poppins", sans-serif;
     width: 100%;
     height: 0;
     position: relative;
-    padding-top: 56.25%; /* 9 / 16 * 100 */
+    padding-top: 56.25%;
+
+    /* 9 / 16 * 100 */
     iframe {
       width: 100%;
       height: 100%;
@@ -533,6 +542,7 @@ $poppins: "Poppins", sans-serif;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+
     .date {
       lord-icon {
       }
@@ -550,6 +560,7 @@ $poppins: "Poppins", sans-serif;
     .highlight {
       position: relative;
       padding-left: 25px;
+
       &:after {
         position: absolute;
         content: "";
@@ -570,6 +581,7 @@ $poppins: "Poppins", sans-serif;
       li {
         display: block;
         margin-bottom: 8px;
+
         lord-icon {
         }
 
@@ -586,23 +598,45 @@ $poppins: "Poppins", sans-serif;
     align-items: center;
 
     .single-speaker {
-      .speaker-image {
-        max-width: 240px;
-        margin-right: 20px;
-        border-radius: 4px;
-        &:last-child {
-          margin-right: 0;
+      position: relative;
+      z-index: 1;
+      margin-right: 20px;
+      max-width: 260px;
+      border-radius: 4px;
+      overflow: hidden;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        .speaker-info {
+          bottom: 0;
         }
+      }
+
+      .speaker-image {
         img {
         }
       }
 
       .speaker-info {
+        background-color: #ccffe5;
+        padding: 20px 15px;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        bottom: -100px;
+        border-top: 5px solid $ac-primary;
+        transition: 0.3s ease-in-out;
+
         h6 {
         }
 
         p {
           font-size: 13px;
+
           a {
           }
         }
@@ -611,12 +645,10 @@ $poppins: "Poppins", sans-serif;
   }
 }
 
-
 /****************************************
 Responsive Classes
 *****************************************/
 @media (max-width: 1023.98px) {
-  
 }
 
 // // Small devices (landscape phones, 576px and up)
@@ -629,17 +661,13 @@ Responsive Classes
 
 // Large devices (desktops, 1024px and up)
 @media (min-width: 1024px) and (max-width: 1215px) {
-  
 }
 
 @media (min-width: 1216px) and (max-width: 1407px) {
-  
 }
 
 @media (min-width: 1408px) and (max-width: 1600px) {
-  
 }
 
 @media (min-width: 1408px) {
-  
 }
