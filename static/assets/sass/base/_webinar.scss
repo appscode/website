@@ -510,6 +510,17 @@ $poppins: "Poppins", sans-serif;
 }
 
 .webinar-body {
+  .single-webinar {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+
+    &.is-active {
+      opacity: 1;
+      visibility: visible;
+      display: block;
+    }
+  }
   .webinar-video {
     margin-bottom: 20px;
     width: 100%;
@@ -643,6 +654,40 @@ $poppins: "Poppins", sans-serif;
       }
     }
   }
+}
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  background-color: #CCC;
+}
+
+.tab:hover {
+  background-color: #AAA;
+}
+
+.tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /****************************************

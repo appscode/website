@@ -11016,6 +11016,18 @@ Responsive Classes
   line-height: 1.029;
 }
 
+.webinar-body .single-webinar {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.webinar-body .single-webinar.is-active {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
 .webinar-body .webinar-video {
   margin-bottom: 20px;
   width: 100%;
@@ -11132,6 +11144,44 @@ Responsive Classes
 
 .webinar-body .webinar-speakers .single-speaker .speaker-info p {
   font-size: 13px;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  background-color: #CCC;
+}
+
+.tab:hover {
+  background-color: #AAA;
+}
+
+.tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /****************************************

@@ -43,6 +43,7 @@ const selctorsForResponsiveMenu = [
   ".right-sidebar",
   ".sidebar-search-area"
 ];
+
 // toggle classes for responsive buttons
 const toggleClassesForResponsiveMenu = ["is-block", "is-visible", "is-block", "right-0"];
 // All responsive menu buttons
@@ -91,6 +92,26 @@ Array.from(responsiveMenus).forEach((menu, idx) => {
     });
   });
 });
+
+// Webinar tabs start
+const tabsitem = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
+
+tabsitem.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget)
+    console.log(target)
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('is-active')
+    })
+    tabsitem.forEach(tab => {
+      tab.classList.remove('is-active')
+    })
+    tab.classList.add('is-active')
+    target.classList.add('is-active')
+  })
+})
+// Webinar tabs end
 
 
 $('.grid').masonry({
@@ -249,10 +270,10 @@ owlSocialProve.owlCarousel({
   smartSpeed: 3000,
   autoplayTimeout: 3000,
   autoplayHoverPause: true,
-  rewindNav:false,
+  rewindNav: false,
   rewindSpeed: 0,
   // autoHeight:true,
-  autoWidth:true,
+  autoWidth: true,
   responsiveClass: true,
   responsive: {
     0: {
@@ -267,6 +288,10 @@ owlSocialProve.owlCarousel({
   }
 });
 
+
+
+
+
 // Modal js video init plugin
 $(".yt-video").magnificPopup({
   type: 'iframe'
@@ -276,7 +301,7 @@ $(".yt-video").magnificPopup({
 // map area-tabs
 var tabsMenus = document.querySelectorAll(".tabs-wrapper ul li");
 tabsMenus.forEach(tabItem => {
-  tabItem.addEventListener("click", function() {
+  tabItem.addEventListener("click", function () {
     // remove is-active from all the menus
     tabsMenus.forEach(tabMenu => tabMenu.classList.remove("is-active"));
 
