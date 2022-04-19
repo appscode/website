@@ -100,7 +100,6 @@ const tabContents = document.querySelectorAll('[data-tab-content]')
 tabsitem.forEach(tab => {
   tab.addEventListener('click', () => {
     const target = document.querySelector(tab.dataset.tabTarget)
-    console.log(target)
     tabContents.forEach(tabContent => {
       tabContent.classList.remove('is-active')
     })
@@ -289,7 +288,6 @@ $(".yt-video").magnificPopup({
   type: 'iframe'
 });
 
-
 // map area-tabs
 var tabsMenus = document.querySelectorAll(".tabs-wrapper ul li");
 tabsMenus.forEach(tabItem => {
@@ -348,7 +346,6 @@ const goToASectionSmoothly = () => {
       // go to the target section smoothly
       const targetEl = document.querySelector(e.currentTarget.hash);
       const pos = targetEl.offsetTop;
-      console.log(pos);
       window.scrollTo({
         top: pos,
         behavior: "smooth",
