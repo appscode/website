@@ -114,10 +114,6 @@ tabsitem.forEach(tab => {
 // Webinar tabs end
 
 
-$('.grid').masonry({
-  itemSelector: '.grid-item'
-});
-
 // scroll to top start
 //Get the button
 const goToTopBtn = document.querySelector(".go-to-top");
@@ -287,10 +283,6 @@ owlSocialProve.owlCarousel({
     }
   }
 });
-
-
-
-
 
 // Modal js video init plugin
 $(".yt-video").magnificPopup({
