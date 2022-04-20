@@ -11136,7 +11136,7 @@ Responsive Classes
   width: 100%;
   text-align: center;
   left: 0;
-  bottom: -100px;
+  bottom: -100%;
   border-top: 5px solid var(--ac-primary);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -11172,11 +11172,11 @@ Responsive Classes
 }
 
 .tab.active {
-  background-color: #CCC;
+  background-color: #ccc;
 }
 
 .tab:hover {
-  background-color: #AAA;
+  background-color: #aaa;
 }
 
 .tab-content {
@@ -11187,6 +11187,295 @@ Responsive Classes
 /****************************************
 Responsive Classes
 *****************************************/
+@media (max-width: 1023.98px) {
+  .webinar-header .upcoming-message h1 {
+    font-size: 34px;
+  }
+  .webinar-header .webinar-list-items .webinar-item {
+    width: 110px;
+  }
+  .webinar-header .webinar-list-items .webinar-item h2 {
+    font-size: 22px;
+  }
+  .webinar-header .webinar-list-items .webinar-item p {
+    font-size: 14px;
+  }
+  .webinar-body .webinar-title h1 {
+    font-size: 22px;
+  }
+  .webinar-body .webinar-speakers .single-speaker .speaker-info {
+    padding: 15px;
+  }
+  .webinar-body .webinar-speakers .single-speaker .speaker-info h6 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .webinar-hero-area.mt-100.mr-60 {
+    margin-right: 0 !important;
+    margin-top: 80px !important;
+  }
+  .webinar-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .webinar-header .upcoming-message h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .webinar-header .upcoming-message h1 br {
+    display: none;
+  }
+  .webinar-header .webinar-list-items .webinar-item {
+    margin-right: 10px;
+    width: auto;
+  }
+  .webinar-body .date-and-location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .webinar-body .date-and-location .date {
+    margin-bottom: 8px;
+  }
+  .webinar-body .date-and-location .date span {
+    font-size: 15px;
+  }
+  .webinar-body .webinar-speakers {
+    overflow: auto;
+  }
+  .webinar-body .webinar-speakers .single-speaker {
+    min-width: 130px;
+  }
+  .registration-form-wrapper .registration-form {
+    position: inherit;
+    top: 0;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768.98px) {
+  .webinar-hero-area.mt-100.mr-60 {
+    margin-right: 0 !important;
+    margin-top: 80px !important;
+  }
+  .webinar-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .webinar-header .upcoming-message h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  .webinar-header .upcoming-message h1 br {
+    display: none;
+  }
+  .webinar-header .webinar-list-items .webinar-item {
+    margin-right: 15px;
+    width: auto;
+  }
+  .webinar-header .webinar-list-items .webinar-item h2 {
+    font-size: 32px;
+  }
+  .webinar-body .date-and-location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .webinar-body .date-and-location .date {
+    margin-bottom: 8px;
+  }
+  .webinar-body .date-and-location .date span {
+    font-size: 15px;
+  }
+  .webinar-body .webinar-speakers {
+    overflow: auto;
+  }
+  .webinar-body .webinar-speakers .single-speaker {
+    min-width: 130px;
+  }
+  .registration-form-wrapper .registration-form {
+    position: inherit;
+    top: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023.98px) {
+  .webinar-hero-area.mt-100.mr-60 {
+    margin-right: 0 !important;
+    margin-top: 80px !important;
+  }
+  .webinar-header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .webinar-header .upcoming-message h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  .webinar-header .upcoming-message h1 br {
+    display: block;
+  }
+  .webinar-header .webinar-list-items .webinar-item {
+    margin-right: 15px;
+    width: auto;
+  }
+  .webinar-header .webinar-list-items .webinar-item h2 {
+    font-size: 32px;
+  }
+  .webinar-body .date-and-location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .webinar-body .date-and-location .date {
+    margin-bottom: 8px;
+  }
+  .webinar-body .date-and-location .date span {
+    font-size: 15px;
+  }
+  .webinar-body .webinar-speakers {
+    overflow: auto;
+  }
+  .webinar-body .webinar-speakers .single-speaker {
+    min-width: 130px;
+  }
+  .registration-form-wrapper .registration-form {
+    position: absolute;
+    top: 80px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1215px) {
+  .webinar-hero-area.mt-100.mr-60 {
+    margin-right: 0 !important;
+    margin-top: 80px !important;
+  }
+  .webinar-header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .webinar-header .upcoming-message h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  .webinar-header .upcoming-message h1 br {
+    display: block;
+  }
+  .webinar-header .webinar-list-items .webinar-item {
+    margin-right: 15px;
+    width: auto;
+  }
+  .webinar-header .webinar-list-items .webinar-item h2 {
+    font-size: 32px;
+  }
+  .webinar-body .webinar-title h1 {
+    font-size: 22px;
+  }
+  .webinar-body .date-and-location {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .webinar-body .date-and-location .date {
+    margin-bottom: 0px;
+  }
+  .webinar-body .date-and-location .date span {
+    font-size: 15px;
+  }
+  .webinar-body .webinar-speakers {
+    overflow: auto;
+  }
+  .webinar-body .webinar-speakers .single-speaker {
+    min-width: 130px;
+  }
+  .registration-form-wrapper .registration-form {
+    position: absolute;
+    top: 80px;
+  }
+}
+
+@media (min-width: 1216px) and (max-width: 1600px) {
+  .webinar-hero-area.mt-100.mr-60 {
+    margin-right: 0 !important;
+    margin-top: 80px !important;
+  }
+  .webinar-header .upcoming-message h1 {
+    font-size: 48px;
+  }
+  .webinar-header .webinar-list-items .webinar-item {
+    margin-right: 15px;
+    width: 120px;
+  }
+  .webinar-header .webinar-list-items .webinar-item h2 {
+    font-size: 32px;
+  }
+  .webinar-body .webinar-title h1 {
+    font-size: 28px;
+  }
+  .webinar-body .date-and-location {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .webinar-body .date-and-location .date {
+    margin-bottom: 0px;
+  }
+  .webinar-body .date-and-location .date span {
+    font-size: 15px;
+  }
+  .webinar-body .webinar-speakers {
+    overflow: auto;
+  }
+  .webinar-body .webinar-speakers .single-speaker {
+    min-width: 130px;
+  }
+  .registration-form-wrapper .registration-form {
+    position: absolute;
+    top: 80px;
+  }
+}
+
 .navbar-area {
   position: relative;
   z-index: 99;
