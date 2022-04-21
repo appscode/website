@@ -10602,9 +10602,6 @@ Responsive Classes
 }
 
 .registration-form-wrapper .registration-form {
-  position: absolute;
-  right: 0;
-  top: 110px;
   width: 100%;
 }
 
@@ -10971,7 +10968,7 @@ Responsive Classes
 }
 
 .webinar-header .upcoming-message h1 {
-  font-weight: 600;
+  font-weight: 500;
   line-height: 110%;
 }
 
@@ -11035,6 +11032,17 @@ Responsive Classes
   position: relative;
   padding-top: 56.25%;
   /* 9 / 16 * 100 */
+}
+
+.webinar-body .webinar-video.active-overlay:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.3;
 }
 
 .webinar-body .webinar-video iframe {
@@ -11257,10 +11265,6 @@ Responsive Classes
   .webinar-body .webinar-speakers .single-speaker {
     min-width: 130px;
   }
-  .registration-form-wrapper .registration-form {
-    position: inherit;
-    top: 0;
-  }
 }
 
 @media (min-width: 501px) and (max-width: 768.98px) {
@@ -11312,10 +11316,6 @@ Responsive Classes
   .webinar-body .webinar-speakers .single-speaker {
     min-width: 130px;
   }
-  .registration-form-wrapper .registration-form {
-    position: inherit;
-    top: 0;
-  }
 }
 
 @media (min-width: 769px) and (max-width: 1023.98px) {
@@ -11366,10 +11366,6 @@ Responsive Classes
   }
   .webinar-body .webinar-speakers .single-speaker {
     min-width: 130px;
-  }
-  .registration-form-wrapper .registration-form {
-    position: absolute;
-    top: 80px;
   }
 }
 
@@ -11425,10 +11421,6 @@ Responsive Classes
   .webinar-body .webinar-speakers .single-speaker {
     min-width: 130px;
   }
-  .registration-form-wrapper .registration-form {
-    position: absolute;
-    top: 80px;
-  }
 }
 
 @media (min-width: 1216px) and (max-width: 1600px) {
@@ -11469,10 +11461,6 @@ Responsive Classes
   }
   .webinar-body .webinar-speakers .single-speaker {
     min-width: 130px;
-  }
-  .registration-form-wrapper .registration-form {
-    position: absolute;
-    top: 80px;
   }
 }
 

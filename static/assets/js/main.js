@@ -112,6 +112,23 @@ tabsitem.forEach(tab => {
 })
 // Webinar tabs end
 
+// webinar video FN 
+const iframeElements = document.querySelectorAll("iframe");
+const webinarVideoElements = document.querySelectorAll(".webinar-video");
+
+Array.from(webinarVideoElements).forEach((webinarVideoEl, idx) => {
+  webinarVideoEl.addEventListener('click', () => {
+    const hasOverlay = webinarVideoEl.classList.contains("active-overlay");
+    if(hasOverlay) {
+      let times = 0, playY;
+      if(times == 0){
+        playY = iframeElements[idx].src += '?autoplay=1&start=1';
+        times = 0;
+      }
+      webinarVideoEl.classList.remove("active-overlay")
+    }
+  });
+});
 
 // scroll to top start
 //Get the button
@@ -217,9 +234,7 @@ bulmaCarousel.attach("#carousel-demo", {
   slidesToShow: 1,
   infinite: true,
   autoplay: false,
-});
-
-// owl owlCarousel JS 
+});Array.from(allHeaders)
 var owl = $('.testimonial-carousel');
 owl.owlCarousel({
   loop: true,
