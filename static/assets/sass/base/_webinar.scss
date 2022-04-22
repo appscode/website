@@ -456,9 +456,6 @@ $poppins: "Poppins", sans-serif;
     h1 {
       font-weight: 500;
       line-height: 110%;
-
-      br {
-      }
     }
   }
 
@@ -635,11 +632,6 @@ $poppins: "Poppins", sans-serif;
         }
       }
 
-      .speaker-image {
-        img {
-        }
-      }
-
       .speaker-info {
         background-color: #ccffe5;
         padding: 20px 15px;
@@ -651,14 +643,8 @@ $poppins: "Poppins", sans-serif;
         border-top: 5px solid $ac-primary;
         transition: 0.3s ease-in-out;
 
-        h6 {
-        }
-
         p {
           font-size: 13px;
-
-          a {
-          }
         }
       }
     }
@@ -742,7 +728,7 @@ Responsive Classes
 
 // // Small devices (landscape phones, 576px and up)
 @media (max-width: 500px) {
-  .webinar-hero-area.mt-100.mr-60 {
+  .webinar-hero-area.mt-80.mr-100 {
     margin-right: 0 !important;
     margin-top: 80px !important;
   }
@@ -788,7 +774,7 @@ Responsive Classes
 }
 
 @media (min-width: 501px) and (max-width: 768.98px) {
-  .webinar-hero-area.mt-100.mr-60 {
+  .webinar-hero-area.mt-80.mr-100 {
     margin-right: 0 !important;
     margin-top: 80px !important;
   }
@@ -838,7 +824,7 @@ Responsive Classes
 
 // Medium devices (tablets, 769px and up)
 @media (min-width: 769px) and (max-width: 1023.98px) {
-  .webinar-hero-area.mt-100.mr-60 {
+  .webinar-hero-area.mt-80.mr-100 {
     margin-right: 0 !important;
     margin-top: 80px !important;
   }
@@ -888,7 +874,7 @@ Responsive Classes
 
 // Large devices (desktops, 1024px and up)
 @media (min-width: 1024px) and (max-width: 1215px) {
-  .webinar-hero-area.mt-100.mr-60 {
+  .webinar-hero-area.mt-80.mr-100 {
     margin-right: 0 !important;
     margin-top: 80px !important;
   }
@@ -942,7 +928,7 @@ Responsive Classes
 }
 
 @media (min-width: 1216px) and (max-width: 1600px) {
-  .webinar-hero-area.mt-100.mr-60 {
+  .webinar-hero-area.mt-80.mr-100 {
     margin-right: 0 !important;
     margin-top: 80px !important;
   }
