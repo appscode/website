@@ -8920,8 +8920,8 @@ body.fixed-nav
 .section-title p a {
   color: var(--ac-primary);
   text-decoration: underline;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .section-title p a:hover {
@@ -9102,7 +9102,7 @@ body.fixed-nav
 }
 
 .press-area .single-press-wrapper:hover .press-content {
-  border: 1px solid #FBFBFB;
+  border: 1px solid #fbfbfb;
 }
 
 .press-area .single-press-wrapper .press-image-1 {
@@ -9316,6 +9316,48 @@ section.our-customer-area {
   height: 100%;
   background: #1c2c41;
   z-index: -1;
+}
+
+/****************************************
+Responsive Classes
+*****************************************/
+@media (max-width: 1023.98px) {
+  .hero-area.is-product .play-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .service-content {
+    padding-left: 0 !important;
+    padding-right: 0;
+  }
+  .service-content h2 {
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .service-content p {
+    text-align: center;
+    max-width: 100%;
+    font-size: 15px;
+  }
+  .service-content a, .service-content .learn-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pt-100.is-mobile-device {
+    padding-top: 30px !important;
+  }
 }
 
 .lightbox {
@@ -14674,18 +14716,6 @@ Responsive Classes
   }
   .section-padding.pt-0 {
     padding-top: 0;
-  }
-  .service-content {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .service-content h2 {
-    font-size: 22px;
-    line-height: 36px;
-  }
-  .service-content p {
-    max-width: 100%;
-    font-size: 15px;
   }
   .kd-button,
   .ac-button {
