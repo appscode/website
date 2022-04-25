@@ -20,7 +20,7 @@
     height: 400px;
     h1 {
       font-size: 48px;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       font-weight: 400;
     }
     p {
@@ -372,3 +372,58 @@
 }
 
 // product page feature area end
+
+
+
+/****************************************
+Responsive Classes
+*****************************************/
+@media (max-width: 767.98px) {
+  .package-area {
+    .single-package-wrapper {
+      padding: 20px 30px;
+      border: 1px solid $ac-white-light;
+    }
+  }
+  .testimonial-area-2 {
+    .testimonial-wrapper {
+      text-align: center;
+      .is-pulled-right {
+        float: inherit !important;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+// (min-width: 568px) and (max-width: 1023.98px)
+@media (min-width: 568px) and (max-width: 1023.98px) {
+  .hero-area-2{
+    margin-top: 120px;
+  }
+  .package-area {
+    .single-package-wrapper {
+      padding: 20px;
+      border: 1px solid $ac-white-light;
+    }
+  }
+}
+
+// Medium devices (tablets, 769px and up)
+@media (min-width: 769px) and (max-width: 1023.98px) {
+}
+
+// Large devices (desktops, 1024px and up)
+@media (min-width: 1024px) and (max-width: 1215px) {
+}
+
+@media (min-width: 1216px) and (max-width: 1407px) {
+}
+
+@media (min-width: 1408px) and (max-width: 1600px) {
+}
+
+@media (min-width: 1408px) {
+}
