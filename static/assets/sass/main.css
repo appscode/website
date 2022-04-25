@@ -9810,6 +9810,65 @@ Responsive Classes
     padding: 20px;
     border: 1px solid #dbdbde;
   }
+  .ac-image {
+    text-align: center;
+  }
+  .about-training .section-title h2 {
+    text-align: center;
+  }
+  .ac-text p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023.98px) {
+  .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
+    width: 150px;
+    height: 150px;
+  }
+  .training-wrapper-image .single-training-image-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1215px) {
+  .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
+    width: 150px;
+    height: 150px;
+  }
+  .training-wrapper-image .single-training-image-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 1216px) and (max-width: 1407px) {
+  .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
+    width: 150px;
+    height: 150px;
+  }
+  .training-wrapper-image .single-training-image-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 1408px) and (max-width: 1600px) {
+  .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
+    width: 150px;
+    height: 150px;
+  }
+  .training-wrapper-image .single-training-image-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 1408px) {
+  .hero-area-2 {
+    margin-top: 10vh;
+  }
 }
 
 .contact-page-body-wrapper .navbar-area {
