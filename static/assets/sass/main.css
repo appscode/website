@@ -8565,70 +8565,6 @@ Responsive Classes
   }
 }
 
-.fixed-menu {
-  position: absolute;
-  width: 100%;
-  padding: 9px 0px;
-  z-index: 99;
-  top: 0;
-  left: 0;
-}
-
-body.fixed-nav .fixed-menu {
-  position: fixed;
-  top: 0;
-  z-index: 99;
-  width: 100%;
-  padding: 9px 0px;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 1px 1px rgba(25, 76, 128, 0.08);
-          box-shadow: 0px 1px 1px rgba(25, 76, 128, 0.08);
-}
-
-.appscode .header-top {
-  -webkit-box-shadow: 0px 1px 1px rgba(25, 76, 128, 0.08);
-          box-shadow: 0px 1px 1px rgba(25, 76, 128, 0.08);
-}
-
-.main-menu.is-bg-available .navbar-item,
-.main-menu.is-bg-available .navbar-link {
-  color: #ffffff;
-}
-
-.main-menu.is-bg-available .navbar-item:hover,
-.main-menu.is-bg-available .navbar-link:hover {
-  color: #ddd;
-}
-
-.navbar-item.has-dropdown.is-active .navbar-link,
-.navbar-item.has-dropdown:hover .navbar-link {
-  background: transparent;
-}
-
-body.fixed-nav .main-menu.is-bg-available .navbar-item,
-body.fixed-nav .main-menu.is-bg-available .navbar-link {
-  color: #4a4a4a;
-}
-
-body.fixed-nav .main-menu.is-bg-available .navbar-item:hover,
-body.fixed-nav .main-menu.is-bg-available .navbar-link:hover {
-  color: var(--ac-primary);
-}
-
-.main-menu.is-bg-available .navbar-link:not(.is-arrowless)::after,
-.main-menu.is-bg-available .select:not(.is-multiple):not(.is-loading)::after {
-  border-color: #ffffff;
-}
-
-body.fixed-nav
-.main-menu.is-bg-available
-.navbar-link:not(.is-arrowless)::after,
-body.fixed-nav
-.main-menu.is-bg-available
-.select:not(.is-multiple):not(.is-loading)::after {
-  border-color: #4a4a4a;
-}
-
 .hero-area {
   position: relative;
   z-index: 1;
@@ -8646,10 +8582,6 @@ body.fixed-nav
   background-position-y: top;
   z-index: -1;
   min-height: 100%;
-}
-
-.hero-area .trusted-logo {
-  margin-top: 20px;
 }
 
 .is-full-height {
@@ -8704,27 +8636,6 @@ body.fixed-nav
   right: -80px;
   top: 10px;
   z-index: -1;
-}
-
-.trusted-logo .trusted-action {
-  background: #e0f2e9;
-  padding: 6px 30px;
-  border-radius: 4px;
-  font-size: 16px;
-  display: inline-block;
-  margin: 0 auto;
-}
-
-.trusted-logo .trusted-action a {
-  color: var(--ac-primary);
-}
-
-.trusted-logo .trusted-company a {
-  color: var(--ac-primary);
-}
-
-.trusted-logo .trusted-company p {
-  font-weight: 500;
 }
 
 .shap-3 {
@@ -8868,11 +8779,6 @@ body.fixed-nav
   opacity: 1;
   visibility: visible;
   bottom: 50px;
-}
-
-.service-image.is-box-shadow img {
-  -webkit-box-shadow: 0px 8px 57px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 8px 57px rgba(0, 0, 0, 0.16);
 }
 
 .service-content {
@@ -9321,7 +9227,7 @@ section.our-customer-area {
 /****************************************
 Responsive Classes
 *****************************************/
-@media (max-width: 1023.98px) {
+@media (max-width: 767.98px) {
   .hero-area.is-product .play-buttons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9344,7 +9250,8 @@ Responsive Classes
     max-width: 100%;
     font-size: 15px;
   }
-  .service-content a, .service-content .learn-more {
+  .service-content a,
+  .service-content .learn-more {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9357,6 +9264,21 @@ Responsive Classes
   }
   .pt-100.is-mobile-device {
     padding-top: 30px !important;
+  }
+  .features-thumbnail img {
+    width: 100%;
+  }
+  .single-solution-wrapper {
+    text-align: center;
+    border: 1px solid #dbdbde;
+  }
+  .single-solution-wrapper .solution-icon {
+    margin: 0 auto;
+  }
+  .counter-area .single-count-wrapper {
+    border: 1px solid #dbdbde;
+    padding: 30px;
+    margin-bottom: 15px;
   }
 }
 
@@ -15583,4 +15505,3 @@ Responsive Classes
   documentation page end
 ==============================================*/
 }
-/*# sourceMappingURL=main.css.map */
