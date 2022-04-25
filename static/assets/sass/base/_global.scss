@@ -419,6 +419,7 @@ Responsive Classes
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 768px) {
+  
 }
 
 // Medium devices (tablets, 769px and up)
@@ -437,6 +438,10 @@ Responsive Classes
     p {
       margin-bottom: 0;
     }
+  }
+  .is-flex-direction-row-reverse-tablet {
+    flex-direction: column-reverse;
+    display: flex;
   }
 }
 

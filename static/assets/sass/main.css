@@ -8529,6 +8529,15 @@ Responsive Classes
   .section-title p {
     margin-bottom: 0;
   }
+  .is-flex-direction-row-reverse-tablet {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1215px) {
@@ -9279,6 +9288,23 @@ Responsive Classes
     border: 1px solid #dbdbde;
     padding: 30px;
     margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 568px) and (max-width: 1023.98px) {
+  .hero-area.is-product .play-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .features-thumbnail img {
+    width: 100%;
+  }
+  .service-content.pl-30 {
+    padding-left: 0;
   }
 }
 

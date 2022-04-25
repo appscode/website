@@ -731,9 +731,24 @@ Responsive Classes
   }
 }
 
-// // Small devices (landscape phones, 576px and up)
-// @media (min-width: 576px) and (max-width: 768px) {
-// }
+// (min-width: 568px) and (max-width: 1023.98px)
+@media (min-width: 568px) and (max-width: 1023.98px) {
+  .hero-area.is-product {
+    .play-buttons {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .features-thumbnail {
+    img {
+      width: 100%;
+    }
+  }
+  .service-content.pl-30 {
+    padding-left: 0;
+  }
+}
 
 // Medium devices (tablets, 769px and up)
 @media (min-width: 769px) and (max-width: 1023.98px) {
