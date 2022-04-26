@@ -11056,6 +11056,20 @@ Responsive Classes
 
 .webinar-header .webinar-list-items .webinar-item.is-active {
   background-color: var(--ac-primary);
+  position: relative;
+  z-index: 1;
+}
+
+.webinar-header .webinar-list-items .webinar-item.is-active:after {
+  width: 60px;
+  height: 30px;
+  border-top: solid 30px var(--ac-primary);
+  border-left: solid 30px transparent;
+  border-right: solid 30px transparent;
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  left: 30px;
 }
 
 .webinar-header .webinar-list-items .webinar-item.is-active p,
@@ -11274,6 +11288,9 @@ Responsive Classes
   }
   .webinar-header .webinar-list-items .webinar-item {
     width: 110px;
+  }
+  .webinar-header .webinar-list-items .webinar-item.is-active::after {
+    left: 23px;
   }
   .webinar-header .webinar-list-items .webinar-item h2 {
     font-size: 22px;
