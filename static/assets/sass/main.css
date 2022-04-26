@@ -11561,11 +11561,80 @@ Responsive Classes
 }
 
 .gallery-wrapper .left-sidebar {
-  width: 25%;
+  width: calc(25% - 25px);
+  margin-right: 25px;
+  background-color: #FAFAFD;
+  padding: 20px;
+  border: 1px solid #dbdbde;
+  margin-top: -10px;
+  border-top: none;
+}
+
+.gallery-wrapper .left-sidebar h4 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.5px;
+  margin-bottom: 15px;
+}
+
+.gallery-wrapper .left-sidebar hr {
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .gallery-wrapper .right-content {
   width: 75%;
+}
+
+.filter-items .accordion-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filter-items .accordion-header p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 100%;
+}
+
+.filter-items .accordion-header button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.filter-items .accordion-content .ac-single-checkbox {
+  margin-bottom: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter-items .accordion-content .ac-single-checkbox input {
+  margin-right: 10px;
+}
+
+.filter-items .accordion-content .ac-single-checkbox label {
+  font-family: 'Roboto';
+  line-height: 1;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
 }
 
 .gallery-card {
@@ -11578,11 +11647,11 @@ Responsive Classes
 }
 
 .gallery-card:hover {
-  border: 1px solid var(--ac-primary);
+  border: 1px solid #4d4dcb;
 }
 
 .gallery-card:hover .gallery-body h1 {
-  color: var(--ac-primary);
+  color: #4d4dcb;
 }
 
 .gallery-card:hover .card-thumbnail .play-button {
@@ -11620,7 +11689,7 @@ Responsive Classes
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: rgba(77, 77, 203, 0.3);
+  background: rgba(0, 0, 0, 0.3);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -11672,7 +11741,7 @@ Responsive Classes
 }
 
 .filtered-tags .tag {
-  background-color: rgba(77, 77, 203, 0.07);
+  background-color: #FAFAFD;
   border: 1px solid #dbdbde;
   height: 33px;
   padding: 0 1.1rem;
@@ -11687,17 +11756,18 @@ Responsive Classes
 }
 
 .outlined-bg-buttons .button {
-  background: rgba(77, 77, 203, 0.07);
-  border: 1px solid var(--ac-primary);
+  background: #FAFAFD;
+  border: 1px solid #4d4dcb;
   font-size: 13px;
   letter-spacing: -0.5px;
   font-weight: 400;
   height: 33px;
   border-radius: 4px;
+  color: #4d4dcb;
 }
 
 .outlined-bg-buttons .button:hover {
-  background-color: var(--ac-primary);
+  background-color: #4d4dcb;
   color: #fff;
 }
 

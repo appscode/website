@@ -1,39 +1,139 @@
 {{ define "main" }}
 
-<section class="gallery-area mt-80">
+<section class="gallery-area mt-70">
     <div class="container">
         <div class="gallery-wrapper">
             <!-- left sidebar area start  -->
             <div class="left-sidebar">
                 <h4>AppsCode Videos</h4>
+                <hr>
                 <div class="filter-items">
                     <section class="accordions">
-                        <article class="accordion is-active">
+                        <div class="accordion is-active">
                             <div class="accordion-header toggle">
                                 <p>PRODUCTS</p>
+                                <button class="toggle" aria-label="toggle"><i class="fa fa-angle-up"></i></button>
                             </div>
                             <div class="accordion-body">
-                                <div class="accordion-content">accordion content</div>
+                                <div class="accordion-content">
+
+                                    <!-- single ac-checkbox start  -->
+                                    <div class="ac-single-checkbox">
+                                        <input class="is-checkradio ac-checkbox" id="kubedb" type="checkbox"
+                                            name="checkbox" />
+                                        <label for="kubedb">KubeDB</label>
+                                    </div>
+                                    <!-- single ac-checkbox end -->
+
+                                    <!-- single ac-checkbox start  -->
+                                    <div class="ac-single-checkbox">
+                                        <input class="is-checkradio ac-checkbox" id="stash" type="checkbox"
+                                            name="checkbox" />
+                                        <label for="stash">Stash</label>
+                                    </div>
+                                    <!-- single ac-checkbox end -->
+
+                                    <!-- single ac-checkbox start  -->
+                                    <div class="ac-single-checkbox">
+                                        <input class="is-checkradio ac-checkbox" id="kubevault" type="checkbox"
+                                            name="checkbox" />
+                                        <label for="kubevault">KubeVault</label>
+                                    </div>
+                                    <!-- single ac-checkbox end -->
+
+                                    <!-- single ac-checkbox start  -->
+                                    <div class="ac-single-checkbox">
+                                        <input class="is-checkradio ac-checkbox" id="kubeform" type="checkbox"
+                                            name="checkbox" />
+                                        <label for="kubeform">Kubeform</label>
+                                    </div>
+                                    <!-- single ac-checkbox end -->
+
+                                </div>
                             </div>
-                        </article>
-                        <article class="accordion">
+                        </div>
+                        <div class="accordion">
                             <div class="accordion-header">
                                 <p>TYPE</p>
-                                <button class="toggle" aria-label="toggle"></button>
+                                <button class="toggle" aria-label="toggle"><i class="fa fa-angle-up"></i></button>
                             </div>
                             <div class="accordion-body">
-                                <div class="accordion-content">accordion content</div>
+                                <div class="accordion-content">
+                                     <!-- single ac-checkbox start  -->
+                                     <div class="ac-single-checkbox">
+                                        <input class="is-checkradio ac-checkbox" id="database" type="checkbox"
+                                            name="checkbox" />
+                                        <label for="database">Database</label>
+                                    </div>
+                                    <!-- single ac-checkbox end -->
+
+                                    <!-- single ac-checkbox start  -->
+                                    <div class="ac-single-checkbox">
+                                        <input class="is-checkradio ac-checkbox" id="demo" type="checkbox"
+                                            name="checkbox" />
+                                        <label for="demo">Demo</label>
+                                    </div>
+                                    <!-- single ac-checkbox end -->
+
+                                    <!-- single ac-checkbox start  -->
+                                    <div class="ac-single-checkbox">
+                                        <input class="is-checkradio ac-checkbox" id="webinar" type="checkbox"
+                                            name="checkbox" />
+                                        <label for="webinar">Webinar</label>
+                                    </div>
+                                    <!-- single ac-checkbox end -->
+
+                                       <!-- single ac-checkbox start  -->
+                                       <div class="ac-single-checkbox">
+                                        <input class="is-checkradio ac-checkbox" id="tutorial" type="checkbox"
+                                            name="checkbox" />
+                                        <label for="tutorial">Tutorial</label>
+                                    </div>
+                                    <!-- single ac-checkbox end -->
+                                </div>
                             </div>
-                        </article>
-                        <article class="accordion">
+                        </div>
+                        <div class="accordion">
                             <div class="accordion-header">
                                 <p>CATEGORIES</p>
-                                <button class="toggle" aria-label="toggle"></button>
+                                <button class="toggle" aria-label="toggle"><i class="fa fa-angle-up"></i></button>
                             </div>
                             <div class="accordion-body">
-                                <div class="accordion-content">accordion content</div>
+                                <div class="accordion-content">
+                                     <!-- single ac-checkbox start  -->
+                                     <div class="ac-single-checkbox">
+                                        <input class="is-checkradio ac-checkbox" id="autoscalling" type="checkbox"
+                                            name="checkbox" />
+                                        <label for="autoscalling">Autoscalling</label>
+                                    </div>
+                                    <!-- single ac-checkbox end -->
+
+                                    <!-- single ac-checkbox start  -->
+                                    <div class="ac-single-checkbox">
+                                        <input class="is-checkradio ac-checkbox" id="demo" type="checkbox"
+                                            name="checkbox" />
+                                        <label for="demo">Demo</label>
+                                    </div>
+                                    <!-- single ac-checkbox end -->
+
+                                    <!-- single ac-checkbox start  -->
+                                    <div class="ac-single-checkbox">
+                                        <input class="is-checkradio ac-checkbox" id="aws" type="checkbox"
+                                            name="checkbox" />
+                                        <label for="aws">AWS</label>
+                                    </div>
+                                    <!-- single ac-checkbox end -->
+
+                                       <!-- single ac-checkbox start  -->
+                                       <div class="ac-single-checkbox">
+                                        <input class="is-checkradio ac-checkbox" id="azure" type="checkbox"
+                                            name="checkbox" />
+                                        <label for="azure">Azure</label>
+                                    </div>
+                                    <!-- single ac-checkbox end -->
+                                </div>
                             </div>
-                        </article>
+                        </div>
                     </section>
 
                 </div>
@@ -42,7 +142,7 @@
             <!-- right content start  -->
             <div class="right-content">
                 <!-- header items start  -->
-                <div class="header-items is-flex is-justify-content-space-between mt-5 mb-8">
+                <div class="header-items is-flex is-justify-content-space-between mt-5 mb-12">
                     <div class="header-left">
                         <div class="tags filtered-tags">
                             <div class="tag">All <span class="material-icons-outlined">close</span></div>
@@ -90,8 +190,8 @@
                         </div>
                         <!-- single card item end -->
 
-                         <!-- single card item start  -->
-                         <div class="column is-4">
+                        <!-- single card item start  -->
+                        <div class="column is-4">
                             <a href="#" class="gallery-card">
                                 <div class="card-thumbnail">
                                     <img src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
@@ -114,8 +214,8 @@
                         </div>
                         <!-- single card item end -->
 
-                         <!-- single card item start  -->
-                         <div class="column is-4">
+                        <!-- single card item start  -->
+                        <div class="column is-4">
                             <a href="#" class="gallery-card">
                                 <div class="card-thumbnail">
                                     <img src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
@@ -138,8 +238,8 @@
                         </div>
                         <!-- single card item end -->
 
-                         <!-- single card item start  -->
-                         <div class="column is-4">
+                        <!-- single card item start  -->
+                        <div class="column is-4">
                             <a href="#" class="gallery-card">
                                 <div class="card-thumbnail">
                                     <img src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
