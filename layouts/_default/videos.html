@@ -1,18 +1,18 @@
 {{ define "main" }}
 
-<section class="gallery-area mt-70">
+<section class="gallery-area mt-70 mb-80">
     <div class="container">
         <div class="gallery-wrapper">
             <!-- left sidebar area start  -->
             <div class="left-sidebar">
-                <h4>AppsCode Videos</h4>
+                <h4><span>AppsCode Videos</span> <button class="material-icons is-hidden-tablet" id="filterClose">close</button></h4>
                 <hr>
                 <div class="filter-items">
                     <section class="accordions">
                         <div class="accordion is-active">
                             <div class="accordion-header toggle">
-                                <p>PRODUCTS</p>
-                                <button class="toggle" aria-label="toggle"><i class="fa fa-angle-up"></i></button>
+                                <button class="accordion-button"><span>PRODUCTS</span> <i
+                                        class="fa fa-angle-down"></i></button>
                             </div>
                             <div class="accordion-body">
                                 <div class="accordion-content">
@@ -52,15 +52,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion">
+                        <div class="accordion is-active">
                             <div class="accordion-header">
-                                <p>TYPE</p>
-                                <button class="toggle" aria-label="toggle"><i class="fa fa-angle-up"></i></button>
+                                <button class="accordion-button"><span>TYPE</span> <i
+                                        class="fa fa-angle-down"></i></button>
                             </div>
                             <div class="accordion-body">
                                 <div class="accordion-content">
-                                     <!-- single ac-checkbox start  -->
-                                     <div class="ac-single-checkbox">
+                                    <!-- single ac-checkbox start  -->
+                                    <div class="ac-single-checkbox">
                                         <input class="is-checkradio ac-checkbox" id="database" type="checkbox"
                                             name="checkbox" />
                                         <label for="database">Database</label>
@@ -83,8 +83,8 @@
                                     </div>
                                     <!-- single ac-checkbox end -->
 
-                                       <!-- single ac-checkbox start  -->
-                                       <div class="ac-single-checkbox">
+                                    <!-- single ac-checkbox start  -->
+                                    <div class="ac-single-checkbox">
                                         <input class="is-checkradio ac-checkbox" id="tutorial" type="checkbox"
                                             name="checkbox" />
                                         <label for="tutorial">Tutorial</label>
@@ -93,15 +93,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion">
+                        <div class="accordion is-active">
                             <div class="accordion-header">
-                                <p>CATEGORIES</p>
-                                <button class="toggle" aria-label="toggle"><i class="fa fa-angle-up"></i></button>
+                                <button class="accordion-button"><span>CATEGORIES</span> <i
+                                        class="fa fa-angle-down"></i></button>
                             </div>
                             <div class="accordion-body">
                                 <div class="accordion-content">
-                                     <!-- single ac-checkbox start  -->
-                                     <div class="ac-single-checkbox">
+                                    <!-- single ac-checkbox start  -->
+                                    <div class="ac-single-checkbox">
                                         <input class="is-checkradio ac-checkbox" id="autoscalling" type="checkbox"
                                             name="checkbox" />
                                         <label for="autoscalling">Autoscalling</label>
@@ -124,8 +124,8 @@
                                     </div>
                                     <!-- single ac-checkbox end -->
 
-                                       <!-- single ac-checkbox start  -->
-                                       <div class="ac-single-checkbox">
+                                    <!-- single ac-checkbox start  -->
+                                    <div class="ac-single-checkbox">
                                         <input class="is-checkradio ac-checkbox" id="azure" type="checkbox"
                                             name="checkbox" />
                                         <label for="azure">Azure</label>
@@ -144,10 +144,17 @@
                 <!-- header items start  -->
                 <div class="header-items is-flex is-justify-content-space-between mt-5 mb-12">
                     <div class="header-left">
-                        <div class="tags filtered-tags">
+                        <div class="buttons outlined-bg-buttons mb-0 is-hidden-tablet" >
+                            <button class="button is-tinny" id="filterBtn">Filter <span class="material-icons-outlined ml-8">
+                                filter_list
+                             </span></button>
+                        </div>
+                        
+                        <div class="tags filtered-tags is-hidden-mobile">
                             <div class="tag">All <span class="material-icons-outlined">close</span></div>
                             <div class="tag">KubeDB <span class="material-icons-outlined">close</span></div>
                             <div class="tag">Webiner <span class="material-icons-outlined">close</span></div>
+                            <div class="tag pointer">Clear Filter</div>
                         </div>
                     </div>
                     <div class="header-right">
@@ -167,7 +174,7 @@
                 <div class="body-content">
                     <div class="columns is-multiline">
                         <!-- single card item start  -->
-                        <div class="column is-4">
+                        <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-third-fullhd">
                             <a href="#" class="gallery-card">
                                 <div class="card-thumbnail">
                                     <img src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
@@ -191,7 +198,7 @@
                         <!-- single card item end -->
 
                         <!-- single card item start  -->
-                        <div class="column is-4">
+                        <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-third-fullhd">
                             <a href="#" class="gallery-card">
                                 <div class="card-thumbnail">
                                     <img src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
@@ -215,7 +222,7 @@
                         <!-- single card item end -->
 
                         <!-- single card item start  -->
-                        <div class="column is-4">
+                        <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-third-fullhd">
                             <a href="#" class="gallery-card">
                                 <div class="card-thumbnail">
                                     <img src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
@@ -239,7 +246,127 @@
                         <!-- single card item end -->
 
                         <!-- single card item start  -->
-                        <div class="column is-4">
+                        <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-third-fullhd">
+                            <a href="#" class="gallery-card">
+                                <div class="card-thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                                        alt="">
+                                    <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="filtered-items">
+                                        <span>KUBEDB</span>
+                                        <span>WEBINER</span>
+                                    </div>
+                                    <h1 class="is-ellipsis-2">Upgrading MySQL with KubeDB Enterprise by AppsCode</h1>
+                                    <div class="meta-tag is-flex is-justify-content-space-between">
+                                        <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
+                                        <p><span class="material-icons-outlined">person_outline</span>Masudur Rahman</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- single card item end -->
+
+                        <!-- single card item start  -->
+                        <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-third-fullhd">
+                            <a href="#" class="gallery-card">
+                                <div class="card-thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                                        alt="">
+                                    <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="filtered-items">
+                                        <span>KUBEDB</span>
+                                        <span>WEBINER</span>
+                                    </div>
+                                    <h1 class="is-ellipsis-2">Upgrading MySQL with KubeDB Enterprise by AppsCode</h1>
+                                    <div class="meta-tag is-flex is-justify-content-space-between">
+                                        <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
+                                        <p><span class="material-icons-outlined">person_outline</span>Masudur Rahman</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- single card item end -->
+
+                        <!-- single card item start  -->
+                        <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-third-fullhd">
+                            <a href="#" class="gallery-card">
+                                <div class="card-thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                                        alt="">
+                                    <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="filtered-items">
+                                        <span>KUBEDB</span>
+                                        <span>WEBINER</span>
+                                    </div>
+                                    <h1 class="is-ellipsis-2">Upgrading MySQL with KubeDB Enterprise by AppsCode</h1>
+                                    <div class="meta-tag is-flex is-justify-content-space-between">
+                                        <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
+                                        <p><span class="material-icons-outlined">person_outline</span>Masudur Rahman</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- single card item end -->
+
+                        <!-- single card item start  -->
+                        <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-third-fullhd">
+                            <a href="#" class="gallery-card">
+                                <div class="card-thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                                        alt="">
+                                    <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="filtered-items">
+                                        <span>KUBEDB</span>
+                                        <span>WEBINER</span>
+                                    </div>
+                                    <h1 class="is-ellipsis-2">Upgrading MySQL with KubeDB Enterprise by AppsCode</h1>
+                                    <div class="meta-tag is-flex is-justify-content-space-between">
+                                        <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
+                                        <p><span class="material-icons-outlined">person_outline</span>Masudur Rahman</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- single card item end -->
+
+                        <!-- single card item start  -->
+                        <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-third-fullhd">
+                            <a href="#" class="gallery-card">
+                                <div class="card-thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                                        alt="">
+                                    <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="filtered-items">
+                                        <span>KUBEDB</span>
+                                        <span>WEBINER</span>
+                                    </div>
+                                    <h1 class="is-ellipsis-2">Upgrading MySQL with KubeDB Enterprise by AppsCode</h1>
+                                    <div class="meta-tag is-flex is-justify-content-space-between">
+                                        <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
+                                        <p><span class="material-icons-outlined">person_outline</span>Masudur Rahman</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- single card item end -->
+
+                        <!-- single card item start  -->
+                        <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-third-fullhd">
                             <a href="#" class="gallery-card">
                                 <div class="card-thumbnail">
                                     <img src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"

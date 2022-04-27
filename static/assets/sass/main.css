@@ -11563,7 +11563,7 @@ Responsive Classes
 .gallery-wrapper .left-sidebar {
   width: calc(25% - 25px);
   margin-right: 25px;
-  background-color: #FAFAFD;
+  background-color: #fafafd;
   padding: 20px;
   border: 1px solid #dbdbde;
   margin-top: -10px;
@@ -11576,6 +11576,23 @@ Responsive Classes
   line-height: 130%;
   letter-spacing: -0.5px;
   margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery-wrapper .left-sidebar h4 button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: -10px;
 }
 
 .gallery-wrapper .left-sidebar hr {
@@ -11585,6 +11602,30 @@ Responsive Classes
 
 .gallery-wrapper .right-content {
   width: 75%;
+}
+
+.tag.pointer {
+  cursor: pointer;
+}
+
+.accordion.is-active .accordion-button i.fa {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.accordion.is-active .accordion-body {
+  opacity: 1;
+  visibility: visible;
+  max-height: 200px;
+  margin-bottom: 30px;
+}
+
+.accordion .accordion-body {
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .filter-items .accordion-header {
@@ -11599,19 +11640,30 @@ Responsive Classes
           justify-content: space-between;
 }
 
-.filter-items .accordion-header p {
-  font-family: 'Inter';
+.filter-items .accordion-header .accordion-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 100%;
-}
-
-.filter-items .accordion-header button {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  padding: 10px;
+  margin-bottom: 15px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.filter-items .accordion-header .accordion-button i.fa {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .filter-items .accordion-content .ac-single-checkbox {
@@ -11629,7 +11681,7 @@ Responsive Classes
 }
 
 .filter-items .accordion-content .ac-single-checkbox label {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   line-height: 1;
   font-style: normal;
   font-weight: 400;
@@ -11741,7 +11793,7 @@ Responsive Classes
 }
 
 .filtered-tags .tag {
-  background-color: #FAFAFD;
+  background-color: #fafafd;
   border: 1px solid #dbdbde;
   height: 33px;
   padding: 0 1.1rem;
@@ -11756,7 +11808,7 @@ Responsive Classes
 }
 
 .outlined-bg-buttons .button {
-  background: #FAFAFD;
+  background: #fafafd;
   border: 1px solid #4d4dcb;
   font-size: 13px;
   letter-spacing: -0.5px;
@@ -11773,6 +11825,89 @@ Responsive Classes
 
 .outlined-bg-buttons .button span {
   font-size: 13px;
+}
+
+/****************************************
+Responsive Classes
+*****************************************/
+@media (max-width: 767.98px) {
+  .gallery-wrapper .left-sidebar {
+    width: calc(100vw - 40px);
+    z-index: 9;
+    position: fixed;
+    left: -110%;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .gallery-wrapper .right-content {
+    width: 100%;
+  }
+  .filtered-tags .tag {
+    padding: 0 0.3rem;
+  }
+  .filtered-tags .tag span {
+    margin-right: 0;
+    padding: 6px;
+    margin-left: 0;
+  }
+  .outlined-bg-buttons {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .outlined-bg-buttons .button {
+    margin-right: 10px;
+  }
+  .outlined-bg-buttons .button:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1215px) {
+  .gallery-card .card-thumbnail img {
+    height: 130px;
+  }
+  .gallery-card .card-body {
+    padding: 10px;
+  }
+  .gallery-card .card-body h1 {
+    margin: 0.5rem 0 1rem;
+  }
+  .gallery-card .card-body .meta-tag p {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1216px) and (max-width: 1407px) {
+  .gallery-card .card-thumbnail img {
+    height: 130px;
+  }
+  .gallery-card .card-body {
+    padding: 10px;
+  }
+  .gallery-card .card-body h1 {
+    margin: 0.5rem 0 1rem;
+  }
+  .gallery-card .card-body .meta-tag p {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1408px) and (max-width: 1600px) {
+  .gallery-card .card-thumbnail img {
+    height: 130px;
+  }
+  .gallery-card .card-body {
+    padding: 10px;
+  }
+  .gallery-card .card-body h1 {
+    margin: 0.5rem 0 1rem;
+  }
+  .gallery-card .card-body .meta-tag p {
+    font-size: 13px;
+  }
 }
 
 .navbar-area {

@@ -35,14 +35,14 @@ navItems.forEach(navItem => {
 })
 
 // Responsive menu back button
-const backButtonAll = document.querySelectorAll(".back-button");	
+const backButtonAll = document.querySelectorAll(".back-button");
 // create click event for all back button	
-Array.from(backButtonAll).forEach((el) => {	
-  el.addEventListener("click", () => {	
+Array.from(backButtonAll).forEach((el) => {
+  el.addEventListener("click", () => {
     // closeset nav item ancestor	
-    const activeNavElement = el.closest(".nav-item.is-active");	
-    if (activeNavElement) activeNavElement.classList.remove("is-active");	
-  })	
+    const activeNavElement = el.closest(".nav-item.is-active");
+    if (activeNavElement) activeNavElement.classList.remove("is-active");
+  })
 });
 // navbar area JS v.2022 end
 
@@ -130,9 +130,10 @@ const webinarVideoElements = document.querySelectorAll(".webinar-video");
 Array.from(webinarVideoElements).forEach((webinarVideoEl, idx) => {
   webinarVideoEl.addEventListener('click', () => {
     const hasOverlay = webinarVideoEl.classList.contains("active-overlay");
-    if(hasOverlay) {
-      let times = 0, playY;
-      if(times == 0){
+    if (hasOverlay) {
+      let times = 0,
+        playY;
+      if (times == 0) {
         playY = iframeElements[idx].src += '?autoplay=1&start=1';
         times = 0;
       }
@@ -140,6 +141,30 @@ Array.from(webinarVideoElements).forEach((webinarVideoEl, idx) => {
     }
   });
 });
+
+// gallery page filter start
+const filterBtn = document.getElementById("filterBtn")
+const leftSidebar = document.querySelector(".left-sidebar")
+const backDrop = document.querySelector(".modal-backdrop")
+const filterClose = document.getElementById("filterClose")
+
+if (filterBtn && filterClose) {
+  filterBtn.addEventListener('click', function () {
+    leftSidebar.style.left = "0"
+    setTimeout(() => {
+      backDrop.classList.add('is-show')
+    }, 300);
+  })
+  // close filter 
+  filterClose.addEventListener('click', function () {
+    leftSidebar.style.left = "-100%"
+    backDrop.classList.remove('is-show')
+  })
+  // gallery page filter end
+}
+
+
+
 
 // scroll to top start
 //Get the button
