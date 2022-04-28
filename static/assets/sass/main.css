@@ -11608,6 +11608,12 @@ Responsive Classes
   cursor: pointer;
 }
 
+.tag.pointer.underline {
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
+}
+
 .accordion.is-active .accordion-button i.fa {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);

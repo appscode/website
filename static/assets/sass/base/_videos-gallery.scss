@@ -41,6 +41,11 @@
 
 .tag.pointer {
     cursor: pointer;
+    &.underline {
+      text-decoration: underline;
+      border: none;
+      background-color: transparent;
+    }
 }
 .accordion {
   &.is-active {
