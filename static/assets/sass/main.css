@@ -11833,6 +11833,139 @@ Responsive Classes
   font-size: 13px;
 }
 
+.single-video-page .left-content .video-content {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.single-video-page .left-content .video-content iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+}
+
+.single-video-page .left-content .video-title h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.25px;
+  margin-bottom: 20px;
+}
+
+.single-video-page .left-content .user-info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.single-video-page .left-content .user-info-wrapper .image {
+  margin-right: 15px;
+}
+
+.single-video-page .left-content .user-info-wrapper .user-info h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: 0.15px;
+}
+
+.single-video-page .left-content .user-info-wrapper .user-info p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.15px;
+  color: #414141;
+}
+
+.single-video-page .left-content .tags strong {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: 0.15px;
+}
+
+.single-video-page .left-content .video-description p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  margin-bottom: 15px;
+}
+
+.single-video-page .left-content .video-description p a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #4D4DCB;
+}
+
+.single-video-page .right-content .video-list-wrapper {
+  background-color: #FAFAFD;
+  border: 1px solid #dbdbde;
+  padding: 30px;
+}
+
+.single-video-page .right-content .video-list-wrapper h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  margin-bottom: 15px;
+}
+
+.single-video-page .right-content .video-list-wrapper .video-list-items .single-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.single-video-page .right-content .video-list-wrapper .video-list-items .single-video:last-child {
+  margin-bottom: 0;
+}
+
+.single-video-page .right-content .video-list-wrapper .video-list-items .single-video .thumbnail {
+  margin-right: 15px;
+  height: 60px;
+  width: 60px;
+}
+
+.single-video-page .right-content .video-list-wrapper .video-list-items .single-video .thumbnail img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.single-video-page .right-content .video-list-wrapper .video-list-items .single-video .descriptions {
+  width: calc(100% - 75px);
+}
+
+.single-video-page .right-content .video-list-wrapper .video-list-items .single-video .descriptions h5 {
+  font-size: 16px;
+  line-height: 120%;
+  /* or 19px */
+  letter-spacing: 0.25px;
+}
+
+.single-video-page .right-content .video-list-wrapper .video-list-items .single-video .descriptions p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  color: #191536;
+}
+
 /****************************************
 Responsive Classes
 *****************************************/

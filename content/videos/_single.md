@@ -1,4 +1,4 @@
 ---
 title: Single video details
-url: "/videos/update-mysql"
+url: "/video/update-mysql"
 ---
