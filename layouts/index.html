@@ -4,27 +4,30 @@
 
 {{ define "main" }}
 <!-- hero-area start -->
-<section class="hero-area is-full-height">
+<section class="hero-area is-product">
   <div class="hero-shape"></div>
-  <div class="container section">
+  <div class="container">
 
     <!-- hero-area main start -->
     <div class="columns">
-        <div class="column is-6">
+        <div class="column is-half-desktop is-full-mobile is-full-tablet">
           <div class="hero-area-content d-table">
             <div class="hero-content-inner typing d-table-cell">
               <h1 data-aos="fade-up">
-                Our Mission is to<br />
-                Accelerate the transition to<br />
-                Containers by building a<br />
-                <b>Kubernetes-native<br />
-                Data Platform</b>
+                Our Mission is to
+                Accelerate the transition to
+                Containers by building a
+                Kubernetes-native
+                Data Platform
               </h1>
               <div class="hero-area-button buttons" data-aos="fade-up" data-aos-duration="800">
-                <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button ac-primary"
-                  >Contact Us</a
+                <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-primary"
+                  > <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json"
+                    trigger="loop" target="a.is-secondary" trigger="hover"
+                    style="width:22px;height:22px; margin-right: 8px;">
+                  </lord-icon><span>Contact Us</span></a
                 >
-                <a href="{{ $.Site.Params.github_url }}" class="button ac-transparent-btn"
+                <a href="{{ $.Site.Params.github_url }}" class="button ac-button is-primary is-outlined"
                   >View on Github</a
                 >
               </div>
@@ -49,60 +52,41 @@
         </div>
       </div>
     <!-- hero-area main end -->
-
-    <!-- trusted logo area start -->
-    <div class="columns trusted-logo is-multiline">
-      <!--
-      <div class="column has-text-centered">
-        <div class="trusted-action" data-aos="fade-up" data-aos-duration="800">
-          <p>
-            Stash <a href="https://stash.run/docs/v2020.09.29/welcome/" target="_blank" rel="noopener">v2020.09.29</a> is out!
-          </p>
-        </div>
-      </div>
-      -->
-
-      <div class="column is-10 is-offset-1 has-text-centered" data-aos="fade-up" data-aos-duration="1000">
-        <div class="trusted-company mt-10">
-          <p>Companies that <strong>trust</strong> AppsCode</p>
-          <!-- brand logo start -->
-          <div class="brand-logo-wrapper mt-10">
-            {{ range $customer := $.Site.Data.customers }}
-              {{ if $customer.show }}
-                <a class="single-brand-logo">
-                  <img
-                    src="{{ $customer.logo }}"
-                    alt="{{ $customer.name }}"
-                    class="img"
-                  />
-                </a>
-              {{ end }}
-            {{ end }}
-          </div>
-          <!-- brand logo end -->
-        </div>
-      </div>
-    </div>
-    <!-- trusted logo area end -->
   </div>
 </section>
 <!-- hero-area end -->
-
+ <!-- social prove logo area start   -->
+ <div class="social-prove-brand-area">
+   <div class="container">
+     <div class="columns">
+       <div class="column is-12">
+         <div class="brand-image-wrapper owl-carousel">
+           {{ range $customer := $.Site.Data.customers }}
+           {{ if $customer.show }}
+           <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"></div>
+           {{ end }}
+           {{ end }}
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- social prove logo area end -->
 <!-- shape start -->
 <div class="shap-3">
   <!-- service area start -->
-  <section class="section-padding pt-100">
-    <div class="container section">
-      <div class="columns">
-        <div class="column is-6">
-          <div class="service-image is-box-shadow" data-aos="fade-up">
+  <section class="sp-y-80">
+    <div class="container">
+      <div class="columns is-vcentered is-multiline">
+        <div class="column is-full-tablet is-half-desktop">
+          <div class="features-thumbnail" data-aos="fade-up">
             <img
               src="/assets/images/products/appscode/features/dashboard.gif"
               alt="dashboard-image"
             />
           </div>
         </div>
-        <div class="column is-6">
+        <div class="column is-full-tablet is-half-desktop">
           <div class="service-content-wrapper d-table" data-aos="fade-up" data-aos-duration="1000">
             <div class="service-content pl-30 d-table-cell">
               <!-- <h5>What Is AppsCode?</h5> -->
@@ -116,16 +100,16 @@
                 <a href="{{ .Site.Params.domain_bytebuilders }}">ByteBuilder's</a>
                 innovative Kubernetes Dashboard.
               </p>
-              <div class="mt-40">
-                <a href="{{ .Site.Params.domain_bytebuilders }}" class="button ac-button ac-primary">Learn More</a>
+              <div class="mt-40 learn-more">
+                <a href="{{ .Site.Params.domain_bytebuilders }}" class="button ac-button is-primary">Learn More</a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="columns pt-100 is-mobile-device">
-        <div class="column is-6">
+      <div class="columns is-multiline is-vcentered pt-100 is-flex-direction-row-reverse-mobile is-flex-direction-row-reverse-tablet">
+        <div class="column is-full-tablet is-half-desktop">
           <div class="service-content-wrapper d-table">
             <div class="service-content d-table-cell" data-aos="fade-up">
               <!-- <h5>What Is AppsCode?</h5> -->
@@ -138,14 +122,14 @@
                 in minutes just with a few clicks. Easily take advantage of the
                 global infrastructure footprint of the cloud providers, like AWS, Azure, Google Cloud, DigitalOcean, Linode and others.
               </p>
-              <div class="mt-40">
-                <a href="{{ .Site.Params.domain_pharmer }}/docs/latest/welcome/" class="button ac-button ac-primary">Learn More</a>
+              <div class="mt-40 learn-more">
+                <a href="{{ .Site.Params.domain_pharmer }}/docs/latest/welcome/" class="button ac-button is-primary">Learn More</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="column is-6">
-          <div class="service-image" data-aos="fade-up" data-aos-duration="1000">
+        <div class="column is-full-tablet is-half-desktop">
+          <div class="features-thumbnail" data-aos="fade-up" data-aos-duration="1000">
             <img
               src="/assets/images/appscode/products.png"
               alt="dashboard-image"
@@ -160,16 +144,16 @@
 <!-- shape end -->
 
 <!-- countdown-top-title start -->
-<section class="section-padding pb-50 count-link-area">
-  <div class="container section">
+<section class="count-link-area pt-80">
+  <div class="container">
     <!-- section title start -->
     <div class="columns">
       <div class="column is-8 has-text-left">
         <div class="section-title mb-0">
-          <h2 data-aos="fade-up">
+          <h2>
             More than 5,000 developers use AppsCode products every month to deliver value
           </h2>
-          <p data-aos="fade-up" data-aos-duration="800">
+          <p>
             Turbocharge your Kubernetes journey with AppsCode's open source Kubernetes operators <br />
             and developer tools, like, KubeDB, Voyager, Stash, KubeVault, Pharmer and others. <br />
             Join our vibrant community of users and let's get stuff done!
@@ -181,9 +165,9 @@
         <div class="right-sidebar-wrapper">
           <div class="right-sidebar-menu">
             <ul>
-              <li data-aos="fade-left"><a href="{{.Site.Params.slack_url}}">Join our slack!</a></li>
-              <li data-aos="fade-left" data-aos-duration="800"><a href="{{.Site.Params.github_url}}">Visit our Github page</a></li>
-              <li data-aos="fade-left" data-aos-duration="1000"><a href="{{.Site.Params.domain_appscode}}">Read the docs</a></li>
+              <li><a href="{{.Site.Params.slack_url}}">Join our slack!</a></li>
+              <li><a href="{{.Site.Params.github_url}}">Visit our Github page</a></li>
+              <li><a href="{{.Site.Params.domain_appscode}}">Read the docs</a></li>
             </ul>
           </div>
         </div>
@@ -197,7 +181,7 @@
 
 <!-- countdown start -->
 <section class="counter-area pt-50 pb-100">
-  <div class="container section">
+  <div class="container">
     <!-- counter start -->
     <div class="columns is-gapless is-multiline">
 
@@ -260,8 +244,8 @@
 <!-- countdown end -->
 
 <!-- service area start -->
-<section class="section-padding service-area">
-  <div class="container section">
+<section class="pt-80 pb-80 service-area">
+  <div class="container">
     <div class="columns">
       <div class="column is-8 is-offset-2 has-text-centered">
         <!-- section title start -->
@@ -347,8 +331,8 @@
 <!-- service area end -->
 
 <!-- press-area start -->
-<section class="press-area section-padding">
-  <div class="container section">
+<section class="press-area pt-80 pb-80">
+  <div class="container">
     <div class="columns">
       <div class="column is-8 is-offset-2 has-text-centered">
         <!-- section title start -->
@@ -385,85 +369,83 @@
 </section>
 <!-- press-area end -->
 
-<!-- testimonial area start -->
-<section class="testimonial-area-2 section-padding">
-  <div class="container section">
-    <div class="columns">
-      <div class="column column is-10 is-offset-1 has-text-centered" data-aos="fade-up">
-        <div class="section-title">
-          <div class="quete-icon">
-            <i class="fa fa-quote-right" aria-hidden="true"></i>
-          </div>
-          <h2>Trusted by top engineers at the most ambitious companies</h2>
-        </div>
-      </div>
-    </div>
-    <div class="columns column is-10 is-offset-1 has-text-centered">
-      <div class="column is-12">
-        <div class="logo-carousel-wrapper" id="logo-area-2" data-aos="fade-up" data-aos-duration="1000">
-          {{ range $customer := $.Site.Data.customers }}
-            {{ if $customer.show }}
-              <a class="single-brand-logo">
-                <img
-                  src="{{ $customer.logo }}"
-                  alt="{{ $customer.name }}"
-                  class="img"
-                />
-              </a>
-            {{ end }}
-          {{ end }}
-        </div>
-      </div>
-    </div>
+  <!-- ==========================testimonial area 2022 start ==========================  -->
+  <section class="testimonial-area">
 
-    <!-- testimonial wrapper start -->
-    <div class="columns">
-      <div class="column is-12">
-        <div class="carousel-wrapper1" id="testimonial-carousel">
-          {{ range $user := $.Site.Data.testimonials }}
-          <!-- user start -->
-          <div class="carousel-user">
-            <div class="single-testimonial-wrapper" data-aos="fade-up" data-aos-duration="1500">
-              <div class="testimonial-msg">
-                <p>{{ $user.testimonial | safeHTML }}</p>
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column is-4">
+          <div class="section-title">
+            <h1 class="is-gradient" data-aos="fade-up" data-aos-duration="500">What They Are <span
+                class="has-text-weight-light"> Talking About us</span></h1>
+            <p data-aos="fade-up" data-aos-duration="700">Trusted by top engineers at the most ambitious companies</p>
+          </div>
+          <!-- arrows start  -->
+          <div class="arrows" data-aos="fade-up" data-aos-duration="900">
+            <button class="button arrow is-rounded customPrevBtn"><span
+                class="material-icons-outlined">arrow_back</span></button>
+            <button class="button arrow is-rounded customNextBtn"><span
+                class="material-icons-outlined">arrow_forward</span></button>
+          </div>
+          <!-- arrows end -->
+        </div>
+        <div class="column is-8">
+          <!-- owl-carousel -->
+          <div class="testimonial-carousel-wrapper owl-carousel testimonial-carousel">
+            {{ range $user := $.Site.Data.testimonials }}
+            <!-- single testimonial item start  -->
+            <div class="single-testimonial-item">
+              <!-- user info wrapper start  -->
+              <div class="user-info-wrapper">
+                <figure class="image is-64x64">
+                  <img class="is-rounded" src="{{ $user.profile }}" alt="{{ $user.name }}">
+                </figure>
+                <div class="user-info">
+                  <h5>{{ $user.name }}</h5>
+                  <p>{{ $user.job }}{{ if $user.companyKey }} at
+                    {{ index $.Site.Data.customers $user.companyKey "name" }}{{ end }}</p>
+                </div>
               </div>
-              <div class="testimonial-client-info">
-                <div class="client-thumb">
-                  <img src="{{ $user.profile }}" alt="{{ $user.name }}" />
-                </div>
-                <div class="client-info">
-                  <h4>{{ $user.name }}</h4>
-                  <p>{{ $user.job }}{{ if $user.companyKey }} at {{ index $.Site.Data.customers $user.companyKey "name" }}{{ end }}</p>
-                </div>
+              <!-- user info wrapper end -->
+              <p>{{ $user.testimonial | safeHTML }}</p>
+            </div>
+            {{ end }}
+          </div>
+          <!-- single testimonial item end -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--========================== testimonial area 2022 end  ==========================-->
+
+  <!-- call to action area start -->
+  <section class="cta-area">
+    <div class="container">
+      <div class="cta-area-inner">
+        <div class="container">
+          <div class="columns is-vcentered is-multiline">
+            <div class="column is-full-tablet is-half-tablet is-half-desktop">
+              <h3 data-aos="fade-up" data-aos-duration="500">Get Started with AppsCode</h3>
+            </div>
+            <div
+              class="column is-full-tablet is-half-tablet is-half-desktop has-text-centered-touch has-text-right-desktop">
+              <div class="buttons is-justify-content-flex-end">
+          
+                <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button ac-white"
+                  style="background-color: white; border: 1px solid #e7e7e7; color: #00a651;"><span>
+                    <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json"
+                      trigger="loop" target="a.is-secondary" trigger="hover"
+                      style="width:22px;height:22px; margin-right: 8px;">
+                    </lord-icon>
+                  </span>CONTACT US</a>
               </div>
             </div>
           </div>
-          <!-- user end -->
-          {{ end }}
         </div>
       </div>
     </div>
-    <!-- testimonial wrapper end -->
-  </div>
-</section>
-<!-- testimonial area end -->
-
-<!-- call to action area start -->
-<section class="cta-area section-padding cta-bg-color-1">
-  <div class="container section">
-    <div class="columns">
-      <div class="column is-8 is-offset-2 has-text-centered">
-        <div class="cta-wrapper">
-          <h1 data-aos="fade-up">Get Started with AppsCode</h1>
-          <div class="mt-60">
-            <a data-aos="fade-up" data-aos-duration="1000" href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button ac-primary">Contact Us</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- call to action area end -->
+  </section>
+  <!-- call to action area end -->
 
 <!-- video-player start  -->
 <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">

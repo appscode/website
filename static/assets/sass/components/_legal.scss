@@ -1,0 +1,264 @@
+.full-info {
+  overflow: hidden;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 40px;
+    font-weight: 700;
+    color: $ac-color-heading;
+    margin-bottom: 10px;
+    &:first-child {
+      margin-top: 0;
+    }
+    a {
+      svg {
+        padding-left: 10px;
+      }
+      font-size: 16px;
+      &.hash-tag {
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+      }
+    }
+
+    &:hover a {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  h1 {
+    font-size: 32px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  h6 {
+    font-size: 13px;
+  }
+  .highlight {
+    pre {
+      code {
+        color: #f1f1f1;
+      }
+    }
+  }
+  table {
+    td,
+    th {
+      text-align: left;
+    }
+  }
+  h2 span.share-icon {
+    color: #6b6b6b;
+    font-size: 18px;
+    margin-left: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.full-info h2:hover span.share-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.full-info ul li,
+.full-info ol li,
+.full-info ol li p {
+  color: $ac-color-link;
+  display: block;
+  padding-bottom: 8px;
+  line-height: 1.8;
+}
+.full-info ul li:last-child,
+.full-info ol li:last-child,
+.full-info ol p:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.full-info ul li,
+.full-info ol li {
+  text-indent: -30px;
+}
+.full-info ul li p,
+.full-info ol li p {
+  text-indent: 0;
+  margin-top: -30px;
+}
+.full-info ul li pre,
+.full-info ol li pre {
+  text-indent: 0px;
+  margin-left: -30px;
+}
+.full-info ul li:before {
+  content: "\f10c";
+  font-family: fontawesome;
+  font-size: 8px;
+  margin-right: 20px;
+  color: #707070;
+}
+
+.full-info figure {
+  margin-bottom: 30px;
+  figcaption {
+    color: #707070;
+    font-size: 14px;
+  }
+}
+
+ul li b {
+  color: $ac-primary;
+  font-weight: 500;
+}
+
+.full-info ul,
+.full-info ol {
+  padding: 0 0 0 30px;
+  margin-bottom: 15px;
+}
+.full-info ul.nav.nav-tabs {
+  margin-bottom: 0;
+}
+.full-info ul li p {
+  margin: 0;
+  display: inline;
+}
+.full-info p b {
+  color: $ac-primary;
+}
+.full-info ul li p a,
+.full-info p a,
+.full-info a {
+  color: $ac-primary;
+  font-weight: 500;
+  font-family: $ac-font-paragraph;
+}
+.full-info p {
+  margin-bottom: 15px;
+  color: $ac-color-text;
+}
+.full-info p strong {
+  font-weight: 500;
+  em {
+    font-weight: 500;
+  }
+}
+
+.appscode-style.full-info ul li p a .appscode-style.full-info p a,
+.appscode-style.full-info a {
+  color: $ac-primary;
+}
+
+//custom ol li class start
+.full-info ol {
+  list-style: none;
+  counter-reset: order-list-counter;
+}
+.full-info ol li {
+  counter-increment: order-list-counter;
+}
+.full-info ol li::before {
+  content: counter(order-list-counter) ". ";
+  font-weight: 500;
+  font-family: $ac-font-paragraph;
+  font-size: 15px;
+  color: $ac-color-link;
+}
+//custom ol li class end
+
+/* schedule-demo start */
+embed,
+iframe,
+object,
+video {
+  height: 100%;
+  max-width: 100%;
+}
+.schedule-title {
+  margin-top: 65px;
+  color: #242a31;
+  margin-bottom: 30px;
+}
+
+
+.kd-sidebar-menu label,
+.kd-sidebar-menu li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: $ac-color-link;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 10px;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+
+.item ul,
+.item input[type="checkbox"] {
+  display: none;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.kd-sidebar-menu .item label a {
+  font-weight: 600;
+  color: $ac-color-text;
+  padding: 8px 17px;
+  display: block;
+}
+.kd-sidebar-menu li a:hover {
+  color: $ac-primary;
+}
+.kd-sidebar-menu .item ul {
+  margin-left: 20px;
+  padding-left: 15px;
+  border-left: 1px solid #e2e2e2;
+}
+.item input:checked ~ label,
+.item input:checked ~ .item > label {
+  border: 1px solid #e2e2e2;
+  background: $ac-white;
+}
+.item:first-child input:checked ~ label, .item:first-child input:checked ~ .item:first-child > label{
+  border: 1px solid transparent;
+}
+
+.appscode-style .item input:checked ~ label > a {
+  color: $ac-primary;
+}
+.item input:checked~ul, .item input:checked~.item>ul>.item{
+  margin-left: -20px;
+}
+.kd-left-sidebar {
+  margin-right: 30px;
+  position: sticky;
+  top: 130px;
+  z-index: 9;
+}
+.kd-sidebar-menu{
+  max-height: 65vh;
+  overflow-y: auto;
+}
+.kd-sidebar-menu .item label {
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 1;
+  border-radius: 3px 0 0 3px;
+}

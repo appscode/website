@@ -5,70 +5,348 @@
 
 {{ define "main" }}
 <!-- hero  area start -->
-<section class="hero-area-2 webinar-page">
-  <div class="container section">
+<section class="hero-area-2">
+  <div class="container">
     <div class="columns">
       <div class="column is-8">
-        <div class="webinar-hero-area">
-          <div class="hero-area-inner-2">
-            <h1>Upcoming Webinar</h1>
-            <p class="subtitle">Manage production grade databases in Kubernetes using KubeDB</p>
-            <div class="webinar-wrapper is-flex is-flex-wrap-wrap">
-              <!-- single webinar info start  -->
-              <div class="single-webinar-info">
-                <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-                <strong>When : </strong>
-                <p>28 Feb 2021 - 07:05:00 PM</p>
-              </div>
-              <!-- single webinar info end -->
-              <!-- single webinar info start  -->
-              <div class="single-webinar-info">
-                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                <strong>Where : </strong>
-                <p>via Zoom</p>
-              </div>
-              <!-- single webinar info end -->
+        <div class="webinar-hero-area mt-80 mr-100">
+          <!-- webinar header start  -->
+          <div class="webinar-header is-flex is-justify-content-space-between is-align-items-center mt-10">
+            <div class="upcoming-message">
+              <h1 class="is-gradient">Upcoming <br>Webinars</h1>
             </div>
+            <!-- webinar list start  -->
+            <ul class="webinar-list-items is-flex">
+              <!-- single date item start  -->
+              <li class="webinar-item tab is-active" data-tab-target="#webinar1">
+                <p>Apr 2022</p>
+                <h2>28</h2>
+                <p class="date">11:30:00 PM</p>
+              </li>
+              <!-- single date item end -->
+              <!-- single date item start  -->
+              <li class="webinar-item tab" data-tab-target="#webinar2">
+                <p>May 2022</p>
+                <h2>12</h2>
+                <p class="date">11:30:00 PM</p>
+              </li>
+              <!-- single date item end -->
+              <!-- single date item start  -->
+              <li class="webinar-item tab" data-tab-target="#webinar3">
+                <p>Jun 2022</p>
+                <h2>24</h2>
+                <p class="date">11:30:00 PM</p>
+              </li>
+              <!-- single date item end -->
+            </ul>
+            <!-- webinar list end -->
           </div>
+          <!-- webinar header end -->
 
-          <!-- count-down area start  -->
-          <div class="count-down-area">
-            <!-- single count start  -->
-            <div class="signle-count">
-              <div class="name">DAYS</div>
-              <div class="unit" id="days">00</div>
+          <!-- webinar body start  -->
+          <div class="webinar-body">
+            <!-- single webinar start  -->
+            <div class="single-webinar is-active" id="webinar1" data-tab-content>
+              <div class="webinar-video active-overlay">
+                <iframe src="https://www.youtube.com/embed/B_7qJ1Gk9QI"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; clipboard-write; encrypted-media; gyroscope;
+                  picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="webinar-title">
+                <h1>KubeDB AutoOps - Automate Day 2 Life-cycle Management for Databases on Kubernetes.</h1>
+              </div>
+              <div class="date-and-location">
+                <p class="date">
+                  <lord-icon src="https://cdn.lordicon.com/drtetngs.json" trigger="loop" colors="primary:#00a651"
+                    style="width:24px;height:24px">
+                  </lord-icon><span>When: 13  2022 2022 - 11:30:00 PM</span>
+                </p>
+                <p class="date">
+                  <lord-icon src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop" style="width:24px;height:24px">
+                  </lord-icon><span>Where : via Zoom </span>
+                </p>
+              </div>
+
+              <!-- webinar summary start  -->
+              <div class="webinar-summary">
+                <p class="highlight">KubeDB manages the day-2 life cycle of any support databases via OpsRequest. But
+                  currently to generate
+                  an ops request, you have to identify the need for it like TLS certificates are going to expire, new
+                  patch/minor/major version is available etc. Moreover, you have to apply the ops request with immediate
+                  effect.</p>
+                <p>To automate these manual processes, we are going to introduce a Recommendation generator which will
+                  automatically generate Ops request recommendations for you by inspecting the KubeDB resources. We are
+                  also developing a generic recommendation executor called Supervisor to execute the Ops request in the
+                  specified maintenance window in a more convenient and managed way.</p>
+
+                <p>We will be happy to share the progress we have accomplished so far and get feedback from you.</p>
+
+                <ul class="check-items">
+                  <li>
+                    <lord-icon src="https://cdn.lordicon.com/hjeefwhm.json" trigger="loop" colors="primary:#00a651"
+                      style="width:16px;height:16px">
+                    </lord-icon><span>Introduction to Supervisor (Generic Recommendation Executor)</span>
+                  </li>
+                  <li>
+                    <lord-icon src="https://cdn.lordicon.com/hjeefwhm.json" trigger="loop" colors="primary:#00a651"
+                      style="width:16px;height:16px">
+                    </lord-icon><span>Introduction to Recommendation Generator for KubeDB Ops request</span>
+                  </li>
+                  <li>
+                    <lord-icon src="https://cdn.lordicon.com/hjeefwhm.json" trigger="loop" colors="primary:#00a651"
+                      style="width:16px;height:16px">
+                    </lord-icon><span>Demo</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- webinar summary end -->
+
+              <!-- webinar speaker section start  -->
+              <h5 class="mb-20 mt-30">Webinar Speakers</h5>
+              <div class="webinar-speakers">
+                <!-- single speaker start  -->
+                <div class="single-speaker">
+                  <div class="speaker-image"><img
+                      src="/assets/images/employees/pulak.jpg"
+                      alt=""></div>
+                  <div class="speaker-info">
+                    <h6>Pulak Kanti Bhowmick</h6>
+                    <p>Software Engineer <a href="https://appscode.com">AppsCode Inc</a></p>
+                  </div>
+                </div>
+                <!-- single speaker end -->
+
+                <!-- single speaker start  -->
+                <div class="single-speaker">
+                  <div class="speaker-image"><img src="/assets/images/employees/masud.jpg" alt=""></div>
+                  <div class="speaker-info">
+                    <h6>Masudur Rahaman</h6>
+                    <p>Software Engineer <a href="https://appscode.com">AppsCode Inc</a></p>
+                  </div>
+                </div>
+                <!-- single speaker end -->
+
+                <!-- single speaker start  -->
+                <div class="single-speaker">
+                  <div class="speaker-image"><img src="/assets/images/employees/junayed.jpg" alt=""></div>
+                  <div class="speaker-info">
+                    <h6>Junayed</h6>
+                    <p>Software Engineer <a href="https://appscode.com">AppsCode Inc</a></p>
+                  </div>
+                </div>
+                <!-- single speaker end -->
+
+              </div>
+              <!-- webinar speaker section end -->
             </div>
-            <!-- single count end -->
-            <!-- single count start  -->
-            <div class="signle-count">
-              <div class="name">HOURS</div>
-              <div class="unit" id="hours">00</div>
+            <!-- single webinar end -->
+            <!-- single webinar start  -->
+            <div class="single-webinar" id="webinar2" data-tab-content>
+              <div class="webinar-video active-overlay">
+                <iframe src="https://www.youtube.com/embed/VMJOJX5_0TQ"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="webinar-title">
+                <h1>Managing Cloud Infrastructure in Kubernetes using Kubeform</h1>
+              </div>
+              <div class="date-and-location">
+                <p class="date">
+                  <lord-icon src="https://cdn.lordicon.com/drtetngs.json" trigger="loop" colors="primary:#00a651"
+                    style="width:24px;height:24px">
+                  </lord-icon><span>When: 13 Apr 2022 - 11:30:00 PM</span>
+                </p>
+                <p class="date">
+                  <lord-icon src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop" style="width:24px;height:24px">
+                  </lord-icon><span>Where : via Zoom </span>
+                </p>
+              </div>
+
+              <!-- webinar summary start  -->
+              <div class="webinar-summary">
+                <p class="highlight">KubeDB manages the day-2 life cycle of any support databases via OpsRequest. But
+                  currently to generate
+                  an ops request, you have to identify the need for it like TLS certificates are going to expire, new
+                  patch/minor/major version is available etc. Moreover, you have to apply the ops request with
+                  immediate
+                  effect.</p>
+                <p>To automate these manual processes, we are going to introduce a Recommendation generator which will
+                  automatically generate Ops request recommendations for you by inspecting the KubeDB resources. We are
+                  also developing a generic recommendation executor called Supervisor to execute the Ops request in the
+                  specified maintenance window in a more convenient and managed way.</p>
+
+                <p>We will be happy to share the progress we have accomplished so far and get feedback from you.</p>
+
+                <ul class="check-items">
+                  <li>
+                    <lord-icon src="https://cdn.lordicon.com/hjeefwhm.json" trigger="loop" colors="primary:#00a651"
+                      style="width:16px;height:16px">
+                    </lord-icon><span>Introduction to Supervisor (Generic Recommendation Executor)</span>
+                  </li>
+                  <li>
+                    <lord-icon src="https://cdn.lordicon.com/hjeefwhm.json" trigger="loop" colors="primary:#00a651"
+                      style="width:16px;height:16px">
+                    </lord-icon><span>Introduction to Recommendation Generator for KubeDB Ops request</span>
+                  </li>
+                  <li>
+                    <lord-icon src="https://cdn.lordicon.com/hjeefwhm.json" trigger="loop" colors="primary:#00a651"
+                      style="width:16px;height:16px">
+                    </lord-icon><span>Demo</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- webinar summary end -->
+
+              <!-- webinar speaker section start  -->
+              <h5 class="mb-10 mt-30">Webinar Speakers</h5>
+              <div class="webinar-speakers">
+                <!-- single speaker start  -->
+                <div class="single-speaker">
+                  <div class="speaker-image"><img src="/assets/images/employees/pulak.jpg" alt=""></div>
+                  <div class="speaker-info">
+                    <h6>Pulak Kanti Bhowmick</h6>
+                    <p>Software Engineer <a href="https://appscode.com">AppsCode Inc</a></p>
+                  </div>
+                </div>
+                <!-- single speaker end -->
+
+                <!-- single speaker start  -->
+                <div class="single-speaker">
+                  <div class="speaker-image"><img src="/assets/images/employees/pulak.jpg" alt=""></div>
+                  <div class="speaker-info">
+                    <h6>Pulak Kanti Bhowmick</h6>
+                    <p>Software Engineer <a href="https://appscode.com">AppsCode Inc</a></p>
+                  </div>
+                </div>
+                <!-- single speaker end -->
+
+                <!-- single speaker start  -->
+                <div class="single-speaker">
+                  <div class="speaker-image"><img src="/assets/images/employees/pulak.jpg" alt=""></div>
+                  <div class="speaker-info">
+                    <h6>Pulak Kanti Bhowmick</h6>
+                    <p>Software Engineer <a href="https://appscode.com">AppsCode Inc</a></p>
+                  </div>
+                </div>
+                <!-- single speaker end -->
+
+              </div>
+              <!-- webinar speaker section end -->
             </div>
-            <!-- single count end -->
-            <!-- single count start  -->
-            <div class="signle-count">
-              <div class="name">MINUTES</div>
-              <div class="unit" id="minutes">00</div>
+            <!-- single webinar end -->
+            <!-- single webinar start  -->
+            <div class="single-webinar" id="webinar3" data-tab-content>
+              <div class="webinar-video active-overlay">
+                <iframe src="https://www.youtube.com/embed/AN_58DhiilY"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="webinar-title">
+                <h1>KubeDB Database User Management using KubeVault</h1>
+              </div>
+              <div class="date-and-location">
+                <p class="date">
+                  <lord-icon src="https://cdn.lordicon.com/drtetngs.json" trigger="loop" colors="primary:#00a651"
+                    style="width:24px;height:24px">
+                  </lord-icon><span>When: 13 Apr 2022 - 11:30:00 PM</span>
+                </p>
+                <p class="date">
+                  <lord-icon src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop" style="width:24px;height:24px">
+                  </lord-icon><span>Where : via Zoom </span>
+                </p>
+              </div>
+
+              <!-- webinar summary start  -->
+              <div class="webinar-summary">
+                <p class="highlight">KubeDB manages the day-2 life cycle of any support databases via OpsRequest. But
+                  currently to generate
+                  an ops request, you have to identify the need for it like TLS certificates are going to expire, new
+                  patch/minor/major version is available etc. Moreover, you have to apply the ops request with
+                  immediate
+                  effect.</p>
+                <p>To automate these manual processes, we are going to introduce a Recommendation generator which will
+                  automatically generate Ops request recommendations for you by inspecting the KubeDB resources. We
+                  are
+                  also developing a generic recommendation executor called Supervisor to execute the Ops request in
+                  the
+                  specified maintenance window in a more convenient and managed way.</p>
+
+                <p>We will be happy to share the progress we have accomplished so far and get feedback from you.</p>
+
+                <ul class="check-items">
+                  <li>
+                    <lord-icon src="https://cdn.lordicon.com/hjeefwhm.json" trigger="loop" colors="primary:#00a651"
+                      style="width:16px;height:16px">
+                    </lord-icon><span>Introduction to Supervisor (Generic Recommendation Executor)</span>
+                  </li>
+                  <li>
+                    <lord-icon src="https://cdn.lordicon.com/hjeefwhm.json" trigger="loop" colors="primary:#00a651"
+                      style="width:16px;height:16px">
+                    </lord-icon><span>Introduction to Recommendation Generator for KubeDB Ops request</span>
+                  </li>
+                  <li>
+                    <lord-icon src="https://cdn.lordicon.com/hjeefwhm.json" trigger="loop" colors="primary:#00a651"
+                      style="width:16px;height:16px">
+                    </lord-icon><span>Demo</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- webinar summary end -->
+
+              <!-- webinar speaker section start  -->
+              <h5 class="mb-10 mt-30">Webinar Speakers</h5>
+              <div class="webinar-speakers">
+                <!-- single speaker start  -->
+                <div class="single-speaker">
+                  <div class="speaker-image"><img src="/assets/images/employees/pulak.jpg" alt=""></div>
+                  <div class="speaker-info">
+                    <h6>Pulak Kanti Bhowmick</h6>
+                    <p>Software Engineer <a href="https://appscode.com">AppsCode Inc</a></p>
+                  </div>
+                </div>
+                <!-- single speaker end -->
+
+                <!-- single speaker start  -->
+                <div class="single-speaker">
+                  <div class="speaker-image"><img src="/assets/images/employees/pulak.jpg" alt=""></div>
+                  <div class="speaker-info">
+                    <h6>Pulak Kanti Bhowmick</h6>
+                    <p>Software Engineer <a href="https://appscode.com">AppsCode Inc</a></p>
+                  </div>
+                </div>
+                <!-- single speaker end -->
+
+                <!-- single speaker start  -->
+                <div class="single-speaker">
+                  <div class="speaker-image"><img src="/assets/images/employees/pulak.jpg" alt=""></div>
+                  <div class="speaker-info">
+                    <h6>Pulak Kanti Bhowmick</h6>
+                    <p>Software Engineer <a href="https://appscode.com">AppsCode Inc</a></p>
+                  </div>
+                </div>
+                <!-- single speaker end -->
+
+              </div>
+              <!-- webinar speaker section end -->
             </div>
-            <!-- single count end -->
-            <!-- single count start  -->
-            <div class="signle-count">
-              <div class="name">SECONDS</div>
-              <div class="unit" id="seconds">00</div>
-            </div>
-            <!-- single count end -->
+            <!-- single webinar end -->
           </div>
-          <!-- count-down area end -->
+          <!-- webinar body end -->
+
         </div>
       </div>
       <div class="column is-4">
         <!-- register-success/register-failed -->
-        <div class="registration-form-container">
+        <div class="registration-form-container mt-80">
           <div class="registration-form-wrapper">
             <!-- form start  -->
             <div class="registration-form">
               <h3>Register Now</h3>
-              <div class="circle-shape"><img src="/assets/images/webinar/circle-shape.png" alt=""></div>
+              <div class="circle-shape"><img src="/assets/images/webinar/circle-shape.jpg" alt=""></div>
               <!-- registration form start  -->
               <!-- https://stackoverflow.com/a/29014676 -->
               <form method="post" action="https://license-issuer.appscode.com/_/webinars/register"
@@ -123,7 +401,7 @@
                 <!-- single input field end -->
                 <!-- single input field start  -->
                 <div class="single-input-form">
-                  <label for="company">Pick a Date <span class="is-require">*</span></label>
+                  <label for="company">Pick a Webinar <span class="is-require">*</span></label>
                   <select class="ac-custom-select" id="schedule" name="schedule" required>
                   </select>
                   <!-- if error occured  -->
@@ -187,7 +465,7 @@
               <!-- Success/Fail message start  -->
               <div class="register-notification">
                 <div class="reg-illustration">
-                  <img class="illustration" src="/assets/images/webinar/success.png" alt="">
+                  <img class="illustration" src="/assets/images/webinar/success.jpg" alt="">
                 </div>
                 <p class="status-message"></p>
               </div>
@@ -222,53 +500,8 @@
   }
 </script>
 
-<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+<script src="https://unpkg.com/dayjs@1.11.1/dayjs.min.js"></script>
 <script type="text/javascript">
-  function countdown(endDate) {
-    let days, hours, minutes, seconds;
-
-    endDate = new Date(endDate).getTime();
-
-    if (isNaN(endDate)) {
-      return;
-    }
-
-    setInterval(calculate, 1000);
-
-    function calculate() {
-      let startDate = new Date().getTime();
-
-      let timeRemaining = parseInt((endDate - startDate) / 1000);
-
-      if (timeRemaining >= 0) {
-        days = parseInt(timeRemaining / 86400);
-        timeRemaining = (timeRemaining % 86400);
-
-        hours = parseInt(timeRemaining / 3600);
-        timeRemaining = (timeRemaining % 3600);
-
-        minutes = parseInt(timeRemaining / 60);
-        timeRemaining = (timeRemaining % 60);
-
-        seconds = parseInt(timeRemaining);
-
-        document.getElementById("days").innerHTML = parseInt(days, 10);
-        document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
-        document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
-        document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
-      } else {
-        document.querySelector(".hero-area-inner-2 h1").innerHTML = "No Webinar is currently scheduled!";
-        document.querySelector(".subtitle").style.display = "none";
-        document.querySelector(".registration-form").style.display = "none";
-        document.querySelector(".webinar-summary").style.display = "none";
-        document.querySelectorAll(".single-webinar-info").forEach(el => {
-          el.style.display = "none";
-        })
-        return;
-      }
-    }
-  }
-
   function enableSubmit() {
     document.querySelector(".registration-form form input[type='submit']").disabled = false;
   }
@@ -329,80 +562,91 @@
 
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
+          var select = document.querySelector(".registration-form form #schedule");
 
-          var result = JSON.parse(xhr.responseText);
-          document.querySelector(".hero-area-inner-2 p").innerHTML = result.title;
-          document.querySelector(".webinar-summary .summary-content").innerHTML = result.summary;
-          document.querySelector(".speaker-info h5").innerHTML = result.speaker;
-          document.querySelector(".speaker-info .designation").innerHTML = result.speaker_title;
-          document.querySelector(".speaker-message").innerHTML = result.speaker_bio;
-          document.querySelector(".speaker-thumbnail img").src = result.speaker_picture;
+          var ul = document.querySelector("ul.webinar-list-items.is-flex");
+          ul.replaceChildren();
 
-          if (result.schedules && result.schedules[0]) {
-            var date = new Date(result.schedules[0]);
-            document.querySelector(".single-webinar-info p").innerHTML = dayjs(date).format(
-              'D MMM YYYY - hh:mm:ss A');
-            var select = document.querySelector(".registration-form form #schedule");
-            for (var i = 0; i < result.schedules.length; i++) {
-              var opt = document.createElement('option');
-              opt.value = result.schedules[i];
-              opt.innerHTML = dayjs(new Date(result.schedules[i])).format('D MMM YYYY - hh:mm:ss A');
-              select.appendChild(opt);
-            } // M/D/Y H:M:S // countdown('04/28/2021 07:05:00 PM');
-            countdown(result.schedules[0]);
-          } else {
-            // fast event 
-            countdown(0)
+          var wbody = document.querySelector("div.webinar-body");
+          wbody.replaceChildren();
+
+          var webinars = JSON.parse(xhr.responseText);
+          for (let i = 0; i < Math.min(webinars.length, 3); i++) {
+            let w = webinars[i];
+            let date = new Date(w.schedules[0]);
+            let dfmt = dayjs(date);
+
+            var opt = document.createElement('option');
+            opt.value = w.schedules[0];
+            opt.innerHTML = w.title;
+            select.appendChild(opt);
+
+            // <li class="webinar-item tab" data-tab-target="#webinar2"><p>May 2022</p><h2>12</h2><p class="date">11:30:00 PM</p></li>
+            let li = document.createElement("li");
+            li.innerHTML = '<p>'+dfmt.format('MMM YYYY')+'</p><h2>'+date.getDate()+'</h2><p class="date">'+dfmt.format('hh:mm:ss A')+'</p>';
+            if (i) {
+              li.setAttribute("class", "webinar-item tab");
+            } else {
+              li.setAttribute("class", "webinar-item tab is-active");
+            }
+            li.setAttribute("data-tab-target", `#webinar${i}`);
+            ul.appendChild(li);
+
+            let details = document.createElement('div');
+            details.innerHTML = `<div class="webinar-video active-overlay">
+    <iframe src="https://www.youtube.com/embed/${w.youtube_video_id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; clipboard-write; encrypted-media; gyroscope;
+      picture-in-picture" allowfullscreen=""></iframe>
+  </div>
+  <div class="webinar-title">
+    <h1>${w.title}</h1>
+  </div>
+  <div class="date-and-location">
+    <p class="date">
+      <lord-icon src="https://cdn.lordicon.com/drtetngs.json" trigger="loop" colors="primary:#00a651" style="width:24px;height:24px">
+      </lord-icon>
+      <span>When: ${dfmt.format('D MMM YYYY - hh:mm:ss A')}</span>
+    </p>
+    <p class="date">
+      <lord-icon src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop" style="width:24px;height:24px">
+      </lord-icon>
+      <span>Where : via Zoom </span>
+    </p>
+  </div>
+  <div class="webinar-summary">
+    ${w.summary}
+  </div>
+  <h5 class="mb-20 mt-30">Webinar Speakers</h5>
+  <div class="webinar-speakers">
+    <!--multiple speaker supported-->
+    <div class="single-speaker">
+      <div class="speaker-image"><img src="${w.speaker_picture}" alt="${w.speaker}"></div>
+      <div class="speaker-info">
+        <h6>${w.speaker}</h6>
+        <p>${w.speaker_title} <a href="https://appscode.com">AppsCode Inc</a></p>
+      </div>
+    </div>
+  </div>`;
+
+            // <div class="single-webinar is-active" id="webinar${i}" data-tab-content="">
+            if (i) {
+              details.setAttribute("class", "single-webinar");
+            } else {
+              details.setAttribute("class", "single-webinar is-active");
+            }
+            details.setAttribute("id", `webinar${i}`);
+            details.setAttribute("data-tab-content", "");
+            wbody.appendChild(details);
           }
-
         } else {
           location.reload();
         }
       }
     }
-    // console.log('GET', 'https://license-issuer.appscode.com/_/webinars/');
-    xhr.open('GET', 'https://license-issuer.appscode.com/_/webinars/');
+    // console.log('GET', 'https://license-issuer.appscode.com/_/upcoming_webinars/');
+    xhr.open('GET', 'https://license-issuer.appscode.com/_/upcoming_webinars/');
     xhr.send();
   }());
 </script>
-<!-- summary area start  -->
-<section class="webinar-summary-area mb-60">
-  <div class="container section">
-    <div class="columns">
-      <div class="column is-8">
-        <!-- summary start  -->
-        <div class="webinar-summary">
-          <h3>Summary:</h3>
-          <div class="summary-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic</div>
-
-          <!-- speaker info start  -->
-          <h3>Speaker: </h3>
-          <div class="speaker-info-wrapper">
-            <div class="speaker-thumbnail">
-              <img src="http://via.placeholder.com/600/dddddd/808080" alt="speaker-thumbnail">
-            </div>
-            <div class="speaker-info">
-              <h5>Tamal Saha</h5>
-              <p class="designation">‎Founder & CEO · <a href="http://appscode.com">‎AppsCode Inc</a></p>
-              <div class="speaker-message">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard</div>
-            </div>
-          </div>
-          <!-- speaker info end -->
-        </div>
-        <!-- summary end -->
-      </div>
-      <div class="column is-4">
-      </div>
-    </div>
-  </div>
-</section>
-<!-- summary area start  -->
-
 {{ end }}
 
 {{ define "testimonial" }}

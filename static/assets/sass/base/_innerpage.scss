@@ -20,7 +20,7 @@
     height: 400px;
     h1 {
       font-size: 48px;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       font-weight: 400;
     }
     p {
@@ -50,7 +50,7 @@
   p {
     font-size: 16px;
     line-height: 28px;
-    color: $paragraph-color;
+    color: $ac-color-text;
     margin-bottom: 20px;
     &:last-child {
       margin-bottom: 0;
@@ -80,11 +80,11 @@
         font-size: 18px;
         line-height: 28px;
         font-weight: 700;
-        color: $primary-color;
+        color: $ac-primary;
       }
       p {
         font-size: 14px;
-        color: $paragraph-color;
+        color: $ac-color-text;
       }
     }
   }
@@ -148,8 +148,8 @@
 }
 .pricing-plan-area-2 {
   .single-pricing {
-    background-color: $white-color;
-    border: 1px solid $border-color;
+    background-color: $ac-white;
+    border: 1px solid $ac-white-light;
     border-radius: 4px;
     padding: 50px 50px;
     position: relative;
@@ -166,7 +166,7 @@
       z-index: -1;
       h5 {
         font-size: 16px;
-        color: $primary-color;
+        color: $ac-primary;
       }
     }
     h2 {
@@ -176,7 +176,7 @@
     }
     h3 {
       font-size: 24px;
-      color: $orange-color;
+      color: $ac-orange;
       margin-bottom: 10px;
     }
     p {
@@ -186,7 +186,7 @@
   }
   .single-pricing.intermediate {
     h5 {
-      color: $blue-color;
+      color: $ac-blue;
     }
   }
 }
@@ -204,17 +204,17 @@
   }
   .single-feature.foundational {
     h3 {
-      color: $primary-color;
+      color: $ac-primary;
     }
   }
   .single-feature.intermediate {
     h3 {
-      color: $blue-color;
+      color: $ac-blue;
     }
   }
   .single-feature.advanced {
     h3 {
-      color: $red-color;
+      color: $ac-red;
     }
   }
 }
@@ -231,7 +231,7 @@
 .ac-cta-area {
   .cta-text {
     h2 {
-      color: $heading-color;
+      color: $ac-color-heading;
     }
   }
 }
@@ -241,7 +241,7 @@
 .contact-form {
   position: relative;
   z-index: 1;
-  margin: 60px 60px 0;
+  // margin: 60px 60px 0;
   height: 100%;
   .contact-form-inner {
     margin-top: -400px;
@@ -290,7 +290,7 @@
 .tabs-wrapper {
   ul {
     li {
-      color: $paragraph-color;
+      color: $ac-color-text;
       display: inline-block;
       padding: 20px;
       font-size: 18px;
@@ -298,7 +298,7 @@
       cursor: pointer;
     }
     li.is-active {
-      color: $primary-color;
+      color: $ac-primary;
     }
   }
 }
@@ -317,7 +317,7 @@
 // product page feature area start
 .single-product-feature-wrapper {
   overflow: hidden;
-  background-color: $white-color;
+  background-color: $ac-white;
   box-shadow: 0px 1px 4px rgba(50, 112, 128, 0.16);
   border-radius: 4px;
   padding: 20px;
@@ -333,7 +333,7 @@
     width: 100%;
     height: 0;
     transition: .3s ease-in-out;
-    background-color: $primary-color;
+    background-color: $ac-primary;
   }
   z-index: 1;
   &:hover{
@@ -372,3 +372,103 @@
 }
 
 // product page feature area end
+
+
+
+/****************************************
+Responsive Classes
+*****************************************/
+@media (max-width: 767.98px) {
+  .package-area {
+    .single-package-wrapper {
+      padding: 20px 30px;
+      border: 1px solid $ac-white-light;
+    }
+  }
+  .testimonial-area-2 {
+    .testimonial-wrapper {
+      text-align: center;
+      .is-pulled-right {
+        float: inherit !important;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+// (min-width: 568px) and (max-width: 1023.98px)
+@media (min-width: 568px) and (max-width: 1023.98px) {
+  .package-area {
+    .single-package-wrapper {
+      padding: 20px;
+      border: 1px solid $ac-white-light;
+    }
+  }
+  .ac-image {
+    text-align: center;
+  }
+  .about-training {
+    .section-title {
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+  .ac-text {
+    p{
+      text-align: center;
+    }
+  }
+}
+
+// Medium devices (tablets, 769px and up)
+@media (min-width: 769px) and (max-width: 1023.98px) {
+  .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
+    width: 150px;
+    height: 150px;
+  }
+  .training-wrapper-image .single-training-image-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+// Large devices (desktops, 1024px and up)
+@media (min-width: 1024px) and (max-width: 1215px) {
+  .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
+    width: 150px;
+    height: 150px;
+  }
+  .training-wrapper-image .single-training-image-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 1216px) and (max-width: 1407px) {
+  .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
+    width: 150px;
+    height: 150px;
+  }
+  .training-wrapper-image .single-training-image-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 1408px) and (max-width: 1600px) {
+  .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
+    width: 150px;
+    height: 150px;
+  }
+  .training-wrapper-image .single-training-image-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 1408px) {
+
+}
