@@ -34,15 +34,32 @@ navItems.forEach(navItem => {
   })
 })
 
+// mega menu active class
+var navbarItems = document.querySelectorAll(".navbar-item");
+navbarItems.forEach((navbarItem) => {
+  navbarItem.addEventListener("click", function () {
+    var megamenues = document.querySelectorAll(
+      ".navbar-item > .ac-megamenu , .navbar-item > .ac-dropdown"
+    );
+    // remove is-active class from all the megamenus except the navbar item that was clicked
+    megamenues.forEach((megamenu) => {
+      // toggle classes
+      if (megamenu.parentElement === navbarItem)
+        megamenu.classList.toggle("is-active");
+      else megamenu.classList.remove("is-active");
+    });
+  });
+});
+
 // Responsive menu back button
-const backButtonAll = document.querySelectorAll(".back-button");	
+const backButtonAll = document.querySelectorAll(".back-button");
 // create click event for all back button	
-Array.from(backButtonAll).forEach((el) => {	
-  el.addEventListener("click", () => {	
+Array.from(backButtonAll).forEach((el) => {
+  el.addEventListener("click", () => {
     // closeset nav item ancestor	
-    const activeNavElement = el.closest(".nav-item.is-active");	
-    if (activeNavElement) activeNavElement.classList.remove("is-active");	
-  })	
+    const activeNavElement = el.closest(".nav-item.is-active");
+    if (activeNavElement) activeNavElement.classList.remove("is-active");
+  })
 });
 // navbar area JS v.2022 end
 
@@ -101,43 +118,6 @@ Array.from(responsiveMenus).forEach((menu, idx) => {
         }
       }
     });
-  });
-});
-
-// Webinar tabs start
-const tabsitem = document.querySelectorAll('[data-tab-target]')
-const tabContents = document.querySelectorAll('[data-tab-content]')
-
-tabsitem.forEach(tab => {
-  tab.addEventListener('click', () => {
-    const target = document.querySelector(tab.dataset.tabTarget)
-    tabContents.forEach(tabContent => {
-      tabContent.classList.remove('is-active')
-    })
-    tabsitem.forEach(tab => {
-      tab.classList.remove('is-active')
-    })
-    tab.classList.add('is-active')
-    target.classList.add('is-active')
-  })
-})
-// Webinar tabs end
-
-// webinar video FN 
-const iframeElements = document.querySelectorAll("iframe");
-const webinarVideoElements = document.querySelectorAll(".webinar-video");
-
-Array.from(webinarVideoElements).forEach((webinarVideoEl, idx) => {
-  webinarVideoEl.addEventListener('click', () => {
-    const hasOverlay = webinarVideoEl.classList.contains("active-overlay");
-    if(hasOverlay) {
-      let times = 0, playY;
-      if(times == 0){
-        playY = iframeElements[idx].src += '?autoplay=1&start=1';
-        times = 0;
-      }
-      webinarVideoEl.classList.remove("active-overlay")
-    }
   });
 });
 
@@ -217,22 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // menu sticky
 // Not a ton of code, but hard to
 
-// mega menu active class
-var navbarItems = document.querySelectorAll(".navbar-item");
-navbarItems.forEach((navbarItem) => {
-  navbarItem.addEventListener("click", function () {
-    var megamenues = document.querySelectorAll(
-      ".navbar-item > .ac-megamenu , .navbar-item > .ac-dropdown"
-    );
-    // remove is-active class from all the megamenus except the navbar item that was clicked
-    megamenues.forEach((megamenu) => {
-      // toggle classes
-      if (megamenu.parentElement === navbarItem)
-        megamenu.classList.toggle("is-active");
-      else megamenu.classList.remove("is-active");
-    });
-  });
-});
+
 
 //bulma carousel
 bulmaCarousel.attach("#carousel-demo", {

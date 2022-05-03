@@ -48,11 +48,9 @@
             <!-- single webinar start  -->
             <div class="single-webinar is-active" id="webinar1" data-tab-content>
               <div class="webinar-video active-overlay">
-                <iframe src="https://www.youtube.com/embed/B_7qJ1Gk9QI"
-                  title="YouTube video player" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/B_7qJ1Gk9QI" title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; clipboard-write; encrypted-media; gyroscope;
-                  picture-in-picture"
-                  allowfullscreen></iframe>
+                  picture-in-picture" allowfullscreen></iframe>
               </div>
               <div class="webinar-title">
                 <h1>KubeDB AutoOps - Automate Day 2 Life-cycle Management for Databases on Kubernetes.</h1>
@@ -61,7 +59,7 @@
                 <p class="date">
                   <lord-icon src="https://cdn.lordicon.com/drtetngs.json" trigger="loop" colors="primary:#00a651"
                     style="width:24px;height:24px">
-                  </lord-icon><span>When: 13  2022 2022 - 11:30:00 PM</span>
+                  </lord-icon><span>When: 13 2022 2022 - 11:30:00 PM</span>
                 </p>
                 <p class="date">
                   <lord-icon src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop" style="width:24px;height:24px">
@@ -108,9 +106,7 @@
               <div class="webinar-speakers">
                 <!-- single speaker start  -->
                 <div class="single-speaker">
-                  <div class="speaker-image"><img
-                      src="/assets/images/employees/pulak.jpg"
-                      alt=""></div>
+                  <div class="speaker-image"><img src="/assets/images/employees/pulak.jpg" alt=""></div>
                   <div class="speaker-info">
                     <h6>Pulak Kanti Bhowmick</h6>
                     <p>Software Engineer <a href="https://appscode.com">AppsCode Inc</a></p>
@@ -145,8 +141,7 @@
             <!-- single webinar start  -->
             <div class="single-webinar" id="webinar2" data-tab-content>
               <div class="webinar-video active-overlay">
-                <iframe src="https://www.youtube.com/embed/VMJOJX5_0TQ"
-                  title="YouTube video player" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/VMJOJX5_0TQ" title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
               </div>
@@ -240,8 +235,7 @@
             <!-- single webinar start  -->
             <div class="single-webinar" id="webinar3" data-tab-content>
               <div class="webinar-video active-overlay">
-                <iframe src="https://www.youtube.com/embed/AN_58DhiilY"
-                  title="YouTube video player" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/AN_58DhiilY" title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
               </div>
@@ -559,7 +553,6 @@
   (function () {
     var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
     xhr.onreadystatechange = function () {
-
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           var select = document.querySelector(".registration-form form #schedule");
@@ -571,6 +564,7 @@
           wbody.replaceChildren();
 
           var webinars = JSON.parse(xhr.responseText);
+
           for (let i = 0; i < Math.min(webinars.length, 3); i++) {
             let w = webinars[i];
             let date = new Date(w.schedules[0]);
@@ -583,7 +577,8 @@
 
             // <li class="webinar-item tab" data-tab-target="#webinar2"><p>May 2022</p><h2>12</h2><p class="date">11:30:00 PM</p></li>
             let li = document.createElement("li");
-            li.innerHTML = '<p>'+dfmt.format('MMM YYYY')+'</p><h2>'+date.getDate()+'</h2><p class="date">'+dfmt.format('hh:mm:ss A')+'</p>';
+            li.innerHTML = '<p>' + dfmt.format('MMM YYYY') + '</p><h2>' + date.getDate() + '</h2><p class="date">' +
+              dfmt.format('hh:mm:ss A') + '</p>';
             if (i) {
               li.setAttribute("class", "webinar-item tab");
             } else {
@@ -593,8 +588,8 @@
             ul.appendChild(li);
 
             let details = document.createElement('div');
-            details.innerHTML = `<div class="webinar-video active-overlay">
-    <iframe src="https://www.youtube.com/embed/${w.youtube_video_id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; clipboard-write; encrypted-media; gyroscope;
+            details.innerHTML = `<div class="webinar-video">
+    <iframe src="https://www.youtube.com/embed/${w.youtube_video_id}?autoplay=1&start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; clipboard-write; encrypted-media; gyroscope;
       picture-in-picture" allowfullscreen=""></iframe>
   </div>
   <div class="webinar-title">
@@ -637,6 +632,26 @@
             details.setAttribute("data-tab-content", "");
             wbody.appendChild(details);
           }
+          // webinar tabs js start 
+          // Webinar tabs start
+          const tabsitem = document.querySelectorAll('[data-tab-target]')
+          const tabContents = document.querySelectorAll('[data-tab-content]')
+
+          tabsitem.forEach(tab => {
+
+            tab.addEventListener('click', () => {
+              const target = document.querySelector(tab.dataset.tabTarget)
+              tabContents.forEach(tabContent => {
+                tabContent.classList.remove('is-active')
+              })
+              tabsitem.forEach(tab => {
+                tab.classList.remove('is-active')
+              })
+              tab.classList.add('is-active')
+              target.classList.add('is-active')
+            })
+          })
+          // Webinar tabs end
         } else {
           location.reload();
         }
