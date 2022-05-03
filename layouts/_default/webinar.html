@@ -588,8 +588,8 @@
             ul.appendChild(li);
 
             let details = document.createElement('div');
-            details.innerHTML = `<div class="webinar-video active-overlay">
-    <iframe src="https://www.youtube.com/embed/${w.youtube_video_id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; clipboard-write; encrypted-media; gyroscope;
+            details.innerHTML = `<div class="webinar-video">
+    <iframe src="https://www.youtube.com/embed/${w.youtube_video_id}?autoplay=1&start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; clipboard-write; encrypted-media; gyroscope;
       picture-in-picture" allowfullscreen=""></iframe>
   </div>
   <div class="webinar-title">
@@ -652,26 +652,6 @@
             })
           })
           // Webinar tabs end
-
-          // webinar video FN 
-          const iframeElements = document.querySelectorAll("iframe");
-          const webinarVideoElements = document.querySelectorAll(".webinar-video");
-
-          Array.from(webinarVideoElements).forEach((webinarVideoEl, idx) => {
-            webinarVideoEl.addEventListener('click', () => {
-              const hasOverlay = webinarVideoEl.classList.contains("active-overlay");
-              if (hasOverlay) {
-                let times = 0,
-                  playY;
-                if (times == 0) {
-                  playY = iframeElements[idx].src += '?autoplay=1&start=1';
-                  times = 0;
-                }
-                webinarVideoEl.classList.remove("active-overlay")
-              }
-            });
-          });
-          // webinar tabs js end
         } else {
           location.reload();
         }
