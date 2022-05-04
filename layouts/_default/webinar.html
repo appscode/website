@@ -476,10 +476,11 @@
 
 <!-- Slim Select JS  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+<script src="https://unpkg.com/dayjs@1.11.1/dayjs.min.js"></script>
 <!-- initilize Slim Select  -->
 <script type="text/javascript">
   if (document.querySelector('.ac-custom-select')) {
-    new SlimSelect({
+    var ss = new SlimSelect({
       select: '#schedule'
     });
     new SlimSelect({
@@ -492,10 +493,7 @@
       select: '#marketing_reach'
     });
   }
-</script>
 
-<script src="https://unpkg.com/dayjs@1.11.1/dayjs.min.js"></script>
-<script type="text/javascript">
   function enableSubmit() {
     document.querySelector(".registration-form form input[type='submit']").disabled = false;
   }
@@ -641,8 +639,7 @@
           const tabsitem = document.querySelectorAll('[data-tab-target]')
           const tabContents = document.querySelectorAll('[data-tab-content]')
 
-          tabsitem.forEach(tab => {
-
+          tabsitem.forEach((tab, idx) => {
             tab.addEventListener('click', () => {
               const target = document.querySelector(tab.dataset.tabTarget)
               tabContents.forEach(tabContent => {
@@ -653,6 +650,14 @@
               })
               tab.classList.add('is-active')
               target.classList.add('is-active')
+
+              // https://slimselectjs.com/methods
+              // https://alvarotrigo.com/blog/javascript-select-option/
+              if (ss) {
+                ss.set(select.options[idx].value);
+              } else {
+                select.value = select.options[idx].value;
+              }
             })
           })
           // Webinar tabs end
