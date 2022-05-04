@@ -570,10 +570,21 @@
             let date = new Date(w.schedules[0]);
             let dfmt = dayjs(date);
 
-            var opt = document.createElement('option');
+            let opt = document.createElement('option');
             opt.value = w.schedules[0];
             opt.innerHTML = w.title;
             select.appendChild(opt);
+
+            let speakers = "";
+            w.speakers.forEach(s => {
+              speakers += `<div class="single-speaker">
+  <div class="speaker-image"><img src="${s.picture}" alt="${s.name}"></div>
+  <div class="speaker-info">
+    <h6>${s.name}</h6>
+    <p>${s.job_title} <a href="https://appscode.com">AppsCode Inc</a></p>
+  </div>
+</div>`;
+          });
 
             // <li class="webinar-item tab" data-tab-target="#webinar2"><p>May 2022</p><h2>12</h2><p class="date">11:30:00 PM</p></li>
             let li = document.createElement("li");
@@ -612,14 +623,7 @@
   </div>
   <h5 class="mb-20 mt-30">Webinar Speakers</h5>
   <div class="webinar-speakers">
-    <!--multiple speaker supported-->
-    <div class="single-speaker">
-      <div class="speaker-image"><img src="${w.speaker_picture}" alt="${w.speaker}"></div>
-      <div class="speaker-info">
-        <h6>${w.speaker}</h6>
-        <p>${w.speaker_title} <a href="https://appscode.com">AppsCode Inc</a></p>
-      </div>
-    </div>
+    ${speakers}
   </div>`;
 
             // <div class="single-webinar is-active" id="webinar${i}" data-tab-content="">
