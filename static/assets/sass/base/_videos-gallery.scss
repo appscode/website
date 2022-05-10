@@ -10,6 +10,12 @@
     margin-top: -10px;
     border-top: none;
 
+    .left-sidebar-inner {
+      display: block;
+      position: sticky;
+      top: 81px;
+    }
+
     h4 {
       font-weight: 600;
       font-size: 18px;
@@ -258,6 +264,7 @@
 // playlist design start
 .playlist-wrapper {
   margin-top: 60px;
+
   h4 {
     font-weight: 700;
     font-size: 18px;
@@ -273,16 +280,20 @@
     transition: 0.3s ease-in-out;
     border-radius: 4px;
     margin-bottom: 20px;
+
     &:last-child {
       margin-bottom: 0;
     }
 
     &:hover {
-      background-color: #FAFAFD;
+      background-color: #fafafd;
       border: 1px solid $ac-primary;
     }
+
     .thumbnail {
       margin-right: 50px;
+      display: flex;
+
       img {
         width: 190px;
         height: 190px;
@@ -292,9 +303,11 @@
 
     .content {
       width: calc(100% - 240px);
+
       .categories {
         display: flex;
         align-items: center;
+
         span {
           font-weight: 400;
           font-size: 13px;
@@ -500,6 +513,9 @@ Responsive Classes
       height: 100%;
       overflow-y: auto;
       transition: 0.3s ease-in-out;
+      .left-sidebar-inner {
+        top: 0;
+      }
     }
 
     .right-content {
@@ -527,6 +543,24 @@ Responsive Classes
 
       &:last-child {
         margin-right: 0;
+      }
+    }
+  }
+
+  .playlist-wrapper {
+    .playlist-item {
+      flex-direction: column;
+      align-items: flex-start;
+      .thumbnail {
+        margin-right: 0;
+        margin-bottom: 15px;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .content {
+        width: 100%;
       }
     }
   }
