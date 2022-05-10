@@ -8468,6 +8468,7 @@ strong {
 .ac-custom-select .ss-content .ss-list .ss-option:hover {
   opacity: 0.8;
   color: var(--ac-primary);
+  background-color: #00a65142;
 }
 
 .ac-custom-select .ss-content .ss-list .ss-option.ss-disabled {
@@ -11705,15 +11706,15 @@ Responsive Classes
 }
 
 .gallery-card:hover {
-  border: 1px solid #4d4dcb;
+  border: 1px solid var(--ac-primary);
 }
 
 .gallery-card:hover .gallery-body h1 {
-  color: #4d4dcb;
+  color: var(--ac-primary);
 }
 
 .gallery-card:hover .card-thumbnail .play-button {
-  background-color: #4d4dcb;
+  background-color: var(--ac-primary);
 }
 
 .gallery-card .card-thumbnail {
@@ -11815,17 +11816,17 @@ Responsive Classes
 
 .outlined-bg-buttons .button {
   background: #fafafd;
-  border: 1px solid #4d4dcb;
+  border: 1px solid var(--ac-primary);
   font-size: 13px;
   letter-spacing: -0.5px;
   font-weight: 400;
   height: 33px;
   border-radius: 4px;
-  color: #4d4dcb;
+  color: var(--ac-primary);
 }
 
 .outlined-bg-buttons .button:hover {
-  background-color: #4d4dcb;
+  background-color: var(--ac-primary);
   color: #fff;
 }
 
@@ -11833,29 +11834,97 @@ Responsive Classes
   font-size: 13px;
 }
 
-.single-video-page .left-content .video-content {
-  margin-bottom: 20px;
-  width: 100%;
-  height: 0;
-  position: relative;
-  padding-top: 56.25%;
+.playlist-wrapper {
+  margin-top: 60px;
 }
 
-.single-video-page .left-content .video-content iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 0;
-}
-
-.single-video-page .left-content .video-title h1 {
+.playlist-wrapper h4 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 130%;
-  letter-spacing: 0.25px;
   margin-bottom: 20px;
+}
+
+.playlist-wrapper .playlist-item {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #dbdbde;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.playlist-wrapper .playlist-item:last-child {
+  margin-bottom: 0;
+}
+
+.playlist-wrapper .playlist-item:hover {
+  background-color: #FAFAFD;
+  border: 1px solid var(--ac-primary);
+}
+
+.playlist-wrapper .playlist-item .thumbnail {
+  margin-right: 50px;
+}
+
+.playlist-wrapper .playlist-item .thumbnail img {
+  width: 190px;
+  height: 190px;
+  border-radius: 4px;
+}
+
+.playlist-wrapper .playlist-item .content {
+  width: calc(100% - 240px);
+}
+
+.playlist-wrapper .playlist-item .content .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.playlist-wrapper .playlist-item .content .categories span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  color: #505050;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+
+.playlist-wrapper .playlist-item .content h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.playlist-wrapper .playlist-item .content p {
+  font-size: 14px;
+  line-height: 160%;
+  color: #3b3030;
+}
+
+.playlist-wrapper .playlist-item .content button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: var(--ac-primary);
 }
 
 .single-video-page .left-content .user-info-wrapper {
@@ -11907,13 +11976,16 @@ Responsive Classes
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  color: #4D4DCB;
+  color: #4d4dcb;
 }
 
 .single-video-page .right-content .video-list-wrapper {
-  background-color: #FAFAFD;
+  background-color: #fafafd;
   border: 1px solid #dbdbde;
   padding: 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
 }
 
 .single-video-page .right-content .video-list-wrapper h4 {
@@ -11964,6 +12036,31 @@ Responsive Classes
   font-size: 13px;
   line-height: 150%;
   color: #191536;
+}
+
+.video-content {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.video-content iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+}
+
+.video-title h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.25px;
+  margin-bottom: 20px;
 }
 
 /****************************************
@@ -16117,3 +16214,4 @@ Responsive Classes
   documentation page end
 ==============================================*/
 }
+/*# sourceMappingURL=main.css.map */

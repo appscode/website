@@ -132,17 +132,17 @@
   overflow: hidden;
 
   &:hover {
-    border: 1px solid $kubedb-primary;
+    border: 1px solid $ac-primary;
 
     .gallery-body {
       h1 {
-        color: $kubedb-primary;
+        color: $ac-primary;
       }
     }
 
     .card-thumbnail {
       .play-button {
-        background-color: $kubedb-primary;
+        background-color: $ac-primary;
       }
     }
   }
@@ -236,16 +236,16 @@
 .outlined-bg-buttons {
   .button {
     background: #fafafd;
-    border: 1px solid $kubedb-primary;
+    border: 1px solid $ac-primary;
     font-size: 13px;
     letter-spacing: -0.5px;
     font-weight: 400;
     height: 33px;
     border-radius: 4px;
-    color: $kubedb-primary;
+    color: $ac-primary;
 
     &:hover {
-      background-color: $kubedb-primary;
+      background-color: $ac-primary;
       color: #fff;
     }
 
@@ -255,58 +255,103 @@
   }
 }
 
-// single gallery page start 
+// playlist design start
+.playlist-wrapper {
+  margin-top: 60px;
+  h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    margin-bottom: 20px;
+  }
 
+  .playlist-item {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid $ac-white-light;
+    transition: 0.3s ease-in-out;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
 
-
-.single-video-page {
-
-  .left-content {
-
-    .video-content {
-      margin-bottom: 20px;
-      width: 100%;
-      height: 0;
-      position: relative;
-      padding-top: 56.25%;
-
-      iframe {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border: 0;
+    &:hover {
+      background-color: #FAFAFD;
+      border: 1px solid $ac-primary;
+    }
+    .thumbnail {
+      margin-right: 50px;
+      img {
+        width: 190px;
+        height: 190px;
+        border-radius: 4px;
       }
     }
 
-    .video-title {
+    .content {
+      width: calc(100% - 240px);
+      .categories {
+        display: flex;
+        align-items: center;
+        span {
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 100%;
+          color: #505050;
+          margin-bottom: 15px;
+          margin-right: 15px;
+          margin-bottom: 0;
+        }
+      }
 
-      h1 {
-        font-weight: 700;
-        font-size: 24px;
+      h2 {
+        font-weight: 500;
+        font-size: 16px;
         line-height: 130%;
-        letter-spacing: 0.25px;
-        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 160%;
+        color: $ac-color-text;
       }
 
       button {
-
-        .fa {}
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 160%;
+        text-decoration-line: underline;
+        background: transparent;
+        border: none;
+        margin: 0;
+        padding: 0;
+        color: $ac-primary;
       }
     }
+  }
+}
 
+// playlist design end
+
+// single gallery page start
+
+.single-video-page {
+  .left-content {
     .user-info-wrapper {
       display: flex;
       align-items: center;
       margin-bottom: 20px;
+
       .image {
         margin-right: 15px;
-        .is-rounded {}
+
+        .is-rounded {
+        }
       }
 
       .user-info {
-
         h5 {
           font-weight: 500;
           font-size: 16px;
@@ -327,7 +372,6 @@
     }
 
     .tags {
-
       strong {
         font-weight: 500;
         font-size: 16px;
@@ -339,7 +383,6 @@
     }
 
     .video-description {
-
       p {
         font-weight: 400;
         font-size: 16px;
@@ -350,20 +393,19 @@
           font-weight: 400;
           font-size: 16px;
           line-height: 160%;
-          color: #4D4DCB;
-
-
+          color: #4d4dcb;
         }
       }
     }
   }
 
   .right-content {
-
     .video-list-wrapper {
-      background-color: #FAFAFD;
+      background-color: #fafafd;
       border: 1px solid $ac-white-light;
       padding: 30px;
+      position: sticky;
+      top: 100px;
 
       h4 {
         font-weight: 600;
@@ -373,25 +415,28 @@
       }
 
       .video-list-items {
-
         .single-video {
           display: flex;
           align-items: center;
           margin-bottom: 15px;
+
           &:last-child {
             margin-bottom: 0;
           }
+
           .thumbnail {
             margin-right: 15px;
             height: 60px;
             width: 60px;
+
             img {
-             object-fit: cover;
+              object-fit: cover;
             }
           }
 
           .descriptions {
             width: calc(100% - 75px);
+
             h5 {
               font-size: 16px;
               line-height: 120%;
@@ -413,8 +458,34 @@
   }
 }
 
-// single gallery page end
+.video-content {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-top: 56.25%;
 
+  iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+  }
+}
+
+.video-title {
+  h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0.25px;
+    margin-bottom: 20px;
+  }
+}
+
+// single gallery page end
 
 /****************************************
 Responsive Classes
@@ -462,10 +533,12 @@ Responsive Classes
 }
 
 // (min-width: 568px) and (max-width: 1023.98px)
-@media (min-width: 568px) and (max-width: 1023.98px) {}
+@media (min-width: 568px) and (max-width: 1023.98px) {
+}
 
 // Medium devices (tablets, 769px and up)
-@media (min-width: 769px) and (max-width: 1023.98px) {}
+@media (min-width: 769px) and (max-width: 1023.98px) {
+}
 
 // Large devices (desktops, 1024px and up)
 @media (min-width: 1024px) and (max-width: 1215px) {
@@ -540,4 +613,5 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1408px) {}
+@media (min-width: 1408px) {
+}
