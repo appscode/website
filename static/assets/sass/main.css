@@ -11989,13 +11989,16 @@ Responsive Classes
   color: #4d4dcb;
 }
 
+.single-video-page .right-content {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 81px;
+}
+
 .single-video-page .right-content .video-list-wrapper {
   background-color: #fafafd;
   border: 1px solid #dbdbde;
   padding: 30px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 100px;
 }
 
 .single-video-page .right-content .video-list-wrapper h4 {
@@ -12019,6 +12022,10 @@ Responsive Classes
   margin-bottom: 0;
 }
 
+.single-video-page .right-content .video-list-wrapper .video-list-items .single-video:hover .descriptions h5 {
+  color: var(--ac-primary);
+}
+
 .single-video-page .right-content .video-list-wrapper .video-list-items .single-video .thumbnail {
   margin-right: 15px;
   height: 60px;
@@ -12032,6 +12039,11 @@ Responsive Classes
 
 .single-video-page .right-content .video-list-wrapper .video-list-items .single-video .descriptions {
   width: calc(100% - 75px);
+}
+
+.single-video-page .right-content .video-list-wrapper .video-list-items .single-video .descriptions h5 {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .single-video-page .right-content .video-list-wrapper .video-list-items .single-video .descriptions h5 {
@@ -12146,6 +12158,12 @@ Responsive Classes
   }
   .gallery-card .card-body .meta-tag p {
     font-size: 13px;
+  }
+  .single-video-page .right-content .video-list-wrapper h4 {
+    font-size: 16px;
+  }
+  .single-video-page .right-content .video-list-wrapper .video-list-items .single-video .descriptions {
+    font-size: 14px;
   }
 }
 

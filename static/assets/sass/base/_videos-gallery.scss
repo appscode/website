@@ -413,12 +413,13 @@
   }
 
   .right-content {
+    position: sticky;
+    top: 81px;
+
     .video-list-wrapper {
       background-color: #fafafd;
       border: 1px solid $ac-white-light;
       padding: 30px;
-      position: sticky;
-      top: 100px;
 
       h4 {
         font-weight: 600;
@@ -437,6 +438,12 @@
             margin-bottom: 0;
           }
 
+          &:hover {
+            .descriptions h5 {
+              color: $ac-primary;
+            }
+          }
+
           .thumbnail {
             margin-right: 15px;
             height: 60px;
@@ -449,6 +456,10 @@
 
           .descriptions {
             width: calc(100% - 75px);
+
+            h5 {
+              transition: 0.3s ease-in-out;
+            }
 
             h5 {
               font-size: 16px;
@@ -513,6 +524,7 @@ Responsive Classes
       height: 100%;
       overflow-y: auto;
       transition: 0.3s ease-in-out;
+
       .left-sidebar-inner {
         top: 0;
       }
@@ -551,14 +563,17 @@ Responsive Classes
     .playlist-item {
       flex-direction: column;
       align-items: flex-start;
+
       .thumbnail {
         margin-right: 0;
         margin-bottom: 15px;
+
         img {
           width: 100%;
           height: auto;
         }
       }
+
       .content {
         width: 100%;
       }
@@ -593,6 +608,24 @@ Responsive Classes
       .meta-tag {
         p {
           font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .single-video-page {
+    .right-content {
+      .video-list-wrapper {
+        h4 {
+          font-size: 16px;
+        }
+
+        .video-list-items {
+          .single-video {
+            .descriptions {
+              font-size: 14px;
+            }
+          }
         }
       }
     }
