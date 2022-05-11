@@ -10,49 +10,48 @@
 
     <!-- hero-area main start -->
     <div class="columns">
-        <div class="column is-half-desktop is-full-mobile is-full-tablet">
-          <div class="hero-area-content d-table">
-            <div class="hero-content-inner typing d-table-cell">
-              <h1 data-aos="fade-up">
-                Our Mission is to
-                Accelerate the transition to
-                Containers by building a
-                Kubernetes-native
-                Data Platform
-              </h1>
-              <div class="hero-area-button buttons" data-aos="fade-up" data-aos-duration="800">
-                <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-primary"
-                  > <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json"
-                    trigger="loop" target="a.is-secondary" trigger="hover"
-                    style="width:22px;height:22px; margin-right: 8px;">
-                  </lord-icon><span>Get In Touch</span></a
-                >
-                <a href="{{ $.Site.Params.github_url }}" class="button ac-button is-primary is-outlined"
-                  >View on Github</a
-                >
-              </div>
-              <div class="play-buttons" data-aos="fade-up" data-aos-duration="1000">
-                <a href="#" id="playme" onclick="revealVideo('video','youtube')"
-                  ><span class="video-icon"
-                    ><i class="fa fa-play" aria-hidden="true"></i
-                  ></span>
-                  Watch the reel</a
-                >
-              </div>
-
+      <div class="column is-half-desktop is-full-mobile is-full-tablet">
+        <div class="hero-area-content d-table">
+          <div class="hero-content-inner typing d-table-cell">
+            <h1 data-aos="fade-up">
+              Our Mission is to
+              Accelerate the transition to
+              Containers by building a
+              Kubernetes-native
+              Data Platform
+            </h1>
+            <div class="hero-area-button buttons" data-aos="fade-up" data-aos-duration="800">
+              <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-primary">
+                <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json"
+                  trigger="loop" target="a.is-secondary" trigger="hover"
+                  style="width:22px;height:22px; margin-right: 8px;">
+                </lord-icon><span>Get In Touch</span>
+              </a>
+              <a href="{{ $.Site.Params.github_url }}" class="button ac-button is-primary is-outlined">View on
+                Github</a>
             </div>
             <div class="play-buttons" data-aos="fade-up" data-aos-duration="1000">
               <a href="#" id="playme" onclick="revealVideo('video','youtube')"><span class="video-icon"><i
                     class="fa fa-play" aria-hidden="true"></i></span>
                 Watch the reel</a>
             </div>
+
           </div>
         </div>
       </div>
+      <div class="column is-6 is-hidden-mobile">
+        <div class="hero-right-content-wrapper">
+          <div class="right-side-content-inner" data-aos="fade-up" data-aos-duration="1500">
+            <img src="{{ .Site.Data.products.appscode.heroImage.src }}" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- hero-area main end -->
   </div>
 </section>
 <!-- hero-area end -->
+
  <!-- social prove logo area start   -->
  <div class="social-prove-brand-area">
    <div class="container">
