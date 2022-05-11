@@ -348,7 +348,7 @@
                   </script>
                 </li>
                 <li class="nav-item">
-                  <a href="https://appscode.com/webinar" target="_blank" class="link">Webinar <span
+                  <a href="/webinar" target="_blank" class="link">Webinar <span
                       class="whats-new">New</span></a>
                 </li>
               </ul>
@@ -372,7 +372,7 @@
                       }
                     }
                   } //
-                  console.log('GET', 'https://license-issuer.appscode.com/_/webinars/');
+                  // console.log('GET', 'https://license-issuer.appscode.com/_/webinars/');
                   xhr.open('GET', 'https://license-issuer.appscode.com/_/webinars/');
                   xhr.send();
                 }());
@@ -525,6 +525,8 @@
 
   <div class="modal-backdrop"></div>
 
+  <div class="modal-backdrop"></div>
+  
   <!-- Code that all your templates share, like a header -->
   {{ block "main" . }}
   <!-- The part of the page that begins to differ between templates -->
@@ -614,8 +616,8 @@
                     <div class="control">
                       <!-- AppsCode Monthly Newsletter -->
                       <input type="hidden" id="afbbc" name="l" value="afbbc974-e163-4467-be49-040e399520f3" />
-                      <input class="input" name="email" id="mce-EMAIL" type="email"
-                        placeholder="Your work email address" required />
+                      <input class="input" name="email" id="mce-EMAIL" type="email" placeholder="Your work email address"
+                        required />
                       <button id="mc-embedded-subscribe" type="submit" name="subscribe" class="button">
                         <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
                       </button>

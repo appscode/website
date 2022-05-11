@@ -34,6 +34,26 @@ navItems.forEach(navItem => {
   })
 })
 
+// menu sticky
+// Not a ton of code, but hard to
+
+// mega menu active class
+var navbarItems = document.querySelectorAll(".navbar-item");
+navbarItems.forEach((navbarItem) => {
+  navbarItem.addEventListener("click", function () {
+    var megamenues = document.querySelectorAll(
+      ".navbar-item > .ac-megamenu , .navbar-item > .ac-dropdown"
+    );
+    // remove is-active class from all the megamenus except the navbar item that was clicked
+    megamenues.forEach((megamenu) => {
+      // toggle classes
+      if (megamenu.parentElement === navbarItem)
+        megamenu.classList.toggle("is-active");
+      else megamenu.classList.remove("is-active");
+    });
+  });
+});
+
 // Responsive menu back button
 const backButtonAll = document.querySelectorAll(".back-button");
 // create click event for all back button	
@@ -103,68 +123,6 @@ Array.from(responsiveMenus).forEach((menu, idx) => {
     });
   });
 });
-
-// Webinar tabs start
-const tabsitem = document.querySelectorAll('[data-tab-target]')
-const tabContents = document.querySelectorAll('[data-tab-content]')
-
-tabsitem.forEach(tab => {
-  tab.addEventListener('click', () => {
-    const target = document.querySelector(tab.dataset.tabTarget)
-    tabContents.forEach(tabContent => {
-      tabContent.classList.remove('is-active')
-    })
-    tabsitem.forEach(tab => {
-      tab.classList.remove('is-active')
-    })
-    tab.classList.add('is-active')
-    target.classList.add('is-active')
-  })
-})
-// Webinar tabs end
-
-// webinar video FN 
-const iframeElements = document.querySelectorAll("iframe");
-const webinarVideoElements = document.querySelectorAll(".webinar-video");
-
-Array.from(webinarVideoElements).forEach((webinarVideoEl, idx) => {
-  webinarVideoEl.addEventListener('click', () => {
-    const hasOverlay = webinarVideoEl.classList.contains("active-overlay");
-    if (hasOverlay) {
-      let times = 0,
-        playY;
-      if (times == 0) {
-        playY = iframeElements[idx].src += '?autoplay=1&start=1';
-        times = 0;
-      }
-      webinarVideoEl.classList.remove("active-overlay")
-    }
-  });
-});
-
-// gallery page filter start
-const filterBtn = document.getElementById("filterBtn")
-const leftSidebar = document.querySelector(".left-sidebar")
-const backDrop = document.querySelector(".modal-backdrop")
-const filterClose = document.getElementById("filterClose")
-
-if (filterBtn && filterClose) {
-  filterBtn.addEventListener('click', function () {
-    leftSidebar.style.left = "0"
-    setTimeout(() => {
-      backDrop.classList.add('is-show')
-    }, 300);
-  })
-  // close filter 
-  filterClose.addEventListener('click', function () {
-    leftSidebar.style.left = "-100%"
-    backDrop.classList.remove('is-show')
-  })
-  // gallery page filter end
-}
-
-
-
 
 // scroll to top start
 //Get the button
@@ -242,22 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // menu sticky
 // Not a ton of code, but hard to
 
-// mega menu active class
-var navbarItems = document.querySelectorAll(".navbar-item");
-navbarItems.forEach((navbarItem) => {
-  navbarItem.addEventListener("click", function () {
-    var megamenues = document.querySelectorAll(
-      ".navbar-item > .ac-megamenu , .navbar-item > .ac-dropdown"
-    );
-    // remove is-active class from all the megamenus except the navbar item that was clicked
-    megamenues.forEach((megamenu) => {
-      // toggle classes
-      if (megamenu.parentElement === navbarItem)
-        megamenu.classList.toggle("is-active");
-      else megamenu.classList.remove("is-active");
-    });
-  });
-});
+
 
 //bulma carousel
 bulmaCarousel.attach("#carousel-demo", {
