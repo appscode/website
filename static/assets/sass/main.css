@@ -12941,7 +12941,12 @@ a.nav-link.active:after {
   font-size: 14px;
   font-weight: 500;
   background-color: transparent;
-  color: #d1d1d1;
+  color: #1c1c1c;
+}
+
+.button.ac-button.is-transparent:hover {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .button.ac-button.is-transparent.is-primary {
