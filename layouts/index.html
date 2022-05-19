@@ -108,25 +108,27 @@
   <div class="container">
     <div class="columns">
       <div class="column is-7">
-       <div class="subscription-message">
+        <div class="subscription-message">
           <h2>Cloud reimagined <br /> for the age of Kubernetes</h2>
           <p>Deploy, manage, upgrade Kubernetes on any cloud and automate deployment, scaling, and management of
             containerized applications. Make Kubernetes accessible any member of your development team using
             ByteBuilder's
             innovative Kubernetes Dashboard.</p>
           <a class="button ac-button is-primary is-outlined" href="#">EXPLORE MORE</a>
-       </div>
+        </div>
       </div>
       <div class="column is-5">
         <p>Provision self-managed multi-node Kubernetes clusters in minutes just with a few clicks. Easily take
-          advantage of the global infrastructure footprint of the cloud providers, like AWS, Azure, Google Cloud,
-          DigitalOcean, Linode and others.</p>
+          advantage of the global infrastructure footprint of the cloud providers, like <strong>AWS, Azure, Google
+            Cloud,
+            DigitalOcean, Linode</strong> and others.</p>
 
         <!-- subscription input  -->
         <div class="subscription-input">
           <input type="text" placeholder="Enter your email address">
           <button class="button ac-button is-primary">SUBSCRIBE</button>
-          <p>Subscribe to our newsletter <img src="/assets/images/icon/indicator-arrow-right.svg" alt="indicator-arrow-right"></p>
+          <p>Subscribe to our newsletter <img src="/assets/images/icon/indicator-arrow-right.svg"
+              alt="indicator-arrow-right"></p>
         </div>
         <!-- subscription input  -->
       </div>
@@ -140,7 +142,7 @@
 <div class="products-features">
   <div class="container">
     <div class="columns">
-      <div class="column is-2">
+      <div class="column is-3">
         <!-- features tabs start  -->
         <div class="features-tabs">
           <ul>
@@ -173,7 +175,7 @@
             <li><span class="material-icons">task_alt</span>Volume Snapshot</li>
             <li><span class="material-icons">task_alt</span>Policy Based Backup</li>
           </ul>
-
+          <a class="button ac-button is-primary is-outlined" href="#">GET STARTED</a>
         </div>
       </div>
       <div class="column is-5">
@@ -198,56 +200,111 @@
 </div>
 <!--==================== products features area end ====================-->
 
-
-<!-- hero-area start -->
-<section class="hero-area is-product">
-  <div class="hero-shape"></div>
+<!--==================== social connect area end ====================-->
+<section class="social-connect-area">
   <div class="container">
-
-    <!-- hero-area main start -->
     <div class="columns">
-      <div class="column is-half-desktop is-full-mobile is-full-tablet">
-        <div class="hero-area-content d-table">
-          <div class="hero-content-inner typing d-table-cell">
-            <h1 data-aos="fade-up">
-              Our Mission is to
-              Accelerate the transition to
-              Containers by building a
-              Kubernetes-native
-              Data Platform
-            </h1>
-            <div class="hero-area-button buttons" data-aos="fade-up" data-aos-duration="800">
-              <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-primary">
-                <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json"
-                  trigger="loop" target="a.is-secondary" trigger="hover"
-                  style="width:22px;height:22px; margin-right: 8px;">
-                </lord-icon><span>Get In Touch</span>
-              </a>
-              <a href="{{ $.Site.Params.github_url }}" class="button ac-button is-primary is-outlined">View on
-                Github</a>
-            </div>
-            <div class="play-buttons" data-aos="fade-up" data-aos-duration="1000">
-              <a href="#" id="playme" onclick="revealVideo('video','youtube')"><span class="video-icon"><i
-                    class="fa fa-play" aria-hidden="true"></i></span>
-                Watch the reel</a>
-            </div>
-
-          </div>
+      <div class="column is-8">
+        <div class="connect-message">
+          <h2>More than 5,000 developers use AppsCode products every month to deliver value</h2>
+          <p>Turbocharge your Kubernetes journey with AppsCode's open source Kubernetes operators and developer tools,
+            like, KubeDB, Voyager, Stash, KubeVault, Pharmer and others. Join our vibrant community of users and let's
+            get
+            stuff done!</p>
         </div>
       </div>
-      <div class="column is-6 is-hidden-mobile">
-        <div class="hero-right-content-wrapper">
-          <div class="right-side-content-inner" data-aos="fade-up" data-aos-duration="1500">
-            <img src="{{ .Site.Data.products.appscode.heroImage.src }}" alt="" />
-          </div>
-        </div>
+      <div class="column is-4">
+        <ul class="social-link">
+          <li><a href="#"><span><img src="/assets/images/icon/slack-outlined.svg" alt=""></span>JOIN OUR SLACK</a></li>
+          <li><a href="#"><span><img src="/assets/images/icon/github-outlined.svg" alt=""></span>VISIT OUR
+              GITHUB PAGE</a></li>
+          <li><a href="#"><span><img src="/assets/images/icon/twitter-outlined.svg" alt=""></span>GET LATEST
+              UPDATE</a></li>
+        </ul>
       </div>
     </div>
-    <!-- hero-area main end -->
+
+    <!-- cards start  -->
+    <div class="columns">
+
+      <!-- single card start  -->
+      <div class="column is-3">
+        <div class="single-card">
+          <div class="card-top">
+            <div class="card-icon"><img src="/assets/images/icon/count/octocat.svg" alt=""></div>
+            <div class="count">
+              <h2>5000+</h2>
+              <p>Github Stars</p>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <p>5000+ Github Stars. Lorem ipsum is a dular site advantage of the </p>
+            <a href="#">VIEW ON GITHUB</a>
+          </div>
+        </div>
+      </div>
+      <!-- single card end -->
+
+      <!-- single card start  -->
+      <div class="column is-3">
+        <div class="single-card">
+          <div class="card-top">
+            <div class="card-icon"><img src="/assets/images/icon/count/slack.svg" alt=""></div>
+            <div class="count">
+              <h2>2,000+</h2>
+              <p>Developer Community</p>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <p>2000+ Github Stars. Lorem ipsum is a dular site advantage of the </p>
+            <a href="#">JOIN OUR SLACK CHANNEL</a>
+          </div>
+        </div>
+      </div>
+      <!-- single card end -->
+
+      <!-- single card start  -->
+      <div class="column is-3">
+        <div class="single-card">
+          <div class="card-top">
+            <div class="card-icon"><img src="/assets/images/icon/count/docker.svg" alt=""></div>
+            <div class="count">
+              <h2>4.5M+</h2>
+              <p>Docker Downloads</p>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <p>5000+ Github Stars. Lorem ipsum is a dular site advantage of the </p>
+            <a href="#">REQUEST A DEMO</a>
+          </div>
+        </div>
+      </div>
+      <!-- single card end -->
+
+      <!-- single card start  -->
+      <div class="column is-3">
+        <div class="single-card">
+          <div class="card-top">
+            <div class="card-icon"><img src="/assets/images/icon/count/support.svg" alt=""></div>
+            <div class="count">
+              <h2>70,000+</h2>
+              <p>Operators Deployed</p>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <p>5000+ Github Stars. Lorem ipsum is a dular site advantage of the </p>
+            <a href="#">GET SUPPORT</a>
+          </div>
+        </div>
+      </div>
+      <!-- single card end -->
+    </div>
+    <!-- cards end -->
   </div>
 </section>
-<!-- hero-area end -->
-<!-- social prove logo area start   -->
+<!--==================== social connect area end ====================-->
+
+<!--==================== trusted companies area start ====================-->
 <div class="social-prove-brand-area">
   <div class="container">
     <div class="columns">
@@ -263,265 +320,7 @@
     </div>
   </div>
 </div>
-<!-- social prove logo area end -->
-<!-- shape start -->
-<div class="shap-3">
-  <!-- service area start -->
-  <section class="sp-y-80">
-    <div class="container">
-      <div class="columns is-vcentered is-multiline">
-        <div class="column is-full-tablet is-half-desktop">
-          <div class="features-thumbnail" data-aos="fade-up">
-            <img src="/assets/images/products/appscode/features/dashboard.gif" alt="dashboard-image" />
-          </div>
-        </div>
-        <div class="column is-full-tablet is-half-desktop">
-          <div class="service-content-wrapper d-table" data-aos="fade-up" data-aos-duration="1000">
-            <div class="service-content pl-30 d-table-cell">
-              <!-- <h5>What Is AppsCode?</h5> -->
-              <h2>
-                Cloud reimagined <br />for the age of Kubernetes
-              </h2>
-              <p>
-                Deploy, manage, upgrade Kubernetes on any cloud and automate deployment,
-                scaling, and management of containerized applications. Make Kubernetes
-                accessible any member of your development team using
-                <a href="{{ .Site.Params.domain_bytebuilders }}">ByteBuilder's</a>
-                innovative Kubernetes Dashboard.
-              </p>
-              <div class="mt-40 learn-more">
-                <a href="{{ .Site.Params.domain_bytebuilders }}" class="button ac-button is-primary">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="columns is-multiline is-vcentered pt-100 is-flex-direction-row-reverse-mobile is-flex-direction-row-reverse-tablet">
-        <div class="column is-full-tablet is-half-desktop">
-          <div class="service-content-wrapper d-table">
-            <div class="service-content d-table-cell" data-aos="fade-up">
-              <!-- <h5>What Is AppsCode?</h5> -->
-              <h2>
-                Global Cloud Infrastructure <br />
-                at Your Fingertip
-              </h2>
-              <p>
-                Provision self-managed multi-node Kubernetes clusters
-                in minutes just with a few clicks. Easily take advantage of the
-                global infrastructure footprint of the cloud providers, like AWS, Azure, Google Cloud, DigitalOcean,
-                Linode and others.
-              </p>
-              <div class="mt-40 learn-more">
-                <a href="{{ .Site.Params.domain_pharmer }}/docs/latest/welcome/"
-                  class="button ac-button is-primary">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-full-tablet is-half-desktop">
-          <div class="features-thumbnail" data-aos="fade-up" data-aos-duration="1000">
-            <img src="/assets/images/appscode/products.png" alt="dashboard-image" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- service area end -->
-</div>
-<!-- shape end -->
-
-<!-- countdown-top-title start -->
-<section class="count-link-area pt-80">
-  <div class="container">
-    <!-- section title start -->
-    <div class="columns">
-      <div class="column is-8 has-text-left">
-        <div class="section-title mb-0">
-          <h2>
-            More than 5,000 developers use AppsCode products every month to deliver value
-          </h2>
-          <p>
-            Turbocharge your Kubernetes journey with AppsCode's open source Kubernetes operators <br />
-            and developer tools, like, KubeDB, Voyager, Stash, KubeVault, Pharmer and others. <br />
-            Join our vibrant community of users and let's get stuff done!
-          </p>
-        </div>
-      </div>
-      <!-- right sidebar area start -->
-      <div class="column is-3 is-offset-1">
-        <div class="right-sidebar-wrapper">
-          <div class="right-sidebar-menu">
-            <ul>
-              <li><a href="{{.Site.Params.slack_url}}">Join our slack!</a></li>
-              <li><a href="{{.Site.Params.github_url}}">Visit our Github page</a></li>
-              <li><a href="{{.Site.Params.domain_appscode}}">Read the docs</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- right sidebar area end -->
-    </div>
-    <!-- section title end -->
-  </div>
-</section>
-<!-- countdown-top-title end -->
-
-<!-- countdown start -->
-<section class="counter-area pt-50 pb-100">
-  <div class="container">
-    <!-- counter start -->
-    <div class="columns is-gapless is-multiline">
-
-      <!-- single count start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
-        data-aos="fade-up">
-        <div class="single-count-wrapper">
-          <div class="count-icon">
-            <img src="/assets/images/icon/count/Octocat.png" alt="" />
-          </div>
-          <p class="count">5,000+</p>
-          <p class="name">GitHub stars</p>
-          <a href="{{.Site.Params.github_url}}" class="action-btn">Visit GitHub</a>
-        </div>
-      </div>
-      <!-- single count end -->
-
-      <!-- single count start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
-        data-aos="fade-up" data-aos-duration="800">
-        <div class="single-count-wrapper">
-          <div class="count-icon">
-            <img src="/assets/images/icon/count/trained.png" alt="" />
-          </div>
-          <p class="count">2,000+</p>
-          <p class="name">Developer Community</p>
-          <a href="{{.Site.Params.slack_url}}" class="action-btn">Join slack</a>
-        </div>
-      </div>
-      <!-- single count end -->
-
-      <!-- single count start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
-        data-aos="fade-up" data-aos-duration="1200">
-        <div class="single-count-wrapper">
-          <div class="count-icon">
-            <img src="/assets/images/icon/count/managed.png" alt="" />
-          </div>
-          <p class="count">4.5M+</p>
-          <p class="name">Docker downloads</p>
-          <a href="{{.Site.Params.domain_appscode}}/meet-expert/" class="action-btn">Request a demo</a>
-        </div>
-      </div>
-      <!-- single count end -->
-
-      <!-- single count start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
-        data-aos="fade-up" data-aos-duration="1500">
-        <div class="single-count-wrapper">
-          <div class="count-icon">
-            <img src="/assets/images/icon/count/enterprise.png" alt="" />
-          </div>
-          <p class="count">70,000+</p>
-          <p class="name">Operators deployed</p>
-          <a href="{{.Site.Params.domain_appscode}}/pricing/" class="action-btn">Get support</a>
-        </div>
-      </div>
-      <!-- single count end -->
-
-    </div>
-    <!-- counter end -->
-  </div>
-</section>
-<!-- countdown end -->
-
-<!-- service area start -->
-<section class="pt-80 pb-80 service-area">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-8 is-offset-2 has-text-centered">
-        <!-- section title start -->
-        <div class="section-title is-main-title" data-aos="fade-up">
-          <h4>What we Do?</h4>
-          <h2>Our Services</h2>
-          <p>
-            Need some help? We're <a href="#">here</a> for you.
-          </p>
-        </div>
-        <!-- section title end -->
-      </div>
-    </div>
-
-    <div class="columns is-multiline">
-      <!-- solution start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
-        data-aos="fade-up">
-        <div class="single-solution-wrapper color-1">
-          <div class="solution-icon">
-            <img src="/assets/images/icon/leave-2.png" alt="" />
-          </div>
-          <h4><a href="{{ .Site.Params.github_url }}">Open Source</a></h4>
-          <p>
-            Turbocharge your Kubernetes journey with AppsCode's open source Kubernetes operators
-          </p>
-          <a href="{{ .Site.Params.github_url }}" class="inline-button"><i class="fa fa-angle-right"
-              aria-hidden="true"></i></a>
-        </div>
-      </div>
-      <!-- solution end -->
-      <!-- solution start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
-        data-aos="fade-up" data-aos-duration="800">
-        <div class="single-solution-wrapper color-3">
-          <div class="solution-icon">
-            <img src="/assets/images/icon/consulting.png" alt="" />
-          </div>
-          <h4><a href="{{ .Site.Params.domain_appscode }}/consulting/">Consulting</a></h4>
-          <p>
-            Expedite your Kubernetes transition with the help of our kick-ass Kubernetes developers
-          </p>
-          <a href="{{ .Site.Params.domain_appscode }}/consulting/" class="inline-button"><i class="fa fa-angle-right"
-              aria-hidden="true"></i></a>
-        </div>
-      </div>
-      <!-- solution end -->
-      <!-- solution start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
-        data-aos="fade-up" data-aos-duration="1200">
-        <div class="single-solution-wrapper color-4">
-          <div class="solution-icon">
-            <img src="/assets/images/icon/light-bulb.png" alt="" />
-          </div>
-          <h4><a href="{{ .Site.Params.domain_appscode }}/training/">In-Person Training</a></h4>
-          <p>
-            We organize training workshops to help your organization implement Kubernetes quickly.
-          </p>
-          <a href="{{ .Site.Params.domain_appscode }}/training/" class="inline-button"><i class="fa fa-angle-right"
-              aria-hidden="true"></i></a>
-        </div>
-      </div>
-      <!-- solution end -->
-      <!-- solution start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
-        data-aos="fade-up" data-aos-duration="1500">
-        <div class="single-solution-wrapper color-2">
-          <div class="solution-icon">
-            <img src="/assets/images/icon/network.png" alt="" />
-          </div>
-          <h4><a href="{{ .Site.Params.domain_appscode }}/pricing/">Support</a></h4>
-          <p>
-            We offer paid support packages so that you are not alone when things go wrong!
-          </p>
-          <a href="{{ .Site.Params.domain_appscode }}/pricing/" class="inline-button"><i class="fa fa-angle-right"
-              aria-hidden="true"></i></a>
-        </div>
-      </div>
-      <!-- solution end -->
-    </div>
-  </div>
-</section>
-<!-- service area end -->
+<!--==================== trusted companies area end ====================-->
 
 <!-- press-area start -->
 <section class="press-area pt-80 pb-80">
@@ -619,6 +418,9 @@
         <div class="columns is-vcentered is-multiline">
           <div class="column is-full-tablet is-half-tablet is-half-desktop">
             <h3 data-aos="fade-up" data-aos-duration="500">Get Started with AppsCode</h3>
+            <p>AppsCode community edition is FREE to use on any supported Kubernetes engines. There is no up-front
+              investment required, and you need to pay only for the resources you use to your infrastructure provider.
+              We offer a 30 days license FREE of cost to try KubeDB Enterprise edition.</p>
           </div>
           <div
             class="column is-full-tablet is-half-tablet is-half-desktop has-text-centered-touch has-text-right-desktop">
