@@ -13,17 +13,18 @@
           containerized applications.</p>
 
         <!-- buttons  -->
+        <!-- style="width:22px;height:22px; margin-right: 8px;" -->
         <div class="buttons">
           <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-primary">
             <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json" trigger="loop"
-              target="a.is-secondary" trigger="hover" style="width:22px;height:22px; margin-right: 8px;">
+              target="a.is-secondary" trigger="hover">
             </lord-icon><span>GET IN TOUCH</span>
           </a>
 
           <div class="play-buttons" data-aos="fade-up" data-aos-duration="1000">
-            <a href="#" id="playme" onclick="revealVideo('video','youtube')"><span class="video-icon"><i
-                  class="fa fa-play" aria-hidden="true"></i></span>
-              Watch the reel</a>
+            <a href="#" id="playme" onclick="revealVideo('video','youtube')"><span class="material-icons-outlined">
+                play_arrow
+              </span>WATCH THE DEMO</a>
           </div>
         </div>
         <!-- buttons  -->
@@ -107,11 +108,14 @@
   <div class="container">
     <div class="columns">
       <div class="column is-7">
-        <h2>Cloud reimagined for the age of Kubernetes</h2>
-        <p>Deploy, manage, upgrade Kubernetes on any cloud and automate deployment, scaling, and management of
-          containerized applications. Make Kubernetes accessible any member of your development team using ByteBuilder's
-          innovative Kubernetes Dashboard.</p>
-        <a class="button ac-button is-primary is-outlined" href="#">EXPLORE MORE</a>
+       <div class="subscription-message">
+          <h2>Cloud reimagined <br /> for the age of Kubernetes</h2>
+          <p>Deploy, manage, upgrade Kubernetes on any cloud and automate deployment, scaling, and management of
+            containerized applications. Make Kubernetes accessible any member of your development team using
+            ByteBuilder's
+            innovative Kubernetes Dashboard.</p>
+          <a class="button ac-button is-primary is-outlined" href="#">EXPLORE MORE</a>
+       </div>
       </div>
       <div class="column is-5">
         <p>Provision self-managed multi-node Kubernetes clusters in minutes just with a few clicks. Easily take
@@ -121,9 +125,8 @@
         <!-- subscription input  -->
         <div class="subscription-input">
           <input type="text" placeholder="Enter your email address">
-          <button>SUBSCRIBE</button>
-          <p>Subscribe to our newsletter <img src="/
-                assets/images/icon/indicator-arrow-right.svg" alt="indicator-arrow-right"></p>
+          <button class="button ac-button is-primary">SUBSCRIBE</button>
+          <p>Subscribe to our newsletter <img src="/assets/images/icon/indicator-arrow-right.svg" alt="indicator-arrow-right"></p>
         </div>
         <!-- subscription input  -->
       </div>
