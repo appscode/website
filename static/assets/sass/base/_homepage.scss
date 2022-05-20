@@ -1,222 +1,27 @@
-// press area start
-.press-area {
-  background-color: #fbfbfb;
-
-  .single-press-wrapper {
-    border-radius: 4px 4px 0 0;
-    overflow: hidden;
-    transition: 0.3s ease-in-out;
-
-    &:hover {
-      box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16);
-      border-radius: 4px;
-      overflow: hidden;
-
-      .press-content {
-        border: 1px solid #fbfbfb;
-      }
-    }
-
-    .press-image-1 {
-      background-image: url(../images/press/1.png);
-    }
-
-    .press-image-2 {
-      background-image: url(../images/press/2.png);
-    }
-
-    .press-image-3 {
-      background-image: url(../images/press/3.png);
-    }
-
-    .press-image-4 {
-      background-image: url(../images/press/4.png);
-    }
-  }
-
-  .press-image {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    background-color: #ddd;
-    background-repeat: no-repeat;
-    width: 100%;
-  }
-
-  .press-content {
-    border: 1px solid $ac-white-light;
-    border-top: 1px solid transparent;
-    border-radius: 0 0 4px 4px;
-    padding: 20px;
-
-    .read-meta {
-      font-size: 12px;
-      color: lighten(#4a4a4a, 20%);
-      margin-bottom: 10px;
-    }
-
-    h3 {
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 26px;
-      margin-bottom: 10px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      line-clamp: 2;
-      -webkit-line-clamp: 2;
-      box-orient: vertical;
-      -webkit-box-orient: vertical;
-
-      a {
-        color: $ac-color-text;
-      }
-    }
-
-    p {
-      color: $ac-color-text;
-      font-size: 15px;
-      margin-bottom: 30px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      line-clamp: 4;
-      -webkit-line-clamp: 4;
-      box-orient: vertical;
-      -webkit-box-orient: vertical;
-    }
-
-    .press-button-wrapper {
-      overflow: hidden;
-      position: relative;
-      z-index: 1;
-
-      &:after {
-        position: absolute;
-        content: "";
-        top: 15px;
-        width: 100%;
-        height: 1px;
-        background: $ac-white-light;
-        left: 0;
-        z-index: -1;
-        transition: 0.3s ease-in-out;
-      }
-
-      .press-button {
-        border: 1px solid $ac-white-light;
-        font-size: 13px;
-        color: lighten(#4a4a4a, 30%);
-        font-weight: 600;
-        padding: 5px 20px;
-        border-radius: 50px;
-        display: block;
-        float: right;
-        position: relative;
-        z-index: 1;
-        background: $ac-white;
-        transition: 0.3s ease-in-out;
-
-        &:hover {
-          color: $ac-color-text;
-          border: 1px solid $ac-color-text;
-        }
-      }
-    }
-  }
-}
-
-// press area end
-
-
-
-
-// .carousel-wrapper1 .slider-navigation-next,
-// .carousel-wrapper1 .slider-navigation-previous,
-// #logo-area .slider-navigation-next,
-// #logo-area .slider-navigation-previous {
-//   display: none;
-// }
-
-// .slider-container {
-//   .slider-item {
-//     margin-bottom: 30px;
-//   }
-// }
-
-// testimonial area style end
-
-.about-text-inner p {
-  margin-bottom: 30px;
-}
-
-.ceo-message-wrapper h1 {
-  margin-bottom: 40px;
-  font-weight: 400;
-}
-
-.signature-image {
-  margin-top: 40px;
-
-  p {
-    font-family: Raleway;
-    font-weight: 600;
-  }
-}
-
-.ceo-image {
+// ============================home-page CSS start 2022============================//
+.bg-gradient-1 {
   position: relative;
   z-index: 1;
-
-  img {
-    max-width: 300px;
-    margin-top: 20px;
-  }
-
-  .dots-style {
+  background-size: 120% 120%;
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+  &:after {
     position: absolute;
-    background: url(../images/appscode/dots.png);
-    background-repeat: no-repeat;
-    height: 150px;
-    width: 250px;
-    right: 100px;
-    bottom: -75px;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
     z-index: -1;
-    left: 50%;
-    margin-left: -125px;
+    opacity: 0.8;
+    background-size: 50%;
   }
 }
 
-
-// // cta area start
-// .cta-bg-color-1 {
-//   position: relative;
-//   z-index: 1;
-
-//   h1 {
-//     color: $ac-white;
-//     font-size: 58px;
-//     font-weight: 400;
-//   }
-// }
-
-// .cta-bg-color-1:after {
-//   position: absolute;
-//   content: "";
-//   left: 0;
-//   top: 0;
-//   width: 100%;
-//   height: 100%;
-//   background: #1c2c41;
-//   z-index: -1;
-// }
-
-// cta area end
-
-// ============================home-page CSS start 2022============================//
 // hero area start
 .hero-area-1 {
-  padding: 150px 60px;
+  padding: 150px 0px;
 
   h1 {
     font-weight: 600;
@@ -246,9 +51,6 @@
         width: 22px;
         height: 22px;
         margin-right: 8px;
-      }
-
-      span {
       }
     }
 
@@ -295,7 +97,7 @@
   .single-product {
     display: block;
     background-color: $ac-white;
-    border: 1px solid $ac-white-light;
+    border: 1px solid #f1f1f1;
     transition: 0.3s ease-in-out;
     padding: 45px 25px;
 
@@ -419,9 +221,9 @@
 
 // products features area start
 .products-features {
-  background: rgba(230, 230, 230, 0.6);
+  background: #f1f1f1;
   padding: 80px 0;
-
+  height: calc(100vh - 40px);
   .features-tabs {
     ul {
       li {
@@ -614,104 +416,175 @@
 }
 
 // social connect area end
+
 // ============================home-page CSS end 2022============================
 
-/****************************************
-Responsive Classes
-*****************************************/
-@media (max-width: 767.98px) {
-  .hero-area.is-product {
-    .play-buttons {
-      display: flex;
-      justify-content: center;
+// press area start
+.press-area {
+  background-color: #fbfbfb;
+
+  .single-press-wrapper {
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16);
+      border-radius: 4px;
+      overflow: hidden;
+
+      .press-content {
+        border: 1px solid #fbfbfb;
+      }
+    }
+
+    .press-image-1 {
+      background-image: url(../images/press/1.png);
+    }
+
+    .press-image-2 {
+      background-image: url(../images/press/2.png);
+    }
+
+    .press-image-3 {
+      background-image: url(../images/press/3.png);
+    }
+
+    .press-image-4 {
+      background-image: url(../images/press/4.png);
     }
   }
 
-  .service-content {
-    padding-left: 0 !important;
-    padding-right: 0;
+  .press-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
 
-    h2 {
-      font-size: 22px;
-      line-height: 36px;
-      text-align: center;
+  .press-content {
+    border: 1px solid $ac-white-light;
+    border-top: 1px solid transparent;
+    border-radius: 0 0 4px 4px;
+    padding: 20px;
+
+    .read-meta {
+      font-size: 12px;
+      color: lighten(#4a4a4a, 20%);
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 26px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-clamp: 2;
+      -webkit-line-clamp: 2;
+      box-orient: vertical;
+      -webkit-box-orient: vertical;
+
+      a {
+        color: $ac-color-text;
+      }
     }
 
     p {
-      text-align: center;
-      max-width: 100%;
+      color: $ac-color-text;
       font-size: 15px;
+      margin-bottom: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-clamp: 4;
+      -webkit-line-clamp: 4;
+      box-orient: vertical;
+      -webkit-box-orient: vertical;
     }
 
-    a,
-    .learn-more {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
+    .press-button-wrapper {
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
 
-  .pt-100.is-mobile-device {
-    padding-top: 30px !important;
-  }
+      &:after {
+        position: absolute;
+        content: "";
+        top: 15px;
+        width: 100%;
+        height: 1px;
+        background: $ac-white-light;
+        left: 0;
+        z-index: -1;
+        transition: 0.3s ease-in-out;
+      }
 
-  .features-thumbnail {
-    img {
-      width: 100%;
-    }
-  }
+      .press-button {
+        border: 1px solid $ac-white-light;
+        font-size: 13px;
+        color: lighten(#4a4a4a, 30%);
+        font-weight: 600;
+        padding: 5px 20px;
+        border-radius: 50px;
+        display: block;
+        float: right;
+        position: relative;
+        z-index: 1;
+        background: $ac-white;
+        transition: 0.3s ease-in-out;
 
-  .single-solution-wrapper {
-    text-align: center;
-    border: 1px solid $ac-white-light;
-
-    .solution-icon {
-      margin: 0 auto;
-    }
-  }
-
-  .counter-area {
-    .single-count-wrapper {
-      border: 1px solid $ac-white-light;
-      padding: 30px;
-      margin-bottom: 15px;
+        &:hover {
+          color: $ac-color-text;
+          border: 1px solid $ac-color-text;
+        }
+      }
     }
   }
 }
+// press area end
 
-// (min-width: 568px) and (max-width: 1023.98px)
-@media (min-width: 568px) and (max-width: 1023.98px) {
-  .hero-area.is-product {
-    .play-buttons {
-      display: flex;
-      justify-content: center;
-    }
+.about-text-inner p {
+  margin-bottom: 30px;
+}
+
+.ceo-message-wrapper h1 {
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.signature-image {
+  margin-top: 40px;
+
+  p {
+    font-family: Raleway;
+    font-weight: 600;
+  }
+}
+
+.ceo-image {
+  position: relative;
+  z-index: 1;
+
+  img {
+    max-width: 300px;
+    margin-top: 20px;
   }
 
-  .features-thumbnail {
-    img {
-      width: 100%;
-    }
+  .dots-style {
+    position: absolute;
+    background: url(../images/appscode/dots.png);
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 250px;
+    right: 100px;
+    bottom: -75px;
+    z-index: -1;
+    left: 50%;
+    margin-left: -125px;
   }
-
-  .service-content.pl-30 {
-    padding-left: 0;
-  }
-}
-
-// Medium devices (tablets, 769px and up)
-@media (min-width: 769px) and (max-width: 1023.98px) {
-}
-
-// Large devices (desktops, 1024px and up)
-@media (min-width: 1024px) and (max-width: 1215px) {
-}
-
-@media (min-width: 1216px) and (max-width: 1407px) {
-}
-
-@media (min-width: 1408px) and (max-width: 1600px) {
-}
-
-@media (min-width: 1408px) {
 }

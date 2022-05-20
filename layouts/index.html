@@ -4,139 +4,164 @@
 
 {{ define "main" }}
 <!--==================== hero-area start 2022 ====================-->
-<section class="hero-area-1">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-6">
-        <h1>Kubernetes Native Data Platform </h1>
-        <p>Deploy, manage, upgrade Kubernetes on any cloud and automate deployment, scaling, and management of
-          containerized applications.</p>
+<div class="bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.jpg);">
+  <!-- shapes  -->
+  <div class="shape">
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+  </div>
+  <div class="shape">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+  <!-- shapes  -->
 
-        <!-- buttons  -->
-        <!-- style="width:22px;height:22px; margin-right: 8px;" -->
-        <div class="buttons">
-          <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-primary">
-            <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json" trigger="loop"
-              target="a.is-secondary" trigger="hover">
-            </lord-icon><span>GET IN TOUCH</span>
-          </a>
+  <section class="hero-area-1">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-6">
+          <h1>Kubernetes Native Data Platform </h1>
+          <p>Deploy, manage, upgrade Kubernetes on any cloud and automate deployment, scaling, and management of
+            containerized applications.</p>
 
-          <div class="play-buttons" data-aos="fade-up" data-aos-duration="1000">
-            <a href="#" id="playme" onclick="revealVideo('video','youtube')"><span class="material-icons-outlined">
-                play_arrow
-              </span>WATCH THE DEMO</a>
+          <!-- buttons  -->
+          <!-- style="width:22px;height:22px; margin-right: 8px;" -->
+          <div class="buttons">
+            <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-primary">
+              <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json" trigger="loop"
+                target="a.is-secondary" trigger="hover">
+              </lord-icon><span>GET IN TOUCH</span>
+            </a>
+
+            <div class="play-buttons" data-aos="fade-up" data-aos-duration="1000">
+              <a href="#" id="playme" onclick="revealVideo('video','youtube')"><span class="material-icons-outlined">
+                  play_arrow
+                </span>WATCH THE DEMO</a>
+            </div>
+          </div>
+          <!-- buttons  -->
+        </div>
+        <div class="column is-6">
+          <div class="h-right-content">
+            <img src="{{ .Site.Data.products.appscode.heroImage.src }}" alt="" />
           </div>
         </div>
-        <!-- buttons  -->
       </div>
-      <div class="column is-6">
-        <div class="h-right-content">
-          <img src="{{ .Site.Data.products.appscode.heroImage.src }}" alt="" />
+    </div>
+  </section>
+  <!--==================== hero-area end 2022  ====================-->
+
+  <!--==================== products area start  ====================-->
+  <div class="products-area">
+    <div class="container">
+      <div class="columns">
+        <!-- single product start  -->
+        <div class="column is-3">
+          <a href="#" class="single-product">
+            <div class="product-logo"><img src="https://cdn.appscode.com/images/products/kubedb/kubedb.svg"
+                alt="kubedb-logo"></div>
+            <p>KubeDB simplifies <strong>Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup,
+                Restore</strong>
+              for various Databases in Kubernetes on any Public & Private Cloud</p>
+            <button class="button ac-button is-transparent">LEARN MORE <span class="material-icons-outlined">
+                arrow_forward
+              </span></button>
+          </a>
+        </div>
+        <!-- single product end -->
+
+        <!-- single product start  -->
+        <div class="column is-3">
+          <a href="#" class="single-product">
+            <div class="product-logo"><img src="https://cdn.appscode.com/images/products/stash/stash.png"
+                alt="stash-logo"></div>
+            <p>KubeDB simplifies <strong>Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup,
+                Restore</strong>
+              for various Databases in Kubernetes on any Public & Private Cloud</p>
+            <button class="button ac-button is-transparent">LEARN MORE <span class="material-icons-outlined">
+                arrow_forward
+              </span></button>
+          </a>
+        </div>
+        <!-- single product end -->
+
+        <!-- single product start  -->
+        <div class="column is-3">
+          <a href="#" class="single-product">
+            <div class="product-logo"><img src="https://cdn.appscode.com/images/products/kubevault/kubevault.png"
+                alt="kubevault-logo"></div>
+            <p>KubeDB simplifies <strong>Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup,
+                Restore</strong>
+              for various Databases in Kubernetes on any Public & Private Cloud</p>
+            <button class="button ac-button is-transparent">LEARN MORE <span class="material-icons-outlined">
+                arrow_forward
+              </span></button>
+          </a>
+        </div>
+        <!-- single product end -->
+
+        <!-- single product start  -->
+        <div class="column is-3">
+          <a href="#" class="single-product">
+            <div class="product-logo"><img src="https://cdn.appscode.com/images/products/bytebuilders/bytebuilders.png"
+                alt="kubedb-logo"></div>
+            <p>KubeDB simplifies <strong>Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup,
+                Restore</strong>
+              for various Databases in Kubernetes on any Public & Private Cloud</p>
+            <button class="button ac-button is-transparent">LEARN MORE <span class="material-icons-outlined">
+                arrow_forward
+              </span></button>
+          </a>
+        </div>
+        <!-- single product end -->
+      </div>
+    </div>
+  </div>
+  <!--==================== products area end ====================-->
+
+  <!--====================  subscription area start  --==================== -->
+  <section class="subscription-area">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-7">
+          <div class="subscription-message">
+            <h2>Cloud reimagined <br /> for the age of Kubernetes</h2>
+            <p>Deploy, manage, upgrade Kubernetes on any cloud and automate deployment, scaling, and management of
+              containerized applications. Make Kubernetes accessible any member of your development team using
+              ByteBuilder's
+              innovative Kubernetes Dashboard.</p>
+            <a class="button ac-button is-primary is-outlined" href="#">EXPLORE MORE</a>
+          </div>
+        </div>
+        <div class="column is-5">
+          <p>Provision self-managed multi-node Kubernetes clusters in minutes just with a few clicks. Easily take
+            advantage of the global infrastructure footprint of the cloud providers, like <strong>AWS, Azure, Google
+              Cloud,
+              DigitalOcean, Linode</strong> and others.</p>
+
+          <!-- subscription input  -->
+          <form action="#" class="subscription-input">
+            <input type="email" placeholder="Enter your email address">
+            <button class="button ac-button is-primary">SUBSCRIBE</button>
+            <p>Subscribe to our newsletter <img src="/assets/images/icon/indicator-arrow-right.svg"
+                alt="indicator-arrow-right"></p>
+          </form>
+          <!-- subscription input  -->
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!--==================== hero-area end 2022  ====================-->
-
-<!--==================== products area start  ====================-->
-<div class="products-area">
-  <div class="container">
-    <div class="columns">
-      <!-- single product start  -->
-      <div class="column is-3">
-        <a href="#" class="single-product">
-          <div class="product-logo"><img src="https://cdn.appscode.com/images/products/kubedb/kubedb.svg"
-              alt="kubedb-logo"></div>
-          <p>KubeDB simplifies <strong>Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup, Restore</strong>
-            for various Databases in Kubernetes on any Public & Private Cloud</p>
-          <button class="button ac-button is-transparent">LEARN MORE <span class="material-icons-outlined">
-              arrow_forward
-            </span></button>
-        </a>
-      </div>
-      <!-- single product end -->
-
-      <!-- single product start  -->
-      <div class="column is-3">
-        <a href="#" class="single-product">
-          <div class="product-logo"><img src="https://cdn.appscode.com/images/products/stash/stash.png"
-              alt="stash-logo"></div>
-          <p>KubeDB simplifies <strong>Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup, Restore</strong>
-            for various Databases in Kubernetes on any Public & Private Cloud</p>
-          <button class="button ac-button is-transparent">LEARN MORE <span class="material-icons-outlined">
-              arrow_forward
-            </span></button>
-        </a>
-      </div>
-      <!-- single product end -->
-
-      <!-- single product start  -->
-      <div class="column is-3">
-        <a href="#" class="single-product">
-          <div class="product-logo"><img src="https://cdn.appscode.com/images/products/kubevault/kubevault.png"
-              alt="kubevault-logo"></div>
-          <p>KubeDB simplifies <strong>Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup, Restore</strong>
-            for various Databases in Kubernetes on any Public & Private Cloud</p>
-          <button class="button ac-button is-transparent">LEARN MORE <span class="material-icons-outlined">
-              arrow_forward
-            </span></button>
-        </a>
-      </div>
-      <!-- single product end -->
-
-      <!-- single product start  -->
-      <div class="column is-3">
-        <a href="#" class="single-product">
-          <div class="product-logo"><img src="https://cdn.appscode.com/images/products/bytebuilders/bytebuilders.png"
-              alt="kubedb-logo"></div>
-          <p>KubeDB simplifies <strong>Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup, Restore</strong>
-            for various Databases in Kubernetes on any Public & Private Cloud</p>
-          <button class="button ac-button is-transparent">LEARN MORE <span class="material-icons-outlined">
-              arrow_forward
-            </span></button>
-        </a>
-      </div>
-      <!-- single product end -->
-    </div>
-  </div>
+  </section>
+  <!-- ====================  subscription area end --====================-->
 </div>
-<!--==================== products area end ====================-->
-
-<!--====================  subscription area start  --==================== -->
-<section class="subscription-area">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-7">
-        <div class="subscription-message">
-          <h2>Cloud reimagined <br /> for the age of Kubernetes</h2>
-          <p>Deploy, manage, upgrade Kubernetes on any cloud and automate deployment, scaling, and management of
-            containerized applications. Make Kubernetes accessible any member of your development team using
-            ByteBuilder's
-            innovative Kubernetes Dashboard.</p>
-          <a class="button ac-button is-primary is-outlined" href="#">EXPLORE MORE</a>
-        </div>
-      </div>
-      <div class="column is-5">
-        <p>Provision self-managed multi-node Kubernetes clusters in minutes just with a few clicks. Easily take
-          advantage of the global infrastructure footprint of the cloud providers, like <strong>AWS, Azure, Google
-            Cloud,
-            DigitalOcean, Linode</strong> and others.</p>
-
-        <!-- subscription input  -->
-        <div class="subscription-input">
-          <input type="text" placeholder="Enter your email address">
-          <button class="button ac-button is-primary">SUBSCRIBE</button>
-          <p>Subscribe to our newsletter <img src="/assets/images/icon/indicator-arrow-right.svg"
-              alt="indicator-arrow-right"></p>
-        </div>
-        <!-- subscription input  -->
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ====================  subscription area end --====================-->
-
 
 <!--==================== products features area start  ====================-->
 <div class="products-features">
@@ -349,7 +374,7 @@
               {{ $article.summary }}
             </p>
             <div class="press-button-wrapper">
-              <a href="{{ $article.link }}" class="press-button">Learn More</a>
+              <a href="{{ $article.link }}" class="press-button">READ MORE</a>
             </div>
           </div>
         </div>
