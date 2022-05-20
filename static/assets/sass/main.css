@@ -8809,9 +8809,25 @@ Responsive Classes
 }
 
 .products-features {
-  background: #f1f1f1;
+  background: #f1f2f3;
   padding: 80px 0;
-  height: calc(100vh - 40px);
+  height: calc(100vh + 60px);
+  overflow-x: hidden;
+  top: 60px;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.products-features::-webkit-scrollbar {
+  display: none;
+}
+
+.products-features .features-tabs {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 110px;
 }
 
 .products-features .features-tabs ul li a {
@@ -8832,6 +8848,11 @@ Responsive Classes
 
 .products-features .features-tabs ul .is-active a {
   color: #000000;
+}
+
+.products-features .products-description-wrapper {
+  max-height: 70vh;
+  overflow-y: auto;
 }
 
 .products-features .product-description .brand {
