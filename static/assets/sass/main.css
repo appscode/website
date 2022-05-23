@@ -8809,7 +8809,7 @@ Responsive Classes
 }
 
 .products-features {
-  background: #f1f2f3;
+  background: #f3f4f7;
   padding: 80px 0;
   top: 60px;
 }
@@ -8835,6 +8835,7 @@ Responsive Classes
 
 .products-features .features-tabs ul li span.is-current {
   color: #000000;
+  text-decoration: underline;
 }
 
 .products-features .features-tabs ul li span:hover {
@@ -8843,6 +8844,12 @@ Responsive Classes
 
 .products-features .products-description-wrapper .single-product {
   margin-top: 80px;
+}
+
+.products-features .products-description-wrapper .hero-area-code-editor {
+  top: 30%;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .products-features .product-description .brand {
@@ -8864,6 +8871,10 @@ Responsive Classes
 
 .products-features .product-description p strong {
   color: var(--ac-primary);
+}
+
+.products-features .product-description .features {
+  margin-bottom: 30px;
 }
 
 .products-features .product-description .features li {
@@ -8891,7 +8902,71 @@ Responsive Classes
 #nav-serialscrolling {
   position: -webkit-sticky;
   position: sticky;
-  top: 40%;
+  top: 30%;
+}
+
+.others-products {
+  padding: 100px 0;
+}
+
+.others-products .small-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  color: var(--ac-primary);
+}
+
+.others-products h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.others-products p {
+  font-size: 18px;
+  line-height: 160%;
+  color: #3e393e;
+  margin-bottom: 30px;
+}
+
+.others-products .products .single-product img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.others-products .products .single-product h5 {
+  font-size: 22px;
+}
+
+.others-products .products .single-product p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  margin-bottom: 10px;
+}
+
+.others-products .products .single-product .inline-button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: var(--ac-primary);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.others-products .products .single-product .inline-button:hover {
+  opacity: 0.8;
 }
 
 .social-connect-area {
