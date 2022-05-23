@@ -169,15 +169,15 @@
     <div class="columns">
       <div class="column is-3">
         <!-- features tabs start  -->
-        <div class="features-tabs">
+        <div class="features-tabs" id="nav-serialscrolling">
           <ul>
-            <li><a href="#">MANAGE DATABASE</a></li>
-            <li class="is-active"><a href="#">DISASTER RECOVERY</a></li>
-            <li><a href="#">SECURITY</a></li>
-            <li><a href="#">MONITORING</a></li>
-            <li><a href="#">ALERTING</a></li>
-            <li><a href="#">NETWORKING</a></li>
-            <li><a href="#">MANAGE INFRASTRUCTURE</a></li>
+            <li><span class="sub-link" data-serialscrolling="manage-database">MANAGE DATABASE</span></li>
+            <li><span class="sub-link" data-serialscrolling="disaster-recovery">DISASTER RECOVERY</span></li>
+            <li><span class="sub-link" data-serialscrolling="security">SECURITY</span></li>
+            <li><span class="sub-link" data-serialscrolling="monitoring">MONITORING</span></li>
+            <li><span class="sub-link" data-serialscrolling="alerting">ALERTING</span></li>
+            <li><span class="sub-link" data-serialscrolling="networking">NETWORKING</span></li>
+            <li><span class="sub-link" data-serialscrolling="manage-infrastrucure">MANAGE INFRASTRUCTURE</span></li>
           </ul>
         </div>
         <!-- features tabs end -->
@@ -185,7 +185,7 @@
       <div class="column is-9">
         <div class="products-description-wrapper">
           <!-- single product start  -->
-          <div class="single-product">
+          <div class="single-product" data-serialscrolling-target="manage-database">
             <div class="columns">
               <div class="column is-6">
                 <!-- single product description start  -->
@@ -233,7 +233,7 @@
           <!-- single product end -->
 
           <!-- single product start  -->
-          <div class="single-product">
+          <div class="single-product" data-serialscrolling-target="disaster-recovery">
             <div class="columns">
               <div class="column is-6">
                 <!-- single product description start  -->
@@ -281,7 +281,7 @@
           <!-- single product end -->
 
           <!-- single product start  -->
-          <div class="single-product">
+          <div class="single-product" data-serialscrolling-target="security">
             <div class="columns">
               <div class="column is-6">
                 <!-- single product description start  -->
@@ -330,7 +330,7 @@
 
 
           <!-- single product start  -->
-          <div class="single-product">
+          <div class="single-product" data-serialscrolling-target="monitoring">
             <div class="columns">
               <div class="column is-6">
                 <!-- single product description start  -->

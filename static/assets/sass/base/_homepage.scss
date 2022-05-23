@@ -223,15 +223,16 @@
 .products-features {
   background: #f1f2f3;
   padding: 80px 0;
-  height: calc(100vh + 60px);
+  // height: calc(100vh + 60px);
   top: 60px;
 
   .features-tabs {
     position: sticky;
-    top: 110px;
+    margin-top: 80px;;
     ul {
       li {
-        a {
+        span {
+          cursor: pointer;
           padding: 10px 0;
           font-weight: 500;
           font-size: 14px;
@@ -240,28 +241,19 @@
           color: #636363;
           transition: 0.3s ease-in-out;
           display: block;
-
+          &.is-current {
+            color: #000000;
+          }
           &:hover {
             color: $ac-primary;
           }
         }
       }
-
-      .is-active {
-        a {
-          color: #000000;
-        }
-      }
     }
   }
   .products-description-wrapper {
-    max-height: 70vh;
-    overflow-y: auto;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-
-    &::-webkit-scrollbar {
-      display: none;
+    .single-product {
+      margin-top: 80px;
     }
   }
   .product-description {
@@ -303,6 +295,15 @@
       }
     }
   }
+}
+[data-serialscrolling-target]{
+  height:100vh;
+  /* your own styles here */
+}
+
+#nav-serialscrolling {
+  position: sticky;
+  top: 40%;
 }
 
 // products features area end

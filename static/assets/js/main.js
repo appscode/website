@@ -197,7 +197,35 @@ document.addEventListener("DOMContentLoaded", () => {
 // menu sticky
 // Not a ton of code, but hard to
 
+// features products 
+$(document).ready(function () {
+  $('[data-serialscrolling]').serialscrolling({
 
+    // selector
+    targetSelector: '[data-serialscrolling-target]',
+    getTarget: function ($element) {
+      const target = $element.attr('data-serialscrolling');
+      return $('[data-serialscrolling-target="' + target + '"]');
+    },
+    getTrigger: function ($page, $stack) {
+      const target = $page.attr('data-serialscrolling-target');
+      return $stack.filter('[data-serialscrolling="' + target + '"]');
+    },
+
+    // duration of the animation in ms
+    duration: 800,
+
+    // easing function
+    easing: 'easeInOutExpo',
+
+    // top offset in px
+    offsetTop: 0,
+
+    // callback
+    callback: false
+
+  });
+});
 
 //bulma carousel
 bulmaCarousel.attach("#carousel-demo", {
