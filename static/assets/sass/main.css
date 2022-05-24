@@ -8855,9 +8855,9 @@ Responsive Classes
 .products-features .products-description-wrapper .single-product:after {
   position: absolute;
   content: "";
-  left: 0;
+  right: -100%;
   top: -12px;
-  width: calc(200%);
+  width: 200%;
   height: calc(100% + 24px);
   background-color: #ede8fd;
   z-index: -1;
@@ -9341,6 +9341,80 @@ Responsive Classes
   z-index: -1;
   left: 50%;
   margin-left: -125px;
+}
+
+/****************************************
+Responsive Classes
+*****************************************/
+@media (max-width: 500px) {
+  .hero-area-1 {
+    padding: 100px 0 50px;
+  }
+  .hero-area-1 h1 {
+    font-size: 38px;
+    letter-spacing: -0.57px;
+  }
+  .hero-area-1 p {
+    font-size: 1rem;
+  }
+  .hero-area-1 .buttons .button.ac-button {
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem !important;
+    padding: 0.5rem 1rem;
+  }
+  .hero-area-1 .buttons .play-buttons a span {
+    font-size: 20px;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.3rem;
+  }
+  .hero-area-1 .h-right-content {
+    margin-right: 0;
+  }
+  .others-products {
+    padding: 50px 0;
+  }
+  .others-products .small-title {
+    font-size: 18px;
+  }
+  .others-products .pr-60 {
+    padding-right: 0 !important;
+  }
+  .others-products h2 {
+    font-size: 22px;
+  }
+  .others-products .products .single-product {
+    margin-top: 1rem;
+  }
+  .others-products .products .single-product img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+  }
+  .products-features .features-tabs {
+    margin-top: 0;
+  }
+  .products-features .products-description-wrapper .single-product {
+    padding: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .products-features .products-description-wrapper .single-product:after {
+    right: 0;
+    width: 100%;
+  }
+  .products-features #nav-serialscrolling {
+    top: 0;
+  }
+  [data-serialscrolling-target] {
+    height: 100%;
+  }
+  .subscription-area {
+    padding: 50px 0;
+  }
+  .subscription-area .subscription-message {
+    padding: 0;
+  }
 }
 
 .lightbox {

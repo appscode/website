@@ -264,9 +264,9 @@
       &:after {
         position: absolute;
         content: "";
-        left: 0;
+        right: -100%;
         top: -12px;
-        width: calc(200%);
+        width: 200%;
         height: calc(100% + 24px);
         background-color: hsla(256, 82, 95, 1);
         z-index: -1;
@@ -758,4 +758,119 @@
     left: 50%;
     margin-left: -125px;
   }
+}
+
+/****************************************
+Responsive Classes
+*****************************************/
+@media (max-width: 1023.98px) {
+}
+
+// // Small devices (landscape phones, 576px and up)
+@media (max-width: 500px) {
+  .hero-area-1 {
+    padding: 100px 0 50px;
+    h1 {
+      font-size: 38px;
+      letter-spacing: -0.57px;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .buttons {
+      .button {
+        &.ac-button {
+          margin-bottom: 0.5rem;
+          margin-right: 0.5rem !important;
+          padding: 0.5rem 1rem;
+        }
+      }
+      .play-buttons {
+        a {
+          span {
+            font-size: 20px;
+            width: 24px;
+            height: 24px;
+            margin-right: 0.3rem;
+          }
+        }
+      }
+    }
+    .h-right-content {
+      margin-right: 0;
+    }
+  }
+
+  .others-products {
+    padding: 50px 0;
+
+    .small-title {
+      font-size: 18px;
+    }
+    .pr-60 {
+      padding-right: 0 !important;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    .products {
+      .single-product {
+        margin-top: 1rem;
+        img {
+          width: 50px;
+          height: 50px;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .products-features {
+    .features-tabs {
+      margin-top: 0;
+    }
+    .products-description-wrapper {
+      .single-product {
+        padding: 15px;
+        margin-left: -15px;
+        margin-right: -15px;
+
+        &:after {
+          right: 0;
+          width: 100%;
+        }
+      }
+    }
+    #nav-serialscrolling {
+      top: 0;
+    }
+  }
+  [data-serialscrolling-target] {
+    height: 100%;
+  }
+
+
+  .subscription-area {
+    padding: 50px 0;
+    .subscription-message {
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768.98px) {
+}
+
+// Medium devices (tablets, 769px and up)
+@media (min-width: 769px) and (max-width: 1023.98px) {
+}
+
+// Large devices (desktops, 1024px and up)
+@media (min-width: 1024px) and (max-width: 1215px) {
+}
+
+@media (min-width: 1216px) and (max-width: 1600px) {
+}
+
+@media (min-width: 1408px) {
 }
