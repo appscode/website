@@ -5,26 +5,6 @@
 {{ define "main" }}
 <!--==================== hero-area start 2022 ====================-->
 <div class="bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.jpg);">
-  <!-- shapes  -->
-  <div class="shape">
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-  </div>
-  <div class="shape">
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-  </div>
-  <!-- shapes  -->
-
   <section class="hero-area-1">
     <div class="container">
       <div class="columns">
@@ -128,43 +108,67 @@
   </div>
   <!--==================== products area end ====================-->
 
-  <!--====================  subscription area start  --==================== -->
-  <section class="subscription-area">
+
+  <!--==================== others product area start  ====================-->
+  <section class="others-products">
     <div class="container">
       <div class="columns">
-        <div class="column is-7">
-          <div class="subscription-message">
-            <h2>Cloud reimagined <br /> for the age of Kubernetes</h2>
-            <p>Deploy, manage, upgrade Kubernetes on any cloud and automate deployment, scaling, and management of
-              containerized applications. Make Kubernetes accessible any member of your development team using
-              ByteBuilder's
-              innovative Kubernetes Dashboard.</p>
-            <a class="button ac-button is-primary is-outlined" href="#">EXPLORE MORE</a>
+        <div class="column is-6">
+          <div class="pr-60">
+            <p class="small-title">Lorem ipsum is dular</p>
+            <h2>Provision multi-node Kubernetes clusters in minutes with a few clicks</h2>
+            <p>Global Cloud Infrastructure at Your Fingertip,Easily take advantage of the global infrastructure
+              footprint
+              of
+              the cloud providers, like AWS, Azure, Google Cloud, DigitalOcean, Linode and others.</p>
+            <a href="https://appscode.com/contact/" class="button ac-button is-primary ">READ THE DOCS</a>
           </div>
         </div>
-        <div class="column is-5">
-          <p>Provision self-managed multi-node Kubernetes clusters in minutes just with a few clicks. Easily take
-            advantage of the global infrastructure footprint of the cloud providers, like <strong>AWS, Azure, Google
-              Cloud,
-              DigitalOcean, Linode</strong> and others.</p>
+        <div class="column is-6">
+          <div class="products">
+            <div class="columns">
+              <div class="column is-6">
 
-          <!-- subscription input  -->
-          <form action="#" class="subscription-input">
-            <input type="email" placeholder="Enter your email address">
-            <button class="button ac-button is-primary">SUBSCRIBE</button>
-            <p>Subscribe to our newsletter <img src="/assets/images/icon/indicator-arrow-right.svg"
-                alt="indicator-arrow-right"></p>
-          </form>
-          <!-- subscription input  -->
+                <!-- sigle product start  -->
+                <div class="single-product">
+                  <img src="/assets/images/products/voyager/voyager-icon.svg" alt="">
+                  <p><a href="#">Voyager</a> Lorem ip of the global infrastructure footprint of the cloud providers,
+                    like
+                    AWS, Azure,
+                    Google
+                    Cloud, DigitalOcean, Linode and others.</p>
+                  <a class="inline-button" href="#" class="">EXPLORE MORE</a>
+                </div>
+                <!-- sigle product end -->
+              </div>
+              <div class="column is-6">
+                <!-- sigle product start  -->
+                <div class="single-product">
+                  <img src="/assets/images/products/swift/swift-icon.svg" alt="">
+                  <p><a href="#">Swift</a> Lorem ip of the global infrastructure footprint of the cloud providers, like
+                    AWS, Azure,
+                    Google
+                    Cloud, DigitalOcean, Linode and others.</p>
+                  <a class="inline-button" href="#" class="">EXPLORE MORE</a>
+                </div>
+                <!-- sigle product end -->
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- ====================  subscription area end --====================-->
+  <!--==================== others product area end  ====================-->
+
 </div>
 
 <!--==================== products features area start  ====================-->
-<div class="products-features">
+<div class="products-features bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.jpg);">
+  <!-- <div class="shapes-dots">
+    <img class="shape dot-1" src="/assets/images/appscode/dots.png" alt="">
+    <img class="shape dot-2" src="/assets/images/appscode/dots.png" alt="">
+  </div> -->
   <div class="container">
     <div class="columns">
       <div class="column is-3">
@@ -185,7 +189,7 @@
       <div class="column is-9">
         <div class="products-description-wrapper">
           <!-- single product start  -->
-          <div class="single-product" data-serialscrolling-target="manage-database">
+          <div class="single-product kubedb" data-serialscrolling-target="manage-database">
             <div class="columns">
               <div class="column is-6">
                 <!-- single product description start  -->
@@ -207,7 +211,7 @@
                     <li><span class="material-icons">task_alt</span>Volume Snapshot</li>
                     <li><span class="material-icons">task_alt</span>Policy Based Backup</li>
                   </ul>
-                  <a class="button ac-button is-primary is-outlined" href="#">GET STARTED</a>
+                  <a class="button ac-button is-primary" href="#">GET STARTED</a>
                 </div>
                 <!-- single product description end -->
               </div>
@@ -233,7 +237,7 @@
           <!-- single product end -->
 
           <!-- single product start  -->
-          <div class="single-product" data-serialscrolling-target="disaster-recovery">
+          <div class="single-product stash" data-serialscrolling-target="disaster-recovery">
             <div class="columns">
               <div class="column is-6">
                 <!-- single product description start  -->
@@ -255,7 +259,7 @@
                     <li><span class="material-icons">task_alt</span>Volume Snapshot</li>
                     <li><span class="material-icons">task_alt</span>Policy Based Backup</li>
                   </ul>
-                  <a class="button ac-button is-primary is-outlined" href="#">GET STARTED</a>
+                  <a class="button ac-button is-primary" href="#">GET STARTED</a>
                 </div>
                 <!-- single product description end -->
               </div>
@@ -281,7 +285,7 @@
           <!-- single product end -->
 
           <!-- single product start  -->
-          <div class="single-product" data-serialscrolling-target="security">
+          <div class="single-product kubevault" data-serialscrolling-target="security">
             <div class="columns">
               <div class="column is-6">
                 <!-- single product description start  -->
@@ -303,7 +307,7 @@
                     <li><span class="material-icons">task_alt</span>Volume Snapshot</li>
                     <li><span class="material-icons">task_alt</span>Policy Based Backup</li>
                   </ul>
-                  <a class="button ac-button is-primary is-outlined" href="#">GET STARTED</a>
+                  <a class="button ac-button is-primary" href="#">GET STARTED</a>
                 </div>
                 <!-- single product description end -->
               </div>
@@ -330,7 +334,7 @@
 
 
           <!-- single product start  -->
-          <div class="single-product" data-serialscrolling-target="monitoring">
+          <div class="single-product kubeform" data-serialscrolling-target="monitoring">
             <div class="columns">
               <div class="column is-6">
                 <!-- single product description start  -->
@@ -352,7 +356,7 @@
                     <li><span class="material-icons">task_alt</span>Volume Snapshot</li>
                     <li><span class="material-icons">task_alt</span>Policy Based Backup</li>
                   </ul>
-                  <a class="button ac-button is-primary is-outlined" href="#">GET STARTED</a>
+                  <a class="button ac-button is-primary" href="#">GET STARTED</a>
                 </div>
                 <!-- single product description end -->
               </div>
@@ -386,179 +390,170 @@
 </div>
 <!--==================== products features area end ====================-->
 
-
-<!--==================== others product area start  ====================-->
-<section class="others-products">
+<!--====================  subscription area start  --==================== -->
+<section class="subscription-area">
   <div class="container">
     <div class="columns">
-      <div class="column is-6">
-        <div class="pr-60">
-          <p class="small-title">Lorem ipsum is dular</p>
-          <h2>Provision multi-node Kubernetes clusters in minutes with a few clicks</h2>
-          <p>Global Cloud Infrastructure at Your Fingertip,Easily take advantage of the global infrastructure footprint
-            of
-            the cloud providers, like AWS, Azure, Google Cloud, DigitalOcean, Linode and others.</p>
-          <a href="https://appscode.com/contact/" class="button ac-button is-primary ">READ THE DOCS</a>
+      <div class="column is-7">
+        <div class="subscription-message">
+          <h2>Cloud reimagined <br /> for the age of Kubernetes</h2>
+          <p>Deploy, manage, upgrade Kubernetes on any cloud and automate deployment, scaling, and management of
+            containerized applications. Make Kubernetes accessible any member of your development team using
+            ByteBuilder's
+            innovative Kubernetes Dashboard.</p>
+          <a class="button ac-button is-primary is-outlined" href="#">EXPLORE MORE</a>
         </div>
       </div>
-      <div class="column is-6">
-        <div class="products">
-          <div class="columns">
-            <div class="column is-6">
+      <div class="column is-5">
+        <p>Provision self-managed multi-node Kubernetes clusters in minutes just with a few clicks. Easily take
+          advantage of the global infrastructure footprint of the cloud providers, like <strong>AWS, Azure, Google
+            Cloud,
+            DigitalOcean, Linode</strong> and others.</p>
 
-              <!-- sigle product start  -->
-              <div class="single-product">
-                <img src="/assets/images/products/voyager/voyager-icon.svg" alt="">
-                <p><a href="#">Voyager</a> Lorem ip of the global infrastructure footprint of the cloud providers, like
-                  AWS, Azure,
-                  Google
-                  Cloud, DigitalOcean, Linode and others.</p>
-                <a class="inline-button" href="#" class="">EXPLORE MORE</a>
-              </div>
-              <!-- sigle product end -->
-            </div>
-            <div class="column is-6">
-              <!-- sigle product start  -->
-              <div class="single-product">
-                <img src="/assets/images/products/swift/swift-icon.svg" alt="">
-                <p><a href="#">Swift</a> Lorem ip of the global infrastructure footprint of the cloud providers, like
-                  AWS, Azure,
-                  Google
-                  Cloud, DigitalOcean, Linode and others.</p>
-                <a class="inline-button" href="#" class="">EXPLORE MORE</a>
-              </div>
-              <!-- sigle product end -->
-            </div>
-          </div>
-        </div>
+        <!-- subscription input  -->
+        <form action="#" class="subscription-input">
+          <input type="email" placeholder="Enter your email address">
+          <button class="button ac-button is-primary">SUBSCRIBE</button>
+          <p>Subscribe to our newsletter <img src="/assets/images/icon/indicator-arrow-right.svg"
+              alt="indicator-arrow-right"></p>
+        </form>
+        <!-- subscription input  -->
       </div>
     </div>
   </div>
 </section>
-<!--==================== others product area end  ====================-->
+<!-- ====================  subscription area end --====================-->
 
-
-<!--==================== social connect area end ====================-->
-<section class="social-connect-area">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-8">
-        <div class="connect-message">
-          <h2>More than 5,000 developers use AppsCode products every month to deliver value</h2>
-          <p>Turbocharge your Kubernetes journey with AppsCode's open source Kubernetes operators and developer tools,
-            like, KubeDB, Voyager, Stash, KubeVault, Pharmer and others. Join our vibrant community of users and let's
-            get
-            stuff done!</p>
+<!-- social connect start  -->
+<div class="bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.jpg);">
+  <!--==================== social connect area end ====================-->
+  <section class="social-connect-area">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8">
+          <div class="connect-message">
+            <h2>More than 5,000 developers use AppsCode products every month to deliver value</h2>
+            <p>Turbocharge your Kubernetes journey with AppsCode's open source Kubernetes operators and developer tools,
+              like, KubeDB, Voyager, Stash, KubeVault, Pharmer and others. Join our vibrant community of users and let's
+              get
+              stuff done!</p>
+          </div>
+        </div>
+        <div class="column is-4">
+          <ul class="social-link">
+            <li><a href="#"><span><img src="/assets/images/icon/slack-outlined.svg" alt=""></span>JOIN OUR SLACK</a>
+            </li>
+            <li><a href="#"><span><img src="/assets/images/icon/github-outlined.svg" alt=""></span>VISIT OUR
+                GITHUB PAGE</a></li>
+            <li><a href="#"><span><img src="/assets/images/icon/twitter-outlined.svg" alt=""></span>GET LATEST
+                UPDATE</a></li>
+          </ul>
         </div>
       </div>
-      <div class="column is-4">
-        <ul class="social-link">
-          <li><a href="#"><span><img src="/assets/images/icon/slack-outlined.svg" alt=""></span>JOIN OUR SLACK</a></li>
-          <li><a href="#"><span><img src="/assets/images/icon/github-outlined.svg" alt=""></span>VISIT OUR
-              GITHUB PAGE</a></li>
-          <li><a href="#"><span><img src="/assets/images/icon/twitter-outlined.svg" alt=""></span>GET LATEST
-              UPDATE</a></li>
-        </ul>
+
+      <!-- cards start  -->
+      <div class="columns">
+
+        <!-- single card start  -->
+        <div class="column is-3">
+          <div class="single-card">
+            <div class="card-top">
+              <div class="card-icon"><img src="/assets/images/icon/count/octocat.svg" alt=""></div>
+              <div class="count">
+                <h2>5000+</h2>
+                <p>Github Stars</p>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <p>5000+ Github Stars. Lorem ipsum is a dular site advantage of the </p>
+              <a href="#">VIEW ON GITHUB</a>
+            </div>
+          </div>
+        </div>
+        <!-- single card end -->
+
+        <!-- single card start  -->
+        <div class="column is-3">
+          <div class="single-card">
+            <div class="card-top">
+              <div class="card-icon"><img src="/assets/images/icon/count/slack.svg" alt=""></div>
+              <div class="count">
+                <h2>2,000+</h2>
+                <p>Developer Community</p>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <p>2000+ Github Stars. Lorem ipsum is a dular site advantage of the </p>
+              <a href="#">JOIN OUR SLACK CHANNEL</a>
+            </div>
+          </div>
+        </div>
+        <!-- single card end -->
+
+        <!-- single card start  -->
+        <div class="column is-3">
+          <div class="single-card">
+            <div class="card-top">
+              <div class="card-icon"><img src="/assets/images/icon/count/docker.svg" alt=""></div>
+              <div class="count">
+                <h2>4.5M+</h2>
+                <p>Docker Downloads</p>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <p>5000+ Github Stars. Lorem ipsum is a dular site advantage of the </p>
+              <a href="#">REQUEST A DEMO</a>
+            </div>
+          </div>
+        </div>
+        <!-- single card end -->
+
+        <!-- single card start  -->
+        <div class="column is-3">
+          <div class="single-card">
+            <div class="card-top">
+              <div class="card-icon"><img src="/assets/images/icon/count/support.svg" alt=""></div>
+              <div class="count">
+                <h2>70,000+</h2>
+                <p>Operators Deployed</p>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <p>5000+ Github Stars. Lorem ipsum is a dular site advantage of the </p>
+              <a href="#">GET SUPPORT</a>
+            </div>
+          </div>
+        </div>
+        <!-- single card end -->
+      </div>
+      <!-- cards end -->
+    </div>
+  </section>
+  <!--==================== social connect area end ====================-->
+
+  <!--==================== trusted companies area start ====================-->
+  <div class="social-prove-brand-area">
+    <div class="container">
+      <div class="column has-text-centered">
+        <h5>Truested Clients</h5>
+      </div>
+      <div class="columns">
+        <div class="column is-12">
+          <div class="brand-image-wrapper owl-carousel">
+            {{ range $customer := $.Site.Data.customers }}
+            {{ if $customer.show }}
+            <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"></div>
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- cards start  -->
-    <div class="columns">
-
-      <!-- single card start  -->
-      <div class="column is-3">
-        <div class="single-card">
-          <div class="card-top">
-            <div class="card-icon"><img src="/assets/images/icon/count/octocat.svg" alt=""></div>
-            <div class="count">
-              <h2>5000+</h2>
-              <p>Github Stars</p>
-            </div>
-          </div>
-          <div class="card-bottom">
-            <p>5000+ Github Stars. Lorem ipsum is a dular site advantage of the </p>
-            <a href="#">VIEW ON GITHUB</a>
-          </div>
-        </div>
-      </div>
-      <!-- single card end -->
-
-      <!-- single card start  -->
-      <div class="column is-3">
-        <div class="single-card">
-          <div class="card-top">
-            <div class="card-icon"><img src="/assets/images/icon/count/slack.svg" alt=""></div>
-            <div class="count">
-              <h2>2,000+</h2>
-              <p>Developer Community</p>
-            </div>
-          </div>
-          <div class="card-bottom">
-            <p>2000+ Github Stars. Lorem ipsum is a dular site advantage of the </p>
-            <a href="#">JOIN OUR SLACK CHANNEL</a>
-          </div>
-        </div>
-      </div>
-      <!-- single card end -->
-
-      <!-- single card start  -->
-      <div class="column is-3">
-        <div class="single-card">
-          <div class="card-top">
-            <div class="card-icon"><img src="/assets/images/icon/count/docker.svg" alt=""></div>
-            <div class="count">
-              <h2>4.5M+</h2>
-              <p>Docker Downloads</p>
-            </div>
-          </div>
-          <div class="card-bottom">
-            <p>5000+ Github Stars. Lorem ipsum is a dular site advantage of the </p>
-            <a href="#">REQUEST A DEMO</a>
-          </div>
-        </div>
-      </div>
-      <!-- single card end -->
-
-      <!-- single card start  -->
-      <div class="column is-3">
-        <div class="single-card">
-          <div class="card-top">
-            <div class="card-icon"><img src="/assets/images/icon/count/support.svg" alt=""></div>
-            <div class="count">
-              <h2>70,000+</h2>
-              <p>Operators Deployed</p>
-            </div>
-          </div>
-          <div class="card-bottom">
-            <p>5000+ Github Stars. Lorem ipsum is a dular site advantage of the </p>
-            <a href="#">GET SUPPORT</a>
-          </div>
-        </div>
-      </div>
-      <!-- single card end -->
-    </div>
-    <!-- cards end -->
   </div>
-</section>
-<!--==================== social connect area end ====================-->
-
-<!--==================== trusted companies area start ====================-->
-<div class="social-prove-brand-area">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-12">
-        <div class="brand-image-wrapper owl-carousel">
-          {{ range $customer := $.Site.Data.customers }}
-          {{ if $customer.show }}
-          <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"></div>
-          {{ end }}
-          {{ end }}
-        </div>
-      </div>
-    </div>
-  </div>
+  <!--==================== trusted companies area end ====================-->
 </div>
-<!--==================== trusted companies area end ====================-->
+<!-- social connect start  -->
+
 
 <!-- press-area start -->
 <section class="press-area pt-80 pb-80">
@@ -566,8 +561,8 @@
     <div class="columns">
       <div class="column is-8 is-offset-2 has-text-centered">
         <!-- section title start -->
-        <div class="section-title" data-aos="fade-up">
-          <h2>Press</h2>
+        <div class="section-title mb-10" data-aos="fade-up">
+          <h2>WHAT THEY PUBLISHED</h2>
         </div>
         <!-- section title end -->
       </div>
@@ -599,86 +594,89 @@
 </section>
 <!-- press-area end -->
 
-<!-- ==========================testimonial area 2022 start ==========================  -->
-<section class="testimonial-area">
+<div class="bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.jpg);">
+  <!-- ==========================testimonial area 2022 start ==========================  -->
+  <section class="testimonial-area">
 
-  <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-4">
-        <div class="section-title">
-          <h1 class="is-gradient" data-aos="fade-up" data-aos-duration="500">What They Are <span
-              class="has-text-weight-light"> Talking About us</span></h1>
-          <p data-aos="fade-up" data-aos-duration="700">Trusted by top engineers at the most ambitious companies</p>
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column is-4">
+          <div class="section-title">
+            <h1 class="is-gradient" data-aos="fade-up" data-aos-duration="500">What They Are <span
+                class="has-text-weight-light"> Talking About us</span></h1>
+            <p data-aos="fade-up" data-aos-duration="700">Trusted by top engineers at the most ambitious companies</p>
+          </div>
+          <!-- arrows start  -->
+          <div class="arrows" data-aos="fade-up" data-aos-duration="900">
+            <button class="button arrow is-rounded customPrevBtn"><span
+                class="material-icons-outlined">arrow_back</span></button>
+            <button class="button arrow is-rounded customNextBtn"><span
+                class="material-icons-outlined">arrow_forward</span></button>
+          </div>
+          <!-- arrows end -->
         </div>
-        <!-- arrows start  -->
-        <div class="arrows" data-aos="fade-up" data-aos-duration="900">
-          <button class="button arrow is-rounded customPrevBtn"><span
-              class="material-icons-outlined">arrow_back</span></button>
-          <button class="button arrow is-rounded customNextBtn"><span
-              class="material-icons-outlined">arrow_forward</span></button>
+        <div class="column is-8">
+          <!-- owl-carousel -->
+          <div class="testimonial-carousel-wrapper owl-carousel testimonial-carousel">
+            {{ range $user := $.Site.Data.testimonials }}
+            <!-- single testimonial item start  -->
+            <div class="single-testimonial-item">
+              <!-- user info wrapper start  -->
+              <div class="user-info-wrapper">
+                <figure class="image is-64x64">
+                  <img class="is-rounded" src="{{ $user.profile }}" alt="{{ $user.name }}">
+                </figure>
+                <div class="user-info">
+                  <h5>{{ $user.name }}</h5>
+                  <p>{{ $user.job }}{{ if $user.companyKey }} at
+                    {{ index $.Site.Data.customers $user.companyKey "name" }}{{ end }}</p>
+                </div>
+              </div>
+              <!-- user info wrapper end -->
+              <p>{{ $user.testimonial | safeHTML }}</p>
+            </div>
+            {{ end }}
+          </div>
+          <!-- single testimonial item end -->
         </div>
-        <!-- arrows end -->
       </div>
-      <div class="column is-8">
-        <!-- owl-carousel -->
-        <div class="testimonial-carousel-wrapper owl-carousel testimonial-carousel">
-          {{ range $user := $.Site.Data.testimonials }}
-          <!-- single testimonial item start  -->
-          <div class="single-testimonial-item">
-            <!-- user info wrapper start  -->
-            <div class="user-info-wrapper">
-              <figure class="image is-64x64">
-                <img class="is-rounded" src="{{ $user.profile }}" alt="{{ $user.name }}">
-              </figure>
-              <div class="user-info">
-                <h5>{{ $user.name }}</h5>
-                <p>{{ $user.job }}{{ if $user.companyKey }} at
-                  {{ index $.Site.Data.customers $user.companyKey "name" }}{{ end }}</p>
+    </div>
+  </section>
+  <!--========================== testimonial area 2022 end  ==========================-->
+
+  <!-- call to action area start -->
+  <section class="cta-area">
+    <div class="container">
+      <div class="cta-area-inner">
+        <div class="container">
+          <div class="columns is-vcentered is-multiline">
+            <div class="column is-full-tablet is-half-tablet is-half-desktop">
+              <h3 data-aos="fade-up" data-aos-duration="500">Get Started with AppsCode</h3>
+              <p>AppsCode community edition is FREE to use on any supported Kubernetes engines. There is no up-front
+                investment required, and you need to pay only for the resources you use to your infrastructure provider.
+                We offer a 30 days license FREE of cost to try KubeDB Enterprise edition.</p>
+            </div>
+            <div
+              class="column is-full-tablet is-half-tablet is-half-desktop has-text-centered-touch has-text-right-desktop">
+              <div class="buttons is-justify-content-flex-end">
+
+                <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button ac-white"
+                  style="background-color: white; border: 1px solid #e7e7e7; color: #00a651;"><span>
+                    <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json"
+                      trigger="loop" target="a.is-secondary" trigger="hover"
+                      style="width:22px;height:22px; margin-right: 8px;">
+                    </lord-icon>
+                  </span>CONTACT US</a>
               </div>
             </div>
-            <!-- user info wrapper end -->
-            <p>{{ $user.testimonial | safeHTML }}</p>
-          </div>
-          {{ end }}
-        </div>
-        <!-- single testimonial item end -->
-      </div>
-    </div>
-  </div>
-</section>
-<!--========================== testimonial area 2022 end  ==========================-->
-
-<!-- call to action area start -->
-<section class="cta-area">
-  <div class="container">
-    <div class="cta-area-inner">
-      <div class="container">
-        <div class="columns is-vcentered is-multiline">
-          <div class="column is-full-tablet is-half-tablet is-half-desktop">
-            <h3 data-aos="fade-up" data-aos-duration="500">Get Started with AppsCode</h3>
-            <p>AppsCode community edition is FREE to use on any supported Kubernetes engines. There is no up-front
-              investment required, and you need to pay only for the resources you use to your infrastructure provider.
-              We offer a 30 days license FREE of cost to try KubeDB Enterprise edition.</p>
-          </div>
-          <div
-            class="column is-full-tablet is-half-tablet is-half-desktop has-text-centered-touch has-text-right-desktop">
-            <div class="buttons is-justify-content-flex-end">
-
-              <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button ac-white"
-                style="background-color: white; border: 1px solid #e7e7e7; color: #00a651;"><span>
-                  <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json"
-                    trigger="loop" target="a.is-secondary" trigger="hover"
-                    style="width:22px;height:22px; margin-right: 8px;">
-                  </lord-icon>
-                </span>CONTACT US</a>
-            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- call to action area end -->
+  </section>
+  <!-- call to action area end -->
+</div>
+
 
 <!-- video-player start  -->
 <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">

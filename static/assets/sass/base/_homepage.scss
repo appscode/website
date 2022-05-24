@@ -149,7 +149,7 @@
 
 // subscription-area start
 .subscription-area {
-  padding: 80px 0;
+  padding: 100px 0;
 
   .subscription-message {
     padding-right: 150px;
@@ -223,13 +223,10 @@
 // products features area start
 .products-features {
   background: #f3f4f7;
-  padding: 80px 0;
-  // height: calc(100vh + 60px);
-  top: 60px;
 
   .features-tabs {
     position: sticky;
-    margin-top: 80px;
+    margin-top: 210px;
 
     ul {
       li {
@@ -259,7 +256,83 @@
 
   .products-description-wrapper {
     .single-product {
-      margin-top: 80px;
+      padding: 100px 50px;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: -12px;
+        width: calc(200%);
+        height: calc(100% + 24px);
+        background-color: hsla(256, 82, 95, 1);
+        z-index: -1;
+      }
+      // background-color: hsla(256, 82, 95, 1);
+      &.kubedb {
+        &:after {
+          background-color: hsla(240, 55, 95, 1);
+        }
+        .product-description .features li .material-icons {
+          color: $kubedb-primary;
+        }
+        .button.ac-button.is-primary {
+          background-color: $kubedb-primary;
+        }
+      }
+      &.stash {
+        &:after {
+          background-color: hsla(256, 82, 93, 1);
+        }
+
+        .product-description .features li .material-icons {
+          color: $stash-primary;
+        }
+        .button.ac-button.is-primary {
+          background-color: $stash-primary;
+        }
+      }
+      &.kubevault {
+        &:after {
+          background-color: hsla(271, 77, 95, 1);
+        }
+        .product-description .features li .material-icons {
+          color: $kubevault-primary;
+        }
+        .button.ac-button.is-primary {
+          background-color: $kubevault-primary;
+        }
+      }
+      &.prometheus {
+        .product-description .features li .material-icons {
+          color: $kubedb-primary;
+        }
+      }
+      &.voyager {
+        &:after {
+          background-color: hsla(242, 48, 95, 1);
+        }
+        .product-description .features li .material-icons {
+          color: $voyager-primary;
+        }
+        .button.ac-button.is-primary {
+          background-color: $voyager-primary;
+        }
+      }
+      &.kubeform {
+        &:after {
+          background-color: hsla(141, 45, 90, 1);
+        }
+        .product-description .features li .material-icons {
+          color: $kubeform-primary;
+        }
+        .button.ac-button.is-primary {
+          background-color: $kubeform-primary;
+        }
+      }
     }
 
     .hero-area-code-editor {
@@ -381,7 +454,7 @@
         text-decoration-line: underline;
         color: $ac-primary;
         transition: 0.3s ease-in-out;
-        
+
         &:hover {
           opacity: 0.8;
         }
@@ -394,7 +467,7 @@
 
 // social connect area start
 .social-connect-area {
-  padding: 80px 0;
+  padding: 100px 0 150px;
   background: rgba(243, 244, 247, 0.6);
 
   .connect-message {
@@ -403,10 +476,11 @@
   }
 
   h2 {
-    font-weight: 500;
+    font-style: normal;
+    font-weight: 600;
     font-size: 32px;
     line-height: 130%;
-    letter-spacing: 0.5px;
+    margin-bottom: 20px;
     margin-bottom: 10px;
   }
 
@@ -519,8 +593,6 @@
 
 // press area start
 .press-area {
-  background-color: #fbfbfb;
-
   .single-press-wrapper {
     border-radius: 4px 4px 0 0;
     overflow: hidden;

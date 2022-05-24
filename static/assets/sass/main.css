@@ -8726,7 +8726,7 @@ Responsive Classes
 }
 
 .subscription-area {
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 .subscription-area .subscription-message {
@@ -8810,14 +8810,12 @@ Responsive Classes
 
 .products-features {
   background: #f3f4f7;
-  padding: 80px 0;
-  top: 60px;
 }
 
 .products-features .features-tabs {
   position: -webkit-sticky;
   position: sticky;
-  margin-top: 80px;
+  margin-top: 210px;
 }
 
 .products-features .features-tabs ul li span {
@@ -8843,7 +8841,90 @@ Responsive Classes
 }
 
 .products-features .products-description-wrapper .single-product {
-  margin-top: 80px;
+  padding: 100px 50px;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-features .products-description-wrapper .single-product:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -12px;
+  width: calc(200%);
+  height: calc(100% + 24px);
+  background-color: #ede8fd;
+  z-index: -1;
+}
+
+.products-features .products-description-wrapper .single-product.kubedb:after {
+  background-color: #ebebf9;
+}
+
+.products-features .products-description-wrapper .single-product.kubedb .product-description .features li .material-icons {
+  color: #4d4dcb;
+}
+
+.products-features .products-description-wrapper .single-product.kubedb .button.ac-button.is-primary {
+  background-color: #4d4dcb;
+}
+
+.products-features .products-description-wrapper .single-product.stash:after {
+  background-color: #e6dffc;
+}
+
+.products-features .products-description-wrapper .single-product.stash .product-description .features li .material-icons {
+  color: #5e2dea;
+}
+
+.products-features .products-description-wrapper .single-product.stash .button.ac-button.is-primary {
+  background-color: #5e2dea;
+}
+
+.products-features .products-description-wrapper .single-product.kubevault:after {
+  background-color: #f3e8fc;
+}
+
+.products-features .products-description-wrapper .single-product.kubevault .product-description .features li .material-icons {
+  color: #326ce5;
+}
+
+.products-features .products-description-wrapper .single-product.kubevault .button.ac-button.is-primary {
+  background-color: #326ce5;
+}
+
+.products-features .products-description-wrapper .single-product.prometheus .product-description .features li .material-icons {
+  color: #4d4dcb;
+}
+
+.products-features .products-description-wrapper .single-product.voyager:after {
+  background-color: #edecf8;
+}
+
+.products-features .products-description-wrapper .single-product.voyager .product-description .features li .material-icons {
+  color: #2d2a78;
+}
+
+.products-features .products-description-wrapper .single-product.voyager .button.ac-button.is-primary {
+  background-color: #2d2a78;
+}
+
+.products-features .products-description-wrapper .single-product.kubeform:after {
+  background-color: #daf1e2;
+}
+
+.products-features .products-description-wrapper .single-product.kubeform .product-description .features li .material-icons {
+  color: #592217;
+}
+
+.products-features .products-description-wrapper .single-product.kubeform .button.ac-button.is-primary {
+  background-color: #592217;
 }
 
 .products-features .products-description-wrapper .hero-area-code-editor {
@@ -8970,7 +9051,7 @@ Responsive Classes
 }
 
 .social-connect-area {
-  padding: 80px 0;
+  padding: 100px 0 150px;
   background: rgba(243, 244, 247, 0.6);
 }
 
@@ -8980,10 +9061,11 @@ Responsive Classes
 }
 
 .social-connect-area h2 {
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 600;
   font-size: 32px;
   line-height: 130%;
-  letter-spacing: 0.5px;
+  margin-bottom: 20px;
   margin-bottom: 10px;
 }
 
@@ -9091,10 +9173,6 @@ Responsive Classes
           text-decoration-line: underline;
   /* 1c1c1c */
   color: #1c1c1c;
-}
-
-.press-area {
-  background-color: #fbfbfb;
 }
 
 .press-area .single-press-wrapper {
@@ -13458,8 +13536,16 @@ Responsive Classes
   }
 }
 
+.social-prove-brand-area .container {
+  background: #fff;
+  border-radius: 4px;
+  margin-top: -80px;
+  padding: 30px 0 0;
+  z-index: 9;
+}
+
 .social-prove-brand-area .brand-image-wrapper {
-  padding: 30px 0;
+  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13598,7 +13684,6 @@ Responsive Classes
 }
 
 .testimonial-area {
-  background-color: #f3f4f7;
   padding: 60px 0 165px;
 }
 
