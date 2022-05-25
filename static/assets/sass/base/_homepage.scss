@@ -770,10 +770,10 @@
   }
 }
 
-/****************************************
+/*********************************************************************************************
 Responsive Classes
-*****************************************/
-@media (max-width: 1023.98px) {
+***********************************************************************************************/
+@media (max-width: 768.98px) {
   .hero-area-1 {
     padding: 100px 0 50px;
     h1 {
@@ -871,12 +871,20 @@ Responsive Classes
 
   .subscription-area {
     padding: 50px 0;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
     .subscription-message {
       padding: 0;
     }
   }
   .social-connect-area {
     padding: 50px 0;
+    h2 {
+      font-size: 28px;
+    }
     .connect-message {
       margin-right: 0;
     }
@@ -901,10 +909,154 @@ Responsive Classes
 
 // Medium devices (tablets, 769px and up)
 @media (min-width: 769px) and (max-width: 1023.98px) {
+  .hero-area-1 {
+    padding: 100px 0 50px;
+    h1 {
+      font-size: 38px;
+      letter-spacing: -0.57px;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .buttons {
+      .button {
+        &.ac-button {
+          margin-bottom: 0.5rem;
+          margin-right: 0.5rem !important;
+          padding: 0.5rem 1rem;
+        }
+      }
+      .play-buttons {
+        a {
+          span {
+            font-size: 20px;
+            width: 24px;
+            height: 24px;
+            margin-right: 0.3rem;
+          }
+        }
+      }
+    }
+    .h-right-content {
+      margin-right: 0;
+    }
+  }
+  .products-features {
+    .products-description-wrapper {
+      .single-product {
+        &:after {
+          right: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .subscription-area {
+    padding: 50px 0;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+    .subscription-message {
+      padding: 0;
+    }
+  }
+  .social-connect-area {
+    padding: 50px 0;
+    h2 {
+      font-size: 28px;
+    }
+    .connect-message {
+      margin-right: 0;
+    }
+  }
+  .social-prove-brand-area {
+    padding: 30px 0 0;
+    .container {
+      margin-top: 0 !important;
+    }
+    .brand-image-wrapper {
+      padding: 0 !important;
+    }
+  }
 }
 
 // Large devices (desktops, 1024px and up)
 @media (min-width: 1024px) and (max-width: 1215px) {
+  .hero-area-1 {
+    padding: 100px 0 50px;
+    h1 {
+      font-size: 38px;
+      letter-spacing: -0.57px;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .buttons {
+      .button {
+        &.ac-button {
+          margin-bottom: 0.5rem;
+          margin-right: 0.5rem !important;
+          padding: 0.5rem 1rem;
+        }
+      }
+      .play-buttons {
+        a {
+          span {
+            font-size: 20px;
+            width: 24px;
+            height: 24px;
+            margin-right: 0.3rem;
+          }
+        }
+      }
+    }
+    .h-right-content {
+      margin-right: 0;
+    }
+  }
+  .products-features {
+    .products-description-wrapper {
+      .single-product {
+        &:after {
+          right: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .subscription-area {
+    padding: 50px 0;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+    .subscription-message {
+      padding: 0;
+    }
+  }
+  .social-connect-area {
+    padding: 50px 0;
+    h2 {
+      font-size: 28px;
+    }
+    .connect-message {
+      margin-right: 0;
+    }
+  }
+  .social-prove-brand-area {
+    padding: 30px 0 0;
+    .container {
+      margin-top: 0 !important;
+    }
+    .brand-image-wrapper {
+      padding: 0 !important;
+    }
+  }
 }
 
 @media (min-width: 1216px) and (max-width: 1600px) {
