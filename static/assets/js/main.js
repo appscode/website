@@ -287,10 +287,10 @@ owlSocialProve.owlCarousel({
   responsiveClass: true,
   responsive: {
     0: {
-      items: 4,
+      items: 2,
     },
     600: {
-      items: 5,
+      items: 1,
     },
     1400: {
       items: 9,

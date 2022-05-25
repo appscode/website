@@ -9353,9 +9353,16 @@ Responsive Classes
   .hero-area-1 h1 {
     font-size: 38px;
     letter-spacing: -0.57px;
+    text-align: center;
   }
   .hero-area-1 p {
+    text-align: center;
     font-size: 1rem;
+  }
+  .hero-area-1 .buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .hero-area-1 .buttons .button.ac-button {
     margin-bottom: 0.5rem;
@@ -9370,6 +9377,10 @@ Responsive Classes
   }
   .hero-area-1 .h-right-content {
     margin-right: 0;
+  }
+  .products-area .single-product {
+    padding: 30px 20px;
+    text-align: center;
   }
   .others-products {
     padding: 50px 0;
@@ -9398,6 +9409,7 @@ Responsive Classes
     padding: 15px;
     margin-left: -15px;
     margin-right: -15px;
+    margin-bottom: 30px;
   }
   .products-features .products-description-wrapper .single-product:after {
     right: 0;
@@ -9414,6 +9426,21 @@ Responsive Classes
   }
   .subscription-area .subscription-message {
     padding: 0;
+  }
+  .social-connect-area {
+    padding: 50px 0;
+  }
+  .social-connect-area .connect-message {
+    margin-right: 0;
+  }
+  .social-prove-brand-area {
+    padding: 30px 0 0;
+  }
+  .social-prove-brand-area .container {
+    margin-top: 0 !important;
+  }
+  .social-prove-brand-area .brand-image-wrapper {
+    padding: 0 !important;
   }
 }
 
@@ -13689,6 +13716,9 @@ Responsive Classes
   }
   .hero-area-code-editor .editor-header {
     display: none;
+  }
+  .social-prove-brand-area .container {
+    padding: 0 15px;
   }
   .social-prove-brand-area .brand-image-wrapper {
     padding: 30px 0;

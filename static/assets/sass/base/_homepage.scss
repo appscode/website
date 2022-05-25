@@ -773,11 +773,14 @@ Responsive Classes
     h1 {
       font-size: 38px;
       letter-spacing: -0.57px;
+      text-align: center;
     }
     p {
+      text-align: center;
       font-size: 1rem;
     }
     .buttons {
+      justify-content: center;
       .button {
         &.ac-button {
           margin-bottom: 0.5rem;
@@ -800,10 +803,15 @@ Responsive Classes
       margin-right: 0;
     }
   }
+  .products-area {
+    .single-product {
+      padding: 30px 20px;
+      text-align: center;
+    }
+  }
 
   .others-products {
     padding: 50px 0;
-
     .small-title {
       font-size: 18px;
     }
@@ -816,6 +824,8 @@ Responsive Classes
     .products {
       .single-product {
         margin-top: 1rem;
+        // text-align: center;
+
         img {
           width: 50px;
           height: 50px;
@@ -834,6 +844,7 @@ Responsive Classes
         padding: 15px;
         margin-left: -15px;
         margin-right: -15px;
+        margin-bottom: 30px;
 
         &:after {
           right: 0;
@@ -849,11 +860,25 @@ Responsive Classes
     height: 100%;
   }
 
-
   .subscription-area {
     padding: 50px 0;
     .subscription-message {
       padding: 0;
+    }
+  }
+  .social-connect-area {
+    padding: 50px 0;
+    .connect-message {
+      margin-right: 0;
+    }
+  }
+  .social-prove-brand-area {
+    padding: 30px 0 0;
+    .container {
+      margin-top: 0 !important;
+    }
+    .brand-image-wrapper {
+      padding: 0 !important;
     }
   }
 }
