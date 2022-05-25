@@ -88,6 +88,15 @@
 
   .h-right-content {
     margin-right: -70px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.5s ease-in-out;
+    &.is-visible {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
   }
 }
 
@@ -265,9 +274,9 @@
         position: absolute;
         content: "";
         right: -100%;
-        top: -12px;
+        top: 0px;
         width: 200%;
-        height: calc(100% + 24px);
+        height: 100%;
         background-color: hsla(256, 82, 95, 1);
         z-index: -1;
         opacity: 0.5;
@@ -765,10 +774,6 @@
 Responsive Classes
 *****************************************/
 @media (max-width: 1023.98px) {
-}
-
-// // Small devices (landscape phones, 576px and up)
-@media (max-width: 500px) {
   .hero-area-1 {
     padding: 100px 0 50px;
     h1 {
@@ -825,7 +830,10 @@ Responsive Classes
     .products {
       .single-product {
         margin-top: 1rem;
-        // text-align: center;
+        text-align: center;
+        border: 1px solid $ac-white-light;
+        padding: 20px 15px;
+        border-radius: 4px;
 
         img {
           width: 50px;
@@ -842,10 +850,10 @@ Responsive Classes
     }
     .products-description-wrapper {
       .single-product {
-        padding: 15px;
+        padding: 30px 15px;
         margin-left: -15px;
         margin-right: -15px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
 
         &:after {
           right: 0;
@@ -882,6 +890,10 @@ Responsive Classes
       padding: 0 !important;
     }
   }
+}
+
+// // Small devices (landscape phones, 576px and up)
+@media (max-width: 500px) {
 }
 
 @media (min-width: 501px) and (max-width: 768.98px) {

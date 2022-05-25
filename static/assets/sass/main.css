@@ -8672,6 +8672,19 @@ Responsive Classes
 
 .hero-area-1 .h-right-content {
   margin-right: -70px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.hero-area-1 .h-right-content.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .products-area .single-product {
@@ -8856,9 +8869,9 @@ Responsive Classes
   position: absolute;
   content: "";
   right: -100%;
-  top: -12px;
+  top: 0px;
   width: 200%;
-  height: calc(100% + 24px);
+  height: 100%;
   background-color: #ede8fd;
   z-index: -1;
   opacity: 0.5;
@@ -9347,7 +9360,7 @@ Responsive Classes
 /****************************************
 Responsive Classes
 *****************************************/
-@media (max-width: 500px) {
+@media (max-width: 1023.98px) {
   .hero-area-1 {
     padding: 100px 0 50px;
   }
@@ -9397,6 +9410,10 @@ Responsive Classes
   }
   .others-products .products .single-product {
     margin-top: 1rem;
+    text-align: center;
+    border: 1px solid #dbdbde;
+    padding: 20px 15px;
+    border-radius: 4px;
   }
   .others-products .products .single-product img {
     width: 50px;
@@ -9407,10 +9424,10 @@ Responsive Classes
     margin-top: 0;
   }
   .products-features .products-description-wrapper .single-product {
-    padding: 15px;
+    padding: 30px 15px;
     margin-left: -15px;
     margin-right: -15px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   .products-features .products-description-wrapper .single-product:after {
     right: 0;

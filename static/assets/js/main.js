@@ -169,9 +169,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (h_editor) {
     h_editor.classList.add('is-visible')
   }
-
-  // hljs.highlightAll();
-  // highligh js initilization end
+  // hero area right content 
+  var h_right_content = document.querySelector('.h-right-content');
+  if (h_right_content) {
+    h_right_content.classList.add('is-visible')
+  }
 
   // AOS Animation
   AOS.init({
