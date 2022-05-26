@@ -8618,6 +8618,7 @@ Responsive Classes
 
 .hero-area-1 .buttons {
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .hero-area-1 .buttons .button {
@@ -8668,6 +8669,30 @@ Responsive Classes
           justify-content: center;
   border-radius: 50%;
   margin-right: 1rem;
+}
+
+.hero-area-1 .news-message {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3e393e;
+  background: #ccffe5;
+  border: 1px solid var(--ac-primary);
+  padding: 12px 25px;
+  border-radius: 2px;
+}
+
+.hero-area-1 .news-message:hover strong {
+  text-decoration: underline;
+}
+
+.hero-area-1 .news-message strong {
+  color: var(--ac-primary);
 }
 
 .hero-area-1 .h-right-content {
@@ -8854,7 +8879,7 @@ Responsive Classes
 }
 
 .products-features .products-description-wrapper .single-product {
-  padding: 100px 50px;
+  padding: 100px 0 100px 50px;
   position: relative;
   z-index: 1;
   display: -webkit-box;
@@ -9357,6 +9382,10 @@ Responsive Classes
   margin-left: -125px;
 }
 
+.is-paddingless-desktop {
+  padding: 0;
+}
+
 /*********************************************************************************************
 Responsive Classes
 ***********************************************************************************************/
@@ -9374,6 +9403,7 @@ Responsive Classes
     font-size: 1rem;
   }
   .hero-area-1 .buttons {
+    margin-bottom: 15px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -9388,6 +9418,9 @@ Responsive Classes
     width: 24px;
     height: 24px;
     margin-right: 0.3rem;
+  }
+  .hero-area-1 .news-message {
+    padding: 15px;
   }
   .hero-area-1 .h-right-content {
     margin-right: 0;
@@ -9467,6 +9500,9 @@ Responsive Classes
   .social-prove-brand-area .brand-image-wrapper {
     padding: 0 !important;
   }
+  .is-paddingless-desktop {
+    padding: 0.75rem;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1023.98px) {
@@ -9480,6 +9516,9 @@ Responsive Classes
   .hero-area-1 p {
     font-size: 1rem;
   }
+  .hero-area-1 .buttons {
+    margin-bottom: 20px;
+  }
   .hero-area-1 .buttons .button.ac-button {
     margin-bottom: 0.5rem;
     margin-right: 0.5rem !important;
@@ -9490,6 +9529,9 @@ Responsive Classes
     width: 24px;
     height: 24px;
     margin-right: 0.3rem;
+  }
+  .hero-area-1 .news-message {
+    padding: 15px;
   }
   .hero-area-1 .h-right-content {
     margin-right: 0;
@@ -9525,6 +9567,9 @@ Responsive Classes
   }
   .social-prove-brand-area .brand-image-wrapper {
     padding: 0 !important;
+  }
+  .is-paddingless-desktop {
+    padding: 0.75rem;
   }
 }
 
