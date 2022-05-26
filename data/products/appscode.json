@@ -12,22 +12,22 @@
     "themeColor": ""
   },
   "heroImage": {
-    "src": "https://cdn.appscode.com/images/products/appscode/appscode-hero.png",
+    "src": "/assets/images/products/appscode/appscode-hero.png",
     "alt": "AppsCode"
   },
   "logo": {
-    "src": "https://cdn.appscode.com/images/products/appscode/appscode.svg",
+    "src": "/assets/images/products/appscode/appscode.svg",
     "alt": "AppsCode"
   },
   "logoWhite": {
-    "src": "https://cdn.appscode.com/images/products/appscode/appscode-white.png",
+    "src": "/assets/images/products/appscode/appscode-white.png",
     "alt": "AppsCode"
   },
   "icon": {
-    "src": "https://cdn.appscode.com/images/products/appscode/appscode-icon.png",
+    "src": "/assets/images/products/appscode/appscode-icon.png",
     "alt": "AppsCode",
     "sizes": {
-      "192x192": "https://cdn.appscode.com/images/products/appscode/icons/android-icon-192x192.png"
+      "192x192": "/assets/images/products/appscode/icons/android-icon-192x192.png"
     }
   },
   "videos": {
@@ -39,31 +39,31 @@
       "summary": "Deploy, manage, upgrade Kubernetes on any cloud and automate deployment, scaling, and management of containerized applications.",
       "get_in_touch_url": "https://appscode.com/contact/",
       "intro": "8az5rYUxyGs",
-      "hero_image": "https://cdn.appscode.com/images/products/appscode/appscode-hero.png"
+      "hero_image": "/assets/images/products/appscode/appscode-hero.png"
     },
     "main_products": [
       {
         "name": "KubeDB",
         "url": "https://kubedb.com",
-        "logo": "https://cdn.appscode.com/images/products/kubedb/kubedb.svg",
+        "logo": "/assets/images/products/kubedb/kubedb.svg",
         "description": "KubeDB simplifies<strong>Provision, Upgrade, Scaling, Volume Expansion, </strong> Monitor, Backup, Restore for various Databases in Kubernetes on any Public & Private Cloud"
       },
       {
         "name": "Stash",
         "url": "https://stash.run",
-        "logo": "https://cdn.appscode.com/images/products/stash/stash.png",
+        "logo": "/assets/images/products/stash/stash.png",
         "description": "KubeDB simplifies Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup, Restore for various Databases in Kubernetes on any Public & Private Cloud"
       },
       {
         "name": "kubeVault",
         "url": "https://kubevault.com",
-        "logo": "https://cdn.appscode.com/images/products/stash/stash.png",
+        "logo": "/assets/images/products/stash/stash.png",
         "description": "KubeDB simplifies Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup, Restore for various Databases in Kubernetes on any Public & Private Cloud"
       },
       {
         "name": "Bytebuilders",
         "url": "https://byte.builders.com",
-        "logo": "https://cdn.appscode.com/images/products/bytebuilders/bytebuilders.png",
+        "logo": "/assets/images/products/bytebuilders/bytebuilders.png",
         "description": "KubeDB simplifies Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup, Restore for various Databases in Kubernetes on any Public & Private Cloud"
       }
     ],
@@ -104,7 +104,7 @@
           "Volume Snapshot",
           "Policy Based Backup"
         ],
-        "illustration": "https://via.placeholder.com/600/dddddd/808080"
+        "illustration": "https://via.placeholder.com/400/dddddd/808080"
       },
       {
         "id": "disaster-recovery",
@@ -123,7 +123,7 @@
           "Volume Snapshot",
           "Policy Based Backup"
         ],
-        "illustration": "https://via.placeholder.com/600/dddddd/808080"
+        "illustration": "https://via.placeholder.com/400/dddddd/808080"
       },
       {
         "id": "security",
@@ -142,7 +142,7 @@
           "Volume Snapshot",
           "Policy Based Backup"
         ],
-        "illustration": "https://via.placeholder.com/600/dddddd/808080"
+        "illustration": "https://via.placeholder.com/400/dddddd/808080"
       },
       {
         "id": "monitoring",
@@ -161,7 +161,7 @@
           "Volume Snapshot",
           "Policy Based Backup"
         ],
-        "illustration": "https://via.placeholder.com/600/dddddd/808080"
+        "illustration": "https://via.placeholder.com/400/dddddd/808080"
       },
       {
         "id": "alerting",
@@ -180,7 +180,7 @@
           "Volume Snapshot",
           "Policy Based Backup"
         ],
-        "illustration": "https://via.placeholder.com/600/dddddd/808080"
+        "illustration": "https://via.placeholder.com/400/dddddd/808080"
       },
       {
         "id": "networking",
@@ -199,7 +199,7 @@
           "Volume Snapshot",
           "Policy Based Backup"
         ],
-        "illustration": "https://via.placeholder.com/600/dddddd/808080"
+        "illustration": "https://via.placeholder.com/400/dddddd/808080"
       },
       {
         "id": "manage-infrastructure",
@@ -218,7 +218,7 @@
           "Volume Snapshot",
           "Policy Based Backup"
         ],
-        "illustration": "https://via.placeholder.com/600/dddddd/808080"
+        "illustration": "https://via.placeholder.com/400/dddddd/808080"
       }
     ],
     "subscription": {
@@ -230,7 +230,7 @@
       "title": "More than 5,000 developers use AppsCode products every month to deliver value",
       "summary": "Turbocharge your Kubernetes journey with AppsCode's open source Kubernetes operators and developer tools, like, KubeDB, Voyager, Stash, KubeVault, Pharmer and others. Join our vibrant community of users and let's get stuff done!",
       "social_link": [
-        { 
+        {
           "text": "JOIN OUR SLACK",
           "url": "http://slackURL.com",
           "icon": "/assets/images/icon/slack-outlined.svg"

@@ -8966,10 +8966,16 @@ Responsive Classes
   background-color: #592217;
 }
 
-.products-features .products-description-wrapper .hero-area-code-editor {
+.products-features .products-description-wrapper .illustration {
   top: 30%;
   position: -webkit-sticky;
   position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .products-features .product-description .brand {
