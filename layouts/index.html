@@ -3,21 +3,22 @@
 {{ end }}
 
 {{ define "main" }}
+
+{{ $p := $.Site.Data.products.appscode.homepage}}
+
 <!--==================== hero-area start 2022 ====================-->
 <div class="bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.jpg);">
   <section class="hero-area-1">
     <div class="container">
       <div class="columns">
         <div class="column is-6">
-          <h1>Kubernetes Native Data Platform </h1>
-          <p data-aos="fade-up" data-aos-duration="500">Deploy, manage, upgrade Kubernetes on any cloud and automate
-            deployment, scaling, and management of
-            containerized applications.</p>
+          <h1>{{ $p.hero_area.title }}</h1>
+          <p data-aos="fade-up" data-aos-duration="500">{{ $p.hero_area.summary }}</p>
 
           <!-- buttons  -->
           <!-- style="width:22px;height:22px; margin-right: 8px;" -->
           <div class="buttons" data-aos="fade-up" data-aos-duration="700">
-            <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-primary">
+            <a href="{{ $p.hero_area.get_in_touch_url }}" class="button ac-button is-primary">
               <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json" trigger="loop"
                 target="a.is-secondary" trigger="hover">
               </lord-icon><span>GET IN TOUCH</span>
@@ -33,14 +34,12 @@
 
           <!-- news connect-message start  -->
           <a href="#" class="news-message" data-aos="fade-up" data-aos-duration="900"><span>Visit our booth BN3 at the
-              <strong>TechCrunch Disrupt SF 2022</strong>
-              Startup Alley on Oct 4,
-              2022!</span></a>
+              <strong>TechCrunch Disrupt SF 2022</strong>Startup Alley on Oct 4, 2022!</span></a>
           <!-- news connect-message end -->
         </div>
         <div class="column is-6">
           <div class="h-right-content">
-            <img src="{{ .Site.Data.products.appscode.heroImage.src }}" alt="" />
+            <img src="{{ $p.hero_area.hero_image }}" alt="" />
           </div>
         </div>
       </div>
@@ -53,63 +52,19 @@
     <div class="container">
       <div class="columns is-multiline">
         <!-- single product start  -->
-        <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile" data-aos="fade-up" data-aos-duration="500">
-          <a href="#" class="single-product">
-            <div class="product-logo"><img src="https://cdn.appscode.com/images/products/kubedb/kubedb.svg"
+        {{ range $product := $p.main_products }}
+        <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
+          data-aos="fade-up" data-aos-duration="500">
+          <a href="{{ $product.url }}" class="single-product">
+            <div class="product-logo"><img src="{{ $product.logo }}"
                 alt="kubedb-logo"></div>
-            <p>KubeDB simplifies <strong>Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup,
-                Restore</strong>
-              for various Databases in Kubernetes on any Public & Private Cloud</p>
+            <p>{{ $product.description | safeHTML  }}</p>
             <button class="button ac-button is-transparent">LEARN MORE <span class="material-icons-outlined">
                 arrow_forward
               </span></button>
           </a>
         </div>
-        <!-- single product end -->
-
-        <!-- single product start  -->
-        <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile" data-aos="fade-up" data-aos-duration="600">
-          <a href="#" class="single-product">
-            <div class="product-logo"><img src="https://cdn.appscode.com/images/products/stash/stash.png"
-                alt="stash-logo"></div>
-            <p>KubeDB simplifies <strong>Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup,
-                Restore</strong>
-              for various Databases in Kubernetes on any Public & Private Cloud</p>
-            <button class="button ac-button is-transparent">LEARN MORE <span class="material-icons-outlined">
-                arrow_forward
-              </span></button>
-          </a>
-        </div>
-        <!-- single product end -->
-
-        <!-- single product start  -->
-        <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile" data-aos="fade-up" data-aos-duration="700">
-          <a href="#" class="single-product">
-            <div class="product-logo"><img src="https://cdn.appscode.com/images/products/kubevault/kubevault.png"
-                alt="kubevault-logo"></div>
-            <p>KubeDB simplifies <strong>Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup,
-                Restore</strong>
-              for various Databases in Kubernetes on any Public & Private Cloud</p>
-            <button class="button ac-button is-transparent">LEARN MORE <span class="material-icons-outlined">
-                arrow_forward
-              </span></button>
-          </a>
-        </div>
-        <!-- single product end -->
-
-        <!-- single product start  -->
-        <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile" data-aos="fade-up" data-aos-duration="800">
-          <a href="#" class="single-product">
-            <div class="product-logo"><img src="https://cdn.appscode.com/images/products/bytebuilders/bytebuilders.png"
-                alt="kubedb-logo"></div>
-            <p>KubeDB simplifies <strong>Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup,
-                Restore</strong>
-              for various Databases in Kubernetes on any Public & Private Cloud</p>
-            <button class="button ac-button is-transparent">LEARN MORE <span class="material-icons-outlined">
-                arrow_forward
-              </span></button>
-          </a>
-        </div>
+        {{ end }}
         <!-- single product end -->
       </div>
     </div>
@@ -123,46 +78,27 @@
       <div class="columns">
         <div class="column is-6" data-aos="fade-up" data-aos-duration="500">
           <div class="pr-60">
-            <p class="small-title">Lorem ipsum is dular</p>
-            <h2 data-aos="fade-up" data-aos-duration="600">Provision multi-node Kubernetes clusters in minutes with a
-              few clicks</h2>
-            <p data-aos="fade-up" data-aos-duration="700">Global Cloud Infrastructure at Your Fingertip,Easily take
-              advantage of the global infrastructure
-              footprint
-              of
-              the cloud providers, like AWS, Azure, Google Cloud, DigitalOcean, Linode and others.</p>
-            <a href="https://appscode.com/contact/" class="button ac-button is-primary ">READ THE DOCS</a>
+            <p class="small-title">Lorem ipsum is dular?</p>
+            <h2 data-aos="fade-up" data-aos-duration="600">{{ $p.highlight_products.title }}</h2>
+            <p data-aos="fade-up" data-aos-duration="700">{{ $p.highlight_products.summary }}</p>
+            <a href="{{ $p.highlight_products.url }}" class="button ac-button is-primary ">READ THE DOCS</a>
           </div>
         </div>
         <div class="column is-6">
           <div class="products">
             <div class="columns">
+              {{ range $product := $p.highlight_products.products }}
               <div class="column is-6" data-aos="fade-up" data-aos-duration="600">
 
                 <!-- sigle product start  -->
                 <div class="single-product">
-                  <img src="/assets/images/products/voyager/voyager-icon.svg" alt="">
-                  <p><a href="#">Voyager</a> Lorem ip of the global infrastructure footprint of the cloud providers,
-                    like
-                    AWS, Azure,
-                    Google
-                    Cloud, DigitalOcean, Linode and others.</p>
+                  <img src="{{ $product.logo }}" alt="">
+                  <p>{{ $product.summary | safeHTML }}</p>
                   <a class="inline-button" href="#" class="">EXPLORE MORE</a>
                 </div>
                 <!-- sigle product end -->
               </div>
-              <div class="column is-6" data-aos="fade-up" data-aos-duration="700">
-                <!-- sigle product start  -->
-                <div class="single-product">
-                  <img src="/assets/images/products/swift/swift-icon.svg" alt="">
-                  <p><a href="#">Swift</a> Lorem ip of the global infrastructure footprint of the cloud providers, like
-                    AWS, Azure,
-                    Google
-                    Cloud, DigitalOcean, Linode and others.</p>
-                  <a class="inline-button" href="#" class="">EXPLORE MORE</a>
-                </div>
-                <!-- sigle product end -->
-              </div>
+              {{ end }}
             </div>
           </div>
         </div>
@@ -185,13 +121,10 @@
         <!-- features tabs start  -->
         <div class="features-tabs" id="nav-serialscrolling">
           <ul>
-            <li><span class="sub-link" data-serialscrolling="manage-database">MANAGE DATABASE</span></li>
-            <li><span class="sub-link" data-serialscrolling="disaster-recovery">DISASTER RECOVERY</span></li>
-            <li><span class="sub-link" data-serialscrolling="security">SECURITY</span></li>
-            <li><span class="sub-link" data-serialscrolling="monitoring">MONITORING</span></li>
-            <li><span class="sub-link" data-serialscrolling="alerting">ALERTING</span></li>
-            <li><span class="sub-link" data-serialscrolling="networking">NETWORKING</span></li>
-            <li><span class="sub-link" data-serialscrolling="manage-infrastrucure">MANAGE INFRASTRUCTURE</span></li>
+            {{ range $products := $p.products }}
+            <li><span class="sub-link" data-serialscrolling="{{ $products.id }}">{{ $products.use_case }}</span>
+            </li>
+            {{end}}
           </ul>
         </div>
         <!-- features tabs end -->
@@ -199,199 +132,33 @@
       <div class="column is-9 is-paddingless-desktop">
         <div class="products-description-wrapper">
           <!-- single product start  -->
-          <div class="single-product kubedb" data-serialscrolling-target="manage-database">
+           {{ range $products := $p.products }}
+          <div class="single-product {{$products.product}}" data-serialscrolling-target="{{ $products.id }}">
             <div class="columns">
               <div class="column is-6" data-aos="fade-up" data-aos-duration="600">
                 <!-- single product description start  -->
                 <div class="product-description">
                   <div class="brand">
-                    <img src="/assets/images/products/stash/stash.png" alt="Stash">
+                    <img src="{{ $products.logo}}" alt="Stash">
                   </div>
 
-                  <p>A complete Kubernetes native disaster recovery solution for backup and restore your volumes and
-                    databases
-                    in Kubernetes on any public and private clouds.</p>
+                  <p>{{ $products.summary}}</p>
                   <ul class="features">
-                    <li><span class="material-icons">task_alt</span>Declarative API</li>
-                    <li><span class="material-icons">task_alt</span>Backup Kubernetes Volumes</li>
-                    <li><span class="material-icons">task_alt</span>Backup Database</li>
-                    <li><span class="material-icons">task_alt</span>Multiple Storage Support</li>
-                    <li><span class="material-icons">task_alt</span>Deduplication</li>
-                    <li><span class="material-icons">task_alt</span>Data Encryption</li>
-                    <li><span class="material-icons">task_alt</span>Volume Snapshot</li>
-                    <li><span class="material-icons">task_alt</span>Policy Based Backup</li>
+                    {{ range $features := $products.features}}
+                    <li><span class="material-icons">task_alt</span>{{ $features }}</li>
+                    {{ end }}
                   </ul>
                   <a class="button ac-button is-primary" href="#">GET STARTED</a>
                 </div>
                 <!-- single product description end -->
               </div>
               <div class="column is-6 is-hidden-tablet-only" data-aos="fade-up" data-aos-duration="700">
-                <div class="hero-area-code-editor is-visible">
-                  <div class="editor-header"><span class="action close"></span>
-                    <span class="action maximize"></span>
-                    <span class="action minimize"></span></div>
-                  <div class="highlight">
-                    <pre tabindex="0"
-                      style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="display:flex"><span>$ helm repo add appscode https://charts.appscode.com/stable/
-</span></span><span style="display:flex"><span>$ helm repo update
-</span></span><span style="display:flex"><span>$ helm install stash appscode/stash <span style="color:#f1fa8c">\
-</span></span></span><span style="display:flex"><span><span style="color:#f1fa8c"></span>  --version v2022.05.18 <span style="color:#f1fa8c">\
-</span></span></span><span style="display:flex"><span><span style="color:#f1fa8c"></span>  --namespace stash --create-namespace <span style="color:#f1fa8c">\
-</span></span></span><span style="display:flex"><span><span style="color:#f1fa8c"></span>  --set features.enterprise<span style="color:#ff79c6">=</span><span style="color:#8be9fd;font-style:italic">true</span> <span style="color:#f1fa8c">\
-</span></span></span><span style="display:flex"><span><span style="color:#f1fa8c"></span>  --set-file global.license<span style="color:#ff79c6">=</span>/path/to/the/license.txt</span></span></code></pre>
-                  </div>
-                </div>
+                <img src="{{ $products.illustration }}" alt="">
               </div>
             </div>
           </div>
           <!-- single product end -->
-
-          <!-- single product start  -->
-          <div class="single-product stash" data-serialscrolling-target="disaster-recovery">
-            <div class="columns">
-              <div class="column is-6">
-                <!-- single product description start  -->
-                <div class="product-description">
-                  <div class="brand">
-                    <img src="/assets/images/products/kubedb/kubedb.png" alt="Stash">
-                  </div>
-
-                  <p>A complete Kubernetes native disaster recovery solution for backup and restore your volumes and
-                    databases
-                    in Kubernetes on any public and private clouds.</p>
-                  <ul class="features">
-                    <li><span class="material-icons">task_alt</span>Declarative API</li>
-                    <li><span class="material-icons">task_alt</span>Backup Kubernetes Volumes</li>
-                    <li><span class="material-icons">task_alt</span>Backup Database</li>
-                    <li><span class="material-icons">task_alt</span>Multiple Storage Support</li>
-                    <li><span class="material-icons">task_alt</span>Deduplication</li>
-                    <li><span class="material-icons">task_alt</span>Data Encryption</li>
-                    <li><span class="material-icons">task_alt</span>Volume Snapshot</li>
-                    <li><span class="material-icons">task_alt</span>Policy Based Backup</li>
-                  </ul>
-                  <a class="button ac-button is-primary" href="#">GET STARTED</a>
-                </div>
-                <!-- single product description end -->
-              </div>
-              <div class="column is-6 is-hidden-tablet-only">
-                <div class="hero-area-code-editor is-visible">
-                  <div class="editor-header"><span class="action close"></span>
-                    <span class="action maximize"></span>
-                    <span class="action minimize"></span></div>
-                  <div class="highlight">
-                    <pre tabindex="0"
-                      style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="display:flex"><span>$ helm repo add appscode https://charts.appscode.com/stable/
-</span></span><span style="display:flex"><span>$ helm repo update
-</span></span><span style="display:flex"><span>$ helm install stash appscode/stash <span style="color:#f1fa8c">\
-</span></span></span><span style="display:flex"><span><span style="color:#f1fa8c"></span>  --version v2022.05.18 <span style="color:#f1fa8c">\
-</span></span></span><span style="display:flex"><span><span style="color:#f1fa8c"></span>  --namespace stash --create-namespace <span style="color:#f1fa8c">\
-</span></span></span><span style="display:flex"><span><span style="color:#f1fa8c"></span>  --set features.enterprise<span style="color:#ff79c6">=</span><span style="color:#8be9fd;font-style:italic">true</span> <span style="color:#f1fa8c">\
-</span></span></span><span style="display:flex"><span><span style="color:#f1fa8c"></span>  --set-file global.license<span style="color:#ff79c6">=</span>/path/to/the/license.txt</span></span></code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- single product end -->
-
-          <!-- single product start  -->
-          <div class="single-product kubevault" data-serialscrolling-target="security">
-            <div class="columns">
-              <div class="column is-6">
-                <!-- single product description start  -->
-                <div class="product-description">
-                  <div class="brand">
-                    <img src="/assets/images/products/kubevault/kubevault.png" alt="Stash">
-                  </div>
-
-                  <p>A complete Kubernetes native disaster recovery solution for backup and restore your volumes and
-                    databases
-                    in Kubernetes on any public and private clouds.</p>
-                  <ul class="features">
-                    <li><span class="material-icons">task_alt</span>Declarative API</li>
-                    <li><span class="material-icons">task_alt</span>Backup Kubernetes Volumes</li>
-                    <li><span class="material-icons">task_alt</span>Backup Database</li>
-                    <li><span class="material-icons">task_alt</span>Multiple Storage Support</li>
-                    <li><span class="material-icons">task_alt</span>Deduplication</li>
-                    <li><span class="material-icons">task_alt</span>Data Encryption</li>
-                    <li><span class="material-icons">task_alt</span>Volume Snapshot</li>
-                    <li><span class="material-icons">task_alt</span>Policy Based Backup</li>
-                  </ul>
-                  <a class="button ac-button is-primary" href="#">GET STARTED</a>
-                </div>
-                <!-- single product description end -->
-              </div>
-              <div class="column is-6 is-hidden-tablet-only">
-                <div class="hero-area-code-editor is-visible">
-                  <div class="editor-header"><span class="action close"></span>
-                    <span class="action maximize"></span>
-                    <span class="action minimize"></span></div>
-                  <div class="highlight">
-                    <pre tabindex="0"
-                      style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="display:flex"><span>$ helm repo add appscode https://charts.appscode.com/stable/
-</span></span><span style="display:flex"><span>$ helm repo update
-</span></span><span style="display:flex"><span>$ helm install stash appscode/stash <span style="color:#f1fa8c">\
-</span></span></span><span style="display:flex"><span><span style="color:#f1fa8c"></span>  --version v2022.05.18 <span style="color:#f1fa8c">\
-</span></span></span><span style="display:flex"><span><span style="color:#f1fa8c"></span>  --namespace stash --create-namespace <span style="color:#f1fa8c">\
-</span></span></span><span style="display:flex"><span><span style="color:#f1fa8c"></span>  --set features.enterprise<span style="color:#ff79c6">=</span><span style="color:#8be9fd;font-style:italic">true</span> <span style="color:#f1fa8c">\
-</span></span></span><span style="display:flex"><span><span style="color:#f1fa8c"></span>  --set-file global.license<span style="color:#ff79c6">=</span>/path/to/the/license.txt</span></span></code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- single product end -->
-
-
-          <!-- single product start  -->
-          <div class="single-product kubeform" data-serialscrolling-target="monitoring">
-            <div class="columns">
-              <div class="column is-6">
-                <!-- single product description start  -->
-                <div class="product-description">
-                  <div class="brand">
-                    <img src="/assets/images/products/kubeform/kubeform.png" alt="Stash">
-                  </div>
-
-                  <p>A complete Kubernetes native disaster recovery solution for backup and restore your volumes and
-                    databases
-                    in Kubernetes on any public and private clouds.</p>
-                  <ul class="features">
-                    <li><span class="material-icons">task_alt</span>Declarative API</li>
-                    <li><span class="material-icons">task_alt</span>Backup Kubernetes Volumes</li>
-                    <li><span class="material-icons">task_alt</span>Backup Database</li>
-                    <li><span class="material-icons">task_alt</span>Multiple Storage Support</li>
-                    <li><span class="material-icons">task_alt</span>Deduplication</li>
-                    <li><span class="material-icons">task_alt</span>Data Encryption</li>
-                    <li><span class="material-icons">task_alt</span>Volume Snapshot</li>
-                    <li><span class="material-icons">task_alt</span>Policy Based Backup</li>
-                  </ul>
-                  <a class="button ac-button is-primary" href="#">GET STARTED</a>
-                </div>
-                <!-- single product description end -->
-              </div>
-              <div class="column is-6 is-hidden-tablet-only">
-                <div class="hero-area-code-editor is-visible">
-                  <div class="editor-header"><span class="action close"></span>
-                    <span class="action maximize"></span>
-                    <span class="action minimize"></span></div>
-                  <div class="highlight">
-                    <pre tabindex="0"
-                      style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="display:flex"><span>$ helm repo add appscode https://charts.appscode.com/stable/
-</span></span><span style="display:flex"><span>$ helm repo update
-</span></span><span style="display:flex"><span>$ helm install stash appscode/stash <span style="color:#f1fa8c">\
-</span></span></span><span style="display:flex"><span><span style="color:#f1fa8c"></span>  --version v2022.05.18 <span style="color:#f1fa8c">\
-</span></span></span><span style="display:flex"><span><span style="color:#f1fa8c"></span>  --namespace stash --create-namespace <span style="color:#f1fa8c">\
-</span></span></span><span style="display:flex"><span><span style="color:#f1fa8c"></span>  --set features.enterprise<span style="color:#ff79c6">=</span><span style="color:#8be9fd;font-style:italic">true</span> <span style="color:#f1fa8c">\
-</span></span></span><span style="display:flex"><span><span style="color:#f1fa8c"></span>  --set-file global.license<span style="color:#ff79c6">=</span>/path/to/the/license.txt</span></span></code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- single product end -->
-
-
+          {{end}}
         </div>
 
       </div>
@@ -406,28 +173,20 @@
     <div class="columns">
       <div class="column is-7" data-aos="fade-up" data-aos-duration="500">
         <div class="subscription-message">
-          <h2 data-aos="fade-up" data-aos-duration="600">Cloud reimagined <br /> for the age of Kubernetes</h2>
-          <p data-aos="fade-up" data-aos-duration="700">Deploy, manage, upgrade Kubernetes on any cloud and automate
-            deployment, scaling, and management of
-            containerized applications. Make Kubernetes accessible any member of your development team using
-            ByteBuilder's
-            innovative Kubernetes Dashboard.</p>
+          <h2 data-aos="fade-up" data-aos-duration="600">{{ $p.subscription.title | safeHTML}}</h2>
+          <p data-aos="fade-up" data-aos-duration="700">{{ $p.subscription.summary_left | safeHTML}}</p>
           <a class="button ac-button is-primary is-outlined" href="#">EXPLORE MORE</a>
         </div>
       </div>
       <div class="column is-5" data-aos="fade-up" data-aos-duration="700">
-        <p>Provision self-managed multi-node Kubernetes clusters in minutes just with a few clicks. Easily take
-          advantage of the global infrastructure footprint of the cloud providers, like <strong>AWS, Azure, Google
-            Cloud,
-            DigitalOcean, Linode</strong> and others.</p>
+        <p>{{ $p.subscription.summary_right | safeHTML}}</p>
 
         <!-- subscription input  -->
         <form action="#" class="subscription-input" data-aos="fade-up" data-aos-duration="800">
           <input type="email" placeholder="Enter your email address">
           <button class="button ac-button is-primary">SUBSCRIBE</button>
           <p data-aos="fade-up" data-aos-duration="900">Subscribe to our newsletter <img
-              src="/assets/images/icon/indicator-arrow-right.svg"
-              alt="indicator-arrow-right"></p>
+              src="/assets/images/icon/indicator-arrow-right.svg" alt="indicator-arrow-right"></p>
         </form>
         <!-- subscription input  -->
       </div>
@@ -444,104 +203,44 @@
       <div class="columns">
         <div class="column is-8">
           <div class="connect-message">
-            <h2 data-aos="fade-up" data-aos-duration="500">More than 5,000 developers use AppsCode products every month
-              to deliver value</h2>
-            <p data-aos="fade-up" data-aos-duration="600">Turbocharge your Kubernetes journey with AppsCode's open
-              source Kubernetes operators and developer tools,
-              like, KubeDB, Voyager, Stash, KubeVault, Pharmer and others. Join our vibrant community of users and let's
-              get
-              stuff done!</p>
+            <h2 data-aos="fade-up" data-aos-duration="500">{{ $p.social_connect.title }}</h2>
+            <p data-aos="fade-up" data-aos-duration="600">{{ $p.social_connect.summary }}</p>
           </div>
         </div>
         <div class="column is-4">
           <ul class="social-link">
-            <li data-aos="fade-up" data-aos-duration="500"><a href="#"><span><img
-                    src="/assets/images/icon/slack-outlined.svg" alt=""></span>JOIN OUR SLACK</a>
+            {{ range $social_link := $p.social_connect.social_link }}
+            <li data-aos="fade-up" data-aos-duration="500"><a href="{{ $social_link.url }}"><span><img
+                    src="{{$social_link.icon}}" alt=""></span>{{ $social_link.text }}</a>
             </li>
-            <li data-aos="fade-up" data-aos-duration="600"><a href="#"><span><img
-                    src="/assets/images/icon/github-outlined.svg" alt=""></span>VISIT OUR
-                GITHUB PAGE</a></li>
-            <li data-aos="fade-up" data-aos-duration="700"><a href="#"><span><img
-                    src="/assets/images/icon/twitter-outlined.svg" alt=""></span>GET LATEST
-                UPDATE</a></li>
+            {{ end }}
+          
           </ul>
         </div>
       </div>
 
       <!-- cards start  -->
       <div class="columns is-multiline">
-
+        {{ range $social_cards := $p.social_connect.social_cards}}
         <!-- single card start  -->
-        <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile" data-aos="fade-up" data-aos-duration="500">
+        <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
+          data-aos="fade-up" data-aos-duration="500">
           <div class="single-card">
             <div class="card-top">
-              <div class="card-icon"><img src="/assets/images/icon/count/octocat.svg" alt=""></div>
+              <div class="card-icon"><img src="{{ $social_cards.icon }}" alt=""></div>
               <div class="count">
-                <h2>5000+</h2>
-                <p>Github Stars</p>
+                <h2>{{ $social_cards.users }}</h2>
+                <p>{{ $social_cards.sub_title }}</p>
               </div>
             </div>
             <div class="card-bottom">
-              <p>5000+ Github Stars. Lorem ipsum is a dular site advantage of the </p>
-              <a href="#">VIEW ON GITHUB</a>
+              <p>{{ $social_cards.summary }}</p>
+              <a href="{{ $social_cards.url }}">View On {{ $social_cards.name }}</a>
             </div>
           </div>
         </div>
         <!-- single card end -->
-
-        <!-- single card start  -->
-        <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile" data-aos="fade-up" data-aos-duration="600">
-          <div class="single-card">
-            <div class="card-top">
-              <div class="card-icon"><img src="/assets/images/icon/count/slack.svg" alt=""></div>
-              <div class="count">
-                <h2>2,000+</h2>
-                <p>Developer Community</p>
-              </div>
-            </div>
-            <div class="card-bottom">
-              <p>2000+ Github Stars. Lorem ipsum is a dular site advantage of the </p>
-              <a href="#">JOIN OUR SLACK CHANNEL</a>
-            </div>
-          </div>
-        </div>
-        <!-- single card end -->
-
-        <!-- single card start  -->
-        <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile" data-aos="fade-up" data-aos-duration="700">
-          <div class="single-card">
-            <div class="card-top">
-              <div class="card-icon"><img src="/assets/images/icon/count/docker.svg" alt=""></div>
-              <div class="count">
-                <h2>4.5M+</h2>
-                <p>Docker Downloads</p>
-              </div>
-            </div>
-            <div class="card-bottom">
-              <p>5000+ Github Stars. Lorem ipsum is a dular site advantage of the </p>
-              <a href="#">REQUEST A DEMO</a>
-            </div>
-          </div>
-        </div>
-        <!-- single card end -->
-
-        <!-- single card start  -->
-        <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile" data-aos="fade-up" data-aos-duration="800">
-          <div class="single-card">
-            <div class="card-top">
-              <div class="card-icon"><img src="/assets/images/icon/count/support.svg" alt=""></div>
-              <div class="count">
-                <h2>70,000+</h2>
-                <p>Operators Deployed</p>
-              </div>
-            </div>
-            <div class="card-bottom">
-              <p>5000+ Github Stars. Lorem ipsum is a dular site advantage of the </p>
-              <a href="#">GET SUPPORT</a>
-            </div>
-          </div>
-        </div>
-        <!-- single card end -->
+        {{end}}
       </div>
       <!-- cards end -->
     </div>
@@ -711,6 +410,8 @@
   </div>
 </div>
 <!-- video-player start  -->
+
+
 <script>
   // Function to reveal lightbox and adding YouTube autoplay
   function revealVideo(div, video_id) {
