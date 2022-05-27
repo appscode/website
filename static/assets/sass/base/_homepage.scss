@@ -44,6 +44,7 @@
   .buttons {
     margin-top: 30px;
     margin-bottom: 50px;
+
     .button {
       margin-right: 25px !important;
       margin-bottom: 0;
@@ -99,11 +100,13 @@
     border: 1px solid $ac-primary;
     padding: 12px 25px;
     border-radius: 2px;
+
     &:hover {
       strong {
         text-decoration: underline;
       }
     }
+
     strong {
       color: $ac-primary;
     }
@@ -115,6 +118,7 @@
     visibility: hidden;
     transform: scale(0);
     transition: 0.5s ease-in-out;
+
     &.is-visible {
       opacity: 1;
       visibility: visible;
@@ -293,6 +297,7 @@
       z-index: 1;
       display: flex;
       align-items: center;
+
       &:after {
         position: absolute;
         content: "";
@@ -304,18 +309,22 @@
         z-index: -1;
         opacity: 0.5;
       }
+
       // background-color: hsla(256, 82, 95, 1);
       &.kubedb {
         &:after {
           background-color: hsla(240, 55, 95, 1);
         }
+
         .product-description .features li .material-icons {
           color: $kubedb-primary;
         }
+
         .button.ac-button.is-primary {
           background-color: $kubedb-primary;
         }
       }
+
       &.stash {
         &:after {
           background-color: hsla(256, 82, 93, 1);
@@ -324,44 +333,55 @@
         .product-description .features li .material-icons {
           color: $stash-primary;
         }
+
         .button.ac-button.is-primary {
           background-color: $stash-primary;
         }
       }
+
       &.kubevault {
         &:after {
           background-color: hsla(271, 77, 95, 1);
         }
+
         .product-description .features li .material-icons {
           color: $kubevault-primary;
         }
+
         .button.ac-button.is-primary {
           background-color: $kubevault-primary;
         }
       }
+
       &.prometheus {
         .product-description .features li .material-icons {
           color: $kubedb-primary;
         }
       }
+
       &.voyager {
         &:after {
           background-color: hsla(242, 48, 95, 1);
         }
+
         .product-description .features li .material-icons {
           color: $voyager-primary;
         }
+
         .button.ac-button.is-primary {
           background-color: $voyager-primary;
         }
       }
+
       &.kubeform {
         &:after {
           background-color: hsla(141, 45, 90, 1);
         }
+
         .product-description .features li .material-icons {
           color: $kubeform-primary;
         }
+
         .button.ac-button.is-primary {
           background-color: $kubeform-primary;
         }
@@ -613,6 +633,7 @@
         line-height: 16px;
         letter-spacing: 1.25px;
         text-decoration-line: underline;
+        text-transform: uppercase;
 
         /* 1c1c1c */
 
@@ -703,13 +724,6 @@
       color: $ac-color-text;
       font-size: 15px;
       margin-bottom: 30px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      line-clamp: 4;
-      -webkit-line-clamp: 4;
-      box-orient: vertical;
-      -webkit-box-orient: vertical;
     }
 
     .press-button-wrapper {
@@ -794,27 +808,33 @@
     margin-left: -125px;
   }
 }
+
 .is-paddingless-desktop {
   padding: 0;
 }
+
 /*********************************************************************************************
 Responsive Classes
 ***********************************************************************************************/
 @media (max-width: 768.98px) {
   .hero-area-1 {
     padding: 100px 0 50px;
+
     h1 {
       font-size: 38px;
       letter-spacing: -0.57px;
       text-align: center;
     }
+
     p {
       text-align: center;
       font-size: 1rem;
     }
+
     .buttons {
       margin-bottom: 15px;
       justify-content: center;
+
       .button {
         &.ac-button {
           margin-bottom: 0.5rem;
@@ -822,6 +842,7 @@ Responsive Classes
           padding: 0.5rem 1rem;
         }
       }
+
       .play-buttons {
         a {
           span {
@@ -833,13 +854,16 @@ Responsive Classes
         }
       }
     }
+
     .news-message {
       padding: 15px;
     }
+
     .h-right-content {
       margin-right: 0;
     }
   }
+
   .products-area {
     .single-product {
       padding: 30px 20px;
@@ -849,15 +873,19 @@ Responsive Classes
 
   .others-products {
     padding: 50px 0;
+
     .small-title {
       font-size: 18px;
     }
+
     .pr-60 {
       padding-right: 0 !important;
     }
+
     h2 {
       font-size: 22px;
     }
+
     .products {
       .single-product {
         margin-top: 1rem;
@@ -879,6 +907,7 @@ Responsive Classes
     .features-tabs {
       margin-top: 0;
     }
+
     .products-description-wrapper {
       .single-product {
         padding: 30px 15px;
@@ -892,10 +921,12 @@ Responsive Classes
         }
       }
     }
+
     #nav-serialscrolling {
       top: 0;
     }
   }
+
   [data-serialscrolling-target] {
     height: 100%;
   }
@@ -907,53 +938,63 @@ Responsive Classes
       font-size: 28px;
       margin-bottom: 15px;
     }
+
     .subscription-message {
       padding: 0;
     }
   }
+
   .social-connect-area {
     padding: 50px 0;
+
     h2 {
       font-size: 28px;
     }
+
     .connect-message {
       margin-right: 0;
     }
   }
+
   .social-prove-brand-area {
     padding: 30px 0 0;
+
     .container {
       margin-top: 0 !important;
     }
+
     .brand-image-wrapper {
       padding: 0 !important;
     }
   }
+
   .is-paddingless-desktop {
     padding: 0.75rem;
   }
 }
 
 // // Small devices (landscape phones, 576px and up)
-@media (max-width: 500px) {
-}
+@media (max-width: 500px) {}
 
-@media (min-width: 501px) and (max-width: 768.98px) {
-}
+@media (min-width: 501px) and (max-width: 768.98px) {}
 
 // Medium devices (tablets, 769px and up)
 @media (min-width: 769px) and (max-width: 1023.98px) {
   .hero-area-1 {
     padding: 100px 0 50px;
+
     h1 {
       font-size: 38px;
       letter-spacing: -0.57px;
     }
+
     p {
       font-size: 1rem;
     }
+
     .buttons {
       margin-bottom: 20px;
+
       .button {
         &.ac-button {
           margin-bottom: 0.5rem;
@@ -961,6 +1002,7 @@ Responsive Classes
           padding: 0.5rem 1rem;
         }
       }
+
       .play-buttons {
         a {
           span {
@@ -972,13 +1014,16 @@ Responsive Classes
         }
       }
     }
+
     .news-message {
       padding: 15px;
     }
+
     .h-right-content {
       margin-right: 0;
     }
   }
+
   .products-features {
     .products-description-wrapper {
       .single-product {
@@ -997,28 +1042,36 @@ Responsive Classes
       font-size: 28px;
       margin-bottom: 15px;
     }
+
     .subscription-message {
       padding: 0;
     }
   }
+
   .social-connect-area {
     padding: 50px 0;
+
     h2 {
       font-size: 28px;
     }
+
     .connect-message {
       margin-right: 0;
     }
   }
+
   .social-prove-brand-area {
     padding: 30px 0 0;
+
     .container {
       margin-top: 0 !important;
     }
+
     .brand-image-wrapper {
       padding: 0 !important;
     }
   }
+
   .is-paddingless-desktop {
     padding: 0.75rem;
   }
@@ -1028,13 +1081,16 @@ Responsive Classes
 @media (min-width: 1024px) and (max-width: 1215px) {
   .hero-area-1 {
     padding: 100px 0 50px;
+
     h1 {
       font-size: 38px;
       letter-spacing: -0.57px;
     }
+
     p {
       font-size: 1rem;
     }
+
     .buttons {
       .button {
         &.ac-button {
@@ -1043,6 +1099,7 @@ Responsive Classes
           padding: 0.5rem 1rem;
         }
       }
+
       .play-buttons {
         a {
           span {
@@ -1054,10 +1111,12 @@ Responsive Classes
         }
       }
     }
+
     .h-right-content {
       margin-right: 0;
     }
   }
+
   .products-features {
     .products-description-wrapper {
       .single-product {
@@ -1076,24 +1135,31 @@ Responsive Classes
       font-size: 28px;
       margin-bottom: 15px;
     }
+
     .subscription-message {
       padding: 0;
     }
   }
+
   .social-connect-area {
     padding: 50px 0;
+
     h2 {
       font-size: 28px;
     }
+
     .connect-message {
       margin-right: 0;
     }
   }
+
   .social-prove-brand-area {
     padding: 30px 0 0;
+
     .container {
       margin-top: 0 !important;
     }
+
     .brand-image-wrapper {
       padding: 0 !important;
     }
@@ -1102,78 +1168,106 @@ Responsive Classes
 
 @media (min-width: 1216px) and (max-width: 1600px) {
   .hero-area-1 {
-    // padding: 100px 0 50px;
+    padding: 150px 0 100px;
+
     h1 {
       font-size: 58px;
       letter-spacing: -0.57px;
     }
+
     p {
       font-size: 1.3rem;
     }
-    .buttons {
-      .button {
-        &.ac-button {
-          margin-bottom: 0.5rem;
-          margin-right: 0.5rem !important;
-          padding: 0.5rem 1rem;
-        }
-      }
-      .play-buttons {
-        a {
-          span {
-            font-size: 20px;
-            width: 24px;
-            height: 24px;
-            margin-right: 0.3rem;
-          }
-        }
-      }
-    }
+
     .h-right-content {
-      margin-right: 0;
+      margin-right: -60px;
+    }
+
+    .buttons {
+      margin-bottom: 15px;
     }
   }
+
+  .products-area {
+    .single-product {
+      padding: 35px 20px;
+    }
+  }
+
+  .others-products {
+    h2 {
+      font-size: 28px;
+    }
+  }
+
   .products-features {
     .products-description-wrapper {
       .single-product {
         &:after {
-          right: 0;
-          width: 100%;
+          right: -100%;
+          width: 200%;
         }
       }
     }
   }
 
   .subscription-area {
-    padding: 50px 0;
+    padding: 70px 0 50px;
 
     h2 {
       font-size: 28px;
       margin-bottom: 15px;
     }
+
     .subscription-message {
       padding: 0;
     }
   }
+
   .social-connect-area {
-    padding: 50px 0;
+    padding: 50px 0 150px;
+
     h2 {
       font-size: 28px;
+      letter-spacing: 0.3px;
     }
+
     .connect-message {
       margin-right: 0;
     }
+
+    .single-card {
+      padding: 35px 20px;
+      .card-top {
+        .card-icon {
+          width: 50px;
+          height: 50px;
+          margin-right: 1rem;
+        }
+        .count {
+          h2 {
+            font-size: 28px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
   }
+
   .social-prove-brand-area {
     padding: 30px 0 0;
+
     .container {
-      margin-top: 0 !important;
+      margin-top: -80px !important;
     }
+
     .brand-image-wrapper {
       padding: 0 !important;
     }
   }
 }
 
-@media (min-width: 1408px) {
-}
+@media (min-width: 1408px) {}

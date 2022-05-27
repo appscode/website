@@ -9216,6 +9216,7 @@ Responsive Classes
   letter-spacing: 1.25px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+  text-transform: uppercase;
   /* 1c1c1c */
   color: #1c1c1c;
 }
@@ -9298,13 +9299,6 @@ Responsive Classes
   color: #3b3030;
   font-size: 15px;
   margin-bottom: 30px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  line-clamp: 4;
-  -webkit-line-clamp: 4;
-  box-orient: vertical;
-  -webkit-box-orient: vertical;
 }
 
 .press-area .press-content .press-button-wrapper {
@@ -9639,6 +9633,9 @@ Responsive Classes
 }
 
 @media (min-width: 1216px) and (max-width: 1600px) {
+  .hero-area-1 {
+    padding: 150px 0 100px;
+  }
   .hero-area-1 h1 {
     font-size: 58px;
     letter-spacing: -0.57px;
@@ -9646,26 +9643,24 @@ Responsive Classes
   .hero-area-1 p {
     font-size: 1.3rem;
   }
-  .hero-area-1 .buttons .button.ac-button {
-    margin-bottom: 0.5rem;
-    margin-right: 0.5rem !important;
-    padding: 0.5rem 1rem;
-  }
-  .hero-area-1 .buttons .play-buttons a span {
-    font-size: 20px;
-    width: 24px;
-    height: 24px;
-    margin-right: 0.3rem;
-  }
   .hero-area-1 .h-right-content {
-    margin-right: 0;
+    margin-right: -60px;
+  }
+  .hero-area-1 .buttons {
+    margin-bottom: 15px;
+  }
+  .products-area .single-product {
+    padding: 35px 20px;
+  }
+  .others-products h2 {
+    font-size: 28px;
   }
   .products-features .products-description-wrapper .single-product:after {
-    right: 0;
-    width: 100%;
+    right: -100%;
+    width: 200%;
   }
   .subscription-area {
-    padding: 50px 0;
+    padding: 70px 0 50px;
   }
   .subscription-area h2 {
     font-size: 28px;
@@ -9675,19 +9670,34 @@ Responsive Classes
     padding: 0;
   }
   .social-connect-area {
-    padding: 50px 0;
+    padding: 50px 0 150px;
   }
   .social-connect-area h2 {
     font-size: 28px;
+    letter-spacing: 0.3px;
   }
   .social-connect-area .connect-message {
     margin-right: 0;
+  }
+  .social-connect-area .single-card {
+    padding: 35px 20px;
+  }
+  .social-connect-area .single-card .card-top .card-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+  }
+  .social-connect-area .single-card .card-top .count h2 {
+    font-size: 28px;
+  }
+  .social-connect-area .single-card .card-top .count p {
+    font-size: 13px;
   }
   .social-prove-brand-area {
     padding: 30px 0 0;
   }
   .social-prove-brand-area .container {
-    margin-top: 0 !important;
+    margin-top: -80px !important;
   }
   .social-prove-brand-area .brand-image-wrapper {
     padding: 0 !important;
@@ -16023,4 +16033,3 @@ Responsive Classes
   documentation page end
 ==============================================*/
 }
-/*# sourceMappingURL=main.css.map */

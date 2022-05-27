@@ -31,16 +31,19 @@
             </div>
           </div>
           <!-- buttons  -->
-
-          <!-- news connect-message start  -->
-          <a href="#" class="news-message" data-aos="fade-up" data-aos-duration="900"><span>Visit our booth BN3 at the
-              <strong>TechCrunch Disrupt SF 2022</strong>Startup Alley on Oct 4, 2022!</span></a>
-          <!-- news connect-message end -->
         </div>
         <div class="column is-6">
           <div class="h-right-content">
             <img src="{{ $p.hero_area.hero_image }}" alt="" />
           </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <!-- news connect-message start  -->
+          <a href="#" class="news-message" data-aos="fade-up" data-aos-duration="900"><span>Visit our booth BN3 at the
+              <strong>TechCrunch Disrupt SF 2022</strong>Startup Alley on Oct 4, 2022!</span></a>
+          <!-- news connect-message end -->
         </div>
       </div>
     </div>
@@ -56,9 +59,8 @@
         <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
           data-aos="fade-up" data-aos-duration="500">
           <a href="{{ $product.url }}" class="single-product">
-            <div class="product-logo"><img src="{{ $product.logo }}"
-                alt="kubedb-logo"></div>
-            <p>{{ $product.description | safeHTML  }}</p>
+            <div class="product-logo"><img src="{{ $product.logo }}" alt="kubedb-logo"></div>
+            <p class="is-ellipsis-4">{{ $product.description | safeHTML  }}</p>
             <button class="button ac-button is-transparent">LEARN MORE <span class="material-icons-outlined">
                 arrow_forward
               </span></button>
@@ -132,7 +134,7 @@
       <div class="column is-9 is-paddingless-desktop">
         <div class="products-description-wrapper">
           <!-- single product start  -->
-           {{ range $products := $p.products }}
+          {{ range $products := $p.products }}
           <div class="single-product {{$products.product}}" data-serialscrolling-target="{{ $products.id }}">
             <div class="columns">
               <div class="column is-6" data-aos="fade-up" data-aos-duration="600">
@@ -216,7 +218,7 @@
                     src="{{$social_link.icon}}" alt=""></span>{{ $social_link.text }}</a>
             </li>
             {{ end }}
-          
+
           </ul>
         </div>
       </div>
@@ -296,7 +298,7 @@
             <h3>
               <a href="{{ $article.link }}">{{ $article.title }}</a>
             </h3>
-            <p>
+            <p class="is-ellipsis-3">
               {{ $article.summary }}
             </p>
             <div class="press-button-wrapper">
