@@ -9656,8 +9656,8 @@ Responsive Classes
     font-size: 28px;
   }
   .products-features .products-description-wrapper .single-product:after {
-    right: -100%;
-    width: 200%;
+    right: -160px;
+    width: calc(100% + 160px);
   }
   .subscription-area {
     padding: 70px 0 50px;
