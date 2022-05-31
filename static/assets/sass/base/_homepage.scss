@@ -13,9 +13,9 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 1);
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.9;
     background-size: 50%;
   }
 }
@@ -97,7 +97,7 @@
     color: #3e393e;
     background: #ccffe5;
 
-    border: 1px solid $ac-primary;
+    border: 1px solid $ac-white-light;
     padding: 12px 25px;
     border-radius: 2px;
 
@@ -399,13 +399,15 @@
   .product-description {
     .brand {
       height: 30px;
-      margin-bottom: 30px;
+      margin-bottom: 1rem;
 
       img {
         height: 100%;
       }
     }
-
+    h4 {
+      margin-bottom: 1rem;
+    }
     p {
       font-weight: 400;
       font-size: 16px;
@@ -974,9 +976,11 @@ Responsive Classes
 }
 
 // // Small devices (landscape phones, 576px and up)
-@media (max-width: 500px) {}
+@media (max-width: 500px) {
+}
 
-@media (min-width: 501px) and (max-width: 768.98px) {}
+@media (min-width: 501px) and (max-width: 768.98px) {
+}
 
 // Medium devices (tablets, 769px and up)
 @media (min-width: 769px) and (max-width: 1023.98px) {
@@ -1254,7 +1258,6 @@ Responsive Classes
         }
       }
     }
-
   }
 
   .social-prove-brand-area {
@@ -1270,4 +1273,5 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1408px) {}
+@media (min-width: 1408px) {
+}
