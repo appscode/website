@@ -1,20 +1,18 @@
-{{ $productName := .Params.product_name }}
-{{ $p := (index .Site.Data.products (default "appscode" $productName)) }}
+{{ $p := (index .Site.Data.products .Site.Params.product_key) }}
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   {{ template "_internal/google_analytics_async.html" . }}
-  <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="theme-color" content="{{ $p.website.themeColor }}">
-  <title>{{$p.fullname}}</title>
-  <meta name="description" content="{{ $p.summary | plainify }}">
+  <title>{{ default $p.fullname .Title }}</title>
+  <meta name="description" content="{{ default ($p.summary | plainify) .Description }}">
   <meta name="author" content="{{ $p.author }}">
-  <meta name="keywords" content="{{ $p.keywords }}">
+  <meta name="keywords" content="{{ default $p.keywords .Keywords }}">
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/products/{{ $p.key }}/icons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/products/{{ $p.key }}/icons/apple-icon-60x60.png">
@@ -31,25 +29,27 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/products/{{ $p.key }}/icons/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/products/{{ $p.key }}/icons/favicon-16x16.png">
   <link rel="manifest" href="/assets/images/products/{{ $p.key }}/icons/manifest.json">
+  <!-- vuejs3  -->
+  <!-- <script src="https://unpkg.com/vue@3"></script> -->
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/assets/images/products/{{ $p.key }}/icons/ms-icon-144x144.png">
   <!-- Google / Search Engine Tags -->
-  <meta itemprop="name" content="{{ $p.fullname }}">
+  <meta itemprop="name" content="{{ $p.title }}">
   <meta itemprop="description" content="{{ $p.summary | plainify }}">
   <meta itemprop="image" content="{{ $.Site.BaseURL }}/assets/images/products/{{ $p.key }}/{{ $p.key }}-1280x640.png">
   <!-- twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@{{ strings.TrimPrefix `https://twitter.com/` $p.socialLinks.twitter }}">
-  <meta name="twitter:title" content="{{$p.fullname}}">
+  <meta name="twitter:title" content="{{$p.title}}">
   <meta name="twitter:creator" content="@{{ strings.TrimPrefix `https://twitter.com/` $p.socialLinks.twitter }}">
   <meta name="twitter:description" content="{{ $p.summary | plainify }}">
   <meta name="twitter:image:src"
     content="{{ $.Site.BaseURL }}/assets/images/products/{{ $p.key }}/{{ $p.key }}-1280x640.png">
   <!-- facebook -->
   <meta property="og:url" content="{{ $.Site.BaseURL }}">
-  <meta property="og:title" content="{{$p.fullname}}">
+  <meta property="og:title" content="{{$p.title}}">
   <meta property="og:description" content="{{ $p.summary | plainify }}">
-  <meta property="og:site_name" content="{{ $p.fullname }}">
+  <meta property="og:site_name" content="{{ $p.title }}">
   <meta property="og:image"
     content="{{ $.Site.BaseURL }}/assets/images/products/{{ $p.key }}/{{ $p.key }}-1280x640.png">
   <meta property="og:type" content="article">
@@ -59,27 +59,35 @@
   <link
     href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
     rel="stylesheet">
-  <!-- Onscroll animation CSS -->
+  <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Bulma Carousel CSS -->
   <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
   <!-- Bulma tooltip CSS -->
   <link rel="stylesheet" href="/assets/css/bulma-tooltip.min.css" />
+  <!-- Magnific-popup css  -->
+  <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
   <!-- Bulma CSS -->
-  <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+  {{ with $style := resources.Get "assets/css/bulma.min.css" | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+  {{ end }}
+  <!-- highlight css  -->
+  <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"> -->
   <!-- owl carousel CSS -->
   <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
-  {{ block "head-footer" . }}
-  {{ end }}
+
+  <!-- <link rel="stylesheet" href="/assets/css/bulma.min.css" /> -->
+  <!-- Keen slider CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.css" />
   <!-- Custom CSS -->
-  <!-- {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
+  {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-  {{ end }} -->
-  <link rel="stylesheet" href="/assets/sass/main.css" />
+  {{ end }}
+  <!-- <link rel="stylesheet" href="/assets/sass/main.css" /> -->
 </head>
 
-<body {{if $productName}}class="{{$productName}}" {{end}}>
+<body class="{{$p.key}}" id="app">
   <!--[if lte IE 9]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
@@ -94,7 +102,6 @@
     {{ block "header-top" . }}
     <!-- new navbar area start  -->
     <div class="navbar-area active-headroom header--fixed">
-    <div class="navbar-area header--fixed">
       <div class="navbar-appscode-wrapper ">
         <!-- appscode navbar start  -->
         {{ $currentPageType := index (split .Page.Permalink "/") 3 }}
@@ -247,8 +254,26 @@
                       });
                     });
                   </script>
-                </li>
 
+                </li>
+                <!-- <li class="nav-item">
+              <button class="link">Services <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+              <div class="mega-menu-wrapper">
+                <div class="mega-menu-inner ac-grid-container">
+                  <div class="linkable-nav-items">
+                    <a class="navbar-item" href="{{ $.Site.Params.domain_appscode }}/consulting/">
+                      Consulting
+                    </a>
+                    <a class="navbar-item" href="{{ $.Site.Params.domain_appscode }}/training/">
+                      Training
+                    </a>
+                    <a class="navbar-item" href="{{ $.Site.Params.domain_appscode }}/support/">
+                      Support
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li> -->
                 <li class="nav-item">
                   <button class="link">Open Source <i class="fa fa-angle-down" aria-hidden="true"></i></button>
                   <!-- mega-menu wrapper start  -->
@@ -349,7 +374,8 @@
                   </script>
                 </li>
                 <li class="nav-item">
-                  <a href="/webinar" target="_blank" class="link">Webinar <span class="whats-new">New</span></a>
+                  <a href="https://appscode.com/webinar" target="_blank" class="link">Webinar <span
+                      class="whats-new">New</span></a>
                 </li>
               </ul>
               <!-- navbar items end -->
@@ -372,7 +398,7 @@
                       }
                     }
                   } //
-                  // console.log('GET', 'https://license-issuer.appscode.com/_/webinars/');
+                  console.log('GET', 'https://license-issuer.appscode.com/_/webinars/');
                   xhr.open('GET', 'https://license-issuer.appscode.com/_/webinars/');
                   xhr.send();
                 }());
@@ -404,6 +430,34 @@
                             <!-- <li><a href="#" target="_blank">Community</a></li> -->
                           </ul>
                         </div>
+                        <!-- single resources list  -->
+
+                        <!-- single resources list  -->
+                        <!--                         <div class="list-items">
+                          <h6>DOCUMENTATION</h6>
+                          <ul>
+                            <li><a
+                                href="https://voyagermesh.com/docs"
+                                target="_blank">Voyager</a></li>
+                            <li><a
+                                href="https://appscode.com/products/guard/latest/welcome/"
+                                target="_blank">Guard</a></li>
+                            <li><a
+                                href="https://appscode.com/products/kubed/latest/welcome/"
+                                target="_blank">Kubed</a>
+                            </li>
+                            <li><a
+                                href="https://pharmer.dev/docs/latest/welcome/"
+                                target="_blank">Pharmer</a></li>
+                            <li><a
+                                href="https://appscode.com/products/swift/latest/welcome/"
+                                target="_blank">Swift</a>
+                            </li>
+                            <li><a
+                                href="https://appscode.com/products/searchlight/latest/welcome/"
+                                target="_blank">Searchlight</a></li>
+                          </ul>
+                        </div> -->
                         <!-- single resources list  -->
 
                         <!-- single resources list  -->
@@ -454,11 +508,16 @@
                             <!-- single press end -->
                             {{ end }}
                             {{ end }}
+
                             <a href="#" class="button ac-button inline-button">See More <span
                                 class="material-icons">arrow_forward</span></a>
                           </div>
+
+
                         </div>
                         <!-- single resources list  -->
+
+
                       </div>
                       <!-- list menu items end -->
                     </div>
@@ -475,15 +534,203 @@
             </div>
             {{ $currentPageType := index (split .Page.Permalink "/") 3 }}
             <a href="{{ $.Site.Params.domain_appscode }}/contact/"
-              class="button ac-button is-secondary {{ if eq $currentPageType "docs" }} is-hidden {{ end }}">CONTACT
+              class="button ac-button is-primary {{ if eq $currentPageType "docs" }} is-hidden {{ end }}">CONTACT
               SALES</a>
           </div>
         </div>
         <!-- appscode navbar end -->
       </div>
+      {{ block "header-bottom" . }}
+      {{ $p := (index .Site.Data.products .Site.Params.product_key) }}
+      <div class="navbar-appscode-wrapper navbar-product">
+        <!-- product navbar start  -->
+        {{ $currentPageType := index (split .Page.Permalink "/") 3 }}
+        <div class="navbar-appscode{{ if eq $currentPageType "docs" }} bb-1 {{ else }}
+          container{{ end }}">
+          <!-- navbar left start  -->
+          <div class="navbar-left">
+            <div class="navbar-brand">
+              <a href="{{ index $.Site.Params $p.website.domainKey }}{{ $p.website.path }}"><img src="{{ $p.logo.src }}"
+                  alt="{{ $p.logo.alt }}" alt="{{ $p.logo.alt }}"></a>
 
-     
-      <!-- navbar product end -->
+              <!-- {{ $currentPageType := index (split .Page.Permalink "/") 3 }} -->
+              {{ if eq $currentPageType "docs" }}
+              <!-- version select start  -->
+              {{ $p := (index .Site.Data.products .Site.Params.product_key) }}
+              {{ $currentBranch := (index (split .Params.menu_name "_") 1) }}
+              <div class="product-version ml-20">
+                <div class="dropdown">
+                  <div class="dropdown-trigger">
+                    <button class="button is-justify-content-space-between" aria-haspopup="true"
+                      aria-controls="dropdown-menu3">
+
+
+                      {{ range $v := $p.versions }}
+                      {{ if $v.show }}
+                      {{ if and $v.hostDocs (eq $v.version $currentBranch) }}
+                      <span>{{ $v.version }}</span>
+                      {{ if eq $v.version $p.latestVersion }}
+                      <span class="new-item">Latest</span>
+                      {{ end }}
+                      {{ end }}
+                      {{ end }}
+                      {{ end }}
+                      <span class="arrow">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                      {{ range $v := $p.versions }}
+                      {{ if $v.show }}
+                      {{ if $v.hostDocs }}
+                      <a href="/docs/{{ $v.version }}/" class="dropdown-item">{{ $v.version }}
+                        {{ if eq $v.version $p.latestVersion }} <div class="new-item ml-15">Latest</div> {{ end }}</a>
+                      {{ else }}
+                      <a href="https://github.com/{{ $p.docRepo }}/tree/{{ $v.version }}/docs" target="_blank"
+                        class="dropdown-item">{{ $v.version }}</a>
+                      {{ end }}
+                      {{ end }}
+                      {{ end }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- version select end -->
+              {{ end }}
+
+              <a role="button" class="navbar-burger width-65 font-size-14 has-text-weight-bold pl-6 pr-6"
+                aria-label="menu" aria-expanded="false">
+                MENU <i class="fa fa-angle-down pl-5"></i>
+              </a>
+            </div>
+          </div>
+          <!-- navbar left end -->
+          <!-- navbar right start  -->
+          <div class="navbar-right">
+            <ul>
+              {{ range .Site.Menus.main }}
+              {{ if .HasChildren }}
+              <li class="nav-item">
+                <button href="#" class="link">{{ .Name }} <i class="fa fa-angle-down"></i></button>
+
+                <!-- mega-menu wrapper -->
+                <div class="mega-menu-wrapper">
+
+                  <!-- ac-grid-container -->
+                  <div class="mega-menu-inner container">
+                    <button class="button ac-button inline-button back-button"><span
+                        class="material-icons-outlined">arrow_back</span>Back</button>
+                    <!-- product start  -->
+                    <div class="product-menu database-list">
+                      {{ range .Children }}
+                      {{ if eq .Parent $.Site.Params.main_menu_dropdown_item }}
+                      <!-- single product start  -->
+                      <a href="/kubernetes/databases/run-and-manage-{{ .Identifier }}-on-kubernetes
+" class="single-product">
+                        {{ if .Pre }}
+                        <div class="product-logo">
+                          <img src="{{ .Pre }}" alt="Menu Icon">
+                        </div>
+                        {{ end }}
+                        <div class="product-info">
+                          <h6>{{ .Name }}</h6>
+                          <!-- <p>static content</p> -->
+                        </div>
+                        <div class="navigate-icon">
+                          <span class="material-icons">
+                            arrow_forward
+                          </span>
+                        </div>
+                      </a>
+                      <!-- single product end -->
+                      {{ else }}
+                      <a href="{{.URL}}" class="single-database">{{ .Name }}</a>
+                      {{ end }}
+                      {{ end }}
+
+                    </div>
+                    <!-- product end -->
+
+                    <!-- product description start  -->
+
+                    <!-- single product description start  -->
+                    <div class="product-description is-block">
+                      <div class="video-content">
+                        <div class="yt-thumbnail">
+                          <a href="https://www.youtube.com/watch?v=hBHxMtSjKo4" class="play-icon yt-video">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                              stroke="#ffffff">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                          </a>
+                          <img src="https://img.youtube.com/vi/hBHxMtSjKo4/sddefault.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single product description end  -->
+
+                    <!-- product description end -->
+                  </div>
+                </div>
+                <!-- mega-menu wrapper -->
+              </li>
+              {{else}}
+              {{ if eq .Name "Documentation" }}
+              <li class="nav-item">
+                <a href="/docs/{{ $p.latestVersion }}/welcome/" class="link">{{ .Name }}</a>
+              </li>
+              {{ else }}
+              <li class="nav-item">
+                <a href="{{.URL}}" class="link">{{ .Name }}</a>
+              </li>
+              {{ end }}
+              {{ end }}
+              {{end}}
+            </ul>
+
+            <!-- Community link start  -->
+            <div class="community-items ml-70">
+              {{ if $p.socialLinks.github }}
+              <a href="{{$p.socialLinks.github}}" class="community-item" target="_blank">
+                <img src="/assets/images/icon/community/github-icon.svg" alt="github-icon">
+              </a>
+              {{ end }}
+              {{ if $p.socialLinks.twitter }}
+              <a href="{{$p.socialLinks.twitter}}" class="community-item" target="_blank">
+                <img src="/assets/images/icon/community/twitter-icon.svg" alt="twitter-icon">
+              </a>
+              {{ end }}
+              {{ if $p.socialLinks.slack }}
+              <a href="{{$p.socialLinks.slack}}" class="community-item" target="_blank">
+                <img src="/assets/images/icon/community/slack-icon.svg" alt="slack-icon">
+              </a>
+              {{ end }}
+            </div>
+            <!-- Community link end -->
+            <!-- action button start  -->
+            {{ $currentPageType := index (split .Page.Permalink "/") 3 }}
+            {{ if eq $currentPageType "docs" }}
+            <a href="/docs/{{ $p.latestVersion }}/setup/" class="button ac-button is-primary ml-8 height-40">TRY NOW
+              FREE</a>
+            {{ end }}
+            <!-- action button end -->
+
+          </div>
+          <!-- navbar right end -->
+        </div>
+        <!-- product navbar end -->
+        <!-- docs navbar start  -->
+        {{ block "documentation-menu" . }}
+        {{ end }}
+        <!-- docs navbar end -->
+
+      </div>
+      {{ end }}
 
       <script type="text/javascript">
         const navbarRightAll = document.querySelectorAll(".navbar-right");
@@ -522,221 +769,20 @@
     <!-- new navbar area end -->
     {{ end }}
 
-
-    <!-- navabar product start  -->
-    {{ block "header-bottom" . }}
-    {{ $productName := .Params.product_name }}
-    {{ if $productName }}
-    {{ $p := (index $.Site.Data.products $productName) }}
-    <div class="navbar-appscode-wrapper navbar-product mt-61">
-      <!-- product navbar start  -->
-      {{ $currentPageType := index (split .Page.Permalink "/") 3 }}
-      <div class="navbar-appscode{{ if eq $currentPageType "docs" }} bb-1 {{ else }}
-          container{{ end }}">
-        <!-- navbar left start  -->
-        <div class="navbar-left">
-          <div class="navbar-brand">
-            <a href="{{ index $.Site.Params $p.website.domainKey }}{{ $p.website.path }}"><img src="{{ $p.logo.src }}"
-                alt="{{ $p.logo.alt }}" alt="{{ $p.logo.alt }}"></a>
-
-            <!-- {{ $currentPageType := index (split .Page.Permalink "/") 3 }} -->
-            {{ if eq $currentPageType "docs" }}
-            <!-- version select start  -->
-            {{ $p := (index .Site.Data.products .Site.Params.product_key) }}
-            {{ $currentBranch := (index (split .Params.menu_name "_") 1) }}
-            <div class="product-version ml-20">
-              <div class="dropdown">
-                <div class="dropdown-trigger">
-                  <button class="button is-justify-content-space-between" aria-haspopup="true"
-                    aria-controls="dropdown-menu3">
-
-
-                    {{ range $v := $p.versions }}
-                    {{ if $v.show }}
-                    {{ if and $v.hostDocs (eq $v.version $currentBranch) }}
-                    <span>{{ $v.version }}</span>
-                    {{ if eq $v.version $p.latestVersion }}
-                    <span class="new-item">Latest</span>
-                    {{ end }}
-                    {{ end }}
-                    {{ end }}
-                    {{ end }}
-                    <span class="arrow">
-                      <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </span>
-                  </button>
-                </div>
-                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                  <div class="dropdown-content">
-                    {{ range $v := $p.versions }}
-                    {{ if $v.show }}
-                    {{ if $v.hostDocs }}
-                    <a href="/docs/{{ $v.version }}/" class="dropdown-item">{{ $v.version }}
-                      {{ if eq $v.version $p.latestVersion }} <div class="new-item ml-15">Latest</div> {{ end }}</a>
-                    {{ else }}
-                    <a href="https://github.com/{{ $p.docRepo }}/tree/{{ $v.version }}/docs" target="_blank"
-                      class="dropdown-item">{{ $v.version }}</a>
-                    {{ end }}
-                    {{ end }}
-                    {{ end }}
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- version select end -->
-            {{ end }}
-
-            <a role="button" class="navbar-burger width-65 font-size-14 has-text-weight-bold pl-6 pr-6"
-              aria-label="menu" aria-expanded="false">
-              MENU <i class="fa fa-angle-down pl-5"></i>
-            </a>
-          </div>
-        </div>
-        <!-- navbar left end -->
-        <!-- navbar right start  -->
-        <div class="navbar-right">
-          <ul>
-            {{ range (index .Site.Menus (printf "product_%s" $productName)) }}
-            {{ if .HasChildren }}
-            <li class="nav-item">
-              <button href="#" class="link">{{ .Name }} <i class="fa fa-angle-down"></i></button>
-
-              <!-- mega-menu wrapper -->
-              <div class="mega-menu-wrapper">
-
-                <!-- ac-grid-container -->
-                <div class="mega-menu-inner container">
-                  <button class="button ac-button inline-button back-button"><span
-                      class="material-icons-outlined">arrow_back</span>Back</button>
-                  <!-- product start  -->
-                  <div class="product-menu database-list">
-                    {{ range .Children }}
-                    {{ if eq .Parent $.Site.Params.main_menu_dropdown_item }}
-                    <!-- single product start  -->
-                    <a href="/kubernetes/databases/run-and-manage-{{ .Identifier }}-on-kubernetes
-" class="single-product">
-                      {{ if .Pre }}
-                      <div class="product-logo">
-                        <img src="{{ .Pre }}" alt="Menu Icon">
-                      </div>
-                      {{ end }}
-                      <div class="product-info">
-                        <h6>{{ .Name }}</h6>
-                        <!-- <p>static content</p> -->
-                      </div>
-                      <div class="navigate-icon">
-                        <span class="material-icons">
-                          arrow_forward
-                        </span>
-                      </div>
-                    </a>
-                    <!-- single product end -->
-                    {{ else }}
-                    <a href="{{.URL}}" class="single-database">{{ .Name }}</a>
-                    {{ end }}
-                    {{ end }}
-
-                  </div>
-                  <!-- product end -->
-
-                  <!-- product description start  -->
-
-                  <!-- single product description start  -->
-                  <div class="product-description is-block">
-                    <div class="video-content">
-                      <div class="yt-thumbnail">
-                        <a href="https://www.youtube.com/watch?v=hBHxMtSjKo4" class="play-icon yt-video">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="#ffffff">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </a>
-                        <img src="https://img.youtube.com/vi/hBHxMtSjKo4/sddefault.jpg" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <!-- single product description end  -->
-
-                  <!-- product description end -->
-                </div>
-              </div>
-              <!-- mega-menu wrapper -->
-            </li>
-            {{else}}
-            {{ if eq .Name "Documentation" }}
-            <li class="nav-item">
-              <a href="/docs/{{ $p.latestVersion }}/welcome/" class="link">{{ .Name }}</a>
-            </li>
-            {{ else }}
-            <li class="nav-item">
-              <a href="{{.URL}}" class="link">{{ .Name }}</a>
-            </li>
-            {{ end }}
-            {{ end }}
-            {{end}}
-          </ul>
-
-          <!-- Community link start  -->
-          <div class="community-items ml-70">
-            {{ if $p.socialLinks.github }}
-            <a href="{{$p.socialLinks.github}}" class="community-item" target="_blank">
-              <img src="./images/icon/community/github-icon.svg" alt="github-icon">
-            </a>
-            {{ end }}
-            {{ if $p.socialLinks.twitter }}
-            <a href="{{$p.socialLinks.twitter}}" class="community-item" target="_blank">
-              <img src="/assets/images/icon/community/twitter-icon.svg" alt="twitter-icon">
-            </a>
-            {{ end }}
-            {{ if $p.socialLinks.slack }}
-            <a href="{{$p.socialLinks.slack}}" class="community-item" target="_blank">
-              <img src="/assets/images/icon/community/slack-icon.svg" alt="slack-icon">
-            </a>
-            {{ end }}
-          </div>
-          <!-- Community link end -->
-          <!-- action button start  -->
-          {{ $currentPageType := index (split .Page.Permalink "/") 3 }}
-          {{ if eq $currentPageType "docs" }}
-          <a href="/docs/{{ $p.latestVersion }}/setup/" class="button ac-button is-primary ml-8 height-40">TRY NOW
-            FREE</a>
-          {{ end }}
-          <!-- action button end -->
-
-        </div>
-        <!-- navbar right end -->
-      </div>
-      <!-- product navbar end -->
-      <!-- docs navbar start  -->
-      {{ block "documentation-menu" . }}
-      {{ end }}
-      <!-- docs navbar end -->
-
-    </div>
-   {{ end }}
-   {{ end }}
-
-   {{ block "documentation-menu" . }}
-   {{ end }}
-    <!-- navabar product end  -->
-</div>
-    
   </header>
   {{ end }}
   <!-- ========================== header area end ==========================-->
 
   <div class="modal-backdrop"></div>
 
+
   <!-- Code that all your templates share, like a header -->
   {{ block "main" . }}
   <!-- The part of the page that begins to differ between templates -->
   {{ end }}
 
-
   {{ block "testimonial" . }}
+
   <!-- ==========================testimonial area 2022 start ==========================  -->
   <section class="testimonial-area">
 
@@ -785,77 +831,50 @@
     </div>
   </section>
   <!--========================== testimonial area 2022 end  ==========================-->
-  {{ end }}
 
-
-  <!-- our customer logo area start -->
-  {{ block "customer-logos" . }}
-  <div class="logo-carusal-area ssp-y-80">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-10 is-offset-1 has-text-centered">
-          <!-- brand logo start -->
-          <div class="brand-logo-wrapper mt-10">
-            {{ range $customer := $.Site.Data.customers }}
-            {{ if $customer.show }}
-            <a class="single-brand-logo">
-              <img src="{{ $customer.logo }}" alt="{{ $customer.name }}" class="img" />
-            </a>
-            {{ end }}
-            {{ end }}
-          </div>
-          <!-- brand logo end -->
-        </div>
-      </div>
-    </div>
-  </div>
-  {{ end }}
-  <!-- our customer logo area end -->
-
-  <!-- call to action area start -->
   {{ block "cta-install" . }}
-
-  {{ $productName := .Params.product_name }}
-  {{ if $productName }}
-  {{ $p := (index $.Site.Data.products $productName) }}
-  <section class="cta-area sp-y-80 pt-0">
+  {{ $p := (index .Site.Data.products .Site.Params.product_key) }}
+  <!--========================== call to action start ========================== -->
+  <section class="cta-area">
     <div class="container">
-      <div class="cta-padding">
-        <div class="columns">
-          <div class="column is-6">
-            <!-- cta text strat -->
-            <div class="cta-text">
-              <h2 data-aos="fade-up">Ready to Get Started?</h2>
-              <p data-aos="fade-up" data-aos-duration="500">Install <strong>{{ $p.name }}</strong> in your Kubernetes
-                cluster</p>
+      <div class="cta-area-inner">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column is-9">
+              <h3 data-aos="fade-up" data-aos-duration="500">Run and Manage your Database on Kubernetes FREE !</h3>
+              <p data-aos="fade-up" data-aos-duration="700">{{ $p.name }} community edition is FREE to use on any
+                supported Kubernetes engines. You can deploy and
+                manage
+                your database in Kubernetes using {{ $p.name }}. There is no up-front investment required. We
+                offer a 30 days license FREE
+                of cost to try {{ $p.name }} Enterprise edition.
+              </p>
             </div>
-            <!-- cta text end -->
-          </div>
-          <div class="column is-6 has-text-right is-mobile">
-            <div class="cta-button d-table">
-              <!-- cta button start -->
-              <div class="cta-button-inner d-table-cell" data-aos="fade-up" data-aos-duration="1000">
-                <a href="/products/{{ $p.key }}/{{ $p.latestVersion }}/setup/" class="button kd-button kd-primary">Try
-                  Now for FREE!</a>
-              </div>
-              <!-- cta button end -->
+            <div class="column is-3  has-text-centered-touch has-text-right-desktop">
+              <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-white"><span>
+                  <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json"
+                    trigger="loop" target="a.is-white" trigger="hover"
+                    style="width:22px;height:22px; margin-right: 8px;">
+                  </lord-icon>
+                </span>CONTACT US</a>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
+  <!-- ==========================call to action end ========================== -->
+  {{ end }}
   {{ end }}
 
-  {{ end }}
-  <!-- call to action area end -->
-
-  <!-- top to button start -->
+  <!--========================== top to button start ========================== -->
   <button class="go-to-top" id="goTop">
     <i class="fa fa-angle-up" aria-hidden="true"></i>
   </button>
-  <!-- top to button end -->
-  <!-- footer area start -->
+  <!--========================== top to button end ==========================-->
+
+  <!--========================== footer area start========================== -->
   {{ block "footer" . }}
   <footer class="footer-area">
     <div class="footer-top">
@@ -1013,13 +1032,13 @@
     </div>
   </footer>
   {{ end }}
-  <!-- footer area end -->
+  <!-- ==========================footer area end ==========================-->
 
+  <!-- <script src="/assets/js/vue-elements.js"></script> -->
   <!-- integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" -->
   <script src="/assets/js/jquery-3.6.0.min.js"></script>
   <script src="/assets/js/owl.carousel.min.js"></script>
-  <!-- https://www.jqueryscript.net/menu/one-page-scroll-nav-serial.html -->
-  <script src="/assets/js/jquery.serialscrolling.min.js"></script>
+  <script src="/assets/js/headroom.min.js"></script>
 
   <!-- lordicon js  -->
   <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
@@ -1037,13 +1056,11 @@
   <!-- highlight js  -->
   <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script> -->
 
-
-  <!-- <script src="/assets/js/main.js"></script>
-    {{ with $style := resources.Get "assets/js/main.js" | resources.Fingerprint }}
-    <script src="{{ $style.RelPermalink }}"></script>
-    {{ end }} -->
+  <!-- Main JS -->
+  <!-- {{ with $style := resources.Get "assets/js/main.js" | resources.Fingerprint }}
+  <script src="{{ $style.RelPermalink }}"></script>
+  {{ end }} -->
   <script src="/assets/js/main.js"></script>
-
   <!-- Start of HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9255943.js"></script>
   <!-- End of HubSpot Embed Code -->
@@ -1061,8 +1078,21 @@
       s1.setAttribute('crossorigin', '*');
       s0.parentNode.insertBefore(s1, s0);
     })();
+
+    const backButtonAll = document.querySelectorAll(".back-button");
+    // create click event for all back button
+    Array.from(backButtonAll).forEach((el) => {
+      el.addEventListener("click", () => {
+        // closeset nav item ancestor
+        const activeNavElement = el.closest(".nav-item.is-active");
+        if (activeNavElement) activeNavElement.classList.remove("is-active");
+      })
+    });
   </script>
   <!--End of Tawk.to Script-->
+
 </body>
+
+
 
 </html>
