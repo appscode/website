@@ -2,63 +2,111 @@
 
 {{ $p := index $.Site.Data.products .Params.product_name }}
 
-<!-- hero area start -->
-<section class="hero-area">
+<!-- new hero area start   -->
+<!-- style="background-image: url(/assets/images/products/kubedb/hero-product-bg-dark.png);" -->
+<section class="hero-area is-product"
+  style="background-image:url(https://cdn.appscode.com/images/bg-image/gradient-bg.webp);">
+  <div class="shape">
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+  </div>
+  <div class="shape">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
   <div class="container">
-    <div>
-      <div class="columns">
-        <div class="column is-6">
-          <!-- hero content start -->
-          <div class="hero-area-content d-table">
-            <div class="hero-content-inner d-table-cell">
-              <h4  data-aos="fade-up">
-                {{ $p.name }}
-              </h4>
-              <h1  data-aos="fade-up" data-aos-duration="800">
-                {{ $p.tagline | safeHTML }}
-              </h1>
-              <div class="hero-area-button buttons"  data-aos="fade-up" data-aos-duration="1000">
-                <a href="meet-expert" class="button kd-button kd-primary"
-                  >Schedule a Demo</a
-                >
-                {{ if $p.datasheetFormID }}
-                <a href="datasheet" class="button kd-transparent-btn" data-aos="fade-up" data-aos-duration="1000"><span
-                    ><i
-                      class="fa fa-cloud-download"
-                      aria-hidden="true"
-                    ></i></span
-                  >Download Datasheet</a
-                >
-                {{ end }}
-              </div>
-              {{ if $p.videos.intro }}
-              <!-- video player button start -->
-              <div class="play-buttons"  data-aos="fade-up" data-aos-duration="1000">
-                <a href="#" id="playme" onclick="revealVideo('video','youtube')"
-                  ><span class="video-icon"
-                    ><i class="fa fa-play" aria-hidden="true"></i
-                  ></span>
-                  Watch the reel</a
-                >
-              </div>
-              <!-- video player button end -->
-              {{ end }}
-            </div>
-          </div>
-          <!-- hero content end -->
+    <div class="columns is-vcentered is-multiline">
+      <div class="column is-6 is-full-touch">
+        <h1> {{ $p.tagline | safeHTML }}</h1>
+        <!-- <h1> Run Production-Grade Databases on Kubernetes</h1> -->
+        <div class="buttons" data-aos="fade-up" data-aos-duration="700">
+          <a href="/docs/{{ $p.latestVersion }}/setup/" class="button ac-button is-primary">TRY NOW FREE</a>
+          <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-secondary"><span>
+              <lord-icon speed="0.50" src="https://cdn.lordicon.com/uvextprq.json" trigger="loop"
+                colors="primary:#ffffff;" style="width:22px;height:22px; margin-right: 8px;">
+              </lord-icon>
+            </span>GET IN TOUCH</a>
         </div>
-        <div class="column is-6 is-hidden-mobile">
-          <!-- hero image start -->
-          <div class="hero-area-img"  data-aos="fade-up" data-aos-duration="1000">
-            <img src="{{ $p.heroImage.src }}" alt="{{ $p.heroImage.alt }}" class="img" />
-          </div>
-          <!-- hero image end -->
-        </div>
+      </div>
+      <div class="column is-6 is-full-touch">
+        <div class="hero-area-right">
+          <img src="{{ $p.heroImage.src }}" alt="{{ $p.heroImage.alt }}" class="img" />
+        <!-- <img src="/assets/images/products/kubedb/hero-right-image.png" alt=""> -->
       </div>
     </div>
   </div>
 </section>
-<!-- hero area end -->
+<!-- new hero area end   -->
+
+<!-- social prove logo area start   -->
+<div class="social-prove-brand-area">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-12">
+        <div class="brand-image-wrapper owl-carousel">
+          {{ range $customer := $.Site.Data.customers }}
+          {{ if $customer.show }}
+          <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"></div>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- social prove logo area end -->
+<!-- product features area start  -->
+<section class="product-feaures-area mb-50">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="section-title has-text-centered">
+          <h2 class="is-gradient">Special Features</h2>
+          {{ if $p.summary }}
+          <p data-aos="fade-up" data-aos-duration="700">
+            {{ $p.summary | plainify }}
+          </p>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!-- is-centered -->
+    <div class="columns is-multiline is-centered">
+      <!-- single feature information start  -->
+      {{ range $f := $p.features }}
+      <div class="column is-half-tablet is-one-third-widescreen">
+        <a href="/features/{{ $f.url }}" class="single-features-item" data-aos="fade-up" data-aos-duration="500">
+          <div class="feature-icon">
+            <img src="{{ $f.icon.src }}" alt="{{ $f.icon.alt }}" />
+          </div>
+          <div class="feature-information">
+
+            <h5>{{ $f.title }}</h5>
+            <p class="is-ellipsis-2">{{ $f.summary }}</p>
+            <p class="is-ellipsis-2">{{ $f.description }}</p>
+            <button class="readmore-button mt-15">Read More<span
+                class="material-icons-outlined">arrow_forward</span></button>
+          </div>
+        </a>
+      </div>
+      {{end}}
+      <!-- single feature information end -->
+    </div>
+  </div>
+</section>
+<!-- product features area end -->
+
 
 {{ if $p.videos.intro }}
 <!-- video player frame and scripts start -->
@@ -93,50 +141,5 @@
 </script>
 <!-- video player frame and scripts end -->
 {{ end }}
-
-<!-- feature-area start -->
-<section class="product-feature-area sp-y-80">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-8 is-offset-2 has-text-centered">
-        <!-- section-title start -->
-        <div class="section-title is-main-title">
-          <h2 data-aos="fade-up">Product Features</h2>
-          {{ if $p.summary }}
-          <p>
-            {{ $p.summary }}
-          </p>
-          {{ end }}
-        </div>
-        <!-- section-title end -->
-      </div>
-    </div>
-    <div class="columns is-multiline">
-      {{ range $f := $p.features }}
-      <!-- single feature area start -->
-      <div class="column is-6"  data-aos="fade-up">
-      <div class="single-product-feature-wrapper">
-        <div class="product-feature-icon">
-          <img src="{{ $f.icon.src }}" alt="{{ $f.icon.alt }}" />
-        </div>
-        <div class="product-feature-content">
-          <div class="product-feature-title">
-            <h3>{{ $f.title }}</h3>
-            <p>{{ $f.summary }}</p>
-          </div>
-          <div class="product-feature-description">
-            <p>
-              {{ $f.description }}
-            </p>
-          </div>
-        </div>
-      </div>
-      </div>
-      <!-- single feature area end -->
-      {{ end }}
-    </div>
-  </div>
-</section>
-<!-- feature-area end -->
 
 {{ end }}

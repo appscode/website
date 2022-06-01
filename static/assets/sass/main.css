@@ -14250,6 +14250,322 @@ Responsive Classes
   opacity: 0.6;
 }
 
+.features-area .features-image {
+  position: relative;
+  z-index: 1;
+}
+
+.features-area .features-image img {
+  border-radius: 4px;
+}
+
+.features-area .features-image .check-list {
+  position: absolute;
+  top: 60px;
+  left: -150px;
+  left: -150px;
+}
+
+.features-area .features-description h2 {
+  line-height: 130%;
+}
+
+.features-area .features-description h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: -0.57px;
+  margin-bottom: 1rem;
+}
+
+.features-area .features-description p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.features-area .features-description p strong {
+  color: #1c1c1c;
+  font-weight: 500;
+}
+
+.features-area h3 {
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.features-area .check-list {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  width: 300px;
+  -webkit-box-shadow: 0px 2px 30px rgba(44, 60, 74, 0.08);
+          box-shadow: 0px 2px 30px rgba(44, 60, 74, 0.08);
+  border-radius: 0.5rem;
+}
+
+.features-area .check-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.features-area .check-list li:last-child {
+  margin-bottom: 0;
+}
+
+.features-area .check-list li span {
+  font-size: 18px;
+  margin-right: 0.8rem;
+  color: var(--ac-primary);
+}
+
+.single-features-item {
+  padding: 20px 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: 3.75rem auto;
+      grid-template-columns: 3.75rem auto;
+  border: 1px solid #dbdbde;
+  border-radius: 2px;
+  min-height: 126px;
+}
+
+.single-features-item:hover .readmore-button {
+  letter-spacing: 0;
+  color: var(--ac-primary);
+}
+
+.single-features-item:hover .readmore-button .material-icons-outlined {
+  margin-left: 20px;
+}
+
+.single-features-item .feature-icon {
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: #f1f1f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2px;
+}
+
+.single-features-item .feature-icon img {
+  height: 30px;
+}
+
+.single-features-item .feature-information h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.single-features-item .feature-information p {
+  font-size: 0.875rem;
+  line-height: 160%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: #3b3030;
+}
+
+.features-area .single-feature-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features-area .single-feature-image img {
+  max-width: 400px;
+}
+
+.features-area p {
+  text-align: justify;
+}
+
+.features-area .features-thumbnail {
+  max-width: 80%;
+  border-radius: 4px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features-area .features-thumbnail.has-text-right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/****************************************
+Responsive Classes
+*****************************************/
+@media (max-width: 768px) {
+  .features-area .features-image .check-list {
+    top: 30px;
+    left: 50%;
+    margin-left: -150px;
+    padding: 30px;
+  }
+  .features-area .buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .features-area .features-description {
+    text-align: center;
+  }
+  .features-area .features-description h2 {
+    margin-bottom: 10px;
+  }
+  .features-area .features-description h1 {
+    font-size: 28px;
+  }
+  .features-area .features-description p {
+    text-align: center;
+  }
+  .features-area h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  .features-area p {
+    text-align: center;
+  }
+  .single-features-item {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 10px;
+    text-align: center;
+  }
+  .single-features-item .feature-icon {
+    margin: 0 auto;
+  }
+  .single-features-item .readmore-button {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .features-area .features-thumbnail {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .features-area .features-thumbnail.has-text-right {
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .single-features-item {
+    padding: 15px 15px;
+    grid-gap: 20px;
+    -ms-grid-columns: 3rem auto;
+        grid-template-columns: 3rem auto;
+    min-height: auto;
+    border-radius: 4px;
+  }
+  .single-features-item .feature-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 4px;
+  }
+  .single-features-item .feature-icon img {
+    height: 24px;
+  }
+  .single-features-item .feature-information {
+    text-align: left;
+  }
+  .single-features-item .feature-information h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    line-height: 1.3;
+  }
+  .single-features-item .feature-information .readmore-button {
+    text-align: left;
+    margin: 0;
+  }
+  .features-area .features-thumbnail {
+    margin: 0 auto;
+  }
+  .features-area .features-thumbnail.has-text-right {
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023.98px) {
+  .single-features-item {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 10px;
+    text-align: center;
+  }
+  .single-features-item .feature-icon {
+    margin: 0 auto;
+  }
+  .single-features-item .feature-information h5 {
+    font-size: 18px;
+  }
+  .features-area .features-image .check-list {
+    left: 50%;
+    margin-left: -150px;
+    padding: 30px;
+  }
+  .features-area .features-thumbnail {
+    margin: 0 auto;
+  }
+  .features-area .features-thumbnail.has-text-right {
+    margin-right: auto;
+  }
+  .readmore-button {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1215px) {
+  .features-area .features-image .check-list {
+    left: 50%;
+    margin-left: -150px;
+  }
+  .features-area .features-description {
+    font-size: 28px;
+  }
+  .features-area h3 {
+    font-size: 28px;
+    margin-bottom: 0.8rem;
+  }
+}
+
+@media (min-width: 1408px) and (max-width: 1600px) {
+  .features-area .features-description h1 {
+    font-size: 32px;
+  }
+  .features-area .features-image .check-list {
+    top: 30px;
+  }
+  .single-features-item {
+    padding: 20px;
+    min-height: 126px;
+  }
+  .single-features-item .feature-information h5 {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 130%;
+  }
+}
+
 .cta-area {
   margin-top: -125px;
 }
