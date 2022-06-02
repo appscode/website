@@ -683,17 +683,17 @@
           <div class="community-items ml-70">
             {{ if $p.socialLinks.github }}
             <a href="{{$p.socialLinks.github}}" class="community-item" target="_blank">
-              <img src="./images/icon/community/github-icon.svg" alt="github-icon">
+              <img src="https://cdn.appscode.com/assets/images/icon/community/github-icon.svg" alt="github-icon">
             </a>
             {{ end }}
             {{ if $p.socialLinks.twitter }}
             <a href="{{$p.socialLinks.twitter}}" class="community-item" target="_blank">
-              <img src="/assets/images/icon/community/twitter-icon.svg" alt="twitter-icon">
+              <img src="https://cdn.appscode.com/assets/images/icon/community/twitter-icon.svg" alt="twitter-icon">
             </a>
             {{ end }}
             {{ if $p.socialLinks.slack }}
             <a href="{{$p.socialLinks.slack}}" class="community-item" target="_blank">
-              <img src="/assets/images/icon/community/slack-icon.svg" alt="slack-icon">
+              <img src="https://cdn.appscode.com/assets/images/icon/community/slack-icon.svg" alt="slack-icon">
             </a>
             {{ end }}
           </div>
@@ -788,67 +788,41 @@
   {{ end }}
 
 
-  <!-- our customer logo area start -->
-  {{ block "customer-logos" . }}
-  <div class="logo-carusal-area ssp-y-80">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-10 is-offset-1 has-text-centered">
-          <!-- brand logo start -->
-          <div class="brand-logo-wrapper mt-10">
-            {{ range $customer := $.Site.Data.customers }}
-            {{ if $customer.show }}
-            <a class="single-brand-logo">
-              <img src="{{ $customer.logo }}" alt="{{ $customer.name }}" class="img" />
-            </a>
-            {{ end }}
-            {{ end }}
-          </div>
-          <!-- brand logo end -->
-        </div>
-      </div>
-    </div>
-  </div>
-  {{ end }}
-  <!-- our customer logo area end -->
-
   <!-- call to action area start -->
   {{ block "cta-install" . }}
 
   {{ $productName := .Params.product_name }}
   {{ if $productName }}
   {{ $p := (index $.Site.Data.products $productName) }}
-  <section class="cta-area sp-y-80 pt-0">
-    <div class="container">
-      <div class="cta-padding">
-        <div class="columns">
-          <div class="column is-6">
-            <!-- cta text strat -->
-            <div class="cta-text">
-              <h2 data-aos="fade-up">Ready to Get Started?</h2>
-              <p data-aos="fade-up" data-aos-duration="500">Install <strong>{{ $p.name }}</strong> in your Kubernetes
-                cluster</p>
-            </div>
-            <!-- cta text end -->
-          </div>
-          <div class="column is-6 has-text-right is-mobile">
-            <div class="cta-button d-table">
-              <!-- cta button start -->
-              <div class="cta-button-inner d-table-cell" data-aos="fade-up" data-aos-duration="1000">
-                <a href="/products/{{ $p.key }}/{{ $p.latestVersion }}/setup/" class="button kd-button kd-primary">Try
-                  Now for FREE!</a>
-              </div>
-              <!-- cta button end -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+   <section class="cta-area">
+     <div class="container">
+       <div class="cta-area-inner">
+         <div class="container">
+           <div class="columns is-vcentered is-multiline">
+             <div class="column is-full-tablet is-half-tablet is-half-desktop">
+               <h3 data-aos="fade-up" data-aos-duration="500" class="aos-init aos-animate">Ready to Get Started?</h3>
+             </div>
+             <div
+               class="column is-full-tablet is-half-tablet is-half-desktop has-text-centered-touch has-text-right-desktop">
+               <div class="buttons is-justify-content-flex-end">
+
+                 <a href="/products/{{ $p.key }}/{{ $p.latestVersion }}/setup/" class="button ac-button ac-white"
+                   style="background-color: white; border: 1px solid #e7e7e7; color: #00a651;">Try
+                   Now for FREE!</a>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
   {{ end }}
 
   {{ end }}
   <!-- call to action area end -->
+
+
+ 
 
   <!-- top to button start -->
   <button class="go-to-top" id="goTop">

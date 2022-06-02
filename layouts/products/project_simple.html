@@ -29,10 +29,11 @@
         <h1> {{ $p.tagline | safeHTML }}</h1>
         <!-- <h1> Run Production-Grade Databases on Kubernetes</h1> -->
         <div class="buttons" data-aos="fade-up" data-aos-duration="700">
-          <a href="/docs/{{ $p.latestVersion }}/setup/" class="button ac-button is-primary">TRY NOW FREE</a>
+          <a href="/products/{{ $p.key }}/{{ $p.latestVersion }}/setup/"
+            class="button ac-button is-primary">TRY NOW FREE</a>
           <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-secondary"><span>
-              <lord-icon speed="0.50" src="https://cdn.lordicon.com/uvextprq.json" trigger="loop"
-                colors="primary:#ffffff;" style="width:22px;height:22px; margin-right: 8px;">
+              <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json" trigger="loop"
+                style="width:22px;height:22px; margin-right: 8px;">
               </lord-icon>
             </span>GET IN TOUCH</a>
         </div>
@@ -93,10 +94,9 @@
           <div class="feature-information">
 
             <h5>{{ $f.title }}</h5>
-            <p class="is-ellipsis-2">{{ $f.summary }}</p>
-            <p class="is-ellipsis-2">{{ $f.description }}</p>
-            <button class="readmore-button mt-15">Read More<span
-                class="material-icons-outlined">arrow_forward</span></button>
+            <p>{{ $f.summary }}</p>
+            <p>{{ $f.description }}</p>
+           
           </div>
         </a>
       </div>
