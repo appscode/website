@@ -98,7 +98,8 @@
       <div class="navbar-appscode-wrapper ">
         <!-- appscode navbar start  -->
         {{ $currentPageType := index (split .Page.Permalink "/") 3 }}
-        <div class="navbar-appscode{{ if ne $currentPageType "docs" }} container {{ end }} height-60">
+        <div class="navbar-appscode{{ if ne $currentPageType "products" }} container {{ end }} height-60">
+
           <div class="navbar-left">
             <!-- brand logo  -->
             <div class="navbar-brand">
@@ -531,7 +532,7 @@
     <div class="navbar-appscode-wrapper navbar-product mt-61">
       <!-- product navbar start  -->
       {{ $currentPageType := index (split .Page.Permalink "/") 3 }}
-      <div class="navbar-appscode{{ if eq $currentPageType "docs" }} bb-1 {{ else }}
+      <div class="navbar-appscode{{ if eq $currentPageType "products" }} bb-1 {{ else }}
           container{{ end }}">
         <!-- navbar left start  -->
         <div class="navbar-left">
@@ -668,7 +669,7 @@
             {{else}}
             {{ if eq .Name "Documentation" }}
             <li class="nav-item">
-              <a href="/docs/{{ $p.latestVersion }}/welcome/" class="link">{{ .Name }}</a>
+              <a href="/products/{{ $productName }}/{{ $p.latestVersion }}/welcome/" class="link">{{ .Name }}</a>
             </li>
             {{ else }}
             <li class="nav-item">
@@ -710,17 +711,18 @@
         <!-- navbar right end -->
       </div>
       <!-- product navbar end -->
-      <!-- docs navbar start  -->
-      {{ block "documentation-menu" . }}
-      {{ end }}
-      <!-- docs navbar end -->
+      
+       <!-- docs navbar start  -->
+       {{ block "documentation-menu" . }}
+       {{ end }}
+       <!-- docs navbar end -->
 
     </div>
    {{ end }}
    {{ end }}
 
-   {{ block "documentation-menu" . }}
-   {{ end }}
+   
+   
     <!-- navabar product end  -->
 </div>
     
