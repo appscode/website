@@ -9472,6 +9472,9 @@ Responsive Classes
     right: 0;
     width: 100%;
   }
+  .products-features .products-description-wrapper .single-product .illustration {
+    max-width: 350px;
+  }
   .products-features #nav-serialscrolling {
     top: 0;
   }
@@ -9648,6 +9651,9 @@ Responsive Classes
   }
   .hero-area-1 p {
     font-size: 1.3rem;
+  }
+  .hero-area-1 a.news-message {
+    margin-top: 20px;
   }
   .hero-area-1 .h-right-content {
     margin-right: -60px;
@@ -14133,7 +14139,7 @@ Responsive Classes
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffffff;
-  border: none;
+  border: 1px solid #dbdbde;
 }
 
 .arrows .button:hover .material-icons-outlined {

@@ -69,7 +69,7 @@
     justify-content: center;
     align-items: center;
     background-color: $ac-white;
-    border: none;
+    border: 1px solid $ac-white-light;
 
     &:hover {
       .material-icons-outlined {
@@ -188,6 +188,7 @@ Responsive Classes
       }
     }
   }
+  
 }
 
 @media (min-width: 1408px) {
