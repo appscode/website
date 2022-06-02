@@ -22,7 +22,7 @@
 
 // hero area start
 .hero-area-1 {
-  padding: 150px 0px;
+  padding: 150px 0 70px 0px;
 
   h1 {
     font-weight: 600;
@@ -36,7 +36,7 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 160%;
     color: #404040;
   }
@@ -95,10 +95,10 @@
     font-size: 14px;
     line-height: 1.6;
     color: #3e393e;
-    background: #ccffe5;
+    background: $ac-white;
 
     border: 1px solid $ac-white-light;
-    padding: 12px 25px;
+    padding: 8px 15px;
     border-radius: 2px;
 
     &:hover {
@@ -470,7 +470,7 @@
     font-weight: 500;
     font-size: 32px;
     line-height: 130%;
-    letter-spacing: 0.5px;
+    letter-spacing: -0.5px;
     margin-bottom: 15px;
   }
 
@@ -629,13 +629,15 @@
         margin-bottom: 15px;
       }
 
-      a {
+      button {
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 1.25px;
         text-decoration-line: underline;
         text-transform: uppercase;
+        border: none;
+        background-color: transparent;
 
         /* 1c1c1c */
 
@@ -1233,7 +1235,7 @@ Responsive Classes
 
     h2 {
       font-size: 28px;
-      letter-spacing: 0.3px;
+      letter-spacing: -0.3px;
     }
 
     .connect-message {

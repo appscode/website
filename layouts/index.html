@@ -12,6 +12,7 @@
     <div class="container">
       <div class="columns">
         <div class="column is-6">
+          
           <h1>{{ $p.hero_area.title }}</h1>
           <p data-aos="fade-up" data-aos-duration="500">{{ $p.hero_area.summary }}</p>
 
@@ -31,6 +32,10 @@
             </div>
           </div>
           <!-- buttons  -->
+          <!-- news connect-message start  -->
+          <a href="#" class="news-message" data-aos="fade-up" data-aos-duration="900"><span>Visit our booth BN3 at the
+              <strong>TechCrunch Disrupt SF 2022</strong>Startup Alley on Oct 4, 2022!</span></a>
+          <!-- news connect-message end -->
         </div>
         <div class="column is-6">
           <div class="h-right-content">
@@ -38,14 +43,11 @@
           </div>
         </div>
       </div>
-      <div class="columns">
+      <!-- <div class="columns">
         <div class="column">
-          <!-- news connect-message start  -->
-          <a href="#" class="news-message" data-aos="fade-up" data-aos-duration="900"><span>Visit our booth BN3 at the
-              <strong>TechCrunch Disrupt SF 2022</strong>Startup Alley on Oct 4, 2022!</span></a>
-          <!-- news connect-message end -->
+          
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
   <!--==================== hero-area end 2022  ====================-->
@@ -80,10 +82,10 @@
       <div class="columns">
         <div class="column is-6" data-aos="fade-up" data-aos-duration="500">
           <div class="pr-60">
-            <p class="small-title">Lorem ipsum is dular?</p>
+            <p class="small-title">Why AppsCode 🤔</p>
             <h2 data-aos="fade-up" data-aos-duration="600">{{ $p.highlight_products.title }}</h2>
             <p data-aos="fade-up" data-aos-duration="700">{{ $p.highlight_products.summary }}</p>
-            <a href="{{ $p.highlight_products.url }}" class="button ac-button is-primary ">READ THE DOCS</a>
+            <a href="{{ $p.highlight_products.url }}" class="button ac-button is-primary ">CONTACT WITH US</a>
           </div>
         </div>
         <div class="column is-6">
@@ -96,7 +98,7 @@
                 <div class="single-product">
                   <img src="{{ $product.logo }}" alt="">
                   <p>{{ $product.summary | safeHTML }}</p>
-                  <a class="inline-button" href="#" class="">EXPLORE MORE</a>
+                  <a class="inline-button" href="{{ $product.url }}" class="">EXPLORE MORE</a>
                 </div>
                 <!-- sigle product end -->
               </div>
@@ -179,16 +181,20 @@
         <div class="subscription-message">
           <h2 data-aos="fade-up" data-aos-duration="600">{{ $p.subscription.title | safeHTML}}</h2>
           <p data-aos="fade-up" data-aos-duration="700">{{ $p.subscription.summary_left | safeHTML}}</p>
-          <a class="button ac-button is-primary is-outlined" href="#">EXPLORE MORE</a>
+          <!-- <a class="button ac-button is-primary is-outlined" href="https://support.appscode.com/">GET</a> -->
         </div>
       </div>
       <div class="column is-5" data-aos="fade-up" data-aos-duration="700">
         <p>{{ $p.subscription.summary_right | safeHTML}}</p>
 
         <!-- subscription input  -->
-        <form action="#" class="subscription-input" data-aos="fade-up" data-aos-duration="800">
-          <input type="email" placeholder="Enter your email address">
-          <button class="button ac-button is-primary">SUBSCRIBE</button>
+        <form method="post" action="https://listmonk.appscode.com/subscription/form" id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form" class="subscription-input" data-aos="fade-up" data-aos-duration="800"
+          novalidate role="email">
+           <input type="hidden" id="afbbc" name="l" value="afbbc974-e163-4467-be49-040e399520f3" />
+          <input name="email" id="mce-EMAIL" type="email" placeholder="Enter your email address">
+          <button class="button ac-button is-primary" id="mc-embedded-subscribe" type="submit"
+            name="subscribe">SUBSCRIBE</button>
           <p data-aos="fade-up" data-aos-duration="900">Subscribe to our newsletter <img
               src="/assets/images/icon/indicator-arrow-right.svg" alt="indicator-arrow-right"></p>
         </form>
@@ -229,7 +235,7 @@
         <!-- single card start  -->
         <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
           data-aos="fade-up" data-aos-duration="500">
-          <div class="single-card">
+          <a href="{{ $social_cards.url }}" class="single-card is-block">
             <div class="card-top">
               <div class="card-icon"><img src="{{ $social_cards.icon }}" alt=""></div>
               <div class="count">
@@ -238,10 +244,10 @@
               </div>
             </div>
             <div class="card-bottom">
-              <p>{{ $social_cards.summary }}</p>
-              <a href="{{ $social_cards.url }}">View On {{ $social_cards.name }}</a>
+              <!-- <p>{{ $social_cards.summary }}</p> -->
+              <button>View On {{ $social_cards.name }}</button>
             </div>
-          </div>
+          </a>
         </div>
         <!-- single card end -->
         {{end}}
@@ -372,9 +378,9 @@
           <div class="columns is-vcentered is-multiline">
             <div class="column is-full-tablet is-half-tablet is-half-desktop">
               <h3 data-aos="fade-up" data-aos-duration="500">Get Started with AppsCode</h3>
-              <p>AppsCode community edition is FREE to use on any supported Kubernetes engines. There is no up-front
+              <!-- <p>AppsCode community edition is FREE to use on any supported Kubernetes engines. There is no up-front
                 investment required, and you need to pay only for the resources you use to your infrastructure provider.
-                We offer a 30 days license FREE of cost to try KubeDB Enterprise edition.</p>
+                We offer a 30 days license FREE of cost to try KubeDB Enterprise edition.</p> -->
             </div>
             <div
               class="column is-full-tablet is-half-tablet is-half-desktop has-text-centered-touch has-text-right-desktop">
