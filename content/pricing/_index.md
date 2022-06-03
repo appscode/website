@@ -1,4 +1,0 @@
----
-title: Pricing
-layout: pricing
----
