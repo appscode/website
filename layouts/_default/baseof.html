@@ -97,8 +97,8 @@
     <div class="navbar-area header--fixed">
       <div class="navbar-appscode-wrapper ">
         <!-- appscode navbar start  -->
-        {{ $currentPageType := index (split .Page.Permalink "/") 3 }}
-        <div class="navbar-appscode{{ if ne $currentPageType "products" }} container {{ end }} height-60">
+        {{ $currentPageType := cond (le (len (split (trim .Page.RelPermalink "/") "/")) 2) "products" "docs" }}
+        <div class="navbar-appscode{{ if eq $currentPageType "products" }} container {{ end }} height-60">
 
           <div class="navbar-left">
             <!-- brand logo  -->
@@ -474,7 +474,7 @@
               </ul>
               <!-- navbar items end -->
             </div>
-            {{ $currentPageType := index (split .Page.Permalink "/") 3 }}
+            {{ $currentPageType := cond (le (len (split (trim .Page.RelPermalink "/") "/")) 2) "products" "docs" }}
             <a href="{{ $.Site.Params.domain_appscode }}/contact/"
               class="button ac-button is-secondary {{ if eq $currentPageType "docs" }} is-hidden {{ end }}">CONTACT
               SALES</a>
@@ -483,7 +483,6 @@
         <!-- appscode navbar end -->
       </div>
 
-     
       <!-- navbar product end -->
 
       <script type="text/javascript">
@@ -531,20 +530,20 @@
     {{ $p := (index $.Site.Data.products $productName) }}
     <div class="navbar-appscode-wrapper navbar-product mt-61">
       <!-- product navbar start  -->
-      {{ $currentPageType := index (split .Page.Permalink "/") 3 }}
-      <div class="navbar-appscode{{ if eq $currentPageType "products" }} bb-1 {{ else }}
+      {{ $currentPageType := cond (le (len (split (trim .Page.RelPermalink "/") "/")) 2) "products" "docs" }}
+      <div class="navbar-appscode{{ if eq $currentPageType "docs" }} bb-1 {{ else }}
           container{{ end }}">
+
         <!-- navbar left start  -->
         <div class="navbar-left">
           <div class="navbar-brand">
             <a href="{{ index $.Site.Params $p.website.domainKey }}{{ $p.website.path }}"><img src="{{ $p.logo.src }}"
                 alt="{{ $p.logo.alt }}" alt="{{ $p.logo.alt }}"></a>
 
-            <!-- {{ $currentPageType := index (split .Page.Permalink "/") 3 }} -->
             {{ if eq $currentPageType "docs" }}
             <!-- version select start  -->
-            {{ $p := (index .Site.Data.products .Site.Params.product_key) }}
-            {{ $currentBranch := (index (split .Params.menu_name "_") 1) }}
+            {{ $currentBranch := (index (split .Params.menu_name "_") 2) }}
+
             <div class="product-version ml-20">
               <div class="dropdown">
                 <div class="dropdown-trigger">
@@ -684,12 +683,12 @@
           <div class="community-items ml-70">
             {{ if $p.socialLinks.github }}
             <a href="{{$p.socialLinks.github}}" class="community-item" target="_blank">
-              <img src="https://cdn.appscode.com/assets/images/icon/community/github-icon.svg" alt="github-icon">
+              <img src="/assets/images/icon/community/github-icon.svg" alt="github-icon">
             </a>
             {{ end }}
             {{ if $p.socialLinks.twitter }}
             <a href="{{$p.socialLinks.twitter}}" class="community-item" target="_blank">
-              <img src="https://cdn.appscode.com/assets/images/icon/community/twitter-icon.svg" alt="twitter-icon">
+              <img src="/assets/images/icon/community/twitter-icon.svg" alt="twitter-icon">
             </a>
             {{ end }}
             {{ if $p.socialLinks.slack }}
@@ -700,7 +699,7 @@
           </div>
           <!-- Community link end -->
           <!-- action button start  -->
-          {{ $currentPageType := index (split .Page.Permalink "/") 3 }}
+          {{ $currentPageType := cond (le (len (split (trim .Page.RelPermalink "/") "/")) 2) "products" "docs" }}
           {{ if eq $currentPageType "docs" }}
           <a href="/docs/{{ $p.latestVersion }}/setup/" class="button ac-button is-primary ml-8 height-40">TRY NOW
             FREE</a>
