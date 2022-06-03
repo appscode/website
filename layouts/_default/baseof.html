@@ -55,10 +55,10 @@
   <meta property="og:type" content="article">
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
-   <!-- google fonts icon  -->
-   <link
-     href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-     rel="stylesheet">
+  <!-- google fonts icon  -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
   <!-- Onscroll animation CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Bulma Carousel CSS -->
@@ -76,7 +76,7 @@
   {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
   {{ end }}
-  <!-- <link rel="stylesheet" href="/assets/sass/main.css" /> -->
+  <link rel="stylesheet" href="/assets/sass/main.css" />
 </head>
 
 <body {{if $productName}}class="{{$productName}}" {{end}}>
@@ -93,11 +93,13 @@
   <header>
     {{ block "header-top" . }}
     <!-- new navbar area start  -->
+    <div class="navbar-area active-headroom header--fixed">
     <div class="navbar-area header--fixed">
       <div class="navbar-appscode-wrapper ">
         <!-- appscode navbar start  -->
-        {{ $currentPageType := index (split .Page.Permalink "/") 3 }}
-        <div class="navbar-appscode{{ if ne $currentPageType "docs" }} container {{ end }} height-60">
+        {{ $currentPageType := cond (le (len (split (trim .Page.RelPermalink "/") "/")) 2) "products" "docs" }}
+        <div class="navbar-appscode{{ if eq $currentPageType "products" }} container {{ end }} height-60">
+
           <div class="navbar-left">
             <!-- brand logo  -->
             <div class="navbar-brand">
@@ -247,7 +249,7 @@
                     });
                   </script>
                 </li>
-             
+
                 <li class="nav-item">
                   <button class="link">Open Source <i class="fa fa-angle-down" aria-hidden="true"></i></button>
                   <!-- mega-menu wrapper start  -->
@@ -348,8 +350,7 @@
                   </script>
                 </li>
                 <li class="nav-item">
-                  <a href="/webinar" target="_blank" class="link">Webinar <span
-                      class="whats-new">New</span></a>
+                  <a href="/webinar" target="_blank" class="link">Webinar <span class="whats-new">New</span></a>
                 </li>
               </ul>
               <!-- navbar items end -->
@@ -372,8 +373,8 @@
                       }
                     }
                   } //
-                  // console.log('GET', 'https://license-issuer.appscode.com/_/webinars/');
-                  xhr.open('GET', 'https://license-issuer.appscode.com/_/webinars/');
+                  // console.log('GET', 'https://x.appscode.com/_/webinars/');
+                  xhr.open('GET', 'https://x.appscode.com/_/webinars/');
                   xhr.send();
                 }());
               </script>
@@ -473,14 +474,16 @@
               </ul>
               <!-- navbar items end -->
             </div>
-            {{ $currentPageType := index (split .Page.Permalink "/") 3 }}
+            {{ $currentPageType := cond (le (len (split (trim .Page.RelPermalink "/") "/")) 2) "products" "docs" }}
             <a href="{{ $.Site.Params.domain_appscode }}/contact/"
-              class="button ac-button is-primary {{ if eq $currentPageType "docs" }} is-hidden {{ end }}">CONTACT
+              class="button ac-button is-secondary {{ if eq $currentPageType "docs" }} is-hidden {{ end }}">CONTACT
               SALES</a>
           </div>
         </div>
         <!-- appscode navbar end -->
       </div>
+
+      <!-- navbar product end -->
 
       <script type="text/javascript">
         const navbarRightAll = document.querySelectorAll(".navbar-right");
@@ -519,12 +522,215 @@
     <!-- new navbar area end -->
     {{ end }}
 
+
+    <!-- navabar product start  -->
+    {{ block "header-bottom" . }}
+    {{ $productName := .Params.product_name }}
+    {{ if $productName }}
+    {{ $p := (index $.Site.Data.products $productName) }}
+    <div class="navbar-appscode-wrapper navbar-product mt-61">
+      <!-- product navbar start  -->
+      {{ $currentPageType := cond (le (len (split (trim .Page.RelPermalink "/") "/")) 2) "products" "docs" }}
+      <div class="navbar-appscode{{ if eq $currentPageType "docs" }} bb-1 {{ else }}
+          container{{ end }}">
+
+        <!-- navbar left start  -->
+        <div class="navbar-left">
+          <div class="navbar-brand">
+            <a href="{{ index $.Site.Params $p.website.domainKey }}{{ $p.website.path }}"><img src="{{ $p.logo.src }}"
+                alt="{{ $p.logo.alt }}" alt="{{ $p.logo.alt }}"></a>
+
+            {{ if eq $currentPageType "docs" }}
+            <!-- version select start  -->
+            {{ $currentBranch := (index (split .Params.menu_name "_") 2) }}
+
+            <div class="product-version ml-20">
+              <div class="dropdown">
+                <div class="dropdown-trigger">
+                  <button class="button is-justify-content-space-between" aria-haspopup="true"
+                    aria-controls="dropdown-menu3">
+
+
+                    {{ range $v := $p.versions }}
+                    {{ if $v.show }}
+                    {{ if and $v.hostDocs (eq $v.version $currentBranch) }}
+                    <span>{{ $v.version }}</span>
+                    {{ if eq $v.version $p.latestVersion }}
+                    <span class="new-item">Latest</span>
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+                    <span class="arrow">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                  <div class="dropdown-content">
+                    {{ range $v := $p.versions }}
+                    {{ if $v.show }}
+                    {{ if $v.hostDocs }}
+                    <a href="/docs/{{ $v.version }}/" class="dropdown-item">{{ $v.version }}
+                      {{ if eq $v.version $p.latestVersion }} <div class="new-item ml-15">Latest</div> {{ end }}</a>
+                    {{ else }}
+                    <a href="https://github.com/{{ $p.docRepo }}/tree/{{ $v.version }}/docs" target="_blank"
+                      class="dropdown-item">{{ $v.version }}</a>
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- version select end -->
+            {{ end }}
+
+            <a role="button" class="navbar-burger width-65 font-size-14 has-text-weight-bold pl-6 pr-6"
+              aria-label="menu" aria-expanded="false">
+              MENU <i class="fa fa-angle-down pl-5"></i>
+            </a>
+          </div>
+        </div>
+        <!-- navbar left end -->
+        <!-- navbar right start  -->
+        <div class="navbar-right">
+          <ul>
+            {{ range (index .Site.Menus (printf "product_%s" $productName)) }}
+            {{ if .HasChildren }}
+            <li class="nav-item">
+              <button href="#" class="link">{{ .Name }} <i class="fa fa-angle-down"></i></button>
+
+              <!-- mega-menu wrapper -->
+              <div class="mega-menu-wrapper">
+
+                <!-- ac-grid-container -->
+                <div class="mega-menu-inner container">
+                  <button class="button ac-button inline-button back-button"><span
+                      class="material-icons-outlined">arrow_back</span>Back</button>
+                  <!-- product start  -->
+                  <div class="product-menu database-list">
+                    {{ range .Children }}
+                    {{ if eq .Parent $.Site.Params.main_menu_dropdown_item }}
+                    <!-- single product start  -->
+                    <a href="/kubernetes/databases/run-and-manage-{{ .Identifier }}-on-kubernetes
+" class="single-product">
+                      {{ if .Pre }}
+                      <div class="product-logo">
+                        <img src="{{ .Pre }}" alt="Menu Icon">
+                      </div>
+                      {{ end }}
+                      <div class="product-info">
+                        <h6>{{ .Name }}</h6>
+                        <!-- <p>static content</p> -->
+                      </div>
+                      <div class="navigate-icon">
+                        <span class="material-icons">
+                          arrow_forward
+                        </span>
+                      </div>
+                    </a>
+                    <!-- single product end -->
+                    {{ else }}
+                    <a href="{{.URL}}" class="single-database">{{ .Name }}</a>
+                    {{ end }}
+                    {{ end }}
+
+                  </div>
+                  <!-- product end -->
+
+                  <!-- product description start  -->
+
+                  <!-- single product description start  -->
+                  <div class="product-description is-block">
+                    <div class="video-content">
+                      <div class="yt-thumbnail">
+                        <a href="https://www.youtube.com/watch?v=hBHxMtSjKo4" class="play-icon yt-video">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="#ffffff">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </a>
+                        <img src="https://img.youtube.com/vi/hBHxMtSjKo4/sddefault.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single product description end  -->
+
+                  <!-- product description end -->
+                </div>
+              </div>
+              <!-- mega-menu wrapper -->
+            </li>
+            {{else}}
+            {{ if eq .Name "Documentation" }}
+            <li class="nav-item">
+              <a href="/products/{{ $productName }}/{{ $p.latestVersion }}/welcome/" class="link">{{ .Name }}</a>
+            </li>
+            {{ else }}
+            <li class="nav-item">
+              <a href="{{.URL}}" class="link">{{ .Name }}</a>
+            </li>
+            {{ end }}
+            {{ end }}
+            {{end}}
+          </ul>
+
+          <!-- Community link start  -->
+          <div class="community-items ml-70">
+            {{ if $p.socialLinks.github }}
+            <a href="{{$p.socialLinks.github}}" class="community-item" target="_blank">
+              <img src="/assets/images/icon/community/github-icon.svg" alt="github-icon">
+            </a>
+            {{ end }}
+            {{ if $p.socialLinks.twitter }}
+            <a href="{{$p.socialLinks.twitter}}" class="community-item" target="_blank">
+              <img src="/assets/images/icon/community/twitter-icon.svg" alt="twitter-icon">
+            </a>
+            {{ end }}
+            {{ if $p.socialLinks.slack }}
+            <a href="{{$p.socialLinks.slack}}" class="community-item" target="_blank">
+              <img src="https://cdn.appscode.com/assets/images/icon/community/slack-icon.svg" alt="slack-icon">
+            </a>
+            {{ end }}
+          </div>
+          <!-- Community link end -->
+          <!-- action button start  -->
+          {{ $currentPageType := cond (le (len (split (trim .Page.RelPermalink "/") "/")) 2) "products" "docs" }}
+          {{ if eq $currentPageType "docs" }}
+          <a href="/docs/{{ $p.latestVersion }}/setup/" class="button ac-button is-primary ml-8 height-40">TRY NOW
+            FREE</a>
+          {{ end }}
+          <!-- action button end -->
+
+        </div>
+        <!-- navbar right end -->
+      </div>
+      <!-- product navbar end -->
+      
+       <!-- docs navbar start  -->
+       {{ block "documentation-menu" . }}
+       {{ end }}
+       <!-- docs navbar end -->
+
+    </div>
+   {{ end }}
+   {{ end }}
+
+   
+   
+    <!-- navabar product end  -->
+</div>
+    
   </header>
   {{ end }}
   <!-- ========================== header area end ==========================-->
 
   <div class="modal-backdrop"></div>
-  
+
   <!-- Code that all your templates share, like a header -->
   {{ block "main" . }}
   <!-- The part of the page that begins to differ between templates -->
@@ -583,67 +789,41 @@
   {{ end }}
 
 
-  <!-- our customer logo area start -->
-  {{ block "customer-logos" . }}
-  <div class="logo-carusal-area ssp-y-80">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-10 is-offset-1 has-text-centered">
-          <!-- brand logo start -->
-          <div class="brand-logo-wrapper mt-10">
-            {{ range $customer := $.Site.Data.customers }}
-            {{ if $customer.show }}
-            <a class="single-brand-logo">
-              <img src="{{ $customer.logo }}" alt="{{ $customer.name }}" class="img" />
-            </a>
-            {{ end }}
-            {{ end }}
-          </div>
-          <!-- brand logo end -->
-        </div>
-      </div>
-    </div>
-  </div>
-  {{ end }}
-  <!-- our customer logo area end -->
-
   <!-- call to action area start -->
   {{ block "cta-install" . }}
 
   {{ $productName := .Params.product_name }}
   {{ if $productName }}
   {{ $p := (index $.Site.Data.products $productName) }}
-  <section class="cta-area sp-y-80 pt-0">
-    <div class="container">
-      <div class="cta-padding">
-        <div class="columns">
-          <div class="column is-6">
-            <!-- cta text strat -->
-            <div class="cta-text">
-              <h2 data-aos="fade-up">Ready to Get Started?</h2>
-              <p data-aos="fade-up" data-aos-duration="500">Install <strong>{{ $p.name }}</strong> in your Kubernetes
-                cluster</p>
-            </div>
-            <!-- cta text end -->
-          </div>
-          <div class="column is-6 has-text-right is-mobile">
-            <div class="cta-button d-table">
-              <!-- cta button start -->
-              <div class="cta-button-inner d-table-cell" data-aos="fade-up" data-aos-duration="1000">
-                <a href="/products/{{ $p.key }}/{{ $p.latestVersion }}/setup/" class="button kd-button kd-primary">Try
-                  Now for FREE!</a>
-              </div>
-              <!-- cta button end -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+   <section class="cta-area">
+     <div class="container">
+       <div class="cta-area-inner">
+         <div class="container">
+           <div class="columns is-vcentered is-multiline">
+             <div class="column is-full-tablet is-half-tablet is-half-desktop">
+               <h3 data-aos="fade-up" data-aos-duration="500" class="aos-init aos-animate">Ready to Get Started?</h3>
+             </div>
+             <div
+               class="column is-full-tablet is-half-tablet is-half-desktop has-text-centered-touch has-text-right-desktop">
+               <div class="buttons is-justify-content-flex-end">
+
+                 <a href="/products/{{ $p.key }}/{{ $p.latestVersion }}/setup/" class="button ac-button ac-white"
+                   style="background-color: white; border: 1px solid #e7e7e7; color: #00a651;">Try
+                   Now for FREE!</a>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
   {{ end }}
 
   {{ end }}
   <!-- call to action area end -->
+
+
+ 
 
   <!-- top to button start -->
   <button class="go-to-top" id="goTop">
@@ -677,8 +857,8 @@
                     <div class="control">
                       <!-- AppsCode Monthly Newsletter -->
                       <input type="hidden" id="afbbc" name="l" value="afbbc974-e163-4467-be49-040e399520f3" />
-                      <input class="input" name="email" id="mce-EMAIL" type="email" placeholder="Your work email address"
-                        required />
+                      <input class="input" name="email" id="mce-EMAIL" type="email"
+                        placeholder="Your work email address" required />
                       <button id="mc-embedded-subscribe" type="submit" name="subscribe" class="button">
                         <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
                       </button>
@@ -813,6 +993,9 @@
   <!-- integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" -->
   <script src="/assets/js/jquery-3.6.0.min.js"></script>
   <script src="/assets/js/owl.carousel.min.js"></script>
+  <!-- https://www.jqueryscript.net/menu/one-page-scroll-nav-serial.html -->
+  <script src="/assets/js/jquery.serialscrolling.min.js"></script>
+
   <!-- lordicon js  -->
   <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
 

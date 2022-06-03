@@ -3,332 +3,307 @@
 {{ end }}
 
 {{ define "main" }}
-<!-- hero-area start -->
-<section class="hero-area is-product">
-  <div class="hero-shape"></div>
-  <div class="container">
 
-    <!-- hero-area main start -->
-    <div class="columns">
-        <div class="column is-half-desktop is-full-mobile is-full-tablet">
-          <div class="hero-area-content d-table">
-            <div class="hero-content-inner typing d-table-cell">
-              <h1 data-aos="fade-up">
-                Our Mission is to
-                Accelerate the transition to
-                Containers by building a
-                Kubernetes-native
-                Data Platform
-              </h1>
-              <div class="hero-area-button buttons" data-aos="fade-up" data-aos-duration="800">
-                <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-primary"
-                  > <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json"
-                    trigger="loop" target="a.is-secondary" trigger="hover"
-                    style="width:22px;height:22px; margin-right: 8px;">
-                  </lord-icon><span>Get In Touch</span></a
-                >
-                <a href="{{ $.Site.Params.github_url }}" class="button ac-button is-primary is-outlined"
-                  >View on Github</a
-                >
-              </div>
-              <div class="play-buttons" data-aos="fade-up" data-aos-duration="1000">
-                <a href="#" id="playme" onclick="revealVideo('video','youtube')"
-                  ><span class="video-icon"
-                    ><i class="fa fa-play" aria-hidden="true"></i
-                  ></span>
-                  Watch the reel</a
-                >
-              </div>
+{{ $p := $.Site.Data.products.appscode.homepage}}
 
-            </div>
-          </div>
-        </div>
-        <div class="column is-6 is-hidden-mobile">
-          <div class="hero-right-content-wrapper">
-            <div class="right-side-content-inner" data-aos="fade-up" data-aos-duration="1500">
-              <img src="{{ .Site.Data.products.appscode.heroImage.src }}" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- hero-area main end -->
-  </div>
-</section>
-<!-- hero-area end -->
- <!-- social prove logo area start   -->
- <div class="social-prove-brand-area">
-   <div class="container">
-     <div class="columns">
-       <div class="column is-12">
-         <div class="brand-image-wrapper owl-carousel">
-           {{ range $customer := $.Site.Data.customers }}
-           {{ if $customer.show }}
-           <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"></div>
-           {{ end }}
-           {{ end }}
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
- <!-- social prove logo area end -->
-<!-- shape start -->
-<div class="shap-3">
-  <!-- service area start -->
-  <section class="sp-y-80">
+<!--==================== hero-area start 2022 ====================-->
+<div class="bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.jpg);">
+  <section class="hero-area-1">
     <div class="container">
-      <div class="columns is-vcentered is-multiline">
-        <div class="column is-full-tablet is-half-desktop">
-          <div class="features-thumbnail" data-aos="fade-up">
-            <img
-              src="/assets/images/products/appscode/features/dashboard.gif"
-              alt="dashboard-image"
-            />
-          </div>
-        </div>
-        <div class="column is-full-tablet is-half-desktop">
-          <div class="service-content-wrapper d-table" data-aos="fade-up" data-aos-duration="1000">
-            <div class="service-content pl-30 d-table-cell">
-              <!-- <h5>What Is AppsCode?</h5> -->
-              <h2>
-                Cloud reimagined <br />for the age of Kubernetes
-              </h2>
-              <p>
-                Deploy, manage, upgrade Kubernetes on any cloud and automate deployment,
-                scaling, and management of containerized applications. Make Kubernetes
-                accessible any member of your development team using
-                <a href="{{ .Site.Params.domain_bytebuilders }}">ByteBuilder's</a>
-                innovative Kubernetes Dashboard.
-              </p>
-              <div class="mt-40 learn-more">
-                <a href="{{ .Site.Params.domain_bytebuilders }}" class="button ac-button is-primary">Learn More</a>
-              </div>
+      <div class="columns">
+        <div class="column is-6">
+
+          <h1>{{ $p.hero_area.title }}</h1>
+          <p data-aos="fade-up" data-aos-duration="500">{{ $p.hero_area.summary }}</p>
+
+          <!-- buttons  -->
+          <!-- style="width:22px;height:22px; margin-right: 8px;" -->
+          <div class="buttons" data-aos="fade-up" data-aos-duration="700">
+            <a href="{{ $p.hero_area.get_in_touch_url }}" class="button ac-button is-primary">
+              <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json" trigger="loop"
+                target="a.is-secondary" trigger="hover">
+              </lord-icon><span>GET IN TOUCH</span>
+            </a>
+
+            <div class="play-buttons">
+              <a href="#" id="playme" onclick="revealVideo('video','youtube')"><span class="material-icons-outlined">
+                  play_arrow
+                </span>WATCH THE DEMO</a>
             </div>
+          </div>
+          <!-- buttons  -->
+          <!-- news connect-message start  -->
+          <a href="" class="news-message is-hidden" data-aos="fade-up" data-aos-duration="900"><span>cool stuff!</a>
+
+            <script type="text/javascript">
+              (function () {
+                var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+                xhr.onreadystatechange = function () {
+                  if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                      var result = JSON.parse(xhr.responseText);
+                      if (result.content) {
+                        let a = document.querySelector(".news-message");
+                        a.innerHTML = `<span>${result.content}</span>`;
+                        if (result.link) {
+                          a.href = result.link;
+                          a.target = "_blank";
+                        }
+                        a.classList.remove('is-hidden');
+                      }
+                    }
+                  }
+                } //
+                // console.log('GET', 'https://x.appscode.com/_/webinars/');
+                xhr.open('GET', 'https://x.appscode.com/_/news/');
+                xhr.send();
+              }());
+            </script>
+          <!-- news connect-message end -->
+        </div>
+        <div class="column is-6">
+          <div class="h-right-content">
+            <img src="{{ $p.hero_area.hero_image }}" alt="" />
           </div>
         </div>
       </div>
+      <!-- <div class="columns">
+        <div class="column">
 
-      <div class="columns is-multiline is-vcentered pt-100 is-flex-direction-row-reverse-mobile is-flex-direction-row-reverse-tablet">
-        <div class="column is-full-tablet is-half-desktop">
-          <div class="service-content-wrapper d-table">
-            <div class="service-content d-table-cell" data-aos="fade-up">
-              <!-- <h5>What Is AppsCode?</h5> -->
-              <h2>
-                Global Cloud Infrastructure <br />
-                at Your Fingertip
-              </h2>
-              <p>
-                Provision self-managed multi-node Kubernetes clusters
-                in minutes just with a few clicks. Easily take advantage of the
-                global infrastructure footprint of the cloud providers, like AWS, Azure, Google Cloud, DigitalOcean, Linode and others.
-              </p>
-              <div class="mt-40 learn-more">
-                <a href="{{ .Site.Params.domain_pharmer }}/docs/latest/welcome/" class="button ac-button is-primary">Learn More</a>
-              </div>
-            </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <!--==================== hero-area end 2022  ====================-->
+
+  <!--==================== products area start  ====================-->
+  <div class="products-area">
+    <div class="container">
+      <div class="columns is-multiline">
+        <!-- single product start  -->
+        {{ range $product := $p.main_products }}
+        <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
+          data-aos="fade-up" data-aos-duration="500">
+          <a href="{{ $product.url }}" class="single-product">
+            <div class="product-logo"><img src="{{ $product.logo }}" alt="kubedb-logo"></div>
+            <p class="is-ellipsis-4">{{ $product.description | safeHTML  }}</p>
+            <button class="button ac-button is-transparent">LEARN MORE <span class="material-icons-outlined">
+                arrow_forward
+              </span></button>
+          </a>
+        </div>
+        {{ end }}
+        <!-- single product end -->
+      </div>
+    </div>
+  </div>
+  <!--==================== products area end ====================-->
+
+
+  <!--==================== others product area start  ====================-->
+  <section class="others-products">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-6" data-aos="fade-up" data-aos-duration="500">
+          <div class="pr-60">
+            <p class="small-title">Why AppsCode 🤔</p>
+            <h2 data-aos="fade-up" data-aos-duration="600">{{ $p.highlight_products.title }}</h2>
+            <p data-aos="fade-up" data-aos-duration="700">{{ $p.highlight_products.summary }}</p>
+            <a href="{{ $p.highlight_products.url }}" class="button ac-button is-primary ">CONTACT WITH US</a>
           </div>
         </div>
-        <div class="column is-full-tablet is-half-desktop">
-          <div class="features-thumbnail" data-aos="fade-up" data-aos-duration="1000">
-            <img
-              src="/assets/images/appscode/products.png"
-              alt="dashboard-image"
-            />
+        <div class="column is-6">
+          <div class="products">
+            <div class="columns">
+              {{ range $product := $p.highlight_products.products }}
+              <div class="column is-6" data-aos="fade-up" data-aos-duration="600">
+
+                <!-- sigle product start  -->
+                <div class="single-product">
+                  <img src="{{ $product.logo }}" alt="">
+                  <p>{{ $product.summary | safeHTML }}</p>
+                  <a class="inline-button" href="{{ $product.url }}" class="">EXPLORE MORE</a>
+                </div>
+                <!-- sigle product end -->
+              </div>
+              {{ end }}
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- service area end -->
+  <!--==================== others product area end  ====================-->
+
 </div>
-<!-- shape end -->
 
-<!-- countdown-top-title start -->
-<section class="count-link-area pt-80">
-  <div class="container">
-    <!-- section title start -->
-    <div class="columns">
-      <div class="column is-8 has-text-left">
-        <div class="section-title mb-0">
-          <h2>
-            More than 5,000 developers use AppsCode products every month to deliver value
-          </h2>
-          <p>
-            Turbocharge your Kubernetes journey with AppsCode's open source Kubernetes operators <br />
-            and developer tools, like, KubeDB, Voyager, Stash, KubeVault, Pharmer and others. <br />
-            Join our vibrant community of users and let's get stuff done!
-          </p>
-        </div>
-      </div>
-      <!-- right sidebar area start -->
-      <div class="column is-3 is-offset-1">
-        <div class="right-sidebar-wrapper">
-          <div class="right-sidebar-menu">
-            <ul>
-              <li><a href="{{.Site.Params.slack_url}}">Join our slack!</a></li>
-              <li><a href="{{.Site.Params.github_url}}">Visit our Github page</a></li>
-              <li><a href="{{.Site.Params.domain_appscode}}">Read the docs</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- right sidebar area end -->
-    </div>
-    <!-- section title end -->
-  </div>
-</section>
-<!-- countdown-top-title end -->
-
-<!-- countdown start -->
-<section class="counter-area pt-50 pb-100">
-  <div class="container">
-    <!-- counter start -->
-    <div class="columns is-gapless is-multiline">
-
-      <!-- single count start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile" data-aos="fade-up">
-        <div class="single-count-wrapper">
-          <div class="count-icon">
-            <img src="/assets/images/icon/count/Octocat.png" alt="" />
-          </div>
-          <p class="count">5,000+</p>
-          <p class="name">GitHub stars</p>
-          <a href="{{.Site.Params.github_url}}" class="action-btn">Visit GitHub</a>
-        </div>
-      </div>
-      <!-- single count end -->
-
-      <!-- single count start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile" data-aos="fade-up" data-aos-duration="800">
-        <div class="single-count-wrapper">
-          <div class="count-icon">
-            <img src="/assets/images/icon/count/trained.png" alt="" />
-          </div>
-          <p class="count">2,000+</p>
-          <p class="name">Developer Community</p>
-          <a href="{{.Site.Params.slack_url}}" class="action-btn">Join slack</a>
-        </div>
-      </div>
-      <!-- single count end -->
-
-      <!-- single count start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile" data-aos="fade-up" data-aos-duration="1200">
-        <div class="single-count-wrapper">
-          <div class="count-icon">
-            <img src="/assets/images/icon/count/managed.png" alt="" />
-          </div>
-          <p class="count">4.5M+</p>
-          <p class="name">Docker downloads</p>
-          <a href="{{.Site.Params.domain_appscode}}/meet-expert/" class="action-btn">Request a demo</a>
-        </div>
-      </div>
-      <!-- single count end -->
-
-      <!-- single count start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile" data-aos="fade-up" data-aos-duration="1500">
-        <div class="single-count-wrapper">
-          <div class="count-icon">
-            <img src="/assets/images/icon/count/enterprise.png" alt="" />
-          </div>
-          <p class="count">70,000+</p>
-          <p class="name">Operators deployed</p>
-          <a href="{{.Site.Params.domain_appscode}}/pricing/" class="action-btn">Get support</a>
-        </div>
-      </div>
-      <!-- single count end -->
-
-    </div>
-    <!-- counter end -->
-  </div>
-</section>
-<!-- countdown end -->
-
-<!-- service area start -->
-<section class="pt-80 pb-80 service-area">
+<!--==================== products features area start  ====================-->
+<div class="products-features bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.jpg);">
+  <!-- <div class="shapes-dots">
+    <img class="shape dot-1" src="/assets/images/appscode/dots.png" alt="">
+    <img class="shape dot-2" src="/assets/images/appscode/dots.png" alt="">
+  </div> -->
   <div class="container">
     <div class="columns">
-      <div class="column is-8 is-offset-2 has-text-centered">
-        <!-- section title start -->
-        <div class="section-title is-main-title" data-aos="fade-up">
-          <h4>What we Do?</h4>
-          <h2>Our Services</h2>
-          <p>
-            Need some help? We're <a href="#">here</a> for you.
-          </p>
+      <div class="column is-3" data-aos="fade-up" data-aos-duration="500">
+        <!-- features tabs start  -->
+        <div class="features-tabs" id="nav-serialscrolling">
+          <ul>
+            {{ range $products := $p.products }}
+            <li><span class="sub-link" data-serialscrolling="{{ $products.id }}">{{ $products.use_case }}</span>
+            </li>
+            {{end}}
+          </ul>
         </div>
-        <!-- section title end -->
+        <!-- features tabs end -->
+      </div>
+      <div class="column is-9 is-paddingless-desktop">
+        <div class="products-description-wrapper">
+          <!-- single product start  -->
+          {{ range $products := $p.products }}
+          <div class="single-product {{$products.product}}" data-serialscrolling-target="{{ $products.id }}">
+            <div class="columns">
+              <div class="column is-6" data-aos="fade-up" data-aos-duration="600">
+                <!-- single product description start  -->
+                <div class="product-description">
+                  <div class="brand">
+                    <img src="{{ $products.logo}}" alt="Stash">
+                  </div>
+                  <!-- <h5>{{ $products.title}}</h5> -->
+                  <p>{{ $products.summary}}</p>
+                  <ul class="features">
+                    {{ range $features := $products.features}}
+                    <li><span class="material-icons">task_alt</span>{{ $features }}</li>
+                    {{ end }}
+                  </ul>
+                  <a class="button ac-button is-primary" href="{{ $products.url }}">GET STARTED</a>
+                </div>
+                <!-- single product description end -->
+              </div>
+              <div class="column is-6 is-hidden-tablet-only" data-aos="fade-up" data-aos-duration="700">
+                <div class="illustration">
+                  <img src="{{ $products.illustration }}" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single product end -->
+          {{end}}
+        </div>
+
       </div>
     </div>
+  </div>
+</div>
+<!--==================== products features area end ====================-->
 
-    <div class="columns is-multiline">
-      <!-- solution start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile" data-aos="fade-up">
-        <div class="single-solution-wrapper color-1">
-          <div class="solution-icon">
-            <img src="/assets/images/icon/leave-2.png" alt="" />
-          </div>
-          <h4><a href="{{ .Site.Params.github_url }}">Open Source</a></h4>
-          <p>
-            Turbocharge your Kubernetes journey with AppsCode's open source Kubernetes operators
-          </p>
-          <a href="{{ .Site.Params.github_url }}" class="inline-button"
-            ><i class="fa fa-angle-right" aria-hidden="true"></i
-          ></a>
+<!--====================  subscription area start  --==================== -->
+<section class="subscription-area">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-7" data-aos="fade-up" data-aos-duration="500">
+        <div class="subscription-message">
+          <h2 data-aos="fade-up" data-aos-duration="600">{{ $p.subscription.title | safeHTML}}</h2>
+          <p data-aos="fade-up" data-aos-duration="700">{{ $p.subscription.summary_left | safeHTML}}</p>
+          <!-- <a class="button ac-button is-primary is-outlined" href="https://support.appscode.com/">GET</a> -->
         </div>
       </div>
-      <!-- solution end -->
-      <!-- solution start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile" data-aos="fade-up" data-aos-duration="800">
-        <div class="single-solution-wrapper color-3">
-          <div class="solution-icon">
-            <img src="/assets/images/icon/consulting.png" alt="" />
-          </div>
-          <h4><a href="{{ .Site.Params.domain_appscode }}/consulting/">Consulting</a></h4>
-          <p>
-            Expedite your Kubernetes transition with the help of our kick-ass Kubernetes developers
-          </p>
-          <a href="{{ .Site.Params.domain_appscode }}/consulting/" class="inline-button"
-            ><i class="fa fa-angle-right" aria-hidden="true"></i
-          ></a>
-        </div>
+      <div class="column is-5" data-aos="fade-up" data-aos-duration="700">
+        <p>{{ $p.subscription.summary_right | safeHTML}}</p>
+
+        <!-- subscription input  -->
+        <form method="post" action="https://listmonk.appscode.com/subscription/form" id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form" class="subscription-input" data-aos="fade-up" data-aos-duration="800"
+          novalidate role="email">
+           <input type="hidden" id="afbbc" name="l" value="afbbc974-e163-4467-be49-040e399520f3" />
+          <input name="email" id="mce-EMAIL" type="email" placeholder="Enter your email address">
+          <button class="button ac-button is-primary" id="mc-embedded-subscribe" type="submit"
+            name="subscribe">SUBSCRIBE</button>
+          <p data-aos="fade-up" data-aos-duration="900">Subscribe to our newsletter <img
+              src="/assets/images/icon/indicator-arrow-right.svg" alt="indicator-arrow-right"></p>
+        </form>
+        <!-- subscription input  -->
       </div>
-      <!-- solution end -->
-      <!-- solution start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile" data-aos="fade-up" data-aos-duration="1200">
-        <div class="single-solution-wrapper color-4">
-          <div class="solution-icon">
-            <img src="/assets/images/icon/light-bulb.png" alt="" />
-          </div>
-          <h4><a href="{{ .Site.Params.domain_appscode }}/training/">In-Person Training</a></h4>
-          <p>
-            We organize training workshops to help your organization implement Kubernetes quickly.
-          </p>
-          <a href="{{ .Site.Params.domain_appscode }}/training/" class="inline-button"
-            ><i class="fa fa-angle-right" aria-hidden="true"></i
-          ></a>
-        </div>
-      </div>
-      <!-- solution end -->
-      <!-- solution start -->
-      <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile" data-aos="fade-up" data-aos-duration="1500">
-        <div class="single-solution-wrapper color-2">
-          <div class="solution-icon">
-            <img src="/assets/images/icon/network.png" alt="" />
-          </div>
-          <h4><a href="{{ .Site.Params.domain_appscode }}/pricing/">Support</a></h4>
-          <p>
-            We offer paid support packages so that you are not alone when things go wrong!
-          </p>
-          <a href="{{ .Site.Params.domain_appscode }}/pricing/" class="inline-button"
-            ><i class="fa fa-angle-right" aria-hidden="true"></i
-          ></a>
-        </div>
-      </div>
-      <!-- solution end -->
     </div>
   </div>
 </section>
-<!-- service area end -->
+<!-- ====================  subscription area end --====================-->
+
+<!-- social connect start  -->
+<div class="bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.jpg);">
+  <!--==================== social connect area end ====================-->
+  <section class="social-connect-area">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8">
+          <div class="connect-message">
+            <h2 data-aos="fade-up" data-aos-duration="500">{{ $p.social_connect.title }}</h2>
+            <p data-aos="fade-up" data-aos-duration="600">{{ $p.social_connect.summary }}</p>
+          </div>
+        </div>
+        <div class="column is-4">
+          <ul class="social-link">
+            {{ range $social_link := $p.social_connect.social_link }}
+            <li data-aos="fade-up" data-aos-duration="500"><a href="{{ $social_link.url }}"><span><img
+                    src="{{$social_link.icon}}" alt=""></span>{{ $social_link.text }}</a>
+            </li>
+            {{ end }}
+
+          </ul>
+        </div>
+      </div>
+
+      <!-- cards start  -->
+      <div class="columns is-multiline">
+        {{ range $social_cards := $p.social_connect.social_cards}}
+        <!-- single card start  -->
+        <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
+          data-aos="fade-up" data-aos-duration="500">
+          <a href="{{ $social_cards.url }}" class="single-card is-block">
+            <div class="card-top">
+              <div class="card-icon"><img src="{{ $social_cards.icon }}" alt=""></div>
+              <div class="count">
+                <h2>{{ $social_cards.users }}</h2>
+                <p>{{ $social_cards.sub_title }}</p>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <!-- <p>{{ $social_cards.summary }}</p> -->
+              <button>View On {{ $social_cards.name }}</button>
+            </div>
+          </a>
+        </div>
+        <!-- single card end -->
+        {{end}}
+      </div>
+      <!-- cards end -->
+    </div>
+  </section>
+  <!--==================== social connect area end ====================-->
+
+  <!--==================== trusted companies area start ====================-->
+  <div class="social-prove-brand-area">
+    <div class="container">
+      <div class="column has-text-centered" data-aos="fade-up" data-aos-duration="500">
+        <h5>Trusted Clients</h5>
+      </div>
+      <div class="columns">
+        <div class="column is-12">
+          <div class="brand-image-wrapper owl-carousel">
+            {{ range $customer := $.Site.Data.customers }}
+            {{ if $customer.show }}
+            <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"></div>
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================== trusted companies area end ====================-->
+</div>
+<!-- social connect start  -->
+
 
 <!-- press-area start -->
 <section class="press-area pt-80 pb-80">
@@ -336,8 +311,8 @@
     <div class="columns">
       <div class="column is-8 is-offset-2 has-text-centered">
         <!-- section title start -->
-        <div class="section-title" data-aos="fade-up">
-          <h2>Press</h2>
+        <div class="section-title mb-10" data-aos="fade-up">
+          <h2>WHAT THEY PUBLISHED</h2>
         </div>
         <!-- section title end -->
       </div>
@@ -353,11 +328,11 @@
             <h3>
               <a href="{{ $article.link }}">{{ $article.title }}</a>
             </h3>
-            <p>
+            <p class="is-ellipsis-3">
               {{ $article.summary }}
             </p>
             <div class="press-button-wrapper">
-              <a href="{{ $article.link }}" class="press-button">Learn More</a>
+              <a href="{{ $article.link }}" class="press-button">READ MORE</a>
             </div>
           </div>
         </div>
@@ -369,6 +344,7 @@
 </section>
 <!-- press-area end -->
 
+<div class="bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.jpg);">
   <!-- ==========================testimonial area 2022 start ==========================  -->
   <section class="testimonial-area">
 
@@ -426,11 +402,14 @@
           <div class="columns is-vcentered is-multiline">
             <div class="column is-full-tablet is-half-tablet is-half-desktop">
               <h3 data-aos="fade-up" data-aos-duration="500">Get Started with AppsCode</h3>
+              <!-- <p>AppsCode community edition is FREE to use on any supported Kubernetes engines. There is no up-front
+                investment required, and you need to pay only for the resources you use to your infrastructure provider.
+                We offer a 30 days license FREE of cost to try KubeDB Enterprise edition.</p> -->
             </div>
             <div
               class="column is-full-tablet is-half-tablet is-half-desktop has-text-centered-touch has-text-right-desktop">
               <div class="buttons is-justify-content-flex-end">
-          
+
                 <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button ac-white"
                   style="background-color: white; border: 1px solid #e7e7e7; color: #00a651;"><span>
                     <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json"
@@ -446,36 +425,42 @@
     </div>
   </section>
   <!-- call to action area end -->
+</div>
+
 
 <!-- video-player start  -->
 <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
-    <div class="lightbox-container">
-      <div class="lightbox-content">
-        <button onclick="hideVideo('video','youtube')" class="lightbox-close">
-          X
-        </button>
-        <div class="video-container">
-          <iframe id="youtube" width="1080" height="540" src="https://www.youtube.com/embed/{{ $.Site.Data.products.appscode.videos.intro }}" frameborder="0" allowfullscreen></iframe>
-        </div>
+  <div class="lightbox-container">
+    <div class="lightbox-content">
+      <button onclick="hideVideo('video','youtube')" class="lightbox-close">
+        X
+      </button>
+      <div class="video-container">
+        <iframe id="youtube" width="1080" height="540"
+          src="https://www.youtube.com/embed/{{ $.Site.Data.products.appscode.videos.intro }}" frameborder="0"
+          allowfullscreen></iframe>
       </div>
     </div>
   </div>
+</div>
 <!-- video-player start  -->
+
+
 <script>
   // Function to reveal lightbox and adding YouTube autoplay
-    function revealVideo(div,video_id) {
-      var video = document.getElementById(video_id).src;
-      document.getElementById(video_id).src = video+'?&autoplay=1'; // adding autoplay to the URL
-      document.getElementById(div).style.display = 'block';
-    }
+  function revealVideo(div, video_id) {
+    var video = document.getElementById(video_id).src;
+    document.getElementById(video_id).src = video + '?&autoplay=1'; // adding autoplay to the URL
+    document.getElementById(div).style.display = 'block';
+  }
 
-    // Hiding the lightbox and removing YouTube autoplay
-    function hideVideo(div,video_id) {
-      var video = document.getElementById(video_id).src;
-      var cleaned = video.replace('?&autoplay=1',''); // removing autoplay form url
-      document.getElementById(video_id).src = cleaned;
-      document.getElementById(div).style.display = 'none';
-    }
+  // Hiding the lightbox and removing YouTube autoplay
+  function hideVideo(div, video_id) {
+    var video = document.getElementById(video_id).src;
+    var cleaned = video.replace('?&autoplay=1', ''); // removing autoplay form url
+    document.getElementById(video_id).src = cleaned;
+    document.getElementById(div).style.display = 'none';
+  }
 </script>
 
 
