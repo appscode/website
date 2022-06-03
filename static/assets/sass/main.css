@@ -14869,6 +14869,93 @@ Responsive Classes
   }
 }
 
+.ac-accordion-wrapper.is-marginless .single-accordion-item {
+  margin: 0;
+  padding: 0;
+}
+
+.ac-accordion-wrapper.is-marginless .single-accordion-item .accordion-heading {
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.ac-accordion-wrapper.is-marginless .single-accordion-item .accordion-heading::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--ac-primary);
+}
+
+.ac-accordion-wrapper .single-accordion-item {
+  background-color: #fff;
+  border: 1px solid #E8E9EA;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.ac-accordion-wrapper .single-accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+.ac-accordion-wrapper .single-accordion-item .accordion-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ac-accordion-wrapper .single-accordion-item .accordion-heading h3 {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1C1C1C;
+}
+
+.ac-accordion-wrapper .single-accordion-item .accordion-heading h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.ac-accordion-wrapper .single-accordion-item .accordion-heading button {
+  font-size: 12px;
+  letter-spacing: .1px;
+}
+
+.ac-accordion-wrapper .single-accordion-item .accordion-heading .icon {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #1C1C1C;
+  line-height: 16px;
+  font-size: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.ac-accordion-wrapper .single-accordion-item .accordion-body {
+  max-height: 0;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+  padding: 0;
+}
+
+.ac-accordion-wrapper .single-accordion-item .accordion-body p {
+  padding-top: 3px;
+  font-size: 15px;
+  color: #393E46;
+}
+
 .cta-area {
   margin-top: -125px;
 }
@@ -16361,7 +16448,7 @@ Responsive Classes
 }
 
 .features-cta-area .features-plan-cta-wrapper .cta-left {
-  width: 30%;
+  width: 35%;
   padding: 30px 20px;
 }
 
@@ -16388,7 +16475,7 @@ Responsive Classes
 }
 
 .features-cta-area .features-plan-cta-wrapper .cta-right {
-  width: 70%;
+  width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16402,11 +16489,11 @@ Responsive Classes
 }
 
 .features-cta-area .features-plan-cta-wrapper .cta-right .single-cta.community {
-  width: 30%;
+  width: 50%;
 }
 
 .features-cta-area .features-plan-cta-wrapper .cta-right .single-cta.enterprise {
-  width: 70%;
+  width: 50%;
 }
 
 .features-cta-area .features-plan-cta-wrapper .cta-right .single-cta.enterprise .button.ac-button.is-secondary {
@@ -16500,8 +16587,22 @@ Responsive Classes
 .features-plan-area .single-features-area .single-features {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 70%;
-      grid-template-columns: 30% 70%;
+  -ms-grid-columns: 35% 65%;
+      grid-template-columns: 35% 65%;
+}
+
+.features-plan-area .single-features-area .single-features .features-plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  text-align: center;
 }
 
 .features-plan-area .single-features-area .single-features:nth-child(odd) {
@@ -16631,8 +16732,8 @@ Responsive Classes
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: 30% 70%;
-      grid-template-columns: 30% 70%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
 }
 
 .features-plan-area .single-features-area .single-features .features-plan-wrapper .features-plan {
@@ -16662,8 +16763,8 @@ Responsive Classes
 .features-plan-area .single-features-area .single-features .features-plan-wrapper .features-plan.enterprise {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33.33% 33.33% 33.34%;
-      grid-template-columns: 33.33% 33.33% 33.34%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
   font-size: 14px;
   height: 100%;
 }
@@ -16827,7 +16928,7 @@ Responsive Classes
     min-width: 1344px;
   }
   .features-cta-area .features-plan-cta-wrapper .cta-left {
-    width: 30%;
+    width: 35%;
   }
   .features-cta-area .features-plan-cta-wrapper .cta-left h2 {
     font-size: 26px;
@@ -16885,7 +16986,7 @@ Responsive Classes
     min-width: 1344px;
   }
   .features-cta-area .features-plan-cta-wrapper .cta-left {
-    width: 100%;
+    width: 35%;
   }
   .features-cta-area .features-plan-cta-wrapper .cta-left h2 {
     font-size: 26px;

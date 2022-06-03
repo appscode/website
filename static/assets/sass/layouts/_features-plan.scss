@@ -36,7 +36,7 @@
     top: 50px;
 
     .cta-left {
-      width: 30%;
+      width: 35%;
       padding: 30px 20px;
       // height: 266px;
 
@@ -64,7 +64,7 @@
     }
 
     .cta-right {
-      width: 70%;
+      width: 65%;
       display: flex;
       // min-height: 266px;
 
@@ -76,11 +76,11 @@
         // min-height: 265px;
 
         &.community {
-          width: 30%;
+          width: 50%;
         }
 
         &.enterprise {
-          width: 70%;
+          width: 50%;
 
           .button {
             &.ac-button {
@@ -188,8 +188,14 @@
   .single-features-area {
     .single-features {
       display: grid;
-      grid-template-columns: 30% 70%;
-
+      grid-template-columns: 35% 65%;
+      .features-plan {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+      }
       &:nth-child(odd) {
         background-color: $ac-white;
 
@@ -323,7 +329,7 @@
         display: grid;
         align-items: center;
         // width: 65%;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 50% 50%;
 
         .features-plan {
           font-weight: 400;
@@ -344,7 +350,7 @@
 
           &.enterprise {
             display: grid;
-            grid-template-columns: 33.33% 33.33% 33.34%;
+            grid-template-columns: 100%;
             font-size: 14px;
             height: 100%;
           }
@@ -508,7 +514,7 @@ Responsive Classes
       min-width: 1344px;
 
       .cta-left {
-        width: 30%;
+        width: 35%;
 
         h2 {
           font-size: 26px;
@@ -597,7 +603,7 @@ Responsive Classes
       min-width: 1344px;
 
       .cta-left {
-        width: 100%;
+        width: 35%;
 
         h2 {
           font-size: 26px;
