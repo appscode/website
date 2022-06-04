@@ -194,6 +194,13 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  // documentaion page select-box js
+  var selectBoxDropdown = document.querySelector(".product-version .dropdown");
+  var selectBoxDropdownBtn = document.querySelector(".dropdown-trigger");
+  selectBoxDropdownBtn.addEventListener("click", function () {
+    selectBoxDropdown.classList.toggle("is-active");
+  })
 });
 
 // menu sticky
