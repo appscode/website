@@ -1,0 +1,27 @@
+/*!
+ * jQuery serialscrolling
+ * https://github.com/kevinmeunier/jquery-serialscrolling
+ *
+ * Copyright 2022 Meunier Kévin
+ * https://www.meunierkevin.com
+ *
+ * Released under the MIT license
+ */
+!function(t){"use strict";t.fn.serialscrolling=function(e){const r=t.extend({},t.fn.serialscrolling.defaults,e),n=t(r.targetSelector),l=t(window),i=t(this),s=this;let o=!1;return t.extend(this,{init:function(){l.on("scroll.serialscrolling",this.handleCurrent).trigger("scroll"),this.on("click.serialscrolling",this.handleEvent)},handleCurrent:function(){let e;n.each(function(){const n=t(this);n.offset().top-l.height()/2<l.scrollTop()&&(e=r.getTrigger(n,i))}),e&&!e.is(o)&&(s.setCurrent(e),r.callback&&r.callback(id))},handleEvent:function(){const e=t(this),n=r.getTarget(e);return s.scrollTo(n,r.duration,r.easing),!1},setCurrent:function(t){o&&o.removeClass("is-current"),o=t,t.addClass("is-current")},scrollTo:function(e,n,l){t("body, html").animate({scrollTop:e.offset().top+r.offsetTop},n,l)}}),this.init(),this},t.fn.serialscrolling.defaults={targetSelector:"[data-serialscrolling-target]",getTarget:function(e){const r=e.attr("data-serialscrolling");return t('[data-serialscrolling-target="'+r+'"]')},getTrigger:function(t,e){const r=t.attr("data-serialscrolling-target");return e.filter('[data-serialscrolling="'+r+'"]')},duration:800,easing:"easeInOutExpo",offsetTop:0,callback:!1}}(jQuery);
+
+
+/*
+ * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
+ *
+ * Uses the built in easing capabilities added In jQuery 1.1
+ * to offer multiple easing options
+ *
+ * TERMS OF USE - jQuery Easing
+ *
+ * Open source under the BSD License.
+ *
+ * Copyright © 2008 George McGinley Smith
+ * All rights reserved.
+  *
+*/
+$.easing.easeInOutExpo=function(n,t,a,e,o){return 0==t?a:t==o?a+e:(t/=o/2)<1?e/2*Math.pow(2,10*(t-1))+a:e/2*(2-Math.pow(2,-10*--t))+a};

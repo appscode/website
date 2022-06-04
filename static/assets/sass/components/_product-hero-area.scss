@@ -395,8 +395,16 @@
 }
 
 .social-prove-brand-area {
+  .container {
+    // box-shadow: 0px 4px 18px 5px rgba(0, 166, 81, 0.09);
+    background: #fff;
+    border-radius: 4px;
+    margin-top: -80px;
+    padding: 30px 0 0;
+    z-index: 9;
+  }
   .brand-image-wrapper {
-    padding: 30px 0;
+    padding: 20px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -473,11 +481,14 @@ Responsive Classes
   }
 
   .social-prove-brand-area {
+    .container {
+      padding: 0 15px;
+    }
     .brand-image-wrapper {
       padding: 30px 0;
       padding-bottom: 0px;
       justify-content: center;
-
+      
       .single-brand {
         padding: 5px;
 
