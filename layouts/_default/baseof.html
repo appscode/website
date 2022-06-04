@@ -73,10 +73,10 @@
   {{ block "head-footer" . }}
   {{ end }}
   <!-- Custom CSS -->
-  <!-- {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
+  {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-  {{ end }} -->
-  <link rel="stylesheet" href="/assets/sass/main.css" />
+  {{ end }}
+  <!-- <link rel="stylesheet" href="/assets/sass/main.css" /> -->
 </head>
 
 <body {{if $productName}}class="{{$productName}}" {{end}}>
@@ -739,7 +739,7 @@
 
   {{ block "testimonial" . }}
   <!-- ==========================testimonial area 2022 start ==========================  -->
-  <section class="testimonial-area pb-60">
+  <section class="testimonial-area">
 
     <div class="container">
       <div class="columns is-vcentered">
