@@ -571,7 +571,7 @@
                     {{ range $v := $p.versions }}
                     {{ if $v.show }}
                     {{ if $v.hostDocs }}
-                    <a href="/docs/{{ $v.version }}/" class="dropdown-item">{{ $v.version }}
+                    <a href="/products/{{$p.key}}/{{ $v.version }}/" class="dropdown-item">{{ $v.version }}
                       {{ if eq $v.version $p.latestVersion }} <div class="new-item ml-15">Latest</div> {{ end }}</a>
                     {{ else }}
                     <a href="https://github.com/{{ $p.docRepo }}/tree/{{ $v.version }}/docs" target="_blank"
