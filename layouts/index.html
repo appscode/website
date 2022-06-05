@@ -4,7 +4,7 @@
 
 {{ define "main" }}
 
-{{ $p := $.Site.Data.products.appscode.homepage}}
+{{ $p := $.Site.Data.products.appscode}}
 
 <!--==================== hero-area start 2022 ====================-->
 <div class="bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.jpg);">
@@ -13,13 +13,13 @@
       <div class="columns">
         <div class="column is-6">
 
-          <h1>{{ $p.hero_area.title }}</h1>
-          <p data-aos="fade-up" data-aos-duration="500">{{ $p.hero_area.summary }}</p>
+          <h1>{{ $p.homepage.hero_area.title }}</h1>
+          <p data-aos="fade-up" data-aos-duration="500">{{ $p.homepage.hero_area.summary }}</p>
 
           <!-- buttons  -->
           <!-- style="width:22px;height:22px; margin-right: 8px;" -->
           <div class="buttons" data-aos="fade-up" data-aos-duration="700">
-            <a href="{{ $p.hero_area.get_in_touch_url }}" class="button ac-button is-primary">
+            <a href="{{ $p.homepage.hero_area.get_in_touch_url }}" class="button ac-button is-primary">
               <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json" trigger="loop"
                 target="a.is-secondary" trigger="hover">
               </lord-icon><span>GET IN TOUCH</span>
@@ -54,8 +54,7 @@
                     }
                   }
                 } //
-                // console.log('GET', 'https://x.appscode.com/_/webinars/');
-                xhr.open('GET', 'https://x.appscode.com/_/news/');
+                xhr.open('GET', 'https://x.appscode.com/_/news?p={{$p.name}}');
                 xhr.send();
               }());
             </script>
@@ -63,7 +62,7 @@
         </div>
         <div class="column is-6">
           <div class="h-right-content">
-            <img src="{{ $p.hero_area.hero_image }}" alt="" />
+            <img src="{{ $p.homepage.hero_area.hero_image }}" alt="" />
           </div>
         </div>
       </div>
@@ -81,7 +80,7 @@
     <div class="container">
       <div class="columns is-multiline">
         <!-- single product start  -->
-        {{ range $product := $p.main_products }}
+        {{ range $product := $p.homepage.main_products }}
         <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
           data-aos="fade-up" data-aos-duration="500">
           <a href="{{ $product.url }}" class="single-product">
@@ -107,15 +106,15 @@
         <div class="column is-6" data-aos="fade-up" data-aos-duration="500">
           <div class="pr-60">
             <p class="small-title">Why AppsCode 🤔</p>
-            <h2 data-aos="fade-up" data-aos-duration="600">{{ $p.highlight_products.title }}</h2>
-            <p data-aos="fade-up" data-aos-duration="700">{{ $p.highlight_products.summary }}</p>
-            <a href="{{ $p.highlight_products.url }}" class="button ac-button is-primary ">CONTACT WITH US</a>
+            <h2 data-aos="fade-up" data-aos-duration="600">{{ $p.homepage.highlight_products.title }}</h2>
+            <p data-aos="fade-up" data-aos-duration="700">{{ $p.homepage.highlight_products.summary }}</p>
+            <a href="{{ $p.homepage.highlight_products.url }}" class="button ac-button is-primary ">CONTACT WITH US</a>
           </div>
         </div>
         <div class="column is-6">
           <div class="products">
             <div class="columns">
-              {{ range $product := $p.highlight_products.products }}
+              {{ range $product := $p.homepage.highlight_products.products }}
               <div class="column is-6" data-aos="fade-up" data-aos-duration="600">
 
                 <!-- sigle product start  -->
@@ -149,7 +148,7 @@
         <!-- features tabs start  -->
         <div class="features-tabs" id="nav-serialscrolling">
           <ul>
-            {{ range $products := $p.products }}
+            {{ range $products := $p.homepage.products }}
             <li><span class="sub-link" data-serialscrolling="{{ $products.id }}">{{ $products.use_case }}</span>
             </li>
             {{end}}
@@ -160,7 +159,7 @@
       <div class="column is-9 is-paddingless-desktop">
         <div class="products-description-wrapper">
           <!-- single product start  -->
-          {{ range $products := $p.products }}
+          {{ range $products := $p.homepage.products }}
           <div class="single-product {{$products.product}}" data-serialscrolling-target="{{ $products.id }}">
             <div class="columns">
               <div class="column is-6" data-aos="fade-up" data-aos-duration="600">
@@ -203,13 +202,13 @@
     <div class="columns">
       <div class="column is-7" data-aos="fade-up" data-aos-duration="500">
         <div class="subscription-message">
-          <h2 data-aos="fade-up" data-aos-duration="600">{{ $p.subscription.title | safeHTML}}</h2>
-          <p data-aos="fade-up" data-aos-duration="700">{{ $p.subscription.summary_left | safeHTML}}</p>
+          <h2 data-aos="fade-up" data-aos-duration="600">{{ $p.homepage.subscription.title | safeHTML}}</h2>
+          <p data-aos="fade-up" data-aos-duration="700">{{ $p.homepage.subscription.summary_left | safeHTML}}</p>
           <!-- <a class="button ac-button is-primary is-outlined" href="https://support.appscode.com/">GET</a> -->
         </div>
       </div>
       <div class="column is-5" data-aos="fade-up" data-aos-duration="700">
-        <p>{{ $p.subscription.summary_right | safeHTML}}</p>
+        <p>{{ $p.homepage.subscription.summary_right | safeHTML}}</p>
 
         <!-- subscription input  -->
         <form method="post" action="https://listmonk.appscode.com/subscription/form" id="mc-embedded-subscribe-form"
@@ -237,13 +236,13 @@
       <div class="columns">
         <div class="column is-8">
           <div class="connect-message">
-            <h2 data-aos="fade-up" data-aos-duration="500">{{ $p.social_connect.title }}</h2>
-            <p data-aos="fade-up" data-aos-duration="600">{{ $p.social_connect.summary }}</p>
+            <h2 data-aos="fade-up" data-aos-duration="500">{{ $p.homepage.social_connect.title }}</h2>
+            <p data-aos="fade-up" data-aos-duration="600">{{ $p.homepage.social_connect.summary }}</p>
           </div>
         </div>
         <div class="column is-4">
           <ul class="social-link">
-            {{ range $social_link := $p.social_connect.social_link }}
+            {{ range $social_link := $p.homepage.social_connect.social_link }}
             <li data-aos="fade-up" data-aos-duration="500"><a href="{{ $social_link.url }}"><span><img
                     src="{{$social_link.icon}}" alt=""></span>{{ $social_link.text }}</a>
             </li>
@@ -255,7 +254,7 @@
 
       <!-- cards start  -->
       <div class="columns is-multiline">
-        {{ range $social_cards := $p.social_connect.social_cards}}
+        {{ range $social_cards := $p.homepage.social_connect.social_cards}}
         <!-- single card start  -->
         <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
           data-aos="fade-up" data-aos-duration="500">
