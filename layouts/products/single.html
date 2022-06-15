@@ -64,7 +64,7 @@
 
             <!-- product description start  -->
             <!-- single product description start  -->
-            <div class="product-description is-block">
+            <!-- <div class="product-description is-block">
               <div class="video-content">
                 <div class="yt-thumbnail">
                   <a href="https://www.youtube.com/watch?v=zWX2LuD1xQI" class="play-icon yt-video">
@@ -79,7 +79,7 @@
                   <img src="https://img.youtube.com/vi/zWX2LuD1xQI/sddefault.jpg" alt="">
                 </div>
               </div>
-            </div>
+            </div> -->
             <!-- single product description end  -->
             <!-- product description end -->
           </div>
@@ -119,13 +119,21 @@
   </div>
   <!-- searchbar component end -->
 </div>
+{{ end }}
+
+{{ define "main" }}
+{{ $currentPage := . }}
+{{ $menu := .Params.menu_name }}
+{{ $p := (index .Site.Data.products (string .Params.product_name)) }}
+
 
 <!-- init idx -->
 {{ .Scratch.Add "idx" 0 }}
 
 {{ $currentBranch := (index (split .Params.menu_name "_") 2) }}
+
 <!-- documentation area start -->
-<div class="documentation-area mt-30">
+<div class="documentation-area">
   <!-- documentation area start -->
   <div class="left-sidebar-wrapper">
     <button class="button ac-button inline-button back-button pl-15 is-hidden-desktop"><span
