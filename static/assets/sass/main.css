@@ -8966,30 +8966,6 @@ video {
   margin-right: 1rem;
 }
 
-.hero-area-1 .news-message {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #3e393e;
-  background: #ffffff;
-  border: 1px solid #dbdbde;
-  padding: 8px 15px;
-  border-radius: 2px;
-}
-
-.hero-area-1 .news-message:hover strong {
-  text-decoration: underline;
-}
-
-.hero-area-1 .news-message strong {
-  color: var(--ac-primary);
-}
-
 .hero-area-1 .h-right-content {
   margin-right: -70px;
   opacity: 0;
@@ -9005,6 +8981,30 @@ video {
   visibility: visible;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.news-message {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3e393e;
+  background: #ffffff;
+  border: 1px solid #dbdbde;
+  padding: 8px 15px;
+  border-radius: 2px;
+}
+
+.news-message:hover strong {
+  text-decoration: underline;
+}
+
+.news-message strong {
+  color: var(--ac-primary);
 }
 
 .products-area .single-product {
@@ -18181,3 +18181,4 @@ Responsive Classes
   documentation page end
 ==============================================*/
 }
+/*# sourceMappingURL=main.css.map */
