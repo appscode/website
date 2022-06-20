@@ -9726,6 +9726,14 @@ Responsive Classes
   .hero-area-1 .h-right-content {
     margin-right: 0;
   }
+  .news-message-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .products-area .single-product {
     padding: 30px 20px;
     text-align: center;
@@ -9839,6 +9847,14 @@ Responsive Classes
   }
   .hero-area-1 .h-right-content {
     margin-right: 0;
+  }
+  .news-message-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .products-features .products-description-wrapper .single-product:after {
     right: 0;
