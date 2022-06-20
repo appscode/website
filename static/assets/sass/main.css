@@ -9848,14 +9848,6 @@ Responsive Classes
   .hero-area-1 .h-right-content {
     margin-right: 0;
   }
-  .news-message-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .products-features .products-description-wrapper .single-product:after {
     right: 0;
     width: 100%;
@@ -14330,6 +14322,12 @@ Responsive Classes
   }
   .hero-area.is-product h1 {
     font-size: 2.5rem;
+    text-align: left;
+  }
+  .hero-area.is-product .buttons {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .hero-area-code-editor {
     max-width: calc(100vw - 100px);

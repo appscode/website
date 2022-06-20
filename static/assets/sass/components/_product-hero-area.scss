@@ -524,6 +524,10 @@ Responsive Classes
 
       h1 {
         font-size: 2.5rem;
+        text-align: left;
+      }
+      .buttons {
+        justify-content: flex-start;
       }
     }
   }
