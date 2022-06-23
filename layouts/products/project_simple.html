@@ -26,23 +26,11 @@
   <div class="container">
     <div class="columns is-vcentered is-multiline">
       <div class="column is-6">
-        <h1> {{ $p.tagline | safeHTML }}</h1>
-        <!-- <h1> Run Production-Grade Databases on Kubernetes</h1> -->
-        <div class="buttons" data-aos="fade-up" data-aos-duration="700">
-          <a href="/products/{{ $p.key }}/{{ $p.latestVersion }}/setup/"
-            class="button ac-button is-primary">TRY NOW FREE</a>
-          <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-secondary"><span>
-              <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json" trigger="loop"
-                style="width:22px;height:22px; margin-right: 8px;">
-              </lord-icon>
-            </span>GET IN TOUCH</a>
-        </div>
-
          <!-- news connect-message start  -->
          <div class="news-message-wrapper">
-            <a href="" class="news-message is-hidden" data-aos="fade-up" data-aos-duration="900"><span>cool stuff!</a>
+           <a href="" class="news-message is-hidden" data-aos="fade-up" data-aos-duration="900"><span>cool stuff!</a>
          </div>
-         
+
          <script type="text/javascript">
            (function () {
              var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
@@ -67,6 +55,18 @@
            }());
          </script>
          <!-- news connect-message end -->
+        <h1> {{ $p.tagline | safeHTML }}</h1>
+        <!-- <h1> Run Production-Grade Databases on Kubernetes</h1> -->
+        <div class="buttons" data-aos="fade-up" data-aos-duration="700">
+          <a href="/products/{{ $p.key }}/{{ $p.latestVersion }}/setup/"
+            class="button ac-button is-primary">TRY NOW FREE</a>
+          <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-secondary"><span>
+              <lord-icon class="inherit-color" speed="0.50" src="https://cdn.lordicon.com/uvextprq.json" trigger="loop"
+                style="width:22px;height:22px; margin-right: 8px;">
+              </lord-icon>
+            </span>GET IN TOUCH</a>
+        </div>
+
       </div>
       <div class="column is-6">
         <div class="hero-area-right">
