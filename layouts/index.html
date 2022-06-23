@@ -12,6 +12,35 @@
     <div class="container">
       <div class="columns">
         <div class="column is-6">
+           <!-- news connect-message start  -->
+           <div class="news-message-wrapper">
+             <a href="" class="news-message is-hidden" data-aos="fade-up" data-aos-duration="900"><span>cool stuff!</a>
+           </div>
+
+           <script type="text/javascript">
+             (function () {
+               var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+               xhr.onreadystatechange = function () {
+                 if (xhr.readyState === 4) {
+                   if (xhr.status === 200) {
+                     var result = JSON.parse(xhr.responseText);
+                     if (result.content) {
+                       let a = document.querySelector(".news-message");
+                       a.innerHTML = `<span>${result.content}</span>`;
+                       if (result.link) {
+                         a.href = result.link;
+                         a.target = "_blank";
+                       }
+                       a.classList.remove('is-hidden');
+                     }
+                   }
+                 }
+               } //
+               xhr.open('GET', 'https://x.appscode.com/_/news?p={{$p.name}}');
+               xhr.send();
+             }());
+           </script>
+           <!-- news connect-message end -->
 
           <h1>{{ $p.homepage.hero_area.title }}</h1>
           <p data-aos="fade-up" data-aos-duration="500">{{ $p.homepage.hero_area.summary }}</p>
@@ -32,35 +61,6 @@
             </div>
           </div>
           <!-- buttons  -->
-          <!-- news connect-message start  -->
-          <div class="news-message-wrapper">
-            <a href="" class="news-message is-hidden" data-aos="fade-up" data-aos-duration="900"><span>cool stuff!</a>
-          </div>
-          
-            <script type="text/javascript">
-              (function () {
-                var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-                xhr.onreadystatechange = function () {
-                  if (xhr.readyState === 4) {
-                    if (xhr.status === 200) {
-                      var result = JSON.parse(xhr.responseText);
-                      if (result.content) {
-                        let a = document.querySelector(".news-message");
-                        a.innerHTML = `<span>${result.content}</span>`;
-                        if (result.link) {
-                          a.href = result.link;
-                          a.target = "_blank";
-                        }
-                        a.classList.remove('is-hidden');
-                      }
-                    }
-                  }
-                } //
-                xhr.open('GET', 'https://x.appscode.com/_/news?p={{$p.name}}');
-                xhr.send();
-              }());
-            </script>
-          <!-- news connect-message end -->
         </div>
         <div class="column is-6">
           <div class="h-right-content">
