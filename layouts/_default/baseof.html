@@ -1,5 +1,6 @@
 {{ $productName := .Params.product_name }}
 {{ $p := (index .Site.Data.products (default "appscode" $productName)) }}
+{{ $currentBranch := (index (split .Params.menu_name "_") 2) }}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,6 +16,10 @@
   <meta name="description" content="{{ $p.summary | plainify }}">
   <meta name="author" content="{{ $p.author }}">
   <meta name="keywords" content="{{ $p.keywords }}">
+  {{ if (and $currentBranch (not (eq $p.latestVersion $currentBranch))) }}
+  <!--https://developers.google.com/search/docs/advanced/crawling/block-indexing#meta-tag-->
+  <meta name="robots" content="noindex">
+  {{ end }}
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/products/{{ $p.key }}/icons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/products/{{ $p.key }}/icons/apple-icon-60x60.png">
