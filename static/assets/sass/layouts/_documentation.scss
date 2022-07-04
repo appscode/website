@@ -76,11 +76,10 @@
       }
     }
 
-    .item input:checked~label a, 
-    .item input:checked~.item>label a {
+    .item input:checked ~ label a,
+    .item input:checked ~ .item > label a {
       color: $ac-primary;
     }
-
   }
 
   .documentation-body {
@@ -816,6 +815,9 @@ Responsive Classes
 
   .improve-section-area {
     padding-bottom: 20px;
+  }
+  .button.is-link.is-medium.is-active.has-text-weight-normal {
+    margin-bottom: 10px;
   }
 }
 
