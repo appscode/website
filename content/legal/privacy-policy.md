@@ -282,6 +282,14 @@ Facebook adheres to the Self-Regulatory Principles for Online Behavioural Advert
 
 For more information on the privacy practices of Facebook, please visit Facebook's Data Policy: https://www.facebook.com/privacy/explanation
 
+### Zoho Pagesense
+
+Zoho Pagesense service is provided by Zoho.com
+
+To learn about terms of services of Zoho Pagesense service, visit: https://www.zoho.com/pagesense/terms.html
+
+For more information on the privacy practices of Zoho.com, please visit the Zoho Privacy Policy web page: https://www.zoho.com/privacy.html
+
 ## Payments
 
 We may provide paid products and/or services within Service. In that case, we use third-party services for payment processing (e.g. payment processors).
