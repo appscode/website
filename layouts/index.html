@@ -64,7 +64,7 @@
         </div>
         <div class="column is-6">
           <div class="h-right-content">
-            <img src="{{ $p.homepage.hero_area.hero_image }}" alt="" />
+            <img src="{{ $p.homepage.hero_area.hero_image }}" alt="" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@
         <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile"
           data-aos="fade-up" data-aos-duration="500">
           <a href="{{ $product.url }}" class="single-product">
-            <div class="product-logo"><img src="{{ $product.logo }}" alt="kubedb-logo"></div>
+            <div class="product-logo"><img src="{{ $product.logo }}" alt="kubedb-logo" loading="lazy" decoding="async" /></div>
             <p class="is-ellipsis-4">{{ $product.description | safeHTML  }}</p>
             <button class="button ac-button is-transparent">LEARN MORE <span class="material-icons-outlined">
                 arrow_forward
@@ -121,7 +121,7 @@
 
                 <!-- sigle product start  -->
                 <div class="single-product">
-                  <img src="{{ $product.logo }}" alt="">
+                  <img src="{{ $product.logo }}" alt="" loading="lazy" decoding="async" />
                   <p>{{ $product.summary | safeHTML }}</p>
                   <a class="inline-button" href="{{ $product.url }}" class="">EXPLORE MORE</a>
                 </div>
@@ -168,7 +168,7 @@
                 <!-- single product description start  -->
                 <div class="product-description">
                   <div class="brand">
-                    <img src="{{ $products.logo}}" alt="Stash">
+                    <img src="{{ $products.logo}}" alt="Stash" loading="lazy" decoding="async" />
                   </div>
                   <!-- <h5>{{ $products.title}}</h5> -->
                   <p>{{ $products.summary}}</p>
@@ -183,7 +183,7 @@
               </div>
               <div class="column is-6 is-hidden-tablet-only" data-aos="fade-up" data-aos-duration="700">
                 <div class="illustration">
-                  <img src="{{ $products.illustration }}" alt="">
+                  <img src="{{ $products.illustration }}" alt="" loading="lazy" decoding="async" />
                 </div>
               </div>
             </div>
@@ -221,7 +221,7 @@
           <button class="button ac-button is-primary" id="mc-embedded-subscribe" type="submit"
             name="subscribe">SUBSCRIBE</button>
           <p data-aos="fade-up" data-aos-duration="900">Subscribe to our newsletter <img
-              src="/assets/images/icon/indicator-arrow-right.svg" alt="indicator-arrow-right"></p>
+              src="/assets/images/icon/indicator-arrow-right.svg" alt="indicator-arrow-right" loading="lazy" decoding="async" /></p>
         </form>
         <!-- subscription input  -->
       </div>
@@ -246,7 +246,7 @@
           <ul class="social-link">
             {{ range $social_link := $p.homepage.social_connect.social_link }}
             <li data-aos="fade-up" data-aos-duration="500"><a href="{{ $social_link.url }}"><span><img
-                    src="{{$social_link.icon}}" alt=""></span>{{ $social_link.text }}</a>
+                    src="{{$social_link.icon}}" alt="" loading="lazy" decoding="async" /></span>{{ $social_link.text }}</a>
             </li>
             {{ end }}
 
@@ -262,7 +262,7 @@
           data-aos="fade-up" data-aos-duration="500">
           <a href="{{ $social_cards.url }}" class="single-card is-block">
             <div class="card-top">
-              <div class="card-icon"><img src="{{ $social_cards.icon }}" alt=""></div>
+              <div class="card-icon"><img src="{{ $social_cards.icon }}" alt="" loading="lazy" decoding="async" /></div>
               <div class="count">
                 <h2>{{ $social_cards.users }}</h2>
                 <p>{{ $social_cards.sub_title }}</p>
@@ -293,7 +293,7 @@
           <div class="brand-image-wrapper owl-carousel">
             {{ range $customer := $.Site.Data.customers }}
             {{ if $customer.show }}
-            <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"></div>
+            <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}" loading="lazy" decoding="async" /></div>
             {{ end }}
             {{ end }}
           </div>
@@ -375,7 +375,7 @@
               <!-- user info wrapper start  -->
               <div class="user-info-wrapper">
                 <figure class="image is-64x64">
-                  <img class="is-rounded" src="{{ $user.profile }}" alt="{{ $user.name }}">
+                  <img class="is-rounded" src="{{ $user.profile }}" alt="{{ $user.name }}" loading="lazy" decoding="async"/>
                 </figure>
                 <div class="user-info">
                   <h5>{{ $user.name }}</h5>

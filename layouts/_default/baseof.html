@@ -111,7 +111,7 @@
             <div class="navbar-brand">
               <a href="{{.Site.Params.domain_appscode}}">
                 <img src="{{$.Site.Data.products.appscode.logo.src}}"
-                  alt="{{$.Site.Data.products.appscode.logo.alt}}" />
+                  alt="{{$.Site.Data.products.appscode.logo.alt}}" loading="lazy" decoding="async" />
               </a>
               <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
@@ -143,7 +143,7 @@
                         <a class="single-product"
                           href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}">
                           <div class="product-logo">
-                            <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}">
+                            <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}" loading="lazy" decoding="async" />
                           </div>
                           <div class="product-info">
                             <h6>{{ $p.name }}</h6>
@@ -164,7 +164,7 @@
                         <a class="single-product"
                           href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}">
                           <div class="product-logo">
-                            <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}">
+                            <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}" loading="lazy" decoding="async" />
                           </div>
                           <div class="product-info">
                             <h6>{{ $p.name }}</h6>
@@ -187,7 +187,7 @@
                       <!-- single product description start  -->
                       <div class="product-description">
                         <div class="brand">
-                          <img src="{{ $p.logo.src }}" alt="{{ $p.logo.alt }}">
+                          <img src="{{ $p.logo.src }}" alt="{{ $p.logo.alt }}" loading="lazy" decoding="async" />
                         </div>
 
                         <p>{{ $p.summary | safeHTML }}</p>
@@ -212,7 +212,7 @@
                       <!-- single product description start  -->
                       <div class="product-description">
                         <div class="brand">
-                          <img src="{{ $p.logo.src }}" alt="{{ $p.logo.alt }}">
+                          <img src="{{ $p.logo.src }}" alt="{{ $p.logo.alt }}" loading="lazy" decoding="async" />
                         </div>
 
 
@@ -272,7 +272,7 @@
                           {{ $p := (index $.Site.Data.products $item) }}
                           <li class="open-source-item"><a
                               href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}"><span><img
-                                  src="{{ $p.icon.src }}" alt=" {{ $p.icon.alt }}"></span>
+                                  src="{{ $p.icon.src }}" alt=" {{ $p.icon.alt }}" loading="lazy" decoding="async" /></span>
                               {{ $p.name }}<span class="material-icons">arrow_forward </span></a></li>
                           {{ end }}
 
@@ -280,7 +280,7 @@
                           {{ $p := (index $.Site.Data.products $item) }}
                           <li class="open-source-item"><a
                               href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}"><span><img
-                                  src="{{ $p.icon.src }}" alt=" {{ $p.icon.alt }}"></span>
+                                  src="{{ $p.icon.src }}" alt=" {{ $p.icon.alt }}" loading="lazy" decoding="async" /></span>
                               {{ $p.name }}<span class="material-icons">arrow_forward </span></a></li>
                           {{ end }}
                         </ul>
@@ -291,7 +291,7 @@
                       {{ $p := (index $.Site.Data.products $item) }}
                       <div class="product-description open-source-description">
                         <div class="brand">
-                          <img src="{{ $p.logo.src }}" alt="{{ $p.logo.alt }}">
+                          <img src="{{ $p.logo.src }}" alt="{{ $p.logo.alt }}" loading="lazy" decoding="async" />
                         </div>
                         <p>{{ $p.tagline | safeHTML }}
                         </p>
@@ -314,7 +314,7 @@
                       {{ $p := (index $.Site.Data.products $item) }}
                       <div class="product-description open-source-description">
                         <div class="brand">
-                          <img src="{{ $p.logo.src }}" alt="{{ $p.logo.alt }}">
+                          <img src="{{ $p.logo.src }}" alt="{{ $p.logo.alt }}" loading="lazy" decoding="async" />
                         </div>
                         <p>{{ $p.tagline | safeHTML }}
                         </p>
@@ -544,7 +544,7 @@
         <div class="navbar-left">
           <div class="navbar-brand">
             <a href="{{ index $.Site.Params $p.website.domainKey }}{{ $p.website.path }}"><img src="{{ $p.logo.src }}"
-                alt="{{ $p.logo.alt }}" alt="{{ $p.logo.alt }}"></a>
+                alt="{{ $p.logo.alt }}" alt="{{ $p.logo.alt }}" loading="lazy" decoding="async" /></a>
 
             {{ if eq $currentPageType "docs" }}
             <!-- version select start  -->
@@ -623,7 +623,7 @@
 " class="single-product">
                       {{ if .Pre }}
                       <div class="product-logo">
-                        <img src="{{ .Pre }}" alt="Menu Icon">
+                        <img src="{{ .Pre }}" alt="Menu Icon" loading="lazy" decoding="async" />
                       </div>
                       {{ end }}
                       <div class="product-info">
@@ -660,7 +660,7 @@
                               d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
                         </a>
-                        <img src="https://img.youtube.com/vi/hBHxMtSjKo4/sddefault.jpg" alt="">
+                        <img src="https://img.youtube.com/vi/hBHxMtSjKo4/sddefault.jpg" alt="" loading="lazy" decoding="async" />
                       </div>
                     </div>
                   </div>
@@ -689,17 +689,17 @@
           <div class="community-items ml-70">
             {{ if $p.socialLinks.github }}
             <a href="{{$p.socialLinks.github}}" class="community-item" target="_blank">
-              <img src="/assets/images/icon/community/github-icon.svg" alt="github-icon">
+              <img src="/assets/images/icon/community/github-icon.svg" alt="github-icon" loading="lazy" decoding="async" />
             </a>
             {{ end }}
             {{ if $p.socialLinks.twitter }}
             <a href="{{$p.socialLinks.twitter}}" class="community-item" target="_blank">
-              <img src="/assets/images/icon/community/twitter-icon.svg" alt="twitter-icon">
+              <img src="/assets/images/icon/community/twitter-icon.svg" alt="twitter-icon" loading="lazy" decoding="async"/>
             </a>
             {{ end }}
             {{ if $p.socialLinks.slack }}
             <a href="{{$p.socialLinks.slack}}" class="community-item" target="_blank">
-              <img src="https://cdn.appscode.com/assets/images/icon/community/slack-icon.svg" alt="slack-icon">
+              <img src="https://cdn.appscode.com/assets/images/icon/community/slack-icon.svg" alt="slack-icon" loading="lazy" decoding="async"/>
             </a>
             {{ end }}
           </div>
@@ -773,7 +773,7 @@
               <!-- user info wrapper start  -->
               <div class="user-info-wrapper">
                 <figure class="image is-64x64">
-                  <img class="is-rounded" src="{{ $user.profile }}" alt="{{ $user.name }}">
+                  <img class="is-rounded" src="{{ $user.profile }}" alt="{{ $user.name }}" loading="lazy" decoding="async" />
                 </figure>
                 <div class="user-info">
                   <h5>{{ $user.name }}</h5>
@@ -848,7 +848,7 @@
               <!-- logo start -->
               <div class="footer-logo">
                 <a href="{{.Site.Params.domain_appscode}}"><img src="{{$.Site.Data.products.appscode.logo.src}}"
-                    alt="{{$.Site.Data.products.appscode.logo.alt}}" class="img" /></a>
+                    alt="{{$.Site.Data.products.appscode.logo.alt}}" class="img" loading="lazy" decoding="async" /></a>
               </div>
               <!-- logo end -->
 

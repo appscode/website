@@ -78,7 +78,7 @@
               <div class="webinar-speakers">
                 <!-- single speaker start  -->
                 <div class="single-speaker">
-                  <div class="speaker-image"><img src="https://via.placeholder.com/250/dddddd/808080" alt=""></div>
+                  <div class="speaker-image"><img src="https://via.placeholder.com/250/dddddd/808080" alt="" loading="lazy" decoding="async"></div>
                   <div class="speaker-info">
                     <h6>Pulak Kanti Bhowmick</h6>
                     <p>Software Engineer <a href="https://appscode.com">AppsCode Inc</a></p>
@@ -103,7 +103,7 @@
             <!-- form start  -->
             <div class="registration-form">
               <h3>Register Now</h3>
-              <div class="circle-shape"><img src="/assets/images/webinar/circle-shape.jpg" alt=""></div>
+              <div class="circle-shape"><img src="/assets/images/webinar/circle-shape.jpg" alt="" loading="lazy" decoding="async"></div>
               <!-- registration form start  -->
               <!-- https://stackoverflow.com/a/29014676 -->
               <form method="post" action="https://x.appscode.com/_/webinars/register"
@@ -222,7 +222,7 @@
               <!-- Success/Fail message start  -->
               <div class="register-notification">
                 <div class="reg-illustration">
-                  <img class="illustration" src="/assets/images/webinar/success.jpg" alt="">
+                  <img class="illustration" src="/assets/images/webinar/success.jpg" alt="" loading="lazy" decoding="async">
                 </div>
                 <p class="status-message"></p>
               </div>
@@ -339,7 +339,7 @@
             let speakers = "";
             w.speakers.forEach(s => {
               speakers += `<div class="single-speaker">
-  <div class="speaker-image"><img src="${s.picture}" alt="${s.name}"></div>
+  <div class="speaker-image"><img src="${s.picture}" alt="${s.name}" loading="lazy" decoding="async"></div>
   <div class="speaker-info">
     <h6>${s.name}</h6>
     <p>${s.job_title} <a href="https://appscode.com">AppsCode Inc</a></p>
