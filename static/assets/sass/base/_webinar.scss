@@ -692,6 +692,67 @@ $poppins: "Poppins", sans-serif;
   margin-right: 20px;
 }
 
+// all webinar list start
+.single-webinar-card {
+  border: 1px solid $ac-white-light;
+  border-radius: 4px;
+  overflow: hidden;
+  .webinar-thumb {
+    img {
+    }
+  }
+
+  .webinar-content {
+    padding: 20px 15px;
+    .meta {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 15px;
+
+      span.icon {
+        margin-right: 5px;
+        height: 18px;
+        width: 18px;
+      }
+      .date,
+      .author {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 130%;
+      color: $ac-color-heading;
+      margin-bottom: 10px;
+      a {
+        font-size: 22px;
+        line-height: 130%;
+        color: $ac-color-heading;
+      }
+    }
+    p {
+      margin-bottom: 15px;
+      color: $ac-color-text;
+    }
+    a.inline-button {
+      color: $ac-color-text;
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      .icon {
+        .w-5 {
+          path {
+          }
+        }
+      }
+    }
+  }
+}
+// all webinar list end
+
 /****************************************
 Responsive Classes
 *****************************************/

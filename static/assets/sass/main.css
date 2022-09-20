@@ -12021,6 +12021,64 @@ Responsive Classes
   margin-right: 20px;
 }
 
+.single-webinar-card {
+  border: 1px solid #dbdbde;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.single-webinar-card .webinar-content {
+  padding: 20px 15px;
+}
+
+.single-webinar-card .webinar-content .meta {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.single-webinar-card .webinar-content .meta span.icon {
+  margin-right: 5px;
+  height: 18px;
+  width: 18px;
+}
+
+.single-webinar-card .webinar-content .meta .date,
+.single-webinar-card .webinar-content .meta .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single-webinar-card .webinar-content h3 {
+  font-size: 18px;
+  line-height: 130%;
+  color: #1c1c1c;
+  margin-bottom: 10px;
+}
+
+.single-webinar-card .webinar-content h3 a {
+  font-size: 22px;
+  line-height: 130%;
+  color: #1c1c1c;
+}
+
+.single-webinar-card .webinar-content p {
+  margin-bottom: 15px;
+  color: #3b3030;
+}
+
+.single-webinar-card .webinar-content a.inline-button {
+  color: #3b3030;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
 /****************************************
 Responsive Classes
 *****************************************/
