@@ -1,3 +1,7 @@
+.footer-area {
+  margin-top: 50px;
+  border-top: 1px solid $ac-white-light;
+}
 .single-footer-widget {
   .footer-logo {
     max-width: 160px;
@@ -232,12 +236,11 @@ Responsive Classes
 
 // Small devices (landscape phones, 576px and up)
 // @media (min-width: 576px) and (max-width: 768px) {
-  
+
 // }
 
 // Medium devices (tablets, 769px and up)
 @media (min-width: 769px) and (max-width: 1023.98px) {
-  
 }
 
 // Large devices (desktops, 1024px and up)

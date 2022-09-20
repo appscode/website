@@ -693,14 +693,13 @@ $poppins: "Poppins", sans-serif;
 }
 
 // all webinar list start
+// .webinar-wrapper {
+//   margin-top: 100px;
+// }
 .single-webinar-card {
   border: 1px solid $ac-white-light;
   border-radius: 4px;
   overflow: hidden;
-  .webinar-thumb {
-    img {
-    }
-  }
 
   .webinar-content {
     padding: 20px 15px;
@@ -727,7 +726,7 @@ $poppins: "Poppins", sans-serif;
       color: $ac-color-heading;
       margin-bottom: 10px;
       a {
-        font-size: 22px;
+        font-size: 18px;
         line-height: 130%;
         color: $ac-color-heading;
       }
@@ -735,6 +734,8 @@ $poppins: "Poppins", sans-serif;
     p {
       margin-bottom: 15px;
       color: $ac-color-text;
+      line-height: 160%;
+      color: #555;
     }
     a.inline-button {
       color: $ac-color-text;

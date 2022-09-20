@@ -12061,7 +12061,7 @@ Responsive Classes
 }
 
 .single-webinar-card .webinar-content h3 a {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 130%;
   color: #1c1c1c;
 }
@@ -12069,6 +12069,8 @@ Responsive Classes
 .single-webinar-card .webinar-content p {
   margin-bottom: 15px;
   color: #3b3030;
+  line-height: 160%;
+  color: #555;
 }
 
 .single-webinar-card .webinar-content a.inline-button {
@@ -15501,6 +15503,11 @@ video {
 
 .go-to-top.is-visible {
   opacity: 1;
+}
+
+.footer-area {
+  margin-top: 50px;
+  border-top: 1px solid #dbdbde;
 }
 
 .single-footer-widget .footer-logo {
