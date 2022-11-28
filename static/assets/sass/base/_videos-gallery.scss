@@ -136,6 +136,7 @@
   border-radius: 4px;
   transition: 0.3s ease-in-out;
   overflow: hidden;
+  min-height: 346px;
 
   &:hover {
     border: 1px solid $ac-primary;
@@ -592,9 +593,10 @@ Responsive Classes
 // Large devices (desktops, 1024px and up)
 @media (min-width: 1024px) and (max-width: 1215px) {
   .gallery-card {
+    min-height: 280px;
     .card-thumbnail {
       img {
-        height: 130px;
+        height: 150px;
       }
     }
 
@@ -634,9 +636,10 @@ Responsive Classes
 
 @media (min-width: 1216px) and (max-width: 1407px) {
   .gallery-card {
+    min-height: 290px;
     .card-thumbnail {
       img {
-        height: 130px;
+        height: 150px;
       }
     }
 
@@ -658,9 +661,11 @@ Responsive Classes
 
 @media (min-width: 1408px) and (max-width: 1600px) {
   .gallery-card {
+    min-height: 290px;
+
     .card-thumbnail {
       img {
-        height: 130px;
+        height: 150px;
       }
     }
 

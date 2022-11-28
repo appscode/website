@@ -12475,6 +12475,7 @@ Responsive Classes
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   overflow: hidden;
+  min-height: 346px;
 }
 
 .gallery-card:hover {
@@ -12912,8 +12913,11 @@ Responsive Classes
 }
 
 @media (min-width: 1024px) and (max-width: 1215px) {
+  .gallery-card {
+    min-height: 280px;
+  }
   .gallery-card .card-thumbnail img {
-    height: 130px;
+    height: 150px;
   }
   .gallery-card .card-body {
     padding: 10px;
@@ -12933,8 +12937,11 @@ Responsive Classes
 }
 
 @media (min-width: 1216px) and (max-width: 1407px) {
+  .gallery-card {
+    min-height: 290px;
+  }
   .gallery-card .card-thumbnail img {
-    height: 130px;
+    height: 150px;
   }
   .gallery-card .card-body {
     padding: 10px;
@@ -12948,8 +12955,11 @@ Responsive Classes
 }
 
 @media (min-width: 1408px) and (max-width: 1600px) {
+  .gallery-card {
+    min-height: 290px;
+  }
   .gallery-card .card-thumbnail img {
-    height: 130px;
+    height: 150px;
   }
   .gallery-card .card-body {
     padding: 10px;
