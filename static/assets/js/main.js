@@ -301,6 +301,16 @@ $('.customPrevBtn').click(function () {
   owl.trigger('prev.owl.carousel');
 })
 
+// video modal  
+ $('.webinar-video, .yt-video, .demo-video').magnificPopup({
+   disableOn: 700,
+   type: 'iframe',
+   mainClass: 'mfp-fade',
+   removalDelay: 160,
+   preloader: false,
+   fixedContentPos: false
+ });
+
 // for social prove owlCarousel 
 // owl owlCarousel JS 
 var owlSocialProve = $('.brand-image-wrapper');
@@ -332,10 +342,6 @@ owlSocialProve.owlCarousel({
   }
 });
 
-// Modal js video init plugin
-$(".yt-video").magnificPopup({
-  type: 'iframe'
-});
 
 // map area-tabs
 var tabsMenus = document.querySelectorAll(".tabs-wrapper ul li");

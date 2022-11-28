@@ -55,7 +55,8 @@
             </a>
 
             <div class="play-buttons">
-              <a href="#" id="playme" onclick="revealVideo('video','youtube')"><span class="material-icons-outlined">
+              <a href="https://www.youtube.com/watch?v=8az5rYUxyGs" class="demo-video"><span
+                  class="material-icons-outlined">
                   play_arrow
                 </span>WATCH THE DEMO</a>
             </div>
@@ -68,11 +69,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="columns">
-        <div class="column">
-
-        </div>
-      </div> -->
     </div>
   </section>
   <!--==================== hero-area end 2022  ====================-->
@@ -427,45 +423,8 @@
   </section>
   <!-- call to action area end -->
 </div>
-
-
-<!-- video-player start  -->
-<div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
-  <div class="lightbox-container">
-    <div class="lightbox-content">
-      <button onclick="hideVideo('video','youtube')" class="lightbox-close">
-        X
-      </button>
-      <div class="video-container">
-        <iframe id="youtube" width="1080" height="540"
-          src="https://www.youtube.com/embed/{{ $.Site.Data.products.appscode.videos.intro }}" frameborder="0"
-          allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- video-player start  -->
-
-
-<script>
-  // Function to reveal lightbox and adding YouTube autoplay
-  function revealVideo(div, video_id) {
-    var video = document.getElementById(video_id).src;
-    document.getElementById(video_id).src = video + '?&autoplay=1'; // adding autoplay to the URL
-    document.getElementById(div).style.display = 'block';
-  }
-
-  // Hiding the lightbox and removing YouTube autoplay
-  function hideVideo(div, video_id) {
-    var video = document.getElementById(video_id).src;
-    var cleaned = video.replace('?&autoplay=1', ''); // removing autoplay form url
-    document.getElementById(video_id).src = cleaned;
-    document.getElementById(div).style.display = 'none';
-  }
-</script>
-
-
 {{ end }}
+
 {{ define "testimonial" }}
 <section></section>
 {{ end }}
