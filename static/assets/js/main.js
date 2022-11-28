@@ -344,7 +344,25 @@ owlSocialProve.owlCarousel({
 
 
 // previous webinar videos search
+const searchWebinar = document.querySelector(".search-box input");
+let allWebinar = document.querySelectorAll('.webinar-video')
 
+searchWebinar.addEventListener('keyup', function(){
+  Array.from(allWebinar).forEach(singleWebinar => {
+    let titleHtml = singleWebinar.querySelectorAll('h1');
+    Array.from(titleHtml).forEach(title => {
+      let titleData = title.innerHTML.toLowerCase();
+      let inpData = searchWebinar.value.toLowerCase();
+
+      if (titleData.includes(inpData)) {
+        singleWebinar.parentElement.classList.remove("is-hidden")
+      }else {
+         singleWebinar.parentElement.classList.add("is-hidden")
+      }
+    })
+  })
+
+})
 
 // map area-tabs
 var tabsMenus = document.querySelectorAll(".tabs-wrapper ul li");

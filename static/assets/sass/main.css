@@ -12029,15 +12029,15 @@ Responsive Classes
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #dbdbde;
-  padding: 8px 16px;
+  padding: 0px 16px;
   width: 430px;
   border-radius: 2px;
 }
 
 .search-box input {
   border: none;
-  padding-left: 10px;
   width: 100%;
+  padding: 12px 8px;
 }
 
 .search-box input:focus {
@@ -12072,6 +12072,9 @@ Responsive Classes
   }
   .webinar-body .webinar-speakers .single-speaker .speaker-info h6 {
     font-size: 14px;
+  }
+  .search-box {
+    width: 190px;
   }
 }
 
@@ -12909,6 +12912,9 @@ Responsive Classes
   }
   .playlist-wrapper .playlist-item .content {
     width: 100%;
+  }
+  .gallery-card .card-thumbnail img {
+    height: 100%;
   }
 }
 

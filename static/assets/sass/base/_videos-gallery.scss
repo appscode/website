@@ -580,6 +580,14 @@ Responsive Classes
       }
     }
   }
+
+  .gallery-card {
+    .card-thumbnail {
+      img {
+        height: 100%;
+      }
+    }
+  }
 }
 
 // (min-width: 568px) and (max-width: 1023.98px)
