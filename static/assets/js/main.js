@@ -361,7 +361,6 @@ searchWebinar.addEventListener('keyup', function(){
       }
     })
   })
-
 })
 
 // map area-tabs

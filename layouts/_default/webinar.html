@@ -247,7 +247,7 @@
         <div class="body-content">
           <div class="columns">
             <div class="column">
-              <div class="is-flex is-justify-content-space-between">
+              <div class="is-flex is-justify-content-space-between is-align-items-center">
                 <h4>Our Previous Webinars</h4>
                 <div class="search-box">
                   <label class="height-20 width-20 is-flex" for="search"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -264,154 +264,33 @@
           </div>
           <div class="columns is-multiline">
             <!-- single card item start  -->
-            <div class="column is-one-third-widescreen is-one-third-desktop is-one-quarter-fullhd is-half-tablet is-full-mobile">
-              <a href="https://www.youtube.com/watch?v=aXOChLn5ZdQ" class="gallery-card webinar-video">
-                <div class="card-thumbnail">
-                  <img
-                    src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-                    alt="">
-                  <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="filtered-items">
-                    <span>KUBEDB</span>
-                    <span>WEBINER</span>
-                  </div>
-                  <h1 class="is-ellipsis-2">Update your webinar content</h1>
-                  <div class="meta-tag is-flex is-justify-content-space-between">
-                    <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
-                    <p><span class="material-icons-outlined">person_outline</span>Team KubeDB</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- single card item end -->
+            {{ $webinarData := getJSON "https://x.appscode.com/_/playlists/PLoiT1Gv2KR1hAtDDW7fHEi-s2y2H3DOgx" }}
 
-            <!-- single card item start  -->
+            {{range $webinarData}}
             <div class="column is-one-third-widescreen is-one-third-desktop is-one-quarter-fullhd is-half-tablet is-full-mobile">
-              <a href="https://www.youtube.com/watch?v=zBZgdTb-dns" class="gallery-card webinar-video">
+              <a href="https://www.youtube.com/watch?v={{ .contentDetails.videoId }}"
+                class="gallery-card webinar-video">
                 <div class="card-thumbnail">
                   <img
-                    src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-                    alt="">
-                  <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
+                    src="{{ .snippet.thumbnails.high.url }}"
+                    alt="{{ .snippet.title }}" loading="lazy">
+                  <div class="play-button">
+                    <span class="material-icons-outlined">play_arrow</span>
                   </div>
                 </div>
                 <div class="card-body">
-                  <div class="filtered-items">
-                    <span>KUBEDB</span>
-                    <span>WEBINER</span>
-                  </div>
-                  <h1 class="is-ellipsis-2">Some random data</h1>
-                  <div class="meta-tag is-flex is-justify-content-space-between">
-                    <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
-                    <p><span class="material-icons-outlined">person_outline</span>Team KubeDB</p>
-                  </div>
+                <div class="meta-tag is-flex is-justify-content-space-between">
+                  <p><span
+                      class="material-icons-outlined">calendar_today</span>{{ .contentDetails.videoPublishedAt | time.Format ":date_medium" }}
+                  </p>
+                </div>
+                  <h1 class="is-ellipsis-3 mb-8">{{ .snippet.title }}</h1>
+                  <!-- <p class="is-ellipsis-3 has-text-grey">{{ .snippet.description }}</p> -->
                 </div>
               </a>
             </div>
             <!-- single card item end -->
-
-            <!-- single card item start  -->
-            <div class="column is-one-third-widescreen is-one-third-desktop is-one-quarter-fullhd is-half-tablet is-full-mobile">
-              <a href="https://www.youtube.com/watch?v=NQ3fZtyXji0" class="gallery-card webinar-video">
-                <div class="card-thumbnail">
-                  <img
-                    src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-                    alt="">
-                  <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="filtered-items">
-                    <span>KUBEDB</span>
-                    <span>WEBINER</span>
-                  </div>
-                  <h1 class="is-ellipsis-2">Upgrading MySQL with KubeDB Enterprise by AppsCode</h1>
-                  <div class="meta-tag is-flex is-justify-content-space-between">
-                    <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
-                    <p><span class="material-icons-outlined">person_outline</span>Team KubeDB</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- single card item end -->
-
-            <!-- single card item start  -->
-            <div class="column is-one-third-widescreen is-one-third-desktop is-one-quarter-fullhd is-half-tablet is-full-mobile">
-              <a href="https://www.youtube.com/watch?v=QXxNlpjnulI" class="gallery-card webinar-video">
-                <div class="card-thumbnail">
-                  <img
-                    src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-                    alt="">
-                  <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="filtered-items">
-                    <span>KUBEDB</span>
-                    <span>WEBINER</span>
-                  </div>
-                  <h1 class="is-ellipsis-2">Upgrading MySQL with KubeDB Enterprise by AppsCode</h1>
-                  <div class="meta-tag is-flex is-justify-content-space-between">
-                    <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
-                    <p><span class="material-icons-outlined">person_outline</span>Team KubeDB</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- single card item end -->
-
-            <!-- single card item start  -->
-            <div class="column is-one-third-widescreen is-one-third-desktop is-one-quarter-fullhd is-half-tablet is-full-mobile">
-              <a href="https://www.youtube.com/watch?v=cbB3QEwWMlA" class="gallery-card webinar-video">
-                <div class="card-thumbnail">
-                  <img
-                    src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-                    alt="">
-                  <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="filtered-items">
-                    <span>KUBEDB</span>
-                    <span>WEBINER</span>
-                  </div>
-                  <h1 class="is-ellipsis-2">Upgrading MySQL with KubeDB Enterprise by AppsCode</h1>
-                  <div class="meta-tag is-flex is-justify-content-space-between">
-                    <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
-                    <p><span class="material-icons-outlined">person_outline</span>Team KubeDB</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- single card item end -->
-
-            <!-- single card item start  -->
-            <div class="column is-one-third-widescreen is-one-third-desktop is-one-quarter-fullhd is-half-tablet is-full-mobile">
-              <a href="#" class="gallery-card webinar-video">
-                <div class="card-thumbnail">
-                  <img
-                    src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-                    alt="">
-                  <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="filtered-items">
-                    <span>KUBEDB</span>
-                    <span>WEBINER</span>
-                  </div>
-                  <h1 class="is-ellipsis-2">Upgrading MySQL with KubeDB Enterprise by AppsCode</h1>
-                  <div class="meta-tag is-flex is-justify-content-space-between">
-                    <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
-                    <p><span class="material-icons-outlined">person_outline</span>Team KubeDB</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- single card item end -->
+            {{end}}
           </div>
         </div>
         <!-- gallery body end -->

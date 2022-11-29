@@ -11967,7 +11967,9 @@ Responsive Classes
 
 .webinar-body .webinar-speakers .single-speaker .speaker-image {
   width: 100px;
-  height: auto;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .webinar-body .webinar-speakers .single-speaker:last-child {
@@ -12028,10 +12030,10 @@ Responsive Classes
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #dbdbde;
+  border: 1px solid #a6abbd;
   padding: 0px 16px;
   width: 430px;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .search-box input {
@@ -12481,6 +12483,35 @@ Responsive Classes
   min-height: 346px;
 }
 
+.gallery-card.webinar-video {
+  border: none;
+  border-radius: 0px;
+}
+
+.gallery-card.webinar-video:hover {
+  border: none;
+}
+
+.gallery-card.webinar-video:hover .card-body h1 {
+  color: var(--ac-primary);
+}
+
+.gallery-card.webinar-video .card-thumbnail {
+  border: 1px solid #e7e7e7;
+}
+
+.gallery-card.webinar-video .card-body {
+  padding: 20px 0;
+}
+
+.gallery-card.webinar-video .card-body h1 {
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
 .gallery-card:hover {
   border: 1px solid var(--ac-primary);
 }
@@ -12560,7 +12591,7 @@ Responsive Classes
 
 .gallery-card .card-body .meta-tag p {
   font-weight: normal;
-  font-size: 14px;
+  font-size: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12571,7 +12602,7 @@ Responsive Classes
 }
 
 .gallery-card .card-body .meta-tag p .material-icons-outlined {
-  font-size: 16px;
+  font-size: 14px;
   margin-right: 0.8rem;
 }
 
@@ -12852,6 +12883,48 @@ Responsive Classes
   line-height: 130%;
   letter-spacing: 0.25px;
   margin-bottom: 20px;
+}
+
+@-webkit-keyframes waves {
+  0% {
+    -webkit-transform: scale(0.2, 0.2);
+    transform: scale(0.2, 0.2);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+  50% {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  }
+  100% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+}
+
+@keyframes waves {
+  0% {
+    -webkit-transform: scale(0.2, 0.2);
+    transform: scale(0.2, 0.2);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+  50% {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  }
+  100% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+}
+
+.fa-play:before {
+  content: "\f04b";
 }
 
 /****************************************

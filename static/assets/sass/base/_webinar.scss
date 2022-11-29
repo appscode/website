@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
-$poppins: "Poppins",
-sans-serif;
+$poppins: "Poppins", sans-serif;
 
 // notification
 .ac-notification {
@@ -130,7 +129,6 @@ sans-serif;
 
 // hero area end
 .registration-form-container {
-
   &.register-success,
   &.register-failed {
     position: sticky;
@@ -638,7 +636,9 @@ sans-serif;
 
       .speaker-image {
         width: 100px;
-        height: auto;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
       }
 
       &:last-child {
@@ -695,10 +695,10 @@ sans-serif;
 .search-box {
   display: flex;
   align-items: center;
-  border: 1px solid $ac-white-light;
+  border: 1px solid #a6abbd;
   padding: 0px 16px;
   width: 430px;
-  border-radius: 2px;
+  border-radius: 4px;
 
   input {
     border: none;
@@ -1057,4 +1057,5 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1408px) {}
+@media (min-width: 1408px) {
+}
