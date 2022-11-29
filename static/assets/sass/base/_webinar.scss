@@ -712,7 +712,12 @@ $poppins: "Poppins", sans-serif;
     }
   }
 }
-
+.is-sticky.webinar-search {
+  position: sticky;
+  top: 61px;
+  background-color: #fff;
+  z-index: 99;
+}
 /****************************************
 Responsive Classes
 *****************************************/

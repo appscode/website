@@ -12048,6 +12048,14 @@ Responsive Classes
   border: none;
 }
 
+.is-sticky.webinar-search {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 61px;
+  background-color: #fff;
+  z-index: 99;
+}
+
 /****************************************
 Responsive Classes
 *****************************************/

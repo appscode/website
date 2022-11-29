@@ -246,29 +246,30 @@
 
         <!-- gallery body start  -->
         <div class="body-content">
-          <div class="columns">
-            <div class="column">
-
-              <div class="is-flex is-justify-content-space-between is-align-items-center">
-                <h4>Our Previous Webinars</h4>
-                <div class="search-box">
-                  <label class="height-20 width-20 is-flex" for="search"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                    </svg>
-                  </label>
-                  <input type="search" placeholder="Search Webinar...">
-                </div>
-              </div>
-              
-            </div>
-          </div>
+          
           <div class="columns is-multiline">
+
+            <!-- title and search start -->
+              <div class="column is-12 is-sticky webinar-search pb-0">
+
+                <div
+                  class="is-flex is-justify-content-space-between is-align-items-center pb-12 bb-1">
+                  <h4>Our Previous Webinars</h4>
+                  <div class="search-box">
+                    <label class="height-20 width-20 is-flex" for="search"><svg xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
+                    </label>
+                    <input type="search" placeholder="Search Webinar...">
+                  </div>
+                </div>
+
+              </div>
+            <!-- title and search end -->
             
             <!-- single card item start  -->
-            
             {{ $webinarData := getJSON "https://x.appscode.com/_/playlists/PLoiT1Gv2KR1hAtDDW7fHEi-s2y2H3DOgx" }}
             {{ range $webinarData }}
             <div class="column is-one-third-widescreen is-one-third-desktop is-one-quarter-fullhd is-half-tablet is-full-mobile">
