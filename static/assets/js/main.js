@@ -188,13 +188,7 @@ function closeModal() {
       modal.classList.remove('is-active')
     }
   })
-
 }
-// close modal end
-// adds modal JS 
-// setTimeout(() => {
-//   document.querySelector('.modal-1')?.querySelector('.modal')?.classList.add('is-active')
-// }, 1500);
 
 var h_editor = document.querySelector('.hero-area-code-editor');
 document.addEventListener("DOMContentLoaded", () => {
