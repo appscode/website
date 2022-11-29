@@ -141,6 +141,7 @@
   &.webinar-video {
     border: none;
     border-radius: 0px;
+    min-height: 320px;
     
     &:hover {
       border: none;
@@ -156,13 +157,14 @@
       background-color: #f1f2f3;
     }
     .card-body {
-      padding: 20px 0;
+      padding: 20px 0 0;
 
       h1 {
         font-size: 18px;
         line-height: 150%;
         letter-spacing: 0;
         transition: 0.3s ease-in-out;
+        margin: 0.5rem 0 1rem;
       }
     }
   }

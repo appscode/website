@@ -237,16 +237,18 @@
 </section>
 <!-- hero area end -->
 
-<!-- All webinar start  -->
+<!-- previous webinar section start  -->
 <section class="gallery-area mt-70 mb-80">
   <div class="container">
     <div class="gallery-wrapper">
       <!-- right content start  -->
       <div class="is-fullwidth">
+
         <!-- gallery body start  -->
         <div class="body-content">
           <div class="columns">
             <div class="column">
+
               <div class="is-flex is-justify-content-space-between is-align-items-center">
                 <h4>Our Previous Webinars</h4>
                 <div class="search-box">
@@ -260,13 +262,15 @@
                   <input type="search" placeholder="Search Webinar...">
                 </div>
               </div>
+              
             </div>
           </div>
           <div class="columns is-multiline">
+            
             <!-- single card item start  -->
+            
             {{ $webinarData := getJSON "https://x.appscode.com/_/playlists/PLoiT1Gv2KR1hAtDDW7fHEi-s2y2H3DOgx" }}
-
-            {{range $webinarData}}
+            {{ range $webinarData }}
             <div class="column is-one-third-widescreen is-one-third-desktop is-one-quarter-fullhd is-half-tablet is-full-mobile">
               <a href="https://www.youtube.com/watch?v={{ .contentDetails.videoId }}"
                 class="gallery-card webinar-video">
@@ -285,21 +289,22 @@
                   </p>
                 </div>
                   <h1 class="is-ellipsis-3 mb-8">{{ .snippet.title }}</h1>
-                  <!-- <p class="is-ellipsis-3 has-text-grey">{{ .snippet.description }}</p> -->
                 </div>
               </a>
             </div>
             <!-- single card item end -->
-            {{end}}
+            {{ end }}
+
           </div>
         </div>
         <!-- gallery body end -->
+
       </div>
       <!-- right content end -->
     </div>
   </div>
 </section>
-<!-- All webinar end -->
+<!-- previous webinar section end -->
 <hr>
 
 
