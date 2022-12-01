@@ -303,7 +303,7 @@
         top: 0px;
         width: 200%;
         height: 100%;
-        background-color: hsla(256, 82, 95, 1);
+        background-color: #f1f1f1;
         z-index: -1;
         opacity: 0.5;
       }
@@ -311,7 +311,7 @@
       // background-color: hsla(256, 82, 95, 1);
       &.kubedb {
         &:after {
-          background-color: hsla(240, 55, 95, 1);
+          background-color: #f6f6fd;
         }
 
         .product-description .features li .material-icons {
@@ -325,7 +325,7 @@
 
       &.stash {
         &:after {
-          background-color: hsla(256, 82, 93, 1);
+          background-color: #e9e9fc;
         }
 
         .product-description .features li .material-icons {
@@ -339,7 +339,7 @@
 
       &.kubevault {
         &:after {
-          background-color: hsla(271, 77, 95, 1);
+          background-color: #e9e9fc;
         }
 
         .product-description .features li .material-icons {
@@ -359,7 +359,7 @@
 
       &.voyager {
         &:after {
-          background-color: hsla(242, 48, 95, 1);
+          background-color: #e9e9fc;
         }
 
         .product-description .features li .material-icons {
@@ -373,7 +373,7 @@
 
       &.kubeform {
         &:after {
-          background-color: hsla(141, 45, 90, 1);
+          background-color: #e9e9fc;
         }
 
         .product-description .features li .material-icons {

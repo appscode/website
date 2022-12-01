@@ -1,0 +1,419 @@
+{{ define "main" }}
+
+<section class="gallery-area mt-70 mb-80">
+  <div class="container">
+    <div class="gallery-wrapper">
+      <!-- left sidebar area start  -->
+      <div class="left-sidebar">
+        <div class="left-sidebar-inner">
+          <h4><span>AppsCode Videos</span> <button class="material-icons is-hidden-tablet"
+              id="filterClose">close</button></h4>
+          <hr>
+          <div class="filter-items">
+            <section class="accordions">
+              <div class="accordion is-active">
+                <div class="accordion-header toggle">
+                  <button class="accordion-button"><span>PRODUCTS</span> <i class="fa fa-angle-down"></i></button>
+                </div>
+                <div class="accordion-body">
+                  <div class="accordion-content">
+
+                    <!-- single ac-checkbox start  -->
+                    <div class="ac-single-checkbox">
+                      <input class="is-checkradio ac-checkbox" id="kubedb" type="checkbox" name="checkbox" />
+                      <label for="kubedb">KubeDB</label>
+                    </div>
+                    <!-- single ac-checkbox end -->
+
+                    <!-- single ac-checkbox start  -->
+                    <div class="ac-single-checkbox">
+                      <input class="is-checkradio ac-checkbox" id="stash" type="checkbox" name="checkbox" />
+                      <label for="stash">Stash</label>
+                    </div>
+                    <!-- single ac-checkbox end -->
+
+                    <!-- single ac-checkbox start  -->
+                    <div class="ac-single-checkbox">
+                      <input class="is-checkradio ac-checkbox" id="kubevault" type="checkbox" name="checkbox" />
+                      <label for="kubevault">KubeVault</label>
+                    </div>
+                    <!-- single ac-checkbox end -->
+
+                    <!-- single ac-checkbox start  -->
+                    <div class="ac-single-checkbox">
+                      <input class="is-checkradio ac-checkbox" id="kubeform" type="checkbox" name="checkbox" />
+                      <label for="kubeform">Kubeform</label>
+                    </div>
+                    <!-- single ac-checkbox end -->
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion is-active">
+                <div class="accordion-header">
+                  <button class="accordion-button"><span>TYPE</span> <i class="fa fa-angle-down"></i></button>
+                </div>
+                <div class="accordion-body">
+                  <div class="accordion-content">
+                    <!-- single ac-checkbox start  -->
+                    <div class="ac-single-checkbox">
+                      <input class="is-checkradio ac-checkbox" id="database" type="checkbox" name="checkbox" />
+                      <label for="database">Database</label>
+                    </div>
+                    <!-- single ac-checkbox end -->
+
+                    <!-- single ac-checkbox start  -->
+                    <div class="ac-single-checkbox">
+                      <input class="is-checkradio ac-checkbox" id="demo" type="checkbox" name="checkbox" />
+                      <label for="demo">Demo</label>
+                    </div>
+                    <!-- single ac-checkbox end -->
+
+                    <!-- single ac-checkbox start  -->
+                    <div class="ac-single-checkbox">
+                      <input class="is-checkradio ac-checkbox" id="webinar" type="checkbox" name="checkbox" />
+                      <label for="webinar">Webinar</label>
+                    </div>
+                    <!-- single ac-checkbox end -->
+
+                    <!-- single ac-checkbox start  -->
+                    <div class="ac-single-checkbox">
+                      <input class="is-checkradio ac-checkbox" id="tutorial" type="checkbox" name="checkbox" />
+                      <label for="tutorial">Tutorial</label>
+                    </div>
+                    <!-- single ac-checkbox end -->
+                  </div>
+                </div>
+              </div>
+              <div class="accordion is-active">
+                <div class="accordion-header">
+                  <button class="accordion-button"><span>CATEGORIES</span> <i class="fa fa-angle-down"></i></button>
+                </div>
+                <div class="accordion-body">
+                  <div class="accordion-content">
+                    <!-- single ac-checkbox start  -->
+                    <div class="ac-single-checkbox">
+                      <input class="is-checkradio ac-checkbox" id="autoscalling" type="checkbox" name="checkbox" />
+                      <label for="autoscalling">Autoscalling</label>
+                    </div>
+                    <!-- single ac-checkbox end -->
+
+                    <!-- single ac-checkbox start  -->
+                    <div class="ac-single-checkbox">
+                      <input class="is-checkradio ac-checkbox" id="demo" type="checkbox" name="checkbox" />
+                      <label for="demo">Demo</label>
+                    </div>
+                    <!-- single ac-checkbox end -->
+
+                    <!-- single ac-checkbox start  -->
+                    <div class="ac-single-checkbox">
+                      <input class="is-checkradio ac-checkbox" id="aws" type="checkbox" name="checkbox" />
+                      <label for="aws">AWS</label>
+                    </div>
+                    <!-- single ac-checkbox end -->
+
+                    <!-- single ac-checkbox start  -->
+                    <div class="ac-single-checkbox">
+                      <input class="is-checkradio ac-checkbox" id="azure" type="checkbox" name="checkbox" />
+                      <label for="azure">Azure</label>
+                    </div>
+                    <!-- single ac-checkbox end -->
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+      <!-- left sidebar area end -->
+      <!-- right content start  -->
+      <div class="right-content">
+        <!-- youtube video start  -->
+        <div class="video-content mt-15">
+          <iframe src="https://www.youtube.com/embed/EO6uOhKb2XI" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <!-- youtube video end  -->
+
+        <!-- video title start  -->
+        <div class="video-title is-flex is-justify-content-space-between is-align-items-baseline">
+          <h1>Introduction to KubeDB AutoOps Component Supervisor</h1>
+        </div>
+        <!-- video title end  -->
+
+        <!-- header items start  -->
+        <div class="header-items is-flex is-justify-content-space-between mt-5 mb-12">
+          <div class="header-left">
+            <div class="buttons outlined-bg-buttons mb-0 is-hidden-tablet">
+              <button class="button is-tinny" id="filterBtn">Filter <span class="material-icons-outlined ml-8">
+                  filter_list
+                </span></button>
+            </div>
+
+            <div class="tags filtered-tags is-hidden-mobile">
+              <div class="tag">All <span class="material-icons-outlined">close</span></div>
+              <div class="tag">KubeDB <span class="material-icons-outlined">close</span></div>
+              <div class="tag">Webiner <span class="material-icons-outlined">close</span></div>
+              <div class="tag pointer underline">Clear Filter</div>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="buttons outlined-bg-buttons">
+              <div class="button is-tinny"><span class="material-icons-outlined mr-8">
+                  arrow_back
+                </span>Previous</div>
+              <div class="button is-tinny">Next <span class="material-icons-outlined ml-8">
+                  arrow_forward
+                </span></div>
+            </div>
+          </div>
+        </div>
+        <!-- header items end -->
+
+
+        <!-- gallery body start  -->
+        <div class="body-content">
+          <div class="columns is-multiline">
+            <!-- single card item start  -->
+            <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-third-fullhd">
+              <a href="#" class="gallery-card">
+                <div class="card-thumbnail">
+                  <img
+                    src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                    alt="">
+                  <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="filtered-items">
+                    <span>KUBEDB</span>
+                    <span>WEBINER</span>
+                  </div>
+                  <h1 class="is-ellipsis-2">Upgrading MySQL with KubeDB Enterprise by AppsCode</h1>
+                  <div class="meta-tag is-flex is-justify-content-space-between">
+                    <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
+                    <p><span class="material-icons-outlined">person_outline</span>Masudur Rahman</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- single card item end -->
+
+            <!-- single card item start  -->
+            <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-third-fullhd">
+              <a href="#" class="gallery-card">
+                <div class="card-thumbnail">
+                  <img
+                    src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                    alt="">
+                  <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="filtered-items">
+                    <span>KUBEDB</span>
+                    <span>WEBINER</span>
+                  </div>
+                  <h1 class="is-ellipsis-2">Upgrading MySQL with KubeDB Enterprise by AppsCode</h1>
+                  <div class="meta-tag is-flex is-justify-content-space-between">
+                    <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
+                    <p><span class="material-icons-outlined">person_outline</span>Masudur Rahman</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- single card item end -->
+
+            <!-- single card item start  -->
+            <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-third-fullhd">
+              <a href="#" class="gallery-card">
+                <div class="card-thumbnail">
+                  <img
+                    src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                    alt="">
+                  <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="filtered-items">
+                    <span>KUBEDB</span>
+                    <span>WEBINER</span>
+                  </div>
+                  <h1 class="is-ellipsis-2">Upgrading MySQL with KubeDB Enterprise by AppsCode</h1>
+                  <div class="meta-tag is-flex is-justify-content-space-between">
+                    <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
+                    <p><span class="material-icons-outlined">person_outline</span>Masudur Rahman</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- single card item end -->
+
+            <!-- single card item start  -->
+            <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-third-fullhd">
+              <a href="#" class="gallery-card">
+                <div class="card-thumbnail">
+                  <img
+                    src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                    alt="">
+                  <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="filtered-items">
+                    <span>KUBEDB</span>
+                    <span>WEBINER</span>
+                  </div>
+                  <h1 class="is-ellipsis-2">Upgrading MySQL with KubeDB Enterprise by AppsCode</h1>
+                  <div class="meta-tag is-flex is-justify-content-space-between">
+                    <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
+                    <p><span class="material-icons-outlined">person_outline</span>Masudur Rahman</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- single card item end -->
+
+            <!-- single card item start  -->
+            <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-third-fullhd">
+              <a href="#" class="gallery-card">
+                <div class="card-thumbnail">
+                  <img
+                    src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                    alt="">
+                  <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="filtered-items">
+                    <span>KUBEDB</span>
+                    <span>WEBINER</span>
+                  </div>
+                  <h1 class="is-ellipsis-2">Upgrading MySQL with KubeDB Enterprise by AppsCode</h1>
+                  <div class="meta-tag is-flex is-justify-content-space-between">
+                    <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
+                    <p><span class="material-icons-outlined">person_outline</span>Masudur Rahman</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- single card item end -->
+
+            <!-- single card item start  -->
+            <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-third-fullhd">
+              <a href="#" class="gallery-card">
+                <div class="card-thumbnail">
+                  <img
+                    src="https://images.unsplash.com/photo-1646678471872-af73a8ef8ffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                    alt="">
+                  <div class="play-button"><span class="material-icons-outlined">play_arrow</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="filtered-items">
+                    <span>KUBEDB</span>
+                    <span>WEBINER</span>
+                  </div>
+                  <h1 class="is-ellipsis-2">Upgrading MySQL with KubeDB Enterprise by AppsCode</h1>
+                  <div class="meta-tag is-flex is-justify-content-space-between">
+                    <p><span class="material-icons-outlined">calendar_today</span>22-Feb-2022</p>
+                    <p><span class="material-icons-outlined">person_outline</span>Masudur Rahman</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- single card item end -->
+          </div>
+        </div>
+        <!-- gallery body end -->
+
+
+        <!-- playlist section start  -->
+        <div class="playlist-wrapper">
+          <h4>Popular playlist you may also like</h4>
+
+          <!-- single playlist item start  -->
+          <a href="#" class="playlist-item">
+            <div class="thumbnail">
+              <img src="https://via.placeholder.com/400/dddddd/808080" alt="">
+            </div>
+
+            <div class="content">
+              <div class="categories">
+                <span>KUBEDB</span> <span>WEBINAR</span>
+              </div>
+
+              <h2>KubeDB AutoOps | Automate Day-2 Life-cycle management of KubeDB Databases on Kubernetes
+              </h2>
+              <p>AutoOps is an addition of technology or concept that performs tasks automatically or with
+                minimal human assistance. Similarly, `KubeDB AutoOps` is a concept that is focusing to
+                automate the day 2 life-cycle management for supported databases on Kubernetes.</p>
+
+              <button>VIEW PLAYLIST</button>
+            </div>
+          </a>
+          <!-- single playlist item end -->
+
+          <!-- single playlist item start  -->
+          <a href="#" class="playlist-item">
+            <div class="thumbnail">
+              <img src="https://via.placeholder.com/400/dddddd/808080" alt="">
+            </div>
+
+            <div class="content">
+              <div class="categories">
+                <span>KUBEDB</span> <span>WEBINAR</span>
+              </div>
+
+              <h2>KubeDB AutoOps | Automate Day-2 Life-cycle management of KubeDB Databases on Kubernetes
+              </h2>
+              <p>AutoOps is an addition of technology or concept that performs tasks automatically or
+                with
+                minimal human assistance. Similarly, `KubeDB AutoOps` is a concept that is focusing to
+                automate the day 2 life-cycle management for supported databases on Kubernetes.</p>
+
+              <button>VIEW PLAYLIST</button>
+            </div>
+          </a>
+          <!-- single playlist item end -->
+
+          <!-- single playlist item start  -->
+          <a href="#" class="playlist-item">
+            <div class="thumbnail">
+              <img src="https://via.placeholder.com/400/dddddd/808080" alt="">
+            </div>
+
+            <div class="content">
+              <div class="categories">
+                <span>KUBEDB</span> <span>WEBINAR</span>
+              </div>
+
+              <h2>KubeDB AutoOps | Automate Day-2 Life-cycle management of KubeDB Databases on
+                Kubernetes
+              </h2>
+              <p>AutoOps is an addition of technology or concept that performs tasks automatically or
+                with
+                minimal human assistance. Similarly, `KubeDB AutoOps` is a concept that is focusing to
+                automate the day 2 life-cycle management for supported databases on Kubernetes.</p>
+
+              <button>VIEW PLAYLIST</button>
+            </div>
+          </a>
+          <!-- single playlist item end -->
+        </div>
+        <!-- playlist section end -->
+
+        <!-- load more button start  -->
+        <button class="button ac-button is-primary is-light is-fullwidth is-small mt-20">VIEW ALL PLAYLIST <span
+            class="material-icons-outlined ml-8">
+            arrow_forward
+          </span></button>
+        <!-- load more button end -->
+      </div>
+      <!-- right content end -->
+    </div>
+  </div>
+</section>
+{{ end }}

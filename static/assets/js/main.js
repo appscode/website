@@ -188,13 +188,7 @@ function closeModal() {
       modal.classList.remove('is-active')
     }
   })
-
 }
-// close modal end
-// adds modal JS 
-// setTimeout(() => {
-//   document.querySelector('.modal-1')?.querySelector('.modal')?.classList.add('is-active')
-// }, 1500);
 
 var h_editor = document.querySelector('.hero-area-code-editor');
 document.addEventListener("DOMContentLoaded", () => {
@@ -301,6 +295,16 @@ $('.customPrevBtn').click(function () {
   owl.trigger('prev.owl.carousel');
 })
 
+// video modal  
+ $('.webinar-video, .yt-video, .demo-video').magnificPopup({
+   disableOn: 700,
+   type: 'iframe',
+   mainClass: 'mfp-fade',
+   removalDelay: 160,
+   preloader: false,
+   fixedContentPos: false
+ });
+
 // for social prove owlCarousel 
 // owl owlCarousel JS 
 var owlSocialProve = $('.brand-image-wrapper');
@@ -332,10 +336,26 @@ owlSocialProve.owlCarousel({
   }
 });
 
-// Modal js video init plugin
-$(".yt-video").magnificPopup({
-  type: 'iframe'
-});
+
+// previous webinar videos search
+const searchWebinar = document.querySelector(".search-box input");
+let allWebinar = document.querySelectorAll('.webinar-video')
+
+searchWebinar.addEventListener('keyup', function(){
+  Array.from(allWebinar).forEach(singleWebinar => {
+    let titleHtml = singleWebinar.querySelectorAll('h1');
+    Array.from(titleHtml).forEach(title => {
+      let titleData = title.innerHTML.toLowerCase();
+      let inpData = searchWebinar.value.toLowerCase();
+
+      if (titleData.includes(inpData)) {
+        singleWebinar.parentElement.classList.remove("is-hidden")
+      }else {
+         singleWebinar.parentElement.classList.add("is-hidden")
+      }
+    })
+  })
+})
 
 // map area-tabs
 var tabsMenus = document.querySelectorAll(".tabs-wrapper ul li");

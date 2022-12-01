@@ -5,7 +5,7 @@
 
 {{ define "main" }}
 <!-- hero  area start -->
-<section class="hero-area-2">
+<section class="hero-area-2" id="webinarHeroArea">
   <div class="container">
     <div class="columns">
       <div class="column is-8">
@@ -237,6 +237,78 @@
 </section>
 <!-- hero area end -->
 
+<!-- previous webinar section start  -->
+<section class="gallery-area mt-70 mb-80">
+  <div class="container">
+    <div class="gallery-wrapper">
+      <!-- right content start  -->
+      <div class="is-fullwidth">
+
+        <!-- gallery body start  -->
+        <div class="body-content">
+          
+          <div class="columns is-multiline">
+
+            <!-- title and search start -->
+              <div class="column is-12 is-sticky webinar-search pb-0">
+
+                <div
+                  class="is-flex is-justify-content-space-between is-align-items-center pb-12 bb-1">
+                  <h4>Our Previous Webinars</h4>
+                  <div class="search-box">
+                    <label class="height-20 width-20 is-flex" for="search"><svg xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
+                    </label>
+                    <input type="search" placeholder="Search Webinar...">
+                  </div>
+                </div>
+
+              </div>
+            <!-- title and search end -->
+            
+            <!-- single card item start  -->
+            {{ $webinarData := getJSON "https://x.appscode.com/_/playlists/PLoiT1Gv2KR1hAtDDW7fHEi-s2y2H3DOgx" }}
+            {{ range $webinarData }}
+            <div class="column is-one-third-widescreen is-one-third-desktop is-one-quarter-fullhd is-half-tablet is-full-mobile">
+              <a href="https://www.youtube.com/watch?v={{ .contentDetails.videoId }}"
+                class="gallery-card webinar-video">
+                <div class="card-thumbnail">
+                  <img
+                    src="{{ .snippet.thumbnails.high.url }}"
+                    alt="{{ .snippet.title }}" loading="lazy">
+                  <div class="play-button">
+                    <span class="material-icons-outlined">play_arrow</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                <div class="meta-tag is-flex is-justify-content-space-between">
+                  <p><span
+                      class="material-icons-outlined">calendar_today</span>{{ .contentDetails.videoPublishedAt | time.Format ":date_medium" }}
+                  </p>
+                </div>
+                  <h1 class="is-ellipsis-3 mb-8">{{ .snippet.title }}</h1>
+                </div>
+              </a>
+            </div>
+            <!-- single card item end -->
+            {{ end }}
+
+          </div>
+        </div>
+        <!-- gallery body end -->
+
+      </div>
+      <!-- right content end -->
+    </div>
+  </div>
+</section>
+<!-- previous webinar section end -->
+<hr>
+
+
 <!-- Slim Select JS  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
 <script src="https://unpkg.com/dayjs@1.11.1/dayjs.min.js"></script>
@@ -325,7 +397,9 @@
           wbody.replaceChildren();
 
           var webinars = JSON.parse(xhr.responseText);
-
+          if(webinars.length < 1) {
+            document.querySelector('#webinarHeroArea').classList.add('is-hidden')
+          }
           for (let i = 0; i < Math.min(webinars.length, 3); i++) {
             let w = webinars[i];
             let date = new Date(w.schedules[0]);
@@ -342,7 +416,7 @@
   <div class="speaker-image"><img src="${s.picture}" alt="${s.name}"></div>
   <div class="speaker-info">
     <h6>${s.name}</h6>
-    <p>${s.job_title} <a href="https://appscode.com">AppsCode Inc</a></p>
+    <p>${s.job_title} <br /> <a href="https://appscode.com">AppsCode Inc</a></p>
   </div>
 </div>`;
           });
