@@ -5,7 +5,7 @@
 
 {{ define "main" }}
 <!-- hero  area start -->
-<section class="hero-area-2">
+<section class="hero-area-2" id="webinarHeroArea">
   <div class="container">
     <div class="columns">
       <div class="column is-8">
@@ -397,7 +397,9 @@
           wbody.replaceChildren();
 
           var webinars = JSON.parse(xhr.responseText);
-
+          if(webinars.length < 1) {
+            document.querySelector('#webinarHeroArea').classList.add('is-hidden')
+          }
           for (let i = 0; i < Math.min(webinars.length, 3); i++) {
             let w = webinars[i];
             let date = new Date(w.schedules[0]);
