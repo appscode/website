@@ -397,10 +397,11 @@
           wbody.replaceChildren();
 
           var webinars = JSON.parse(xhr.responseText);
-          if(webinars.length < 1) {
+          // console.log( webinars );
+          if(webinars === null) {
             document.querySelector('#webinarHeroArea').classList.add('is-hidden')
-          }
-          for (let i = 0; i < Math.min(webinars.length, 3); i++) {
+          }else {
+            for (let i = 0; i < Math.min(webinars.length, 3); i++) {
             let w = webinars[i];
             let date = new Date(w.schedules[0]);
             let dfmt = dayjs(date);
@@ -421,7 +422,6 @@
 </div>`;
           });
 
-            // <li class="webinar-item tab" data-tab-target="#webinar2"><p>May 2022</p><h2>12</h2><p class="date">11:30:00 PM</p></li>
             let li = document.createElement("li");
             li.innerHTML = '<p>' + dfmt.format('MMM YYYY') + '</p><h2>' + date.getDate() + '</h2><p class="date">' +
               dfmt.format('hh:mm:ss A') + '</p>';
@@ -498,8 +498,10 @@
             })
           })
           // Webinar tabs end
+          }
+         
         } else {
-          location.reload();
+          // location.reload();
         }
       }
     }
