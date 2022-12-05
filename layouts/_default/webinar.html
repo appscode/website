@@ -4,8 +4,17 @@
 {{ end }}
 
 {{ define "main" }}
+<!-- preloader start  -->
+<div class="is-flex is-justify-content-center is-align-items-center is-flex-direction-column ac-preloader">
+  <span class="spinner"></span>
+  <p class="font-size-12 mt-10 pl-5">
+    LOADING
+  </p>
+</div>
+<!-- preloader end -->
+
 <!-- hero  area start -->
-<section class="hero-area-2" id="webinarHeroArea">
+<section class="hero-area-2 is-hidden" id="webinarHeroArea">
   <div class="container">
     <div class="columns">
       <div class="column is-8">
@@ -103,7 +112,7 @@
             <!-- form start  -->
             <div class="registration-form">
               <h3>Register Now</h3>
-              <div class="circle-shape"><img src="/assets/images/webinar/circle-shape.jpg" alt=""></div>
+              <div class="circle-shape"><img src="/assets/images/webinar/circle-shape.png" alt=""></div>
               <!-- registration form start  -->
               <!-- https://stackoverflow.com/a/29014676 -->
               <form method="post" action="https://x.appscode.com/_/webinars/register"
@@ -398,9 +407,10 @@
 
           var webinars = JSON.parse(xhr.responseText);
           // console.log( webinars );
-          if(webinars === null) {
-            document.querySelector('#webinarHeroArea').classList.add('is-hidden')
-          }else {
+         
+          if(webinars !== null) {
+            document.querySelector('#webinarHeroArea')?.classList.remove('is-hidden')
+            document.querySelector('.ac-preloader')?.classList.add('is-hidden')
             for (let i = 0; i < Math.min(webinars.length, 3); i++) {
             let w = webinars[i];
             let date = new Date(w.schedules[0]);
@@ -499,8 +509,7 @@
           })
           // Webinar tabs end
           }
-         
-        } else {
+          } else {
           // location.reload();
         }
       }

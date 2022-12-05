@@ -235,6 +235,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // features products 
 $(document).ready(function () {
+  $(this).scrollTop(0);
+  
   $('[data-serialscrolling]').serialscrolling({
 
     // selector
