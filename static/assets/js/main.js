@@ -235,6 +235,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // features products 
 $(document).ready(function () {
+  $(this).scrollTop(0);
+  
   $('[data-serialscrolling]').serialscrolling({
 
     // selector
@@ -341,7 +343,7 @@ owlSocialProve.owlCarousel({
 const searchWebinar = document.querySelector(".search-box input");
 let allWebinar = document.querySelectorAll('.webinar-video')
 
-searchWebinar.addEventListener('keyup', function(){
+searchWebinar?.addEventListener('keyup', function(){
   Array.from(allWebinar).forEach(singleWebinar => {
     let titleHtml = singleWebinar.querySelectorAll('h1');
     Array.from(titleHtml).forEach(title => {
