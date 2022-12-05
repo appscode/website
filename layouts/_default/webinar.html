@@ -406,11 +406,10 @@
           wbody.replaceChildren();
 
           var webinars = JSON.parse(xhr.responseText);
-          // console.log( webinars );
-         
+          //  Add preloader 
+          document.querySelector('.ac-preloader')?.classList.add('is-hidden')
           if(webinars !== null) {
             document.querySelector('#webinarHeroArea')?.classList.remove('is-hidden')
-            document.querySelector('.ac-preloader')?.classList.add('is-hidden')
             for (let i = 0; i < Math.min(webinars.length, 3); i++) {
             let w = webinars[i];
             let date = new Date(w.schedules[0]);
