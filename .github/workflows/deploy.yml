@@ -1,0 +1,88 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      cluster:
+        description: 'Cluster'
+        required: true
+        type: choice
+        options:
+          - ninja
+          - prod
+      version:
+        description: 'Tag'
+        # required: true
+        type: string
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build
+    runs-on: f0
+    steps:
+      - uses: actions/checkout@v1
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+          check-latest: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install Linode CLI
+        run: |
+          python -m pip install --upgrade pip
+          pip --version
+          pip install setuptools
+          pip install linode-cli --upgrade
+
+      - name: Install kubectl
+        run: |
+          curl -LO https://dl.k8s.io/release/v1.25.2/bin/linux/amd64/kubectl
+          chmod +x ./kubectl
+          sudo mv ./kubectl /usr/local/bin/kubectl
+
+      - name: Install yq
+        run: |
+          curl -fsSL -o yqq https://github.com/mikefarah/yq/releases/download/3.3.0/yq_linux_amd64
+          chmod +x yqq
+          sudo mv yqq /usr/local/bin/yqq
+          pip3 install yq
+
+      - name: Install Hugo
+        run: |
+          curl -fsSL -o hugo_extended.deb https://github.com/gohugoio/hugo/releases/download/v0.111.1/hugo_extended_0.111.1_linux-amd64.deb
+          sudo dpkg -i hugo_extended.deb
+
+      - name: Install Hugo Tools
+        run: |
+          curl -fsSL -o hugo-tools https://github.com/appscodelabs/hugo-tools/releases/download/v0.2.23/hugo-tools-linux-amd64
+          chmod +x hugo-tools
+          sudo mv hugo-tools /usr/local/bin/hugo-tools
+
+      # - name: Setup upterm session
+      #   uses: lhotari/action-upterm@v1
+
+      - name: Deploy
+        env:
+          REGISTRY: ghcr.io/appscode
+          LINODE_CLI_TOKEN: ${{ secrets.LINODE_CLI_TOKEN }}
+          CLUSTER: ${{ inputs.cluster }}
+        run: |
+          lke_id=19953 # ninja cluster
+          if [ "$CLUSTER" = "prod" ]; then
+            lke_id=25516 # prod cluster
+          fi
+          echo "connect to LKE cluster $lke_id"
+          mkdir -p ~/.kube
+          linode-cli lke kubeconfig-view $lke_id --json | jq -r .[0].kubeconfig | base64 -d > ~/.kube/config
+          kubectl get nodes
+          echo "deploy docker image"
+          make deploy-to-linode TAG=${{ inputs.version }}

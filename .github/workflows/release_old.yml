@@ -1,9 +1,12 @@
-name: preview-website
+name: Release_OLD
 
 on:
-  pull_request:
-    branches:
-      - "*"
+  push:
+    tags:
+      - "*.*"
+  schedule:
+    - cron: '0 0 * * *'
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 concurrency:
@@ -40,7 +43,6 @@ jobs:
         run: |
           curl -fsSL -o hugo_extended.deb https://github.com/gohugoio/hugo/releases/download/v0.111.1/hugo_extended_0.111.1_linux-amd64.deb
           sudo dpkg -i hugo_extended.deb
-          rm hugo_extended.deb
 
       - name: Install Hugo Tools
         run: |
@@ -48,20 +50,26 @@ jobs:
           chmod +x hugo-tools
           sudo mv hugo-tools /usr/local/bin/hugo-tools
 
-      - name: Update docs
+      - name: Install Firebase CLI
+        run: |
+          npm i -g firebase-tools@v11.13.0
+
+      - name: QA
         env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
           GOOGLE_CUSTOM_SEARCH_API_KEY: ${{ secrets.GOOGLE_CUSTOM_SEARCH_API_KEY }}
+        if: startsWith(github.event.ref, 'refs/tags/') && (contains(github.ref, '-alpha.') || contains(github.ref, '-beta.'))
         run: |
           npm install
           make docs
-          make gen-prod
+          make qa
 
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_QA }}'
-          projectId: kubedb-new-e7965
-          # target: kubedb-new-e7965
-          # entryPoint: '.'
+      - name: Release
         env:
-          FIREBASE_CLI_PREVIEWS: hostingchannels
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          GOOGLE_CUSTOM_SEARCH_API_KEY: ${{ secrets.GOOGLE_CUSTOM_SEARCH_API_KEY }}
+        if: ${{ github.event_name == 'schedule' }} || (startsWith(github.event.ref, 'refs/tags/') && (contains(github.ref, '-alpha.') || contains(github.ref, '-beta.')) == false)
+        run: |
+          npm install
+          make docs
+          make release
