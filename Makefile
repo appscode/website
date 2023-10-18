@@ -39,10 +39,14 @@ docker-manifest:
 	docker manifest create -a $(IMAGE):$(TAG) $(foreach PLATFORM,$(DOCKER_PLATFORMS),$(IMAGE):$(TAG)_$(subst /,_,$(PLATFORM)))
 	docker manifest push $(IMAGE):$(TAG)
 
+.PHONY: release
+release:
+	@$(MAKE) all-push docker-manifest --no-print-directory
+
 .PHONY: deploy-to-linode
 deploy-to-linode:
 	kubectl set image -n bb deployment/website ui=$(IMAGE):$(VERSION)
-	kubectl delete pods -n bb --selector=app.kubernetes.io/name=website"
+	kubectl delete pods -n bb --selector=app.kubernetes.io/name=website
 
 .PHONY: run
 run:
@@ -93,11 +97,11 @@ gen-prod:
 	hugo --minify --config=config.yaml
 	@yqq w -i config.yaml params.search_api_key --tag '!!str' '_replace_'
 
-.PHONY: release
-release: gen-prod
-	firebase use prod
-	firebase deploy
-	firebase use default
+# .PHONY: release
+# release: gen-prod
+# 	firebase use prod
+# 	firebase deploy
+# 	firebase use default
 
 .PHONY: check-links
 check-links:
