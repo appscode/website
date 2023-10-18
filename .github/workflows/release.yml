@@ -3,10 +3,7 @@ name: Release
 on:
   push:
     tags:
-      - "*.*"
-  schedule:
-    - cron: '0 0 * * *'
-  # Allows you to run this workflow manually from the Actions tab
+      - '*.*'
   workflow_dispatch:
 
 concurrency:
@@ -16,21 +13,62 @@ concurrency:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-20.04
+    runs-on: f0
     steps:
       - uses: actions/checkout@v1
 
-      - name: Set up Go 1.x
-        uses: actions/setup-go@v2
-        with:
-          go-version: ^1.20
-        id: go
+      - name: Check tag matches package version
+        run: |
+          PKG_VERSION=$(jq -r '.version' package.json)
+          GIT_TAG=$(git describe --exact-match --abbrev=0 2>/dev/null || echo "")
+          test "v${PKG_VERSION}" = "${GIT_TAG}"
 
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: '18'
           check-latest: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Set up QEMU
+        id: qemu
+        uses: docker/setup-qemu-action@v1
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Install kubectl
+        run: |
+          curl -LO https://dl.k8s.io/release/v1.25.2/bin/linux/amd64/kubectl
+          chmod +x ./kubectl
+          sudo mv ./kubectl /usr/local/bin/kubectl
+
+      - name: Install Linode CLI
+        run: |
+          python -m pip install --upgrade pip
+          pip --version
+          pip install setuptools
+          pip install linode-cli --upgrade
+
+      - name: Prepare git
+        env:
+          GITHUB_USER: 1gtm
+          GITHUB_TOKEN: ${{ secrets.LGTM_GITHUB_TOKEN }}
+        run: |
+          set -x
+          git config --global user.name "${GITHUB_USER}"
+          git config --global user.email "${GITHUB_USER}@appscode.com"
+          git config --global \
+            url."https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com".insteadOf \
+            "https://github.com"
+
+      - name: Install GitHub CLI
+        run: |
+          curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
+          sudo mv bin/hub /usr/local/bin
 
       - name: Install yq
         run: |
@@ -50,26 +88,28 @@ jobs:
           chmod +x hugo-tools
           sudo mv hugo-tools /usr/local/bin/hugo-tools
 
-      - name: Install Firebase CLI
+      - name: Build
         run: |
-          npm i -g firebase-tools@v11.13.0
+          npm ci
+          npm run build
 
-      - name: QA
+      - name: Publish to GitHub Container Registry
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          GOOGLE_CUSTOM_SEARCH_API_KEY: ${{ secrets.GOOGLE_CUSTOM_SEARCH_API_KEY }}
-        if: startsWith(github.event.ref, 'refs/tags/') && (contains(github.ref, '-alpha.') || contains(github.ref, '-beta.'))
+          REGISTRY: ghcr.io/appscode
+          DOCKER_TOKEN: ${{ secrets.LGTM_GITHUB_TOKEN }}
+          USERNAME: 1gtm
+          GITHUB_USER: 1gtm
+          GITHUB_TOKEN: ${{ secrets.LGTM_GITHUB_TOKEN }}
         run: |
-          npm install
-          make docs
-          make qa
+          docker login ghcr.io --username ${USERNAME} --password ${DOCKER_TOKEN}
+          npm run docker-release
 
-      - name: Release
+      - name: Deploy to QA
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          GOOGLE_CUSTOM_SEARCH_API_KEY: ${{ secrets.GOOGLE_CUSTOM_SEARCH_API_KEY }}
-        if: ${{ github.event_name == 'schedule' }} || (startsWith(github.event.ref, 'refs/tags/') && (contains(github.ref, '-alpha.') || contains(github.ref, '-beta.')) == false)
+          REGISTRY: ghcr.io/appscode
+          LINODE_CLI_TOKEN: ${{ secrets.LINODE_CLI_TOKEN }}
         run: |
-          npm install
-          make docs
-          make release
+          mkdir -p ~/.kube
+          linode-cli lke kubeconfig-view 19953 --json | jq -r .[0].kubeconfig | base64 -d > ~/.kube/config
+          kubectl get nodes
+          make deploy-to-linode

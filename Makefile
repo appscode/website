@@ -1,3 +1,49 @@
+SHELL=/bin/bash -o pipefail
+
+REGISTRY   ?= ghcr.io/appscode
+BIN        ?= website
+IMAGE      := $(REGISTRY)/$(BIN)
+TAG        ?= $(shell git describe --exact-match --abbrev=0 2>/dev/null || echo "")
+
+DOCKER_PLATFORMS := linux/amd64 linux/arm64
+PLATFORM         ?= linux/$(subst x86_64,amd64,$(subst aarch64,arm64,$(shell uname -m)))
+VERSION          = $(TAG)_$(subst /,_,$(PLATFORM))
+
+container-%:
+	@$(MAKE) container \
+	    --no-print-directory \
+	    PLATFORM=$(subst _,/,$*)
+
+push-%:
+	@$(MAKE) push \
+	    --no-print-directory \
+	    PLATFORM=$(subst _,/,$*)
+
+all-container: $(addprefix container-, $(subst /,_,$(DOCKER_PLATFORMS)))
+
+all-push: $(addprefix push-, $(subst /,_,$(DOCKER_PLATFORMS)))
+
+.PHONY: container
+container: gen-prod
+	@echo "container: $(IMAGE):$(VERSION)"
+	@docker buildx build --platform $(PLATFORM) --load --pull -t $(IMAGE):$(VERSION) -f Dockerfile .
+	@echo
+
+push: container
+	@docker push $(IMAGE):$(VERSION)
+	@echo "pushed: $(IMAGE):$(VERSION)"
+	@echo
+
+.PHONY: docker-manifest
+docker-manifest:
+	docker manifest create -a $(IMAGE):$(TAG) $(foreach PLATFORM,$(DOCKER_PLATFORMS),$(IMAGE):$(TAG)_$(subst /,_,$(PLATFORM)))
+	docker manifest push $(IMAGE):$(TAG)
+
+.PHONY: deploy-to-linode
+deploy-to-linode:
+	kubectl set image -n bb deployment/website ui=$(IMAGE):$(VERSION)
+	kubectl delete pods -n bb --selector=app.kubernetes.io/name=website"
+
 .PHONY: run
 run:
 	@yqq w -i config.dev.yaml params.search_api_key --tag '!!str' $(GOOGLE_CUSTOM_SEARCH_API_KEY)
