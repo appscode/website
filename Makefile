@@ -9,6 +9,10 @@ PRODUCT ?=
 docs: hugo-tools
 	$(HUGO_TOOLS) docs-aggregator --shared  --product=$(PRODUCT)
 	find ./data -name "*.json" -exec sed -i 's/https:\/\/cdn.appscode.com\/images/\/assets\/images/g' {} \;
+	rm -rf static/files/cluster-api
+	rm -rf static/files/cluster-api-provider-aws
+	rm -rf static/files/cluster-api-provider-azure
+	rm -rf static/files/cluster-api-provider-gcp
 
 .PHONY: docs-skip-assets
 docs-skip-assets: hugo-tools
@@ -19,6 +23,10 @@ docs-skip-assets: hugo-tools
 assets: hugo-tools
 	$(HUGO_TOOLS) docs-aggregator --only-assets
 	find ./data -name "*.json" -exec sed -i 's/https:\/\/cdn.appscode.com\/images/\/assets\/images/g' {} \;
+	rm -rf static/files/cluster-api
+	rm -rf static/files/cluster-api-provider-aws
+	rm -rf static/files/cluster-api-provider-azure
+	rm -rf static/files/cluster-api-provider-gcp
 
 .PHONY: gen
 gen:
