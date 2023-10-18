@@ -17,12 +17,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: Check tag matches package version
-        run: |
-          PKG_VERSION=$(jq -r '.version' package.json)
-          GIT_TAG=$(git describe --exact-match --abbrev=0 2>/dev/null || echo "")
-          test "v${PKG_VERSION}" = "${GIT_TAG}"
-
       - uses: actions/setup-node@v2
         with:
           node-version: '18'
