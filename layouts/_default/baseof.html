@@ -512,9 +512,10 @@
               <!-- navbar items end -->
               <div class="buttons">
                 <a href="https://accounts.appscode.com/user/sign_up"
-                class="button ac-button is-primary {{ if eq $currentPageType "docs" }} is-hidden {{ end }}">SIGN UP</a>
-                <a href="https://accounts.appscode.com/user/login"
-                class="button ac-button is-secondary {{ if eq $currentPageType "docs" }} is-hidden {{ end }}">LOGIN</a>
+                class="button ac-button is-secondary {{ if eq $currentPageType "docs" }} is-hidden {{ end }}"><span>SIGN UP</span> <span class="tag">BETA</span></a>
+                <a href="{{ $.Site.Params.domain_appscode }}/contact/"
+                class="button ac-button is-primary {{ if eq $currentPageType "docs" }} is-hidden {{ end }}">CONTACT
+                SALES</a>
               </div>
              </div>
 
