@@ -511,8 +511,8 @@
               </ul>
               <!-- navbar items end -->
               <div class="buttons">
-                <a href="https://accounts.appscode.com/user/sign_up"
-                class="button ac-button is-secondary {{ if eq $currentPageType "docs" }} is-hidden {{ end }}"><span>SIGN UP</span> <span class="tag">BETA</span></a>
+                <a id="ac-signup-button" href="https://accounts.appscode.com/user/sign_up"
+                class="button ac-button is-loading {{ if eq $currentPageType "docs" }} is-hidden {{ end }}"><span>SIGN UP</span></a>
                 <a href="{{ $.Site.Params.domain_appscode }}/contact/"
                 class="button ac-button is-primary {{ if eq $currentPageType "docs" }} is-hidden {{ end }}">CONTACT
                 SALES</a>
@@ -521,7 +521,7 @@
 
             </div>
             {{ $currentPageType := cond (le (len (split (trim .Page.RelPermalink "/") "/")) 2) "products" "docs" }}
-            
+
           </div>
         </div>
         <!-- appscode navbar end -->
@@ -754,7 +754,7 @@
         <!-- navbar right end -->
       </div>
       <!-- product navbar end -->
-      
+
        <!-- docs navbar start  -->
        {{ block "documentation-menu" . }}
        {{ end }}
@@ -764,11 +764,11 @@
    {{ end }}
    {{ end }}
 
-   
-   
+
+
     <!-- navabar product end  -->
 </div>
-    
+
   </header>
   {{ end }}
   <!-- ========================== header area end ==========================-->
@@ -793,7 +793,7 @@
        acceptBtn = cookieBox.querySelector(".is-primary"),
        closeBtn = cookieBox.querySelector(".close-btn");
 
-     // close cookie box 
+     // close cookie box
      closeBtn.addEventListener("click", function () {
        cookieBox.classList.add("hide");
      })
@@ -907,7 +907,7 @@
   <!-- call to action area end -->
 
 
- 
+
 
   <!-- top to button start -->
   <button class="go-to-top" id="goTop">
@@ -1121,12 +1121,75 @@
   <!--End of Tawk.to Script-->
 
   <script>
+    const acSignupButton = document.getElementById('ac-signup-button')
+
+    // define Beta tag
+    const betaSpan = document.createElement("span")
+    betaSpan.innerText = "BETA"
+    betaSpan.classList.add('tag')
+
+    // function to get cookie
+    function getCookie(cname) {
+      let name = cname + "=";
+      let ca = document.cookie.split(';');
+      for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    // function to fetch user
+    async function fetchUser() {
+      try {
+        const hostname = window.location.hostname;
+        const protocol = window.location.protocol;
+        const port = window.location.port;
+
+        const apiDomain = protocol + "//api." + hostname +  (port? ":3003" : "");
+        const consoleDomain = protocol + "//console." + hostname +  (port? ":5990" : "");
+
+        acSignupButton.classList.add('is-loading');
+
+        const response = await fetch(apiDomain + "/api/v1/user", {
+          method: "GET",
+          credentials: "include",
+          headers: {
+            "X-Csrf-Token": getCookie("_csrf"),
+            "X-Requested-With": "xmlhttprequest"
+          }
+        })
+
+        if(response.status === 200) {
+          // user is logged in
+          // show console link
+          acSignupButton.firstElementChild.innerHTML =  "GO TO CONSOLE"
+          acSignupButton.href = consoleDomain
+        }
+      } catch(error) {
+        console.log("Failed to fetch user", error)
+      }
+      // remove the loader
+      acSignupButton.classList.remove('is-loading');
+      // append beta tag
+      acSignupButton.appendChild(betaSpan);
+    }
+
     window.addEventListener('load', function() {
       jQuery('a:contains("KubeDB")').click(function() {
         gtag('event', 'conversion', {
           'send_to': 'AW-10933819571/j5J-CL2sweQDELOx090o'
         });
       })
+
+
+      // fetch if user is logged in or not
+      fetchUser();
     });
   </script>
 </body>
