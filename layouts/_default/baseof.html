@@ -511,8 +511,8 @@
               </ul>
               <!-- navbar items end -->
               <div class="buttons">
-                <a id="ac-signup-button" href="https://accounts.appscode.com/user/sign_up"
-                class="button ac-button is-loading {{ if eq $currentPageType "docs" }} is-hidden {{ end }}"><span>SIGN UP</span></a>
+                <a id="ac-sign-in-button" href="https://accounts.appscode.com/user/login"
+                class="button ac-button is-loading {{ if eq $currentPageType "docs" }} is-hidden {{ end }}"><span>SIGN IN</span></a>
                 <a href="{{ $.Site.Params.domain_appscode }}/contact/"
                 class="button ac-button is-primary {{ if eq $currentPageType "docs" }} is-hidden {{ end }}">CONTACT
                 SALES</a>
@@ -1121,7 +1121,7 @@
   <!--End of Tawk.to Script-->
 
   <script>
-    const acSignupButton = document.getElementById('ac-signup-button')
+    const acSignInButton = document.getElementById('ac-sign-in-button')
 
     // define Beta tag
     const betaSpan = document.createElement("span")
@@ -1154,7 +1154,7 @@
         const apiDomain = protocol + "//api." + hostname +  (port? ":3003" : "");
         const consoleDomain = protocol + "//console." + hostname +  (port? ":5990" : "");
 
-        acSignupButton.classList.add('is-loading');
+        acSignInButton.classList.add('is-loading');
 
         const response = await fetch(apiDomain + "/api/v1/user", {
           method: "GET",
@@ -1168,16 +1168,16 @@
         if(response.status === 200) {
           // user is logged in
           // show console link
-          acSignupButton.firstElementChild.innerHTML =  "GO TO CONSOLE"
-          acSignupButton.href = consoleDomain
+          acSignInButton.firstElementChild.innerHTML =  "CONSOLE"
+          acSignInButton.href = consoleDomain
         }
       } catch(error) {
         console.log("Failed to fetch user", error)
       }
       // remove the loader
-      acSignupButton.classList.remove('is-loading');
+      acSignInButton.classList.remove('is-loading');
       // append beta tag
-      acSignupButton.appendChild(betaSpan);
+      acSignInButton.appendChild(betaSpan);
     }
 
     window.addEventListener('load', function() {
