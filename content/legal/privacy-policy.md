@@ -150,6 +150,8 @@ If we or our subsidiaries are involved in a merger, acquisition or asset sale, y
     6. with your consent in any other cases;
     7. if we believe disclosure is necessary or appropriate to protect the rights, property, or safety of the Company, our customers, or others.
 
+4. Our use and transfer of information received from Google APIs to any other app will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+
 ## Security of Data
 
 The security of your data is important to us but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.
