@@ -8,8 +8,12 @@ disableKinds:
 - taxonomyTerm
 params:
   domain_appscode: https://appscode.com
+  domain_guard: https://kubeguard.dev
+  domain_configsyncer: https://config-syncer.com
+  domain_gateway: https://gateway.voyagermesh.com
   domain_voyagermesh: https://voyagermesh.com
   domain_stash: https://stash.run
+  domain_kubestash: https://kubestash.com
   domain_kubedb: https://kubedb.com
   domain_kubevault: https://kubevault.com
   domain_kubeform: https://kubeform.com
@@ -32,28 +36,3 @@ markup:
   goldmark:
     renderer:
       unsafe: true
-menu:
-  product_guard:
-  - name: Documentation
-    weight: 20
-  product_kubed:
-  - name: Documentation
-    weight: 20
-  product_pharmer:
-  - name: Documentation
-    weight: 20
-  product_searchlight:
-  - name: Documentation
-    weight: 20
-  product_service-broker:
-  - name: Documentation
-    weight: 20
-  product_stash:
-  - name: Documentation
-    weight: 20
-  product_swift:
-  - name: Documentation
-    weight: 20
-  product_voyager:
-  - name: Documentation
-    weight: 20
