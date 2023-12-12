@@ -62,64 +62,24 @@
           "type": 302
         },
         {
-          "source": "/products/guard/latest/",
-          "destination": "/products/guard/v0.6.1/",
+          "source": "/products/guard",
+          "destination": "https://kubeguard.dev",
           "type": 302
         },
         {
-          "source": "/products/guard/latest/:rest*",
-          "destination": "/products/guard/v0.6.1/:rest",
+          "source": "/products/guard/:rest*",
+          "destination": "https://kubeguard.dev/docs/:rest",
           "type": 302
         },
         {
-          "source": "/products/kubed/latest/",
-          "destination": "/products/kubed/v0.12.0/",
+          "source": "/products/kubed",
+          "destination": "https://config-syncer.com",
           "type": 302
         },
         {
-          "source": "/products/kubed/latest/:rest*",
-          "destination": "/products/kubed/v0.12.0/:rest",
+          "source": "/products/kubed/:rest*",
+          "destination": "https://config-syncer.com/docs/:rest",
           "type": 302
-        },
-        {
-          "source": "/products/searchlight/latest/",
-          "destination": "/products/searchlight/8.0.0/",
-          "type": 302
-        },
-        {
-          "source": "/products/searchlight/latest/:rest*",
-          "destination": "/products/searchlight/8.0.0/:rest",
-          "type": 302
-        },
-        {
-          "source": "/products/service-broker/latest/",
-          "destination": "/products/service-broker/0.3.1/",
-          "type": 302
-        },
-        {
-          "source": "/products/service-broker/latest/:rest*",
-          "destination": "/products/service-broker/0.3.1/:rest",
-          "type": 302
-        },
-        {
-          "source": "/products/swift/latest/",
-          "destination": "/products/swift/v0.12.1/",
-          "type": 302
-        },
-        {
-          "source": "/products/swift/latest/:rest*",
-          "destination": "/products/swift/v0.12.1/:rest",
-          "type": 302
-        },
-        {
-          "source": "/products/cloud-deployment",
-          "destination": "https://pharmer.dev",
-          "type": 301
-        },
-        {
-          "source": "/products/pharmer",
-          "destination": "https://pharmer.dev",
-          "type": 301
         },
         {
           "source": "/products/stash",
