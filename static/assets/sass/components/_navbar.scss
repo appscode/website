@@ -208,8 +208,8 @@
         .whats-new {
           position: absolute;
           z-index: 1;
-          top: -0.5rem;
-          right: -2.5rem;
+          top: -10px;
+          right: -30px;
           font-size: 0.8rem;
           color: $ac-white;
           padding: 0.2rem 0.3rem;
@@ -1017,8 +1017,8 @@ Responsive Classes
           margin: 6px 0;
 
           .link .whats-new {
-            top: -0.2rem;
-            right: 0.5rem;
+            top: -10px;
+            right: -30px;
           }
         }
       }
