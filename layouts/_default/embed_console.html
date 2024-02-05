@@ -1,3 +1,13 @@
+{{ define "header-top" }}
+
+{{ $currentPageType := cond (le (len (split (trim .Page.RelPermalink "/") "/")) 2) "products" "docs" }}
+<div class="buttons">
+  <a id="ac-sign-in-button" href="https://accounts.appscode.com/user/login"
+  class="button ac-button is-loading {{ if eq $currentPageType "docs" }} is-hidden {{ end }}"><span>SIGN IN</span></a>
+</div>
+
+{{ end }}
+
 {{ define "header-bottom" }}
 &nbsp;
 {{ end }}
