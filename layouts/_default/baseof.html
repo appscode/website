@@ -708,6 +708,7 @@
   <!-- ========================== header area end ==========================-->
 
    <!--========================== cookies area start ==========================-->
+   {{ block "cookie-warning" . }}
    <div class="cookie-wrapper">
      <div class="container">
        <div class="cookie-content">
@@ -748,6 +749,7 @@
    <!--========================== cookies area end ==========================-->
 
   <div class="modal-backdrop"></div>
+  {{ end }}
 
   <!-- Code that all your templates share, like a header -->
   {{ block "main" . }}
