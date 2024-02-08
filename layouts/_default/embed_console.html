@@ -1,4 +1,44 @@
-{{ define "header-bottom" }}
+<a id="ac-sign-in-button" href="https://accounts.appscode.com/user/login" class="button ac-button"><span>SIGN IN</span><span class="tag">BETA</span></a>
+<style>
+  .button.ac-button {
+    border:1px solid #00a651;
+    height: 40px;
+    border-radius: 0.125rem;
+    padding-inline: 32px;
+    font-size: .875rem;
+    font-family: roboto,sans-serif;
+    letter-spacing: .078rem;
+    line-height: 1;
+    color: #00a651;
+    font-weight: 700;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      background-color: #00a651;
+      color: #fff;
+    }
+    .tag{
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin-left: 4px; 
+      background-color: #ddd;
+    }
+}
+</style>
+
+<script>
+  console.log("Hi, I'm from embeded console");
+</script>
+<!-- {{ define "header-bottom" }}
 &nbsp;
 {{ end }}
 
@@ -24,4 +64,4 @@
 
 {{ define "footer" }}
 &nbsp;
-{{ end }}
+{{ end }} -->
