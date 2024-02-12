@@ -7863,9 +7863,10 @@
   -webkit-box-orient: vertical;
 }
 
-body {
-  --ac-primary: #00a651;
+:root {
+  --ac-primary: #c15c6c;
 }
+
 body.guard {
   --ac-primary: #d84e27;
 }

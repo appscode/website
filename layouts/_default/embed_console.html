@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AppsCode Console Login</title>
   <style>
+
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
     html, body{
       margin: 0;
@@ -13,15 +14,15 @@
       width: 190px;
     }
     .button.ac-button {
-      border:1px solid #00a651;
+      border:1px solid var(--ac-primary, #00a651);
       height: 38px;
       border-radius: 0.125rem;
-      padding-inline: 32px;
+      padding-inline: 24px;
       font-size: .875rem;
       font-family: roboto,sans-serif;
       letter-spacing: .078rem;
       line-height: 1;
-      color: #00a651;
+      color: var(--ac-primary, #00a651);
       font-weight: 700;
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
@@ -35,18 +36,18 @@
       text-decoration: none;
       transition: 0.3s ease-in-out;
       &:hover {
-        background-color: #00a651;
+        background-color: var(--ac-primary, #00a651);
         color: #fff;
         .tag{
           background-color: #ffffff;
-          color: #00a651;
+          color: var(--ac-primary, #00a651);
         }
       }
       .tag{
         padding: 4px 8px;
         border-radius: 4px;
         margin-left: 4px; 
-        background-color: #00a651;
+        background-color: var(--ac-primary, #00a651);
         color: #ffffff;
         transition: 0.3s ease-in-out;
         font-size: 12px;
@@ -133,32 +134,3 @@
   </script>
 </body>
 </html>
-
-
-<!-- {{ define "header-bottom" }}
-&nbsp;
-{{ end }}
-
-{{ define "main" }}
-&nbsp;
-{{ end }}
-
-{{ define "cookie-warning" }}
-&nbsp;
-{{ end }}
-
-{{ define "testimonial" }}
-&nbsp;
-{{ end }}
-
-{{ define "customer-logos" }}
-&nbsp;
-{{ end }}
-
-{{ define "cta-install" }}
-&nbsp;
-{{ end }}
-
-{{ define "footer" }}
-&nbsp;
-{{ end }} -->

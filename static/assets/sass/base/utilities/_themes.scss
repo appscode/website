@@ -1,7 +1,11 @@
+:root {
+  --ac-primary: #c15c6c;
+}
+
 $ac-primary: var(--ac-primary);
 
 // Products Color
-$primary: #00a651;
+// $primary: #a6004d;
 $guard-primary: #d84e27;
 $kubedb-primary: #4d4dcb;
 $kubeci-primary: #2c3e50;
@@ -17,7 +21,7 @@ $swift-primary: #3f51b6;
 $voyager-primary: #2d2a78;
 
 body {
-  --ac-primary: #{$primary};
+  // --ac-primary: #{$ac-primary};
 
   &.guard {
     --ac-primary: #{$guard-primary};
