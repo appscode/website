@@ -12242,8 +12242,41 @@ Responsive Classes
   width: calc(100% - 200px);
   justify-content: flex-end;
 }
-.navbar-appscode .navbar-right .button {
-  margin-left: 2.5rem;
+.navbar-appscode .navbar-right .navbar-left-group {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 0px) and (max-width: 1023px) {
+  .navbar-appscode .navbar-right .navbar-left-group {
+    align-items: flex-start;
+  }
+}
+.navbar-appscode .navbar-right .navbar-right-group {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.navbar-appscode .navbar-right .navbar-right-group .buttons .button:has(.tag) {
+  gap: 4px;
+}
+.navbar-appscode .navbar-right .navbar-right-group .buttons .button .tag {
+  background-color: var(--ac-primary);
+  color: #ffffff;
+}
+@media (min-width: 0px) and (max-width: 1023px) {
+  .navbar-appscode .navbar-right .navbar-right-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+  }
+  .navbar-appscode .navbar-right .navbar-right-group .buttons {
+    width: 100%;
+  }
+  .navbar-appscode .navbar-right .navbar-right-group .buttons .button {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 .navbar-appscode ul .nav-item {
   margin-right: 2.5rem;
@@ -12287,8 +12320,8 @@ Responsive Classes
 .navbar-appscode ul .nav-item .link .whats-new {
   position: absolute;
   z-index: 1;
-  top: -0.5rem;
-  right: -2.5rem;
+  top: -10px;
+  right: -30px;
   font-size: 0.8rem;
   color: #ffffff;
   padding: 0.2rem 0.3rem;
@@ -12920,8 +12953,8 @@ Responsive Classes
     margin: 6px 0;
   }
   .navbar-appscode .navbar-right ul li.nav-item .link .whats-new {
-    top: -0.2rem;
-    right: 0.5rem;
+    top: -10px;
+    right: -30px;
   }
   .navbar-appscode .navbar-right .community-items.ml-70 {
     margin-left: 0 !important;
@@ -13006,14 +13039,23 @@ Responsive Classes
     margin-left: 0;
     border-left: none;
   }
+  .navbar-appscode .navbar-left .navbar-brand {
+    margin-right: 1rem;
+  }
   .navbar-appscode .navbar-right {
     width: calc(100% - 180px);
   }
   .navbar-appscode .navbar-right .community-items.ml-70 {
     margin-left: 10px !important;
   }
+  .navbar-appscode .navbar-right .button.ac-button {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-appscode .navbar-right-group {
+    gap: 8px !important;
+  }
   .navbar-appscode ul .nav-item {
-    margin-right: 1.5rem;
+    margin-right: 0.5rem;
   }
   .mega-menu-wrapper .mega-menu-inner .product-menu {
     grid-template-columns: auto;
@@ -16264,7 +16306,7 @@ Responsive Classes
     padding: 6px 20px;
   }
   .header-bottom-area .navbar-burger {
-    color: #fff;
+    color: #333;
   }
   .kd-transparent-btn {
     padding: 0;
@@ -16663,7 +16705,7 @@ Responsive Classes
 /*  tablet :769px. */
 @media (min-width: 769px) and (max-width: 1023px) {
   .navbar-burger {
-    color: #ffffff;
+    color: #333;
   }
   p {
     font-size: 15px;
@@ -16814,7 +16856,7 @@ Responsive Classes
     padding: 0;
   }
   .header-bottom-area .navbar-burger {
-    color: #fff;
+    color: #333;
   }
   .main-menu a {
     padding: 5px 20px;
@@ -16826,7 +16868,7 @@ Responsive Classes
     padding: 5px 20px 10px;
   }
   .header-bottom-area .navbar-burger {
-    color: #fff;
+    color: #333;
   }
   .hero-area-button {
     margin-top: 20px;
