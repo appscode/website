@@ -1,50 +1,140 @@
-<a id="ac-sign-in-button" href="https://accounts.appscode.com/user/login" class="button ac-button"><span>SIGN IN</span><span class="tag">BETA</span></a>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-  html, body{
-    margin: 0;
-    padding: 0;
-    width: 190px;
-  }
-  .button.ac-button {
-    border:1px solid #00a651;
-    height: 40px;
-    border-radius: 0.125rem;
-    padding-inline: 32px;
-    font-size: .875rem;
-    font-family: roboto,sans-serif;
-    letter-spacing: .078rem;
-    line-height: 1;
-    color: #00a651;
-    font-weight: 700;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-    &:hover {
-      background-color: #00a651;
-      color: #fff;
-    }
-    .tag{
-      padding: 4px 8px;
-      border-radius: 4px;
-      margin-left: 4px; 
-      background-color: #ffffff;
-      color: #00a651;
-    }
-}
-</style>
 
-<script>
-  console.log("Hi, I'm from embeded console");
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AppsCode Console Login</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+    html, body{
+      margin: 0;
+      padding: 0;
+      width: 190px;
+    }
+    .button.ac-button {
+      border:1px solid #00a651;
+      height: 38px;
+      border-radius: 0.125rem;
+      padding-inline: 32px;
+      font-size: .875rem;
+      font-family: roboto,sans-serif;
+      letter-spacing: .078rem;
+      line-height: 1;
+      color: #00a651;
+      font-weight: 700;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        background-color: #00a651;
+        color: #fff;
+        .tag{
+          background-color: #ffffff;
+          color: #00a651;
+        }
+      }
+      .tag{
+        padding: 4px 8px;
+        border-radius: 4px;
+        margin-left: 4px; 
+        background-color: #00a651;
+        color: #ffffff;
+        transition: 0.3s ease-in-out;
+        font-size: 12px;
+      }
+  }
+  </style>
+</head>
+
+<body>
+  <a id="ac-sign-in-button" href="https://accounts.appscode.com/user/login" class="button ac-button is-loading"><span>SIGN IN</span></a>
+
+  <script src="/assets/js/jquery-3.6.0.min.js"></script>
+  <script>
+    const acSignInButton = document.getElementById('ac-sign-in-button')
+  
+    // define Beta tag
+    const betaSpan = document.createElement("span")
+    betaSpan.innerText = "BETA"
+    betaSpan.classList.add('tag')
+  
+    // function to get cookie
+    function getCookie(cname) {
+      let name = cname + "=";
+      let ca = document.cookie.split(';');
+      for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+  
+    // function to fetch user
+    async function fetchUser() {
+      try {
+        const hostname = window.location.hostname;
+        const protocol = window.location.protocol;
+        const port = window.location.port;
+  
+        const apiDomain = protocol + "//api." + hostname +  (port? ":3003" : "");
+        const consoleDomain = protocol + "//console." + hostname +  (port? ":5990" : "");
+  
+        acSignInButton.classList.add('is-loading');
+  
+        const response = await fetch(apiDomain + "/api/v1/user", {
+          method: "GET",
+          credentials: "include",
+          headers: {
+            "X-Csrf-Token": getCookie("_csrf"),
+            "X-Requested-With": "xmlhttprequest"
+          }
+        })
+  
+        if(response.status === 200) {
+          // user is logged in
+          // show console link
+          acSignInButton.firstElementChild.innerHTML =  "CONSOLE"
+          acSignInButton.href = consoleDomain
+        }
+      } catch(error) {
+        console.log("Failed to fetch user", error)
+      }
+      // remove the loader
+      acSignInButton.classList.remove('is-loading');
+      // append beta tag
+      acSignInButton.appendChild(betaSpan);
+    }
+  
+    window.addEventListener('load', function() {
+      jQuery('a:contains("KubeDB")').click(function() {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-10933819571/j5J-CL2sweQDELOx090o'
+        });
+      })
+  
+  
+      // fetch if user is logged in or not
+      fetchUser();
+    });
+  </script>
+</body>
+</html>
+
+
 <!-- {{ define "header-bottom" }}
 &nbsp;
 {{ end }}
