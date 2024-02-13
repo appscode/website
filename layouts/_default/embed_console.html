@@ -5,13 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AppsCode Console Login</title>
-  <style>
 
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
     html, body{
       margin: 0;
       padding: 0;
-      width: 190px;
     }
     .button.ac-button {
       border:1px solid var(--ac-primary, #00a651);
@@ -23,7 +22,7 @@
       letter-spacing: .078rem;
       line-height: 1;
       color: var(--ac-primary, #00a651);
-      font-weight: 700;
+      font-weight: 500;
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
       display: inline-flex;
@@ -35,9 +34,10 @@
       justify-content: center;
       text-decoration: none;
       transition: 0.3s ease-in-out;
+      width: calc(100% - 64px);
       &:hover {
         background-color: var(--ac-primary, #00a651);
-        color: #fff;
+        color: #ffffff;
         .tag{
           background-color: #ffffff;
           color: var(--ac-primary, #00a651);
@@ -51,13 +51,18 @@
         color: #ffffff;
         transition: 0.3s ease-in-out;
         font-size: 12px;
+        &.is-hidden {
+          display: none;
+        }
       }
   }
   </style>
 </head>
 
 <body>
-  <a id="ac-sign-in-button" href="https://accounts.appscode.com/user/login" target="_blank" class="button ac-button is-loading"><span>SIGN IN</span></a>
+  <a id="ac-sign-in-button" href="https://accounts.appscode.com/user/login" target="_blank" class="button ac-button is-loading">
+    <span>SIGN IN</span><span id="betaTag" class="tag is-hidden">BETA</span>
+  </a>
 
   <script src="/assets/js/jquery-3.6.0.min.js"></script>
   <script>
@@ -68,11 +73,6 @@
     if (color) {
       acSignInButton.style.setProperty('--ac-primary', "#"+color);
     }
-
-    // define Beta tag
-    const betaSpan = document.createElement("span")
-    betaSpan.innerText = "BETA"
-    betaSpan.classList.add('tag')
 
     // function to get cookie
     function getCookie(cname) {
@@ -116,14 +116,14 @@
           // show console link
           acSignInButton.firstElementChild.innerHTML =  "CONSOLE"
           acSignInButton.href = consoleDomain
+          acSignInButton.querySelector("#betaTag").classList.remove("is-hidden")
+
         }
       } catch(error) {
         console.log("Failed to fetch user", error)
       }
       // remove the loader
       acSignInButton.classList.remove('is-loading');
-      // append beta tag
-      acSignInButton.appendChild(betaSpan);
     }
   
     window.addEventListener('load', function() {
@@ -132,8 +132,6 @@
           'send_to': 'AW-10933819571/j5J-CL2sweQDELOx090o'
         });
       })
-  
-  
       // fetch if user is logged in or not
       fetchUser();
     });
