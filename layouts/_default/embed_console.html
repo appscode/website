@@ -56,12 +56,41 @@
         }
       }
   }
+  .ac-button.is-loading {
+    span:not(.spinner){
+      display: none;
+    }
+    .spinner::after {
+      content: '';
+      box-sizing: border-box;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: calc(50% - 10px);
+      left: calc(50% - 10px);
+      border-radius: 50%;
+    }
+
+    .spinner.smooth::after {
+      border-top: 4px solid #dddddd;
+      border-left: 4px solid #dddddd;
+      border-right: 4px solid rgba(255, 255, 255, 0.0);
+      animation: spinner .6s linear infinite;
+    }
+
+    
+    @keyframes spinner {
+      to {transform: rotate(360deg);}
+    }
+  }
+  
+
   </style>
 </head>
 
 <body>
   <a id="ac-sign-in-button" href="https://accounts.appscode.com/user/login" target="_blank" class="button ac-button is-loading">
-    <span>SIGN IN</span><span id="betaTag" class="tag is-hidden">BETA</span>
+     <span>SIGN IN</span><span id="betaTag" class="tag is-hidden">BETA</span> <span class="smooth spinner"></span>
   </a>
 
   <script src="/assets/js/jquery-3.6.0.min.js"></script>
@@ -117,7 +146,6 @@
           acSignInButton.firstElementChild.innerHTML =  "CONSOLE"
           acSignInButton.href = consoleDomain
           acSignInButton.querySelector("#betaTag").classList.remove("is-hidden")
-
         }
       } catch(error) {
         console.log("Failed to fetch user", error)
