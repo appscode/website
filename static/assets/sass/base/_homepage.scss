@@ -5,6 +5,7 @@
   background-size: 120% 120%;
   -webkit-animation: gradient 15s ease infinite;
   animation: gradient 15s ease infinite;
+  overflow: hidden;
 
   &:after {
     position: absolute;
