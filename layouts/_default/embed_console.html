@@ -37,9 +37,9 @@
       width: calc(100% - 64px);
       &:hover {
         background-color: var(--ac-primary, #1c1c1c);
-        color: #ffffff;
+        color: var(--ac-text, #ffffff);
         .tag{
-          background-color: #ffffff;
+          background-color: var(--ac-text, #ffffff);
           color: var(--ac-primary, #1c1c1c);
         }
       }
@@ -48,7 +48,7 @@
         border-radius: 4px;
         margin-left: 4px;
         background-color: var(--ac-primary, #1c1c1c);
-        color: #ffffff;
+        color: var(--ac-text, #ffffff);
         transition: 0.3s ease-in-out;
         font-size: 12px;
         &.is-hidden {
@@ -77,13 +77,11 @@
       border-right: 4px solid rgba(255, 255, 255, 0.0);
       animation: spinner .6s linear infinite;
     }
-
-    
-    @keyframes spinner {
-      to {transform: rotate(360deg);}
-    }
   }
-  
+
+  @keyframes spinner {
+    to {transform: rotate(360deg);}
+  }
 
   </style>
 </head>
@@ -99,8 +97,12 @@
 
     const urlParams = new URLSearchParams(window.location.search);
     const color = urlParams.get('color');
+    const text = urlParams.get('text');
     if (color) {
       acSignInButton.style.setProperty('--ac-primary', "#"+color);
+    }
+    if (text) {
+      acSignInButton.style.setProperty('--ac-text',"#"+text);
     }
 
     // function to get cookie
