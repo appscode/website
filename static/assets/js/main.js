@@ -308,6 +308,8 @@ $('.customPrevBtn').click(function () {
  });
 
 // for social prove owlCarousel 
+
+
 // owl owlCarousel JS 
 var owlSocialProve = $('.brand-image-wrapper');
 owlSocialProve.owlCarousel({
