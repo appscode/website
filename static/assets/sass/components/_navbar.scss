@@ -4,7 +4,8 @@
   z-index: 99;
   background-color: $ac-white;
   .notification-wrapper {
-    background: conic-gradient(from 215deg at 50% 50%,#5E2DEA 0deg,#5E2DEA 60.0000017881deg,#7272E9 97.5000035763deg,#5E2DEA 149.9999964237deg,#6993EC 179.7256743908deg,#00a651 209.5121526718deg,#fd8d4d 226.2606167793deg,#f45b10 244.5819711685deg,#6993EC 279.1821026802deg,#5E2DEA 300.7368063927deg,#004e9c 319.7864770889deg,#5E2DEA 338.803768158deg,#5E2DEA 360deg);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5e2dea+0,f8742e+50,f97530+51,7db9e8+100 */
+    background: linear-gradient(45deg,  #5e2dea 0%,#f8742e 50%,#f97530 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     .navbar-appscode.container{
       padding: 0;
       @media (max-width: 1024px) {
