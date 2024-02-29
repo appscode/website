@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promotional Message</title>
+
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,400;1,500;1,900&display=swap');
+    html, body, p{
+      margin: 0;
+      padding: 0;
+      height: auto;
+      color: #ffffff;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+    }
+    .notification-top {
+      display: flex;
+      align-items: center;
+      padding: 6px 0;
+
+      a {
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        .message {
+          color: #ffffff;
+          line-height: 170%;
+          transform: translateY(2px);
+            &:hover {
+              color: #f2f2f2;
+            }
+        }
+      }
+      .left-content {
+        display: flex;
+        gap: 4px;
+        flex-wrap: wrap;
+        p{
+          margin-bottom: 0;
+          line-height: 160%;
+        }
+        .button {
+          background: #ffffff;
+          white-space: nowrap;
+          color: #1c1c1c;
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: 500;
+          padding: 4px 8px;
+          text-decoration: none;
+          border-radius: 4px;
+          transition: 0.3s ease-in-out;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          border:1px solid #fff;
+          cursor: pointer;
+          span.icon {
+            font-weight: 500;
+          }
+
+          &:hover {
+            border:1px solid #fff;
+            color: #00a651;
+            background: #ffffff;
+          }
+          .icon {
+            width: 16px;
+            height: 16px;
+            display: flex;
+          }
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="notification-top">
+    <a href="https://calendly.com/appscode/appscode-at-kubecon-eu-2024?text_color=1c1c1c&primary_color=00a651" target="_blank" class="left-content">
+      <span class="message">Connect with the AppsCode team at Kubecon EU: Reserve your personalized 1:1 chat now!</span>
+      <button class="button">
+        <span>Reserve Now</span>
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8L6.22 5.28a.75.75 0 0 1 0-1.06" clip-rule="evenodd"/>
+          </svg>
+        </span>
+      </button>
+    </a>
+  </div>
+</body>
+</html>

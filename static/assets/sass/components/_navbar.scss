@@ -3,6 +3,22 @@
   position: relative;
   z-index: 99;
   background-color: $ac-white;
+  .notification-wrapper {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5e2dea+0,f8742e+50,f97530+51,7db9e8+100 */
+    background: linear-gradient(45deg,  #5e2dea 0%,#f8742e 50%,#f97530 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    .navbar-appscode.container{
+      padding: 0;
+      @media (max-width: 1024px) {
+        padding: 0 16px;
+      }
+    }
+    iframe {
+      overflow: hidden;
+      display: flex;
+      width: 100%;
+      height: 26px;
+    }
+  }
 }
 
 .navbar-appscode-wrapper {
@@ -889,6 +905,12 @@
 
 .headroom--unpinned {
   transform: translateY(-165px);
+
+  .navbar-area {
+    &.navbar-fixed {
+      transform: translateY(135px);
+    }
+  }
 
   .navbar-appscode-wrapper {
     &.navbar-product {
