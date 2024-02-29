@@ -131,20 +131,15 @@
     <!-- new navbar area start .active-headroom  -->
     <div class="navbar-area header--fixed">
 
-      <!-- iframe  -->
-      <div class="notification-wrapper">
-        <div class="navbar-appscode container">
-          <iframe src="/notification-top/" id="notification" frameborder="0" scrolling="no" onload="resizeIframe()"></iframe>
-        </div>
-      </div>
+      <!-- iframe for top notification  -->
+      <iframe src="/notification-top/" id="notification" frameborder="0" scrolling="no" onload="resizeIframe()" style="height: 38px; width: 100%; display: flex; overflow: hidden;"></iframe>
       <script>
          function resizeIframe() {
           var iframe = document.getElementById("notification");
           iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-          console.log(1);
         }
       </script>
-      <!-- iframe  -->
+      <!-- iframe for top notification  -->
       <div class="navbar-area navbar-fixed">
         <div class="navbar-appscode-wrapper ">
           <!-- appscode navbar start  -->
