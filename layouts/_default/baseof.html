@@ -132,11 +132,22 @@
     <div class="navbar-area header--fixed">
 
       <!-- iframe for top notification  -->
-      <iframe src="/notification-top/" id="notification" frameborder="0" scrolling="no" onload="resizeIframe()" style="height: 38px; width: 100%; display: flex; overflow: hidden;"></iframe>
+      <iframe src="/notification-top/" id="notification" frameborder="0" scrolling="no" style="width: 100%; display: flex; overflow: hidden; height: 38px;"></iframe>
       <script>
-         function resizeIframe() {
-          var iframe = document.getElementById("notification");
-          iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        window.addEventListener("message", receiveMessageFromIframe, false);
+
+        function receiveMessageFromIframe(event) {
+            // Check the origin of the message for security purposes
+            let baseURL = "{{$.Site.BaseURL}}"
+
+            if (baseURL.endsWith("/")) {
+              baseURL = baseURL.slice(0, -1);
+            }
+             if (event.origin !== baseURL) {
+                return;
+            }
+            const notification = document.querySelector("#notification");
+            notification.style.height = `${event.data}px`
         }
       </script>
       <!-- iframe for top notification  -->

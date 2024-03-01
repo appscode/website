@@ -9,107 +9,114 @@
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
   <style>
+ 
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,400;1,500;1,900&display=swap');
-    html, body, p{
+    html, body, p {
       margin: 0;
       padding: 0;
       height: auto;
-      color: #ffffff;
+      color: #fff;
       font-family: "Roboto", sans-serif;
       font-size: 14px;
     }
-
     .notification-wrapper {
-    background: linear-gradient(-100deg,#fb00ff,#ffee00 32%,#fe4d5d 70%,#ff7900);
-    .navbar-appscode.container{
+      background: linear-gradient(-100deg, #fb00ff, #fe0 32%, #fe4d5d 70%, #ff7900);
+    }
+    .notification-wrapper .navbar-appscode.container {
       padding: 0;
-      @media (max-width: 1024px) {
+    }
+    @media (max-width: 1024px) {
+      .notification-wrapper .navbar-appscode.container {
         padding: 0 16px;
       }
     }
-  }
-
     .notification-top {
       display: flex;
       align-items: center;
       padding: 6px 0;
-
-      a {
-        text-decoration: none;
-        transition: 0.3s ease-in-out;
-        .message {
-          color: #ffffff;
-          line-height: 170%;
-          transform: translateY(2px);
-            &:hover {
-              color: #f2f2f2;
-            }
-        }
-      }
-      .left-content {
-        display: flex;
-        gap: 4px;
-        flex-wrap: wrap;
-        p{
-          margin-bottom: 0;
-          line-height: 160%;
-        }
-        .button {
-          background: #ffffff;
-          white-space: nowrap;
-          color: #1c1c1c;
-          font-size: 12px;
-          text-transform: uppercase;
-          font-weight: 500;
-          padding: 4px 8px;
-          text-decoration: none;
-          border-radius: 4px;
-          transition: 0.3s ease-in-out;
-          display: flex;
-          align-items: center;
-          gap: 4px;
-          border:1px solid #fff;
-          cursor: pointer;
-          span.icon {
-            font-weight: 500;
-          }
-
-          &:hover {
-            border:1px solid #fff;
-            color: #00a651;
-            background: #ffffff;
-          }
-          .icon {
-            width: 16px;
-            height: 16px;
-            display: flex;
-          }
-        }
-      }
     }
-    /* navbar container spacing  */
-    .navbar-appscode{
-      &.container {
+    .notification-top a {
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+    }
+    .notification-top a .message {
+      color: #fff;
+      line-height: 170%;
+      transform: translateY(2px);
+    }
+    .notification-top a .message:hover {
+      color: #f2f2f2;
+    }
+    .notification-top .left-content {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+    .notification-top .left-content p {
+      margin-bottom: 0;
+      line-height: 160%;
+    }
+    .notification-top .left-content .button {
+      background: #fff;
+      white-space: nowrap;
+      color: #1c1c1c;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 4px 8px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: 0.3s ease-in-out;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      border: 1px solid #fff;
+      cursor: pointer;
+    }
+    .notification-top .left-content .button span.icon {
+      font-weight: 500;
+    }
+    .notification-top .left-content .button:hover {
+      border: 1px solid #fff;
+      color: #00a651;
+      background: #fff;
+    }
+    .notification-top .left-content .button .icon {
+      width: 16px;
+      height: 16px;
+      display: flex;
+    }
+    /* navbar container spacing */
+    .navbar-appscode.container {
+      max-width: 1344px;
+      margin: 0 auto;
+    }
+    @media (min-width: 1601px) and (max-width: 1920px) {
+      .navbar-appscode.container {
         max-width: 1344px;
-        margin: 0 auto;
-        @media (min-width: 1601px) and (max-width: 1920px){
-          max-width: 1344px;
-        }
-        @media (min-width: 1408px) and (max-width: 1600px){
-          max-width: 1200px;
-        }
-        @media (min-width: 1216px) and (max-width: 1407px) {
-          max-width: 1152px !important;
-        }
-        @media (min-width: 1024px) and (max-width: 1215px) {
-          max-width: 960px !important;
-        }
       }
     }
+    @media (min-width: 1408px) and (max-width: 1600px) {
+      .navbar-appscode.container {
+        max-width: 1200px;
+      }
+    }
+    @media (min-width: 1216px) and (max-width: 1407px) {
+      .navbar-appscode.container {
+        max-width: 1152px !important;
+      }
+    }
+    @media (min-width: 1024px) and (max-width: 1215px) {
+      .navbar-appscode.container {
+        max-width: 960px !important;
+      }
+    }
+    
   </style>
 </head>
 <body>
-  <div class="notification-wrapper">
+        
+  <div class="notification-wrapper" id="notificationWrapper">
     <div class="navbar-appscode container">
       <div class="notification-top">
         <a href="https://calendly.com/appscode/kubecon-eu-2024?text_color=1c1c1c&primary_color=00a651" target="_blank" class="left-content">
@@ -125,6 +132,11 @@
       </div>
     </div>
   </div>
-  
+  <script>
+    var notificationWrapper = document.getElementById("notificationWrapper");
+    var parentWindow = window.parent;
+    // Send a message to the parent window
+    parentWindow.postMessage(notificationWrapper.scrollHeight);
+ </script>
 </body>
 </html>
