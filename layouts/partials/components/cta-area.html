@@ -1,0 +1,26 @@
+{{ $productName := .Params.product_name }}
+  {{ if $productName }}
+  {{ $p := (index $.Site.Data.products $productName) }}
+   <section class="cta-area">
+     <div class="container">
+       <div class="cta-area-inner">
+         <div class="container">
+           <div class="columns is-vcentered is-multiline">
+             <div class="column is-full-tablet is-half-tablet is-half-desktop">
+               <h3 data-aos="fade-up" data-aos-duration="500" class="aos-init aos-animate">Ready to Get Started?</h3>
+             </div>
+             <div
+               class="column is-full-tablet is-half-tablet is-half-desktop has-text-centered-touch has-text-right-desktop">
+               <div class="buttons is-justify-content-flex-end">
+
+                 <a href="/products/{{ $p.key }}/{{ $p.latestVersion }}/setup/" class="button ac-button ac-white"
+                   style="background-color: white; border: 1px solid #e7e7e7; color: #00a651;">Try
+                   Now for FREE!</a>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+  </section>
+{{ end }}
