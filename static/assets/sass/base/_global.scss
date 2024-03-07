@@ -4,6 +4,24 @@
 .is-fullwidth {
   width: 100% !important;
 }
+.section-padding {
+  padding: 60px 0;
+}
+.list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  
+  li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    span {
+      font-size: 18px;
+    }
+  }
+}
+
 
 .yt-thumbnail {
   position: relative;
@@ -83,13 +101,16 @@
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 10px;
+    text-wrap: balance;
+
   }
 
   p {
     font-size: 16px;
     line-height: 160%;
-    letter-spacing: -0.57px;
+    letter-spacing: 0.5px;
     margin-bottom: 3rem;
+    font-weight: 500;
   }
 }
 

@@ -34,6 +34,7 @@
       display: flex;
       align-items: center;
       padding: 6px 0;
+      justify-content: space-between;
     }
     .notification-top a {
       text-decoration: none;
@@ -137,6 +138,7 @@
     var parentWindow = window.parent;
     // Send a message to the parent window
     parentWindow.postMessage(notificationWrapper.scrollHeight);
+
  </script>
 </body>
 </html>

@@ -13,7 +13,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 2.5rem;
+    height: 48px;
     &:focus-visible {
       outline: none;
     }
@@ -110,17 +110,7 @@
     // ac-button from mixin
     &.is-primary {
       @include ac-button($ac-primary);
-      // &:hover {
-      //   background: linear-gradient(
-      //     -45deg,
-      //     $ac-primary,
-      //     #940148,
-      //     #4c346f,
-      //     #3334f5
-      //   );
-      //   background-size: 100% 100%;
-      //   animation: gradient 5s ease infinite;
-      // }
+      background: linear-gradient(to left, hsl(149, 100%, 33%) , hsl(149, 50%, 33%)) !important;
     }
    
     &.is-link {

@@ -4,12 +4,6 @@
 
 /* Normal desktop :1216px. */
 @media (min-width: 1216px) and (max-width: 1407px) {
-  .single-db-logo {
-    margin: 10px;
-    padding: 10px;
-    display: inline-block;
-  }
-
   .db-logo-area {
     padding: 0;
   }
@@ -135,10 +129,6 @@
     font-size: 14px;
   }
 
-  .single-db-logo {
-    margin: 10px !important;
-    padding: 10px;
-  }
 
   .db-logo-area {
     overflow: hidden;
@@ -773,14 +763,6 @@
   .db-logo-area {
     padding: 0;
     overflow: hidden;
-  }
-
-  .single-db-logo {
-    box-shadow: none !important;
-    border: 1px solid #ebebeb !important;
-    padding: 10px;
-    margin: 10px 0 !important;
-    width: 100%;
   }
 
   .section-title h2 {
