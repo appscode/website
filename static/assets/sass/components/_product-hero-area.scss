@@ -395,14 +395,6 @@
 }
 
 .social-prove-brand-area {
-  .container {
-    // box-shadow: 0px 4px 18px 5px rgba(0, 166, 81, 0.09);
-    background: #fff;
-    border-radius: 4px;
-    margin-top: -80px;
-    padding: 30px 0 0;
-    z-index: 9;
-  }
   .brand-image-wrapper {
     padding: 20px 0;
     display: flex;
@@ -412,6 +404,9 @@
     width: 100%;
 
     .single-brand {
+      border: 1px solid $ac-white-light;
+      padding: 12px 24px;
+      border-radius: 4px;
       img {
         max-height: 2rem;
         filter: grayscale(1);
