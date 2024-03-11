@@ -19217,9 +19217,30 @@ video {
   margin-left: 1rem;
 }
 
+.more-products, .intro-kubedb-ui {
+  gap: 12px;
+}
+.more-products .single-feature, .intro-kubedb-ui .single-feature {
+  flex-basis: calc(50% - 6px);
+}
+
 .single-feature {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
+}
+.single-feature.card-view {
+  flex-direction: column;
+  border: 1px solid #e7e7e7;
+  padding: 32px 16px;
+  border-radius: 4px;
+}
+.single-feature.card-view .content {
+  width: 100%;
+}
+.single-feature.card-view .content h4 {
+  font-size: 18px;
+  letter-spacing: 0;
 }
 .single-feature .icon {
   width: 52px;
@@ -19264,6 +19285,19 @@ video {
   height: 100%;
   background-image: url("../../../assets/images/products/appscode/features/ui-features.jpg");
   background-repeat: no-repeat;
+}
+
+.dark-bg {
+  background-color: #000A05;
+}
+.dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg h4, .dark-bg h5, .dark-bg h6 {
+  color: #E6E7E6;
+}
+.dark-bg p {
+  color: #D4D6D5;
+}
+.dark-bg .single-feature .content p {
+  color: #D4D6D5;
 }
 
 .subscription-area {
