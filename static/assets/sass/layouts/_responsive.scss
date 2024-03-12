@@ -1,39 +1,10 @@
-/* Normal desktop :1200px. */
-@media (min-width: 1407px) and (max-width: 1500px) {
-}
-
 /* Normal desktop :1216px. */
 @media (min-width: 1216px) and (max-width: 1407px) {
-  .db-logo-area {
-    padding: 0;
-  }
 
   .section-padding {
     padding: 60px 0;
   }
-  .pt-100.is-mobile-device {
-    padding-top: 30px;
-  }
 
-  .main-menu-button .button {
-    padding: 6px 20px;
-  }
-
-  .header-bottom-area .navbar-burger {
-    color: #333;
-  }
-  .kd-transparent-btn {
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-  }
-
-  .kd-button {
-    padding: 10px 30px;
-    margin: 0;
-    height: auto;
-    font-size: 14px;
-  }
   // pricing page style start
   .pricing-area-wrapper {
     overflow-x: scroll;
@@ -436,38 +407,13 @@
       }
     }
   }
-  .map-wrapper {
-    iframe {
-      height: auto;
-    }
-  }
+
   .training-wrapper-image {
     .single-training-image-wrapper {
       margin-right: 0;
       margin-bottom: 20px;
       &:nth-child(even) {
         transform: translateY(0px);
-      }
-    }
-  }
-  .pricing-plan-area-2 {
-    .single-pricing {
-      padding: 50px 20px 30px;
-      h2 {
-        font-size: 24px;
-        line-height: 36px;
-        margin-bottom: 5px;
-      }
-      p {
-        font-size: 15px;
-      }
-    }
-  }
-  .feature-area-2 {
-    .single-feature {
-      padding: 0;
-      p {
-        font-size: 15px;
       }
     }
   }
@@ -1196,11 +1142,7 @@
       }
     }
   }
-  .map-wrapper {
-    iframe {
-      height: auto;
-    }
-  }
+
   .training-wrapper-image {
     .single-training-image-wrapper {
       margin-right: 0;
@@ -1210,27 +1152,7 @@
       }
     }
   }
-  .pricing-plan-area-2 {
-    .single-pricing {
-      h2 {
-        font-size: 24px;
-        line-height: 36px;
-        margin-bottom: 5px;
-      }
-      p {
-        font-size: 15px;
-      }
-      padding: 50px 20px 30px;
-    }
-  }
-  .feature-area-2 {
-    .single-feature {
-      padding: 0;
-      p {
-        font-size: 15px;
-      }
-    }
-  }
+
   .cta-area-2 {
     .cta-content {
       h1 {
