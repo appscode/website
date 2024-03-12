@@ -252,11 +252,13 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../../../assets/images/products/appscode/features/ui-features.jpg");
+    background-image: url("../../../assets/images/products/appscode/features/ui-features.png");
     background-repeat: no-repeat;
   }
 }
 // ui features end  
+
+
 
 // dark background 
 .dark-bg{
@@ -275,6 +277,33 @@
     }
   }
 }
+
+
+// intro kubedb ui start
+.intro-kubedb-ui {
+  padding: 60px 0;
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    background-color: rgba(253,253,253,0.1);
+    position: absolute;
+    content: "";
+    left: 30px;
+    top: 0;
+    height: 100%;
+    width: calc(100% - 60px);
+    z-index: -1;
+    border-radius: 20px;
+
+    @include touch{
+      left: 0;
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+}
+// intro kubedb ui end
 
 // subscription-area start
 .subscription-area {

@@ -19283,7 +19283,7 @@ video {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../../assets/images/products/appscode/features/ui-features.jpg");
+  background-image: url("../../../assets/images/products/appscode/features/ui-features.png");
   background-repeat: no-repeat;
 }
 
@@ -19298,6 +19298,30 @@ video {
 }
 .dark-bg .single-feature .content p {
   color: #D4D6D5;
+}
+
+.intro-kubedb-ui {
+  padding: 60px 0;
+  position: relative;
+  z-index: 1;
+}
+.intro-kubedb-ui:after {
+  background-color: rgba(253, 253, 253, 0.1);
+  position: absolute;
+  content: "";
+  left: 30px;
+  top: 0;
+  height: 100%;
+  width: calc(100% - 60px);
+  z-index: -1;
+  border-radius: 20px;
+}
+@media screen and (max-width: 1023px) {
+  .intro-kubedb-ui:after {
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+  }
 }
 
 .subscription-area {
@@ -20379,9 +20403,6 @@ Responsive Classes
   z-index: 1;
   height: 100%;
 }
-.contact-form .contact-form-inner {
-  margin-top: -400px;
-}
 
 .question-area {
   background-color: #fbfbfb;
@@ -20404,6 +20425,77 @@ Responsive Classes
 .question-area .single-question-wrapper p {
   font-size: 18px;
   margin-bottom: 30px;
+}
+
+.contact-hero p {
+  margin-bottom: 16px;
+}
+
+.location-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.location-area .location {
+  width: calc(50% - 6px);
+}
+
+.location {
+  border: 1px solid #e7e7e7;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.location a {
+  color: #666F6A;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.location a span {
+  width: calc(100% - 26px);
+}
+.location a span.icon {
+  width: 18px;
+  transform: translateY(4px);
+}
+
+.modify-contact-form .fs-webform-container .fserv-container {
+  margin: 0 0 32px auto;
+}
+.modify-contact-form .formserv-text-field, .modify-contact-form .formserv-email-field, .modify-contact-form .formserv-tel-field, .modify-contact-form .formserv-select-field.fserv-field, .modify-contact-form .formserv-select-multiple-field, .modify-contact-form .formserv-textarea-field {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.modify-contact-form .formserv-text-field:not(.formserv-textarea-field), .modify-contact-form .formserv-email-field:not(.formserv-textarea-field), .modify-contact-form .formserv-tel-field:not(.formserv-textarea-field), .modify-contact-form .formserv-select-field.fserv-field:not(.formserv-textarea-field), .modify-contact-form .formserv-select-multiple-field:not(.formserv-textarea-field), .modify-contact-form .formserv-textarea-field:not(.formserv-textarea-field) {
+  align-items: center;
+}
+.modify-contact-form .formserv-text-field .error, .modify-contact-form .formserv-email-field .error, .modify-contact-form .formserv-tel-field .error, .modify-contact-form .formserv-select-field.fserv-field .error, .modify-contact-form .formserv-select-multiple-field .error, .modify-contact-form .formserv-textarea-field .error {
+  width: 100%;
+}
+.modify-contact-form .formserv-text-field .fserv-label, .modify-contact-form .formserv-email-field .fserv-label, .modify-contact-form .formserv-tel-field .fserv-label, .modify-contact-form .formserv-select-field.fserv-field .fserv-label, .modify-contact-form .formserv-select-multiple-field .fserv-label, .modify-contact-form .formserv-textarea-field .fserv-label {
+  width: 120px;
+  padding-bottom: 0;
+}
+.modify-contact-form .formserv-text-field input, .modify-contact-form .formserv-text-field textarea, .modify-contact-form .formserv-email-field input, .modify-contact-form .formserv-email-field textarea, .modify-contact-form .formserv-tel-field input, .modify-contact-form .formserv-tel-field textarea, .modify-contact-form .formserv-select-field.fserv-field input, .modify-contact-form .formserv-select-field.fserv-field textarea, .modify-contact-form .formserv-select-multiple-field input, .modify-contact-form .formserv-select-multiple-field textarea, .modify-contact-form .formserv-textarea-field input, .modify-contact-form .formserv-textarea-field textarea {
+  width: calc(100% - 128px) !important;
+}
+.modify-contact-form .formserv-text-field input:focus, .modify-contact-form .formserv-text-field textarea:focus, .modify-contact-form .formserv-email-field input:focus, .modify-contact-form .formserv-email-field textarea:focus, .modify-contact-form .formserv-tel-field input:focus, .modify-contact-form .formserv-tel-field textarea:focus, .modify-contact-form .formserv-select-field.fserv-field input:focus, .modify-contact-form .formserv-select-field.fserv-field textarea:focus, .modify-contact-form .formserv-select-multiple-field input:focus, .modify-contact-form .formserv-select-multiple-field textarea:focus, .modify-contact-form .formserv-textarea-field input:focus, .modify-contact-form .formserv-textarea-field textarea:focus {
+  outline: 2px solid var(--ac-primary);
+}
+.modify-contact-form .fs-webform-container .fserv-field + .fserv-field {
+  margin-top: 12px;
+}
+.modify-contact-form .fs-webform-container .fserv-field + div:not(.fserv-field) {
+  padding: 12px 30px 0;
+}
+.modify-contact-form .fs-webform-container .fserv-field .select2-container {
+  min-width: calc(100% - 128px);
+}
+.modify-contact-form .fs-webform-container .checkbox {
+  padding: 0 !important;
 }
 
 .location-area .office-details {
@@ -24305,7 +24397,7 @@ Responsive Classes
   }
 }
 .testimonial-area {
-  padding: 60px 0 165px;
+  padding: 60px 0 60px;
 }
 .testimonial-area .section-title h2 {
   font-size: 48px;
@@ -24805,26 +24897,21 @@ Responsive Classes
 }
 
 .cta-area {
-  margin-top: -125px;
+  margin-bottom: 60px;
 }
 .cta-area .cta-area-inner {
   padding: 20px 50px;
-  background-image: url(/assets/images/bg-image/cta-area-bg.png);
   background-size: cover;
   background-position: center;
   border-radius: 8px;
-  height: 150px;
   display: flex;
   align-items: center;
+  background-color: #F4FBF7;
+  border: 1px solid var(--ac-primary);
 }
 .cta-area .cta-area-inner h3 {
-  color: #ffffff;
   margin-bottom: 1rem;
 }
-.cta-area .cta-area-inner p {
-  color: #ffffff;
-}
-
 /****************************************
 Responsive Classes
 *****************************************/
@@ -25220,7 +25307,6 @@ video {
 .subscription-form label {
   font-size: 18px;
   font-weight: 600;
-  color: #1c1c1c;
   display: block;
   font-family: "Roboto", sans-serif;
 }
@@ -25280,12 +25366,11 @@ p.spam-message {
 
 .footer-menu h4 {
   font-size: 18px;
-  color: #1c1c1c;
   margin-bottom: 4px;
 }
 
 .footer-link li a {
-  color: #666F6A;
+  color: #D4D6D5;
   font-size: 14px;
   display: block;
   padding: 8px 0;
@@ -25306,7 +25391,6 @@ p.spam-message {
 
 .footer-bottom {
   padding: 30px 0;
-  background-color: #fafafd;
 }
 .footer-bottom p {
   font-size: 14px;
