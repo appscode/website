@@ -69,15 +69,6 @@
 
             <a href="#products" class="button ac-button">
               <span>EXPLORE OUR PRODUCTS</span> 
-              <span class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
-                </svg>
-                
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                </svg> -->
-              </span>
             </a>
             <!-- <div class="play-buttons">
               <a href="https://www.youtube.com/watch?v=8az5rYUxyGs" class="demo-video"><span
@@ -90,6 +81,19 @@
         </div>
         <div class="column is-6">
           <div class="h-right-content">
+
+            <!-- intro video  -->
+            <a class="intro-view-button demo-video" href="https://www.youtube.com/watch?v=8az5rYUxyGs">
+              <div class="video-icon">
+                <img src="/assets/images/products/appscode/icons/global/play-icon.png" alt="play-icon">
+              </div>
+              <div class="content">
+                <p>Newly introduce our K8’s UI 🎉</p>
+                <span class="is-underlined">See Demo</span>
+              </div>
+            </a>
+            <!-- intro end -->
+
             <img src="{{ $p.homepage.hero_area.hero_image }}" alt="" />
           </div>
         </div>
@@ -98,7 +102,7 @@
       <div class="container">
         <div class="columns">
           <div class="column is-12">
-            <h6 class="">Trusted Companies__</h6>
+            <h6>Trusted Companies__</h6>
             <div class="social-prove-brand-area">
               <div class="brand-image-wrapper owl-carousel">
                 {{ range $customer := $.Site.Data.customers }}
@@ -118,9 +122,9 @@
   <!--==================== products area start  ====================-->
   <div class="products-area" id="products">
     <div class="container">
-      <!-- <div class="columns">
-        <div class="column">
-          <div class="section-title mb-0">
+      <!-- <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="section-title has-text-centered mb-0">
             <p class="mb-0 has-text-primary is-uppercase">Empowering Your Kubernetes Experience</p>
             <h2 class="mb-0">Explore Our AppsCode Solutions</h2>
           </div>
@@ -183,11 +187,10 @@
     </div>
   </section>
   <!--==================== others product area end  ====================-->
-
 </div>
 
 <!--==================== products features area start  ====================-->
-<div class="products-features bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.jpg);">
+<div class="products-features bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.jpg); background-repeat: no-repeat;">
   <!-- <div class="shapes-dots">
     <img class="shape dot-1" src="/assets/images/appscode/dots.png" alt="">
     <img class="shape dot-2" src="/assets/images/appscode/dots.png" alt="">
@@ -254,6 +257,7 @@
       <div class="column is-8">
         <div class="section-title has-text-centered">
           <h2>Manage your Kubernetes native applications across public or private clouds</h2>
+          <p>A single pane of glass for managing your stateful or stateless applications across various private and public clouds. Hide the complexity of Kubernetes behind a simple, elegant UI</p>
         </div>
       </div>
     </div>
@@ -267,7 +271,7 @@
           <div class="single-feature">
             <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Kubernetes Made Easy"></div>
             <div class="content">
-              <h4>Hide the complexity of Kubernetes behind a simple, elegant UI.</h4>
+              <h4>Hide the complexity of Kubernetes behind a simple, elegant UI</h4>
               <p>UI simplify how you interact with your Kubernetes clusters. It hides the complexities of managing Kubenetes and provides a simplified and elegant UI. </p>
             </div>
           </div>
@@ -275,30 +279,31 @@
 
           <!-- single features item start -->
           <div class="single-feature">
-            <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Kubernetes Made Easy"></div>
+            
+            <div class="icon"><img src="https://img.icons8.com/external-phatplus-lineal-phatplus/100/00A651/external-cluster-cloud-computing-phatplus-lineal-phatplus.png" alt="Kubernetes Made Easy"></div>
             <div class="content">
-              <h4>Hide the complexity of Kubernetes behind a simple, elegant UI.</h4>
-              <p>UI simplify how you interact with your Kubernetes clusters. It hides the complexities of managing Kubenetes and provides a simplified and elegant UI. </p>
+              <h4>Manage all your public and private clusters in one place</h4>
+              <p>UI let you manage all of your private and public clusters from a single place. </p>
             </div>
           </div>
           <!-- single features item end -->
 
           <!-- single features item start -->
           <div class="single-feature">
-            <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Kubernetes Made Easy"></div>
+            <div class="icon"><img src="https://img.icons8.com/ios/100/00A651/data-configuration.png" alt="Kubernetes Made Easy"></div>
             <div class="content">
-              <h4>Hide the complexity of Kubernetes behind a simple, elegant UI.</h4>
-              <p>UI simplify how you interact with your Kubernetes clusters. It hides the complexities of managing Kubenetes and provides a simplified and elegant UI. </p>
+              <h4>Experience the taste of the managed database on your own cluster</h4>
+              <p>Provisioning, Upgrading, Scaling, Volume Expansion, Monitoring, Disaster Recovery etc. on your finger tips</p>
             </div>
           </div>
           <!-- single features item end -->
 
           <!-- single features item start -->
           <div class="single-feature">
-            <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Kubernetes Made Easy"></div>
+            <div class="icon"><img src="https://img.icons8.com/external-solidglyph-m-oki-orlando/100/00A651/external-Data-Recovery-data-warehouse-solidglyph-m-oki-orlando.png" alt="Kubernetes Made Easy"></div>
             <div class="content">
-              <h4>Hide the complexity of Kubernetes behind a simple, elegant UI.</h4>
-              <p>UI simplify how you interact with your Kubernetes clusters. It hides the complexities of managing Kubenetes and provides a simplified and elegant UI. </p>
+              <h4>Better Safe than Sorry</h4>
+              <p>Simplifies how you backup and recover your volumes, databases, configurations etc. Just a few taps and you are ready for the future disaster</p>
             </div>
           </div>
           <!-- single features item end -->
@@ -314,15 +319,34 @@
     <!-- features with screenshot  -->
 
     <!-- more features start -->
-    <div class="columns">
+    <div class="columns is-vcentered mt-32">
       <div class="column is-7">
         <div class="is-flex is-flex-wrap-wrap more-products" >
           <!-- single features item start -->
           <div class="single-feature card-view">
-            <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Kubernetes Made Easy"></div>
+            <div class="icon"><img src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/100/00A651/external-monitoring-seo-and-web-smashingstocks-detailed-outline-smashing-stocks.png" alt="Kubernetes Made Easy"></div>
             <div class="content">
-              <h4>Hide the complexity of Kubernetes behind a simple, elegant UI.</h4>
-              <p>UI simplify how you interact with your Kubernetes clusters. It hides the complexities of managing Kubenetes and provides a simplified and elegant UI. </p>
+              <h4>Native Prometheus and Grafana Integration</h4>
+              <p>UI comes with native integration with Prometheus and Grafana. No need to switch between your control plane and your monitoring dashboards</p>
+            </div>
+          </div>
+          <!-- single features item end -->
+
+           <!-- single features item start -->
+           <div class="single-feature card-view">
+            <div class="icon"><img src="https://img.icons8.com/fluency-systems-regular/100/00A651/keyhole-shield.png" alt="Kubernetes Made Easy"></div>
+            <div class="content">
+              <h4>Secure your cluster with cert-manager and Vault</h4>
+              <p>With built-in support cert-manager, you can easily secure your applications with TLS. ByteBuilders also comes with built-in support for Kubevault, a Kubernetes operator for HashiCorp Vault. This lets you manage your access credentials securely</p>
+            </div>
+          </div>
+          <!-- single features item end -->
+           <!-- single features item start -->
+           <div class="single-feature card-view">
+            <div class="icon"><img src="https://img.icons8.com/ios/50/00A651/networking-manager.png" alt="Kubernetes Made Easy"></div>
+            <div class="content">
+              <h4>Self Host or Managed</h4>
+              <p>You can use our managed service for a frictionless start or you can self-host ByteBuilder in your own cluster for complete control</p>
             </div>
           </div>
           <!-- single features item end -->
@@ -331,27 +355,8 @@
            <div class="single-feature card-view">
             <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Kubernetes Made Easy"></div>
             <div class="content">
-              <h4>Hide the complexity of Kubernetes behind a simple, elegant UI.</h4>
-              <p>UI simplify how you interact with your Kubernetes clusters. It hides the complexities of managing Kubenetes and provides a simplified and elegant UI. </p>
-            </div>
-          </div>
-          <!-- single features item end -->
-           <!-- single features item start -->
-           <div class="single-feature card-view">
-            <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Kubernetes Made Easy"></div>
-            <div class="content">
-              <h4>Hide the complexity of Kubernetes behind a simple, elegant UI.</h4>
-              <p>UI simplify how you interact with your Kubernetes clusters. It hides the complexities of managing Kubenetes and provides a simplified and elegant UI. </p>
-            </div>
-          </div>
-          <!-- single features item end -->
-
-           <!-- single features item start -->
-           <div class="single-feature card-view">
-            <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Kubernetes Made Easy"></div>
-            <div class="content">
-              <h4>Hide the complexity of Kubernetes behind a simple, elegant UI.</h4>
-              <p>UI simplify how you interact with your Kubernetes clusters. It hides the complexities of managing Kubenetes and provides a simplified and elegant UI. </p>
+              <h4>Native Prometheus and Grafana Integration</h4>
+              <p>UI comes with native integration with Prometheus and Grafana. No need to switch between your control plane and your monitoring dashboards</p>
             </div>
           </div>
           <!-- single features item end -->
@@ -366,27 +371,27 @@
        <div class="is-flex is-flex-direction-column" style="gap: 32px; margin-bottom: 32px;">
         <!-- single features item start -->
         <div class="single-feature">
-          <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Kubernetes Made Easy"></div>
+          <div class="icon"><img src="https://img.icons8.com/external-outline-juicy-fish/100/00A651/external-flexible-arrows-outline-outline-juicy-fish-2.png" alt="Kubernetes Made Easy"></div>
           <div class="content">
-            <h4>Hide the complexity of Kubernetes behind a simple, elegant UI.</h4>
-            <p>UI simplify how you interact with your Kubernetes clusters. It hides the complexities of managing Kubenetes and provides a simplified and elegant UI. </p>
+            <h4>Flexible & Extensible</h4>
+            <p>It is flexible and extensible to adapt to your needs. You can override our default presets and add new presets to work better with your environment</p>
           </div>
         </div>
         <!-- single features item end -->
 
         <!-- single features item start -->
         <div class="single-feature">
-          <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Kubernetes Made Easy"></div>
+          <div class="icon"><img src="https://img.icons8.com/ios/50/00A651/trust--v1.png" alt="Kubernetes Made Easy"></div>
           <div class="content">
-            <h4>Hide the complexity of Kubernetes behind a simple, elegant UI.</h4>
-            <p>UI simplify how you interact with your Kubernetes clusters. It hides the complexities of managing Kubenetes and provides a simplified and elegant UI. </p>
+            <h4>We are always there for you</h4>
+            <p>We provide dependable, on-demand 24/7 technical support by excellent in-house engineers who have been involved in this project</p>
           </div>
         </div>
         <!-- single features item end -->
       </div>
 
       <a href="#products" class="button ac-button is-primary">
-        <span>EXPLORE OUR PRODUCTS</span> 
+        <span>TRY UI DASHBOARD</span> 
         <span class="icon">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -410,7 +415,7 @@
     <div class="column is-8">
       <div class="section-title has-text-centered">
         <h2>Explore the Mechanics and Features of Our UI</h2>
-        <p>Discover how our UI functions, from its features to its user-friendly design. Learn to navigate seamlessly and make the most of its capabilities for an improved user experience.</p>
+        <p>Discover how our UI functions, from its features to its user-friendly design. Learn to navigate seamlessly and make the most of its capabilities for an improved user experience</p>
       </div>
     </div>
    </div>
@@ -425,7 +430,7 @@
           <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Kubernetes Made Easy"></div>
           <div class="content">
             <h4>Provisioning</h4>
-            <p>Provision your favorite databases with just a few clicks.</p>
+            <p>Provision your favorite databases with just a few clicks</p>
           </div>
         </div>
         <!-- single features mechanism item end -->
@@ -434,8 +439,18 @@
         <div class="single-feature mechanism">
           <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Kubernetes Made Easy"></div>
           <div class="content">
-            <h4>Provisioning</h4>
-            <p>Provision your favorite databases with just a few clicks.</p>
+            <h4>Database Insight</h4>
+            <p>Take a deep look inside your database.</p>
+          </div>
+        </div>
+        <!-- single features mechanism item end -->
+
+        <!-- single features mechanism item start -->
+        <div class="single-feature mechanism">
+          <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Kubernetes Made Easy"></div>
+          <div class="content">
+            <h4>Managing</h4>
+            <p>Manage day 2 lifecycle of your database right from the UI</p>
           </div>
         </div>
         <!-- single features mechanism item end -->
@@ -444,8 +459,8 @@
          <div class="single-feature mechanism">
           <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Kubernetes Made Easy"></div>
           <div class="content">
-            <h4>Provisioning</h4>
-            <p>Provision your favorite databases with just a few clicks.</p>
+            <h4>Disaster Recovery</h4>
+            <p>Prepare for disaster with just a few clicks.</p>
           </div>
         </div>
         <!-- single features mechanism item end -->
@@ -454,8 +469,18 @@
          <div class="single-feature mechanism">
           <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Kubernetes Made Easy"></div>
           <div class="content">
-            <h4>Provisioning</h4>
-            <p>Provision your favorite databases with just a few clicks.</p>
+            <h4>Monitoring</h4>
+            <p>Monitor your database right from the application page</p>
+          </div>
+        </div>
+        <!-- single features mechanism item end -->
+
+        <!-- single features mechanism item start -->
+        <div class="single-feature mechanism">
+          <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Kubernetes Made Easy"></div>
+          <div class="content">
+            <h4>Alert</h4>
+            <p>Stay alert for your mission critical applications</p>
           </div>
         </div>
         <!-- single features mechanism item end -->
