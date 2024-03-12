@@ -31,6 +31,9 @@
     font-size: 68px;
     line-height: 120%;
     letter-spacing: -2.5px;
+    img {
+      transform: translateY(6px);
+    }
   }
 
   p {
@@ -312,8 +315,6 @@
   .subscription-message {
     padding-right: 150px;
   }
-
-
 
   p {
     font-weight: 400;
@@ -1066,7 +1067,7 @@ Responsive Classes
   }
 
   .social-prove-brand-area {
-    padding: 30px 0 0;
+    padding: 16px 0 0;
 
     .container {
       margin-top: 0 !important;

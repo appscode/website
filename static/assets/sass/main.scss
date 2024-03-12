@@ -16,7 +16,6 @@
 //BASE - Base styles, variables, mixins
 @import "base/_global";
 @import "base/_base";
-@import "base/_homepage";
 @import "base/_video-palyer.scss";
 @import "base/_innerpage";
 @import "base/_contactus-update";
@@ -24,6 +23,7 @@
 @import "base/_videos-gallery";
 
 
+// Components 
 @import "components/_navbar";
 @import "components/_preloader";
 @import "components/_cookie";
@@ -38,7 +38,13 @@
 @import "components/_back-to-top";
 @import "components/_footer";
 
-//Responsive SCSS
+// Layouts 
 @import "layouts/_documentation";
 @import "layouts/_features-plan";
+
+// Pages  
+@import "pages/_homepage";
+@import "pages/_contactus";
+
+//Responsive SCSS
 @import "layouts/_responsive";
