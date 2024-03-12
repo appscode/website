@@ -243,9 +243,6 @@
   z-index: 1;
   // margin: 60px 60px 0;
   height: 100%;
-  .contact-form-inner {
-    margin-top: -400px;
-  }
 }
 .question-area {
   background-color: #fbfbfb;
@@ -269,6 +266,85 @@
     }
   }
 }
+.contact-hero {
+  p{
+    margin-bottom: 16px;
+  }
+}
+.location-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  .location {
+    width: calc(50% - 6px);
+  }
+}
+
+.location {
+  border: 1px solid $ac-white-light;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  a{
+    color: $ac-color-text;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    span {
+      width: calc(100% - 26px);
+      &.icon {
+        width: 18px;
+        transform: translateY(4px);
+      }
+    }
+  }
+}
+
+.modify-contact-form {
+  .fs-webform-container .fserv-container {
+    margin: 0 0 32px auto;
+  }
+  .formserv-text-field, .formserv-email-field, .formserv-tel-field, .formserv-select-field.fserv-field, .formserv-select-multiple-field, .formserv-textarea-field {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    &:not(.formserv-textarea-field){
+      align-items: center;
+    }
+    .error{
+      width: 100%;
+    }
+    .fserv-label {
+      width: 120px;
+      padding-bottom: 0;
+    }
+    input, textarea {
+      width: calc(100% - 128px) !important;
+      &:focus {
+        outline: 2px solid $ac-primary;
+      }
+    }
+  }
+  .fs-webform-container {
+     .fserv-field+.fserv-field{
+        margin-top: 12px;
+     }
+     .fserv-field+div:not(.fserv-field) {
+      padding: 12px 30px 0;
+     }
+    .fserv-field {
+      .select2-container {
+        min-width: calc(100% - 128px);
+      }
+    }
+    .checkbox {
+      padding: 0 !important;
+    }
+  }
+  
+}
+
 
 .location-area {
   .office-details {

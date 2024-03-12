@@ -5,134 +5,114 @@
 {{ define "main" }}
 
 <!-- about hero  area start -->
-<section class="hero-area-2 breadcrumb-section bg-color-available">
+<section class="contact-hero" style="padding: 120px 0 60px;">
   <div class="container">
     <div class="columns">
       <div class="column is-6 d-table">
-        <div class="hero-area-inner-2 has-text-left d-table-cell">
-          <h1>Get In Touch</h1>
-          <p>Send us a note and we will be in touch shortly.</p>
+        <div class="has-text-left">
+          <h2>Send us a note & we will be in touch shortly.</h2>
+          <p>Got questions about our services or need assistance? We're here to help! At AppsCode, we're passionate about empowering businesses with cutting-edge solutions for Kubernetes and cloud-native technologies.</p>
+
+          <p>Whether you're curious about KubeDB, seeking data protection with Stash, or exploring secrets management with KubeVault, our team is dedicated to providing the support and guidance you need.</p>
+
+          <p>Let's unlock the full potential of Kubernetes together!</p>
+        </div>
+        
+
+        <div class="location-area">
+          <!-- single location start -->
+          <div class="location">
+            <h6>Corporate HQ AppsCode Inc.</h6>
+            <!-- location  -->
+            <a href="#" class="single-contact-info">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                </svg>
+              </span>
+              <span>3937 SPENCER ST APT 118,Las Vegas,NV 89119, USA</span>
+            </a>
+            <!-- location  -->
+
+            <!-- phone  -->
+            <a href="#" class="single-contact-info">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                </svg>
+              </span>
+              <span>{{.Site.Params.contact_phone}}</span>
+            </a>
+            <!-- phone  -->
+
+            <!-- phone  -->
+            <a href="#" class="single-contact-info">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>
+              </span>
+              <span>{{.Site.Params.contact_email}}</span>
+            </a>
+            <!-- phone  -->
+
+          </div>
+          <!-- single location end   -->
+
+          <!-- single location  start-->
+          <div class="location">
+            <h6>Dhaka Office AppsCode Ltd.</h6>
+            <!-- location  -->
+            <a href="#" class="single-contact-info">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                </svg>
+              </span>
+              <span>Flat A2, House 4, Rd 10, Sector 10,Uttara, Dhaka-1230, Bangladesh</span>
+            </a>
+            <!-- location  -->
+
+            <!-- phone  -->
+            <a href="#" class="single-contact-info">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                </svg>
+              </span>
+              <span>+880 1720-171904</span>
+            </a>
+            <!-- phone  -->
+
+            <!-- phone  -->
+            <a href="#" class="single-contact-info">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>
+              </span>
+              <span>{{.Site.Params.contact_email}}</span>
+            </a>
+            <!-- phone  -->
+
+          </div>
+          <!-- single location end   -->
         </div>
       </div>
       <div class="column is-6">
-
+        <div class="contact-form modify-contact-form">
+          <!-- please remove the form and add your generate form style -->
+          <div class="contact-form-inner">
+            <script src='https://appscode.freshworks.com/crm/sales/web_forms/779b59dfa11f83797b7b5db7e6cc40e095c15873df17fd4b0de69f17f74c57f2/form.js' crossorigin='anonymous' id='fs_779b59dfa11f83797b7b5db7e6cc40e095c15873df17fd4b0de69f17f74c57f2'></script>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 <!-- about hero area end -->
-
-<!-- contact area start -->
-<div class="contact-area sp-y-80">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-6">
-        <div class="contact-us-image">
-          <img src="/assets/images/contact-page/contact.png" alt="" />
-        </div>
-      </div>
-      <div class="column is-6">
-          <div class="contact-form">
-              <!-- please remove the form and add your generate form style -->
-              <div class="contact-form-inner">
-                <script src='https://appscode.freshworks.com/crm/sales/web_forms/779b59dfa11f83797b7b5db7e6cc40e095c15873df17fd4b0de69f17f74c57f2/form.js' crossorigin='anonymous' id='fs_779b59dfa11f83797b7b5db7e6cc40e095c15873df17fd4b0de69f17f74c57f2'></script>
-              </div>
-            </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- contact area end -->
-
-<!-- location-area start -->
-<section class="location-area sp-y-80">
-  <div class="container">
-    <div class="columns">
-      <!-- section title start -->
-      <div class="column is-8 is-offset-2 has-text-centered mb-30">
-        <div class="section-title">
-          <h2>Our Offices</h2>
-        </div>
-      </div>
-      <!-- section title end -->
-    </div>
-    <div class="columns">
-      <div class="column is-5">
-        <div class="country-highlight-image">
-          <img src="/assets/images/contact-page/office.png" alt="" />
-        </div>
-      </div>
-      <div class="column is-3 is-offset-1">
-        <!-- single-details start -->
-        <div class="office-details">
-          <h4>Corporate HQ AppsCode Inc.</h4>
-          <p>
-            <span>3937 SPENCER ST APT 118, <br />
-            Las Vegas, <br />
-            NV 89119, <br />
-            USA</span>
-            <span>Phone: {{.Site.Params.contact_phone}}</span>
-            <span>Email: {{.Site.Params.contact_email}}</span>
-          </p>
-        </div>
-        <!-- single-details end -->
-      </div>
-
-      <div class="column is-3">
-        <!-- single-details start -->
-        <div class="office-details">
-          <h4>Dhaka Office AppsCode Ltd.</h4>
-          <p>
-            <span
-              >Flat A2, House 4, Rd 10, Sector 10, <br />
-              Uttara, <br />
-              Dhaka-1230, <br />
-              Bangladesh
-            </span>
-            <span>Phone: +880 1720-171904</span>
-            <span>Email: {{.Site.Params.contact_email}}</span>
-          </p>
-        </div>
-        <!-- single-details end -->
-      </div>
-    </div>
-  </div>
-</section>
-<!-- location-area end -->
-
-<!-- map-area start -->
-<div class="map-area">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-8 is-offset-2 has-text-centered">
-        <div class="tabs-wrapper">
-          <ul>
-            <li href="usa" class="is-active">Las Vegas</li>
-            <li href="dhaka">Dhaka</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="map-wrapper">
-    <div class="single-map is-active" id="usa">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.0353352253883!2d-115.13194098472924!3d36.11699688009501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c4fcace52e03%3A0xd25fb63b78d7d8a1!2s3937%20Spencer%20St%20%23118%2C%20Las%20Vegas%2C%20NV%2089119!5e0!3m2!1sen!2sus!4v1609470452212!5m2!1sen!2sus"
-        frameborder="0"
-        style="border:0"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <div class="single-map" id="dhaka">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.19049567427!2d90.38724931545359!3d23.882862789618905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c46b5bbd22f9%3A0xd6602c2d16a5f203!2sAppsCode+Ltd.!5e0!3m2!1sen!2sbd!4v1563448108452!5m2!1sen!2sbd"
-        style="border:0"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </div>
-</div>
-<!-- map-area end -->
 
 <!-- Event snippet for Contact Us form conversion page -->
 <script>
