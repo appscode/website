@@ -23417,12 +23417,15 @@ video {
   height: 40px;
   line-height: 30px;
   border-radius: 50%;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
+  color: var(--ac-primary);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--ac-primary);
   opacity: 0;
   cursor: pointer;
   transition: opacity 0.4s linear;
+}
+.go-to-top i.fa {
+  color: var(--ac-primary);
 }
 
 .go-to-top.is-visible {
@@ -24943,7 +24946,7 @@ Responsive Classes
   letter-spacing: -2.5px;
 }
 .hero-area-1 h1 img {
-  transform: translateY(6px);
+  transform: translateY(2px);
 }
 .hero-area-1 p {
   font-family: "Inter";
@@ -25082,15 +25085,27 @@ Responsive Classes
 .single-feature.card-view {
   flex-direction: column;
   border: 1px solid #e7e7e7;
-  padding: 32px 16px;
+  padding: 16px;
   border-radius: 4px;
 }
 .single-feature.card-view .content {
   width: 100%;
 }
-.single-feature.card-view .content h4 {
-  font-size: 18px;
-  letter-spacing: 0;
+.single-feature.mechanism {
+  transition: 0.3s ease-in-out;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.single-feature.mechanism .content h5 {
+  margin-bottom: 4px;
+}
+.single-feature.mechanism:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.single-feature.mechanism.is-active {
+  background-color: var(--ac-primary);
 }
 .single-feature .icon {
   width: 52px;
@@ -25111,13 +25126,12 @@ Responsive Classes
 }
 .single-feature .content h4 {
   font-size: 22px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   line-height: 130%;
 }
 .single-feature .content p {
   font-size: 16px;
   color: #666F6A;
-  text-wrap: balance;
 }
 
 .ui-dashboard {
@@ -25146,8 +25160,33 @@ Responsive Classes
 .dark-bg p {
   color: #D4D6D5;
 }
+.dark-bg .single-feature.card-view {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #000A05;
+}
+.dark-bg .single-feature .icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+}
 .dark-bg .single-feature .content p {
   color: #D4D6D5;
+}
+.dark-bg .single-feature .content a {
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+.dark-bg .single-feature .content a:hover {
+  color: var(--ac-primary);
+  opacity: 0.9;
+}
+.dark-bg .footer-top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dark-bg .footer-inline-link, .dark-bg .subscription-form label, .dark-bg .all-contact-info li a, .dark-bg p.spam-message {
+  color: #ADB2B0;
+}
+.dark-bg .footer-inline-link a, .dark-bg .subscription-form label a, .dark-bg .all-contact-info li a a, .dark-bg p.spam-message a {
+  color: #ADB2B0;
 }
 
 .intro-kubedb-ui {
@@ -25971,6 +26010,13 @@ Responsive Classes
   .social-prove-brand-area .brand-image-wrapper {
     padding: 0 !important;
   }
+}
+.contact-hero h2 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 120%;
+  text-wrap: balance;
+  margin-bottom: 16px;
 }
 .contact-hero p {
   margin-bottom: 16px;

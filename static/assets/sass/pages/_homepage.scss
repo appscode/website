@@ -70,7 +70,7 @@
     line-height: 120%;
     letter-spacing: -2.5px;
     img {
-      transform: translateY(6px);
+      transform: translateY(2px);
     }
   }
 
@@ -240,14 +240,28 @@
   &.card-view {
     flex-direction: column;
     border: 1px solid $ac-white-light;
-    padding: 32px 16px;
+    padding: 16px;
     border-radius: 4px;
     .content {
       width: 100%;
-      h4 {
-        font-size: 18px;
-        letter-spacing: 0;
+    }
+  }
+  &.mechanism {
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid rgba(255,255,255,0.2);
+    cursor: pointer;
+    .content {
+      h5 {
+        margin-bottom: 4px;
       }
+    }
+    &:hover {
+      background-color: rgba(255,255,255,0.1);
+    }
+    &.is-active {
+      background-color: $ac-primary;
     }
   }
   .icon{
@@ -270,13 +284,12 @@
     width: calc(100% - 76px);
     h4{
       font-size: 22px;
-      margin-bottom: 8px;
+      margin-bottom: 4px;
       line-height: 130%;
     }
     p{
       font-size: 16px;
       color: $ac-color-text;
-      text-wrap: balance;
     }
   }
 }
@@ -311,14 +324,39 @@
     color: #D4D6D5;
   }
   .single-feature {
+    &.card-view {
+      border: 1px solid rgba(255,255,255,0.2);
+      background-color: #000A05;
+
+    }
+    .icon {
+      background-color: rgba(255,255,255,0.1);
+      border: none;
+    }
     .content {
       p {
         color: #D4D6D5;
       }
+      a {
+        transition: 0.3s ease-in-out;
+        font-weight: 500;
+        &:hover {
+          color: $ac-primary;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+  .footer-top {
+    border-bottom: 1px solid rgba(255,255,255, 0.2);
+  }
+  .footer-inline-link, .subscription-form label, .all-contact-info li a, p.spam-message{
+    color: #ADB2B0;
+    a {
+      color: #ADB2B0;
     }
   }
 }
-
 
 // intro kubedb ui start
 .intro-kubedb-ui {
