@@ -30,6 +30,10 @@
       transition: 0.3s ease-in-out;
       width: calc(100% - 64px);
       gap: 8px;
+
+      @media screen and (max-width: 768px) {
+        height: 44px;
+      }
       &:hover {
         background-color: var(--ac-primary, #1c1c1c);
         color: var(--ac-text, #ffffff);

@@ -230,6 +230,9 @@
   gap: 12px;
   .single-feature {
     flex-basis: calc(50% - 6px);
+    @include mobile {
+      flex-basis: 100%;
+    }
   }
 }
 .single-feature {
@@ -292,6 +295,12 @@
       color: $ac-color-text;
     }
   }
+}
+.single-ui-ss {
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  margin-left: 32px;
 }
 .ui-dashboard {
   position: relative;
@@ -1009,7 +1018,9 @@ Responsive Classes
     h1 {
       font-size: 38px;
       letter-spacing: -0.57px;
-      text-align: center;
+      img {
+        height: 32px;
+      }
     }
 
     p {
@@ -1019,13 +1030,13 @@ Responsive Classes
 
     .buttons {
       margin-bottom: 15px;
-      justify-content: center;
 
       .button {
         &.ac-button {
           margin-bottom: 0.5rem;
           margin-right: 0.5rem !important;
           padding: 0.5rem 1rem;
+          width: 100%;
         }
       }
 
@@ -1046,15 +1057,11 @@ Responsive Classes
       margin-right: 0;
     }
   }
-  .news-message-wrapper {
-    display: flex;
-    justify-content: center;
-  }
+
 
   .products-area {
     .single-product {
       padding: 30px 20px;
-      text-align: center;
     }
   }
 
@@ -1076,7 +1083,6 @@ Responsive Classes
     .products {
       .single-product {
         margin-top: 1rem;
-        text-align: center;
         border: 1px solid $ac-white-light;
         padding: 20px 15px;
         border-radius: 4px;
