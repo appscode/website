@@ -426,10 +426,10 @@
       <div class="is-flex is-flex-direction-column is-flex-wrap-wrap" style="gap: 8px;">
        
         <!-- single features mechanism item start -->
-        <div class="single-feature mechanism">
+        <div class="single-feature mechanism is-active">
           <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Kubernetes Made Easy"></div>
           <div class="content">
-            <h5>Provisioning</h5>
+            <h5 class="provisioing">Provisioning</h5>
             <p class="is-ellipsis-1">Provision your favorite databases with just a few clicks</p>
           </div>
         </div>
@@ -439,7 +439,7 @@
         <div class="single-feature mechanism">
           <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Kubernetes Made Easy"></div>
           <div class="content">
-            <h5>Database Insight</h5>
+            <h5 class="database-insight">Database Insight</h5>
             <p class="is-ellipsis-1">Take a deep look inside your database.</p>
           </div>
         </div>
@@ -449,17 +449,17 @@
         <div class="single-feature mechanism">
           <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Kubernetes Made Easy"></div>
           <div class="content">
-            <h5>Managing</h5>
+            <h5 class="managing">Managing</h5>
             <p class="is-ellipsis-1">Manage day 2 lifecycle of your database right from the UI</p>
           </div>
         </div>
         <!-- single features mechanism item end -->
 
          <!-- single features mechanism item start -->
-         <div class="single-feature mechanism is-active">
+         <div class="single-feature mechanism">
           <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Kubernetes Made Easy"></div>
           <div class="content">
-            <h5>Disaster Recovery</h5>
+            <h5 class="disaster-recovery">Disaster Recovery</h5>
             <p class="is-ellipsis-1">Prepare for disaster with just a few clicks.</p>
           </div>
         </div>
@@ -469,7 +469,7 @@
          <div class="single-feature mechanism">
           <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Kubernetes Made Easy"></div>
           <div class="content">
-            <h5>Monitoring</h5>
+            <h5 class="monitoting">Monitoring</h5>
             <p class="is-ellipsis-1">Monitor your database right from the application page</p>
           </div>
         </div>
@@ -479,7 +479,7 @@
         <div class="single-feature mechanism">
           <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Kubernetes Made Easy"></div>
           <div class="content">
-            <h5>Alert</h5>
+            <h5 class="alert">Alert</h5>
             <p class="is-ellipsis-1">Stay alert for your mission critical applications</p>
           </div>
         </div>
@@ -488,11 +488,68 @@
       </div>
     </div>
     <div class="column is-8">
-      <div class="ui-dashboard"></div>
+      <div class="ui-dashboardd">
+        <div id="provisioing" class="Provisioning">
+          <h1>provisioning</h1>
+        </div>
+        <div id="database-insight" class="database-insight is-hidden">
+          <h1>database-insight</h1>
+        </div>
+
+        <div id="managing" class="managing is-hidden">
+          <h1>managing</h1>
+        </div>
+
+        <div id="disaster-recovery" class="disaster-recovery is-hidden">
+          <h1>disaster-recovery</h1>
+        </div>
+
+        <div id="monitoting" class="minitoring is-hidden">
+          <h1>monitoring</h1>
+        </div>
+
+        <div id="alert" class="alert is-hidden">
+          <h1>Alert</h1>
+        </div>
+      </div>
     </div>
    </div>
   </div>
+<script>
+  // Get all the single-feature mechanism elements
+const singleFeatures = document.querySelectorAll('.single-feature.mechanism');
 
+// Add click event listener to each single-feature mechanism element
+singleFeatures.forEach(function(feature) {
+    feature.addEventListener('click', function() {
+        const h5Element = feature.querySelector('h5');
+
+        const className = h5Element.className;
+        showOnlySelectedDiv(className)
+        singleFeatures.forEach(function(feature) {
+            feature.classList.remove('is-active');
+        });
+
+        feature.classList.add('is-active');
+
+        const divs=document.querySelectorAll(className)
+        
+        
+    });
+});
+function showOnlySelectedDiv(selectedId) {
+    const divs = document.querySelectorAll('.ui-dashboardd > div');
+
+    divs.forEach(function(div) {
+        if (div.id === selectedId) {
+            div.classList.remove('is-hidden');
+        } else {
+            div.classList.add('is-hidden');
+        }
+    });
+}
+
+</script>
   <!-- introduce kubedb ui start -->
   <div class="container-fulid intro-kubedb-ui">
     <div class="container">
