@@ -18326,6 +18326,11 @@ strong {
 .section-padding {
   padding: 60px 0;
 }
+@media screen and (max-width: 1023px) {
+  .section-padding {
+    padding: 48px 0;
+  }
+}
 
 .list-items {
   display: flex;
@@ -21931,6 +21936,11 @@ a.nav-link.active:after {
   justify-content: center;
   height: 48px;
 }
+@media screen and (max-width: 768px) {
+  .button.ac-button {
+    height: 44px;
+  }
+}
 .button.ac-button:focus-visible {
   outline: none;
 }
@@ -22470,12 +22480,6 @@ Responsive Classes
     padding: 30px 0;
     padding-bottom: 0px;
     justify-content: center;
-  }
-  .social-prove-brand-area .brand-image-wrapper .single-brand {
-    padding: 5px;
-  }
-  .social-prove-brand-area .brand-image-wrapper .single-brand img {
-    max-height: 1.5rem;
   }
 }
 @media (max-width: 378px) {
@@ -25085,6 +25089,11 @@ Responsive Classes
 .more-products .single-feature, .intro-kubedb-ui .single-feature {
   flex-basis: calc(50% - 6px);
 }
+@media screen and (max-width: 768px) {
+  .more-products .single-feature, .intro-kubedb-ui .single-feature {
+    flex-basis: 100%;
+  }
+}
 
 .single-feature {
   display: flex;
@@ -25141,6 +25150,13 @@ Responsive Classes
 .single-feature .content p {
   font-size: 16px;
   color: #666F6A;
+}
+
+.single-ui-ss {
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  margin-left: 32px;
 }
 
 .ui-dashboard {
@@ -25717,7 +25733,9 @@ Responsive Classes
   .hero-area-1 h1 {
     font-size: 38px;
     letter-spacing: -0.57px;
-    text-align: center;
+  }
+  .hero-area-1 h1 img {
+    height: 32px;
   }
   .hero-area-1 p {
     text-align: center;
@@ -25725,12 +25743,12 @@ Responsive Classes
   }
   .hero-area-1 .buttons {
     margin-bottom: 15px;
-    justify-content: center;
   }
   .hero-area-1 .buttons .button.ac-button {
     margin-bottom: 0.5rem;
     margin-right: 0.5rem !important;
     padding: 0.5rem 1rem;
+    width: 100%;
   }
   .hero-area-1 .buttons .play-buttons a span {
     font-size: 20px;
@@ -25741,13 +25759,8 @@ Responsive Classes
   .hero-area-1 .h-right-content {
     margin-right: 0;
   }
-  .news-message-wrapper {
-    display: flex;
-    justify-content: center;
-  }
   .products-area .single-product {
     padding: 30px 20px;
-    text-align: center;
   }
   .others-products {
     padding: 50px 0;
@@ -25763,7 +25776,6 @@ Responsive Classes
   }
   .others-products .products .single-product {
     margin-top: 1rem;
-    text-align: center;
     border: 1px solid #e7e7e7;
     padding: 20px 15px;
     border-radius: 4px;
@@ -26020,12 +26032,27 @@ Responsive Classes
     padding: 0 !important;
   }
 }
+.contact-hero {
+  padding: 120px 0 60px;
+}
+@media screen and (max-width: 768px) {
+  .contact-hero {
+    padding: 150px 0 30px;
+  }
+}
 .contact-hero h2 {
   font-weight: 700;
   letter-spacing: -0.5px;
   line-height: 120%;
   text-wrap: balance;
   margin-bottom: 16px;
+}
+@media screen and (max-width: 768px) {
+  .contact-hero h2 {
+    font-size: 38px;
+    letter-spacing: -0.57px;
+    text-wrap: inherit;
+  }
 }
 .contact-hero p {
   margin-bottom: 16px;
@@ -26037,8 +26064,18 @@ Responsive Classes
   flex-wrap: wrap;
   gap: 12px;
 }
+@media screen and (max-width: 768px) {
+  .location-area {
+    margin-top: 32px;
+  }
+}
 .location-area .location {
   width: calc(50% - 6px);
+}
+@media screen and (max-width: 768px) {
+  .location-area .location {
+    width: 100%;
+  }
 }
 
 .location {
@@ -26101,9 +26138,6 @@ Responsive Classes
 
 /* Normal desktop :1216px. */
 @media (min-width: 1216px) and (max-width: 1407px) {
-  .section-padding {
-    padding: 60px 0;
-  }
   .pricing-area-wrapper {
     overflow-x: scroll;
     padding-top: 64px;
@@ -26144,9 +26178,6 @@ Responsive Classes
 @media (min-width: 1024px) and (max-width: 1215px) {
   p {
     font-size: 15px;
-  }
-  .section-padding {
-    padding: 60px 0;
   }
   .pt-100.is-mobile-device {
     padding-top: 30px;
@@ -26601,9 +26632,6 @@ Responsive Classes
   p {
     font-size: 15px;
   }
-  .section-padding {
-    padding: 60px 0;
-  }
   .pt-100.is-mobile-device {
     padding-top: 30px;
   }
@@ -26680,11 +26708,6 @@ Responsive Classes
   .db-logo-area {
     padding: 0;
     overflow: hidden;
-  }
-  .section-title h2 {
-    font-size: 22px;
-    margin-bottom: 30px;
-    line-height: 36px;
   }
   .carousel-wrapper {
     padding: 30px 15px;

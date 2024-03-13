@@ -1,10 +1,6 @@
 /* Normal desktop :1216px. */
 @media (min-width: 1216px) and (max-width: 1407px) {
 
-  .section-padding {
-    padding: 60px 0;
-  }
-
   // pricing page style start
   .pricing-area-wrapper {
     overflow-x: scroll;
@@ -58,9 +54,6 @@
 @media (min-width: 1024px) and (max-width: 1215px) {
   p {
     font-size: 15px;
-  }
-  .section-padding {
-    padding: 60px 0;
   }
   .pt-100.is-mobile-device {
     padding-top: 30px;
@@ -617,9 +610,6 @@
   p {
     font-size: 15px;
   }
-  .section-padding {
-    padding: 60px 0;
-  }
   .pt-100.is-mobile-device {
     padding-top: 30px;
   }
@@ -712,9 +702,7 @@
   }
 
   .section-title h2 {
-    font-size: 22px;
-    margin-bottom: 30px;
-    line-height: 36px;
+ 
   }
 
   .carousel-wrapper {

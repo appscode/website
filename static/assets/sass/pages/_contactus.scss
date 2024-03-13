@@ -1,10 +1,20 @@
 .contact-hero {
+  padding: 120px 0 60px;
+  @include mobile {
+    padding: 150px 0 30px;
+  }
+
   h2 {
     font-weight: 700;
     letter-spacing: -0.5px;
     line-height: 120%;
     text-wrap: balance;
     margin-bottom: 16px;
+    @include mobile {
+      font-size: 38px;
+      letter-spacing: -0.57px;
+      text-wrap: inherit;
+    }
   }
   p{
     margin-bottom: 16px;
@@ -16,8 +26,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  @include mobile {
+    margin-top: 32px;
+  }
   .location {
     width: calc(50% - 6px);
+    @include mobile {
+      width: 100%;
+    }
   }
 }
 

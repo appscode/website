@@ -6,6 +6,9 @@
 }
 .section-padding {
   padding: 60px 0;
+  @include touch {
+    padding: 48px 0;
+  }
 }
 .list-items {
   display: flex;

@@ -255,7 +255,7 @@
     <!-- section title  -->
     <div class="columns is-centered">
       <div class="column is-8">
-        <div class="section-title has-text-centered">
+        <div class="section-title has-text-centered-desktop">
           <h2>Manage your Kubernetes native applications across public or private clouds</h2>
           <p>A single pane of glass for managing your stateful or stateless applications across various private and public clouds. Hide the complexity of Kubernetes behind a simple, elegant UI</p>
         </div>
@@ -421,7 +421,7 @@
    </div>
    <!-- section title  -->
 
-   <div class="columns" style="padding-bottom: 60px;">
+   <div class="columns is-vcentered" style="padding-bottom: 60px;">
     <div class="column is-4">
       <div class="is-flex is-flex-direction-column is-flex-wrap-wrap" style="gap: 8px;">
        
@@ -488,27 +488,27 @@
       </div>
     </div>
     <div class="column is-8">
-      <div class="ui-dashboardd">
-        <div id="provisioing" class="Provisioning">
-          <h1>provisioning</h1>
+      <div class="ui-mechanism">
+        <div id="provisioing" class="single-ui-ss provisioning">
+          <img src="/assets/images/products/appscode/features/steps/provisioning.jpg" alt="provisioning-databases">
         </div>
         <div id="database-insight" class="database-insight is-hidden">
           <h1>database-insight</h1>
         </div>
 
-        <div id="managing" class="managing is-hidden">
+        <div id="managing" class="single-ui-ss managing is-hidden">
           <h1>managing</h1>
         </div>
 
-        <div id="disaster-recovery" class="disaster-recovery is-hidden">
+        <div id="disaster-recovery" class="single-ui-ss disaster-recovery is-hidden">
           <h1>disaster-recovery</h1>
         </div>
 
-        <div id="monitoting" class="minitoring is-hidden">
+        <div id="monitoting" class="single-ui-ss minitoring is-hidden">
           <h1>monitoring</h1>
         </div>
 
-        <div id="alert" class="alert is-hidden">
+        <div id="alert" class="single-ui-ss alert is-hidden">
           <h1>Alert</h1>
         </div>
       </div>
@@ -522,23 +522,22 @@ const singleFeatures = document.querySelectorAll('.single-feature.mechanism');
 // Add click event listener to each single-feature mechanism element
 singleFeatures.forEach(function(feature) {
     feature.addEventListener('click', function() {
-        const h5Element = feature.querySelector('h5');
+        const title = feature.querySelector('.mechanism .content h5');
 
-        const className = h5Element.className;
+        const className = title.className;
         showOnlySelectedDiv(className)
         singleFeatures.forEach(function(feature) {
             feature.classList.remove('is-active');
         });
 
         feature.classList.add('is-active');
-
         const divs=document.querySelectorAll(className)
         
         
     });
 });
 function showOnlySelectedDiv(selectedId) {
-    const divs = document.querySelectorAll('.ui-dashboardd > div');
+    const divs = document.querySelectorAll('.ui-mechanism > div');
 
     divs.forEach(function(div) {
         if (div.id === selectedId) {

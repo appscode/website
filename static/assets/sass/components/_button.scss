@@ -14,6 +14,9 @@
     align-items: center;
     justify-content: center;
     height: 48px;
+    @include mobile {
+      height: 44px;
+    }
     &:focus-visible {
       outline: none;
     }
