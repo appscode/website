@@ -22513,9 +22513,6 @@ Responsive Classes
   .social-prove-brand-area .brand-image-wrapper {
     justify-content: center;
   }
-  .social-prove-brand-area .brand-image-wrapper .single-brand {
-    padding: 0 10px;
-  }
 }
 @media (min-width: 1408px) and (max-width: 1600px) {
   .hero-area.is-product {
@@ -24961,6 +24958,11 @@ Responsive Classes
 .hero-area-1 h1 img {
   transform: translateY(2px);
 }
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .hero-area-1 h1 img {
+    height: 32px;
+  }
+}
 .hero-area-1 p {
   font-family: "Inter";
   font-style: normal;
@@ -25089,7 +25091,7 @@ Responsive Classes
 .more-products .single-feature, .intro-kubedb-ui .single-feature {
   flex-basis: calc(50% - 6px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .more-products .single-feature, .intro-kubedb-ui .single-feature {
     flex-basis: 100%;
   }
@@ -25903,13 +25905,16 @@ Responsive Classes
     padding: 0.75rem;
   }
 }
-@media (min-width: 1024px) and (max-width: 1215px) {
+@media (min-width: 1024px) and (max-width: 1212px) {
   .hero-area-1 {
     padding: 150px 0 50px;
   }
   .hero-area-1 h1 {
     font-size: 38px;
     letter-spacing: -0.57px;
+  }
+  .hero-area-1 h1 img {
+    height: 32px;
   }
   .hero-area-1 p {
     font-size: 1rem;
@@ -26047,7 +26052,7 @@ Responsive Classes
   text-wrap: balance;
   margin-bottom: 16px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .contact-hero h2 {
     font-size: 38px;
     letter-spacing: -0.57px;
@@ -26064,7 +26069,7 @@ Responsive Classes
   flex-wrap: wrap;
   gap: 12px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1215px) {
   .location-area {
     margin-top: 32px;
   }
@@ -26072,7 +26077,7 @@ Responsive Classes
 .location-area .location {
   width: calc(50% - 6px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1215px) {
   .location-area .location {
     width: 100%;
   }
@@ -26101,6 +26106,11 @@ Responsive Classes
 
 .modify-contact-form .fs-webform-container .fserv-container {
   margin: 0 0 32px auto;
+}
+@media screen and (max-width: 768px) {
+  .modify-contact-form .fs-webform-container .fserv-container {
+    margin: 0 auto;
+  }
 }
 .modify-contact-form .formserv-text-field, .modify-contact-form .formserv-email-field, .modify-contact-form .formserv-tel-field, .modify-contact-form .formserv-select-field.fserv-field, .modify-contact-form .formserv-select-multiple-field, .modify-contact-form .formserv-textarea-field {
   display: flex;

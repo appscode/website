@@ -71,6 +71,9 @@
     letter-spacing: -2.5px;
     img {
       transform: translateY(2px);
+      @include tablet-only {
+        height: 32px;
+      }
     }
   }
 
@@ -230,7 +233,7 @@
   gap: 12px;
   .single-feature {
     flex-basis: calc(50% - 6px);
-    @include mobile {
+    @include touch {
       flex-basis: 100%;
     }
   }
@@ -1273,13 +1276,16 @@ Responsive Classes
 }
 
 // Large devices (desktops, 1024px and up)
-@media (min-width: 1024px) and (max-width: 1215px) {
+@media (min-width: 1024px) and (max-width: 1212px) {
   .hero-area-1 {
     padding: 150px 0 50px;
 
     h1 {
       font-size: 38px;
       letter-spacing: -0.57px;
+      img {
+        height: 32px;
+      }
     }
 
     p {
