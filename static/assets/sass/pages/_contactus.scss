@@ -10,7 +10,7 @@
     line-height: 120%;
     text-wrap: balance;
     margin-bottom: 16px;
-    @include mobile {
+    @include touch {
       font-size: 38px;
       letter-spacing: -0.57px;
       text-wrap: inherit;
@@ -26,14 +26,15 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  @include mobile {
+  @include until-widescreen {
     margin-top: 32px;
   }
   .location {
     width: calc(50% - 6px);
-    @include mobile {
+    @include until-widescreen {
       width: 100%;
     }
+    
   }
 }
 
@@ -61,6 +62,9 @@
 .modify-contact-form {
   .fs-webform-container .fserv-container {
     margin: 0 0 32px auto;
+    @include mobile {
+      margin: 0 auto;
+    }
   }
   .formserv-text-field, .formserv-email-field, .formserv-tel-field, .formserv-select-field.fserv-field, .formserv-select-multiple-field, .formserv-textarea-field {
     display: flex;
