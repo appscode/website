@@ -23446,8 +23446,8 @@ video {
   font-family: "Roboto", sans-serif;
 }
 .subscription-form input {
-  background: #f9f9f9;
-  border: 1px solid #e3e3e3;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: none;
   font-size: 16px;
   border-radius: 4px;
@@ -23455,6 +23455,15 @@ video {
   height: 40px;
   position: relative;
   z-index: 1;
+}
+.subscription-form input::-moz-placeholder {
+  color: #ADB2B0;
+}
+.subscription-form input::placeholder {
+  color: #ADB2B0;
+}
+.subscription-form input:focus {
+  border: 1px solid var(--ac-primary);
 }
 .subscription-form .button {
   font-family: #4a4a4a;
@@ -25214,7 +25223,7 @@ Responsive Classes
 }
 
 .subscription-area {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 .subscription-area .subscription-message {
   padding-right: 150px;
@@ -25466,7 +25475,7 @@ Responsive Classes
 }
 
 .social-connect-area {
-  padding: 100px 0 150px;
+  padding: 60px 0;
   background: rgba(243, 244, 247, 0.6);
 }
 .social-connect-area .connect-message {

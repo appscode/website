@@ -14,8 +14,8 @@
   }
 
   input {
-    background: #f9f9f9;
-    border: 1px solid #e3e3e3;
+    background: rgba(255,255,255, 0.2);
+    border: 1px solid rgba(255,255,255, 0.3);
     box-shadow: none;
     font-size: 16px;
     border-radius: 4px;
@@ -23,6 +23,12 @@
     height: 40px;
     position: relative;
     z-index: 1;
+    &::placeholder {
+      color: #ADB2B0;
+    }
+    &:focus {
+      border: 1px solid $ac-primary;
+    }
   }
 
   .button {
