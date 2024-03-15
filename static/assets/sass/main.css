@@ -18346,11 +18346,11 @@ strong {
   font-size: 18px;
 }
 
-.decorative-el, .others-products, .products-area {
+.decorative-el, .others-products, .products-features .features-tabs, .products-area {
   position: relative;
   z-index: 1;
 }
-.decorative-el::after, .others-products::after, .products-area::after {
+.decorative-el::after, .others-products::after, .products-features .features-tabs::after, .products-area::after {
   position: absolute;
   content: "";
   left: -54px;
@@ -25319,6 +25319,10 @@ Responsive Classes
 .products-features .features-tabs {
   position: sticky;
   margin-top: 210px;
+}
+.products-features .features-tabs:after {
+  top: -250px;
+  left: -120px;
 }
 .products-features .features-tabs ul li span {
   cursor: pointer;

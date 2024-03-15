@@ -468,8 +468,13 @@
 
   .features-tabs {
     position: sticky;
-    margin-top: 210px;
+    margin-top: 210px;   
 
+    @extend .decorative-el;
+    &:after {
+      top: -250px;
+      left: -120px 
+    }
     ul {
       li {
         span {
