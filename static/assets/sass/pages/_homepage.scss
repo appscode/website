@@ -70,7 +70,7 @@
     line-height: 120%;
     letter-spacing: -2.5px;
     img {
-      transform: translateY(2px);
+      transform: translateY(6px);
       @include tablet-only {
         height: 32px;
       }
@@ -174,6 +174,7 @@
 
 // products area start
 .products-area {
+  @extend .decorative-el;
   .single-product {
     display: block;
     background-color: $ac-white;
@@ -666,8 +667,15 @@
 
 // others product start
 .others-products {
-  padding: 100px 0;
-
+  padding: 60px 0;
+  @extend .decorative-el;
+  &:after{
+    right: -54px;
+    left: auto;
+    top: auto;
+    bottom: 0;
+    rotate: 90deg;
+  }
   .small-title {
     font-weight: 400;
     font-size: 20px;
@@ -1069,7 +1077,7 @@ Responsive Classes
   }
 
   .others-products {
-    padding: 50px 0;
+    padding: 60px 0;
 
     .small-title {
       font-size: 18px;
@@ -1369,7 +1377,7 @@ Responsive Classes
 
 @media (min-width: 1216px) and (max-width: 1600px) {
   .hero-area-1 {
-    padding: 150px 0 100px;
+    padding: 150px 0 60px;
 
     h1 {
       font-size: 58px;
@@ -1380,7 +1388,7 @@ Responsive Classes
       font-size: 1.3rem;
     }
     .h-right-content {
-      margin-right: -60px;
+      margin-right: -74px;
     }
 
     .buttons {

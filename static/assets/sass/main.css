@@ -18346,6 +18346,22 @@ strong {
   font-size: 18px;
 }
 
+.decorative-el, .others-products, .products-area {
+  position: relative;
+  z-index: 1;
+}
+.decorative-el::after, .others-products::after, .products-area::after {
+  position: absolute;
+  content: "";
+  left: -54px;
+  top: 0px;
+  width: 250px;
+  height: 250px;
+  z-index: -1;
+  background-image: url("../images/shape/decorative-el.svg");
+  background-repeat: no-repeat;
+}
+
 .yt-thumbnail {
   position: relative;
   z-index: 1;
@@ -24957,7 +24973,7 @@ Responsive Classes
   letter-spacing: -2.5px;
 }
 .hero-area-1 h1 img {
-  transform: translateY(2px);
+  transform: translateY(6px);
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .hero-area-1 h1 img {
@@ -25447,7 +25463,14 @@ Responsive Classes
 }
 
 .others-products {
-  padding: 100px 0;
+  padding: 60px 0;
+}
+.others-products:after {
+  right: -54px;
+  left: auto;
+  top: auto;
+  bottom: 0;
+  rotate: 90deg;
 }
 .others-products .small-title {
   font-weight: 400;
@@ -25766,7 +25789,7 @@ Responsive Classes
     padding: 30px 20px;
   }
   .others-products {
-    padding: 50px 0;
+    padding: 60px 0;
   }
   .others-products .small-title {
     font-size: 18px;
@@ -25969,7 +25992,7 @@ Responsive Classes
 }
 @media (min-width: 1216px) and (max-width: 1600px) {
   .hero-area-1 {
-    padding: 150px 0 100px;
+    padding: 150px 0 60px;
   }
   .hero-area-1 h1 {
     font-size: 58px;
@@ -25979,7 +26002,7 @@ Responsive Classes
     font-size: 1.3rem;
   }
   .hero-area-1 .h-right-content {
-    margin-right: -60px;
+    margin-right: -74px;
   }
   .hero-area-1 .buttons {
     margin-bottom: 15px;

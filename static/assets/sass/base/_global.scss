@@ -25,7 +25,22 @@
   }
 }
 
+.decorative-el {
+  position: relative;
+  z-index: 1;
 
+  &::after{
+    position: absolute;
+    content: "";
+    left: -54px;
+    top: 0px;
+    width: 250px;
+    height: 250px;
+    z-index: -1;
+    background-image: url("../images/shape/decorative-el.svg");
+    background-repeat: no-repeat;
+  }
+}
 .yt-thumbnail {
   position: relative;
   z-index: 1;
