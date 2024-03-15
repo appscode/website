@@ -122,14 +122,14 @@
   <!--==================== products area start  ====================-->
   <div class="products-area" id="products">
     <div class="container">
-      <!-- <div class="columns is-centered">
+      <div class="columns is-centered">
         <div class="column is-8">
           <div class="section-title has-text-centered mb-0">
             <p class="mb-0 has-text-primary is-uppercase">Empowering Your Kubernetes Experience</p>
             <h2 class="mb-0">Explore Our AppsCode Solutions</h2>
           </div>
         </div>
-      </div> -->
+      </div>
       <div class="columns is-multiline">
         <!-- single product start  -->
         {{ range $product := $p.homepage.main_products }}
@@ -228,7 +228,14 @@
                     <li><span class="material-icons">task_alt</span>{{ $features }}</li>
                     {{ end }}
                   </ul>
-                  <a class="button ac-button is-primary" href="{{ $products.url }}">GET STARTED</a>
+                  <a class="button ac-button is-primary is-uppercase" href="{{ $products.url }}">
+                    <span>TRY {{$products.product}}</span>
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                      </svg>
+                    </span>
+                  </a>
                 </div>
                 <!-- single product description end -->
               </div>
