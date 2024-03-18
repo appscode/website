@@ -303,8 +303,20 @@
 .single-ui-ss {
   border-radius: 8px;
   overflow: hidden;
-  height: 100%;
-  margin-left: 32px;
+  margin-left: 0px;
+  position: relative;
+  width: 100%;
+  height: 0px;
+  padding-top: calc(100%*(100 / 143));
+  img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    object-position: left;
+  }
 }
 .ui-dashboard {
   position: relative;
@@ -397,6 +409,14 @@
 }
 // intro kubedb ui end
 
+.ui-features-area {
+  @extend .decorative-el;
+    &:after {
+      right: -20px;
+      left: auto;
+      top: 60px;
+    }
+}
 // subscription-area start
 .subscription-area {
   padding: 60px 0;
