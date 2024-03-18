@@ -57,11 +57,11 @@
           <!-- buttons  -->
           <!-- style="width:22px;height:22px; margin-right: 8px;" -->
           <div class="buttons" data-aos="fade-up" data-aos-duration="700">
-            <a href="https://kubedb.com/docs/v2024.2.14/setup/" target="_blank" class="button ac-button is-primary">
+            <a href="https://kubedb.com/docs/v2024.2.14/setup/" class="button ac-button is-primary">
               <span>TRY FOR FREE</span>
               <span class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                 </svg>
               </span>
             </a>
@@ -138,9 +138,14 @@
           <a href="{{ $product.url }}" class="single-product">
             <div class="product-logo"><img src="{{ $product.logo }}" alt="kubedb-logo"></div>
             <p class="is-ellipsis-4">{{ $product.description | safeHTML  }}</p>
-            <button class="button ac-button is-transparent">LEARN MORE <span class="material-icons-outlined">
-                arrow_forward
-              </span></button>
+            <button class="button ac-button is-transparent is-flex is-gap-4">
+             <span>LEARN MORE </span>
+              <span class="width-16 is-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
+                </svg>
+              </span>
+            </button>
           </a>
         </div>
         {{ end }}
@@ -175,7 +180,14 @@
                 <div class="single-product">
                   <img src="{{ $product.logo }}" alt="">
                   <p>{{ $product.summary | safeHTML }}</p>
-                  <a class="inline-button" href="{{ $product.url }}" class="">EXPLORE MORE</a>
+                  <a class="inline-button is-flex is-gap-4" href="{{ $product.url }}">
+                    <span>EXPLORE MORE</span>
+                    <span class="width-16 is-flex">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </a>
                 </div>
                 <!-- sigle product end -->
               </div>
@@ -583,7 +595,7 @@ function showOnlySelectedDiv(selectedId) {
               
               <div class="icon"><img src="https://cdn.appscode.com/images/logo/appscode/ac-moscot.png" alt="Kubernetes Made Easy"></div>
               <div class="content">
-                <h4>Databases Solutions in Single UI</h4>
+                <h4>Databases Solutions in Single</h4>
                 <p>Use Stash to backup and restore any stateful workload using restic or volume snapshotting on any K8s cluster </p>
                 <a href="https://console.appscode.com/" target="_blank" class="is-flex is-underlined">
                  <span>TRY CONSOLE UI</span>
@@ -601,7 +613,7 @@ function showOnlySelectedDiv(selectedId) {
             <div class="single-feature card-view bg-dark">
               <div class="icon"><img src="https://cdn.appscode.com/images/products/kubedb/icons/android-icon-48x48.png" alt="Kubernetes Made Easy"></div>
               <div class="content">
-                <h4>Databases on K8's in KubeDB UI</h4>
+                <h4>Databases on K8's in KubeDB</h4>
                 <p>Use Stash to backup and restore any stateful workload using restic or volume snapshotting on any K8s cluster </p>
                 <a href="https://db.appscode.com/" target="_blank" class="is-flex is-underlined">
                   <span>TRY KUBEDB UI</span>

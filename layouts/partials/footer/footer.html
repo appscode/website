@@ -61,7 +61,14 @@
               <ul class="footer-link">
                 {{ range $item := $.Site.Data.config.footerLinks }}
                 {{ $p := (index $.Site.Data.products $item) }}
-                <li><a href="{{index $.Site.Params $p.website.domainKey}}{{$p.website.path}}">{{$p.name}}</a></li>
+                <li><a href="{{index $.Site.Params $p.website.domainKey}}{{$p.website.path}}" class="is-flex is-gap-4">
+                  <span>{{$p.name}}</span>
+                  <span class="is-flex width-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                  </span>
+                </a></li>
                 {{ end }}
               </ul>
             </div>
@@ -76,9 +83,32 @@
               <h4>Services</h4>
               <ul class="footer-link">
                 <!-- <li><a href="{{.Site.Params.domain_appscode}}/pricing/">Pricing</a></li> -->
-                <li><a href="{{.Site.Params.domain_appscode}}/consulting/">Consulting</a></li>
-                <li><a href="{{.Site.Params.domain_appscode}}/training/">Training</a></li>
-                <li><a href="{{.Site.Params.domain_appscode}}/support/">Support</a></li>
+                <li>
+                  <a href="{{.Site.Params.domain_appscode}}/consulting/" class="is-flex is-gap-4">
+                  <span>Consulting</span>
+                  <span class="is-flex width-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </span>
+                  </a>
+                </li>
+                <li><a href="{{.Site.Params.domain_appscode}}/training/" class="is-flex is-gap-4">
+                  <span>Training</span>
+                  <span class="is-flex width-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </span>
+                </a></li>
+                <li><a href="{{.Site.Params.domain_appscode}}/support/" class="is-flex is-gap-4">
+                  <span>Support</span>
+                  <span class="is-flex width-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </span>
+                </a></li>
               </ul>
             </div>
             <!-- footer menu end -->
@@ -91,9 +121,30 @@
             <div class="footer-menu is-warning">
               <h4>Company</h4>
               <ul class="footer-link">
-                <li><a href="{{.Site.Params.domain_appscode}}/about/">About Us</a></li>
-                <li><a href="{{.Site.Params.blog_url}}">Blog</a></li>
-                <li><a href="{{.Site.Params.domain_appscode}}/contact/">Contact Us</a></li>
+                <li><a href="{{.Site.Params.domain_appscode}}/about/" class="is-flex is-gap-4">
+                 <span> About Us</span>
+                  <span class="is-flex width-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </span>
+                </a></li>
+                <li><a href="{{.Site.Params.blog_url}}" class="is-flex is-gap-4">
+                  <span>Blog</span>
+                  <span class="is-flex width-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </span>
+                </a></li>
+                <li><a href="{{.Site.Params.domain_appscode}}/contact/" class="is-flex is-gap-4">
+                  <span>Contact Us</span>
+                  <span class="is-flex width-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </span>
+                </a></li>
               </ul>
             </div>
             <!-- footer menu end -->
@@ -106,10 +157,51 @@
             <div class="footer-menu is-danger">
               <h4>Legal</h4>
               <ul class="footer-link">
-                <li><a href="{{.Site.Params.domain_appscode}}/legal/tos/">Terms of Service</a></li>
-                <li><a href="{{.Site.Params.domain_appscode}}/legal/privacy-policy/">Privacy Policy</a></li>
-                <li><a href="{{.Site.Params.domain_appscode}}/legal/security/">Security</a></li>
-                <li><a href="{{.Site.Params.domain_appscode}}/legal/sla/">Service Level Agreement</a></li>
+                <li>
+                  <a href="{{.Site.Params.domain_appscode}}/legal/tos/" class="is-flex is-gap-4">
+                  <span>Terms of Service</span>
+                  <span class="is-flex width-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                    
+                  </span>
+                </a>
+               </li>
+
+               <li>
+                <a href="{{.Site.Params.domain_appscode}}/legal/privacy-policy/" class="is-flex is-gap-4">
+                <span>Privacy Policy</span>
+                <span class="is-flex width-12">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                  
+                </span>
+                </a>
+               </li>
+                <li>
+                  <a href="{{.Site.Params.domain_appscode}}/legal/security/" class="is-flex is-gap-4">
+                    <span>Security</span>
+                    <span class="is-flex width-12">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                      
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="{{.Site.Params.domain_appscode}}/legal/sla/" class="is-flex is-gap-4">
+                  <span>Service Level Agreement</span>
+                  <span class="is-flex width-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                    
+                  </span>
+                  </a>
+                </li>
               </ul>
             </div>
             <!-- footer menu end -->
