@@ -25314,6 +25314,10 @@ Responsive Classes
 }
 .dark-bg .footer-inline-link a, .dark-bg .subscription-form label a, .dark-bg .all-contact-info li a a, .dark-bg p.spam-message a {
   color: #ADB2B0;
+  transition: 0.3s ease-in-out;
+}
+.dark-bg .footer-inline-link a:hover, .dark-bg .subscription-form label a:hover, .dark-bg .all-contact-info li a a:hover, .dark-bg p.spam-message a:hover {
+  color: var(--ac-primary);
 }
 
 .intro-kubedb-ui {

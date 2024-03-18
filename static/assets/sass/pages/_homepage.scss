@@ -379,6 +379,10 @@
     color: #ADB2B0;
     a {
       color: #ADB2B0;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        color: $ac-primary;
+      }
     }
   }
 }
