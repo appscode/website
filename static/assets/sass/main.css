@@ -18361,6 +18361,12 @@ strong {
   background-image: url("../images/shape/decorative-el.svg");
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .decorative-el::after, .others-products::after, .products-features .features-tabs::after, .ui-features-area::after, .products-area::after {
+    width: 120px;
+    height: 120px;
+  }
+}
 
 .yt-thumbnail {
   position: relative;
@@ -25035,39 +25041,65 @@ Responsive Classes
 .hero-area-1 {
   padding: 150px 0 60px 0px;
 }
+@media screen and (max-width: 768px) {
+  .hero-area-1 {
+    padding: 170px 0 50px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .hero-area-1 {
+    padding: 160px 0 50px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+  .hero-area-1 {
+    padding: 150px 0 60px;
+  }
+}
 .hero-area-1 h1 {
   font-weight: 600;
   font-size: 68px;
   line-height: 120%;
   letter-spacing: -2.5px;
 }
+@media screen and (max-width: 768px) {
+  .hero-area-1 h1 {
+    font-size: 38px;
+    letter-spacing: -0.57px;
+  }
+}
 .hero-area-1 h1 img {
   transform: translateY(6px);
+}
+@media screen and (max-width: 768px) {
+  .hero-area-1 h1 img {
+    height: 32px;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .hero-area-1 h1 img {
     height: 32px;
   }
 }
-.hero-area-1 p {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 160%;
-  color: #666F6A;
-}
 .hero-area-1 .buttons {
   margin-top: 30px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 768px) {
+  .hero-area-1 .buttons {
+    margin-bottom: 15px;
+  }
+}
 .hero-area-1 .buttons .button {
   margin-bottom: 0;
 }
-.hero-area-1 .buttons .button lord-icon {
-  width: 22px;
-  height: 22px;
-  margin-right: 8px;
+@media screen and (max-width: 768px) {
+  .hero-area-1 .buttons .button.ac-button {
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem !important;
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
 }
 .hero-area-1 .buttons .play-buttons a {
   display: flex;
@@ -25128,6 +25160,9 @@ Responsive Classes
   color: var(--ac-primary);
 }
 
+.products-area {
+  position: relative;
+}
 .products-area .single-product {
   display: block;
   background-color: #ffffff;
@@ -25344,6 +25379,10 @@ Responsive Classes
   }
 }
 
+.ui-features-area {
+  position: relative;
+  z-index: 1;
+}
 .ui-features-area:after {
   right: -20px;
   left: auto;
@@ -25441,6 +25480,7 @@ Responsive Classes
   z-index: 1;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .products-features .products-description-wrapper .single-product:after {
   position: absolute;
@@ -25561,9 +25601,10 @@ Responsive Classes
 
 .others-products {
   padding: 60px 0;
+  position: relative;
 }
 .others-products:after {
-  right: -54px;
+  right: 0px;
   left: auto;
   top: auto;
   bottom: 0;
@@ -25850,35 +25891,6 @@ Responsive Classes
 Responsive Classes
 ***********************************************************************************************/
 @media (max-width: 768.98px) {
-  .hero-area-1 {
-    padding: 170px 0 50px;
-  }
-  .hero-area-1 h1 {
-    font-size: 38px;
-    letter-spacing: -0.57px;
-  }
-  .hero-area-1 h1 img {
-    height: 32px;
-  }
-  .hero-area-1 p {
-    text-align: center;
-    font-size: 1rem;
-  }
-  .hero-area-1 .buttons {
-    margin-bottom: 15px;
-  }
-  .hero-area-1 .buttons .button.ac-button {
-    margin-bottom: 0.5rem;
-    margin-right: 0.5rem !important;
-    padding: 0.5rem 1rem;
-    width: 100%;
-  }
-  .hero-area-1 .buttons .play-buttons a span {
-    font-size: 20px;
-    width: 24px;
-    height: 24px;
-    margin-right: 0.3rem;
-  }
   .hero-area-1 .h-right-content {
     margin-right: 0;
   }
@@ -25963,9 +25975,6 @@ Responsive Classes
   }
 }
 @media (min-width: 769px) and (max-width: 1023.98px) {
-  .hero-area-1 {
-    padding: 160px 0 50px;
-  }
   .hero-area-1 h1 {
     font-size: 38px;
     letter-spacing: -0.57px;
@@ -26027,9 +26036,6 @@ Responsive Classes
   }
 }
 @media (min-width: 1024px) and (max-width: 1212px) {
-  .hero-area-1 {
-    padding: 150px 0 50px;
-  }
   .hero-area-1 h1 {
     font-size: 38px;
     letter-spacing: -0.57px;
@@ -26088,9 +26094,6 @@ Responsive Classes
   }
 }
 @media (min-width: 1216px) and (max-width: 1600px) {
-  .hero-area-1 {
-    padding: 150px 0 60px;
-  }
   .hero-area-1 h1 {
     font-size: 58px;
     letter-spacing: -0.57px;
