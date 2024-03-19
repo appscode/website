@@ -149,18 +149,24 @@
 
   .h-right-content {
     margin-right: -84px;
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(0);
-    transition: 0.5s ease-in-out;
-
-    &.is-visible {
-      opacity: 1;
-      visibility: visible;
-      transform: scale(1);
+    position: relative;
+    z-index: 1;
+    @extend .decorative-el;
+    &::after {
+      transform: scale(3) rotate(90deg);
+      left: auto;
+      right: 200px;
+      top: 0;
+      bottom: auto;
+      opacity: 0.5;
+      @include touch {
+        transform: scale(1.5) rotate(90deg);
+        right: 0;
+      }
     }
   }
 }
+
 .news-message {
   display: inline-flex;
   font-family: "Inter";
@@ -265,6 +271,20 @@
     border: 1px solid $ac-white-light;
     padding: 16px;
     border-radius: 4px;
+    background-color: #FBFBFE;
+    &:nth-child(2){
+      background-color: #FEFDFA;
+    }
+    &:nth-child(3){
+      background-color: #FAFEFC;
+    }
+    &:nth-child(4){
+      background-color: #FCFAFF;
+    }
+    .icon{
+      border: 1px solid transparent;
+      background-color: #ffffff;
+    }
     .content {
       width: 100%;
     }
@@ -316,6 +336,7 @@
     }
   }
 }
+
 .single-ui-ss {
   border-radius: 8px;
   overflow: hidden;
@@ -353,6 +374,11 @@
 }
 // ui features end  
 
+.mechanics-area {
+  position: relative;
+  z-index: 1;
+  @extend .decorative-el;
+}
 
 
 // dark background 
@@ -389,7 +415,7 @@
     }
   }
   .footer-top {
-    border-bottom: 1px solid rgba(255,255,255, 0.2);
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
   }
   .footer-inline-link, .subscription-form label, .all-contact-info li a, p.spam-message{
     color: #ADB2B0;
@@ -401,6 +427,11 @@
       }
     }
   }
+}
+.decorative-el-large {
+  background-image: url("../images/shape/decorative-el-large-2.png");
+  background-size: cover;
+  background-position: center;
 }
 
 // intro kubedb ui start
@@ -419,6 +450,7 @@
     width: calc(100% - 60px);
     z-index: -1;
     border-radius: 20px;
+   @extend .decorative-el-large;
 
     @include touch{
       left: 0;
@@ -1456,7 +1488,6 @@ Responsive Classes
   }
 
   .social-connect-area {
-    padding: 50px 0 150px;
 
     h2 {
       font-size: 28px;

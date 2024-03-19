@@ -1,5 +1,7 @@
 .cta-area {
   margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
 
   .cta-area-inner {
     padding: 20px 50px;
@@ -10,11 +12,23 @@
     align-items: center;
     background-color: #F4FBF7;
     border: 1px solid $ac-primary;
+    position: relative;
+    z-index: 1;
+    &:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+      @extend .decorative-el-large;
+    }
     h3 {
       margin-bottom: 1rem;
+      text-wrap: balance;
     }
-
-    p {
+    p{
+      text-wrap: balance;
     }
   }
 }

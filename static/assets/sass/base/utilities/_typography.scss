@@ -31,21 +31,21 @@ h6 {
   font-style: normal;
   font-weight: 500;
   color: $ac-color-heading;
-  &.is-gradient {
-      background: linear-gradient(
-        -45deg,
-        $ac-primary,
-        #940148,
-        #4c346f,
-        #3334f5
-      );
-      background-size: 300% 300%;
-      animation: gradient 5s ease infinite;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
 }
 
+.is-gradient {
+  background: linear-gradient(
+    -45deg,
+    $ac-primary,
+    #940148,
+    #4c346f,
+    $ac-primary
+  );
+  background-size: 300% 300%;
+  animation: gradient 5s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 h1 {
   font-weight: 300;
   font-size: 60px;
