@@ -1,6 +1,28 @@
 /* ======================
   Global CSS start
 ========================*/
+.bg-gradient-1 {
+  position: relative;
+  z-index: 1;
+  background-size: 120% 120%;
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+
+  &:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    z-index: -1;
+    opacity: 0.9;
+    background-size: 50%;
+    overflow: hidden;
+  }
+}
+
 .is-fullwidth {
   width: 100% !important;
 }
