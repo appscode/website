@@ -124,7 +124,7 @@
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-8">
-          <div class="section-title has-text-centered mb-0">
+          <div class="section-title has-text-centered-tablet mb-0">
             <p class="mb-0 has-text-primary is-uppercase">Empowering Your Kubernetes Experience</p>
             <h2 class="mb-0">Explore Our AppsCode Solutions</h2>
           </div>
@@ -159,22 +159,22 @@
   <!--==================== others product area start  ====================-->
   <section class="others-products section-padding">
     <div class="container">
-      <div class="columns">
-        <div class="column is-6" data-aos="fade-up" data-aos-duration="500">
+      <div class="columns is-vcentered is-multiline">
+        <div class="column is-4-desktop is-6-tablet is-full-mobile" data-aos="fade-up" data-aos-duration="500">
           <div class="pr-60">
-            <div class="section-title mb-0">
+            <div class="section-title mb-16">
               <p class="mb-0 has-text-primary is-uppercase">Why AppsCode 🤔</p>
               <h2 data-aos="fade-up" data-aos-duration="600" class="mb-4">{{ $p.homepage.highlight_products.title }}</h2>
+              <p data-aos="fade-up" data-aos-duration="700" class="mb-0">{{ $p.homepage.highlight_products.summary }}</p>
             </div>
-            <p data-aos="fade-up" data-aos-duration="700">{{ $p.homepage.highlight_products.summary }}</p>
             <a href="{{ $p.homepage.highlight_products.url }}" class="button ac-button is-primary ">CONTACT WITH US</a>
           </div>
         </div>
-        <div class="column is-6">
+        <div class="column is-8-desktop is-6-tablet is-full-mobile">
           <div class="products">
-            <div class="columns">
+            <div class="columns is-multiline">
               {{ range $product := $p.homepage.highlight_products.products }}
-              <div class="column is-6" data-aos="fade-up" data-aos-duration="900">
+              <div class="column is-6-desktop is-full-tablet is-full-mobile" data-aos="fade-up" data-aos-duration="900">
 
                 <!-- sigle product start  -->
                 <div class="single-product">
@@ -273,8 +273,8 @@
   <div class="container">
     <!-- section title  -->
     <div class="columns is-centered">
-      <div class="column is-8 is-10-desktop is-8-widescreen">
-        <div class="section-title has-text-centered-desktop">
+      <div class="column is-10-tablet is-8 is-10-desktop is-8-widescreen">
+        <div class="section-title has-text-centered-tablet">
           <h2>Manage your Kubernetes native applications across public or private clouds</h2>
           <p>A single pane of glass for managing your stateful or stateless applications across various private and public clouds. Hide the complexity of Kubernetes behind a simple, elegant UI</p>
         </div>
@@ -284,7 +284,7 @@
     
     <!-- features with screenshot  -->
     <div class="columns">
-      <div class="column is-4">
+      <div class="column is-4-desktop is-5-tablet">
         <div class="is-flex is-flex-direction-column" style="gap: 32px;">
           <!-- single features item start -->
           <div class="single-feature">
@@ -328,7 +328,7 @@
           <!-- single features item end -->
         </div>
       </div>
-      <div class="column is-8">
+      <div class="column is-8-desktop is-7-tablet">
         <div class="ui-dashboard">
           <!-- image come from css  -->
           <!-- <img src="/assets/images/products/appscode/features/ui-features.jpg" alt="features"> -->
@@ -431,7 +431,7 @@
   <div class="container">
    <!-- section title  -->
    <div class="columns is-centered">
-    <div class="column is-8">
+    <div class="column is-10-tablet is-8 is-10-desktop is-8-widescreen">
       <div class="section-title has-text-centered">
         <h2>Explore the Mechanics and Features of Our UI</h2>
         <p>Discover how our UI functions, from its features to its user-friendly design. Learn to navigate seamlessly and make the most of its capabilities for an improved user experience</p>
@@ -676,8 +676,8 @@ function showOnlySelectedDiv(selectedId) {
   <!--==================== social connect area end ====================-->
   <section class="social-connect-area section-padding">
     <div class="container">
-      <div class="columns">
-        <div class="column is-8">
+      <div class="columns is-multiline">
+        <div class="column is-10-tablet is-8 is-10-desktop is-8-widescreen">
           <div class="section-title connect-message">
             <h2 data-aos="fade-up" data-aos-duration="500">{{ $p.homepage.social_connect.title }}</h2>
             <p class="mb-0" data-aos="fade-up" data-aos-duration="600">{{ $p.homepage.social_connect.summary }}</p>
@@ -732,9 +732,9 @@ function showOnlySelectedDiv(selectedId) {
 <section class="press-area section-padding is-hidden">
   <div class="container">
     <div class="columns">
-      <div class="column is-8 is-offset-2 has-text-centered">
+      <div class="column is-10-tablet is-8 is-10-desktop is-8-widescreen">
         <!-- section title start -->
-        <div class="section-title mb-10" data-aos="fade-up">
+        <div class="section-title has-text-centered-tablet mb-10" data-aos="fade-up">
           <h2>WHAT THEY PUBLISHED</h2>
         </div>
         <!-- section title end -->
@@ -824,14 +824,16 @@ function showOnlySelectedDiv(selectedId) {
         <div class="container">
           <div class="columns is-vcentered is-multiline">
             <div class="column is-full-tablet is-8-desktop">
-              <h3 data-aos="fade-up" data-aos-duration="500">Manage your Kubernetes native
-                applications across public or private clouds</h3>
-              <p>KubeDB community edition is FREE to use on any supported Kubernetes engines. There is no up-front investment required, and you need to pay only for the resources you use to your infrastructure provider. We offer a 30 days license FREE of cost to try KubeDB Enterprise edition.
+             <div class="section-title mb-0 has-text-centered has-text-left-tablet">
+              <h2 data-aos="fade-up" data-aos-duration="500">Manage your Kubernetes native
+                applications across public or private clouds</h2>
+              <p class="mb-0">KubeDB community edition is FREE to use on any supported Kubernetes engines. There is no up-front investment required, and you need to pay only for the resources you use to your infrastructure provider. We offer a 30 days license FREE of cost to try KubeDB Enterprise edition.
               </p>
+             </div>
             </div>
             <div
               class="column is-full-tablet is-4-desktop has-text-centered-touch has-text-right-desktop">
-              <div class="buttons is-justify-content-flex-end">
+              <div class="buttons is-justify-content-flex-center-mobile is-justify-content-flex-end">
 
                 <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-primary ">
                     <span class="icon">

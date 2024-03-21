@@ -102,7 +102,6 @@ Responsive Classes
 @include widescreen-only {
   .cta-area {
     .cta-area-inner {
-      height: 200px;
       padding: 30px;
       h3 {
         font-size: 28px;
@@ -114,7 +113,6 @@ Responsive Classes
 @include fullhd {
   .cta-area {
     .cta-area-inner {
-      height: 200px;
       padding: 30px;
       h3 {
         font-size: 28px;

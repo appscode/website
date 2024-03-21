@@ -549,7 +549,7 @@
 
   .list-items {
     h6 {
-      font-weight: 400;
+      font-weight: 500;
       position: relative;
       font-size: 0.875rem;
       z-index: 1;
@@ -1042,12 +1042,6 @@ Responsive Classes
 
   .resources-list {
     grid-template-columns: auto;
-
-    .list-items {
-      h6 {
-        margin-bottom: 0.5rem;
-      }
-    }
   }
 
   .mega-menu-wrapper {
@@ -1056,8 +1050,10 @@ Responsive Classes
     top: 0 !important;
     padding-top: 20px !important;
     background-color: #fafafd;
-    max-height: 90vh;
+    max-height: 75vh;
+    min-height: 70vh;
     overflow-y: auto;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.16);
 
     .mega-menu-inner {
       .product-menu {
@@ -1137,7 +1133,15 @@ Responsive Classes
     }
   }
 }
-
+.embeded-console-button {
+  height: 50px; 
+  margin-bottom: 4px; 
+  width: 185px;  
+  overflow: hidden;
+  @include mobile {
+    width: 100%;
+  }
+}
 @include desktop-only {
   .navbar-burger {
     display: none !important;

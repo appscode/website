@@ -745,7 +745,7 @@
 
 #nav-serialscrolling {
   position: sticky;
-  top: 30%;
+  top: 40%;
 }
 
 // products features area end
@@ -769,17 +769,7 @@
     margin-bottom: 10px;
     color: $ac-primary;
   }
-  h2 {
-    @include mobile {
-      font-size: 22px;
-    }
-  }
-  p {
-    font-size: 16px;
-    line-height: 160%;
-    color: $ac-color-text;
-    margin-bottom: 30px;
-  }
+ 
   .pr-60 {
     padding-right: 0 !important;
   }
