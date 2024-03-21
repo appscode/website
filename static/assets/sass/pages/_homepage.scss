@@ -57,7 +57,7 @@
       letter-spacing: -0.57px;
     }
     img {
-      transform: translateY(6px);
+      transform: translateY(2px);
       @include mobile {
         height: 32px;
       }
@@ -72,7 +72,7 @@
 
   .buttons {
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     @include until-fullhd {
       margin-bottom: 16px;
     }

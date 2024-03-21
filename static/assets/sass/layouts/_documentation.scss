@@ -85,36 +85,6 @@
   .documentation-body {
     padding: 0 60px;
     width: calc(100% - 674px);
-
-    // .highlight {
-    //   .hljs-variable {
-    //     color: #35a651;
-    //   }
-
-    //   .hljs-string {
-    //     color: #f15855;
-    //   }
-
-    //   .hljs-keyword,
-    //   .hljs-literal,
-    //   .nginx .hljs-title {
-    //     color: #ff08d8;
-    //   }
-
-    //   .hljs-class .hljs-title,
-    //   .smalltalk .hljs-class,
-    //   .hljs-type,
-    //   .hljs-typename,
-    //   .hljs-tag .hljs-attribute,
-    //   .hljs-doctype,
-    //   .hljs-class .hljs-id,
-    //   .hljs-built_in,
-    //   .setting,
-    //   .hljs-params,
-    //   .clojure .hljs-attribute {
-    //     color: #ad6ff3;
-    //   }
-    // }
   }
 
   .right-sidebar {
@@ -193,50 +163,6 @@
   h6 {
     font-size: 13px;
   }
-
-  // .highlight {
-  //   pre {
-  //     border: 1px solid $ac-white-light;
-  //     border-radius: 2px;
-
-  //     .hljs {
-  //       background-color: transparent;
-  //       color: #d2d5e1;
-  //     }
-
-  //     // code {
-  //     //   color: $ac-white;
-  //     // }
-  //   }
-
-  //   .hljs-variable {
-  //     color: #35a651;
-  //   }
-
-  //   .hljs-string {
-  //     color: #f15855;
-  //   }
-
-  //   .hljs-keyword,
-  //   .hljs-literal,
-  //   .nginx .hljs-title {
-  //     color: #ff08d8;
-  //   }
-
-  //   .hljs-class .hljs-title,
-  //   .smalltalk .hljs-class,
-  //   .hljs-type,
-  //   .hljs-typename,
-  //   .hljs-tag .hljs-attribute,
-  //   .hljs-doctype,
-  //   .hljs-class .hljs-id,
-  //   .hljs-built_in,
-  //   .setting,
-  //   .hljs-params,
-  //   .clojure .hljs-attribute {
-  //     color: #ad6ff3;
-  //   }
-  // }
 }
 
 .full-info h2 span.share-icon {
@@ -763,7 +689,7 @@ li.nav-item.active a {
 Responsive Classes
 *****************************************/
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 1023.98px) {
+@include touch {
   .documentation-area {
     margin-top: 160px;
     margin-bottom: 15px;
@@ -822,16 +748,7 @@ Responsive Classes
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-// @media (min-width: 576px) and (max-width: 768px) {
-// }
-
-// Medium devices (tablets, 769px and up)
-@media (min-width: 769px) and (max-width: 1023.98px) {
-}
-
-// Large devices (desktops, 1024px and up)
-@media (min-width: 1024px) and (max-width: 1215px) {
+@include desktop-only {
   .documentation-area {
     .left-sidebar-wrapper {
       width: 240px;
@@ -848,7 +765,7 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1216px) and (max-width: 1407px) {
+@include widescreen-only {
   .documentation-area {
     .left-sidebar-wrapper {
       width: 240px;
@@ -865,7 +782,7 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1408px) and (max-width: 1600px) {
+@include fullhd {
   .navbar-appscode.documentation-menu {
     margin-left: 263px;
   }
@@ -883,8 +800,4 @@ Responsive Classes
       width: 260px;
     }
   }
-}
-
-// Extra large devices (large desktops, 1216px and up)
-@media (min-width: 1408px) {
 }

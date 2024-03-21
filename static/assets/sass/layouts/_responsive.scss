@@ -1,57 +1,5 @@
-/* Normal desktop :1216px. */
-@media (min-width: 1216px) and (max-width: 1407px) {
 
-  // pricing page style start
-  .pricing-area-wrapper {
-    overflow-x: scroll;
-    padding-top: 64px;
-  }
-  .payment-method-innner-text.pr-140 {
-    padding-right: 0;
-  }
-  // pricing page style end
-  /* support page pricing table style */
-  .pricing-heading {
-    padding: 20px 15px;
-  }
-  .pricing-body li {
-    font-size: 13px;
-  }
-  // appscode style start
-  .main-menu.is-bg-available .navbar-item,
-  .main-menu.is-bg-available .navbar-link {
-    color: $ac-color-link;
-  }
-  .is-full-height {
-    height: auto;
-  }
-  .hero-area {
-    .hero-shape {
-      background-position-y: top;
-      min-height: 710px;
-    }
-    .hero-area-content {
-      padding-right: 0;
-      .hero-content-inner {
-        h1 {
-          font-size: 34px;
-          line-height: 50px !important;
-        }
-      }
-    }
-
-    .hero-right-content-wrapper {
-      .right-side-content-inner {
-        right: -90px;
-      }
-    }
-  }
-
-  // appscode style end
-}
-
-/*  desktop :1024px. */
-@media (min-width: 1024px) and (max-width: 1215px) {
+@include desktop-only {
   p {
     font-size: 15px;
   }
@@ -458,8 +406,7 @@
   // docs page style end
 }
 
-/*  tablet :769px. */
-@media (min-width: 769px) and (max-width: 1023px) {
+@include tablet-only {
   .navbar-burger {
     color: #333;
   }
@@ -602,8 +549,7 @@
   }
 }
 
-/* small Mobile :768px. */
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@include mobile {
   .main-menu-button img {
     margin-bottom: 10px;
   }

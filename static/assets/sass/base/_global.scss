@@ -586,9 +586,6 @@ Responsive Classes
 
 // Large devices (desktops, 1024px and up)
 @include desktop-only {
-  .container {
-    padding: 0 30px;
-  }
 
   .section-title {
     h1 {

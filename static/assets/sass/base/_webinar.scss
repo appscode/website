@@ -715,14 +715,14 @@ $poppins: "Poppins", sans-serif;
 }
 .is-sticky.webinar-search {
   position: sticky;
-  top: 61px;
+  top: 99px;
   background-color: #fff;
   z-index: 9;
 }
 /****************************************
 Responsive Classes
 *****************************************/
-@media (max-width: 1023.98px) {
+@include touch {
   .webinar-header {
     .upcoming-message {
       h1 {
@@ -777,7 +777,7 @@ Responsive Classes
 }
 
 // // Small devices (landscape phones, 576px and up)
-@media (max-width: 500px) {
+@include mobile {
   .webinar-hero-area.mt-80.mr-100 {
     margin-right: 0 !important;
     margin-top: 80px !important;
@@ -887,8 +887,7 @@ Responsive Classes
   }
 }
 
-// Medium devices (tablets, 769px and up)
-@media (min-width: 769px) and (max-width: 1023.98px) {
+@include desktop-only {
   .webinar-hero-area.mt-80.mr-100 {
     margin-right: 0 !important;
     margin-top: 80px !important;
@@ -945,8 +944,7 @@ Responsive Classes
   }
 }
 
-// Large devices (desktops, 1024px and up)
-@media (min-width: 1024px) and (max-width: 1215px) {
+@include widescreen-only {
   .webinar-hero-area.mt-80.mr-100 {
     margin-right: 0 !important;
     margin-top: 80px !important;
@@ -1009,7 +1007,7 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1216px) and (max-width: 1600px) {
+@include fullhd {
   .webinar-hero-area.mt-80.mr-100 {
     margin-right: 0 !important;
     margin-top: 80px !important;
@@ -1062,7 +1060,4 @@ Responsive Classes
       }
     }
   }
-}
-
-@media (min-width: 1408px) {
 }

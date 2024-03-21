@@ -190,8 +190,7 @@ p.spam-message {
 /****************************************
 Responsive Classes
 *****************************************/
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 768px) {
+@include mobile {
   .footer-area {
     .footer-top {
       // padding-top: 0;
@@ -244,22 +243,4 @@ Responsive Classes
   .footer-bottom {
     padding: 20px 0;
   }
-}
-
-// Small devices (landscape phones, 576px and up)
-// @media (min-width: 576px) and (max-width: 768px) {
-  
-// }
-
-// Medium devices (tablets, 769px and up)
-@media (min-width: 769px) and (max-width: 1023.98px) {
-  
-}
-
-// Large devices (desktops, 1024px and up)
-@media (min-width: 1024px) and (max-width: 1215px) {
-}
-
-// Extra large devices (large desktops, 1216px and up)
-@media (min-width: 1216px) {
 }

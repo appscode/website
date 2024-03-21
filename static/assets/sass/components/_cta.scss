@@ -37,7 +37,7 @@
 Responsive Classes
 *****************************************/
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 768px) {
+@include mobile {
   .cta-area {
     .cta-area-inner {
       height: auto !important;
@@ -64,12 +64,7 @@ Responsive Classes
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 768px) {
-}
-
-// Medium devices (tablets, 769px and up)
-@media (min-width: 769px) and (max-width: 1023px) {
+@include tablet-only {
   .cta-area {
     .cta-area-inner {
       padding: 20px;
@@ -93,8 +88,7 @@ Responsive Classes
   // }
 }
 
-// Large devices (desktops, 1024px and up)
-@media (min-width: 1024px) and (max-width: 1215px) {
+@include desktop-only {
   .cta-area {
     .cta-area-inner {
       padding: 20px;
@@ -105,7 +99,7 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1216px) and (max-width: 1407px) {
+@include widescreen-only {
   .cta-area {
     .cta-area-inner {
       height: 200px;
@@ -117,7 +111,7 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1408px) and (max-width: 1600px) {
+@include fullhd {
   .cta-area {
     .cta-area-inner {
       height: 200px;
@@ -127,7 +121,4 @@ Responsive Classes
       }
     }
   }
-}
-
-@media (min-width: 1408px) {
 }
