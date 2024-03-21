@@ -381,48 +381,7 @@
   }
 }
 
-.social-prove-brand-area {
-  .brand-image-wrapper {
-    padding: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
 
-    .single-brand {
-      border: 1px solid $ac-white-light;
-      background-color: $ac-white;
-      padding: 12px 24px;
-      border-radius: 4px;
-      img {
-        max-height: 2rem;
-        filter: grayscale(1);
-        transition: 0.3s ease-in-out;
-      }
-
-      &:hover {
-        img {
-          filter: grayscale(0);
-        }
-      }
-    }
-  }
-  .owl-carousel {
-    .owl-stage {
-      transition-timing-function: linear !important;
-    }
-    .owl-item {
-      img {
-        width: auto !important;
-        height: 32px;
-        // mix-blend-mode: multiply;
-        // filter: contrast(1);
-        // margin: 0 auto;
-      }
-    }
-  }
-}
 
 /****************************************
 Responsive Classes
