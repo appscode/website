@@ -20,7 +20,7 @@
 <!-- about hero area end -->
 
 <!-- about start -->
-<section class="about-text-area sp-y-80">
+<section class="about-text-area section-padding">
   <div class="container">
     <div class="columns">
       <div class="column is-8 is-offset-2">
@@ -39,7 +39,7 @@
 <!-- about end -->
 
 <!-- message start -->
-<section class="ceo-message sp-y-80 pt-0">
+<section class="ceo-message section-padding pt-0">
   <div class="container">
     <div class="columns">
       <div class="column is-5 is-offset-1-desktop">
@@ -66,7 +66,7 @@
 <!-- message end -->
 
 <!-- happy-customer start -->
-<section class="our-customer-area sp-y-80">
+<section class="our-customer-area section-padding">
   <div class="container">
     <div class="columns">
       <div class="column is-6 is-offset-3">
@@ -77,17 +77,15 @@
     </div>
     <div class="columns">
       <div class="column is-10 is-offset-1 has-text-centered">
-        {{ range $customer := $.Site.Data.customers }}
-          {{ if $customer.show }}
-            <a class="single-brand-logo">
-              <img
-                src="{{ $customer.logo }}"
-                alt="{{ $customer.name }}"
-                class="img"
-              />
-            </a>
-          {{ end }}
-        {{ end }}
+        <div class="social-prove-brand-area">
+          <div class="brand-image-wrapper owl-carousel">
+            {{ range $customer := $.Site.Data.customers }}
+            {{ if $customer.show }}
+            <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"></div>
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
       </div>
     </div>
   </div>

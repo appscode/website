@@ -553,19 +553,8 @@
       position: relative;
       font-size: 0.875rem;
       z-index: 1;
-      margin-bottom: 1.5rem;
       display: inline-block;
       letter-spacing: 1.2px;
-
-      // &:after {
-      //   position: absolute;
-      //   content: "";
-      //   left: 0;
-      //   bottom: 0;
-      //   width: 50%;
-      //   height: 2px;
-      //   background-color: $ac-primary;
-      // }
     }
 
     ul {
@@ -582,6 +571,9 @@
           line-height: 1;
           transition: 0.3s ease-in-out;
           font-weight: 500;
+          span {
+            font-size: 14px;
+          }
 
           &:hover {
             color: $ac-primary;
