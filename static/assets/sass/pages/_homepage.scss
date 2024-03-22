@@ -27,6 +27,7 @@
 
 .hero-area-1 {
   padding: 150px 0 60px 0px;
+  overflow: hidden;
   @include mobile {
     padding: 170px 0 30px;
   }
@@ -48,8 +49,18 @@
       font-size: 38px;
       letter-spacing: -0.57px;
     }
-    @include until-widescreen {
+    @media (min-width: 400px) and (max-width: 768px) {
+      font-size: 45px;
+      img {
+        height: 40px !important;
+      }
+    }
+    @include tablet-only {
       font-size: 38px;
+      letter-spacing: -0.57px;
+    }
+    @include desktop-only {
+      font-size: 56px;
       letter-spacing: -0.57px;
     }
     @include widescreen-only {
@@ -65,7 +76,7 @@
         height: 32px;
       }
       @include desktop-only {
-        height: 32px;
+        height: 40px;
       }
     }
   }
@@ -97,10 +108,20 @@
     position: relative;
     z-index: 1;
     @extend .decorative-el;
-    @include until-widescreen {
+    
+    @include mobile {
       margin-right: 0;
     }
+    @include tablet-only {
+      margin-right: -30px;
+    }
+    @include desktop-only {
+      margin-right: -42px;
+    }
     @include widescreen-only {
+      margin-right: -74px;
+    }
+    @media (min-width: 1216px) and (max-width: 1440px){
       margin-right: -74px;
     }
     &::after {
@@ -111,8 +132,12 @@
       bottom: auto;
       opacity: 0.5;
       @include touch {
-        transform: scale(1.5) rotate(90deg);
-        left: 0;
+        transform: scale(2.5) rotate(90deg);
+        right: 0;
+      }
+      @include desktop-only {
+        transform: scale(2.5) rotate(90deg);
+        right: 0;
       }
     }
   }
@@ -172,6 +197,9 @@
     }
     @include mobile {
       padding: 32px 16px;
+    }
+    @include tablet-only {
+      min-height: 278px;
     }
     @include desktop-only {
       &:after {

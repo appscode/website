@@ -18857,6 +18857,8 @@ Responsive Classes
   .section-title h1.is-outlined-text {
     font-size: 80px;
   }
+}
+@media (min-width: 1216px) and (max-width: 1440px) {
   .container {
     max-width: 1200px !important;
   }
@@ -22399,9 +22401,6 @@ Responsive Classes
     padding: 30px;
     min-height: auto;
   }
-  .testimonial-area .single-testimonial-item .user-info-wrapper {
-    justify-content: center;
-  }
   .testimonial-area .single-testimonial-item .user-info-wrapper .user-info {
     text-align: left;
   }
@@ -24661,6 +24660,7 @@ Responsive Classes
 
 .hero-area-1 {
   padding: 150px 0 60px 0px;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .hero-area-1 {
@@ -24689,9 +24689,23 @@ Responsive Classes
     letter-spacing: -0.57px;
   }
 }
-@media screen and (max-width: 1215px) {
+@media (min-width: 400px) and (max-width: 768px) {
+  .hero-area-1 h1 {
+    font-size: 45px;
+  }
+  .hero-area-1 h1 img {
+    height: 40px !important;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
   .hero-area-1 h1 {
     font-size: 38px;
+    letter-spacing: -0.57px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+  .hero-area-1 h1 {
+    font-size: 56px;
     letter-spacing: -0.57px;
   }
 }
@@ -24716,7 +24730,7 @@ Responsive Classes
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
   .hero-area-1 h1 img {
-    height: 32px;
+    height: 40px;
   }
 }
 .hero-area-1 .buttons {
@@ -24748,12 +24762,27 @@ Responsive Classes
   position: relative;
   z-index: 1;
 }
-@media screen and (max-width: 1215px) {
+@media screen and (max-width: 768px) {
   .hero-area-1 .h-right-content {
     margin-right: 0;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .hero-area-1 .h-right-content {
+    margin-right: -30px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+  .hero-area-1 .h-right-content {
+    margin-right: -42px;
+  }
+}
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
+  .hero-area-1 .h-right-content {
+    margin-right: -74px;
+  }
+}
+@media (min-width: 1216px) and (max-width: 1440px) {
   .hero-area-1 .h-right-content {
     margin-right: -74px;
   }
@@ -24768,8 +24797,14 @@ Responsive Classes
 }
 @media screen and (max-width: 1023px) {
   .hero-area-1 .h-right-content::after {
-    transform: scale(1.5) rotate(90deg);
-    left: 0;
+    transform: scale(2.5) rotate(90deg);
+    right: 0;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+  .hero-area-1 .h-right-content::after {
+    transform: scale(2.5) rotate(90deg);
+    right: 0;
   }
 }
 
@@ -24825,6 +24860,11 @@ Responsive Classes
 @media screen and (max-width: 768px) {
   .products-area .single-product {
     padding: 32px 16px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .products-area .single-product {
+    min-height: 278px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
