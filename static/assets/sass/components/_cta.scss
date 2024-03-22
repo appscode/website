@@ -41,22 +41,14 @@ Responsive Classes
   .cta-area {
     .cta-area-inner {
       height: auto !important;
-      padding: 30px 15px;
+      padding: 32px 16px;
 
-      h3 {
-        font-size: 22px;
-        text-align: center;
-      }
-
-      p {
-        text-align: center;
-      }
       .buttons {
-        justify-content: center !important;
         .button {
           &.ac-button {
             letter-spacing: 0;
             padding: 0.5rem 1rem;
+            width: 100%;
           }
         }
       }
@@ -73,19 +65,6 @@ Responsive Classes
       }
     }
   }
-  // .cta-area {
-  //   .cta-area-inner {
-  //     height: auto !important;
-  //     padding: 30px 15px;
-  //     h3 {
-  //       font-size: 22px;
-  //       text-align: center;
-  //     }
-  //     p {
-  //       text-align: center;
-  //     }
-  //   }
-  // }
 }
 
 @include desktop-only {

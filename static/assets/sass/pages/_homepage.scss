@@ -28,7 +28,7 @@
 .hero-area-1 {
   padding: 150px 0 60px 0px;
   @include mobile {
-    padding: 170px 0 50px;
+    padding: 170px 0 30px;
   }
 
   @include tablet-only {
@@ -165,13 +165,13 @@
     background-color: $ac-white;
     border: 1px solid $ac-white-light;
     transition: 0.3s ease-in-out;
-    padding: 45px 25px;
+    padding: 32px 24px;
     border-radius: 4px;
     &:hover {
       box-shadow: 1px 11px 114px rgba(0, 0, 0, 0.15);
     }
     @include mobile {
-      padding: 30px 20px;
+      padding: 32px 16px;
     }
     @include desktop-only {
       &:after {
@@ -231,6 +231,13 @@
     flex-basis: calc(50% - 6px);
     @include touch {
       flex-basis: 100%;
+    }
+  }
+  @include mobile {
+    .button{
+      &.ac-button {
+        width: 100%;
+      }
     }
   }
 }
@@ -298,7 +305,7 @@
   .content {
     width: calc(100% - 76px);
     h4 {
-      font-size: 22px;
+      font-size: 20px;
       margin-bottom: 4px;
       line-height: 130%;
     }
@@ -325,6 +332,17 @@
     object-fit: cover;
     left: 0;
     object-position: left;
+  }
+}
+.more-features {
+  margin-top: 32px;
+  @include mobile {
+    margin-top: 0;
+    .button{
+      &.ac-button {
+        width: 100%;
+      }
+    }
   }
 }
 .ui-dashboard {
@@ -776,7 +794,6 @@
   .products {
     .single-product {
       @include mobile {
-        margin-top: 1rem;
         border: 1px solid $ac-white-light;
         padding: 20px 15px;
         border-radius: 4px;

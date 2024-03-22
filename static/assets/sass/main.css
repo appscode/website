@@ -18295,7 +18295,7 @@ strong {
 }
 
 .social-prove-brand-area .brand-image-wrapper {
-  padding: 20px 0;
+  padding-top: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -18333,7 +18333,7 @@ strong {
 }
 @media screen and (max-width: 1023px) {
   .section-padding {
-    padding: 48px 0;
+    padding: 32px 0;
   }
 }
 
@@ -22276,6 +22276,10 @@ a.nav-link.active:after {
   background-color: #158748;
   color: #ffffff;
 }
+.button .icon {
+  width: 1.2em;
+  height: 1.2em;
+}
 
 .readmore-button {
   margin: 0;
@@ -22403,9 +22407,6 @@ Responsive Classes
   }
   .testimonial-area .single-testimonial-item .user-info-wrapper .user-info h5 {
     font-size: 20px;
-  }
-  .testimonial-area .single-testimonial-item p {
-    text-align: center;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -22795,21 +22796,12 @@ Responsive Classes
 @media screen and (max-width: 768px) {
   .cta-area .cta-area-inner {
     height: auto !important;
-    padding: 30px 15px;
-  }
-  .cta-area .cta-area-inner h3 {
-    font-size: 22px;
-    text-align: center;
-  }
-  .cta-area .cta-area-inner p {
-    text-align: center;
-  }
-  .cta-area .cta-area-inner .buttons {
-    justify-content: center !important;
+    padding: 32px 16px;
   }
   .cta-area .cta-area-inner .buttons .button.ac-button {
     letter-spacing: 0;
     padding: 0.5rem 1rem;
+    width: 100%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -24672,7 +24664,7 @@ Responsive Classes
 }
 @media screen and (max-width: 768px) {
   .hero-area-1 {
-    padding: 170px 0 50px;
+    padding: 170px 0 30px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -24824,7 +24816,7 @@ Responsive Classes
   background-color: #ffffff;
   border: 1px solid #e7e7e7;
   transition: 0.3s ease-in-out;
-  padding: 45px 25px;
+  padding: 32px 24px;
   border-radius: 4px;
 }
 .products-area .single-product:hover {
@@ -24832,7 +24824,7 @@ Responsive Classes
 }
 @media screen and (max-width: 768px) {
   .products-area .single-product {
-    padding: 30px 20px;
+    padding: 32px 16px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
@@ -24890,6 +24882,12 @@ Responsive Classes
   .more-products .single-feature,
   .intro-kubedb-ui .single-feature {
     flex-basis: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .more-products .button.ac-button,
+  .intro-kubedb-ui .button.ac-button {
+    width: 100%;
   }
 }
 
@@ -24955,7 +24953,7 @@ Responsive Classes
   width: calc(100% - 76px);
 }
 .single-feature .content h4 {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 4px;
   line-height: 130%;
 }
@@ -24983,6 +24981,18 @@ Responsive Classes
   left: 0;
   -o-object-position: left;
      object-position: left;
+}
+
+.more-features {
+  margin-top: 32px;
+}
+@media screen and (max-width: 768px) {
+  .more-features {
+    margin-top: 0;
+  }
+  .more-features .button.ac-button {
+    width: 100%;
+  }
 }
 
 .ui-dashboard {
@@ -25374,7 +25384,6 @@ Responsive Classes
 }
 @media screen and (max-width: 768px) {
   .others-products .products .single-product {
-    margin-top: 1rem;
     border: 1px solid #e7e7e7;
     padding: 20px 15px;
     border-radius: 4px;
