@@ -138,21 +138,21 @@
           var iframe = document.getElementById("notification");
           iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
         }
-        // window.addEventListener("message", receiveMessageFromIframe, false);
+        window.addEventListener("message", receiveMessageFromIframe, false);
 
-        // function receiveMessageFromIframe(event) {
-        //     // Check the origin of the message for security purposes
-        //     let baseURL = "{{$.Site.BaseURL}}"
+        function receiveMessageFromIframe(event) {
+            // Check the origin of the message for security purposes
+            let baseURL = "{{$.Site.BaseURL}}"
 
-        //     if (baseURL.endsWith("/")) {
-        //       baseURL = baseURL.slice(0, -1);
-        //     }
-        //      if (event.origin !== baseURL) {
-        //         return;
-        //     }
-        //     const notification = document.querySelector("#notification");
-        //     notification.style.height = `${event.data}px`
-        // }
+            if (baseURL.endsWith("/")) {
+              baseURL = baseURL.slice(0, -1);
+            }
+             if (event.origin !== baseURL) {
+                return;
+            }
+            const notification = document.querySelector("#notification");
+            notification.style.height = `${event.data}px`
+        }
       </script>
       <!-- iframe for top notification  -->
       <div class="navbar-area navbar-fixed">
