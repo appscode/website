@@ -1,23 +1,34 @@
 .cta-area {
-  margin-top: -125px;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
 
   .cta-area-inner {
     padding: 20px 50px;
-    background-image: url(/assets/images/bg-image/cta-area-bg.png);
     background-size: cover;
     background-position: center;
     border-radius: 8px;
-    height: 150px;
     display: flex;
     align-items: center;
-
-    h3 {
-      color: $ac-white;
-      margin-bottom: 1rem;
+    background-color: #F4FBF7;
+    border: 1px solid $ac-primary;
+    position: relative;
+    z-index: 1;
+    &:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+      @extend .decorative-el-large;
     }
-
-    p {
-      color: $ac-white;
+    h3 {
+      margin-bottom: 1rem;
+      text-wrap: balance;
+    }
+    p{
+      text-wrap: balance;
     }
   }
 }
@@ -26,26 +37,18 @@
 Responsive Classes
 *****************************************/
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 768px) {
+@include mobile {
   .cta-area {
     .cta-area-inner {
       height: auto !important;
-      padding: 30px 15px;
+      padding: 32px 16px;
 
-      h3 {
-        font-size: 22px;
-        text-align: center;
-      }
-
-      p {
-        text-align: center;
-      }
       .buttons {
-        justify-content: center !important;
         .button {
           &.ac-button {
             letter-spacing: 0;
             padding: 0.5rem 1rem;
+            width: 100%;
           }
         }
       }
@@ -53,37 +56,7 @@ Responsive Classes
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 768px) {
-}
-
-// Medium devices (tablets, 769px and up)
-@media (min-width: 769px) and (max-width: 1023px) {
-  .cta-area {
-    .cta-area-inner {
-      padding: 20px;
-      h3 {
-        font-size: 28px;
-      }
-    }
-  }
-  // .cta-area {
-  //   .cta-area-inner {
-  //     height: auto !important;
-  //     padding: 30px 15px;
-  //     h3 {
-  //       font-size: 22px;
-  //       text-align: center;
-  //     }
-  //     p {
-  //       text-align: center;
-  //     }
-  //   }
-  // }
-}
-
-// Large devices (desktops, 1024px and up)
-@media (min-width: 1024px) and (max-width: 1215px) {
+@include tablet-only {
   .cta-area {
     .cta-area-inner {
       padding: 20px;
@@ -94,10 +67,20 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1216px) and (max-width: 1407px) {
+@include desktop-only {
   .cta-area {
     .cta-area-inner {
-      height: 200px;
+      padding: 20px;
+      h3 {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@include widescreen-only {
+  .cta-area {
+    .cta-area-inner {
       padding: 30px;
       h3 {
         font-size: 28px;
@@ -106,17 +89,13 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1408px) and (max-width: 1600px) {
+@include fullhd {
   .cta-area {
     .cta-area-inner {
-      height: 200px;
       padding: 30px;
       h3 {
         font-size: 28px;
       }
     }
   }
-}
-
-@media (min-width: 1408px) {
 }

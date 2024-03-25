@@ -1,3 +1,6 @@
+.gallery-area {
+  padding: 120px 0 60px;
+}
 .gallery-wrapper {
   display: flex;
 
@@ -571,7 +574,7 @@
 /****************************************
 Responsive Classes
 *****************************************/
-@media (max-width: 767.98px) {
+@include mobile {
   .gallery-wrapper {
     .left-sidebar {
       width: calc(100vw - 40px);
@@ -646,16 +649,7 @@ Responsive Classes
   }
 }
 
-// (min-width: 568px) and (max-width: 1023.98px)
-@media (min-width: 568px) and (max-width: 1023.98px) {
-}
-
-// Medium devices (tablets, 769px and up)
-@media (min-width: 769px) and (max-width: 1023.98px) {
-}
-
-// Large devices (desktops, 1024px and up)
-@media (min-width: 1024px) and (max-width: 1215px) {
+@include desktop-only {
   .gallery-card {
     min-height: 280px;
 
@@ -699,7 +693,7 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1216px) and (max-width: 1407px) {
+@include widescreen-only {
   .gallery-card {
     min-height: 290px;
 
@@ -725,7 +719,7 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1408px) and (max-width: 1600px) {
+@include fullhd {
   .gallery-card {
     min-height: 290px;
 
@@ -751,5 +745,3 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1408px) {
-}

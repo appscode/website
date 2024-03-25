@@ -55,7 +55,7 @@
 Responsive Classes
 *****************************************/
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 768px) {
+@include mobile {
   .cookie-wrapper {
     .cookie-content {
       justify-content: center;
@@ -68,25 +68,4 @@ Responsive Classes
       }
     }
   }
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 768px) {
-}
-
-// Medium devices (tablets, 769px and up)
-@media (min-width: 769px) and (max-width: 1023px) {
-}
-
-// Large devices (desktops, 1024px and up)
-@media (min-width: 1024px) and (max-width: 1215px) {
-}
-
-@media (min-width: 1216px) and (max-width: 1407px) {
-}
-
-@media (min-width: 1408px) and (max-width: 1600px) {
-}
-
-@media (min-width: 1408px) {
 }

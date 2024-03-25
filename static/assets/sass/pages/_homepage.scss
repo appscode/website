@@ -1,107 +1,5 @@
-// ============================home-page CSS start 2022============================//
-.bg-gradient-1 {
-  position: relative;
-  z-index: 1;
-  background-size: 120% 120%;
-  -webkit-animation: gradient 15s ease infinite;
-  animation: gradient 15s ease infinite;
-
-  &:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 1);
-    z-index: -1;
-    opacity: 0.9;
-    background-size: 50%;
-    overflow: hidden;
-  }
-}
-
-// hero area start
-.hero-area-1 {
-  padding: 150px 0 70px 0px;
-
-  h1 {
-    font-weight: 600;
-    font-size: 68px;
-    line-height: 130%;
-    /* or 88px */
-    letter-spacing: -2.57px;
-  }
-
-  p {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 160%;
-    color: #404040;
-  }
-
-  .buttons {
-    margin-top: 30px;
-    margin-bottom: 50px;
-
-    .button {
-      margin-right: 25px !important;
-      margin-bottom: 0;
-
-      lord-icon {
-        width: 22px;
-        height: 22px;
-        margin-right: 8px;
-      }
-    }
-
-    .play-buttons {
-      a {
-        display: flex;
-        align-items: center;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 1.25px;
-        color: #000000;
-        transition: 0.3s ease-in-out;
-
-        &:hover {
-          color: $ac-primary;
-        }
-
-        span {
-          font-size: 24px;
-          width: 40px;
-          height: 40px;
-          border: 2px solid $ac-primary;
-          color: $ac-primary;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 50%;
-          margin-right: 1rem;
-        }
-      }
-    }
-  }
-
-  .h-right-content {
-    margin-right: -70px;
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(0);
-    transition: 0.5s ease-in-out;
-
-    &.is-visible {
-      opacity: 1;
-      visibility: visible;
-      transform: scale(1);
-    }
-  }
-}
+// ============================ hero area start ============================ //
+// message 
 .news-message {
   display: inline-flex;
   font-family: "Inter";
@@ -109,7 +7,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.6;
-  color: #3e393e;
+  color: $ac-color-text;
   background: $ac-white;
   margin-bottom: 8px;
   border: 1px solid $ac-white-light;
@@ -126,19 +24,191 @@
     color: $ac-primary;
   }
 }
-// hero area end
+
+.hero-area-1 {
+  padding: 150px 0 60px 0px;
+  overflow: hidden;
+  @include mobile {
+    padding: 170px 0 30px;
+  }
+
+  @include tablet-only {
+    padding: 160px 0 50px;
+  }
+
+  @include desktop-only {
+    padding: 150px 0 60px;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 68px;
+    line-height: 120%;
+    letter-spacing: -2.5px;
+    @include mobile {
+      font-size: 38px;
+      letter-spacing: -0.57px;
+    }
+    @media (min-width: 400px) and (max-width: 768px) {
+      font-size: 45px;
+      img {
+        height: 40px !important;
+      }
+    }
+    @include tablet-only {
+      font-size: 38px;
+      letter-spacing: -0.57px;
+    }
+    @include desktop-only {
+      font-size: 56px;
+      letter-spacing: -0.57px;
+    }
+    @include widescreen-only {
+      font-size: 58px;
+      letter-spacing: -0.57px;
+    }
+    img {
+      transform: translateY(2px);
+      @include mobile {
+        height: 32px;
+      }
+      @include tablet-only {
+        height: 32px;
+      }
+      @include desktop-only {
+        height: 40px;
+      }
+    }
+  }
+
+  .buttons {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @include until-fullhd {
+      margin-bottom: 16px;
+    }
+
+    .button {
+      margin-bottom: 0;
+      &.ac-button {
+        @include mobile {
+          width: 100%;
+        }
+        @include until-widescreen {
+          margin-bottom: 0.5rem;
+          margin-right: 0.5rem !important;
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+  }
+
+  .h-right-content {
+    margin-right: -84px;
+    position: relative;
+    z-index: 1;
+    @extend .decorative-el;
+    
+    @include mobile {
+      margin-right: 0;
+    }
+    @include tablet-only {
+      margin-right: -30px;
+    }
+    @include desktop-only {
+      margin-right: -42px;
+    }
+    @include widescreen-only {
+      margin-right: -74px;
+    }
+    @media (min-width: 1216px) and (max-width: 1440px){
+      margin-right: -74px;
+    }
+    &::after {
+      transform: scale(3) rotate(90deg);
+      left: auto;
+      right: 200px;
+      top: 0;
+      bottom: auto;
+      opacity: 0.5;
+      @include touch {
+        transform: scale(2.5) rotate(90deg);
+        right: 0;
+      }
+      @include desktop-only {
+        transform: scale(2.5) rotate(90deg);
+        right: 0;
+      }
+    }
+  }
+}
+
+.intro-view-button {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff;
+  box-shadow: 0px 2px 30px rgba(44, 60, 74, 0.16);
+  padding: 16px;
+  border-radius: 16px;
+  width: 330px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0px 2px 30px rgba(44, 60, 74, 0.25);
+    .content {
+      span {
+        color: $ac-color-heading;
+      }
+    }
+  }
+  .video-icon {
+    width: 48px;
+    height: 48px;
+    box-shadow: 0px 2px 30px rgba(44, 60, 74, 0.16);
+    border-radius: 50%;
+  }
+  .content {
+    width: calc(100% - 64px);
+    p {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+  }
+}
+// ============================ hero area end ============================ //
 
 // products area start
 .products-area {
+  position: relative;
+  @extend .decorative-el;
   .single-product {
     display: block;
     background-color: $ac-white;
-    border: 1px solid #f1f1f1;
+    border: 1px solid $ac-white-light;
     transition: 0.3s ease-in-out;
-    padding: 45px 25px;
-
+    padding: 32px 24px;
+    border-radius: 4px;
     &:hover {
       box-shadow: 1px 11px 114px rgba(0, 0, 0, 0.15);
+    }
+    @include mobile {
+      padding: 32px 16px;
+    }
+    @include tablet-only {
+      min-height: 278px;
+    }
+    @include desktop-only {
+      &:after {
+        right: 0;
+        width: 100%;
+      }
+    }
+    @include widescreen-only {
+      padding: 35px 20px;
     }
 
     .product-logo {
@@ -154,7 +224,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 160%;
-      color: #3e393e;
+      color: $ac-color-text;
       margin-bottom: 20px;
 
       strong {
@@ -170,7 +240,7 @@
       font-size: 14px;
       line-height: 160%;
       letter-spacing: 1.25px;
-      color: #1c1c1c;
+      color: $ac-color-heading;
 
       .material-icons-outlined {
         font-size: 18px;
@@ -179,35 +249,270 @@
     }
   }
 }
-
 // products area end
 
+// ui features area start
+.more-products,
+.intro-kubedb-ui {
+  gap: 12px;
+  .single-feature {
+    flex-basis: calc(50% - 6px);
+    @include touch {
+      flex-basis: 100%;
+    }
+  }
+  @include mobile {
+    .button{
+      &.ac-button {
+        width: 100%;
+      }
+    }
+  }
+}
+.single-feature {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  &.card-view {
+    flex-direction: column;
+    border: 1px solid $ac-white-light;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: #fbfbfe;
+    &:nth-child(2) {
+      background-color: #fefdfa;
+    }
+    &:nth-child(3) {
+      background-color: #fafefc;
+    }
+    &:nth-child(4) {
+      background-color: #fcfaff;
+    }
+    .icon {
+      border: 1px solid transparent;
+      background-color: #ffffff;
+    }
+    .content {
+      width: 100%;
+    }
+  }
+  &.mechanism {
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    .content {
+      h5 {
+        margin-bottom: 4px;
+      }
+    }
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    &.is-active {
+      background-color: $ac-primary;
+    }
+  }
+  .icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #f0fff7;
+    border: 1px solid $ac-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 32px;
+      width: auto;
+    }
+  }
+  .content {
+    width: calc(100% - 76px);
+    h4 {
+      font-size: 20px;
+      margin-bottom: 4px;
+      line-height: 130%;
+    }
+    p {
+      font-size: 16px;
+      color: $ac-color-text;
+    }
+  }
+}
+
+.single-ui-ss {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-left: 0px;
+  position: relative;
+  width: 100%;
+  height: 0px;
+  padding-top: calc(100% * (100 / 143));
+  img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    object-position: left;
+  }
+}
+.more-features {
+  margin-top: 32px;
+  @include mobile {
+    margin-top: 0;
+    .button{
+      &.ac-button {
+        width: 100%;
+      }
+    }
+  }
+}
+.ui-dashboard {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../assets/images/products/appscode/features/ui-features.png");
+    background-repeat: no-repeat;
+  }
+}
+// ui features end
+
+.mechanics-area {
+  position: relative;
+  z-index: 1;
+  @extend .decorative-el;
+}
+
+// dark background
+.dark-bg {
+  background-color: #000a05;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #e6e7e6;
+  }
+  p {
+    color: #d4d6d5;
+  }
+  .single-feature {
+    &.card-view {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background-color: #000a05;
+    }
+    .icon {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
+    }
+    .content {
+      p {
+        color: #d4d6d5;
+      }
+      a {
+        transition: 0.3s ease-in-out;
+        font-weight: 500;
+        &:hover {
+          color: $ac-primary;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+  .footer-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .footer-inline-link,
+  .subscription-form label,
+  .all-contact-info li a,
+  p.spam-message {
+    color: #adb2b0;
+    a {
+      color: #adb2b0;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        color: $ac-primary;
+      }
+    }
+  }
+}
+.decorative-el-large {
+  background-image: url("../images/shape/decorative-el-large-2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+// intro kubedb ui start
+.intro-kubedb-ui {
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    background-color: rgba(253, 253, 253, 0.1);
+    position: absolute;
+    content: "";
+    left: 30px;
+    top: 0;
+    height: 100%;
+    width: calc(100% - 60px);
+    z-index: -1;
+    border-radius: 20px;
+    @extend .decorative-el-large;
+
+    @include touch {
+      left: 0;
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+}
+// intro kubedb ui end
+
+.ui-features-area {
+  position: relative;
+  z-index: 1;
+  @extend .decorative-el;
+  &:after {
+    right: 0px;
+    left: auto;
+    top: 60px;
+  }
+}
 // subscription-area start
 .subscription-area {
-  padding: 100px 0;
-
   .subscription-message {
     padding-right: 150px;
-  }
-
-  h2 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 38px;
-    line-height: 130%;
-    margin-bottom: 20px;
+    @include touch {
+      padding: 0;
+    }
   }
 
   p {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 160%;
-    color: #444444;
+    color: $ac-color-text;
     margin-bottom: 30px;
 
     strong {
       font-weight: 400;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 160%;
       color: $ac-primary;
     }
@@ -258,11 +563,26 @@
 // products features area start
 .products-features {
   background: #f3f4f7;
+  @include mobile {
+    #nav-serialscrolling {
+      top: 0;
+    }
+    [data-serialscrolling-target] {
+      height: 100%;
+    }
+  }
 
   .features-tabs {
     position: sticky;
     margin-top: 210px;
-
+    @extend .decorative-el;
+    &:after {
+      top: -250px;
+      left: -120px;
+    }
+    @include mobile {
+      margin-top: 0;
+    }
     ul {
       li {
         span {
@@ -298,22 +618,38 @@
       align-items: center;
       overflow: hidden;
 
+      @include mobile {
+        padding: 30px 15px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
       &:after {
         position: absolute;
         content: "";
-        right: -100%;
+        right: 0;
         top: 0px;
-        width: 200%;
+        width: 100%;
         height: 100%;
         background-color: #f1f1f1;
         z-index: -1;
         opacity: 0.5;
+
+        @include mobile {
+          right: 0;
+          width: 100%;
+        }
+        @include widescreen-only{
+          right: -160px;
+          width: calc(100% + 160px);
+        }
       }
 
       // background-color: hsla(256, 82, 95, 1);
       &.kubedb {
         &:after {
           background-color: #f6f6fd;
+          background-image: linear-gradient(to right, #f6f6fd, white);
         }
 
         .product-description .features li .material-icons {
@@ -328,6 +664,7 @@
       &.stash {
         &:after {
           background-color: #e9e9fc;
+          background-image: linear-gradient(to right, #e9e9fc, white);
         }
 
         .product-description .features li .material-icons {
@@ -342,6 +679,7 @@
       &.kubevault {
         &:after {
           background-color: #e9e9fc;
+          background-image: linear-gradient(to right, #e9e9fc, white);
         }
 
         .product-description .features li .material-icons {
@@ -361,7 +699,8 @@
 
       &.voyager {
         &:after {
-          background-color: #e3e3f2;
+          background-color: #cfcfe6;
+          background-image: linear-gradient(to right, #cfcfe6, white);
         }
 
         .product-description .features li .material-icons {
@@ -376,6 +715,7 @@
       &.kubeform {
         &:after {
           background-color: #e9e9fc;
+          background-image: linear-gradient(to right, #e9e9fc, white);
         }
 
         .product-description .features li .material-icons {
@@ -393,6 +733,9 @@
       position: sticky;
       display: flex;
       justify-content: flex-end;
+      @include mobile {
+        max-width: 350px;
+      }
     }
   }
 
@@ -427,7 +770,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 140%;
-        color: #3e393e;
+        color: $ac-color-text;
         margin-bottom: 1rem;
         display: flex;
 
@@ -448,15 +791,22 @@
 
 #nav-serialscrolling {
   position: sticky;
-  top: 30%;
+  top: 40%;
 }
 
 // products features area end
 
 // others product start
 .others-products {
-  padding: 100px 0;
-
+  position: relative;
+  @extend .decorative-el;
+  &:after {
+    right: 0px;
+    left: auto;
+    top: auto;
+    bottom: 0;
+    rotate: 90deg;
+  }
   .small-title {
     font-weight: 400;
     font-size: 20px;
@@ -465,28 +815,26 @@
     margin-bottom: 10px;
     color: $ac-primary;
   }
-
-  h2 {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 130%;
-    letter-spacing: -0.5px;
-    margin-bottom: 15px;
+ 
+  .pr-60 {
+    padding-right: 0 !important;
   }
-
-  p {
-    font-size: 18px;
-    line-height: 160%;
-    color: #3e393e;
-    margin-bottom: 30px;
-  }
-
   .products {
     .single-product {
+      @include mobile {
+        border: 1px solid $ac-white-light;
+        padding: 20px 15px;
+        border-radius: 4px;
+      }
       img {
         width: 60px;
         height: 60px;
-        margin-bottom: 15px;
+        margin-bottom: 16px;
+        @include mobile {
+          width: 50px;
+          height: 50px;
+          margin-bottom: 8px;
+        }
       }
 
       h5 {
@@ -524,26 +872,19 @@
 
 // social connect area start
 .social-connect-area {
-  padding: 100px 0 150px;
   background: rgba(243, 244, 247, 0.6);
 
   .connect-message {
     margin-right: 120px;
     margin-bottom: 20px;
-  }
-
-  h2 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 130%;
-    margin-bottom: 20px;
-    margin-bottom: 10px;
+    @include touch {
+      margin-right: 0;
+    }
   }
 
   p {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 160%;
   }
 
@@ -589,7 +930,7 @@
 
     .card-top {
       display: flex;
-      margin-bottom: 15px;
+      margin-bottom: 16px;
       align-items: center;
 
       .card-icon {
@@ -625,8 +966,8 @@
       p {
         font-size: 1rem;
         line-height: 160%;
-        color: #3e393e;
-        margin-bottom: 15px;
+        color: $ac-color-text;
+        margin-bottom: 16px;
       }
 
       button {
@@ -776,9 +1117,9 @@
   margin-bottom: 30px;
 }
 
-.ceo-message-wrapper h1 {
-  margin-bottom: 40px;
-  font-weight: 400;
+.ceo-message-wrapper h2 {
+  margin-bottom: 8px;
+  font-size: 36px;
 }
 
 .signature-image {
@@ -821,459 +1162,139 @@
 Responsive Classes
 ***********************************************************************************************/
 @media (max-width: 768.98px) {
-  .hero-area-1 {
-    padding: 170px 0 50px;
 
-    h1 {
-      font-size: 38px;
-      letter-spacing: -0.57px;
-      text-align: center;
-    }
+  // .social-prove-brand-area {
+  //   padding: 16px 0 0;
 
-    p {
-      text-align: center;
-      font-size: 1rem;
-    }
+  //   .container {
+  //     margin-top: 0 !important;
+  //   }
 
-    .buttons {
-      margin-bottom: 15px;
-      justify-content: center;
+  //   .brand-image-wrapper {
+  //     padding: 0 !important;
+  //   }
+  // }
 
-      .button {
-        &.ac-button {
-          margin-bottom: 0.5rem;
-          margin-right: 0.5rem !important;
-          padding: 0.5rem 1rem;
-        }
-      }
-
-      .play-buttons {
-        a {
-          span {
-            font-size: 20px;
-            width: 24px;
-            height: 24px;
-            margin-right: 0.3rem;
-          }
-        }
-      }
-    }
-
-
-    .h-right-content {
-      margin-right: 0;
-    }
-  }
-  .news-message-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-
-  .products-area {
-    .single-product {
-      padding: 30px 20px;
-      text-align: center;
-    }
-  }
-
-  .others-products {
-    padding: 50px 0;
-
-    .small-title {
-      font-size: 18px;
-    }
-
-    .pr-60 {
-      padding-right: 0 !important;
-    }
-
-    h2 {
-      font-size: 22px;
-    }
-
-    .products {
-      .single-product {
-        margin-top: 1rem;
-        text-align: center;
-        border: 1px solid $ac-white-light;
-        padding: 20px 15px;
-        border-radius: 4px;
-
-        img {
-          width: 50px;
-          height: 50px;
-          margin-bottom: 0.5rem;
-        }
-      }
-    }
-  }
-
-  .products-features {
-    .features-tabs {
-      margin-top: 0;
-    }
-
-    .products-description-wrapper {
-      .single-product {
-        padding: 30px 15px;
-        margin-left: -15px;
-        margin-right: -15px;
-        margin-bottom: 10px;
-
-        &:after {
-          right: 0;
-          width: 100%;
-        }
-
-        .illustration {
-          max-width: 350px;
-        }
-      }
-    }
-
-    #nav-serialscrolling {
-      top: 0;
-    }
-  }
-
-  [data-serialscrolling-target] {
-    height: 100%;
-  }
-
-  .subscription-area {
-    padding: 50px 0;
-
-    h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-
-    .subscription-message {
-      padding: 0;
-    }
-  }
-
-  .social-connect-area {
-    padding: 50px 0;
-
-    h2 {
-      font-size: 28px;
-    }
-
-    .connect-message {
-      margin-right: 0;
-    }
-  }
-
-  .social-prove-brand-area {
-    padding: 30px 0 0;
-
-    .container {
-      margin-top: 0 !important;
-    }
-
-    .brand-image-wrapper {
-      padding: 0 !important;
-    }
-  }
-
-  .is-paddingless-desktop {
-    padding: 0.75rem;
-  }
+  // .is-paddingless-desktop {
+  //   padding: 0.75rem;
+  // }
 }
 
-// // Small devices (landscape phones, 576px and up)
-@media (max-width: 500px) {
-}
-
-@media (min-width: 501px) and (max-width: 768.98px) {
-}
 
 // Medium devices (tablets, 769px and up)
 @media (min-width: 769px) and (max-width: 1023.98px) {
-  .hero-area-1 {
-    padding: 160px 0 50px;
 
-    h1 {
-      font-size: 38px;
-      letter-spacing: -0.57px;
-    }
+  // .social-prove-brand-area {
+  //   padding: 16px 0 0;
 
-    p {
-      font-size: 1rem;
-    }
+  //   .container {
+  //     margin-top: 0 !important;
+  //   }
 
-    .buttons {
-      margin-bottom: 20px;
+  //   .brand-image-wrapper {
+  //     padding: 0 !important;
+  //   }
+  // }
 
-      .button {
-        &.ac-button {
-          margin-bottom: 0.5rem;
-          margin-right: 0.5rem !important;
-          padding: 0.5rem 1rem;
-        }
-      }
-
-      .play-buttons {
-        a {
-          span {
-            font-size: 20px;
-            width: 24px;
-            height: 24px;
-            margin-right: 0.3rem;
-          }
-        }
-      }
-    }
-
-    .h-right-content {
-      margin-right: 0;
-    }
-  }
- 
-  .products-features {
-    .products-description-wrapper {
-      .single-product {
-        &:after {
-          right: 0;
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  .subscription-area {
-    padding: 50px 0;
-
-    h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-
-    .subscription-message {
-      padding: 0;
-    }
-  }
-
-  .social-connect-area {
-    padding: 50px 0;
-
-    h2 {
-      font-size: 28px;
-    }
-
-    .connect-message {
-      margin-right: 0;
-    }
-  }
-
-  .social-prove-brand-area {
-    padding: 30px 0 0;
-
-    .container {
-      margin-top: 0 !important;
-    }
-
-    .brand-image-wrapper {
-      padding: 0 !important;
-    }
-  }
-
-  .is-paddingless-desktop {
-    padding: 0.75rem;
-  }
+  // .is-paddingless-desktop {
+  //   padding: 0.75rem;
+  // }
 }
 
 // Large devices (desktops, 1024px and up)
-@media (min-width: 1024px) and (max-width: 1215px) {
-  .hero-area-1 {
-    padding: 150px 0 50px;
+@media (min-width: 1024px) and (max-width: 1212px) {
+  
 
-    h1 {
-      font-size: 38px;
-      letter-spacing: -0.57px;
-    }
+  // .subscription-area {
 
-    p {
-      font-size: 1rem;
-    }
+  //   h2 {
+  //     font-size: 28px;
+  //     margin-bottom: 16px;
+  //   }
 
-    .buttons {
-      .button {
-        &.ac-button {
-          margin-bottom: 0.5rem;
-          margin-right: 0.5rem !important;
-          padding: 0.5rem 1rem;
-        }
-      }
+  //   .subscription-message {
+  //     padding: 0;
+  //   }
+  // }
 
-      .play-buttons {
-        a {
-          span {
-            font-size: 20px;
-            width: 24px;
-            height: 24px;
-            margin-right: 0.3rem;
-          }
-        }
-      }
-    }
+  // .social-connect-area {
 
-    .h-right-content {
-      margin-right: 0;
-    }
-  }
+  //   h2 {
+  //     font-size: 28px;
+  //   }
 
-  .products-features {
-    .products-description-wrapper {
-      .single-product {
-        &:after {
-          right: 0;
-          width: 100%;
-        }
-      }
-    }
-  }
+  //   .connect-message {
+  //     margin-right: 0;
+  //   }
+  // }
 
-  .subscription-area {
-    padding: 50px 0;
+  // .social-prove-brand-area {
+  //   padding: 16px 0 0;
 
-    h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
+  //   .container {
+  //     margin-top: 0 !important;
+  //   }
 
-    .subscription-message {
-      padding: 0;
-    }
-  }
-
-  .social-connect-area {
-    padding: 50px 0;
-
-    h2 {
-      font-size: 28px;
-    }
-
-    .connect-message {
-      margin-right: 0;
-    }
-  }
-
-  .social-prove-brand-area {
-    padding: 30px 0 0;
-
-    .container {
-      margin-top: 0 !important;
-    }
-
-    .brand-image-wrapper {
-      padding: 0 !important;
-    }
-  }
+  //   .brand-image-wrapper {
+  //     padding: 0 !important;
+  //   }
+  // }
 }
 
 @media (min-width: 1216px) and (max-width: 1600px) {
-  .hero-area-1 {
-    padding: 150px 0 100px;
 
-    h1 {
-      font-size: 58px;
-      letter-spacing: -0.57px;
-    }
+  // .subscription-area {
+  //   // padding: 70px 0 50px;
 
-    p {
-      font-size: 1.3rem;
-    }
-    .h-right-content {
-      margin-right: -60px;
-    }
+  //   h2 {
+  //     font-size: 28px;
+  //     margin-bottom: 16px;
+  //   }
 
-    .buttons {
-      margin-bottom: 15px;
-    }
-  }
+  //   .subscription-message {
+  //     padding: 0;
+  //   }
+  // }
 
-  .products-area {
-    .single-product {
-      padding: 35px 20px;
-    }
-  }
+  // .social-connect-area {
+  //   h2 {
+  //     font-size: 28px;
+  //     letter-spacing: -0.3px;
+  //   }
 
-  .others-products {
-    h2 {
-      font-size: 28px;
-    }
-  }
+  //   .connect-message {
+  //     margin-right: 0;
+  //   }
 
-  .products-features {
-    .products-description-wrapper {
-      .single-product {
-        &:after {
-          right: -160px;
-          width: calc(100% + 160px);
-        }
-      }
-    }
-  }
+  //   .single-card {
+  //     padding: 35px 20px;
+  //     .card-top {
+  //       .card-icon {
+  //         width: 50px;
+  //         height: 50px;
+  //         margin-right: 1rem;
+  //       }
+  //       .count {
+  //         h2 {
+  //           font-size: 28px;
+  //         }
+  //         p {
+  //           font-size: 13px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 
-  .subscription-area {
-    padding: 70px 0 50px;
+  // .social-prove-brand-area {
+  //   padding: 16px 0 0;
 
-    h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
+  //   .container {
+  //     margin-top: -80px !important;
+  //   }
 
-    .subscription-message {
-      padding: 0;
-    }
-  }
-
-  .social-connect-area {
-    padding: 50px 0 150px;
-
-    h2 {
-      font-size: 28px;
-      letter-spacing: -0.3px;
-    }
-
-    .connect-message {
-      margin-right: 0;
-    }
-
-    .single-card {
-      padding: 35px 20px;
-      .card-top {
-        .card-icon {
-          width: 50px;
-          height: 50px;
-          margin-right: 1rem;
-        }
-        .count {
-          h2 {
-            font-size: 28px;
-          }
-          p {
-            font-size: 13px;
-          }
-        }
-      }
-    }
-  }
-
-  .social-prove-brand-area {
-    padding: 30px 0 0;
-
-    .container {
-      margin-top: -80px !important;
-    }
-
-    .brand-image-wrapper {
-      padding: 0 !important;
-    }
-  }
-}
-
-@media (min-width: 1408px) {
+  //   .brand-image-wrapper {
+  //     padding: 0 !important;
+  //   }
+  // }
 }

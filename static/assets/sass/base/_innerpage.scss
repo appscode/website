@@ -1,6 +1,4 @@
-.bg-white {
-  background-color: #fff;
-}
+
 .hero-area-2 {
   position: relative;
   z-index: 1;
@@ -18,10 +16,10 @@
   }
   .hero-area-inner-2 {
     height: 400px;
+    padding-top: 120px;
     h1 {
       font-size: 48px;
       margin-bottom: 15px;
-      font-weight: 400;
     }
     p {
       font-size: 18px;
@@ -103,8 +101,9 @@
   }
 }
 // consultation page css end
-
-// training page css start
+.our-customer-area {
+  background-color: #FBFBFB;
+}
 
 .training-wrapper-image {
   .single-training-image-wrapper {
@@ -146,78 +145,6 @@
     top: 30%;
   }
 }
-.pricing-plan-area-2 {
-  .single-pricing {
-    background-color: $ac-white;
-    border: 1px solid $ac-white-light;
-    border-radius: 4px;
-    padding: 50px 50px;
-    position: relative;
-    z-index: 1;
-    transition: 0.3s ease-in-out;
-    &:hover {
-      box-shadow: 0px 8px 50px rgba(26, 80, 151, 0.12);
-      border: 1px solid transparent;
-    }
-    .pricing-feature {
-      position: absolute;
-      left: 20px;
-      top: 20px;
-      z-index: -1;
-      h5 {
-        font-size: 16px;
-        color: $ac-primary;
-      }
-    }
-    h2 {
-      font-size: 36px;
-      line-height: 46px;
-      margin-bottom: 10px;
-    }
-    h3 {
-      font-size: 24px;
-      color: $ac-orange;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 16px;
-      margin-bottom: 40px;
-    }
-  }
-  .single-pricing.intermediate {
-    h5 {
-      color: $ac-blue;
-    }
-  }
-}
-.feature-area-2 {
-  background-color: #fbfbfb;
-  .single-feature {
-    padding: 0 60px;
-    h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 16px;
-    }
-  }
-  .single-feature.foundational {
-    h3 {
-      color: $ac-primary;
-    }
-  }
-  .single-feature.intermediate {
-    h3 {
-      color: $ac-blue;
-    }
-  }
-  .single-feature.advanced {
-    h3 {
-      color: $ac-red;
-    }
-  }
-}
 
 .cta-area-2 {
   .cta-content {
@@ -228,157 +155,291 @@
     }
   }
 }
-.ac-cta-area {
-  .cta-text {
-    h2 {
-      color: $ac-color-heading;
-    }
-  }
-}
+
 // training page css end
 
-// contact-us page start
-.contact-form {
+
+.client-thumb {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin-right: 20px;
+}
+
+.client-info {
+  float: left;
+  overflow: hidden;
+  margin-top: 5px;
+  text-align: left;
+  h4 {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 3px;
+  }
+  p {
+    margin: 0;
+    font-size: $font-size-extra-small;
+    font-style: italic;
+    color: $ac-color-text;
+    opacity: 0.6;
+  }
+}
+
+/*====================================
+    Support page CSS
+====================================*/
+/* Payment Method section style */
+.single-payment-method {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.single-payment-method:first-child {
+  margin-left: 0;
+}
+
+.payment-method-innner-text h2 {
+  color: $ac-color-heading;
+  margin-bottom: 20px;
+}
+
+.payment-method-innner-text p {
+  margin: 0;
+}
+
+.payment-method-area {
   position: relative;
+  background-image: url(../images/shape/shape-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 1;
-  // margin: 60px 60px 0;
-  height: 100%;
-  .contact-form-inner {
-    margin-top: -400px;
-  }
-}
-.question-area {
-  background-color: #fbfbfb;
-  .single-question-wrapper {
-    box-shadow: 0px 8px 57px rgba(26, 80, 151, 0.16);
-    padding: 35px 45px;
-    border-radius: 4px;
-    .support-icon {
-      max-width: 50px;
-      margin: 0 auto;
-      margin-bottom: 30px;
-    }
-    h4 {
-      font-size: 28px;
-      margin-bottom: 30px;
-      font-weight: 600;
-    }
-    p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-  }
+  margin-top: 120px;
 }
 
-.location-area {
-  .office-details {
-    padding: 0 30px;
-    h4 {
-      font-size: 24px;
-      line-height: 34px;
-      margin-bottom: 20px;
-      font-weight: 600;
-    }
-    p {
-      span {
-        display: block;
-      }
-    }
-  }
-}
-
-.tabs-wrapper {
-  ul {
-    li {
-      color: $ac-color-text;
-      display: inline-block;
-      padding: 20px;
-      font-size: 18px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    li.is-active {
-      color: $ac-primary;
-    }
-  }
-}
-.map-wrapper iframe {
+.payment-method-area:after {
+  background-image: url(../images/shape/shape-2.png);
+  content: "";
+  left: 0;
+  top: 0;
   width: 100%;
-  height: 700px;
+  height: 100%;
+  position: absolute;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
-.single-map {
+
+.item ul,
+.item input[type="checkbox"] {
   display: none;
+  overflow: hidden;
+  transition: 0.3s;
 }
-.single-map.is-active {
+
+.product-sidebar-menu .item label a {
+  font-weight: 500;
+  color: $ac-color-heading;
+  padding: 0.5rem 1.25rem;
   display: block;
 }
-// contact-us page end
 
-// product page feature area start
-.single-product-feature-wrapper {
-  overflow: hidden;
-  background-color: $ac-white;
-  box-shadow: 0px 1px 4px rgba(50, 112, 128, 0.16);
-  border-radius: 4px;
-  padding: 20px;
-  transition: .3s ease-in-out;
-  position: relative;
-  min-height: 280px;
-  z-index: 1;
-  &:after{
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 0;
-    transition: .3s ease-in-out;
-    background-color: $ac-primary;
-  }
-  z-index: 1;
-  &:hover{
-    box-shadow: 0px 3px 28px rgba(50,152,128, .16);
-    &:after{
-      height: 5px;
-    }
-  }
-  .product-feature-icon {
-    width: 55px;
-    float: left;
-    margin-right: 25px;
-  }
-  .product-feature-content {
-    float: left;
-    width: 85%;
-  }
-  .product-feature-title {
-    margin-bottom: 10px;
-    h3 {
-      font-size: 28px;
-      font-weight: 700;
-      line-height: 40px;
-    }
-    p {
-      font-size: 16px;
-      font-family: raleway;
-      font-weight: 600;
-    }
-  }
-  .product-feature-description {
-    p {
-      font-size: 16px;
-    }
-  }
+.item ul li.is-active a {
+  color: $ac-primary;
 }
 
-// product page feature area end
+.item input:checked ~ ul,
+.item input:checked ~ .item > ul {
+  display: block;
+  transition: 0.3s linear;
+}
 
+.item input:checked ~ label span,
+.item input:checked ~ .item > label span {
+  transform: rotate(90deg);
+  margin-top: 0;
+  transform-origin: 0;
+}
+
+.item label span {
+  position: absolute;
+  right: 15px;
+  transition: 0.3s ease-in-out;
+  top: 9px;
+}
+
+.item ul li a {
+  display: block;
+  padding: 6px 0;
+  font-family: $ac-font-paragraph;
+  font-weight: 400;
+}
+
+.item label {
+  position: relative;
+  z-index: 9;
+}
+
+.product-sidebar-menu label,
+.product-sidebar-menu li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: $ac-color-link;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.product-sidebar-menu li a:hover {
+  color: $ac-primary;
+}
+
+.product-sidebar-menu .item ul {
+  margin-left: 20px;
+  padding-left: 15px;
+  border-left: 1px solid $ac-white-light;
+}
+// border remove style
+// .item input:checked ~ label,
+// .item input:checked ~ .item > label {
+//   border: 1px solid $ac-white-light;
+//   background: $ac-white;
+// }
+
+.item:first-child input:checked ~ label,
+.item:first-child input:checked ~ .item:first-child > label {
+  border: 1px solid transparent;
+}
+
+.appscode-style .item input:checked ~ label > a {
+  color: $ac-primary;
+}
+
+.item input:checked ~ ul,
+.item input:checked ~ .item > ul > .item {
+  margin-left: -20px;
+}
+
+.ac-product-left-sidebar {
+  margin-right: 30px;
+  position: sticky;
+  top: 130px;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  max-height: calc(100vh - 190px);
+  overflow-x: hidden;
+}
+
+.product-sidebar-menu .item label {
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 1;
+  border-radius: 3px 0 0 3px;
+}
+
+/* datasheet style start */
+.datasheet-wrapper {
+  padding: 0 100px;
+}
+
+.download-question h4 {
+  font-size: 18px;
+  color: $ac-color-heading;
+  font-weight: 700;
+}
+
+.download-question p {
+  color: $ac-color-text;
+  font-size: 16px;
+  font-family: $ac-font-paragraph;
+}
+
+.download-question p strong {
+  color: #32325d;
+  font-weight: 500;
+  font-family: $ac-font-paragraph;
+  margin: 10px 0;
+  display: block;
+}
+
+.download-question a {
+  font-family: $ac-font-paragraph;
+  font-size: 16px;
+}
+
+.form-area h4 {
+  font-size: 18px;
+  color: $ac-color-heading;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.single-input-field label {
+  display: block;
+  color: #32325d;
+  font-family: $ac-font-paragraph;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.single-input-field input {
+  padding: 12px 15px;
+  border: 1px solid #c4cbd3;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: $ac-font-paragraph;
+  color: #242a31;
+  width: 100%;
+}
+
+.single-input-field input::placeholder {
+  color: $ac-white-light;
+}
+
+.single-input-field .select,
+select {
+  width: 100%;
+  height: 48px !important;
+}
+
+.single-input-field .select select:not([multiple]) {
+  padding-left: 15px;
+  color: $ac-white-light;
+}
+
+.download-button .icon {
+  padding-right: 25px;
+}
+
+/* datasheet style end */
+
+/* schedule-demo start */
+embed,
+iframe,
+object,
+video {
+  height: 100%;
+  max-width: 100%;
+}
+
+.schedule-title {
+  margin-top: 65px;
+  color: #242a31;
+  margin-bottom: 30px;
+}
+
+/* schedule-demo end */
 
 
 /****************************************
 Responsive Classes
 *****************************************/
-@media (max-width: 767.98px) {
+@include mobile {
   .package-area {
     .single-package-wrapper {
       padding: 20px 30px;
@@ -398,8 +459,7 @@ Responsive Classes
   }
 }
 
-// (min-width: 568px) and (max-width: 1023.98px)
-@media (min-width: 568px) and (max-width: 1023.98px) {
+@include tablet-only {
   .package-area {
     .single-package-wrapper {
       padding: 20px;
@@ -421,10 +481,6 @@ Responsive Classes
       text-align: center;
     }
   }
-}
-
-// Medium devices (tablets, 769px and up)
-@media (min-width: 769px) and (max-width: 1023.98px) {
   .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
     width: 150px;
     height: 150px;
@@ -434,9 +490,10 @@ Responsive Classes
     height: 180px;
   }
 }
+
 
 // Large devices (desktops, 1024px and up)
-@media (min-width: 1024px) and (max-width: 1215px) {
+@include desktop-only {
   .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
     width: 150px;
     height: 150px;
@@ -447,7 +504,7 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1216px) and (max-width: 1407px) {
+@include widescreen-only {
   .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
     width: 150px;
     height: 150px;
@@ -458,7 +515,7 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1408px) and (max-width: 1600px) {
+@include fullhd {
   .training-wrapper-image .single-training-image-wrapper:nth-child(even) {
     width: 150px;
     height: 150px;
@@ -467,8 +524,4 @@ Responsive Classes
     width: 180px;
     height: 180px;
   }
-}
-
-@media (min-width: 1408px) {
-
 }
