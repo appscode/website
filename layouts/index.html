@@ -47,18 +47,18 @@
           <!-- <p data-aos="fade-up" data-aos-duration="500">{{ $p.homepage.hero_area.summary }}</p> -->
 
           <ul class="list-items">
-            <li data-aos="fade-up" data-aos-duration="900"><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.png" alt="check-box"></span><span>Manage your databases with K8’s</span></li>
-            <li data-aos="fade-up" data-aos-duration="950"><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.png" alt="check-box"></span><span>Backup and fast recovery solution for K8’s</span></li>
-            <li data-aos="fade-up" data-aos-duration="1000"><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.png" alt="check-box"></span><span>Secure HAProxy Ingress Controller</span></li>
-            <li data-aos="fade-up" data-aos-duration="1050"><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.png" alt="check-box"></span><span>Authentication WebHook Server</span></li>
-            <li data-aos="fade-up" data-aos-duration="1200"><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.png" alt="check-box"></span><span>Deploying and configuring Hashicorp's Vault</span></li>
+            <li data-aos="fade-up" data-aos-duration="900"><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.png" alt="check-box"></span><span>Manage full-cycle of any databases</span></li>
+            <li data-aos="fade-up" data-aos-duration="950"><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.png" alt="check-box"></span><span>Backup and fast recovery solution for K8s</span></li>
+            <li data-aos="fade-up" data-aos-duration="1000"><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.png" alt="check-box"></span><span>Manage Secrets w/ Vault operator</span></li>
+            <li data-aos="fade-up" data-aos-duration="1050"><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.png" alt="check-box"></span><span>Ingress Controller w/ Gateway API Support</span></li>
+            <li data-aos="fade-up" data-aos-duration="1200"><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.png" alt="check-box"></span><span>Centrally Manage Clusters w/ Hub-Spoke Model</span></li>
           </ul>
-        
+
           <!-- buttons  -->
           <!-- style="width:22px;height:22px; margin-right: 8px;" -->
           <div class="buttons" data-aos="fade-up" data-aos-duration="700">
-            <a href="https://kubedb.com/docs/v2024.2.14/setup/" class="button ac-button is-primary">
-              <span>TRY FOR FREE</span>
+            <a href="{{ $p.homepage.hero_area.get_in_touch_url }}" class="button ac-button is-primary">
+              <span>GET IN TOUCH</span>
               <span class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -66,9 +66,8 @@
               </span>
             </a>
 
-
             <a href="#products" class="button ac-button">
-              <span>EXPLORE OUR PRODUCTS</span> 
+              <span>EXPLORE OUR PRODUCTS</span>
             </a>
             <!-- <div class="play-buttons">
               <a href="https://www.youtube.com/watch?v=8az5rYUxyGs" class="demo-video"><span
@@ -102,7 +101,7 @@
       <div class="container" data-aos="fade-up" data-aos-duration="900">
         <div class="columns">
           <div class="column is-12">
-            <h6>Trusted Companies__</h6>
+            <h6>Trusted by Companies</h6>
             <div class="social-prove-brand-area">
               <div class="brand-image-wrapper owl-carousel">
                 {{ range $customer := $.Site.Data.customers }}
@@ -125,8 +124,8 @@
       <div class="columns is-centered">
         <div class="column is-8">
           <div class="section-title has-text-centered-tablet mb-0">
-            <p class="mb-0 has-text-primary is-uppercase">Empowering Your Kubernetes Experience</p>
-            <h2 class="mb-0">Explore Our AppsCode Solutions</h2>
+            <p class="mb-0 has-text-primary is-uppercase">Empowering Your Kubernetes JOURNEY</p>
+            <h2 class="mb-0">Explore AppsCode Products</h2>
           </div>
         </div>
       </div>
@@ -167,7 +166,7 @@
               <h2 data-aos="fade-up" data-aos-duration="600" class="mb-4">{{ $p.homepage.highlight_products.title }}</h2>
               <p data-aos="fade-up" data-aos-duration="700" class="mb-0">{{ $p.homepage.highlight_products.summary }}</p>
             </div>
-            <a href="{{ $p.homepage.highlight_products.url }}" class="button ac-button is-primary ">CONTACT WITH US</a>
+            <a href="{{ $p.homepage.highlight_products.url }}" class="button ac-button is-primary ">Let's Talk</a>
           </div>
         </div>
         <div class="column is-8-desktop is-6-tablet is-full-mobile">
@@ -275,13 +274,13 @@
     <div class="columns is-centered">
       <div class="column is-10-tablet is-8 is-10-desktop is-8-widescreen">
         <div class="section-title has-text-centered-tablet">
-          <h2>Manage your Kubernetes native applications across public or private clouds</h2>
-          <p>A single pane of glass for managing your stateful or stateless applications across various private and public clouds. Hide the complexity of Kubernetes behind a simple, elegant UI</p>
+          <h2>Manage your Kubernetes native applications across any Clouds or On-prem</h2>
+          <p>A single pane of glass for managing your Stateless and Stateful applications across any private and public clouds. Hide the complexity of Kubernetes behind a simple, elegant and R/W UI</p>
         </div>
       </div>
     </div>
     <!-- section title  -->
-    
+
     <!-- features with screenshot  -->
     <div class="columns">
       <div class="column is-4-desktop is-5-tablet">
@@ -298,7 +297,7 @@
 
           <!-- single features item start -->
           <div class="single-feature">
-            
+
             <div class="icon"><img src="https://img.icons8.com/external-phatplus-lineal-phatplus/100/00A651/external-cluster-cloud-computing-phatplus-lineal-phatplus.png" alt="Kubernetes Made Easy"></div>
             <div class="content">
               <h4>Manage all your public and private clusters in one place</h4>
@@ -410,7 +409,7 @@
       </div>
 
       <a href="#products" class="button ac-button is-primary">
-        <span>TRY UI DASHBOARD</span> 
+        <span>TRY UI DASHBOARD</span>
         <span class="icon">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -443,7 +442,7 @@
    <div class="columns is-vcentered" style="padding-bottom: 60px;">
     <div class="column is-4">
       <div class="is-flex is-flex-direction-column is-flex-wrap-wrap" style="gap: 8px;">
-       
+
         <!-- single features mechanism item start -->
         <div class="single-feature mechanism is-active">
           <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Kubernetes Made Easy"></div>
@@ -551,8 +550,8 @@ singleFeatures.forEach(function(feature) {
 
         feature.classList.add('is-active');
         const divs=document.querySelectorAll(className)
-        
-        
+
+
     });
 });
 function showOnlySelectedDiv(selectedId) {
@@ -580,7 +579,7 @@ function showOnlySelectedDiv(selectedId) {
           <p class="mb-16">Kubernetes on any cloud and automate deployment, scaling, and management of containerized applications.Deploy, manage,Deploy, manage, upgrade Kubernetes on any cloud</p>
 
           <a href="https://console.appscode.com/" target="_blank" class="button ac-button is-primary">
-            <span>TRY CONSOLE DASHBOARD</span> 
+            <span>TRY CONSOLE DASHBOARD</span>
             <span class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -592,7 +591,7 @@ function showOnlySelectedDiv(selectedId) {
           <div class="is-flex is-flex-wrap-wrap" style="gap: 12px;">
             <!-- single features item start -->
             <div class="single-feature card-view bg-dark">
-              
+
               <div class="icon"><img src="https://cdn.appscode.com/images/logo/appscode/ac-moscot.png" alt="Kubernetes Made Easy"></div>
               <div class="content">
                 <h4>Databases Solutions in Single</h4>
@@ -825,9 +824,8 @@ function showOnlySelectedDiv(selectedId) {
           <div class="columns is-vcentered is-multiline">
             <div class="column is-full-tablet is-8-desktop">
              <div class="section-title mb-0 has-text-left-tablet">
-              <h2 data-aos="fade-up" data-aos-duration="500">Manage your Kubernetes native
-                applications across public or private clouds</h2>
-              <p class="mb-0">KubeDB community edition is FREE to use on any supported Kubernetes engines. There is no up-front investment required, and you need to pay only for the resources you use to your infrastructure provider. We offer a 30 days license FREE of cost to try KubeDB Enterprise edition.
+              <h2 data-aos="fade-up" data-aos-duration="500">Manage your Kubernetes native applications across <br/>any Clouds or On-prem!</h2>
+              <p class="mb-0">AppsCode products are FREE to try on any supported Kubernetes versions. There is no up-front investment required, and you need to pay only for the resources you use to your infrastructure provider. We offer a 30 day license FREE of cost for a given Kubernetes cluster.
               </p>
              </div>
             </div>
@@ -839,7 +837,7 @@ function showOnlySelectedDiv(selectedId) {
                     <span class="icon">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
-                      </svg>             
+                      </svg>
                     </span>
                     <span>CONTACT US</span>
                 </a>
