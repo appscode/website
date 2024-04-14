@@ -549,23 +549,12 @@
 
   .list-items {
     h6 {
-      font-weight: 400;
+      font-weight: 500;
       position: relative;
       font-size: 0.875rem;
       z-index: 1;
-      margin-bottom: 1.5rem;
       display: inline-block;
       letter-spacing: 1.2px;
-
-      // &:after {
-      //   position: absolute;
-      //   content: "";
-      //   left: 0;
-      //   bottom: 0;
-      //   width: 50%;
-      //   height: 2px;
-      //   background-color: $ac-primary;
-      // }
     }
 
     ul {
@@ -582,6 +571,9 @@
           line-height: 1;
           transition: 0.3s ease-in-out;
           font-weight: 500;
+          span {
+            font-size: 14px;
+          }
 
           &:hover {
             color: $ac-primary;
@@ -922,7 +914,7 @@
 /****************************************
 Responsive Classes
 *****************************************/
-@media (max-width: 1023.98px) {
+@include touch {
   .headroom--unpinned {
     .navbar-appscode-wrapper {
       &.navbar-product {
@@ -1050,12 +1042,6 @@ Responsive Classes
 
   .resources-list {
     grid-template-columns: auto;
-
-    .list-items {
-      h6 {
-        margin-bottom: 0.5rem;
-      }
-    }
   }
 
   .mega-menu-wrapper {
@@ -1064,8 +1050,10 @@ Responsive Classes
     top: 0 !important;
     padding-top: 20px !important;
     background-color: #fafafd;
-    max-height: 90vh;
+    max-height: 75vh;
+    min-height: 70vh;
     overflow-y: auto;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.16);
 
     .mega-menu-inner {
       .product-menu {
@@ -1145,17 +1133,16 @@ Responsive Classes
     }
   }
 }
-
-// // Small devices (landscape phones, 576px and up)
-// @media (min-width: 576px) and (max-width: 768px) {
-// }
-
-// Medium devices (tablets, 769px and up)
-@media (min-width: 769px) and (max-width: 1023.98px) {
+.embeded-console-button {
+  height: 50px; 
+  margin-bottom: 4px; 
+  width: 185px;  
+  overflow: hidden;
+  @include mobile {
+    width: 100%;
+  }
 }
-
-// Large devices (desktops, 1024px and up)
-@media (min-width: 1024px) and (max-width: 1215px) {
+@include desktop-only {
   .navbar-burger {
     display: none !important;
   }
@@ -1185,7 +1172,7 @@ Responsive Classes
     }
     ul {
       .nav-item {
-        margin-right: 0.5rem;
+        margin-right: 1.5rem;
       }
     }
   }
@@ -1223,7 +1210,7 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1216px) and (max-width: 1407px) {
+@include widescreen-only {
   .navbar-burger {
     display: none !important;
   }
@@ -1264,18 +1251,12 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1408px) and (max-width: 1600px) {
+@include fullhd {
   .navbar-appscode {
     .navbar-left {
       .navbar-brand {
         margin-right: 3rem;
       }
     }
-  }
-}
-
-@media (min-width: 1408px) {
-  .navbar-burger {
-    display: none !important;
   }
 }

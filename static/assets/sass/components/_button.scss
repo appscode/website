@@ -13,7 +13,10 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 2.5rem;
+    height: 48px;
+    @include mobile {
+      height: 44px;
+    }
     &:focus-visible {
       outline: none;
     }
@@ -110,17 +113,7 @@
     // ac-button from mixin
     &.is-primary {
       @include ac-button($ac-primary);
-      // &:hover {
-      //   background: linear-gradient(
-      //     -45deg,
-      //     $ac-primary,
-      //     #940148,
-      //     #4c346f,
-      //     #3334f5
-      //   );
-      //   background-size: 100% 100%;
-      //   animation: gradient 5s ease infinite;
-      // }
+      background: linear-gradient(to left, hsl(149, 100%, 33%) , hsl(149, 50%, 33%)) !important;
     }
    
     &.is-link {
@@ -147,6 +140,10 @@
       @include ac-button($ac-green);
     }
   }
+  .icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
 }
 .readmore-button {
   margin: 0;
@@ -169,28 +166,4 @@
   }
 }
 // dark theme end
-/****************************************
-Responsive Classes
-*****************************************/
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-}
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 768px) {
-}
-
-// Medium devices (tablets, 769px and up)
-@media (min-width: 769px) and (max-width: 1023.98px) {
-}
-
-// Large devices (desktops, 1024px and up)
-@media (min-width: 1024px) and (max-width: 1215px) {
-}
-
-@media (min-width: 1216px) and (max-width: 1407px) {
-}
-
-// Extra large devices (large desktops, 1216px and up)
-@media (min-width: 1408px) {
-}

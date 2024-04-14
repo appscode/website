@@ -9,17 +9,6 @@
     padding: 0 100px;
 
     .navbar {
-      .navbar-brand {
-        .navbar-item {
-          img {
-          }
-        }
-
-        .navbar-burger {
-          span {
-          }
-        }
-      }
 
       .navbar-menu {
         .navbar-end {
@@ -347,7 +336,7 @@
 Responsive Classes
 *****************************************/
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
+@include mobile{
   .contact-page-body-wrapper {
     .navbar-area {
       padding: 20px 15px;
@@ -457,8 +446,7 @@ Responsive Classes
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {
+@include tablet-only {
   .contact-page-body-wrapper {
     .navbar-area {
       padding: 20px 50px;
@@ -554,81 +542,7 @@ Responsive Classes
   }
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .contact-page-body-wrapper {
-    .navbar-area {
-      padding: 0 50px;
-
-      .navbar-burger {
-        color: #333;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-      }
-
-      .navbar-item {
-        padding: 10px 30px !important;
-      }
-
-      .navbar-brand {
-        .navbar-item {
-          padding: 0 !important;
-        }
-      }
-
-      .navbar-menu {
-        border-radius: 4px;
-        overflow: hidden;
-      }
-    }
-
-    .contact-page-body {
-      padding: 0 50px;
-      height: 100%;
-
-      .left-content {
-        padding: 100px 15px 0 0;
-
-        h1 {
-          font-size: 38px;
-          line-height: 60px;
-        }
-
-        .contact-image {
-          max-width: 330px;
-        }
-
-        .social-link a {
-          margin-right: 30px;
-        }
-      }
-
-      .right-content {
-        padding: 100px 0 50px 50px;
-
-        form input[type="submit"] {
-          margin-bottom: 60px;
-        }
-
-        .footer-wrapper {
-          width: calc(100% - 50px);
-
-          .footer-content {
-            .footer-right {
-              a {
-                padding-left: 20px;
-                font-size: 12px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@include desktop-only {
   .contact-page-body-wrapper {
     .navbar-area {
       padding: 0 50px;
@@ -693,8 +607,7 @@ Responsive Classes
   }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) and (max-width: 1400px) {
+@include widescreen-only {
   .contact-page-body-wrapper {
     .navbar-area {
       padding: 0 50px;

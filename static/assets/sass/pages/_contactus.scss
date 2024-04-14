@@ -1,0 +1,117 @@
+.contact-hero {
+  padding: 120px 0 60px;
+  @include mobile {
+    padding: 150px 0 30px;
+  }
+
+  h2 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 120%;
+    text-wrap: balance;
+    margin-bottom: 16px;
+    @include touch {
+      font-size: 38px;
+      letter-spacing: -0.57px;
+      text-wrap: inherit;
+    }
+  }
+  p{
+    margin-bottom: 16px;
+  }
+}
+
+.location-area {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  @include until-widescreen {
+    margin-top: 32px;
+  }
+  .location {
+    width: calc(50% - 6px);
+    @include until-widescreen {
+      width: 100%;
+    }
+    
+  }
+}
+
+.location {
+  border: 1px solid $ac-white-light;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  a{
+    color: $ac-color-text;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      color: $ac-primary;
+    }
+    span {
+      width: calc(100% - 26px);
+      &.icon {
+        width: 18px;
+        transform: translateY(4px);
+      }
+    }
+  }
+}
+
+.modify-contact-form {
+  .fs-webform-container .fserv-container {
+    margin: 0 0 32px auto;
+    @include mobile {
+      margin: 0 auto;
+    }
+  }
+  .formserv-text-field, .formserv-email-field, .formserv-tel-field, .formserv-select-field.fserv-field, .formserv-select-multiple-field, .formserv-textarea-field {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    &:not(.formserv-textarea-field){
+      align-items: center;
+    }
+    .error{
+      width: 100%;
+    }
+    .fserv-label {
+      width: 120px;
+      padding-bottom: 0;
+    }
+    input, textarea {
+      width: calc(100% - 128px) !important;
+      &:hover {
+        outline: 1px solid $ac-primary;
+      }
+      &:focus {
+        outline: 2px solid $ac-primary;
+      }
+    }
+  }
+  .fs-webform-container {
+     .fserv-field+.fserv-field{
+        margin-top: 12px;
+     }
+     .fserv-field+div:not(.fserv-field) {
+      padding: 12px 30px 0;
+     }
+    .fserv-field {
+      .select2-container {
+        min-width: calc(100% - 128px);
+      }
+    }
+    .checkbox {
+      padding: 0 !important;
+    }
+    .select2-selection__choice {
+      font-size: 12px;
+      line-height: 1;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 // appsCode.com Sass Template
 // Author: AppsCode
 // Version: 0.0.1
+@import "../../../node_modules/bulma/bulma.sass";
 
 //BASE - Base styles, variables, mixins
 @import "base/utilities/_initial-variable";
@@ -14,21 +15,20 @@
 
 //BASE - Base styles, variables, mixins
 @import "base/_global";
-@import "base/_base";
-@import "base/_homepage";
-@import "base/_video-palyer.scss";
+@import "base/_video-palyer";
 @import "base/_innerpage";
-@import "base/_contactus-update";
+// @import "base/_contactus-update";
 @import "base/_webinar";
 @import "base/_videos-gallery";
 
 
+// Components 
 @import "components/_navbar";
 @import "components/_preloader";
 @import "components/_cookie";
 @import "components/_tabs";
 @import "components/_button";
-@import "components/_product-hero-area";
+// @import "components/_product-hero-area";
 @import "components/_testimonial";
 @import "components/_features";
 @import "components/_ac-accordion";
@@ -37,7 +37,13 @@
 @import "components/_back-to-top";
 @import "components/_footer";
 
-//Responsive SCSS
+// Layouts 
 @import "layouts/_documentation";
 @import "layouts/_features-plan";
+
+// Pages  
+@import "pages/_homepage";
+@import "pages/_contactus";
+
+//Responsive SCSS
 @import "layouts/_responsive";

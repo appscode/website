@@ -1,6 +1,6 @@
 .testimonial-area {
   // background-color: #f3f4f7;
-  padding: 60px 0 165px;
+  padding: 60px 0 60px;
 
   .section-title {
     h2 {
@@ -91,7 +91,7 @@
 /****************************************
 Responsive Classes
 *****************************************/
-@media (max-width: 768px) {
+@include mobile {
   .testimonial-area {
     padding-top: 30px;
 
@@ -125,7 +125,6 @@ Responsive Classes
       min-height: auto;
 
       .user-info-wrapper {
-        justify-content: center;
 
         .user-info {
           h5 {
@@ -134,18 +133,11 @@ Responsive Classes
           text-align: left;
         }
       }
-
-      p {
-        text-align: center;
-      }
     }
   }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
-}
-
-@media (min-width: 769px) and (max-width: 1023.98px) {
+@include tablet-only {
   .testimonial-area {
     .section-title {
       h2 {
@@ -160,7 +152,7 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1215px) {
+@include widescreen-only {
   .testimonial-area {
     .section-title {
       h2 {
@@ -175,10 +167,7 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1216px) and (max-width: 1407px) {
-}
-
-@media (min-width: 1408px) and (max-width: 1600px) {
+@include fullhd {
   .testimonial-area {
     .single-testimonial-item {
       padding: 30px;
@@ -193,33 +182,3 @@ Responsive Classes
   }
 }
 
-@media (min-width: 1408px) {
-}
-
-.client-thumb {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  float: left;
-  margin-right: 20px;
-}
-
-.client-info {
-  float: left;
-  overflow: hidden;
-  margin-top: 5px;
-  text-align: left;
-  h4 {
-    font-size: 16px;
-    line-height: 19px;
-    margin-bottom: 3px;
-  }
-  p {
-    margin: 0;
-    font-size: $font-size-extra-small;
-    font-style: italic;
-    color: $ac-color-text;
-    opacity: 0.6;
-  }
-}

@@ -15,19 +15,6 @@
     h1 {
       strong {
         color: $ac-primary;
-        // position: relative;
-        // z-index: 1;
-        // &:after{
-        //   position: absolute;
-        //   content: "";
-        //   left: 0;
-        //   top: 80%;
-        //   width: 100%;
-        //   height: 100%;
-        //   background-image: url(../images/shape/underline.svg);
-        //   background-repeat: no-repeat;
-        //   z-index: -1;
-        // }
       }
     }
     &.elasticsearch {
@@ -271,30 +258,6 @@
       background: #151a21;
       border-bottom: 1px solid #472f2f;
     }
-
-    // pre {
-    //   background-color: #1e242e;
-    //   color: #f1f1f9;
-
-    //   .hljs {
-    //     background-color: #1e242e;
-    //     color: #f1f1f9;
-
-    //     .hljs-keyword,
-    //     .hljs-literal,
-    //     .nginx .hljs-title {
-    //       color: #f410d0;
-    //     }
-
-    //     .hljs-string {
-    //       color: #f92e29;
-    //     }
-
-    //     .hljs-variable {
-    //       color: #72ccd7;
-    //     }
-    //   }
-    // }
   }
 
   .editor-header {
@@ -394,55 +357,13 @@
   }
 }
 
-.social-prove-brand-area {
-  .container {
-    // box-shadow: 0px 4px 18px 5px rgba(0, 166, 81, 0.09);
-    background: #fff;
-    border-radius: 4px;
-    margin-top: -80px;
-    padding: 30px 0 0;
-    z-index: 9;
-  }
-  .brand-image-wrapper {
-    padding: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
 
-    .single-brand {
-      img {
-        max-height: 2rem;
-        filter: grayscale(1);
-        transition: 0.3s ease-in-out;
-      }
-
-      &:hover {
-        img {
-          filter: grayscale(0);
-        }
-      }
-    }
-  }
-  .owl-carousel {
-    .owl-stage {
-      transition-timing-function: linear !important;
-    }
-    .owl-item {
-      img {
-        width: auto !important;
-        // margin: 0 auto;
-      }
-    }
-  }
-}
 
 /****************************************
 Responsive Classes
 *****************************************/
 
-@media (max-width: 1023.98px) {
+@include touch {
   .hero-area {
     &.is-product {
       height: 100%;
@@ -488,14 +409,6 @@ Responsive Classes
       padding: 30px 0;
       padding-bottom: 0px;
       justify-content: center;
-      
-      .single-brand {
-        padding: 5px;
-
-        img {
-          max-height: 1.5rem;
-        }
-      }
     }
   }
 }
@@ -510,12 +423,8 @@ Responsive Classes
     }
   }
 }
-// // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 768px) {
-}
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 768px) and (max-width: 1023.98px) {
+@include tablet-only {
   .hero-area {
     &.is-product {
       p {
@@ -542,11 +451,7 @@ Responsive Classes
   }
 }
 
-// @media (min-width: 769px) and (max-width: 1023.98px) {
-// }
-
-// Large devices (desktops, 1024px and up)
-@media (min-width: 1024px) and (max-width: 1215px) {
+@include desktop-only {
   .hero-area.is-product {
     h1 {
       font-size: 2.3rem;
@@ -558,16 +463,12 @@ Responsive Classes
       justify-content: center;
 
       .single-brand {
-        padding: 0 10px;
       }
     }
   }
 }
 
-@media (min-width: 1216px) and (max-width: 1407px) {
-}
-
-@media (min-width: 1408px) and (max-width: 1600px) {
+@include fullhd {
   .hero-area {
     &.is-product {
       height: calc(100vh - 195px);
