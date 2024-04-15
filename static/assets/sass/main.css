@@ -24965,11 +24965,6 @@ Responsive Classes
   border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
-@media screen and (min-width: 1408px) {
-  .single-feature.mechanism {
-    padding: 16px;
-  }
-}
 .single-feature.mechanism .content h5 {
   margin-bottom: 4px;
   font-size: 16px;
@@ -25031,9 +25026,14 @@ Responsive Classes
     padding-top: 71.4285714286%;
   }
 }
+@media (min-width: 1216px) and (max-width: 1440px) {
+  .single-ui-ss {
+    padding-top: 71.4285714286%;
+  }
+}
 @media screen and (min-width: 1408px) {
   .single-ui-ss {
-    padding-top: 74.6268656716%;
+    padding-top: 64.1025641026%;
   }
 }
 .single-ui-ss img {

@@ -303,9 +303,6 @@
     padding: 8px 16px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     cursor: pointer;
-    @include fullhd {
-      padding: 16px;
-    }
     .content {
       h5 {
         margin-bottom: 4px;
@@ -365,8 +362,11 @@
   @include widescreen-only {
     padding-top: calc(100% * (100 / 140));
   }
+  @media (min-width: 1216px) and (max-width: 1440px){
+    padding-top: calc(100% * (100 / 140));
+  }
   @include fullhd {
-    padding-top: calc(100% * (100 / 134));
+    padding-top: calc(100% * (100 / 156));
   }
   img {
     position: absolute;
