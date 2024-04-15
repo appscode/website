@@ -20864,6 +20864,9 @@ Responsive Classes
   width: 200%;
   left: -50%;
 }
+.navbar-appscode .navbar-right .button.ac-button {
+  height: 40px;
+}
 .navbar-appscode.documentation-menu {
   margin-left: 349px;
   background-color: #ffffff;
@@ -21716,7 +21719,7 @@ Responsive Classes
   }
 }
 .embeded-console-button {
-  height: 50px;
+  height: 42px;
   margin-bottom: 4px;
   width: 185px;
   overflow: hidden;
@@ -22015,7 +22018,7 @@ a.nav-link.active:after {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 48px;
+  height: 46px;
 }
 @media screen and (max-width: 768px) {
   .button.ac-button {
@@ -25842,11 +25845,41 @@ Responsive Classes
 }
 .modify-contact-form .fs-webform-container .fserv-field .select2-container {
   min-width: calc(100% - 128px);
+  max-width: calc(100% - 128px);
 }
 .modify-contact-form .fs-webform-container .checkbox {
   padding: 0 !important;
 }
 .modify-contact-form .fs-webform-container .select2-selection__choice {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1;
 }
+
+.fs-webform-container .fserv-input-text, .fs-webform-container .fserv-select, .fs-webform-container .fserv-select-multiple, .fs-webform-container .fserv-textarea {
+  border: 1px solid #e7e7e7 !important;
+}
+
+.fs-webform-container .fserv-input-radio, .fs-webform-container .fserv-input-text, .fs-webform-container .fserv-select, .fs-webform-container .fserv-select-multiple, .fs-webform-container .fserv-textarea {
+  font-size: 12px !important;
+}
+
+.fs-webform-container .fserv-field .select2-container--default .select2-search__field::-moz-placeholder {
+  font-size: 13px !important;
+}
+
+.fs-webform-container .fserv-field .select2-container--default .select2-search__field::placeholder, .fs-webform-container .fserv-field .select2-container--default .select2-selection--single .select2-selection__placeholder, .fs-webform-container .fserv-container .fserv-field .select2-container .select2-selection--single .select2-selection__rendered, .fs-webform-container .fserv-field .select2-results__option[aria-selected] {
+  font-size: 13px !important;
+}
+
+.fs-webform-container *, .fs-webform-container ::after, .fs-webform-container ::before {
+  border-radius: 0px !important;
+}
+
+.fs-webform-container .fserv-field .select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background: var(--ac-primary) !important;
+  color: #ffffff !important;
+}
+
+.fs-webform-container .fserv-field .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #ffffff !important;
+}/*# sourceMappingURL=main.css.map */
