@@ -356,6 +356,18 @@
   width: 100%;
   height: 0px;
   padding-top: calc(100% * (100 / 143));
+  @include tablet-only {
+    padding-top: calc(100% * (100 / 92));
+  }
+  @include desktop-only {
+    padding-top: calc(100% * (100 / 110));
+  }
+  @include widescreen-only {
+    padding-top: calc(100% * (100 / 140));
+  }
+  @include fullhd {
+    padding-top: calc(100% * (100 / 134));
+  }
   img {
     position: absolute;
     top: 0;
