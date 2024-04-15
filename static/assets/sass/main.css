@@ -24961,12 +24961,18 @@ Responsive Classes
 .single-feature.mechanism {
   transition: 0.3s ease-in-out;
   border-radius: 8px;
-  padding: 16px;
+  padding: 8px 16px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
+@media screen and (min-width: 1408px) {
+  .single-feature.mechanism {
+    padding: 16px;
+  }
+}
 .single-feature.mechanism .content h5 {
   margin-bottom: 4px;
+  font-size: 16px;
 }
 .single-feature.mechanism:hover {
   background-color: rgba(255, 255, 255, 0.1);
@@ -25823,4 +25829,4 @@ Responsive Classes
 .modify-contact-form .fs-webform-container .select2-selection__choice {
   font-size: 12px;
   line-height: 1;
-}/*# sourceMappingURL=main.css.map */
+}

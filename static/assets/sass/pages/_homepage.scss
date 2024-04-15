@@ -300,12 +300,16 @@
   &.mechanism {
     transition: 0.3s ease-in-out;
     border-radius: 8px;
-    padding: 16px;
+    padding: 8px 16px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     cursor: pointer;
+    @include fullhd {
+      padding: 16px;
+    }
     .content {
       h5 {
         margin-bottom: 4px;
+        font-size: 16px;
       }
     }
     &:hover {
