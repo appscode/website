@@ -48,6 +48,11 @@
       left: -50%;
     }
   }
+  .navbar-right {
+    .button.ac-button {
+      height: 40px;
+    }
+  }
 
   &.documentation-menu {
     margin-left: 349px;
@@ -1134,7 +1139,7 @@ Responsive Classes
   }
 }
 .embeded-console-button {
-  height: 50px; 
+  height: 42px; 
   margin-bottom: 4px; 
   width: 185px;  
   overflow: hidden;
