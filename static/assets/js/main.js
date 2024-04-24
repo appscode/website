@@ -311,7 +311,7 @@ $('.customPrevBtn').click(function () {
 
 
 // owl owlCarousel JS 
-var owlSocialProve = $('.brand-image-wrapper');
+var owlSocialProve = $('#brand-image-wrapper');
 owlSocialProve.owlCarousel({
   loop: true,
   margin: 20,

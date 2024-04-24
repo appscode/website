@@ -1,0 +1,154 @@
+{{ define "header-bottom" }}
+<section></section>
+{{ end }}
+
+{{ define "main" }}
+<section class="partner-hero-area bg-primay-light section-padding">
+    <div class="container">
+        <div class="columns is-multiline is-centered">
+            <div class="column is-8">
+               <div class="section-title has-text-centered">
+                 <h1>AppsCode Partners</h1>
+                 <p>Empower your growth with AppsCode! We unite advanced database technologies and service providers to deliver transformative solutions worldwide.</p>
+               </div>
+            </div>
+        </div>
+        <div class="columns is-multiline is-centered">
+            <div class="column is-4">
+                <div class="single-feature card-view has-text-centered">
+                    <div class="icon">
+                        <img src="/assets/images/products/appscode/icons/global/resources.png" alt="Access to Exclusive Resources" loading="lazy">
+                    </div>
+                    <div class="content">
+                      <h4>Access to Exclusive Resources</h4>
+                      <p>Gain access to our marketing materials, resources, and dedicated support to help you succeed</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="column is-4">
+                <div class="single-feature card-view has-text-centered">
+                    <div class="icon">
+                        <img src="/assets/images/products/appscode/icons/global/expand.png" alt="Expand Your Reach" loading="lazy">
+                    </div>
+                    <div class="content">
+                      <h4>Expand Your Reach</h4>
+                      <p>Partnering with us means expanding your reach and tapping into new markets</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="column is-4">
+                <div class="single-feature card-view has-text-centered">
+                    <div class="icon">
+                        <img src="/assets/images/products/appscode/icons/global/commission.png" alt="Earn Competitive Commissions" loading="lazy">
+                    </div>
+                    <div class="content">
+                      <h4>Earn Competitive Commissions</h4>
+                      <p>Join our partner program and earn generous commissions for every successful referral</p>
+                    </div>
+                  </div>
+            </div>
+            <a href="#" class="button ac-button is-primary mt-16">
+                <span>Become a Partner</span>
+                <span><img src="/assets/images/products/appscode/icons/global/handshake.svg" alt="handshake"></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="showcase-partner section-padding">
+    <div class="container">
+        <div class="columns is-multiline is-centered">
+            <div class="column is-8">
+                <div class="section-title has-text-centered mb-0">
+                    <h2>Showcase Partners</h2>
+                    <p class="mb-0">An industry-leading group of technology providers integrate with AppsCode's powerful Database Solutions capabilities to provide enhanced value to their customers.</p>
+                </div>
+
+                <div class="social-prove-brand-area">
+                    <div class="brand-image-wrapper owl-carousel" id="brand-image-wrapper">
+                        {{ range $customer := $.Site.Data.customers }}
+                        {{ if $customer.show }}
+                        <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"></div>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="technology-partner bg-primay-light section-padding">
+    <div class="container">
+        <div class="columns is-multiline is-centered">
+            <div class="column is-10">
+                <div class="section-title has-text-centered mb-0">
+                    <h2>Technology Partners</h2>
+                </div>
+
+                <div class="social-prove-brand-area">
+                    <div class="brand-image-wrapper" style="gap: 8px; justify-content: center;">
+                        {{ range $customer := $.Site.Data.customers }}
+                        {{ if $customer.show }}
+                        <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"></div>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="system-integration section-padding">
+    <div class="container">
+        <div class="columns is-multiline is-centered">
+            <div class="column is-10">
+                <div class="section-title has-text-centered mb-0">
+                    <h2>System Integrators</h2>
+                </div>
+
+                <div class="social-prove-brand-area">
+                    <div class="brand-image-wrapper" style="gap: 8px; justify-content: center;">
+                        {{ range $customer := $.Site.Data.customers }}
+                        {{ if $customer.show }}
+                        <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"></div>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-area">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-10">
+                <div class="contact-form-wrapper  section-padding">
+                    <div class="section-title has-text-centered">
+                        <h2>Ready to become a partner? <br> Join our program today and start earning!</h2>
+                    </div>
+                    <div class="form-content">
+                        <script src='https://appscode.freshworks.com/crm/sales/web_forms/779b59dfa11f83797b7b5db7e6cc40e095c15873df17fd4b0de69f17f74c57f2/form.js' crossorigin='anonymous' id='fs_779b59dfa11f83797b7b5db7e6cc40e095c15873df17fd4b0de69f17f74c57f2'></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}
+
+{{ define "testimonial" }}
+<section></section>
+{{ end }}
+
+{{ define "customer-logos" }}
+<section></section>
+{{ end }}
+
+{{ define "cta-install" }}
+<section></section>
+{{ end }}

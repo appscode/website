@@ -19,7 +19,7 @@
   {{ partial "helpers/style-bundle.html" . }}
 </head>
 
-<body {{if $productName}}class="{{$productName}}" {{end}}>
+<body class="{{ .Layout }}">
   <!-- Google Tag Manager (noscript) -->
   {{ partial "helpers/google-tag-manager.html" . }}
   <!-- End Google Tag Manager (noscript) -->

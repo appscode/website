@@ -25882,4 +25882,72 @@ Responsive Classes
 
 .fs-webform-container .fserv-field .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
   color: #ffffff !important;
+}
+
+.bg-primay-light {
+  background-color: rgba(241, 249, 245, 0.97);
+}
+
+.partner-hero-area {
+  margin-top: 60px;
+}
+.partner-hero-area .section-title {
+  margin-bottom: 0;
+}
+.partner-hero-area .section-title p {
+  margin-bottom: 0;
+  text-wrap: balance;
+}
+.partner-hero-area .single-feature.card-view {
+  background-color: #ffffff;
+  min-height: 250px;
+  padding: 32px 16px;
+}
+.partner-hero-area .single-feature.card-view p {
+  font-size: 16px;
+}
+.partner-hero-area .single-feature.card-view .icon {
+  border: 1px solid #e7e7e7;
+  margin: 0 auto;
+}
+
+.contact-area {
+  z-index: 9;
+  position: relative;
+  margin-bottom: -150px;
+}
+.contact-area .contact-form-wrapper {
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  box-shadow: 0px 2px 30px rgba(44, 60, 74, 0.08);
+}
+.contact-area .contact-form-wrapper .form-content {
+  padding: 0 100px;
+}
+.contact-area .contact-form-wrapper .fs-webform-container .fserv-container {
+  box-shadow: none;
+}
+.contact-area .fserv-container {
+  min-width: 100%;
+}
+.contact-area .fserv-container .fserv-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.contact-area .fserv-container .fserv-form .fserv-field {
+  width: calc(50% - 8px);
+  margin: 0;
+  padding: 0;
+}
+.contact-area .fserv-container .fserv-form .fserv-field.formserv-textarea-field {
+  width: 100%;
+}
+.contact-area .fserv-field + div:not(.fserv-field) {
+  width: 100%;
+}
+
+body.partner .footer-top {
+  padding-top: 200px;
 }/*# sourceMappingURL=main.css.map */
