@@ -37,6 +37,8 @@
       background-color: $ac-white;
       padding: 12px 24px;
       border-radius: 4px;
+      display: flex;
+      align-items: center;
       img {
         max-height: 2rem;
         filter: grayscale(1);
@@ -190,7 +192,7 @@
   h2 {
     font-size: 32px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     text-wrap: balance;
 
   }

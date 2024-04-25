@@ -4,9 +4,13 @@
 
 {{ define "main" }}
 <section class="partner-hero-area bg-primay-light section-padding">
+    <span class="decorative-shape">
+        <img class="left-el" src="/assets/images/shape/decorative-el.svg" alt="decorative-el">
+        <img class="right-el" src="/assets/images/shape/decorative-el.svg" alt="decorative-el">
+    </span>
     <div class="container">
         <div class="columns is-multiline is-centered">
-            <div class="column is-8">
+            <div class="column is-10-tablet is-8-desktop">
                <div class="section-title has-text-centered">
                  <h1>AppsCode Partners</h1>
                  <p>Empower your growth with AppsCode! We unite advanced database technologies and service providers to deliver transformative solutions worldwide.</p>
@@ -47,7 +51,7 @@
                     </div>
                   </div>
             </div>
-            <a href="#" class="button ac-button is-primary mt-16">
+            <a href="#contact" class="button ac-button is-primary">
                 <span>Become a Partner</span>
                 <span><img src="/assets/images/products/appscode/icons/global/handshake.svg" alt="handshake"></span>
             </a>
@@ -58,7 +62,7 @@
 <section class="showcase-partner section-padding">
     <div class="container">
         <div class="columns is-multiline is-centered">
-            <div class="column is-8">
+            <div class="column is-10-tablet is-8-desktop">
                 <div class="section-title has-text-centered mb-0">
                     <h2>Showcase Partners</h2>
                     <p class="mb-0">An industry-leading group of technology providers integrate with AppsCode's powerful Database Solutions capabilities to provide enhanced value to their customers.</p>
@@ -79,6 +83,10 @@
 </section>
 
 <section class="technology-partner bg-primay-light section-padding">
+    <span class="decorative-shape">
+        <img class="left-el" src="/assets/images/shape/decorative-el.svg" alt="decorative-el">
+        <img class="right-el" src="/assets/images/shape/decorative-el.svg" alt="decorative-el">
+    </span>
     <div class="container">
         <div class="columns is-multiline is-centered">
             <div class="column is-10">
@@ -87,7 +95,7 @@
                 </div>
 
                 <div class="social-prove-brand-area">
-                    <div class="brand-image-wrapper" style="gap: 8px; justify-content: center;">
+                    <div class="brand-image-wrapper">
                         {{ range $customer := $.Site.Data.customers }}
                         {{ if $customer.show }}
                         <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"></div>
@@ -109,7 +117,7 @@
                 </div>
 
                 <div class="social-prove-brand-area">
-                    <div class="brand-image-wrapper" style="gap: 8px; justify-content: center;">
+                    <div class="brand-image-wrapper">
                         {{ range $customer := $.Site.Data.customers }}
                         {{ if $customer.show }}
                         <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"></div>
@@ -122,12 +130,16 @@
     </div>
 </section>
 
-<section class="contact-area">
+<section class="contact-area" id="contact">
+    <span class="decorative-shape">
+        <img class="left-el" src="/assets/images/shape/decorative-el.svg" alt="decorative-el">
+        <img class="right-el" src="/assets/images/shape/decorative-el.svg" alt="decorative-el">
+    </span>
     <div class="container">
         <div class="columns is-centered">
             <div class="column is-10">
                 <div class="contact-form-wrapper  section-padding">
-                    <div class="section-title has-text-centered">
+                    <div class="section-title has-text-centered mb-0">
                         <h2>Ready to become a partner? <br> Join our program today and start earning!</h2>
                     </div>
                     <div class="form-content">
