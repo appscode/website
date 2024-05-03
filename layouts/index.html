@@ -800,7 +800,7 @@ function showOnlySelectedDiv(selectedId) {
               <!-- user info wrapper start  -->
               <div class="user-info-wrapper">
                 <figure class="image is-64x64">
-                  <img class="is-rounded" src="{{ $user.profile }}" alt="{{ $user.name }}" loading="lazy">
+                  <img class="is-rounded" src="{{ $user.profile }}" alt="{{ $user.name }}" loading="lazy" height="64" width="64" decoding="async">
                 </figure>
                 <div class="user-info">
                   <h5>{{ $user.name }}</h5>
