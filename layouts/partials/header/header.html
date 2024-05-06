@@ -38,7 +38,7 @@
             <div class="navbar-brand">
               <a href="{{.Site.Params.domain_appscode}}">
                 <img src="{{$.Site.Data.products.appscode.logo.src}}"
-                  alt="{{$.Site.Data.products.appscode.logo.alt}}" />
+                  alt="{{$.Site.Data.products.appscode.logo.alt}}" loading="eager" height="30" width="auto"/>
               </a>
               <a role="button" class="navbar-burger is-hidden-desktop" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
@@ -296,46 +296,6 @@
                         </div>
                         <!-- single resources list  -->
 
-                        <!-- single resources list  -->
-                        <div class="list-items is-hidden">
-                          <h2>RECENT NEWS/BLOG</h2>
-                          {{- $pctx := . -}}
-                          {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
-                          {{- $pages := $pctx.RegularPages -}}
-
-
-                          <div class="press-wrapper">
-                            {{ range $idx, $p := $pages.ByDate.Reverse }}
-                            {{ if lt $idx 2 }}
-                            <!-- single press start  -->
-                            <a class="single-press">
-                              <div class="calender">
-                                <span class="date">{{ $p.Date.Format "2" }}</span>
-                                <span class="month">{{ $p.Date.Format "Jan" }}</span>
-                              </div>
-
-                              <div class="description">
-                                <h2>{{ $p.Title }}</h2>
-                                {{ range $author := $p.Params.authors }}
-                                <a href="/authors/{{ $author | urlize }}"
-                                  class="author"><span>by</span>{{ $author }}</a>
-                                {{ end }}
-                                <p class="is-ellipsis-2">{{ $p.Summary }}</p>
-                              </div>
-                            </a>
-                            <!-- <a class="single-press">
-                          <div class="description">
-                            <h6><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h6>
-                          </div>
-                        </a> -->
-                            <!-- single press end -->
-                            {{ end }}
-                            {{ end }}
-                            <a href="#" class="button ac-button inline-button">See More <span
-                                class="material-icons">arrow_forward</span></a>
-                          </div>
-                        </div>
-                        <!-- single resources list  -->
                       </div>
                       <!-- list menu items end -->
                     </div>
@@ -460,7 +420,7 @@
       <div class="navbar-left">
         <div class="navbar-brand">
           <a href="{{ index $.Site.Params $p.website.domainKey }}{{ $p.website.path }}"><img src="{{ $p.logo.src }}"
-              alt="{{ $p.logo.alt }}" alt="{{ $p.logo.alt }}"></a>
+              alt="{{ $p.logo.alt }}" alt="{{ $p.logo.alt }}" loading="eager" height="30" width="auto"></a>
 
           {{ if eq $currentPageType "docs" }}
           <!-- version select start  -->
