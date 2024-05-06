@@ -100,7 +100,7 @@
      <span class="sign-in-text">SIGN IN</span><span id="betaTag" class="tag is-hidden">BETA</span> <span class="smooth spinner"></span>
   </a>
 
-  <script src="/assets/js/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     const acSignInButton = document.getElementById('ac-sign-in-button');
 
@@ -162,7 +162,7 @@
           acSignInButton.querySelector("#betaTag").classList.remove("is-hidden")
         }
       } catch(error) {
-        console.log("Failed to fetch user", error)
+        // console.log("Failed to fetch user", error)
       }
       // remove the loader
       acSignInButton.classList.remove('is-loading');

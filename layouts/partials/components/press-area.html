@@ -1,0 +1,38 @@
+<!-- press-area start -->
+<section class="press-area section-padding is-hidden">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-10-tablet is-8 is-10-desktop is-8-widescreen">
+          <!-- section title start -->
+          <div class="section-title has-text-centered-tablet mb-10" data-aos="fade-up">
+            <h2>WHAT THEY PUBLISHED</h2>
+          </div>
+          <!-- section title end -->
+        </div>
+      </div>
+      <div class="columns is-multiline" data-aos="fade-up" data-aos-duration="800">
+        {{ range $idx, $article := $.Site.Data.press }}
+        <!-- single press start -->
+        <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
+          <div class="single-press-wrapper">
+            <div class="press-image press-image-{{ add $idx 1 }}"></div>
+            <div class="press-content">
+              <p class="read-meta">{{ $article.timeToRead }}</p>
+              <h3>
+                <a href="{{ $article.link }}">{{ $article.title }}</a>
+              </h3>
+              <p class="is-ellipsis-3">
+                {{ $article.summary }}
+              </p>
+              <div class="press-button-wrapper">
+                <a href="{{ $article.link }}" class="press-button">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- single press end -->
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- press-area end -->
