@@ -8,7 +8,7 @@
   <div class="navbar-area header--fixed">
 
     <!-- iframe for top notification  -->
-    <iframe src="/notification-top/" id="notification" frameborder="0" scrolling="no" style="width: 100%; display: flex; overflow: hidden; height: 0px;"></iframe>
+    <iframe src="/notification-top/" id="notification" frameborder="0" scrolling="no" style="width: 100%; display: flex; overflow: hidden; height: 0px;" title="notification"></iframe>
     <script>
       window.addEventListener("message", receiveMessageFromIframe, false);
 
@@ -73,7 +73,7 @@
                             <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}">
                           </div>
                           <div class="product-info">
-                            <h6>{{ $p.name }}</h6>
+                            <h2 class="is-size-6">{{ $p.name }}</h2>
                             <p>{{ $p.tagline | plainify }}</p>
                           </div>
                           <div class="navigate-icon">
@@ -94,7 +94,7 @@
                             <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}">
                           </div>
                           <div class="product-info">
-                            <h6>{{ $p.name }}</h6>
+                            <h2 class="is-size-6">{{ $p.name }}</h2>
                             <p>{{ $p.tagline | plainify }}</p>
                           </div>
                           <div class="navigate-icon">
@@ -115,7 +115,7 @@
                             <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}">
                           </div>
                           <div class="product-info">
-                            <h6>{{ $p.name }}</h6>
+                            <h2 class="is-size-6">{{ $p.name }}</h2>
                             <p>{{ $p.tagline | plainify }}</p>
                           </div>
                           <div class="navigate-icon">
@@ -241,7 +241,7 @@
                       <div class="resources-list">
                         <!-- single resources list  -->
                         <div class="list-items">
-                          <h6>RESOURCES</h6>
+                          <h2>RESOURCES</h2>
                           <ul>
                             <!-- <li><a href="#" target="_blank">Forum</a></li> -->
                             <li><a href="{{.Site.Params.blog_url}}" class="is-flex is-gap-4">
@@ -298,7 +298,7 @@
 
                         <!-- single resources list  -->
                         <div class="list-items is-hidden">
-                          <h6>RECENT NEWS/BLOG</h6>
+                          <h2>RECENT NEWS/BLOG</h2>
                           {{- $pctx := . -}}
                           {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
                           {{- $pages := $pctx.RegularPages -}}
@@ -315,7 +315,7 @@
                               </div>
 
                               <div class="description">
-                                <h6>{{ $p.Title }}</h6>
+                                <h2>{{ $p.Title }}</h2>
                                 {{ range $author := $p.Params.authors }}
                                 <a href="/authors/{{ $author | urlize }}"
                                   class="author"><span>by</span>{{ $author }}</a>
@@ -382,7 +382,7 @@
               </ul>
               <!-- navbar items end -->
               <div class="buttons">
-                <iframe src="/embed/?color=00a651" frameborder="0" scrolling="no" class="embeded-console-button"></iframe>
+                <iframe src="/embed/?color=00a651" frameborder="0" scrolling="no" class="embeded-console-button" title="embeded-console-button"></iframe>
                 <!-- <a id="ac-sign-in-button" href="https://accounts.appscode.com/user/login"
                 class="button ac-button is-loading {{ if eq $currentPageType "docs" }} is-hidden {{ end }}"><span>SIGN IN</span></a> -->
                 <a href="{{ $.Site.Params.domain_appscode }}/contact/"
@@ -543,7 +543,7 @@
                     </div>
                     {{ end }}
                     <div class="product-info">
-                      <h6>{{ .Name }}</h6>
+                      <h2 class="is-size-6">{{ .Name }}</h2>
                       <!-- <p>static content</p> -->
                     </div>
                     <div class="navigate-icon">

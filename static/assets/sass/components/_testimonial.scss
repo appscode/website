@@ -32,8 +32,9 @@
       }
 
       .user-info {
-        h5 {
+        .name {
           font-weight: bold;
+          color: $ac-color-heading;
           font-size: 22px;
           line-height: 1;
           line-height: 160%;
@@ -127,7 +128,7 @@ Responsive Classes
       .user-info-wrapper {
 
         .user-info {
-          h5 {
+          h6 {
             font-size: 20px;
           }
           text-align: left;

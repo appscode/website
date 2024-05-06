@@ -21127,7 +21127,7 @@ Responsive Classes
 .mega-menu-wrapper .mega-menu-inner .product-menu .single-product .product-logo img {
   height: 2.5rem;
 }
-.mega-menu-wrapper .mega-menu-inner .product-menu .single-product .product-info h6 {
+.mega-menu-wrapper .mega-menu-inner .product-menu .single-product .product-info h2 {
   font-size: 1rem;
   letter-spacing: 0.009rem;
   color: #1c1c1c;
@@ -21268,7 +21268,7 @@ Responsive Classes
   grid-template-columns: auto auto auto auto;
   grid-gap: 2rem;
 }
-.resources-list .list-items h6 {
+.resources-list .list-items h2 {
   font-weight: 500;
   position: relative;
   font-size: 0.875rem;
@@ -22335,8 +22335,9 @@ a.nav-link.active:after {
 .testimonial-area .single-testimonial-item .user-info-wrapper .image img {
   height: 100%;
 }
-.testimonial-area .single-testimonial-item .user-info-wrapper .user-info h5 {
+.testimonial-area .single-testimonial-item .user-info-wrapper .user-info .name {
   font-weight: bold;
+  color: #1c1c1c;
   font-size: 22px;
   line-height: 1;
   line-height: 160%;
@@ -22409,7 +22410,7 @@ Responsive Classes
   .testimonial-area .single-testimonial-item .user-info-wrapper .user-info {
     text-align: left;
   }
-  .testimonial-area .single-testimonial-item .user-info-wrapper .user-info h5 {
+  .testimonial-area .single-testimonial-item .user-info-wrapper .user-info h6 {
     font-size: 20px;
   }
 }
@@ -23261,9 +23262,10 @@ p.spam-message {
   padding-right: 10px;
 }
 
-.footer-menu h4 {
+.footer-menu label {
   font-size: 18px;
   margin-bottom: 4px;
+  font-weight: 500;
 }
 
 .footer-link li a {
@@ -24971,7 +24973,7 @@ Responsive Classes
   border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
-.single-feature.mechanism .content h5 {
+.single-feature.mechanism .content strong {
   margin-bottom: 4px;
   font-size: 16px;
 }
@@ -24998,7 +25000,7 @@ Responsive Classes
 .single-feature .content {
   width: calc(100% - 76px);
 }
-.single-feature .content h4 {
+.single-feature .content h3 {
   font-size: 20px;
   margin-bottom: 4px;
   line-height: 130%;
@@ -25096,7 +25098,9 @@ Responsive Classes
 .dark-bg h3,
 .dark-bg h4,
 .dark-bg h5,
-.dark-bg h6 {
+.dark-bg h6,
+.dark-bg strong,
+.dark-bg label {
   color: #e6e7e6;
 }
 .dark-bg p {

@@ -304,7 +304,7 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     cursor: pointer;
     .content {
-      h5 {
+      strong {
         margin-bottom: 4px;
         font-size: 16px;
       }
@@ -333,7 +333,7 @@
   }
   .content {
     width: calc(100% - 76px);
-    h4 {
+    h3 {
       font-size: 20px;
       margin-bottom: 4px;
       line-height: 130%;
@@ -423,7 +423,9 @@
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  strong,
+  label {
     color: #e6e7e6;
   }
   p {

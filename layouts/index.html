@@ -95,7 +95,7 @@
             -->
             <!-- intro end -->
 
-            <img src="{{ $p.homepage.hero_area.hero_image }}" alt="appscode-hero-image" loading="lazy"/>
+            <img src="{{ $p.homepage.hero_area.hero_image }}" alt="appscode-hero-image" width="660" height="380" load="lazy"/>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@
       <div class="container" data-aos="fade-up" data-aos-duration="900">
         <div class="columns">
           <div class="column is-12">
-            <h6>Trusted by Companies</h6>
+            <h2 class="is-size-5">Trusted by Companies</h2>
             <div class="social-prove-brand-area">
               <div class="brand-image-wrapper owl-carousel" id="brand-image-wrapper">
                 {{ range $customer := $.Site.Data.customers }}
@@ -140,7 +140,7 @@
             <div class="product-logo"><img src="{{ $product.logo }}" alt="kubedb-logo" loading="lazy"></div>
             <p class="is-ellipsis-4">{{ $product.description | safeHTML  }}</p>
             <button class="button ac-button is-transparent is-flex is-gap-4">
-             <span>LEARN MORE </span>
+             <span>{{$product.name}}</span>
               <span class="width-16 is-flex">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                   <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
@@ -291,7 +291,7 @@
           <div class="single-feature">
             <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Hide the complexity of Kubernetes behind a simple & elegant UI" loading="lazy"></div>
             <div class="content">
-              <h4>Hide the complexity of Kubernetes behind a simple & elegant UI</h4>
+              <h3>Hide the complexity of Kubernetes behind a simple & elegant UI</h3>
               <p>Simplify how you interact with your Kubernetes clusters. It hides the complexities of managing Kubenetes and provides a simplified and elegant UI.</p>
             </div>
           </div>
@@ -302,7 +302,7 @@
 
             <div class="icon"><img src="https://img.icons8.com/external-phatplus-lineal-phatplus/100/00A651/external-cluster-cloud-computing-phatplus-lineal-phatplus.png" alt=">Manage all your public and private clusters in one place" loading="lazy"></div>
             <div class="content">
-              <h4>Manage all your public and private clusters in one place</h4>
+              <h3>Manage all your public and private clusters in one place</h3>
               <p>Manage all of your private and public clusters from a single place.</p>
             </div>
           </div>
@@ -312,7 +312,7 @@
           <div class="single-feature">
             <div class="icon"><img src="https://img.icons8.com/ios/100/00A651/data-configuration.png" alt="Experience operator managed databases in your clusters" loading="lazy"></div>
             <div class="content">
-              <h4>Experience operator managed databases in your clusters</h4>
+              <h3>Experience operator managed databases in your clusters</h3>
               <p>Easy Provisioning, Upgrading, Scaling, Volume Expansion, Monitoring, Disaster Recovery etc. without becoming a DBA.</p>
             </div>
           </div>
@@ -322,7 +322,7 @@
           <div class="single-feature">
             <div class="icon"><img src="https://img.icons8.com/external-solidglyph-m-oki-orlando/100/00A651/external-Data-Recovery-data-warehouse-solidglyph-m-oki-orlando.png" alt="Better Safe than Sorry" loading="lazy"></div>
             <div class="content">
-              <h4>Better Safe than Sorry</h4>
+              <h3>Better Safe than Sorry</h3>
               <p>Simplifies how you backup and recover your volumes, databases and configuration yamls. Just a few taps and you are protected from future disasters.</p>
             </div>
           </div>
@@ -346,7 +346,7 @@
           <div class="single-feature card-view">
             <div class="icon"><img src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/100/5959CF/external-monitoring-seo-and-web-smashingstocks-detailed-outline-smashing-stocks.png" alt="Monitoring & Alerting" loading="lazy"></div>
             <div class="content">
-              <h4>Monitoring & Alerting</h4>
+              <h3>Monitoring & Alerting</h3>
               <p>Built-in integration with Prometheus and Grafana. Centralized Dashboards for all your Kubernetes clusters with localized Prometheus deployments.</p>
             </div>
           </div>
@@ -356,7 +356,7 @@
            <div class="single-feature card-view">
             <div class="icon"><img src="https://img.icons8.com/fluency-systems-regular/100/FFC629/keyhole-shield.png" alt="Security" loading="lazy"></div>
             <div class="content">
-              <h4>Security</h4>
+              <h3>Security</h3>
               <p>Built-in integration with best in class ecosystem tools like cert-manager, trivy, Vault, Gatekeepr, Kyverno helps achieve secure by default posture.</p>
             </div>
           </div>
@@ -365,7 +365,7 @@
            <div class="single-feature card-view">
             <div class="icon"><img src="https://img.icons8.com/ios/50/00A651/networking-manager.png" alt="Self Host or Managed" loading="lazy"></div>
             <div class="content">
-              <h4>Self Host or Managed</h4>
+              <h3>Self Host or Managed</h3>
               <p>You can use our managed service for a frictionless start or you can self-host AppsCode UI in your own cluster for complete control.</p>
             </div>
           </div>
@@ -375,7 +375,7 @@
            <div class="single-feature card-view">
             <div class="icon"><img src="https://img.icons8.com/external-outline-juicy-fish/100/5100A6/external-flexible-arrows-outline-outline-juicy-fish-2.png" alt="GitOps Ready" loading="lazy"></div>
             <div class="content">
-              <h4>GitOps Ready</h4>
+              <h3>GitOps Ready</h3>
               <p>AppsCode UI works directly with live Kubernetes YAMLs. Its R/W UI allows users to interact with the application configuration either via GitOps or directly from the UI.</p>
             </div>
           </div>
@@ -393,7 +393,7 @@
         <div class="single-feature">
           <div class="icon"><img src="https://img.icons8.com/external-outline-juicy-fish/100/00A651/external-flexible-arrows-outline-outline-juicy-fish-2.png" alt="Flexible & Extensible" loading="lazy"></div>
           <div class="content">
-            <h4>Flexible & Extensible</h4>
+            <h3>Flexible & Extensible</h3>
             <p>It is flexible and extensible to adapt to your needs. You can override the default presets and add new presets to fit your organization policy.</p>
           </div>
         </div>
@@ -403,7 +403,7 @@
         <div class="single-feature">
           <div class="icon"><img src="https://img.icons8.com/ios/50/00A651/trust--v1.png" alt="We are always there for you" loading="lazy"></div>
           <div class="content">
-            <h4>We are always there for you</h4>
+            <h3>We are always there for you</h3>
             <p>We provide dependable, on-demand 24x7 technical support by excellent in-house engineers who are involved in the product development.</p>
           </div>
         </div>
@@ -449,7 +449,7 @@
         <div class="single-feature mechanism is-active">
           <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Provisioning" loading="lazy"></div>
           <div class="content">
-            <h5 class="provisioing">Provisioning</h5>
+            <strong class="provisioing">Provisioning</strong>
             <p class="is-ellipsis-2">Provision your favorite databases with just a few clicks</p>
           </div>
         </div>
@@ -459,7 +459,7 @@
         <div class="single-feature mechanism">
           <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Database Insights" loading="lazy"></div>
           <div class="content">
-            <h5 class="database-insight">Database Insights</h5>
+            <strong class="database-insight">Database Insights</strong>
             <p class="is-ellipsis-2">Gain live insights in your databases with a glance</p>
           </div>
         </div>
@@ -469,7 +469,7 @@
         <div class="single-feature mechanism">
           <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Auto DBA" loading="lazy"></div>
           <div class="content">
-            <h5 class="managing">Auto DBA</h5>
+            <strong class="managing">Auto DBA</strong>
             <p class="is-ellipsis-2">Manage Day 2 lifecycle of your database right from the UI</p>
           </div>
         </div>
@@ -479,7 +479,7 @@
          <div class="single-feature mechanism">
           <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Disaster Recovery" loading="lazy"></div>
           <div class="content">
-            <h5 class="disaster-recovery">Disaster Recovery</h5>
+            <strong class="disaster-recovery">Disaster Recovery</strong>
             <p class="is-ellipsis-2">Stay ready for any disaster with just a few clicks.</p>
           </div>
         </div>
@@ -489,7 +489,7 @@
          <div class="single-feature mechanism">
           <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Monitoring" loading="lazy"></div>
           <div class="content">
-            <h5 class="monitoring">Monitoring</h5>
+            <strong class="monitoring">Monitoring</strong>
             <p class="is-ellipsis-2">Monitor your database with embedded Grafana dashboards</p>
           </div>
         </div>
@@ -499,7 +499,7 @@
         <div class="single-feature mechanism">
           <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Alert" loading="lazy"></div>
           <div class="content">
-            <h5 class="alert">Alert</h5>
+            <strong class="alert">Alert</strong>
             <p class="is-ellipsis-2">Stay alert for your mission critical databases</p>
           </div>
         </div>
@@ -535,40 +535,7 @@
     </div>
    </div>
   </div>
-<script>
-  // Get all the single-feature mechanism elements
-const singleFeatures = document.querySelectorAll('.single-feature.mechanism');
 
-// Add click event listener to each single-feature mechanism element
-singleFeatures.forEach(function(feature) {
-    feature.addEventListener('click', function() {
-        const title = feature.querySelector('.mechanism .content h5');
-
-        const className = title.className;
-        showOnlySelectedDiv(className)
-        singleFeatures.forEach(function(feature) {
-            feature.classList.remove('is-active');
-        });
-
-        feature.classList.add('is-active');
-        const divs=document.querySelectorAll(className)
-
-
-    });
-});
-function showOnlySelectedDiv(selectedId) {
-    const divs = document.querySelectorAll('.ui-mechanism > div');
-
-    divs.forEach(function(div) {
-        if (div.id === selectedId) {
-            div.classList.remove('is-hidden');
-        } else {
-            div.classList.add('is-hidden');
-        }
-    });
-}
-
-</script>
   <!-- introduce kubedb ui start -->
   <!--
   <div class="container-fulid intro-kubedb-ui section-padding">
@@ -597,7 +564,7 @@ function showOnlySelectedDiv(selectedId) {
 
               <div class="icon"><img src="https://cdn.appscode.com/images/logo/appscode/ac-moscot.png" alt="Kubernetes Made Easy"></div>
               <div class="content">
-                <h4></h4>
+                <h3></h3>
                 <p>Use Stash to backup and restore any stateful workload using restic or volume snapshotting on any K8s cluster </p>
                 <a href="https://console.appscode.com/" target="_blank" class="is-flex is-underlined">
                  <span>TRY CONSOLE UI</span>
@@ -615,7 +582,7 @@ function showOnlySelectedDiv(selectedId) {
             <div class="single-feature card-view bg-dark">
               <div class="icon"><img src="https://cdn.appscode.com/images/products/kubedb/icons/android-icon-48x48.png" alt="Kubernetes Made Easy"></div>
               <div class="content">
-                <h4></h4>
+                <h3></h3>
                 <p>Use Stash to backup and restore any stateful workload using restic or volume snapshotting on any K8s cluster </p>
                 <a href="https://db.appscode.com/" target="_blank" class="is-flex is-underlined">
                   <span>TRY KUBEDB UI</span>
@@ -659,11 +626,11 @@ function showOnlySelectedDiv(selectedId) {
         <!-- subscription input  -->
         <form method="post" action="https://listmonk.appscode.com/subscription/form" id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form" class="subscription-input" data-aos="fade-up" data-aos-duration="800"
-          novalidate role="email">
+          novalidate>
            <input type="hidden" id="afbbc" name="l" value="afbbc974-e163-4467-be49-040e399520f3" />
-          <input name="email" id="mce-EMAIL" type="email" placeholder="Enter your email address">
-          <button class="button ac-button is-primary" id="mc-embedded-subscribe" type="submit"
-            name="subscribe">SUBSCRIBE</button>
+          <input name="email" id="mce-EMAIL1" type="email" placeholder="Enter your email address">
+          <button class="button ac-button is-primary" id="mc-embedded-subscribe1" type="submit"
+            name="subscribe" aria-label="Subscribe Button">SUBSCRIBE</button>
           <p class="mt-16 mb-0" data-aos="fade-up" data-aos-duration="900">Subscribe to our newsletter <img
               src="/assets/images/icon/indicator-arrow-right.svg" alt="indicator-arrow-right" loading="lazy"></p>
         </form>
@@ -803,7 +770,7 @@ function showOnlySelectedDiv(selectedId) {
                   <img class="is-rounded" src="{{ $user.profile }}" alt="{{ $user.name }}" loading="lazy" height="64" width="64" decoding="async">
                 </figure>
                 <div class="user-info">
-                  <h5>{{ $user.name }}</h5>
+                  <p class="name">{{ $user.name }}</p>
                   <p>{{ $user.job }}{{ if $user.companyKey }} at
                     {{ index $.Site.Data.customers $user.companyKey "name" }}{{ end }}</p>
                 </div>

@@ -121,6 +121,43 @@ Array.from(responsiveMenus).forEach((menu, idx) => {
   });
 });
 
+
+//mechanism tabs =============================================start
+
+  // Get all the single-feature mechanism elements
+  const singleFeatures = document.querySelectorAll('.single-feature.mechanism');
+
+  // Add click event listener to each single-feature mechanism element
+  singleFeatures.forEach(function(feature) {
+      feature.addEventListener('click', function() {
+          const title = feature.querySelector('.mechanism .content strong');
+  
+          const className = title.className;
+          showOnlySelectedDiv(className)
+          singleFeatures.forEach(function(feature) {
+              feature.classList.remove('is-active');
+          });
+  
+          feature.classList.add('is-active');
+          const divs=document.querySelectorAll(className)
+  
+  
+      });
+  });
+  function showOnlySelectedDiv(selectedId) {
+      const divs = document.querySelectorAll('.ui-mechanism > div');
+  
+      divs.forEach(function(div) {
+          if (div.id === selectedId) {
+              div.classList.remove('is-hidden');
+          } else {
+              div.classList.add('is-hidden');
+          }
+      });
+  }
+
+//mechanism tabs =============================================end
+
 // docs page codeblock copy button 
 document.querySelectorAll(".code-block-wrapper").forEach(codeBlockWrapper => {
   let heading = codeBlockWrapper.querySelector(".code-block-title")
