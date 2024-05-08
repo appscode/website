@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
 .pagination-previous,
 .pagination-next,
@@ -24650,7 +24650,7 @@ Responsive Classes
   display: inline-flex;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.6;
   color: #515D63;
@@ -24665,6 +24665,7 @@ Responsive Classes
 }
 .news-message strong {
   color: var(--ac-primary);
+  font-weight: 500;
 }
 
 .hero-area-1 {
