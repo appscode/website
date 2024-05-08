@@ -1,8 +1,7 @@
 @charset "UTF-8";
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
 .pagination-previous,
 .pagination-next,
@@ -20343,7 +20342,7 @@ Responsive Classes
   display: flex;
   justify-content: space-between;
   width: 100%;
-  font-family: "Inter";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -21094,8 +21093,8 @@ Responsive Classes
 .mega-menu-wrapper .mega-menu-inner .product-menu.database-list .single-product .product-logo img {
   height: 1.5rem;
 }
-.mega-menu-wrapper .mega-menu-inner .product-menu.database-list .single-product .navigate-icon .material-icons {
-  font-size: 1rem;
+.mega-menu-wrapper .mega-menu-inner .product-menu.database-list .single-product .navigate-icon .icon {
+  width: 1rem;
 }
 .mega-menu-wrapper .mega-menu-inner .product-menu .single-product {
   display: grid;
@@ -21111,7 +21110,7 @@ Responsive Classes
 .mega-menu-wrapper .mega-menu-inner .product-menu .single-product:hover, .mega-menu-wrapper .mega-menu-inner .product-menu .single-product.is-active {
   background-color: rgba(77, 77, 203, 0.0509803922);
 }
-.mega-menu-wrapper .mega-menu-inner .product-menu .single-product:hover .navigate-icon .material-icons, .mega-menu-wrapper .mega-menu-inner .product-menu .single-product.is-active .navigate-icon .material-icons {
+.mega-menu-wrapper .mega-menu-inner .product-menu .single-product:hover .navigate-icon .icon, .mega-menu-wrapper .mega-menu-inner .product-menu .single-product.is-active .navigate-icon .icon {
   opacity: 1;
   visibility: visible;
 }
@@ -21145,8 +21144,8 @@ Responsive Classes
   justify-content: center;
   align-items: center;
 }
-.mega-menu-wrapper .mega-menu-inner .product-menu .single-product .navigate-icon .material-icons {
-  font-size: 1.2rem;
+.mega-menu-wrapper .mega-menu-inner .product-menu .single-product .navigate-icon .icon {
+  width: 1.2rem;
   color: var(--ac-primary);
   opacity: 0;
   visibility: hidden;
@@ -21683,8 +21682,8 @@ Responsive Classes
   .mega-menu-wrapper .mega-menu-inner .product-menu .single-product .product-logo img {
     height: 1.8rem;
   }
-  .mega-menu-wrapper .mega-menu-inner .product-menu .single-product .navigate-icon .material-icons {
-    font-size: 16px;
+  .mega-menu-wrapper .mega-menu-inner .product-menu .single-product .navigate-icon .icon {
+    width: 16px;
   }
   .mega-menu-wrapper .mega-menu-inner .product-menu.database-list {
     grid-template-columns: auto;
@@ -24649,7 +24648,7 @@ Responsive Classes
 }
 .news-message {
   display: inline-flex;
-  font-family: "Inter";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -25085,7 +25084,7 @@ Responsive Classes
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../../assets/images/products/appscode/features/ui-features.png");
+  background-image: url("../../../assets/images/products/appscode/features/ui-features.webp");
   background-repeat: no-repeat;
 }
 

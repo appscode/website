@@ -159,37 +159,37 @@ Array.from(responsiveMenus).forEach((menu, idx) => {
 //mechanism tabs =============================================end
 
 // docs page codeblock copy button 
-document.querySelectorAll(".code-block-wrapper").forEach(codeBlockWrapper => {
-  let heading = codeBlockWrapper.querySelector(".code-block-title")
-  let downloadBtn = heading.querySelector(".download-here")
-  let copyBtn = heading.querySelector(".copy-here")
+// document.querySelectorAll(".code-block-wrapper").forEach(codeBlockWrapper => {
+//   let heading = codeBlockWrapper.querySelector(".code-block-title")
+//   let downloadBtn = heading.querySelector(".download-here")
+//   let copyBtn = heading.querySelector(".copy-here")
 
-  // for download button 
-  const highlight = heading.nextElementSibling;
-  const code = highlight.querySelector("code");
-  const codeContent = code.textContent;
-  let fileType = code.getAttribute("class");
-  if (fileType) {
-    fileType = fileType.replace("language-", "");
-  } else {
-    fileType = "txt";
-  }
-  let fileName = heading.querySelector("h4").textContent.replace(" ", "_");
-  if (downloadBtn) {
-    downloadBtn.addEventListener("click", function () {
-      return download(codeContent, `${fileName}.${fileType}`, "text/plain");
-    });
-  }
+//   // for download button 
+//   const highlight = heading.nextElementSibling;
+//   const code = highlight.querySelector("code");
+//   const codeContent = code.textContent;
+//   let fileType = code.getAttribute("class");
+//   if (fileType) {
+//     fileType = fileType.replace("language-", "");
+//   } else {
+//     fileType = "txt";
+//   }
+//   let fileName = heading.querySelector("h4").textContent.replace(" ", "_");
+//   if (downloadBtn) {
+//     downloadBtn.addEventListener("click", function () {
+//       return download(codeContent, `${fileName}.${fileType}`, "text/plain");
+//     });
+//   }
 
-  // for copy button 
-  new ClipboardJS(copyBtn, {
-    target: function (trigger) {
-      trigger.title = "Copied";
-      return heading.nextElementSibling;
-    }
-  });
+//   // for copy button 
+//   new ClipboardJS(copyBtn, {
+//     target: function (trigger) {
+//       trigger.title = "Copied";
+//       return heading.nextElementSibling;
+//     }
+//   });
 
-});
+// });
 
 // scroll to top start
 //Get the button
@@ -240,9 +240,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // AOS Animation
-  AOS.init({
-    once: true,
-  });
+  // AOS.init({
+  //   once: true,
+  // });
 
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(
