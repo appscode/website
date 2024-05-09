@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
  .select select, .textarea, .input, .button {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -2596,6 +2595,72 @@ strong {
 /* brand logo area start */
 
 /* brand logo area end */
+.ac-custom-select .ss-single-selected,
+.ac-custom-select .ss-multi-selected {
+  min-height: 45px !important;
+  border: 1px solid #a6abbd;
+  color: #515D63;
+  padding: 0 15px;
+}
+.ac-custom-select .ss-single-selected .ss-arrow,
+.ac-custom-select .ss-multi-selected .ss-arrow {
+  margin: 0;
+}
+.ac-custom-select .ss-single-selected .placeholder,
+.ac-custom-select .ss-multi-selected .placeholder {
+  font-size: 15px;
+  color: #515D63;
+  font-weight: 500;
+}
+.ac-custom-select .ss-single-selected .ss-values,
+.ac-custom-select .ss-multi-selected .ss-values {
+  margin-top: 3px;
+}
+.ac-custom-select .ss-single-selected .ss-values .ss-disabled,
+.ac-custom-select .ss-multi-selected .ss-values .ss-disabled {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #a6abbd;
+}
+.ac-custom-select .ss-single-selected .ss-values .ss-value,
+.ac-custom-select .ss-multi-selected .ss-values .ss-value {
+  height: 30px;
+  margin-bottom: 6px;
+  padding: 0 10px;
+  background-color: #35a651;
+}
+.ac-custom-select .ss-single-selected .ss-add,
+.ac-custom-select .ss-multi-selected .ss-add {
+  margin: 4px;
+  align-items: center;
+}
+.ac-custom-select .ss-content {
+  border: 1px solid #a6abbd;
+}
+.ac-custom-select .ss-content .ss-list .ss-option {
+  font-size: 14px;
+  color: #515D63;
+  transition: 0.3s ease-in-out;
+}
+.ac-custom-select .ss-content .ss-list .ss-option:hover {
+  opacity: 0.8;
+  color: var(--ac-primary);
+}
+.ac-custom-select .ss-content .ss-list .ss-option.ss-disabled {
+  opacity: 0.5;
+}
+.ac-custom-select .ss-content .ss-search input {
+  border: 1px solid #a6abbd;
+}
+.ac-custom-select .ss-content .ss-search input:focus {
+  outline: none;
+  box-shadow: none;
+}
 
 .message {
   display: flex;
@@ -2999,7 +3064,7 @@ Responsive Classes
   padding: 30px;
 }
 .registration-form h3 {
-  font-family: Poppins;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -3037,7 +3102,7 @@ Responsive Classes
   color: #ea3d2f;
   padding-left: 5px;
 }
-
+.registration-form form input,
 .registration-form form .textarea-wrapper,
 .registration-form form .select {
   border: 1px solid #a6abbd;
@@ -3050,13 +3115,13 @@ Responsive Classes
   background-color: transparent;
   color: #515D63;
 }
-
+.registration-form form input:focus,
 .registration-form form .textarea-wrapper:focus,
 .registration-form form .select:focus {
   outline: none !important;
   border: 1px solid var(--ac-primary);
 }
- .registration-form form .textarea-wrapper::-moz-placeholder, .registration-form form .select::-moz-placeholder {
+.registration-form form input::-moz-placeholder, .registration-form form .textarea-wrapper::-moz-placeholder, .registration-form form .select::-moz-placeholder {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -3064,7 +3129,7 @@ Responsive Classes
   line-height: 16px;
   color: #a6abbd;
 }
-
+.registration-form form input::placeholder,
 .registration-form form .textarea-wrapper::placeholder,
 .registration-form form .select::placeholder {
   font-family: Roboto;
@@ -7143,3 +7208,4 @@ body.partner .social-prove-brand-area .brand-image-wrapper .single-brand {
     max-height: 28px;
   }
 }
+/*# sourceMappingURL=static/assets/sass/main.css.map */

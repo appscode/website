@@ -47,11 +47,11 @@
           <!-- <p>{{ $p.homepage.hero_area.summary }}</p> -->
 
           <ul class="list-items">
-            <li ><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="lazy"></span><span>Manage full life-cycle of any databases</span></li>
-            <li><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="lazy"></span><span>Backup and fast recovery solution for workloads</span></li>
-            <li><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="lazy"></span><span>Manage Secrets & Users w/ Vault operator</span></li>
-            <li><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="lazy"></span><span>Ingress Controller w/ Gateway API Support</span></li>
-            <li><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="lazy"></span><span>Centrally Manage Clusters w/ Hub-Spoke Model</span></li>
+            <li ><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="eager"></span><span>Manage full life-cycle of any databases</span></li>
+            <li><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="eager"></span><span>Backup and fast recovery solution for workloads</span></li>
+            <li><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="eager"></span><span>Manage Secrets & Users w/ Vault operator</span></li>
+            <li><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="eager"></span><span>Ingress Controller w/ Gateway API Support</span></li>
+            <li><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="eager"></span><span>Centrally Manage Clusters w/ Hub-Spoke Model</span></li>
           </ul>
 
           <!-- buttons  -->
@@ -111,7 +111,7 @@
               <div class="brand-image-wrapper owl-carousel" id="brand-image-wrapper">
                 {{ range $customer := $.Site.Data.customers }}
                 {{ if $customer.show }}
-                <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}" loading="lazy" height="32"></div>
+                <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}" loading="eager" height="32"></div>
                 {{ end }}
                 {{ end }}
               </div>
@@ -139,7 +139,7 @@
         {{ range $product := $p.homepage.main_products }}
         <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
           <a href="{{ $product.url }}" class="single-product">
-            <div class="product-logo"><img src="{{ $product.logo }}" alt="{{$product.name}}" loading="lazy" height="24" width="auto"></div>
+            <div class="product-logo"><img src="{{ $product.logo }}" alt="{{$product.name}}" loading="lazy" height="auto" width="auto"></div>
             <p class="is-ellipsis-4">{{ $product.description | safeHTML  }}</p>
             <button class="button ac-button is-transparent is-flex is-gap-4">
              <span>{{$product.name}}</span>
@@ -241,7 +241,7 @@
                 <!-- single product description start  -->
                 <div class="product-description">
                   <div class="brand">
-                    <img src="{{ $products.logo}}" alt="{{$products.product}}" loading="lazy" height="30" width="auto">
+                    <img src="{{ $products.logo}}" alt="{{$products.product}}" loading="lazy" height="auto" width="auto">
                   </div>
                   <!-- <h5>{{ $products.title}}</h5> -->
                   <p>{{ $products.summary}}</p>
@@ -268,7 +268,7 @@
               </div>
               <div class="column is-6 is-hidden-tablet-only" >
                 <div class="illustration">
-                  <img src="{{ $products.illustration }}" alt="appscode illustration"  loading="lazy" height="300" width="auto">
+                  <img src="{{ $products.illustration }}" alt="appscode illustration"  loading="lazy" height="auto" width="auto">
                 </div>
               </div>
             </div>

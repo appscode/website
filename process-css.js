@@ -27,13 +27,16 @@ fs.readFile(cssFilePath, (err, css) => {
         'fserv-field',
         'select2-container',
         'select2',
-        'fs-webform-container'
+        'fs-webform-container',
+        'placeholder'
+
       ],
       deep: [
         /^fserv-/, 
         /^fs-/,
         /^select2-/,
-        /^formserv/
+        /^formserv/,
+        /^ss-/
       ],
       greedy: [
         // /^header-/,
