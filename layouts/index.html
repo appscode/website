@@ -81,7 +81,7 @@
           </div>
           <!-- buttons  -->
         </div>
-        <div class="column is-6">
+        <div class="column is-6 is-hidden-mobile">
           <div class="h-right-content">
 
             <!-- intro video  -->
@@ -237,7 +237,7 @@
           {{ range $products := $p.homepage.products }}
           <div class="single-product {{$products.product}}" data-serialscrolling-target="{{ $products.id }}">
             <div class="columns">
-              <div class="column is-6" >
+              <div class="column is-6-desktop is-full-touch" >
                 <!-- single product description start  -->
                 <div class="product-description">
                   <div class="brand">
@@ -266,7 +266,7 @@
                 </div>
                 <!-- single product description end -->
               </div>
-              <div class="column is-6 is-hidden-tablet-only" >
+              <div class="column is-6 is-hidden-touch" >
                 <div class="illustration">
                   <img src="{{ $products.illustration }}" alt="appscode illustration"  loading="lazy" height="auto" width="auto">
                 </div>
@@ -299,7 +299,7 @@
 
     <!-- features with screenshot  -->
     <div class="columns">
-      <div class="column is-4-desktop is-5-tablet">
+      <div class="column is-4-desktop is-full-touch">
         <div class="is-flex is-flex-direction-column" style="gap: 32px;">
           <!-- single features item start -->
           <div class="single-feature">
@@ -343,7 +343,7 @@
           <!-- single features item end -->
         </div>
       </div>
-      <div class="column is-hidden-mobile is-8-desktop is-7-tablet">
+      <div class="column is-hidden-touch is-8-desktop">
         <div class="ui-dashboard">
           <!-- image come from css  -->
           <!-- <img src="/assets/images/products/appscode/features/ui-features.jpg" alt="features"> -->
