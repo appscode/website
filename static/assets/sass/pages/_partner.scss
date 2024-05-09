@@ -234,7 +234,12 @@ body.partner {
       margin-bottom: 0;
     }
   }
-  .fs_8cba8c35285047f6bbc4641701ef8c2f96e2fa0908f9dea70bbc2729dd75c786 button[type="submit"].fserv-button-submit{
+  .fserv-button-submit {
     background: linear-gradient(to left, hsl(149, 100%, 33%) , hsl(149, 50%, 33%)) !important;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      box-shadow: 2px 4px 24px rgba(0, 166, 81, 0.3) !important;
+      transform: translateY(-2px);
+    }
   }
 }

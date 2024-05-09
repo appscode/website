@@ -28,7 +28,8 @@ fs.readFile(cssFilePath, (err, css) => {
         'select2-container',
         'select2',
         'fs-webform-container',
-        'placeholder'
+        'placeholder',
+        'fserv-button-submit'
 
       ],
       deep: [
