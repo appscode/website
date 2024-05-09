@@ -1736,7 +1736,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     flex: none;
     width: 33.33333337%;
   }
-  .column.is-5, .column.is-5-tablet {
+  .column.is-5 {
     flex: none;
     width: 41.66666674%;
   }
@@ -1744,7 +1744,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     flex: none;
     width: 50%;
   }
-  .column.is-7, .column.is-7-tablet {
+  .column.is-7 {
     flex: none;
     width: 58.33333337%;
   }
@@ -1761,6 +1761,12 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     width: 83.33333337%;
   }
   .column.is-12 {
+    flex: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .column.is-full-touch {
     flex: none;
     width: 100%;
   }
@@ -1883,11 +1889,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .columns.is-variable.is-5 {
   --columnGap: 1.25rem;
 }
-@media screen and (min-width: 769px), print {
-  .columns.is-variable.is-5-tablet {
-    --columnGap: 1.25rem;
-  }
-}
 .columns.is-variable.is-6 {
   --columnGap: 1.5rem;
 }
@@ -1903,11 +1904,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 .columns.is-variable.is-7 {
   --columnGap: 1.75rem;
-}
-@media screen and (min-width: 769px), print {
-  .columns.is-variable.is-7-tablet {
-    --columnGap: 1.75rem;
-  }
 }
 .columns.is-variable.is-8 {
   --columnGap: 2rem;
@@ -2089,11 +2085,6 @@ a.has-text-primary:hover, a.has-text-primary:focus {
 }
 @media screen and (min-width: 769px), print {
   .is-hidden-tablet {
-    display: none !important;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-  .is-hidden-tablet-only {
     display: none !important;
   }
 }
@@ -7208,3 +7199,4 @@ body.partner .social-prove-brand-area .brand-image-wrapper .single-brand {
     max-height: 28px;
   }
 }
+/*# sourceMappingURL=static/assets/sass/main.css.map */
