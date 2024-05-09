@@ -2460,6 +2460,13 @@ strong {
 .social-prove-brand-area .brand-image-wrapper .single-brand:hover img {
   filter: grayscale(0);
 }
+.social-prove-brand-area .owl-carousel .owl-stage {
+  transition-timing-function: linear !important;
+}
+.social-prove-brand-area .owl-carousel .owl-item img {
+  width: auto !important;
+  height: 32px;
+}
 
 .is-fullwidth {
   width: 100% !important;
@@ -5059,6 +5066,9 @@ li.nav-item a {
   font-size: 1rem;
   line-height: 160%;
 }
+.testimonial-area .owl-carousel .owl-stage-outer {
+  padding: 40px 0px;
+}
 
 .arrows {
   display: flex;
@@ -5095,6 +5105,9 @@ Responsive Classes
   }
   .testimonial-area .section-title h2 {
     font-size: 32px;
+  }
+  .testimonial-area .owl-carousel .owl-stage-outer {
+    padding: 0 !important;
   }
   .testimonial-area .arrows {
     width: 96px;
