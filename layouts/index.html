@@ -120,6 +120,20 @@
         </div>
       </div>
   </section>
+
+  <script>
+    if (window.innerWidth <= 768) {
+      setTimeout(() => {
+        const heroArea = document.querySelector(".hero-area-1");
+        const notification = document.querySelector("#notification");
+        const notificationHeight = notification.style.height;
+        
+        if(notificationHeight === "0px"){
+          heroArea.style.paddingTop = "100px"
+        }
+      }, 300);
+    }   
+  </script>
   <!--==================== hero-area end 2022  ====================-->
 
 
