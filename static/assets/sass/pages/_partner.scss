@@ -208,6 +208,7 @@ body.partner {
           border: none;
           img{
             max-height: 52px;
+            filter: none;
             @include mobile {
               max-height: 32px;
             }

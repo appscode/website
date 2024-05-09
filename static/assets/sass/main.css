@@ -7177,6 +7177,7 @@ body.partner .social-prove-brand-area .brand-image-wrapper:not(#brand-image-wrap
 }
 body.partner .social-prove-brand-area .brand-image-wrapper:not(#brand-image-wrapper) .single-brand img {
   max-height: 52px;
+  filter: none;
 }
 @media screen and (max-width: 768px) {
   body.partner .social-prove-brand-area .brand-image-wrapper:not(#brand-image-wrapper) .single-brand img {
