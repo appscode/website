@@ -14,10 +14,11 @@
 
 <!-- Load from local Script -->
 <script src="/assets/js/jquery.serialscrolling.min.js" defer></script>
+
 <!-- <script src="/assets/js/main.js" defer></script> -->
 
-{{ with $style := resources.Get "/assets/js/main.js" |  resources.Minify | resources.Fingerprint }}
-<script src="{{ $style.RelPermalink }}"></script>
+{{ with $script := resources.Get "/assets/js/main.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $script.RelPermalink }}" defer></script>
 {{ end }}
 
 <!-- Start of HubSpot Embed Code -->
