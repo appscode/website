@@ -69,10 +69,10 @@
                 </div>
 
                 <div class="social-prove-brand-area">
-                    <div class="brand-image-wrapper owl-carousel" id="brand-image-wrapper">
-                        {{ range $customer := $.Site.Data.customers }}
-                        {{ if $customer.show }}
-                        <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"></div>
+                    <div class="brand-image-wrapper">
+                        {{ range $showcase := $.Site.Data.partners.showcase_partners }}
+                        {{ if $showcase.show }}
+                        <div class="single-brand"><img src="{{ $showcase.logo }}" alt="{{ $showcase.name }}"></div>
                         {{ end }}
                         {{ end }}
                     </div>
@@ -96,9 +96,9 @@
 
                 <div class="social-prove-brand-area">
                     <div class="brand-image-wrapper">
-                        {{ range $customer := $.Site.Data.customers }}
-                        {{ if $customer.show }}
-                        <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"></div>
+                        {{ range $tech_parners := $.Site.Data.partners.technology_partners }}
+                        {{ if $tech_parners.show }}
+                        <div class="single-brand"><img src="{{ $tech_parners.logo }}" alt="{{ $tech_parners.name }}"></div>
                         {{ end }}
                         {{ end }}
                     </div>
@@ -108,7 +108,7 @@
     </div>
 </section>
 
-<section class="system-integration section-padding">
+<!-- <section class="system-integration section-padding">
     <div class="container">
         <div class="columns is-multiline is-centered">
             <div class="column is-10">
@@ -128,7 +128,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <section class="contact-area" id="contact">
     <span class="decorative-shape">

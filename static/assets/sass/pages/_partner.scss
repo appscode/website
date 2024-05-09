@@ -129,6 +129,7 @@
   z-index: 9;
   position: relative;
   margin-bottom: -150px;
+  margin-top: 60px;
   .section-title {
     h2 {
       @include mobile {
@@ -205,13 +206,19 @@ body.partner {
           padding: 16px 32px;
           box-shadow: 0px 2px 30px rgba(44, 60, 74, 0.08);
           border: none;
+          img{
+            max-height: 52px;
+            @include mobile {
+              max-height: 32px;
+            }
+          }
           @include touch {
             padding: 16px;
           }
         }
       }
       .single-brand {
-        height: 80px;
+        height: 110px;
         @include touch {
           height: auto;
           img {
@@ -220,5 +227,14 @@ body.partner {
         }
       }
     }
+  }
+  .fs-webform-container {
+    .fserv-label{
+      font-family: $ac-font-paragraph;
+      margin-bottom: 0;
+    }
+  }
+  .fs_8cba8c35285047f6bbc4641701ef8c2f96e2fa0908f9dea70bbc2729dd75c786 button[type="submit"].fserv-button-submit{
+    background: linear-gradient(to left, hsl(149, 100%, 33%) , hsl(149, 50%, 33%)) !important;
   }
 }
