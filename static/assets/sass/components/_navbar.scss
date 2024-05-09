@@ -195,6 +195,7 @@
         line-height: 1;
         color: $ac-color-heading;
         font-weight: 500;
+        font-family: $ac-font-heading;
         border: none;
         background-color: transparent;
         cursor: pointer;
@@ -324,8 +325,8 @@
           }
 
           .navigate-icon {
-            .material-icons {
-              font-size: 1rem;
+            .icon {
+              width: 1rem;
             }
           }
         }
@@ -347,7 +348,7 @@
           background-color: #4d4dcb0d;
 
           .navigate-icon {
-            .material-icons {
+            .icon {
               opacity: 1;
               visibility: visible;
             }
@@ -369,7 +370,7 @@
         }
 
         .product-info {
-          h6 {
+          h2 {
             font-size: 1rem;
             letter-spacing: 0.009rem;
             color: $ac-color-heading;
@@ -390,8 +391,8 @@
           justify-content: center;
           align-items: center;
 
-          .material-icons {
-            font-size: 1.2rem;
+          .icon {
+            width: 1.2rem;
             color: $ac-primary;
             opacity: 0;
             visibility: hidden;
@@ -553,7 +554,7 @@
   grid-gap: 2rem;
 
   .list-items {
-    h6 {
+    h2 {
       font-weight: 500;
       position: relative;
       font-size: 0.875rem;
@@ -1078,8 +1079,8 @@ Responsive Classes
           }
 
           .navigate-icon {
-            .material-icons {
-              font-size: 16px;
+            .icon {
+              width: 16px;
             }
           }
         }

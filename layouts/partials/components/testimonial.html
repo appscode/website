@@ -29,7 +29,7 @@
                 <img class="is-rounded" src="{{ $user.profile }}" alt="{{ $user.name }}">
               </figure>
               <div class="user-info">
-                <h5>{{ $user.name }}</h5>
+                <p class="name">{{ $user.name }}</p>
                 <p>{{ $user.job }}{{ if $user.companyKey }} at
                   {{ index $.Site.Data.customers $user.companyKey "name" }}{{ end }}</p>
               </div>

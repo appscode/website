@@ -1,6 +1,7 @@
 {{ define "head-footer" }}
 <!-- Slim Select CSS  -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css">
+<script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
 {{ end }}
 
 {{ define "main" }}
@@ -225,7 +226,7 @@
                 <!-- single input field end -->
                 <p class="form-message">By registering, you agree to the processing of your personal data by AppsCode as
                   described in the <a href="/legal/privacy-policy/">Privacy Statement</a>.</p>
-                <input type="submit" class="button ac-primary mt-20" value="REGISTER" disabled="true">
+                <input type="submit" class="button is-primary mt-20" value="REGISTER" disabled="true">
               </form>
               <!-- registration form end -->
               <!-- Success/Fail message start  -->
@@ -289,7 +290,11 @@
                     src="{{ .snippet.thumbnails.high.url }}"
                     alt="{{ .snippet.title }}" loading="lazy">
                   <div class="play-button">
-                    <span class="material-icons-outlined">play_arrow</span>
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                      </svg>                      
+                    </span>
                   </div>
                 </div>
                 <div class="card-body">

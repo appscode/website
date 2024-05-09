@@ -19,14 +19,17 @@
 
     p {
       font-size: 14px;
-      color: $ac-color-text;
+      color: $ac-color-heading;
       width: calc(100% - 220px);
       margin-bottom: 0;
 
       a {
-        color: $ac-primary;
+        color: hsla(149, 90%, 20%,1);
         text-decoration: underline;
         font-weight: 500;
+        &:hover{
+          color: $ac-primary;
+        }
       }
     }
 

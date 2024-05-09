@@ -19,7 +19,7 @@
   {{ partial "helpers/style-bundle.html" . }}
 </head>
 
-<body {{if $productName}}class="{{$productName}}" {{end}}>
+<body class="{{ .Layout }}">
   <!-- Google Tag Manager (noscript) -->
   {{ partial "helpers/google-tag-manager.html" . }}
   <!-- End Google Tag Manager (noscript) -->
@@ -44,7 +44,7 @@
   {{ end }}
   <!--========================== cookies area end ==========================-->
 
-  <div class="modal-backdrop"></div>
+  <div class="modal-backdrop"><span class="is-show"></span></div>
 
   <!-- ========================  Code that all your templates share, like a header========================  -->
   {{ block "main" . }}
@@ -64,7 +64,7 @@
   <!-- ========================  call to action area end  ======================== -->
 
   <!-- ========================  top to button start  ======================== -->
-  <button class="go-to-top" id="goTop">
+  <button class="go-to-top" id="goTop" aria-label="Go to top Button">
     <i class="fa fa-angle-up" aria-hidden="true"></i>
   </button>
   <!-- top to button end -->

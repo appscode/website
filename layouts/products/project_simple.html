@@ -86,7 +86,7 @@
   <div class="container">
     <div class="columns">
       <div class="column is-12">
-        <div class="brand-image-wrapper owl-carousel">
+        <div class="brand-image-wrapper owl-carousel" id="brand-image-wrapper">
           {{ range $customer := $.Site.Data.customers }}
           {{ if $customer.show }}
           <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"></div>
@@ -151,7 +151,7 @@
         X
       </button>
       <div class="video-container">
-        <iframe id="youtube" width="1080" height="540" src="https://www.youtube.com/embed/{{ $p.videos.intro }}" frameborder="0" allowfullscreen></iframe>
+        <iframe id="youtube" width="1080" height="540" src="https://www.youtube.com/embed/{{ $p.videos.intro }}" frameborder="0" title="video container" allowfullscreen></iframe>
       </div>
     </div>
   </div>

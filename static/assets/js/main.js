@@ -121,38 +121,75 @@ Array.from(responsiveMenus).forEach((menu, idx) => {
   });
 });
 
-// docs page codeblock copy button 
-document.querySelectorAll(".code-block-wrapper").forEach(codeBlockWrapper => {
-  let heading = codeBlockWrapper.querySelector(".code-block-title")
-  let downloadBtn = heading.querySelector(".download-here")
-  let copyBtn = heading.querySelector(".copy-here")
 
-  // for download button 
-  const highlight = heading.nextElementSibling;
-  const code = highlight.querySelector("code");
-  const codeContent = code.textContent;
-  let fileType = code.getAttribute("class");
-  if (fileType) {
-    fileType = fileType.replace("language-", "");
-  } else {
-    fileType = "txt";
-  }
-  let fileName = heading.querySelector("h4").textContent.replace(" ", "_");
-  if (downloadBtn) {
-    downloadBtn.addEventListener("click", function () {
-      return download(codeContent, `${fileName}.${fileType}`, "text/plain");
-    });
-  }
+//mechanism tabs =============================================start
 
-  // for copy button 
-  new ClipboardJS(copyBtn, {
-    target: function (trigger) {
-      trigger.title = "Copied";
-      return heading.nextElementSibling;
-    }
+  // Get all the single-feature mechanism elements
+  const singleFeatures = document.querySelectorAll('.single-feature.mechanism');
+
+  // Add click event listener to each single-feature mechanism element
+  singleFeatures.forEach(function(feature) {
+      feature.addEventListener('click', function() {
+          const title = feature.querySelector('.mechanism .content strong');
+  
+          const className = title.className;
+          showOnlySelectedDiv(className)
+          singleFeatures.forEach(function(feature) {
+              feature.classList.remove('is-active');
+          });
+  
+          feature.classList.add('is-active');
+          const divs=document.querySelectorAll(className)
+  
+  
+      });
   });
+  function showOnlySelectedDiv(selectedId) {
+      const divs = document.querySelectorAll('.ui-mechanism > div');
+  
+      divs.forEach(function(div) {
+          if (div.id === selectedId) {
+              div.classList.remove('is-hidden');
+          } else {
+              div.classList.add('is-hidden');
+          }
+      });
+  }
 
-});
+//mechanism tabs =============================================end
+
+// docs page codeblock copy button 
+// document.querySelectorAll(".code-block-wrapper").forEach(codeBlockWrapper => {
+//   let heading = codeBlockWrapper.querySelector(".code-block-title")
+//   let downloadBtn = heading.querySelector(".download-here")
+//   let copyBtn = heading.querySelector(".copy-here")
+
+//   // for download button 
+//   const highlight = heading.nextElementSibling;
+//   const code = highlight.querySelector("code");
+//   const codeContent = code.textContent;
+//   let fileType = code.getAttribute("class");
+//   if (fileType) {
+//     fileType = fileType.replace("language-", "");
+//   } else {
+//     fileType = "txt";
+//   }
+//   let fileName = heading.querySelector("h4").textContent.replace(" ", "_");
+//   if (downloadBtn) {
+//     downloadBtn.addEventListener("click", function () {
+//       return download(codeContent, `${fileName}.${fileType}`, "text/plain");
+//     });
+//   }
+
+//   // for copy button 
+//   new ClipboardJS(copyBtn, {
+//     target: function (trigger) {
+//       trigger.title = "Copied";
+//       return heading.nextElementSibling;
+//     }
+//   });
+
+// });
 
 // scroll to top start
 //Get the button
@@ -203,9 +240,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // AOS Animation
-  AOS.init({
-    once: true,
-  });
+  // AOS.init({
+  //   once: true,
+  // });
 
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(
@@ -311,7 +348,7 @@ $('.customPrevBtn').click(function () {
 
 
 // owl owlCarousel JS 
-var owlSocialProve = $('.brand-image-wrapper');
+var owlSocialProve = $('#brand-image-wrapper');
 owlSocialProve.owlCarousel({
   loop: true,
   margin: 20,

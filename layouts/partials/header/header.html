@@ -8,7 +8,7 @@
   <div class="navbar-area header--fixed">
 
     <!-- iframe for top notification  -->
-    <iframe src="/notification-top/" id="notification" frameborder="0" scrolling="no" style="width: 100%; display: flex; overflow: hidden; height: 0px;"></iframe>
+    <iframe src="/notification-top/" id="notification" frameborder="0" scrolling="no" style="width: 100%; display: flex; overflow: hidden; height: 0px;" title="notification"></iframe>
     <script>
       window.addEventListener("message", receiveMessageFromIframe, false);
 
@@ -38,7 +38,7 @@
             <div class="navbar-brand">
               <a href="{{.Site.Params.domain_appscode}}">
                 <img src="{{$.Site.Data.products.appscode.logo.src}}"
-                  alt="{{$.Site.Data.products.appscode.logo.alt}}" />
+                  alt="{{$.Site.Data.products.appscode.logo.alt}}" loading="eager" height="30" width="auto"/>
               </a>
               <a role="button" class="navbar-burger is-hidden-desktop" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
@@ -70,15 +70,17 @@
                         <a class="single-product"
                           href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}">
                           <div class="product-logo">
-                            <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}">
+                            <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}" loading="lazy">
                           </div>
                           <div class="product-info">
-                            <h6>{{ $p.name }}</h6>
+                            <h2 class="is-size-6">{{ $p.name }}</h2>
                             <p>{{ $p.tagline | plainify }}</p>
                           </div>
                           <div class="navigate-icon">
-                            <span class="material-icons">
-                              arrow_forward
+                            <span class="icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                              </svg>
                             </span>
                           </div>
                         </a>
@@ -91,15 +93,17 @@
                         <a class="single-product"
                           href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}">
                           <div class="product-logo">
-                            <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}">
+                            <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}" loading="lazy">
                           </div>
                           <div class="product-info">
-                            <h6>{{ $p.name }}</h6>
+                            <h2 class="is-size-6">{{ $p.name }}</h2>
                             <p>{{ $p.tagline | plainify }}</p>
                           </div>
                           <div class="navigate-icon">
-                            <span class="material-icons">
-                              arrow_forward
+                            <span class="icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                              </svg>
                             </span>
                           </div>
                         </a>
@@ -112,15 +116,17 @@
                         <a class="single-product"
                           href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}">
                           <div class="product-logo">
-                            <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}">
+                            <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}" loading="lazy">
                           </div>
                           <div class="product-info">
-                            <h6>{{ $p.name }}</h6>
+                            <h2 class="is-size-6">{{ $p.name }}</h2>
                             <p>{{ $p.tagline | plainify }}</p>
                           </div>
                           <div class="navigate-icon">
-                            <span class="material-icons">
-                              arrow_forward
+                            <span class="icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                              </svg>
                             </span>
                           </div>
                         </a>
@@ -135,7 +141,7 @@
                       <!-- single product description start  -->
                       <div class="product-description">
                         <div class="brand">
-                          <img src="{{ $p.logo.src }}" alt="{{ $p.logo.alt }}">
+                          <img src="{{ $p.logo.src }}" alt="{{ $p.logo.alt }}" loading="lazy" height="30" width="auto">
                         </div>
 
                         <p>{{ $p.summary | safeHTML }}</p>
@@ -144,7 +150,12 @@
                         <ul class="features">
                           {{ range $index, $item := $p.features }}
                           {{ if lt $index 8 }}
-                          <li><span class="material-icons">task_alt</span>{{ $item.title }}</li>
+                          <li>
+                            <span class="icon">
+                              <img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="lazy">
+                            </span>
+                            <span> {{ $item.title }}</span>
+                          </li>
                           {{ end }}
                           {{ end }}
                         </ul>
@@ -160,7 +171,7 @@
                       <!-- single product description start  -->
                       <div class="product-description">
                         <div class="brand">
-                          <img src="{{ $p.logo.src }}" alt="{{ $p.logo.alt }}">
+                          <img src="{{ $p.logo.src }}" alt="{{ $p.logo.alt }}" loading="lazy">
                         </div>
 
 
@@ -169,7 +180,12 @@
                         <ul class="features">
                           {{ range $index, $item := $p.features }}
                           {{ if lt $index 8 }}
-                          <li><span class="material-icons">task_alt</span>{{ $item.title }}</li>
+                          <li>
+                            <span class="icon">
+                              <img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="lazy">
+                            </span>
+                            <span>{{ $item.title }}</span>
+                            </li>
                           {{ end }}
                           {{ end }}
                         </ul>
@@ -186,7 +202,7 @@
                       <!-- single product description start  -->
                       <div class="product-description">
                         <div class="brand">
-                          <img src="{{ $p.logo.src }}" alt="{{ $p.logo.alt }}">
+                          <img src="{{ $p.logo.src }}" alt="{{ $p.logo.alt }}" loading="lazy">
                         </div>
 
 
@@ -195,7 +211,12 @@
                         <ul class="features">
                           {{ range $index, $item := $p.features }}
                           {{ if lt $index 8 }}
-                          <li><span class="material-icons">task_alt</span>{{ $item.title }}</li>
+                          <li>
+                            <span class="icon">
+                              <img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="lazy">
+                            </span>
+                            <span>{{ $item.title }}</span>  
+                          </li>
                           {{ end }}
                           {{ end }}
                         </ul>
@@ -241,7 +262,7 @@
                       <div class="resources-list">
                         <!-- single resources list  -->
                         <div class="list-items">
-                          <h6>RESOURCES</h6>
+                          <h2>RESOURCES</h2>
                           <ul>
                             <!-- <li><a href="#" target="_blank">Forum</a></li> -->
                             <li><a href="{{.Site.Params.blog_url}}" class="is-flex is-gap-4">
@@ -296,46 +317,6 @@
                         </div>
                         <!-- single resources list  -->
 
-                        <!-- single resources list  -->
-                        <div class="list-items is-hidden">
-                          <h6>RECENT NEWS/BLOG</h6>
-                          {{- $pctx := . -}}
-                          {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
-                          {{- $pages := $pctx.RegularPages -}}
-
-
-                          <div class="press-wrapper">
-                            {{ range $idx, $p := $pages.ByDate.Reverse }}
-                            {{ if lt $idx 2 }}
-                            <!-- single press start  -->
-                            <a class="single-press">
-                              <div class="calender">
-                                <span class="date">{{ $p.Date.Format "2" }}</span>
-                                <span class="month">{{ $p.Date.Format "Jan" }}</span>
-                              </div>
-
-                              <div class="description">
-                                <h6>{{ $p.Title }}</h6>
-                                {{ range $author := $p.Params.authors }}
-                                <a href="/authors/{{ $author | urlize }}"
-                                  class="author"><span>by</span>{{ $author }}</a>
-                                {{ end }}
-                                <p class="is-ellipsis-2">{{ $p.Summary }}</p>
-                              </div>
-                            </a>
-                            <!-- <a class="single-press">
-                          <div class="description">
-                            <h6><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h6>
-                          </div>
-                        </a> -->
-                            <!-- single press end -->
-                            {{ end }}
-                            {{ end }}
-                            <a href="#" class="button ac-button inline-button">See More <span
-                                class="material-icons">arrow_forward</span></a>
-                          </div>
-                        </div>
-                        <!-- single resources list  -->
                       </div>
                       <!-- list menu items end -->
                     </div>
@@ -374,12 +355,15 @@
             <div class="navbar-right-group">
               <ul>
                 <li class="nav-item">
+                  <a href="/partner/" class="link">Partner</a>
+                </li>
+                <li class="nav-item">
                   <a href="https://support.appscode.com" class="link">Support</a>
                 </li>
               </ul>
               <!-- navbar items end -->
               <div class="buttons">
-                <iframe src="/embed/?color=00a651" frameborder="0" scrolling="no" class="embeded-console-button"></iframe>
+                <iframe src="/embed/?color=00a651" frameborder="0" scrolling="no" class="embeded-console-button" title="embeded-console-button"></iframe>
                 <!-- <a id="ac-sign-in-button" href="https://accounts.appscode.com/user/login"
                 class="button ac-button is-loading {{ if eq $currentPageType "docs" }} is-hidden {{ end }}"><span>SIGN IN</span></a> -->
                 <a href="{{ $.Site.Params.domain_appscode }}/contact/"
@@ -457,7 +441,7 @@
       <div class="navbar-left">
         <div class="navbar-brand">
           <a href="{{ index $.Site.Params $p.website.domainKey }}{{ $p.website.path }}"><img src="{{ $p.logo.src }}"
-              alt="{{ $p.logo.alt }}" alt="{{ $p.logo.alt }}"></a>
+              alt="{{ $p.logo.alt }}" alt="{{ $p.logo.alt }}" loading="eager" height="30" width="auto"></a>
 
           {{ if eq $currentPageType "docs" }}
           <!-- version select start  -->
@@ -536,16 +520,18 @@
 " class="single-product">
                     {{ if .Pre }}
                     <div class="product-logo">
-                      <img src="{{ .Pre }}" alt="Menu Icon">
+                      <img src="{{ .Pre }}" alt="Menu Icon" loading="lazy">
                     </div>
                     {{ end }}
                     <div class="product-info">
-                      <h6>{{ .Name }}</h6>
+                      <h2 class="is-size-6">{{ .Name }}</h2>
                       <!-- <p>static content</p> -->
                     </div>
                     <div class="navigate-icon">
-                      <span class="material-icons">
-                        arrow_forward
+                      <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                        </svg>
                       </span>
                     </div>
                   </a>
@@ -573,7 +559,7 @@
                             d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </a>
-                      <img src="https://img.youtube.com/vi/hBHxMtSjKo4/sddefault.jpg" alt="">
+                      <img src="https://img.youtube.com/vi/hBHxMtSjKo4/sddefault.jpg" alt="" loading="lazy">
                     </div>
                   </div>
                 </div>

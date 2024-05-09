@@ -1,0 +1,246 @@
+.bg-primay-light {
+  background-color: rgba(241, 249, 245, 97%);
+}
+.decorative-shape {
+  img {
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.5;
+    z-index: -1;
+    @include mobile {
+      width: 300px;
+    }
+    &.left-el {
+      transform: rotate(180deg);
+    }
+    &.right-el {
+      right: 0;
+      transform: rotate(90deg);
+    }
+  }
+}
+.partner-hero-area {
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  .section-title {
+    margin-bottom: 0;
+    h1 {
+      @include tablet-only {
+        font-size: 40px;
+        font-weight: 700;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      text-wrap: balance;
+    }
+  }
+  .single-feature {
+    &.card-view {
+      background-color: $ac-white;
+      min-height: 230px;
+      padding: 32px 16px;
+      height: 100%;
+      @include mobile {
+        min-height: auto;
+      }
+      p {
+        font-size: 16px;
+      }
+      .icon {
+        border: 1px solid $ac-white-light;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .button.ac-button {
+    margin-top: 16px;
+    @include mobile {
+      display: flex;
+      width: calc(100% - 24px);
+      margin: 0 auto;
+    }
+  }
+}
+
+.showcase-partner,
+.system-integration {
+  position: relative;
+  z-index: 1;
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  &::before {
+    // background: radial-gradient(rgba(255, 255, 255, 0.698), rgba(255,255,255,1));
+    background: radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.2)
+    );
+  }
+  &::after {
+    background-image: url("../images/shape/hexagon.svg");
+    z-index: -2;
+  }
+}
+
+.showcase-partner {
+  .section-title {
+    p {
+      text-wrap: balance;
+    }
+  }
+}
+.system-integration {
+  &::before {
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 1)
+    );
+  }
+}
+.technology-partner {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  .decorative-shape {
+    img {
+      width: 400px;
+      @include mobile {
+        width: 160px;
+      }
+    }
+  }
+}
+.contact-area {
+  z-index: 9;
+  position: relative;
+  margin-bottom: -150px;
+  margin-top: 60px;
+  .section-title {
+    h2 {
+      @include mobile {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .decorative-shape {
+    img {
+      bottom: 150px;
+    }
+  }
+  .contact-form-wrapper {
+    background-color: $ac-white;
+    border: 1px solid $ac-white-light;
+    border-radius: 16px;
+    box-shadow: 0px 2px 30px rgba(44, 60, 74, 0.08);
+
+    @include mobile {
+      padding: 16px;
+    }
+
+    .form-content {
+      padding: 0 100px;
+      @include touch {
+        padding: 0 16px;
+      }
+    }
+    .fs-webform-container {
+      .fserv-container {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .fserv-container {
+    min-width: 100%;
+    .fserv-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      .fserv-field {
+        width: calc(50% - 8px);
+        @include mobile {
+          width: 100%;
+        }
+        margin: 0;
+        padding: 0;
+        &.formserv-textarea-field {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .fserv-field + div:not(.fserv-field) {
+    width: 100%;
+  }
+}
+
+body.partner {
+  .footer-top {
+    padding-top: 200px;
+  }
+  .social-prove-brand-area {
+    .brand-image-wrapper {
+      justify-content: center;
+      gap: 22px;
+      @include touch {
+        gap: 16px;
+      }
+      &:not(#brand-image-wrapper) {
+        .single-brand {
+          padding: 16px 32px;
+          box-shadow: 0px 2px 30px rgba(44, 60, 74, 0.08);
+          border: none;
+          img{
+            max-height: 52px;
+            filter: none;
+            @include mobile {
+              max-height: 32px;
+            }
+          }
+          @include touch {
+            padding: 16px;
+          }
+        }
+      }
+      .single-brand {
+        height: 110px;
+        @include touch {
+          height: auto;
+          img {
+            max-height: 28px;
+          }
+        }
+      }
+    }
+  }
+  .fs-webform-container {
+    .fserv-label{
+      font-family: $ac-font-paragraph;
+      margin-bottom: 0;
+    }
+  }
+  .fserv-button-submit {
+    background: linear-gradient(to left, hsl(149, 100%, 33%) , hsl(149, 50%, 33%)) !important;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      box-shadow: 2px 4px 24px rgba(0, 166, 81, 0.3) !important;
+      transform: translateY(-2px);
+    }
+  }
+}
