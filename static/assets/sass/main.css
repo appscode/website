@@ -2451,6 +2451,7 @@ strong {
   border-radius: 4px;
   display: flex;
   align-items: center;
+  transition: 0.3s ease-in-out;
 }
 .social-prove-brand-area .brand-image-wrapper .single-brand img {
   max-height: 2rem;
@@ -7202,6 +7203,12 @@ body.partner .social-prove-brand-area .brand-image-wrapper:not(#brand-image-wrap
     padding: 16px;
   }
 }
+body.partner .social-prove-brand-area .brand-image-wrapper:not(#brand-image-wrapper) a.single-brand {
+  border: 2px solid transparent;
+}
+body.partner .social-prove-brand-area .brand-image-wrapper:not(#brand-image-wrapper) a.single-brand:hover {
+  border: 2px solid var(--ac-primary) !important;
+}
 body.partner .social-prove-brand-area .brand-image-wrapper .single-brand {
   height: 110px;
 }
@@ -7225,3 +7232,4 @@ body.partner .fserv-button-submit:hover {
   box-shadow: 2px 4px 24px rgba(0, 166, 81, 0.3) !important;
   transform: translateY(-2px);
 }
+/*# sourceMappingURL=static/assets/sass/main.css.map */

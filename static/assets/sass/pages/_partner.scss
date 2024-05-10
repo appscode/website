@@ -217,6 +217,14 @@ body.partner {
             padding: 16px;
           }
         }
+        a{
+          &.single-brand{
+            border: 2px solid transparent;
+            &:hover {
+              border: 2px solid $ac-primary !important;
+            }
+          }
+        }
       }
       .single-brand {
         height: 110px;

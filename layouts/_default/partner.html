@@ -98,7 +98,7 @@
                     <div class="brand-image-wrapper">
                         {{ range $tech_parners := $.Site.Data.partners.technology_partners }}
                         {{ if $tech_parners.show }}
-                        <div class="single-brand"><img src="{{ $tech_parners.logo }}" alt="{{ $tech_parners.name }}"></div>
+                        <a href="{{ $tech_parners.website }}" class="single-brand" target="_blank" title="Go to {{$tech_parners.website}}"><img src="{{ $tech_parners.logo }}" alt="{{ $tech_parners.name }}"></a>
                         {{ end }}
                         {{ end }}
                     </div>

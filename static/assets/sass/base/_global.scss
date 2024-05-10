@@ -39,6 +39,8 @@
       border-radius: 4px;
       display: flex;
       align-items: center;
+      transition: 0.3s ease-in-out;
+
       img {
         max-height: 2rem;
         filter: grayscale(1);
