@@ -38,7 +38,8 @@ fs.readFile(cssFilePath, (err, css) => {
         /^select2-/,
         /^formserv/,
         /^ss-/,
-        /^owl-/
+        /^owl-/,
+        /^item/
       ],
       greedy: [
         // /^header-/,
