@@ -2886,7 +2886,8 @@ Responsive Classes
 ====================================*/
 /* Payment Method section style */
 
-.item ul {
+.item ul,
+.item input[type=checkbox] {
   display: none;
   overflow: hidden;
   transition: 0.3s;
@@ -5432,7 +5433,8 @@ iframe {
   transition: 0.3s;
 }
 
-.item ul {
+.item ul,
+.item input[type=checkbox] {
   display: none;
   overflow: hidden;
   transition: 0.3s;
