@@ -2274,6 +2274,10 @@ a.has-text-primary:hover, a.has-text-primary:focus {
   width: 20px !important;
 }
 
+.width-24 {
+  width: 24px !important;
+}
+
 .height-40 {
   height: 40px !important;
 }
@@ -3304,11 +3308,15 @@ Responsive Classes
   align-items: center;
   margin-bottom: 20px;
 }
+.webinar-body .date-and-location .date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 .webinar-body .date-and-location .date span {
   font-size: 18px;
   color: #515D63;
   font-weight: 500;
-  margin-left: 15px;
 }
 .webinar-body .webinar-summary p {
   color: #636363;
@@ -3813,9 +3821,9 @@ Responsive Classes
   align-items: center;
   color: #505050;
 }
-.gallery-card .card-body .meta-tag p .material-icons-outlined {
-  font-size: 14px;
-  margin-right: 0.8rem;
+.gallery-card .card-body .meta-tag p .icon {
+  width: 18px;
+  margin-right: 8px;
 }
 
 .filtered-tags .tag {

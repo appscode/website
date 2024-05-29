@@ -573,11 +573,13 @@
     margin-bottom: 20px;
 
     .date {
+      display: flex;
+      align-items: center;
+      gap: 8px;
       span {
         font-size: 18px;
         color: $ac-color-text;
         font-weight: 500;
-        margin-left: 15px;
       }
     }
   }
