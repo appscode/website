@@ -106,9 +106,9 @@
     const hostname =window.location.hostname
 
     if(hostname==='appscode.ninja')
-      acSignInButton.setAttribute('href', 'https://accounts.appscode.ninja/accounts/user/login');
+      acSignInButton.setAttribute('href', 'https://appscode.ninja/accounts/user/login');
     else 
-      acSignInButton.setAttribute('href', 'https://accounts.appscode.com/accounts/user/login');
+      acSignInButton.setAttribute('href', 'https://appscode.com/accounts/user/login');
 
     const urlParams = new URLSearchParams(window.location.search);
     const color = urlParams.get('color');
