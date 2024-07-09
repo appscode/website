@@ -112,7 +112,6 @@
     else 
       acSignInButton.setAttribute('href', 'https://appscode.com/accounts/user/login');
 
-
     const urlParams = new URLSearchParams(window.location.search);
     const color = urlParams.get('color');
     const text = urlParams.get('text');
@@ -146,12 +145,12 @@
         const protocol = window.location.protocol;
         const port = window.location.port;
 
-        const apiDomain = protocol + "//" + hostname +  (port? ":3003" : "") + '/api';
+        const apiDomain = protocol + "//" + hostname +  (port? ":3003" : "") + '/api/v1';
         const consoleDomain = protocol + "//" + hostname +  (port? ":5990" : "") + '/console';
   
         acSignInButton.classList.add('is-loading');
   
-        const response = await fetch(apiDomain + "/api/v1/user", {
+        const response = await fetch(apiDomain + "/user", {
           method: "GET",
           credentials: "include",
           headers: {
