@@ -145,12 +145,12 @@
         const protocol = window.location.protocol;
         const port = window.location.port;
 
-        const apiDomain = protocol + "//" + hostname +  (port? ":3003" : "") + '/api';
+        const apiDomain = protocol + "//" + hostname +  (port? ":3003" : "") + '/api/v1';
         const consoleDomain = protocol + "//" + hostname +  (port? ":5990" : "") + '/console';
   
         acSignInButton.classList.add('is-loading');
   
-        const response = await fetch(apiDomain + "/v1/user", {
+        const response = await fetch(apiDomain + "/user", {
           method: "GET",
           credentials: "include",
           headers: {
