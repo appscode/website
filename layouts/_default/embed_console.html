@@ -91,7 +91,7 @@
 </head>
 
 <body>
-  <a id="ac-sign-in-button" href="https://accounts.appscode.com/accounts/user/login" target="_blank" class="button ac-button is-loading">
+  <a id="ac-sign-in-button" target="_blank" class="button ac-button is-loading">
     <span class="icon">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
@@ -103,6 +103,12 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     const acSignInButton = document.getElementById('ac-sign-in-button');
+    const hostname =window.location.hostname
+
+    if(hostname==='appscode.ninja')
+      acSignInButton.setAttribute('href', 'https://appscode.ninja/accounts/user/login');
+    else 
+      acSignInButton.setAttribute('href', 'https://appscode.com/accounts/user/login');
 
     const urlParams = new URLSearchParams(window.location.search);
     const color = urlParams.get('color');
