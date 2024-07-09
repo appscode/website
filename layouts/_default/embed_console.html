@@ -107,8 +107,11 @@
 
     if(hostname==='appscode.ninja')
       acSignInButton.setAttribute('href', 'https://appscode.ninja/accounts/user/login');
+    else if(hostname==='localhost')
+      acSignInButton.setAttribute('href', 'http://bb.test:3003/accounts/user/login');
     else 
       acSignInButton.setAttribute('href', 'https://appscode.com/accounts/user/login');
+
 
     const urlParams = new URLSearchParams(window.location.search);
     const color = urlParams.get('color');
@@ -143,8 +146,8 @@
         const protocol = window.location.protocol;
         const port = window.location.port;
 
-        const apiDomain = protocol + "//api." + hostname +  (port? ":3003" : "");
-        const consoleDomain = protocol + "//console." + hostname +  (port? ":5990" : "");
+        const apiDomain = protocol + "//" + hostname +  (port? ":3003" : "") + '/api';
+        const consoleDomain = protocol + "//" + hostname +  (port? ":5990" : "") + '/console';
   
         acSignInButton.classList.add('is-loading');
   
