@@ -63,10 +63,8 @@
                 {{ $p := (index $.Site.Data.products $item) }}
                 <li><a href="{{index $.Site.Params $p.website.domainKey}}{{$p.website.path}}" class="is-flex is-gap-4">
                   <span>{{$p.name}}</span>
-                  <span class="is-flex width-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                    </svg>
+                  <span class="is-flex is-align-items-center">
+                    <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
                   </span>
                 </a></li>
                 {{ end }}
@@ -86,27 +84,21 @@
                 <li>
                   <a href="{{.Site.Params.domain_appscode}}/consulting/" class="is-flex is-gap-4">
                   <span>Consulting</span>
-                  <span class="is-flex width-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
+                  <span class="is-flex is-align-items-center">
+                    <iconify-icon icon="heroicons:arrow-small-right" width="14" height="14"></iconify-icon>
                   </span>
                   </a>
                 </li>
                 <li><a href="{{.Site.Params.domain_appscode}}/training/" class="is-flex is-gap-4">
                   <span>Training</span>
-                  <span class="is-flex width-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
+                  <span class="is-flex is-align-items-center">
+                    <iconify-icon icon="heroicons:arrow-small-right" width="14" height="14"></iconify-icon>
                   </span>
                 </a></li>
                 <li><a href="{{.Site.Params.domain_appscode}}/support/" class="is-flex is-gap-4">
                   <span>Support</span>
-                  <span class="is-flex width-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
+                  <span class="is-flex is-align-items-center">
+                    <iconify-icon icon="heroicons:arrow-small-right" width="14" height="14"></iconify-icon>
                   </span>
                 </a></li>
               </ul>
@@ -123,26 +115,20 @@
               <ul class="footer-link">
                 <li><a href="{{.Site.Params.domain_appscode}}/about/" class="is-flex is-gap-4">
                  <span> About Us</span>
-                  <span class="is-flex width-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
+                  <span class="is-flex is-align-items-center">
+                    <iconify-icon icon="heroicons:arrow-small-right" width="14" height="14"></iconify-icon>
                   </span>
                 </a></li>
                 <li><a href="{{.Site.Params.blog_url}}" class="is-flex is-gap-4">
                   <span>Blog</span>
-                  <span class="is-flex width-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
+                  <span class="is-flex is-align-items-center">
+                    <iconify-icon icon="heroicons:arrow-small-right" width="14" height="14"></iconify-icon>
                   </span>
                 </a></li>
                 <li><a href="{{.Site.Params.domain_appscode}}/contact/" class="is-flex is-gap-4">
                   <span>Contact Us</span>
-                  <span class="is-flex width-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
+                  <span class="is-flex is-align-items-center">
+                    <iconify-icon icon="heroicons:arrow-small-right" width="14" height="14"></iconify-icon>
                   </span>
                 </a></li>
               </ul>
@@ -160,11 +146,8 @@
                 <li>
                   <a href="{{.Site.Params.domain_appscode}}/legal/tos/" class="is-flex is-gap-4">
                   <span>Terms of Service</span>
-                  <span class="is-flex width-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
-                    
+                  <span class="is-flex is-align-items-center">
+                    <iconify-icon icon="heroicons:arrow-small-right" width="14" height="14"></iconify-icon>
                   </span>
                 </a>
                </li>
@@ -172,33 +155,24 @@
                <li>
                 <a href="{{.Site.Params.domain_appscode}}/legal/privacy-policy/" class="is-flex is-gap-4">
                 <span>Privacy Policy</span>
-                <span class="is-flex width-12">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                  </svg>
-                  
+                <span class="is-flex is-align-items-center">
+                  <iconify-icon icon="heroicons:arrow-small-right" width="14" height="14"></iconify-icon>
                 </span>
                 </a>
                </li>
                 <li>
                   <a href="{{.Site.Params.domain_appscode}}/legal/security/" class="is-flex is-gap-4">
                     <span>Security</span>
-                    <span class="is-flex width-12">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                      </svg>
-                      
+                    <span class="is-flex is-align-items-center">
+                      <iconify-icon icon="heroicons:arrow-small-right" width="14" height="14"></iconify-icon>
                     </span>
                   </a>
                 </li>
                 <li>
                   <a href="{{.Site.Params.domain_appscode}}/legal/sla/" class="is-flex is-gap-4">
                   <span>Service Level Agreement</span>
-                  <span class="is-flex width-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
-                    
+                  <span class="is-flex is-align-items-center">
+                    <iconify-icon icon="heroicons:arrow-small-right" width="14" height="14"></iconify-icon>
                   </span>
                   </a>
                 </li>
