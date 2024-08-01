@@ -55,17 +55,18 @@
               <!-- navbar items start -->
               <ul class="navbar-left-group">
                 <li class="nav-item">
+                  
                   <button class="link">Products <i class="fa fa-angle-down" aria-hidden="true"></i></button>
                   <div class="mega-menu-wrapper">
 
                     <!-- ac-grid-container -->
                     <div class="mega-menu-inner container">
                       <button class="button ac-button inline-button back-button">
-                        <span
-                          class="icon p-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
-                          </svg>
-                          </span><span>Back</span></button>
+                        <span class="icon p-0">
+                          <iconify-icon icon="heroicons:arrow-uturn-left"></iconify-icon>
+                        </span>
+                        <span>Back</span>
+                      </button>
                       <!-- product start  -->
                       <div class="product-menu">
                         {{ range $item := $.Site.Data.config.productMenu.c0 }}
@@ -82,9 +83,7 @@
                           </div>
                           <div class="navigate-icon">
                             <span class="icon">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
-                              </svg>
+                              <iconify-icon icon="heroicons:arrow-up-right" width="1.2rem" height="1.2rem"></iconify-icon>
                             </span>
                           </div>
                         </a>
@@ -105,9 +104,7 @@
                           </div>
                           <div class="navigate-icon">
                             <span class="icon">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
-                              </svg>
+                              <iconify-icon icon="heroicons:arrow-up-right" width="1.2rem" height="1.2rem"></iconify-icon>
                             </span>
                           </div>
                         </a>
@@ -128,9 +125,7 @@
                           </div>
                           <div class="navigate-icon">
                             <span class="icon">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
-                              </svg>
+                              <iconify-icon icon="heroicons:arrow-up-right" width="1.2rem" height="1.2rem"></iconify-icon>
                             </span>
                           </div>
                         </a>
@@ -262,9 +257,7 @@
                     <div class="mega-menu-inner container">
                       <button class="button is-small ac-button inline-button back-button"><span
                           class="icon p-0">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
-                          </svg>
+                            <iconify-icon icon="heroicons:arrow-uturn-left"></iconify-icon>
                           </span>
                           <span>Back to Resources</span>
                         </button>
@@ -278,18 +271,14 @@
                             <li><a href="{{.Site.Params.blog_url}}" class="is-flex is-gap-4">
                               <span>Blog</span>
                               <span class="is-flex width-12">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
-                                </svg>
+                                <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
                               </span>
                             </a>
                           </li>
                             <li><a href="{{.Site.Params.docs_url}}" class="is-flex is-gap-4">
                               <span>Docs</span>
                               <span class="is-flex width-12">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
-                                </svg>
+                                <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
                               </span>
                             </a></li>
                             <li><a
@@ -297,26 +286,20 @@
                                 target="_blank" class="is-flex is-gap-4">
                                 <span>Webinars</span>
                               <span class="is-flex width-12">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
-                                </svg>
+                                <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
                               </span>
                             </a>
                           </li>
                             <li><a href="{{.Site.Params.learn_url}}" class="is-flex is-gap-4">
                               <span>Learn</span>
                               <span class="is-flex width-12">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
-                                </svg>
+                                <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
                               </span>
                             </a></li>
                             <li><a href="{{.Site.Params.youtube_url}}" target="_blank" class="is-flex is-gap-4">
                               <span>Demos</span>
                               <span class="is-flex width-12">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
-                                </svg>
+                                <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
                               </span>
                             </a></li>
                             <!-- <li><a
@@ -379,9 +362,7 @@
                 <a href="{{ $.Site.Params.domain_appscode }}/contact/"
                 class="button ac-button is-primary {{ if eq $currentPageType "docs" }} is-hidden {{ end }}">
                 <span class="icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
-                  </svg>
+                  <iconify-icon icon="heroicons:chat-bubble-bottom-center" width="18" height="18"></iconify-icon>
                 </span>
                 <span>CONTACT SALES</span>
               </a>
@@ -522,9 +503,7 @@
                 <button class="button ac-button inline-button back-button">
                   <span
                     class="icon p-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
-                    </svg>
+                      <iconify-icon icon="heroicons:arrow-uturn-left"></iconify-icon>
                     </span>
                     <span>Back</span>
                 </button>
@@ -546,9 +525,7 @@
                     </div>
                     <div class="navigate-icon">
                       <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
-                        </svg>
+                        <iconify-icon icon="heroicons:arrow-up-right" width="1.2rem" height="1.2rem"></iconify-icon>
                       </span>
                     </div>
                   </a>

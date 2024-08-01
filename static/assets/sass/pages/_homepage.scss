@@ -613,12 +613,12 @@
           font-size: 14px;
           line-height: 16px;
           letter-spacing: 1.25px;
-          color: #636363;
+          color: $ac-color-text;
           transition: 0.3s ease-in-out;
           display: block;
 
           &.is-current {
-            color: #000000;
+            color: $ac-primary;
             text-decoration: underline;
           }
 
