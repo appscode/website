@@ -1,0 +1,77 @@
+{{ define "header-bottom" }}
+<section></section>
+{{ end }}
+
+{{ define "main" }}
+
+<section class="events-page">
+    <div class="container">
+        <div class="columns is-multiline">
+            {{ $currentDate := now.Format "2006-01-02" }}  <!-- Format current date -->
+
+            <!-- Get the latest event -->
+            {{ $sortedEvents := sort (where $.Site.Data.events "sort_date" "ge" $currentDate) "sort_date" "ase" }}
+            {{ $lastEvent := first 1 $sortedEvents }}
+            {{ range $event := $lastEvent }}
+            <div class="column is-full-mobile is-6-tablet is-8-desktop">
+                <div class="single-event primary-gradient">
+                    <div class="is-flex is-justify-content-space-between">
+                        <span class="date">{{ $event.date }}</span>
+                        <span class="badge tag">UPCOMING</span>
+                    </div>
+                    <h2>{{ $event.title }}</h2>
+                    <p class="is-ellipsis-4">{{ $event.description }}</p>
+
+                    <div class="buttons is-gap-8">
+                        <a href="{{ $event.meet_with_us }}" class="button ac-button is-primary">Join with us</a>
+                        <a href="{{ $event.event_details }}" class="button ac-button is-transparent has-text-white">Event Details</a>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+
+            <!-- Display the rest of the events excluding the last one -->
+            {{ $lastEventID := (index $sortedEvents 0).id }}
+            {{ $restEvents := where $sortedEvents "id" "!=" $lastEventID }}
+
+            {{ range $event := sort $restEvents "sort_date" "ase" }}
+            <div class="column is-full-mobile is-6-tablet is-4-desktop">
+                <div class="single-event">
+                    <div class="is-flex is-justify-content-space-between">
+                        <span class="date">{{ $event.date }}</span>
+                    </div>
+                    <h2>{{ $event.title }}</h2>
+                    <p class="is-ellipsis-4">{{ $event.description }}</p>
+
+                    <div class="buttons is-gap-8">
+                        <a href="{{ $event.meet_with_us }}" class="button ac-button is-outlined">Join with us</a>
+                        <a href="{{ $event.event_details }}" class="button ac-button is-transparent">Event Details</a>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+
+
+
+        </div>
+        <!-- <div class="columns is-centered">
+            <div class="column is-full-mobile is-2-desktop">
+                <button class="button ac-button is-outlined is-fullwidth">View More</button>
+            </div>
+        </div> -->
+    </div>
+</section>
+
+{{ end }}
+
+{{ define "testimonial" }}
+<section></section>
+{{ end }}
+
+{{ define "customer-logos" }}
+<section></section>
+{{ end }}
+
+{{ define "cta-install" }}
+<section></section>
+{{ end }}
