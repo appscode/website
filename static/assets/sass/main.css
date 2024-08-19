@@ -25932,6 +25932,42 @@ Responsive Classes
   background: linear-gradient(90deg, rgb(42, 126, 83) 0%, rgb(0, 166, 81) 100%);
 }
 
+.solution-page .hero-area {
+  padding: 140px 0 100px;
+}
+.solution-page .hero-area h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.solution-page .right-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+  gap: 16px;
+}
+.solution-page .right-content .single-card {
+  background-color: #F7F8F8;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  display: block;
+  padding: 16px;
+}
+.solution-page .right-content .single-card h5 {
+  margin-bottom: 8px;
+}
+.solution-page .right-content .single-card p {
+  color: #515D63;
+  margin-bottom: 8px;
+}
+.solution-page .right-content .single-card button {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 .bg-primay-light {
   background-color: rgba(241, 249, 245, 0.97);
 }

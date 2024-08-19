@@ -1,0 +1,38 @@
+.solution-page {
+  .hero-area {
+    padding: 140px 0 100px;
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 120%;
+    }
+  }
+  .right-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+    gap: 16px;
+    .single-card {
+      background-color: #F7F8F8;
+      border: 1px solid $ac-white-light;
+      border-radius: 4px;
+      display: block;
+      padding: 16px;
+      h5{
+        margin-bottom: 8px;
+      }
+      p{
+        color: $ac-color-text;
+        margin-bottom: 8px;
+      }
+
+      button {
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}
