@@ -4,7 +4,7 @@
 
 {{ define "main" }}
 
-<section class="events-page">
+<section class="events-page bg-gradient-1" style="background-image: url(../assets/images/gradient-bg.webp);">
     <div class="container">
         <div class="columns is-multiline">
             {{ $currentDate := now.Format "2006-01-02" }}  <!-- Format current date -->
@@ -15,6 +15,7 @@
             {{ range $event := $lastEvent }}
             <div class="column is-full-mobile is-6-tablet is-8-desktop">
                 <div class="single-event primary-gradient">
+                    <span class="circle circle-1"></span>
                     <div class="is-flex is-justify-content-space-between">
                         <span class="date">{{ $event.date }}</span>
                         <span class="badge tag">UPCOMING</span>
@@ -24,7 +25,7 @@
 
                     <div class="buttons is-gap-8">
                         <a href="{{ $event.meet_with_us }}" class="button ac-button is-primary">Join with us</a>
-                        <a href="{{ $event.event_details }}" class="button ac-button is-transparent has-text-white">Event Details</a>
+                        <a href="{{ $event.event_details }}" target="_blank" class="button ac-button is-transparent has-text-white">Event Details</a>
                     </div>
                 </div>
             </div>
@@ -45,7 +46,7 @@
 
                     <div class="buttons is-gap-8">
                         <a href="{{ $event.meet_with_us }}" class="button ac-button is-outlined">Join with us</a>
-                        <a href="{{ $event.event_details }}" class="button ac-button is-transparent">Event Details</a>
+                        <a href="{{ $event.event_details }}" target="_blank" class="button ac-button is-transparent p-8">Event Details</a>
                     </div>
                 </div>
             </div>
