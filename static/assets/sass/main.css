@@ -18191,7 +18191,7 @@ body.voyager {
 html,
 body {
   background-color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: #515D63;
@@ -18244,7 +18244,7 @@ h6 {
 }
 
 a {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--ac-primary);
 }
 
@@ -18656,7 +18656,7 @@ strong {
 .ac-custom-select .ss-multi-selected .ss-values .ss-disabled {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -19190,7 +19190,7 @@ Responsive Classes
 .item ul li a {
   display: block;
   padding: 6px 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
 }
 
@@ -19269,19 +19269,19 @@ Responsive Classes
 .download-question p {
   color: #515D63;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .download-question p strong {
   color: #32325d;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 10px 0;
   display: block;
 }
 
 .download-question a {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
 }
 
@@ -19295,7 +19295,7 @@ Responsive Classes
 .single-input-field label {
   display: block;
   color: #32325d;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   margin-bottom: 5px;
 }
@@ -19305,7 +19305,7 @@ Responsive Classes
   border: 1px solid #c4cbd3;
   border-radius: 4px;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #242a31;
   width: 100%;
 }
@@ -20340,7 +20340,7 @@ Responsive Classes
   display: flex;
   justify-content: space-between;
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -23018,7 +23018,7 @@ ul li b {
 .full-info a {
   color: var(--ac-primary);
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .full-info p {
@@ -23050,7 +23050,7 @@ ul li b {
 .full-info ol li::before {
   content: counter(order-list-counter) ". ";
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   color: #4a4a4a;
 }
@@ -23254,7 +23254,7 @@ p.spam-message {
   color: #515D63;
   display: inline-block;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   padding: 5px 0;
 }
 
@@ -23643,14 +23643,14 @@ ul li b {
 .full-info a {
   color: var(--ac-primary);
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .full-info p {
   margin-bottom: 0.825rem;
   color: #515D63;
   line-height: 160%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .full-info p strong {
@@ -23715,7 +23715,7 @@ ul li b {
 .full-info ol li::before {
   content: counter(order-list-counter) ". ";
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   color: #4a4a4a;
 }
@@ -23779,7 +23779,7 @@ ul li b {
   color: #4a4a4a;
   opacity: 0.7;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   display: block;
   padding-left: 20px;
@@ -23924,7 +23924,7 @@ li.nav-item.active a {
   background: #f2f2f2;
   border-color: #e7e7e7;
   color: #393e46;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .single-search-result h3 a {
@@ -23942,7 +23942,7 @@ li.nav-item.active a {
 .single-search-result a {
   color: #00a651;
   font-size: 12px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   display: block;
 }
 
@@ -24364,7 +24364,7 @@ Responsive Classes
   color: #393e46;
 }
 .features-plan-area .single-features-area .single-features .features-name a {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   text-decoration: underline;
 }
 .features-plan-area .single-features-area .single-features .features-name .info-icon.tooltip {
@@ -24646,7 +24646,7 @@ Responsive Classes
 }
 .news-message {
   display: inline-flex;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -25905,6 +25905,7 @@ Responsive Classes
   background-color: #ffffff;
   height: 100%;
   position: relative;
+  display: block;
 }
 .single-event .circle {
   width: 200px;
@@ -25973,7 +25974,14 @@ Responsive Classes
 }
 
 .single-solution {
-  background-color: #fff;
+  background-color: #ffffff;
+  margin-inline: 100px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.single-solution .left-content img {
+  height: 32px;
 }
 .single-solution .left-content h3 {
   font-size: 32px;
@@ -26244,7 +26252,7 @@ body.partner .social-prove-brand-area .brand-image-wrapper .single-brand {
   }
 }
 body.partner .fs-webform-container .fserv-label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   margin-bottom: 0;
 }
 body.partner .fserv-button-submit {

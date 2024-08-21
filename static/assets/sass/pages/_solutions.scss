@@ -27,8 +27,16 @@
   
 }
 .single-solution {
-  background-color: #fff;
+  background-color: $ac-white;
+  margin-inline: 100px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  box-shadow: 1px 2px 10px rgba(0,0,0,.1);
+
   .left-content {
+    img {
+      height: 32px;
+    }
     h3 {
       font-size: 32px;
       font-weight: 700;

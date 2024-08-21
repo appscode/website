@@ -1,0 +1,34 @@
+<section class="single-solution section-padding">
+  <div class="container">
+      <!-- <div class="columns is-centered">
+          <div class="column is-8">
+              <div class="section-title has-text-centered-tablet mb-0">
+                  <h2>{{ .tagline }}</h2>
+                  <p class="mb-0">{{ .summary }}</p>
+              </div>
+          </div>
+      </div> -->
+      <div class="columns is-vcentered">
+          <div class="column is-4">
+              <div class="left-content">
+                  <img src="{{.logo.src}}" alt="{{.fullname}}">
+                  <h3>{{ .tagline }}</h3>
+                  <p>{{ .summary }}</p>
+                  <a href="#" class="button ac-button is-primary">Try {{ .name }}</a>
+              </div>
+          </div>
+
+          <div class="column is-8">
+              <div class="right-content">
+                  {{range $feature := .features}}
+                  <a href="#" class="single-card">
+                      <h5>{{$feature.title}}</h5>
+                      <p class="is-ellipsis-3">{{$feature.description}}</p>
+                      <button class="ac-button is-transparent"><span>Read More</span></button>
+                  </a>
+                  {{end}}              
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
