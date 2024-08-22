@@ -17,11 +17,10 @@
     <!-- <p>{{ $.Site.Data.products.stash.website.domainKey }}</p> -->
     {{ $productNames := slice "kubedb" "stash" "kubevault" "voyager" "configsyncer" "guard" }}
     
-    {{ $configParams := dict "siteName" .Site.Params.domain_kubedb }}
+    {{ $configParams := dict "siteName" .Site.Params }}
     
     {{ range $productNames }}
         {{ $productData := index $.Site.Data.products . }}
-        <p>{{$productNames}}</p>
         {{ partial "components/solution.html" (dict "ProductData" $productData "Config" $configParams) }}
     {{ end }}
     

@@ -14,9 +14,9 @@
                   <img src="{{ .ProductData.logo.src }}" alt="{{ .ProductData.fullname}}">
                   <h3>{{ .ProductData.tagline | plainify  }}</h3>
                   <p>{{ .ProductData.summary | plainify}}</p>
-                 <pre>{{ .Config.siteName}} / {{.ProductData.website.domainKey}}</pre>
-
-                  <a href="#" class="button ac-button is-primary">
+                  {{ $siteName := .Config.siteName }} 
+                  {{ $domainKey := .ProductData.website.domainKey }}
+                  <a href="{{index $siteName $domainKey}}" class="button ac-button is-primary">
                     <span>Try {{ .ProductData.name }}</span>
                     <span class="icon">
                         <iconify-icon icon="heroicons:arrow-up-right-solid"></iconify-icon>
@@ -27,8 +27,8 @@
 
           <div class="column is-8">
               <div class="right-content">
-                  {{range $feature := .features}}
-                  <a href="#" class="single-card">
+                  {{range $feature := .ProductData.features}}
+                  <a href="{{index $siteName $domainKey}}/features" class="single-card">
                       <h5>{{$feature.title}}</h5>
                       <p class="is-ellipsis-3">{{$feature.description}}</p>
                         <button class="ac-button is-flex is-align-items-center is-gap-4 is-transparent is-clickable">
