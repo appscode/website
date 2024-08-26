@@ -28,14 +28,30 @@
 }
 .single-solution {
   background-color: $ac-white;
-  margin-inline: 100px;
   border-radius: 16px;
   margin-bottom: 32px;
   box-shadow: 1px 2px 10px rgba(0,0,0,.1);
+  width: calc(100% - 200px);
+  margin: 0 auto 32px auto;
 
-  @include touch {
-    margin-inline: 0;
-  }
+  @media (min-width: 1400px) and (max-width: 1600px) {
+    width: calc(100% - 50px);
+  } 
+
+  @media (min-width: 1250px) and (max-width: 1399px) {
+    width: calc(100% - 32px);
+  } 
+
+  @media (min-width: 1100px) and (max-width: 1249px) {
+    width: 100%;
+  } 
+
+  @media (min-width: 1024px) and (max-width: 1199px) {
+    width: calc(100% - 32px);
+  } 
+  @media screen and (max-width: 1023px) {
+    width: calc(100% - 32px);
+  } 
 
   .left-content {
     img {
