@@ -9,7 +9,7 @@
           </div>
       </div> -->
       <div class="columns is-multiline is-vcentered">
-          <div class="column is-full-touch is-4-dekstop">
+          <div class="column is-full-touch is-4-desktop">
               <div class="left-content">
                   <img src="{{ .ProductData.logo.src }}" alt="{{ .ProductData.fullname}}">
                   <h3>{{ .ProductData.tagline | plainify  }}</h3>
@@ -25,7 +25,7 @@
               </div>
           </div>
 
-          <div class="column is-full-touch is-8-dekstop">
+          <div class="column is-full-touch is-8-desktop">
               <div class="right-content">
                   {{range $feature := .ProductData.features}}
                   <a href="{{index $siteName $domainKey}}/features" class="single-card">
