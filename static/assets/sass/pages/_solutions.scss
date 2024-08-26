@@ -33,6 +33,10 @@
   margin-bottom: 32px;
   box-shadow: 1px 2px 10px rgba(0,0,0,.1);
 
+  @include touch {
+    margin-inline: 0;
+  }
+
   .left-content {
     img {
       height: 32px;
