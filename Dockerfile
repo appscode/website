@@ -1,4 +1,4 @@
-FROM nginx:1.25-alpine
+FROM nginx:stable-alpine
 
 ARG TARGETOS
 ARG TARGETARCH
