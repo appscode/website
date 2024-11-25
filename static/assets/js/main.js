@@ -122,6 +122,23 @@ Array.from(responsiveMenus).forEach((menu, idx) => {
 });
 
 
+$('.event-wrapper').owlCarousel({
+  loop:true,
+  nav:true,
+  autoplay:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
+})
+
 //mechanism tabs =============================================start
 
   // Get all the single-feature mechanism elements
