@@ -1,0 +1,46 @@
+<section class="single-solution section-padding">
+  <div class="container">
+      <!-- <div class="columns is-centered">
+          <div class="column is-8">
+              <div class="section-title has-text-centered-tablet mb-0">
+                  <h2>{{ .tagline }}</h2>
+                  <p class="mb-0">{{ .summary }}</p>
+              </div>
+          </div>
+      </div> -->
+      <div class="columns is-multiline is-vcentered">
+          <div class="column is-full-touch is-4-desktop">
+              <div class="left-content">
+                  <img src="{{ .ProductData.logo.src }}" alt="{{ .ProductData.fullname}}">
+                  <h3>{{ .ProductData.tagline | plainify  }}</h3>
+                  <p>{{ .ProductData.summary | plainify}}</p>
+                  {{ $siteName := .Config.siteName }} 
+                  {{ $domainKey := .ProductData.website.domainKey }}
+                  <a href="{{index $siteName $domainKey}}" class="button ac-button is-primary">
+                    <span>Try {{ .ProductData.name }}</span>
+                    <span class="icon">
+                        <iconify-icon icon="heroicons:arrow-up-right-solid"></iconify-icon>
+                      </span>
+                  </a>
+              </div>
+          </div>
+
+          <div class="column is-full-touch is-8-desktop">
+              <div class="right-content">
+                  {{range $feature := .ProductData.features}}
+                  <a href="{{index $siteName $domainKey}}/features" class="single-card">
+                      <h5>{{$feature.title}}</h5>
+                      <p class="is-ellipsis-3">{{$feature.description}}</p>
+                        <button class="ac-button is-flex is-align-items-center is-gap-4 is-transparent is-clickable">
+                            <span>Read More</span> 
+                            <span class="icon">
+                                <iconify-icon icon="heroicons:arrow-up-right-solid"></iconify-icon>
+                              </span>
+                        </button>
+                  </a>
+                  {{end}}              
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
