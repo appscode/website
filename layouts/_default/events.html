@@ -1,0 +1,53 @@
+{{ define "header-bottom" }}
+<section></section>
+{{ end }}
+
+{{ define "main" }}
+
+<section class="events-page bg-gradient-1" style="background-image: url(../assets/images/gradient-bg.webp);">
+    <div class="container">
+        <div class="columns is-multiline">
+            <div class="owl-carousel event-wrapper">
+                {{ $currentDate := now.Format "2006-01-02" }}  <!-- Format current date -->
+
+                <!-- Get the latest event -->
+                {{ $sortedEvents := sort (where $.Site.Data.events "sort_date" "ge" $currentDate) "sort_date" "ase" }}
+                {{ range $event := $sortedEvents }}
+                <div class="single-event primary-gradient">
+                    <span class="circle circle-1"></span>
+                    <div class="is-flex is-justify-content-space-between">
+                        <span class="date">{{ $event.date }}</span>
+                        <span class="badge tag">UPCOMING</span>
+                    </div>
+                    <h2>{{ $event.title }}</h2>
+                    <p class="is-ellipsis-4">{{ $event.description }}</p>
+
+                    <div class="buttons is-gap-8">
+                        <a href="{{ $event.meet_with_us }}" class="button ac-button is-primary">Join with us</a>
+                        <a href="{{ $event.event_details }}" target="_blank" class="button ac-button is-transparent has-text-white">Event Details</a>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        <!-- <div class="columns is-centered">
+            <div class="column is-full-mobile is-2-desktop">
+                <button class="button ac-button is-outlined is-fullwidth">View More</button>
+            </div>
+        </div> -->
+    </div>
+</section>
+
+{{ end }}
+
+{{ define "testimonial" }}
+<section></section>
+{{ end }}
+
+{{ define "customer-logos" }}
+<section></section>
+{{ end }}
+
+{{ define "cta-install" }}
+<section></section>
+{{ end }}

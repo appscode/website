@@ -1,0 +1,45 @@
+{{ define "header-bottom" }}
+<section></section>
+{{ end }}
+
+{{ define "main" }}
+<div class="solution-page bg-gradient-1" style="background-image: url(../assets/images/gradient-bg.webp);">
+    <section class="hero-area">
+        <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-6-desktop is-8-until-fullhd has-text-centered">
+                <h1 class="is-gradient">AppsCode solutions Speed up your cloud journey</h1>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- <p>{{ $.Site.Data.products.stash.website.domainKey }}</p> -->
+    {{ $productNames := slice "kubedb" "stash" "kubevault" "voyager" "configsyncer" "guard" }}
+    
+    {{ $configParams := dict "siteName" .Site.Params }}
+    
+    {{ range $productNames }}
+        {{ $productData := index $.Site.Data.products . }}
+        {{ partial "components/solution.html" (dict "ProductData" $productData "Config" $configParams) }}
+    {{ end }}
+    
+
+       
+
+
+</div>
+
+{{ end }}
+
+{{ define "testimonial" }}
+<section></section>
+{{ end }}
+
+{{ define "customer-logos" }}
+<section></section>
+{{ end }}
+
+{{ define "cta-install" }}
+<section></section>
+{{ end }}
