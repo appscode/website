@@ -78,7 +78,11 @@
                             <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}" loading="lazy">
                           </div>
                           <div class="product-info">
-                            <h2 class="is-size-6">{{ $p.name }}</h2>
+                            <h2 class="is-size-6 is-flex">{{ $p.name }}
+                              {{ if eq ($p.name) "KubeStash" }}
+                              <span class="whats-new is-relative is-block" style="right: -2px; top: -12px;">New</span>
+                              {{ end }}
+                            </h2>
                             <p>{{ $p.tagline | plainify }}</p>
                           </div>
                           <div class="navigate-icon">
@@ -112,6 +116,27 @@
                         {{ end }}
 
                         {{ range $item := $.Site.Data.config.productMenu.c2 }}
+                        {{ $p := (index $.Site.Data.products $item) }}
+                        <!-- single product start  -->
+                        <a class="single-product"
+                          href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}">
+                          <div class="product-logo">
+                            <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}" loading="lazy">
+                          </div>
+                          <div class="product-info">
+                            <h2 class="is-size-6">{{ $p.name }}</h2>
+                            <p>{{ $p.tagline | plainify }}</p>
+                          </div>
+                          <div class="navigate-icon">
+                            <span class="icon">
+                              <iconify-icon icon="heroicons:arrow-up-right" width="1.2rem" height="1.2rem"></iconify-icon>
+                            </span>
+                          </div>
+                        </a>
+                        <!-- single product end -->
+                        {{ end }}
+
+                        {{ range $item := $.Site.Data.config.productMenu.c3 }}
                         {{ $p := (index $.Site.Data.products $item) }}
                         <!-- single product start  -->
                         <a class="single-product"
@@ -197,6 +222,37 @@
                       <!-- product description end -->
 
                       {{ range $item := $.Site.Data.config.productMenu.c2 }}
+                      {{ $p := (index $.Site.Data.products $item) }}
+                      <!-- single product description start  -->
+                      <div class="product-description">
+                        <div class="brand">
+                          <img src="{{ $p.logo.src }}" alt="{{ $p.logo.alt }}" loading="lazy">
+                        </div>
+
+
+                        <p>{{ $p.summary | safeHTML }}</p>
+
+                        <ul class="features">
+                          {{ range $index, $item := $p.features }}
+                          {{ if lt $index 8 }}
+                          <li>
+                            <span class="icon">
+                              <img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="lazy">
+                            </span>
+                            <span>{{ $item.title }}</span>  
+                          </li>
+                          {{ end }}
+                          {{ end }}
+                        </ul>
+                        <!-- <a href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}"
+                    class="button ac-button inline-button">Learn More <span
+                      class="material-icons">arrow_forward</span></a> -->
+                      </div>
+                      <!-- single product description end  -->
+                      {{ end }}
+                      <!-- product description end -->
+
+                      {{ range $item := $.Site.Data.config.productMenu.c3 }}
                       {{ $p := (index $.Site.Data.products $item) }}
                       <!-- single product description start  -->
                       <div class="product-description">
