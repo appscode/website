@@ -102,6 +102,6 @@ jobs:
           LINODE_CLI_TOKEN: ${{ secrets.LINODE_CLI_TOKEN }}
         run: |
           mkdir -p ~/.kube
-          linode-cli lke kubeconfig-view 19953 --json | jq -r .[0].kubeconfig | base64 -d > ~/.kube/config
+          linode-cli lke kubeconfig-view 325315 --json | jq -r .[0].kubeconfig | base64 -d > ~/.kube/config
           kubectl get nodes
           make deploy-to-linode
