@@ -45,8 +45,8 @@ release:
 
 .PHONY: deploy-to-linode
 deploy-to-linode:
-	kubectl set image -n bb deployment/website ui=$(IMAGE):$(VERSION)
-	kubectl delete pods -n bb --selector=app.kubernetes.io/name=website
+	kubectl set image -n ace deploy/acaas-website website=$(IMAGE):$(VERSION)
+	kubectl delete pods -n ace -l 'app.kubernetes.io/instance=acaas,app.kubernetes.io/name=website'
 
 .PHONY: run
 run:
