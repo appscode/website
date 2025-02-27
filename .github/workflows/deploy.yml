@@ -73,16 +73,17 @@ jobs:
       - name: Deploy
         env:
           REGISTRY: ghcr.io/appscode
-          LINODE_CLI_TOKEN: ${{ secrets.LINODE_CLI_TOKEN }}
           CLUSTER: ${{ inputs.cluster }}
+          LINODE_CLI_TOKEN: ${{ secrets.LINODE_CLI_TOKEN }}
+          NINJA_KUBECONFIG: ${{ secrets.NINJA_KUBECONFIG }}
         run: |
-          lke_id=325315 # ninja cluster
-          if [ "$CLUSTER" = "prod" ]; then
-            lke_id=326609 # prod cluster
-          fi
-          echo "connect to LKE cluster $lke_id"
           mkdir -p ~/.kube
-          linode-cli lke kubeconfig-view $lke_id --json | jq -r .[0].kubeconfig | base64 -d > ~/.kube/config
+          echo "connect to $CLUSTER cluster"
+          if [ "$CLUSTER" = "prod" ]; then
+            linode-cli lke kubeconfig-view 326609 --json | jq -r .[0].kubeconfig | base64 -d > ~/.kube/config
+          else
+            echo ${NINJA_KUBECONFIG} > ~/.kube/config
+          fi
           kubectl get nodes
           echo "deploy docker image"
           make deploy-to-linode TAG=${{ inputs.version }}

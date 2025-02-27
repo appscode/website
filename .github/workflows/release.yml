@@ -99,9 +99,11 @@ jobs:
       - name: Deploy to QA
         env:
           REGISTRY: ghcr.io/appscode
-          LINODE_CLI_TOKEN: ${{ secrets.LINODE_CLI_TOKEN }}
+          NINJA_KUBECONFIG: ${{ secrets.NINJA_KUBECONFIG }}
+          ENFORCE_LICENSE: true
         run: |
+          echo "connect to cluster"
           mkdir -p ~/.kube
-          linode-cli lke kubeconfig-view 325315 --json | jq -r .[0].kubeconfig | base64 -d > ~/.kube/config
+          echo ${NINJA_KUBECONFIG} > ~/.kube/config
           kubectl get nodes
           make deploy-to-linode
