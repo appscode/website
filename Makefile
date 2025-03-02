@@ -54,23 +54,6 @@ run:
 
 PRODUCT ?=
 
-.PHONY: docs
-docs: hugo-tools
-	$(HUGO_TOOLS) docs-aggregator --shared  --product=$(PRODUCT)
-	find ./data -name "*.json" -exec sed -i 's/https:\/\/cdn.appscode.com\/images/\/assets\/images/g' {} \;
-	rm -rf static/files/cluster-api
-	rm -rf static/files/cluster-api-provider-aws
-	rm -rf static/files/cluster-api-provider-azure
-	rm -rf static/files/cluster-api-provider-gcp
-	rm -rf static/files/products/appscode/aws-marketplace
-	rm -rf static/files/products/appscode/azure-marketplace
-	rm -rf static/files/products/appscode/gcp-marketplace
-
-.PHONY: docs-skip-assets
-docs-skip-assets: hugo-tools
-	$(HUGO_TOOLS) docs-aggregator --skip-assets --shared  --product=$(PRODUCT)
-	find ./data -name "*.json" -exec sed -i 's/https:\/\/cdn.appscode.com\/images/\/assets\/images/g' {} \;
-
 .PHONY: assets
 assets: hugo-tools
 	$(HUGO_TOOLS) docs-aggregator --only-assets

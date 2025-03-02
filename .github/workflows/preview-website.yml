@@ -53,7 +53,7 @@ jobs:
           GOOGLE_CUSTOM_SEARCH_API_KEY: ${{ secrets.GOOGLE_CUSTOM_SEARCH_API_KEY }}
         run: |
           npm install
-          make docs
+          make assets
           make gen-prod
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
