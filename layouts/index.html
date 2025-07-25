@@ -755,7 +755,7 @@
                 <div class="user-info">
                   <p class="name">{{ $user.name }}</p>
                   <p>{{ $user.job }}{{ if $user.companyKey }} at
-                    {{ index $.Site.Data.customers $user.companyKey "name" }}{{ end }}</p>
+                    <span class="is-capitalized">{{ $user.companyKey }}</span>{{ end }}</p>
                 </div>
               </div>
               <!-- user info wrapper end -->
