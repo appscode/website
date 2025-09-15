@@ -306,6 +306,84 @@
                   </script>
                 </li>
 
+              <!-- services start -->
+                <li class="nav-item">
+                  <button class="link" type="button">
+                    Services <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </button>
+
+                  <div class="mega-menu-wrapper">
+                    <div class="mega-menu-inner container">
+
+                      <!-- Back Button -->
+                      <button class="button ac-button inline-button back-button" type="button">
+                        <span class="icon p-0">
+                          <iconify-icon icon="heroicons:arrow-uturn-left"></iconify-icon>
+                        </span>
+                        <span>Back</span>
+                      </button>
+
+                      <!-- Services Grid -->
+                      <div class="product-menu" id="servicesGrid" style="grid-template-columns: 380px;">
+                        {{ range $index, $service := site.Data.services.servicesMenu }}
+                          <a class="single-product"
+                            href="#"
+                            onmouseenter="event.preventDefault(); showOfferings('{{ $service.title | urlize }}')">
+                            <div class="product-logo">
+                              <!-- Optional icon or image -->
+                            </div>
+                            <div class="product-info">
+                              <h2 class="is-size-6 is-flex">{{ $service.title }}</h2>
+                              <p>{{ $service.description }}</p>
+                            </div>
+                            <div class="navigate-icon">
+                              <span class="icon">
+                                <iconify-icon icon="heroicons:arrow-up-right" width="1.2rem" height="1.2rem"></iconify-icon>
+                              </span>
+                            </div>
+                          </a>
+                        {{ end }}
+                      </div>
+
+                      <!-- Offerings Description Area -->
+                      <div class="product-description-container">
+                        {{ range $index, $service := site.Data.services.servicesMenu }}
+                          <div class="product-description {{ if eq $index 0 }}is-block{{ end }}" id="offerings-{{ $service.title | urlize }}">
+                            {{ range $offering := $service.offerings }}
+                              <div class="single-product">
+                                <div class="product-logo">
+                                  {{ if $offering.icon }}
+                                    <iconify-icon icon="{{ $offering.icon }}" width="24" height="24"></iconify-icon>
+                                  {{ end }}
+                                </div>
+                                <div class="product-info">
+                                  <h2 class="is-size-6 is-flex">{{ $offering.title }}</h2>
+                                  <p>{{ $offering.description }}</p>
+                                </div>
+                              </div>
+                            {{ end }}
+                          </div>
+                        {{ end }}
+                      </div>
+
+                    </div>
+                  </div>
+                </li>
+
+                <script>
+                  function showOfferings(serviceId) {
+                    document.querySelectorAll('.product-description').forEach(el => {
+                      el.classList.remove('is-block');
+                    });
+                    const el = document.getElementById('offerings-' + serviceId);
+                    if (el) {
+                      el.classList.add('is-block');
+                    }
+                  }
+                </script>
+
+
+                <!-- services end -->
                 <li class="nav-item">
                   <button class="link">Resources <i class="fa fa-angle-down" aria-hidden="true"></i></button>
                   <div class="mega-menu-wrapper">
