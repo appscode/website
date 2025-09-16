@@ -1,0 +1,43 @@
+{{ define "main" }}
+<section class="single-service-page section-padding mt-4">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8">
+        <div class="left-content">
+
+          <!-- service title start  -->
+          <div class="service-title">
+            <h1>{{ .Title }}</h1>
+          </div>
+          <!-- service title end  -->
+
+          <!-- service description start  -->
+          <div class="service-description content">
+            {{ .Content }}
+          </div>
+          <!-- service description end  -->
+
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="right-content">
+
+          <!-- related services start  -->
+          <div class="related-services">
+            <h3>Single Services</h3>
+            <ul>
+              {{ $currentPage := . }}
+              {{ range where .Site.Pages "Section" "services" }}
+              {{ if ne .Permalink $currentPage.Permalink }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+              {{ end }}
+              {{ end }}
+            </ul>
+          </div>
+          <!-- related services end  -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}
