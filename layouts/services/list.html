@@ -1,43 +1,358 @@
 {{ define "main" }}
-<section class="single-service-page section-padding">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-8">
-        <div class="left-content">
-
-          <!-- service title start  -->
-          <div class="service-title">
-            <h1>{{ .Title }}</h1>
-          </div>
-          <!-- service title end  -->
-
-          <!-- service description start  -->
-          <div class="service-description content">
-            {{ .Content }}
-          </div>
-          <!-- service description end  -->
-
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-half">
+                    <h1 class="title is-1 has-text-weight-bold mb-4">Build Better Cloud Native Products Faster</h1>
+                    <p class="subtitle is-4 mb-5">
+                        Our trusted cloud native product engineering services help you build cloud native products faster.
+                    </p>
+                    <button class="button cta-button is-large">Talk to Expert</button>
+                </div>
+                <div class="column is-half">
+                    <div class="hero-illustration">
+                        <img src="/placeholder.svg?height=400&width=500" alt="Cloud Native Development" />
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="column is-4">
-        <div class="right-content">
+    </section>
 
-          <!-- related services start  -->
-          <div class="related-services">
-            <h3>Related Services</h3>
-            <ul>
-              {{ $currentPage := . }}
-              {{ range where .Site.Pages "Section" "services" }}
-              {{ if ne .Permalink $currentPage.Permalink }}
-              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-              {{ end }}
-              {{ end }}
-            </ul>
-          </div>
-          <!-- related services end  -->
-
+    <!-- Trusted by Section -->
+    <section class="section">
+        <div class="container has-text-centered">
+            <h3 class="title is-4 has-text-gray mb-5">Trusted by leading companies</h3>
+            <div class="columns is-centered is-vcentered">
+                <div class="column is-narrow">
+                    <img src="/placeholder.svg?height=60&width=120" alt="AWS" class="trust-logos" />
+                </div>
+                <div class="column is-narrow">
+                    <img src="/placeholder.svg?height=60&width=120" alt="Microsoft" class="trust-logos" />
+                </div>
+                <div class="column is-narrow">
+                    <img src="/placeholder.svg?height=60&width=120" alt="IBM" class="trust-logos" />
+                </div>
+                <div class="column is-narrow">
+                    <img src="/placeholder.svg?height=60&width=120" alt="Kubernetes" class="trust-logos" />
+                </div>
+                <div class="column is-narrow">
+                    <img src="/placeholder.svg?height=60&width=120" alt="Hitachi" class="trust-logos" />
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </section>
+
+    <!-- Cloud Native Product Engineering Section -->
+    <section class="section section-lg bg-light">
+        <div class="container">
+            <div class="has-text-centered mb-6">
+                <h2 class="title is-2 has-text-weight-bold mb-4">Cloud Native Product Engineering From the Experts</h2>
+                <p class="subtitle is-5 has-text-gray">
+                    Our cloud native product development experts help you with end-to-end product development & support.
+                </p>
+            </div>
+
+            <div class="columns">
+                <div class="column is-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="title is-5 mb-3">On-demand Engineers</h4>
+                        <p class="has-text-gray">
+                            Get cloud native product engineers on demand. No more waiting to expand your team.
+                        </p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h4 class="title is-5 mb-3">Cloud Native Expertise</h4>
+                        <p class="has-text-gray">
+                            Get cloud native engineers with experience in Kubernetes, Docker, and other cloud native tech.
+                        </p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="title is-5 mb-3">Additional Bandwidth</h4>
+                        <p class="has-text-gray">
+                            Get additional engineering bandwidth for rapid prototyping and cloud native product development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns mt-5">
+                <div class="column is-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4 class="title is-5 mb-3">Outsourced MVP</h4>
+                        <p class="has-text-gray">
+                            We can design and build the MVP for your product. Outsource cloud native domain knowledge.
+                        </p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4 class="title is-5 mb-3">Product Support</h4>
+                        <p class="has-text-gray">
+                            Get world class PMO and EMEA cloud native support for your cloud native product.
+                        </p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h4 class="title is-5 mb-3">Cost Saving</h4>
+                        <p class="has-text-gray">
+                            Save on costs with outsourced cloud native engineering. Reduce your time to market.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leverage Golang Expertise Section -->
+    <section class="section section-lg golang-section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <h2 class="title is-2 has-text-weight-bold mb-4">Leverage our Golang Expertise</h2>
+                    <p class="subtitle is-5 has-text-gray">
+                        Get Golang application development by the best Golang developers.
+                    </p>
+                </div>
+                <div class="column is-8">
+                    <div class="columns">
+                        <div class="column is-6">
+                            <div class="expertise-card">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-cog"></i>
+                                </div>
+                                <h4 class="title is-5 mb-3">Product Engineering</h4>
+                                <p class="has-text-gray">
+                                    Our team of Golang product engineers can build enterprise grade cloud native solutions for 5G+
+                                    satellite clients.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="expertise-card">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-vial"></i>
+                                </div>
+                                <h4 class="title is-5 mb-3">Testing</h4>
+                                <p class="has-text-gray">
+                                    Ship bug-free products to your customers with our comprehensive testing services by InfraCloud.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column is-6">
+                            <div class="expertise-card">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-wrench"></i>
+                                </div>
+                                <h4 class="title is-5 mb-3">Maintenance</h4>
+                                <p class="has-text-gray">
+                                    Keeping Golang applications up to date with the best practices is important. Leverage our
+                                    experienced team for critical production grade applications.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="expertise-card">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <h4 class="title is-5 mb-3">Support</h4>
+                                <p class="has-text-gray">
+                                    Things can go wrong anytime & hence our Golang engineers are by your side at all times. Experience
+                                    our 24x7 support for your critical business.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accelerate Development Section -->
+    <section class="section section-lg">
+        <div class="container">
+            <div class="has-text-centered mb-6">
+                <h2 class="title is-2 has-text-weight-bold mb-4">Accelerate your Product Development Journey</h2>
+                <p class="subtitle is-5 has-text-gray">We help companies build products in the following areas:</p>
+            </div>
+
+            <div class="columns">
+                <div class="column is-3">
+                    <div class="development-area">
+                        <div class="development-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h4 class="title is-5">Cloud Native</h4>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="development-area">
+                        <div class="development-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4 class="title is-5">Software Security</h4>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="development-area">
+                        <div class="development-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h4 class="title is-5">DevOps/DevSecOps</h4>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="development-area">
+                        <div class="development-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4 class="title is-5">Cloud Infrastructure</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Section -->
+    <section class="section section-xl bg-light">
+        <div class="container">
+            <div class="has-text-centered mb-6">
+                <h2 class="title is-2 has-text-weight-bold mb-4">Cloud Native Product Engineering Partner You Need</h2>
+            </div>
+
+            <div class="columns">
+                <div class="column is-4">
+                    <div class="partner-card">
+                        <div class="partner-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4 class="title is-4 mb-4">Startups</h4>
+                        <p class="has-text-gray">
+                            Every startup wants to scale faster but hiring the right people gets in the way. We help startups
+                            onboard A+ cloud native engineers with experience in critical production grade deployments.
+                        </p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="partner-card">
+                        <div class="partner-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h4 class="title is-4 mb-4">SMEs</h4>
+                        <p class="has-text-gray">
+                            As the company's team grows, so does their demands. We help SMEs by outsourcing an extension of their
+                            existing engineering teams to meet their cloud native product requirements.
+                        </p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="partner-card">
+                        <div class="partner-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h4 class="title is-4 mb-4">Enterprises</h4>
+                        <p class="has-text-gray">
+                            Our cloud native product engineering expertise on demand. We help enterprises build a team of cloud
+                            native engineers at scale without the overhead of months with InfraCloud.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engagement Models Section -->
+    <section class="section section-xl">
+        <div class="container">
+            <div class="has-text-centered mb-6">
+                <h2 class="title is-2 has-text-weight-bold mb-4">Choose Your Cloud Native Engagement Model</h2>
+            </div>
+
+            <div class="columns">
+                <div class="column is-4">
+                    <div class="engagement-card">
+                        <div class="engagement-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="title is-4 mb-4">Team Extension</h4>
+                        <p class="has-text-gray">
+                            Extend your team with our cloud native engineers and get your product built faster.
+                        </p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="engagement-card">
+                        <div class="engagement-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h4 class="title is-4 mb-4">End-to-End Product Development</h4>
+                        <p class="has-text-gray">
+                            Let our cloud native product development team take care of your entire product development.
+                        </p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="engagement-card">
+                        <div class="engagement-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4 class="title is-4 mb-4">Fixed Scope</h4>
+                        <p class="has-text-gray">
+                            Outsource a part of your product to an integrated partner for dedicated results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section section-xl purple-section">
+        <div class="container has-text-centered">
+            <h2 class="title is-2 has-text-weight-bold mb-4">Ready to Build Better Cloud Native Products?</h2>
+            <p class="subtitle is-4 mb-6">
+                Let's discuss how our cloud native expertise can accelerate your product development journey.
+            </p>
+            <div class="buttons is-centered">
+                <button class="button is-white is-large mr-3">
+                    <span class="icon">
+                        <i class="fas fa-calendar"></i>
+                    </span>
+                    <span>Schedule a Call</span>
+                </button>
+                <button class="button is-outlined is-white is-large">
+                    <span class="icon">
+                        <i class="fas fa-download"></i>
+                    </span>
+                    <span>Download Case Study</span>
+                </button>
+            </div>
+        </div>
+    </section>
 {{ end }}
