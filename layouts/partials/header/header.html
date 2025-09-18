@@ -306,8 +306,8 @@
                   </script>
                 </li>
 
-              <!-- services start -->
-                <li class="nav-item">
+                <!-- services start -->
+                <li class="nav-item services-menu">
                   <button class="link" type="button">
                     Services <i class="fa fa-angle-down" aria-hidden="true"></i>
                   </button>
@@ -324,11 +324,11 @@
                       </button>
 
                       <!-- Services Grid -->
-                      <div class="product-menu" id="servicesGrid" style="grid-template-columns: 380px; width: 400px;">
+                      <div class="product-menu" id="servicesGrid" style="grid-template-columns: 380px; width: 380px; background-color: #fbfbfb;border-radius: 8px;">
                         {{ range $index, $service := site.Data.services.servicesMenu }}
                           <a class="single-product {{ if eq $index 0 }} is-active {{ end }}" href="#" data-service-id="{{ $service.title | urlize }}">
                             <div class="product-logo">
-                              <!-- Optional icon or image -->
+                              <img src="{{ $service.icon }}" alt="{{ $service.title }}"/>
                             </div>
                             <div class="product-info">
                               <h2 class="is-size-6 is-flex">{{ $service.title }}</h2>
@@ -344,18 +344,20 @@
                       </div>
 
                       <!-- Offerings Description Area -->
-                      <div class="product-description-container">
+                      <div class="product-description-container offering-description-container">
                         {{ range $index, $service := site.Data.services.servicesMenu }}
-                          <div class="product-description {{ if eq $index 0 }}is-block{{ end }}" id="offerings-{{ $service.title | urlize }}">
+                          <div class="product-description offering-content {{ if eq $index 0 }}is-block{{ end }}" id="offerings-{{ $service.title | urlize }}" style="border-left: none;padding-left: 0;">
                             {{ range $offering := $service.offerings }}
                               <a href="/{{ $offering.id }}" class="single-product">
-                                <div class="product-logo">
+                                <!-- <div class="product-logo">
                                   {{ if $offering.icon }}
                                     <iconify-icon icon="{{ $offering.icon }}" width="24" height="24"></iconify-icon>
                                   {{ end }}
-                                </div>
+                                </div> -->
                                 <div class="product-info">
-                                  <h2 class="is-size-6 is-flex">{{ $offering.title }}</h2>
+                                  <h2 class="is-size-6 is-flex is-align-items-center gap-8">{{ $offering.title }} <span class="arrow-right icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.5 12H5m8 6s6-4.419 6-6s-6-6-6-6"/></svg>
+                                  </span></h2>
                                   <p>{{ $offering.description }}</p>
                                 </div>
                               </a>
@@ -384,7 +386,7 @@
                   });
 
                   function showOfferings(serviceId) {
-                    document.querySelectorAll('.product-description').forEach(el => {
+                    document.querySelectorAll('.product-description.offering-content').forEach(el => {
                       el.classList.remove('is-block');
                     });
 
