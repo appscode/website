@@ -15869,6 +15869,12 @@ Responsive Classes
       display: flex;
       align-items: center;
       gap: 32px; }
+      .navbar-appscode .navbar-right .navbar-right-group ul {
+        display: flex;
+        margin-left: 16px; }
+        @media screen and (max-width: 1023px) {
+          .navbar-appscode .navbar-right .navbar-right-group ul {
+            margin-left: 0; } }
       .navbar-appscode .navbar-right .navbar-right-group .buttons iframe {
         transition: 0.3s ease-in-out; }
         .navbar-appscode .navbar-right .navbar-right-group .buttons iframe:hover {
@@ -15913,7 +15919,8 @@ Responsive Classes
       padding: 0.5rem 0;
       transition: 0.3s ease-in-out;
       position: relative;
-      z-index: 1; }
+      z-index: 1;
+      display: flex; }
       .navbar-appscode ul .nav-item .link.is-active {
         color: var(--ac-primary); }
       .navbar-appscode ul .nav-item .link:hover {
@@ -20081,5 +20088,55 @@ body.partner .fserv-button-submit {
     .cta-action-section .button:hover {
       background-color: #009e86;
       color: #ffffff; }
+
+.services-menu .single-product {
+  position: relative;
+  z-index: 1;
+  padding: 16px 24px;
+  border-radius: 8px; }
+  .services-menu .single-product .product-logo {
+    background-color: #fff !important;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px !important; }
+    .services-menu .single-product .product-logo img {
+      height: 2rem !important; }
+  .services-menu .single-product p {
+    margin-bottom: 0 !important; }
+  .services-menu .single-product:hover {
+    background-color: #ebf4f0; }
+    .services-menu .single-product:hover h2 {
+      color: var(--ac-primary); }
+  .services-menu .single-product::after {
+    position: absolute;
+    content: "";
+    right: -7px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 16px;
+    height: 16px;
+    background: #ebf4f0;
+    border-radius: 0px 4px 0 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden; }
+  .services-menu .single-product.is-active {
+    background-color: #ebf4f0 !important; }
+    .services-menu .single-product.is-active::after {
+      opacity: 1;
+      visibility: visible; }
+
+.offering-description-container .product-info .arrow-right.icon {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease; }
+.offering-description-container .single-product h2 {
+  letter-spacing: 0;
+  color: var(--ac-primary); }
+.offering-description-container .single-product:hover h2 {
+  text-decoration: underline; }
+.offering-description-container .single-product:hover .arrow-right.icon {
+  opacity: 1;
+  visibility: visible; }
 
 /*# sourceMappingURL=main.css.map */
