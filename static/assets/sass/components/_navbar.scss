@@ -75,6 +75,7 @@
     ul {
       .nav-item {
         .link {
+
           &.is-active {
             position: relative;
             z-index: 1;
@@ -133,6 +134,13 @@
       display: flex;
       align-items: center;
       gap: 32px;
+      ul {
+        display: flex;
+        margin-left: 16px;
+        @include touch {
+          margin-left: 0;
+        }
+      }
       .buttons{
         iframe {
           transition: 0.3s ease-in-out;
@@ -204,6 +212,7 @@
         transition: 0.3s ease-in-out;
         position: relative;
         z-index: 1;
+        display: flex;
 
         &.is-active {
           color: $ac-primary;
