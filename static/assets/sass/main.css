@@ -20067,6 +20067,10 @@ body.partner .fserv-button-submit {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  .development-card .development-icon {
+    font-size: 32px;
+    color: var(--ac-primary);
+    margin-bottom: 8px; }
   .development-card h4 {
     font-size: 1.25rem;
     font-weight: 600; }
@@ -20091,9 +20095,12 @@ body.partner .fserv-button-submit {
       background-color: #009e86;
       color: #ffffff; }
 
-.golang-section .single-feature .icon {
-  background-color: #f0f4ff !important;
-  border-radius: 8px !important; }
+.golang-section .single-feature {
+  height: 100%;
+  padding: 32px; }
+  .golang-section .single-feature .icon {
+    background-color: #f0f4ff !important;
+    border-radius: 8px !important; }
 
 .services-menu .single-product {
   position: relative;
