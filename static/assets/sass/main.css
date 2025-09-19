@@ -20011,13 +20011,15 @@ body.partner .fserv-button-submit {
     line-height: 130%;
     font-weight: 700;
     letter-spacing: -0.57px;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    text-wrap: balance; }
   .hero-area.is-services p {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     line-height: 160%;
     color: #636363;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    text-wrap: balance; }
 
 .bg-light {
   background-color: #f9f9f9; }
@@ -20089,6 +20091,10 @@ body.partner .fserv-button-submit {
       background-color: #009e86;
       color: #ffffff; }
 
+.golang-section .single-feature .icon {
+  background-color: #f0f4ff !important;
+  border-radius: 8px !important; }
+
 .services-menu .single-product {
   position: relative;
   z-index: 1;
@@ -20138,5 +20144,38 @@ body.partner .fserv-button-submit {
 .offering-description-container .single-product:hover .arrow-right.icon {
   opacity: 1;
   visibility: visible; }
+
+.engagement-models-section .engagement-card {
+  border-right: 1px solid #e7e7e7;
+  padding: 30px; }
+  .engagement-models-section .engagement-card h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-bottom: 16px; }
+  .engagement-models-section .engagement-card .icon {
+    background-color: #f0f4ff !important;
+    border-radius: 8px !important;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px; }
+
+.cloud-native-partner-section .single-feature {
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 30px; }
+  .cloud-native-partner-section .single-feature .icon {
+    background-color: #f0f4ff !important;
+    border-radius: 8px !important;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px; }
 
 /*# sourceMappingURL=main.css.map */
