@@ -1,4 +1,13 @@
 {{ define "main" }}
+
+{{ $data:=""}}
+
+{{ if .Params.data }}
+  {{ $data = getJSON .Params.data }}
+{{ end }}
+
+{{ with $data }}
+
 <div class="bg-gradient-1"
     style="background-image:url(https://appscode.com/assets/images/gradient-bg.webp); background-repeat: repeat;">
     <!-- Hero Section -->
@@ -6,17 +15,16 @@
         <div class="container">
             <div class="columns is-vcentered">
                 <div class="column is-6 is-full-touch">
-                    <h1 class="">Build Better Cloud Native Products Faster</h1>
-                    <p class="">
-                        Our trusted cloud native product engineering services help you build cloud native products
-                        faster.
+                    <h1 >{{ $data.hero.title }}</h1>
+                    <p >
+                        {{ $data.hero.subtitle }}
                     </p>
-                    <button class="button ac-button is-primary ">TALK TO EXPERT</button>
+                    <button class="button ac-button is-primary ">{{ $data.hero.cta_text }}</button>
                 </div>
                 <div class="column is-6 is-full-touch">
                     <div class="hero-illustration">
-                        <img src="https://www.infracloud.io/assets/img/product-engineering/svg/illustration-product.svg"
-                            alt="Cloud Native Development" />
+                        <img src="{{ $data.hero.illustration.src }}"
+                            alt="{{ $data.hero.illustration.alt }}" />
                     </div>
                 </div>
             </div>
@@ -24,9 +32,9 @@
     </section>
 
     <!-- Trusted by Section -->
-    <section class="">
+    <section >
         <div class="container has-text-centered">
-            <h5>Trusted by leading companies</h5>
+            <h5>{{ $data.trusted_by.title }}</h5>
             <div class="columns is-centered is-vcentered">
                 <div class="column is-12">
                     <div class="social-prove-brand-area">
@@ -47,87 +55,31 @@
     <!-- Cloud Native Product Engineering Section -->
     <section class="section-padding bg-light benefits-section">
         <div class="container">
-           <div class="columns is-centered">
-            <div class="column is-10">
-                 <div class="section-title has-text-centered-tablet mb-16">
-                    <h2>Cloud Native Product Engineering From the Experts</h2>
-                    <p class="mb-0">
-                        Our cloud native product development experts help you with end-to-end product development & support.
-                    </p>
+            <div class="columns is-centered">
+                <div class="column is-10">
+                    <div class="section-title has-text-centered-tablet mb-16">
+                        <h2>{{ $data.services.title }}</h2>
+                        <p class="mb-0">
+                            {{ $data.services.subtitle }}
+                        </p>
+                    </div>
                 </div>
             </div>
-           </div>
 
             <div class="columns is-multiline">
+                {{ range $item := $data.services.items }}
                 <div class="column is-4">
                     <div class="service-card">
                         <div class="service-icon">
-                            <i class="fa fa-users"></i>
+                            <i class="{{ $item.icon }}"></i>
                         </div>
-                        <h4 class="mt-16">On-demand Engineers</h4>
+                        <h4 class="mt-16">{{ $item.title }}</h4>
                         <p class="has-text-gray">
-                            Get cloud native product engineers on demand. No more waiting to expand your team.
+                            {{ $item.description }}
                         </p>
                     </div>
                 </div>
-                <div class="column is-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fa fa-cloud"></i>
-                        </div>
-                        <h4 class="mt-16">Cloud Native Expertise</h4>
-                        <p class="has-text-gray">
-                            Get cloud native engineers with expertise in Go, Python, Kubernetes, and other cloud native
-                            tech.
-                        </p>
-                    </div>
-                </div>
-                <div class="column is-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fa fa-bolt"></i>
-                        </div>
-                        <h4 class="mt-16">Additional Bandwidth</h4>
-                        <p class="has-text-gray">
-                            Get additional engineering bandwidth for rapid prototyping and cloud native product
-                            development.
-                        </p>
-                    </div>
-                </div>
-                <div class="column is-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fa fa-rocket"></i>
-                        </div>
-                        <h4 class="mt-16">Outsourced MVP</h4>
-                        <p class="has-text-gray">
-                            Not sure about the idea? Build the MVP of your product with InfraCloud’s cloud native domain
-                            knowledge.
-                        </p>
-                    </div>
-                </div>
-                <div class="column is-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="mt-16">Product Support</h4>
-                        <p class="has-text-gray">
-                            Get world class APAC and EMEA cloud native support for your cloud product with us.
-                        </p>
-                    </div>
-                </div>
-                <div class="column is-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fa fa-money" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="mt-16">Cost Saving</h4>
-                        <p class="has-text-gray">
-                            Save on cost with optimized cloud native solutions that help you ship products faster.
-                        </p>
-                    </div>
-                </div>
+                {{ end }}
             </div>
         </div>
     </section>
@@ -138,73 +90,31 @@
             <div class="columns is-vcentered">
                 <div class="column is-4">
                     <div class="section-title mb-0">
-                        <h2>Leverage our Golang Expertise</h2>
+                        <h2>{{ $data.golang_expertise.title }}</h2>
                         <p>
-                            Get Golang application development by the best Golang developers.
+                            {{ $data.golang_expertise.subtitle }}
                         </p>
-                        <a href="#" class="button ac-button">Meet our Experts</a>
+                        <a href="#" class="button ac-button">{{ $data.golang_expertise.cta_text }}</a>
                     </div>
                 </div>
                 <div class="column is-8">
                     <div class="columns is-gapless is-multiline">
-                        <div class="column is-6 single-card-wrapper">
-                            <div class="single-feature card-view" style="height: 100%;">
-                                <div class="icon">
-                                    <i class="fa fa-cog"></i>
-                                </div>
-                                <div class="content">
-                                    <h4 class="mt-16">Product Engineering</h4>
-                                    <p class="has-text-gray">
-                                        Our team of Golang product development experts have developed enterprise grade
-                                        cloud native solutions for 50+ satisfied clients.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        {{ range $item := $data.golang_expertise.services }}
                         <div class="column is-6 single-card-wrapper">
                             <div class="single-feature card-view">
                                 <div class="icon">
-                                    <i class="fa fa-ticket" aria-hidden="true"></i>
+                                    <i class="{{ $item.icon }}"></i>
                                 </div>
                                 <div class="content">
-                                    <h4 class="mt-16">Testing</h4>
+                                    <h4 class="mt-16">{{ $item.title }}</h4>
                                     <p class="has-text-gray">
-                                        Ship bug-free products to your customers with rigorous end-to-end Golang testing
-                                        services by InfraCloud.
+                                        {{ $item.description }}
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-6 single-card-wrapper">
-                            <div class="single-feature card-view">
-                                <div class="icon">
-                                    <i class="fa fa-wrench"></i>
-                                </div>
-                                <div class="content">
-                                    <h4 class="mt-16">Maintenance</h4>
-                                    <p class="has-text-gray">
-                                        Keeping Golang applications up to date with the best practices is important.
-                                        Leverage the services of our Golang experts who have maintained critical
-                                        production grade applications.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-6 single-card-wrapper">
-                            <div class="single-feature card-view">
-                                <div class="icon">
-                                    <i class="fa fa-life-ring" aria-hidden="true"></i>
-                                </div>
-                                <div class="content">
-                                    <h4 class="mt-16">Support</h4>
-                                    <p class="has-text-gray">
-                                        Things can go wrong at anytime & hence our Golang engineers are by your side at
-                                        all times. Experience our superior support services to keep your business
-                                        running.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        {{ end }}
+                        
                     </div>
                 </div>
             </div>
@@ -214,43 +124,21 @@
     <section class="section-padding bg-light">
         <div class="container">
             <div class="section-title has-text-centered mb-6">
-                <h2>Accelerate your Product Development Journey</h2>
-                <p>We help companies build products in the following areas:</p>
+                <h2>{{ $data.development_areas.title }}</h2>
+                <p>{{ $data.development_areas.subtitle }}</p>
             </div>
 
             <div class="columns">
+                {{ range $item := $data.development_areas.areas }}
                 <div class="column is-3">
                     <div class="development-card">
                         <div class="development-icon">
-                            <i class="fa fa-cloud"></i>
+                            <i class="{{ $item.icon }}"></i>
                         </div>
-                        <h4 class="title is-5">Cloud Native</h4>
+                        <h4 class="title is-5">{{ $item.title }}</h4>
                     </div>
                 </div>
-                <div class="column is-3">
-                    <div class="development-card">
-                        <div class="development-icon">
-                            <i class="fa fa-shield"></i>
-                        </div>
-                        <h4 class="title is-5">Software Security</h4>
-                    </div>
-                </div>
-                <div class="column is-3">
-                    <div class="development-card">
-                        <div class="development-icon">
-                            <i class="fa fa-microchip"></i>
-                        </div>
-                        <h4 class="title is-5">DevOps/DevSecOps</h4>
-                    </div>
-                </div>
-                <div class="column is-3">
-                    <div class="development-card">
-                        <div class="development-icon">
-                            <i class="fa fa-server"></i>
-                        </div>
-                        <h4 class="title is-5">Cloud Infrastructure</h4>
-                    </div>
-                </div>
+                {{ end }}
             </div>
         </div>
     </section>
@@ -259,49 +147,23 @@
     <section class="section-padding cloud-native-partner-section">
         <div class="container">
             <div class="section-title has-text-centered mb-32">
-                <h2>Cloud Native Product Engineering Partner You Need</h2>
+                <h2>{{ $data.partner_section.title }}</h2>
             </div>
 
             <div class="columns">
+                {{ range $item := $data.partner_section.partners }}
                 <div class="column is-4">
                     <div class="single-feature card-view">
                         <div class="icon">
-                            <i class="fa fa-rocket"></i>
+                            <i class="{{ $item.icon }}"></i>
                         </div>
-                        <h4>Startups</h4>
+                        <h4>{{ $item.title }}</h4>
                         <p class="has-text-gray">
-                            Every startup wants to scale faster but hiring the right people gets in the way. We help
-                            startups
-                            onboard A+ cloud native engineers with experience in critical production grade deployments.
+                            {{ $item.description }}
                         </p>
                     </div>
                 </div>
-                <div class="column is-4">
-                    <div class="single-feature card-view">
-                        <div class="icon">
-                            <i class="fa fa-building"></i>
-                        </div>
-                        <h4>SMEs</h4>
-                        <p class="has-text-gray">
-                            As the company's team grows, so does their demands. We help SMEs by outsourcing an extension
-                            of their
-                            existing engineering teams to meet their cloud native product requirements.
-                        </p>
-                    </div>
-                </div>
-                <div class="column is-4">
-                    <div class="single-feature card-view">
-                        <div class="icon">
-                            <i class="fa fa-industry"></i>
-                        </div>
-                        <h4>Enterprises</h4>
-                        <p class="has-text-gray">
-                            Our cloud native product engineering expertise on demand. We help enterprises build a team
-                            of cloud
-                            native engineers at scale without the overhead of months with InfraCloud.
-                        </p>
-                    </div>
-                </div>
+                {{ end }}
             </div>
         </div>
     </section>
@@ -310,235 +172,99 @@
     <section class="section-padding engagement-models-section bg-light">
         <div class="container">
             <div class="section-title has-text-centered mb-32">
-                <h2>Choose Your Cloud Native Engagement Model</h2>
+                <h2>{{ $data.engagement_models.title }}</h2>
             </div>
 
             <div class="engagement-card-wrapper">
+                {{ range $item := $data.engagement_models.models }}
                 <div class="engagement-card">
                     <div class="num-icon">
-                        01
+                        {{ $item.number }}
                     </div>
-                    <h4>Team Extension</h4>
+                    <h4>{{ $item.title }}</h4>
                     <p class="has-text-gray">
-                        Extend your team with our cloud native engineers and get your product built faster.
+                        {{ $item.description }}
                     </p>
                 </div>
-                <div class="engagement-card">
-                    <div class="num-icon">
-                        02
-                    </div>
-                    <h4>End-to-End Product Development</h4>
-                    <p class="has-text-gray">
-                        Let our cloud native product development team take care of your entire product development.
-                    </p>
-                </div>
-                <div class="engagement-card" style="border-right: none;">
-                    <div class="num-icon">
-                        03
-                    </div>
-                    <h4>Fixed Scope</h4>
-                    <p class="has-text-gray">
-                        Outsource a part of your product to an integrated partner for dedicated results.
-                    </p>
-                </div>
+                {{ end }}
             </div>
         </div>
     </section>
 
-    <!-- Product Development Process  -->
+    <!-- Cloud Native Product Development with Right Processes & People  -->
     <section class="section-padding product-development-process-section">
         <div class="container has-text-centered">
             <div class="section-title has-text-centered">
-                <h2>Cloud Native Product Development with Right Processes & People</h2>
-                <p>
-                    Building cloud native product is not hard if you have the right processes in place. Here’s the
-                    process that we follow for each project.
-                </p>
+                <h2>{{ $data.product_development_process.title }}</h2>
+                <p>{{ $data.product_development_process.subtitle }}</p>
             </div>
         </div>
         <div class="container">
             <div class="columns">
                 <div class="column is-6">
                     <div class="tab-items">
-                        <div class="tab-item">
+                        {{ range $item := $data.development_process.steps }}
+                         <div class="tab-item {{ if $item.active }}is-active{{ end }}">
                             <div class="date">
-                                <strong>01</strong>
-                                <span>Sept</span>
+                                <strong>{{ $item.date }}</strong>
+                                <span>{{ $item.month }}</span>
                             </div>
-                            <h4>Discover Opportunities</h4>
+                            <h4>{{ $item.title }}</h4>
                         </div>
-
-                        <div class="tab-item">
-                            <div class="date">
-                                <strong>02</strong>
-                                <span>Sept</span>
-                            </div>
-                            <h4>Building MVP</h4>
-                        </div>
-
-                        <div class="tab-item is-active">
-                            <div class="date">
-                                <strong>03</strong>
-                                <span>Sept</span>
-                            </div>
-                            <h4>Development</h4>
-                        </div>
-
-                        <div class="tab-item">
-                            <div class="date">
-                                <strong>04</strong>
-                                <span>Sept</span>
-                            </div>
-                            <h4>Launch</h4>
-                        </div>
-
-                        <div class="tab-item">
-                            <div class="date">
-                                <strong>05</strong>
-                                <span>Sept</span>
-                            </div>
-                            <h4>Scale</h4>
-                        </div>
+                        {{ end }}
                     </div>
                 </div>
                 <div class="column is-6">
+                    {{ range $item := $data.development_process.active_content }}
+                    {{ if $item.active }}
                     <div class="tab-content">
-                        <img src="https://www.infracloud.io/assets/img/product-engineering/development.svg" alt="">
-                        <p>Once the requirements and MVP are in place, our engineers will start developing the product.
-                            Depending on the engagement model, our team will work closely work with you in an agile way
-                            to build out a final product.</p>
+                        <img src="{{ $item.image }}" alt="{{ $item.description }}">
+                        <p>{{ $item.description }}</p>
                     </div>
+                    {{ end }}
+                    {{ end }}
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- We Understand the Nitty-Gritty!  -->
     <section class="section section-lg card-section working-scenarios-section">
         <div class="container">
             <div class="columns is-vcentered">
                 <div class="column is-4">
                     <div class="section-title mb-0">
-                        <h2>We Understand the Nitty-Gritty!</h2>
-                        <p>
-                            Gain leverage with our proven artificial intelligence expertise & industry exposure. Working
-                            with 100+ clients, we know the criticalities, compliances & the importance of getting things
-                            right in the first go.
-                        </p>
-                        <p>Be it an enterprise with datacenters across the world or a rapidly scaling startup, we got it
-                            covered!</p>
+                        <h2>{{ $data.industries.title }}</h2>
+                        <p>{{ $data.industries.subtitle }}</p>
+                        <p>{{ $data.industries.additional_text }}</p>
                     </div>
                 </div>
                 <div class="column is-8">
                     <div class="columns is-gapless is-multiline">
+                        {{ range $item := $data.industries.sectors }}
                         <div class="column is-6 single-card-wrapper">
                             <div class="single-feature card-view">
-                               
-                                <div class="content">
-                                    <div class="is-flex is-align-items-center is-gap-8">
-                                        <div class="icon">
-                                            <i class="fa fa-bank"></i>
-                                        </div>
-                                        <h4 class="mt-16">Banking and Finance</h4>
-                                    </div>
-                                    <p class="has-text-gray">
-                                        Customers demand highly available & compliant systems to efficiently handle
-                                        transactions & payment requests 24/7.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-6 single-card-wrapper">
-                            <div class="single-feature card-view">
-                                
-                                <div class="content">
-                                    <div class="is-flex is-align-items-center is-gap-8">
-                                        <div class="icon">
-                                            <i class="fa fa-laptop"></i>
-                                        </div>
-                                    <h4 class="mt-16">Technology, SaaS & Internet</h4>
-                                    </div>
-                                    <p class="has-text-gray">
-                                        Focus on integrating AI within your SaaS on the top of the cloud built for AI
-                                        while we build & manage your GPU server for performance.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-6 single-card-wrapper">
-                            <div class="single-feature card-view">
-                                
-                                <div class="content">
-                                    
-                                    <div class="is-flex is-align-items-center is-gap-8">
-                                        <div class="icon">
-                                            <i class="fa fa-car"></i>
-                                        </div>
-                                        <h4 class="mt-16">Automotive</h4>
-                                    </div>
-                                    <p class="has-text-gray">
-                                        Keep up with the AI & machine learning with the rising customer expectations and
-                                        integrate more technologies while reaching heights of a safer and sustainable
-                                        future.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-6 single-card-wrapper">
-                            <div class="single-feature card-view">
-                                
-                                <div class="content">
-                                    <div class="is-flex is-align-items-center is-gap-8">
-                                        <div class="icon">
-                                            <i class="fa fa-plug"></i>
-                                        </div>
-                                        <h4 class="mt-16">Energy, Oil & Gas</h4>
-                                    </div>
-                                    <p class="has-text-gray">
-                                        Modernize your system to streamline inspections, better resource monitoring,
-                                        visualize data, and reduce operational costs.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="column is-6 single-card-wrapper">
-                            <div class="single-feature card-view">
-                           
                                 <div class="content">
                                     <div class="is-flex is-align-items-center is-gap-8">
                                         <div class="icon">
-                                            <i class="fa fa-hospital-o"></i>
+                                            <i class="{{ $item.icon }}"></i>
                                         </div>
-                                        <h4 class="mt-16">Healthcare</h4>
+                                        <h4 class="mt-16">{{ $item.title }}</h4>
                                     </div>
                                     <p class="has-text-gray">
-                                        Leverage the power of cloud GPU instances to process patient data at speed to
-                                        adapt to the rapidly evolving healthcare demands.
+                                        {{ $item.description }}
                                     </p>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="column is-6 single-card-wrapper">
-                            <div class="single-feature card-view">
-                                <div class="content">
-                                    <div class="is-flex is-align-items-center is-gap-8">
-                                        <div class="icon">
-                                            <i class="fa fa-plane"></i>
-                                        </div>
-                                        <h4 class="mt-16">Travel & Hospitality</h4>
-                                    </div>
-                                    <p class="has-text-gray">
-                                        Delight your customers with seamless operation & instant updates using
-                                        cost-effective, flexible, and scalable system.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        {{ end }}
                     </div>
                 </div>
             </div>
     </section>
+
+    <!-- We Love Open Source -->
 
     <section class="section-padding has-background-white features-area">
         <div class="container">
@@ -548,18 +274,16 @@
                         <div class="columns is-vcentered is-flex-direction-row-reverse-mobile">
                             <div class="column is-6">
                                 <div class="features-thumbnail"><img
-                                        src="https://appscode.com/assets/images/products/kubedb/kubedb-illustration-1.webp"
-                                        alt="Lower administrative burden" class="img">
+                                        src="{{ $data.open_source.image.src }}"
+                                        alt="{{ $data.open_source.image.alt }}" class="img">
                                 </div>
                             </div>
                             <div class="column is-6">
                                 <div class="feature-wrapper d-table">
                                     <div class="feature-content pr-140 d-table-cell">
-                                        <h3>We Love Open Source</h3>
-                                        <p>We believe open source enables anyone to create technologies for a better
-                                            tomorrow. Our developers have been constantly contributing to various cloud
-                                            native projects and leveraging them to develop new OSS products.</p>
-                                        <p class="has-text-info">Sneak peek at our OSS contributions</p>
+                                        <h3>{{ $data.open_source.title }}</h3>
+                                        <p>{{ $data.open_source.description }}</p>
+                                        <p class="has-text-info">{{ $data.open_source.cta_text }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -576,8 +300,8 @@
             <div class="columns">
                 <div class="column">
                     <div class="section-title has-text-centered">
-                        <h2>Full-stack expertise</h2>
-                        <p>Our engineers are well versed with the following languages</p>
+                        <h2>{{ $data.tech_stack.title }}</h2>
+                        <p>{{ $data.tech_stack.subtitle }}</p>
                     </div>
                 </div>
             </div>
@@ -586,102 +310,42 @@
         <div class="container">
             <div class="columns is-multiline is-centered">
                 <div class="logo-presentation">
+                    {{ range $item := $data.tech_stack.technologies }}
                     <div class="single-logo has-text-centered">
-                        <img src="https://static.cdnlogo.com/logos/g/35/golang.svg" alt="Golang">
+                        <img src="{{ $item.logo }}" alt="{{ $item.name }}">
                     </div>
-                    <div class="single-logo has-text-centered">
-                        <img src="https://static.cdnlogo.com/logos/p/4/python.svg" alt="Python">
-                    </div>
-                    <div class="single-logo has-text-centered">
-                        <img src="https://static.cdnlogo.com/logos/j/44/javascript.svg" alt="JavaScript">
-                    </div>
-                    <div class="single-logo has-text-centered">
-                        <img src="https://static.cdnlogo.com/logos/t/96/typescript.svg" alt="TypeScript">
-                    </div>
-                    <div class="single-logo has-text-centered">
-                        <img src="https://static.cdnlogo.com/logos/r/6/ruby_800.png" alt="Ruby">
-                    </div>
-                    <div class="single-logo has-text-centered">
-                        <img src="https://static.cdnlogo.com/logos/j/11/java_800.png" alt="Java">
-                    </div>
+                    {{ end }}
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Why Some of the Best Companies Work with AppsCode? -->
     <section class="section section-lg card-section">
         <div class="container">
             <div class="columns is-vcentered">
                 <div class="column is-4">
                     <div class="section-title mb-0">
-                        <h2>Why Some of the Best Companies Work with InfraCloud?</h2>
+                        <h2>{{ $data.why_choose_us.title }}</h2>
                     </div>
                 </div>
                 <div class="column is-8">
                     <div class="columns is-gapless is-multiline">
-                        <div class="column is-6 single-card-wrapper">
-                            <div class="single-feature card-view" style="height: 100%;">
-                                <div class="icon">
-                                    <i class="fa fa-cog"></i>
-                                </div>
-                                <div class="content">
-                                    <h4 class="mt-16">Dedicated Architect</h4>
-                                    <p class="has-text-gray">
-                                        Each project will have a dedicated technical lead, a cloud native expert, who
-                                        will manage the project from start to stop. A single point of contact between
-                                        you and our engineering team. They will be responsible for timely deliverables
-                                        along with assisting you at every step of your cloud native journey
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="column is-6 single-card-wrapper">
-                            <div class="single-feature card-view" style="height: 100%;">
-                                <div class="icon">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-                                <div class="content">
-                                    <h4 class="mt-16">Subject Matter Expertise</h4>
-                                    <p class="has-text-gray">
-                                       Our engineers have implemented more than 100+ cloud native product solutions. The team has worked on the latest cutting edge tools and are always a step ahead of the curve. This expertise helps you build the product people need faster.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
+                        {{ range $item := $data.why_choose_us.reasons }}
                         <div class="column is-6 single-card-wrapper">
                             <div class="single-feature card-view">
                                 <div class="icon">
-                                    <i class="fa fa-users"></i>
+                                    <i class="{{ $item.icon }}"></i>
                                 </div>
                                 <div class="content">
-                                    <h4 class="mt-16">Rookies + Pros</h4>
+                                    <h4 class="mt-16">{{ $item.title }}</h4>
                                     <p class="has-text-gray">
-                                        We have the perfect mix of rookies & skilled professionals at InfraCloud.
-                                        Architects with immense experience of implementing cloud naitve products at
-                                        scale. Rookies who come up with innovative ideas, some of which have garnered
-                                        praise in the open source community.
+                                        {{ $item.description }}
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-6 single-card-wrapper">
-                            <div class="single-feature card-view">
-                                <div class="icon">
-                                    <i class="fa fa-wrench"></i>
-                                </div>
-                                <div class="content">
-                                    <h4 class="mt-16">Expand Easily</h4>
-                                    <p class="has-text-gray">
-                                        We understand that application requirements change often, & you do not need to
-                                        worry about it. With InfraCloud, you can easily expand the team of engineers
-                                        without the hassle of hiring and training. Our extended team brings in the
-                                        expertise you need to accomplish your goals.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        {{ end }}
                     </div>
                 </div>
             </div>
@@ -692,50 +356,25 @@
             <div class="columns">
                 <div class="column">
                     <div class="section-title has-text-centered">
-                        <h2>Cloud Native Product Engineering Resources</h2>
+                        <h2>{{ $data.resources.title }}</h2>
                     </div>
                 </div>
             </div>
 
             <div class="columns is-multiline">
+                {{ range $item := $data.resources.items }}
                 <div class="column is-4">
                     <a href="#" class="resource-card">
                         <div class="resource-thumbnail">
-                            <img src="https://www.infracloud.io/assets/img/blog/blog-updated-creatives/index-image/announcing-bot-framework-sdk-for-go-1200x628.png"
-                                alt="Ebook: The Essential Guide to Kubernetes Cost Optimization">
+                            <img src="{{ $item.image }}" alt="{{ $item.title }}">
                         </div>
-                        <div class="tag">Blog</div>
+                        <div class="tag">{{ $item.type }}</div>
                         <div class="resource-content">
-                            <h4 class="title is-5">Announcing Bot Framework SDK for Go</h4>
+                            <h4 class="title is-5">{{ $item.title }}</h4>
                         </div>
                     </a>
                 </div>
-
-                    <div class="column is-4">
-                    <a href="#" class="resource-card">
-                        <div class="resource-thumbnail">
-                            <img src="https://www.infracloud.io/assets/img/customers/building-a-cloud-native-software-defined-storage-platform.png"
-                                alt="Ebook: The Essential Guide to Kubernetes Cost Optimization">
-                        </div>
-                        <div class="tag">Case Study</div>
-                        <div class="resource-content">
-                            <h4 class="title is-5">Building a Cloud Native Software Defined Storage Platform</h4>
-                        </div>
-                    </a>
-                </div>
-
-                    <div class="column is-4">
-                    <a href="#" class="resource-card">
-                        <div class="resource-thumbnail">
-                            <img src="https://www.infracloud.io/assets/img/devtalk-details/tinkerbell-automated-baremetal-provisioning-engine.png"
-                                alt="Ebook: The Essential Guide to Kubernetes Cost Optimization">
-                        </div>
-                        <div class="tag">Tech Talk</div>
-                        <div class="resource-content">
-                            <h4 class="title is-5">Tinkerbell: An Automated Bare Metal Provisioning Engine</h4>
-                        </div>
-                    </a>
-                </div>
+                {{ end }}
             </div>
         </div>
     </section>
@@ -745,31 +384,25 @@
     <section class="section-padding cta-action-section">
         <div class="container has-text-centered">
             <div class="section-title has-text-centered">
-                <h2>Ready to Build Better Cloud Native Products?</h2>
+                <h2>{{ $data.final_cta.title }}</h2>
                 <p>
-                    Let's discuss how our cloud native expertise can accelerate your product development journey.
+                    {{ $data.final_cta.subtitle }}
                 </p>
             </div>
             <div class="buttons is-centered">
-                <button class="button ac-button is-outlined">
+                {{ range $data.final_cta.buttons }}
+                <button class="button ac-button {{ if .primary }}is-primary{{ end }} {{ if .outlined }}is-outlined{{ end }}">
                     <span class="icon">
-                        <i class="fa fa-calendar"></i>
+                        <i class="{{ .icon }}"></i>
                     </span>
-                    <span>Schedule a Call</span>
+                    <span>{{ .text }}</span>
                 </button>
-                <button class="button ac-button is-primary">
-                    <span class="icon">
-                        <i class="fa fa-download"></i>
-                    </span>
-                    <span>Download Case Study</span>
-                </button>
+                {{ end }}
             </div>
         </div>
     </section>
 
-
-
-
 </div>
 
+{{ end }}
 {{ end }}
