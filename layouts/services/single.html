@@ -1,5 +1,6 @@
 {{ define "main" }}
-<div class="bg-gradient-1" style="background-image:url(https://appscode.com/assets/images/gradient-bg.webp); background-repeat: repeat;">
+<div class="bg-gradient-1"
+    style="background-image:url(https://appscode.com/assets/images/gradient-bg.webp); background-repeat: repeat;">
     <!-- Hero Section -->
     <section class="hero-area is-services">
         <div class="container">
@@ -7,13 +8,15 @@
                 <div class="column is-6 is-full-touch">
                     <h1 class="">Build Better Cloud Native Products Faster</h1>
                     <p class="">
-                        Our trusted cloud native product engineering services help you build cloud native products faster.
+                        Our trusted cloud native product engineering services help you build cloud native products
+                        faster.
                     </p>
                     <button class="button ac-button is-primary ">TALK TO EXPERT</button>
                 </div>
                 <div class="column is-6 is-full-touch">
                     <div class="hero-illustration">
-                        <img src="https://www.infracloud.io/assets/img/product-engineering/svg/illustration-product.svg" alt="Cloud Native Development" />
+                        <img src="https://www.infracloud.io/assets/img/product-engineering/svg/illustration-product.svg"
+                            alt="Cloud Native Development" />
                     </div>
                 </div>
             </div>
@@ -27,14 +30,15 @@
             <div class="columns is-centered is-vcentered">
                 <div class="column is-12">
                     <div class="social-prove-brand-area">
-                    <div class="brand-image-wrapper owl-carousel" id="brand-image-wrapper">
-                        {{ range $customer := $.Site.Data.customers }}
-                        {{ if $customer.show }}
-                        <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}" loading="eager" height="32"></div>
-                        {{ end }}
-                        {{ end }}
+                        <div class="brand-image-wrapper owl-carousel" id="brand-image-wrapper">
+                            {{ range $customer := $.Site.Data.customers }}
+                            {{ if $customer.show }}
+                            <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"
+                                    loading="eager" height="32"></div>
+                            {{ end }}
+                            {{ end }}
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -50,7 +54,7 @@
                 </p>
             </div>
 
-            <div class="columns">
+            <div class="columns is-multiline">
                 <div class="column is-4">
                     <div class="service-card">
                         <div class="service-icon">
@@ -69,7 +73,8 @@
                         </div>
                         <h4 class="mt-16">Cloud Native Expertise</h4>
                         <p class="has-text-gray">
-                            Get cloud native engineers with expertise in Go, Python, Kubernetes, and other cloud native tech.
+                            Get cloud native engineers with expertise in Go, Python, Kubernetes, and other cloud native
+                            tech.
                         </p>
                     </div>
                 </div>
@@ -80,13 +85,11 @@
                         </div>
                         <h4 class="mt-16">Additional Bandwidth</h4>
                         <p class="has-text-gray">
-                          Get additional engineering bandwidth for rapid prototyping and cloud native product development.
+                            Get additional engineering bandwidth for rapid prototyping and cloud native product
+                            development.
                         </p>
                     </div>
                 </div>
-            </div>
-
-            <div class="columns mt-5">
                 <div class="column is-4">
                     <div class="service-card">
                         <div class="service-icon">
@@ -94,7 +97,8 @@
                         </div>
                         <h4 class="mt-16">Outsourced MVP</h4>
                         <p class="has-text-gray">
-                            Not sure about the idea? Build the MVP of your product with InfraCloud’s cloud native domain knowledge.
+                            Not sure about the idea? Build the MVP of your product with InfraCloud’s cloud native domain
+                            knowledge.
                         </p>
                     </div>
                 </div>
@@ -116,7 +120,7 @@
                         </div>
                         <h4 class="mt-16">Cost Saving</h4>
                         <p class="has-text-gray">
-                           Save on cost with optimized cloud native solutions that help you ship products faster.
+                            Save on cost with optimized cloud native solutions that help you ship products faster.
                         </p>
                     </div>
                 </div>
@@ -138,8 +142,8 @@
                     </div>
                 </div>
                 <div class="column is-8">
-                    <div class="columns">
-                        <div class="column is-6">
+                    <div class="columns is-gapless is-multiline">
+                        <div class="column is-6 single-card-wrapper">
                             <div class="single-feature card-view" style="height: 100%;">
                                 <div class="icon">
                                     <i class="fa fa-cog"></i>
@@ -147,12 +151,13 @@
                                 <div class="content">
                                     <h4 class="mt-16">Product Engineering</h4>
                                     <p class="has-text-gray">
-                                        Our team of Golang product development experts have developed enterprise grade cloud native solutions for 50+ satisfied clients.
+                                        Our team of Golang product development experts have developed enterprise grade
+                                        cloud native solutions for 50+ satisfied clients.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-6">
+                        <div class="column is-6 single-card-wrapper">
                             <div class="single-feature card-view">
                                 <div class="icon">
                                     <i class="fa fa-vial"></i>
@@ -160,14 +165,13 @@
                                 <div class="content">
                                     <h4 class="mt-16">Testing</h4>
                                     <p class="has-text-gray">
-                                        Ship bug-free products to your customers with rigorous end-to-end Golang testing services by InfraCloud.
+                                        Ship bug-free products to your customers with rigorous end-to-end Golang testing
+                                        services by InfraCloud.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="columns">
-                        <div class="column is-6">
+                        <div class="column is-6 single-card-wrapper">
                             <div class="single-feature card-view">
                                 <div class="icon">
                                     <i class="fa fa-wrench"></i>
@@ -175,12 +179,14 @@
                                 <div class="content">
                                     <h4 class="mt-16">Maintenance</h4>
                                     <p class="has-text-gray">
-                                        Keeping Golang applications up to date with the best practices is important. Leverage the services of our Golang experts who have maintained critical production grade applications.
+                                        Keeping Golang applications up to date with the best practices is important.
+                                        Leverage the services of our Golang experts who have maintained critical
+                                        production grade applications.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-6">
+                        <div class="column is-6 single-card-wrapper">
                             <div class="single-feature card-view">
                                 <div class="icon">
                                     <i class="fa fa-headset"></i>
@@ -188,14 +194,16 @@
                                 <div class="content">
                                     <h4 class="mt-16">Support</h4>
                                     <p class="has-text-gray">
-                                        Things can go wrong at anytime & hence our Golang engineers are by your side at all times. Experience our superior support services to keep your business running.
+                                        Things can go wrong at anytime & hence our Golang engineers are by your side at
+                                        all times. Experience our superior support services to keep your business
+                                        running.
                                     </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Accelerate Development Section -->
@@ -246,7 +254,7 @@
     <!-- Partner Section -->
     <section class="section-padding cloud-native-partner-section">
         <div class="container">
-            <div class="section-title has-text-centered mb-6">
+            <div class="section-title has-text-centered mb-32">
                 <h2>Cloud Native Product Engineering Partner You Need</h2>
             </div>
 
@@ -258,7 +266,8 @@
                         </div>
                         <h4>Startups</h4>
                         <p class="has-text-gray">
-                            Every startup wants to scale faster but hiring the right people gets in the way. We help startups
+                            Every startup wants to scale faster but hiring the right people gets in the way. We help
+                            startups
                             onboard A+ cloud native engineers with experience in critical production grade deployments.
                         </p>
                     </div>
@@ -270,7 +279,8 @@
                         </div>
                         <h4>SMEs</h4>
                         <p class="has-text-gray">
-                            As the company's team grows, so does their demands. We help SMEs by outsourcing an extension of their
+                            As the company's team grows, so does their demands. We help SMEs by outsourcing an extension
+                            of their
                             existing engineering teams to meet their cloud native product requirements.
                         </p>
                     </div>
@@ -282,7 +292,8 @@
                         </div>
                         <h4>Enterprises</h4>
                         <p class="has-text-gray">
-                            Our cloud native product engineering expertise on demand. We help enterprises build a team of cloud
+                            Our cloud native product engineering expertise on demand. We help enterprises build a team
+                            of cloud
                             native engineers at scale without the overhead of months with InfraCloud.
                         </p>
                     </div>
@@ -294,43 +305,37 @@
     <!-- Engagement Models Section -->
     <section class="section-padding engagement-models-section bg-light">
         <div class="container">
-            <div class="section-title has-text-centered mb-6">
+            <div class="section-title has-text-centered mb-32">
                 <h2>Choose Your Cloud Native Engagement Model</h2>
             </div>
 
-            <div class="columns">
-                <div class="column is-4">
-                    <div class="engagement-card">
-                        <div class="icon">
-                            <i class="fa fa-users"></i>
-                        </div>
-                        <h4>Team Extension</h4>
-                        <p class="has-text-gray">
-                            Extend your team with our cloud native engineers and get your product built faster.
-                        </p>
+            <div class="engagement-card-wrapper">
+                <div class="engagement-card">
+                    <div class="num-icon">
+                        01
                     </div>
+                    <h4>Team Extension</h4>
+                    <p class="has-text-gray">
+                        Extend your team with our cloud native engineers and get your product built faster.
+                    </p>
                 </div>
-                <div class="column is-4">
-                    <div class="engagement-card">
-                        <div class="icon">
-                            <i class="fa fa-project-diagram"></i>
-                        </div>
-                        <h4>End-to-End Product Development</h4>
-                        <p class="has-text-gray">
-                            Let our cloud native product development team take care of your entire product development.
-                        </p>
+                <div class="engagement-card">
+                    <div class="num-icon">
+                        02
                     </div>
+                    <h4>End-to-End Product Development</h4>
+                    <p class="has-text-gray">
+                        Let our cloud native product development team take care of your entire product development.
+                    </p>
                 </div>
-                <div class="column is-4">
-                    <div class="engagement-card" style="border-right: none;">
-                        <div class="icon">
-                            <i class="fa fa-clock"></i>
-                        </div>
-                        <h4>Fixed Scope</h4>
-                        <p class="has-text-gray">
-                            Outsource a part of your product to an integrated partner for dedicated results.
-                        </p>
+                <div class="engagement-card" style="border-right: none;">
+                    <div class="num-icon">
+                        03
                     </div>
+                    <h4>Fixed Scope</h4>
+                    <p class="has-text-gray">
+                        Outsource a part of your product to an integrated partner for dedicated results.
+                    </p>
                 </div>
             </div>
         </div>
@@ -358,6 +363,82 @@
                     </span>
                     <span>Download Case Study</span>
                 </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Development Process  -->
+    <section class="section-padding product-development-process-section">
+        <div class="container has-text-centered">
+            <div class="section-title has-text-centered">
+                <h2>Cloud Native Product Development with Right Processes & People</h2>
+                <p>
+                    Building cloud native product is not hard if you have the right processes in place. Here’s the
+                    process that we follow for each project.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6">
+                    <div class="tab-items">
+                        <div class="tab-item">
+                            <div class="date">
+                                <strong>01</strong>
+                                <span>Sept</span>
+                            </div>
+                            <h4>Discover Opportunities</h4>
+                        </div>
+
+                        <div class="tab-item">
+                            <div class="date">
+                                <strong>02</strong>
+                                <span>Sept</span>
+                            </div>
+                            <h4>Building MVP</h4>
+                        </div>
+
+                        <div class="tab-item is-active">
+                            <div class="date">
+                                <strong>03</strong>
+                                <span>Sept</span>
+                            </div>
+                            <h4>Development</h4>
+                        </div>
+
+                        <div class="tab-item">
+                            <div class="date">
+                                <strong>04</strong>
+                                <span>Sept</span>
+                            </div>
+                            <h4>Launch</h4>
+                        </div>
+
+                        <div class="tab-item">
+                            <div class="date">
+                                <strong>05</strong>
+                                <span>Sept</span>
+                            </div>
+                            <h4>Scale</h4>
+                        </div>
+                        <div class="tab-item">
+                            <div class="date">
+                                <strong>06</strong>
+                                <span>Sept</span>
+                            </div>
+                            <h4>Support & Maintain</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <div class="tab-content">
+                        <h4>Development</h4>
+                        <img src="https://www.infracloud.io/assets/img/product-engineering/development.svg" alt="">
+                        <p>Once the requirements and MVP are in place, our engineers will start developing the product.
+                            Depending on the engagement model, our team will work closely work with you in an agile way
+                            to build out a final product.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
