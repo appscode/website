@@ -107,7 +107,6 @@
 .cta-action-section {
   background: $ac-primary;
   padding: 60px 20px;
-  border-radius: 8px;
 
   h2 {
     margin-bottom: 15px;
@@ -133,16 +132,16 @@
   }
 }
 
-.golang-section {
+.card-section {
   .single-card-wrapper {
     &:first-child {
       border-right: 1px solid #e7e7e7;
     }
-    &:nth-child(3) {
+    &:nth-child(3), &:nth-child(5) {
       border-top: 1px solid #e7e7e7;
       border-right: 1px solid #e7e7e7;
     }
-    &:nth-child(4) {
+    &:nth-child(4), &:nth-child(6) {
       border-top: 1px solid #e7e7e7;
     }
   }
@@ -319,6 +318,11 @@
         color: #ffffff;
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
         cursor: default;
+        .date {
+          strong {
+            color: $ac-primary;
+          }
+        }
         .tab-icon {
           color: #ffffff;
         }
@@ -345,7 +349,7 @@
           font-weight: 600;
           display: block;
           line-height: 1;
-          color: $ac-primary;
+          color: hsl(148, 15%, 75%);
           
         }
         span {
@@ -382,7 +386,79 @@
     img {
       max-width: 100%;
       height: auto;
-      margin-bottom: 15px;
+      width: 100%;
+      max-height: 200px;
     }
   }
+}
+.features-area {
+  h3 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  p{
+    margin-bottom: 16px;
+  }
+}
+
+.logo-presentation {
+  display: flex;
+  gap: 20px;
+  .single-logo {
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    padding: 20px;
+    background: #ffffff;
+    // box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    img {
+      max-width: 100%;
+      max-height: 60px;
+      object-fit: contain;
+    }
+  }
+}
+
+.resource-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: block;
+  border: 1px solid #e7e7e7;
+  &:hover {
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+
+    h4 {
+      color: $ac-primary;
+    }
+  }
+
+  .tag {
+    display: inline-block;
+    background-color: hsl(148, 15%, 95%);
+    color: $ac-primary;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+
+
+  
 }
