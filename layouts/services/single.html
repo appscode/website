@@ -30,6 +30,8 @@
             </div>
         </div>
     </section>
+    <!-- End Hero Section -->
+
 
     <!-- Trusted by Section -->
     <section >
@@ -51,7 +53,15 @@
             </div>
         </div>
     </section>
+    <!-- End Trusted by Section -->
+    {{ end }}
+    
+    <!-- from markdown file -->
+    {{ .Content }}
+    <!-- end from markdown file -->
 
+
+    {{ with $data }}
     <!-- Cloud Native Product Engineering Section -->
     <section class="section-padding bg-light benefits-section">
         <div class="container">
