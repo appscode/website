@@ -1,0 +1,40 @@
+{{ $data:=""}}
+
+{{ if .Params.data }}
+{{ $data = getJSON .Params.data }}
+{{ end }}
+{{ with $data }}
+
+<!-- Cloud Native Product Engineering Section -->
+<section class="section-padding bg-light benefits-section">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-10">
+                <div class="section-title has-text-centered-tablet mb-16">
+                    <h2>{{ $data.services.title }}</h2>
+                    <p class="mb-0">
+                        {{ $data.services.subtitle }}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-multiline">
+            {{ range $item := $data.services.items }}
+            <div class="column is-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="{{ $item.icon }}"></i>
+                    </div>
+                    <h4 class="mt-16">{{ $item.title }}</h4>
+                    <p class="has-text-gray">
+                        {{ $item.description }}
+                    </p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{end}}
