@@ -1,0 +1,32 @@
+{{/* Load JSON from .Page.Params.data */}}
+{{ $data := dict }}
+{{ if .Page.Params.data }}
+{{ $data = getJSON .Page.Params.data }}
+{{ end }}
+
+{{ with $data.tech_stack }}
+<section class="section-padding">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <div class="section-title has-text-centered">
+                    <h2>{{ $data.tech_stack.title }}</h2>
+                    <p>{{ $data.tech_stack.subtitle }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="columns is-multiline is-centered">
+            <div class="logo-presentation">
+                {{ range $item := $data.tech_stack.technologies }}
+                <div class="single-logo has-text-centered">
+                    <img src="{{ $item.logo }}" alt="{{ $item.name }}">
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

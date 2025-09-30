@@ -1,0 +1,42 @@
+{{/* Load JSON from .Page.Params.data */}}
+{{ $data := dict }}
+{{ if .Page.Params.data }}
+{{ $data = getJSON .Page.Params.data }}
+{{ end }}
+
+{{ with $data.industries }}
+<section class="section section-lg card-section working-scenarios-section">
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-4">
+                <div class="section-title mb-0">
+                    <h2>{{ $data.industries.title }}</h2>
+                    <p>{{ $data.industries.subtitle }}</p>
+                    <p>{{ $data.industries.additional_text }}</p>
+                </div>
+            </div>
+            <div class="column is-8">
+                <div class="columns is-gapless is-multiline">
+                    {{ range $item := $data.industries.sectors }}
+                    <div class="column is-6 single-card-wrapper">
+                        <div class="single-feature card-view">
+
+                            <div class="content">
+                                <div class="is-flex is-align-items-center is-gap-8">
+                                    <div class="icon">
+                                        <i class="{{ $item.icon }}"></i>
+                                    </div>
+                                    <h4 class="mt-16">{{ $item.title }}</h4>
+                                </div>
+                                <p class="has-text-gray">
+                                    {{ $item.description }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+</section>
+{{ end }}
