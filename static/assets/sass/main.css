@@ -20287,7 +20287,10 @@ body.partner .fserv-button-submit {
 
 .logo-presentation {
   display: flex;
-  gap: 20px; }
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center; }
   .logo-presentation .single-logo {
     border: 1px solid #e7e7e7;
     border-radius: 8px;
@@ -20296,10 +20299,12 @@ body.partner .fserv-button-submit {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%; }
+    height: auto;
+    flex-direction: column;
+    gap: 8px; }
     .logo-presentation .single-logo img {
-      max-width: 100%;
-      max-height: 60px;
+      width: auto;
+      height: 60px;
       object-fit: contain; }
 
 .resource-card {
@@ -20335,5 +20340,18 @@ body.partner .fserv-button-submit {
   height: 36px;
   background-color: transparent !important;
   padding: 0; }
+
+.service-wrapper .service-content h3 {
+  margin-bottom: 1rem;
+  font-weight: 700; }
+.service-wrapper .service-content p {
+  margin-bottom: 16px; }
+.service-wrapper .service-content ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 16px; }
+  .service-wrapper .service-content ul li .icon {
+    margin-top: 3px; }
 
 /*# sourceMappingURL=main.css.map */

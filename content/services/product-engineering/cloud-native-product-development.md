@@ -11,13 +11,13 @@ data: 'data/services/product-engineering/cloud-native-product-development.json'
 <!-- Trusted by leading companies -->
 {{< common/customer-logos >}}
 <!-- Cloud Native Product Engineering From the Experts -->
-{{< services/product-engineering >}}
+{{< common/cards >}}
 <!-- Leverage our Golang Expertise -->
 {{< services/leverage-our-golang-expertise >}}
 <!-- Accelerate your Product Development Journey -->
 {{< common/title-with-small-cards >}}
 <!-- Cloud Native Product Engineering Partner You Need  -->
-{{< common/large-preview-cards >}}
+{{< common/cards-large-preview>}}
 <!-- Choose Your Cloud Native Engagement Model -->
 {{< common/cards-group >}}
 <!-- Cloud Native Product Development with Right Processes & People  -->
@@ -27,7 +27,7 @@ data: 'data/services/product-engineering/cloud-native-product-development.json'
 <!-- We Love Open Source -->
 {{< services/we-love-open-source >}}
 <!-- Full-stack expertise -->
-{{< services/full-stack-expertise >}}
+{{< common/expertise >}}
 <!-- Why Some of the Best Companies Work with AppsCode? -->
 {{< services/why-appscode >}}
 <!-- Cloud Native Product Engineering Resources -->

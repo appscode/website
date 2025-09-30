@@ -32,7 +32,7 @@
         "icon": "fa fa-laptop",
         "title": "Zero Cost for Idle Time"
       },
-         {
+      {
         "icon": "fa fa-arrows-alt",
         "title": "Auto-Scales with Demand"
       },
@@ -50,154 +50,104 @@
       }
     ]
   },
+  "service_details": {
+    "title": "Your End-to-End Serverless Consulting Services Partner",
+    "subtitle": "Let us build a scalable, cost-effective serverless architecture with minimal operational overheads.",
 
-  "services": {
-    "title": "Cloud Native Product Engineering From the Experts",
-    "subtitle": "Our cloud native product development experts help you with end-to-end product development & support.",
-    "items": [
+    "sections": [
       {
-        "icon": "fa fa-users",
-        "title": "On-demand Engineers",
-        "description": "Get cloud native product engineers on demand. No more waiting to expand your team."
+        "title": "Serverless Consulting & Advisory",
+        "description": "If your organization plans to adopt Serverless architecture, start leveraging our serverless consulting services catered by industry specialists.",
+        "offerings": [
+          "We begin by understanding your needs, use-case and help you design the strategy to achieve your organizational goals faster.",
+          "Our serverless consulting experts create a recommended changes report to help you evaluate the benefits before moving ahead in the journey.",
+          "With the help of our serverless consulting services, create an actionable development plan that enables you to achieve your business goals in time."
+        ],
+        "image": "https://www.infracloud.io/assets/img/serverless-consulting/serverless-consulting-advisory.svg"
       },
       {
-        "icon": "fa fa-cloud",
-        "title": "Cloud Native Expertise",
-        "description": "Get cloud native engineers with expertise in Go, Python, Kubernetes, and other cloud native tech."
+        "title": "Professional Serverless Services",
+        "description": "We propose the most suitable serverless stack (AWS Lambda, Google Functions, or OSS tools), help you design & implement it with an actionable deployment plan.",
+        "offerings": [
+          "Not able to figure out the right stack and plan to move forward? Get professional serverless experts onboard, helping you find bottlenecks and create the right actionable plan.",
+          "Our serverless consultant will give you unbiased opinions based on your current architecture; we do not superimpose anything; instead, we back our statements with experience and best practices.",
+          "Our Serverless experts will help eliminate deployment overhead so your team can build and get your solutions to market faster, spending more time on delivering customer value than managing the server."
+        ],
+        "image": "https://www.infracloud.io/assets/img/serverless-consulting/setting-up-observability.svg"
       },
+
       {
-        "icon": "fa fa-bolt",
-        "title": "Additional Bandwidth",
-        "description": "Get additional engineering bandwidth for rapid prototyping and cloud native product development."
+        "title": "Enabling CI/CD",
+        "description": "Enabling CI/CD ensures complex serverless applications are developed and delivered faster end-to-end.",
+        "offerings": [
+          "Our serverless consultants will help you implement CI/CD pipelines tailored for serverless applications, ensuring smooth and rapid deployments.",
+          "The architects & consultants are well versed in various ways for CI/CD for serverless applications, i.e., AWS SAM pipelines, etcetera.",
+          "With best practices from our cloud-native & serverless experts, be confident on operating high-quality cloud apps, ensuring availability, scalability, and early error detection for high availability."
+        ],
+        "image": "https://www.infracloud.io/assets/img/serverless-consulting/enabling-ci-cd.svg"
       },
+
       {
-        "icon": "fa fa-rocket",
-        "title": "Outsourced MVP",
-        "description": "Not sure about the idea? Build the MVP of your product with AppsCode's cloud native domain knowledge."
+        "title": "Serverless Managed Services",
+        "description": "Leverage our experience for managing, operating, & optimizing the day-to-day elements of your serverless apps & the entire stack in production, in the most effective way.",
+        "offerings": [
+          "Experience our high-quality observability instrumentation for your serverless application.",
+          "We monitor your end-to-end application health state, so it does not impact your business value.",
+          "Forget about the hassle of managing CI/CD and monitoring. Let the serverless experts be on your front line.",
+          "Our serverless experts will help you get more out of these applications so you can build substantial business value."
+        ],
+        "image": "https://www.infracloud.io/assets/img/serverless-consulting/serverless-managed-services.svg"
       },
+
       {
-        "icon": "fa fa-envelope-o",
-        "title": "Product Support",
-        "description": "Get world class APAC and EMEA cloud native support for your cloud product with us."
-      },
-      {
-        "icon": "fa fa-money",
-        "title": "Cost Saving",
-        "description": "Save on cost with optimized cloud native solutions that help you ship products faster."
+        "title": "Serverless Training & Workshops",
+        "description": "We help you with detailed documentation and build in-house knowledge to monitor system performance and functions for managing your all-new serverless environment like a pro.",
+        "offerings": [
+          "Serverless consultants will assist you in making the necessary cultural changes by implementing best practices.",
+          "Build vital knowledge of end-to-end serverless functions from scratch to production and help your team become like experts.",
+          "Our in-depth training sessions on serverless function increase your team productivity and avoid knowledge gap issues."
+        ],
+        "image": "https://www.infracloud.io/assets/img/serverless-consulting/serverless-training.svg"
       }
     ]
   },
-  "golang_expertise": {
-    "title": "Leverage our Golang Expertise",
-    "subtitle": "Get Golang application development by the best Golang developers.",
-    "cta_text": "Meet our Experts",
-    "services": [
+  "cards": {
+    "title": "Why Choose AppsCode as your Serverless Consulting Partner?",
+    "subtitle": "Build a stable, scalable, and bill-friendly serverless solution with the help of serverless implementation experts.",
+    "items": [
       {
-        "icon": "fa fa-cog",
-        "title": "Product Engineering",
-        "description": "Our team of Golang product development experts have developed enterprise grade cloud native solutions for 50+ satisfied clients."
+        "icon": "fa fa-certificate",
+        "title": "Certified Developers",
+        "description": "170 in-house engineers, including 4 CKS, 51 CKA & 19 Certified Kubernetes Application Developers."
       },
       {
-        "icon": "fa fa-ticket",
-        "title": "Testing",
-        "description": "Ship bug-free products to your customers with rigorous end-to-end Golang testing services by AppsCode."
+        "icon": "fa fa-briefcase",
+        "title": "Domain Expertise",
+        "description": "Implement the best Serverless practices that we have learned while working with 100+ clients."
+      },
+      {
+        "icon": "fa fa-trophy",
+        "title": "First Mover Advantage",
+        "description": "Partner with the first Kubernetes service provider in India and second in APAC."
+      },
+      {
+        "icon": "fa fa-graduation-cap",
+        "title": "Training",
+        "description": "Our training focuses on building knowledge of core concepts with practical experiences."
+      },
+      {
+        "icon": "fa fa-certificate",
+        "title": "CNCF Certified Provider",
+        "description": "AppsCode is a proud CNCF Silver Member, and Kubernetes Certified Service Provider (KCSP)."
       },
       {
         "icon": "fa fa-wrench",
-        "title": "Maintenance",
-        "description": "Keeping Golang applications up to date with the best practices is important. Leverage the services of our Golang experts who have maintained critical production grade applications."
-      },
-      {
-        "icon": "fa fa-life-ring",
-        "title": "Support",
-        "description": "Things can go wrong at anytime & hence our Golang engineers are by your side at all times. Experience our superior support services to keep your business running."
+        "title": "Expand Easily",
+        "description": "With AppsCode, easily scale up the team of engineers without the hassle of hiring or training."
       }
     ]
   },
 
-  "large_preview_cards": {
-    "title": "Cloud Native Product Engineering Partner You Need",
-    "items": [
-      {
-        "icon": "fa fa-rocket",
-        "title": "Startups",
-        "description": "Every startup wants to scale faster but hiring the right people gets in the way. We help startups onboard A+ cloud native engineers with experience in critical production grade deployments."
-      },
-      {
-        "icon": "fa fa-building",
-        "title": "SMEs",
-        "description": "As the company's team grows, so does their demands. We help SMEs by outsourcing an extension of their existing engineering teams to meet their cloud native product requirements."
-      },
-      {
-        "icon": "fa fa-industry",
-        "title": "Enterprises",
-        "description": "Our cloud native product engineering expertise on demand. We help enterprises build a team of cloud native engineers at scale without the overhead of months with AppsCode."
-      }
-    ]
-  },
-  "cards_group": {
-    "title": "Choose Your Cloud Native Engagement Model",
-    "models": [
-      {
-        "number": "01",
-        "title": "Team Extension",
-        "description": "Extend your team with our cloud native engineers and get your product built faster."
-      },
-      {
-        "number": "02",
-        "title": "End-to-End Product Development",
-        "description": "Let our cloud native product development team take care of your entire product development."
-      },
-      {
-        "number": "03",
-        "title": "Fixed Scope",
-        "description": "Outsource a part of your product to an integrated partner for dedicated results."
-      }
-    ]
-  },
-  "development_process": {
-    "title": "Cloud Native Product Development with Right Processes & People",
-    "subtitle": "Building cloud native product is not hard if you have the right processes in place. Here's the process that we follow for each project.",
-    "steps": [
-      {
-        "date": "01",
-        "month": "Sept",
-        "title": "Discover Opportunities",
-        "active": false
-      },
-      {
-        "date": "02",
-        "month": "Sept",
-        "title": "Building MVP",
-        "active": false
-      },
-      {
-        "date": "03",
-        "month": "Sept",
-        "title": "Development",
-        "active": true
-      },
-      {
-        "date": "04",
-        "month": "Sept",
-        "title": "Launch",
-        "active": false
-      },
-      {
-        "date": "05",
-        "month": "Sept",
-        "title": "Scale",
-        "active": false
-      }
-    ],
-    "active_content": [
-        {
-            "image": "https://www.infracloud.io/assets/img/product-engineering/development.svg",
-            "description": "Once the requirements and MVP are in place, our engineers will start developing the product. Depending on the engagement model, our team will work closely work with you in an agile way to build out a final product.",
-            "active": true
-        }
-    ]
-  },
   "industries": {
     "title": "We Understand the Nitty-Gritty!",
     "subtitle": "Gain leverage with our proven artificial intelligence expertise & industry exposure. Working with 100+ clients, we know the criticalities, compliances & the importance of getting things right in the first go.",
@@ -245,96 +195,60 @@
     }
   },
   "tech_stack": {
-    "title": "Full-stack expertise",
-    "subtitle": "Our engineers are well versed with the following languages",
+    "title": "Team with the Diverse Set of Technical Expertise",
+    "subtitle": "While working with more than 100+ customers, our engineers’ have gotten well versed in.",
     "technologies": [
       {
-        "name": "Golang",
-        "logo": "https://static.cdnlogo.com/logos/g/35/golang.svg"
+        "name": "AWS Lambda",
+        "logo": "https://static.cdnlogo.com/logos/a/47/aws-lambda.svg"
       },
       {
-        "name": "Python",
-        "logo": "https://static.cdnlogo.com/logos/p/4/python.svg"
+        "name": "Azure Functions",
+        "logo": "https://www.infracloud.io/assets/img/serverless-consulting/svg/azure-function-logo.svg"
       },
       {
-        "name": "JavaScript",
-        "logo": "https://static.cdnlogo.com/logos/j/44/javascript.svg"
+        "name": "Google Cloud Functions",
+        "logo": "https://www.infracloud.io/assets/img/serverless-consulting/svg/google-cloud-logo.svg"
       },
       {
-        "name": "TypeScript",
-        "logo": "https://static.cdnlogo.com/logos/t/96/typescript.svg"
+        "name": "GraphQL",
+        "logo": "https://www.infracloud.io/assets/img/serverless-consulting/svg/grahql-logo.svg"
       },
       {
-        "name": "Ruby",
-        "logo": "https://static.cdnlogo.com/logos/r/6/ruby_800.png"
+        "name": "Knative",
+        "logo": "https://www.infracloud.io/assets/img/serverless-consulting/svg/knative-logo.svg"
       },
       {
-        "name": "Java",
-        "logo": "https://static.cdnlogo.com/logos/j/11/java_800.png"
+        "name": "Fission",
+        "logo": "https://www.infracloud.io/assets/img/serverless-consulting/svg/fission-logo.svg"
+      },
+       {
+        "name": "Twilio",
+        "logo": "https://www.infracloud.io/assets/img/serverless-consulting/svg/twilio-logo.svg"
+      },
+       {
+        "name": "Keda",
+        "logo": "https://www.infracloud.io/assets/img/serverless-consulting/svg/keda-logo.svg"
+      },
+      {
+        "name": "OpenFaaS",
+        "logo": "https://www.infracloud.io/assets/img/serverless-consulting/svg/openfaas-logo.svg"
+      },
+      {
+        "name": "Virtual Kubelet",
+        "logo": "https://www.infracloud.io/assets/img/serverless-consulting/svg/vistual-kubelet-logo.svg"
       }
     ]
   },
-  "why_choose_us": {
-    "title": "Why Some of the Best Companies Work with AppsCode?",
-    "reasons": [
-      {
-        "icon": "fa fa-cog",
-        "title": "Dedicated Architect",
-        "description": "Each project will have a dedicated technical lead, a cloud native expert, who will manage the project from start to stop. A single point of contact between you and our engineering team. They will be responsible for timely deliverables along with assisting you at every step of your cloud native journey"
-      },
-      {
-        "icon": "fa fa-graduation-cap",
-        "title": "Subject Matter Expertise",
-        "description": "Our engineers have implemented more than 100+ cloud native product solutions. The team has worked on the latest cutting edge tools and are always a step ahead of the curve. This expertise helps you build the product people need faster."
-      },
-      {
-        "icon": "fa fa-users",
-        "title": "Rookies + Pros",
-        "description": "We have the perfect mix of rookies & skilled professionals at AppsCode. Architects with immense experience of implementing cloud naitve products at scale. Rookies who come up with innovative ideas, some of which have garnered praise in the open source community."
-      },
-      {
-        "icon": "fa fa-wrench",
-        "title": "Expand Easily",
-        "description": "We understand that application requirements change often, & you do not need to worry about it. With AppsCode, you can easily expand the team of engineers without the hassle of hiring and training. Our extended team brings in the expertise you need to accomplish your goals."
-      }
-    ]
-  },
-  "resources": {
-    "title": "Cloud Native Product Engineering Resources",
-    "items": [
-      {
-        "type": "Blog",
-        "title": "Announcing Bot Framework SDK for Go",
-        "image": "https://www.infracloud.io/assets/img/blog/blog-updated-creatives/index-image/announcing-bot-framework-sdk-for-go-1200x628.png",
-        "link": "#"
-      },
-      {
-        "type": "Case Study",
-        "title": "Building a Cloud Native Software Defined Storage Platform",
-        "image": "https://www.infracloud.io/assets/img/customers/building-a-cloud-native-software-defined-storage-platform.png",
-        "link": "#"
-      },
-      {
-        "type": "Tech Talk",
-        "title": "Tinkerbell: An Automated Bare Metal Provisioning Engine",
-        "image": "https://www.infracloud.io/assets/img/devtalk-details/tinkerbell-automated-baremetal-provisioning-engine.png",
-        "link": "#"
-      }
-    ]
-  },
+
   "final_cta": {
-    "title": "Ready to Build Better Cloud Native Products?",
-    "subtitle": "Let's discuss how our cloud native expertise can accelerate your product development journey.",
+    "title": "Looking to Optimize your AWS Lambda or Google Functions?",
+    "subtitle": "Our expert consultants enable, support and guide you to meet your application transformation goals and create best serverless solutions.",
     "buttons": [
       {
-        "text": "Schedule a Call",
+        "text": "Talk to a Serverless Expert",
         "icon": "fa fa-calendar",
         "type": "outlined"
-      },
-      {
-        "text": "Download Case Study",
-        "icon": "fa fa-download",
-        "type": "primary"
       }
     ]
   }
