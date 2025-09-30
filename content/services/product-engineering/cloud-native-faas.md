@@ -3,7 +3,7 @@ id: serverless-consulting
 title: serverless-consulting
 layout: services
 url: '/serverless-consulting'
-data: 'data/services/product-engineering/cloud-native-faas.json'
+data: 'data/services/product-engineering/cloud_native_faas.json'
 ---
 
 <!-- Build Better Cloud Native Products Faster -->

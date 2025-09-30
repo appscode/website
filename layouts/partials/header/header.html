@@ -325,7 +325,7 @@
 
                       <!-- Services Grid -->
                       <div class="product-menu" id="servicesGrid" style="grid-template-columns: 380px; width: 380px; background-color: #fbfbfb;border-radius: 8px;">
-                        {{ range $index, $service := site.Data.services.servicesMenu }}
+                        {{ range $index, $service := site.Data.services.services_menu.servicesMenu }}
                           <a class="single-product {{ if eq $index 0 }} is-active {{ end }}" href="#" data-service-id="{{ $service.title | urlize }}">
                             <div class="product-logo">
                               <img src="{{ $service.icon }}" alt="{{ $service.title }}"/>
@@ -345,7 +345,7 @@
 
                       <!-- Offerings Description Area -->
                       <div class="product-description-container offering-description-container">
-                        {{ range $index, $service := site.Data.services.servicesMenu }}
+                        {{ range $index, $service := site.Data.services.services_menu.servicesMenu }}
                           <div class="product-description offering-content {{ if eq $index 0 }}is-block{{ end }}" id="offerings-{{ $service.title | urlize }}" style="border-left: none;padding-left: 0;">
                             {{ range $offering := $service.offerings }}
                               <a href="/{{ $offering.id }}" class="single-product">
