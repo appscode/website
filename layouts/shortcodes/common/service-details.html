@@ -1,0 +1,70 @@
+{{/* Load JSON from .Page.Params.data */}}
+{{ $data := dict }}
+{{ if .Page.Params.data }}
+{{ $data = getJSON .Page.Params.data }}
+{{ end }}
+
+{{ with $data.service_details }}
+<section class="section-padding bg-light">
+    <div class="container">
+        <div class="section-title has-text-centered mb-6">
+            <h2>{{ .title }}</h2>
+            <p>{{ .subtitle }}</p>
+        </div>
+
+        <div class="columns is-multiline">
+
+            {{ range $index, $section := $data.service_details.sections }}
+            <div class="columns is-multiline is-vcentered">
+                {{ if modBool $index 2 }}
+                <!-- Odd index: Image Right, Text Left -->
+                <div class="column is-7">
+                    <div class="service-wrapper d-table">
+                        <div class="service-content pr-140 d-table-cell">
+                            <h3>{{ $section.title }}</h3>
+                            <p>{{ $section.description }}</p>
+                            <ul>
+                                {{ range $offering := $section.offerings }}
+                                <li><span class="icon">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207" clip-rule="evenodd"/></svg>
+                                </span> {{ $offering }}</li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-5 has-text-right">
+                    <div class="service-thumbnail">
+                        <img src="{{ $section.image }}" alt="{{ $section.title }}" class="img">
+                    </div>
+                </div>
+
+                {{ else }}
+                <!-- Even index: Text Right, Image Left -->
+                <div class="column is-5">
+                    <div class="service-thumbnail">
+                        <img src="{{ $section.image }}" alt="{{ $section.title }}" class="img">
+                    </div>
+                </div>
+                <div class="column is-7">
+                    <div class="service-wrapper d-table">
+                        <div class="service-content pr-140 d-table-cell">
+                            <h3>{{ $section.title }}</h3>
+                            <p>{{ $section.description }}</p>
+                            <ul>
+                                {{ range $offering := $section.offerings }}
+                                <li><span class="icon">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207" clip-rule="evenodd"/></svg>
+                                </span> {{ $offering }}</li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

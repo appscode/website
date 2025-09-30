@@ -1,7 +1,7 @@
 {{ $jsonPath := .Get "data" | default .Page.Params.data }}
 {{ $data := getJSON $jsonPath | default dict }}
 
-{{ with $data.services }}
+{{ with $data.cards }}
 <section class="section-padding bg-light benefits-section">
     <div class="container">
         <div class="columns is-centered">
@@ -29,5 +29,5 @@
     </div>
 </section>
 {{ else }}
-  <p>No service data found.</p>
+  <p>No cards data found.</p>
 {{ end }}
