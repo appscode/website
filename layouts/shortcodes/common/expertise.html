@@ -7,7 +7,7 @@
 {{ with $data.tech_stack }}
 <section class="section-padding">
     <div class="container">
-        <div class="columns">
+        <div class="columns is-multiline is-centered">
             <div class="column">
                 <div class="section-title has-text-centered">
                     <h2>{{ $data.tech_stack.title }}</h2>
@@ -21,8 +21,9 @@
         <div class="columns is-multiline is-centered">
             <div class="logo-presentation">
                 {{ range $item := $data.tech_stack.technologies }}
-                <div class="single-logo has-text-centered">
+                <div class="single-logo has-text-centered" title="{{ $item.name }}">
                     <img src="{{ $item.logo }}" alt="{{ $item.name }}">
+                    <span class="logo-name">{{ $item.name }}</span>
                 </div>
                 {{ end }}
             </div>
