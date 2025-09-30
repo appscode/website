@@ -1,0 +1,35 @@
+{{/* Load JSON from .Page.Params.data */}}
+{{ $data := dict }}
+{{ if .Page.Params.data }}
+{{ $data = getJSON .Page.Params.data }}
+{{ end }}
+
+{{ with $data.resources }}
+<section class="section-padding has-background-white engineering-resources-section">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <div class="section-title has-text-centered">
+                    <h2>{{ $data.resources.title }}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-multiline">
+            {{ range $item := $data.resources.items }}
+            <div class="column is-4">
+                <a href="#" class="resource-card">
+                    <div class="resource-thumbnail">
+                        <img src="{{ $item.image }}" alt="{{ $item.title }}">
+                    </div>
+                    <div class="tag">{{ $item.type }}</div>
+                    <div class="resource-content">
+                        <h4 class="title is-5">{{ $item.title }}</h4>
+                    </div>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

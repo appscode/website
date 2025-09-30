@@ -1,0 +1,30 @@
+{{/* Load JSON from .Page.Params.data */}}
+{{ $data := dict }}
+{{ if .Page.Params.data }}
+{{ $data = getJSON .Page.Params.data }}
+{{ end }}
+
+{{ with $data.cards_group }}
+<section class="section-padding engagement-models-section bg-light">
+    <div class="container">
+        <div class="section-title has-text-centered mb-32">
+            <h2>{{ $data.cards_group.title }}</h2>
+        </div>
+
+        <div class="engagement-card-wrapper">
+            {{ range $item := $data.cards_group.models }}
+            <div class="engagement-card">
+                <div class="num-icon">
+                    {{ $item.number }}
+                </div>
+                <h4>{{ $item.title }}</h4>
+                <p class="has-text-gray">
+                    {{ $item.description }}
+                </p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ end }}

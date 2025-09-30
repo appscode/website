@@ -1,0 +1,25 @@
+{{ $jsonPath := .Get "data" | default .Page.Params.data }}
+{{ $data := getJSON $jsonPath | default dict }}
+
+{{ with $data.services }}
+<!-- Hero Section -->
+<section class="hero-area is-services">
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-full-touch">
+                <h1>{{ $data.hero.title }}</h1>
+                <p>
+                    {{ $data.hero.subtitle }}
+                </p>
+                <button class="button ac-button is-primary ">{{ $data.hero.cta_text }}</button>
+            </div>
+            <div class="column is-6 is-full-touch">
+                <div class="hero-illustration">
+                    <img src="{{ $data.hero.illustration.src }}" alt="{{ $data.hero.illustration.alt }}" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Hero Section -->
+{{end }}
