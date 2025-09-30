@@ -1,0 +1,36 @@
+{{/* Load JSON from .Page.Params.data */}}
+{{ $data := dict }}
+{{ if .Page.Params.data }}
+{{ $data = getJSON .Page.Params.data }}
+{{ end }}
+
+{{ with $data.open_source }}
+
+<section class="section-padding has-background-white features-area">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-12">
+                <div>
+                    <div class="columns is-vcentered is-flex-direction-row-reverse-mobile">
+                        <div class="column is-6">
+                            <div class="features-thumbnail"><img src="{{ $data.open_source.image.src }}"
+                                    alt="{{ $data.open_source.image.alt }}" class="img">
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="feature-wrapper d-table">
+                                <div class="feature-content pr-140 d-table-cell">
+                                    <h3>{{ $data.open_source.title }}</h3>
+                                    <p>{{ $data.open_source.description }}</p>
+                                    <p class="has-text-info">{{ $data.open_source.cta_text }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
