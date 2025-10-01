@@ -1,9 +1,9 @@
 ---
-id: platform-engineering-services
-title: platform-engineering-services
+id: backstage-consulting-support
+title: Backstage Consulting & Enterprise Support
 layout: services
-url: '/platform-engineering-services'
-data: 'data/services/platform-engineering/platform_engineering_services.json'
+url: '/backstage-consulting-support'
+data: 'data/services/platform-engineering/backstage_consulting.json'
 ---
 
 
@@ -11,14 +11,10 @@ data: 'data/services/platform-engineering/platform_engineering_services.json'
 {{< common/hero-area >}}
 <!-- Trusted by leading companies -->
 {{< common/customer-logos >}}
+<!-- Why opt for Backstage consulting & support? -->
+{{< common/title-with-small-cards >}}
 <!-- Platform Engineering Services for Growth -->
 {{< common/service-details >}}
-<!-- InfraCloud’s AAA Framework for Platform Engineering -->
-{{< common/cards-group >}}
-<!-- Serverless Consulting Services Benefits -->
-{{< common/title-with-small-cards >}}
-<!-- What do we Offer in Platform Engineering Consulting Services? -->
-{{< common/service-details2 >}}
 <!-- We Understand the Nitty-Gritty! -->
 {{< services/we-understand-the-nitty-gritty >}}
 <!-- We Love Open Source -->
@@ -29,4 +25,6 @@ data: 'data/services/platform-engineering/platform_engineering_services.json'
 {{< common/cards >}}
 <!-- Team with the Diverse Set of Technical Expertise -->
 {{< common/expertise >}}
+<!-- Evangelizing IDPs and Platform Engineering -->
+{{< services/engineering-resources >}}
 
