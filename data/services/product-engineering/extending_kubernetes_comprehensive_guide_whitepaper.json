@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "title": "Get Comprehensive Guide to Extend Kubernetes",
+    "subtitle": "Revealing best practices and strategies to develop K8s operators for extending Kubernetes capabilities.",
+    "cta_text": "EMAIL ME THE WHITEPAPER",
+    "cta_url": "#",
+    "illustration": {
+      "src": "https://www.infracloud.io/assets/img/product-engineering/svg/illustration-product.svg",
+      "alt": "Cloud Native Development"
+    }
+  },
+   "service_details": {
+    "sections": [
+      {
+        "title": "Why you must read this whitepaper",
+        "description": "Kubernetes has become the go-to platform for container orchestration, transforming the way applications are deployed and managed. While Kubernetes provides a strong foundation, its built-in resources may not always meet the needs of complex use cases. This is where custom resources and controllers come into play. Custom resources enable you to create new resource types that align with your specific requirements, going beyond the standard Kubernetes objects. However, building controllers to manage these custom resources can be a complex task, requiring a deep understanding of Kubernetes internals and state management. This Whitepaper covers:",
+        "offerings": [
+          "Understanding CRDs: Learn how to define custom resource definitions to introduce new resource types to your Kubernetes cluster.",
+          "Building Custom Controllers: Discover the process of creating controllers that manage the lifecycle of your custom resources.",
+          "Leveraging Frameworks: Explore popular frameworks like KubeBuilder and Operator-SDK to simplify the development process.",
+          "Real-World Examples: See how custom resources and controllers are used in practice to solve complex challenges.",
+          "Best Practices: Gain insights into effective strategies for designing and implementing custom resources and controllers."
+        ],
+        "image": "https://www.infracloud.io/assets/img/download-pdf/whitepaper-kubernetes-toc.png"
+      }
+    ]
+  },
+  "tech_stack": {
+    "title": "From the maintainers & contributors of popular OSS projects extending Kubernetes capabilities",
+    "technologies": [
+      {
+        "name": "Fission",
+        "logo": "https://placehold.co/400"
+      },
+      {
+        "name": "botkube",
+        "logo": "https://placehold.co/400"
+      },
+      {
+        "name": "KANISTER",
+        "logo": "https://placehold.co/400"
+      },
+      {
+        "name": "PARALUS",
+        "logo": "https://placehold.co/400"
+      }
+      
+    ]
+  }
+ 
+}
