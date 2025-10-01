@@ -1,0 +1,30 @@
+{{/* Load JSON from .Page.Params.data */}}
+{{ $data := dict }}
+{{ if .Page.Params.data }}
+{{ $data = getJSON .Page.Params.data }}
+{{ end }}
+
+{{ with $data.final_cta }}
+<!-- Final CTA Section -->
+<section class="section-padding cta-action-section">
+    <div class="container has-text-centered">
+        <div class="section-title has-text-centered">
+            <h2>{{ $data.final_cta.title }}</h2>
+            <p>
+                {{ $data.final_cta.subtitle }}
+            </p>
+        </div>
+        <div class="buttons is-centered">
+            {{ range $data.final_cta.buttons }}
+            <button
+                class="button ac-button {{ if .primary }}is-primary{{ end }} {{ if .outlined }}is-outlined{{ end }}">
+                <span class="icon">
+                    <i class="{{ .icon }}"></i>
+                </span>
+                <span>{{ .text }}</span>
+            </button>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
