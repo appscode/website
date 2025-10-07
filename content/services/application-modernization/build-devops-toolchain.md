@@ -1,9 +1,9 @@
 ---
-id: gitops-consulting
-title: gitops-consulting
+id: build-devops-toolchain
+title: build-devops-toolchain
 layout: services
-url: '/gitops-consulting'
-data: 'data/services/application-modernization/gitops_consulting.json'
+url: '/build-devops-toolchain'
+data: 'data/services/application-modernization/build_devops_toolchain.json'
 ---
 
 
@@ -20,7 +20,6 @@ data: 'data/services/application-modernization/gitops_consulting.json'
 <!-- We Love Open Source -->
 {{< services/we-love-open-source >}}
 {{< common/cta-area >}}
-{{< common/cards-large-preview >}}
 
 
 <!-- need this section: Implement Progressive Delivery with Argo Rollouts, Flagger Experts -->

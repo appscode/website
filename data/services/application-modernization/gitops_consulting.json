@@ -1,12 +1,12 @@
 {
   "hero": {
-    "title": "Kubernetes Consulting Services by Certified Experts",
-    "subtitle": "Kubernetes consultants trusted by CNCF as Kubernetes Certified Service Provider (KCSP) for consulting, deployment & support.",
-    "cta_text": "TALK TO A KUBERNETES EXPERT",
+    "title": "GitOps Consulting & Implementation Partner",
+    "subtitle": "Helping companies adopt GitOps for faster deploys & releases. We’re Argo CD, FLuxCD, Helm, Kustomize, Werf & Terragrunt Experts.",
+    "cta_text": "CONSULT A GITOPS EXPERT",
     "cta_url": "#",
     "illustration": {
-      "src": "https://www.infracloud.io/assets/img/baremetal-provisioning-consulting/baremetal-hero.svg",
-      "alt": "Bare Metal Provisioning Consulting Services"
+      "src": "https://www.infracloud.io/assets/img/gitops-consulting/gitops-hero.svg",
+      "alt": "GitOps Consulting & Implementation Partner"
     }
   },
   "trusted_by": {
@@ -14,99 +14,90 @@
   },
 
   "title_with_small_cards": {
-    "title": "Why Kubernetes Consulting Services?",
+    "title": "Why GitOps Consulting & Implementation Partner is Needed?",
     "areas": [
       {
-        "icon": "fa fa-lightbulb-o",
-        "title": "Future Proof - Agile,Scalable"
+        "icon": "fa fa-code",
+        "title": "Define Entire Application & Ecosystem Declaratively"
       },
       {
-        "icon": "fa fa-tach",
-        "title": "High-Performance Software Delivery"
+        "icon": "fa fa-users",
+        "title": "Improved Developer Experience & Productivity"
+      },
+      {
+        "icon": "fa fa-clock-o",
+        "title": "Deploy & Release Faster & more Frequently"
+      },
+      {
+        "icon": "fa fa-bug",
+        "title": "If Failed Fast, then Detect & Rollback Faster"
       },
       {
         "icon": "fa fa-cogs",
-        "title": "Improved Application Development"
-      },
-      {
-        "icon": "fa fa-money",
-        "title": "IT Cost Optimization"
-      },
-      {
-        "icon": "fa fa-cloud",
-        "title": "Multi-cloud (& Hybrid Cloud) Flexibility"
+        "title": "Reduces Operational Burden"
       },
 
       {
+        "icon": "fa fa-database",
+        "title": "Git as a Single Source of Truth"
+      },
+      {
+        "icon": "fa fa-rocket",
+        "title": "Automated Deployment Capabilities"
+      },
+      {
         "icon": "fa fa-shield",
-        "title": "Self-Healing Containers"
-      },
-      {
-        "icon": "fa fa-arrows-alt",
-        "title": "Containerize Monolithic Applications"
-      },
-      {
-        "icon": "fa fa-repeat",
-        "title": "Automated Roll-outs & Roll-backs"
+        "title": "Security Hardening"
       }
     ]
   },
   "service_details": {
-    "title": "What we offer in Kubernetes Consulting?",
-    "subtitle": "As a CNCF trusted Kubernetes Certified Service Provider (KCSP), explore what our Kubernetes consultants can help you with:",
+    "title": "What do we offer as GitOps Consulting & Implementation Experts?",
+    "subtitle": "",
     "sections": [
       {
-        "title": "Kubernetes Advisory Services",
-        "description": "Companies planning to adopt Kubernetes can leverage InfraCloud’s consulting services for a smooth Kubernetes adoption and onboarding. Our Kubernetes consultants have experience of all major cloud providers ‑ AWS, GCP, Azure.",
+        "title": "GitOps Consulting & Advisory Services",
+        "description": "Companies that are already using Kubernetes and planning to improve their developer experience and manage the entire ecosystem with Git as a source of truth; can leverage InfraCloud’s GitOps consulting & advisory services. Our SMEs and consultants have experience and knowledge of all major cloud-native GitOps open source tools available to help with GitOps consulting.",
         "offerings": [
-          "The Kubernetes consulting services include comparing current processes to industry standards and creating a roadmap for a successful Kubernetes implementation.",
-          "Our team of Kubernetes consultants assesses and audits your current infrastructure for readiness and maturity of your application ecosystem and provides detailed recommendations for cloud native journey.",
-          "With an actionable deployment plan best suited to achieving your business goals, you’re ready to get started with Kubernetes implementation."
+          "Our GitOps consulting services include comparing current deployment strategies and processes to GitOps standards and creating a roadmap for a successful GitOps implementation.",
+          "Our team of GitOps consultants will assess and audit your current infrastructure for readiness and maturity and provide detailed recommendations for implementing the GitOps model.",
+          "With an actionable continuous deployment plan best suited to achieving your business goals, you’re ready to get started with GitOps implementation.",
+          "Our GitOps consultants help you choose the right kind of tools that would make you release your software faster with a single push button."
         ],
-        "image": "https://www.infracloud.io/assets/img/baremetal-provisioning-consulting/on-prem-hardware-to-maas-optimized-baremetal-provisioning-with-expert-guidance.svg"
+        "image": "https://placehold.co/600x400?text=AppsCode"
       },
       {
-        "title": "Kubernetes Application Development & Migration",
-        "description": "We help you build new apps or migrate from monolith to microservices architecture. We deconstruct and segregate your legacy system into smaller, manageable containerized workloads making it Kubernetes‑ready.",
+        "title": "GitOps Implementation Partner - from Development to Production",
+        "description": "Our cloud-native consultants and architects help you build new (or migrate from existing) CI/CD pipelines to GitOps-based continuous deployment strategies and pipelines. We deconstruct and segregate your existing deployment pipelines into GitOps manageable delivery pipelines. This would help you to make release cycles completely automated, and more frequent to deploy code changes on a daily basis to your Kubernetes-based production system. We help precisely to implement GitOps with different tools which include:",
         "offerings": [
-          "Building Kubernetes‑ready apps with greenfield implementation for organizations revamping their IT from scratch.",
-          "Deconstructing your tightly integrated monolith app into loosely coupled microservices that can talk to each other offering unparalleled flexibility.",
-          "Providing you a single pane of glass for all your Kubernetes clusters across environments for multicluster management."
+          "Implementation of GitOps framework with popular tools like Argo CD, FluxCD, Helm, and Kustomize.",
+          "Cluster state management with configuration drift detection and auto-correction.",
+          "Infrastructure as Code for your cloud-native application.",
+          "Quick rollout and rollback of new versions across your clusters.",
+          "Multi-cluster and multi-cloud GitOps deployments model.",
+          "Assistance in organizing source code repository in the GitOps way."
         ],
-        "image": "https://www.infracloud.io/assets/img/baremetal-provisioning-consulting/on-prem-hardware-to-maas-optimized-baremetal-provisioning-with-expert-guidance.svg"
+        "image": "https://placehold.co/600x400?text=AppsCode"
       },
       {
-        "title": "Kubernetes Deployment Partner",
-        "description": "Working with 100+ customers, we understand deploying Kubernetes on production can be complex. Our Kubernetes consultancy team ensures that you get it right the first time in cloud or on‑prem, right from the strategy to implementation stage.",
+        "title": "GitOps Enterprise Support Services",
+        "description": "Enterprise support from an experienced team of architects, & engineers to fix ANY configuration issues in your GitOps-based configuration and continuous deployment pipelines. This includes tooling like Argo CD, FluxCD, Kubernetes config files, Helm, Kustomize, etc.",
         "offerings": [
-          "Deploying production‑ready Kubernetes clusters on private, public, or on‑prem (bare metal) following the roadmap & best practices recommended during Kubernetes consultancy.",
-          "Enabling provisioning of highly available clusters supporting auto‑healing and scalability to match the ongoing demand.",
-          "Integrating essential apps like Prometheus, necessary security implementation, and RBAC policies.",
-          "If you’re deploying ML models, our Kubernetes consultants can help you."
+          "Enabling monitoring and logging to detect issues in your Continuous Deployment pipelines in real-time before any impact on the business.",
+          "Assistance in the implementation of Multi-Cluster, Multi-Cloud Deployments using tools like ArgoCD ApplicationSets, and FluxCD.",
+          "Assured assistance for regular GitOps tools updates, patches, and bug fixes."
         ],
-        "image": "https://www.infracloud.io/assets/img/baremetal-provisioning-consulting/on-prem-hardware-to-maas-optimized-baremetal-provisioning-with-expert-guidance.svg"
+        "image": "https://placehold.co/600x400?text=AppsCode"
       },
       {
-        "title": "DevSecOps ‑ Enabling Security & Compliance",
-        "description": "Make your Kubernetes workloads safe with shift left approach and implementing the right security best practices for maximum productivity.",
+        "title": "GitOps Tools Training",
+        "description": "Our GitOps consultants and architects enable your engineers with the skills and best practices around GitOps tools and techniques they need to self-sufficiently handle this new way of doing Continuous Delivery.",
         "offerings": [
-          "Enabling role‑based access to nodes, network segmentation, implementing of network policies, and automatic upgrades.",
-          "Enhancing security by integrating with open source and third‑party tools, and continuous container scanning to detect and identify the threats on a near real‑time basis.",
-          "With an effective secured environment, sign, scan, deploy packages, and administer clusters."
+          "Coaching and enabling your team on how to implement GitOps via training workshops around tools like Argo CD, FluxCD, Helm, Terragrunt, and Werf.",
+          "Mastering GitOps concepts like Continuous Delivery, Declarative infrastructure specification, Configuration Drifts detection, single source of truth, and Pull-based Deployments to handle your new releases with no issues.",
+          "Our experts will assist you in making the necessary configuration and deployment changes by implementing the best practices."
         ],
-        "image": "https://www.infracloud.io/assets/img/baremetal-provisioning-consulting/on-prem-hardware-to-maas-optimized-baremetal-provisioning-with-expert-guidance.svg"
-      },
-      {
-        "title": "Kubernetes Professional Support and Training",
-        "description": "Enterprise support from an experienced team of Kubernetes architects, & engineers to fix ANY configuration issues in your public, private clouds, or bare metal. This includes tooling like monitoring, proxy servers, networking, policy enforcement, etc.",
-        "offerings": [
-          "Enabling observability and vulnerability scanning to detect issues in real‑time before any impact on the business.",
-          "Our Kubernetes consultants and architects enable your engineers with the skills they need for self sufficiently handling the all‑new cloud native environment like a champ.",
-          "Be ready for any situation by implementing a Kubernetes backup and disaster recovery strategy.",
-          "Cost management by enabling cost reportings for business unit or executive level.",
-          "Assured assistance for regular Kubernetes updates, patches, and rapid releases."
-        ],
-        "image": "https://www.infracloud.io/assets/img/baremetal-provisioning-consulting/on-prem-hardware-to-maas-optimized-baremetal-provisioning-with-expert-guidance.svg"
+        "image": "https://placehold.co/600x400?text=AppsCode"
       }
     ]
   },
@@ -158,75 +149,127 @@
     }
   },
   "tech_stack": {
-    "title": "Team with Diverse Set of Kubernetes Expertise",
+    "title": "Team with a Diverse Set of Technical Expertise",
     "subtitle": "While working with more than 100+ customers, our certified Kubernetes consultants have gotten well versed in:",
     "technologies": [
       {
         "name": "Crossplane",
-        "logo": "https://placehold.co/600x400"
+        "logo": "https://placehold.co/600x400?text=AppsCode"
       },
       {
         "name": "Kubernetes",
-        "logo": "https://placehold.co/600x400"
+        "logo": "https://placehold.co/600x400?text=AppsCode"
       },
       {
         "name": "Prometheus",
-        "logo": "https://placehold.co/600x400"
+        "logo": "https://placehold.co/600x400?text=AppsCode"
       },
       {
         "name": "GraphQL",
-        "logo": "https://placehold.co/600x400"
+        "logo": "https://placehold.co/600x400?text=AppsCode"
       },
       {
         "name": "Open Policy Agent",
-        "logo": "https://placehold.co/600x400"
+        "logo": "https://placehold.co/600x400?text=AppsCode"
       },
       {
         "name": "Grafana",
-        "logo": "https://placehold.co/600x400"
+        "logo": "https://placehold.co/600x400?text=AppsCode"
       },
       {
         "name": "Terraform",
-        "logo": "https://placehold.co/600x400"
+        "logo": "https://placehold.co/600x400?text=AppsCode"
       },
       {
         "name": "Kasten",
-        "logo": "https://placehold.co/600x400"
+        "logo": "https://placehold.co/600x400?text=AppsCode"
       },
       {
         "name": "Thanos",
-        "logo": "https://placehold.co/600x400"
+        "logo": "https://placehold.co/600x400?text=AppsCode"
       },
       {
         "name": "ArgoCD",
-        "logo": "https://placehold.co/600x400"
+        "logo": "https://placehold.co/600x400?text=AppsCode"
       }
     ]
   },
 
   "final_cta": {
-    "title": "Looking for Kubernetes Support?",
-    "subtitle": "Consult Kubernetes expert to help you fix critical issues & configurations, provide managed services and ongoing enterprise Kubernetes support.",
+    "title": "Looking for a GitOps Consulting Support Partner?",
+    "subtitle": "Consult one of our GitOps experts to know we can help you with end-to-end GitOps support.",
     "buttons": [
       {
-        "text": "Talk to a Kubernetes Expert",
+        "text": "Talk to a GitOps Expert",
         "icon": "fa fa-calendar",
         "type": "outlined"
       }
     ]
   },
+  "large_preview_cards": {
+    "title": "Implement Argo CD, FluxCD, & more from the GitOps Experts",
+    "items": [
+      {
+        "icon": "fa fa-rocket",
+        "title": "Argo CD Experts",
+        "description": "Whether you’re looking to evaluate, design, or implement and deploy ArgoCD from scratch, our ArgoCD experts can assist you. With end-to-end ArgoCD adoption journey. InfraCloud consultants and engineers have deep expertise with ArgoCD and other Argo tools like ApplicationSet and Argo Rollouts to help you implement GitOps for your single or multi-tenant, multicluster, and/or multi-cloud applications. The team will help you onboard smoothly on your GitOps journey with ArgoCD.",
+        "image": "https://placehold.co/600x400"
+      },
+      {
+        "icon": "fa fa-rocket",
+        "title": "FluxCD Experts",
+        "description": "Looking to evaluate, design, or implement and deploy FluxCD from the scratch? Learn how InfraCloud’s FluxCD experts can assist you. With our FluxCD tool expertise, our architects and consultants will help you to establish GitOps in the right way based on your current application ecosystem state. Post-implementation training by GitOps architects and consultants will help you build the in-house FluxCD expertise.",
+        "image": "https://placehold.co/600x400"
+      },
+      {
+        "icon": "fa fa-rocket",
+        "title": "Helm Experts",
+        "description": "Helm has become the de facto package manager for Kubernetes over the years as it helps to update and roll back your Kubernetes-native application services efficiently and faster. InfraCloud’s Helm experts will help you to create and configure Helm templates/charts for managing and deploying your microservices. Our consultants and architects will also train and help your team to streamline your GitOps pipelines with Helm.",
+        "image": "https://placehold.co/600x400"
+      },
+      {
+        "icon": "fa fa-rocket",
+        "title": "Kustomize Experts",
+        "description": "Kustomize is a Kubernetes-natively supported and template-free way to package your application’s configuration YAML files. If you’re unsure whether to use Helm or Kustomize to customize application configurations, then let InfraCloud’s architects and consultant help you to assess, evaluate and figure out the right solutions for your need and consult with the implementation of Kustomize.",
+        "image": "https://placehold.co/600x400"
+      },
+      {
+        "icon": "fa fa-rocket",
+        "title": "Werf Experts",
+        "description": "Werf is a tool that glues Git, Docker, Helm, and K8s together and helps create more efficient CI/CD pipelines. InfraCloud’s Werf experts will help you to create and configure the Werf tool for managing and deploying your microservices. Post-implementation, our consultants and architects will also train and help your team to streamline your GitOps pipelines with Werf and manage it in production.",
+        "image": "https://placehold.co/600x400"
+      },
+      {
+        "icon": "fa fa-rocket",
+        "title": "Terragrunt Experts",
+        "description": "If you’re a believer of the Don’t repeat yourself aka DRY principle & already managing multiple environments with an IaC tool like Terraform, then, Terragrunt is a solution for you to organize and reduce the complexity of your Terraform code. Our Terragrunt experts will help you to create and configure the Terragrunt tool for managing & keeping your Terraform code as DRY. Plus, it helps you manage your Terraform environments efficiently.",
+        "image": "https://placehold.co/600x400"
+      }
+    ]
+  },
+
   "cards": {
-    "title": "Why choose InfraCloud for Kubernetes Consulting Services?",
+    "title": "Why InfraCloud as GitOps Consulting & Implementation Partner?",
     "items": [
       {
         "icon": "fa fa-certificate",
-        "title": "Certified Developers",
+        "title": "CNCF Certified Provider",
+        "description": "AppsCode is a proud CNCF Silver Member, and Kubernetes Certified Service Provider (KCSP)."
+      },
+      {
+        "icon": "fa fa-certificate",
+        "title": "Certified Team",
         "description": "170 in-house engineers, including 4 CKS, 51 CKA & 19 Certified Kubernetes Application Developers."
       },
       {
-        "icon": "fa fa-briefcase",
-        "title": "Domain Expertise",
-        "description": "Implement the best Serverless practices that we have learned while working with 100+ clients."
+        "icon": "fa fa-users",
+        "title": "In-house Domain Expertise",
+        "description": "90% engineering team with NO outsourcing, implementing the service mesh best practices."
+      },
+      {
+        "icon": "fa fa-gift",
+        "title": "Giving back to the Community",
+        "description": "Contributed to 50+ open source projects in cloud-native & DevOps space."
       },
       {
         "icon": "fa fa-trophy",
@@ -234,19 +277,9 @@
         "description": "Partner with the first Kubernetes service provider in India and second in APAC."
       },
       {
-        "icon": "fa fa-graduation-cap",
-        "title": "Training",
+        "icon": "fa fa-users",
+        "title": "Seasoned Team Engineers",
         "description": "Our training focuses on building knowledge of core concepts with practical experiences."
-      },
-      {
-        "icon": "fa fa-certificate",
-        "title": "CNCF Certified Provider",
-        "description": "AppsCode is a proud CNCF Silver Member, and Kubernetes Certified Service Provider (KCSP)."
-      },
-      {
-        "icon": "fa fa-users  ",
-        "title": "Expand Easily",
-        "description": "With InfraCloud, easily scale up the team of engineers without the hassle of hiring or training."
       }
     ]
   }
