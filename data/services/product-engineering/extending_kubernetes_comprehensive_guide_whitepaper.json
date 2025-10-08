@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Get Comprehensive Guide to Extend Kubernetes",
-    "subtitle": "Revealing best practices and strategies to develop K8s operators for extending Kubernetes capabilities.",
+    "title": "Master Kubernetes Extensions with Our Expert Guide",
+    "subtitle": "Learn best practices and strategies to build K8s operators and extend Kubernetes capabilities for cloud-native applications.",
     "cta_text": "EMAIL ME THE WHITEPAPER",
     "cta_url": "https://appscode.com/contact/",
     "illustration": {
@@ -9,43 +9,29 @@
       "alt": "Cloud Native Development"
     }
   },
-   "service_details": {
+  "service_details": {
     "sections": [
       {
-        "title": "Why you must read this whitepaper",
-        "description": "Kubernetes has become the go-to platform for container orchestration, transforming the way applications are deployed and managed. While Kubernetes provides a strong foundation, its built-in resources may not always meet the needs of complex use cases. This is where custom resources and controllers come into play. Custom resources enable you to create new resource types that align with your specific requirements, going beyond the standard Kubernetes objects. However, building controllers to manage these custom resources can be a complex task, requiring a deep understanding of Kubernetes internals and state management. This Whitepaper covers:",
+        "title": "Why This Whitepaper is Essential",
+        "description": "Kubernetes has become the backbone of cloud-native development, powering containerized applications and microservices at scale. While Kubernetes provides a robust orchestration platform, many complex scenarios require extending its capabilities beyond the default resources. This is where custom resources and controllers become invaluable. They allow you to tailor Kubernetes to your specific operational needs, but implementing them requires deep expertise in cluster state management and DevOps best practices. This whitepaper covers:",
         "offerings": [
-          "Understanding CRDs: Learn how to define custom resource definitions to introduce new resource types to your Kubernetes cluster.",
-          "Building Custom Controllers: Discover the process of creating controllers that manage the lifecycle of your custom resources.",
-          "Leveraging Frameworks: Explore popular frameworks like KubeBuilder and Operator-SDK to simplify the development process.",
-          "Real-World Examples: See how custom resources and controllers are used in practice to solve complex challenges.",
-          "Best Practices: Gain insights into effective strategies for designing and implementing custom resources and controllers."
+          "Defining Custom Resource Definitions (CRDs): Learn how to create new resource types that extend Kubernetes functionality.",
+          "Developing Custom Controllers: Understand how to manage the lifecycle of custom resources efficiently and reliably.",
+          "Leveraging Development Frameworks: Explore tools like KubeBuilder and Operator-SDK to simplify operator creation.",
+          "Real-World Use Cases: See practical examples of custom resources and controllers solving complex cloud-native challenges.",
+          "Proven Best Practices: Gain actionable strategies for designing maintainable and scalable Kubernetes extensions."
         ],
         "image": "https://www.infracloud.io/assets/img/download-pdf/whitepaper-kubernetes-toc.png"
       }
     ]
   },
   "tech_stack": {
-    "title": "From the maintainers & contributors of popular OSS projects extending Kubernetes capabilities",
+    "title": "From the Experts Behind Leading Open-Source Kubernetes Projects",
     "technologies": [
-      {
-        "name": "Fission",
-        "logo": "https://placehold.co/400"
-      },
-      {
-        "name": "botkube",
-        "logo": "https://placehold.co/400"
-      },
-      {
-        "name": "KANISTER",
-        "logo": "https://placehold.co/400"
-      },
-      {
-        "name": "PARALUS",
-        "logo": "https://placehold.co/400"
-      }
-      
+      { "name": "Fission", "logo": "https://placehold.co/400" },
+      { "name": "BotKube", "logo": "https://placehold.co/400" },
+      { "name": "Kanister", "logo": "https://placehold.co/400" },
+      { "name": "Paralus", "logo": "https://placehold.co/400" }
     ]
   }
- 
 }
