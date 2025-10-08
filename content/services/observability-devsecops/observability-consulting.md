@@ -19,6 +19,10 @@ data: 'data/services/observability-devsecops/observability_consulting.json'
 {{< services/we-love-open-source >}}
 {{< common/cta-area >}}
 {{< common/cards-large-preview >}}
+{{< common/cards-group >}}
+{{< services/engineering-resources >}}
+{{< common/cards2 >}}
+
 
 
 <!-- Team with the Diverse Set of Technical Expertise -->

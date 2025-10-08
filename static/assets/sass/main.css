@@ -20103,6 +20103,11 @@ body.partner .fserv-button-submit {
   border-right: 1px solid #e7e7e7; }
 .card-section .single-card-wrapper:nth-child(4), .card-section .single-card-wrapper:nth-child(6) {
   border-top: 1px solid #e7e7e7; }
+@media screen and (max-width: 768px) {
+  .card-section .single-card-wrapper {
+    border: none !important; }
+    .card-section .single-card-wrapper:nth-child(3), .card-section .single-card-wrapper:nth-child(4), .card-section .single-card-wrapper:nth-child(5), .card-section .single-card-wrapper:nth-child(6) {
+      border-top: none !important; } }
 .card-section .single-feature {
   height: 100%;
   padding: 32px;
@@ -20168,14 +20173,22 @@ body.partner .fserv-button-submit {
   border: 1px solid #e7e7e7;
   border-radius: 8px;
   background-color: #fff;
-  display: grid;
-  grid-template-columns: auto auto auto; }
+  display: flex; }
   @media screen and (max-width: 1023px) {
     .engagement-models-section .engagement-card-wrapper {
-      grid-template-columns: auto; } }
+      flex-direction: column; }
+      .engagement-models-section .engagement-card-wrapper .engagement-card {
+        width: 100% !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: 1px solid #e7e7e7; }
+        .engagement-models-section .engagement-card-wrapper .engagement-card:last-child {
+          border-bottom: none !important; } }
   .engagement-models-section .engagement-card-wrapper .engagement-card {
     padding: 30px;
-    border-right: 1px solid #e7e7e7; }
+    border-right: 1px solid #e7e7e7;
+    flex-grow: 1;
+    width: min-content; }
     .engagement-models-section .engagement-card-wrapper .engagement-card:last-child {
       border-right: none; }
     .engagement-models-section .engagement-card-wrapper .engagement-card h4 {
@@ -20197,6 +20210,12 @@ body.partner .fserv-button-submit {
   padding: 70px 80px;
   border-radius: 8px;
   background-color: #fff; }
+  @media screen and (min-width: 1024px) {
+    .cloud-native-partner-section .single-feature {
+      padding: 24px; } }
+  @media screen and (max-width: 1023px) {
+    .cloud-native-partner-section .single-feature {
+      padding: 16px; } }
   .cloud-native-partner-section .single-feature .icon {
     background-color: transparent !important;
     border-radius: 8px !important;
@@ -20334,6 +20353,10 @@ body.partner .fserv-button-submit {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 10px; }
+  .resource-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #636363; }
 
 .working-scenarios-section .single-feature .icon {
   width: 36px;
