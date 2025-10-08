@@ -4,17 +4,17 @@
 {{ $data = getJSON .Page.Params.data }}
 {{ end }}
 
-{{ with $data.large_preview_cards }}
-<section class="section-padding cloud-native-partner-section">
+{{ with $data.large_preview_cards2 }}
+<section class="section-padding cloud-native-partner-section style-2">
     <div class="container">
         <div class="section-title has-text-centered mb-32">
-            <h2>{{ $data.large_preview_cards.title }}</h2>
-            <p>{{ $data.large_preview_cards.subtitle }}</p>
+            <h2>{{ $data.large_preview_cards2.title }}</h2>
+            <p>{{ $data.large_preview_cards2.subtitle }}</p>
         </div>
 
         <div class="columns is-multiline">
-            {{ range $item := $data.large_preview_cards.items }}
-            <div class="column is-4">
+            {{ range $item := $data.large_preview_cards2.items }}
+            <div class="column is-3">
                 <div class="single-feature card-view">
                     <div class="icon">
                         <i class="{{ $item.icon }}"></i>
@@ -23,6 +23,11 @@
                     <p class="has-text-gray">
                         {{ $item.description }}
                     </p>
+                    {{ if $item.additional_description }}
+                    <p class="has-text-gray mt-12">
+                        {{ $item.additional_description }}
+                    </p>
+                    {{ end }}
                 </div>
             </div>
             {{ end }}
