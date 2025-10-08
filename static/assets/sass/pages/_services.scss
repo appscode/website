@@ -144,6 +144,12 @@
     &:nth-child(4), &:nth-child(6) {
       border-top: 1px solid #e7e7e7;
     }
+    @include mobile {
+      border: none !important;
+      &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+        border-top: none !important;
+      }
+    }
   }
   .single-feature {
     height: 100%;
@@ -241,14 +247,24 @@
     border: 1px solid #e7e7e7;
     border-radius: 8px;
     background-color: #fff;
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
     @include touch {
-      grid-template-columns: auto;
+      flex-direction: column;
+      .engagement-card {
+        width: 100% !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: 1px solid #e7e7e7;
+        &:last-child {
+          border-bottom: none !important;
+        }
+      }
     }
     .engagement-card {
       padding: 30px;
       border-right: 1px solid #e7e7e7;
+      flex-grow: 1;
+      width: min-content;
       &:last-child {
         border-right: none;
       }
@@ -277,6 +293,12 @@
     padding: 70px 80px;
     border-radius: 8px;
     background-color: #fff;
+    @include desktop {
+      padding: 24px;
+    }
+    @include touch {
+      padding: 16px;
+    }
     .icon {
       background-color: transparent !important;
       border-radius: 8px !important;
@@ -462,6 +484,11 @@
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 10px;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #636363;
   }
 }
 

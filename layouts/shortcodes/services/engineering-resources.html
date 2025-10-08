@@ -11,6 +11,7 @@
             <div class="column">
                 <div class="section-title has-text-centered">
                     <h2>{{ $data.resources.title }}</h2>
+                    <p>{{ $data.resources.subtitle }}</p>
                 </div>
             </div>
         </div>
@@ -19,12 +20,22 @@
             {{ range $item := $data.resources.items }}
             <div class="column is-4">
                 <a href="#" class="resource-card">
+                    {{ if $item.image }}
                     <div class="resource-thumbnail">
                         <img src="{{ $item.image }}" alt="{{ $item.title }}">
                     </div>
-                    <div class="tag">{{ $item.type }}</div>
-                    <div class="resource-content">
-                        <h4 class="title is-5">{{ $item.title }}</h4>
+                    {{ end }}
+                    {{ if $item.type }}
+                        <div class="tag">{{ $item.type }}</div>
+                    {{ end }}
+                    <div class="resource-content {{ if not $item.image }}has-text-centered{{ end }}">
+                        <h4 class="title mb-12">{{ $item.title }}</h4>
+                        {{ if $item.description }}
+                            <p>{{ $item.description }}</p>
+                        {{ end }}
+                        {{ if $item.cta_text }}
+                            <button class="button ac-button is-fullwidth mt-32">{{ $item.cta_text }}</button>
+                        {{ end }}
                     </div>
                 </a>
             </div>
