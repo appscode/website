@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Terraform Consulting Services & Implementation Experts",
-    "subtitle": "Helping companies deploy & manage infrastructure fast & hassle-free with our Terraform consulting services.",
+    "title": "Terraform Consulting & Implementation Experts",
+    "subtitle": "Accelerate your infrastructure automation with our Terraform consulting and implementation services.",
     "cta_text": "TALK TO A TERRAFORM EXPERT",
     "cta_url": "https://appscode.com/contact/",
     "illustration": {
@@ -10,221 +10,208 @@
     }
   },
   "trusted_by": {
-    "title": "Trusted by leading companies"
+    "title": "Trusted by Leading Companies"
   },
   "title_with_small_cards": {
-    "title": "Benefits of Terraform Consulting Services",
+    "title": "Why Choose Terraform Consulting?",
     "areas": [
-      {
-        "icon": "fa fa-rocket",
-        "title": "Accelerate Product Delivery & Feature Releases"
-      },
-      {
-        "icon": "fa fa-shield",
-        "title": "Instill Stability in Production Environment"
-      },
+      { "icon": "fa fa-rocket", "title": "Faster Product Delivery" },
+      { "icon": "fa fa-shield", "title": "Stable Production Environments" },
       {
         "icon": "fa fa-database",
-        "title": "Observability & Monitoring Stack Management"
+        "title": "Centralized Monitoring & Observability"
       },
-      {
-        "icon": "fa fa-bug",
-        "title": "Complements DevOps Functions (e.g. CI/CD)"
-      },
+      { "icon": "fa fa-bug", "title": "Enhanced DevOps Automation (CI/CD)" },
       {
         "icon": "fa fa-database",
-        "title": "Provisioning & Managing IT Infra using Automation"
-      },
-      {
-        "icon": "fa fa-database",
-        "title": "Better Cost Optimization & Capacity Planning"
-      },
-      {
-        "icon": "fa fa-database",
-        "title": "Kubernetes Cluster & Storage Management"
-      },
-      {
-        "icon": "fa fa-shield",
-        "title": "Security & Governance"
-      }
-    ]
-  },
-  "service_details": {
-    "title": "What do we offer in Terraform Consulting Services?",
-    "subtitle": "Explore our Terraform expertise, and why starups and enterprises alike trust us for managing their Infrastructure:",
-    "sections": [
-      {
-        "title": "Infrastructure Migration",
-        "description": "Companies planning to migrate their infrastructure to cloud can leverage InfraCloud’s Terraform consulting and engineering services for a smooth transition & cloud-native technology adoption. Our Terraform consultants have experience in migrating to all major cloud providers such as AWS, Azure, GCP, etc.",
-        "offerings": [
-          "Our Terraform and cloud experts help you find the right cloud provider for your business goals.",
-          "Set up your cloud accounts with security best practices.",
-          "Migrate your existing Infrastructure to cloud with help from our team of HashiCorp Terraform experts."
-        ],
-        "image": "https://placehold.co/600x400"
-      },
-      {
-        "title": "Managing Infrastructure as Code",
-        "description": "Our Terraform consulting experts can help you to:",
-        "offerings": [
-          "Provision new infrastructure with Terraform Infrastructure as Code, using HCL (HashiCorp Configuration Language) - its high-level configuration language.",
-          "Import existing infrastructure into your source code repository.",
-          "Our HashiCorp Terraform experts manage updates to the infrastructure by updating the HCL code.",
-          "Terraform consultants automate your varying infrastructure needs with Terraform for optimal performance & cost."
-        ],
-        "image": "https://placehold.co/600x400"
-      },
-      {
-        "title": "Managing Kubernetes Workloads Across Multiple Cloud Providers",
-        "description": "Terraform & Kubernetes are analogues to each other. Like Terraform is an Infrastructure Orchestration solution, Kubernetes is a Container Orchestration solution. Spend more time building applications and less time building environments by integrating Terraform with Kubernetes.",
-        "offerings": [
-          "Our Terraform & Kubernetes experts can help you implement techniques & principles in cloud-native environment.",
-          "Deploy & manage Kubernetes clusters using Terraform on various cloud providers such as AWS, Azure, GCP, etc."
-        ],
-        "image": "https://placehold.co/600x400"
-      },
-      {
-        "title": "Choose & Adopt Terraform Cloud or Terraform Enterprise",
-        "description": "Use InfraCloud’s Terraform consulting services to identify the right fit for your business and to deploy & manage your infrastructure on the same. Based on the customer needs, we will adopt their Infrastructure automation to Terraform Cloud or Enterprise.",
-        "offerings": [
-          "Terraform Cloud is a hosted service that lets teams use Terraform Together. It provides easy access to shared state and secret data. It also governs Terraform configurations with policy controls.",
-          "Terraform Enterprise is nothing but a self-hosted Terraform Cloud. It lets you install & run Terraform Cloud on self-managed infrastructure with advanced security compliances."
-        ],
-        "image": "https://placehold.co/600x400"
-      },
-      {
-        "title": "Keep your Terraform Code DRY with Terragrunt",
-        "description": "Terragrunt is a thin wrapper to keep your Terraform configurations DRY. Use InfraCloud’s Terraform Consulting and Engineering services to keep your:",
-        "offerings": [
-          "Terraform code DRY",
-          "Remote state configuration DRY",
-          "Terragrunt Architecture DRY",
-          "CLI flags DRY"
-        ],
-        "image": "https://placehold.co/600x400"
-      }
-    ]
-  },
-
-  "cards2": {
-    "title": "Benefits of Terraform Consulting Services",
-    "items": [
-      {
-        "icon": "fa fa-check-circle",
-        "title": "Reliable infrastructure deployment with Fewer Errors",
-        "description": "HashiCorp Terraform helps you deploy disparate infrastructure multiple times with fewer errors. No need to worry about a missed deployment or a misconfiguration of infrastructure items with Terraform."
-      },
-      {
-        "icon": "fa fa-cloud",
-        "title": "Multi-cloud & On-prem Support",
-        "description": "Easily manage your infrastructure across multiple cloud providers, as well as on-prem. Terraform supports AWS, Azure, GCP, Alibaba Cloud, Oracle Cloud, VMware vSphere & more."
-      },
-      {
-        "icon": "fa fa-database",
-        "title": "Manage Infrastructure as Code (IaC)",
-        "description": "Terraform is an Infrastructure as Code (IaC) language. Terraform does all the heavy lifting. Developers can use the high-level configuration language called (HCL) to define the same."
-      },
-      {
-        "icon": "fa fa-cogs",
-        "title": "Faster Infrastructure Deployment & Maintenance",
-        "description": "Deploy your infrastructure swiftly with a single command. Eliminate manual processes involved with traditional ways of deploying, configuring & administering IT systems."
-      },
-      {
-        "icon": "fa fa-exchange",
-        "title": "Ease of Migration to Cloud Native Infrastructure",
-        "description": "You can easily import the existing infrastructure configuration using Terraform & start managing it or migrate it to the desired cloud provider."
+        "title": "Automated Infra Provisioning & Management"
       },
       {
         "icon": "fa fa-dollar",
-        "title": "Improved IT Cost Optimization",
-        "description": "Improve your IT Cost by using the optimum cloud provider & managing the infrastructure efficiently. Automate your Infrastructure needs using Terraform to optimize your IT costs further."
+        "title": "Smarter Cost Optimization & Capacity Planning"
+      },
+      {
+        "icon": "fa fa-cubes",
+        "title": "Kubernetes Cluster & Storage Management"
+      },
+      { "icon": "fa fa-lock", "title": "Security & Compliance by Design" }
+    ]
+  },
+  "service_details": {
+    "title": "Our Terraform Consulting Offerings",
+    "subtitle": "We help startups and enterprises adopt Terraform to scale, automate, and simplify infrastructure operations.",
+    "sections": [
+      {
+        "title": "Cloud Infrastructure Migration",
+        "description": "Seamlessly move to the cloud with our Terraform experts. We ensure smooth transitions with security and automation built in.",
+        "offerings": [
+          "Identify the right cloud platform aligned with your business goals.",
+          "Set up secure cloud accounts with industry best practices.",
+          "Migrate your workloads to AWS, Azure, GCP, or hybrid setups with Terraform automation."
+        ],
+        "image": "https://placehold.co/600x400"
+      },
+      {
+        "title": "Infrastructure as Code (IaC) Management",
+        "description": "Simplify infrastructure management with Terraform’s declarative IaC model.",
+        "offerings": [
+          "Provision and manage infra with HashiCorp Configuration Language (HCL).",
+          "Version and import existing infra into Git-backed repositories.",
+          "Automate updates and scaling using reusable Terraform modules.",
+          "Optimize infrastructure cost and performance with automated pipelines."
+        ],
+        "image": "https://placehold.co/600x400"
+      },
+      {
+        "title": "Kubernetes Multi-Cloud Management",
+        "description": "Integrate Terraform with Kubernetes to orchestrate infrastructure and workloads across any cloud provider.",
+        "offerings": [
+          "Deploy and manage K8s clusters on AWS, Azure, GCP, and hybrid clouds.",
+          "Automate environment setup and cluster scaling using Terraform modules."
+        ],
+        "image": "https://placehold.co/600x400"
+      },
+      {
+        "title": "Adopt Terraform Cloud or Enterprise",
+        "description": "Select and implement the right Terraform edition for your team — Cloud or Enterprise — with our guidance.",
+        "offerings": [
+          "Terraform Cloud enables shared state, secrets, and policy-based controls for teams.",
+          "Terraform Enterprise offers a self-hosted, compliance-ready solution with advanced governance."
+        ],
+        "image": "https://placehold.co/600x400"
+      },
+      {
+        "title": "Keep Terraform Code DRY with Terragrunt",
+        "description": "Reduce code duplication and simplify configuration management using Terragrunt best practices.",
+        "offerings": [
+          "Maintain DRY Terraform codebases.",
+          "Simplify remote state configurations.",
+          "Build clean Terragrunt architectures.",
+          "Standardize CLI flags and workflows."
+        ],
+        "image": "https://placehold.co/600x400"
+      }
+    ]
+  },
+  "cards2": {
+    "title": "Key Benefits of Terraform Consulting",
+    "items": [
+      {
+        "icon": "fa fa-check-circle",
+        "title": "Reliable Infra Deployment",
+        "description": "Deploy consistent, error-free infrastructure with repeatable Terraform code."
+      },
+      {
+        "icon": "fa fa-cloud",
+        "title": "Multi-Cloud & Hybrid Support",
+        "description": "Manage AWS, Azure, GCP, VMware, or on-prem seamlessly from one Terraform workflow."
+      },
+      {
+        "icon": "fa fa-code",
+        "title": "Full Infrastructure as Code (IaC)",
+        "description": "Define and version everything with HCL for clarity, control, and repeatability."
+      },
+      {
+        "icon": "fa fa-cogs",
+        "title": "Faster Deployment & Maintenance",
+        "description": "Spin up infrastructure in minutes and eliminate manual configurations."
+      },
+      {
+        "icon": "fa fa-exchange",
+        "title": "Smooth Cloud Migration",
+        "description": "Easily import existing infra configs and migrate them to your preferred cloud provider."
+      },
+      {
+        "icon": "fa fa-dollar",
+        "title": "Optimized IT Costs",
+        "description": "Automate infra scaling and resource management to minimize cloud expenses."
       }
     ]
   },
   "cards": {
-    "title": "Why choose InfraCloud for Terraform Consulting Services?",
+    "title": "Why Partner with AppsCode?",
     "items": [
       {
         "icon": "fa fa-certificate",
-        "title": "Certified Developers",
-        "description": "170 in-house engineers, including 4 CKS, 51 CKA & 19 Certified Kubernetes Application Developers."
+        "title": "Certified Experts",
+        "description": "170+ in-house engineers including 4 CKS, 51 CKA, and 19 CKAD professionals."
       },
       {
         "icon": "fa fa-briefcase",
-        "title": "Domain Expertise",
-        "description": "Implement the best Serverless practices that we have learned while working with 100+ clients."
+        "title": "Proven Domain Experience",
+        "description": "Deep Terraform and cloud automation experience gained from 100+ successful projects."
       },
       {
         "icon": "fa fa-trophy",
-        "title": "First Mover Advantage",
-        "description": "Partner with the first Kubernetes service provider in India and second in APAC."
+        "title": "Kubernetes First Movers",
+        "description": "Among the earliest Kubernetes service providers in APAC with years of field expertise."
       },
       {
         "icon": "fa fa-graduation-cap",
-        "title": "Training",
-        "description": "Our training focuses on building knowledge of core concepts with practical experiences."
+        "title": "Hands-On Training",
+        "description": "Get practical, concept-driven Terraform and DevOps training tailored to your teams."
       },
       {
         "icon": "fa fa-certificate",
         "title": "CNCF Certified Provider",
-        "description": "AppsCode is a proud CNCF Silver Member, and Kubernetes Certified Service Provider (KCSP)."
+        "description": "AppsCode is a CNCF Silver Member and an official Kubernetes Certified Service Provider (KCSP)."
       },
       {
-        "icon": "fa fa-users  ",
-        "title": "Expand Easily",
-        "description": "With InfraCloud, easily scale up the team of engineers without the hassle of hiring or training."
+        "icon": "fa fa-users",
+        "title": "Scale Without Hiring Hassle",
+        "description": "Expand your engineering bandwidth instantly with our seasoned DevOps experts."
       }
     ]
   },
   "industries": {
-    "title": "We Understand the Nitty-Gritty!",
-    "subtitle": "Gain leverage with our proven artificial intelligence expertise & industry exposure. Working with 100+ clients, we know the criticalities, compliances & the importance of getting things right in the first go.",
-    "additional_text": "Be it an enterprise with datacenters across the world or a rapidly scaling startup, we got it covered!",
+    "title": "Industry-Specific Expertise",
+    "subtitle": "We bring deep domain knowledge from working with 100+ clients across diverse sectors.",
+    "additional_text": "From global enterprises to fast-growing startups — we’ve done it all.",
     "sectors": [
       {
         "icon": "fa fa-bank",
-        "title": "Banking and Finance",
-        "description": "Customers demand highly available & compliant systems to efficiently handle transactions & payment requests 24/7."
+        "title": "Banking & Finance",
+        "description": "Ensure 24/7 uptime and compliance for secure, high-throughput transactions."
       },
       {
         "icon": "fa fa-laptop",
-        "title": "Technology, SaaS & Internet",
-        "description": "Focus on integrating AI within your SaaS on the top of the cloud built for AI while we build & manage your GPU server for performance."
+        "title": "Technology & SaaS",
+        "description": "Build scalable, AI-ready SaaS platforms with optimized GPU-based cloud infra."
       },
       {
         "icon": "fa fa-car",
         "title": "Automotive",
-        "description": "Keep up with the AI & machine learning with the rising customer expectations and integrate more technologies while reaching heights of a safer and sustainable future."
+        "description": "Accelerate innovation with secure, automated infra for AI-driven development."
       },
       {
         "icon": "fa fa-plug",
-        "title": "Energy, Oil & Gas",
-        "description": "Modernize your system to streamline inspections, better resource monitoring, visualize data, and reduce operational costs."
+        "title": "Energy & Utilities",
+        "description": "Streamline operations and reduce costs with data-driven, cloud-native automation."
       },
       {
         "icon": "fa fa-hospital-o",
         "title": "Healthcare",
-        "description": "Leverage the power of cloud GPU instances to process patient data at speed to adapt to the rapidly evolving healthcare demands."
+        "description": "Enable fast, compliant data processing with cloud-based compute infrastructure."
       },
       {
         "icon": "fa fa-plane",
         "title": "Travel & Hospitality",
-        "description": "Delight your customers with seamless operation & instant updates using cost-effective, flexible, and scalable system."
+        "description": "Deliver seamless, scalable customer experiences with automated infra management."
       }
     ]
   },
   "open_source": {
-    "title": "We Love Open Source",
-    "description": "We believe open source enables anyone to create technologies for a better tomorrow. Our developers have been constantly contributing to various cloud native projects and leveraging them to develop new OSS products.",
-    "cta_text": "Sneak peek at our OSS contributions",
+    "title": "Powered by Open Source",
+    "description": "We believe open source drives innovation. Our engineers actively contribute to major cloud-native projects and build new OSS tools for the community.",
+    "cta_text": "Explore Our Open Source Work",
     "image": {
       "src": "https://appscode.com/assets/images/products/kubedb/kubedb-illustration-1.webp",
       "alt": "We Love Open Source"
     }
   },
   "tech_stack": {
-    "title": "Team with the Diverse Set of Technical Expertise",
-    "subtitle": "While working with more than 100+ customers, our engineers’ have gotten well versed in.",
+    "title": "Our Technical Expertise",
+    "subtitle": "With experience across 100+ global projects, our team masters a broad cloud-native tech stack.",
     "technologies": [
       {
         "name": "Crossplane",
@@ -262,19 +249,15 @@
         "name": "Thanos",
         "logo": "https://placehold.co/600x400?text=AppsCode"
       },
-      {
-        "name": "ArgoCD",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      }
+      { "name": "ArgoCD", "logo": "https://placehold.co/600x400?text=AppsCode" }
     ]
   },
-
   "final_cta": {
-    "title": "Looking for Terraform Professional Support & Consulting Company?",
-    "subtitle": "Get in touch with our Terraform experts to help deploy and manage your infrastructure swiftly across multiple clouds and on-premise.",
+    "title": "Need Expert Terraform Consulting?",
+    "subtitle": "Partner with our certified Terraform specialists to deploy and manage infrastructure confidently across clouds and on-prem.",
     "buttons": [
       {
-        "text": "Consult a Terraform Expert",
+        "text": "Talk to a Terraform Expert",
         "icon": "fa fa-calendar",
         "type": "outlined"
       }

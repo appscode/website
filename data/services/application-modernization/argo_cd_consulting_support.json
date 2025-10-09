@@ -1,193 +1,142 @@
 {
   "hero": {
-    "title": "Argo CD Consulting Services & Implementation Partner",
-    "subtitle": "Helping companies adopt Argo CD with our expert consulting, implementation, & enterprise support services.",
-    "cta_text": "CONSULT AN ARGO CD EXPERT",
+    "title": "Argo CD Consulting & Implementation Partner",
+    "subtitle": "Helping organizations adopt Argo CD through expert consulting, seamless implementation, and enterprise support services.",
+    "cta_text": "Consult an Argo CD Expert",
     "cta_url": "https://appscode.com/contact/",
     "illustration": {
-      "src": "https://www.infracloud.io/assets/img/argocd-consulting/argocd-hero.svg"
+      "src": "https://www.infracloud.io/assets/img/argocd-consulting/argocd-hero.svg",
+      "alt": "Argo CD Consulting & Implementation"
     }
   },
   "trusted_by": {
-    "title": "Trusted by leading companies"
+    "title": "Trusted by Leading Companies"
   },
-
   "title_with_small_cards": {
     "title": "Benefits of Argo CD Consulting & Implementation",
     "areas": [
-      {
-        "icon": "fa fa-cogs",
-        "title": "Declarative App Definitions & Environments"
-      },
-      {
-        "icon": "fa fa-code-fork",
-        "title": "Version Controlled Configurations"
-      },
-      {
-        "icon": "fa fa-clock-o",
-        "title": "Automated and Audited Lifecycle Management"
-      },
-      {
-        "icon": "fa fa-thumbs-up",
-        "title": "Easy-to-understand Implementation"
-      },
-      {
-        "icon": "fa fa-cogs",
-        "title": "GitOps Pattern of Deployment"
-      },
-
-      {
-        "icon": "fa fa-rocket",
-        "title": "Faster Deployments"
-      }
+      { "icon": "fa fa-cogs", "title": "Declarative App Definitions & Environments" },
+      { "icon": "fa fa-code-fork", "title": "Version-Controlled Configurations" },
+      { "icon": "fa fa-clock-o", "title": "Automated & Audited Lifecycle Management" },
+      { "icon": "fa fa-thumbs-up", "title": "Clear & Understandable Implementation" },
+      { "icon": "fa fa-cogs", "title": "GitOps Deployment Patterns" },
+      { "icon": "fa fa-rocket", "title": "Faster, Reliable Deployments" }
     ]
   },
   "service_details": {
-    "title": "Our Argo CD Adoption & Consulting Services Capabilities",
-    "subtitle": "Leverage our Argo CD consulting expertise for a smooth Argo CD adoption & implementation:",
+    "title": "Argo CD Adoption & Consulting Services",
+    "subtitle": "Leverage our expertise to adopt, implement, and optimize Argo CD for your Kubernetes workloads.",
     "sections": [
       {
-        "title": "Argo CD Consulting & Implementation Services",
-        "description": "Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. Platform engineers and DevOps folks use various techniques to define Kubernetes manifest files such as YAML, Ksonnet, Jsonnet files, Helm charts, and Kustomize. Argo CD application provides the capability to track any type of Kubernetes manifest.",
+        "title": "Argo CD Consulting & Implementation",
+        "description": "Argo CD is a GitOps-based continuous delivery tool for Kubernetes. Our experts help define application manifests, track deployment states, and configure your environment for reliability and scalability.",
         "offerings": [
-          "Our expert ArgoCD consulting team helps in the assessment of the current landscape and helps in architecting the solution for deployments with ArgoCD.",
-          "The team of consultants help you deploy and configure ArgoCD for your application deployment and infrastructure configurations.",
-          "Configuring the GitOps pattern of using git repositories as the source of truth for defining the desired application state.",
-          "InfraCloud’s certified experts define the deployment of desired application state in multiple target environments.",
-          "Configuring the single sign-on authentication using OIDC, OAuth2, LDAP, SAML 2.0, etc.",
-          "The team of ArgoCD consultants and architects supports you in deploying Argo in High Availability."
+          "Assess your current environment and architect the Argo CD deployment solution.",
+          "Deploy and configure Argo CD for applications and infrastructure.",
+          "Implement GitOps patterns using Git as the single source of truth for your apps.",
+          "Manage deployment of application states across multiple environments.",
+          "Configure single sign-on with OIDC, OAuth2, LDAP, or SAML 2.0.",
+          "Support high-availability Argo CD setups for enterprise-grade reliability."
         ],
         "image": "https://placehold.co/600x400?text=Argo+CD+Consulting"
       },
       {
-        "title": "Achieve GitOps using Argo CD",
-        "description": "GitOps is a set of DevOps practices that are used to manage infrastructure and application configurations using the Git open source version control system as a 'single source of truth', and is widely used with Kubernetes.",
+        "title": "Achieve GitOps with Argo CD",
+        "description": "Implement GitOps practices to manage infrastructure and applications using Git as the authoritative source, enabling auditability and faster deployments.",
         "offerings": [
-          "Our cloud native experts will help you in separating out source code and Kubernetes manifests repos, to enable modifications without affecting each other.",
-          "Configure automatic synchronization of application state to the current version of the declarative configuration.",
-          "The ArgoCD consultants support you to visualize deployment issues, detect and remediate configuration drift.",
-          "As enterprise ArgoCD support, we help you configure Argo CD ensuring that new configurations are correctly deployed to a Kubernetes cluster."
+          "Separate source code and Kubernetes manifests to enable safe changes.",
+          "Automate synchronization of application state with declarative configuration.",
+          "Visualize deployment issues and remediate configuration drifts.",
+          "Ensure new configurations are correctly deployed to Kubernetes clusters."
         ],
         "image": "https://placehold.co/600x400?text=GitOps+with+Argo+CD"
       },
       {
-        "title": "Set-up Multi-Tenancy with Argo CD",
-        "description": "Argo CD has strong support for multiple teams working on different projects in the same Kubernetes environment.",
+        "title": "Set Up Multi-Tenancy with Argo CD",
+        "description": "Enable multiple teams to work independently within the same Kubernetes cluster while maintaining security and access controls.",
         "offerings": [
-          "Our team of Argo CD consultants set up multi-tenancy with Argo CD.",
-          "Argo CD CRDs can be restricted to only read source repositories that belong to a certain project and can be set to deploy applications to a specific cluster and namespace.",
-          "Each CRD instance can also have its own role-based access control (RBAC) settings."
+          "Implement multi-tenancy setups to isolate projects and teams.",
+          "Restrict CRDs to read only project-specific repositories and deploy to designated clusters and namespaces.",
+          "Define role-based access controls (RBAC) for each CRD instance."
         ],
         "image": "https://placehold.co/600x400?text=Multi-Tenancy+with+Argo+CD"
       },
       {
-        "title": "Argo CD Training and Managed Support",
-        "description": "Training and support from Argo CD experts is a great way to expedite your team’s skills to make the most of your investment with Argo CD.",
+        "title": "Argo CD Training & Managed Support",
+        "description": "Upskill your team and provide ongoing support to maximize your Argo CD investment.",
         "offerings": [
-          "Whether you’re looking to deploy or need on-demand ArgoCD commercial support, our engineers provide you with the needed support.",
-          "Post implementation training by Argo CD architects and consultants help you build the in-house Argo CD expertise."
+          "Deploy Argo CD or get on-demand enterprise support from certified engineers.",
+          "Post-implementation training to build in-house Argo CD expertise."
         ],
-        "image": "https://placehold.co/600x400?text=Argo+CD+Training+and+Support"
+        "image": "https://placehold.co/600x400?text=Argo+CD+Training+Support"
       }
     ]
   },
-
   "industries": {
-    "title": "We Understand the Nitty-Gritty!",
-    "subtitle": "Gain leverage with our proven artificial intelligence expertise & industry exposure. Working with 100+ clients, we know the criticalities, compliances & the importance of getting things right in the first go.",
-    "additional_text": "Be it an enterprise with datacenters across the world or a rapidly scaling startup, we got it covered!",
+    "title": "Industry Expertise",
+    "subtitle": "With experience serving 100+ clients, we understand compliance, criticalities, and the importance of first-time-right execution.",
+    "additional_text": "From global enterprises to fast-growing startups, we deliver scalable and reliable solutions.",
     "sectors": [
       {
         "icon": "fa fa-bank",
-        "title": "Banking and Finance",
-        "description": "Customers demand highly available & compliant systems to efficiently handle transactions & payment requests 24/7."
+        "title": "Banking & Finance",
+        "description": "Ensure highly available, compliant systems for 24/7 transactions and payment processing."
       },
       {
         "icon": "fa fa-laptop",
-        "title": "Technology, SaaS & Internet",
-        "description": "Focus on integrating AI within your SaaS on the top of the cloud built for AI while we build & manage your GPU server for performance."
+        "title": "Technology & SaaS",
+        "description": "Integrate AI and manage high-performance cloud infrastructure for SaaS platforms."
       },
       {
         "icon": "fa fa-car",
         "title": "Automotive",
-        "description": "Keep up with the AI & machine learning with the rising customer expectations and integrate more technologies while reaching heights of a safer and sustainable future."
+        "description": "Leverage AI & ML to meet customer expectations while ensuring safety and sustainability."
       },
       {
         "icon": "fa fa-plug",
         "title": "Energy, Oil & Gas",
-        "description": "Modernize your system to streamline inspections, better resource monitoring, visualize data, and reduce operational costs."
+        "description": "Modernize operations with better inspections, resource monitoring, and cost optimization."
       },
       {
         "icon": "fa fa-hospital-o",
         "title": "Healthcare",
-        "description": "Leverage the power of cloud GPU instances to process patient data at speed to adapt to the rapidly evolving healthcare demands."
+        "description": "Process patient data efficiently to meet evolving healthcare demands."
       },
       {
         "icon": "fa fa-plane",
         "title": "Travel & Hospitality",
-        "description": "Delight your customers with seamless operation & instant updates using cost-effective, flexible, and scalable system."
+        "description": "Deliver seamless operations with instant updates using scalable, cost-effective systems."
       }
     ]
   },
   "open_source": {
     "title": "We Love Open Source",
-    "description": "We believe open source enables anyone to create technologies for a better tomorrow. Our developers have been constantly contributing to various cloud native projects and leveraging them to develop new OSS products.",
-    "cta_text": "Sneak peek at our OSS contributions",
+    "description": "Our developers contribute to cloud-native projects, leveraging OSS to build innovative solutions.",
+    "cta_text": "Explore Our OSS Contributions",
     "image": {
       "src": "https://appscode.com/assets/images/products/kubedb/kubedb-illustration-1.webp",
-      "alt": "We Love Open Source"
+      "alt": "Open Source Contributions"
     }
   },
   "tech_stack": {
-    "title": "Team with a Diverse Set of Technical Expertise",
-    "subtitle": "While working with more than 100+ customers, our certified Kubernetes consultants have gotten well versed in:",
+    "title": "Technical Expertise",
+    "subtitle": "Our certified Kubernetes consultants excel in:",
     "technologies": [
-      {
-        "name": "Crossplane",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "Kubernetes",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "Prometheus",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "GraphQL",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "Open Policy Agent",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "Grafana",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "Terraform",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "Kasten",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "Thanos",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "ArgoCD",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      }
+      { "name": "Crossplane", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "Kubernetes", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "Prometheus", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "GraphQL", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "Open Policy Agent", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "Grafana", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "Terraform", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "Kasten", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "Thanos", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "ArgoCD", "logo": "https://placehold.co/600x400?text=AppsCode" }
     ]
   },
-
   "final_cta": {
-    "title": "Looking for Argo CD Enterprise Support Company?",
-    "subtitle": "Explore our ArgoCD enterprise support capabilities that help you with consulting, implementing & supporting to efficiently define, configure and deploy services without needing access to K8s systems.",
+    "title": "Looking for Enterprise Argo CD Support?",
+    "subtitle": "Explore our Argo CD enterprise capabilities, from consulting and implementation to managed support, for efficient and secure deployments without direct Kubernetes access.",
     "buttons": [
       {
         "text": "Discuss Argo CD Support",
@@ -196,39 +145,38 @@
       }
     ]
   },
-
   "cards": {
-    "title": "Why Choose InfraCloud as your DevOps Toolchain Experts?",
+    "title": "Why Choose InfraCloud for Argo CD?",
     "items": [
       {
         "icon": "fa fa-certificate",
-        "title": "Certified Developers",
-        "description": "170 in-house engineers, including 4 CKS, 51 CKA & 19 Certified Kubernetes Application Developers."
+        "title": "Certified Engineers",
+        "description": "170 in-house engineers, including 4 CKS, 51 CKA, and 19 Certified Kubernetes Application Developers."
       },
       {
         "icon": "fa fa-briefcase",
         "title": "Domain Expertise",
-        "description": "Implement the best Serverless practices that we have learned while working with 100+ clients."
+        "description": "Implement best practices learned from 100+ client engagements in DevOps and GitOps."
       },
       {
         "icon": "fa fa-trophy",
         "title": "First Mover Advantage",
-        "description": "Partner with the first Kubernetes service provider in India and second in APAC."
+        "description": "One of the first Kubernetes service providers in India and APAC."
       },
       {
         "icon": "fa fa-graduation-cap",
-        "title": "Training",
-        "description": "Our training focuses on building knowledge of core concepts with practical experiences."
+        "title": "Hands-On Training",
+        "description": "Training focuses on core concepts with practical, real-world experience."
       },
       {
         "icon": "fa fa-certificate",
         "title": "CNCF Certified Provider",
-        "description": "AppsCode is a proud CNCF Silver Member, and Kubernetes Certified Service Provider (KCSP)."
+        "description": "AppsCode is a CNCF Silver Member and Kubernetes Certified Service Provider (KCSP)."
       },
       {
-        "icon": "fa fa-users  ",
-        "title": "Expand Easily",
-        "description": "With InfraCloud, easily scale up the team of engineers without the hassle of hiring or training."
+        "icon": "fa fa-users",
+        "title": "Scale Teams Easily",
+        "description": "Quickly expand engineering teams without hiring or training overhead."
       }
     ]
   }

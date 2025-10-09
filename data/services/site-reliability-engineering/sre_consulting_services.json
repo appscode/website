@@ -1,213 +1,202 @@
 {
   "hero": {
-    "title": "Site Reliability Engineering (SRE) Consulting Services",
-    "subtitle": "Helping companies adopt SRE right from the roadmap, building best practices to successful SRE implementation.",
-    "cta_text": "TALK TO A SRE EXPERT",
+    "title": "Expert Site Reliability Engineering (SRE) Consulting",
+    "subtitle": "From strategy to implementation, we help organizations adopt SRE practices to enhance reliability, performance, and efficiency.",
+    "cta_text": "Talk to a SRE Expert",
     "cta_url": "https://appscode.com/contact/",
     "illustration": {
       "src": "https://www.infracloud.io/assets/img/serverless-consulting/serverless-hero-img.svg",
-      "alt": "Serverless Consulting"
+      "alt": "Site Reliability Engineering Consulting"
     }
   },
   "trusted_by": {
-    "title": "Trusted by leading companies"
+    "title": "Trusted by Global Leaders"
   },
   "title_with_small_cards": {
-    "title": "Why Site Reliability Engineering (SRE) Consulting Services?",
+    "title": "Why SRE Consulting Services Matter",
     "areas": [
       {
         "icon": "fa fa-rocket",
         "title": "Accelerate Product Delivery & Feature Releases"
       },
-      {
-        "icon": "fa fa-shield",
-        "title": "Instill Stability in Production Environment"
-      },
+      { "icon": "fa fa-shield", "title": "Ensure Production Stability" },
       {
         "icon": "fa fa-database",
-        "title": "Observability & Monitoring Stack Management"
+        "title": "Comprehensive Observability & Monitoring"
       },
       {
         "icon": "fa fa-bug",
-        "title": "Complements DevOps Functions (e.g. CI/CD)"
+        "title": "Enhance DevOps Workflows (CI/CD Automation)"
+      },
+      { "icon": "fa fa-cogs", "title": "Automate Infrastructure Provisioning" },
+      {
+        "icon": "fa fa-dollar",
+        "title": "Cost Optimization & Capacity Planning"
       },
       {
-        "icon": "fa fa-database",
-        "title": "Provisioning & Managing IT Infra using Automation"
-      },
-      {
-        "icon": "fa fa-database",
-        "title": "Better Cost Optimization & Capacity Planning"
-      },
-      {
-        "icon": "fa fa-database",
+        "icon": "fa fa-server",
         "title": "Kubernetes Cluster & Storage Management"
       },
-      {
-        "icon": "fa fa-shield",
-        "title": "Security & Governance"
-      }
+      { "icon": "fa fa-shield", "title": "Security, Compliance & Governance" }
     ]
   },
   "service_details": {
-    "title": "Our Site Reliability Engineering Consulting (SRE) Services Capabilities",
-    "subtitle": "Accelerating your Site Reliability Engineering adoption with the help of SRE Experts - right from roadmap to implementation.",
+    "title": "Our Site Reliability Engineering (SRE) Services",
+    "subtitle": "Leverage expert guidance to adopt SRE best practices—from assessment and planning to full implementation.",
     "sections": [
       {
-        "title": "SRE and DevOps Advisory",
-        "description": "Our SRE experts will carry out assessments and work closely with system administrators, build engineers, application architects, and development leads to understand the current tooling, automation, infrastructure, and observability of your system.",
+        "title": "SRE Advisory & Strategy",
+        "description": "Assess current systems, automation, and operational workflows to define a roadmap for adopting SRE practices tailored to your organization.",
         "offerings": [
-          "The team of consultants help you create the tool adoption roadmap in line with the industry best practices to address the pain points.",
-          "The SRE experts help you with benchmarking the SLO and SLI.",
-          "Set up and implement error budgets and error budget policies.",
-          "Our engineers are trained to follow the best practices in SRE."
+          "Evaluate existing infrastructure, CI/CD pipelines, and monitoring setup.",
+          "Define SLOs (Service Level Objectives) and SLIs (Service Level Indicators).",
+          "Design and implement error budgets and policies.",
+          "Recommend industry-standard SRE practices to improve system reliability."
         ],
-        "image": "https://placehold.co/600x400"
+        "image": "https://placehold.co/600x400?text=SRE+Advisory"
       },
       {
-        "title": "SDLC Automation, Managing Infrastructure and Apps Deployment",
-        "description": "Our team of expert consultants automate the provisioning of hybrid and multi-cloud infrastructure resources.",
+        "title": "Automated SDLC & Infrastructure Management",
+        "description": "Enable faster development and delivery by automating infrastructure and application deployment across multi-cloud and hybrid environments.",
         "offerings": [
-          "Speed up the application development and delivery by adopting CI/CD.",
-          "The SRE experts help you with progressive delivery adoption for cloud native applications.",
-          "Our team can you help you with multi-cloud, Kubernetes and other container orchestration technologies with emphasis on configuration management, service discovery, deployment patterns, auto-scaling, and container operation."
+          "Implement CI/CD pipelines to streamline application delivery.",
+          "Adopt progressive delivery for cloud-native applications.",
+          "Manage Kubernetes and container orchestration, including auto-scaling, configuration management, and deployment patterns."
         ],
-        "image": "https://placehold.co/600x400"
+        "image": "https://placehold.co/600x400?text=SDLC+Automation"
       },
       {
-        "title": "Observability and Continuous Monitoring",
-        "description": "SRE experts streamline the monitoring process of cloud-based applications and services.",
+        "title": "Observability & Monitoring",
+        "description": "Establish end-to-end observability to proactively identify issues and optimize system performance.",
         "offerings": [
-          "Implement health checks across your entire IT infrastructure and application services.",
-          "Generate actionable in-depth reports to improve performance."
+          "Implement monitoring and health checks across infrastructure and applications.",
+          "Generate actionable metrics and insights to improve reliability."
         ],
-        "image": "https://placehold.co/600x400"
+        "image": "https://placehold.co/600x400?text=Observability+Monitoring"
       },
       {
-        "title": "Debugging and Remediation of the Issues",
-        "description": "We help you setup the process to handle on-call and emergency support while maintaining the operational runbooks.",
+        "title": "Incident Management & Remediation",
+        "description": "Create robust processes for on-call support, emergency troubleshooting, and maintaining operational runbooks.",
         "offerings": [
-          "Sound Linux/Unix know-how and comprehensive troubleshooting practice.",
-          "Conduct detailed post-mortems on production issues."
+          "Conduct detailed post-mortems to prevent recurrence of production issues.",
+          "Leverage expert Linux/Unix troubleshooting practices."
         ],
-        "image": "https://placehold.co/600x400"
+        "image": "https://placehold.co/600x400?text=Incident+Management"
       },
       {
-        "title": "Disaster Recovery",
-        "description": "Automate the protection of your containerized applications with Kubernetes-optimized cloud native disaster recovery.",
+        "title": "Disaster Recovery & Resilience Testing",
+        "description": "Ensure business continuity with automated disaster recovery and resilience testing for containerized applications.",
         "offerings": [
-          "Design Chaos experiments to test the resilience of the production environments."
+          "Design and execute chaos engineering experiments to validate production system resilience."
         ],
-        "image": "https://placehold.co/600x400"
+        "image": "https://placehold.co/600x400?text=Disaster+Recovery"
       },
       {
-        "title": "Security, Governance & Cost Optimization",
-        "description": "Maintain compliance status like the GDPR or PCI DDS while working on the public cloud.",
+        "title": "Security, Governance & Cost Management",
+        "description": "Protect systems, maintain compliance, and optimize operational costs in cloud and hybrid environments.",
         "offerings": [
-          "Conduct security audit to identify and fix the gaps to improve the overall security posture.",
-          "Accurate capacity planning(rightsizing).",
-          "Manage capacity with focus on cost analysis, reduced expenses, and cost management."
+          "Conduct security audits and remediate vulnerabilities.",
+          "Implement capacity planning and rightsizing for optimized performance.",
+          "Monitor and control infrastructure costs effectively."
         ],
-        "image": "https://placehold.co/600x400"
+        "image": "https://placehold.co/600x400?text=Security+Cost+Management"
       },
       {
-        "title": "Training for SRE Engineering Best Practices",
-        "description": "We help you build self-sufficient teams by training them on SRE best practices.",
+        "title": "SRE Training & Knowledge Transfer",
+        "description": "Empower your teams with hands-on SRE training, enabling them to implement and maintain reliability best practices.",
         "offerings": [
-          "We enable the teams to understand how SRE related to DevOps and what business benefits come with the use of SRE.",
-          "We will be creating training docs and helping build a knowledge base for the SRE practices."
+          "Train teams on SRE principles and their integration with DevOps.",
+          "Create training documentation and knowledge bases for continuous learning."
         ],
-        "image": "https://placehold.co/600x400"
+        "image": "https://placehold.co/600x400?text=SRE+Training"
       }
     ]
   },
-
   "cards": {
-    "title": "Why choose InfraCloud for SRE Consulting Services?",
+    "title": "Why Partner with InfraCloud for SRE?",
     "items": [
       {
         "icon": "fa fa-certificate",
-        "title": "Certified Developers",
-        "description": "170 in-house engineers, including 4 CKS, 51 CKA & 19 Certified Kubernetes Application Developers."
+        "title": "Certified Experts",
+        "description": "170 engineers, including 4 CKS, 51 CKA & 19 Certified Kubernetes Application Developers."
       },
       {
         "icon": "fa fa-briefcase",
-        "title": "Domain Expertise",
-        "description": "Implement the best Serverless practices that we have learned while working with 100+ clients."
+        "title": "Domain Experience",
+        "description": "Proven SRE and cloud-native practices across 100+ clients."
       },
       {
         "icon": "fa fa-trophy",
         "title": "First Mover Advantage",
-        "description": "Partner with the first Kubernetes service provider in India and second in APAC."
+        "description": "One of the first Kubernetes service providers in India and APAC."
       },
       {
         "icon": "fa fa-graduation-cap",
-        "title": "Training",
-        "description": "Our training focuses on building knowledge of core concepts with practical experiences."
+        "title": "Hands-On Training",
+        "description": "Practical training to build in-house SRE expertise."
       },
       {
         "icon": "fa fa-certificate",
         "title": "CNCF Certified Provider",
-        "description": "AppsCode is a proud CNCF Silver Member, and Kubernetes Certified Service Provider (KCSP)."
+        "description": "AppsCode is a CNCF Silver Member and Kubernetes Certified Service Provider (KCSP)."
       },
       {
         "icon": "fa fa-wrench",
-        "title": "Expand Easily",
-        "description": "With AppsCode, easily scale up the team of engineers without the hassle of hiring or training."
+        "title": "Scale Teams Easily",
+        "description": "Easily expand engineering teams without recruitment overhead."
       }
     ]
   },
-
   "industries": {
-    "title": "We Understand the Nitty-Gritty!",
-    "subtitle": "Gain leverage with our proven artificial intelligence expertise & industry exposure. Working with 100+ clients, we know the criticalities, compliances & the importance of getting things right in the first go.",
-    "additional_text": "Be it an enterprise with datacenters across the world or a rapidly scaling startup, we got it covered!",
+    "title": "Industry Expertise",
+    "subtitle": "We help 100+ clients across sectors tackle operational challenges, compliance, and reliability.",
+    "additional_text": "From global enterprises to high-growth startups, we deliver scalable, reliable, and secure SRE solutions.",
     "sectors": [
       {
         "icon": "fa fa-bank",
-        "title": "Banking and Finance",
-        "description": "Customers demand highly available & compliant systems to efficiently handle transactions & payment requests 24/7."
+        "title": "Banking & Finance",
+        "description": "Ensure compliant and resilient production systems for financial services."
       },
       {
         "icon": "fa fa-laptop",
-        "title": "Technology, SaaS & Internet",
-        "description": "Focus on integrating AI within your SaaS on the top of the cloud built for AI while we build & manage your GPU server for performance."
+        "title": "Technology & SaaS",
+        "description": "Integrate SRE practices into cloud-native SaaS and AI applications."
       },
       {
         "icon": "fa fa-car",
         "title": "Automotive",
-        "description": "Keep up with the AI & machine learning with the rising customer expectations and integrate more technologies while reaching heights of a safer and sustainable future."
+        "description": "Deliver reliable and safe systems to meet evolving customer expectations."
       },
       {
         "icon": "fa fa-plug",
         "title": "Energy, Oil & Gas",
-        "description": "Modernize your system to streamline inspections, better resource monitoring, visualize data, and reduce operational costs."
+        "description": "Modernize monitoring and resource management to optimize operations."
       },
       {
         "icon": "fa fa-hospital-o",
         "title": "Healthcare",
-        "description": "Leverage the power of cloud GPU instances to process patient data at speed to adapt to the rapidly evolving healthcare demands."
+        "description": "Ensure high-speed, reliable deployment for critical healthcare systems."
       },
       {
         "icon": "fa fa-plane",
         "title": "Travel & Hospitality",
-        "description": "Delight your customers with seamless operation & instant updates using cost-effective, flexible, and scalable system."
+        "description": "Provide seamless, scalable, and cost-efficient operations."
       }
     ]
   },
   "open_source": {
-    "title": "We Love Open Source",
-    "description": "We believe open source enables anyone to create technologies for a better tomorrow. Our developers have been constantly contributing to various cloud native projects and leveraging them to develop new OSS products.",
-    "cta_text": "Sneak peek at our OSS contributions",
+    "title": "We Support Open Source",
+    "description": "We actively contribute to cloud-native projects and leverage open source to build innovative SRE solutions.",
+    "cta_text": "See Our OSS Contributions",
     "image": {
       "src": "https://appscode.com/assets/images/products/kubedb/kubedb-illustration-1.webp",
-      "alt": "We Love Open Source"
+      "alt": "Open Source Contributions"
     }
   },
   "tech_stack": {
-    "title": "Team with the Diverse Set of Technical Expertise",
-    "subtitle": "While working with more than 100+ customers, our engineers’ have gotten well versed in.",
-     "technologies": [
+    "title": "Diverse Technical Expertise",
+    "subtitle": "Our engineers are proficient in:",
+    "technologies": [
       {
         "name": "Crossplane",
         "logo": "https://placehold.co/600x400?text=AppsCode"
@@ -244,16 +233,12 @@
         "name": "Thanos",
         "logo": "https://placehold.co/600x400?text=AppsCode"
       },
-      {
-        "name": "ArgoCD",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      }
+      { "name": "ArgoCD", "logo": "https://placehold.co/600x400?text=AppsCode" }
     ]
   },
-
   "final_cta": {
-    "title": "Looking for Support with SRE Implementation?",
-    "subtitle": "Our team of experienced SRE consultants will help you optimize reliability, performance, and efficiency using the latest tools and SRE best practices.",
+    "title": "Looking for Expert SRE Support?",
+    "subtitle": "Our experienced SRE consultants help optimize reliability, performance, and operational efficiency using best practices and modern tools.",
     "buttons": [
       {
         "text": "Consult a SRE Expert",

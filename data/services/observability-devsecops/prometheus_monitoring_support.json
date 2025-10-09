@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Prometheus Consulting & Implementation Experts",
-    "subtitle": "Helping companies efficiently deploy, configure and visualize complex metrics of your infrastructure & applications.",
+    "subtitle": "Helping companies efficiently deploy, configure, and visualize complex metrics for your infrastructure and applications.",
     "cta_text": "TALK TO A PROMETHEUS EXPERT",
     "cta_url": "https://appscode.com/contact/",
     "illustration": {
@@ -9,16 +9,15 @@
       "alt": "Prometheus Engineering"
     }
   },
+
   "trusted_by": {
-    "title": "Trusted by leading companies"
+    "title": "Trusted by Leading Companies"
   },
+
   "title_with_small_cards": {
     "title": "Benefits of Prometheus Implementation",
     "areas": [
-      {
-        "icon": "fa fa-eye",
-        "title": "Your all-in-one Monitoring Solution"
-      },
+      { "icon": "fa fa-eye", "title": "Your All-in-One Monitoring Solution" },
       {
         "icon": "fa fa-dashboard",
         "title": "Eliminate Risk of Unnoticed Incidents"
@@ -27,73 +26,64 @@
         "icon": "fa fa-tach",
         "title": "Build Observability Stack Effortlessly"
       },
-      {
-        "icon": "fa fa-file-text",
-        "title": "Enhanced Visibility"
-      },
-      {
-        "icon": "fa fa-cogs",
-        "title": "Integration with Third Party Tools"
-      },
-      {
-        "icon": "fa fa-plug",
-        "title": "Commercial Support and Training"
-      }
+      { "icon": "fa fa-file-text", "title": "Enhanced Visibility" },
+      { "icon": "fa fa-cogs", "title": "Integration with Third-Party Tools" },
+      { "icon": "fa fa-plug", "title": "Commercial Support and Training" }
     ]
   },
 
   "service_details": {
     "title": "Our Prometheus Consulting & Implementation Capabilities",
-    "subtitle": "Up your monitoring game using Prometheus and our trusted observability experts.",
+    "subtitle": "Level up your monitoring game using Prometheus and our trusted observability experts.",
     "sections": [
       {
-        "title": "Prometheus Consulting & Implementing in Production",
-        "description": "Our in-house Prometheus experts analyze your application framework and suggest the best way to implement and configure Prometheus. Experts build your monitoring & observability stack with best practices.",
+        "title": "Prometheus Consulting & Production Implementation",
+        "description": "Our experts analyze your application framework and provide the best approach to implement and configure Prometheus following industry best practices.",
         "offerings": [
-          "Our team of Prometheus consultants & architects will do an in-depth analysis of your systems and monitoring requirements to provide a cohesive monitoring solution.",
-          "We will help you with proper instrumentation for the codebase for exposing the data in Prometheus.",
-          "Gathering and labeling of the metrics for easier consumption of the data collected and making it production ready."
+          "In-depth system and monitoring requirement analysis to provide a cohesive solution.",
+          "Proper instrumentation of your codebase to expose metrics in Prometheus.",
+          "Labeling and structuring metrics for easier consumption and production readiness."
         ],
         "image": "https://placehold.co/600x400"
       },
       {
         "title": "Incident Management",
-        "description": "With Prometheus metrics data collection, incidents can be tracked and responded to faster than before. Explore how our Prometheus experts help you with incident management.",
+        "description": "Track and respond to incidents faster using Prometheus metrics. Our experts guide you through efficient incident management.",
         "offerings": [
-          "The team of consultants & architects will assist you in setting up Prometheus Alertmanager for tracking incidents across the infrastructure.",
-          "This will result in creation of alerts and real-time notification based on the metrics gathered.",
-          "Gathered metrics can be further utilized for analyzing and giving correct incident response, thus reducing your time and efforts.",
-          "Exporters can be used for collecting metrics for further post mortem analysis."
+          "Setup of Prometheus Alertmanager for real-time incident tracking.",
+          "Creation of alerts based on collected metrics.",
+          "Analyze metrics to optimize incident response, reducing time and effort.",
+          "Use exporters to collect additional metrics for post-mortem analysis."
         ],
         "image": "https://placehold.co/600x400"
       },
       {
-        "title": "Modeling and Data Query",
-        "description": "With deep expertise in Prometheus-based monitoring solutions, our Prometheus experts will help you with your data modeling and querying.",
+        "title": "Data Modeling & Querying",
+        "description": "Our team ensures your Prometheus setup can provide meaningful insights through proper data modeling and querying.",
         "offerings": [
-          "Assistance in modeling, labeling, and aggregating the collected data for easier consumption.",
-          "Utilization of PromQL to gather insights from your systems and collect meaningful data and metrics."
+          "Model, label, and aggregate data for simpler consumption.",
+          "Leverage PromQL to extract insights and meaningful metrics."
         ],
         "image": "https://placehold.co/600x400"
       },
       {
-        "title": "Integration with Third Party Tools",
-        "description": "Learn how our Prometheus experts help you integrate Prometheus with other tools to enhance its observability capabilities.",
+        "title": "Integration with Third-Party Tools",
+        "description": "Enhance Prometheus’ capabilities by integrating with other tools seamlessly.",
         "offerings": [
-          "Integration of Grafana with Prometheus to create custom, visually attractive, and useful dashboards based on the collected metrics.",
-          "Native integration of Loki for aggregating logs from your systems.",
-          "Use of Alertmanager for sending notifications using tools like PagerDuty.",
-          "Assistance in configuring tools like KEDA with Prometheus for auto-scaling your application in real-time based on custom metrics."
+          "Grafana dashboards for visually compelling, actionable metrics.",
+          "Loki for centralized log aggregation.",
+          "Alertmanager integration with tools like PagerDuty for real-time notifications.",
+          "Configure KEDA to auto-scale applications based on custom metrics."
         ],
         "image": "https://placehold.co/600x400"
       },
       {
         "title": "Prometheus Commercial Support & Training",
-        "description": "As an officially recognized Prometheus commercial support partner, our experts will help you with your end-to-end monitoring journey, from assessment and advisory to building your observability stack.",
+        "description": "As an officially recognized Prometheus commercial support partner, we guide you through your end-to-end monitoring journey.",
         "offerings": [
-          "Assistance in getting your team up to speed on industry best practices and knowledge transfer to drive the integration further.",
-          "Help in mastering Prometheus concepts and addressing any issues faced while deploying or configuring the stack.",
-          "Support in building a future-ready team that understands the intricacies of Prometheus."
+          "Upskill your team with best practices and knowledge transfer.",
+          "Master Prometheus concepts and resolve deployment or configuration issues.",
+          "Build a future-ready team proficient in Prometheus operations."
         ],
         "image": "https://placehold.co/600x400"
       }
@@ -101,85 +91,69 @@
   },
 
   "industries": {
-    "title": "We Understand the Nitty-Gritty!",
-    "subtitle": "Gain leverage with our proven artificial intelligence expertise & industry exposure. Working with 100+ clients, we know the criticalities, compliances & the importance of getting things right in the first go.",
-    "additional_text": "Be it an enterprise with datacenters across the world or a rapidly scaling startup, we got it covered!",
+    "title": "We Understand the Nitty-Gritty",
+    "subtitle": "With 100+ clients across industries, we understand criticalities, compliance, and the importance of getting it right the first time.",
+    "additional_text": "From global enterprises to rapidly scaling startups, we’ve got you covered!",
     "sectors": [
       {
         "icon": "fa fa-bank",
-        "title": "Banking and Finance",
-        "description": "Customers demand highly available & compliant systems to efficiently handle transactions & payment requests 24/7."
+        "title": "Banking & Finance",
+        "description": "Highly available, compliant systems for handling transactions and payments 24/7."
       },
       {
         "icon": "fa fa-laptop",
         "title": "Technology, SaaS & Internet",
-        "description": "Focus on integrating AI within your SaaS on the top of the cloud built for AI while we build & manage your GPU server for performance."
+        "description": "Integrate AI within your SaaS while we manage performance-critical infrastructure."
       },
       {
         "icon": "fa fa-car",
         "title": "Automotive",
-        "description": "Keep up with the AI & machine learning with the rising customer expectations and integrate more technologies while reaching heights of a safer and sustainable future."
+        "description": "Keep up with AI and ML-driven customer expectations and technology integrations."
       },
       {
         "icon": "fa fa-plug",
         "title": "Energy, Oil & Gas",
-        "description": "Modernize your system to streamline inspections, better resource monitoring, visualize data, and reduce operational costs."
+        "description": "Streamline inspections, monitor resources, visualize data, and reduce operational costs."
       },
       {
         "icon": "fa fa-hospital-o",
         "title": "Healthcare",
-        "description": "Leverage the power of cloud GPU instances to process patient data at speed to adapt to the rapidly evolving healthcare demands."
+        "description": "Process patient data quickly using cloud infrastructure for real-time insights."
       },
       {
         "icon": "fa fa-plane",
         "title": "Travel & Hospitality",
-        "description": "Delight your customers with seamless operation & instant updates using cost-effective, flexible, and scalable system."
-      }
-    ]
-  },
-  "open_source": {
-    "title": "We Love Open Source",
-    "description": "We believe open source enables anyone to create technologies for a better tomorrow. Our developers have been constantly contributing to various cloud native projects and leveraging them to develop new OSS products.",
-    "cta_text": "Sneak peek at our OSS contributions",
-    "image": {
-      "src": "https://appscode.com/assets/images/products/kubedb/kubedb-illustration-1.webp",
-      "alt": "We Love Open Source"
-    }
-  },
-  "tech_stack": {
-    "title": "Team with the Diverse Set of Technical Expertise",
-    "subtitle": "While working with more than 100+ customers, our engineers’ have gotten well versed in.",
-    "technologies": [
-      {
-        "name": "Falco",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Snyk",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "TIGERA",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Aqua Security",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Trivy",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "OPA",
-        "logo": "https://placehold.co/600x400"
+        "description": "Deliver seamless operations and instant updates with scalable, cost-effective systems."
       }
     ]
   },
 
+  "open_source": {
+    "title": "We Love Open Source",
+    "description": "Open source empowers innovation. Our developers actively contribute to cloud-native projects and leverage them to develop new OSS products.",
+    "cta_text": "Explore Our OSS Contributions",
+    "image": {
+      "src": "https://appscode.com/assets/images/products/kubedb/kubedb-illustration-1.webp",
+      "alt": "Open Source Contributions"
+    }
+  },
+
+  "tech_stack": {
+    "title": "Diverse Technical Expertise",
+    "subtitle": "Serving 100+ customers, our engineers have expertise across cloud-native and security tools.",
+    "technologies": [
+      { "name": "Falco", "logo": "https://placehold.co/600x400" },
+      { "name": "Snyk", "logo": "https://placehold.co/600x400" },
+      { "name": "TIGERA", "logo": "https://placehold.co/600x400" },
+      { "name": "Aqua Security", "logo": "https://placehold.co/600x400" },
+      { "name": "Trivy", "logo": "https://placehold.co/600x400" },
+      { "name": "OPA", "logo": "https://placehold.co/600x400" }
+    ]
+  },
+
   "final_cta": {
-    "title": "Looking for a Prometheus Commercial Support Company?",
-    "subtitle": "Consult our Prometheus experts for an all-in-one solution for your monitoring needs from consulting to implementation along with unparalleled 3rd party Prometheus support.",
+    "title": "Looking for Prometheus Commercial Support?",
+    "subtitle": "Consult our experts for an all-in-one solution from consulting and implementation to enterprise-grade 3rd party support.",
     "buttons": [
       {
         "text": "Consult a Prometheus Expert",
@@ -190,37 +164,37 @@
   },
 
   "cards": {
-    "title": "Why InfraCloud as Prometheus Support & Implementation Partner?",
+    "title": "Why Choose InfraCloud for Prometheus Support & Implementation?",
     "items": [
       {
         "icon": "fa fa-certificate",
         "title": "Certified Developers",
-        "description": "170 in-house engineers, including 4 CKS, 51 CKA & 19 Certified Kubernetes Application Developers."
+        "description": "170 in-house engineers including 4 CKS, 51 CKA & 19 Certified Kubernetes Application Developers."
       },
       {
         "icon": "fa fa-briefcase",
         "title": "Domain Expertise",
-        "description": "Implement the best Serverless practices that we have learned while working with 100+ clients."
+        "description": "Delivering best practices from 100+ client implementations."
       },
       {
         "icon": "fa fa-trophy",
         "title": "First Mover Advantage",
-        "description": "Partner with the first Kubernetes service provider in India and second in APAC."
+        "description": "First Kubernetes service provider in India and second in APAC."
       },
       {
         "icon": "fa fa-graduation-cap",
         "title": "Training",
-        "description": "Our training focuses on building knowledge of core concepts with practical experiences."
+        "description": "Hands-on training to build practical Prometheus expertise."
       },
       {
         "icon": "fa fa-certificate",
         "title": "CNCF Certified Provider",
-        "description": "AppsCode is a proud CNCF Silver Member, and Kubernetes Certified Service Provider (KCSP)."
+        "description": "AppsCode is a proud CNCF Silver Member and Kubernetes Certified Service Provider (KCSP)."
       },
       {
-        "icon": "fa fa-users  ",
-        "title": "Expand Easily",
-        "description": "With InfraCloud, easily scale up the team of engineers without the hassle of hiring or training."
+        "icon": "fa fa-users",
+        "title": "Scalable Teams",
+        "description": "Easily expand your team without hiring or training overhead."
       }
     ]
   }
