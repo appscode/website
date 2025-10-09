@@ -1,289 +1,170 @@
 {
   "hero": {
     "title": "Backstage Consulting & Enterprise Support",
-    "subtitle": "Internal developer platform (IDP) experts building a tailored Backstage solution that improves developers’ productivity - for orgs of all sizes.",
-    "cta_text": "TALK TO A BACKSTAGE EXPERT",
+    "subtitle": "Internal Developer Platform (IDP) experts building tailored Backstage solutions that enhance developer productivity for organizations of all sizes.",
+    "cta_text": "SPEAK TO A BACKSTAGE EXPERT",
     "cta_url": "https://appscode.com/contact/",
     "illustration": {
       "src": "https://www.infracloud.io/assets/img/backstage-consulting/backstage-hero.svg",
-      "alt": "Platform Engineering"
+      "alt": "Backstage Consulting Illustration"
     }
   },
   "trusted_by": {
-    "title": "Trusted by leading companies"
+    "title": "Trusted by Leading Companies Worldwide"
   },
-
   "cards_group": {
     "title": "InfraCloud’s AAA Framework for Platform Engineering",
     "models": [
       {
         "number": "01",
         "title": "ADOPT",
-        "description": "Assessing the current state & usage of tools and practices in place is the first step in understanding the goals of the platform that will add value. InfraCloud uses InfraCloud Platform Engineering Questionnaire & Assessment framework."
+        "description": "We start by assessing your current tools, processes, and workflows. Our InfraCloud Platform Engineering Questionnaire & Assessment framework identifies gaps and opportunities to define a high-impact platform."
       },
       {
         "number": "02",
         "title": "ACCELERATE",
-        "description": "One of the key criteria of success for any platform is how the user feels about it. Adopt phase ensures a “Product Market Fit” for the platform and works with engineering teams to evangelize & increase adoption."
+        "description": "Post-adoption, we focus on user engagement and platform usability, helping engineering teams embrace Backstage fully and achieve product-market fit for internal developers."
       },
       {
         "number": "03",
         "title": "ASSETS",
-        "description": "Once adoption has succeeded in a few areas and with a few teams, the goal would be to scale the process of assessing, adopting platforms across teams."
+        "description": "Once adoption succeeds, we scale Backstage practices across teams, ensuring consistent value delivery and efficient developer self-service organization-wide."
       }
     ]
   },
   "title_with_small_cards": {
-    "title": "Why opt for Backstage consulting & support?",
+    "title": "Why Choose Backstage Consulting & Support?",
     "areas": [
-      {
-        "icon": "fa fa-map-o",
-        "title": "Backstage Adoption Roadmap"
-      },
-      {
-        "icon": "fa fa-cogs",
-        "title": "Expert-Led Backstage Deployment"
-      },
-      {
-        "icon": "fa fa-line-chart",
-        "title": "Improve Developers’ Efficiency"
-      },
-      {
-        "icon": "fa fa-lightbulb-o",
-        "title": "Accelerate Development Practices"
-      },
-      {
-        "icon": "fa fa-tasks",
-        "title": "Workflow Optimization & Tool Integrations"
-      },
-      {
-        "icon": "fa fa-star-o",
-        "title": "Tailored & Customized Solutions"
-      }
+      { "icon": "fa fa-map-o", "title": "Backstage Adoption Roadmap", "description": "Clear, actionable roadmap for seamless Backstage implementation." },
+      { "icon": "fa fa-cogs", "title": "Expert-Led Deployment", "description": "Guidance from experienced engineers to deploy production-ready Backstage." },
+      { "icon": "fa fa-line-chart", "title": "Boost Developer Efficiency", "description": "Streamline workflows and increase productivity." },
+      { "icon": "fa fa-lightbulb-o", "title": "Accelerate Development Practices", "description": "Implement DevOps and agile principles efficiently." },
+      { "icon": "fa fa-tasks", "title": "Workflow Optimization & Tool Integrations", "description": "Connect Backstage with existing tools and processes." },
+      { "icon": "fa fa-star-o", "title": "Tailored & Customized Solutions", "description": "Backstage platform configured to your organization’s unique requirements." }
     ]
   },
-
   "service_details": {
-    "title": "Explore Our Backstage Consulting & Support Capabilities",
-    "subtitle": "Leverage our Backstage consulting expertise to help you adopt, implement, and manage Backstage at scale.",
+    "title": "Backstage Consulting & Support Services",
+    "subtitle": "Leverage our expertise to adopt, implement, and manage Backstage at scale.",
     "sections": [
       {
         "title": "Backstage Consulting & Adoption Strategy",
-        "description": "Our team of experienced IDP consultants is here to guide you through the entire journey of adopting Backstage – from project scoping to onboarding your team. Evangelizing & having contributed to the CNCF’s platform engineering maturity model, we truly understand what it takes to build and deploy a platform.",
-        "offering": [
-          "InfraCloud provides expert advice on best practices, tailored solutions, integrations & plugins you need, and strategies that suit your specific business needs.",
-          "Our dedicated team of consultants help you gain a clear roadmap, ensuring that your Backstage implementation aligns seamlessly with your business goals."
+        "description": "We guide you through the entire Backstage adoption journey — from project scoping to onboarding your team. With experience in CNCF’s platform engineering maturity model, we know what it takes to build and deploy successful internal developer platforms.",
+        "offerings": [
+          "Expert guidance on best practices, tailored solutions, integrations, and plugins specific to your business needs.",
+          "Dedicated consulting to create a roadmap ensuring Backstage aligns with your organizational goals."
         ],
         "image": "https://www.infracloud.io/assets/img/backstage-consulting/backstage-consulting.svg"
       },
       {
-        "title": "Implement Production‑Grade Backstage",
-        "description": "Getting started with Backstage can be challenging. Our internal developer portal team specializes in implementing production-grade Backstage instances, so you can focus on core business functions that matter to you the most.",
-        "offering": [
-          "We’ll work with your team to design and deploy a tailored Backstage solution that optimizes collaboration, streamlines development workflows, and enhances your overall software delivery capabilities.",
-          "Our team holds your hand at every step of Backstage implementation – choosing the right infrastructure, having the necessary dependencies and prerequisites, defining data models, backups management, compliance and implementing security and monitoring."
+        "title": "Implement Production-Grade Backstage",
+        "description": "We specialize in deploying production-ready Backstage instances, allowing your teams to focus on core business priorities.",
+        "offerings": [
+          "Design and deploy a tailored Backstage platform to optimize collaboration and streamline development workflows.",
+          "Guidance on infrastructure selection, dependencies, data models, backups, compliance, security, and monitoring."
         ],
         "image": "https://www.infracloud.io/assets/img/backstage-consulting/integration-with-other-tools-or-workflows.svg"
       },
       {
-        "title": "Integration with Other Tools or Workflows",
-        "description": "Backstage is designed to be the central hub for all your software-related activities by integrating with various tools and workflows. These integrations help streamline and centralize your development, operations, and collaboration processes.",
-        "offering": [
-          "Identifying which steps can be covered by Backstage, and for which steps do you need to integrate other tools and technologies.",
-          "We’ll help you integrate Backstage with your existing tools and workflow, ensuring a smooth flow of data and information between systems to enhance the efficiency and effectiveness of your development processes."
+        "title": "Integration with Tools & Workflows",
+        "description": "Backstage serves as the central hub for software development by integrating seamlessly with your existing tools and processes.",
+        "offerings": [
+          "Identify which steps Backstage covers natively and where integrations are required.",
+          "Integrate Backstage with existing systems to ensure smooth data flow and enhanced development efficiency."
         ],
         "image": "https://www.infracloud.io/assets/img/backstage-consulting/integration-with-other-tools-or-workflows.svg"
       },
       {
-        "title": "Backstage Support and Training",
-        "description": "As you begin your Backstage journey, we are here to provide ongoing Backstage enterprise support. Never let your team’s productivity be hindered due to internal developer platform’s (IDP) glitches & slow process of discovering the solution via trial and error method.",
-        "offering": [
-          "Our dedicated Platform Engineering team offers Backstage enterprise support to resolve any issues, answer questions, and keep its environment running smoothly.",
-          "We also provide Backstage IDP training sessions, ensuring your team is equipped with the skills and knowledge needed to make the most of Backstage."
+        "title": "Backstage Support & Training",
+        "description": "Ongoing support ensures your IDP remains productive, preventing downtime and trial-and-error delays.",
+        "offerings": [
+          "Enterprise-level support to resolve issues and keep Backstage running smoothly.",
+          "Training sessions and documentation to equip teams with the knowledge to maximize Backstage usage."
         ],
         "image": "https://www.infracloud.io/assets/img/backstage-consulting/backstage-enterprise-support-and-training.svg"
       },
       {
         "title": "Scalability Planning",
-        "description": "As your business grows, your software needs to scale as well. So your developer platform has to handle all the new documentations, users, softwares and complexities that come with scalability. Our Backstage expert team will build your internal developer portal for scalability from day 1.",
-        "offering": [
-          "We’ll assist in creating a scalability plan for your Backstage implementation, making sure it can handle increased demands without sacrificing performance.",
-          "Our team will make sure the integrations, plugins, and workflow scale with a high number of users, automation, and requests while IDP being secure and compliant."
+        "description": "Our Backstage solutions are built for growth, managing increasing users, software, and workflow complexities without compromising performance.",
+        "offerings": [
+          "Develop scalability plans to handle increased demand efficiently.",
+          "Ensure integrations, plugins, and workflows scale securely and remain compliant."
         ],
         "image": "https://www.infracloud.io/assets/img/backstage-consulting/scalability-planning.svg"
       },
       {
-        "title": "Security and Compliance Integration",
-        "description": "Our internal developer portal consultants can help you integrate security and compliance checks into your Backstage instance, ensuring your software development processes meet industry standards and regulations.",
-        "offering": [
-          "Making a developer platform with security best practices including authentication mechanisms, data encryption, testing updates before installing, secure plugins, and strong password policies.",
-          "Documentation of your security and compliance practices, including data handling, access control, and incident response to continuously train the new team members."
+        "title": "Security & Compliance Integration",
+        "description": "We embed security and compliance checks into your Backstage instance, ensuring software development adheres to industry standards.",
+        "offerings": [
+          "Implement best practices for authentication, data encryption, secure plugins, and password policies.",
+          "Document security and compliance procedures to train new team members and maintain standards."
         ],
         "image": "https://www.infracloud.io/assets/img/backstage-consulting/security-and-compliance-integration.svg"
       }
     ]
   },
-
   "industries": {
-    "title": "We Understand the Nitty-Gritty!",
-    "subtitle": "Gain leverage with our proven artificial intelligence expertise & industry exposure. Working with 100+ clients, we know the criticalities, compliances & the importance of getting things right in the first go.",
-    "additional_text": "Be it an enterprise with datacenters across the world or a rapidly scaling startup, we got it covered!",
+    "title": "Industry Expertise",
+    "subtitle": "With experience across 100+ clients, we understand critical business requirements, compliance needs, and operational challenges.",
+    "additional_text": "From global enterprises to fast-growing startups, our Backstage solutions are adaptable for any scale.",
     "sectors": [
-      {
-        "icon": "fa fa-bank",
-        "title": "Banking and Finance",
-        "description": "Customers demand highly available & compliant systems to efficiently handle transactions & payment requests 24/7."
-      },
-      {
-        "icon": "fa fa-laptop",
-        "title": "Technology, SaaS & Internet",
-        "description": "Focus on integrating AI within your SaaS on the top of the cloud built for AI while we build & manage your GPU server for performance."
-      },
-      {
-        "icon": "fa fa-car",
-        "title": "Automotive",
-        "description": "Keep up with the AI & machine learning with the rising customer expectations and integrate more technologies while reaching heights of a safer and sustainable future."
-      },
-      {
-        "icon": "fa fa-plug",
-        "title": "Energy, Oil & Gas",
-        "description": "Modernize your system to streamline inspections, better resource monitoring, visualize data, and reduce operational costs."
-      },
-      {
-        "icon": "fa fa-hospital-o",
-        "title": "Healthcare",
-        "description": "Leverage the power of cloud GPU instances to process patient data at speed to adapt to the rapidly evolving healthcare demands."
-      },
-      {
-        "icon": "fa fa-plane",
-        "title": "Travel & Hospitality",
-        "description": "Delight your customers with seamless operation & instant updates using cost-effective, flexible, and scalable system."
-      }
+      { "icon": "fa fa-bank", "title": "Banking & Finance", "description": "Build highly available and compliant platforms for secure financial operations." },
+      { "icon": "fa fa-laptop", "title": "Technology & SaaS", "description": "Integrate AI and cloud-native solutions for high-performance, scalable applications." },
+      { "icon": "fa fa-car", "title": "Automotive", "description": "Leverage AI/ML to enhance safety, sustainability, and customer experience." },
+      { "icon": "fa fa-plug", "title": "Energy & Utilities", "description": "Modernize systems to optimize inspections, resource monitoring, and operational efficiency." },
+      { "icon": "fa fa-hospital-o", "title": "Healthcare", "description": "Use cloud GPU computing for rapid processing of patient data and healthcare analytics." },
+      { "icon": "fa fa-plane", "title": "Travel & Hospitality", "description": "Deliver scalable and flexible platforms for seamless operations and superior customer experiences." }
     ]
   },
   "open_source": {
-    "title": "We Love Open Source",
-    "description": "We believe open source enables anyone to create technologies for a better tomorrow. Our developers have been constantly contributing to various cloud native projects and leveraging them to develop new OSS products.",
-    "cta_text": "Sneak peek at our OSS contributions",
+    "title": "Open Source Enthusiasts",
+    "description": "We actively contribute to cloud-native projects and leverage open-source innovations to develop better, efficient Backstage solutions.",
+    "cta_text": "View Our OSS Contributions",
     "image": {
       "src": "https://appscode.com/assets/images/products/kubedb/kubedb-illustration-1.webp",
-      "alt": "We Love Open Source"
+      "alt": "Open Source Contributions"
     }
   },
   "tech_stack": {
-    "title": "Team with the Diverse Set of Technical Expertise",
-    "subtitle": "While working with more than 100+ customers, our engineers’ have gotten well versed in.",
+    "title": "Diverse Technical Expertise",
+    "subtitle": "Our engineers have hands-on experience with modern technologies to build scalable, robust Backstage and IDP solutions.",
     "technologies": [
-      {
-        "name": "Crossplane",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Kubernetes",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Prometheus",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "GraphQL",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Open Policy Agent",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Grafana",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Terraform",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Kasten",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Thanos",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "ArgoCD",
-        "logo": "https://placehold.co/600x400"
-      }
-    ]
-  },
-
-  "final_cta": {
-    "title": "Looking for Backstage Enterprise Support?",
-    "subtitle": "Consult with our Backstage experts for assistance with strategy, design, and testing, to integration, custom plugins, deployment and ongoing support to leverage the Backstage at fullest.",
-    "buttons": [
-      {
-        "text": "Talk to a Backstage Expert",
-        "icon": "fa fa-calendar",
-        "type": "outlined"
-      }
+      { "name": "Crossplane", "logo": "https://placehold.co/600x400" },
+      { "name": "Kubernetes", "logo": "https://placehold.co/600x400" },
+      { "name": "Prometheus", "logo": "https://placehold.co/600x400" },
+      { "name": "GraphQL", "logo": "https://placehold.co/600x400" },
+      { "name": "Open Policy Agent", "logo": "https://placehold.co/600x400" },
+      { "name": "Grafana", "logo": "https://placehold.co/600x400" },
+      { "name": "Terraform", "logo": "https://placehold.co/600x400" },
+      { "name": "Kasten", "logo": "https://placehold.co/600x400" },
+      { "name": "Thanos", "logo": "https://placehold.co/600x400" },
+      { "name": "ArgoCD", "logo": "https://placehold.co/600x400" }
     ]
   },
   "cards": {
-    "title": "Why InfraCloud as Backstage Consulting & Implementation Partner?",
+    "title": "Why InfraCloud as Backstage Partner?",
     "items": [
-      {
-        "icon": "fa fa-certificate",
-        "title": "Certified Developers",
-        "description": "170 in-house engineers, including 4 CKS, 51 CKA & 19 Certified Kubernetes Application Developers."
-      },
-      {
-        "icon": "fa fa-briefcase",
-        "title": "Domain Expertise",
-        "description": "Implement the best Serverless practices that we have learned while working with 100+ clients."
-      },
-      {
-        "icon": "fa fa-trophy",
-        "title": "First Mover Advantage",
-        "description": "Partner with the first Kubernetes service provider in India and second in APAC."
-      },
-      {
-        "icon": "fa fa-graduation-cap",
-        "title": "Training",
-        "description": "Our training focuses on building knowledge of core concepts with practical experiences."
-      },
-      {
-        "icon": "fa fa-certificate",
-        "title": "CNCF Certified Provider",
-        "description": "AppsCode is a proud CNCF Silver Member, and Kubernetes Certified Service Provider (KCSP)."
-      },
-      {
-        "icon": "fa fa-wrench",
-        "title": "Expand Easily",
-        "description": "With AppsCode, easily scale up the team of engineers without the hassle of hiring or training."
-      }
+      { "icon": "fa fa-certificate", "title": "Certified Developers", "description": "170 in-house engineers including CKS, CKA & Certified Kubernetes Application Developers." },
+      { "icon": "fa fa-briefcase", "title": "Domain Expertise", "description": "Experience across 100+ clients implementing best-in-class platform engineering and IDP solutions." },
+      { "icon": "fa fa-trophy", "title": "First Mover Advantage", "description": "Partner with one of the earliest Kubernetes service providers in India & APAC." },
+      { "icon": "fa fa-graduation-cap", "title": "Training & Enablement", "description": "Practical knowledge transfer to upskill teams in Backstage and platform engineering." },
+      { "icon": "fa fa-certificate", "title": "CNCF Certified Provider", "description": "AppsCode is a CNCF Silver Member and Kubernetes Certified Service Provider (KCSP)." },
+      { "icon": "fa fa-wrench", "title": "Scalable Teams", "description": "Quickly expand engineering resources without the hassle of hiring or training." }
     ]
   },
   "resources": {
-    "title": "Evangelizing Platform Engineering",
+    "title": "Platform Engineering Insights",
     "items": [
-      {
-        "type": "Blog",
-        "title": "DevOps to Platform Engineering: How We Got Here?",
-        "image": "https://www.infracloud.io/assets/img/blog/blog-updated-creatives/index-image/announcing-bot-framework-sdk-for-go-1200x628.png",
-        "link": "#"
-      },
-      {
-        "type": "Contribution",
-        "title": "Platform Engineering Maturity Model by CNCF",
-        "image": "https://www.infracloud.io/assets/img/customers/building-a-cloud-native-software-defined-storage-platform.png",
-        "link": "#"
-      },
-      {
-        "type": "Blog",
-        "title": "Platform Engineering 101: Get Started with Platforms",
-        "image": "https://www.infracloud.io/assets/img/devtalk-details/tinkerbell-automated-baremetal-provisioning-engine.png",
-        "link": "#"
-      }
+      { "type": "Blog", "title": "DevOps to Platform Engineering: How We Got Here?", "image": "https://www.infracloud.io/assets/img/blog/blog-updated-creatives/index-image/announcing-bot-framework-sdk-for-go-1200x628.png", "link": "#" },
+      { "type": "Contribution", "title": "Platform Engineering Maturity Model by CNCF", "image": "https://www.infracloud.io/assets/img/customers/building-a-cloud-native-software-defined-storage-platform.png", "link": "#" },
+      { "type": "Blog", "title": "Platform Engineering 101: Get Started with Platforms", "image": "https://www.infracloud.io/assets/img/devtalk-details/tinkerbell-automated-baremetal-provisioning-engine.png", "link": "#" }
+    ]
+  },
+  "final_cta": {
+    "title": "Looking for Backstage Enterprise Support?",
+    "subtitle": "Consult our experts for strategy, design, integration, plugins, deployment, and ongoing support to fully leverage Backstage.",
+    "buttons": [
+      { "text": "Talk to a Backstage Expert", "icon": "fa fa-calendar", "type": "outlined" }
     ]
   }
 }

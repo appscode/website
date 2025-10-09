@@ -1,203 +1,143 @@
 {
   "hero": {
-    "title": "GitOps Consulting & Implementation Partner",
-    "subtitle": "Helping companies adopt GitOps for faster deploys & releases. We’re Argo CD, FLuxCD, Helm, Kustomize, Werf & Terragrunt Experts.",
-    "cta_text": "CONSULT A GITOPS EXPERT",
+    "title": "GitOps Consulting & Implementation",
+    "subtitle": "Accelerate deployments and releases with GitOps. Experts in ArgoCD, FluxCD, Helm, Kustomize, Werf & Terragrunt.",
+    "cta_text": "Consult a GitOps Expert",
     "cta_url": "https://appscode.com/contact/",
     "illustration": {
       "src": "https://www.infracloud.io/assets/img/gitops-consulting/gitops-hero.svg",
-      "alt": "GitOps Consulting & Implementation Partner"
+      "alt": "GitOps Consulting & Implementation"
     }
   },
   "trusted_by": {
-    "title": "Trusted by leading companies"
+    "title": "Trusted by Leading Companies"
   },
-
   "title_with_small_cards": {
-    "title": "Why GitOps Consulting & Implementation Partner is Needed?",
+    "title": "Why GitOps Consulting & Implementation?",
     "areas": [
-      {
-        "icon": "fa fa-code",
-        "title": "Define Entire Application & Ecosystem Declaratively"
-      },
-      {
-        "icon": "fa fa-users",
-        "title": "Improved Developer Experience & Productivity"
-      },
-      {
-        "icon": "fa fa-clock-o",
-        "title": "Deploy & Release Faster & more Frequently"
-      },
-      {
-        "icon": "fa fa-bug",
-        "title": "If Failed Fast, then Detect & Rollback Faster"
-      },
-      {
-        "icon": "fa fa-cogs",
-        "title": "Reduces Operational Burden"
-      },
-
-      {
-        "icon": "fa fa-database",
-        "title": "Git as a Single Source of Truth"
-      },
-      {
-        "icon": "fa fa-rocket",
-        "title": "Automated Deployment Capabilities"
-      },
-      {
-        "icon": "fa fa-shield",
-        "title": "Security Hardening"
-      }
+      { "icon": "fa fa-code", "title": "Declarative Application & Ecosystem Management" },
+      { "icon": "fa fa-users", "title": "Enhanced Developer Experience & Productivity" },
+      { "icon": "fa fa-clock-o", "title": "Faster, Frequent Deployments & Releases" },
+      { "icon": "fa fa-bug", "title": "Rapid Failure Detection & Rollbacks" },
+      { "icon": "fa fa-cogs", "title": "Reduced Operational Burden" },
+      { "icon": "fa fa-database", "title": "Git as Single Source of Truth" },
+      { "icon": "fa fa-rocket", "title": "Automated Deployment Capabilities" },
+      { "icon": "fa fa-shield", "title": "Security Hardening" }
     ]
   },
   "service_details": {
-    "title": "What do we offer as GitOps Consulting & Implementation Experts?",
-    "subtitle": "",
+    "title": "GitOps Consulting & Implementation Services",
     "sections": [
       {
-        "title": "GitOps Consulting & Advisory Services",
-        "description": "Companies that are already using Kubernetes and planning to improve their developer experience and manage the entire ecosystem with Git as a source of truth; can leverage InfraCloud’s GitOps consulting & advisory services. Our SMEs and consultants have experience and knowledge of all major cloud-native GitOps open source tools available to help with GitOps consulting.",
+        "title": "Consulting & Advisory",
+        "description": "Plan and adopt GitOps efficiently. Our experts assess your current pipelines and provide actionable recommendations for faster, automated deployments.",
         "offerings": [
-          "Our GitOps consulting services include comparing current deployment strategies and processes to GitOps standards and creating a roadmap for a successful GitOps implementation.",
-          "Our team of GitOps consultants will assess and audit your current infrastructure for readiness and maturity and provide detailed recommendations for implementing the GitOps model.",
-          "With an actionable continuous deployment plan best suited to achieving your business goals, you’re ready to get started with GitOps implementation.",
-          "Our GitOps consultants help you choose the right kind of tools that would make you release your software faster with a single push button."
+          "Compare current deployment strategies with GitOps best practices.",
+          "Audit infrastructure for readiness and maturity.",
+          "Create a roadmap and continuous deployment plan aligned with business goals.",
+          "Recommend the best tools for faster, single-button software releases."
         ],
         "image": "https://placehold.co/600x400?text=AppsCode"
       },
       {
-        "title": "GitOps Implementation Partner - from Development to Production",
-        "description": "Our cloud-native consultants and architects help you build new (or migrate from existing) CI/CD pipelines to GitOps-based continuous deployment strategies and pipelines. We deconstruct and segregate your existing deployment pipelines into GitOps manageable delivery pipelines. This would help you to make release cycles completely automated, and more frequent to deploy code changes on a daily basis to your Kubernetes-based production system. We help precisely to implement GitOps with different tools which include:",
+        "title": "GitOps Implementation - Dev to Production",
+        "description": "Build or migrate CI/CD pipelines to GitOps-based workflows. Automate releases and enable multi-cluster, multi-cloud deployments.",
         "offerings": [
-          "Implementation of GitOps framework with popular tools like Argo CD, FluxCD, Helm, and Kustomize.",
-          "Cluster state management with configuration drift detection and auto-correction.",
-          "Infrastructure as Code for your cloud-native application.",
-          "Quick rollout and rollback of new versions across your clusters.",
-          "Multi-cluster and multi-cloud GitOps deployments model.",
-          "Assistance in organizing source code repository in the GitOps way."
+          "Implement GitOps frameworks using ArgoCD, FluxCD, Helm, and Kustomize.",
+          "Manage cluster states with drift detection and auto-correction.",
+          "Use Infrastructure as Code for cloud-native apps.",
+          "Enable quick rollouts and rollbacks across clusters.",
+          "Organize repositories following GitOps best practices."
         ],
         "image": "https://placehold.co/600x400?text=AppsCode"
       },
       {
-        "title": "GitOps Enterprise Support Services",
-        "description": "Enterprise support from an experienced team of architects, & engineers to fix ANY configuration issues in your GitOps-based configuration and continuous deployment pipelines. This includes tooling like Argo CD, FluxCD, Kubernetes config files, Helm, Kustomize, etc.",
+        "title": "Enterprise Support Services",
+        "description": "Expert support to troubleshoot configuration issues and maintain GitOps pipelines using tools like ArgoCD, FluxCD, Helm, and Kustomize.",
         "offerings": [
-          "Enabling monitoring and logging to detect issues in your Continuous Deployment pipelines in real-time before any impact on the business.",
-          "Assistance in the implementation of Multi-Cluster, Multi-Cloud Deployments using tools like ArgoCD ApplicationSets, and FluxCD.",
-          "Assured assistance for regular GitOps tools updates, patches, and bug fixes."
+          "Real-time monitoring and logging to prevent pipeline failures.",
+          "Support multi-cluster and multi-cloud deployments.",
+          "Ensure regular updates, patches, and bug fixes for GitOps tools."
         ],
         "image": "https://placehold.co/600x400?text=AppsCode"
       },
       {
         "title": "GitOps Tools Training",
-        "description": "Our GitOps consultants and architects enable your engineers with the skills and best practices around GitOps tools and techniques they need to self-sufficiently handle this new way of doing Continuous Delivery.",
+        "description": "Empower your engineers with the knowledge to manage GitOps workflows confidently.",
         "offerings": [
-          "Coaching and enabling your team on how to implement GitOps via training workshops around tools like Argo CD, FluxCD, Helm, Terragrunt, and Werf.",
-          "Mastering GitOps concepts like Continuous Delivery, Declarative infrastructure specification, Configuration Drifts detection, single source of truth, and Pull-based Deployments to handle your new releases with no issues.",
-          "Our experts will assist you in making the necessary configuration and deployment changes by implementing the best practices."
+          "Hands-on workshops for ArgoCD, FluxCD, Helm, Terragrunt, and Werf.",
+          "Master GitOps concepts: Continuous Delivery, declarative infra, drift detection, single source of truth, pull-based deployments.",
+          "Best practice guidance for configuration and deployment changes."
         ],
         "image": "https://placehold.co/600x400?text=AppsCode"
       }
     ]
   },
-
   "industries": {
-    "title": "We Understand the Nitty-Gritty!",
-    "subtitle": "Gain leverage with our proven artificial intelligence expertise & industry exposure. Working with 100+ clients, we know the criticalities, compliances & the importance of getting things right in the first go.",
-    "additional_text": "Be it an enterprise with datacenters across the world or a rapidly scaling startup, we got it covered!",
+    "title": "Industry Expertise",
+    "subtitle": "Working with 100+ clients, we understand critical operations, compliance, and first-time-right deployments.",
+    "additional_text": "From global enterprises to scaling startups, we deliver reliable GitOps solutions.",
     "sectors": [
       {
         "icon": "fa fa-bank",
-        "title": "Banking and Finance",
-        "description": "Customers demand highly available & compliant systems to efficiently handle transactions & payment requests 24/7."
+        "title": "Banking & Finance",
+        "description": "Highly available and compliant systems for secure transactions."
       },
       {
         "icon": "fa fa-laptop",
-        "title": "Technology, SaaS & Internet",
-        "description": "Focus on integrating AI within your SaaS on the top of the cloud built for AI while we build & manage your GPU server for performance."
+        "title": "Technology & SaaS",
+        "description": "Integrate AI and manage high-performance cloud infrastructure."
       },
       {
         "icon": "fa fa-car",
         "title": "Automotive",
-        "description": "Keep up with the AI & machine learning with the rising customer expectations and integrate more technologies while reaching heights of a safer and sustainable future."
+        "description": "Leverage AI & ML for safety, sustainability, and innovation."
       },
       {
         "icon": "fa fa-plug",
         "title": "Energy, Oil & Gas",
-        "description": "Modernize your system to streamline inspections, better resource monitoring, visualize data, and reduce operational costs."
+        "description": "Streamline inspections, monitor resources, and reduce operational costs."
       },
       {
         "icon": "fa fa-hospital-o",
         "title": "Healthcare",
-        "description": "Leverage the power of cloud GPU instances to process patient data at speed to adapt to the rapidly evolving healthcare demands."
+        "description": "Process patient data securely and quickly using cloud-native workflows."
       },
       {
         "icon": "fa fa-plane",
         "title": "Travel & Hospitality",
-        "description": "Delight your customers with seamless operation & instant updates using cost-effective, flexible, and scalable system."
+        "description": "Deliver seamless operations and real-time updates efficiently."
       }
     ]
   },
   "open_source": {
     "title": "We Love Open Source",
-    "description": "We believe open source enables anyone to create technologies for a better tomorrow. Our developers have been constantly contributing to various cloud native projects and leveraging them to develop new OSS products.",
-    "cta_text": "Sneak peek at our OSS contributions",
+    "description": "Our team contributes to cloud-native projects and builds new OSS solutions for better technology adoption.",
+    "cta_text": "Explore Our OSS Contributions",
     "image": {
       "src": "https://appscode.com/assets/images/products/kubedb/kubedb-illustration-1.webp",
-      "alt": "We Love Open Source"
+      "alt": "Open Source Contributions"
     }
   },
   "tech_stack": {
-    "title": "Team with a Diverse Set of Technical Expertise",
-    "subtitle": "While working with more than 100+ customers, our certified Kubernetes consultants have gotten well versed in:",
+    "title": "Diverse Technical Expertise",
+    "subtitle": "Our certified engineers excel in:",
     "technologies": [
-      {
-        "name": "Crossplane",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "Kubernetes",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "Prometheus",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "GraphQL",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "Open Policy Agent",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "Grafana",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "Terraform",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "Kasten",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "Thanos",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      },
-      {
-        "name": "ArgoCD",
-        "logo": "https://placehold.co/600x400?text=AppsCode"
-      }
+      { "name": "Crossplane", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "Kubernetes", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "Prometheus", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "GraphQL", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "Open Policy Agent", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "Grafana", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "Terraform", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "Kasten", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "Thanos", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "ArgoCD", "logo": "https://placehold.co/600x400?text=AppsCode" }
     ]
   },
-
   "final_cta": {
-    "title": "Looking for a GitOps Consulting Support Partner?",
-    "subtitle": "Consult one of our GitOps experts to know we can help you with end-to-end GitOps support.",
+    "title": "Need GitOps Support?",
+    "subtitle": "Get expert guidance and end-to-end GitOps support for your deployments.",
     "buttons": [
       {
         "text": "Talk to a GitOps Expert",
@@ -207,79 +147,78 @@
     ]
   },
   "large_preview_cards": {
-    "title": "Implement Argo CD, FluxCD, & more from the GitOps Experts",
+    "title": "Expertise Across GitOps Tools",
     "items": [
       {
         "icon": "fa fa-rocket",
-        "title": "Argo CD Experts",
-        "description": "Whether you’re looking to evaluate, design, or implement and deploy ArgoCD from scratch, our ArgoCD experts can assist you. With end-to-end ArgoCD adoption journey. InfraCloud consultants and engineers have deep expertise with ArgoCD and other Argo tools like ApplicationSet and Argo Rollouts to help you implement GitOps for your single or multi-tenant, multicluster, and/or multi-cloud applications. The team will help you onboard smoothly on your GitOps journey with ArgoCD.",
+        "title": "ArgoCD Experts",
+        "description": "Evaluate, design, implement, and manage ArgoCD for single or multi-cluster, multi-cloud deployments. Full adoption support with ApplicationSet and Rollouts.",
         "image": "https://placehold.co/600x400"
       },
       {
         "icon": "fa fa-rocket",
         "title": "FluxCD Experts",
-        "description": "Looking to evaluate, design, or implement and deploy FluxCD from the scratch? Learn how InfraCloud’s FluxCD experts can assist you. With our FluxCD tool expertise, our architects and consultants will help you to establish GitOps in the right way based on your current application ecosystem state. Post-implementation training by GitOps architects and consultants will help you build the in-house FluxCD expertise.",
+        "description": "Implement FluxCD workflows for your application ecosystem with best practices and post-implementation training for in-house expertise.",
         "image": "https://placehold.co/600x400"
       },
       {
         "icon": "fa fa-rocket",
         "title": "Helm Experts",
-        "description": "Helm has become the de facto package manager for Kubernetes over the years as it helps to update and roll back your Kubernetes-native application services efficiently and faster. InfraCloud’s Helm experts will help you to create and configure Helm templates/charts for managing and deploying your microservices. Our consultants and architects will also train and help your team to streamline your GitOps pipelines with Helm.",
+        "description": "Create and manage Helm charts for microservices and streamline GitOps pipelines with expert guidance.",
         "image": "https://placehold.co/600x400"
       },
       {
         "icon": "fa fa-rocket",
         "title": "Kustomize Experts",
-        "description": "Kustomize is a Kubernetes-natively supported and template-free way to package your application’s configuration YAML files. If you’re unsure whether to use Helm or Kustomize to customize application configurations, then let InfraCloud’s architects and consultant help you to assess, evaluate and figure out the right solutions for your need and consult with the implementation of Kustomize.",
+        "description": "Assess, evaluate, and implement Kustomize to manage Kubernetes YAML configurations efficiently and choose the right approach between Helm and Kustomize.",
         "image": "https://placehold.co/600x400"
       },
       {
         "icon": "fa fa-rocket",
         "title": "Werf Experts",
-        "description": "Werf is a tool that glues Git, Docker, Helm, and K8s together and helps create more efficient CI/CD pipelines. InfraCloud’s Werf experts will help you to create and configure the Werf tool for managing and deploying your microservices. Post-implementation, our consultants and architects will also train and help your team to streamline your GitOps pipelines with Werf and manage it in production.",
+        "description": "Set up Werf for efficient CI/CD pipelines, manage deployments, and provide team training for GitOps pipeline operations.",
         "image": "https://placehold.co/600x400"
       },
       {
         "icon": "fa fa-rocket",
         "title": "Terragrunt Experts",
-        "description": "If you’re a believer of the Don’t repeat yourself aka DRY principle & already managing multiple environments with an IaC tool like Terraform, then, Terragrunt is a solution for you to organize and reduce the complexity of your Terraform code. Our Terragrunt experts will help you to create and configure the Terragrunt tool for managing & keeping your Terraform code as DRY. Plus, it helps you manage your Terraform environments efficiently.",
+        "description": "Organize and streamline Terraform code with Terragrunt for multiple environments, keeping DRY principles intact.",
         "image": "https://placehold.co/600x400"
       }
     ]
   },
-
   "cards": {
-    "title": "Why InfraCloud as GitOps Consulting & Implementation Partner?",
+    "title": "Why InfraCloud for GitOps?",
     "items": [
       {
         "icon": "fa fa-certificate",
         "title": "CNCF Certified Provider",
-        "description": "AppsCode is a proud CNCF Silver Member, and Kubernetes Certified Service Provider (KCSP)."
+        "description": "AppsCode is a CNCF Silver Member and Kubernetes Certified Service Provider (KCSP)."
       },
       {
         "icon": "fa fa-certificate",
         "title": "Certified Team",
-        "description": "170 in-house engineers, including 4 CKS, 51 CKA & 19 Certified Kubernetes Application Developers."
+        "description": "170 engineers, including 4 CKS, 51 CKA & 19 Certified Kubernetes Application Developers."
       },
       {
         "icon": "fa fa-users",
-        "title": "In-house Domain Expertise",
-        "description": "90% engineering team with NO outsourcing, implementing the service mesh best practices."
+        "title": "In-House Domain Expertise",
+        "description": "90% engineering team with no outsourcing, delivering service mesh and GitOps best practices."
       },
       {
         "icon": "fa fa-gift",
-        "title": "Giving back to the Community",
-        "description": "Contributed to 50+ open source projects in cloud-native & DevOps space."
+        "title": "Community Contribution",
+        "description": "Contributed to 50+ open source projects in cloud-native and DevOps domains."
       },
       {
         "icon": "fa fa-trophy",
         "title": "First Mover Advantage",
-        "description": "Partner with the first Kubernetes service provider in India and second in APAC."
+        "description": "First Kubernetes service provider in India, second in APAC."
       },
       {
         "icon": "fa fa-users",
-        "title": "Seasoned Team Engineers",
-        "description": "Our training focuses on building knowledge of core concepts with practical experiences."
+        "title": "Seasoned Engineers",
+        "description": "Training focuses on practical, hands-on experience in GitOps and cloud-native workflows."
       }
     ]
   }

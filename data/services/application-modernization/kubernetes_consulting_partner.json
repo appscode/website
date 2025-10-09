@@ -1,212 +1,152 @@
 {
   "hero": {
-    "title": "Kubernetes Consulting Services by Certified Experts",
-    "subtitle": "Kubernetes consultants trusted by CNCF as Kubernetes Certified Service Provider (KCSP) for consulting, deployment & support.",
-    "cta_text": "TALK TO A KUBERNETES EXPERT",
+    "title": "Kubernetes Consulting by Certified Experts",
+    "subtitle": "Partner with CNCF-certified Kubernetes consultants for consulting, deployment, and enterprise support.",
+    "cta_text": "Talk to a Kubernetes Expert",
     "cta_url": "https://appscode.com/contact/",
     "illustration": {
       "src": "https://www.infracloud.io/assets/img/baremetal-provisioning-consulting/baremetal-hero.svg",
-      "alt": "Bare Metal Provisioning Consulting Services"
+      "alt": "Kubernetes Consulting Services"
     }
   },
   "trusted_by": {
-    "title": "Trusted by leading companies"
+    "title": "Trusted by Leading Companies"
   },
-
   "title_with_small_cards": {
-    "title": "Why Kubernetes Consulting Services?",
+    "title": "Why Choose Kubernetes Consulting?",
     "areas": [
-      {
-        "icon": "fa fa-lightbulb-o",
-        "title": "Future Proof - Agile,Scalable"
-      },
-      {
-        "icon": "fa fa-tach",
-        "title": "High-Performance Software Delivery"
-      },
-      {
-        "icon": "fa fa-cogs",
-        "title": "Improved Application Development"
-      },
-      {
-        "icon": "fa fa-money",
-        "title": "IT Cost Optimization"
-      },
-      {
-        "icon": "fa fa-cloud",
-        "title": "Multi-cloud (& Hybrid Cloud) Flexibility"
-      },
-
-      {
-        "icon": "fa fa-shield",
-        "title": "Self-Healing Containers"
-      },
-      {
-        "icon": "fa fa-arrows-alt",
-        "title": "Containerize Monolithic Applications"
-      },
-      {
-        "icon": "fa fa-repeat",
-        "title": "Automated Roll-outs & Roll-backs"
-      }
+      { "icon": "fa fa-lightbulb-o", "title": "Agile & Scalable Architecture" },
+      { "icon": "fa fa-tachometer", "title": "High-Performance Deployments" },
+      { "icon": "fa fa-cogs", "title": "Improved Application Development" },
+      { "icon": "fa fa-money", "title": "Optimize IT Costs" },
+      { "icon": "fa fa-cloud", "title": "Multi-Cloud & Hybrid Flexibility" },
+      { "icon": "fa fa-shield", "title": "Self-Healing Containers" },
+      { "icon": "fa fa-arrows-alt", "title": "Containerize Legacy Apps" },
+      { "icon": "fa fa-repeat", "title": "Automated Rollouts & Rollbacks" }
     ]
   },
   "service_details": {
-    "title": "What we offer in Kubernetes Consulting?",
-    "subtitle": "As a CNCF trusted Kubernetes Certified Service Provider (KCSP), explore what our Kubernetes consultants can help you with:",
+    "title": "Our Kubernetes Consulting Services",
+    "subtitle": "As a trusted KCSP, our experts provide end-to-end Kubernetes solutions:",
     "sections": [
       {
-        "title": "Kubernetes Advisory Services",
-        "description": "Companies planning to adopt Kubernetes can leverage InfraCloud’s consulting services for a smooth Kubernetes adoption and onboarding. Our Kubernetes consultants have experience of all major cloud providers ‑ AWS, GCP, Azure.",
+        "title": "Kubernetes Advisory",
+        "description": "Plan and adopt Kubernetes with minimal friction, leveraging our expertise across AWS, GCP, and Azure.",
         "offerings": [
-          "The Kubernetes consulting services include comparing current processes to industry standards and creating a roadmap for a successful Kubernetes implementation.",
-          "Our team of Kubernetes consultants assesses and audits your current infrastructure for readiness and maturity of your application ecosystem and provides detailed recommendations for cloud native journey.",
-          "With an actionable deployment plan best suited to achieving your business goals, you’re ready to get started with Kubernetes implementation."
+          "Audit existing infrastructure and benchmark against industry standards.",
+          "Create a tailored roadmap for successful Kubernetes adoption.",
+          "Deliver actionable implementation plans aligned with your business objectives."
         ],
         "image": "https://www.infracloud.io/assets/img/baremetal-provisioning-consulting/on-prem-hardware-to-maas-optimized-baremetal-provisioning-with-expert-guidance.svg"
       },
       {
-        "title": "Kubernetes Application Development & Migration",
-        "description": "We help you build new apps or migrate from monolith to microservices architecture. We deconstruct and segregate your legacy system into smaller, manageable containerized workloads making it Kubernetes‑ready.",
+        "title": "Application Development & Migration",
+        "description": "Build new applications or migrate monoliths to Kubernetes-ready microservices for scalability and flexibility.",
         "offerings": [
-          "Building Kubernetes‑ready apps with greenfield implementation for organizations revamping their IT from scratch.",
-          "Deconstructing your tightly integrated monolith app into loosely coupled microservices that can talk to each other offering unparalleled flexibility.",
-          "Providing you a single pane of glass for all your Kubernetes clusters across environments for multicluster management."
+          "Develop greenfield Kubernetes-ready applications.",
+          "Break monoliths into loosely coupled microservices.",
+          "Centralized management for multi-cluster Kubernetes environments."
         ],
         "image": "https://www.infracloud.io/assets/img/baremetal-provisioning-consulting/on-prem-hardware-to-maas-optimized-baremetal-provisioning-with-expert-guidance.svg"
       },
       {
         "title": "Kubernetes Deployment Partner",
-        "description": "Working with 100+ customers, we understand deploying Kubernetes on production can be complex. Our Kubernetes consultancy team ensures that you get it right the first time in cloud or on‑prem, right from the strategy to implementation stage.",
+        "description": "Deploy production-grade Kubernetes clusters on cloud or on-premises with high availability and reliability.",
         "offerings": [
-          "Deploying production‑ready Kubernetes clusters on private, public, or on‑prem (bare metal) following the roadmap & best practices recommended during Kubernetes consultancy.",
-          "Enabling provisioning of highly available clusters supporting auto‑healing and scalability to match the ongoing demand.",
-          "Integrating essential apps like Prometheus, necessary security implementation, and RBAC policies.",
-          "If you’re deploying ML models, our Kubernetes consultants can help you."
+          "Provision resilient clusters with auto-healing and scalability.",
+          "Integrate essential tools like Prometheus and RBAC policies.",
+          "Support deployment of ML workloads on Kubernetes."
         ],
         "image": "https://www.infracloud.io/assets/img/baremetal-provisioning-consulting/on-prem-hardware-to-maas-optimized-baremetal-provisioning-with-expert-guidance.svg"
       },
       {
-        "title": "DevSecOps ‑ Enabling Security & Compliance",
-        "description": "Make your Kubernetes workloads safe with shift left approach and implementing the right security best practices for maximum productivity.",
+        "title": "DevSecOps & Compliance",
+        "description": "Secure Kubernetes workloads with shift-left security and compliance best practices.",
         "offerings": [
-          "Enabling role‑based access to nodes, network segmentation, implementing of network policies, and automatic upgrades.",
-          "Enhancing security by integrating with open source and third‑party tools, and continuous container scanning to detect and identify the threats on a near real‑time basis.",
-          "With an effective secured environment, sign, scan, deploy packages, and administer clusters."
+          "Role-based access, network segmentation, and automatic upgrades.",
+          "Continuous container scanning with open source and third-party tools.",
+          "Sign, scan, and deploy packages safely across clusters."
         ],
         "image": "https://www.infracloud.io/assets/img/baremetal-provisioning-consulting/on-prem-hardware-to-maas-optimized-baremetal-provisioning-with-expert-guidance.svg"
       },
       {
-        "title": "Kubernetes Professional Support and Training",
-        "description": "Enterprise support from an experienced team of Kubernetes architects, & engineers to fix ANY configuration issues in your public, private clouds, or bare metal. This includes tooling like monitoring, proxy servers, networking, policy enforcement, etc.",
+        "title": "Enterprise Support & Training",
+        "description": "Ongoing Kubernetes support and training for teams on public, private, or on-prem environments.",
         "offerings": [
-          "Enabling observability and vulnerability scanning to detect issues in real‑time before any impact on the business.",
-          "Our Kubernetes consultants and architects enable your engineers with the skills they need for self sufficiently handling the all‑new cloud native environment like a champ.",
-          "Be ready for any situation by implementing a Kubernetes backup and disaster recovery strategy.",
-          "Cost management by enabling cost reportings for business unit or executive level.",
-          "Assured assistance for regular Kubernetes updates, patches, and rapid releases."
+          "Observability and vulnerability scanning to prevent downtime.",
+          "Train engineers for self-sufficient cloud-native operations.",
+          "Implement backup, DR strategies, and cost management.",
+          "Ensure timely updates, patches, and rapid releases."
         ],
         "image": "https://www.infracloud.io/assets/img/baremetal-provisioning-consulting/on-prem-hardware-to-maas-optimized-baremetal-provisioning-with-expert-guidance.svg"
       }
     ]
   },
-
   "industries": {
-    "title": "We Understand the Nitty-Gritty!",
-    "subtitle": "Gain leverage with our proven artificial intelligence expertise & industry exposure. Working with 100+ clients, we know the criticalities, compliances & the importance of getting things right in the first go.",
-    "additional_text": "Be it an enterprise with datacenters across the world or a rapidly scaling startup, we got it covered!",
+    "title": "Industry Expertise",
+    "subtitle": "With experience serving 100+ clients, we understand critical requirements, compliance, and operational excellence.",
+    "additional_text": "From global enterprises to fast-growing startups, we deliver reliable Kubernetes solutions.",
     "sectors": [
       {
         "icon": "fa fa-bank",
-        "title": "Banking and Finance",
-        "description": "Customers demand highly available & compliant systems to efficiently handle transactions & payment requests 24/7."
+        "title": "Banking & Finance",
+        "description": "Highly available, compliant systems for secure 24/7 transactions."
       },
       {
         "icon": "fa fa-laptop",
-        "title": "Technology, SaaS & Internet",
-        "description": "Focus on integrating AI within your SaaS on the top of the cloud built for AI while we build & manage your GPU server for performance."
+        "title": "Technology & SaaS",
+        "description": "Integrate AI and manage GPU servers for high-performance SaaS platforms."
       },
       {
         "icon": "fa fa-car",
         "title": "Automotive",
-        "description": "Keep up with the AI & machine learning with the rising customer expectations and integrate more technologies while reaching heights of a safer and sustainable future."
+        "description": "Leverage AI & ML to meet customer expectations while ensuring safety and sustainability."
       },
       {
         "icon": "fa fa-plug",
         "title": "Energy, Oil & Gas",
-        "description": "Modernize your system to streamline inspections, better resource monitoring, visualize data, and reduce operational costs."
+        "description": "Modernize systems for inspections, monitoring, and cost reduction."
       },
       {
         "icon": "fa fa-hospital-o",
         "title": "Healthcare",
-        "description": "Leverage the power of cloud GPU instances to process patient data at speed to adapt to the rapidly evolving healthcare demands."
+        "description": "Use cloud GPU instances for fast, secure processing of patient data."
       },
       {
         "icon": "fa fa-plane",
         "title": "Travel & Hospitality",
-        "description": "Delight your customers with seamless operation & instant updates using cost-effective, flexible, and scalable system."
+        "description": "Deliver seamless operations and instant updates with scalable systems."
       }
     ]
   },
   "open_source": {
     "title": "We Love Open Source",
-    "description": "We believe open source enables anyone to create technologies for a better tomorrow. Our developers have been constantly contributing to various cloud native projects and leveraging them to develop new OSS products.",
-    "cta_text": "Sneak peek at our OSS contributions",
+    "description": "Our team contributes to cloud-native projects and leverages OSS to build innovative solutions.",
+    "cta_text": "Explore Our OSS Contributions",
     "image": {
       "src": "https://appscode.com/assets/images/products/kubedb/kubedb-illustration-1.webp",
-      "alt": "We Love Open Source"
+      "alt": "Open Source Contributions"
     }
   },
   "tech_stack": {
-    "title": "Team with Diverse Set of Kubernetes Expertise",
-    "subtitle": "While working with more than 100+ customers, our certified Kubernetes consultants have gotten well versed in:",
+    "title": "Certified Kubernetes Expertise",
+    "subtitle": "Our engineers have hands-on experience with:",
     "technologies": [
-      {
-        "name": "Crossplane",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Kubernetes",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Prometheus",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "GraphQL",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Open Policy Agent",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Grafana",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Terraform",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Kasten",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "Thanos",
-        "logo": "https://placehold.co/600x400"
-      },
-      {
-        "name": "ArgoCD",
-        "logo": "https://placehold.co/600x400"
-      }
+      { "name": "Crossplane", "logo": "https://placehold.co/600x400" },
+      { "name": "Kubernetes", "logo": "https://placehold.co/600x400" },
+      { "name": "Prometheus", "logo": "https://placehold.co/600x400" },
+      { "name": "GraphQL", "logo": "https://placehold.co/600x400" },
+      { "name": "Open Policy Agent", "logo": "https://placehold.co/600x400" },
+      { "name": "Grafana", "logo": "https://placehold.co/600x400" },
+      { "name": "Terraform", "logo": "https://placehold.co/600x400" },
+      { "name": "Kasten", "logo": "https://placehold.co/600x400" },
+      { "name": "Thanos", "logo": "https://placehold.co/600x400" },
+      { "name": "ArgoCD", "logo": "https://placehold.co/600x400" }
     ]
   },
-
   "final_cta": {
     "title": "Looking for Kubernetes Support?",
-    "subtitle": "Consult Kubernetes expert to help you fix critical issues & configurations, provide managed services and ongoing enterprise Kubernetes support.",
+    "subtitle": "Get expert guidance, managed services, and enterprise support for Kubernetes deployments.",
     "buttons": [
       {
         "text": "Talk to a Kubernetes Expert",
@@ -216,37 +156,37 @@
     ]
   },
   "cards": {
-    "title": "Why choose InfraCloud for Kubernetes Consulting Services?",
+    "title": "Why Choose InfraCloud for Kubernetes?",
     "items": [
       {
         "icon": "fa fa-certificate",
         "title": "Certified Developers",
-        "description": "170 in-house engineers, including 4 CKS, 51 CKA & 19 Certified Kubernetes Application Developers."
+        "description": "170 engineers, including 4 CKS, 51 CKA & 19 Certified Kubernetes Application Developers."
       },
       {
         "icon": "fa fa-briefcase",
         "title": "Domain Expertise",
-        "description": "Implement the best Serverless practices that we have learned while working with 100+ clients."
+        "description": "Best practices from 100+ client projects."
       },
       {
         "icon": "fa fa-trophy",
         "title": "First Mover Advantage",
-        "description": "Partner with the first Kubernetes service provider in India and second in APAC."
+        "description": "First Kubernetes service provider in India, second in APAC."
       },
       {
         "icon": "fa fa-graduation-cap",
         "title": "Training",
-        "description": "Our training focuses on building knowledge of core concepts with practical experiences."
+        "description": "Hands-on Kubernetes and cloud-native training."
       },
       {
         "icon": "fa fa-certificate",
         "title": "CNCF Certified Provider",
-        "description": "AppsCode is a proud CNCF Silver Member, and Kubernetes Certified Service Provider (KCSP)."
+        "description": "AppsCode is a CNCF Silver Member and KCSP."
       },
       {
-        "icon": "fa fa-users  ",
-        "title": "Expand Easily",
-        "description": "With InfraCloud, easily scale up the team of engineers without the hassle of hiring or training."
+        "icon": "fa fa-users",
+        "title": "Scalable Teams",
+        "description": "Easily expand engineering teams without hassle."
       }
     ]
   }

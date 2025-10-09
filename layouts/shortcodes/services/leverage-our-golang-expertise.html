@@ -1,7 +1,7 @@
 {{ $jsonPath := .Get "data" | default .Page.Params.data }}
 {{ $data := getJSON $jsonPath | default dict }}
 
-{{ with $data.services }}
+{{ with $data.golang_expertise }}
 
 <!-- Leverage Golang Expertise Section -->
 <section class="section section-lg card-section">
