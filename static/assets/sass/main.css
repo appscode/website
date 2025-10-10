@@ -13864,12 +13864,7 @@ strong {
 .section-title {
   margin-bottom: 2rem;
   position: relative;
-  z-index: 8;
-  max-width: 80%;
-  margin: 0 auto; }
-  @media screen and (max-width: 1023px) {
-    .section-title {
-      max-width: 100%; } }
+  z-index: 8; }
   .section-title h1 {
     font-weight: 700;
     font-size: 48px;
@@ -19456,7 +19451,8 @@ Responsive Classes
       line-height: 140%;
       color: #515D63;
       margin-bottom: 1rem;
-      display: flex; }
+      display: flex;
+      gap: 8px; }
       .products-features .product-description .features li .material-icons {
         margin-right: 0.75rem;
         font-size: 1.2rem;
@@ -20231,6 +20227,13 @@ body.partner .fserv-button-submit {
     align-items: center;
     justify-content: center;
     margin-bottom: 16px; }
+
+.section-title.has-text-centered {
+  max-width: 80%;
+  margin: 0 auto; }
+  @media screen and (max-width: 1023px) {
+    .section-title.has-text-centered {
+      max-width: 100%; } }
 
 .product-development-process-section .tab-items {
   display: flex;

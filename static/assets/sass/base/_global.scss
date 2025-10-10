@@ -169,11 +169,6 @@
   margin-bottom: 2rem;
   position: relative;
   z-index: 8;
-  max-width: 80%;
-  margin: 0 auto;
-  @include touch {
-    max-width: 100%;
-  }
 
   h1 {
     font-weight: 700;
