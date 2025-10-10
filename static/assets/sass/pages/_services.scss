@@ -137,16 +137,21 @@
     &:first-child {
       border-right: 1px solid #e7e7e7;
     }
-    &:nth-child(3), &:nth-child(5) {
+    &:nth-child(3),
+    &:nth-child(5) {
       border-top: 1px solid #e7e7e7;
       border-right: 1px solid #e7e7e7;
     }
-    &:nth-child(4), &:nth-child(6) {
+    &:nth-child(4),
+    &:nth-child(6) {
       border-top: 1px solid #e7e7e7;
     }
     @include mobile {
       border: none !important;
-      &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
         border-top: none !important;
       }
     }
@@ -311,6 +316,13 @@
     }
   }
 }
+.section-title.has-text-centered {
+  max-width: 80%;
+  margin: 0 auto;
+  @include touch {
+    max-width: 100%;
+  }
+}
 .product-development-process-section {
   .tab-items {
     display: flex;
@@ -372,7 +384,6 @@
           display: block;
           line-height: 1;
           color: hsl(148, 15%, 75%);
-          
         }
         span {
           font-size: 0.875rem;
@@ -418,7 +429,7 @@
     margin-bottom: 1rem;
     font-weight: 700;
   }
-  p{
+  p {
     margin-bottom: 16px;
   }
 }
@@ -447,7 +458,6 @@
       height: 60px;
       object-fit: contain;
     }
-    
   }
 }
 
@@ -494,37 +504,35 @@
 
 .working-scenarios-section {
   .single-feature {
-   .icon {
+    .icon {
       width: 36px;
       height: 36px;
       background-color: transparent !important;
       padding: 0;
-   }
+    }
   }
 }
 .service-wrapper {
-   .service-content {
-      h3 {
-        margin-bottom: 1rem;
-        font-weight: 700;
-      }
-      p {
+  .service-content {
+    h3 {
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    p {
+      margin-bottom: 16px;
+    }
+    ul {
+      li {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
         margin-bottom: 16px;
-      }
-      ul{
-        li{
-             display: flex;
-              align-items: flex-start;
-              gap: 8px;
-              margin-bottom: 16px;
-          .icon {
-            margin-top: 3px;
-          }
+        .icon {
+          margin-top: 3px;
         }
       }
     }
+  }
   .service-thumbnail {
-   
-   
   }
 }
