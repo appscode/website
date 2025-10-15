@@ -19,7 +19,7 @@
         <div class="columns is-multiline">
             {{ range $item := $data.resources.items }}
             <div class="column is-4">
-                <a href="#" class="resource-card">
+                <a href="{{ $item.link }}" class="resource-card">
                     {{ if $item.image }}
                     <div class="resource-thumbnail">
                         <img src="{{ $item.image }}" alt="{{ $item.title }}">
