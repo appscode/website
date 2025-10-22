@@ -16,13 +16,13 @@
         </div>
         <div class="buttons is-centered">
             {{ range $data.final_cta.buttons }}
-            <button
+            <a href="{{ .url }}"
                 class="button ac-button {{ if .primary }}is-primary{{ end }} {{ if .outlined }}is-outlined{{ end }}">
                 <span class="icon">
                     <i class="{{ .icon }}"></i>
                 </span>
                 <span>{{ .text }}</span>
-            </button>
+            </a>
             {{ end }}
         </div>
     </div>
