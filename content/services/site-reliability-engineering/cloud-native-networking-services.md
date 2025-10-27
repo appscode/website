@@ -2,7 +2,7 @@
 id: cloud-native-networking-services
 title: cloud-native-networking-services
 layout: services
-url: '/cloud-native-networking-services'
+url: '/services/cloud-native-networking-services'
 data: 'data/services/site-reliability-engineering/cloud_native_networking_services.json'
 ---
 

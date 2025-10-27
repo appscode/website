@@ -2,7 +2,7 @@
 id: argo-cd-consulting-support
 title: argo-cd-consulting-support
 layout: services
-url: '/argo-cd-consulting-support'
+url: '/services/argo-cd-consulting-support'
 data: 'data/services/application-modernization/argo_cd_consulting_support.json'
 ---
 

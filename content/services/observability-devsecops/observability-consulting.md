@@ -2,7 +2,7 @@
 id: observability-consulting
 title: observability-consulting
 layout: services
-url: '/observability-consulting'
+url: '/services/observability-consulting'
 data: 'data/services/observability-devsecops/observability_consulting.json'
 ---
 <!-- Build Better Cloud Native Products Faster -->

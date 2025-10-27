@@ -2,7 +2,7 @@
 id: extending-kubernetes-comprehensive-guide-whitepaper
 title: Get Comprehensive Guide to Extend Kubernetes
 layout: services
-url: '/extending-kubernetes-comprehensive-guide-whitepaper'
+url: '/services/extending-kubernetes-comprehensive-guide-whitepaper'
 data: 'data/services/product-engineering/extending_kubernetes_comprehensive_guide_whitepaper.json'
 ---
 

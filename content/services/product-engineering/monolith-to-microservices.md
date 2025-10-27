@@ -2,7 +2,7 @@
 id: monolith-microservices-modernization
 title: monolith-microservices-modernization
 layout: services
-url: '/monolith-microservices-modernization'
+url: '/services/monolith-microservices-modernization'
 data: 'data/services/product-engineering/monolith_to_microservices.json'
 ---
 

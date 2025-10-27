@@ -2,7 +2,7 @@
 id: jenkins-consulting-support
 title: jenkins-consulting-support
 layout: services
-url: '/jenkins-consulting-support'
+url: '/services/jenkins-consulting-support'
 data: 'data/services/application-modernization/jenkins_consulting_support.json'
 ---
 

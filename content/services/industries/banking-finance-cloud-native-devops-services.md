@@ -2,7 +2,7 @@
 id: banking-finance-cloud-native-devops-services
 title: banking-finance-cloud-native-devops-services
 layout: services
-url: '/banking-finance-cloud-native-devops-services'
+url: '/services/banking-finance-cloud-native-devops-services'
 data: 'data/services/industries/banking_finance_cloud_native_devops_services.json'
 ---
 {{< common/hero-area >}}

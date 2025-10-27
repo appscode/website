@@ -2,7 +2,7 @@
 id: sre-consulting-services
 title: sre-consulting-services
 layout: services
-url: '/sre-consulting-services'
+url: '/services/sre-consulting-services'
 data: 'data/services/site-reliability-engineering/sre_consulting_services.json'
 ---
 

@@ -2,7 +2,7 @@
 id: ci-cd-consulting
 title: ci-cd-consulting
 layout: services
-url: '/ci-cd-consulting'
+url: '/services/ci-cd-consulting'
 data: 'data/services/platform-engineering/ci_cd_consulting.json'
 ---
 

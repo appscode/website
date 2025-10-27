@@ -2,7 +2,7 @@
 id: prometheus-monitoring-support
 title: prometheus-monitoring-support
 layout: services
-url: '/prometheus-monitoring-support'
+url: '/services/prometheus-monitoring-support'
 data: 'data/services/observability-devsecops/prometheus_monitoring_support.json'
 ---
 {{< common/hero-area >}}

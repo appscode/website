@@ -2,7 +2,7 @@
 id: kubernetes-consulting-partner
 title: kubernetes-consulting-partner
 layout: services
-url: '/kubernetes-consulting-partner'
+url: '/services/kubernetes-consulting-partner'
 data: 'data/services/application-modernization/kubernetes_consulting_partner.json'
 ---
 

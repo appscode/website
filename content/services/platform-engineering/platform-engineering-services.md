@@ -2,7 +2,7 @@
 id: platform-engineering-services
 title: platform-engineering-services
 layout: services
-url: '/platform-engineering-services'
+url: '/services/platform-engineering-services'
 data: 'data/services/platform-engineering/platform_engineering_services.json'
 ---
 

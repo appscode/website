@@ -2,7 +2,7 @@
 id: terraform-consulting
 title: terraform-consulting
 layout: services
-url: '/terraform-consulting'
+url: '/services/terraform-consulting'
 data: 'data/services/site-reliability-engineering/terraform_consulting.json'
 ---
 
