@@ -2,7 +2,7 @@
 id: service-mesh-consulting
 title: service-mesh-consulting
 layout: services
-url: '/service-mesh-consulting'
+url: '/services/service-mesh-consulting'
 data: 'data/services/site-reliability-engineering/service_mesh_consulting.json'
 ---
 

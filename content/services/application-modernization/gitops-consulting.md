@@ -2,7 +2,7 @@
 id: gitops-consulting
 title: gitops-consulting
 layout: services
-url: '/gitops-consulting'
+url: '/services/gitops-consulting'
 data: 'data/services/application-modernization/gitops_consulting.json'
 ---
 

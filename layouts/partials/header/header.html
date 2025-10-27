@@ -348,7 +348,7 @@
                         {{ range $index, $service := site.Data.services.services_menu.servicesMenu }}
                           <div class="product-description offering-content {{ if eq $index 0 }}is-block{{ end }}" id="offerings-{{ $service.title | urlize }}" style="border-left: none;padding-left: 0;">
                             {{ range $offering := $service.offerings }}
-                              <a href="/{{ $offering.id }}" class="single-product">
+                              <a href="/services/{{ $offering.id }}" class="single-product">
                                 <!-- <div class="product-logo">
                                   {{ if $offering.icon }}
                                     <iconify-icon icon="{{ $offering.icon }}" width="24" height="24"></iconify-icon>

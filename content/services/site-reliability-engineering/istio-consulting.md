@@ -2,7 +2,7 @@
 id: istio-consulting
 title: istio-consulting
 layout: services
-url: '/istio-consulting'
+url: '/services/istio-consulting'
 data: 'data/services/site-reliability-engineering/istio_consulting.json'
 ---
 

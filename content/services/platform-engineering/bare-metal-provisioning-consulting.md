@@ -2,7 +2,7 @@
 id: bare-metal-provisioning-consulting
 title: bare-metal-provisioning-consulting
 layout: services
-url: '/bare-metal-provisioning-consulting'
+url: '/services/bare-metal-provisioning-consulting'
 data: 'data/services/platform-engineering/bare_metal_provisioning_consulting.json'
 ---
 

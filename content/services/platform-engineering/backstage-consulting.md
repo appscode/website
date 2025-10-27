@@ -2,7 +2,7 @@
 id: backstage-consulting-support
 title: Backstage Consulting & Enterprise Support
 layout: services
-url: '/backstage-consulting-support'
+url: '/services/backstage-consulting-support'
 data: 'data/services/platform-engineering/backstage_consulting.json'
 ---
 

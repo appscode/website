@@ -2,7 +2,7 @@
 id: build-devops-toolchain
 title: build-devops-toolchain
 layout: services
-url: '/build-devops-toolchain'
+url: '/services/build-devops-toolchain'
 data: 'data/services/application-modernization/build_devops_toolchain.json'
 ---
 

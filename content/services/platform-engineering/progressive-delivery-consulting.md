@@ -2,7 +2,7 @@
 id: progressive-delivery-consulting
 title: progressive-delivery-consulting
 layout: services
-url: '/progressive-delivery-consulting'
+url: '/services/progressive-delivery-consulting'
 data: 'data/services/platform-engineering/progressive_delivery_consulting.json'
 ---
 

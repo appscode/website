@@ -2,7 +2,7 @@
 id: devsecops-consulting-services
 title: devsecops-consulting-services
 layout: services
-url: '/devsecops-consulting-services'
+url: '/services/devsecops-consulting-services'
 data: 'data/services/observability-devsecops/devsecops_consulting_services.json'
 ---
 <!-- Build Better Cloud Native Products Faster -->

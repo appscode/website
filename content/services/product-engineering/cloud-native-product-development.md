@@ -2,7 +2,7 @@
 id: cloud-native-product-development
 title: cloud-native-product
 layout: services
-url: '/product-engineering-cloud-native-product-development'
+url: '/services/product-engineering-cloud-native-product-development'
 data: 'data/services/product-engineering/cloud_native_product_development.json'
 ---
 

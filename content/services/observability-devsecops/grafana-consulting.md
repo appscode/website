@@ -2,7 +2,7 @@
 id: grafana-consulting
 title: grafana-consulting
 layout: services
-url: '/grafana-consulting'
+url: '/services/grafana-consulting'
 data: 'data/services/observability-devsecops/grafana_consulting.json'
 ---
 {{< common/hero-area >}}

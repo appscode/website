@@ -2,7 +2,7 @@
 id: kubernetes-disaster-recovery
 title: kubernetes-disaster-recovery
 layout: services
-url: '/kubernetes-disaster-recovery'
+url: '/services/kubernetes-disaster-recovery'
 data: 'data/services/site-reliability-engineering/kubernetes_disaster_recovery.json'
 ---
 
