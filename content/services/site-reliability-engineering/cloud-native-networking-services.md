@@ -23,7 +23,7 @@ data: 'data/services/site-reliability-engineering/cloud_native_networking_servic
 {{< services/we-love-open-source >}}
 
 {{< common/cards-large-preview >}}
-<!-- Why Choose InfraCloud as your Microservices Adoption Partner? -->
+<!-- Why Choose AppsCode as your Microservices Adoption Partner? -->
 {{< common/cards >}}
 
 <!-- Ready to Build Better Cloud Native Products? -->

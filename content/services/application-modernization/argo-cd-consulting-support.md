@@ -23,7 +23,7 @@ data: 'data/services/application-modernization/argo_cd_consulting_support.json'
 
 
 <!-- need this section: Implement Progressive Delivery with Argo Rollouts, Flagger Experts -->
-<!-- Why InfraCloud for Progressive Delivery Consulting Services? -->
+<!-- Why AppsCode for Progressive Delivery Consulting Services? -->
 {{< common/cards >}}
 <!-- Team with the Diverse Set of Technical Expertise -->
 {{< common/expertise >}}

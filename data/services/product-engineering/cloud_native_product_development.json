@@ -143,43 +143,64 @@
     "steps": [
       {
         "date": "01",
-        "month": "Sept",
+        "month": "Step",
         "title": "Discover Opportunities",
         "active": false
       },
       {
         "date": "02",
-        "month": "Sept",
+        "month": "Step",
         "title": "Build MVP",
         "active": false
       },
       {
         "date": "03",
-        "month": "Sept",
+        "month": "Step",
         "title": "Development",
         "active": true
       },
       {
         "date": "04",
-        "month": "Sept",
+        "month": "Step",
         "title": "Launch",
         "active": false
       },
       {
         "date": "05",
-        "month": "Sept",
+        "month": "Step",
         "title": "Scale",
         "active": false
       }
     ],
     "active_content": [
       {
-        "image": "https://www.infracloud.io/assets/img/product-engineering/development.svg",
+        "image": "https://www.appscode.com/assets/img/product-engineering/discover.svg",
+        "description": "We start by understanding your business goals, challenges, and target users. Through workshops and research, we identify opportunities where cloud-native technologies can deliver maximum impact. This phase ensures alignment between product vision and market needs.",
+        "active": false
+      },
+      {
+        "image": "https://www.appscode.com/assets/img/product-engineering/mvp.svg",
+        "description": "We translate validated ideas into a Minimum Viable Product (MVP) to test core hypotheses quickly. Our cross-functional teams focus on delivering tangible value using modern cloud-native stacks and CI/CD pipelines for fast feedback and iteration.",
+        "active": false
+      },
+      {
+        "image": "https://www.appscode.com/assets/img/product-engineering/development.svg",
         "description": "After validating the MVP and defining requirements, our engineers work iteratively with your product teams. We leverage Kubernetes for orchestration, microservices for modularity, and DevOps pipelines for continuous delivery — ensuring each release is observable, secure, and ready for scale.",
         "active": true
+      },
+      {
+        "image": "https://www.appscode.com/assets/img/product-engineering/launch.svg",
+        "description": "Once the product meets stability and performance benchmarks, we prepare for production launch. This includes final validation, observability setup, and rollout strategies to ensure smooth deployment across environments with zero downtime.",
+        "active": false
+      },
+      {
+        "image": "https://www.appscode.com/assets/img/product-engineering/scale.svg",
+        "description": "After launch, we continuously monitor performance and user metrics to identify growth opportunities. We help scale your platform with advanced automation, resilience strategies, and optimization of cloud resources for cost efficiency and performance.",
+        "active": false
       }
     ]
   },
+
   "industries": {
     "title": "Industry Expertise That Drives Results",
     "subtitle": "With experience across 100+ clients, AppsCode Inc. understands industry-specific compliance, scale, and reliability demands when building cloud-native solutions.",

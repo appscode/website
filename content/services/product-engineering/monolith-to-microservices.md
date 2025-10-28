@@ -24,7 +24,7 @@ data: 'data/services/product-engineering/monolith_to_microservices.json'
 
 <!-- <p>Your Microservices Adoption Journey</p> -->
 
-<!-- Why Choose InfraCloud as your Microservices Adoption Partner? -->
+<!-- Why Choose AppsCode as your Microservices Adoption Partner? -->
 {{< common/cards >}}
 
 <!-- Ready to Build Better Cloud Native Products? -->
