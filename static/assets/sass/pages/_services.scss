@@ -324,6 +324,15 @@
   }
 }
 .product-development-process-section {
+  .steps-wrapper {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 16px;
+    @include touch {
+      grid-template-columns: 1fr;
+    }
+  }
+
   .tab-items {
     display: flex;
     flex-direction: column;
@@ -403,6 +412,11 @@
     background: #ffffff;
     // box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
     height: 100%;
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+    &.is-active {
+      display: block;
+    }
 
     h4 {
       font-size: 18px;
@@ -537,5 +551,16 @@
 .hero-illustration {
   img {
     max-height: 450px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
