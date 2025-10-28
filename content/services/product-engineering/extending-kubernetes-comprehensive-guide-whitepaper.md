@@ -5,11 +5,9 @@ layout: services
 url: '/services/extending-kubernetes-comprehensive-guide-whitepaper'
 data: 'data/services/product-engineering/extending_kubernetes_comprehensive_guide_whitepaper.json'
 ---
-
-<!-- Build Better Cloud Native Products Faster -->
 {{< common/hero-area >}}
-<!-- By your side in your Microservices adoption journey -->
 {{< common/service-details >}}
-<!-- Team with the Diverse Set of Technical Expertise -->
 {{< common/expertise >}}
+{{< common/faq >}}
+
 

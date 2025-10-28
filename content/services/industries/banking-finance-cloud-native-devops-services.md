@@ -13,6 +13,7 @@ data: 'data/services/industries/banking_finance_cloud_native_devops_services.jso
 {{< services/we-understand-the-nitty-gritty >}}
 {{< services/we-love-open-source >}}
 {{< common/cta-area >}}
+{{< common/faq >}}
 
 
 

@@ -13,3 +13,4 @@ data: 'data/services/industries/automotive_cloud_native_devops_services.json'
 {{< services/we-understand-the-nitty-gritty >}}
 {{< services/we-love-open-source >}}
 {{< common/cta-area >}}
+{{< common/faq >}}

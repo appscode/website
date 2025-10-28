@@ -14,6 +14,7 @@ data: 'data/services/observability-devsecops/prometheus_monitoring_support.json'
 {{< common/cta-area >}}
 {{< common/cards >}}
 {{< common/expertise >}}
+{{< common/faq >}}
 
 
 
