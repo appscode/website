@@ -20235,6 +20235,13 @@ body.partner .fserv-button-submit {
     .section-title.has-text-centered {
       max-width: 100%; } }
 
+.product-development-process-section .steps-wrapper {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 16px; }
+  @media screen and (max-width: 1023px) {
+    .product-development-process-section .steps-wrapper {
+      grid-template-columns: 1fr; } }
 .product-development-process-section .tab-items {
   display: flex;
   flex-direction: column;
@@ -20292,7 +20299,11 @@ body.partner .fserv-button-submit {
   border: 1px solid #e7e7e7;
   border-radius: 8px;
   background: #ffffff;
-  height: 100%; }
+  height: 100%;
+  display: none;
+  animation: fadeIn 0.3s ease-in-out; }
+  .product-development-process-section .tab-content.is-active {
+    display: block; }
   .product-development-process-section .tab-content h4 {
     font-size: 18px;
     font-weight: 600;
@@ -20388,5 +20399,13 @@ body.partner .fserv-button-submit {
 
 .hero-illustration img {
   max-height: 450px; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
 
 /*# sourceMappingURL=main.css.map */
