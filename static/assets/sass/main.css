@@ -14215,6 +14215,13 @@ Responsive Classes
 @media (min-width: 1216px) and (max-width: 1440px) {
   .container {
     max-width: 1200px !important; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
 .lightbox {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -15817,7 +15824,11 @@ Responsive Classes
     padding: 0.5rem 0; }
     .navbar-appscode.container .mega-menu-wrapper {
       width: calc(100% + 100%);
-      left: -50%; }
+      left: -50%;
+      min-height: 525px; }
+      @media screen and (max-width: 1023px) {
+        .navbar-appscode.container .mega-menu-wrapper {
+          min-height: auto; } }
   .navbar-appscode .navbar-right .button.ac-button {
     height: 40px; }
   .navbar-appscode.documentation-menu {
@@ -16063,7 +16074,8 @@ Responsive Classes
       opacity: 0;
       display: none;
       visibility: hidden;
-      transition: 0.3s ease-in-out; }
+      transition: 0.3s ease-in-out;
+      animation: fadeIn 0.2s ease-in-out; }
       .mega-menu-wrapper .mega-menu-inner .product-description.is-block {
         opacity: 1;
         visibility: visible; }
@@ -20259,9 +20271,8 @@ body.partner .fserv-button-submit {
     align-items: center; }
     .product-development-process-section .tab-items .tab-item.is-active {
       background-color: var(--ac-primary);
-      border: none;
+      border: 1px solid var(--ac-primary);
       color: #ffffff;
-      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
       cursor: default; }
       .product-development-process-section .tab-items .tab-item.is-active .date strong {
         color: var(--ac-primary); }
@@ -20301,7 +20312,8 @@ body.partner .fserv-button-submit {
   background: #ffffff;
   height: 100%;
   display: none;
-  animation: fadeIn 0.3s ease-in-out; }
+  animation: fadeIn 0.3s ease-in-out;
+  text-align: center; }
   .product-development-process-section .tab-content.is-active {
     display: block; }
   .product-development-process-section .tab-content h4 {
@@ -20315,7 +20327,6 @@ body.partner .fserv-button-submit {
   .product-development-process-section .tab-content img {
     max-width: 100%;
     height: auto;
-    width: 100%;
     max-height: 200px; }
 
 .features-area h3 {
@@ -20399,13 +20410,5 @@ body.partner .fserv-button-submit {
 
 .hero-illustration img {
   max-height: 450px; }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(5px); }
-  to {
-    opacity: 1;
-    transform: translateY(0); } }
 
 /*# sourceMappingURL=main.css.map */
