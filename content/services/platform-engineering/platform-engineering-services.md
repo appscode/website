@@ -13,7 +13,7 @@ data: 'data/services/platform-engineering/platform_engineering_services.json'
 {{< common/customer-logos >}}
 <!-- Platform Engineering Services for Growth -->
 {{< common/service-details >}}
-<!-- InfraCloud’s AAA Framework for Platform Engineering -->
+<!-- AppsCode’s AAA Framework for Platform Engineering -->
 {{< common/cards-group >}}
 <!-- Serverless Consulting Services Benefits -->
 {{< common/title-with-small-cards >}}

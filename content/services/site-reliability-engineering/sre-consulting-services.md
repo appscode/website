@@ -24,7 +24,7 @@ data: 'data/services/site-reliability-engineering/sre_consulting_services.json'
 
 <!-- <p>Your Microservices Adoption Journey</p> -->
 
-<!-- Why Choose InfraCloud as your Microservices Adoption Partner? -->
+<!-- Why Choose AppsCode as your Microservices Adoption Partner? -->
 {{< common/cards >}}
 
 <!-- Ready to Build Better Cloud Native Products? -->

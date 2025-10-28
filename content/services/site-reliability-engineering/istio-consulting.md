@@ -21,7 +21,7 @@ data: 'data/services/site-reliability-engineering/istio_consulting.json'
 {{< services/we-understand-the-nitty-gritty >}}
 <!-- We Love Open Source -->
 {{< services/we-love-open-source >}}
-<!-- Why Choose InfraCloud as your Microservices Adoption Partner? -->
+<!-- Why Choose AppsCode as your Microservices Adoption Partner? -->
 {{< common/cards >}}
 
 <!-- Ready to Build Better Cloud Native Products? -->
