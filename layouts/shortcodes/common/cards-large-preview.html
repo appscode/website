@@ -17,7 +17,10 @@
             <div class="column is-4">
                 <div class="single-feature card-view">
                     <div class="icon">
-                        <i class="{{ $item.icon }}"></i>
+                        {{ if or $item.icon $item.logo }}
+                            {{ with $item.icon }}<i class="{{ . }}"></i>{{ end }}
+                            {{ with $item.logo }}<img src="{{ . }}" alt="{{ $item.title }} Logo">{{ end }}
+                        {{ end }}
                     </div>
                     <h4>{{ $item.title }}</h4>
                     <p class="has-text-gray">
