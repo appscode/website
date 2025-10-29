@@ -15,9 +15,18 @@
   "title_with_small_cards": {
     "title": "Why GitOps Consulting & Implementation?",
     "areas": [
-      { "icon": "fa fa-code", "title": "Declarative Application & Ecosystem Management" },
-      { "icon": "fa fa-users", "title": "Enhanced Developer Experience & Productivity" },
-      { "icon": "fa fa-clock-o", "title": "Faster, Frequent Deployments & Releases" },
+      {
+        "icon": "fa fa-code",
+        "title": "Declarative Application & Ecosystem Management"
+      },
+      {
+        "icon": "fa fa-users",
+        "title": "Enhanced Developer Experience & Productivity"
+      },
+      {
+        "icon": "fa fa-clock-o",
+        "title": "Faster, Frequent Deployments & Releases"
+      },
       { "icon": "fa fa-bug", "title": "Rapid Failure Detection & Rollbacks" },
       { "icon": "fa fa-cogs", "title": "Reduced Operational Burden" },
       { "icon": "fa fa-database", "title": "Git as Single Source of Truth" },
@@ -122,7 +131,7 @@
   "tech_stack": {
     "title": "Diverse Technical Expertise",
     "subtitle": "Our certified engineers excel in:",
-   "technologies": [
+    "technologies": [
       {
         "name": "Crossplane",
         "logo": "/assets/images/technical-expertise/crossplane.svg"
@@ -159,7 +168,10 @@
         "name": "Thanos",
         "logo": "/assets/images/technical-expertise/thanos.svg"
       },
-      { "name": "ArgoCD", "logo": "/assets/images/technical-expertise/argocd.svg" }
+      {
+        "name": "ArgoCD",
+        "logo": "/assets/images/technical-expertise/argocd.svg"
+      }
     ]
   },
   "final_cta": {
@@ -177,40 +189,34 @@
     "title": "Expertise Across GitOps Tools",
     "items": [
       {
-        "icon": "fa fa-rocket",
+        "logo": "/assets/images/technical-expertise/argocd.svg",
         "title": "ArgoCD Experts",
-        "description": "Evaluate, design, implement, and manage ArgoCD for single or multi-cluster, multi-cloud deployments. Full adoption support with ApplicationSet and Rollouts.",
-        "image": "https://placehold.co/600x400"
+        "description": "Evaluate, design, implement, and manage ArgoCD for single or multi-cluster, multi-cloud deployments. Full adoption support with ApplicationSet and Rollouts."
       },
       {
-        "icon": "fa fa-rocket",
+        "logo": "/assets/images/technical-expertise/fluxcd.svg",
         "title": "FluxCD Experts",
-        "description": "Implement FluxCD workflows for your application ecosystem with best practices and post-implementation training for in-house expertise.",
-        "image": "https://placehold.co/600x400"
+        "description": "Implement FluxCD workflows for your application ecosystem with best practices and post-implementation training for in-house expertise."
       },
       {
-        "icon": "fa fa-rocket",
+        "logo": "/assets/images/technical-expertise/helm.svg",
         "title": "Helm Experts",
-        "description": "Create and manage Helm charts for microservices and streamline GitOps pipelines with expert guidance.",
-        "image": "https://placehold.co/600x400"
+        "description": "Create and manage Helm charts for microservices and streamline GitOps pipelines with expert guidance."
       },
       {
-        "icon": "fa fa-rocket",
+        "logo": "/assets/images/technical-expertise/kustomize.png",
         "title": "Kustomize Experts",
-        "description": "Assess, evaluate, and implement Kustomize to manage Kubernetes YAML configurations efficiently and choose the right approach between Helm and Kustomize.",
-        "image": "https://placehold.co/600x400"
+        "description": "Assess, evaluate, and implement Kustomize to manage Kubernetes YAML configurations efficiently and choose the right approach between Helm and Kustomize."
       },
       {
-        "icon": "fa fa-rocket",
+        "logo": "/assets/images/technical-expertise/werf.svg",
         "title": "Werf Experts",
-        "description": "Set up Werf for efficient CI/CD pipelines, manage deployments, and provide team training for GitOps pipeline operations.",
-        "image": "https://placehold.co/600x400"
+        "description": "Set up Werf for efficient CI/CD pipelines, manage deployments, and provide team training for GitOps pipeline operations."
       },
       {
-        "icon": "fa fa-rocket",
+        "logo": "/assets/images/technical-expertise/terragrunt.png",
         "title": "Terragrunt Experts",
-        "description": "Organize and streamline Terraform code with Terragrunt for multiple environments, keeping DRY principles intact.",
-        "image": "https://placehold.co/600x400"
+        "description": "Organize and streamline Terraform code with Terragrunt for multiple environments, keeping DRY principles intact."
       }
     ]
   },
