@@ -17,7 +17,13 @@
       <div class="column is-3">
         <div class="development-card">
           <div class="development-icon">
-            <i class="{{ .icon }}"></i>
+              {{ if or .icon .logo }}
+                {{ if .icon }}
+                  <i class="{{ .icon }}"></i>
+                {{ else if .logo }}
+                  <img src="{{ .logo }}" alt="{{ .title }} Logo">
+                {{ end }}
+              {{ end }}
           </div>
           <h4 class="title is-5">{{ .title }}</h4>
         </div>
