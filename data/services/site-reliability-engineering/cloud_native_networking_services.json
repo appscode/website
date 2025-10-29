@@ -99,7 +99,7 @@
     "title": "Why Partner with AppsCode for Cloud-Native Networking?",
     "items": [
       {
-        "icon": "fa fa-certificate",
+        "logo": "https://img.icons8.com/00a651/ios-glyphs/30/certificate.png",
         "title": "Certified Cloud-Native Experts",
         "description": "AppsCode engineers are CNCF-certified specialists in Kubernetes, networking, and DevOps."
       },
@@ -119,7 +119,7 @@
         "description": "We don’t just deploy; we enable your team to manage and evolve your cloud-native systems."
       },
       {
-        "icon": "fa fa-certificate",
+        "logo": "https://img.icons8.com/00a651/ios-glyphs/30/certificate.png",
         "title": "CNCF Silver Member",
         "description": "Proud member of the Cloud Native Computing Foundation and Kubernetes Certified Service Provider (KCSP)."
       },
@@ -179,14 +179,47 @@
     }
   },
 
-  "tech_stack": {
-    "title": "Deep Expertise Across Cloud-Native Networking Technologies",
-    "subtitle": "Our engineers bring hands-on experience with the most popular CNIs, service meshes, and networking frameworks.",
+ "tech_stack": {
+    "title": "Diverse Technical Expertise",
+    "subtitle": "Our engineers bring hands-on experience with multiple tools and frameworks for building modern, scalable platforms.",
     "technologies": [
-      { "name": "Cilium", "logo": "https://placehold.co/600x400?text=AppsCode" },
-      { "name": "Calico", "logo": "https://placehold.co/600x400?text=AppsCode" },
-      { "name": "Istio", "logo": "https://placehold.co/600x400?text=AppsCode" },
-      { "name": "Linkerd", "logo": "https://placehold.co/600x400?text=AppsCode" }
+      {
+        "name": "Crossplane",
+        "logo": "/assets/images/technical-expertise/crossplane.svg"
+      },
+      {
+        "name": "Kubernetes",
+        "logo": "/assets/images/technical-expertise/kubernetes.svg"
+      },
+      {
+        "name": "Prometheus",
+        "logo": "/assets/images/technical-expertise/prometheus.svg"
+      },
+      {
+        "name": "GraphQL",
+        "logo": "/assets/images/technical-expertise/graphql.svg"
+      },
+      {
+        "name": "Open Policy Agent",
+        "logo": "/assets/images/technical-expertise/open-policy-agent.png"
+      },
+      {
+        "name": "Grafana",
+        "logo": "/assets/images/technical-expertise/grafana.svg"
+      },
+      {
+        "name": "Terraform",
+        "logo": "/assets/images/technical-expertise/terraform.svg"
+      },
+      {
+        "name": "Kasten",
+        "logo": "/assets/images/technical-expertise/kasten.svg"
+      },
+      {
+        "name": "Thanos",
+        "logo": "/assets/images/technical-expertise/thanos.svg"
+      },
+      { "name": "ArgoCD", "logo": "/assets/images/technical-expertise/argocd.svg" }
     ]
   },
 

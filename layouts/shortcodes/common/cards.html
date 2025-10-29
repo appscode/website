@@ -18,7 +18,13 @@
             <div class="column is-4">
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="{{ .icon }}"></i>
+                         {{ if or .icon .logo }}
+                            {{ if .icon }}
+                                <i class="{{ .icon }}"></i>
+                            {{ else if .logo }}
+                                <img src="{{ .logo }}" alt="{{ .title }} Logo">
+                            {{ end }}
+                        {{ end }}
                     </div>
                     <h4 class="mt-16">{{ .title }}</h4>
                     <p class="has-text-gray">{{ .description }}</p>
