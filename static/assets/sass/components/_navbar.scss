@@ -1183,6 +1183,9 @@ Responsive Classes
       .community-items.ml-70 {
         margin-left: 10px !important;
       }
+      .buttons {
+        min-width: 354px !important;
+      }
       .button.ac-button {
         padding: .5rem 1rem;
       }
@@ -1192,7 +1195,7 @@ Responsive Classes
     }
     ul {
       .nav-item {
-        margin-right: 1.5rem;
+        margin-right: 12px;
       }
     }
   }

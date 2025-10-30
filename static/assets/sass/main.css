@@ -14222,6 +14222,29 @@ Responsive Classes
   to {
     opacity: 1;
     transform: translateY(0); } }
+@media screen and (max-width: 768px) {
+  .reverse-column-mobile {
+    flex-direction: column-reverse;
+    display: flex; } }
+
+.section-title.has-text-centered {
+  max-width: 80%;
+  margin: 0 auto 16px auto; }
+  @media screen and (max-width: 1023px) {
+    .section-title.has-text-centered {
+      max-width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .has-text-center-mobile {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
+
+@media screen and (max-width: 1023px) {
+  .section-title.has-text-centered-tablet p {
+    text-align: center; } }
+
 .lightbox {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -16552,12 +16575,14 @@ Responsive Classes
     width: calc(100% - 180px); }
     .navbar-appscode .navbar-right .community-items.ml-70 {
       margin-left: 10px !important; }
+    .navbar-appscode .navbar-right .buttons {
+      min-width: 354px !important; }
     .navbar-appscode .navbar-right .button.ac-button {
       padding: .5rem 1rem; }
   .navbar-appscode .navbar-right-group {
     gap: 8px !important; }
   .navbar-appscode ul .nav-item {
-    margin-right: 1.5rem; }
+    margin-right: 12px; }
 
   .mega-menu-wrapper .mega-menu-inner .product-menu {
     grid-template-columns: auto;
@@ -20034,12 +20059,25 @@ body.partner .fserv-button-submit {
     color: #636363;
     margin-bottom: 2rem;
     text-wrap: balance; }
+  @media screen and (max-width: 768px) {
+    .hero-area.is-services {
+      margin-top: 40px; }
+      .hero-area.is-services h1 {
+        font-size: 2rem; }
+      .hero-area.is-services .section-title h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        line-height: 1.4; } }
 
 .bg-light {
   background-color: #f9f9f9; }
 
 .benefits-section {
   margin-top: 50px; }
+  @media screen and (max-width: 768px) {
+    .benefits-section .section-title h2 {
+      text-align: center;
+      text-wrap: unset; } }
 
 .service-card {
   background: #ffffff;
@@ -20241,13 +20279,6 @@ body.partner .fserv-button-submit {
     justify-content: center;
     margin-bottom: 16px; }
 
-.section-title.has-text-centered {
-  max-width: 80%;
-  margin: 0 auto; }
-  @media screen and (max-width: 1023px) {
-    .section-title.has-text-centered {
-      max-width: 100%; } }
-
 .product-development-process-section .steps-wrapper {
   display: grid;
   grid-template-columns: 5fr 7fr;
@@ -20399,6 +20430,9 @@ body.partner .fserv-button-submit {
 .service-wrapper .service-content h3 {
   margin-bottom: 1rem;
   font-weight: 700; }
+  @media screen and (max-width: 768px) {
+    .service-wrapper .service-content h3 {
+      font-size: 1.5rem; } }
 .service-wrapper .service-content p {
   margin-bottom: 16px; }
 .service-wrapper .service-content ul li {
@@ -20411,5 +20445,10 @@ body.partner .fserv-button-submit {
 
 .hero-illustration img {
   max-height: 450px; }
+
+@media screen and (max-width: 768px) {
+  .services .section-title h2 {
+    font-size: 1.5rem;
+    letter-spacing: -0.3px; } }
 
 /*# sourceMappingURL=main.css.map */
