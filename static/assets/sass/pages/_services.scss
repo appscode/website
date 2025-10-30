@@ -26,12 +26,33 @@
     margin-bottom: 2rem;
     text-wrap: balance;
   }
+  @include mobile {
+    margin-top: 40px;
+    h1 {
+      font-size: 2rem;
+    }
+    .section-title {
+      h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        line-height: 1.4;
+      }
+    }
+  }
 }
 .bg-light {
   background-color: #f9f9f9;
 }
 .benefits-section {
   margin-top: 50px;
+  @include mobile {
+    .section-title {
+      h2 {
+        text-align: center;
+        text-wrap: unset;
+      }
+    }
+  }
 }
 .service-card {
   background: #ffffff;
@@ -317,13 +338,7 @@
     }
   }
 }
-.section-title.has-text-centered {
-  max-width: 80%;
-  margin: 0 auto;
-  @include touch {
-    max-width: 100%;
-  }
-}
+
 .product-development-process-section {
   .steps-wrapper {
     display: grid;
@@ -347,15 +362,10 @@
       text-align: center;
       border: 1px solid #e7e7e7;
       background: #ffffff;
-      // box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
       height: 100%;
       display: flex;
       align-items: center;
 
-      &:hover {
-        h4 {
-        }
-      }
       &.is-active {
         background-color: $ac-primary;
         border: 1px solid $ac-primary;
@@ -410,7 +420,6 @@
     border: 1px solid #e7e7e7;
     border-radius: 8px;
     background: #ffffff;
-    // box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
     height: 100%;
     display: none;
     animation: fadeIn 0.3s ease-in-out;
@@ -531,6 +540,9 @@
     h3 {
       margin-bottom: 1rem;
       font-weight: 700;
+      @include mobile {
+        font-size: 1.5rem;
+      }
     }
     p {
       margin-bottom: 16px;
@@ -554,5 +566,13 @@
   }
 }
 
-
-// ------------
+.services {
+  @include mobile {
+    .section-title {
+      h2 {
+        font-size: 1.5rem;
+        letter-spacing: -0.3px;
+      }
+    }
+  }
+}
