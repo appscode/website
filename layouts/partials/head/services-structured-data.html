@@ -1,0 +1,35 @@
+<p>before mhin</p>
+
+{{- if .Params.serviceType -}}
+<p>hello mohin</p>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "{{ .Params.serviceType }}",
+  "provider": {
+    "@type": "Organization",
+    "name": "Appscode Inc",
+    "url": "https://appscode.com",
+    "logo": "https://appscode.com/images/logo.png",
+    "sameAs": [
+      "https://www.linkedin.com/company/appscode/",
+      "https://twitter.com/appscode"
+    ]
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Worldwide"
+  },
+  "description": "{{ .Params.serviceDescription | plainify }}",
+  "offers": {
+    "@type": "Offer",
+    "url": "{{ .Permalink }}",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "price": "Custom",
+    "validFrom": "2025-01-01"
+  }
+}
+</script>
+{{- end -}}

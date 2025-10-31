@@ -1,0 +1,60 @@
+{{/* Load JSON from .Page.Params.data */}}
+{{ $data := dict }}
+{{ if .Page.Params.data }}
+  {{ $data = getJSON .Page.Params.data }}
+{{ end }}
+
+{{ with $data.faq }}
+<section class="faq-area section-padding">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column is-6">
+        <div class="faq-left">
+
+          <div class="faq-image">
+            <img src="/assets/images/illustrations/faq-green.png" alt="faq-image" loading="lazy" >
+          </div>
+
+          <h4 class="mb-8">Frequently Asked Questions</h4>
+          <p>Here are a few of the questions we get the most. If you don't see what's on your mind, contact us anytime.</p>
+
+          <div class="buttons mt-16">
+            <a href="https://appscode.com/contact/" class="button ac-button is-primary"> 
+              <span class="icon">
+                <iconify-icon icon="heroicons:chat-bubble-bottom-center" width="18" height="18"></iconify-icon>
+              </span>
+              <span>CONTACT SALES</span>
+            </a>
+            <a href="" class="button ac-button"
+               onclick="Calendly.initPopupWidget({url: 'https://calendly.com/appscode/intro'});return false;">
+              SCHEDULE DEMO
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="column is-6">
+        <div class="faq-right">
+          <div class="ac-accordion-wrapper">
+            {{ range $index, $item := . }}
+            <div class="single-accordion-item {{ if eq $index 0 }}open{{ else }}closed{{ end }}">
+              <div class="accordion-heading">
+                <h3>{{ $item.question }}</h3>
+                <button class="icon" title="{{ if eq $index 0 }}minus{{ else }}plus{{ end }}">
+                  <i class="fa {{ if eq $index 0 }}fa-minus{{ else }}fa-plus{{ end }}" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="accordion-body" style="{{ if eq $index 0 }}max-height: 500px; opacity:1;{{ end }}">
+                <p>{{ $item.answer }}</p>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{{ end }}
