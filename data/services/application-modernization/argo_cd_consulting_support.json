@@ -1,81 +1,81 @@
 {
   "hero": {
-    "title": "Argo CD Consulting & Implementation Partner",
-    "subtitle": "Helping organizations adopt Argo CD through expert consulting, seamless implementation, and enterprise support services.",
-    "cta_text": "Consult an Argo CD Expert",
+    "title": "Enterprise Argo CD Consulting & GitOps Implementation Experts",
+    "subtitle": "Accelerate your Kubernetes delivery pipelines with our enterprise-grade Argo CD consulting, implementation, and managed support services.",
+    "cta_text": "Talk to an Argo CD Expert",
     "cta_url": "https://appscode.com/contact/",
     "illustration": {
       "src": "/assets/images/services/argo-cd-consulting-implementation.png",
-      "alt": "Argo CD Consulting & Implementation"
+      "alt": "Argo CD Consulting Services"
     }
   },
   "trusted_by": {
-    "title": "Trusted by Leading Companies"
+    "title": "Trusted by Leading Cloud-Native Enterprises"
   },
   "title_with_small_cards": {
-    "title": "Benefits of Argo CD Consulting & Implementation",
+    "title": "Key Benefits of Argo CD Consulting Services",
     "areas": [
-      { "icon": "fa fa-cogs", "title": "Declarative App Definitions & Environments" },
-      { "icon": "fa fa-code-fork", "title": "Version-Controlled Configurations" },
-      { "icon": "fa fa-clock-o", "title": "Automated & Audited Lifecycle Management" },
-      { "icon": "fa fa-thumbs-up", "title": "Clear & Understandable Implementation" },
-      { "icon": "fa fa-cogs", "title": "GitOps Deployment Patterns" },
-      { "icon": "fa fa-rocket", "title": "Faster, Reliable Deployments" }
+      { "icon": "fa fa-cogs", "title": "Declarative App Management & Environments" },
+      { "icon": "fa fa-code-fork", "title": "Version-Controlled GitOps Workflows" },
+      { "icon": "fa fa-clock-o", "title": "Continuous Delivery with Full Auditability" },
+      { "icon": "fa fa-thumbs-up", "title": "Transparent & Scalable Implementations" },
+      { "icon": "fa fa-rocket", "title": "Automated Rollouts & Rollbacks" },
+      { "icon": "fa fa-lock", "title": "Enterprise-Grade Security & Compliance" }
     ]
   },
   "service_details": {
-    "title": "Argo CD Adoption & Consulting Services",
-    "subtitle": "Leverage our expertise to adopt, implement, and optimize Argo CD for your Kubernetes workloads.",
+    "title": "Comprehensive Argo CD Consulting & Implementation Services",
+    "subtitle": "Empower your DevOps teams to achieve GitOps excellence with our certified Kubernetes and Argo CD consultants.",
     "sections": [
       {
-        "title": "Argo CD Consulting & Implementation",
-        "description": "Argo CD is a GitOps-based continuous delivery tool for Kubernetes. Our experts help define application manifests, track deployment states, and configure your environment for reliability and scalability.",
+        "title": "End-to-End Argo CD Consulting & Setup",
+        "description": "Our experts help organizations adopt Argo CD seamlessly — from environment assessment to deployment automation — ensuring consistency, visibility, and faster release cycles across all Kubernetes clusters.",
         "offerings": [
-          "Assess your current environment and architect the Argo CD deployment solution.",
-          "Deploy and configure Argo CD for applications and infrastructure.",
-          "Implement GitOps patterns using Git as the single source of truth for your apps.",
-          "Manage deployment of application states across multiple environments.",
-          "Configure single sign-on with OIDC, OAuth2, LDAP, or SAML 2.0.",
-          "Support high-availability Argo CD setups for enterprise-grade reliability."
+          "Analyze your current CI/CD ecosystem and design an Argo CD architecture tailored to your needs.",
+          "Deploy and configure Argo CD for multi-cluster and hybrid environments.",
+          "Integrate with Git, Helm, Kustomize, and other DevOps tools for unified GitOps workflows.",
+          "Implement automated sync policies and declarative configurations.",
+          "Enable secure access with SSO integrations (OIDC, OAuth2, LDAP, SAML 2.0)."
         ],
         "image": "/assets/images/services/argo-cd-consulting-implementation-service.png"
       },
       {
-        "title": "Achieve GitOps with Argo CD",
-        "description": "Implement GitOps practices to manage infrastructure and applications using Git as the authoritative source, enabling auditability and faster deployments.",
+        "title": "GitOps Enablement Using Argo CD",
+        "description": "Adopt GitOps principles to simplify Kubernetes application delivery and configuration management. Our Argo CD consulting experts ensure your infrastructure state is version-controlled and continuously reconciled.",
         "offerings": [
-          "Separate source code and Kubernetes manifests to enable safe changes.",
-          "Automate synchronization of application state with declarative configuration.",
-          "Visualize deployment issues and remediate configuration drifts.",
-          "Ensure new configurations are correctly deployed to Kubernetes clusters."
+          "Implement GitOps pipelines with automated synchronization and policy enforcement.",
+          "Visualize app health, manage drift, and roll back safely when needed.",
+          "Optimize infrastructure as code for better reliability and traceability.",
+          "Ensure consistent deployments across multiple clusters and environments."
         ],
         "image": "/assets/images/services/argo-cd-gitops-service.png"
       },
       {
-        "title": "Set Up Multi-Tenancy with Argo CD",
-        "description": "Enable multiple teams to work independently within the same Kubernetes cluster while maintaining security and access controls.",
+        "title": "Secure Multi-Tenancy Configuration",
+        "description": "We help you design and implement secure multi-tenancy setups with role-based access controls and namespace isolation for enterprise-scale Argo CD deployments.",
         "offerings": [
-          "Implement multi-tenancy setups to isolate projects and teams.",
-          "Restrict CRDs to read only project-specific repositories and deploy to designated clusters and namespaces.",
-          "Define role-based access controls (RBAC) for each CRD instance."
+          "Isolate projects and namespaces for different teams or departments.",
+          "Define custom RBAC policies for controlled access management.",
+          "Enforce compliance by restricting repository and cluster access."
         ],
         "image": "/assets/images/services/argo-cd-multi-tenancy-service.png"
       },
       {
         "title": "Argo CD Training & Managed Support",
-        "description": "Upskill your team and provide ongoing support to maximize your Argo CD investment.",
+        "description": "Our managed Argo CD services ensure your GitOps pipelines run flawlessly. We also provide training for teams to maintain, monitor, and optimize Argo CD deployments.",
         "offerings": [
-          "Deploy Argo CD or get on-demand enterprise support from certified engineers.",
-          "Post-implementation training to build in-house Argo CD expertise."
+          "Enterprise-grade support for installation, configuration, and upgrades.",
+          "Post-implementation training to build internal GitOps expertise.",
+          "Continuous monitoring and optimization for performance and reliability."
         ],
         "image": "/assets/images/services/argo-cd-training-support-service.png"
       }
     ]
   },
   "industries": {
-    "title": "Industry Expertise",
-    "subtitle": "With experience serving 100+ clients, we understand compliance, criticalities, and the importance of first-time-right execution.",
-    "additional_text": "From global enterprises to fast-growing startups, we deliver scalable and reliable solutions.",
+    "title": "Industry Expertise in Argo CD Adoption",
+    "subtitle": "We provide Argo CD consulting services tailored for your industry, ensuring compliance, scalability, and operational excellence.",
+    "additional_text": "From regulated enterprises to agile startups, we help organizations automate their Kubernetes delivery pipelines with Argo CD and GitOps best practices.",
     "sectors": [
       {
         "icon": "fa fa-bank",
@@ -110,9 +110,9 @@
     ]
   },
   "open_source": {
-    "title": "We Love Open Source",
-    "description": "Our developers contribute to cloud-native projects, leveraging OSS to build innovative solutions.",
-    "cta_text": "Explore Our OSS Contributions",
+    "title": "We Power Open Source and GitOps Innovation",
+    "description": "As active contributors to CNCF projects, our engineers help advance open-source GitOps and Kubernetes ecosystems, integrating tools like Argo CD, Crossplane, and Prometheus.",
+    "cta_text": "Explore Our Open Source Contributions",
     "image": {
       "src": "/assets/images/services/open-source.png",
       "alt": "Open Source Contributions"
@@ -174,37 +174,37 @@
     ]
   },
   "cards": {
-    "title": "Why Choose AppsCode for Argo CD?",
+    "title": "Why Choose AppsCode for Argo CD Consulting Services?",
     "items": [
       {
-        "logo": "https://img.icons8.com/00a651/ios-glyphs/30/certificate.png",
-        "title": "Certified Engineers",
-        "description": "170 in-house engineers, including 4 CKS, 51 CKA, and 19 Certified Kubernetes Application Developers."
+        "icon": "fa fa-certificate",
+        "title": "Certified Kubernetes Experts",
+        "description": "170+ certified engineers, including 4 CKS, 51 CKA, and 19 CKAD professionals experienced in GitOps and Argo CD."
       },
       {
         "icon": "fa fa-briefcase",
-        "title": "Domain Expertise",
-        "description": "Implement best practices learned from 100+ client engagements in DevOps and GitOps."
+        "title": "Proven GitOps Expertise",
+        "description": "Backed by 100+ successful enterprise DevOps and GitOps implementations across industries."
       },
       {
         "icon": "fa fa-trophy",
-        "title": "First Mover Advantage",
-        "description": "One of the first Kubernetes service providers in India and APAC."
+        "title": "Pioneer in Kubernetes Services",
+        "description": "Among the earliest Kubernetes service providers in India and APAC regions."
       },
       {
         "icon": "fa fa-graduation-cap",
-        "title": "Hands-On Training",
-        "description": "Training focuses on core concepts with practical, real-world experience."
+        "title": "Comprehensive Training Programs",
+        "description": "Hands-on Argo CD training with real-world GitOps use cases and best practices."
       },
       {
-        "logo": "https://img.icons8.com/00a651/ios-glyphs/30/certificate.png",
-        "title": "CNCF Certified Provider",
-        "description": "AppsCode is a CNCF Silver Member and Kubernetes Certified Service Provider (KCSP)."
+        "icon": "fa fa-certificate",
+        "title": "CNCF Silver Member",
+        "description": "AppsCode is a recognized CNCF Silver Member and Kubernetes Certified Service Provider (KCSP)."
       },
       {
         "icon": "fa fa-users",
-        "title": "Scale Teams Easily",
-        "description": "Quickly expand engineering teams without hiring or training overhead."
+        "title": "Flexible Team Augmentation",
+        "description": "Easily scale your DevOps teams with AppsCode’s on-demand engineering resources."
       }
     ]
   }

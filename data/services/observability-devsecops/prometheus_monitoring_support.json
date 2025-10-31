@@ -1,89 +1,84 @@
 {
   "hero": {
-    "title": "Prometheus Consulting & Implementation Experts",
-    "subtitle": "Helping companies efficiently deploy, configure, and visualize complex metrics for your infrastructure and applications.",
+    "title": "Prometheus Consulting Services & Enterprise Support by Appscode",
+    "subtitle": "Leverage Prometheus consulting, deployment, and optimization services to achieve enterprise-grade observability and monitoring for your cloud-native infrastructure.",
     "cta_text": "TALK TO A PROMETHEUS EXPERT",
     "cta_url": "https://appscode.com/contact/",
     "illustration": {
       "src": "/assets/images/services/prometheus-monitoring-support.png",
-      "alt": "Prometheus Engineering"
+      "alt": "Prometheus Consulting and Implementation Services by Appscode"
     }
   },
 
   "trusted_by": {
-    "title": "Trusted by Leading Companies"
+    "title": "Trusted by Global Enterprises and Cloud-Native Innovators"
   },
 
   "title_with_small_cards": {
-    "title": "Benefits of Prometheus Implementation",
+    "title": "Why Choose Prometheus Consulting Services?",
     "areas": [
-      { "icon": "fa fa-eye", "title": "Your All-in-One Monitoring Solution" },
-      {
-        "icon": "fa fa-dashboard",
-        "title": "Eliminate Risk of Unnoticed Incidents"
-      },
-      {
-        "icon": "fa fa-rocket",
-        "title": "Build Observability Stack Effortlessly"
-      },
-      { "icon": "fa fa-file-text", "title": "Enhanced Visibility" },
-      { "icon": "fa fa-cogs", "title": "Integration with Third-Party Tools" },
-      { "icon": "fa fa-plug", "title": "Commercial Support and Training" }
+      { "icon": "fa fa-eye", "title": "All-in-One Monitoring and Observability Solution" },
+      { "icon": "fa fa-dashboard", "title": "Prevent and Detect Critical Incidents Early" },
+      { "icon": "fa fa-tachometer", "title": "Build a Scalable Observability Stack with Ease" },
+      { "icon": "fa fa-file-text", "title": "Gain Complete Metrics Visibility and Control" },
+      { "icon": "fa fa-cogs", "title": "Integrate Prometheus with Leading Tools Seamlessly" },
+      { "icon": "fa fa-plug", "title": "Commercial Support, Training, and Ongoing Optimization" }
     ]
   },
 
   "service_details": {
     "title": "Our Prometheus Consulting & Implementation Capabilities",
-    "subtitle": "Level up your monitoring game using Prometheus and our trusted observability experts.",
+    "subtitle": "Accelerate your observability journey with expert Prometheus consulting, deployment, and support from Appscode.",
     "sections": [
       {
         "title": "Prometheus Consulting & Production Implementation",
-        "description": "Our experts analyze your application framework and provide the best approach to implement and configure Prometheus following industry best practices.",
+        "description": "Appscode’s Prometheus experts analyze your infrastructure, workloads, and application framework to design and deploy an optimized Prometheus setup following cloud-native and DevOps best practices.",
         "offerings": [
-          "In-depth system and monitoring requirement analysis to provide a cohesive solution.",
-          "Proper instrumentation of your codebase to expose metrics in Prometheus.",
-          "Labeling and structuring metrics for easier consumption and production readiness."
+          "Comprehensive system and metric requirement analysis for tailored Prometheus implementation.",
+          "Instrumentation of your codebase to expose application and infrastructure metrics.",
+          "Optimized labeling and structuring of metrics for performance and production readiness."
         ],
         "image": "/assets/images/services/prometheus-consulting-implementation.png"
       },
       {
-        "title": "Incident Management",
-        "description": "Track and respond to incidents faster using Prometheus metrics. Our experts guide you through efficient incident management.",
+        "title": "Incident Management with Prometheus Alertmanager",
+        "description": "Enable real-time monitoring, proactive alerting, and automated incident response using Prometheus and Alertmanager integration.",
         "offerings": [
-          "Setup of Prometheus Alertmanager for real-time incident tracking.",
-          "Creation of alerts based on collected metrics.",
-          "Analyze metrics to optimize incident response, reducing time and effort.",
-          "Use exporters to collect additional metrics for post-mortem analysis."
+          "Setup and configuration of Prometheus Alertmanager for intelligent incident tracking.",
+          "Custom alert rules and thresholds based on business-critical metrics.",
+          "Integration with Slack, PagerDuty, and other notification systems.",
+          "Exporters setup for deeper post-mortem and root-cause analysis."
         ],
         "image": "/assets/images/services/prometheus-incident-management.png"
       },
       {
-        "title": "Data Modeling & Querying",
-        "description": "Our team ensures your Prometheus setup can provide meaningful insights through proper data modeling and querying.",
+        "title": "Prometheus Data Modeling & PromQL Query Optimization",
+        "description": "Our consultants ensure your Prometheus metrics deliver actionable insights through efficient data modeling and query optimization.",
         "offerings": [
-          "Model, label, and aggregate data for simpler consumption.",
-          "Leverage PromQL to extract insights and meaningful metrics."
+          "Designing effective metric models and labels for simplified analysis.",
+          "Optimizing PromQL queries to extract key performance indicators.",
+          "Developing reusable dashboards and templates for ongoing insights."
         ],
         "image": "/assets/images/services/prometheus-data-modeling-querying.png"
       },
       {
-        "title": "Integration with Third-Party Tools",
-        "description": "Enhance Prometheus’ capabilities by integrating with other tools seamlessly.",
+        "title": "Integration with Grafana, Loki & Third-Party Tools",
+        "description": "Extend Prometheus capabilities by integrating with popular observability and automation tools.",
         "offerings": [
-          "Grafana dashboards for visually compelling, actionable metrics.",
-          "Loki for centralized log aggregation.",
-          "Alertmanager integration with tools like PagerDuty for real-time notifications.",
-          "Configure KEDA to auto-scale applications based on custom metrics."
+          "Grafana dashboard setup for visualizing Prometheus metrics and trends.",
+          "Loki integration for centralized logging and observability.",
+          "Alertmanager connections with PagerDuty and Opsgenie for automated responses.",
+          "KEDA configuration for event-driven auto-scaling using Prometheus metrics."
         ],
         "image": "/assets/images/services/prometheus-third-party-integration.png"
       },
       {
         "title": "Prometheus Commercial Support & Training",
-        "description": "As an officially recognized Prometheus commercial support partner, we guide you through your end-to-end monitoring journey.",
+        "description": "As an official Prometheus commercial support provider, Appscode delivers end-to-end guidance, troubleshooting, and knowledge transfer.",
         "offerings": [
-          "Upskill your team with best practices and knowledge transfer.",
-          "Master Prometheus concepts and resolve deployment or configuration issues.",
-          "Build a future-ready team proficient in Prometheus operations."
+          "Hands-on training to strengthen your in-house Prometheus skills.",
+          "Comprehensive support for deployment, scaling, and troubleshooting.",
+          "Ongoing consulting to optimize performance and reduce mean time to recovery (MTTR)."
         ],
         "image": "/assets/images/services/prometheus-commercial-support-training.png"
       }
@@ -91,9 +86,9 @@
   },
 
   "industries": {
-    "title": "We Understand the Nitty-Gritty",
-    "subtitle": "With 100+ clients across industries, we understand criticalities, compliance, and the importance of getting it right the first time.",
-    "additional_text": "From global enterprises to rapidly scaling startups, we’ve got you covered!",
+    "title": "Industry-Specific Prometheus Observability Expertise",
+    "subtitle": "Appscode’s Prometheus consulting services power reliability, compliance, and performance across industries.",
+    "additional_text": "Whether you’re a fast-scaling SaaS or a global enterprise, we tailor Prometheus monitoring solutions to fit your infrastructure and business needs.",
     "sectors": [
       {
         "icon": "fa fa-bank",
@@ -129,12 +124,12 @@
   },
 
   "open_source": {
-    "title": "We Love Open Source",
-    "description": "Open source empowers innovation. Our developers actively contribute to cloud-native projects and leverage them to develop new OSS products.",
-    "cta_text": "Explore Our OSS Contributions",
+    "title": "We Build and Contribute to Open Source",
+    "description": "At Appscode, open source fuels everything we do. Our engineers contribute to major cloud-native and observability projects, extending the Prometheus ecosystem for community and enterprise innovation.",
+    "cta_text": "Explore Our Open Source Contributions",
     "image": {
       "src": "/assets/images/services/open-source.png",
-      "alt": "Open Source Contributions"
+      "alt": "Appscode Prometheus Open Source Contributions"
     }
   },
 
@@ -142,46 +137,12 @@
     "title": "Diverse Technical Expertise",
     "subtitle": "Serving 100+ customers, our engineers have expertise across cloud-native and security tools.",
     "technologies": [
-      {
-        "name": "Crossplane",
-        "logo": "/assets/images/technical-expertise/crossplane.svg"
-      },
-      {
-        "name": "Kubernetes",
-        "logo": "/assets/images/technical-expertise/kubernetes.svg"
-      },
-      {
-        "name": "Prometheus",
-        "logo": "/assets/images/technical-expertise/prometheus.svg"
-      },
-      {
-        "name": "GraphQL",
-        "logo": "/assets/images/technical-expertise/graphql.svg"
-      },
-      {
-        "name": "Open Policy Agent",
-        "logo": "/assets/images/technical-expertise/open-policy-agent.png"
-      },
-      {
-        "name": "Grafana",
-        "logo": "/assets/images/technical-expertise/grafana.svg"
-      },
-      {
-        "name": "Terraform",
-        "logo": "/assets/images/technical-expertise/terraform.svg"
-      },
-      {
-        "name": "Kasten",
-        "logo": "/assets/images/technical-expertise/kasten.svg"
-      },
-      {
-        "name": "Thanos",
-        "logo": "/assets/images/technical-expertise/thanos.svg"
-      },
-      {
-        "name": "ArgoCD",
-        "logo": "/assets/images/technical-expertise/argocd.svg"
-      }
+      { "name": "Falco", "logo": "https://placehold.co/600x400" },
+      { "name": "Snyk", "logo": "https://placehold.co/600x400" },
+      { "name": "TIGERA", "logo": "https://placehold.co/600x400" },
+      { "name": "Aqua Security", "logo": "https://placehold.co/600x400" },
+      { "name": "Trivy", "logo": "https://placehold.co/600x400" },
+      { "name": "OPA", "logo": "https://placehold.co/600x400" }
     ]
   },
 
@@ -198,10 +159,10 @@
   },
 
   "cards": {
-    "title": "Why Choose AppsCode for Prometheus Support & Implementation?",
+    "title": "Why Appscode for Prometheus Consulting & Support?",
     "items": [
       {
-        "logo": "https://img.icons8.com/00a651/ios-glyphs/30/certificate.png",
+        "icon": "fa fa-certificate",
         "title": "Certified Developers",
         "description": "170 in-house engineers including 4 CKS, 51 CKA & 19 Certified Kubernetes Application Developers."
       },
@@ -221,7 +182,7 @@
         "description": "Hands-on training to build practical Prometheus expertise."
       },
       {
-        "logo": "https://img.icons8.com/00a651/ios-glyphs/30/certificate.png",
+        "icon": "fa fa-certificate",
         "title": "CNCF Certified Provider",
         "description": "AppsCode is a proud CNCF Silver Member and Kubernetes Certified Service Provider (KCSP)."
       },

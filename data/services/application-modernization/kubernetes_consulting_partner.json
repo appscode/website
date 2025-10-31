@@ -1,91 +1,90 @@
 {
   "hero": {
-    "title": "Kubernetes Consulting by Certified Experts",
-    "subtitle": "Partner with CNCF-certified Kubernetes consultants for consulting, deployment, and enterprise support.",
+    "title": "Kubernetes Consulting Services by Certified Experts",
+    "subtitle": "Empower your business with CNCF-certified Kubernetes consultants for consulting, deployment, optimization, and managed enterprise support.",
     "cta_text": "Talk to a Kubernetes Expert",
     "cta_url": "https://appscode.com/contact/",
     "illustration": {
       "src": "/assets/images/services/kubernetes-consulting.png",
-      "alt": "Kubernetes Consulting Services"
+      "alt": "Kubernetes Consulting Services by AppsCode"
     }
   },
   "trusted_by": {
-    "title": "Trusted by Leading Companies"
+    "title": "Trusted by Leading Enterprises Worldwide"
   },
   "title_with_small_cards": {
-    "title": "Why Choose Kubernetes Consulting?",
+    "title": "Why Choose Our Kubernetes Consulting Services?",
     "areas": [
-      { "icon": "fa fa-lightbulb-o", "title": "Agile & Scalable Architecture" },
-      { "icon": "fa fa-tachometer", "title": "High-Performance Deployments" },
-      { "icon": "fa fa-cogs", "title": "Improved Application Development" },
-      { "icon": "fa fa-money", "title": "Optimize IT Costs" },
-      { "icon": "fa fa-cloud", "title": "Multi-Cloud & Hybrid Flexibility" },
-      { "icon": "fa fa-shield", "title": "Self-Healing Containers" },
-      { "icon": "fa fa-arrows-alt", "title": "Containerize Legacy Apps" },
-      { "icon": "fa fa-repeat", "title": "Automated Rollouts & Rollbacks" }
+      { "icon": "fa fa-lightbulb-o", "title": "Agile & Scalable Cloud-Native Architecture" },
+      { "icon": "fa fa-tachometer", "title": "High-Performance Kubernetes Deployments" },
+      { "icon": "fa fa-cogs", "title": "Accelerated Application Development on Kubernetes" },
+      { "icon": "fa fa-money", "title": "Optimize Cloud & IT Infrastructure Costs" },
+      { "icon": "fa fa-cloud", "title": "Multi-Cloud & Hybrid Kubernetes Flexibility" },
+      { "icon": "fa fa-shield", "title": "Self-Healing & Secure Container Environments" },
+      { "icon": "fa fa-arrows-alt", "title": "Migrate & Containerize Legacy Applications" },
+      { "icon": "fa fa-repeat", "title": "Automated CI/CD Rollouts & Rollbacks" }
     ]
   },
   "service_details": {
-    "title": "Our Kubernetes Consulting Services",
-    "subtitle": "As a trusted KCSP, our experts provide end-to-end Kubernetes solutions:",
+    "title": "Our End-to-End Kubernetes Consulting Services",
+    "subtitle": "As a CNCF Silver Member and KCSP, AppsCode provides expert Kubernetes consulting services — from planning to production management.",
     "sections": [
       {
-        "title": "Kubernetes Advisory",
-        "description": "Plan and adopt Kubernetes with minimal friction, leveraging our expertise across AWS, GCP, and Azure.",
+        "title": "Kubernetes Advisory & Assessment",
+        "description": "Start your Kubernetes journey with confidence. Our experts assess your current infrastructure, plan seamless migration, and design a scalable architecture optimized for AWS, Azure, or GCP.",
         "offerings": [
-          "Audit existing infrastructure and benchmark against industry standards.",
-          "Create a tailored roadmap for successful Kubernetes adoption.",
-          "Deliver actionable implementation plans aligned with your business objectives."
+          "Conduct infrastructure audits following CNCF best practices.",
+          "Create a roadmap for efficient Kubernetes adoption.",
+          "Provide detailed cost analysis and workload optimization."
         ],
         "image": "/assets/images/services/kubernetes-advisory.png"
       },
       {
         "title": "Application Development & Migration",
-        "description": "Build new applications or migrate monoliths to Kubernetes-ready microservices for scalability and flexibility.",
+        "description": "Modernize your workloads with Kubernetes-native applications and migrate monoliths into containerized microservices for better agility and performance.",
         "offerings": [
-          "Develop greenfield Kubernetes-ready applications.",
-          "Break monoliths into loosely coupled microservices.",
-          "Centralized management for multi-cluster Kubernetes environments."
+          "Develop Kubernetes-ready applications using Go, Java, and Python.",
+          "Break monolithic architectures into resilient microservices.",
+          "Implement centralized management across multi-cluster environments."
         ],
         "image": "/assets/images/services/kubernetes-application-development.png"
       },
       {
-        "title": "Kubernetes Deployment Partner",
-        "description": "Deploy production-grade Kubernetes clusters on cloud or on-premises with high availability and reliability.",
+        "title": "Kubernetes Deployment & Operations",
+        "description": "Deploy production-grade Kubernetes clusters on-premises or in the cloud with high availability, resilience, and observability built in.",
         "offerings": [
-          "Provision resilient clusters with auto-healing and scalability.",
-          "Integrate essential tools like Prometheus and RBAC policies.",
-          "Support deployment of ML workloads on Kubernetes."
+          "Provision auto-healing Kubernetes clusters using Infrastructure-as-Code tools like Terraform and Crossplane.",
+          "Integrate observability with Prometheus, Grafana, and Thanos.",
+          "Automate cluster scaling, upgrades, and security policies."
         ],
         "image": "/assets/images/services/kubernetes-deployment-partner.png"
       },
       {
-        "title": "DevSecOps & Compliance",
-        "description": "Secure Kubernetes workloads with shift-left security and compliance best practices.",
+        "title": "DevSecOps, Security & Compliance",
+        "description": "Shift security left in your Kubernetes lifecycle. Our DevSecOps services ensure compliance and security at every layer of your containerized environment.",
         "offerings": [
-          "Role-based access, network segmentation, and automatic upgrades.",
-          "Continuous container scanning with open source and third-party tools.",
-          "Sign, scan, and deploy packages safely across clusters."
+          "Implement role-based access control (RBAC) and network segmentation.",
+          "Automate container image scanning with tools like Trivy and Clair.",
+          "Ensure compliance with ISO, HIPAA, and GDPR standards."
         ],
         "image": "/assets/images/services/kubernetes-devsecops-compliance.png"
       },
       {
-        "title": "Enterprise Support & Training",
-        "description": "Ongoing Kubernetes support and training for teams on public, private, or on-prem environments.",
+        "title": "Enterprise Kubernetes Support & Training",
+        "description": "AppsCode provides continuous Kubernetes support, training, and managed services to ensure operational excellence and long-term stability.",
         "offerings": [
-          "Observability and vulnerability scanning to prevent downtime.",
-          "Train engineers for self-sufficient cloud-native operations.",
-          "Implement backup, DR strategies, and cost management.",
-          "Ensure timely updates, patches, and rapid releases."
+          "Real-time monitoring, backup, and disaster recovery using Stash.",
+          "Training for DevOps teams to manage Kubernetes independently.",
+          "Cost management and resource optimization for clusters."
         ],
         "image": "/assets/images/services/kubernetes-enterprise-support-training.png"
       }
     ]
   },
   "industries": {
-    "title": "Industry Expertise",
-    "subtitle": "With experience serving 100+ clients, we understand critical requirements, compliance, and operational excellence.",
-    "additional_text": "From global enterprises to fast-growing startups, we deliver reliable Kubernetes solutions.",
+    "title": "Industry Expertise in Kubernetes Consulting",
+    "subtitle": "Our Kubernetes consulting services empower over 100 clients across regulated industries with high-performance, compliant, and reliable infrastructure.",
+    "additional_text": "We serve global enterprises and startups with deep expertise in cloud-native and Kubernetes solutions.",
     "sectors": [
       {
         "icon": "fa fa-bank",
@@ -120,60 +119,33 @@
     ]
   },
   "open_source": {
-    "title": "We Love Open Source",
-    "description": "Our team contributes to cloud-native projects and leverages OSS to build innovative solutions.",
-    "cta_text": "Explore Our OSS Contributions",
+    "title": "Built on Open Source, Powered by Community",
+    "description": "AppsCode actively contributes to CNCF and open-source projects such as KubeDB, KubeVault, Stash, and Voyager — empowering the Kubernetes ecosystem worldwide.",
+    "cta_text": "Explore Our Open Source Projects",
     "image": {
       "src": "/assets/images/services/open-source.png",
       "alt": "Open Source Contributions"
     }
   },
   "tech_stack": {
-    "title": "Certified Kubernetes Expertise",
-    "subtitle": "Our engineers have hands-on experience with:",
-   "technologies": [
-      {
-        "name": "Crossplane",
-        "logo": "/assets/images/technical-expertise/crossplane.svg"
-      },
-      {
-        "name": "Kubernetes",
-        "logo": "/assets/images/technical-expertise/kubernetes.svg"
-      },
-      {
-        "name": "Prometheus",
-        "logo": "/assets/images/technical-expertise/prometheus.svg"
-      },
-      {
-        "name": "GraphQL",
-        "logo": "/assets/images/technical-expertise/graphql.svg"
-      },
-      {
-        "name": "Open Policy Agent",
-        "logo": "/assets/images/technical-expertise/open-policy-agent.png"
-      },
-      {
-        "name": "Grafana",
-        "logo": "/assets/images/technical-expertise/grafana.svg"
-      },
-      {
-        "name": "Terraform",
-        "logo": "/assets/images/technical-expertise/terraform.svg"
-      },
-      {
-        "name": "Kasten",
-        "logo": "/assets/images/technical-expertise/kasten.svg"
-      },
-      {
-        "name": "Thanos",
-        "logo": "/assets/images/technical-expertise/thanos.svg"
-      },
-      { "name": "ArgoCD", "logo": "/assets/images/technical-expertise/argocd.svg" }
+    "title": "Our Kubernetes Technology Expertise",
+    "subtitle": "We use proven cloud-native tools and frameworks to deliver enterprise-grade Kubernetes consulting services.",
+    "technologies": [
+      { "name": "Crossplane", "logo": "https://placehold.co/600x400" },
+      { "name": "Kubernetes", "logo": "https://placehold.co/600x400" },
+      { "name": "Prometheus", "logo": "https://placehold.co/600x400" },
+      { "name": "GraphQL", "logo": "https://placehold.co/600x400" },
+      { "name": "Open Policy Agent", "logo": "https://placehold.co/600x400" },
+      { "name": "Grafana", "logo": "https://placehold.co/600x400" },
+      { "name": "Terraform", "logo": "https://placehold.co/600x400" },
+      { "name": "Kasten", "logo": "https://placehold.co/600x400" },
+      { "name": "Thanos", "logo": "https://placehold.co/600x400" },
+      { "name": "ArgoCD", "logo": "https://placehold.co/600x400" }
     ]
   },
   "final_cta": {
-    "title": "Looking for Kubernetes Support?",
-    "subtitle": "Get expert guidance, managed services, and enterprise support for Kubernetes deployments.",
+    "title": "Ready to Accelerate with Kubernetes Consulting Services?",
+    "subtitle": "Get expert Kubernetes consulting, managed support, and hands-on training to optimize your cloud-native infrastructure.",
     "buttons": [
       {
         "text": "Talk to a Kubernetes Expert",
@@ -183,37 +155,37 @@
     ]
   },
   "cards": {
-    "title": "Why Choose AppsCode for Kubernetes?",
+    "title": "Why AppsCode is the Right Kubernetes Consulting Partner?",
     "items": [
       {
-        "logo": "https://img.icons8.com/00a651/ios-glyphs/30/certificate.png",
-        "title": "Certified Developers",
-        "description": "170 engineers, including 4 CKS, 51 CKA & 19 Certified Kubernetes Application Developers."
+        "icon": "fa fa-certificate",
+        "title": "Certified Kubernetes Experts",
+        "description": "170+ engineers including CKA, CKAD, and CKS-certified Kubernetes professionals."
       },
       {
         "icon": "fa fa-briefcase",
-        "title": "Domain Expertise",
-        "description": "Best practices from 100+ client projects."
+        "title": "Proven Domain Expertise",
+        "description": "Experience across 100+ Kubernetes consulting projects globally."
       },
       {
         "icon": "fa fa-trophy",
-        "title": "First Mover Advantage",
-        "description": "First Kubernetes service provider in India, second in APAC."
+        "title": "Industry Leadership",
+        "description": "AppsCode is one of the earliest Kubernetes consulting service providers in APAC."
       },
       {
         "icon": "fa fa-graduation-cap",
-        "title": "Training",
-        "description": "Hands-on Kubernetes and cloud-native training."
+        "title": "Kubernetes Training Programs",
+        "description": "Hands-on Kubernetes workshops and cloud-native upskilling for DevOps teams."
       },
       {
-        "logo": "https://img.icons8.com/00a651/ios-glyphs/30/certificate.png",
-        "title": "CNCF Certified Provider",
-        "description": "AppsCode is a CNCF Silver Member and KCSP."
+        "icon": "fa fa-certificate",
+        "title": "CNCF Silver Member & KCSP",
+        "description": "AppsCode is officially recognized as a CNCF Silver Member and Kubernetes Certified Service Provider."
       },
       {
         "icon": "fa fa-users",
-        "title": "Scalable Teams",
-        "description": "Easily expand engineering teams without hassle."
+        "title": "Scalable Dedicated Teams",
+        "description": "Easily scale your engineering teams with AppsCode’s Kubernetes experts."
       }
     ]
   }
