@@ -1,6 +1,8 @@
 ---
 id: cloud-native-faas-services
 title: serverless-consulting
+serviceType: "Cloud-Native Product Development"
+serviceDescription: "Appscode Inc provides enterprise-grade cloud-native development, DevOps automation, and Kubernetes consulting services to help organizations build scalable and resilient applications."
 layout: services
 url: '/services/cloud-native-faas-services'
 data: 'data/services/product-engineering/cloud_native_faas.json'
