@@ -1,71 +1,54 @@
 {
   "hero": {
-    "title": "Extend Kubernetes Like a Pro with Our Comprehensive Whitepaper",
-    "subtitle": "Discover proven frameworks, best practices, and real-world insights to build Kubernetes operators and enhance cloud-native capabilities at scale.",
+    "title": "Extend Kubernetes with Confidence Using Our Comprehensive Whitepaper",
+    "subtitle": "Discover frameworks, best practices, and real-world insights to build Kubernetes operators, CRDs, and extend cloud-native capabilities at scale.",
     "cta_text": "EMAIL ME THE WHITEPAPER",
     "cta_url": "https://appscode.com/contact/",
     "illustration": {
       "src": "/assets/images/services/extending-kubernetes-comprehensive-guide-whitepaper.png",
-      "alt": "Cloud Native Development Illustration"
+      "alt": "Extending Kubernetes with Custom Controllers and CRDs Illustration"
     }
   },
   "service_details": {
     "sections": [
       {
-        "title": "Why You Should Read This Whitepaper",
-        "description": "Kubernetes is at the heart of modern cloud-native development — enabling enterprises to orchestrate, scale, and manage applications seamlessly. Yet, as organizations adopt complex workloads, the need to extend Kubernetes beyond its native resources becomes essential. This whitepaper explores how custom resources and controllers can empower teams to tailor Kubernetes to their unique business and technical needs. Built on deep operational knowledge and real-world experience, this guide helps teams move from theory to implementation with confidence.",
+        "title": "Why Read the Extending Kubernetes Whitepaper?",
+        "description": "Kubernetes is the backbone of modern cloud-native infrastructure, but real operational challenges require extending its capabilities. This whitepaper shows how to leverage Custom Resource Definitions (CRDs), custom controllers, and operators to tailor Kubernetes to your organization's unique needs.",
         "offerings": [
-          "Mastering Custom Resource Definitions (CRDs): Learn how to define new resource types that align with your specific operational requirements.",
-          "Building Custom Controllers: Understand how to automate resource lifecycles and improve reliability within your Kubernetes environment.",
-          "Using Frameworks Like KubeBuilder & Operator-SDK: Discover how these tools simplify operator development and lifecycle management.",
-          "Practical Use Cases: See how leading organizations leverage Kubernetes extensions to solve real cloud-native challenges.",
-          "Best Practices from the Field: Learn expert-recommended strategies for designing, deploying, and maintaining scalable operators."
+          "Master Custom Resource Definitions (CRDs): Learn to define new resource types aligned with your operational requirements.",
+          "Build Custom Controllers: Automate resource lifecycles and increase reliability within your Kubernetes clusters.",
+          "Leverage Frameworks like KubeBuilder & Operator SDK: Simplify operator development and lifecycle management.",
+          "Explore Real-World Use Cases: Understand how top organizations implement Kubernetes extensions for cloud-native challenges.",
+          "Adopt Best Practices from Experts: Strategies for designing, deploying, and maintaining scalable, resilient operators."
         ],
         "image": "/assets/images/services/why-should-read-paper.png"
       }
     ]
   },
   "tech_stack": {
-    "title": "Built by the Experts Behind Leading Open Source Kubernetes Ecosystem Projects",
-    "subtitle": "Appscode’s engineers are core contributors and maintainers of popular open-source tools that simplify and extend Kubernetes for global enterprises.",
+    "title": "Expert-Driven Open Source Kubernetes Tools",
+    "subtitle": "Appscode engineers are core contributors and maintainers of leading open-source projects that simplify and extend Kubernetes capabilities for global enterprises.",
     "technologies": [
       {
-        "name": "Crossplane",
-        "logo": "/assets/images/technical-expertise/crossplane.svg"
+        "name": "Fission",
+        "description": "A fast, serverless framework for Kubernetes that helps teams build and deploy functions efficiently.",
+        "logo": "https://placehold.co/400"
       },
       {
-        "name": "Kubernetes",
-        "logo": "/assets/images/technical-expertise/kubernetes.svg"
+        "name": "BotKube",
+        "description": "A powerful chatbot for monitoring and debugging Kubernetes clusters directly from Slack or Discord.",
+        "logo": "https://placehold.co/400"
       },
       {
-        "name": "Prometheus",
-        "logo": "/assets/images/technical-expertise/prometheus.svg"
+        "name": "Kanister",
+        "description": "A data protection and backup framework that simplifies application-level data management on Kubernetes.",
+        "logo": "https://placehold.co/400"
       },
       {
-        "name": "GraphQL",
-        "logo": "/assets/images/technical-expertise/graphql.svg"
-      },
-      {
-        "name": "Open Policy Agent",
-        "logo": "/assets/images/technical-expertise/open-policy-agent.png"
-      },
-      {
-        "name": "Grafana",
-        "logo": "/assets/images/technical-expertise/grafana.svg"
-      },
-      {
-        "name": "Terraform",
-        "logo": "/assets/images/technical-expertise/terraform.svg"
-      },
-      {
-        "name": "Kasten",
-        "logo": "/assets/images/technical-expertise/kasten.svg"
-      },
-      {
-        "name": "Thanos",
-        "logo": "/assets/images/technical-expertise/thanos.svg"
-      },
-      { "name": "ArgoCD", "logo": "/assets/images/technical-expertise/argocd.svg" }
+        "name": "Paralus",
+        "description": "An open-source zero-trust access manager for Kubernetes that provides secure, identity-aware cluster access.",
+        "logo": "https://placehold.co/400"
+      }
     ]
   },
   "cta_section": {
