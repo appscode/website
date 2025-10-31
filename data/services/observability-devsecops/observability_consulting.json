@@ -1,85 +1,64 @@
 {
   "hero": {
-    "title": "Observability Consulting & Enterprise Support by Appscode",
-    "subtitle": "Empower your engineering teams with a unified observability stack—built and managed by Appscode experts for Prometheus, Grafana, and Loki.",
+    "title": "Observability Consulting Services & Enterprise Support by Appscode",
+   "subtitle": "Achieve complete visibility, faster incident response, and cloud-native resilience with enterprise-grade Observability Consulting powered by Prometheus, Grafana, and Loki.",
     "cta_text": "TALK TO AN OBSERVABILITY EXPERT",
     "cta_url": "https://appscode.com/contact/",
     "illustration": {
       "src": "/assets/images/services/observability-consulting-hero.png",
-      "alt": "Observability Stack Implementation"
+      "alt": "Observability Consulting Services for Cloud-Native Systems"
     }
   },
 
   "trusted_by": {
-    "title": "Trusted by Leading Cloud-Native Enterprises"
+    "title": "Trusted by Leading Cloud-Native Enterprises Worldwide"
   },
 
   "title_with_small_cards": {
-    "title": "Why Businesses Need Observability Consulting & Support",
+    "title": "Why Choose Observability Consulting Services",
     "areas": [
-      { "icon": "fa fa-eye", "title": "Gain End-to-End Ecosystem Visibility" },
-      {
-        "icon": "fa fa-bug",
-        "title": "Accelerate Debugging & Incident Response"
-      },
-      {
-        "icon": "fa fa-rocket",
-        "title": "Boost Release Velocity with Confidence"
-      },
-      {
-        "icon": "fa fa-shield",
-        "title": "Reduce Downtime with Real-Time Alerts"
-      },
-      {
-        "icon": "fa fa-cogs",
-        "title": "Enhance Quality & Reduce Operational Risk"
-      },
-      {
-        "icon": "fa fa-line-chart",
-        "title": "Continuously Improve Business Outcomes"
-      },
-      {
-        "icon": "fa fa-heartbeat",
-        "title": "Proactively Detect & Resolve Issues"
-      },
-      {
-        "icon": "fa fa-database",
-        "title": "Optimize Infrastructure Cost & Performance"
-      }
+      { "icon": "fa fa-eye", "title": "End-to-End Visibility Across Kubernetes and Cloud" },
+      { "icon": "fa fa-bug", "title": "Faster Incident Detection & Root-Cause Analysis" },
+      { "icon": "fa fa-rocket", "title": "Accelerate Deployment & Release Velocity" },
+      { "icon": "fa fa-shield", "title": "Reduce Downtime with Proactive Monitoring" },
+      { "icon": "fa fa-cogs", "title": "Improve Reliability & Operational Excellence" },
+      { "icon": "fa fa-line-chart", "title": "Enhance Performance with Real-Time Insights" },
+      { "icon": "fa fa-heartbeat", "title": "Detect & Resolve Anomalies Before Impact" },
+      { "icon": "fa fa-database", "title": "Optimize Infrastructure Costs & Utilization" }
     ]
   },
 
   "service_details": {
-    "title": "End-to-End Observability Implementation with Confidence",
-    "subtitle": "From monitoring and logging to distributed tracing—Appscode helps you build, scale, and maintain an observability system tailored for your cloud-native workloads.",
+    "title": "Comprehensive Observability Consulting & Implementation",
+    "subtitle": "Appscode helps organizations implement observability the right way—combining monitoring, logging, and tracing into a unified, cloud-native platform for actionable insights.",
     "sections": [
       {
-        "title": "Infrastructure Monitoring Made Simple",
-        "description": "Leverage Prometheus and Grafana to monitor infrastructure metrics, detect anomalies early, and drive operational insights that power innovation.",
+        "title": "Infrastructure Monitoring with Prometheus & Grafana",
+        "description": "Appscode’s observability experts design scalable monitoring architectures using Prometheus and Grafana to provide deep insights into cluster health, performance metrics, and workloads.",
         "offerings": [
-          "Design intuitive dashboards for full visibility across environments",
-          "Create intelligent alerts for proactive incident management",
-          "Enable predictive monitoring to prevent downtime"
+          "Build custom Grafana dashboards for real-time system visibility",
+          "Create Prometheus alerts to detect failures early",
+          "Enable predictive monitoring for smarter capacity planning"
         ],
         "image": "/assets/images/services/observability-infrastructure-monitoring.png"
       },
       {
-        "title": "Unified Logging Across Environments",
-        "description": "Empower teams with centralized logging using Grafana Loki, Elastic, or Fluentd. Gain deeper insights, optimize performance, and investigate issues faster.",
+        "title": "Centralized Logging with Loki, Fluentd & Elastic",
+        "description": "Simplify log management with Appscode’s observability consulting for Grafana Loki and Fluentd. Gain unified access to logs across applications, containers, and Kubernetes clusters.",
         "offerings": [
-          "Centralize logs from applications, containers, and infrastructure",
-          "Simplify log search, retention, and compliance",
-          "Visualize patterns and anomalies in real-time"
+          "Aggregate and query logs seamlessly across environments",
+          "Automate retention, search, and compliance for log data",
+          "Visualize log patterns to accelerate debugging"
         ],
         "image": "/assets/images/services/observability-unified-logging.png"
       },
       {
-        "title": "Distributed Tracing for Faster Root-Cause Analysis",
-        "description": "Implement OpenTelemetry and Jaeger to understand the journey of every request across microservices and identify performance bottlenecks instantly.",
+        "title": "Distributed Tracing with OpenTelemetry & Jaeger",
+        "description": "Our observability services integrate OpenTelemetry and Jaeger for full request traceability across microservices—enabling faster bottleneck detection and performance optimization.",
         "offerings": [
-          "Integrate distributed tracing seamlessly with your observability stack",
-          "Collect, correlate, and analyze telemetry data",
-          "Accelerate debugging with trace-driven insights"
+          "Trace request lifecycles across distributed systems",
+          "Correlate logs, metrics, and traces for holistic observability",
+          "Accelerate issue resolution with deep trace analysis"
         ],
         "image": "/assets/images/services/observability-distributed-tracing.png"
       }
@@ -87,9 +66,9 @@
   },
 
   "industries": {
-    "title": "Trusted Across Industries",
-    "subtitle": "Appscode brings deep cloud-native expertise across regulated and performance-critical sectors.",
-    "additional_text": "From global enterprises to hyper-scaling startups, we help organizations gain full-stack observability, reliability, and operational excellence.",
+    "title": "Observability Consulting Services Across Industries",
+    "subtitle": "Appscode delivers observability solutions tailored for highly regulated and mission-critical sectors.",
+    "additional_text": "From fintech to healthcare, our Observability Consulting Services empower teams to achieve continuous reliability, compliance, and business agility.",
     "sectors": [
       {
         "icon": "fa fa-bank",
@@ -137,44 +116,13 @@
   "tech_stack": {
     "title": "Our Observability Tech Stack Expertise",
     "subtitle": "We integrate leading open-source and enterprise tools to deliver robust, scalable observability platforms.",
-   "technologies": [
-      {
-        "name": "Crossplane",
-        "logo": "/assets/images/technical-expertise/crossplane.svg"
-      },
-      {
-        "name": "Kubernetes",
-        "logo": "/assets/images/technical-expertise/kubernetes.svg"
-      },
-      {
-        "name": "Prometheus",
-        "logo": "/assets/images/technical-expertise/prometheus.svg"
-      },
-      {
-        "name": "GraphQL",
-        "logo": "/assets/images/technical-expertise/graphql.svg"
-      },
-      {
-        "name": "Open Policy Agent",
-        "logo": "/assets/images/technical-expertise/open-policy-agent.png"
-      },
-      {
-        "name": "Grafana",
-        "logo": "/assets/images/technical-expertise/grafana.svg"
-      },
-      {
-        "name": "Terraform",
-        "logo": "/assets/images/technical-expertise/terraform.svg"
-      },
-      {
-        "name": "Kasten",
-        "logo": "/assets/images/technical-expertise/kasten.svg"
-      },
-      {
-        "name": "Thanos",
-        "logo": "/assets/images/technical-expertise/thanos.svg"
-      },
-      { "name": "ArgoCD", "logo": "/assets/images/technical-expertise/argocd.svg" }
+    "technologies": [
+      { "name": "Prometheus", "logo": "https://placehold.co/600x400" },
+      { "name": "Grafana", "logo": "https://placehold.co/600x400" },
+      { "name": "Loki", "logo": "https://placehold.co/600x400" },
+      { "name": "Jaeger", "logo": "https://placehold.co/600x400" },
+      { "name": "Fluentd", "logo": "https://placehold.co/600x400" },
+      { "name": "OpenTelemetry", "logo": "https://placehold.co/600x400" }
     ]
   },
 
@@ -191,8 +139,8 @@
   },
 
   "cards": {
-    "title": "Comprehensive Observability Consulting & Support Services",
-    "subtitle": "From strategy and implementation to managed operations—Appscode enables seamless observability across your Kubernetes and cloud-native ecosystem.",
+    "title": "Our Observability Consulting & Support Services",
+    "subtitle": "Appscode provides end-to-end observability consulting—from assessment and design to deployment and managed support.",
     "items": [
       {
         "icon": "fa fa-lightbulb-o",
@@ -288,7 +236,7 @@
   },
 
   "cards2": {
-    "title": "Why Choose Appscode for Observability Consulting?",
+    "title": "Why Appscode for Observability Consulting Services?",
     "subtitle": "Partner with the cloud-native experts behind KubeDB, Stash, and Voyager—trusted by global enterprises for production-grade reliability.",
     "items": [
       {
@@ -297,7 +245,7 @@
         "description": "Work with CNCF-certified experts who bring deep Kubernetes and observability experience."
       },
       {
-        "logo": "https://img.icons8.com/00a651/ios-glyphs/30/certificate.png",
+        "icon": "fa fa-certificate",
         "title": "Certified CNCF Member",
         "description": "Appscode is a proud CNCF Silver Member and Kubernetes Certified Service Provider (KCSP)."
       },
@@ -325,7 +273,7 @@
   },
 
   "seo": {
-    "meta_title": "Observability Consulting & Enterprise Support | Appscode",
-    "meta_description": "Appscode helps organizations build, monitor, and optimize observability stacks with Prometheus, Grafana, and Loki. Accelerate incident response, reduce downtime, and achieve full ecosystem visibility with expert consulting and enterprise-grade support."
+    "meta_title": "Observability Consulting Services for Prometheus, Grafana & Loki | Appscode",
+    "meta_description": "Appscode provides enterprise-grade Observability Consulting Services for Prometheus, Grafana, and Loki. Achieve end-to-end visibility, reduce downtime, and improve reliability for your Kubernetes and cloud-native environments."
   }
 }

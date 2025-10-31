@@ -1,8 +1,8 @@
 ---
-id: grafana-consulting
+id: grafana-consulting-services-and-support
 title: grafana-consulting
 layout: services
-url: '/services/grafana-consulting'
+url: '/services/grafana-consulting-services-and-support'
 data: 'data/services/observability-devsecops/grafana_consulting.json'
 ---
 {{< common/hero-area >}}
@@ -14,7 +14,6 @@ data: 'data/services/observability-devsecops/grafana_consulting.json'
 {{< common/cta-area >}}
 {{< common/cards >}}
 {{< common/expertise >}}
-{{< common/faq >}}
 
 
 

@@ -1,8 +1,8 @@
 ---
-id: prometheus-monitoring-support
+id: prometheus-consulting-services
 title: prometheus-monitoring-support
 layout: services
-url: '/services/prometheus-monitoring-support'
+url: '/services/prometheus-consulting-services'
 data: 'data/services/observability-devsecops/prometheus_monitoring_support.json'
 ---
 {{< common/hero-area >}}
@@ -14,7 +14,6 @@ data: 'data/services/observability-devsecops/prometheus_monitoring_support.json'
 {{< common/cta-area >}}
 {{< common/cards >}}
 {{< common/expertise >}}
-{{< common/faq >}}
 
 
 

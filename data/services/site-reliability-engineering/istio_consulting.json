@@ -1,19 +1,19 @@
 {
   "hero": {
-    "title": "Istio Consulting & Enterprise Support Partner",
+    "title": "Istio Consulting Services & Enterprise Support Partner",
     "subtitle": "Accelerate Istio adoption with expert consulting, seamless implementation, and ongoing enterprise-grade support.",
     "cta_text": "TALK TO AN ISTIO EXPERT",
     "cta_url": "https://appscode.com/contact/",
     "illustration": {
       "src": "/assets/images/services/istio-consulting-hero.png",
-      "alt": "Istio Consulting"
+      "alt": "Istio Consulting Services"
     }
   },
   "trusted_by": {
     "title": "Trusted by Innovative Companies Worldwide"
   },
   "title_with_small_cards": {
-    "title": "Why Partner for Istio Consulting & Deployment?",
+    "title": "Why Choose Istio Consulting Services?",
     "areas": [
       { "icon": "fa fa-shield", "title": "Zero-Trust Security" },
       { "icon": "fa fa-clock-o", "title": "Faster Failure Recovery" },
@@ -26,55 +26,55 @@
     ]
   },
   "service_details": {
-    "title": "Comprehensive Istio Consulting & Support Services",
-    "subtitle": "From initial assessment to enterprise support — we’ve got your Istio journey covered.",
+    "title": "Comprehensive Istio Consulting & Support",
+    "subtitle": "From initial assessment to enterprise support, we cover every step of your Istio journey with proven methodologies and hands-on expertise.",
     "sections": [
       {
         "title": "Consulting & Advisory",
-        "description": "Get expert guidance on how Istio fits your microservices architecture. Our consultants assess your setup and design a tailor-made adoption roadmap.",
+        "description": "Assess how Istio fits your microservices architecture and design a tailor-made adoption roadmap.",
         "offerings": [
-          "Comprehensive assessment of your current infrastructure and workloads.",
-          "Detailed roadmap and adoption strategy aligned with your business goals."
+          "Comprehensive evaluation of your current infrastructure and workloads.",
+          "Detailed Istio adoption strategy aligned with your business goals."
         ],
         "image": "/assets/images/services/istio-consulting-advisory.png"
       },
       {
-        "title": "Production-Grade Istio Implementation",
-        "description": "Deploy Istio with confidence — built for scale, security, and zero downtime using proven best practices.",
+        "title": "Production-Grade Istio Deployment",
+        "description": "Deploy Istio confidently with zero downtime, security, and high availability using best practices.",
         "offerings": [
-          "Deployment on Kubernetes, VMs, and multi-cloud environments.",
-          "Implementation of single and multi-cluster mesh patterns.",
-          "Active-active and failover setup for high availability."
+          "Kubernetes, VM, and multi-cloud Istio deployment support.",
+          "Single and multi-cluster mesh patterns implementation.",
+          "Active-active and failover setups for enterprise-grade HA."
         ],
         "image": "/assets/images/services/istio-consulting-implementation.png"
       },
       {
         "title": "Observability & Traffic Management",
-        "description": "Enhance visibility and resilience with traffic shaping, metrics, and monitoring integrations.",
+        "description": "Gain full visibility and resilience with advanced traffic shaping, metrics, and monitoring integrations.",
         "offerings": [
-          "Setup of retries, timeouts, fault injection, and circuit breaking.",
-          "Advanced routing — Blue-Green, Canary, A/B testing, staged rollouts.",
-          "Full observability with Grafana, Prometheus, Kiali, and Jaeger."
+          "Retries, timeouts, fault injection, and circuit breaking setup.",
+          "Advanced routing: Blue-Green, Canary, A/B testing, and staged rollouts.",
+          "Full observability using Grafana, Prometheus, Kiali, and Jaeger."
         ],
         "image": "/assets/images/services/observability-traffic-management.png"
       },
       {
         "title": "Security & Policy Enforcement",
-        "description": "Implement Zero-Trust principles across your services with end-to-end encryption and access control.",
+        "description": "Apply Zero-Trust principles with end-to-end encryption and access control for all services.",
         "offerings": [
-          "Enforce mTLS for encrypted service-to-service communication.",
+          "mTLS enforcement for encrypted service-to-service communication.",
           "Integrate authentication and authorization with existing IDPs.",
-          "Regular audits and compliance checks for security hardening."
+          "Regular audits and compliance checks for enterprise security."
         ],
         "image": "/assets/images/services/istio-consulting-security.png"
       },
       {
         "title": "Enterprise Support & Training",
-        "description": "Continuous support to keep your Istio environment healthy, updated, and well-managed.",
+        "description": "Keep your Istio environment healthy, updated, and well-managed with continuous support.",
         "offerings": [
-          "24×7 support for upgrades, patches, and troubleshooting.",
-          "Hands-on training to build in-house Istio expertise.",
-          "Regular architecture reviews and optimization guidance."
+          "24×7 support for patches, upgrades, and troubleshooting.",
+          "Hands-on training for internal teams to build Istio expertise.",
+          "Architecture reviews and optimization guidance for sustained performance."
         ],
         "image": "/assets/images/services/enterprise-support-training.png"
       }
@@ -84,7 +84,7 @@
     "title": "Why Choose AppsCode as Your Istio Partner?",
     "items": [
       {
-        "logo": "https://img.icons8.com/00a651/ios-glyphs/30/certificate.png",
+        "icon": "fa fa-certificate",
         "title": "Certified Experts",
         "description": "170+ certified engineers, including 4 CKS, 51 CKA & 19 CKAD professionals."
       },
@@ -104,7 +104,7 @@
         "description": "We focus on practical learning to empower your internal teams."
       },
       {
-        "logo": "https://img.icons8.com/00a651/ios-glyphs/30/certificate.png",
+        "icon": "fa fa-certificate",
         "title": "CNCF Certified Provider",
         "description": "AppsCode is a CNCF Silver Member & Kubernetes Certified Service Provider (KCSP)."
       },
@@ -116,7 +116,7 @@
     ]
   },
   "industries": {
-    "title": "Trusted Across Industries",
+    "title": "Istio Consulting Across Industries",
     "subtitle": "Decades of cloud-native and service mesh experience across regulated and high-growth industries.",
     "additional_text": "From global enterprises to fast-growing startups — we’ve seen it all, and built for it all.",
     "sectors": [
@@ -161,47 +161,27 @@
       "alt": "We Love Open Source"
     }
   },
- "tech_stack": {
-    "title": "Diverse Technical Expertise",
-    "subtitle": "Our engineers bring hands-on experience with multiple tools and frameworks for building modern, scalable platforms.",
+  "tech_stack": {
+    "title": "Our Istio Tech Stack Expertise",
+    "subtitle": "Certified consultants experienced with leading service mesh and observability tools.",
     "technologies": [
+      { "name": "Istio", "logo": "https://placehold.co/600x400?text=AppsCode" },
       {
-        "name": "Crossplane",
-        "logo": "/assets/images/technical-expertise/crossplane.svg"
+        "name": "Linkerd",
+        "logo": "https://placehold.co/600x400?text=AppsCode"
+      },
+      {
+        "name": "Gloo Mesh",
+        "logo": "https://placehold.co/600x400?text=AppsCode"
       },
       {
         "name": "Kubernetes",
-        "logo": "/assets/images/technical-expertise/kubernetes.svg"
-      },
-      {
-        "name": "Prometheus",
-        "logo": "/assets/images/technical-expertise/prometheus.svg"
-      },
-      {
-        "name": "GraphQL",
-        "logo": "/assets/images/technical-expertise/graphql.svg"
-      },
-      {
-        "name": "Open Policy Agent",
-        "logo": "/assets/images/technical-expertise/open-policy-agent.png"
+        "logo": "https://placehold.co/600x400?text=AppsCode"
       },
       {
         "name": "Grafana",
-        "logo": "/assets/images/technical-expertise/grafana.svg"
-      },
-      {
-        "name": "Terraform",
-        "logo": "/assets/images/technical-expertise/terraform.svg"
-      },
-      {
-        "name": "Kasten",
-        "logo": "/assets/images/technical-expertise/kasten.svg"
-      },
-      {
-        "name": "Thanos",
-        "logo": "/assets/images/technical-expertise/thanos.svg"
-      },
-      { "name": "ArgoCD", "logo": "/assets/images/technical-expertise/argocd.svg" }
+        "logo": "https://placehold.co/600x400?text=AppsCode"
+      }
     ]
   },
   "final_cta": {
