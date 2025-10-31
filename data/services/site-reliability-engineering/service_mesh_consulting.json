@@ -1,81 +1,81 @@
 {
   "hero": {
-    "title": "Service Mesh Consulting & Implementation Experts",
-    "subtitle": "Accelerate your microservices journey with certified experts in Istio, Linkerd, Consul, Traefik, and OSM.",
-    "cta_text": "TALK TO SERVICE MESH EXPERTS",
+    "title": "Enterprise Service Mesh Consulting & Implementation Experts",
+    "subtitle": "Accelerate your microservices journey with certified experts in Istio, Linkerd, Consul, Traefik, and OSM, ensuring security, reliability, and observability.",
+    "cta_text": "Talk to Service Mesh Experts",
     "cta_url": "https://appscode.com/contact/",
     "illustration": {
       "src": "/assets/images/services/service-mesh-consulting.png",
-      "alt": "Service Mesh Consulting"
+      "alt": "Enterprise Service Mesh Consulting & Support"
     }
   },
   "trusted_by": {
-    "title": "Trusted by Leading Global Teams"
+    "title": "Trusted by Leading Global Enterprises"
   },
   "title_with_small_cards": {
     "title": "Why Choose Service Mesh Consulting?",
     "areas": [
-      { "icon": "fa fa-shield", "title": "Zero Trust Security" },
-      { "icon": "fa fa-undo", "title": "Built-in Failure Recovery" },
-      { "icon": "fa fa-rocket", "title": "Smart Traffic Management" },
-      { "icon": "fa fa-cogs", "title": "Granular Request Routing" },
-      { "icon": "fa fa-database", "title": "Support for K8s, VMs & Multi-Mesh" },
-      { "icon": "fa fa-eye", "title": "Unified Observability & Monitoring" },
-      { "icon": "fa fa-cloud", "title": "Multi-Cluster & Hybrid Cloud Ready" },
+      { "icon": "fa fa-shield", "title": "Zero Trust Security & Compliance" },
+      { "icon": "fa fa-undo", "title": "Built-in Failure Recovery & Resilience" },
+      { "icon": "fa fa-rocket", "title": "Intelligent Traffic Management" },
+      { "icon": "fa fa-cogs", "title": "Granular Service Routing & Policies" },
+      { "icon": "fa fa-database", "title": "Multi-Mesh, Kubernetes & VM Support" },
+      { "icon": "fa fa-eye", "title": "Unified Observability & Metrics" },
+      { "icon": "fa fa-cloud", "title": "Hybrid Cloud & Multi-Cluster Ready" },
       { "icon": "fa fa-lock", "title": "Secure Service-to-Service Communication" }
     ]
   },
   "service_details": {
-    "title": "Comprehensive Service Mesh Consulting Services",
-    "subtitle": "From strategy to deployment — we help you adopt, optimize, and scale your service mesh for security, performance, and reliability.",
+    "title": "Comprehensive Enterprise Service Mesh Consulting Services",
+    "subtitle": "AppsCode provides full lifecycle service mesh consulting — strategy, deployment, optimization, and managed support for modern microservices.",
     "sections": [
       {
         "title": "Consulting & Advisory",
-        "description": "Get expert analysis of your current microservices architecture, identify bottlenecks, and define a clear service mesh roadmap.",
+        "description": "Analyze your microservices architecture, identify bottlenecks, and define a strategic service mesh roadmap aligned with business objectives.",
         "offerings": [
-          "Assess existing setup to detect performance and security gaps.",
-          "Design an adoption strategy aligned with your business goals.",
-          "Recommend the right service mesh — Istio, Linkerd, Consul, or Traefik — based on your environment."
+          "Assess existing infrastructure for performance and security gaps.",
+          "Design adoption strategy tailored to your environment and workloads.",
+          "Recommend the most suitable service mesh — Istio, Linkerd, Consul, Traefik, or OSM."
         ],
         "image": "/assets/images/services/service-mesh-consulting-advisory.png"
       },
       {
         "title": "Deployment & Implementation",
-        "description": "Deploy the right service mesh with zero downtime and ensure seamless communication between services.",
+        "description": "Implement your chosen service mesh with minimal downtime while enabling full service communication, security, and reliability.",
         "offerings": [
-          "Install and configure Istio, Linkerd, or Consul across Kubernetes or VMs.",
-          "Enable full end-to-end encryption across all services.",
-          "Ensure reliable rollout with canary and blue-green deployments."
+          "Install and configure Istio, Linkerd, Consul, or Traefik on Kubernetes, VMs, or hybrid setups.",
+          "Enable end-to-end encryption and zero-trust security between services.",
+          "Implement canary, blue-green, and rolling deployments for seamless updates."
         ],
         "image": "/assets/images/services/service-mesh-consulting-deployment.png"
       },
       {
         "title": "Integration & Configuration",
-        "description": "Enhance visibility and control by integrating your mesh with monitoring, tracing, and alerting tools.",
+        "description": "Integrate your mesh with observability, tracing, and alerting tools to gain full visibility and control.",
         "offerings": [
-          "Create a unified dashboard for 360° observability and traffic control.",
-          "Identify performance bottlenecks and dependency issues in real time.",
-          "Improve reliability with intelligent traffic routing and policy-based management."
+          "Build a unified dashboard for real-time monitoring and traffic management.",
+          "Detect bottlenecks, latency, and dependencies in complex microservices environments.",
+          "Apply intelligent routing, policy-based management, and fault tolerance strategies."
         ],
         "image": "/assets/images/services/service-mesh-consulting-integration.png"
       },
       {
         "title": "Support & Training",
-        "description": "Empower your team with hands-on training and dedicated commercial support from certified mesh experts.",
+        "description": "Upskill your team and ensure enterprise-grade support from certified service mesh experts.",
         "offerings": [
-          "Continuous support for version upgrades, patches, and fixes.",
-          "In-depth workshops to build in-house mesh expertise.",
-          "Vendor-neutral guidance for optimal deployment and scaling."
+          "Continuous commercial support for upgrades, patches, and troubleshooting.",
+          "Hands-on workshops and training to build in-house service mesh expertise.",
+          "Vendor-neutral guidance for optimal deployment, scaling, and reliability."
         ],
         "image": "/assets/images/services/service-mesh-consulting-support.png"
       }
     ]
   },
   "cards": {
-    "title": "Why Partner with AppsCode for Service Mesh?",
+    "title": "Why Choose AppsCode for Enterprise Service Mesh?",
     "items": [
       {
-        "logo": "https://img.icons8.com/00a651/ios-glyphs/30/certificate.png",
+        "icon": "fa fa-certificate",
         "title": "CNCF Certified Provider",
         "description": "AppsCode is a proud CNCF Silver Member and Kubernetes Certified Service Provider (KCSP)."
       },
@@ -152,47 +152,14 @@
       "alt": "Open Source Contributions"
     }
   },
- "tech_stack": {
-    "title": "Diverse Technical Expertise",
-    "subtitle": "Our engineers bring hands-on experience with multiple tools and frameworks for building modern, scalable platforms.",
+  "tech_stack": {
+    "title": "Choosing the Right Service Mesh — Simplified",
+    "subtitle": "We help you evaluate, deploy, and manage the best-fit mesh for your workloads.",
     "technologies": [
-      {
-        "name": "Crossplane",
-        "logo": "/assets/images/technical-expertise/crossplane.svg"
-      },
-      {
-        "name": "Kubernetes",
-        "logo": "/assets/images/technical-expertise/kubernetes.svg"
-      },
-      {
-        "name": "Prometheus",
-        "logo": "/assets/images/technical-expertise/prometheus.svg"
-      },
-      {
-        "name": "GraphQL",
-        "logo": "/assets/images/technical-expertise/graphql.svg"
-      },
-      {
-        "name": "Open Policy Agent",
-        "logo": "/assets/images/technical-expertise/open-policy-agent.png"
-      },
-      {
-        "name": "Grafana",
-        "logo": "/assets/images/technical-expertise/grafana.svg"
-      },
-      {
-        "name": "Terraform",
-        "logo": "/assets/images/technical-expertise/terraform.svg"
-      },
-      {
-        "name": "Kasten",
-        "logo": "/assets/images/technical-expertise/kasten.svg"
-      },
-      {
-        "name": "Thanos",
-        "logo": "/assets/images/technical-expertise/thanos.svg"
-      },
-      { "name": "ArgoCD", "logo": "/assets/images/technical-expertise/argocd.svg" }
+      { "name": "Istio", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "Linkerd", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "GlooMesh", "logo": "https://placehold.co/600x400?text=AppsCode" },
+      { "name": "Consul", "logo": "https://placehold.co/600x400?text=AppsCode" }
     ]
   },
   "large_preview_cards": {
@@ -219,11 +186,11 @@
     ]
   },
   "final_cta": {
-    "title": "Need a Service Mesh Partner?",
-    "subtitle": "Whether you’re migrating, optimizing, or scaling — our experts ensure a smooth and secure service mesh journey.",
+    "title": "Need Enterprise Service Mesh Support?",
+    "subtitle": "AppsCode ensures a smooth, secure, and high-performing service mesh adoption journey for your organization.",
     "buttons": [
       {
-        "text": "TALK TO A MESH EXPERT",
+        "text": "Talk to a Service Mesh Expert",
         "icon": "fa fa-calendar",
         "type": "outlined"
       }
