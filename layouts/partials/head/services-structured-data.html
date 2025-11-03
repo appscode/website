@@ -1,12 +1,10 @@
-<p>before mhin</p>
-
-{{- if .Params.serviceType -}}
+{{- if .Params.title -}}
 <p>hello mohin</p>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "serviceType": "{{ .Params.serviceType }}",
+  "serviceType": "{{ .Params.title }}",
   "provider": {
     "@type": "Organization",
     "name": "Appscode Inc",
@@ -21,7 +19,7 @@
     "@type": "Place",
     "name": "Worldwide"
   },
-  "description": "{{ .Params.serviceDescription | plainify }}",
+  "description": "{{ .Params.description | plainify }}",
   "offers": {
     "@type": "Offer",
     "url": "{{ .Permalink }}",
