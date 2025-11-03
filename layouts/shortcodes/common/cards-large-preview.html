@@ -24,7 +24,7 @@
                     </div>
                     <h4>{{ $item.title }}</h4>
                     <p class="has-text-gray">
-                        {{ $item.description }}
+                        {{ $item.description | safeHTML}}
                     </p>
                 </div>
             </div>

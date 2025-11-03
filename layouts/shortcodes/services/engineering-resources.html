@@ -31,7 +31,7 @@
                     <div class="resource-content {{ if not $item.image }}has-text-centered{{ end }}">
                         <h4 class="title mb-12">{{ $item.title }}</h4>
                         {{ if $item.description }}
-                            <p>{{ $item.description }}</p>
+                            <p>{{ $item.description | safeHTML }}</p>
                         {{ end }}
                         {{ if $item.cta_text }}
                             <button class="button ac-button is-fullwidth mt-32">{{ $item.cta_text }}</button>

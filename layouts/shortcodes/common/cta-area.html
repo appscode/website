@@ -11,7 +11,7 @@
         <div class="section-title has-text-centered">
             <h2>{{ $data.final_cta.title }}</h2>
             <p>
-                {{ $data.final_cta.subtitle }}
+                {{ $data.final_cta.subtitle | safeHTML }}
             </p>
         </div>
         <!-- Calendly inline widget begin -->

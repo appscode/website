@@ -30,7 +30,7 @@ $data.development_process }}
                         {{ range $index, $item := .active_content }}
                         <div class="tab-content {{ if $item.active }}is-active{{ end }}" data-index="{{ $index }}">
                             <img src="{{ $item.image }}" alt="{{ $item.title }}" />
-                            <p>{{ $item.description }}</p>
+                            <p>{{ $item.description | safeHTML }}</p>
                         </div>
                         {{ end }}
                     </div>

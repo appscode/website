@@ -19,9 +19,9 @@
                     <div class="column is-6">
                         <div class="feature-wrapper d-table">
                             <div class="feature-content pr-140 d-table-cell">
-                                <h3>{{ $data.open_source.title }}</h3>
-                                <p>{{ $data.open_source.description }}</p>
-                                <a href="#" class="has-text-info has-text-center-mobile">{{ $data.open_source.cta_text }}</a>
+                                <h3>{{ $data.open_source.title | safeHTML}}</h3>
+                                <p>{{ $data.open_source.description | safeHTML }}</p>
+                                <a href="https://github.com/appscode-cloud" class="has-text-info has-text-center-mobile">{{ $data.open_source.cta_text }}</a>
                             </div>
                         </div>
                     </div>

@@ -9,7 +9,7 @@
             <div class="column is-6 is-full-touch">
                 <h1 class="is-gradient">{{ $data.hero.title }}</h1>
                 <p>
-                    {{ $data.hero.subtitle }}
+                    {{ $data.hero.subtitle | safeHTML}}
                 </p>
                 <a href="{{ $data.hero.cta_url }}" class="button ac-button is-primary ">{{ $data.hero.cta_text }}</a>
             </div>

@@ -46,7 +46,7 @@
                 </button>
               </div>
               <div class="accordion-body" style="{{ if eq $index 0 }}max-height: 500px; opacity:1;{{ end }}">
-                <p>{{ $item.answer }}</p>
+                <p>{{ $item.answer | safeHTML }}</p>
               </div>
             </div>
             {{ end }}

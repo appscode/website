@@ -24,11 +24,11 @@
                     </div>
                     <h4>{{ $item.title }}</h4>
                     <p class="has-text-gray">
-                        {{ $item.description }}
+                        {{ $item.description | safeHTML}}
                     </p>
                     {{ if $item.additional_description }}
                     <p class="has-text-gray mt-12">
-                        {{ $item.additional_description }}
+                        {{ $item.additional_description | safeHTML }}
                     </p>
                     {{ end }}
                 </div>

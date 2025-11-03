@@ -11,8 +11,8 @@
             <div class="column is-4">
                 <div class="section-title mb-0">
                     <h2>{{ $data.industries.title }}</h2>
-                    <p>{{ $data.industries.subtitle }}</p>
-                    <p>{{ $data.industries.additional_text }}</p>
+                    <p>{{ $data.industries.subtitle | safeHTML }}</p>
+                    <p>{{ $data.industries.additional_text | safeHTML }}</p>
                 </div>
             </div>
             <div class="column is-8">
@@ -29,7 +29,7 @@
                                     <h4 class="mt-16">{{ $item.title }}</h4>
                                 </div>
                                 <p class="has-text-gray">
-                                    {{ $item.description }}
+                                    {{ $item.description | safeHTML }}
                                 </p>
                             </div>
                         </div>
