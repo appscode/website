@@ -18,8 +18,9 @@ data: 'data/services/product-engineering/cloud_native_product_development.json'
 {{< services/we-love-open-source >}}
 {{< common/expertise >}}
 {{< services/why-appscode >}}
-{{< services/engineering-resources >}}
 {{< common/cta-area >}}
+{{< services/engineering-resources >}}
+{{< common/faq >}}
 
 
 

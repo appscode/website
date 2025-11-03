@@ -17,3 +17,4 @@ data: 'data/services/application-modernization/jenkins_consulting_support.json'
 {{< common/cards-large-preview >}}
 {{< common/cards >}}
 {{< common/expertise >}}
+{{< common/faq >}}

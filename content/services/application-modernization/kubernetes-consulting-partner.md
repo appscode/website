@@ -16,5 +16,6 @@ data: 'data/services/application-modernization/kubernetes_consulting_partner.jso
 {{< common/cards >}}
 {{< common/expertise >}}
 {{< common/cta-area >}}
+{{< common/faq >}}
 
 

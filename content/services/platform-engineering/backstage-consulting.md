@@ -17,4 +17,5 @@ data: 'data/services/platform-engineering/backstage_consulting.json'
 {{< common/cards >}}
 {{< common/expertise >}}
 {{< services/engineering-resources >}}
+{{< common/faq >}}
 

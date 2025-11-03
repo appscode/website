@@ -16,6 +16,7 @@ data: 'data/services/application-modernization/build_devops_toolchain.json'
 {{< common/cta-area >}}
 {{< common/cards >}}
 {{< common/expertise >}}
+{{< common/faq >}}
 
 
 

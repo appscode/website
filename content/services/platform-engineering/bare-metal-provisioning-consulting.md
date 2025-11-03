@@ -16,5 +16,6 @@ data: 'data/services/platform-engineering/bare_metal_provisioning_consulting.jso
 {{< common/cards >}}
 {{< common/expertise >}}
 {{< common/cta-area >}}
+{{< common/faq >}}
 
 

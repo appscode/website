@@ -18,6 +18,7 @@ data: 'data/services/observability-devsecops/observability_consulting.json'
 {{< services/engineering-resources >}}
 {{< common/cards2 >}}
 {{< common/expertise >}}
+{{< common/faq >}}
 
 
 

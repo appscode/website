@@ -15,4 +15,4 @@ data: 'data/services/site-reliability-engineering/kubernetes_disaster_recovery.j
 {{< services/we-love-open-source >}}
 {{< common/cta-area >}}
 {{< common/expertise >}}
-
+{{< common/faq >}}

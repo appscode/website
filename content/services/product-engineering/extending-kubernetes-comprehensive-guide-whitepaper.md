@@ -9,4 +9,4 @@ data: 'data/services/product-engineering/extending_kubernetes_comprehensive_guid
 {{< common/hero-area >}}
 {{< common/service-details >}}
 {{< common/expertise >}}
-
+{{< common/faq >}}

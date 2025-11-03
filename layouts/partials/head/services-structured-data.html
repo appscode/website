@@ -1,5 +1,4 @@
 {{- if .Params.title -}}
-<p>hello mohin</p>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -9,10 +8,10 @@
     "@type": "Organization",
     "name": "Appscode Inc",
     "url": "https://appscode.com",
-    "logo": "https://appscode.com/images/logo.png",
+    "logo": "http://cdn.appscode.com/images/products/appscode/appscode-1280x640.png",
     "sameAs": [
-      "https://www.linkedin.com/company/appscode/",
-      "https://twitter.com/appscode"
+      "https://www.linkedin.com/company/appscode",
+      "https://x.com/AppsCodeHQ"
     ]
   },
   "areaServed": {
@@ -23,10 +22,10 @@
   "offers": {
     "@type": "Offer",
     "url": "{{ .Permalink }}",
-    "priceCurrency": "USD",
+    "priceCurrency": "USD mohin test",
     "availability": "https://schema.org/InStock",
     "price": "Custom",
-    "validFrom": "2025-01-01"
+    "validFrom": "{{ now.Format "2006-01-02" }}"
   }
 }
 </script>

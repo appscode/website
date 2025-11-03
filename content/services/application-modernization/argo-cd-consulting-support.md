@@ -15,6 +15,7 @@ data: 'data/services/application-modernization/argo_cd_consulting_support.json'
 {{< common/cta-area >}}
 {{< common/cards >}}
 {{< common/expertise >}}
+{{< common/faq >}}
 
 
 

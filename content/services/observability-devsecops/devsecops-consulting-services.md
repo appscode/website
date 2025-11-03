@@ -14,6 +14,7 @@ data: 'data/services/observability-devsecops/devsecops_consulting_services.json'
 {{< common/cta-area >}}
 {{< common/cards >}}
 {{< common/expertise >}}
+{{< common/faq >}}
 
 
 

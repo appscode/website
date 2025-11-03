@@ -17,6 +17,7 @@ data: 'data/services/application-modernization/gitops_consulting.json'
 {{< common/cards-large-preview >}}
 {{< common/cards >}}
 {{< common/expertise >}}
+{{< common/faq >}}
 
 
 

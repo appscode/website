@@ -15,4 +15,6 @@ data: 'data/services/product-engineering/monolith_to_microservices.json'
 {{< common/cards >}}
 {{< common/cta-area >}}
 {{< common/expertise >}}
+{{< common/faq >}}
+
 

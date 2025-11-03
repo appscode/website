@@ -16,5 +16,6 @@ data: 'data/services/platform-engineering/progressive_delivery_consulting.json'
 {{< common/cards >}}
 {{< common/expertise >}}
 {{< common/cta-area >}}
+{{< common/faq >}}
 
 

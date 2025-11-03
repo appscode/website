@@ -18,4 +18,5 @@ data: 'data/services/platform-engineering/platform_engineering_services.json'
 {{< common/cta-area >}}
 {{< common/cards >}}
 {{< common/expertise >}}
+{{< common/faq >}}
 

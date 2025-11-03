@@ -16,4 +16,5 @@ data: 'data/services/product-engineering/cloud_native_faas.json'
 {{< common/cta-area >}}
 {{< common/cards >}}
 {{< common/expertise >}}
+{{< common/faq >}}
 

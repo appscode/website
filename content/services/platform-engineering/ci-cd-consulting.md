@@ -16,5 +16,6 @@ data: 'data/services/platform-engineering/ci_cd_consulting.json'
 {{< common/cards >}}
 {{< common/expertise >}}
 {{< common/cta-area >}}
+{{< common/faq >}}
 
 
