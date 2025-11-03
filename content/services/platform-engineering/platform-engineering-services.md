@@ -1,6 +1,7 @@
 ---
 id: platform-engineering-services
-title: platform-engineering-services
+title: Elevate Your Organization with Expert Platform Engineering Services
+description: AppsCode delivers end-to-end platform engineering services — from platform strategy, MVP development, and integrations to ongoing optimization and support for scalable, cloud-native platforms.
 layout: services
 url: '/services/platform-engineering-services'
 data: 'data/services/platform-engineering/platform_engineering_services.json'

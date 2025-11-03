@@ -1,6 +1,7 @@
 ---
 id: service-mesh-consulting-support
-title: service-mesh-consulting
+title: Enterprise Service Mesh Consulting & Implementation Experts
+description: Accelerate your microservices journey with certified experts in Istio, Linkerd, Consul, Traefik, and OSM, ensuring security, reliability, and observability.
 layout: services
 url: '/services/service-mesh-consulting-support'
 data: 'data/services/site-reliability-engineering/service_mesh_consulting.json'

@@ -1,6 +1,7 @@
 ---
 id: kubernetes-consulting-services
-title: kubernetes-consulting-partner
+title: Kubernetes Consulting Services by Certified Experts
+description: Empower your business with CNCF-certified Kubernetes consultants for consulting, deployment, optimization, and managed enterprise support.
 layout: services
 url: '/services/kubernetes-consulting-services'
 data: 'data/services/application-modernization/kubernetes_consulting_partner.json'

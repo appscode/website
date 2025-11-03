@@ -1,6 +1,7 @@
 ---
 id: kubernetes-backup-and-disaster-recovery-services
-title: kubernetes-disaster-recovery
+title: Enterprise Kubernetes Backup & Disaster Recovery Services
+description: Protect your Kubernetes workloads with enterprise-grade backup, disaster recovery, and migration solutions across cloud, on-prem, or hybrid environments.
 layout: services
 url: '/services/kubernetes-backup-and-disaster-recovery-services'
 data: 'data/services/site-reliability-engineering/kubernetes_disaster_recovery.json'

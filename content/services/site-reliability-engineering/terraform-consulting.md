@@ -1,6 +1,7 @@
 ---
 id: terraform-consulting-services
-title: terraform-consulting
+title: Enterprise Terraform Consulting Services
+description: Accelerate your infrastructure automation with expert Terraform consulting, implementation, and enterprise-grade support for cloud and on-prem environments.
 layout: services
 url: '/services/terraform-consulting-services'
 data: 'data/services/site-reliability-engineering/terraform_consulting.json'

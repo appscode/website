@@ -1,6 +1,7 @@
 ---
 id: site-reliability-engineering-consulting-services
-title: sre-consulting-services
+title: Professional Site Reliability Engineering (SRE) Consulting & Support
+description: Transform your operations with expert-led SRE adoption, improving reliability, performance, and scalability across your enterprise systems.
 layout: services
 url: '/services/site-reliability-engineering-consulting-services'
 data: 'data/services/site-reliability-engineering/sre_consulting_services.json'

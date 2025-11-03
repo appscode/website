@@ -1,6 +1,7 @@
 ---
 id: monolith-to-microservices
-title: monolith-microservices-modernization
+title: Transform Your Monolith into Scalable Microservices
+description: Empower your business with cloud-native architecture that drives agility, scalability, and innovation — guided by Appscode’s proven monolith to microservices expertise.
 layout: services
 url: '/services/monolith-to-microservices'
 data: 'data/services/product-engineering/monolith_to_microservices.json'

@@ -1,6 +1,7 @@
 ---
 id: observability-consulting-services-and-support
-title: observability-consulting
+title: Observability Consulting Services & Enterprise Support by Appscode
+description: Achieve complete visibility, faster incident response, and cloud-native resilience with enterprise-grade Observability Consulting powered by Prometheus, Grafana, and Loki.
 layout: services
 url: '/services/observability-consulting-services-and-support'
 data: 'data/services/observability-devsecops/observability_consulting.json'

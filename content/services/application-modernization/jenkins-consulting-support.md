@@ -1,6 +1,7 @@
 ---
 id: jenkins-consulting-and-professional-services
-title: jenkins-consulting-support
+title: Enterprise Jenkins Consulting & Professional Support Services
+description: Accelerate your CI/CD transformation with expert-led Jenkins implementation, optimization, and enterprise-grade support from AppsCode.
 layout: services
 url: '/services/jenkins-consulting-and-professional-services'
 data: 'data/services/application-modernization/jenkins_consulting_support.json'

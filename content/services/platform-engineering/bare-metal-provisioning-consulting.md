@@ -1,6 +1,7 @@
 ---
 id: bare-metal-provisioning-and-infrastructure-consulting
-title: bare-metal-provisioning-consulting
+title: Expert Bare Metal Provisioning & On-Prem Infrastructure Consulting
+description: Automate and optimize your on-premises infrastructure with our consulting, implementation, and enterprise-grade support services.
 layout: services
 url: '/services/bare-metal-provisioning-and-infrastructure-consulting'
 data: 'data/services/platform-engineering/bare_metal_provisioning_consulting.json'
