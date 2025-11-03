@@ -9,7 +9,7 @@
   <div class="container">
     <div class="section-title has-text-centered mb-6">
       <h2>{{ .title }}</h2>
-      <p>{{ .subtitle }}</p>
+      <p>{{ .subtitle | safeHTML }}</p>
     </div>
 
     <div class="columns is-centered is-multiline">

@@ -9,7 +9,7 @@
     <div class="container">
         <div class="section-title has-text-centered mb-6">
             <h2>{{ .title }}</h2>
-            <p>{{ .subtitle }}</p>
+            <p>{{ .subtitle | safeHTML }}</p>
         </div>
 
 
@@ -21,12 +21,17 @@
                 <div class="service-wrapper d-table">
                     <div class="service-content pr-140 d-table-cell">
                         <h3>{{ $section.title }}</h3>
-                        <p>{{ $section.description }}</p>
+                        <p>{{ $section.description | safeHTML }}</p>
                         <ul>
                             {{ range $offering := $section.offerings }}
-                            <li><span class="icon">
+                            <li>
+                                <span class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="#00a651" fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207" clip-rule="evenodd"/></svg>
-                            </span> {{ $offering }}</li>
+                                </span>
+                                <div>
+                                 {{ $offering | safeHTML }}
+                                </div>
+                            </li>
                             {{ end }}
                         </ul>
                     </div>
@@ -52,9 +57,14 @@
                         <p>{{ $section.description | safeHTML }}</p>
                         <ul>
                             {{ range $offering := $section.offerings }}
-                            <li><span class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="#00a651" fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207" clip-rule="evenodd"/></svg>
-                            </span> {{ $offering | safeHTML }}</li>
+                            <li>
+                                 <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="#00a651" fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207" clip-rule="evenodd"/></svg>
+                                    </span> 
+                                <div>
+                                   {{ $offering | safeHTML }}
+                                </div>
+                            </li>
                             {{ end }}
                         </ul>
                     </div>
