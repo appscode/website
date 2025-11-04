@@ -11,7 +11,7 @@
             <div class="column">
                 <div class="section-title has-text-centered">
                     <h2>{{ $data.tech_stack.title }}</h2>
-                    <p>{{ $data.tech_stack.subtitle }}</p>
+                    <p>{{ $data.tech_stack.subtitle | safeHTML }}</p>
                 </div>
             </div>
         </div>
