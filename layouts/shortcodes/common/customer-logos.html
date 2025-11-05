@@ -1,0 +1,26 @@
+{{ $jsonPath := .Get "data" | default .Page.Params.data }}
+{{ $data := getJSON $jsonPath | default dict }}
+
+{{ with $data.trusted_by }}
+<!-- Trusted by Section -->
+<section>
+    <div class="container has-text-centered">
+        <h5>{{ $data.trusted_by.title }}</h5>
+        <div class="columns is-centered is-vcentered">
+            <div class="column is-12">
+                <div class="social-prove-brand-area">
+                    <div class="brand-image-wrapper owl-carousel" id="brand-image-wrapper">
+                        {{ range $customer := $.Site.Data.customers }}
+                        {{ if $customer.show }}
+                        <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}"
+                                loading="eager" height="32"></div>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Trusted by Section -->
+{{ end }}
