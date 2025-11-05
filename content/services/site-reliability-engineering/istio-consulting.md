@@ -1,7 +1,7 @@
 ---
 id: istio-consulting-services
 title: Istio Consulting Services & Enterprise Support Partner
-description: Accelerate Istio adoption with expert consulting, seamless implementation, and ongoing enterprise-grade support.
+description: Accelerate Istio adoption with expert Istio consulting, seamless implementation, and ongoing enterprise-grade support.
 layout: services
 url: '/services/istio-consulting-services'
 data: 'data/services/site-reliability-engineering/istio_consulting.json'

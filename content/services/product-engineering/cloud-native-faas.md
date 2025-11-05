@@ -1,7 +1,7 @@
 ---
 id: cloud-native-faas-services
 title: Accelerate Your Cloud Native FaaS Journey
-description: AppsCode empowers businesses to design, deploy, and scale cloud native FaaS architectures that deliver performance, cost efficiency, and agility, without managing infrastructure.
+description: AppsCode helps businesses build and scale cloud-native FaaS architectures for high performance and cost efficiency without infrastructure hassles.
 layout: services
 url: '/services/cloud-native-faas-services'
 data: 'data/services/product-engineering/cloud_native_faas.json'

@@ -1,7 +1,7 @@
 ---
 id: site-reliability-engineering-consulting-services
 title: Professional Site Reliability Engineering (SRE) Consulting & Support
-description: Transform your operations with expert-led SRE adoption, improving reliability, performance, and scalability across your enterprise systems.
+description: Improve reliability, performance, and scalability with AppsCode Site Reliability Engineering Consulting Services—expert SRE adoption for your enterprise systems.
 layout: services
 url: '/services/site-reliability-engineering-consulting-services'
 data: 'data/services/site-reliability-engineering/sre_consulting_services.json'

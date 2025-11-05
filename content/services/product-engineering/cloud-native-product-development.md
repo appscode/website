@@ -1,7 +1,7 @@
 ---
 id: cloud-native-product-development-services
 title: Cloud Native Product Development That Scales Seamlessly
-description: AppsCode Inc. empowers businesses with end-to-end cloud native product development — combining Kubernetes, DevOps, and microservices to deliver secure, resilient, and high-performing software faster.
+description: AppsCode Inc. builds secure, scalable cloud-native product development using Kubernetes, DevOps, and microservices for faster software delivery.
 layout: services
 url: '/services/cloud-native-product-development-services'
 data: 'data/services/product-engineering/cloud_native_product_development.json'

@@ -1,7 +1,7 @@
 ---
 id: grafana-consulting-services-and-support
 title: Grafana Consulting Services & Enterprise Support by Appscode
-description: Accelerate observability, performance, and reliability with expert Grafana consulting, implementation, and enterprise-grade support tailored to your cloud-native environment.
+description: Boost observability and reliability with AppsCode Grafana Consulting Services—expert implementation, optimization, and enterprise-grade support for cloud-native environments.
 layout: services
 url: '/services/grafana-consulting-services-and-support'
 data: 'data/services/observability-devsecops/grafana_consulting.json'

@@ -1,7 +1,7 @@
 ---
 id: devsecops-consulting-services-and-implementation
 title: DevSecOps Consulting Services | Secure Your Software Delivery Pipeline
-description: Integrate security across every stage of your DevOps lifecycle. AppsCode’s DevSecOps Consulting Services empower your teams to automate, secure, and scale cloud-native applications with confidence.
+description: Secure and scale cloud-native apps with AppsCode DevSecOps Consulting Services—automate security across every stage of your DevOps lifecycle.
 layout: services
 url: '/services/devsecops-consulting-services-and-implementation'
 data: 'data/services/observability-devsecops/devsecops_consulting_services.json'

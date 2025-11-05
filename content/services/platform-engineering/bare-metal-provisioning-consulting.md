@@ -1,7 +1,7 @@
 ---
 id: bare-metal-provisioning-and-infrastructure-consulting
 title: Expert Bare Metal Provisioning & On-Prem Infrastructure Consulting
-description: Automate and optimize your on-premises infrastructure with our consulting, implementation, and enterprise-grade support services.
+description: Automate and optimize your on-prem systems with AppsCode’s bare metal provisioning and infrastructure consulting for efficient, scalable, and secure operations.
 layout: services
 url: '/services/bare-metal-provisioning-and-infrastructure-consulting'
 data: 'data/services/platform-engineering/bare_metal_provisioning_consulting.json'

@@ -1,7 +1,7 @@
 ---
 id: service-mesh-consulting-support
 title: Enterprise Service Mesh Consulting & Implementation Experts
-description: Accelerate your microservices journey with certified experts in Istio, Linkerd, Consul, Traefik, and OSM, ensuring security, reliability, and observability.
+description: Accelerate microservices with AppsCode Service Mesh Consulting Support—expert Istio, Linkerd, Consul, Traefik & OSM for secure, reliable, observable deployments.
 layout: services
 url: '/services/service-mesh-consulting-support'
 data: 'data/services/site-reliability-engineering/service_mesh_consulting.json'

@@ -1,7 +1,7 @@
 ---
 id: kubernetes-backup-and-disaster-recovery-services
 title: Enterprise Kubernetes Backup & Disaster Recovery Services
-description: Protect your Kubernetes workloads with enterprise-grade backup, disaster recovery, and migration solutions across cloud, on-prem, or hybrid environments.
+description: Secure your Kubernetes workloads with AppsCode Kubernetes Backup & Disaster Recovery Services—enterprise-grade backup, DR, and migration solutions.
 layout: services
 url: '/services/kubernetes-backup-and-disaster-recovery-services'
 data: 'data/services/site-reliability-engineering/kubernetes_disaster_recovery.json'

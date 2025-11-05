@@ -1,7 +1,7 @@
 ---
 id: prometheus-consulting-services
 title: Prometheus Consulting Services & Enterprise Support by Appscode
-description: Leverage Prometheus consulting, deployment, and optimization services to achieve enterprise-grade observability and monitoring for your cloud-native infrastructure.
+description: Get enterprise-grade observability with AppsCode Prometheus Consulting—deployment, monitoring, and optimization for cloud-native infrastructure.
 layout: services
 url: '/services/prometheus-consulting-services'
 data: 'data/services/observability-devsecops/prometheus_monitoring_support.json'
