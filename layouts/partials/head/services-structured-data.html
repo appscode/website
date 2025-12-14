@@ -1,0 +1,32 @@
+{{- if .Params.title -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "{{ .Params.title }}",
+  "provider": {
+    "@type": "Organization",
+    "name": "Appscode Inc",
+    "url": "https://appscode.com",
+    "logo": "http://cdn.appscode.com/images/products/appscode/appscode-1280x640.png",
+    "sameAs": [
+      "https://www.linkedin.com/company/appscode",
+      "https://x.com/AppsCodeHQ"
+    ]
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Worldwide"
+  },
+  "description": "{{ .Params.description | plainify }}",
+  "offers": {
+    "@type": "Offer",
+    "url": "{{ .Permalink }}",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "price": "Custom",
+    "validFrom": "{{ now.Format "2006-01-02" }}"
+  }
+}
+</script>
+{{- end -}}
