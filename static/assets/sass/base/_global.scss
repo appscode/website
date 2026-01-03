@@ -86,7 +86,7 @@
   @include mobile {
     gap: 4px;
   }
-  
+
   li {
     display: flex;
     align-items: center;
@@ -101,7 +101,7 @@
   position: relative;
   z-index: 1;
 
-  &::after{
+  &::after {
     position: absolute;
     content: "";
     left: -54px;
@@ -196,7 +196,6 @@
     font-weight: 600;
     margin-bottom: 8px;
     text-wrap: balance;
-
   }
 
   p {
@@ -205,6 +204,7 @@
     letter-spacing: 0;
     margin-bottom: 3rem;
     font-weight: normal;
+    text-wrap: balance;
   }
 }
 
@@ -544,7 +544,6 @@ Responsive Classes
   }
 }
 
-
 // Medium devices (tablets, 769px and up)
 @include tablet-only {
   .container {
@@ -570,7 +569,6 @@ Responsive Classes
 
 // Large devices (desktops, 1024px and up)
 @include desktop-only {
-
   .section-title {
     h1 {
       &.is-outlined-text {
@@ -606,5 +604,46 @@ Responsive Classes
 @media (min-width: 1216px) and (max-width: 1440px) {
   .container {
     max-width: 1200px !important;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reverse-column-mobile {
+  @include mobile {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+}
+
+.section-title.has-text-centered {
+  max-width: 80%;
+  margin: 0 auto 16px auto;
+  @include touch {
+    max-width: 100%;
+  }
+}
+.has-text-center-mobile {
+  @include mobile {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.section-title.has-text-centered-tablet {
+  @include touch {
+    p {
+      text-align: center;
+    }
   }
 }

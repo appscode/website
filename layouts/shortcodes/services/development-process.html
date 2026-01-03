@@ -1,0 +1,67 @@
+{{/* Load JSON from .Page.Params.data */}} {{ $data := dict }} {{ if
+.Page.Params.data }} {{ $data = getJSON .Page.Params.data }} {{ end }} {{ with
+$data.development_process }}
+<section class="section-padding product-development-process-section">
+    <div class="container has-text-centered">
+        <div class="section-title has-text-centered">
+            <h2>{{ .title }}</h2>
+            <p>{{ .subtitle }}</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="columns is-vcentered">
+            <!-- Left side: Steps -->
+            <div class="column is-12">
+                <div class="steps-wrapper">
+                    <div class="tab-items">
+                        {{ range $index, $item := .steps }}
+                        <div class="tab-item {{ if $item.active }}is-active{{ end }}" data-index="{{ $index }}">
+                            <div class="date">
+                                <strong>{{ $item.date }}</strong>
+                                <span>{{ $item.month }}</span>
+                            </div>
+                            <h4>{{ $item.title }}</h4>
+                        </div>
+                        {{ end }}
+                    </div>
+
+                    <div class="tab-contents">
+                        {{ range $index, $item := .active_content }}
+                        <div class="tab-content {{ if $item.active }}is-active{{ end }}" data-index="{{ $index }}">
+                            <img src="{{ $item.image }}" alt="{{ $item.title }}" />
+                            <p>{{ $item.description | safeHTML }}</p>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inline JS (can be moved to main.js or partial) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabItems = document.querySelectorAll(".tab-item");
+            const tabContents = document.querySelectorAll(".tab-content");
+
+            tabItems.forEach((tab) => {
+                tab.addEventListener("mouseover", () => {
+                    const index = tab.getAttribute("data-index");
+
+                    // Remove active classes
+                    tabItems.forEach((t) => t.classList.remove("is-active"));
+                    tabContents.forEach((c) => c.classList.remove("is-active"));
+
+                    // Add active to clicked item and corresponding content
+                    tab.classList.add("is-active");
+                    const activeContent = document.querySelector(
+                        `.tab-content[data-index="${index}"]`
+                    );
+                    if (activeContent) activeContent.classList.add("is-active");
+                });
+            });
+        });
+    </script>
+    {{ end }}
+</section>

@@ -1,0 +1,39 @@
+{{ $jsonPath := .Get "data" | default .Page.Params.data }}
+{{ $data := getJSON $jsonPath | default dict }}
+
+{{ with $data.cards }}
+<section class="section-padding bg-light benefits-section">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-10">
+                <div class="section-title has-text-centered-tablet mb-16">
+                    <h2>{{ default "Our Services" .title }}</h2>
+                    <p class="mb-0">{{ default "" .subtitle | safeHTML }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-multiline">
+            {{ range .items }}
+            <div class="column is-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                         {{ if or .icon .logo }}
+                            {{ if .icon }}
+                                <i class="{{ .icon }}"></i>
+                            {{ else if .logo }}
+                                <img src="{{ .logo }}" alt="{{ .title }} Logo">
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                    <h4 class="mt-16">{{ .title }}</h4>
+                    <p class="has-text-gray">{{ .description | safeHTML }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ else }}
+  <p>No cards data found.</p>
+{{ end }}

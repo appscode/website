@@ -46,6 +46,10 @@
     .mega-menu-wrapper {
       width: calc(100% + 100%);
       left: -50%;
+      min-height: 525px;
+      @include touch {
+        min-height: auto;
+      }
     }
   }
   .navbar-right {
@@ -75,6 +79,7 @@
     ul {
       .nav-item {
         .link {
+
           &.is-active {
             position: relative;
             z-index: 1;
@@ -133,6 +138,13 @@
       display: flex;
       align-items: center;
       gap: 32px;
+      ul {
+        display: flex;
+        margin-left: 16px;
+        @include touch {
+          margin-left: 0;
+        }
+      }
       .buttons{
         iframe {
           transition: 0.3s ease-in-out;
@@ -204,6 +216,7 @@
         transition: 0.3s ease-in-out;
         position: relative;
         z-index: 1;
+        display: flex;
 
         &.is-active {
           color: $ac-primary;
@@ -290,7 +303,7 @@
   position: absolute;
   z-index: 9;
   min-width: 300px;
-  padding: 2.5rem 0;
+  padding: 1rem 0;
   position: absolute;
   width: 100%;
   left: 0;
@@ -414,6 +427,8 @@
       display: none;
       visibility: hidden;
       transition: 0.3s ease-in-out;
+      animation: fadeIn 0.2s ease-in-out;
+      
 
       &.is-block {
         opacity: 1;
@@ -1168,6 +1183,9 @@ Responsive Classes
       .community-items.ml-70 {
         margin-left: 10px !important;
       }
+      .buttons {
+        min-width: 354px !important;
+      }
       .button.ac-button {
         padding: .5rem 1rem;
       }
@@ -1177,7 +1195,7 @@ Responsive Classes
     }
     ul {
       .nav-item {
-        margin-right: 1.5rem;
+        margin-right: 12px;
       }
     }
   }
