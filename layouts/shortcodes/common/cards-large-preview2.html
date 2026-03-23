@@ -1,0 +1,40 @@
+{{/* Load JSON from .Page.Params.data */}}
+{{ $data := dict }}
+{{ if .Page.Params.data }}
+{{ $data = getJSON .Page.Params.data }}
+{{ end }}
+
+{{ with $data.large_preview_cards2 }}
+<section class="section-padding cloud-native-partner-section style-2">
+    <div class="container">
+        <div class="section-title has-text-centered mb-32">
+            <h2>{{ $data.large_preview_cards2.title }}</h2>
+            <p>{{ $data.large_preview_cards2.subtitle }}</p>
+        </div>
+
+        <div class="columns is-multiline">
+            {{ range $item := $data.large_preview_cards2.items }}
+            <div class="column is-3">
+                <div class="single-feature card-view">
+                    <div class="icon">
+                         {{ if or $item.icon $item.logo }}
+                            {{ with $item.icon }}<i class="{{ . }}"></i>{{ end }}
+                            {{ with $item.logo }}<img src="{{ . }}" alt="{{ $item.title }} Logo">{{ end }}
+                        {{ end }}
+                    </div>
+                    <h4>{{ $item.title }}</h4>
+                    <p class="has-text-gray">
+                        {{ $item.description | safeHTML}}
+                    </p>
+                    {{ if $item.additional_description }}
+                    <p class="has-text-gray mt-12">
+                        {{ $item.additional_description | safeHTML }}
+                    </p>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

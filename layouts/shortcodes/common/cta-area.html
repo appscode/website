@@ -1,0 +1,23 @@
+{{/* Load JSON from .Page.Params.data */}}
+{{ $data := dict }}
+{{ if .Page.Params.data }}
+{{ $data = getJSON .Page.Params.data }}
+{{ end }}
+
+{{ with $data.final_cta }}
+<!-- Final CTA Section -->
+<section class="section-padding cta-action-section">
+    <div class="container has-text-centered">
+        <div class="section-title has-text-centered">
+            <h2>{{ $data.final_cta.title }}</h2>
+            <p>
+                {{ $data.final_cta.subtitle | safeHTML }}
+            </p>
+        </div>
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/appscode/intro?hide_gdpr_banner=1?" style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+       <!-- Calendly inline widget end -->
+    </div>
+</section>
+{{ end }}

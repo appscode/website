@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+{{ $data:=""}}
+
+{{ if .Params.data }}
+  {{ $data = getJSON .Params.data }}
+{{ end }}
+
+
+
+<div class="bg-gradient-1" style="background-image:url(https://appscode.com/assets/images/gradient-bg.webp); background-repeat: repeat;">
+    <!-- from markdown file -->
+    {{ .Content }}
+    <!-- end from markdown file -->
+    {{ with $data }}
+</div>
+
+{{ end }}
+{{ end }}
