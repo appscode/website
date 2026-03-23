@@ -1,6 +1,6 @@
 ---
 id: kubernetes-consulting-services
-title: Kubernetes Consulting Services by Certified Experts
+title: Kubernetes Consulting Services by Experts
 description: Empower your business with AppsCode kubernetes consulting services - expert consulting, deployment, optimization, and enterprise-grade managed support.
 layout: services
 url: '/services/kubernetes-consulting-services'

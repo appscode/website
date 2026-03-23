@@ -5,6 +5,9 @@ description: Explore the AAA framework, reference architecture, and capability m
 layout: services
 url: '/services/cloud-native-platform-engineering-architecture-eBook'
 data: 'data/services/platform-engineering/platform_engineering_oss_reference_architecture_ebook.json'
+_build:
+  render: never
+  list: never
 ---
 
 {{< common/hero-area >}}

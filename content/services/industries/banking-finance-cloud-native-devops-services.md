@@ -5,6 +5,9 @@ description: Accelerate digital transformation across FinTechs, NBFCs, and Banks
 layout: services
 url: '/services/cloud-native-solutions-for-the-banking-and-finance-industry'
 data: 'data/services/industries/banking_finance_cloud_native_devops_services.json'
+_build:
+  render: never
+  list: never
 ---
 
 {{< common/hero-area >}}

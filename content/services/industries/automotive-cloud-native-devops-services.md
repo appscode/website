@@ -5,6 +5,9 @@ description: Drive automotive innovation with AppsCode cloud-native solutions—
 layout: services
 url: '/services/cloud-native-solutions-for-the-automotive-industry'
 data: 'data/services/industries/automotive_cloud_native_devops_services.json'
+_build:
+  render: never
+  list: never
 ---
 
 {{< common/hero-area >}}
