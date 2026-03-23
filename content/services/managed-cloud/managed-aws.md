@@ -1,0 +1,19 @@
+---
+id: managed-aws-services
+title: Managed AWS Cloud Services by Experts
+description: AppsCode DevOps experts help with AWS onboarding, manage your cloud accounts, infrastructure, and applications — 24/7 monitoring, cost optimization, and security.
+layout: services
+url: '/services/managed-aws-services'
+data: 'data/services/managed_cloud/managed_aws.json'
+---
+
+{{< common/hero-area >}}
+{{< common/customer-logos >}}
+{{< common/title-with-small-cards >}}
+{{< common/service-details >}}
+{{< services/we-understand-the-nitty-gritty >}}
+{{< services/we-love-open-source >}}
+{{< common/cards >}}
+{{< common/expertise >}}
+{{< common/cta-area >}}
+{{< common/faq >}}
