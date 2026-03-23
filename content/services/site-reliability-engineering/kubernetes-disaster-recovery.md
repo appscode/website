@@ -13,7 +13,6 @@ data: 'data/services/site-reliability-engineering/kubernetes_disaster_recovery.j
 {{< common/service-details >}}
 {{< common/cards >}}
 {{< services/we-understand-the-nitty-gritty >}}
-{{< services/we-love-open-source >}}
 {{< common/cta-area >}}
 {{< common/expertise >}}
 {{< common/faq >}}

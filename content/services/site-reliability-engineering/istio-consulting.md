@@ -12,7 +12,6 @@ data: 'data/services/site-reliability-engineering/istio_consulting.json'
 {{< common/title-with-small-cards >}}
 {{< common/service-details >}}
 {{< services/we-understand-the-nitty-gritty >}}
-{{< services/we-love-open-source >}}
 {{< common/cards >}}
 {{< common/cta-area >}}
 {{< common/expertise >}}

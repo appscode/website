@@ -15,7 +15,6 @@ data: 'data/services/platform-engineering/platform_engineering_services.json'
 {{< common/title-with-small-cards >}}
 {{< common/service-details2 >}}
 {{< services/we-understand-the-nitty-gritty >}}
-{{< services/we-love-open-source >}}
 {{< common/cta-area >}}
 {{< common/cards >}}
 {{< common/expertise >}}

@@ -12,7 +12,6 @@ data: 'data/services/platform-engineering/bare_metal_provisioning_consulting.jso
 {{< common/title-with-small-cards >}}
 {{< common/service-details >}}
 {{< services/we-understand-the-nitty-gritty >}}
-{{< services/we-love-open-source >}}
 {{< common/cards >}}
 {{< common/expertise >}}
 {{< common/cta-area >}}

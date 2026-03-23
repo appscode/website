@@ -12,7 +12,6 @@ data: 'data/services/site-reliability-engineering/cloud_native_networking_servic
 {{< common/title-with-small-cards >}}
 {{< common/service-details >}}
 {{< services/we-understand-the-nitty-gritty >}}
-{{< services/we-love-open-source >}}
 {{< common/cards-large-preview >}}
 {{< common/cards >}}
 {{< common/cta-area >}}

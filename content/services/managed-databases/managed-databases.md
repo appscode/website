@@ -12,7 +12,6 @@ data: 'data/services/managed_databases.json'
 {{< common/title-with-small-cards >}}
 {{< common/service-details >}}
 {{< services/we-understand-the-nitty-gritty >}}
-{{< services/we-love-open-source >}}
 {{< common/cards >}}
 {{< common/expertise >}}
 {{< common/cta-area >}}

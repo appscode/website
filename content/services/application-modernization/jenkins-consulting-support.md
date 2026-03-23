@@ -15,7 +15,6 @@ _build:
 {{< common/title-with-small-cards >}}
 {{< common/service-details >}}
 {{< services/we-understand-the-nitty-gritty >}}
-{{< services/we-love-open-source >}}
 {{< common/cta-area >}}
 {{< common/cards-large-preview >}}
 {{< common/cards >}}

@@ -13,7 +13,6 @@ data: 'data/services/observability-devsecops/observability_consulting.json'
 {{< common/cards >}}
 {{< common/service-details >}}
 {{< services/we-understand-the-nitty-gritty >}}
-{{< services/we-love-open-source >}}
 {{< common/cta-area >}}
 {{< common/cards-large-preview >}}
 {{< common/cards-group >}}
