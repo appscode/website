@@ -6,6 +6,7 @@ layout: services
 url: '/services/grafana-consulting-services-and-support'
 data: 'data/services/observability-devsecops/grafana_consulting.json'
 ---
+
 {{< common/hero-area >}}
 {{< common/customer-logos >}}
 {{< common/title-with-small-cards >}}
@@ -16,6 +17,3 @@ data: 'data/services/observability-devsecops/grafana_consulting.json'
 {{< common/cards >}}
 {{< common/expertise >}}
 {{< common/faq >}}
-
-
-

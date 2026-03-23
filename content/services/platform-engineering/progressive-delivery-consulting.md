@@ -7,7 +7,6 @@ url: '/services/progressive-delivery-consulting-services'
 data: 'data/services/platform-engineering/progressive_delivery_consulting.json'
 ---
 
-
 {{< common/hero-area >}}
 {{< common/customer-logos >}}
 {{< common/title-with-small-cards >}}
@@ -18,5 +17,3 @@ data: 'data/services/platform-engineering/progressive_delivery_consulting.json'
 {{< common/expertise >}}
 {{< common/cta-area >}}
 {{< common/faq >}}
-
-

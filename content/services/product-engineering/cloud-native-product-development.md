@@ -22,10 +22,3 @@ data: 'data/services/product-engineering/cloud_native_product_development.json'
 {{< common/cta-area >}}
 {{< services/engineering-resources >}}
 {{< common/faq >}}
-
-
-
-
-
-
-

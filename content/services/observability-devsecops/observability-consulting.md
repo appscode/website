@@ -6,6 +6,7 @@ layout: services
 url: '/services/observability-consulting-services-and-support'
 data: 'data/services/observability-devsecops/observability_consulting.json'
 ---
+
 {{< common/hero-area >}}
 {{< common/customer-logos >}}
 {{< common/title-with-small-cards >}}
@@ -20,6 +21,3 @@ data: 'data/services/observability-devsecops/observability_consulting.json'
 {{< common/cards2 >}}
 {{< common/expertise >}}
 {{< common/faq >}}
-
-
-

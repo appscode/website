@@ -6,6 +6,7 @@ layout: services
 url: '/services/prometheus-consulting-services'
 data: 'data/services/observability-devsecops/prometheus_monitoring_support.json'
 ---
+
 {{< common/hero-area >}}
 {{< common/customer-logos >}}
 {{< common/title-with-small-cards >}}
@@ -16,6 +17,3 @@ data: 'data/services/observability-devsecops/prometheus_monitoring_support.json'
 {{< common/cards >}}
 {{< common/expertise >}}
 {{< common/faq >}}
-
-
-

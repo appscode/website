@@ -11,4 +11,3 @@ data: 'data/services/platform-engineering/platform_engineering_oss_reference_arc
 {{< common/service-details >}}
 {{< common/expertise >}}
 {{< common/faq >}}
-

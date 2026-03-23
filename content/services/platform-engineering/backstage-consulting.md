@@ -5,8 +5,10 @@ description: AppsCode offers expert Backstage Consulting Services and IDP soluti
 layout: services
 url: '/services/backstage-consulting-services'
 data: 'data/services/platform-engineering/backstage_consulting.json'
+_build:
+  render: never
+  list: never
 ---
-
 
 {{< common/hero-area >}}
 {{< common/customer-logos >}}
@@ -19,4 +21,3 @@ data: 'data/services/platform-engineering/backstage_consulting.json'
 {{< common/expertise >}}
 {{< services/engineering-resources >}}
 {{< common/faq >}}
-

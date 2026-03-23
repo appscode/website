@@ -7,7 +7,6 @@ url: '/services/bare-metal-provisioning-and-infrastructure-consulting'
 data: 'data/services/platform-engineering/bare_metal_provisioning_consulting.json'
 ---
 
-
 {{< common/hero-area >}}
 {{< common/customer-logos >}}
 {{< common/title-with-small-cards >}}
@@ -18,5 +17,3 @@ data: 'data/services/platform-engineering/bare_metal_provisioning_consulting.jso
 {{< common/expertise >}}
 {{< common/cta-area >}}
 {{< common/faq >}}
-
-

@@ -7,7 +7,6 @@ url: '/services/kubernetes-consulting-services'
 data: 'data/services/application-modernization/kubernetes_consulting_partner.json'
 ---
 
-
 {{< common/hero-area >}}
 {{< common/customer-logos >}}
 {{< common/title-with-small-cards >}}
@@ -18,5 +17,3 @@ data: 'data/services/application-modernization/kubernetes_consulting_partner.jso
 {{< common/expertise >}}
 {{< common/cta-area >}}
 {{< common/faq >}}
-
-

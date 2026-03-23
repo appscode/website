@@ -5,8 +5,10 @@ description: Accelerate CI/CD with AppsCode Jenkins Consulting Support—expert 
 layout: services
 url: '/services/jenkins-consulting-and-professional-services'
 data: 'data/services/application-modernization/jenkins_consulting_support.json'
+_build:
+  render: never
+  list: never
 ---
-
 
 {{< common/hero-area >}}
 {{< common/customer-logos >}}

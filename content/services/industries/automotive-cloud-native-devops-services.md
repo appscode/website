@@ -6,6 +6,7 @@ layout: services
 url: '/services/cloud-native-solutions-for-the-automotive-industry'
 data: 'data/services/industries/automotive_cloud_native_devops_services.json'
 ---
+
 {{< common/hero-area >}}
 {{< common/customer-logos >}}
 {{< common/title-with-small-cards >}}

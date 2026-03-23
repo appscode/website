@@ -7,7 +7,6 @@ url: '/services/gitops-consulting-services'
 data: 'data/services/application-modernization/gitops_consulting.json'
 ---
 
-
 {{< common/hero-area >}}
 {{< common/customer-logos >}}
 {{< common/title-with-small-cards >}}
@@ -19,6 +18,3 @@ data: 'data/services/application-modernization/gitops_consulting.json'
 {{< common/cards >}}
 {{< common/expertise >}}
 {{< common/faq >}}
-
-
-

@@ -5,6 +5,9 @@ description: AppsCode helps businesses build and scale cloud-native FaaS archite
 layout: services
 url: '/services/cloud-native-faas-services'
 data: 'data/services/product-engineering/cloud_native_faas.json'
+_build:
+  render: never
+  list: never
 ---
 
 {{< common/hero-area >}}
@@ -17,4 +20,3 @@ data: 'data/services/product-engineering/cloud_native_faas.json'
 {{< common/cards >}}
 {{< common/expertise >}}
 {{< common/faq >}}
-

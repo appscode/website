@@ -17,6 +17,3 @@ data: 'data/services/application-modernization/argo_cd_consulting_support.json'
 {{< common/cards >}}
 {{< common/expertise >}}
 {{< common/faq >}}
-
-
-
