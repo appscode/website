@@ -12,7 +12,6 @@ data: 'data/services/site-reliability-engineering/terraform_consulting.json'
 {{< common/cards2 >}}
 {{< common/service-details >}}
 {{< services/we-understand-the-nitty-gritty >}}
-{{< services/we-love-open-source >}}
 {{< common/cta-area >}}
 {{< common/cards >}}
 {{< common/expertise >}}

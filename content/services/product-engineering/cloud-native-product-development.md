@@ -16,7 +16,6 @@ data: 'data/services/product-engineering/cloud_native_product_development.json'
 {{< common/cards-group >}}
 {{< services/development-process >}}
 {{< services/we-understand-the-nitty-gritty >}}
-{{< services/we-love-open-source >}}
 {{< common/expertise >}}
 {{< services/why-appscode >}}
 {{< common/cta-area >}}

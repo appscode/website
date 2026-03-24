@@ -12,7 +12,6 @@ data: 'data/services/application-modernization/eks_consulting_partner.json'
 {{< common/title-with-small-cards >}}
 {{< common/service-details >}}
 {{< services/we-understand-the-nitty-gritty >}}
-{{< services/we-love-open-source >}}
 {{< common/cards >}}
 {{< common/partner-listing >}}
 {{< common/expertise >}}
