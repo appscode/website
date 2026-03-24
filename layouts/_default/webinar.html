@@ -6,12 +6,14 @@
 
 {{ define "main" }}
 <!-- preloader start  -->
+<!--
 <div class="is-flex is-justify-content-center is-align-items-center is-flex-direction-column ac-preloader">
   <span class="spinner"></span>
   <p class="font-size-12 mt-10 pl-5">
     LOADING
   </p>
 </div>
+-->
 <!-- preloader end -->
 
 <!-- hero  area start -->
@@ -406,7 +408,7 @@
     var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
-        var preloader = document.querySelector('.ac-preloader');
+        // var preloader = document.querySelector('.ac-preloader');
         var heroArea = document.querySelector('#webinarHeroArea');
         if (xhr.status === 200) {
           var select = document.querySelector(".registration-form form #schedule");
@@ -415,7 +417,7 @@
           var wbody = document.querySelector("div.webinar-body");
           wbody.replaceChildren();
           var webinars = JSON.parse(xhr.responseText);
-          preloader?.classList.add('is-hidden');
+          // preloader?.classList.add('is-hidden');
           if (webinars !== null) {
             heroArea?.classList.remove('is-hidden');
             for (let i = 0; i < Math.min(webinars.length, 3); i++) {
@@ -437,7 +439,7 @@
               } else {
                 li.setAttribute("class", "webinar-item tab is-active");
               }
-              li.setAttribute("data-tab-target", `#webinar${i}`);
+              li.setAttribute("data-tab-target", "#webinar" + i);
               ul.appendChild(li);
               let details = document.createElement('div');
               details.innerHTML = `<div class="webinar-video"><iframe src="https://www.youtube.com/embed/${w.youtube_video_id}?autoplay=1&start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; clipboard-write; encrypted-media; gyroscope;picture-in-picture" allowfullscreen=""></iframe></div><div class="webinar-title"><h1>${w.title}</h1></div><div class="date-and-location"><p class="date"><span class="icon"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-6\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z\" /></svg></span><span>When: ${dfmt.format('D MMM YYYY - hh:mm:ss A')}</span></p><p class="date"><span class="icon"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-6\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z\" /><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z\" /></svg></span><span>Where : via Zoom </span></p></div><div class="webinar-summary">${w.summary}</div><h5 class="mb-20 mt-30">Webinar Speakers</h5><div class="webinar-speakers">${speakers}</div>`;
@@ -446,7 +448,7 @@
               } else {
                 details.setAttribute("class", "single-webinar is-active");
               }
-              details.setAttribute("id", `webinar${i}`);
+              details.setAttribute("id", "webinar" + i);
               details.setAttribute("data-tab-content", "");
               wbody.appendChild(details);
             }
@@ -478,7 +480,7 @@
         }
         // Fallback: if backend fails, hide preloader and show previous webinars section
         if (xhr.status !== 200) {
-          preloader?.classList.add('is-hidden');
+          // preloader?.classList.add('is-hidden');
           heroArea?.classList.add('is-hidden');
           // Optionally, scroll to previous webinars section
           var prevSection = document.querySelector('.gallery-area');
