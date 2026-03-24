@@ -6,12 +6,14 @@
 
 {{ define "main" }}
 <!-- preloader start  -->
+<!--
 <div class="is-flex is-justify-content-center is-align-items-center is-flex-direction-column ac-preloader">
   <span class="spinner"></span>
   <p class="font-size-12 mt-10 pl-5">
     LOADING
   </p>
 </div>
+-->
 <!-- preloader end -->
 
 <!-- hero  area start -->
@@ -248,7 +250,7 @@
 <!-- hero area end -->
 
 <!-- previous webinar section start  -->
-<section class="gallery-area">
+<section class="gallery-area mt-20">
   <div class="container">
     <div class="gallery-wrapper">
       <!-- right content start  -->
@@ -406,132 +408,97 @@
     var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
+        // var preloader = document.querySelector('.ac-preloader');
+        var heroArea = document.querySelector('#webinarHeroArea');
         if (xhr.status === 200) {
           var select = document.querySelector(".registration-form form #schedule");
-
           var ul = document.querySelector("ul.webinar-list-items.is-flex");
           ul.replaceChildren();
-
           var wbody = document.querySelector("div.webinar-body");
           wbody.replaceChildren();
-
           var webinars = JSON.parse(xhr.responseText);
-          //  Add preloader 
-          document.querySelector('.ac-preloader')?.classList.add('is-hidden')
-          if(webinars !== null) {
-            document.querySelector('#webinarHeroArea')?.classList.remove('is-hidden')
+          // preloader?.classList.add('is-hidden');
+          if (webinars !== null) {
+            heroArea?.classList.remove('is-hidden');
             for (let i = 0; i < Math.min(webinars.length, 3); i++) {
-            let w = webinars[i];
-            let date = new Date(w.schedules[0]);
-            let dfmt = dayjs(date);
-
-            let opt = document.createElement('option');
-            opt.value = w.schedules[0];
-            opt.innerHTML = w.title;
-            select.appendChild(opt);
-
-            let speakers = "";
-            w.speakers.forEach(s => {
-              speakers += `<div class="single-speaker">
-  <div class="speaker-image"><img src="${s.picture}" alt="${s.name}"></div>
-  <div class="speaker-info">
-    <h6>${s.name}</h6>
-    <p>${s.job_title} <br /> <a href="https://appscode.com">AppsCode Inc</a></p>
-  </div>
-</div>`;
-          });
-
-            let li = document.createElement("li");
-            li.innerHTML = '<p>' + dfmt.format('MMM YYYY') + '</p><h2>' + date.getDate() + '</h2><p class="date">' +
-              dfmt.format('hh:mm:ss A') + '</p>';
-            if (i) {
-              li.setAttribute("class", "webinar-item tab");
-            } else {
-              li.setAttribute("class", "webinar-item tab is-active");
-            }
-            li.setAttribute("data-tab-target", `#webinar${i}`);
-            ul.appendChild(li);
-
-            let details = document.createElement('div');
-            details.innerHTML = `<div class="webinar-video">
-    <iframe src="https://www.youtube.com/embed/${w.youtube_video_id}?autoplay=1&start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; clipboard-write; encrypted-media; gyroscope;
-      picture-in-picture" allowfullscreen=""></iframe>
-  </div>
-  <div class="webinar-title">
-    <h1>${w.title}</h1>
-  </div>
-  <div class="date-and-location">
-    <p class="date">
-      <span class="icon">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-      </svg>
-      </span>
-      <span>When: ${dfmt.format('D MMM YYYY - hh:mm:ss A')}</span>
-    </p>
-    <p class="date">
-      <span class="icon">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-      </svg>
-
-      </span>
-      <span>Where : via Zoom </span>
-    </p>
-  </div>
-  <div class="webinar-summary">
-    ${w.summary}
-  </div>
-  <h5 class="mb-20 mt-30">Webinar Speakers</h5>
-  <div class="webinar-speakers">
-    ${speakers}
-  </div>`;
-
-            // <div class="single-webinar is-active" id="webinar${i}" data-tab-content="">
-            if (i) {
-              details.setAttribute("class", "single-webinar");
-            } else {
-              details.setAttribute("class", "single-webinar is-active");
-            }
-            details.setAttribute("id", `webinar${i}`);
-            details.setAttribute("data-tab-content", "");
-            wbody.appendChild(details);
-          }
-          // webinar tabs js start 
-          // Webinar tabs start
-          const tabsitem = document.querySelectorAll('[data-tab-target]')
-          const tabContents = document.querySelectorAll('[data-tab-content]')
-
-          tabsitem.forEach((tab, idx) => {
-            tab.addEventListener('click', () => {
-              const target = document.querySelector(tab.dataset.tabTarget)
-              tabContents.forEach(tabContent => {
-                tabContent.classList.remove('is-active')
-              })
-              tabsitem.forEach(tab => {
-                tab.classList.remove('is-active')
-              })
-              tab.classList.add('is-active')
-              target.classList.add('is-active')
-
-              // https://slimselectjs.com/methods
-              // https://alvarotrigo.com/blog/javascript-select-option/
-              if (ss) {
-                ss.set(select.options[idx].value);
+              let w = webinars[i];
+              let date = new Date(w.schedules[0]);
+              let dfmt = dayjs(date);
+              let opt = document.createElement('option');
+              opt.value = w.schedules[0];
+              opt.innerHTML = w.title;
+              select.appendChild(opt);
+              let speakers = "";
+              w.speakers.forEach(function(s) {
+                speakers += '<div class="single-speaker"><div class="speaker-image"><img src="' + s.picture + '" alt="' + s.name + '"></div><div class="speaker-info"><h6>' + s.name + '</h6><p>' + s.job_title + ' <br /> <a href="https://appscode.com">AppsCode Inc</a></p></div></div>';
+              });
+              let li = document.createElement("li");
+              li.innerHTML = '<p>' + dfmt.format('MMM YYYY') + '</p><h2>' + date.getDate() + '</h2><p class="date">' + dfmt.format('hh:mm:ss A') + '</p>';
+              if (i) {
+                li.setAttribute("class", "webinar-item tab");
               } else {
-                select.value = select.options[idx].value;
+                li.setAttribute("class", "webinar-item tab is-active");
               }
+              li.setAttribute("data-tab-target", "#webinar" + i);
+              ul.appendChild(li);
+              let details = document.createElement('div');
+              details.innerHTML =
+                '<div class="webinar-video"><iframe src="https://www.youtube.com/embed/' + w.youtube_video_id + '?autoplay=1&start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; clipboard-write; encrypted-media; gyroscope;picture-in-picture" allowfullscreen=""></iframe></div>' +
+                '<div class="webinar-title"><h1>' + w.title + '</h1></div>' +
+                '<div class="date-and-location">' +
+                  '<p class="date"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg></span><span>When: ' + dfmt.format('D MMM YYYY - hh:mm:ss A') + '</span></p>' +
+                  '<p class="date"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg></span><span>Where : via Zoom </span></p>' +
+                '</div>' +
+                '<div class="webinar-summary">' + w.summary + '</div>' +
+                '<h5 class="mb-20 mt-30">Webinar Speakers</h5>' +
+                '<div class="webinar-speakers">' + speakers + '</div>';
+              if (i) {
+                details.setAttribute("class", "single-webinar");
+              } else {
+                details.setAttribute("class", "single-webinar is-active");
+              }
+              details.setAttribute("id", "webinar" + i);
+              details.setAttribute("data-tab-content", "");
+              wbody.appendChild(details);
+            }
+            // Webinar tabs js start 
+            const tabsitem = document.querySelectorAll('[data-tab-target]')
+            const tabContents = document.querySelectorAll('[data-tab-content]')
+            tabsitem.forEach((tab, idx) => {
+              tab.addEventListener('click', () => {
+                const target = document.querySelector(tab.dataset.tabTarget)
+                tabContents.forEach(tabContent => {
+                  tabContent.classList.remove('is-active')
+                })
+                tabsitem.forEach(tab => {
+                  tab.classList.remove('is-active')
+                })
+                tab.classList.add('is-active')
+                target.classList.add('is-active')
+                if (ss) {
+                  ss.set(select.options[idx].value);
+                } else {
+                  select.value = select.options[idx].value;
+                }
+              })
             })
-          })
-          // Webinar tabs end
+            // Webinar tabs end
           }
-          } else {
+        } else {
           // location.reload();
+        }
+        // Fallback: if backend fails, hide preloader and show previous webinars section
+        if (xhr.status !== 200) {
+          // preloader?.classList.add('is-hidden');
+          heroArea?.classList.add('is-hidden');
+          // Optionally, scroll to previous webinars section
+          var prevSection = document.querySelector('.gallery-area');
+          if (prevSection) {
+            prevSection.style.display = '';
+          }
         }
       }
     }
-    // console.log('GET', 'https://x.appscode.com/_/upcoming_webinars/');
     xhr.open('GET', 'https://x.appscode.com/_/upcoming_webinars/');
     xhr.send();
   }());
