@@ -429,8 +429,8 @@
               opt.innerHTML = w.title;
               select.appendChild(opt);
               let speakers = "";
-              w.speakers.forEach(s => {
-                speakers += `<div class="single-speaker"><div class="speaker-image"><img src="${s.picture}" alt="${s.name}"></div><div class="speaker-info"><h6>${s.name}</h6><p>${s.job_title} <br /> <a href=\"https://appscode.com\">AppsCode Inc</a></p></div></div>`;
+              w.speakers.forEach(function(s) {
+                speakers += '<div class="single-speaker"><div class="speaker-image"><img src="' + s.picture + '" alt="' + s.name + '"></div><div class="speaker-info"><h6>' + s.name + '</h6><p>' + s.job_title + ' <br /> <a href="https://appscode.com">AppsCode Inc</a></p></div></div>';
               });
               let li = document.createElement("li");
               li.innerHTML = '<p>' + dfmt.format('MMM YYYY') + '</p><h2>' + date.getDate() + '</h2><p class="date">' + dfmt.format('hh:mm:ss A') + '</p>';
@@ -442,7 +442,16 @@
               li.setAttribute("data-tab-target", "#webinar" + i);
               ul.appendChild(li);
               let details = document.createElement('div');
-              details.innerHTML = `<div class="webinar-video"><iframe src="https://www.youtube.com/embed/${w.youtube_video_id}?autoplay=1&start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; clipboard-write; encrypted-media; gyroscope;picture-in-picture" allowfullscreen=""></iframe></div><div class="webinar-title"><h1>${w.title}</h1></div><div class="date-and-location"><p class="date"><span class="icon"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-6\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z\" /></svg></span><span>When: ${dfmt.format('D MMM YYYY - hh:mm:ss A')}</span></p><p class="date"><span class="icon"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-6\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z\" /><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z\" /></svg></span><span>Where : via Zoom </span></p></div><div class="webinar-summary">${w.summary}</div><h5 class="mb-20 mt-30">Webinar Speakers</h5><div class="webinar-speakers">${speakers}</div>`;
+              details.innerHTML =
+                '<div class="webinar-video"><iframe src="https://www.youtube.com/embed/' + w.youtube_video_id + '?autoplay=1&start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; clipboard-write; encrypted-media; gyroscope;picture-in-picture" allowfullscreen=""></iframe></div>' +
+                '<div class="webinar-title"><h1>' + w.title + '</h1></div>' +
+                '<div class="date-and-location">' +
+                  '<p class="date"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg></span><span>When: ' + dfmt.format('D MMM YYYY - hh:mm:ss A') + '</span></p>' +
+                  '<p class="date"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg></span><span>Where : via Zoom </span></p>' +
+                '</div>' +
+                '<div class="webinar-summary">' + w.summary + '</div>' +
+                '<h5 class="mb-20 mt-30">Webinar Speakers</h5>' +
+                '<div class="webinar-speakers">' + speakers + '</div>';
               if (i) {
                 details.setAttribute("class", "single-webinar");
               } else {
