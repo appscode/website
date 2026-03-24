@@ -4,7 +4,7 @@ title: Azure AKS Consulting Services by Experts
 description: AppsCode is an Azure Marketplace partner offering expert AKS consulting, deployment, optimization, and enterprise-grade managed support for Azure Kubernetes Service clusters.
 layout: services
 url: '/services/aks-consulting-services'
-data: 'data/services/application-modernization/aks_consulting_partner.json'
+data: 'data/services/managed-kubernetes/aks_consulting_partner.json'
 ---
 
 {{< common/hero-area >}}

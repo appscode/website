@@ -4,7 +4,7 @@ title: AWS EKS Consulting Services by Experts
 description: AppsCode is an AWS Marketplace partner offering expert EKS consulting, deployment, optimization, and enterprise-grade managed support for Amazon EKS clusters.
 layout: services
 url: '/services/eks-consulting-services'
-data: 'data/services/application-modernization/eks_consulting_partner.json'
+data: 'data/services/managed-kubernetes/eks_consulting_partner.json'
 ---
 
 {{< common/hero-area >}}
