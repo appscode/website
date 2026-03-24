@@ -30,9 +30,5 @@ In order to avail AppsCode services, you have to assure certain terms and condit
 Yes. While using AppsCode Service you agree to comply with the United States’ Digital Millennium Copyright Act 1998. AppsCode strictly responds to DMCA and other applicable copyright laws and reserves the right to terminate accounts involved in violating as such, which includes taking down content or the Application upon receipt of valid DMCA notice.
 
 
-### What is the Refund Policy?
-
-AppsCode charges for service already provided. Please refer to our [Service Level Agreement](/legal/sla/) for uptime guarantee and refunds.
-
 > *Got more questions? You can post to our [community site](https://slack.appscode.com) or [contact us](mailto:support@appscode.com) directly.*
 
