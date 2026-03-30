@@ -324,7 +324,7 @@
                       </button>
 
                       <!-- Services Grid -->
-                      <div class="product-menu" id="servicesGrid" style="grid-template-columns: 380px; width: 380px; background-color: #fbfbfb;border-radius: 8px;">
+                      <div class="product-menu services-grid" id="servicesGrid">
                         {{ range $index, $service := site.Data.services.services_menu.servicesMenu }}
                           <a class="single-product {{ if eq $index 0 }} is-active {{ end }}" href="#" data-service-id="{{ $service.title | urlize }}">
                             <div class="product-logo">

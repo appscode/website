@@ -15192,7 +15192,7 @@ Responsive Classes
 
 .is-sticky.webinar-search {
   position: sticky;
-  top: 60px;
+  top: 89px;
   background-color: #fff;
   z-index: 9; }
 
@@ -16621,6 +16621,25 @@ Responsive Classes
 @media screen and (min-width: 1408px) {
   .navbar-appscode .navbar-left .navbar-brand {
     margin-right: 3rem; } }
+.mega-menu-wrapper .mega-menu-inner .product-menu.services-grid {
+  grid-template-columns: 500px;
+  width: 500px;
+  background-color: #fbfbfb;
+  border-radius: 8px; }
+  @media screen and (max-width: 1023px) {
+    .mega-menu-wrapper .mega-menu-inner .product-menu.services-grid {
+      grid-template-columns: auto;
+      width: 100%; }
+      .mega-menu-wrapper .mega-menu-inner .product-menu.services-grid .single-product::after {
+        display: none; } }
+  .mega-menu-wrapper .mega-menu-inner .product-menu.services-grid .single-product {
+    padding: 0.8rem 1rem; }
+    .mega-menu-wrapper .mega-menu-inner .product-menu.services-grid .single-product .product-logo {
+      height: 48px;
+      width: 48px; }
+      .mega-menu-wrapper .mega-menu-inner .product-menu.services-grid .single-product .product-logo img {
+        height: 1.5rem !important; }
+
 .ac-preloader {
   position: fixed;
   height: 100vh;
