@@ -1283,3 +1283,34 @@ Responsive Classes
     }
   }
 }
+.mega-menu-wrapper {
+  .mega-menu-inner {
+    .product-menu{
+      &.services-grid {
+        grid-template-columns: 500px; 
+        width: 500px; 
+        background-color: #fbfbfb;
+        border-radius: 8px;
+        @include touch {
+          grid-template-columns: auto; 
+          width: 100%; 
+           .single-product {
+            &::after {
+              display: none;
+            }
+           }
+        }
+        .single-product {
+          padding: 0.8rem 1rem;
+          .product-logo {
+            height: 48px;
+            width: 48px;
+            img {
+              height: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
