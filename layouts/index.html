@@ -6,715 +6,582 @@
 
 {{ $p := $.Site.Data.products.appscode}}
 
-<!--==================== hero-area start 2022 ====================-->
-<div class="bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.webp);">
-  <section class="hero-area-1">
+<!--==================== hero-area start 2026 ====================-->
+<section class="hero is-fullheight">
+  <div class="hero-body">
     <div class="container">
-      <div class="columns is-vcentered">
+      <div class="columns is-vcentered is-variable is-8">
+
         <div class="column is-6">
-           <!-- news connect-message start  -->
-           <div class="news-message-wrapper height-40">
-             <a href="" class="news-message is-hidden" ><span>cool stuff!</a>
-           </div>
+          <div class="custom-badge">
+            <span class="status-dot"><span class="ping"></span></span>
+            Partner for Cloud Native Transformation
+          </div>
 
-           <script type="text/javascript">
-             (function () {
-               var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-               xhr.onreadystatechange = function () {
-                 if (xhr.readyState === 4) {
-                   if (xhr.status === 200) {
-                     var result = JSON.parse(xhr.responseText);
-                     if (result.content) {
-                       let a = document.querySelector(".news-message");
-                       a.innerHTML = `<span>${result.content}</span>`;
-                       if (result.link) {
-                         a.href = result.link;
-                         a.target = "_blank";
-                       }
-                       a.classList.remove('is-hidden');
-                     }
-                   }
-                 }
-               } //
-               xhr.open('GET', 'https://x.appscode.com/_/news?p={{$p.name}}');
-               xhr.send();
-             }());
-           </script>
-           <!-- news connect-message end -->
+          <h1 class="title is-1 is-size-1-mobile has-text-weight-black mb-5">
+            Run Kubernetes. <br>
+            <span class="gradient-text">Your Way.</span>
+          </h1>
 
-          <!-- <h1>{{ $p.homepage.hero_area.title }}</h1> -->
-          <h1><span>Kubernetes Native</span><br><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjUyIiB2aWV3Qm94PSIwIDAgMTIwIDUyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB4PSIxIiB5PSIxLjcyNzI5IiB3aWR0aD0iMTE4IiBoZWlnaHQ9IjQ4LjQ1NDUiIHJ4PSIyNC4yMjczIiBzdHJva2U9InVybCgjcGFpbnQwX2xpbmVhcl8xNThfMzc4NykiIHN0cm9rZS13aWR0aD0iMiIvPgo8Y2lyY2xlIGN4PSIyMy44NjMyIiBjeT0iMjUuOTU0NSIgcj0iMTcuNDA5MSIgc3Ryb2tlPSJ1cmwoI3BhaW50MV9saW5lYXJfMTU4XzM3ODcpIiBzdHJva2Utd2lkdGg9IjIiLz4KPGNpcmNsZSBjeD0iOTYuMTM2NiIgY3k9IjI1Ljk1NDUiIHI9IjE4LjQwOTEiIGZpbGw9InVybCgjcGFpbnQyX2xpbmVhcl8xNThfMzc4NykiLz4KPHBhdGggZD0iTTEwMi45NjQgMjUuOTY0MkMxMDMuNDk3IDI1LjQzMTcgMTAzLjQ5NyAyNC41NjgzIDEwMi45NjQgMjQuMDM1OEw5NC4yODYxIDE1LjM1NzZDOTMuNzUzNiAxNC44MjUxIDkyLjg5MDIgMTQuODI1MSA5Mi4zNTc2IDE1LjM1NzZDOTEuODI1MSAxNS44OTAyIDkxLjgyNTEgMTYuNzUzNiA5Mi4zNTc2IDE3LjI4NjFMMTAwLjA3MiAyNUw5Mi4zNTc2IDMyLjcxMzlDOTEuODI1MSAzMy4yNDY0IDkxLjgyNTEgMzQuMTA5OCA5Mi4zNTc2IDM0LjY0MjRDOTIuODkwMiAzNS4xNzQ5IDkzLjc1MzYgMzUuMTc0OSA5NC4yODYxIDM0LjY0MjRMMTAyLjk2NCAyNS45NjQyWk00MiAyNi4zNjM2TDEwMiAyNi4zNjM2TDEwMiAyMy42MzY0TDQyIDIzLjYzNjRMNDIgMjYuMzYzNloiIGZpbGw9IiMwMDBGMDciLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl8xNThfMzc4NyIgeDE9IjEyMCIgeTE9IjI1LjQ1OTkiIHgyPSIxLjg0OTM0ZS0wNyIgeTI9IjI1LjQ1OTkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzAwQTY1MSIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyQTdFNTMiLz4KPC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDFfbGluZWFyXzE1OF8zNzg3IiB4MT0iNDIuMjcyMyIgeTE9IjI1LjU5MzUiIHgyPSI1LjQ1NDEiIHkyPSIyNS41OTM1IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiMwMEE2NTEiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMkE3RTUzIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQyX2xpbmVhcl8xNThfMzc4NyIgeDE9IjExNC41NDYiIHkxPSIyNS41OTM1IiB4Mj0iNzcuNzI3NSIgeTI9IjI1LjU5MzUiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzAwQTY1MSIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyQTdFNTMiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K" alt="arrow-icon" loading="eager"><span>Data Platform</span></h1>
-          <!-- <p>{{ $p.homepage.hero_area.summary }}</p> -->
+          <p class="subtitle is-4 has-text-grey mt-4 mb-6"
+            style="max-width: 500px;">
+            We provide production-grade Kubernetes products and comprehensive
+            managed services to accelerate your cloud native journey.
+          </p>
 
-          <ul class="list-items">
-            <li ><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="eager"></span><span>Manage full life-cycle of any databases</span></li>
-            <li><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="eager"></span><span>Backup and fast recovery solution for workloads</span></li>
-            <li><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="eager"></span><span>Manage Secrets & Users w/ Vault operator</span></li>
-            <li><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="eager"></span><span>Ingress Controller w/ Gateway API Support</span></li>
-            <li><span class="icon"><img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="eager"></span><span>Centrally Manage Clusters w/ Hub-Spoke Model</span></li>
-          </ul>
-
-          <!-- buttons  -->
-          <!-- style="width:22px;height:22px; margin-right: 8px;" -->
           <div class="buttons">
-            <a href="{{ $p.homepage.hero_area.get_in_touch_url }}" class="button ac-button is-primary">
-              <span>GET IN TOUCH</span>
-              <span class="icon">
-                <iconify-icon icon="heroicons:arrow-small-right-solid" width="18" height="18"></iconify-icon>
-              </span>
+            <a class="button is-success is-large has-text-weight-bold"
+              style="background-color: #00A550; border-radius: 12px; padding: 0 2.5rem;">
+              Explore Products
             </a>
-
-            <a href="#products" class="button ac-button">
-              <span>EXPLORE OUR PRODUCTS</span>
+            <a
+              class="button is-white is-large has-text-weight-bold border-light"
+              style="border: 2px solid #dbdbdb; border-radius: 12px;">
+              View Services
             </a>
-            <!-- <div class="play-buttons">
-              <a href="https://www.youtube.com/watch?v=8az5rYUxyGs" class="demo-video"><span
-                  class="icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
-                      </svg>
-
-                </span>WATCH THE DEMO</a>
-            </div> -->
           </div>
-          <!-- buttons  -->
+
+          <div class="columns is-mobile stats-box">
+            <div class="column is-narrow">
+              <p class="title is-4 has-text-weight-black mb-1">99.99%</p>
+              <p
+                class="is-size-7 has-text-grey-light has-text-weight-bold is-uppercase tracking-widest">Uptime
+                SLA</p>
+            </div>
+            <div class="column is-narrow ml-5">
+              <p class="title is-4 has-text-weight-black mb-1">10K+</p>
+              <p
+                class="is-size-7 has-text-grey-light has-text-weight-bold is-uppercase tracking-widest">Deployments</p>
+            </div>
+          </div>
         </div>
+
         <div class="column is-6 is-hidden-mobile">
-          <div class="h-right-content">
-
-            <!-- intro video  -->
-            <!--
-            <a class="intro-view-button demo-video" data-aos="zoom-in"  href="https://www.youtube.com/watch?v=8az5rYUxyGs">
-              <div class="video-icon">
-                <img src="/assets/images/products/appscode/icons/global/play-icon.png" alt="play-icon">
-              </div>
-              <div class="content">
-                <p class="is-gradient">Newly introduce our K8’s UI</p>
-                <span class="is-underlined">See Demo</span>
-              </div>
-            </a>
-            -->
-            <!-- intro end -->
-
-            <img fetchpriority="high" src="{{ $p.homepage.hero_area.hero_image }}" alt="appscode-hero-image" width="660" height="380" loading="eager"/>
-          </div>
-        </div>
-      </div>
-    </div>
-      <div class="container" >
-        <div class="columns">
-          <div class="column is-12">
-            <h2 class="is-size-5">Trusted by Companies</h2>
-            <div class="social-prove-brand-area">
-              <div class="brand-image-wrapper owl-carousel" id="brand-image-wrapper">
-                {{ range $customer := $.Site.Data.customers }}
-                {{ if $customer.show }}
-                <div class="single-brand"><img src="{{ $customer.logo }}" alt="{{ $customer.name }}" loading="eager" height="32"></div>
-                {{ end }}
-                {{ end }}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <script>
-    if (window.innerWidth <= 768) {
-      setTimeout(() => {
-        const heroArea = document.querySelector(".hero-area-1");
-        const notification = document.querySelector("#notification");
-        const notificationHeight = notification.style.height;
-        
-        if(notificationHeight === "0px"){
-          heroArea.style.paddingTop = "100px"
-        }
-      }, 300);
-    }   
-  </script>
-  <!--==================== hero-area end 2022  ====================-->
-
-
-  <!--==================== products area start  ====================-->
-  <div class="products-area" id="products">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="section-title has-text-centered-tablet mb-0">
-            <p class="mb-0 has-text-primary is-uppercase">Empowering Your Kubernetes JOURNEY</p>
-            <h2 class="mb-0">Explore AppsCode Products</h2>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-multiline">
-        <!-- single product start  -->
-        {{ range $product := $p.homepage.main_products }}
-        <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
-          <a href="{{ $product.url }}" class="single-product">
-            <div class="product-logo"><img src="{{ $product.logo }}" alt="{{$product.name}}" loading="lazy" height="auto" width="auto"></div>
-            <p class="is-ellipsis-4">{{ $product.description | safeHTML  }}</p>
-            <button class="button ac-button is-transparent is-flex is-gap-4">
-             <span>{{$product.name}}</span>
-              <span class="width-16 is-flex">
-                <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
-              </span>
-            </button>
-          </a>
-        </div>
-        {{ end }}
-        <!-- single product end -->
-      </div>
-    </div>
-  </div>
-  <!--==================== products area end ====================-->
-
-
-  <!--==================== others product area start  ====================-->
-  <section class="others-products section-padding">
-    <div class="container">
-      <div class="columns is-vcentered is-multiline">
-        <div class="column is-4-desktop is-6-tablet is-full-mobile">
-          <div class="pr-60">
-            <div class="section-title mb-16">
-              <p class="mb-0 has-text-primary is-uppercase">Why AppsCode 🤔</p>
-              <h2 class="mb-4">{{ $p.homepage.highlight_products.title }}</h2>
-              <p class="mb-0">{{ $p.homepage.highlight_products.summary }}</p>
-            </div>
-            <a href="{{ $p.homepage.highlight_products.url }}" class="button ac-button is-primary ">
-              <span class="icon">
-                <iconify-icon icon="heroicons:chat-bubble-bottom-center" width="18" height="18"></iconify-icon>
-              </span>
-              <span>Let's Talk</span>  
-            </a>
-          </div>
-        </div>
-        <div class="column is-8-desktop is-6-tablet is-full-mobile">
-          <div class="products">
-            <div class="columns is-multiline">
-              {{ range $product := $p.homepage.highlight_products.products }}
-              <div class="column is-6-desktop is-full-tablet is-full-mobile" >
-
-                <!-- sigle product start  -->
-                <div class="single-product">
-                  <img src="{{ $product.logo }}" alt="{{ $product.name }}" loading="lazy" height="60" width="auto">
-                  <p>{{ $product.summary | safeHTML }}</p>
-                  <a class="inline-button is-flex is-gap-4" href="{{ $product.url }}">
-                    <span>EXPLORE MORE</span>
-                    <span class="width-16 is-flex">
-                      <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
-                    </span>
-                  </a>
-                </div>
-                <!-- sigle product end -->
-              </div>
-              {{ end }}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--==================== others product area end  ====================-->
-</div>
-
-<!--==================== products features area start  ====================-->
-<div class="products-features bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.webp); background-repeat: no-repeat;">
-  <!-- <div class="shapes-dots">
-    <img class="shape dot-1" src="/assets/images/appscode/dots.png" alt="">
-    <img class="shape dot-2" src="/assets/images/appscode/dots.png" alt="">
-  </div> -->
-  <div class="container">
-    <div class="columns">
-      <div class="column is-3">
-        <!-- features tabs start  -->
-        <div class="features-tabs" id="nav-serialscrolling">
-          <ul>
-            {{ range $products := $p.homepage.products }}
-            <li><span class="sub-link" data-serialscrolling="{{ $products.id }}">{{ $products.use_case }}</span>
-            </li>
-            {{end}}
-          </ul>
-        </div>
-        <!-- features tabs end -->
-      </div>
-      <div class="column is-9 is-paddingless-desktop">
-        <div class="products-description-wrapper">
-          <!-- single product start  -->
-          {{ range $products := $p.homepage.products }}
-          <div class="single-product {{$products.product}}" data-serialscrolling-target="{{ $products.id }}">
-            <div class="columns">
-              <div class="column is-6-desktop is-full-touch" >
-                <!-- single product description start  -->
-                <div class="product-description">
-                  <div class="brand">
-                    <img src="{{ $products.logo}}" alt="{{$products.product}}" loading="lazy" height="auto" width="auto">
-                  </div>
-                  <!-- <h5>{{ $products.title}}</h5> -->
-                  <p>{{ $products.summary}}</p>
-                  <ul class="features">
-                    {{ range $features := $products.features}}
-                    <li>
-                      <span class="icon">
-                        <img src="/assets/images/products/appscode/icons/global/check-box.webp" alt="check-box"  loading="lazy">
-                      </span>
-                      <span>{{ $features }}</span>  
-                    </li>
-                    {{ end }}
-                  </ul>
-                  <a class="button ac-button is-primary is-uppercase" href="{{ $products.url }}">
-                    <span>TRY {{$products.product}}</span>
-                    <span class="icon">
-                      <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
-                    </span>
-                  </a>
-                </div>
-                <!-- single product description end -->
-              </div>
-              <div class="column is-6 is-hidden-touch" >
-                <div class="illustration">
-                  <img src="{{ $products.illustration }}" alt="appscode illustration"  loading="lazy" height="auto" width="auto">
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- single product end -->
-          {{end}}
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-<!--==================== products features area end ====================-->
-
-<!--==================== UI features area start ====================-->
-<section class="section-padding ui-features-area" id="ui-features">
-  <div class="container">
-    <!-- section title  -->
-    <div class="columns is-centered">
-      <div class="column is-10-tablet is-8 is-10-desktop is-8-widescreen">
-        <div class="section-title has-text-centered-tablet">
-          <h2>Manage your Kubernetes Native Applications across any Cloud or On-premises</h2>
-          <p>A single pane of glass for managing your Stateless and Stateful applications across any cloud or on-premises environments. Hide the complexity of Kubernetes behind a simple and elegant UI.</p>
-        </div>
-      </div>
-    </div>
-    <!-- section title  -->
-
-    <!-- features with screenshot  -->
-    <div class="columns">
-      <div class="column is-4-desktop is-full-touch">
-        <div class="is-flex is-flex-direction-column" style="gap: 32px;">
-          <!-- single features item start -->
-          <div class="single-feature">
-            <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Hide the complexity of Kubernetes behind a simple & elegant UI" loading="lazy"></div>
-            <div class="content">
-              <h3>Hide the complexity of Kubernetes behind a simple & elegant UI</h3>
-              <p>Simplify how you interact with your Kubernetes clusters. It hides the complexities of managing Kubenetes and provides a simplified and elegant UI.</p>
-            </div>
-          </div>
-          <!-- single features item end -->
-
-          <!-- single features item start -->
-          <div class="single-feature">
-
-            <div class="icon"><img src="https://img.icons8.com/external-phatplus-lineal-phatplus/100/00A651/external-cluster-cloud-computing-phatplus-lineal-phatplus.png" alt=">Manage all your public and private clusters in one place" loading="lazy"></div>
-            <div class="content">
-              <h3>Manage all your public and private clusters in one place</h3>
-              <p>Manage all of your private and public clusters from a single place.</p>
-            </div>
-          </div>
-          <!-- single features item end -->
-
-          <!-- single features item start -->
-          <div class="single-feature">
-            <div class="icon"><img src="https://img.icons8.com/ios/100/00A651/data-configuration.png" alt="Experience operator managed databases in your clusters" loading="lazy"></div>
-            <div class="content">
-              <h3>Experience operator managed databases in your clusters</h3>
-              <p>Easy Provisioning, Upgrading, Scaling, Volume Expansion, Monitoring, Disaster Recovery etc. without becoming a DBA.</p>
-            </div>
-          </div>
-          <!-- single features item end -->
-
-          <!-- single features item start -->
-          <div class="single-feature">
-            <div class="icon"><img src="https://img.icons8.com/external-solidglyph-m-oki-orlando/100/00A651/external-Data-Recovery-data-warehouse-solidglyph-m-oki-orlando.png" alt="Better Safe than Sorry" loading="lazy"></div>
-            <div class="content">
-              <h3>Better Safe than Sorry</h3>
-              <p>Simplifies how you backup and recover your volumes, databases and configuration yamls. Just a few taps and you are protected from future disasters.</p>
-            </div>
-          </div>
-          <!-- single features item end -->
-        </div>
-      </div>
-      <div class="column is-hidden-touch is-8-desktop">
-        <div class="ui-dashboard">
-          <!-- image come from css  -->
-          <!-- <img src="/assets/images/products/appscode/features/ui-features.jpg" alt="features"> -->
-        </div>
-      </div>
-    </div>
-    <!-- features with screenshot  -->
-
-    <!-- more features start -->
-    <div class="columns is-vcentered more-features">
-      <div class="column is-7">
-        <div class="is-flex is-flex-wrap-wrap more-products" >
-          <!-- single features item start -->
-          <div class="single-feature card-view">
-            <div class="icon"><img src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/100/5959CF/external-monitoring-seo-and-web-smashingstocks-detailed-outline-smashing-stocks.png" alt="Monitoring & Alerting" loading="lazy"></div>
-            <div class="content">
-              <h3>Monitoring & Alerting</h3>
-              <p>Built-in integration with Prometheus and Grafana. Centralized Dashboards for all your Kubernetes clusters with localized Prometheus deployments.</p>
-            </div>
-          </div>
-          <!-- single features item end -->
-
-           <!-- single features item start -->
-           <div class="single-feature card-view">
-            <div class="icon"><img src="https://img.icons8.com/fluency-systems-regular/100/FFC629/keyhole-shield.png" alt="Security" loading="lazy"></div>
-            <div class="content">
-              <h3>Security</h3>
-              <p>Built-in integration with best in class ecosystem tools like cert-manager, trivy, Vault, Gatekeepr, Kyverno helps achieve secure by default posture.</p>
-            </div>
-          </div>
-          <!-- single features item end -->
-           <!-- single features item start -->
-           <div class="single-feature card-view">
-            <div class="icon"><img src="https://img.icons8.com/ios/50/00A651/networking-manager.png" alt="Self Host or Managed" loading="lazy"></div>
-            <div class="content">
-              <h3>Self Host or Managed</h3>
-              <p>You can use our managed service for a frictionless start or you can self-host AppsCode UI in your own cluster for complete control.</p>
-            </div>
-          </div>
-          <!-- single features item end -->
-
-           <!-- single features item start -->
-           <div class="single-feature card-view">
-            <div class="icon"><img src="https://img.icons8.com/external-outline-juicy-fish/100/5100A6/external-flexible-arrows-outline-outline-juicy-fish-2.png" alt="GitOps Ready" loading="lazy"></div>
-            <div class="content">
-              <h3>GitOps Ready</h3>
-              <p>AppsCode UI works directly with live Kubernetes YAMLs. Its R/W UI allows users to interact with the application configuration either via GitOps or directly from the UI.</p>
-            </div>
-          </div>
-          <!-- single features item end -->
-        </div>
-      </div>
-      <div class="column is-5">
-       <div class="section-title mb-0">
-          <h2>Cloud reimagined for the age of Kubernetes</h2>
-          <p class="mb-16">Global Cloud Infrastructure at your Fingertip. Leverage the global infrastructure footprint of the cloud providers with a few clicks.</p>
-       </div>
-
-       <div class="is-flex is-flex-direction-column" style="gap: 32px; margin-bottom: 32px;">
-        <!-- single features item start -->
-        <div class="single-feature">
-          <div class="icon"><img src="https://img.icons8.com/external-outline-juicy-fish/100/00A651/external-flexible-arrows-outline-outline-juicy-fish-2.png" alt="Flexible & Extensible" loading="lazy"></div>
-          <div class="content">
-            <h3>Flexible & Extensible</h3>
-            <p>It is flexible and extensible to adapt to your needs. You can override the default presets and add new presets to fit your organization policy.</p>
-          </div>
-        </div>
-        <!-- single features item end -->
-
-        <!-- single features item start -->
-        <div class="single-feature">
-          <div class="icon"><img src="https://img.icons8.com/ios/50/00A651/trust--v1.png" alt="We are always there for you" loading="lazy"></div>
-          <div class="content">
-            <h3>We are always there for you</h3>
-            <p>We provide dependable, on-demand 24x7 technical support by excellent in-house engineers who are involved in the product development.</p>
-          </div>
-        </div>
-        <!-- single features item end -->
-      </div>
-
-      <a href="https://console.appscode.com" class="button ac-button is-primary">
-        <span>TRY UI</span>
-        <span class="icon">
-          <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
-        </span>
-      </a>
-
-      </div>
-    </div>
-    <!-- more features end -->
-  </div>
-</section>
-<!--==================== UI features area end ====================-->
-
-
-<!--==================== Explore the mechanics start ====================-->
-<section class="section-padding dark-bg mechanics-area" id="mechanics">
-  <div class="container">
-   <!-- section title  -->
-   <div class="columns is-centered">
-    <div class="column is-10-tablet is-8 is-10-desktop is-8-widescreen">
-      <div class="section-title has-text-centered-tablet">
-        <h2>Deploy & Manage Databases with 1-click</h2>
-        <p>Discover how our UI enabled users to deploy & manage popular database endgines with 1-click. Learn to navigate seamlessly and make the most of its capabilities for an improved user experience.</p>
-      </div>
-    </div>
-   </div>
-   <!-- section title  -->
-
-   <div class="columns is-vcentered" style="padding-bottom: 60px;">
-    <div class="column is-4">
-      <div class="is-flex is-flex-direction-column is-flex-wrap-wrap" style="gap: 8px;">
-
-        <!-- single features mechanism item start -->
-        <div class="single-feature mechanism is-active">
-          <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Provisioning" loading="lazy"></div>
-          <div class="content">
-            <strong class="provisioing">Provisioning</strong>
-            <p class="is-ellipsis-2">Provision your favorite databases with just a few clicks</p>
-          </div>
-        </div>
-        <!-- single features mechanism item end -->
-
-        <!-- single features mechanism item start -->
-        <div class="single-feature mechanism">
-          <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Database Insights" loading="lazy"></div>
-          <div class="content">
-            <strong class="database-insight">Database Insights</strong>
-            <p class="is-ellipsis-2">Gain live insights in your databases with a glance</p>
-          </div>
-        </div>
-        <!-- single features mechanism item end -->
-
-        <!-- single features mechanism item start -->
-        <div class="single-feature mechanism">
-          <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Auto DBA" loading="lazy"></div>
-          <div class="content">
-            <strong class="managing">Auto DBA</strong>
-            <p class="is-ellipsis-2">Manage Day 2 lifecycle of your database right from the UI</p>
-          </div>
-        </div>
-        <!-- single features mechanism item end -->
-
-         <!-- single features mechanism item start -->
-         <div class="single-feature mechanism">
-          <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Disaster Recovery" loading="lazy"></div>
-          <div class="content">
-            <strong class="disaster-recovery">Disaster Recovery</strong>
-            <p class="is-ellipsis-2">Stay ready for any disaster with just a few clicks.</p>
-          </div>
-        </div>
-        <!-- single features mechanism item end -->
-
-         <!-- single features mechanism item start -->
-         <div class="single-feature mechanism">
-          <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Monitoring" loading="lazy"></div>
-          <div class="content">
-            <strong class="monitoring">Monitoring</strong>
-            <p class="is-ellipsis-2">Monitor your database with embedded Grafana dashboards</p>
-          </div>
-        </div>
-        <!-- single features mechanism item end -->
-
-        <!-- single features mechanism item start -->
-        <div class="single-feature mechanism">
-          <div class="icon"><img src="https://img.icons8.com/100/E6E7E6/puzzle.png" alt="Alert" loading="lazy"></div>
-          <div class="content">
-            <strong class="alert">Alert</strong>
-            <p class="is-ellipsis-2">Stay alert for your mission critical databases</p>
-          </div>
-        </div>
-        <!-- single features mechanism item end -->
-
-      </div>
-    </div>
-    <div class="column is-8">
-      <div class="ui-mechanism">
-        <div id="provisioing" class="single-ui-ss provisioning">
-          <img src="/assets/images/products/appscode/features/steps/provisioning.webp" alt="provisioning-databases" loading="lazy">
-        </div>
-        <div id="database-insight" class="single-ui-ss database-insight is-hidden">
-         <img src="/assets/images/products/appscode/features/steps/insight.webp" alt="insight" loading="lazy">
-        </div>
-
-        <div id="managing" class="single-ui-ss managing is-hidden">
-          <img src="/assets/images/products/appscode/features/steps/action.webp" alt="managing db" loading="lazy">
-        </div>
-
-        <div id="disaster-recovery" class="single-ui-ss disaster-recovery is-hidden">
-          <img src="/assets/images/products/appscode/features/steps/backup-recovery.webp" alt="backup-recovery" loading="lazy">
-        </div>
-
-        <div id="monitoring" class="single-ui-ss monitoring is-hidden">
-          <img src="/assets/images/products/appscode/features/steps/monitoring.webp" alt="monitoring" loading="lazy">
-        </div>
-
-        <div id="alert" class="single-ui-ss alert is-hidden">
-          <img src="/assets/images/products/appscode/features/steps/cve-report.webp" alt="cve-report" loading="lazy">
-        </div>
-      </div>
-    </div>
-   </div>
-  </div>
-
-  <!-- introduce kubedb ui start -->
-  <!--
-  <div class="container-fulid intro-kubedb-ui section-padding">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-5">
-          <div class="section-title mb-0">
-            <h2>Kubernetes Databases Deployed with Cluster UI || KubeDB UI</h2>
-          </div>
-          <p class="mb-16">Deploy, manage, upgrade Kubernetes on any cloud and automate deployment, scaling, and management of containerized applications.Deploy, manage,</p>
-          <p class="mb-16">Kubernetes on any cloud and automate deployment, scaling, and management of containerized applications.Deploy, manage,Deploy, manage, upgrade Kubernetes on any cloud</p>
-
-          <a href="https://console.appscode.com/" target="_blank" class="button ac-button is-primary">
-            <span>TRY CONSOLE DASHBOARD</span>
-            <span class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+          <div class="visual-container">
+            <div class="main-cloud-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none"
+                stroke="#00A550" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
               </svg>
-            </span>
-          </a>
-        </div>
-        <div class="column is-7">
-          <div class="is-flex is-flex-wrap-wrap" style="gap: 12px;">
-            <-- single features item start --!>
-            <div class="single-feature card-view bg-dark">
-
-              <div class="icon"><img src="https://cdn.appscode.com/images/logo/appscode/ac-moscot.png" alt="Kubernetes Made Easy"></div>
-              <div class="content">
-                <h3></h3>
-                <p>Use Stash to backup and restore any stateful workload using restic or volume snapshotting on any K8s cluster </p>
-                <a href="https://console.appscode.com/" target="_blank" class="is-flex is-underlined">
-                 <span>TRY CONSOLE UI</span>
-                  <span class="is-flex width-18">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                    </svg>
-                  </span>
-                </a>
-              </div>
             </div>
-            <-- single features item end --!>
 
-            <-- single features item start --!>
-            <div class="single-feature card-view bg-dark">
-              <div class="icon"><img src="https://cdn.appscode.com/images/products/kubedb/icons/android-icon-48x48.png" alt="Kubernetes Made Easy"></div>
-              <div class="content">
-                <h3></h3>
-                <p>Use Stash to backup and restore any stateful workload using restic or volume snapshotting on any K8s cluster </p>
-                <a href="https://db.appscode.com/" target="_blank" class="is-flex is-underlined">
-                  <span>TRY KUBEDB UI</span>
-                  <span class="is-flex width-18">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <-- single features item end --!>
+            <div
+              style="position: absolute; border: 1px dashed #e0e0e0; border-radius: 50%; width: 300px; height: 300px;"></div>
+            <div
+              style="position: absolute; border: 1px solid #00A55015; border-radius: 50%; width: 450px; height: 450px;"></div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
-  -->
-  <!-- introduce kubedb ui end -->
 </section>
-<!--==================== Explore the mechanics end ====================-->
+<!--==================== hero-area end 2026 ====================-->
 
-
-
-<!--====================  subscription area start  --==================== -->
-<section class="subscription-area section-padding">
+<!--==================== trusted logo area start  ====================-->
+<section class="section">
   <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-7">
-        <div class="subscription-message">
-          <div class="section-title mb-0">
-            <h2  class="mb-8">{{ $p.homepage.subscription.title | safeHTML}}</h2>
-          </div>
-          <p class="mb-0">{{ $p.homepage.subscription.summary_left | safeHTML}}</p>
-          <!-- <a class="button ac-button is-primary is-outlined" href="https://support.appscode.com/">GET</a> -->
-        </div>
-      </div>
-      <div class="column is-5" >
-        <p>{{ $p.homepage.subscription.summary_right | safeHTML}}</p>
+    <div class="has-text-centered mb-6">
+      <h2 class="title is-3 has-text-weight-bold">
+        Trusted by Companies <span class="gradient-text">Worldwide</span>
+      </h2>
+    </div>
 
-        <!-- subscription input  -->
-        <form method="post" action="https://listmonk.appscode.com/subscription/form" id="mc-embedded-subscribe-form"
-          name="mc-embedded-subscribe-form" class="subscription-input"
-          novalidate>
-           <input type="hidden" id="afbbc" name="l" value="afbbc974-e163-4467-be49-040e399520f3" />
-          <input name="email" id="mce-EMAIL1" type="email" placeholder="Enter your email address">
-          <button class="button ac-button is-primary" id="mc-embedded-subscribe1" type="submit"
-            name="subscribe" aria-label="Subscribe Button">SUBSCRIBE</button>
-          <p class="mt-16 mb-0" >Subscribe to our newsletter <img
-              src="/assets/images/icon/indicator-arrow-right.svg" alt="indicator-arrow-right" loading="lazy"></p>
-        </form>
-        <!-- subscription input  -->
+    <div class="logo-slider">
+      <div class="logo-track">
+        <div class="logo-item"><img
+            src="https://cdn.appscode.com/images/customers/logos/nokia.png"
+            alt="Nokia"></div>
+        <div class="logo-item"><img
+            src="https://cdn.appscode.com/images/customers/logos/greenhouse.png"
+            alt="Greenhouse"></div>
+        <div class="logo-item"><img
+            src="https://cdn.appscode.com/images/customers/logos/orange.png"
+            alt="Orange"></div>
+        <div class="logo-item"><img
+            src="https://cdn.appscode.com/images/customers/logos/umd.png"
+            alt="UMD"></div>
+        <div class="logo-item"><img
+            src="https://cdn.appscode.com/images/customers/logos/emerson.png"
+            alt="Emerson"></div>
+        <div class="logo-item"><img
+            src="https://cdn.appscode.com/images/customers/logos/asurion.png"
+            alt="Asurion"></div>
+        <div class="logo-item"><img
+            src="https://cdn.appscode.com/images/customers/logos/course-hero.png"
+            alt="Course Hero"></div>
+
+        <div class="logo-item"><img
+            src="https://cdn.appscode.com/images/customers/logos/nokia.png"
+            alt="Nokia"></div>
+        <div class="logo-item"><img
+            src="https://cdn.appscode.com/images/customers/logos/greenhouse.png"
+            alt="Greenhouse"></div>
+        <div class="logo-item"><img
+            src="https://cdn.appscode.com/images/customers/logos/orange.png"
+            alt="Orange"></div>
+        <div class="logo-item"><img
+            src="https://cdn.appscode.com/images/customers/logos/umd.png"
+            alt="UMD"></div>
+        <div class="logo-item"><img
+            src="https://cdn.appscode.com/images/customers/logos/emerson.png"
+            alt="Emerson"></div>
+        <div class="logo-item"><img
+            src="https://cdn.appscode.com/images/customers/logos/asurion.png"
+            alt="Asurion"></div>
+        <div class="logo-item"><img
+            src="https://cdn.appscode.com/images/customers/logos/course-hero.png"
+            alt="Course Hero"></div>
       </div>
     </div>
   </div>
 </section>
-<!-- ====================  subscription area end --====================-->
+<!--==================== trusted logo area end  ====================-->
 
-<!-- social connect start  -->
-<div class="bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.webp);">
-  <!--==================== social connect area end ====================-->
-  <section class="social-connect-area section-padding">
-    <div class="container">
-      <div class="columns is-multiline">
-        <div class="column is-10-tablet is-8 is-10-desktop is-8-widescreen">
-          <div class="section-title connect-message">
-            <h2>{{ $p.homepage.social_connect.title }}</h2>
-            <p class="mb-0" >{{ $p.homepage.social_connect.summary }}</p>
-          </div>
-        </div>
-        <div class="column is-4">
-          <ul class="social-link">
-            {{ range $social_link := $p.homepage.social_connect.social_link }}
-            <li><a href="{{ $social_link.url }}"><span><img
-                    src="{{$social_link.icon}}" alt="social link" loading="lazy" width="20" height="20"></span>{{ $social_link.text }}</a>
-            </li>
-            {{ end }}
+<!--==================== our products area start  ====================-->
+<section>
+  <div class="section">
+    <div class="container has-text-centered" style="max-width: 800px;">
 
-          </ul>
-        </div>
+      <div class="is-inline-block mb-4">
+        <span class="tag is-medium is-rounded has-text-weight-bold is-uppercase"
+          style="background-color: rgba(0, 165, 80, 0.1); color: #00A550; border: 1px solid rgba(0, 165, 80, 0.2); letter-spacing: 0.1em;">
+          Our Products
+        </span>
       </div>
 
-      <!-- cards start  -->
-      <div class="columns is-multiline">
-        {{ range $social_cards := $p.homepage.social_connect.social_cards}}
-        <!-- single card start  -->
-        <div class="column is-one-third-widescreen is-one-third-fullhd is-one-third-tablet is-full-mobile"
-         >
-          <a href="{{ $social_cards.url }}" class="single-card is-block">
-            <div class="card-top">
-              <div class="card-icon"><img src="{{ $social_cards.icon }}" alt="{{ $social_cards.icon }}" width="60" height="60"></div>
-              <div class="count">
-                <h2>{{ $social_cards.users }}</h2>
-                <p>{{ $social_cards.sub_title }}</p>
+      <h2 class="title is-2 is-size-3-mobile has-text-weight-bold mb-4"
+        style="color: #081419; letter-spacing: -0.02em;">
+        Kubernetes-Native Products
+      </h2>
+
+      <p class="subtitle is-5 has-text-grey mt-2">
+        Production-ready operators and tools designed to simplify your
+        Kubernetes operations
+      </p>
+
+    </div>
+  </div>
+  <!-- tabs start  -->
+  <div class="container">
+    <div class="tabs is-centered is-medium">
+      <ul style="border-bottom-width: 2px;">
+
+        <li class="is-active">
+          <a class="has-text-weight-bold"
+            style="border-bottom-color: #4949a2; color: #081419; padding-bottom: 1.25rem;">
+            <span class="icon is-small" style="color: #4949a2;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9"
+                  ry="3"></ellipse><path
+                  d="M3 5V19A9 3 0 0 0 21 19V5"></path><path
+                  d="M3 12A9 3 0 0 0 21 12"></path></svg>
+            </span>
+            <span>KubeDB</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="has-text-grey font-medium" style="padding-bottom: 1.25rem;">
+            <span class="icon is-small">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"><rect width="20" height="5" x="2" y="3"
+                  rx="1"></rect><path
+                  d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"></path><path
+                  d="M10 12h4"></path></svg>
+            </span>
+            <span>KubeStash</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="has-text-grey font-medium" style="padding-bottom: 1.25rem;">
+            <span class="icon is-small">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"><rect x="16" y="16" width="6" height="6"
+                  rx="1"></rect><rect x="2" y="16" width="6" height="6"
+                  rx="1"></rect><rect x="9" y="2" width="6" height="6"
+                  rx="1"></rect><path
+                  d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path><path
+                  d="M12 12V8"></path></svg>
+            </span>
+            <span>Voyager</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="has-text-grey font-medium" style="padding-bottom: 1.25rem;">
+            <span class="icon is-small">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"><path
+                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+            </span>
+            <span>KubeVault</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="has-text-grey font-medium" style="padding-bottom: 1.25rem;">
+            <span class="icon is-small">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"><path
+                  d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path></svg>
+            </span>
+            <span>ACE Platform</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <!-- tabs end  -->
+
+  <!-- tabs content  -->
+  <section class="section">
+    <div class="container">
+      <div class="product-card">
+
+        <div class="product-header">
+          <div class="columns is-vcentered">
+            <div class="column is-narrow">
+              <div class="product-logo-box">
+                <img
+                  src="https://cdn.appscode.com/images/logo/kubedb/github-moscot.png"
+                  alt="KubeDB" width="40">
               </div>
             </div>
-            <div class="card-bottom">
-              <!-- <p>{{ $social_cards.summary }}</p> -->
-              <button>View On {{ $social_cards.name }}</button>
+            <div class="column">
+              <h3 class="title is-3 has-text-weight-bold mb-2">KubeDB</h3>
+              <p
+                class="subtitle is-5 has-text-weight-medium mb-2">Production-grade
+                database operator for Kubernetes</p>
+              <p class="has-text-grey">KubeDB simplifies and automates routine
+                database tasks such as provisioning, monitoring, backup, and
+                recovery across private and public clouds.</p>
             </div>
-          </a>
+            <div class="column is-narrow">
+              <div class="buttons">
+                <a class="button is-link has-text-weight-bold"
+                  style="background-color: var(--kubedb-purple);">Visit Site</a>
+                <a class="button is-dark has-text-weight-bold">Docs</a>
+                <a class="button is-light has-text-weight-bold">GitHub</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- single card end -->
-        {{end}}
-      </div>
-      <!-- cards end -->
+
+        <div class="p-6">
+          <div class="columns is-variable is-8">
+
+            <div class="column is-7">
+              <h4 class="title is-5 has-text-weight-bold mb-5">Key Features</h4>
+              <ul class="is-size-6">
+                <li class="mb-3 is-flex">
+                  <span class="feature-icon mr-3">✔</span>
+                  <span>Supports 30+ engines: PostgreSQL, MySQL, MongoDB, Redis,
+                    etc.</span>
+                </li>
+                <li class="mb-3 is-flex">
+                  <span class="feature-icon mr-3">✔</span>
+                  <span>Automated provisioning, backup, and recovery.</span>
+                </li>
+                <li class="mb-3 is-flex">
+                  <span class="feature-icon mr-3">✔</span>
+                  <span>Built-in monitoring with Prometheus and Grafana.</span>
+                </li>
+                <li class="mb-3 is-flex">
+                  <span class="feature-icon mr-3">✔</span>
+                  <span>High availability with automatic failover.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="column is-5">
+              <h4 class="title is-5 has-text-weight-bold mb-4">By the
+                Numbers</h4>
+              <div class="columns is-mobile is-multiline">
+                <div class="column is-4">
+                  <div class="stat-box">
+                    <div class="has-text-weight-bold is-size-4"
+                      style="color: var(--kubedb-purple);">30+</div>
+                    <div
+                      class="is-size-7 is-uppercase has-text-grey">Engines</div>
+                  </div>
+                </div>
+                <div class="column is-4">
+                  <div class="stat-box">
+                    <div class="has-text-weight-bold is-size-4"
+                      style="color: var(--kubedb-purple);">500+</div>
+                    <div
+                      class="is-size-7 is-uppercase has-text-grey">Clients</div>
+                  </div>
+                </div>
+                <div class="column is-4">
+                  <div class="stat-box">
+                    <div class="has-text-weight-bold is-size-4"
+                      style="color: var(--kubedb-purple);">10K+</div>
+                    <div
+                      class="is-size-7 is-uppercase has-text-grey">Installs</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-banner mt-5">
+            <div class="level">
+              <div class="level-left">
+                <div>
+                  <h4 class="title is-5 has-text-weight-bold mb-1">Ready to get
+                    started?</h4>
+                  <p class="is-size-6 has-text-grey">Explore our documentation
+                    or contact our team for a demo.</p>
+                </div>
+              </div>
+              <div class="level-right">
+                <div class="buttons">
+                  <button class="button is-link has-text-weight-bold"
+                    style="background-color: var(--kubedb-purple);">Get
+                    Started</button>
+                  <button class="button is-white has-text-weight-bold"
+                    style="border: 1px solid #ddd;">Schedule Demo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> </div>
     </div>
   </section>
-  <!--==================== social connect area end ====================-->
+  <!--==================== our products area end  ====================-->
+</section>
 
+<!--==================== cta section start  ====================-->
+<section class="section">
+  <div class="container">
+    <div class="cta-container has-text-centered">
+      <div class="cta-grid"></div>
+      <div class="cta-glow"></div>
+      <div class="shape-rect"></div>
+      <div class="shape-circle"></div>
 
-</div>
-<!-- social connect start  -->
+      <div style="position: relative; z-index: 10;">
+        <h3 class="title is-2 is-size-3-mobile has-text-weight-black mb-5">
+          Looking for Enterprise Support?
+        </h3>
+        <p class="subtitle is-5 has-text-grey-dark mx-auto mb-6"
+          style="max-width: 650px; line-height: 1.6;">
+          Use our Products standalone or combine them with our Managed Services
+          for the best of both worlds. One vendor. Complete peace of mind.
+        </p>
+        <button class="cta-button is-size-5">
+          Contact Sales
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--==================== cta section end  ====================-->
 
+<!--==================== our services area start  ====================-->
+<section class="section">
+  <div class="container">
+    <div class="has-text-centered mb-6">
+      <span class="tag is-rounded has-text-weight-bold mb-3"
+        style="background: rgba(0,165,80,0.1); color: var(--brand-green);">OUR
+        SERVICES</span>
+      <h2 class="title is-2 has-text-weight-bold">Comprehensive Cloud-Native
+        Services</h2>
+      <p class="subtitle is-5 has-text-grey">Expert services tailored to your
+        application and infrastructure needs</p>
+    </div>
 
-<div class="bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.webp);">
+    <div class="services-wrapper">
+      <aside class="services-sidebar">
+        <p
+          class="is-size-7 has-text-weight-bold has-text-grey-light is-uppercase mb-4">Categories</p>
+        <button class="service-nav-btn is-active">
+          <span class="icon mr-3 has-text-success">💻</span>
+          <span class="has-text-weight-semibold">App Modernization</span>
+        </button>
+        <button class="service-nav-btn">
+          <span class="icon mr-3">☁️</span>
+          <span>Managed Cloud</span>
+        </button>
+        <button class="service-nav-btn">
+          <span class="icon mr-3">☸️</span>
+          <span>Managed Kubernetes</span>
+        </button>
+      </aside>
+
+      <main class="services-content">
+        <div class="content-header">
+          <div class="effect-grid"></div>
+          <div class="effect-glow"></div>
+          <div class="columns is-vcentered relative">
+            <div class="column is-narrow">
+              <div class="image is-64x64 p-2 has-background-white"
+                style="border-radius: 12px; border: 1px solid #eee;">
+                <img
+                  src="https://cdn.appscode.com/images/logo/kubedb/github-moscot.png"
+                  alt="Icon">
+              </div>
+            </div>
+            <div class="column">
+              <h3 class="title is-3 mb-2">Application Modernization</h3>
+              <p
+                class="subtitle is-5 has-text-weight-medium has-text-grey-dark">Accelerating
+                your microservices journey</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6">
+          <h4 class="title is-6 has-text-weight-bold mb-4">Key Offerings</h4>
+          <div class="columns is-multiline">
+            <div class="column is-6">
+              <div class="box is-shadowless"
+                style="border: 1px solid #eee; transition: 0.3s;"
+                onmouseover="this.style.borderColor='#00A550'"
+                onmouseout="this.style.borderColor='#eee'">
+                <p class="has-text-weight-bold mb-1">Monolith to
+                  Microservices</p>
+                <p class="is-size-7 has-text-grey mb-2">Migrate legacy
+                  applications to cloud-native.</p>
+                <a class="is-size-7 has-text-success has-text-weight-bold">Learn
+                  more →</a>
+              </div>
+            </div>
+            <div class="column is-6">
+              <div class="box is-shadowless" style="border: 1px solid #eee;">
+                <p class="has-text-weight-bold mb-1">GitOps Consulting</p>
+                <p class="is-size-7 has-text-grey mb-2">Streamlining pipeline
+                  and deployments.</p>
+                <a class="is-size-7 has-text-success has-text-weight-bold">Learn
+                  more →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="columns mt-6">
+      <div class="column">
+        <div class="stat-card">
+          <div class="icon-box">🏆</div>
+          <p class="title is-3 mb-1">24/7</p>
+          <p
+            class="is-size-7 has-text-grey is-uppercase has-text-weight-bold">Expert
+            Support</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="stat-card">
+          <div class="icon-box">⚡</div>
+          <p class="title is-3 mb-1">99.9%</p>
+          <p
+            class="is-size-7 has-text-grey is-uppercase has-text-weight-bold">SLA
+            Uptime</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="stat-card">
+          <div class="icon-box">🌍</div>
+          <p class="title is-3 mb-1">500+</p>
+          <p
+            class="is-size-7 has-text-grey is-uppercase has-text-weight-bold">Projects
+            Delivered</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- cards start -->
+    <div class="columns is-variable is-4 mt-6">
+
+      <div class="column is-4">
+        <div class="box has-text-centered is-shadowless"
+          style="border: 1px solid #e5e7eb; transition: transform 0.2s ease;"
+          onmouseover="this.style.transform='translateY(-4px)'"
+          onmouseout="this.style.transform='translateY(0)'">
+          <div
+            class="image is-48x48 mx-auto mb-4 is-flex is-align-items-center is-justify-content-center"
+            style="background-color: rgba(0, 165, 80, 0.1); border-radius: 12px; color: #00A550;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round"><path
+                d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle
+                cx="12" cy="8" r="6"></circle></svg>
+          </div>
+          <p class="title is-3 has-text-weight-bold mb-1"
+            style="color: #081419;">24/7</p>
+          <p class="subtitle is-6 has-text-grey">Expert Support</p>
+        </div>
+      </div>
+
+      <div class="column is-4">
+        <div class="box has-text-centered is-shadowless"
+          style="border: 1px solid #e5e7eb; transition: transform 0.2s ease;"
+          onmouseover="this.style.transform='translateY(-4px)'"
+          onmouseout="this.style.transform='translateY(0)'">
+          <div
+            class="image is-48x48 mx-auto mb-4 is-flex is-align-items-center is-justify-content-center"
+            style="background-color: rgba(8, 20, 25, 0.05); border-radius: 12px; color: #081419;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round"><path
+                d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg>
+          </div>
+          <p class="title is-3 has-text-weight-bold mb-1"
+            style="color: #081419;">99.9%</p>
+          <p class="subtitle is-6 has-text-grey">SLA Uptime</p>
+        </div>
+      </div>
+
+      <div class="column is-4">
+        <div class="box has-text-centered is-shadowless"
+          style="border: 1px solid #e5e7eb; transition: transform 0.2s ease;"
+          onmouseover="this.style.transform='translateY(-4px)'"
+          onmouseout="this.style.transform='translateY(0)'">
+          <div
+            class="image is-48x48 mx-auto mb-4 is-flex is-align-items-center is-justify-content-center"
+            style="background-color: rgba(0, 165, 80, 0.1); border-radius: 12px; color: #00A550;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round"><circle cx="12" cy="12"
+                r="10"></circle><path
+                d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path
+                d="M2 12h20"></path></svg>
+          </div>
+          <p class="title is-3 has-text-weight-bold mb-1"
+            style="color: #081419;">500+</p>
+          <p class="subtitle is-6 has-text-grey">Projects Delivered</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- cards end  -->
+  </div>
+</section>
+<!--==================== our services area end  ====================-->
+
+<div class="bg-gradient-1"
+  style="background-image: url(./assets/images/gradient-bg.webp);">
   <!-- ==========================testimonial area 2022 start ==========================  -->
   <section class="testimonial-area">
 
@@ -724,18 +591,21 @@
           <div class="section-title">
             <h2 class="is-gradient">What They Are <span
                 class="has-text-weight-light"> Saying About us</span></h2>
-            <p >Trusted by top engineers at the most ambitious companies</p>
+            <p>Trusted by top engineers at the most ambitious companies</p>
           </div>
           <!-- arrows start  -->
-          <div class="arrows" >
-            <button class="button arrow is-rounded customPrevBtn" title="Previous">
+          <div class="arrows">
+            <button class="button arrow is-rounded customPrevBtn"
+              title="Previous">
               <span class="icon">
-                <iconify-icon icon="heroicons:arrow-small-left" width="24" height="24"></iconify-icon>           
+                <iconify-icon icon="heroicons:arrow-small-left" width="24"
+                  height="24"></iconify-icon>
               </span>
             </button>
             <button class="button arrow is-rounded customNextBtn" title="Next">
               <span class="icon">
-                <iconify-icon icon="heroicons:arrow-small-right" width="24" height="24"></iconify-icon>
+                <iconify-icon icon="heroicons:arrow-small-right" width="24"
+                  height="24"></iconify-icon>
               </span>
             </button>
           </div>
@@ -743,19 +613,23 @@
         </div>
         <div class="column is-8">
           <!-- owl-carousel -->
-          <div class="testimonial-carousel-wrapper owl-carousel testimonial-carousel">
+          <div
+            class="testimonial-carousel-wrapper owl-carousel testimonial-carousel">
             {{ range $user := $.Site.Data.testimonials }}
             <!-- single testimonial item start  -->
             <div class="single-testimonial-item">
               <!-- user info wrapper start  -->
               <div class="user-info-wrapper">
                 <figure class="image is-64x64">
-                  <img class="is-rounded" src="{{ $user.profile }}" alt="{{ $user.name }}" loading="lazy" height="64" width="64" decoding="async">
+                  <img class="is-rounded" src="{{ $user.profile }}"
+                    alt="{{ $user.name }}" loading="lazy" height="64" width="64"
+                    decoding="async">
                 </figure>
                 <div class="user-info">
                   <p class="name">{{ $user.name }}</p>
                   <p>{{ $user.job }}{{ if $user.companyKey }} at
-                    <span class="is-capitalized">{{ $user.companyKey }}</span>{{ end }}</p>
+                    <span class="is-capitalized">{{ $user.companyKey }}</span>{{
+                    end }}</p>
                 </div>
               </div>
               <!-- user info wrapper end -->
@@ -777,21 +651,29 @@
         <div class="container">
           <div class="columns is-vcentered is-multiline">
             <div class="column is-full-tablet is-8-desktop">
-             <div class="section-title mb-0 has-text-left-tablet">
-              <h2>Manage your Kubernetes Native Applications across <br/>any Cloud or On-premies!</h2>
-              <p class="mb-0">AppsCode products are FREE to try on any supported Kubernetes versions. There is no up-front investment required, and you need to pay only for the resources you use to your infrastructure provider. We offer a 30 day license FREE of cost for a given Kubernetes cluster.
-              </p>
-             </div>
+              <div class="section-title mb-0 has-text-left-tablet">
+                <h2>Manage your Kubernetes Native Applications across <br />any
+                  Cloud or On-premies!</h2>
+                <p class="mb-0">AppsCode products are FREE to try on any
+                  supported Kubernetes versions. There is no up-front investment
+                  required, and you need to pay only for the resources you use
+                  to your infrastructure provider. We offer a 30 day license
+                  FREE of cost for a given Kubernetes cluster.
+                </p>
+              </div>
             </div>
             <div
               class="column is-full-tablet is-4-desktop has-text-centered-touch has-text-right-desktop">
-              <div class="buttons is-justify-content-flex-center-mobile is-justify-content-flex-end">
+              <div
+                class="buttons is-justify-content-flex-center-mobile is-justify-content-flex-end">
 
-                <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-primary ">
-                    <span class="icon">
-                      <iconify-icon icon="heroicons:chat-bubble-bottom-center" width="18" height="18"></iconify-icon>
-                    </span>
-                    <span>CONTACT US</span>
+                <a href="{{ $.Site.Params.domain_appscode }}/contact/"
+                  class="button ac-button is-primary ">
+                  <span class="icon">
+                    <iconify-icon icon="heroicons:chat-bubble-bottom-center"
+                      width="18" height="18"></iconify-icon>
+                  </span>
+                  <span>CONTACT US</span>
                 </a>
               </div>
             </div>
@@ -802,6 +684,61 @@
   </section>
   <!-- call to action area end -->
 </div>
+
+<!-- ==================== final cta area start =======================  -->
+<section class="final-cta-section">
+  <div class="container">
+
+    <div class="build-badge">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round"><path
+          d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path></svg>
+      Let's Build Together
+    </div>
+
+    <h2 class="title is-1 is-size-2-mobile has-text-weight-black mb-6">
+      Ready to Transform Your <br>
+      <span class="headline-accent">Cloud Native Journey?</span>
+    </h2>
+
+    <p class="subtitle is-4 has-text-grey-dark mx-auto mb-6"
+      style="max-width: 700px;">
+      Join hundreds of companies using AppsCode products and services to build,
+      deploy, and manage production-grade Kubernetes applications.
+    </p>
+
+    <div class="columns is-centered is-mobile is-multiline mb-6">
+      <div class="column is-narrow feature-item mx-4">
+        <div class="feature-icon-box">🛡️</div>
+        <p class="is-size-7 has-text-weight-bold">Enterprise Support</p>
+      </div>
+      <div class="column is-narrow feature-item mx-4">
+        <div class="feature-icon-box">⚡</div>
+        <p class="is-size-7 has-text-weight-bold">24/7 Monitoring</p>
+      </div>
+      <div class="column is-narrow feature-item mx-4">
+        <div class="feature-icon-box">✅</div>
+        <p class="is-size-7 has-text-weight-bold">Expert Consultation</p>
+      </div>
+    </div>
+
+    <div class="buttons is-centered mb-6">
+      <a class="button is-large btn-primary-brand">Get Started Today</a>
+      <a class="button is-large btn-secondary-outline">Explore Products</a>
+    </div>
+
+    <div
+      class="is-flex is-align-items-center is-justify-content-center has-text-grey">
+      <span class="dot-pulse"></span>
+      <p class="is-size-7 has-text-weight-medium">Trusted by Fortune 500
+        companies and innovative startups worldwide</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== final cta area end =======================  -->
 
 <script>
   window.addEventListener('load', function() {
