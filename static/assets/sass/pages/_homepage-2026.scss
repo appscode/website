@@ -1,5 +1,43 @@
+$homepage-primary-border: rgba(0, 165, 80, 0.2);
+$homepage-primary-bg: rgba(0, 165, 80, 0.1);
+$homepage-primary-border-strong: rgba(0, 165, 80, 0.3);
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin square($size) {
+  width: $size !important;
+  height: $size !important;
+}
+
+@mixin text-30-700-36 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+@mixin text-20-700-28 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+@mixin text-16-700-24 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@mixin text-14-700-20 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
 .hero-area-2026 {
-  display: none;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -18,13 +56,11 @@
       gap: 8px;
       color: $ac-primary;
 
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 20px;
+      @include text-14-700-20;
 
       border-radius: 33554400px;
-      border: 1px solid rgba(0, 165, 80, 0.3);
-      background: rgba(0, 165, 80, 0.1);
+      border: 1px solid $homepage-primary-border-strong;
+      background: $homepage-primary-bg;
       box-shadow: 0 2px 8px 0 rgba(0, 165, 80, 0.1);
 
       .circle-dot {
@@ -99,9 +135,7 @@
   h2.title {
     color: #081419;
     text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36px; /* 120% */
+    @include text-30-700-36;
     letter-spacing: -0.75px;
   }
 }
@@ -121,8 +155,8 @@
   justify-content: center;
   align-items: center;
   border-radius: 33554400px;
-  border: 1px solid rgba(0, 165, 80, 0.2);
-  background: rgba(0, 165, 80, 0.1);
+  border: 1px solid $homepage-primary-border;
+  background: $homepage-primary-bg;
   margin-bottom: 8px;
 }
 
@@ -155,9 +189,7 @@
       justify-content: flex-start;
 
       a {
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 24px; /* 150% */
+        @include text-16-700-24;
         padding: 10px 24px;
         &:hover {
           border-bottom-color: $ac-primary;
@@ -204,9 +236,7 @@
     }
     h3.title {
       color: #081419;
-      font-size: 30px;
-      font-weight: 700;
-      line-height: 36px;
+      @include text-30-700-36;
       letter-spacing: -0.75px;
     }
     .subtitle {
@@ -237,10 +267,8 @@
     }
     h4 {
       color: #081419;
-      font-size: 20px;
       font-style: normal;
-      font-weight: 700;
-      line-height: 28px;
+      @include text-20-700-28;
     }
     ul.features-list {
       margin-top: 24px;
@@ -310,9 +338,7 @@
     gap: 32px;
     h4 {
       color: #081419;
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 28px;
+      @include text-20-700-28;
       margin-bottom: 8px;
     }
     .single-number-wrapper {
@@ -356,10 +382,8 @@
     h4 {
       color: #081419;
       font-family: Roboto;
-      font-size: 20px;
       font-style: normal;
-      font-weight: 700;
-      line-height: 28px;
+      @include text-20-700-28;
       margin-bottom: 24px;
     }
   }
@@ -501,10 +525,8 @@
       h3 {
         color: #081419;
         font-family: Roboto;
-        font-size: 30px;
         font-style: normal;
-        font-weight: 700;
-        line-height: 36px;
+        @include text-30-700-36;
         letter-spacing: -0.75px;
       }
       p {
@@ -522,9 +544,7 @@
     padding: 32px;
     h4 {
       color: #081419;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 24px;
+      @include text-16-700-24;
       position: relative;
       padding-left: 12px;
       &::before {
@@ -597,9 +617,7 @@
   .strong {
     color: #081419;
     text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36px;
+    @include text-30-700-36;
   }
   .subtext {
     color: #4a5565;
@@ -642,10 +660,8 @@
         color: #081419;
         text-align: center;
         font-family: Roboto;
-        font-size: 14px;
         font-style: normal;
-        font-weight: 700;
-        line-height: 20px; /* 142.857% */
+        @include text-14-700-20;
       }
     }
   }
@@ -695,31 +711,25 @@
 
 // Concentric ring sizes
 .w-250 {
-  width: 220px !important;
-  height: 220px !important;
+  @include square(220px);
 }
 .w-350 {
-  width: 340px !important;
-  height: 340px !important;
+  @include square(340px);
 }
 .w-450 {
-  width: 460px !important;
-  height: 460px !important;
+  @include square(460px);
 }
 
 // Center cloud box size
 .w-96 {
-  width: 110px !important;
-  height: 110px !important;
+  @include square(110px);
 }
 
 // Small icons
 .w-36 {
-  width: 36px !important;
-  height: 36px !important;
+  @include square(36px);
+  @include flex-center;
   display: flex !important;
-  align-items: center;
-  justify-content: center;
 }
 .icon-svg {
   width: 20px;

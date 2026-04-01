@@ -19772,7 +19772,6 @@ Responsive Classes
 Responsive Classes
 ***********************************************************************************************/
 .hero-area-2026 {
-  display: none;
   min-height: 100vh;
   display: flex;
   align-items: center; }
@@ -19856,7 +19855,6 @@ Responsive Classes
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
-    /* 120% */
     letter-spacing: -0.75px; }
 
 .tag.section-tag {
@@ -19906,7 +19904,6 @@ Responsive Classes
       font-size: 16px;
       font-weight: 700;
       line-height: 24px;
-      /* 150% */
       padding: 10px 24px; }
       .products-area .tabs ul a:hover {
         border-bottom-color: var(--ac-primary); }
@@ -19960,8 +19957,8 @@ Responsive Classes
   background: rgba(73, 73, 162, 0.06); }
 .products-area .key-features h4 {
   color: #081419;
-  font-size: 20px;
   font-style: normal;
+  font-size: 20px;
   font-weight: 700;
   line-height: 28px; }
 .products-area .key-features ul.features-list {
@@ -20061,8 +20058,8 @@ Responsive Classes
 .products-area .common-use-cases-wrapper h4 {
   color: #081419;
   font-family: Roboto;
-  font-size: 20px;
   font-style: normal;
+  font-size: 20px;
   font-weight: 700;
   line-height: 28px;
   margin-bottom: 24px; }
@@ -20180,8 +20177,8 @@ Responsive Classes
       .services-wrapper .services-content .content-header h3 {
         color: #081419;
         font-family: Roboto;
-        font-size: 30px;
         font-style: normal;
+        font-size: 30px;
         font-weight: 700;
         line-height: 36px;
         letter-spacing: -0.75px; }
@@ -20300,11 +20297,10 @@ Responsive Classes
         color: #081419;
         text-align: center;
         font-family: Roboto;
-        font-size: 14px;
         font-style: normal;
+        font-size: 14px;
         font-weight: 700;
-        line-height: 20px;
-        /* 142.857% */ }
+        line-height: 20px; }
 
 .p-32 {
   padding: 32px !important; }
@@ -20360,9 +20356,10 @@ Responsive Classes
 .w-36 {
   width: 36px !important;
   height: 36px !important;
-  display: flex !important;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: center; }
+  display: flex !important; }
 
 .icon-svg {
   width: 20px;
