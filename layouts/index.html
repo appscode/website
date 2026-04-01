@@ -517,10 +517,10 @@
       <div class="shape-circle"></div>
 
       <div class>
-        <h3 class="title">
+        <h3 class="">
           Looking for Enterprise Support?
         </h3>
-        <p class="subtitle is-5 has-text-grey-dark mx-auto mb-6" class>
+        <p class="subtitle mb-16" class>
           Use our Products standalone or combine them with our Managed Services
           for the best of both worlds. One vendor. Complete peace of mind.
         </p>
@@ -537,80 +537,88 @@
 <section class="section-padding">
   <div class="container">
 
-         <div class="section-title">
-        <div class="tag section-tag">
-         OUR SERVICES
-        </div>
-
-        <h2 class="title">
-         Comprehensive Cloud-Native Services
-        </h2>
-
-        <p class="subtitle">
-         Expert services tailored to your application and infrastructure needs
-        </p>
+    <div class="section-title has-text-centered">
+      <div class="tag section-tag">
+        OUR SERVICES
       </div>
 
- 
+      <h2 class="title">
+        Comprehensive Cloud-Native Services
+      </h2>
+
+      <p class="subtitle">
+        Expert services tailored to your application and infrastructure needs
+      </p>
+    </div>
+
     <div class="services-wrapper">
       <aside class="services-sidebar">
         <p
-          class="is-size-7 has-text-weight-bold has-text-grey-light is-uppercase mb-4">Categories</p>
-        <button class="service-nav-btn is-active">
-          <span class="icon mr-3 has-text-success">💻</span>
-          <span class="has-text-weight-semibold">App Modernization</span>
-        </button>
-        <button class="service-nav-btn">
-          <span class="icon mr-3">☁️</span>
-          <span>Managed Cloud</span>
-        </button>
-        <button class="service-nav-btn">
-          <span class="icon mr-3">☸️</span>
-          <span>Managed Kubernetes</span>
-        </button>
+          class="type-text mb-8">Categories</p>
+
+        <ul class="services-nav">
+          <li class="service-nav-btn is-active">
+            <span class="icon has-text-success">💻</span>
+            <span class="has-text-weight-semibold">App Modernization</span>
+          </li>
+          <li class="service-nav-btn">
+            <span class="icon">☁️</span>
+            <span>Managed Cloud</span>
+          </li>
+          <li class="service-nav-btn">
+            <span class="icon">☸️</span>
+            <span>Managed Kubernetes</span>
+          </li>
+        </ul>
       </aside>
 
       <main class="services-content">
         <div class="content-header">
-          <div class="effect-grid"></div>
-          <div class="effect-glow"></div>
-          <div class="columns is-vcentered relative">
-            <div class="column is-narrow">
-              <div class="image is-64x64 p-2 has-background-white"
+          <!-- <div class="effect-grid"></div>
+          <div class="effect-glow"></div> -->
+          <div class="is-flex is-align-items-center is-gap-16">
+            <div
+              class="is-flex is-align-items-center is-justify-content-center">
+              <div class="header-icon image is-64x64 p-2 has-background-white"
                 class="box is-shadowless">
-                <img
-                  src="https://cdn.appscode.com/images/logo/kubedb/github-moscot.png"
-                  alt="Icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                  viewBox="0 0 32 32" fill="none">
+                  <path d="M21.333 24L29.333 16L21.333 8" stroke="#00A550"
+                    stroke-width="2.66667" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M10.667 8L2.66699 16L10.667 24" stroke="#00A550"
+                    stroke-width="2.66667" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
               </div>
             </div>
-            <div class="column">
-              <h3 class="title is-3 mb-2">Application Modernization</h3>
+            <div class="is-flex is-flex-direction-column is-gap-8">
+              <h3 class="title mb-8">Application Modernization</h3>
               <p
-                class="subtitle is-5 has-text-weight-medium has-text-grey-dark">Accelerating
-                your microservices journey</p>
+                class="subtitle">Accelerating your microservices journey</p>
             </div>
           </div>
         </div>
 
-        <div class="p-32">
-          <h4 class="title is-6 has-text-weight-bold mb-4">Key Offerings</h4>
+        <div class="service-content-body">
+          <h4 class="title">Key Offerings</h4>
           <div class="columns is-multiline">
             <div class="column is-6">
-              <div class="box is-shadowless"
-                class="box is-shadowless has-background-white-bis">
-                <p class="has-text-weight-bold mb-1">Monolith to
-                  Microservices</p>
-                <p class="is-size-7 has-text-grey mb-2">Migrate legacy
+              <div
+                class="single-offering">
+                <h3>Monolith to
+                  Microservices</h3>
+                <p>Migrate legacy
                   applications to cloud-native.</p>
                 <a class="is-size-7 has-text-success has-text-weight-bold">Learn
                   more →</a>
               </div>
             </div>
             <div class="column is-6">
-              <div class="box is-shadowless"
-                class="box is-shadowless has-background-white-bis">
-                <p class="has-text-weight-bold mb-1">GitOps Consulting</p>
-                <p class="is-size-7 has-text-grey mb-2">Streamlining pipeline
+              <div
+                class="single-offering">
+                <h3>GitOps Consulting</h3>
+                <p>Streamlining pipeline
                   and deployments.</p>
                 <a class="is-size-7 has-text-success has-text-weight-bold">Learn
                   more →</a>
@@ -621,102 +629,37 @@
       </main>
     </div>
 
-    <div class="columns mt-6">
-      <div class="column">
+    <div class="simple-stats-wrapper columns">
+      <div class="column is-4">
         <div class="stat-card">
           <div class="icon-box">🏆</div>
-          <p class="title is-3 mb-1">24/7</p>
+          <p class="strong">24/7</p>
           <p
-            class="is-size-7 has-text-grey is-uppercase has-text-weight-bold">Expert
+            class="subtext">Expert
             Support</p>
         </div>
       </div>
-      <div class="column">
+      <div class="column is-4">
         <div class="stat-card">
           <div class="icon-box">⚡</div>
-          <p class="title is-3 mb-1">99.9%</p>
+          <p class="strong">99.9%</p>
           <p
-            class="is-size-7 has-text-grey is-uppercase has-text-weight-bold">SLA
+            class="subtext">SLA
             Uptime</p>
         </div>
       </div>
-      <div class="column">
+      <div class="column is-4">
         <div class="stat-card">
           <div class="icon-box">🌍</div>
-          <p class="title is-3 mb-1">500+</p>
+          <p class="strong">500+</p>
           <p
-            class="is-size-7 has-text-grey is-uppercase has-text-weight-bold">Projects
+            class="subtext">Projects
             Delivered</p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container">
-    <!-- cards start -->
-    <div class="columns is-variable is-4 mt-6">
-
-      <div class="column is-4">
-        <div class="box has-text-centered is-shadowless">
-          <div
-            class="image is-48x48 mx-auto mb-4 is-flex is-align-items-center is-justify-content-center"
-            class="has-background-success-light has-text-success">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path
-                d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
-              </path>
-              <circle cx="12" cy="8" r="6"></circle>
-            </svg>
-          </div>
-          <p class="title is-3 has-text-weight-bold mb-1">24/7</p>
-          <p class="subtitle is-6 has-text-grey">Expert Support</p>
-        </div>
-      </div>
-
-      <div class="column is-4">
-        <div class="box has-text-centered is-shadowless">
-          <div
-            class="image is-48x48 mx-auto mb-4 is-flex is-align-items-center is-justify-content-center"
-            class="has-background-light has-text-grey">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path
-                d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2">
-              </path>
-            </svg>
-          </div>
-          <p class="title is-3 has-text-weight-bold mb-1">99.9%</p>
-          <p class="subtitle is-6 has-text-grey">SLA Uptime</p>
-        </div>
-      </div>
-
-      <div class="column is-4">
-        <div class="box has-text-centered is-shadowless">
-          <div
-            class="image is-48x48 mx-auto mb-4 is-flex is-align-items-center is-justify-content-center"
-            class="has-background-success-light has-text-success">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-              <path d="M2 12h20"></path>
-            </svg>
-          </div>
-          <p class="title is-3 has-text-weight-bold mb-1">500+</p>
-          <p class="subtitle is-6 has-text-grey">Projects Delivered</p>
-        </div>
-      </div>
-
-    </div>
-    <!-- cards end  -->
-  </div>
 </section>
 <!--==================== our services area end  ====================-->
 
@@ -784,84 +727,41 @@
   </section>
   <!--========================== testimonial area 2022 end  ==========================-->
 
-  <!-- call to action area start -->
-  <section class="cta-area section-padding">
-    <div class="container">
-      <div class="cta-area-inner">
-        <div class="container">
-          <div class="columns is-vcentered is-multiline">
-            <div class="column is-full-tablet is-8-desktop">
-              <div class="section-title mb-0 has-text-left-tablet">
-                <h2>Manage your Kubernetes Native Applications across <br />any
-                  Cloud or On-premies!</h2>
-                <p class="mb-0">AppsCode products are FREE to try on any
-                  supported Kubernetes versions. There is no up-front investment
-                  required, and you need to pay only for the resources you use
-                  to your infrastructure provider. We offer a 30 day license
-                  FREE of cost for a given Kubernetes cluster.
-                </p>
-              </div>
-            </div>
-            <div
-              class="column is-full-tablet is-4-desktop has-text-centered-touch has-text-right-desktop">
-              <div
-                class="buttons is-justify-content-flex-center-mobile is-justify-content-flex-end">
-
-                <a href="{{ $.Site.Params.domain_appscode }}/contact/"
-                  class="button ac-button is-primary ">
-                  <span class="icon">
-                    <iconify-icon icon="heroicons:chat-bubble-bottom-center"
-                      width="18" height="18"></iconify-icon>
-                  </span>
-                  <span>CONTACT US</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- call to action area end -->
 </div>
 
 <!-- ==================== final cta area start =======================  -->
 <section class="final-cta-section section-padding">
   <div class="container">
 
-    <div class="build-badge">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round">
-        <path
-          d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
-        </path>
-      </svg>
-      Let's Build Together
+    <div class="section-title has-text-centered">
+      <div class="tag section-tag">
+        Let's Build Together
+      </div>
+
+      <h2 class="title">
+        Ready to Transform Your <br>
+        <span class="headline-accent">Cloud Native Journey?</span>
+      </h2>
+
+      <p class="subtitle">
+        Join hundreds of companies using AppsCode products and services to
+        build,
+        deploy, and manage production-grade Kubernetes applications.
+      </p>
     </div>
 
-    <h2 class="title is-1 is-size-2-mobile has-text-weight-black mb-6">
-      Ready to Transform Your <br>
-      <span class="headline-accent">Cloud Native Journey?</span>
-    </h2>
-
-    <p class="subtitle is-4 has-text-grey-dark mx-auto mb-6" class>
-      Join hundreds of companies using AppsCode products and services to build,
-      deploy, and manage production-grade Kubernetes applications.
-    </p>
-
-    <div class="columns is-centered is-mobile is-multiline mb-6">
-      <div class="column is-narrow feature-item mx-4">
+    <div class="cta-benefits">
+      <div class="benifit-item">
         <div class="feature-icon-box">🛡️</div>
-        <p class="is-size-7 has-text-weight-bold">Enterprise Support</p>
+        <p class="subtext">Enterprise Support</p>
       </div>
-      <div class="column is-narrow feature-item mx-4">
+      <div class="benifit-item">
         <div class="feature-icon-box">⚡</div>
-        <p class="is-size-7 has-text-weight-bold">24/7 Monitoring</p>
+        <p class="subtext">24/7 Monitoring</p>
       </div>
-      <div class="column is-narrow feature-item mx-4">
+      <div class="benifit-item">
         <div class="feature-icon-box">✅</div>
-        <p class="is-size-7 has-text-weight-bold">Expert Consultation</p>
+        <p class="subtext">Expert Consultation</p>
       </div>
     </div>
 

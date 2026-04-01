@@ -20110,6 +20110,202 @@ Responsive Classes
     margin-bottom: 32px;
     text-wrap: balance; }
 
+.services-wrapper {
+  display: flex;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.06); }
+  .services-wrapper .services-sidebar {
+    width: 288px;
+    padding: 16px;
+    background-color: #f9fafb; }
+    .services-wrapper .services-sidebar p {
+      color: #6a7282;
+      font-family: Roboto;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 16px;
+      /* 133.333% */
+      letter-spacing: 0.6px;
+      text-transform: uppercase; }
+    .services-wrapper .services-sidebar ul.services-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 4px; }
+      .services-wrapper .services-sidebar ul.services-nav li {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px;
+        border-radius: 10px;
+        cursor: pointer;
+        border-left: 3px solid transparent; }
+        .services-wrapper .services-sidebar ul.services-nav li.is-active, .services-wrapper .services-sidebar ul.services-nav li:hover {
+          border-radius: 10px;
+          border-left: 3px solid #00a550;
+          background: #fff;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); }
+        .services-wrapper .services-sidebar ul.services-nav li span {
+          color: #4a5565;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px; }
+        .services-wrapper .services-sidebar ul.services-nav li .icon {
+          display: flex;
+          width: 32px;
+          height: 32px;
+          padding: 0 8px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          background: #e5e7eb; }
+  .services-wrapper .services-content {
+    width: calc(100% - 288px); }
+    .services-wrapper .services-content .content-header {
+      background-color: #daf1e5;
+      padding: 40px; }
+      .services-wrapper .services-content .content-header .header-icon {
+        display: flex;
+        width: 64px;
+        height: 64px;
+        padding: 0 14px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        border: 2px solid #f3f4f6;
+        background: #fff;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); }
+      .services-wrapper .services-content .content-header h3 {
+        color: #081419;
+        font-family: Roboto;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -0.75px; }
+      .services-wrapper .services-content .content-header p {
+        color: #364153;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 29.25px; }
+  .services-wrapper .service-content-body {
+    padding: 32px; }
+    .services-wrapper .service-content-body h4 {
+      color: #081419;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      position: relative;
+      padding-left: 12px; }
+      .services-wrapper .service-content-body h4::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background-color: var(--ac-primary);
+        border-radius: 10px; }
+    .services-wrapper .service-content-body .single-offering {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      border-radius: 14px;
+      border: 2px solid #e5e7eb;
+      background: #fcfcfc;
+      padding: 22px; }
+      .services-wrapper .service-content-body .single-offering h3 {
+        color: #081419;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19.25px; }
+      .services-wrapper .service-content-body .single-offering p {
+        color: #4a5565;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22.75px; }
+      .services-wrapper .service-content-body .single-offering a {
+        color: var(--ac-primary);
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16px; }
+
+.simple-stats-wrapper {
+  margin-top: 48px; }
+  .simple-stats-wrapper .stat-card {
+    padding: 24px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); }
+  .simple-stats-wrapper .icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    padding: 0 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    background: rgba(0, 165, 80, 0.1);
+    padding: 24px;
+    margin: 0 auto;
+    margin-bottom: 8px; }
+  .simple-stats-wrapper .strong {
+    color: #081419;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px; }
+  .simple-stats-wrapper .subtext {
+    color: #4a5565;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; }
+
+.final-cta-section {
+  background-color: #fcfcfc; }
+  .final-cta-section .cta-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 48px;
+    margin-bottom: 48px; }
+    .final-cta-section .cta-benefits .benifit-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .final-cta-section .cta-benefits .benifit-item .feature-icon-box {
+        display: flex;
+        width: 56px;
+        height: 56px;
+        padding: 0 15px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 14px;
+        border: 1px solid rgba(0, 165, 80, 0.3);
+        background: rgba(0, 165, 80, 0.1);
+        box-shadow: 0 2px 12px 0 rgba(0, 165, 80, 0.08);
+        margin-bottom: 12px; }
+      .final-cta-section .cta-benefits .benifit-item .subtext {
+        color: #081419;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        /* 142.857% */ }
+
 .p-32 {
   padding: 32px !important; }
 
