@@ -10,8 +10,8 @@
 <div class="bg-gradient-1" style="background-image: url(./assets/images/gradient-bg.webp);">
   <section class="hero-area-1">
     <div class="container">
-      <div class="columns is-vcentered">
-        <div class="column is-6">
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="w-full md:w-1/2">
            <!-- news connect-message start  -->
            <div class="news-message-wrapper height-40">
              <a href="" class="news-message is-hidden" ><span>cool stuff!</a>
@@ -79,7 +79,7 @@
           </div>
           <!-- buttons  -->
         </div>
-        <div class="column is-6 is-hidden-mobile">
+        <div class="w-full md:w-1/2 hidden md:block">
           <div class="h-right-content">
 
             <!-- intro video  -->
@@ -102,8 +102,8 @@
       </div>
     </div>
       <div class="container" >
-        <div class="columns">
-          <div class="column is-12">
+        <div>
+          <div class="w-full">
             <h2 class="is-size-5">Trusted by Companies</h2>
             <div class="social-prove-brand-area">
               <div class="brand-image-wrapper owl-carousel" id="brand-image-wrapper">
@@ -138,24 +138,24 @@
   <!--==================== products area start  ====================-->
   <div class="products-area" id="products">
     <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="section-title has-text-centered-tablet mb-0">
+      <div class="flex justify-center mb-6">
+        <div class="w-full md:w-2/3">
+          <div class="section-title md:text-center mb-0">
             <p class="mb-0 has-text-primary is-uppercase">Empowering Your Kubernetes JOURNEY</p>
             <h2 class="mb-0">Explore AppsCode Products</h2>
           </div>
         </div>
       </div>
-      <div class="columns is-multiline">
+      <div class="flex flex-col md:flex-row gap-4">
         <!-- single product start  -->
         {{ range $product := $p.homepage.main_products }}
-        <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
+        <div class="w-full md:w-1/4">
           <a href="{{ $product.url }}" class="single-product">
             <div class="product-logo"><img src="{{ $product.logo }}" alt="{{$product.name}}" loading="lazy" height="auto" width="auto"></div>
             <p class="is-ellipsis-4">{{ $product.description | safeHTML  }}</p>
-            <button class="button ac-button is-transparent is-flex is-gap-4">
+            <button class="button ac-button is-transparent flex gap-4">
              <span>{{$product.name}}</span>
-              <span class="width-16 is-flex">
+              <span class="width-16 flex">
                 <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
               </span>
             </button>
@@ -172,8 +172,8 @@
   <!--==================== others product area start  ====================-->
   <section class="others-products section-padding">
     <div class="container">
-      <div class="columns is-vcentered is-multiline">
-        <div class="column is-4-desktop is-6-tablet is-full-mobile">
+      <div class="flex flex-col md:flex-row gap-8">
+        <div class="w-full md:w-1/3">
           <div class="pr-60">
             <div class="section-title mb-16">
               <p class="mb-0 has-text-primary is-uppercase">Why AppsCode 🤔</p>
@@ -188,19 +188,19 @@
             </a>
           </div>
         </div>
-        <div class="column is-8-desktop is-6-tablet is-full-mobile">
+        <div class="w-full md:w-2/3">
           <div class="products">
-            <div class="columns is-multiline">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               {{ range $product := $p.homepage.highlight_products.products }}
-              <div class="column is-6-desktop is-full-tablet is-full-mobile" >
+              <div>
 
                 <!-- sigle product start  -->
                 <div class="single-product">
                   <img src="{{ $product.logo }}" alt="{{ $product.name }}" loading="lazy" height="60" width="auto">
                   <p>{{ $product.summary | safeHTML }}</p>
-                  <a class="inline-button is-flex is-gap-4" href="{{ $product.url }}">
+                  <a class="inline-button flex gap-4" href="{{ $product.url }}">
                     <span>EXPLORE MORE</span>
-                    <span class="width-16 is-flex">
+                    <span class="width-16 flex">
                       <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
                     </span>
                   </a>
@@ -224,8 +224,8 @@
     <img class="shape dot-2" src="/assets/images/appscode/dots.png" alt="">
   </div> -->
   <div class="container">
-    <div class="columns">
-      <div class="column is-3">
+      <div class="flex flex-col md:flex-row gap-6">
+      <div class="w-full md:w-1/4">
         <!-- features tabs start  -->
         <div class="features-tabs" id="nav-serialscrolling">
           <ul>
@@ -237,13 +237,13 @@
         </div>
         <!-- features tabs end -->
       </div>
-      <div class="column is-9 is-paddingless-desktop">
+      <div class="w-full md:w-3/4 lg:p-0">
         <div class="products-description-wrapper">
           <!-- single product start  -->
           {{ range $products := $p.homepage.products }}
           <div class="single-product {{$products.product}}" data-serialscrolling-target="{{ $products.id }}">
-            <div class="columns">
-              <div class="column is-6-desktop is-full-touch" >
+            <div class="flex flex-col md:flex-row gap-8">
+              <div class="w-full md:w-1/2">
                 <!-- single product description start  -->
                 <div class="product-description">
                   <div class="brand">
@@ -270,7 +270,7 @@
                 </div>
                 <!-- single product description end -->
               </div>
-              <div class="column is-6 is-hidden-touch" >
+              <div class="w-full md:w-1/2 hidden lg:block">
                 <div class="illustration">
                   <img src="{{ $products.illustration }}" alt="appscode illustration"  loading="lazy" height="auto" width="auto">
                 </div>
@@ -291,9 +291,9 @@
 <section class="section-padding ui-features-area" id="ui-features">
   <div class="container">
     <!-- section title  -->
-    <div class="columns is-centered">
-      <div class="column is-10-tablet is-8 is-10-desktop is-8-widescreen">
-        <div class="section-title has-text-centered-tablet">
+    <div class="flex justify-center">
+      <div class="w-full lg:w-10/12">
+        <div class="section-title md:text-center">
           <h2>Manage your Kubernetes Native Applications across any Cloud or On-premises</h2>
           <p>A single pane of glass for managing your Stateless and Stateful applications across any cloud or on-premises environments. Hide the complexity of Kubernetes behind a simple and elegant UI.</p>
         </div>
@@ -302,9 +302,9 @@
     <!-- section title  -->
 
     <!-- features with screenshot  -->
-    <div class="columns">
-      <div class="column is-4-desktop is-full-touch">
-        <div class="is-flex is-flex-direction-column" style="gap: 32px;">
+    <div class="flex flex-col md:flex-row gap-8">
+      <div class="w-full md:w-1/3">
+        <div class="flex flex-col" style="gap: 32px;">
           <!-- single features item start -->
           <div class="single-feature">
             <div class="icon"><img src="https://img.icons8.com/sf-regular/100/00A651/easy.png" alt="Hide the complexity of Kubernetes behind a simple & elegant UI" loading="lazy"></div>
@@ -347,7 +347,7 @@
           <!-- single features item end -->
         </div>
       </div>
-      <div class="column is-hidden-touch is-8-desktop">
+      <div class="w-full md:w-2/3 hidden lg:block">
         <div class="ui-dashboard">
           <!-- image come from css  -->
           <!-- <img src="/assets/images/products/appscode/features/ui-features.jpg" alt="features"> -->
@@ -357,9 +357,9 @@
     <!-- features with screenshot  -->
 
     <!-- more features start -->
-    <div class="columns is-vcentered more-features">
-      <div class="column is-7">
-        <div class="is-flex is-flex-wrap-wrap more-products" >
+    <div class="flex flex-col md:flex-row items-center gap-8 more-features">
+      <div class="w-full md:w-7/12">
+        <div class="flex flex-wrap more-products" >
           <!-- single features item start -->
           <div class="single-feature card-view">
             <div class="icon"><img src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/100/5959CF/external-monitoring-seo-and-web-smashingstocks-detailed-outline-smashing-stocks.png" alt="Monitoring & Alerting" loading="lazy"></div>
@@ -400,13 +400,12 @@
           <!-- single features item end -->
         </div>
       </div>
-      <div class="column is-5">
-       <div class="section-title mb-0">
+      <div class="w-full md:w-5/12">
           <h2>Cloud reimagined for the age of Kubernetes</h2>
           <p class="mb-16">Global Cloud Infrastructure at your Fingertip. Leverage the global infrastructure footprint of the cloud providers with a few clicks.</p>
        </div>
 
-       <div class="is-flex is-flex-direction-column" style="gap: 32px; margin-bottom: 32px;">
+       <div class="flex flex-col" style="gap: 32px; margin-bottom: 32px;">
         <!-- single features item start -->
         <div class="single-feature">
           <div class="icon"><img src="https://img.icons8.com/external-outline-juicy-fish/100/00A651/external-flexible-arrows-outline-outline-juicy-fish-2.png" alt="Flexible & Extensible" loading="lazy"></div>
@@ -447,9 +446,9 @@
 <section class="section-padding dark-bg mechanics-area" id="mechanics">
   <div class="container">
    <!-- section title  -->
-   <div class="columns is-centered">
-    <div class="column is-10-tablet is-8 is-10-desktop is-8-widescreen">
-      <div class="section-title has-text-centered-tablet">
+   <div class="flex justify-center">
+    <div class="w-full lg:w-10/12">
+      <div class="section-title md:text-center">
         <h2>Deploy & Manage Databases with 1-click</h2>
         <p>Discover how our UI enabled users to deploy & manage popular database endgines with 1-click. Learn to navigate seamlessly and make the most of its capabilities for an improved user experience.</p>
       </div>
@@ -457,9 +456,9 @@
    </div>
    <!-- section title  -->
 
-   <div class="columns is-vcentered" style="padding-bottom: 60px;">
-    <div class="column is-4">
-      <div class="is-flex is-flex-direction-column is-flex-wrap-wrap" style="gap: 8px;">
+   <div class="flex flex-col md:flex-row items-center gap-8" style="padding-bottom: 60px;">
+    <div class="w-full md:w-1/3">
+      <div class="flex flex-col flex-wrap" style="gap: 8px;">
 
         <!-- single features mechanism item start -->
         <div class="single-feature mechanism is-active">
@@ -523,8 +522,7 @@
 
       </div>
     </div>
-    <div class="column is-8">
-      <div class="ui-mechanism">
+    <div class="w-full md:w-2/3">
         <div id="provisioing" class="single-ui-ss provisioning">
           <img src="/assets/images/products/appscode/features/steps/provisioning.webp" alt="provisioning-databases" loading="lazy">
         </div>
@@ -574,7 +572,7 @@
           </a>
         </div>
         <div class="column is-7">
-          <div class="is-flex is-flex-wrap-wrap" style="gap: 12px;">
+          <div class="flex flex-wrap" style="gap: 12px;">
             <-- single features item start --!>
             <div class="single-feature card-view bg-dark">
 
@@ -582,9 +580,9 @@
               <div class="content">
                 <h3></h3>
                 <p>Use Stash to backup and restore any stateful workload using restic or volume snapshotting on any K8s cluster </p>
-                <a href="https://console.appscode.com/" target="_blank" class="is-flex is-underlined">
+                <a href="https://console.appscode.com/" target="_blank" class="flex is-underlined">
                  <span>TRY CONSOLE UI</span>
-                  <span class="is-flex width-18">
+                  <span class="flex width-18">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                       <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                     </svg>
@@ -600,9 +598,9 @@
               <div class="content">
                 <h3></h3>
                 <p>Use Stash to backup and restore any stateful workload using restic or volume snapshotting on any K8s cluster </p>
-                <a href="https://db.appscode.com/" target="_blank" class="is-flex is-underlined">
+                <a href="https://db.appscode.com/" target="_blank" class="flex is-underlined">
                   <span>TRY KUBEDB UI</span>
-                  <span class="is-flex width-18">
+                  <span class="flex width-18">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                       <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                     </svg>
@@ -626,8 +624,8 @@
 <!--====================  subscription area start  --==================== -->
 <section class="subscription-area section-padding">
   <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-7">
+      <div class="flex flex-col md:flex-row items-center gap-8">
+      <div class="w-full md:w-7/12">
         <div class="subscription-message">
           <div class="section-title mb-0">
             <h2  class="mb-8">{{ $p.homepage.subscription.title | safeHTML}}</h2>
@@ -636,7 +634,7 @@
           <!-- <a class="button ac-button is-primary is-outlined" href="https://support.appscode.com/">GET</a> -->
         </div>
       </div>
-      <div class="column is-5" >
+      <div class="w-full md:w-5/12" >
         <p>{{ $p.homepage.subscription.summary_right | safeHTML}}</p>
 
         <!-- subscription input  -->
@@ -662,14 +660,14 @@
   <!--==================== social connect area end ====================-->
   <section class="social-connect-area section-padding">
     <div class="container">
-      <div class="columns is-multiline">
-        <div class="column is-10-tablet is-8 is-10-desktop is-8-widescreen">
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="w-full md:w-10/12">
           <div class="section-title connect-message">
             <h2>{{ $p.homepage.social_connect.title }}</h2>
             <p class="mb-0" >{{ $p.homepage.social_connect.summary }}</p>
           </div>
         </div>
-        <div class="column is-4">
+        <div class="w-full md:w-1/3">
           <ul class="social-link">
             {{ range $social_link := $p.homepage.social_connect.social_link }}
             <li><a href="{{ $social_link.url }}"><span><img
@@ -682,11 +680,10 @@
       </div>
 
       <!-- cards start  -->
-      <div class="columns is-multiline">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         {{ range $social_cards := $p.homepage.social_connect.social_cards}}
         <!-- single card start  -->
-        <div class="column is-one-third-widescreen is-one-third-fullhd is-one-third-tablet is-full-mobile"
-         >
+        <div>
           <a href="{{ $social_cards.url }}" class="single-card is-block">
             <div class="card-top">
               <div class="card-icon"><img src="{{ $social_cards.icon }}" alt="{{ $social_cards.icon }}" width="60" height="60"></div>
@@ -719,11 +716,11 @@
   <section class="testimonial-area">
 
     <div class="container">
-      <div class="columns is-vcentered">
-        <div class="column is-4">
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="w-full md:w-1/3">
           <div class="section-title">
             <h2 class="is-gradient">What They Are <span
-                class="has-text-weight-light"> Saying About us</span></h2>
+                class="font-light"> Saying About us</span></h2>
             <p >Trusted by top engineers at the most ambitious companies</p>
           </div>
           <!-- arrows start  -->
@@ -741,7 +738,7 @@
           </div>
           <!-- arrows end -->
         </div>
-        <div class="column is-8">
+        <div class="w-full md:w-2/3">
           <!-- owl-carousel -->
           <div class="testimonial-carousel-wrapper owl-carousel testimonial-carousel">
             {{ range $user := $.Site.Data.testimonials }}
@@ -775,17 +772,16 @@
     <div class="container">
       <div class="cta-area-inner">
         <div class="container">
-          <div class="columns is-vcentered is-multiline">
-            <div class="column is-full-tablet is-8-desktop">
-             <div class="section-title mb-0 has-text-left-tablet">
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="w-full md:w-2/3">
+             <div class="section-title mb-0 md:text-left">
               <h2>Manage your Kubernetes Native Applications across <br/>any Cloud or On-premies!</h2>
               <p class="mb-0">AppsCode products are FREE to try on any supported Kubernetes versions. There is no up-front investment required, and you need to pay only for the resources you use to your infrastructure provider. We offer a 30 day license FREE of cost for a given Kubernetes cluster.
               </p>
              </div>
             </div>
-            <div
-              class="column is-full-tablet is-4-desktop has-text-centered-touch has-text-right-desktop">
-              <div class="buttons is-justify-content-flex-center-mobile is-justify-content-flex-end">
+            <div class="w-full md:w-1/3 text-center lg:text-right">
+              <div class="buttons justify-center justify-end">
 
                 <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button ac-button is-primary ">
                     <span class="icon">

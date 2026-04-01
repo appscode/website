@@ -3,6 +3,10 @@
   "version": "0.2.0",
   "description": "appscode.com",
   "scripts": {
+    "build:sass": "sass --no-source-map static/assets/sass/main.scss static/assets/sass/custom.css",
+    "build:tailwind": "npx tailwindcss -i src/css/main.css -o static/assets/css/tailwind.css",
+    "build:css": "npm run build:sass && npm run build:tailwind",
+    "watch:css": "npm run build:sass && npm run build:tailwind -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,11 +22,13 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",
     "autoprefixer": "^10.4.27",
-    "postcss-cli": "^9.1.0"
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^16.0.0",
+    "sass": "^1.98.0",
+    "tailwindcss": "^3.4.0"
   },
   "private": true,
   "dependencies": {
-    "bulma": "^0.9.4",
     "postcss": "^8.4.12"
   }
 }

@@ -2,17 +2,17 @@
 .Page.Params.data }} {{ $data = getJSON .Page.Params.data }} {{ end }} {{ with
 $data.development_process }}
 <section class="section-padding product-development-process-section">
-    <div class="container has-text-centered">
-        <div class="section-title has-text-centered">
+    <div class="container text-center">
+        <div class="section-title text-center">
             <h2>{{ .title }}</h2>
             <p>{{ .subtitle }}</p>
         </div>
     </div>
 
     <div class="container">
-        <div class="columns is-vcentered">
+        <div class="flex flex-col md:flex-row items-center">
             <!-- Left side: Steps -->
-            <div class="column is-12">
+            <div class="w-full">
                 <div class="steps-wrapper">
                     <div class="tab-items">
                         {{ range $index, $item := .steps }}

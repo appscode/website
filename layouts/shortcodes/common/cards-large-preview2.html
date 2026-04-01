@@ -7,14 +7,14 @@
 {{ with $data.large_preview_cards2 }}
 <section class="section-padding cloud-native-partner-section style-2">
     <div class="container">
-        <div class="section-title has-text-centered mb-32">
+        <div class="section-title text-center mb-32">
             <h2>{{ $data.large_preview_cards2.title }}</h2>
             <p>{{ $data.large_preview_cards2.subtitle }}</p>
         </div>
 
-        <div class="columns is-multiline">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {{ range $item := $data.large_preview_cards2.items }}
-            <div class="column is-3">
+            <div>
                 <div class="single-feature card-view">
                     <div class="icon">
                          {{ if or $item.icon $item.logo }}

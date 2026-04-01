@@ -1,7 +1,8 @@
 // appsCode.com Sass Template
 // Author: AppsCode
 // Version: 0.0.1
-@import "../../../node_modules/bulma/bulma.sass";
+// NOTE: Bulma has been replaced by Tailwind CSS.
+// Responsive mixins (mobile, touch, tablet, desktop) are defined in mixins/_mixin.scss
 
 //BASE - Base styles, variables, mixins
 @import "base/utilities/_initial-variable";
@@ -12,6 +13,9 @@
 
 // mixins
 @import "mixins/_mixin";
+
+// Bulma-compatible base classes (grid, container, form elements, visibility)
+@import "base/_bulma-compat";
 
 //BASE - Base styles, variables, mixins
 @import "base/_global";
