@@ -5,16 +5,16 @@
 <!-- Hero Section -->
 <section class="hero-area is-services">
     <div class="container">
-        <div class="columns is-vcentered">
-            <div class="column is-6 is-full-touch">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="w-full md:w-1/2">
                 <h1 class="is-gradient">{{ $data.hero.title }}</h1>
                 <p>
                     {{ $data.hero.subtitle | safeHTML}}
                 </p>
                 <a href="{{ $data.hero.cta_url }}" class="button ac-button is-primary ">{{ $data.hero.cta_text }}</a>
             </div>
-            <div class="column is-6 is-full-touch">
-                <div class="hero-illustration has-text-right">
+            <div class="w-full md:w-1/2">
+                <div class="hero-illustration text-right">
                     <img src="{{ $data.hero.illustration.src }}" alt="{{ $data.hero.illustration.alt }}" />
                 </div>
             </div>

@@ -5,8 +5,8 @@
 {{ $p := (index .Site.Data.products .Params.product_name) }}
 
 <!-- documentation and search start   -->
-<div class="responsive-menu is-hidden-desktop is-flex is-justify-content-center">
-  <div class="is-flex is-justify-content-space-between is-fullwidth pl-20 pr-20">
+<div class="responsive-menu block lg:hidden flex is-justify-content-center">
+  <div class="flex is-justify-content-space-between is-fullwidth pl-20 pr-20">
     <button class="button"><span class="material-icons">
         menu
       </span></button>
@@ -152,7 +152,7 @@
 <div class="documentation-area">
   <!-- documentation area start -->
   <div class="left-sidebar-wrapper">
-    <button class="button ac-button inline-button back-button pl-15 is-hidden-desktop">
+    <button class="button ac-button inline-button back-button pl-15 block lg:hidden">
       <span
       class="icon p-0">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -283,7 +283,7 @@
 
       <!-- table of contents area start -->
       <div class="tbl-of-contents">
-        <button class="button ac-button inline-button back-button pl-15 is-hidden-desktop">
+        <button class="button ac-button inline-button back-button pl-15 block lg:hidden">
           <span
           class="icon p-0">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -353,14 +353,14 @@
 <!-- improve page section start  -->
 <div class="improve-section-area">
   <div class="container">
-    <div class="columns has-text-centered">
+    <div class="text-center">
       {{ $urlToken := (split .File.Path "/") }}
-      <div class="column is-12">
+      <div>
         <a
           href="{{ $p.repoURL }}/edit/master/docs/{{ if (gt $urlToken 2) }} {{- range after 2 $urlToken -}}{{.}}/{{- end -}}{{ end }}">Improve
           This Page</a>
       </div>
-      <!-- <div class="column is-6 has-text-right">
+      <!-- <div class="column is-6 text-right">
             <p>Last Update 3 days ago</p>
           </div> -->
     </div>

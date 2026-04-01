@@ -40,7 +40,7 @@
                 <img src="{{$.Site.Data.products.appscode.logo.src}}"
                   alt="{{$.Site.Data.products.appscode.logo.alt}}" loading="eager" height="30" width="auto"/>
               </a>
-              <a role="button" class="navbar-burger is-hidden-desktop" aria-label="menu" aria-expanded="false">
+              <a role="button" class="navbar-burger block lg:hidden" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -51,7 +51,7 @@
 
 
           <div class="navbar-right">
-            <div class="is-flex is-justify-content-space-between is-fullwidth">
+            <div class="flex is-justify-content-space-between is-fullwidth">
               <!-- navbar items start -->
               <ul class="navbar-left-group">
                 <li class="nav-item">
@@ -78,7 +78,7 @@
                             <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}" loading="lazy">
                           </div>
                           <div class="product-info">
-                            <h2 class="is-size-6 is-flex">{{ $p.name }}
+                            <h2 class="is-size-6 flex">{{ $p.name }}
                               {{ if eq ($p.name) "KubeStash" }}
                               <span class="whats-new is-relative is-block" style="right: -2px; top: -12px;">New</span>
                               {{ end }}
@@ -331,7 +331,7 @@
                               <img src="{{ $service.icon }}" alt="{{ $service.title }}"/>
                             </div>
                             <div class="product-info">
-                              <h2 class="is-size-6 is-flex">{{ $service.title }}</h2>
+                              <h2 class="is-size-6 flex">{{ $service.title }}</h2>
                               <p>{{ $service.description }}</p>
                             </div>
                             <!-- <div class="navigate-icon">
@@ -355,7 +355,7 @@
                                   {{ end }}
                                 </div> -->
                                 <div class="product-info">
-                                  <h2 class="is-size-6 is-flex is-align-items-center gap-8">{{ $offering.title }} <span class="arrow-right icon">
+                                  <h2 class="is-size-6 flex items-center gap-8">{{ $offering.title }} <span class="arrow-right icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.5 12H5m8 6s6-4.419 6-6s-6-6-6-6"/></svg>
                                   </span></h2>
                                   <p>{{ $offering.description }}</p>
@@ -416,37 +416,37 @@
                           <h2>RESOURCES</h2>
                           <ul>
                             <!-- <li><a href="#" target="_blank">Forum</a></li> -->
-                            <li><a href="{{.Site.Params.blog_url}}" class="is-flex is-gap-4">
+                            <li><a href="{{.Site.Params.blog_url}}" class="flex gap-4">
                               <span>Blog</span>
-                              <span class="is-flex width-12">
+                              <span class="flex width-12">
                                 <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
                               </span>
                             </a>
                           </li>
-                            <li><a href="{{.Site.Params.docs_url}}" class="is-flex is-gap-4">
+                            <li><a href="{{.Site.Params.docs_url}}" class="flex gap-4">
                               <span>Docs</span>
-                              <span class="is-flex width-12">
+                              <span class="flex width-12">
                                 <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
                               </span>
                             </a></li>
                             <li><a
                                 href="https://www.youtube.com/watch?v=4lkBt5UUEAQ&list=PLoiT1Gv2KR1hAtDDW7fHEi-s2y2H3DOgx"
-                                target="_blank" class="is-flex is-gap-4">
+                                target="_blank" class="flex gap-4">
                                 <span>Webinars</span>
-                              <span class="is-flex width-12">
+                              <span class="flex width-12">
                                 <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
                               </span>
                             </a>
                           </li>
-                            <li><a href="{{.Site.Params.learn_url}}" class="is-flex is-gap-4">
+                            <li><a href="{{.Site.Params.learn_url}}" class="flex gap-4">
                               <span>Learn</span>
-                              <span class="is-flex width-12">
+                              <span class="flex width-12">
                                 <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
                               </span>
                             </a></li>
-                            <li><a href="{{.Site.Params.youtube_url}}" target="_blank" class="is-flex is-gap-4">
+                            <li><a href="{{.Site.Params.youtube_url}}" target="_blank" class="flex gap-4">
                               <span>Demos</span>
-                              <span class="is-flex width-12">
+                              <span class="flex width-12">
                                 <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
                               </span>
                             </a></li>
@@ -628,7 +628,7 @@
           <!-- version select end -->
           {{ end }}
 
-          <a role="button" class="navbar-burger width-65 font-size-14 has-text-weight-bold pl-6 pr-6"
+          <a role="button" class="navbar-burger width-65 font-size-14 font-bold pl-6 pr-6"
             aria-label="menu" aria-expanded="false">
             MENU <i class="fa fa-angle-down pl-5"></i>
           </a>

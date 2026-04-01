@@ -7,9 +7,9 @@
 <!-- about hero  area start -->
 <section class="hero-area-2 bg-color-available">
   <div class="container">
-    <div class="columns">
-      <div class="column is-6 is-offset-3 d-table">
-        <div class="hero-area-inner-2 has-text-centered d-table-cell">
+    <div class="flex justify-center">
+      <div class="w-full md:w-1/2 d-table">
+        <div class="hero-area-inner-2 text-center d-table-cell">
           <h1>About Us</h1>
           <p>{{ .Site.Data.products.appscode.summary }}</p>
         </div>
@@ -22,9 +22,9 @@
 <!-- about start -->
 <section class="about-text-area section-padding">
   <div class="container">
-    <div class="columns">
-      <div class="column is-8 is-offset-2">
-        <div class="about-text-inner has-text-centered">
+    <div class="flex justify-center">
+      <div class="w-full md:w-2/3">
+        <div class="about-text-inner text-center">
           <p>
             AppsCode Inc. was founded by <a href="https://www.linkedin.com/in/tamalsaha" class="ac-primary-color">Tamal Saha</a> in 2016. Before founding AppsCode, Tamal was a software engineer at Google and Amazon. He has a Master of Computer Science degree from University of Virginia. He completed his Bachelor’s degree in CSE from BUET, Dhaka, Bangladesh. He comes from Bangladesh.
           </p>
@@ -41,8 +41,8 @@
 <!-- message start -->
 <section class="ceo-message section-padding pt-0">
   <div class="container">
-    <div class="columns">
-      <div class="column is-5 is-offset-1-desktop">
+    <div class="flex flex-col md:flex-row gap-8">
+      <div class="w-full md:w-5/12">
         <div class="ceo-message-wrapper">
           <h2>Message from CEO</h2>
           <p>
@@ -54,7 +54,7 @@
           </div>
         </div>
       </div>
-      <div class="column is-6 is-offset-1">
+      <div class="w-full md:w-1/2 md:ml-8">
         <div class="ceo-image">
           <div class="dots-style"></div>
           <img src="/assets/images/appscode/appscode.png" alt="" />
@@ -68,15 +68,15 @@
 <!-- happy-customer start -->
 <section class="our-customer-area section-padding">
   <div class="container">
-    <div class="columns">
-      <div class="column is-6 is-offset-3">
-        <div class="section-title has-text-centered">
+    <div class="flex justify-center">
+      <div class="w-full md:w-1/2 text-center">
+        <div class="section-title text-center">
           <h2>We Have Happy Customers <br />Around the World</h2>
         </div>
       </div>
     </div>
-    <div class="columns">
-      <div class="column is-10 is-offset-1 has-text-centered">
+    <div class="flex justify-center">
+      <div class="w-full lg:w-10/12 text-center">
         <div class="social-prove-brand-area">
           <div class="brand-image-wrapper owl-carousel" id="brand-image-wrapper">
             {{ range $customer := $.Site.Data.customers }}
@@ -103,7 +103,7 @@
             <p>Create a Free Account and refer your friend</p>
           </div>
         </div>
-        <div class="column is-6 has-text-right is-mobile">
+        <div class="column is-6 text-right is-mobile">
           <div class="cta-button d-table">
             <div class="cta-button-inner d-table-cell">
               <a

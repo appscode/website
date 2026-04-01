@@ -7,18 +7,18 @@
 {{ with $data.service_details2 }}
 <section class="section-padding bg-light">
     <div class="container">
-        <div class="section-title has-text-centered mb-6">
+        <div class="section-title text-center mb-6">
             <h2>{{ .title }}</h2>
             <p>{{ .subtitle | safeHTML }}</p>
         </div>
 
-        <div class="columns is-multiline">
+        <div>
 
             {{ range $index, $section := $data.service_details2.sections }}
-            <div class="columns is-multiline is-vcentered">
+            <div class="flex flex-col md:flex-row items-center gap-8 mb-12">
                 {{ if modBool $index 2 }}
                 <!-- Odd index: Image Right, Text Left -->
-                <div class="column is-7">
+                <div class="w-full md:w-7/12">
                     <div class="service-wrapper d-table">
                         <div class="service-content pr-140 d-table-cell">
                             <h3>{{ $section.title  | safeHTML }}</h3>
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column is-5 has-text-right">
+                <div class="w-full md:w-5/12 text-right">
                     <div class="service-thumbnail">
                         <img src="{{ $section.image }}" alt="{{ $section.title }}" class="img">
                     </div>
@@ -45,12 +45,12 @@
 
                 {{ else }}
                 <!-- Even index: Text Right, Image Left -->
-                <div class="column is-5">
+                <div class="w-full md:w-5/12">
                     <div class="service-thumbnail">
                         <img src="{{ $section.image }}" alt="{{ $section.title }}" class="img">
                     </div>
                 </div>
-                <div class="column is-7">
+                <div class="w-full md:w-7/12">
                     <div class="service-wrapper d-table">
                         <div class="service-content pr-140 d-table-cell">
                             <h3>{{ $section.title }}</h3>

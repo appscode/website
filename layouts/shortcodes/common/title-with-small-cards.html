@@ -7,14 +7,14 @@
 {{ with $data.title_with_small_cards }}
 <section class="section-padding bg-light">
   <div class="container">
-    <div class="section-title has-text-centered mb-6">
+    <div class="section-title text-center mb-6">
       <h2>{{ .title }}</h2>
       <p>{{ .subtitle | safeHTML }}</p>
     </div>
 
-    <div class="columns is-centered is-multiline">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {{ range .areas }}
-      <div class="column is-3">
+      <div>
         <div class="development-card">
           <div class="development-icon">
               {{ if or .icon .logo }}

@@ -2,7 +2,7 @@ const fs = require('fs');
 const postcss = require('postcss');
 const purgecss = require('@fullhuman/postcss-purgecss');
 
-const cssFilePath = './static/assets/sass/main.css'; // Path CSS file
+const cssFilePath = './static/assets/sass/custom.css'; // Path CSS file
 
 // Read the CSS file
 fs.readFile(cssFilePath, (err, css) => {
@@ -24,22 +24,28 @@ fs.readFile(cssFilePath, (err, css) => {
         'active',
         'is-visible',
         'is-right-0',
+        'is-block',
+        'is-hidden',
+        'is-active',
         'fserv-field',
         'select2-container',
         'select2',
         'fs-webform-container',
         'placeholder',
         'fserv-button-submit'
-
       ],
       deep: [
-        /^fserv-/, 
+        /^fserv-/,
         /^fs-/,
         /^select2-/,
         /^formserv/,
         /^ss-/,
         /^owl-/,
-        /^item/
+        /^item/,
+        /^is-/,
+        /^has-/,
+        /^column/,
+        /^columns/,
       ],
       greedy: [
         // /^header-/,

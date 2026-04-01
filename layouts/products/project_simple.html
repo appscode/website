@@ -24,8 +24,8 @@
     <div class="circle"></div>
   </div>
   <div class="container">
-    <div class="columns is-vcentered is-multiline">
-      <div class="column is-6">
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <div class="w-full md:w-1/2">
          <!-- news connect-message start  -->
          <div class="news-message-wrapper">
            <a href="" class="news-message is-hidden" data-aos="fade-up" data-aos-duration="900"><span>cool stuff!</a>
@@ -71,7 +71,7 @@
         </div>
 
       </div>
-      <div class="column is-6">
+      <div class="w-full md:w-1/2">
         <div class="hero-area-right">
           <img src="{{ $p.heroImage.src }}" alt="{{ $p.heroImage.alt }}" class="img" />
         <!-- <img src="/assets/images/products/kubedb/hero-right-image.png" alt=""> -->
@@ -84,8 +84,8 @@
 <!-- social prove logo area start   -->
 <div class="social-prove-brand-area">
   <div class="container">
-    <div class="columns">
-      <div class="column is-12">
+    <div>
+      <div>
         <div class="brand-image-wrapper owl-carousel" id="brand-image-wrapper">
           {{ range $customer := $.Site.Data.customers }}
           {{ if $customer.show }}
@@ -101,9 +101,9 @@
 <!-- product features area start  -->
 <section class="product-feaures-area mb-50">
   <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="section-title has-text-centered">
+    <div class="flex justify-center">
+      <div class="w-full lg:w-2/3">
+        <div class="section-title text-center">
           <h2 class="is-gradient">Special Features</h2>
           {{ if $p.summary }}
           <p data-aos="fade-up" data-aos-duration="700">
@@ -116,10 +116,10 @@
   </div>
   <div class="container">
     <!-- is-centered -->
-    <div class="columns is-multiline is-centered">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <!-- single feature information start  -->
       {{ range $f := $p.features }}
-      <div class="column is-half-tablet is-one-third-widescreen">
+      <div>
         <a href="/features/{{ $f.url }}" class="single-features-item" data-aos="fade-up" data-aos-duration="500">
           <div class="feature-icon">
             <img src="{{ $f.icon.src }}" alt="{{ $f.icon.alt }}" />

@@ -1,19 +1,19 @@
 <!-- press-area start -->
 <section class="press-area section-padding is-hidden">
     <div class="container">
-      <div class="columns">
-        <div class="column is-10-tablet is-8 is-10-desktop is-8-widescreen">
+      <div class="flex">
+        <div class="w-full md:w-10/12 lg:w-2/3">
           <!-- section title start -->
-          <div class="section-title has-text-centered-tablet mb-10" data-aos="fade-up">
+          <div class="section-title md:text-center mb-10" data-aos="fade-up">
             <h2>WHAT THEY PUBLISHED</h2>
           </div>
           <!-- section title end -->
         </div>
       </div>
-      <div class="columns is-multiline" data-aos="fade-up" data-aos-duration="800">
+      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6" data-aos="fade-up" data-aos-duration="800">
         {{ range $idx, $article := $.Site.Data.press }}
         <!-- single press start -->
-        <div class="column is-one-quarter-widescreen is-one-quarter-fullhd is-half-tablet is-full-mobile">
+        <div>
           <div class="single-press-wrapper">
             <div class="press-image press-image-{{ add $idx 1 }}"></div>
             <div class="press-content">

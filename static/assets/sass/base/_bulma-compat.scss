@@ -1,0 +1,830 @@
+// =============================================================================
+// Bulma Compatibility Layer
+// Provides Bulma-compatible CSS classes that are used in templates.
+// This replaces the Bulma CSS framework while maintaining the same class names.
+// =============================================================================
+
+// ---------------------------------------------------------------------------
+// Box Sizing (was provided by Bulma's base/normalize)
+// ---------------------------------------------------------------------------
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// ---------------------------------------------------------------------------
+// Container (matches Bulma's responsive container behavior)
+// ---------------------------------------------------------------------------
+.container {
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+  padding: 0 32px;
+
+  @include mobile {
+    padding: 0 16px;
+  }
+
+  @include desktop {
+    max-width: 960px;
+    padding: 0;
+  }
+
+  @include widescreen {
+    max-width: 1152px;
+  }
+
+  @include fullhd {
+    max-width: 1344px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Bulma Grid System
+// ---------------------------------------------------------------------------
+.columns {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  margin-top: -0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  &:last-child {
+    margin-bottom: -0.75rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: calc(1.5rem - 0.75rem);
+  }
+
+  &.is-centered {
+    justify-content: center;
+  }
+
+  &.is-vcentered {
+    align-items: center;
+  }
+
+  &.is-multiline {
+    flex-wrap: wrap;
+  }
+
+  &.is-mobile {
+    display: flex;
+  }
+
+  &.is-gapless {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+
+    > .column {
+      margin: 0;
+      padding: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Tablet and above: show as flex row
+  @include tablet {
+    display: flex;
+  }
+}
+
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+
+  // Fixed width sizes (active on tablet+)
+  @include tablet {
+    &.is-1 { flex: none; width: 8.3333%; }
+    &.is-2 { flex: none; width: 16.6666%; }
+    &.is-3 { flex: none; width: 25%; }
+    &.is-4 { flex: none; width: 33.3333%; }
+    &.is-5 { flex: none; width: 41.6666%; }
+    &.is-6 { flex: none; width: 50%; }
+    &.is-7 { flex: none; width: 58.3333%; }
+    &.is-8 { flex: none; width: 66.6666%; }
+    &.is-9 { flex: none; width: 75%; }
+    &.is-10 { flex: none; width: 83.3333%; }
+    &.is-11 { flex: none; width: 91.6666%; }
+    &.is-12 { flex: none; width: 100%; }
+
+    &.is-offset-3 { margin-left: 25%; }
+    &.is-offset-6 { margin-left: 50%; }
+
+    // Tablet-specific sizes
+    &.is-10-tablet { flex: none; width: 83.3333%; }
+    &.is-8-tablet  { flex: none; width: 66.6666%; }
+    &.is-6-tablet  { flex: none; width: 50%; }
+    &.is-4-tablet  { flex: none; width: 33.3333%; }
+
+    // Full-width on touch (mobile+tablet)
+    &.is-full-touch { flex: none; width: 100%; }
+
+    // Mobile-specific column sizes (used inside .columns.is-mobile)
+    &.is-half-mobile   { flex: none; width: 50%; }
+    &.is-full-mobile   { flex: none; width: 100%; }
+    &.is-one-third-tablet { flex: none; width: 33.3333%; }
+    &.is-half-tablet   { flex: none; width: 50%; }
+    &.is-full-tablet   { flex: none; width: 100%; }
+  }
+
+  // Desktop-specific sizes
+  @include desktop {
+    &.is-8-desktop  { flex: none; width: 66.6666%; }
+    &.is-10-tablet  { flex: none; width: 83.3333%; }
+    &.is-one-third-desktop { flex: none; width: 33.3333%; }
+    &.is-half-desktop { flex: none; width: 50%; }
+    &.is-full-desktop { flex: none; width: 100%; }
+    &.is-full-touch { flex: none; width: 100%; }
+  }
+
+  // Widescreen-specific sizes
+  @include widescreen {
+    &.is-one-third-widescreen { flex: none; width: 33.3333%; }
+    &.is-half-widescreen { flex: none; width: 50%; }
+    &.is-full-touch { flex: none; width: 100%; }
+  }
+}
+
+// columns.is-mobile: all sizes work on mobile too
+.columns.is-mobile {
+  > .column {
+    &.is-1 { flex: none; width: 8.3333%; }
+    &.is-2 { flex: none; width: 16.6666%; }
+    &.is-3 { flex: none; width: 25%; }
+    &.is-4 { flex: none; width: 33.3333%; }
+    &.is-5 { flex: none; width: 41.6666%; }
+    &.is-6 { flex: none; width: 50%; }
+    &.is-7 { flex: none; width: 58.3333%; }
+    &.is-8 { flex: none; width: 66.6666%; }
+    &.is-9 { flex: none; width: 75%; }
+    &.is-10 { flex: none; width: 83.3333%; }
+    &.is-half-mobile { flex: none; width: 50%; }
+    &.is-full-mobile { flex: none; width: 100%; }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Responsive column size helpers (all breakpoints)
+// ---------------------------------------------------------------------------
+
+// Mobile-specific sizes (≤768px)
+@include mobile {
+  .column {
+    &.is-1-mobile  { flex: none; width: 8.3333%; }
+    &.is-2-mobile  { flex: none; width: 16.6666%; }
+    &.is-3-mobile  { flex: none; width: 25%; }
+    &.is-4-mobile  { flex: none; width: 33.3333%; }
+    &.is-5-mobile  { flex: none; width: 41.6666%; }
+    &.is-6-mobile  { flex: none; width: 50%; }
+    &.is-7-mobile  { flex: none; width: 58.3333%; }
+    &.is-8-mobile  { flex: none; width: 66.6666%; }
+    &.is-9-mobile  { flex: none; width: 75%; }
+    &.is-10-mobile { flex: none; width: 83.3333%; }
+    &.is-11-mobile { flex: none; width: 91.6666%; }
+    &.is-12-mobile, &.is-full-mobile { flex: none; width: 100%; }
+    &.is-half-mobile         { flex: none; width: 50%; }
+    &.is-one-third-mobile    { flex: none; width: 33.3333%; }
+    &.is-one-quarter-mobile  { flex: none; width: 25%; }
+    &.is-three-quarters-mobile { flex: none; width: 75%; }
+    &.is-two-thirds-mobile   { flex: none; width: 66.6666%; }
+  }
+}
+
+// Tablet-only sizes (769px - 1023px)
+@include tablet-only {
+  .column {
+    &.is-1-tablet-only  { flex: none; width: 8.3333%; }
+    &.is-2-tablet-only  { flex: none; width: 16.6666%; }
+    &.is-3-tablet-only  { flex: none; width: 25%; }
+    &.is-4-tablet-only  { flex: none; width: 33.3333%; }
+    &.is-5-tablet-only  { flex: none; width: 41.6666%; }
+    &.is-6-tablet-only  { flex: none; width: 50%; }
+    &.is-7-tablet-only  { flex: none; width: 58.3333%; }
+    &.is-8-tablet-only  { flex: none; width: 66.6666%; }
+    &.is-9-tablet-only  { flex: none; width: 75%; }
+    &.is-10-tablet-only { flex: none; width: 83.3333%; }
+  }
+}
+
+// Tablet+ sizes (769px+)
+@include tablet {
+  .column {
+    @for $i from 1 through 12 {
+      &.is-#{$i}-tablet { flex: none; width: #{$i * 8.3333%}; }
+    }
+    &.is-half-tablet         { flex: none; width: 50%; }
+    &.is-full-tablet         { flex: none; width: 100%; }
+    &.is-one-third-tablet    { flex: none; width: 33.3333%; }
+    &.is-one-quarter-tablet  { flex: none; width: 25%; }
+    &.is-three-quarters-tablet { flex: none; width: 75%; }
+    &.is-two-thirds-tablet   { flex: none; width: 66.6666%; }
+  }
+}
+
+// Desktop+ sizes (1024px+)
+@include desktop {
+  .column {
+    @for $i from 1 through 12 {
+      &.is-#{$i}-desktop { flex: none; width: #{$i * 8.3333%}; }
+    }
+    &.is-half-desktop           { flex: none; width: 50%; }
+    &.is-full-desktop           { flex: none; width: 100%; }
+    &.is-one-third-desktop      { flex: none; width: 33.3333%; }
+    &.is-one-thirds-desktop     { flex: none; width: 33.3333%; }
+    &.is-one-quarter-desktop    { flex: none; width: 25%; }
+    &.is-three-quarters-desktop { flex: none; width: 75%; }
+    &.is-two-thirds-desktop     { flex: none; width: 66.6666%; }
+
+    &.is-offset-1-desktop  { margin-left: 8.3333%; }
+    &.is-offset-2-desktop  { margin-left: 16.6666%; }
+    &.is-offset-3-desktop  { margin-left: 25%; }
+    &.is-offset-4-desktop  { margin-left: 33.3333%; }
+  }
+}
+
+// Widescreen+ sizes (1216px+)
+@include widescreen {
+  .column {
+    @for $i from 1 through 12 {
+      &.is-#{$i}-widescreen { flex: none; width: #{$i * 8.3333%}; }
+    }
+    &.is-half-widescreen         { flex: none; width: 50%; }
+    &.is-full-widescreen         { flex: none; width: 100%; }
+    &.is-one-third-widescreen    { flex: none; width: 33.3333%; }
+    &.is-one-quarter-widescreen  { flex: none; width: 25%; }
+    &.is-three-quarters-widescreen { flex: none; width: 75%; }
+    &.is-two-thirds-widescreen   { flex: none; width: 66.6666%; }
+  }
+}
+
+// Fullhd+ sizes (1408px+)
+@include fullhd {
+  .column {
+    @for $i from 1 through 12 {
+      &.is-#{$i}-fullhd { flex: none; width: #{$i * 8.3333%}; }
+    }
+    &.is-half-fullhd         { flex: none; width: 50%; }
+    &.is-full-fullhd         { flex: none; width: 100%; }
+    &.is-one-third-fullhd    { flex: none; width: 33.3333%; }
+    &.is-one-thirds-fullhd   { flex: none; width: 33.3333%; }
+    &.is-one-quarter-fullhd  { flex: none; width: 25%; }
+    &.is-three-quarters-fullhd { flex: none; width: 75%; }
+    &.is-two-thirds-fullhd   { flex: none; width: 66.6666%; }
+  }
+}
+
+// Named fraction helpers (base, for all sizes)
+.column {
+  &.is-half          { flex: none; width: 50%; }
+  &.is-one-quarter   { flex: none; width: 25%; }
+  &.is-one-third     { flex: none; width: 33.3333%; }
+  &.is-two-thirds    { flex: none; width: 66.6666%; }
+  &.is-three-quarters { flex: none; width: 75%; }
+
+  // Offset helpers
+  &.is-offset-1 { margin-left: 8.3333%; }
+  &.is-offset-2 { margin-left: 16.6666%; }
+  &.is-offset-3 { margin-left: 25%; }
+  &.is-offset-4 { margin-left: 33.3333%; }
+  &.is-offset-5 { margin-left: 41.6666%; }
+  &.is-offset-6 { margin-left: 50%; }
+}
+
+// ---------------------------------------------------------------------------
+// Visibility helpers
+// ---------------------------------------------------------------------------
+.is-hidden {
+  display: none !important;
+}
+
+.is-block {
+  display: block !important;
+}
+
+.is-inline {
+  display: inline !important;
+}
+
+.is-inline-block {
+  display: inline-block !important;
+}
+
+.is-flex {
+  display: flex !important;
+}
+
+.is-inline-flex {
+  display: inline-flex !important;
+}
+
+.is-relative {
+  position: relative !important;
+}
+
+@include mobile {
+  .is-hidden-mobile {
+    display: none !important;
+  }
+}
+
+@include tablet {
+  .is-hidden-tablet-only {
+    display: none !important;
+  }
+}
+
+@include tablet-only {
+  .is-hidden-tablet-only {
+    display: none !important;
+  }
+}
+
+@include touch {
+  .is-hidden-touch {
+    display: none !important;
+  }
+}
+
+@include desktop {
+  .is-hidden-desktop {
+    display: none !important;
+  }
+  .is-block-desktop {
+    display: block !important;
+  }
+}
+
+@include tablet {
+  .is-hidden-tablet {
+    display: none !important;
+  }
+}
+
+@include mobile {
+  .is-hidden-mobile {
+    display: none !important;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Bulma flexbox helpers
+// ---------------------------------------------------------------------------
+.is-justify-content-center     { justify-content: center !important; }
+.is-justify-content-flex-end   { justify-content: flex-end !important; }
+.is-justify-content-flex-start { justify-content: flex-start !important; }
+.is-justify-content-space-between { justify-content: space-between !important; }
+.is-justify-content-space-around  { justify-content: space-around !important; }
+.is-align-items-flex-start { align-items: flex-start !important; }
+.is-align-items-flex-end   { align-items: flex-end !important; }
+.is-align-items-center     { align-items: center !important; }
+.is-align-items-stretch    { align-items: stretch !important; }
+.is-flex-wrap-wrap   { flex-wrap: wrap !important; }
+.is-flex-wrap-nowrap { flex-wrap: nowrap !important; }
+.is-flex-direction-column  { flex-direction: column !important; }
+.is-flex-direction-row     { flex-direction: row !important; }
+.is-flex-grow-0 { flex-grow: 0 !important; }
+.is-flex-grow-1 { flex-grow: 1 !important; }
+.is-flex-shrink-0 { flex-shrink: 0 !important; }
+.is-flex-shrink-1 { flex-shrink: 1 !important; }
+
+// ---------------------------------------------------------------------------
+// Bulma typography helpers
+// ---------------------------------------------------------------------------
+.has-text-primary   { color: $ac-primary !important; }
+.has-text-white     { color: $ac-white !important; }
+.has-text-black     { color: $ac-black !important; }
+.has-text-gray      { color: $ac-gray-light !important; }
+.has-text-dark      { color: $ac-color-heading !important; }
+
+// Text alignment
+.has-text-centered  { text-align: center !important; }
+.has-text-right     { text-align: right !important; }
+.has-text-left      { text-align: left !important; }
+.has-text-justified { text-align: justify !important; }
+
+@include mobile {
+  .has-text-centered-mobile { text-align: center !important; }
+  .has-text-right-mobile    { text-align: right !important; }
+  .has-text-left-mobile     { text-align: left !important; }
+}
+
+@include tablet {
+  .has-text-centered-tablet { text-align: center !important; }
+  .has-text-right-tablet    { text-align: right !important; }
+  .has-text-left-tablet     { text-align: left !important; }
+}
+
+@include touch {
+  .has-text-centered-touch { text-align: center !important; }
+  .has-text-right-touch    { text-align: right !important; }
+  .has-text-left-touch     { text-align: left !important; }
+}
+
+@include desktop {
+  .has-text-centered-desktop { text-align: center !important; }
+  .has-text-right-desktop    { text-align: right !important; }
+  .has-text-left-desktop     { text-align: left !important; }
+}
+
+@include widescreen {
+  .has-text-centered-widescreen { text-align: center !important; }
+}
+
+@include fullhd {
+  .has-text-centered-fullhd { text-align: center !important; }
+}
+
+.has-text-weight-light    { font-weight: 300 !important; }
+.has-text-weight-normal   { font-weight: 400 !important; }
+.has-text-weight-medium   { font-weight: 500 !important; }
+.has-text-weight-semibold { font-weight: 600 !important; }
+.has-text-weight-bold     { font-weight: 700 !important; }
+.has-text-weight-extrabold { font-weight: 800 !important; }
+
+.is-size-1 { font-size: 3rem !important; }
+.is-size-2 { font-size: 2.5rem !important; }
+.is-size-3 { font-size: 2rem !important; }
+.is-size-4 { font-size: 1.5rem !important; }
+.is-size-5 { font-size: 1.25rem !important; }
+.is-size-6 { font-size: 1rem !important; }
+.is-size-7 { font-size: 0.75rem !important; }
+
+.is-uppercase  { text-transform: uppercase !important; }
+.is-lowercase  { text-transform: lowercase !important; }
+.is-capitalized { text-transform: capitalize !important; }
+.is-underlined { text-decoration: underline !important; }
+.is-italic     { font-style: italic !important; }
+
+// ---------------------------------------------------------------------------
+// Bulma spacing helpers (.is-paddingless, .is-marginless)
+// ---------------------------------------------------------------------------
+.is-paddingless { padding: 0 !important; }
+.is-marginless  { margin: 0 !important; }
+.is-clipped     { overflow: hidden !important; }
+
+@include desktop {
+  .is-paddingless-desktop { padding: 0 !important; }
+  .is-marginless-desktop  { margin: 0 !important; }
+}
+
+@include mobile {
+  .is-paddingless-mobile { padding: 0 !important; }
+}
+
+// ---------------------------------------------------------------------------
+// Bulma button base (minimal base so .button.ac-button works)
+// ---------------------------------------------------------------------------
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.5em;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding: calc(0.5em - 1px) 1em;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  background-color: white;
+  color: #363636;
+  outline: none;
+  text-decoration: none;
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &.is-rounded {
+    border-radius: 9999px;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+
+  &.is-fullwidth {
+    display: flex;
+    width: 100%;
+  }
+
+  &.is-loading {
+    color: transparent !important;
+    pointer-events: none;
+
+    &::after {
+      content: "";
+      border: 2px solid $ac-primary;
+      border-radius: 50%;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      width: 1em;
+      height: 1em;
+      position: absolute;
+      left: calc(50% - 0.5em);
+      top: calc(50% - 0.5em);
+      animation: spinAround 500ms infinite linear;
+    }
+  }
+}
+
+.buttons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+
+  &.is-centered {
+    justify-content: center;
+  }
+
+  &.is-right {
+    justify-content: flex-end;
+  }
+
+  &.has-addons {
+    .button {
+      &:not(:last-child) {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        margin-right: -1px;
+      }
+      &:not(:first-child) {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+      }
+    }
+  }
+}
+
+@keyframes spinAround {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(359deg); }
+}
+
+// ---------------------------------------------------------------------------
+// Bulma form elements (field, control, input)
+// ---------------------------------------------------------------------------
+.field {
+  &:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+
+  &.has-addons {
+    display: flex;
+    justify-content: flex-start;
+
+    .control {
+      &:not(:last-child) {
+        margin-right: -1px;
+      }
+
+      &:not(:first-child):not(:last-child) {
+        .button,
+        .input {
+          border-radius: 0;
+        }
+      }
+
+      &:first-child:not(:only-child) {
+        .button,
+        .input {
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 0;
+        }
+      }
+
+      &:last-child:not(:only-child) {
+        .button,
+        .input {
+          border-bottom-left-radius: 0;
+          border-top-left-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+.control {
+  box-sizing: border-box;
+  clear: both;
+  font-size: 1rem;
+  position: relative;
+  text-align: inherit;
+}
+
+.input {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  color: #363636;
+  box-shadow: inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.05);
+  height: 2.5em;
+  max-width: 100%;
+  width: 100%;
+  padding: calc(0.5em - 1px) calc(0.75em - 1px);
+  font-size: 1rem;
+  line-height: 1.5;
+  display: inline-flex;
+  align-items: center;
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    border-color: $ac-primary;
+    box-shadow: 0 0 0 0.125em rgba($ac-primary, 0.25);
+  }
+
+  &::placeholder {
+    color: #a0a0a0;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Bulma dropdown (used in product version selector)
+// ---------------------------------------------------------------------------
+.dropdown {
+  display: inline-flex;
+  position: relative;
+  vertical-align: top;
+
+  &.is-active,
+  &:hover {
+    .dropdown-menu {
+      display: block;
+    }
+  }
+}
+
+.dropdown-trigger {
+  > .button {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 20;
+  min-width: 12rem;
+  padding-top: 4px;
+}
+
+.dropdown-content {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  padding: 0.5rem 0;
+}
+
+.dropdown-item {
+  color: #4a4a4a;
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding: 0.375rem 1rem;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: #f5f5f5;
+    color: #0a0a0a;
+  }
+
+  &.is-active {
+    background-color: $ac-primary;
+    color: white;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Bulma image helpers
+// ---------------------------------------------------------------------------
+.image {
+  display: block;
+  position: relative;
+
+  img {
+    display: block;
+    height: auto;
+    width: 100%;
+
+    &.is-rounded {
+      border-radius: 9999px;
+    }
+  }
+
+  &.is-16x16  { height: 16px;  width: 16px; }
+  &.is-24x24  { height: 24px;  width: 24px; }
+  &.is-32x32  { height: 32px;  width: 32px; }
+  &.is-48x48  { height: 48px;  width: 48px; }
+  &.is-64x64  { height: 64px;  width: 64px; }
+  &.is-96x96  { height: 96px;  width: 96px; }
+  &.is-128x128 { height: 128px; width: 128px; }
+}
+
+.is-rounded {
+  border-radius: 9999px !important;
+}
+
+// ---------------------------------------------------------------------------
+// Bulma tag helper
+// ---------------------------------------------------------------------------
+.tag {
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  color: #4a4a4a;
+  display: inline-flex;
+  font-size: 0.75rem;
+  height: 2em;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 0 0.75em;
+  white-space: nowrap;
+}
+
+// ---------------------------------------------------------------------------
+// Bulma section base (used on some pages)
+// ---------------------------------------------------------------------------
+.section {
+  padding: 3rem 1.5rem;
+
+  @include desktop {
+    padding: 3rem 3rem;
+  }
+
+  &.section-lg {
+    padding: 5rem 1.5rem;
+
+    @include desktop {
+      padding: 5rem 3rem;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Bulma .title helper (used in a few templates)
+// ---------------------------------------------------------------------------
+.title {
+  color: $ac-color-heading;
+  font-weight: 600;
+  line-height: 1.125;
+  word-break: break-word;
+
+  &.is-5 {
+    font-size: 1.25rem;
+  }
+
+  &.is-4 {
+    font-size: 1.5rem;
+  }
+
+  &.is-3 {
+    font-size: 2rem;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// background helpers
+// ---------------------------------------------------------------------------
+.has-background-white {
+  background-color: white !important;
+}
+
+.bg-light {
+  background-color: #f7f8fa !important;
+}
+
+// ---------------------------------------------------------------------------
+// Active state
+// ---------------------------------------------------------------------------
+.is-active {
+  // context-specific - individual components define what .is-active does
+}
