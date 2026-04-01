@@ -4,18 +4,18 @@
 {{ with $data.cards }}
 <section class="section-padding bg-light benefits-section">
     <div class="container">
-        <div class="columns is-centered">
-            <div class="column is-10">
-                <div class="section-title has-text-centered-tablet mb-16">
+        <div class="flex justify-center">
+            <div class="w-full lg:w-5/6">
+                <div class="section-title md:text-center mb-16">
                     <h2>{{ default "Our Services" .title }}</h2>
                     <p class="mb-0">{{ default "" .subtitle | safeHTML }}</p>
                 </div>
             </div>
         </div>
 
-        <div class="columns is-multiline">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             {{ range .items }}
-            <div class="column is-4">
+            <div>
                 <div class="service-card">
                     <div class="service-icon">
                          {{ if or .icon .logo }}

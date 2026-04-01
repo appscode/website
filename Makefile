@@ -71,6 +71,10 @@ gen:
 	rm -rf public
 	hugo --config=config.dev.yaml
 
+.PHONY: build-css
+build-css:
+	npm run build:css
+
 .PHONY: qa
 qa: gen
 	firebase use default

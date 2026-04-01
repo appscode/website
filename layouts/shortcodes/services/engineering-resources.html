@@ -5,20 +5,16 @@
 {{ end }}
 
 {{ with $data.resources }}
-<section class="section-padding has-background-white engineering-resources-section">
+<section class="section-padding bg-white engineering-resources-section">
     <div class="container">
-        <div class="columns">
-            <div class="column">
-                <div class="section-title has-text-centered">
-                    <h2>{{ $data.resources.title }}</h2>
-                    <p>{{ $data.resources.subtitle }}</p>
-                </div>
-            </div>
+        <div class="section-title text-center">
+            <h2>{{ $data.resources.title }}</h2>
+            <p>{{ $data.resources.subtitle }}</p>
         </div>
 
-        <div class="columns is-multiline">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
             {{ range $item := $data.resources.items }}
-            <div class="column is-4">
+            <div>
                 <a href="{{ $item.link }}" class="resource-card">
                     {{ if $item.image }}
                     <div class="resource-thumbnail">
@@ -28,7 +24,7 @@
                     {{ if $item.type }}
                         <div class="tag">{{ $item.type }}</div>
                     {{ end }}
-                    <div class="resource-content {{ if not $item.image }}has-text-centered{{ end }}">
+                    <div class="resource-content {{ if not $item.image }}text-center{{ end }}">
                         <h4 class="title mb-12">{{ $item.title }}</h4>
                         {{ if $item.description }}
                             <p>{{ $item.description | safeHTML }}</p>

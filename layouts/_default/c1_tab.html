@@ -7,9 +7,9 @@
 <!-- about breadcrumb area start -->
 <section class="hero-area-2 bg-color-available">
   <div class="container">
-    <div class="columns">
-      <div class="column is-6 is-offset-3 d-table">
-        <div class="hero-area-inner-2 has-text-centered d-table-cell">
+    <div class="flex justify-center">
+      <div class="w-full md:w-1/2 d-table">
+        <div class="hero-area-inner-2 text-center d-table-cell">
           <h1>{{ .Title }}</h1>
         </div>
       </div>
@@ -21,8 +21,8 @@
 <!-- terms of service-area start -->
 <section class="section-padding">
   <div class="container">
-    <div class="columns">
-      <div class="column is-3">
+    <div class="flex flex-col md:flex-row gap-8">
+      <div class="w-full md:w-1/4">
         <div class="kd-left-sidebar appscode-style">
           <div class="kd-sidebar-menu">
             {{ $currentPage := . }}
@@ -36,7 +36,7 @@
           </div>
         </div>
       </div>
-      <div class="column is-9">
+      <div class="w-full md:w-3/4">
         <div class="full-info appscode-style">
           {{ .Content }}
         </div>
@@ -57,7 +57,7 @@
             <p>Create a Free Account and refer your friend</p>
           </div>
         </div>
-        <div class="column is-6 has-text-right is-mobile">
+        <div class="column is-6 text-right is-mobile">
           <div class="cta-button d-table">
             <div class="cta-button-inner d-table-cell">
               <a
