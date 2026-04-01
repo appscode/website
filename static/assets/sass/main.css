@@ -20088,6 +20088,28 @@ Responsive Classes
     line-height: 20px;
     /* 142.857% */ }
 
+.cta-container {
+  border-radius: 14px;
+  border: 1px solid rgba(0, 165, 80, 0.2);
+  background-color: #fcfcfd;
+  padding: 48px; }
+  .cta-container h3 {
+    color: #081419;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: -0.9px;
+    margin-bottom: 16px; }
+  .cta-container p {
+    color: #364153;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 32px;
+    text-wrap: balance; }
+
 .p-32 {
   padding: 32px !important; }
 
