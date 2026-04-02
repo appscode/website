@@ -519,7 +519,8 @@
           {{ $catID := $cat.title | urlize }}
           <li class="service-nav-btn {{ if eq $index 0 }}is-active{{ end }}" data-target="service-{{ $catID }}">
             <span class="svc-icon">
-              <iconify-icon {{ printf "icon=%s" $cat.lucide_icon | safeHTMLAttr }} width="16" height="16"></iconify-icon>
+              <iconify-icon {{ printf "icon=%s" $cat.lucide_icon | safeHTMLAttr }} width="16"
+                height="16"></iconify-icon>
             </span>
             <span class="{{ if eq $index 0 }}has-text-weight-semibold{{ end }}">{{ $cat.title }}</span>
           </li>
@@ -537,14 +538,15 @@
             <div class="is-flex is-align-items-center is-gap-16">
               <div class="header-icon-wrapper">
                 <div class="header-icon">
-                  <iconify-icon {{ printf "icon=%s" $cat.lucide_icon | safeHTMLAttr }} width="32" height="32"></iconify-icon>
+                  <iconify-icon {{ printf "icon=%s" $cat.lucide_icon | safeHTMLAttr }} width="32"
+                    height="32"></iconify-icon>
                 </div>
                 <div class="header-icon-badge">
                   <iconify-icon icon="lucide:check-circle" width="14" height="14"></iconify-icon>
                 </div>
               </div>
               <div class="is-flex is-flex-direction-column is-gap-8">
-                <h3 class="title mb-8">{{ $cat.title }}</h3>
+                <h3 class="title mb-16">{{ $cat.title }}</h3>
                 <p class="subtitle">{{ $cat.description }}</p>
               </div>
             </div>
@@ -563,7 +565,7 @@
                     <h3>{{ .title }}</h3>
                   </div>
                   <p>{{ .description }}</p>
-                  <a href="{{ .url | default "#" }}"
+                  <a href="{{ .url | default " #" }}"
                     class="is-flex is-align-items-center is-gap-8 is-size-7 has-text-success has-text-weight-bold"><span
                       class="has-text-weight-semibold">Learn more</span> <iconify-icon icon="lucide:arrow-right"
                       width="16" height="16"></iconify-icon> </a>
@@ -587,37 +589,38 @@
         {{ end }}
       </div>
     </div>
+    <div class="simple-stats-wrapper columns">
+      <div class="column is-4">
+        <div class="stat-card">
+          <div class="icon-box">
+            <iconify-icon icon="lucide:award" width="24" height="24"></iconify-icon>
+          </div>
+          <p class="strong">24/7</p>
+          <p class="subtext">Expert Support</p>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="stat-card">
+          <div class="icon-box stat-icon-neutral">
+            <iconify-icon icon="lucide:activity" width="24" height="24"></iconify-icon>
+          </div>
+          <p class="strong">99.9%</p>
+          <p class="subtext">SLA Uptime</p>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="stat-card">
+          <div class="icon-box">
+            <iconify-icon icon="lucide:globe" width="24" height="24"></iconify-icon>
+          </div>
+          <p class="strong">500+</p>
+          <p class="subtext">Projects Delivered</p>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="simple-stats-wrapper columns">
-    <div class="column is-4">
-      <div class="stat-card">
-        <div class="icon-box">
-          <iconify-icon icon="lucide:award" width="24" height="24"></iconify-icon>
-        </div>
-        <p class="strong">24/7</p>
-        <p class="subtext">Expert Support</p>
-      </div>
-    </div>
-    <div class="column is-4">
-      <div class="stat-card">
-        <div class="icon-box stat-icon-neutral">
-          <iconify-icon icon="lucide:activity" width="24" height="24"></iconify-icon>
-        </div>
-        <p class="strong">99.9%</p>
-        <p class="subtext">SLA Uptime</p>
-      </div>
-    </div>
-    <div class="column is-4">
-      <div class="stat-card">
-        <div class="icon-box">
-          <iconify-icon icon="lucide:globe" width="24" height="24"></iconify-icon>
-        </div>
-        <p class="strong">500+</p>
-        <p class="subtext">Projects Delivered</p>
-      </div>
-    </div>
-  </div>
+
   </div>
 
 </section>
