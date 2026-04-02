@@ -1,6 +1,18 @@
-$homepage-primary-border: rgba(0, 165, 80, 0.2);
-$homepage-primary-bg: rgba(0, 165, 80, 0.1);
-$homepage-primary-border-strong: rgba(0, 165, 80, 0.3);
+// =============================================================================
+// Homepage 2026 — Design Tokens
+// Colours: $color-* from _initial-variable.scss (auto-available via main.scss import)
+// Local: primary alpha variants for borders, glows, and backgrounds
+// =============================================================================
+
+// Primary alpha variants
+$hp-primary-border:        rgba(0, 165, 80, 0.2);
+$hp-primary-border-strong: rgba(0, 165, 80, 0.3);
+$hp-primary-bg:            rgba(0, 165, 80, 0.1);
+
+
+// =============================================================================
+// Mixins
+// =============================================================================
 
 @mixin flex-center {
   display: flex;
@@ -13,23 +25,38 @@ $homepage-primary-border-strong: rgba(0, 165, 80, 0.3);
   height: $size !important;
 }
 
-@mixin text-30-700-36 {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
+@mixin text-style($size, $weight, $line-height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
 }
 
-// Global button overrides for 2026 Homepage
+// Named text-style shortcuts using _initial-variable.scss font-size tokens
+@mixin text-30-700-36  { @include text-style(30px,               700, 36px); }
+@mixin text-20-700-28  { @include text-style(20px,               700, 28px); }
+@mixin text-16-700-24  { @include text-style($ac-size-6,          700, 24px); }
+@mixin text-14-700-20  { @include text-style($font-size-normal,   700, 20px); }
+
+
+// =============================================================================
+// Global Button Overrides (2026 Homepage)
+// =============================================================================
+
 button.ac-button,
 .button.ac-button {
   border-radius: 4px !important;
   font-weight: 700 !important;
-  font-size: 14px !important;
+  font-size: $font-size-normal !important;    // 14px
   letter-spacing: 0 !important;
   text-transform: uppercase !important;
   transition: all 0.2s ease !important;
 
-  // By default, ac-button sets height manually, let's keep typography consistent
+  iconify-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px;
+  }
+
   &.is-primary {
     background: #00a550 !important;
     color: #fff !important;
@@ -50,7 +77,7 @@ button.ac-button,
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02) !important;
 
     &:hover {
-      background: #f8fafc !important;
+      background: $color-surface-light !important;
       border-color: #cbd5e1 !important;
       color: #0f172a !important;
       transform: translateY(-1px) !important;
@@ -58,7 +85,7 @@ button.ac-button,
   }
 
   &.is-black {
-    background: #081419 !important;
+    background: $color-heading-deep !important;
     color: #fff !important;
 
     &:hover {
@@ -66,30 +93,62 @@ button.ac-button,
       transform: translateY(-1px) !important;
     }
   }
+}
 
-  iconify-icon {
-    display: inline-flex;
-    align-items: center;
-    margin-right: 8px;
+
+// =============================================================================
+// Section Tag & Title (shared across all sections)
+// =============================================================================
+
+.tag.section-tag {
+  display: inline-flex;
+  height: 42px;
+  padding: 9px 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid $hp-primary-border;
+  background: $hp-primary-bg;
+  color: $ac-primary;
+  font-size: $ac-size-6;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  h2 {
+    color: $color-heading-deep;
+    text-align: center;
+    font-size: $ac-size-2;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -1.2px;
+  }
+
+  p {
+    margin-top: 16px;
+    color: $color-text-medium;
+    text-align: center;
+    font-size: $ac-size-5;
+    font-weight: 400;
+    line-height: 28px;
   }
 }
 
-@mixin text-20-700-28 {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px;
-}
 
-@mixin text-16-700-24 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-}
+// =============================================================================
+// Hero Section
+// =============================================================================
 
-@mixin text-14-700-20 {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 20px;
+.bg-hero-gradient {
+  background:
+    radial-gradient(ellipse at top left,    rgba(0, 165, 80, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at bottom right, rgba(0, 165, 80, 0.05) 0%, transparent 50%),
+    #fff;
 }
 
 .hero-area-2026 {
@@ -102,6 +161,7 @@ button.ac-button,
     flex-direction: column;
     gap: 32px;
 
+    // Hero pill tag
     .tag {
       display: inline-flex;
       width: fit-content;
@@ -110,48 +170,45 @@ button.ac-button,
       justify-content: center;
       align-items: center;
       gap: 8px;
+      border-radius: 9999px;
+      border: 1px solid $hp-primary-border-strong;
+      background: $hp-primary-bg;
+      box-shadow: 0 2px 8px rgba(0, 165, 80, 0.1);
       color: $ac-primary;
-
       @include text-14-700-20;
-
-      border-radius: 33554400px;
-      border: 1px solid $homepage-primary-border-strong;
-      background: $homepage-primary-bg;
-      box-shadow: 0 2px 8px 0 rgba(0, 165, 80, 0.1);
 
       .circle-dot {
         width: 8px;
         height: 8px;
-        background-color: $ac-primary;
         border-radius: 50%;
+        background-color: $ac-primary;
         display: inline-block;
         margin-right: 8px;
       }
     }
 
     h1 {
-      color: #081419;
+      color: $color-heading-deep;
       font-size: 72px;
-      font-style: normal;
       font-weight: 900;
       line-height: 105%;
       letter-spacing: -1.8px;
     }
 
     p {
-      color: #364153;
-
+      color: $color-text-slate;
       font-size: 20px;
       font-weight: 500;
       line-height: 170%;
     }
   }
 
+  // Stats row below hero copy
   .data-show-case-wrapper {
     display: flex;
     align-items: center;
     gap: 48px;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid $color-border-light;
     padding-top: 32px;
   }
 
@@ -160,98 +217,112 @@ button.ac-button,
     gap: 12px;
 
     .icon {
-      display: flex;
+      @include flex-center;
       width: 40px;
       height: 40px;
       padding: 0 9px;
-      justify-content: center;
-      align-items: center;
       border-radius: 10px;
-      border: 1px solid rgba(0, 165, 80, 0.2);
-      background: rgba(0, 165, 80, 0.1);
+      border: 1px solid $hp-primary-border;
+      background: $hp-primary-bg;
     }
 
     p.strong {
-      color: #081419;
+      color: $color-heading-deep;
       font-size: 20px;
       font-weight: 900;
       line-height: 28px;
     }
 
     p {
-      color: #6a7282;
-
-      font-size: 12px;
+      color: $color-text-muted;
+      font-size: $font-size-extra-small;
       font-weight: 700;
       line-height: 16px;
-      /* 133.333% */
       letter-spacing: 0.6px;
       text-transform: uppercase;
     }
   }
 }
 
-// trusted-companies-area
+// Hero right-side graphic utilities
+.h-600          { min-height: 550px !important; }
+.pos-relative   { position: relative !important; }
+.pos-absolute   { position: absolute !important; }
+.top-50         { top: 50% !important; }
+.left-50        { left: 35% !important; }
+.translate-center { transform: translate(-50%, -50%) !important; }
+.z-1  { z-index: 1 !important; }
+.z-10 { z-index: 10 !important; }
+.z-20 { z-index: 20 !important; }
+.p-32 { padding: 32px !important; }
+
+// Orbit ring sizes
+.orbit-circle { border: 1px solid rgba(0, 165, 80, 0.12); border-radius: 50%; pointer-events: none; }
+.w-250 { @include square(220px); }
+.w-350 { @include square(340px); }
+.w-450 { @include square(460px); }
+.w-96  { @include square(110px); }
+.w-36  { @include square(36px); @include flex-center; display: flex !important; }
+
+// Floating card visuals
+.icon-svg       { width: 20px; height: 20px; }
+.shadow-custom  { box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06) !important; border: 1px solid rgba(255, 255, 255, 0.9) !important; backdrop-filter: blur(8px) !important; }
+.border-blue    { border: 1px solid #dbeafe !important; box-shadow: 0 12px 35px rgba(50, 100, 255, 0.08) !important; }
+.border-green   { border: 1px solid #bbf7d0 !important; box-shadow: 0 12px 35px rgba(0, 165, 80, 0.08) !important; }
+.br-16 { border-radius: 16px !important; }
+.br-12 { border-radius: 12px !important; }
+.br-8  { border-radius: 8px !important; }
+.text-tiny     { font-size: 0.6rem !important; letter-spacing: 0.05em; margin-bottom: 2px !important; }
+.text-sm-bold  { font-size: 0.85rem !important; font-weight: 700 !important; color: $color-text-dark; }
+
+// Floating card positions
+.card-offset-1 { top: 12%; left: 62%; transform: translateX(-20%); }
+.card-offset-2 { top: 38%; left: 75%; transform: translateX(-20%); }
+.card-offset-3 { top: 62%; left: 45%; transform: translateX(-20%); }
+.card-offset-4 { top: 82%; left: 68%; transform: translateX(-20%); }
+
+// Float animations
+@keyframes float {
+  0%, 100% { transform: translate(-20%, 0); }
+  50%       { transform: translate(-20%, -10px); }
+}
+
+@keyframes float-center {
+  0%, 100% { transform: translate(-50%, -50%); }
+  50%       { transform: translate(-50%, calc(-50% - 12px)); }
+}
+
+.anim-float          { animation: float 6s ease-in-out infinite; }
+.anim-float-center   { animation: float-center 6s ease-in-out infinite; }
+.anim-float-delay-1  { animation: float 5.5s ease-in-out 1s infinite; }
+.anim-float-delay-2  { animation: float 6.5s ease-in-out 2s infinite; }
+.anim-float-delay-3  { animation: float 7s ease-in-out 1.5s infinite; }
+
+
+// =============================================================================
+// Trusted Companies
+// =============================================================================
+
 .trusted-companies-area {
   background: #fbfbfb;
 
   h2.title {
-    color: #081419;
+    color: $color-heading-deep;
     text-align: center;
     @include text-30-700-36;
     letter-spacing: -0.75px;
   }
 }
 
-.tag.section-tag {
-  color: $ac-primary;
-  text-align: center;
 
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-  /* 150% */
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  display: inline-flex;
-  height: 42px;
-  padding: 9px 16.031px 9px 18px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 33554400px;
-  border: 1px solid $homepage-primary-border;
-  background: $homepage-primary-bg;
-  margin-bottom: 8px;
-}
-
-.section-title {
-  h2 {
-    color: #081419;
-    text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%;
-    letter-spacing: -1.2px;
-  }
-
-  p {
-    margin-top: 16px;
-    color: #4a5565;
-    text-align: center;
-
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    /* 155.556% */
-  }
-}
+// =============================================================================
+// Our Products Section
+// =============================================================================
 
 .products-area {
+  // Tab navigation
   .tabs {
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid $color-border-light;
     margin-bottom: 32px;
 
     ul {
@@ -262,39 +333,36 @@ button.ac-button,
         margin: 0;
 
         a {
-          font-size: 16px;
-          font-weight: 700;
-          padding: 12px 24px;
-          border-bottom: 2px solid transparent;
-          color: #6a7282;
-          background: transparent;
-          border-radius: 0;
-          transition: all 0.2s ease;
           display: flex;
           align-items: center;
           gap: 8px;
+          padding: 12px 24px;
+          font-size: $ac-size-6;
+          font-weight: 700;
+          color: $color-text-muted;
+          background: transparent;
+          border-radius: 0;
+          border-bottom: 2px solid transparent;
+          transition: all 0.2s ease;
 
-          span.icon {
-            margin: 0;
-          }
+          span.icon { margin: 0; }
 
           &:hover {
             color: $ac-primary;
-            border-bottom-color: #e5e7eb;
+            border-bottom-color: $color-border-light;
           }
         }
 
-        &.is-active {
-          a {
-            color: $ac-primary !important;
-            border-bottom: 2px solid $ac-primary !important;
-            padding-bottom: 10px;
-          }
+        &.is-active a {
+          color: $ac-primary !important;
+          border-bottom: 2px solid $ac-primary !important;
+          padding-bottom: 10px;
         }
       }
     }
   }
 
+  // Cards container
   .product-cards-container {
     position: relative;
     min-height: 500px;
@@ -312,6 +380,7 @@ button.ac-button,
       animation: fadeIn 0.3s ease-in-out;
     }
 
+    // Card header band
     .product-header {
       padding: 40px;
       position: relative;
@@ -320,10 +389,7 @@ button.ac-button,
       &::after {
         content: "";
         position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
+        inset: 0;
         background: linear-gradient(135deg, transparent 50%, rgba(73, 73, 162, 0.05) 100%);
         pointer-events: none;
       }
@@ -339,19 +405,19 @@ button.ac-button,
     }
 
     h3.title {
-      color: #081419;
-      font-size: 28px;
+      color: $color-heading-deep;
+      font-size: $ac-size-3;
       font-weight: 800;
       letter-spacing: -0.5px;
       margin-bottom: 8px;
     }
 
     .subtitle {
-      color: #111827;
-      font-size: 18px;
+      color: $color-text-dark;
+      font-size: $ac-size-5;
+      font-weight: 700;
       margin-top: 4px;
       margin-bottom: 12px;
-      font-weight: 700;
     }
 
     .description {
@@ -362,15 +428,16 @@ button.ac-button,
     }
   }
 
+  // Key features column
   .key-features {
     h4 {
-      color: #111827;
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 20px;
       display: flex;
       align-items: center;
       gap: 10px;
+      color: $color-text-dark;
+      font-size: $ac-size-5;
+      font-weight: 700;
+      margin-bottom: 20px;
 
       .icon {
         @include flex-center;
@@ -384,14 +451,13 @@ button.ac-button,
 
     .features-grid {
       display: grid;
-      grid-template-columns: 1fr;
       gap: 12px;
 
       .feature-item {
         display: flex;
         align-items: flex-start;
         gap: 12px;
-        font-size: 14px;
+        font-size: $font-size-normal;
         color: #4b5563;
         line-height: 1.5;
 
@@ -404,26 +470,105 @@ button.ac-button,
     }
   }
 
+  // Use cases + stats column
+  .use-case-numbers-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .common-use-cases-wrapper h4 {
+      color: $color-text-dark;
+      @include text-20-700-28;
+      margin-bottom: 16px;
+    }
+
+    .use-cases-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+
+      .use-case-item {
+        @include flex-center;
+        padding: 16px;
+        background: #fdfdfe;
+        border: 1px solid #f2f4f7;
+        border-radius: 8px;
+        font-size: 14.5px;
+        font-weight: 600;
+        color: #4949a2;
+        text-align: center;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background: #fff;
+          border-color: rgba(73, 73, 162, 0.2);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+        }
+      }
+    }
+
+    .numbers-wrapper h4 {
+      color: $color-text-dark;
+      font-size: $ac-size-6;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+
+      .stat-item {
+        @include flex-center;
+        flex-direction: column;
+        padding: 24px 12px;
+        background: #fff;
+        border: 1px solid #f0f2f5;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+
+        .stat-value {
+          color: #4949a2;
+          font-size: 24px;
+          font-weight: 800;
+          line-height: 1;
+          margin-bottom: 8px;
+        }
+
+        .stat-label {
+          color: $color-text-muted;
+          font-size: $font-size-tiny;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.8px;
+        }
+      }
+    }
+  }
+
+  // In-card CTA banner
   .cta-banner {
-    border-radius: 12px;
-    background: #f8f9ff;
-    border: 1px solid #eef0fd;
-    padding: 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 32px;
+    border-radius: 12px;
+    background: #f8f9ff;
+    border: 1px solid #eef0fd;
 
     .cta-banner-text {
       h4 {
-        color: #111827;
-        font-size: 16px;
+        color: $color-text-dark;
+        font-size: $ac-size-6;
         font-weight: 700;
         margin-bottom: 6px;
       }
 
       p {
         color: #4b5563;
-        font-size: 14px;
+        font-size: $font-size-normal;
       }
     }
 
@@ -431,149 +576,26 @@ button.ac-button,
       display: flex;
       gap: 12px;
 
-      .ac-button {
-        height: 44px;
-        font-size: 15px;
-      }
-    }
-  }
-
-  .key-features-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 32px;
-  }
-
-  .use-case-numbers-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-
-    .common-use-cases-wrapper {
-      h4 {
-        color: #111827;
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 16px;
-      }
-
-      .use-cases-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-
-        .use-case-item {
-          @include flex-center;
-          padding: 16px;
-          background: #fdfdfe;
-          border: 1px solid #f2f4f7;
-          border-radius: 8px;
-          font-size: 14.5px;
-          font-weight: 600;
-          color: #4949a2;
-          text-align: center;
-          transition: all 0.2s ease;
-
-          &:hover {
-            background: #fff;
-            border-color: rgba(73, 73, 162, 0.2);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-          }
-        }
-      }
-    }
-
-    .numbers-wrapper {
-      h4 {
-        color: #111827;
-        font-size: 16px;
-        font-weight: 700;
-        margin-bottom: 20px;
-      }
-
-      .stats-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-
-        .stat-item {
-          @include flex-center;
-          flex-direction: column;
-          padding: 24px 12px;
-          background: #fff;
-          border: 1px solid #f0f2f5;
-          border-radius: 8px;
-          text-align: center;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
-
-          .stat-value {
-            color: #4949a2;
-            font-size: 24px;
-            font-weight: 800;
-            line-height: 1;
-            margin-bottom: 8px;
-          }
-
-          .stat-label {
-            color: #6a7282;
-            font-size: 11px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
-          }
-        }
-      }
-    }
-  }
-
-  .common-use-cases-wrapper {
-    h4 {
-      color: #081419;
-      font-family: Roboto;
-      font-style: normal;
-      @include text-20-700-28;
-      margin-bottom: 24px;
-    }
-  }
-
-  .common-use-cases {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-
-    .single-use-cases {
-      border-radius: 10px;
-      border: 1px solid rgba(73, 73, 162, 0.13);
-      background: linear-gradient(135deg,
-          rgba(73, 73, 162, 0.02) 0%,
-          rgba(0, 0, 0, 0) 100%);
-      display: inline-flex;
-      height: 58px;
-      padding: 8px 16px;
-      justify-content: center;
-      align-items: center;
-      color: #081419;
-      text-align: center;
-      font-family: Roboto;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 20px;
-      /* 142.857% */
+      .ac-button { height: 44px; font-size: $font-size-semi-normal; }
     }
   }
 }
 
+
+// =============================================================================
+// Small CTA Container (Enterprise Support)
+// =============================================================================
+
 .cta-container {
-  border-radius: 14px;
-  border: 1px solid rgba(0, 165, 80, 0.2);
-  background-color: hsla(240, 33%, 99%, 1);
   padding: 48px;
+  border-radius: 14px;
+  border: 1px solid $hp-primary-border;
+  background-color: hsla(240, 33%, 99%, 1);
 
   h3 {
-    color: #081419;
+    color: $color-heading-deep;
     text-align: center;
-    font-size: 36px;
+    font-size: $ac-size-2;
     font-weight: 900;
     line-height: 40px;
     letter-spacing: -0.9px;
@@ -581,9 +603,9 @@ button.ac-button,
   }
 
   p {
-    color: #364153;
+    color: $color-text-slate;
     text-align: center;
-    font-size: 18px;
+    font-size: $ac-size-5;
     font-weight: 500;
     line-height: 28px;
     margin-bottom: 32px;
@@ -591,25 +613,60 @@ button.ac-button,
   }
 }
 
-// our services
+
+// =============================================================================
+// Our Services Section
+// =============================================================================
+
+.services-section {
+  position: relative;
+  z-index: 1;
+
+  // Decorative elements
+  .services-bg-glow {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle at top right, rgba(0, 165, 80, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .service-shape-1 {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+    border: 2px solid rgba(0, 165, 80, 0.2);
+    transform: rotate(-12deg);
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+
 .services-wrapper {
   display: flex;
   border-radius: 14px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid $color-border-light;
   background: #fff;
-  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
 
+  // Left sidebar navigation
   .services-sidebar {
     width: 288px;
     min-width: 288px;
     padding: 20px 16px;
     background-color: hsla(210, 20%, 98%, 1);
-    border-right: 1px solid #e5e7eb;
+    border-right: 1px solid $color-border-light;
     border-radius: 14px 0 0 14px;
 
     p {
-      color: #6a7282;
-      font-size: 11px;
+      color: $color-text-muted;
+      font-size: $font-size-tiny;
       font-weight: 600;
       line-height: 16px;
       letter-spacing: 0.8px;
@@ -636,23 +693,19 @@ button.ac-button,
         &:hover {
           border-left: 3px solid #00a550;
           background: #fff;
-          box-shadow:
-            0 1px 3px 0 rgba(0, 0, 0, 0.08),
-            0 1px 2px -1px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px -1px rgba(0, 0, 0, 0.08);
 
           .svc-icon {
-            background: rgba(0, 165, 80, 0.1);
+            background: $hp-primary-bg;
             color: $ac-primary;
           }
 
-          span:last-child {
-            color: #111827;
-          }
+          span:last-child { color: $color-text-dark; }
         }
 
         span:last-child {
-          color: #4a5565;
-          font-size: 14px;
+          color: $color-text-medium;
+          font-size: $font-size-normal;
           font-weight: 500;
           line-height: 20px;
         }
@@ -665,18 +718,17 @@ button.ac-button,
           justify-content: center;
           align-items: center;
           border-radius: 8px;
-          background: #e5e7eb;
-          color: #6a7282;
+          background: $color-border-light;
+          color: $color-text-muted;
           transition: all 0.15s ease;
 
-          iconify-icon {
-            display: block;
-          }
+          iconify-icon { display: block; }
         }
       }
     }
   }
 
+  // Right content area
   .services-content-wrapper {
     flex: 1;
     display: flex;
@@ -688,18 +740,12 @@ button.ac-button,
     display: flex;
     flex-direction: column;
 
-    &.is-active {
-      display: flex !important;
-      animation: fadeIn 0.3s ease-in-out;
-    }
-
-    &.is-hidden {
-      display: none !important;
-    }
+    &.is-active { display: flex !important; animation: fadeIn 0.3s ease-in-out; }
+    &.is-hidden { display: none !important; }
 
     .content-header {
-      background-color: hsla(149, 47%, 92%, 1);
       padding: 32px 40px;
+      background-color: hsla(149, 47%, 92%, 1);
       border-radius: 0 14px 0 0;
       position: relative;
       overflow: hidden;
@@ -725,31 +771,23 @@ button.ac-button,
       }
 
       .header-icon {
-        display: flex;
+        @include flex-center;
         width: 64px;
         height: 64px;
-        justify-content: center;
-        align-items: center;
         border-radius: 16px;
         border: 2px solid #f3f4f6;
         background: #fff;
         color: $ac-primary;
-        box-shadow:
-          0 4px 6px -1px rgba(0, 0, 0, 0.08),
-          0 2px 4px -2px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.08);
 
-        iconify-icon {
-          display: block;
-        }
+        iconify-icon { display: block; }
       }
 
       .header-icon-badge {
+        @include flex-center;
         position: absolute;
         bottom: -4px;
         right: -4px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 22px;
         height: 22px;
         border-radius: 50%;
@@ -760,7 +798,7 @@ button.ac-button,
       }
 
       h3 {
-        color: #081419;
+        color: $color-heading-deep;
         font-size: 24px;
         font-weight: 700;
         line-height: 28px;
@@ -768,8 +806,8 @@ button.ac-button,
       }
 
       p {
-        color: #364153;
-        font-size: 16px;
+        color: $color-text-slate;
+        font-size: $ac-size-6;
         font-weight: 500;
         line-height: 26px;
       }
@@ -781,8 +819,8 @@ button.ac-button,
     flex: 1;
 
     h4 {
-      color: #081419;
       @include text-16-700-24;
+      color: $color-heading-deep;
       position: relative;
       padding-left: 12px;
       margin-bottom: 16px;
@@ -803,16 +841,14 @@ button.ac-button,
       display: flex;
       flex-direction: column;
       gap: 8px;
-      border-radius: 12px;
-      border: 1.5px solid #e5e7eb;
-      background: #fafafa;
       padding: 18px 20px;
       height: 100%;
+      border-radius: 12px;
+      border: 1.5px solid $color-border-light;
+      background: $color-surface-subtle;
       transition: border-color 0.15s ease;
 
-      &:hover {
-        border-color: rgba(0, 165, 80, 0.3);
-      }
+      &:hover { border-color: rgba(0, 165, 80, 0.3); }
 
       .offering-check {
         color: $ac-primary;
@@ -821,31 +857,16 @@ button.ac-button,
         margin-bottom: 2px;
       }
 
-      h3 {
-        color: #081419;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 20px;
-      }
-
-      p {
-        color: #4a5565;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
-        flex: 1;
-      }
-
-      a {
+      h3 { color: $color-heading-deep; font-size: $font-size-normal; font-weight: 700; line-height: 20px; }
+      p  { color: $color-text-medium; font-size: $font-size-normal; font-weight: 400; line-height: 20px; flex: 1; }
+      a  {
         color: $ac-primary;
-        font-size: 13px;
+        font-size: $font-size-small;
         font-weight: 600;
         line-height: 16px;
         margin-top: 4px;
 
-        &:hover {
-          text-decoration: underline;
-        }
+        &:hover { text-decoration: underline; }
       }
     }
 
@@ -857,91 +878,57 @@ button.ac-button,
       margin-top: 24px;
       padding: 18px 20px;
       border-radius: 10px;
-      border: 1px solid #e5e7eb;
+      border: 1px solid $color-border-light;
       background: #fff;
 
-      p:first-child {
-        color: #111827;
-        font-size: 14px;
-        font-weight: 600;
-      }
+      p:first-child { color: $color-text-dark; font-size: $font-size-normal; font-weight: 600; }
+      p:last-child  { color: #6b7280; font-size: $font-size-extra-small; margin-top: 2px; }
 
-      p:last-child {
-        color: #6b7280;
-        font-size: 12px;
-        margin-top: 2px;
-      }
-
-      .buttons {
-        flex-shrink: 0;
-        margin-bottom: 0;
-        gap: 8px;
-      }
+      .buttons { flex-shrink: 0; margin-bottom: 0; gap: 8px; }
 
       .service-cta-outline-btn {
         border: 1.5px solid #d1d5db;
         color: #374151;
         background: #fff;
 
-        &:hover {
-          border-color: #9ca3af;
-        }
+        &:hover { border-color: #9ca3af; }
       }
     }
   }
 }
 
+// Services section stats row
 .simple-stats-wrapper {
   margin-top: 48px;
 
   .stat-card {
     padding: 24px;
     border-radius: 14px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid $color-border-light;
     background: #fff;
-    box-shadow:
-      0 1px 3px 0 rgba(0, 0, 0, 0.1),
-      0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   }
 
   .icon-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     width: 48px;
     height: 48px;
     border-radius: 14px;
-    background: rgba(0, 165, 80, 0.1);
-    color: #00A550;
-    margin: 0 auto;
-    margin-bottom: 8px;
+    background: $hp-primary-bg;
+    color: #00a550;
+    margin: 0 auto 8px;
 
-    &.stat-icon-neutral {
-      background: #f3f4f6;
-      color: #6a7282;
-    }
+    &.stat-icon-neutral { background: #f3f4f6; color: $color-text-muted; }
   }
 
-  .strong {
-    color: #081419;
-    text-align: center;
-    @include text-30-700-36;
-  }
-
-  .subtext {
-    color: #4a5565;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-  }
+  .strong  { color: $color-heading-deep; text-align: center; @include text-30-700-36; }
+  .subtext { color: $color-text-medium; text-align: center; font-size: $font-size-normal; font-weight: 400; line-height: 20px; }
 }
 
-.bg-hero-gradient {
-  background: radial-gradient(ellipse at top left, rgba(0, 165, 80, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse at bottom right, rgba(0, 165, 80, 0.05) 0%, transparent 50%),
-    #fff;
-}
+
+// =============================================================================
+// Final CTA Section
+// =============================================================================
 
 .headline-accent {
   color: $ac-primary;
@@ -975,17 +962,15 @@ button.ac-button,
   position: relative;
   overflow: hidden;
   padding: 100px 0;
-  background: radial-gradient(ellipse 60% 60% at 0% 0%, rgba(0, 165, 80, 0.1) 0%, transparent 100%),
+  background:
+    radial-gradient(ellipse 60% 60% at 0% 0%,   rgba(0, 165, 80, 0.1)  0%, transparent 100%),
     radial-gradient(ellipse 50% 50% at 100% 100%, rgba(0, 165, 80, 0.07) 0%, transparent 100%),
     #fff;
 
-  // Decorative shapes
   .cta-shape-rect-top {
     position: absolute;
-    top: 16px;
-    right: 16px;
-    width: 130px;
-    height: 90px;
+    top: 16px; right: 16px;
+    width: 130px; height: 90px;
     border-radius: 18px;
     border: 2px solid rgba(0, 165, 80, 0.18);
     background: transparent;
@@ -994,10 +979,8 @@ button.ac-button,
 
   .cta-shape-circle-bottom {
     position: absolute;
-    bottom: -48px;
-    left: -48px;
-    width: 130px;
-    height: 130px;
+    bottom: -48px; left: -48px;
+    width: 130px; height: 130px;
     border-radius: 50%;
     border: 2px solid rgba(0, 165, 80, 0.14);
     background: transparent;
@@ -1006,31 +989,22 @@ button.ac-button,
 
   .cta-bg-glow-left {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 40%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 40%; height: 100%;
     background: radial-gradient(ellipse at top left, rgba(0, 165, 80, 0.07) 0%, transparent 65%);
     pointer-events: none;
   }
 
-  .cta-bg-glow-right {
-    display: none;
-  }
+  .cta-bg-glow-right { display: none; }
 
   .section-title {
     margin-bottom: 0;
 
-    h2.title {
-      margin-bottom: 20px;
-      line-height: 1.15;
-    }
+    h2.title { margin-bottom: 20px; line-height: 1.15; }
 
     p.subtitle {
       max-width: 580px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 16px;
+      margin: 16px auto 0;
     }
   }
 
@@ -1051,23 +1025,19 @@ button.ac-button,
       gap: 12px;
 
       .feature-icon-box {
-        display: flex;
+        @include flex-center;
         width: 64px;
         height: 64px;
-        justify-content: center;
-        align-items: center;
         border-radius: 16px;
         border: 1px solid rgba(0, 165, 80, 0.25);
         background: rgba(0, 165, 80, 0.08);
-        box-shadow: 0 2px 12px 0 rgba(0, 165, 80, 0.08);
+        box-shadow: 0 2px 12px rgba(0, 165, 80, 0.08);
         color: $ac-primary;
       }
 
       .subtext {
-        color: #081419;
+        color: $color-heading-deep;
         text-align: center;
-        font-family: Roboto;
-        font-style: normal;
         @include text-14-700-20;
       }
     }
@@ -1079,257 +1049,26 @@ button.ac-button,
   }
 }
 
-// Utility classes for 2026 Homepage Hero Area (Right Side)
-.p-32 {
-  padding: 32px !important;
-}
 
-.pos-relative {
-  position: relative !important;
-}
+// =============================================================================
+// Product-Specific Color Theming — Our Products Section
+// =============================================================================
 
-.pos-absolute {
-  position: absolute !important;
-}
-
-.top-50 {
-  top: 50% !important;
-}
-
-.left-50 {
-  left: 35% !important;
-}
-
-// Shifted center left for rings
-.translate-center {
-  transform: translate(-50%, -50%) !important;
-}
-
-.z-1 {
-  z-index: 1 !important;
-}
-
-.z-10 {
-  z-index: 10 !important;
-}
-
-.z-20 {
-  z-index: 20 !important;
-}
-
-// Container for the hero graphic right side
-.h-600 {
-  min-height: 550px !important;
-}
-
-.orbit-circle {
-  border: 1px solid rgba(0, 165, 80, 0.12);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-// Concentric ring sizes
-.w-250 {
-  @include square(220px);
-}
-
-.w-350 {
-  @include square(340px);
-}
-
-.w-450 {
-  @include square(460px);
-}
-
-// Center cloud box size
-.w-96 {
-  @include square(110px);
-}
-
-// Small icons
-.w-36 {
-  @include square(36px);
-  @include flex-center;
-  display: flex !important;
-}
-
-.icon-svg {
-  width: 20px;
-  height: 20px;
-}
-
-// Global shadow for floating feeling
-.shadow-custom {
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06) !important;
-  border: 1px solid rgba(255, 255, 255, 0.9) !important;
-  backdrop-filter: blur(8px) !important;
-}
-
-.border-blue {
-  border: 1px solid #dbeafe !important;
-  box-shadow: 0 12px 35px rgba(50, 100, 255, 0.08) !important;
-}
-
-.border-green {
-  border: 1px solid #bbf7d0 !important;
-  box-shadow: 0 12px 35px rgba(0, 165, 80, 0.08) !important;
-}
-
-.br-16 {
-  border-radius: 16px !important;
-}
-
-.br-12 {
-  border-radius: 12px !important;
-}
-
-.br-8 {
-  border-radius: 8px !important;
-}
-
-// Very tiny label text
-.text-tiny {
-  font-size: 0.6rem !important;
-  letter-spacing: 0.05em;
-  margin-bottom: 2px !important;
-}
-
-// Tighter text for the names
-.text-sm-bold {
-  font-size: 0.85rem !important;
-  font-weight: 700 !important;
-  color: #111827;
-}
-
-// Card offsets
-// Card 1: Observability (Top Right)
-.card-offset-1 {
-  top: 12%;
-  left: 62%;
-  transform: translateX(-20%);
-}
-
-// Card 2: KubeDB (Middle Right)
-.card-offset-2 {
-  top: 38%;
-  left: 75%;
-  transform: translateX(-20%);
-}
-
-// Card 3: Managed Stash (Overlapping center box slightly right/bottom)
-.card-offset-3 {
-  top: 62%;
-  left: 45%;
-  transform: translateX(-20%);
-}
-
-// Card 4: App Mod (Bottom Right)
-.card-offset-4 {
-  top: 82%;
-  left: 68%;
-  transform: translateX(-20%);
-}
-
-// Fluid floating keyframes
-@keyframes float {
-  0% {
-    transform: translate(-20%, 0);
-  }
-
-  50% {
-    transform: translate(-20%, -10px);
-  }
-
-  100% {
-    transform: translate(-20%, 0);
-  }
-}
-
-@keyframes float-center {
-  0% {
-    transform: translate(-50%, -50%);
-  }
-
-  50% {
-    transform: translate(-50%, calc(-50% - 12px));
-  }
-
-  100% {
-    transform: translate(-50%, -50%);
-  }
-}
-
-.anim-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.anim-float-center {
-  animation: float-center 6s ease-in-out infinite;
-}
-
-.anim-float-delay-1 {
-  animation: float 5.5s ease-in-out 1s infinite;
-}
-
-.anim-float-delay-2 {
-  animation: float 6.5s ease-in-out 2s infinite;
-}
-
-.anim-float-delay-3 {
-  animation: float 7s ease-in-out 1.5s infinite;
-}
-
-// services section decorations
-.services-section {
-  position: relative;
-  z-index: 1;
-
-  .services-bg-glow {
-    position: absolute;
-    top: 50px;
-    right: 0;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle at top right, rgba(0, 165, 80, 0.08) 0%, transparent 60%);
-    pointer-events: none;
-    z-index: -1;
-  }
-
-  .service-shape-1 {
-    position: absolute;
-    top: -20px;
-    left: 20px;
-    width: 80px;
-    height: 80px;
-    border-radius: 18px;
-    border: 2px solid rgba(0, 165, 80, 0.2);
-    transform: rotate(-12deg);
-    pointer-events: none;
-    z-index: -1;
-  }
-}
-
-// =====================================================
-// Product-specific color theming — Our Products Section
-// =====================================================
 $prod-theme-colors: (
-  "kubedb":       #4d4dcb,
-  "kubestash":    #5e2dea,
-  "voyager":      #2d2a78,
-  "kubevault":    #326ce5,
-  "ace-platform": #00a550
+  "kubedb":       $kubedb-primary,    // #4d4dcb — from _themes.scss
+  "kubestash":    $stash-primary,     // #5e2dea — from _themes.scss
+  "voyager":      $voyager-primary,   // #2d2a78 — from _themes.scss
+  "kubevault":    $kubevault-primary, // #326ce5 — from _themes.scss
+  "ace-platform": #00a651             // matches :root --ac-primary in _themes.scss
 );
 
 @each $key, $color in $prod-theme-colors {
-  // Active tab indicator
   li.prod-nav-btn.is-prod-#{$key}.is-active a {
     color: $color !important;
     border-bottom-color: $color !important;
   }
 
-  // Product card theming
   .product-card.is-prod-#{$key} {
-    // Header background tint
     .product-header {
       background: rgba($color, 0.04);
 
@@ -1338,19 +1077,16 @@ $prod-theme-colors: (
       }
     }
 
-    // Key features icon box
     .key-features h4 .icon {
       background: rgba($color, 0.1);
       color: $color;
     }
 
-    // Feature check icons
     .feature-item .feature-icon {
       color: $color;
       opacity: 1;
     }
 
-    // Use case items
     .use-case-item {
       color: $color;
       background: rgba($color, 0.03);
@@ -1363,12 +1099,8 @@ $prod-theme-colors: (
       }
     }
 
-    // Stats value color
-    .stat-value {
-      color: $color;
-    }
+    .stat-value { color: $color; }
 
-    // Primary CTA button
     .ac-button.is-primary {
       background: $color !important;
       box-shadow: 0 4px 12px rgba($color, 0.25) !important;
