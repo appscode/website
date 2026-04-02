@@ -248,7 +248,8 @@
         <li class="prod-nav-btn {{ if eq $index 0 }}is-active{{ end }}" data-target="prod-{{ $prod.key }}">
           <a class="{{ if eq $index 0 }}has-text-link has-text-weight-bold{{ else }}has-text-grey font-medium{{ end }}">
             <span class="icon is-small">
-              <iconify-icon {{ printf "icon=%s" $prod.lucide_icon | safeHTMLAttr }} width="16" height="16"></iconify-icon>
+              <iconify-icon {{ printf "icon=%s" $prod.lucide_icon | safeHTMLAttr }} width="16"
+                height="16"></iconify-icon>
             </span>
             <span>{{ $prod.title }}</span>
           </a>
@@ -261,23 +262,27 @@
     <!-- product cards start  -->
     <div class="product-cards-container">
       {{ range $index, $prod := site.Data.products.products_menu.productsMenu }}
-      <div class="product-card prod-content {{ if ne $index 0 }}is-hidden{{ else }}is-active{{ end }}" id="prod-{{ $prod.key }}">
+      <div class="product-card prod-content {{ if ne $index 0 }}is-hidden{{ else }}is-active{{ end }}"
+        id="prod-{{ $prod.key }}">
         <div class="product-header">
           <div class="columns is-vcentered">
             <div class="column">
-              <div class="is-flex is-align-items-center is-gap-16 mb-4">
+              <div class="is-flex is-gap-16 mb-4">
                 <div class="product-logo-box">
                   <img src="{{ $prod.logo }}" alt="{{ $prod.title }}" width="32">
                 </div>
-                <h3 class="title mb-0">{{ $prod.title }}</h3>
+                <div class="is-flex is-flex-direction-column">
+                  <h3 class="title mb-0">{{ $prod.title }}</h3>
+                  <div class="mt-4">
+                    <p class="subtitle mb-2">{{ $prod.tagline }}</p>
+                    <p class="description">{{ $prod.description }}</p>
+                  </div>
+                </div>
               </div>
-              <div class="mt-4">
-                <p class="subtitle mb-2">{{ $prod.tagline }}</p>
-                <p class="description">{{ $prod.description }}</p>
-              </div>
+
             </div>
             <div class="column is-narrow">
-              <div class="buttons is-flex-direction-column is-gap-12">
+              <div class="buttons is-flex-direction-column">
                 <a href="{{ $prod.website_url }}" class="button ac-button is-primary is-fullwidth">
                   <iconify-icon icon="lucide:external-link" width="16" height="16"></iconify-icon>
                   Visit Site

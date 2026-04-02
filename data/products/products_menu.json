@@ -33,121 +33,121 @@
     {
       "key": "kubestash",
       "title": "KubeStash",
-      "tagline": "Backup and Recovery Solution for Kubernetes",
-      "description": "KubeStash is a complete Kubernetes-native disaster recovery solution for backing up and restoring your volumes and databases across any public or private cloud.",
+      "tagline": "Kubernetes native disaster recovery solution",
+      "description": "KubeStash is a cloud-native data backup and recovery solution for Kubernetes workloads, volumes, and databases. It uses Kubernetes Custom Resources to define backup and restore operations in a declarative way.",
       "lucide_icon": "lucide:archive",
       "logo": "/assets/images/products/kubestash/kubestash.png",
       "website_url": "https://kubestash.com",
       "docs_url": "https://kubestash.com/docs",
       "github_url": "https://github.com/kubestash",
       "key_features": [
-        "Declarative API for backup and restore",
-        "Deduplication using content-defined chunking (CDC)",
-        "End-to-end encryption with AES-256",
-        "Policy-based backup for easy management",
-        "Volume Snapshot and disk backup",
-        "Support for various storage backends (S3, GCS, Azure)"
+        "Backup Kubernetes volumes, workloads, and databases",
+        "Schedule automatic backups with retention policies",
+        "Point-in-time recovery for databases",
+        "Cross-cluster and cross-namespace restore",
+        "Encryption at rest and in transit",
+        "Support for multiple storage backends (S3, GCS, Azure, NFS)"
       ],
       "use_cases": [
         "Disaster Recovery",
         "Data Migration",
-        "Audit & Compliance",
-        "Storage Efficiency"
+        "Compliance & Audit",
+        "Testing & Development"
       ],
       "stats": [
-        { "value": "10+", "label": "STORAGE TYPES" },
-        { "value": "20+", "label": "WORKLOADS" },
-        { "value": "5K+", "label": "USERS" }
+        { "value": "1M+", "label": "BACKUPS" },
+        { "value": "Multi-Cloud", "label": "STORAGE" },
+        { "value": "Minutes", "label": "RECOVERY" }
       ]
     },
     {
       "key": "voyager",
       "title": "Voyager",
-      "tagline": "Secure Ingress Controller for Kubernetes",
-      "description": "Voyager is a secure L7 and L4 ingress controller for Kubernetes with Gateway API support. Built on top of battle-tested HAProxy for high availability and performance.",
+      "tagline": "Secure HAProxy Ingress Controller",
+      "description": "Voyager is a HAProxy-backed secure Ingress Controller for Kubernetes. It provides L7 and L4 load balancing, SSL termination, and advanced traffic management capabilities with a cloud-native API.",
       "lucide_icon": "lucide:network",
       "logo": "/assets/images/products/voyager/voyager.png",
       "website_url": "https://voyagermesh.com/",
       "docs_url": "https://voyagermesh.com/docs",
       "github_url": "https://github.com/voyagermesh",
       "key_features": [
-        "L7 and L4 load balancing with HAProxy",
-        "SSL termination and certificate management",
-        "Let's Encrypt integration via HTTP/DNS challenge",
-        "Prometheus ready metrics",
-        "Customized HAProxy configuration via annotations",
-        "Support for sticky sessions and name-based hosting"
+        "HAProxy-powered ingress with 40Gbps+ throughput",
+        "Automatic SSL certificate provisioning with Let's Encrypt",
+        "TCP/UDP load balancing support",
+        "Blue-green and canary deployments",
+        "Rate limiting and authentication",
+        "Web Application Firewall (WAF) integration"
       ],
       "use_cases": [
-        "Edge Load Balance",
-        "SSL/TLS Offloading",
-        "Traffic Management",
-        "API Gateway"
+        "API Gateway",
+        "Microservices",
+        "Edge Routing",
+        "Multi-tenant Apps"
       ],
       "stats": [
-        { "value": "1M+", "label": "REQUESTS/SEC" },
-        { "value": "HA", "label": "AVAILABILITY" },
-        { "value": "L7/L4", "label": "ROUTING" }
+        { "value": "40Gbps+", "label": "THROUGHPUT" },
+        { "value": "99.99%", "label": "UPTIME" },
+        { "value": "1B+/day", "label": "REQUESTS" }
       ]
     },
     {
       "key": "kubevault",
       "title": "KubeVault",
-      "tagline": "Run Production-Grade Vault on Kubernetes",
-      "description": "KubeVault is a Git-Ops ready, production-grade solution for deploying and configuring Hashicorp's Vault on Kubernetes with ease of management.",
+      "tagline": "Kubernetes native secrets management",
+      "description": "KubeVault is a Kubernetes operator for HashiCorp Vault. It provides a secure and automated way to manage secrets, tokens, passwords, certificates, and encryption keys for your Kubernetes applications.",
       "lucide_icon": "lucide:shield-check",
       "logo": "/assets/images/products/kubevault/kubevault.png",
       "website_url": "https://kubevault.com",
       "docs_url": "https://kubevault.com/docs",
       "github_url": "https://github.com/kubevault",
       "key_features": [
-        "Automated initialization and unsealing",
-        "Various storage backends (S3, GCS, Consul, etc.)",
-        "Secret engine management (AWS, Azure, GCP, DB)",
-        "Kubernetes native authentication",
-        "Secret Store CSI Driver integration",
-        "Policy management via CRDs"
+        "Native integration with HashiCorp Vault",
+        "Automated Vault deployment and management",
+        "Dynamic database credentials injection",
+        "PKI certificate management",
+        "Secret rotation and lifecycle management",
+        "Multi-tenancy with policy-based access control"
       ],
       "use_cases": [
-        "Secret Management",
-        "Dynamic Credentials",
-        "Certificate Issuance",
-        "Identity Management"
+        "Secrets Management",
+        "Certificate Management",
+        "Credential Injection",
+        "Compliance"
       ],
       "stats": [
-        { "value": "10+", "label": "AUTH METHODS" },
-        { "value": "8+", "label": "SECRET ENGINES" },
-        { "value": "SECURE", "label": "BY DEFAULT" }
+        { "value": "100K+", "label": "SECRETS" },
+        { "value": "Automated", "label": "ROTATION" },
+        { "value": "SOC 2", "label": "COMPLIANCE" }
       ]
     },
     {
       "key": "ace-platform",
       "title": "ACE Platform",
-      "tagline": "Modern Kubernetes Management Console",
-      "description": "ACE Platform provides a streamlined dashboard for managing all AppsCode products and your Kubernetes clusters through a single pane of glass.",
+      "tagline": "Complete Database as a Service Platform",
+      "description": "AppsCode Container Engine (ACE) is a complete DBaaS platform that enables you to deploy, manage, and scale databases across any cloud. Built on top of KubeDB, it provides a self-service portal for database provisioning.",
       "lucide_icon": "lucide:layout-dashboard",
       "logo": "/assets/images/products/appscode/appscode.svg",
       "website_url": "https://appscode.com",
       "docs_url": "https://appscode.com/docs",
       "github_url": "https://github.com/appscode",
       "key_features": [
-        "Multi-cluster visibility",
-        "Integrated KubeDB management",
-        "Backup monitoring and recovery",
-        "Secret and identity auditing",
-        "Usage and billing tracking",
-        "Role-based access control (RBAC)"
+        "Multi-cloud database deployment (AWS, GCP, Azure)",
+        "Self-service portal for developers",
+        "Automated database lifecycle management",
+        "Cost tracking and optimization",
+        "RBAC and multi-tenancy support",
+        "Enterprise-grade SLA and support"
       ],
       "use_cases": [
-        "Cluster Operations",
-        "Resource Auditing",
-        "SRE Workspace",
-        "Team Collaboration"
+        "Enterprise DBaaS",
+        "Cloud Migration",
+        "Dev/Test Environments",
+        "SaaS Platforms"
       ],
       "stats": [
-        { "value": "SINGLE", "label": "DASHBOARD" },
-        { "value": "ANY", "label": "K8S CLUSTER" },
-        { "value": "24/7", "label": "VISIBILITY" }
+        { "value": "Multi-Cloud", "label": "CLOUDS" },
+        { "value": "Unlimited", "label": "INSTANCES" },
+        { "value": "24/7", "label": "SUPPORT" }
       ]
     }
   ]
