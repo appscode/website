@@ -510,14 +510,29 @@ $homepage-primary-border-strong: rgba(0, 165, 80, 0.3);
           background: #e5e7eb;
           color: #6a7282;
           transition: all 0.15s ease;
+          iconify-icon {
+            display: block;
+          }
         }
       }
     }
   }
-  .services-content {
-    width: calc(100% - 288px);
+  .services-content-wrapper {
+    flex: 1;
     display: flex;
     flex-direction: column;
+  }
+  .services-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &.is-active {
+      display: flex !important;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    &.is-hidden {
+      display: none !important;
+    }
     .content-header {
       background-color: hsla(149, 47%, 92%, 1);
       padding: 32px 40px;
@@ -556,6 +571,9 @@ $homepage-primary-border-strong: rgba(0, 165, 80, 0.3);
         box-shadow:
           0 4px 6px -1px rgba(0, 0, 0, 0.08),
           0 2px 4px -2px rgba(0, 0, 0, 0.08);
+        iconify-icon {
+          display: block;
+        }
       }
       .header-icon-badge {
         position: absolute;

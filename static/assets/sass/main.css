@@ -20166,10 +20166,21 @@ Responsive Classes
           background: #e5e7eb;
           color: #6a7282;
           transition: all 0.15s ease; }
-  .services-wrapper .services-content {
-    width: calc(100% - 288px);
+          .services-wrapper .services-sidebar ul.services-nav li .svc-icon iconify-icon {
+            display: block; }
+  .services-wrapper .services-content-wrapper {
+    flex: 1;
     display: flex;
     flex-direction: column; }
+  .services-wrapper .services-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .services-wrapper .services-content.is-active {
+      display: flex !important;
+      animation: fadeIn 0.3s ease-in-out; }
+    .services-wrapper .services-content.is-hidden {
+      display: none !important; }
     .services-wrapper .services-content .content-header {
       background-color: #e1f4ea;
       padding: 32px 40px;
@@ -20203,6 +20214,8 @@ Responsive Classes
         background: #fff;
         color: var(--ac-primary);
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.08); }
+        .services-wrapper .services-content .content-header .header-icon iconify-icon {
+          display: block; }
       .services-wrapper .services-content .content-header .header-icon-badge {
         position: absolute;
         bottom: -4px;
