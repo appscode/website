@@ -243,219 +243,122 @@
   <div class="container">
     <!-- tabs start  -->
     <div class="tabs is-centered is-medium">
-      <ul>
-        <li class="is-active">
-          <a class="has-text-weight-bold ">
-            <span class="icon is-small has-text-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
-                <path d="M3 12A9 3 0 0 0 21 12"></path>
-              </svg>
-            </span>
-            <span>KubeDB</span>
-          </a>
-        </li>
-
-        <li>
-          <a class="has-text-grey font-medium ">
+      <ul class="is-marginless">
+        {{ range $index, $prod := site.Data.products.products_menu.productsMenu }}
+        <li class="prod-nav-btn {{ if eq $index 0 }}is-active{{ end }}" data-target="prod-{{ $prod.key }}">
+          <a class="{{ if eq $index 0 }}has-text-link has-text-weight-bold{{ else }}has-text-grey font-medium{{ end }}">
             <span class="icon is-small">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect width="20" height="5" x="2" y="3" rx="1"></rect>
-                <path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"></path>
-                <path d="M10 12h4"></path>
-              </svg>
+              <iconify-icon {{ printf "icon=%s" $prod.lucide_icon | safeHTMLAttr }} width="16" height="16"></iconify-icon>
             </span>
-            <span>KubeStash</span>
+            <span>{{ $prod.title }}</span>
           </a>
         </li>
-
-        <li>
-          <a class="has-text-grey font-medium ">
-            <span class="icon is-small">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="16" y="16" width="6" height="6" rx="1"></rect>
-                <rect x="2" y="16" width="6" height="6" rx="1"></rect>
-                <rect x="9" y="2" width="6" height="6" rx="1"></rect>
-                <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
-                <path d="M12 12V8"></path>
-              </svg>
-            </span>
-            <span>Voyager</span>
-          </a>
-        </li>
-
-        <li>
-          <a class="has-text-grey font-medium ">
-            <span class="icon is-small">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                </path>
-              </svg>
-            </span>
-            <span>KubeVault</span>
-          </a>
-        </li>
-
-        <li>
-          <a class="has-text-grey font-medium ">
-            <span class="icon is-small">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
-              </svg>
-            </span>
-            <span>ACE Platform</span>
-          </a>
-        </li>
-
+        {{ end }}
       </ul>
     </div>
     <!-- tabs end  -->
 
     <!-- product cards start  -->
-    <div class="product-card">
-
-      <div class="product-header">
-        <div class="columns">
-          <div class="column is-narrow">
-            <div class="product-logo-box">
-              <img src="https://cdn.appscode.com/images/logo/kubedb/github-moscot.png" alt="KubeDB" width="40">
+    <div class="product-cards-container">
+      {{ range $index, $prod := site.Data.products.products_menu.productsMenu }}
+      <div class="product-card prod-content {{ if ne $index 0 }}is-hidden{{ else }}is-active{{ end }}" id="prod-{{ $prod.key }}">
+        <div class="product-header">
+          <div class="columns is-vcentered">
+            <div class="column">
+              <div class="is-flex is-align-items-center is-gap-16 mb-4">
+                <div class="product-logo-box">
+                  <img src="{{ $prod.logo }}" alt="{{ $prod.title }}" width="32">
+                </div>
+                <h3 class="title mb-0">{{ $prod.title }}</h3>
+              </div>
+              <div class="mt-4">
+                <p class="subtitle mb-2">{{ $prod.tagline }}</p>
+                <p class="description">{{ $prod.description }}</p>
+              </div>
+            </div>
+            <div class="column is-narrow">
+              <div class="buttons is-flex-direction-column is-gap-12">
+                <a href="{{ $prod.website_url }}" class="button ac-button is-primary is-fullwidth">
+                  <iconify-icon icon="lucide:external-link" width="16" height="16"></iconify-icon>
+                  Visit Site
+                </a>
+                <a href="{{ $prod.docs_url }}" class="button ac-button is-black is-fullwidth">
+                  <iconify-icon icon="lucide:book-open" width="16" height="16"></iconify-icon>
+                  Docs
+                </a>
+                <a href="{{ $prod.github_url }}" class="button ac-button is-white is-fullwidth">
+                  <iconify-icon icon="lucide:github" width="16" height="16"></iconify-icon>
+                  GitHub
+                </a>
+              </div>
             </div>
           </div>
-          <div class="column">
-            <h3 class="title">KubeDB</h3>
-            <p class="subtitle">Production-grade
-              database operator for Kubernetes</p>
-            <p class="has-text-grey">KubeDB simplifies and automates routine
-              database tasks such as provisioning, monitoring, backup, and
-              recovery across private and public clouds.</p>
+        </div>
+
+        <div class="p-32">
+          <div class="columns is-variable is-8">
+            <div class="column is-5">
+              <div class="key-features">
+                <h4>
+                  <span class="icon">
+                    <iconify-icon icon="lucide:zap" width="18" height="18"></iconify-icon>
+                  </span>
+                  Key Features
+                </h4>
+                <div class="features-grid">
+                  {{ range $prod.key_features }}
+                  <div class="feature-item">
+                    <span class="feature-icon">
+                      <iconify-icon icon="lucide:check-circle" width="16" height="16"></iconify-icon>
+                    </span>
+                    <span>{{ . }}</span>
+                  </div>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="use-case-numbers-wrapper">
+                <div class="common-use-cases-wrapper">
+                  <h4>Common Use Cases</h4>
+                  <div class="use-cases-grid">
+                    {{ range $prod.use_cases }}
+                    <div class="use-case-item">
+                      {{ . }}
+                    </div>
+                    {{ end }}
+                  </div>
+                </div>
+
+                <div class="numbers-wrapper">
+                  <h4>By the Numbers</h4>
+                  <div class="stats-grid">
+                    {{ range $prod.stats }}
+                    <div class="stat-item">
+                      <div class="stat-value">{{ .value }}</div>
+                      <div class="stat-label">{{ .label }}</div>
+                    </div>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="column is-narrow">
-            <div class="is-flex is-flex-direction-column is-align-items-center is-gap-8">
-              <a class="button ac-button is-fullwidth is-primary">Visit
-                Site</a>
-              <a class="button ac-button is-fullwidth is-white">Docs</a>
-              <a class="button ac-button is-fullwidth is-white">GitHub</a>
+
+          <div class="cta-banner mt-6">
+            <div class="cta-banner-text">
+              <h4>Ready to get started with {{ $prod.title }}?</h4>
+              <p>Explore our documentation or contact our team for a demo.</p>
+            </div>
+            <div class="cta-buttons">
+              <a href="{{ $prod.website_url }}" class="button ac-button is-primary">Get Started</a>
+              <a href="/contact" class="button ac-button is-white">Schedule Demo</a>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="p-32">
-        <div class="key-features-wrapper">
-
-          <div class="key-features-left">
-            <div class="key-features">
-              <h4 class="is-flex is-align-items-center is-gap-8">
-                <span class="icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                    <g clip-path="url(#clip0_16_1225)">
-                      <path
-                        d="M2.99999 10.5C2.85807 10.5005 2.71892 10.4607 2.59871 10.3852C2.4785 10.3098 2.38217 10.2018 2.32091 10.0737C2.25964 9.94572 2.23596 9.80294 2.25262 9.66199C2.26927 9.52105 2.32558 9.38772 2.41499 9.2775L9.83999 1.6275C9.89569 1.56321 9.97159 1.51977 10.0552 1.5043C10.1389 1.48883 10.2253 1.50226 10.3003 1.54238C10.3753 1.5825 10.4344 1.64692 10.468 1.72508C10.5016 1.80324 10.5076 1.89049 10.485 1.9725L9.04499 6.4875C9.00253 6.60114 8.98827 6.72339 9.00344 6.84376C9.0186 6.96412 9.06274 7.07901 9.13206 7.17857C9.20138 7.27813 9.29382 7.35939 9.40145 7.41537C9.50908 7.47135 9.62868 7.50039 9.74999 7.5H15C15.1419 7.49952 15.2811 7.53931 15.4013 7.61477C15.5215 7.69022 15.6178 7.79823 15.6791 7.92626C15.7403 8.05428 15.764 8.19706 15.7474 8.33801C15.7307 8.47895 15.6744 8.61228 15.585 8.7225L8.15999 16.3725C8.1043 16.4368 8.0284 16.4802 7.94476 16.4957C7.86112 16.5112 7.7747 16.4977 7.6997 16.4576C7.62469 16.4175 7.56556 16.3531 7.53199 16.2749C7.49843 16.1968 7.49244 16.1095 7.51499 16.0275L8.95499 11.5125C8.99746 11.3989 9.01172 11.2766 8.99655 11.1562C8.98139 11.0359 8.93725 10.921 8.86793 10.8214C8.7986 10.7219 8.70616 10.6406 8.59854 10.5846C8.49091 10.5286 8.37131 10.4996 8.24999 10.5H2.99999Z"
-                        stroke="#4949A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </g>
-                    <defs>
-                      <clippath id="clip0_16_1225">
-                        <rect width="18" height="18" fill="white" />
-                      </clippath>
-                    </defs>
-                  </svg>
-                </span>
-                Key Features
-              </h4>
-              <ul class="features-list">
-                <li>
-                  <span class="feature-icon"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
-                  <span>Supports 30+ engines: PostgreSQL, MySQL, MongoDB, Redis,
-                    etc.</span>
-                </li>
-                <li>
-                  <span class="feature-icon"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
-                  <span>Automated provisioning, backup, and recovery.</span>
-                </li>
-                <li>
-                  <span class="feature-icon"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
-                  <span>Built-in monitoring with Prometheus and Grafana.</span>
-                </li>
-                <li>
-                  <span class="feature-icon"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
-                  <span>High availability with automatic failover.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="use-case-numbers-wrapper">
-            <div class="common-use-cases-wrapper">
-              <h4>Common Use Cases</h4>
-              <div class="common-use-cases">
-                <div class="single-use-cases">
-                  Database as a Service
-                </div>
-                <div class="single-use-cases">
-                  Multi-tenant Platforms
-                </div>
-                <div class="single-use-cases">
-                  Development & Testing
-                </div>
-                <div class="single-use-cases">
-                  Production Workloads
-                </div>
-              </div>
-
-            </div>
-
-            <div class="cta-content">
-              <h4 class="title is-5 has-text-weight-bold mb-4">By the
-                Numbers</h4>
-              <div class="single-number-wrapper">
-                <div class="single-number">
-                  <div class="strong">30+</div>
-                  <div class="name">
-                    Engines</div>
-                </div>
-                <div class="single-number">
-                  <div class="strong">500+</div>
-                  <div class="name">
-                    Clients</div>
-                </div>
-                <div class="single-number">
-                  <div class="strong">10K+</div>
-                  <div class="name">
-                    Installs</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cta-banner mt-5">
-          <div class="is-flex is-align-items-center is-justify-content-space-between is-fullwidth">
-            <div class="cta-banner-left">
-              <div>
-                <h4 class="title is-5 has-text-weight-bold mb-1">Ready to get
-                  started?</h4>
-                <p class="is-size-6 has-text-grey">Explore our documentation
-                  or contact our team for a demo.</p>
-              </div>
-            </div>
-            <div class="cta-banner-right">
-              <div class="buttons">
-                <button class="button ac-button is-primary">Get
-                  Started</button>
-                <button class="button ac-button is-white">Schedule
-                  Demo</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {{ end }}
     </div>
     <!-- product cards end  -->
   </div>
@@ -802,6 +705,46 @@
 
         // Hide all contents
         serviceContents.forEach(content => {
+          content.classList.add('is-hidden');
+          content.classList.remove('is-active');
+        });
+
+        // Show target content
+        const targetId = btn.getAttribute('data-target');
+        const targetContent = document.getElementById(targetId);
+        if (targetContent) {
+          targetContent.classList.remove('is-hidden');
+          targetContent.classList.add('is-active');
+        }
+      });
+    });
+
+    // Products Tab Logic
+    const prodBtns = document.querySelectorAll('.prod-nav-btn');
+    const prodContents = document.querySelectorAll('.prod-content');
+
+    prodBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active from all buttons
+        prodBtns.forEach(b => {
+          b.classList.remove('is-active');
+          const link = b.querySelector('a');
+          if (link) {
+            link.classList.remove('has-text-link', 'has-text-weight-bold');
+            link.classList.add('has-text-grey', 'font-medium');
+          }
+        });
+
+        // Add active to current
+        btn.classList.add('is-active');
+        const link = btn.querySelector('a');
+        if (link) {
+          link.classList.add('has-text-link', 'has-text-weight-bold');
+          link.classList.remove('has-text-grey', 'font-medium');
+        }
+
+        // Hide all contents
+        prodContents.forEach(content => {
           content.classList.add('is-hidden');
           content.classList.remove('is-active');
         });

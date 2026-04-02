@@ -1,0 +1,154 @@
+{
+  "productsMenu": [
+    {
+      "key": "kubedb",
+      "title": "KubeDB",
+      "tagline": "Production-grade database operator for Kubernetes",
+      "description": "KubeDB simplifies and automates routine database tasks such as provisioning, monitoring, backup, recovery, failure detection, and repair for various popular databases on private and public clouds.",
+      "lucide_icon": "lucide:database",
+      "logo": "https://cdn.appscode.com/images/logo/kubedb/github-moscot.png",
+      "website_url": "https://kubedb.com",
+      "docs_url": "https://kubedb.com/docs",
+      "github_url": "https://github.com/kubedb",
+      "key_features": [
+        "Supports 30+ database engines including PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch",
+        "Automated provisioning, backup, and recovery",
+        "Built-in monitoring with Prometheus and Grafana",
+        "High availability with automatic failover",
+        "Vertical and horizontal scaling",
+        "TLS/SSL encryption support"
+      ],
+      "use_cases": [
+        "Database as a Service",
+        "Multi-tenant Platforms",
+        "Development & Testing",
+        "Production Workloads"
+      ],
+      "stats": [
+        { "value": "30+", "label": "DATABASES" },
+        { "value": "500+", "label": "ENTERPRISES" },
+        { "value": "10K+", "label": "DEPLOYMENTS" }
+      ]
+    },
+    {
+      "key": "kubestash",
+      "title": "KubeStash",
+      "tagline": "Backup and Recovery Solution for Kubernetes",
+      "description": "KubeStash is a complete Kubernetes-native disaster recovery solution for backing up and restoring your volumes and databases across any public or private cloud.",
+      "lucide_icon": "lucide:archive",
+      "logo": "/assets/images/products/kubestash/kubestash.png",
+      "website_url": "https://kubestash.com",
+      "docs_url": "https://kubestash.com/docs",
+      "github_url": "https://github.com/kubestash",
+      "key_features": [
+        "Declarative API for backup and restore",
+        "Deduplication using content-defined chunking (CDC)",
+        "End-to-end encryption with AES-256",
+        "Policy-based backup for easy management",
+        "Volume Snapshot and disk backup",
+        "Support for various storage backends (S3, GCS, Azure)"
+      ],
+      "use_cases": [
+        "Disaster Recovery",
+        "Data Migration",
+        "Audit & Compliance",
+        "Storage Efficiency"
+      ],
+      "stats": [
+        { "value": "10+", "label": "STORAGE TYPES" },
+        { "value": "20+", "label": "WORKLOADS" },
+        { "value": "5K+", "label": "USERS" }
+      ]
+    },
+    {
+      "key": "voyager",
+      "title": "Voyager",
+      "tagline": "Secure Ingress Controller for Kubernetes",
+      "description": "Voyager is a secure L7 and L4 ingress controller for Kubernetes with Gateway API support. Built on top of battle-tested HAProxy for high availability and performance.",
+      "lucide_icon": "lucide:network",
+      "logo": "/assets/images/products/voyager/voyager.png",
+      "website_url": "https://voyagermesh.com/",
+      "docs_url": "https://voyagermesh.com/docs",
+      "github_url": "https://github.com/voyagermesh",
+      "key_features": [
+        "L7 and L4 load balancing with HAProxy",
+        "SSL termination and certificate management",
+        "Let's Encrypt integration via HTTP/DNS challenge",
+        "Prometheus ready metrics",
+        "Customized HAProxy configuration via annotations",
+        "Support for sticky sessions and name-based hosting"
+      ],
+      "use_cases": [
+        "Edge Load Balance",
+        "SSL/TLS Offloading",
+        "Traffic Management",
+        "API Gateway"
+      ],
+      "stats": [
+        { "value": "1M+", "label": "REQUESTS/SEC" },
+        { "value": "HA", "label": "AVAILABILITY" },
+        { "value": "L7/L4", "label": "ROUTING" }
+      ]
+    },
+    {
+      "key": "kubevault",
+      "title": "KubeVault",
+      "tagline": "Run Production-Grade Vault on Kubernetes",
+      "description": "KubeVault is a Git-Ops ready, production-grade solution for deploying and configuring Hashicorp's Vault on Kubernetes with ease of management.",
+      "lucide_icon": "lucide:shield-check",
+      "logo": "/assets/images/products/kubevault/kubevault.png",
+      "website_url": "https://kubevault.com",
+      "docs_url": "https://kubevault.com/docs",
+      "github_url": "https://github.com/kubevault",
+      "key_features": [
+        "Automated initialization and unsealing",
+        "Various storage backends (S3, GCS, Consul, etc.)",
+        "Secret engine management (AWS, Azure, GCP, DB)",
+        "Kubernetes native authentication",
+        "Secret Store CSI Driver integration",
+        "Policy management via CRDs"
+      ],
+      "use_cases": [
+        "Secret Management",
+        "Dynamic Credentials",
+        "Certificate Issuance",
+        "Identity Management"
+      ],
+      "stats": [
+        { "value": "10+", "label": "AUTH METHODS" },
+        { "value": "8+", "label": "SECRET ENGINES" },
+        { "value": "SECURE", "label": "BY DEFAULT" }
+      ]
+    },
+    {
+      "key": "ace-platform",
+      "title": "ACE Platform",
+      "tagline": "Modern Kubernetes Management Console",
+      "description": "ACE Platform provides a streamlined dashboard for managing all AppsCode products and your Kubernetes clusters through a single pane of glass.",
+      "lucide_icon": "lucide:layout-dashboard",
+      "logo": "/assets/images/products/appscode/appscode.svg",
+      "website_url": "https://appscode.com",
+      "docs_url": "https://appscode.com/docs",
+      "github_url": "https://github.com/appscode",
+      "key_features": [
+        "Multi-cluster visibility",
+        "Integrated KubeDB management",
+        "Backup monitoring and recovery",
+        "Secret and identity auditing",
+        "Usage and billing tracking",
+        "Role-based access control (RBAC)"
+      ],
+      "use_cases": [
+        "Cluster Operations",
+        "Resource Auditing",
+        "SRE Workspace",
+        "Team Collaboration"
+      ],
+      "stats": [
+        { "value": "SINGLE", "label": "DASHBOARD" },
+        { "value": "ANY", "label": "K8S CLUSTER" },
+        { "value": "24/7", "label": "VISIBILITY" }
+      ]
+    }
+  ]
+}
