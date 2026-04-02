@@ -19990,7 +19990,7 @@ button.ac-button,
   top: 50% !important; }
 
 .left-50 {
-  left: 35% !important; }
+  left: 65% !important; }
   @media screen and (max-width: 1023px) {
     .left-50 {
       left: 50% !important; } }
@@ -20088,61 +20088,248 @@ button.ac-button,
   color: #111827; }
 
 .card-offset-1 {
-  top: 12%;
-  left: 62%;
-  transform: translateX(-20%); }
+  animation: bubbleOut1 8s linear infinite -0s;
+  animation-fill-mode: both; }
   @media screen and (max-width: 1023px) {
     .card-offset-1 {
       display: none; } }
 
 .card-offset-2 {
-  top: 38%;
-  left: 75%;
-  transform: translateX(-20%); }
+  animation: bubbleOut2 8s linear infinite -1s;
+  animation-fill-mode: both; }
   @media screen and (max-width: 1023px) {
     .card-offset-2 {
       display: none; } }
 
 .card-offset-3 {
-  top: 62%;
-  left: 45%;
-  transform: translateX(-20%); }
+  animation: bubbleOut3 8s linear infinite -2s;
+  animation-fill-mode: both; }
   @media screen and (max-width: 1023px) {
     .card-offset-3 {
       display: none; } }
 
 .card-offset-4 {
-  top: 82%;
-  left: 68%;
-  transform: translateX(-20%); }
+  animation: bubbleOut4 8s linear infinite -3s;
+  animation-fill-mode: both; }
   @media screen and (max-width: 1023px) {
     .card-offset-4 {
       display: none; } }
 
-@keyframes float {
-  0%, 100% {
-    transform: translate(-20%, 0); }
-  50% {
-    transform: translate(-20%, -10px); } }
+.card-offset-5 {
+  animation: bubbleOut5 8s linear infinite -4s;
+  animation-fill-mode: both; }
+  @media screen and (max-width: 1023px) {
+    .card-offset-5 {
+      display: none; } }
+
+.card-offset-6 {
+  animation: bubbleOut6 8s linear infinite -5s;
+  animation-fill-mode: both; }
+  @media screen and (max-width: 1023px) {
+    .card-offset-6 {
+      display: none; } }
+
+.card-offset-7 {
+  animation: bubbleOut7 8s linear infinite -6s;
+  animation-fill-mode: both; }
+  @media screen and (max-width: 1023px) {
+    .card-offset-7 {
+      display: none; } }
+
+.card-offset-8 {
+  animation: bubbleOut8 8s linear infinite -7s;
+  animation-fill-mode: both; }
+  @media screen and (max-width: 1023px) {
+    .card-offset-8 {
+      display: none; } }
+
+@keyframes bubbleOut1 {
+  0% {
+    top: 50%;
+    left: 65%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.2); }
+  15% {
+    opacity: 1;
+    top: 42.4%;
+    left: 64.4%;
+    transform: translateX(-20%) scale(1); }
+  75% {
+    opacity: 1;
+    top: 12%;
+    left: 62%;
+    transform: translateX(-20%) scale(1); }
+  100% {
+    top: -0.6%;
+    left: 61%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8); } }
+@keyframes bubbleOut2 {
+  0% {
+    top: 50%;
+    left: 65%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.2); }
+  15% {
+    opacity: 1;
+    top: 47.6%;
+    left: 67%;
+    transform: translateX(-20%) scale(1); }
+  75% {
+    opacity: 1;
+    top: 38%;
+    left: 75%;
+    transform: translateX(-20%) scale(1); }
+  100% {
+    top: 34%;
+    left: 78.3%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8); } }
+@keyframes bubbleOut3 {
+  0% {
+    top: 50%;
+    left: 65%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.2); }
+  15% {
+    opacity: 1;
+    top: 52.4%;
+    left: 61%;
+    transform: translateX(-20%) scale(1); }
+  75% {
+    opacity: 1;
+    top: 62%;
+    left: 45%;
+    transform: translateX(-20%) scale(1); }
+  100% {
+    top: 66%;
+    left: 38.4%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8); } }
+@keyframes bubbleOut4 {
+  0% {
+    top: 50%;
+    left: 65%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.2); }
+  15% {
+    opacity: 1;
+    top: 56.4%;
+    left: 65.6%;
+    transform: translateX(-20%) scale(1); }
+  75% {
+    opacity: 1;
+    top: 82%;
+    left: 68%;
+    transform: translateX(-20%) scale(1); }
+  100% {
+    top: 92.5%;
+    left: 69%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8); } }
+@keyframes bubbleOut5 {
+  0% {
+    top: 50%;
+    left: 65%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.2); }
+  15% {
+    opacity: 1;
+    top: 45%;
+    left: 62.4%;
+    transform: translateX(-20%) scale(1); }
+  75% {
+    opacity: 1;
+    top: 25%;
+    left: 52%;
+    transform: translateX(-20%) scale(1); }
+  100% {
+    top: 16.7%;
+    left: 47.7%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8); } }
+@keyframes bubbleOut6 {
+  0% {
+    top: 50%;
+    left: 65%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.2); }
+  15% {
+    opacity: 1;
+    top: 50%;
+    left: 69.6%;
+    transform: translateX(-20%) scale(1); }
+  75% {
+    opacity: 1;
+    top: 50%;
+    left: 88%;
+    transform: translateX(-20%) scale(1); }
+  100% {
+    top: 50%;
+    left: 95.6%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8); } }
+@keyframes bubbleOut7 {
+  0% {
+    top: 50%;
+    left: 65%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.2); }
+  15% {
+    opacity: 1;
+    top: 49%;
+    left: 59%;
+    transform: translateX(-20%) scale(1); }
+  75% {
+    opacity: 1;
+    top: 45%;
+    left: 35%;
+    transform: translateX(-20%) scale(1); }
+  100% {
+    top: 43.3%;
+    left: 25%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8); } }
+@keyframes bubbleOut8 {
+  0% {
+    top: 50%;
+    left: 65%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.2); }
+  15% {
+    opacity: 1;
+    top: 58%;
+    left: 63%;
+    transform: translateX(-20%) scale(1); }
+  75% {
+    opacity: 1;
+    top: 90%;
+    left: 55%;
+    transform: translateX(-20%) scale(1); }
+  100% {
+    top: 103.2%;
+    left: 51.7%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8); } }
+@keyframes bubbleXAnimFrames {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(25px); } }
+.bubble-animation-x {
+  animation-iteration-count: infinite;
+  animation-name: bubbleXAnimFrames;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate; }
+
 @keyframes float-center {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(-50%, -50%); }
   50% {
     transform: translate(-50%, calc(-50% - 12px)); } }
-.anim-float {
-  animation: float 6s ease-in-out infinite; }
-
 .anim-float-center {
   animation: float-center 6s ease-in-out infinite; }
-
-.anim-float-delay-1 {
-  animation: float 5.5s ease-in-out 1s infinite; }
-
-.anim-float-delay-2 {
-  animation: float 6.5s ease-in-out 2s infinite; }
-
-.anim-float-delay-3 {
-  animation: float 7s ease-in-out 1.5s infinite; }
 
 .trusted-companies-area {
   background: #fbfbfb; }

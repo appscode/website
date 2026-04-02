@@ -5,9 +5,9 @@
 // =============================================================================
 
 // Primary alpha variants
-$hp-primary-border:        rgba(0, 165, 80, 0.2);
+$hp-primary-border: rgba(0, 165, 80, 0.2);
 $hp-primary-border-strong: rgba(0, 165, 80, 0.3);
-$hp-primary-bg:            rgba(0, 165, 80, 0.1);
+$hp-primary-bg: rgba(0, 165, 80, 0.1);
 
 
 // =============================================================================
@@ -32,11 +32,25 @@ $hp-primary-bg:            rgba(0, 165, 80, 0.1);
 }
 
 // Named text-style shortcuts using _initial-variable.scss font-size tokens
-@mixin text-30-700-36  { @include text-style(30px,               700, 36px); }
-@mixin text-20-700-28  { @include text-style(20px,               700, 28px); }
-@mixin text-16-700-24  { @include text-style($ac-size-6,          700, 24px); }
-@mixin text-14-700-20  { @include text-style($font-size-normal,   700, 20px); }
-@mixin text-48-900-54  { @include text-style(48px,               900, 54px); }
+@mixin text-30-700-36 {
+  @include text-style(30px, 700, 36px);
+}
+
+@mixin text-20-700-28 {
+  @include text-style(20px, 700, 28px);
+}
+
+@mixin text-16-700-24 {
+  @include text-style($ac-size-6, 700, 24px);
+}
+
+@mixin text-14-700-20 {
+  @include text-style($font-size-normal, 700, 20px);
+}
+
+@mixin text-48-900-54 {
+  @include text-style(48px, 900, 54px);
+}
 
 
 // =============================================================================
@@ -47,7 +61,7 @@ button.ac-button,
 .button.ac-button {
   border-radius: 4px !important;
   font-weight: 700 !important;
-  font-size: $font-size-normal !important;    // 14px
+  font-size: $font-size-normal !important; // 14px
   letter-spacing: 0 !important;
   text-transform: uppercase !important;
   transition: all 0.2s ease !important;
@@ -157,7 +171,7 @@ button.ac-button,
 
 .bg-hero-gradient {
   background:
-    radial-gradient(ellipse at top left,    rgba(0, 165, 80, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at top left, rgba(0, 165, 80, 0.08) 0%, transparent 60%),
     radial-gradient(ellipse at bottom right, rgba(0, 165, 80, 0.05) 0%, transparent 50%),
     #fff;
 }
@@ -219,7 +233,10 @@ button.ac-button,
       @include touch {
         font-size: 42px;
         letter-spacing: -0.8px;
-        br { display: none; }
+
+        br {
+          display: none;
+        }
       }
     }
 
@@ -239,7 +256,12 @@ button.ac-button,
       @include touch {
         justify-content: center;
         width: 100%;
-        .ac-button { width: 100%; margin-right: 0 !important; margin-bottom: 12px; }
+
+        .ac-button {
+          width: 100%;
+          margin-right: 0 !important;
+          margin-bottom: 12px;
+        }
       }
     }
   }
@@ -298,76 +320,290 @@ button.ac-button,
 }
 
 // Hero right-side graphic utilities
-.h-600          {
+.h-600 {
   min-height: 550px !important;
+
   @include touch {
     min-height: 350px !important;
     margin-top: 40px;
   }
 }
-.pos-relative   { position: relative !important; }
-.pos-absolute   { position: absolute !important; }
-.top-50         { top: 50% !important; }
-.left-50        {
-  left: 35% !important;
-  @include touch { left: 50% !important; }
+
+.pos-relative {
+  position: relative !important;
 }
-.translate-center { transform: translate(-50%, -50%) !important; }
-.z-1  { z-index: 1 !important; }
-.z-10 { z-index: 10 !important; }
-.z-20 { z-index: 20 !important; }
-.p-32 { padding: 32px !important; }
+
+.pos-absolute {
+  position: absolute !important;
+}
+
+.top-50 {
+  top: 50% !important;
+}
+
+.left-50 {
+  left: 65% !important;
+
+  @include touch {
+    left: 50% !important;
+  }
+}
+
+.translate-center {
+  transform: translate(-50%, -50%) !important;
+}
+
+.z-1 {
+  z-index: 1 !important;
+}
+
+.z-10 {
+  z-index: 10 !important;
+}
+
+.z-20 {
+  z-index: 20 !important;
+}
+
+.p-32 {
+  padding: 32px !important;
+}
 
 // Orbit ring sizes
-.orbit-circle { border: 1px solid rgba(0, 165, 80, 0.12); border-radius: 50%; pointer-events: none; }
+.orbit-circle {
+  border: 1px solid rgba(0, 165, 80, 0.12);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
 .w-450 {
   @include square(460px);
-  @include touch { @include square(320px); }
+
+  @include touch {
+    @include square(320px);
+  }
 }
+
 .w-350 {
   @include square(340px);
-  @include touch { @include square(240px); }
+
+  @include touch {
+    @include square(240px);
+  }
 }
+
 .w-250 {
   @include square(220px);
-  @include touch { @include square(160px); }
+
+  @include touch {
+    @include square(160px);
+  }
 }
-.w-96  { @include square(110px); }
-.w-36  { @include square(36px); @include flex-center; display: flex !important; }
+
+.w-96 {
+  @include square(110px);
+}
+
+.w-36 {
+  @include square(36px);
+  @include flex-center;
+  display: flex !important;
+}
 
 // Floating card visuals
-.icon-svg       { width: 20px; height: 20px; }
-.shadow-custom  { box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06) !important; border: 1px solid rgba(255, 255, 255, 0.9) !important; backdrop-filter: blur(8px) !important; }
-.border-blue    { border: 1px solid #dbeafe !important; box-shadow: 0 12px 35px rgba(50, 100, 255, 0.08) !important; }
-.border-green   { border: 1px solid #bbf7d0 !important; box-shadow: 0 12px 35px rgba(0, 165, 80, 0.08) !important; }
-.br-16 { border-radius: 16px !important; }
-.br-12 { border-radius: 12px !important; }
-.br-8  { border-radius: 8px !important; }
-.text-tiny     { font-size: 0.6rem !important; letter-spacing: 0.05em; margin-bottom: 2px !important; }
-.text-sm-bold  { font-size: 0.85rem !important; font-weight: 700 !important; color: $color-text-dark; }
+.icon-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.shadow-custom {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.border-blue {
+  border: 1px solid #dbeafe !important;
+  box-shadow: 0 12px 35px rgba(50, 100, 255, 0.08) !important;
+}
+
+.border-green {
+  border: 1px solid #bbf7d0 !important;
+  box-shadow: 0 12px 35px rgba(0, 165, 80, 0.08) !important;
+}
+
+.br-16 {
+  border-radius: 16px !important;
+}
+
+.br-12 {
+  border-radius: 12px !important;
+}
+
+.br-8 {
+  border-radius: 8px !important;
+}
+
+.text-tiny {
+  font-size: 0.6rem !important;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px !important;
+}
+
+.text-sm-bold {
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  color: $color-text-dark;
+}
 
 // Floating card positions
-.card-offset-1 { top: 12%; left: 62%; transform: translateX(-20%); @include touch { display: none; } }
-.card-offset-2 { top: 38%; left: 75%; transform: translateX(-20%); @include touch { display: none; } }
-.card-offset-3 { top: 62%; left: 45%; transform: translateX(-20%); @include touch { display: none; } }
-.card-offset-4 { top: 82%; left: 68%; transform: translateX(-20%); @include touch { display: none; } }
+.card-offset-1 {
+  animation: bubbleOut1 8s linear infinite -0s;
+  animation-fill-mode: both;
+  @include touch {
+    display: none;
+  }
+}
 
-// Float animations
-@keyframes float {
-  0%, 100% { transform: translate(-20%, 0); }
-  50%       { transform: translate(-20%, -10px); }
+.card-offset-2 {
+  animation: bubbleOut2 8s linear infinite -1s;
+  animation-fill-mode: both;
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-3 {
+  animation: bubbleOut3 8s linear infinite -2s;
+  animation-fill-mode: both;
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-4 {
+  animation: bubbleOut4 8s linear infinite -3s;
+  animation-fill-mode: both;
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-5 {
+  animation: bubbleOut5 8s linear infinite -4s;
+  animation-fill-mode: both;
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-6 {
+  animation: bubbleOut6 8s linear infinite -5s;
+  animation-fill-mode: both;
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-7 {
+  animation: bubbleOut7 8s linear infinite -6s;
+  animation-fill-mode: both;
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-8 {
+  animation: bubbleOut8 8s linear infinite -7s;
+  animation-fill-mode: both;
+  @include touch {
+    display: none;
+  }
+}
+
+// Center of gravity is at top: 50%, left: 65% (defined by .left-50 token)
+@keyframes bubbleOut1 {
+  0% { top: 50%; left: 65%; opacity: 0; transform: translateX(-20%) scale(0.2); }
+  15% { opacity: 1; top: 42.4%; left: 64.4%; transform: translateX(-20%) scale(1); }
+  75% { opacity: 1; top: 12%; left: 62%; transform: translateX(-20%) scale(1); }
+  100% { top: -0.6%; left: 61%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+}
+
+@keyframes bubbleOut2 {
+  0% { top: 50%; left: 65%; opacity: 0; transform: translateX(-20%) scale(0.2); }
+  15% { opacity: 1; top: 47.6%; left: 67%; transform: translateX(-20%) scale(1); }
+  75% { opacity: 1; top: 38%; left: 75%; transform: translateX(-20%) scale(1); }
+  100% { top: 34%; left: 78.3%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+}
+
+@keyframes bubbleOut3 {
+  0% { top: 50%; left: 65%; opacity: 0; transform: translateX(-20%) scale(0.2); }
+  15% { opacity: 1; top: 52.4%; left: 61%; transform: translateX(-20%) scale(1); }
+  75% { opacity: 1; top: 62%; left: 45%; transform: translateX(-20%) scale(1); }
+  100% { top: 66%; left: 38.4%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+}
+
+@keyframes bubbleOut4 {
+  0% { top: 50%; left: 65%; opacity: 0; transform: translateX(-20%) scale(0.2); }
+  15% { opacity: 1; top: 56.4%; left: 65.6%; transform: translateX(-20%) scale(1); }
+  75% { opacity: 1; top: 82%; left: 68%; transform: translateX(-20%) scale(1); }
+  100% { top: 92.5%; left: 69%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+}
+
+@keyframes bubbleOut5 {
+  0% { top: 50%; left: 65%; opacity: 0; transform: translateX(-20%) scale(0.2); }
+  15% { opacity: 1; top: 45%; left: 62.4%; transform: translateX(-20%) scale(1); }
+  75% { opacity: 1; top: 25%; left: 52%; transform: translateX(-20%) scale(1); }
+  100% { top: 16.7%; left: 47.7%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+}
+
+@keyframes bubbleOut6 {
+  0% { top: 50%; left: 65%; opacity: 0; transform: translateX(-20%) scale(0.2); }
+  15% { opacity: 1; top: 50%; left: 69.6%; transform: translateX(-20%) scale(1); }
+  75% { opacity: 1; top: 50%; left: 88%; transform: translateX(-20%) scale(1); }
+  100% { top: 50%; left: 95.6%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+}
+
+@keyframes bubbleOut7 {
+  0% { top: 50%; left: 65%; opacity: 0; transform: translateX(-20%) scale(0.2); }
+  15% { opacity: 1; top: 49%; left: 59%; transform: translateX(-20%) scale(1); }
+  75% { opacity: 1; top: 45%; left: 35%; transform: translateX(-20%) scale(1); }
+  100% { top: 43.3%; left: 25%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+}
+
+@keyframes bubbleOut8 {
+  0% { top: 50%; left: 65%; opacity: 0; transform: translateX(-20%) scale(0.2); }
+  15% { opacity: 1; top: 58%; left: 63%; transform: translateX(-20%) scale(1); }
+  75% { opacity: 1; top: 90%; left: 55%; transform: translateX(-20%) scale(1); }
+  100% { top: 103.2%; left: 51.7%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+}
+
+@keyframes bubbleXAnimFrames {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(25px); }
+}
+
+.bubble-animation-x {
+  animation-iteration-count: infinite;
+  animation-name: bubbleXAnimFrames;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
 }
 
 @keyframes float-center {
-  0%, 100% { transform: translate(-50%, -50%); }
-  50%       { transform: translate(-50%, calc(-50% - 12px)); }
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  50% {
+    transform: translate(-50%, calc(-50% - 12px));
+  }
 }
 
-.anim-float          { animation: float 6s ease-in-out infinite; }
-.anim-float-center   { animation: float-center 6s ease-in-out infinite; }
-.anim-float-delay-1  { animation: float 5.5s ease-in-out 1s infinite; }
-.anim-float-delay-2  { animation: float 6.5s ease-in-out 2s infinite; }
-.anim-float-delay-3  { animation: float 7s ease-in-out 1.5s infinite; }
+.anim-float-center {
+  animation: float-center 6s ease-in-out infinite;
+}
 
 
 // =============================================================================
@@ -383,7 +619,9 @@ button.ac-button,
     @include text-30-700-36;
     letter-spacing: -0.75px;
 
-    @include touch { font-size: 24px; }
+    @include touch {
+      font-size: 24px;
+    }
   }
 }
 
@@ -393,6 +631,7 @@ button.ac-button,
 // =============================================================================
 
 .products-area {
+
   // Tab navigation
   .tabs {
     border-bottom: 1px solid $color-border-light;
@@ -434,7 +673,9 @@ button.ac-button,
           border-bottom: 2px solid transparent;
           transition: all 0.2s ease;
 
-          span.icon { margin: 0; }
+          span.icon {
+            margin: 0;
+          }
 
           &:hover {
             color: $ac-primary;
@@ -489,7 +730,11 @@ button.ac-button,
       }
 
       .columns {
-        @include touch { display: flex; flex-direction: column; align-items: center; }
+        @include touch {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
       }
 
       .product-logo-box {
@@ -500,11 +745,15 @@ button.ac-button,
         background: #f4f5f7;
         border: 1px solid #e2e8f0;
 
-        @include touch { margin: 0 auto 16px; }
+        @include touch {
+          margin: 0 auto 16px;
+        }
       }
 
       .is-flex-direction-column {
-        @include touch { align-items: center; }
+        @include touch {
+          align-items: center;
+        }
       }
 
       .description {
@@ -513,11 +762,16 @@ button.ac-button,
         line-height: 1.6;
         max-width: 580px;
 
-        @include touch { margin: 0 auto; }
+        @include touch {
+          margin: 0 auto;
+        }
       }
 
       .column.is-narrow {
-        @include touch { width: 100%; margin-top: 24px; }
+        @include touch {
+          width: 100%;
+          margin-top: 24px;
+        }
       }
     }
   }
@@ -581,7 +835,9 @@ button.ac-button,
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
 
-      @include touch { grid-template-columns: 1fr; }
+      @include touch {
+        grid-template-columns: 1fr;
+      }
 
       .use-case-item {
         @include flex-center;
@@ -615,7 +871,9 @@ button.ac-button,
       grid-template-columns: repeat(3, 1fr);
       gap: 16px;
 
-      @include touch { grid-template-columns: 1fr; }
+      @include touch {
+        grid-template-columns: 1fr;
+      }
 
       .stat-item {
         @include flex-center;
@@ -680,9 +938,19 @@ button.ac-button,
       display: flex;
       gap: 12px;
 
-      @include touch { flex-direction: column; width: 100%; .ac-button { width: 100%; } }
+      @include touch {
+        flex-direction: column;
+        width: 100%;
 
-      .ac-button { height: 44px; font-size: $font-size-semi-normal; }
+        .ac-button {
+          width: 100%;
+        }
+      }
+
+      .ac-button {
+        height: 44px;
+        font-size: $font-size-semi-normal;
+      }
     }
   }
 }
@@ -698,7 +966,9 @@ button.ac-button,
   border: 1px solid $hp-primary-border;
   background-color: hsla(240, 33%, 99%, 1);
 
-  @include touch { padding: 32px 20px; }
+  @include touch {
+    padding: 32px 20px;
+  }
 
   h3 {
     color: $color-heading-deep;
@@ -709,7 +979,10 @@ button.ac-button,
     letter-spacing: -0.9px;
     margin-bottom: 16px;
 
-    @include touch { font-size: $ac-size-3; line-height: 1.2; }
+    @include touch {
+      font-size: $ac-size-3;
+      line-height: 1.2;
+    }
   }
 
   p {
@@ -721,10 +994,16 @@ button.ac-button,
     margin-bottom: 32px;
     text-wrap: balance;
 
-    @include touch { font-size: $ac-size-6; }
+    @include touch {
+      font-size: $ac-size-6;
+    }
   }
 
-  .ac-button { @include touch { width: 100%; } }
+  .ac-button {
+    @include touch {
+      width: 100%;
+    }
+  }
 }
 
 
@@ -769,7 +1048,9 @@ button.ac-button,
   background: #fff;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
 
-  @include touch { flex-direction: column; }
+  @include touch {
+    flex-direction: column;
+  }
 
   // Left sidebar navigation
   .services-sidebar {
@@ -808,7 +1089,10 @@ button.ac-button,
         flex-direction: row;
         overflow-x: auto;
         padding-bottom: 8px;
-        &::-webkit-scrollbar { height: 0; }
+
+        &::-webkit-scrollbar {
+          height: 0;
+        }
       }
 
       li {
@@ -844,7 +1128,9 @@ button.ac-button,
             color: $ac-primary;
           }
 
-          span:last-child { color: $color-text-dark; }
+          span:last-child {
+            color: $color-text-dark;
+          }
         }
 
         span:last-child {
@@ -866,7 +1152,9 @@ button.ac-button,
           color: $color-text-muted;
           transition: all 0.15s ease;
 
-          iconify-icon { display: block; }
+          iconify-icon {
+            display: block;
+          }
         }
       }
     }
@@ -884,8 +1172,14 @@ button.ac-button,
     display: flex;
     flex-direction: column;
 
-    &.is-active { display: flex !important; animation: fadeIn 0.3s ease-in-out; }
-    &.is-hidden { display: none !important; }
+    &.is-active {
+      display: flex !important;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    &.is-hidden {
+      display: none !important;
+    }
 
     .content-header {
       padding: 32px 40px;
@@ -895,7 +1189,10 @@ button.ac-button,
       overflow: hidden;
       z-index: 1;
 
-      @include touch { padding: 24px; border-radius: 0; }
+      @include touch {
+        padding: 24px;
+        border-radius: 0;
+      }
 
       .service-shape-2 {
         position: absolute;
@@ -916,7 +1213,12 @@ button.ac-button,
         flex-shrink: 0;
       }
 
-      .is-gap-16 { @include touch { flex-direction: column; text-align: center; } }
+      .is-gap-16 {
+        @include touch {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
 
       .header-icon {
         @include flex-center;
@@ -928,7 +1230,9 @@ button.ac-button,
         color: $ac-primary;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.08);
 
-        iconify-icon { display: block; }
+        iconify-icon {
+          display: block;
+        }
       }
 
       .header-icon-badge {
@@ -966,7 +1270,9 @@ button.ac-button,
     padding: 28px 32px;
     flex: 1;
 
-    @include touch { padding: 20px; }
+    @include touch {
+      padding: 20px;
+    }
 
     h4 {
       @include text-16-700-24;
@@ -987,7 +1293,11 @@ button.ac-button,
       }
     }
 
-    .columns .column.is-6 { @include touch { width: 100%; } }
+    .columns .column.is-6 {
+      @include touch {
+        width: 100%;
+      }
+    }
 
     .single-offering {
       display: flex;
@@ -1050,16 +1360,35 @@ button.ac-button,
       border: 1px solid $color-border-light;
       background: #fff;
 
-      @include touch { flex-direction: column; text-align: center; }
+      @include touch {
+        flex-direction: column;
+        text-align: center;
+      }
 
-      p:first-child { color: $color-text-dark; font-size: $font-size-normal; font-weight: 600; }
-      p:last-child  { color: #6b7280; font-size: $font-size-extra-small; margin-top: 2px; }
+      p:first-child {
+        color: $color-text-dark;
+        font-size: $font-size-normal;
+        font-weight: 600;
+      }
+
+      p:last-child {
+        color: #6b7280;
+        font-size: $font-size-extra-small;
+        margin-top: 2px;
+      }
 
       .buttons {
         flex-shrink: 0;
         margin-bottom: 0;
         gap: 8px;
-        @include touch { width: 100%; .ac-button { width: 100%; } }
+
+        @include touch {
+          width: 100%;
+
+          .ac-button {
+            width: 100%;
+          }
+        }
       }
 
       .service-cta-outline-btn {
@@ -1067,7 +1396,9 @@ button.ac-button,
         color: #374151;
         background: #fff;
 
-        &:hover { border-color: #9ca3af; }
+        &:hover {
+          border-color: #9ca3af;
+        }
       }
     }
   }
@@ -1077,7 +1408,11 @@ button.ac-button,
 .simple-stats-wrapper {
   margin-top: 48px;
 
-  .column { @include touch { margin-bottom: 16px; } }
+  .column {
+    @include touch {
+      margin-bottom: 16px;
+    }
+  }
 
   .stat-card {
     padding: 24px;
@@ -1096,11 +1431,25 @@ button.ac-button,
     color: #00a550;
     margin: 0 auto 8px;
 
-    &.stat-icon-neutral { background: #f3f4f6; color: $color-text-muted; }
+    &.stat-icon-neutral {
+      background: #f3f4f6;
+      color: $color-text-muted;
+    }
   }
 
-  .strong  { color: $color-heading-deep; text-align: center; @include text-30-700-36; }
-  .subtext { color: $color-text-medium; text-align: center; font-size: $font-size-normal; font-weight: 400; line-height: 20px; }
+  .strong {
+    color: $color-heading-deep;
+    text-align: center;
+    @include text-30-700-36;
+  }
+
+  .subtext {
+    color: $color-text-medium;
+    text-align: center;
+    font-size: $font-size-normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
 }
 
 
@@ -1136,62 +1485,75 @@ button.ac-button,
   flex-shrink: 0;
 }
 
-  .final-cta-section {
-    position: relative;
-    overflow: hidden;
-    padding: 100px 0;
-    background:
-      radial-gradient(ellipse 60% 60% at 0% 0%,   rgba(0, 165, 80, 0.1)  0%, transparent 100%),
-      radial-gradient(ellipse 50% 50% at 100% 100%, rgba(0, 165, 80, 0.07) 0%, transparent 100%),
-      #fff;
+.final-cta-section {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+  background:
+    radial-gradient(ellipse 60% 60% at 0% 0%, rgba(0, 165, 80, 0.1) 0%, transparent 100%),
+    radial-gradient(ellipse 50% 50% at 100% 100%, rgba(0, 165, 80, 0.07) 0%, transparent 100%),
+    #fff;
 
-    @include touch { padding: 60px 0; }
+  @include touch {
+    padding: 60px 0;
+  }
 
-    .cta-shape-rect-top {
-      position: absolute;
-      top: 16px; right: 16px;
-      width: 130px; height: 90px;
-      border-radius: 18px;
-      border: 2px solid rgba(0, 165, 80, 0.18);
-      background: transparent;
-      pointer-events: none;
-    }
+  .cta-shape-rect-top {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 130px;
+    height: 90px;
+    border-radius: 18px;
+    border: 2px solid rgba(0, 165, 80, 0.18);
+    background: transparent;
+    pointer-events: none;
+  }
 
-    .cta-shape-circle-bottom {
-      position: absolute;
-      bottom: -48px; left: -48px;
-      width: 130px; height: 130px;
-      border-radius: 50%;
-      border: 2px solid rgba(0, 165, 80, 0.14);
-      background: transparent;
-      pointer-events: none;
-    }
+  .cta-shape-circle-bottom {
+    position: absolute;
+    bottom: -48px;
+    left: -48px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 165, 80, 0.14);
+    background: transparent;
+    pointer-events: none;
+  }
 
-    .cta-bg-glow-left {
-      position: absolute;
-      top: 0; left: 0;
-      width: 40%; height: 100%;
-      background: radial-gradient(ellipse at top left, rgba(0, 165, 80, 0.07) 0%, transparent 65%);
-      pointer-events: none;
-    }
+  .cta-bg-glow-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: radial-gradient(ellipse at top left, rgba(0, 165, 80, 0.07) 0%, transparent 65%);
+    pointer-events: none;
+  }
 
-    .cta-bg-glow-right { display: none; }
+  .cta-bg-glow-right {
+    display: none;
+  }
 
-    .section-title {
-      margin-bottom: 0;
+  .section-title {
+    margin-bottom: 0;
 
-      h2.title {
-        @include text-48-900-54;
-        margin-bottom: 20px;
-        line-height: 1.15;
-        @include touch { font-size: 32px !important; }
+    h2.title {
+      @include text-48-900-54;
+      margin-bottom: 20px;
+      line-height: 1.15;
+
+      @include touch {
+        font-size: 32px !important;
       }
-
-      p.subtitle {
-        max-width: 580px;
-        margin: 16px auto 0;
-      }
     }
+
+    p.subtitle {
+      max-width: 580px;
+      margin: 16px auto 0;
+    }
+  }
 
   .cta-benefits {
     display: flex;
@@ -1202,7 +1564,9 @@ button.ac-button,
     margin-top: 52px;
     margin-bottom: 52px;
 
-    @include touch { gap: 32px; }
+    @include touch {
+      gap: 32px;
+    }
 
     .benifit-item {
       display: flex;
@@ -1233,9 +1597,14 @@ button.ac-button,
   .buttons.is-centered {
     gap: 12px;
     margin-bottom: 32px !important;
+
     @include touch {
       flex-direction: column;
-      .ac-button { width: 100%; margin-right: 0 !important; }
+
+      .ac-button {
+        width: 100%;
+        margin-right: 0 !important;
+      }
     }
   }
 }
@@ -1246,11 +1615,15 @@ button.ac-button,
 // =============================================================================
 
 $prod-theme-colors: (
-  "kubedb":       $kubedb-primary,    // #4d4dcb — from _themes.scss
-  "kubestash":    $stash-primary,     // #5e2dea — from _themes.scss
-  "voyager":      $voyager-primary,   // #2d2a78 — from _themes.scss
-  "kubevault":    $kubevault-primary, // #326ce5 — from _themes.scss
-  "ace-platform": #00a651             // matches :root --ac-primary in _themes.scss
+  "kubedb": $kubedb-primary,
+  // #4d4dcb — from _themes.scss
+  "kubestash": $stash-primary,
+  // #5e2dea — from _themes.scss
+  "voyager": $voyager-primary,
+  // #2d2a78 — from _themes.scss
+  "kubevault": $kubevault-primary,
+  // #326ce5 — from _themes.scss
+  "ace-platform": #00a651 // matches :root --ac-primary in _themes.scss
 );
 
 @each $key, $color in $prod-theme-colors {
@@ -1290,7 +1663,9 @@ $prod-theme-colors: (
       }
     }
 
-    .stat-value { color: $color; }
+    .stat-value {
+      color: $color;
+    }
 
     .ac-button.is-primary {
       background: $color !important;
@@ -1303,4 +1678,3 @@ $prod-theme-colors: (
     }
   }
 }
-
