@@ -25,7 +25,7 @@ button.ac-button,
   border-radius: 4px !important;
   font-weight: 700 !important;
   font-size: 14px !important;
-  letter-spacing: -0.01em !important;
+  letter-spacing: 0 !important;
   text-transform: uppercase !important;
   transition: all 0.2s ease !important;
 
@@ -258,12 +258,12 @@ button.ac-button,
       justify-content: flex-start;
       border-bottom: none;
 
-      li {
+      li.prod-nav-btn {
         margin: 0;
 
         a {
-          font-size: 14px;
-          font-weight: 600;
+          font-size: 16px;
+          font-weight: 700;
           padding: 12px 24px;
           border-bottom: 2px solid transparent;
           color: #6a7282;
@@ -279,15 +279,15 @@ button.ac-button,
           }
 
           &:hover {
-            color: #111827;
+            color: $ac-primary;
             border-bottom-color: #e5e7eb;
           }
         }
 
         &.is-active {
           a {
-            color: #111827;
-            border-bottom: 2px solid #4949a2;
+            color: $ac-primary !important;
+            border-bottom: 2px solid $ac-primary !important;
             padding-bottom: 10px;
           }
         }
@@ -1306,5 +1306,77 @@ button.ac-button,
     transform: rotate(-12deg);
     pointer-events: none;
     z-index: -1;
+  }
+}
+
+// =====================================================
+// Product-specific color theming — Our Products Section
+// =====================================================
+$prod-theme-colors: (
+  "kubedb":       #4d4dcb,
+  "kubestash":    #5e2dea,
+  "voyager":      #2d2a78,
+  "kubevault":    #326ce5,
+  "ace-platform": #00a550
+);
+
+@each $key, $color in $prod-theme-colors {
+  // Active tab indicator
+  li.prod-nav-btn.is-prod-#{$key}.is-active a {
+    color: $color !important;
+    border-bottom-color: $color !important;
+  }
+
+  // Product card theming
+  .product-card.is-prod-#{$key} {
+    // Header background tint
+    .product-header {
+      background: rgba($color, 0.04);
+
+      &::after {
+        background: linear-gradient(135deg, transparent 50%, rgba($color, 0.07) 100%);
+      }
+    }
+
+    // Key features icon box
+    .key-features h4 .icon {
+      background: rgba($color, 0.1);
+      color: $color;
+    }
+
+    // Feature check icons
+    .feature-item .feature-icon {
+      color: $color;
+      opacity: 1;
+    }
+
+    // Use case items
+    .use-case-item {
+      color: $color;
+      background: rgba($color, 0.03);
+      border-color: rgba($color, 0.12);
+
+      &:hover {
+        background: #fff;
+        border-color: rgba($color, 0.3);
+        box-shadow: 0 4px 12px rgba($color, 0.1);
+      }
+    }
+
+    // Stats value color
+    .stat-value {
+      color: $color;
+    }
+
+    // Primary CTA button
+    .ac-button.is-primary {
+      background: $color !important;
+      box-shadow: 0 4px 12px rgba($color, 0.25) !important;
+
+      &:hover {
+        background: darken($color, 8%) !important;
+        box-shadow: 0 6px 16px rgba($color, 0.35) !important;
+      }
+    }
   }
 }

@@ -245,8 +245,9 @@
     <div class="tabs is-centered is-medium">
       <ul class="is-marginless">
         {{ range $index, $prod := site.Data.products.products_menu.productsMenu }}
-        <li class="prod-nav-btn {{ if eq $index 0 }}is-active{{ end }}" data-target="prod-{{ $prod.key }}">
-          <a class="{{ if eq $index 0 }}has-text-link has-text-weight-bold{{ else }}has-text-grey font-medium{{ end }}">
+        <li class="prod-nav-btn is-prod-{{ $prod.key }} {{ if eq $index 0 }}is-active{{ end }}" data-target="prod-{{ $prod.key }}">
+          <a
+            class="{{ if eq $index 0 }}has-text-primary has-text-weight-bold{{ else }}has-text-grey font-medium{{ end }}">
             <span class="icon is-small">
               <iconify-icon {{ printf "icon=%s" $prod.lucide_icon | safeHTMLAttr }} width="16"
                 height="16"></iconify-icon>
@@ -262,7 +263,7 @@
     <!-- product cards start  -->
     <div class="product-cards-container">
       {{ range $index, $prod := site.Data.products.products_menu.productsMenu }}
-      <div class="product-card prod-content {{ if ne $index 0 }}is-hidden{{ else }}is-active{{ end }}"
+      <div class="product-card is-prod-{{ $prod.key }} prod-content {{ if ne $index 0 }}is-hidden{{ else }}is-active{{ end }}"
         id="prod-{{ $prod.key }}">
         <div class="product-header">
           <div class="columns is-vcentered">
@@ -735,7 +736,7 @@
           b.classList.remove('is-active');
           const link = b.querySelector('a');
           if (link) {
-            link.classList.remove('has-text-link', 'has-text-weight-bold');
+            link.classList.remove('has-text-primary', 'has-text-weight-bold');
             link.classList.add('has-text-grey', 'font-medium');
           }
         });
@@ -744,7 +745,7 @@
         btn.classList.add('is-active');
         const link = btn.querySelector('a');
         if (link) {
-          link.classList.add('has-text-link', 'has-text-weight-bold');
+          link.classList.add('has-text-primary', 'has-text-weight-bold');
           link.classList.remove('has-text-grey', 'font-medium');
         }
 
