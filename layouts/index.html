@@ -509,16 +509,17 @@
       </p>
     </div>
 
-    {{ $servicesData := .Site.Data.products.appscode.services }}
+    {{ $servicesData := .Site.Data.services.services_menu.servicesMenu }}
     <div class="services-wrapper">
       <aside class="services-sidebar">
         <p class="type-text mb-8">SERVICE CATEGORIES</p>
 
         <ul class="services-nav">
-          {{ range $index, $cat := $servicesData.categories }}
-          <li class="service-nav-btn {{ if eq $index 0 }}is-active{{ end }}" data-target="service-{{ $cat.id }}">
+          {{ range $index, $cat := $servicesData }}
+          {{ $catID := $cat.title | urlize }}
+          <li class="service-nav-btn {{ if eq $index 0 }}is-active{{ end }}" data-target="service-{{ $catID }}">
             <span class="svc-icon">
-              <iconify-icon {{ printf "icon=%s" $cat.icon | safeHTMLAttr }} width="16" height="16"></iconify-icon>
+              <iconify-icon {{ printf "icon=%s" $cat.lucide_icon | safeHTMLAttr }} width="16" height="16"></iconify-icon>
             </span>
             <span class="{{ if eq $index 0 }}has-text-weight-semibold{{ end }}">{{ $cat.title }}</span>
           </li>
@@ -527,15 +528,16 @@
       </aside>
 
       <div class="services-content-wrapper is-fullwidth">
-        {{ range $index, $cat := $servicesData.categories }}
+        {{ range $index, $cat := $servicesData }}
+        {{ $catID := $cat.title | urlize }}
         <main class="services-content {{ if eq $index 0 }}is-active{{ else }}is-hidden{{ end }}"
-          id="service-{{ $cat.id }}">
+          id="service-{{ $catID }}">
           <div class="content-header">
             <div class="service-shape-2"></div>
             <div class="is-flex is-align-items-center is-gap-16">
               <div class="header-icon-wrapper">
                 <div class="header-icon">
-                  <iconify-icon {{ printf "icon=%s" $cat.icon | safeHTMLAttr }} width="32" height="32"></iconify-icon>
+                  <iconify-icon {{ printf "icon=%s" $cat.lucide_icon | safeHTMLAttr }} width="32" height="32"></iconify-icon>
                 </div>
                 <div class="header-icon-badge">
                   <iconify-icon icon="lucide:check-circle" width="14" height="14"></iconify-icon>
@@ -543,7 +545,7 @@
               </div>
               <div class="is-flex is-flex-direction-column is-gap-8">
                 <h3 class="title mb-8">{{ $cat.title }}</h3>
-                <p class="subtitle">{{ $cat.subtitle }}</p>
+                <p class="subtitle">{{ $cat.description }}</p>
               </div>
             </div>
           </div>
@@ -561,8 +563,8 @@
                     <h3>{{ .title }}</h3>
                   </div>
                   <p>{{ .description }}</p>
-                  <a href="{{ .url }}"
-                    class="is-flex isalign-items-center is-gap-8 is-size-7 has-text-success has-text-weight-bold"><span
+                  <a href="{{ .url | default "#" }}"
+                    class="is-flex is-align-items-center is-gap-8 is-size-7 has-text-success has-text-weight-bold"><span
                       class="has-text-weight-semibold">Learn more</span> <iconify-icon icon="lucide:arrow-right"
                       width="16" height="16"></iconify-icon> </a>
                 </div>
