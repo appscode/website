@@ -518,7 +518,7 @@
           {{ range $index, $cat := $servicesData.categories }}
           <li class="service-nav-btn {{ if eq $index 0 }}is-active{{ end }}" data-target="service-{{ $cat.id }}">
             <span class="svc-icon">
-              <iconify-icon icon="{{ $cat.icon }}" width="16" height="16"></iconify-icon>
+              <iconify-icon {{ printf "icon=%s" $cat.icon | safeHTMLAttr }} width="16" height="16"></iconify-icon>
             </span>
             <span class="{{ if eq $index 0 }}has-text-weight-semibold{{ end }}">{{ $cat.title }}</span>
           </li>
@@ -535,7 +535,7 @@
             <div class="is-flex is-align-items-center is-gap-16">
               <div class="header-icon-wrapper">
                 <div class="header-icon">
-                  <iconify-icon icon="{{ $cat.icon }}" width="32" height="32"></iconify-icon>
+                  <iconify-icon {{ printf "icon=%s" $cat.icon | safeHTMLAttr }} width="32" height="32"></iconify-icon>
                 </div>
                 <div class="header-icon-badge">
                   <iconify-icon icon="lucide:check-circle" width="14" height="14"></iconify-icon>
