@@ -9,27 +9,27 @@
         {
           "title": "Monolith to Microservices",
           "description": "Migrate your legacy applications",
-          "url": "#"
+          "url": "/services/application-modernization/monolith-to-microservices"
         },
         {
           "title": "GitOps Consulting",
           "description": "Streamlining pipeline & deployments",
-          "url": "#"
+          "url": "/services/application-modernization/gitops-consulting"
         },
         {
           "title": "CI/CD & Dev Experience",
           "description": "Bringing automation at every step",
-          "url": "#"
+          "url": "/services/application-modernization/ci-cd-dev-experience"
         },
         {
           "title": "DevOps Toolchain",
           "description": "Tailored DevOps toolset for you!",
-          "url": "#"
+          "url": "/services/application-modernization/devops-toolchain"
         },
         {
           "title": "Argo CD Consulting",
           "description": "Implement & support - we got you!",
-          "url": "#"
+          "url": "/services/application-modernization/argo-cd-consulting"
         }
       ]
     },
@@ -40,14 +40,19 @@
       "icon": "lucide:cloud",
       "offerings": [
         {
-          "title": "Cloud Migration",
-          "description": "Smooth transition to the cloud",
-          "url": "#"
+          "title": "Managed AWS",
+          "description": "Onboarding, management & 24/7 support",
+          "url": "/services/managed-cloud/aws"
         },
         {
-          "title": "Infrastructure Management",
-          "description": "Expert management of your infrastructure",
-          "url": "#"
+          "title": "Managed Azure",
+          "description": "Onboarding, management & 24/7 support",
+          "url": "/services/managed-cloud/azure"
+        },
+        {
+          "title": "Managed GCP",
+          "description": "Onboarding, management & 24/7 support",
+          "url": "/services/managed-cloud/gcp"
         }
       ]
     },
@@ -58,22 +63,52 @@
       "icon": "lucide:layers",
       "offerings": [
         {
-          "title": "Cluster Setup",
-          "description": "Configuring and deploying clusters",
-          "url": "#"
+          "title": "Kubernetes Consulting Services",
+          "description": "The Kubernetes experts",
+          "url": "/services/managed-kubernetes/consulting"
+        },
+        {
+          "title": "AWS EKS Consulting",
+          "description": "AWS Marketplace partner",
+          "url": "/services/managed-kubernetes/eks"
+        },
+        {
+          "title": "Azure AKS Consulting",
+          "description": "Azure Marketplace partner",
+          "url": "/services/managed-kubernetes/aks"
+        },
+        {
+          "title": "Google GKE Consulting",
+          "description": "Google Cloud Marketplace partner",
+          "url": "/services/managed-kubernetes/gke"
+        },
+        {
+          "title": "Red Hat OpenShift Consulting",
+          "description": "Certified Red Hat partner",
+          "url": "/services/managed-kubernetes/openshift"
+        },
+        {
+          "title": "Rancher by SUSE Consulting",
+          "description": "Certified SUSE partner",
+          "url": "/services/managed-kubernetes/rancher"
+        },
+        {
+          "title": "VMware Tanzu Consulting",
+          "description": "VMware Tanzu Consulting",
+          "url": "/services/managed-kubernetes/tanzu"
         }
       ]
     },
     {
       "id": "managed-databases",
       "title": "Managed Databases",
-      "subtitle": "Reliable and scalable database operations",
+      "subtitle": "25+ database engines, fully managed on Kubernetes",
       "icon": "lucide:database",
       "offerings": [
         {
-          "title": "Database Optimization",
-          "description": "Ensuring peak performance",
-          "url": "#"
+          "title": "Managed Databases",
+          "description": "25+ database engines, fully managed on Kubernetes",
+          "url": "/services/managed-databases"
         }
       ]
     },
@@ -84,9 +119,24 @@
       "icon": "lucide:cpu",
       "offerings": [
         {
-          "title": "IDP Development",
-          "description": "Tailored internal platforms",
-          "url": "#"
+          "title": "Platform Engineering Services",
+          "description": "From design to deployment - with you!",
+          "url": "/services/platform-engineering/consulting"
+        },
+        {
+          "title": "Progressive Delivery",
+          "description": "Roll out updates strategically",
+          "url": "/services/platform-engineering/progressive-delivery"
+        },
+        {
+          "title": "CI/CD & Dev Experience",
+          "description": "Bringing automation at every step",
+          "url": "/services/platform-engineering/ci-cd-dev-experience"
+        },
+        {
+          "title": "Bare Metal Provisioning Consulting",
+          "description": "Automated provisioning for on-prem setup",
+          "url": "/services/platform-engineering/bare-metal-provisioning"
         }
       ]
     },
@@ -97,9 +147,19 @@
       "icon": "lucide:box",
       "offerings": [
         {
-          "title": "Custom Development",
-          "description": "Building products from scratch",
-          "url": "#"
+          "title": "Cloud Native Product Development",
+          "description": "On-Demand product engineers",
+          "url": "/services/product-engineering/cloud-native-dev"
+        },
+        {
+          "title": "Monolith to Microservices",
+          "description": "Migrate your legacy applications",
+          "url": "/services/product-engineering/monolith-to-microservices"
+        },
+        {
+          "title": "Extending Kubernetes? Custom Resources & Controllers",
+          "description": "Learn how custom resources & controllers can enhance your Kubernetes environment — Download the 16 page whitepaper",
+          "url": "/resources/whitepapers/extending-kubernetes"
         }
       ]
     },
@@ -110,9 +170,34 @@
       "icon": "lucide:shield",
       "offerings": [
         {
-          "title": "Reliability Consulting",
-          "description": "Best practices for uptime",
-          "url": "#"
+          "title": "SRE Consulting",
+          "description": "The Site Reliability Engineering Experts",
+          "url": "/services/sre/consulting"
+        },
+        {
+          "title": "Service Mesh Consulting",
+          "description": "Onboarding Service Mesh? we got you!",
+          "url": "/services/sre/service-mesh"
+        },
+        {
+          "title": "Cloud Native Networking",
+          "description": "Your cloud networking specialists",
+          "url": "/services/sre/networking"
+        },
+        {
+          "title": "Istio Consulting",
+          "description": "Recognized by Istio for support",
+          "url": "/services/sre/istio"
+        },
+        {
+          "title": "Terraform Consulting",
+          "description": "Keep infra scalable & efficient",
+          "url": "/services/sre/terraform"
+        },
+        {
+          "title": "Backup & Disaster Recovery",
+          "description": "Cloud Native backup & DR experts",
+          "url": "/services/sre/disaster-recovery"
         }
       ]
     },
@@ -123,9 +208,24 @@
       "icon": "lucide:line-chart",
       "offerings": [
         {
-          "title": "Security Audits",
-          "description": "Comprehensive security checks",
-          "url": "#"
+          "title": "DevSecOps Consulting",
+          "description": "Securing your applications",
+          "url": "/services/observability/devsecops"
+        },
+        {
+          "title": "Observability Adoption",
+          "description": "Monitoring, logging, tracing experts",
+          "url": "/services/observability/adoption"
+        },
+        {
+          "title": "Grafana Consulting",
+          "description": "Adoption to support - we do it all",
+          "url": "/services/observability/grafana"
+        },
+        {
+          "title": "Prometheus Consulting",
+          "description": "Monitoring & alerting - sorted!",
+          "url": "/services/observability/prometheus"
         }
       ]
     }
