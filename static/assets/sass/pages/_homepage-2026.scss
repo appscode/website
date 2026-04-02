@@ -19,6 +19,61 @@ $homepage-primary-border-strong: rgba(0, 165, 80, 0.3);
   line-height: 36px;
 }
 
+// Global button overrides for 2026 Homepage
+button.ac-button,
+.button.ac-button {
+  border-radius: 4px !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  letter-spacing: -0.01em !important;
+  text-transform: uppercase !important;
+  transition: all 0.2s ease !important;
+
+  // By default, ac-button sets height manually, let's keep typography consistent
+  &.is-primary {
+    background: #00a550 !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(0, 165, 80, 0.2) !important;
+
+    &:hover {
+      background: darken(#00a550, 6%) !important;
+      transform: translateY(-1px) !important;
+      box-shadow: 0 6px 16px rgba(0, 165, 80, 0.3) !important;
+    }
+  }
+
+  &.is-white {
+    background: #fff !important;
+    border: 1px solid #e2e8f0 !important;
+    color: #334155 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02) !important;
+
+    &:hover {
+      background: #f8fafc !important;
+      border-color: #cbd5e1 !important;
+      color: #0f172a !important;
+      transform: translateY(-1px) !important;
+    }
+  }
+
+  &.is-black {
+    background: #081419 !important;
+    color: #fff !important;
+
+    &:hover {
+      background: #000 !important;
+      transform: translateY(-1px) !important;
+    }
+  }
+
+  iconify-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px;
+  }
+}
+
 @mixin text-20-700-28 {
   font-size: 20px;
   font-weight: 700;
@@ -261,7 +316,7 @@ $homepage-primary-border-strong: rgba(0, 165, 80, 0.3);
       padding: 40px;
       position: relative;
       background: #f8faff;
-      
+
       &::after {
         content: "";
         position: absolute;
@@ -293,9 +348,10 @@ $homepage-primary-border-strong: rgba(0, 165, 80, 0.3);
 
     .subtitle {
       color: #111827;
-      font-size: 15px;
-      font-weight: 700;
+      font-size: 18px;
+      margin-top: 4px;
       margin-bottom: 12px;
+      font-weight: 700;
     }
 
     .description {
@@ -382,40 +438,6 @@ $homepage-primary-border-strong: rgba(0, 165, 80, 0.3);
     }
   }
 
-  .ac-button {
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 700;
-    height: 42px;
-    padding: 0 24px;
-
-    &.is-primary {
-      background: #4949a2;
-      color: #fff;
-      border: none;
-      box-shadow: 0 2px 4px rgba(73, 73, 162, 0.15);
-      &:hover { background: #3c3c8a; }
-    }
-
-    &.is-black {
-      background: #081419;
-      color: #fff;
-      border: none;
-      &:hover { background: #000; }
-    }
-
-    &.is-white {
-      background: #fff;
-      border: 1px solid #e2e8f0;
-      color: #334155;
-      &:hover { background: #f8fafc; border-color: #cbd5e1; }
-    }
-
-    iconify-icon {
-      margin-right: 12px;
-    }
-  }
-
   .key-features-wrapper {
     display: flex;
     justify-content: space-between;
@@ -482,7 +504,7 @@ $homepage-primary-border-strong: rgba(0, 165, 80, 0.3);
           border: 1px solid #f0f2f5;
           border-radius: 8px;
           text-align: center;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 
           .stat-value {
             color: #4949a2;

@@ -17054,9 +17054,11 @@ a.nav-link.active:after {
 .testimonial-area {
   padding: 60px 0 60px; }
   .testimonial-area .section-title h2 {
-    font-size: 48px; }
+    font-size: 48px;
+    text-align: left; }
   .testimonial-area .section-title p {
-    font-size: 18px; }
+    font-size: 18px;
+    text-align: left; }
   .testimonial-area .single-testimonial-item {
     background: #ffffff;
     box-shadow: 0px 2px 30px rgba(44, 60, 74, 0.08);
@@ -19771,6 +19773,51 @@ Responsive Classes
 /*********************************************************************************************
 Responsive Classes
 ***********************************************************************************************/
+button.ac-button,
+.button.ac-button {
+  border-radius: 4px !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  letter-spacing: -0.01em !important;
+  text-transform: uppercase !important;
+  transition: all 0.2s ease !important; }
+  button.ac-button.is-primary,
+  .button.ac-button.is-primary {
+    background: #00a550 !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(0, 165, 80, 0.2) !important; }
+    button.ac-button.is-primary:hover,
+    .button.ac-button.is-primary:hover {
+      background: #008641 !important;
+      transform: translateY(-1px) !important;
+      box-shadow: 0 6px 16px rgba(0, 165, 80, 0.3) !important; }
+  button.ac-button.is-white,
+  .button.ac-button.is-white {
+    background: #fff !important;
+    border: 1px solid #e2e8f0 !important;
+    color: #334155 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02) !important; }
+    button.ac-button.is-white:hover,
+    .button.ac-button.is-white:hover {
+      background: #f8fafc !important;
+      border-color: #cbd5e1 !important;
+      color: #0f172a !important;
+      transform: translateY(-1px) !important; }
+  button.ac-button.is-black,
+  .button.ac-button.is-black {
+    background: #081419 !important;
+    color: #fff !important; }
+    button.ac-button.is-black:hover,
+    .button.ac-button.is-black:hover {
+      background: #000 !important;
+      transform: translateY(-1px) !important; }
+  button.ac-button iconify-icon,
+  .button.ac-button iconify-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px; }
+
 .hero-area-2026 {
   min-height: 100vh;
   display: flex;
@@ -19966,9 +20013,10 @@ Responsive Classes
     margin-bottom: 8px; }
   .products-area .product-card .subtitle {
     color: #111827;
-    font-size: 15px;
-    font-weight: 700;
-    margin-bottom: 12px; }
+    font-size: 18px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    font-weight: 700; }
   .products-area .product-card .description {
     color: #4b5563;
     font-size: 14.5px;
@@ -20028,34 +20076,6 @@ Responsive Classes
     .products-area .cta-banner .cta-buttons .ac-button {
       height: 44px;
       font-size: 15px; }
-.products-area .ac-button {
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 700;
-  height: 42px;
-  padding: 0 24px; }
-  .products-area .ac-button.is-primary {
-    background: #4949a2;
-    color: #fff;
-    border: none;
-    box-shadow: 0 2px 4px rgba(73, 73, 162, 0.15); }
-    .products-area .ac-button.is-primary:hover {
-      background: #3c3c8a; }
-  .products-area .ac-button.is-black {
-    background: #081419;
-    color: #fff;
-    border: none; }
-    .products-area .ac-button.is-black:hover {
-      background: #000; }
-  .products-area .ac-button.is-white {
-    background: #fff;
-    border: 1px solid #e2e8f0;
-    color: #334155; }
-    .products-area .ac-button.is-white:hover {
-      background: #f8fafc;
-      border-color: #cbd5e1; }
-  .products-area .ac-button iconify-icon {
-    margin-right: 12px; }
 .products-area .key-features-wrapper {
   display: flex;
   justify-content: space-between;
