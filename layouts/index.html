@@ -534,7 +534,9 @@
 <!--==================== cta section end  ====================-->
 
 <!--==================== our services area start  ====================-->
-<section class="section-padding">
+<section class="section-padding services-section">
+  <div class="services-bg-glow"></div>
+  <div class="service-shape-1"></div>
   <div class="container">
 
     <div class="section-title has-text-centered">
@@ -547,55 +549,81 @@
       </h2>
 
       <p class="subtitle">
-        Expert services tailored to your application and infrastructure needs
+        From application modernization to managed infrastructure — expert services tailored to your needs
       </p>
     </div>
 
     <div class="services-wrapper">
       <aside class="services-sidebar">
-        <p
-          class="type-text mb-8">Categories</p>
+        <p class="type-text mb-8">SERVICE CATEGORIES</p>
 
         <ul class="services-nav">
           <li class="service-nav-btn is-active">
-            <span class="icon has-text-success">💻</span>
-            <span class="has-text-weight-semibold">App Modernization</span>
+            <span class="svc-icon">
+              <iconify-icon icon="lucide:code-2" width="16" height="16"></iconify-icon>
+            </span>
+            <span class="has-text-weight-semibold">Application Modernization</span>
           </li>
           <li class="service-nav-btn">
-            <span class="icon">☁️</span>
+            <span class="svc-icon">
+              <iconify-icon icon="lucide:cloud" width="16" height="16"></iconify-icon>
+            </span>
             <span>Managed Cloud</span>
           </li>
           <li class="service-nav-btn">
-            <span class="icon">☸️</span>
+            <span class="svc-icon">
+              <iconify-icon icon="lucide:layers" width="16" height="16"></iconify-icon>
+            </span>
             <span>Managed Kubernetes</span>
+          </li>
+          <li class="service-nav-btn">
+            <span class="svc-icon">
+              <iconify-icon icon="lucide:database" width="16" height="16"></iconify-icon>
+            </span>
+            <span>Managed Databases</span>
+          </li>
+          <li class="service-nav-btn">
+            <span class="svc-icon">
+              <iconify-icon icon="lucide:cpu" width="16" height="16"></iconify-icon>
+            </span>
+            <span>Platform Engineering</span>
+          </li>
+          <li class="service-nav-btn">
+            <span class="svc-icon">
+              <iconify-icon icon="lucide:box" width="16" height="16"></iconify-icon>
+            </span>
+            <span>Product Engineering</span>
+          </li>
+          <li class="service-nav-btn">
+            <span class="svc-icon">
+              <iconify-icon icon="lucide:shield" width="16" height="16"></iconify-icon>
+            </span>
+            <span>Site Reliability Engineering</span>
+          </li>
+          <li class="service-nav-btn">
+            <span class="svc-icon">
+              <iconify-icon icon="lucide:bar-chart-2" width="16" height="16"></iconify-icon>
+            </span>
+            <span>Observability &amp; DevSecOps</span>
           </li>
         </ul>
       </aside>
 
       <main class="services-content">
         <div class="content-header">
-          <!-- <div class="effect-grid"></div>
-          <div class="effect-glow"></div> -->
+          <div class="service-shape-2"></div>
           <div class="is-flex is-align-items-center is-gap-16">
-            <div
-              class="is-flex is-align-items-center is-justify-content-center">
-              <div class="header-icon image is-64x64 p-2 has-background-white"
-                class="box is-shadowless">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                  viewBox="0 0 32 32" fill="none">
-                  <path d="M21.333 24L29.333 16L21.333 8" stroke="#00A550"
-                    stroke-width="2.66667" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path d="M10.667 8L2.66699 16L10.667 24" stroke="#00A550"
-                    stroke-width="2.66667" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
+            <div class="header-icon-wrapper">
+              <div class="header-icon">
+                <iconify-icon icon="lucide:code-2" width="32" height="32"></iconify-icon>
+              </div>
+              <div class="header-icon-badge">
+                <iconify-icon icon="lucide:check-circle" width="14" height="14"></iconify-icon>
               </div>
             </div>
             <div class="is-flex is-flex-direction-column is-gap-8">
               <h3 class="title mb-8">Application Modernization</h3>
-              <p
-                class="subtitle">Accelerating your microservices journey</p>
+              <p class="subtitle">Accelerating your application modernization &amp; microservices journey</p>
             </div>
           </div>
         </div>
@@ -604,25 +632,65 @@
           <h4 class="title">Key Offerings</h4>
           <div class="columns is-multiline">
             <div class="column is-6">
-              <div
-                class="single-offering">
-                <h3>Monolith to
-                  Microservices</h3>
-                <p>Migrate legacy
-                  applications to cloud-native.</p>
-                <a class="is-size-7 has-text-success has-text-weight-bold">Learn
-                  more →</a>
+              <div class="single-offering">
+                <div class="offering-check">
+                  <iconify-icon icon="lucide:check-circle" width="20" height="20"></iconify-icon>
+                </div>
+                <h3>Monolith to Microservices</h3>
+                <p>Migrate your legacy applications</p>
+                <a class="is-size-7 has-text-success has-text-weight-bold">Learn more →</a>
               </div>
             </div>
             <div class="column is-6">
-              <div
-                class="single-offering">
+              <div class="single-offering">
+                <div class="offering-check">
+                  <iconify-icon icon="lucide:check-circle" width="20" height="20"></iconify-icon>
+                </div>
                 <h3>GitOps Consulting</h3>
-                <p>Streamlining pipeline
-                  and deployments.</p>
-                <a class="is-size-7 has-text-success has-text-weight-bold">Learn
-                  more →</a>
+                <p>Streamlining pipeline &amp; deployments</p>
+                <a class="is-size-7 has-text-success has-text-weight-bold">Learn more →</a>
               </div>
+            </div>
+            <div class="column is-6">
+              <div class="single-offering">
+                <div class="offering-check">
+                  <iconify-icon icon="lucide:check-circle" width="20" height="20"></iconify-icon>
+                </div>
+                <h3>CI/CD &amp; Dev Experience</h3>
+                <p>Bringing automation at every step</p>
+                <a class="is-size-7 has-text-success has-text-weight-bold">Learn more →</a>
+              </div>
+            </div>
+            <div class="column is-6">
+              <div class="single-offering">
+                <div class="offering-check">
+                  <iconify-icon icon="lucide:check-circle" width="20" height="20"></iconify-icon>
+                </div>
+                <h3>DevOps Toolchain</h3>
+                <p>Tailored DevOps toolset for you!</p>
+                <a class="is-size-7 has-text-success has-text-weight-bold">Learn more →</a>
+              </div>
+            </div>
+            <div class="column is-6">
+              <div class="single-offering">
+                <div class="offering-check">
+                  <iconify-icon icon="lucide:check-circle" width="20" height="20"></iconify-icon>
+                </div>
+                <h3>Argo CD Consulting</h3>
+                <p>Implement &amp; support - we got you!</p>
+                <a class="is-size-7 has-text-success has-text-weight-bold">Learn more →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-cta-bar">
+            <div>
+              <p class="has-text-weight-semibold">Interested in Application Modernization?</p>
+              <p class="is-size-7 has-text-grey">Connect with our experts to discuss your requirements</p>
+            </div>
+            <div class="buttons">
+              <a class="button ac-button is-primary is-small">Schedule Consultation</a>
+              <a class="button is-small service-cta-outline-btn">Learn More</a>
             </div>
           </div>
         </div>
@@ -632,29 +700,29 @@
     <div class="simple-stats-wrapper columns">
       <div class="column is-4">
         <div class="stat-card">
-          <div class="icon-box">🏆</div>
+          <div class="icon-box">
+            <iconify-icon icon="lucide:award" width="24" height="24"></iconify-icon>
+          </div>
           <p class="strong">24/7</p>
-          <p
-            class="subtext">Expert
-            Support</p>
+          <p class="subtext">Expert Support</p>
         </div>
       </div>
       <div class="column is-4">
         <div class="stat-card">
-          <div class="icon-box">⚡</div>
+          <div class="icon-box stat-icon-neutral">
+            <iconify-icon icon="lucide:activity" width="24" height="24"></iconify-icon>
+          </div>
           <p class="strong">99.9%</p>
-          <p
-            class="subtext">SLA
-            Uptime</p>
+          <p class="subtext">SLA Uptime</p>
         </div>
       </div>
       <div class="column is-4">
         <div class="stat-card">
-          <div class="icon-box">🌍</div>
+          <div class="icon-box">
+            <iconify-icon icon="lucide:globe" width="24" height="24"></iconify-icon>
+          </div>
           <p class="strong">500+</p>
-          <p
-            class="subtext">Projects
-            Delivered</p>
+          <p class="subtext">Projects Delivered</p>
         </div>
       </div>
     </div>
