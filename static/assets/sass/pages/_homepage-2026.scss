@@ -36,6 +36,7 @@ $hp-primary-bg:            rgba(0, 165, 80, 0.1);
 @mixin text-20-700-28  { @include text-style(20px,               700, 28px); }
 @mixin text-16-700-24  { @include text-style($ac-size-6,          700, 24px); }
 @mixin text-14-700-20  { @include text-style($font-size-normal,   700, 20px); }
+@mixin text-48-900-54  { @include text-style(48px,               900, 54px); }
 
 
 // =============================================================================
@@ -991,33 +992,50 @@ button.ac-button,
     .single-offering {
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      padding: 18px 20px;
+      gap: 12px;
+      padding: 24px;
       height: 100%;
       border-radius: 12px;
       border: 1.5px solid $color-border-light;
       background: $color-surface-subtle;
-      transition: border-color 0.15s ease;
+      transition: all 0.2s ease;
+      text-decoration: none !important;
 
-      &:hover { border-color: rgba(0, 165, 80, 0.3); }
+      &:hover {
+        border-color: $ac-primary;
+        background: $hp-primary-bg;
+        box-shadow: 0 4px 20px rgba(0, 165, 80, 0.08);
+        transform: translateY(-2px);
+      }
 
       .offering-check {
         color: $ac-primary;
         display: flex;
         line-height: 1;
-        margin-bottom: 2px;
       }
 
-      h3 { color: $color-heading-deep; font-size: $font-size-normal; font-weight: 700; line-height: 20px; }
-      p  { color: $color-text-medium; font-size: $font-size-normal; font-weight: 400; line-height: 20px; flex: 1; }
-      a  {
-        color: $ac-primary;
-        font-size: $font-size-small;
-        font-weight: 600;
-        line-height: 16px;
-        margin-top: 4px;
+      h3 {
+        color: $color-heading-deep;
+        font-size: $font-size-normal;
+        font-weight: 700;
+        line-height: 24px;
+      }
 
-        &:hover { text-decoration: underline; }
+      p {
+        color: $color-text-medium;
+        font-size: $font-size-small;
+        font-weight: 400;
+        line-height: 22px;
+        flex: 1;
+        margin-bottom: 8px;
+      }
+
+      // Learn more indicator
+      .has-text-success {
+        color: $ac-primary !important;
+        font-size: $font-size-tiny;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
       }
     }
 
@@ -1163,6 +1181,7 @@ button.ac-button,
       margin-bottom: 0;
 
       h2.title {
+        @include text-48-900-54;
         margin-bottom: 20px;
         line-height: 1.15;
         @include touch { font-size: 32px !important; }

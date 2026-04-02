@@ -20650,39 +20650,40 @@ button.ac-button,
     .services-wrapper .service-content-body .single-offering {
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      padding: 18px 20px;
+      gap: 12px;
+      padding: 24px;
       height: 100%;
       border-radius: 12px;
       border: 1.5px solid #e5e7eb;
       background: #fafafa;
-      transition: border-color 0.15s ease; }
+      transition: all 0.2s ease;
+      text-decoration: none !important; }
       .services-wrapper .service-content-body .single-offering:hover {
-        border-color: rgba(0, 165, 80, 0.3); }
+        border-color: var(--ac-primary);
+        background: rgba(0, 165, 80, 0.1);
+        box-shadow: 0 4px 20px rgba(0, 165, 80, 0.08);
+        transform: translateY(-2px); }
       .services-wrapper .service-content-body .single-offering .offering-check {
         color: var(--ac-primary);
         display: flex;
-        line-height: 1;
-        margin-bottom: 2px; }
+        line-height: 1; }
       .services-wrapper .service-content-body .single-offering h3 {
         color: #081419;
         font-size: 14px;
         font-weight: 700;
-        line-height: 20px; }
+        line-height: 24px; }
       .services-wrapper .service-content-body .single-offering p {
         color: #4a5565;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
-        flex: 1; }
-      .services-wrapper .service-content-body .single-offering a {
-        color: var(--ac-primary);
         font-size: 13px;
-        font-weight: 600;
-        line-height: 16px;
-        margin-top: 4px; }
-        .services-wrapper .service-content-body .single-offering a:hover {
-          text-decoration: underline; }
+        font-weight: 400;
+        line-height: 22px;
+        flex: 1;
+        margin-bottom: 8px; }
+      .services-wrapper .service-content-body .single-offering .has-text-success {
+        color: var(--ac-primary) !important;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px; }
     .services-wrapper .service-content-body .service-cta-bar {
       display: flex;
       align-items: center;
@@ -20823,6 +20824,9 @@ button.ac-button,
   .final-cta-section .section-title {
     margin-bottom: 0; }
     .final-cta-section .section-title h2.title {
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 54px;
       margin-bottom: 20px;
       line-height: 1.15; }
       @media screen and (max-width: 1023px) {
