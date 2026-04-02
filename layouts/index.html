@@ -103,9 +103,12 @@
       <div class="column is-6 is-hidden-mobile pos-relative h-600">
 
         <!-- Concentric circles -->
-        <div class="pos-absolute top-50 left-50 translate-center orbit-circle w-250 z-1"></div>
-        <div class="pos-absolute top-50 left-50 translate-center orbit-circle w-350 z-1"></div>
-        <div class="pos-absolute top-50 left-50 translate-center orbit-circle w-450 z-1"></div>
+        <div class="pos-absolute top-50 left-50 orbit-circle" style="animation-delay: -0s;"></div>
+        <div class="pos-absolute top-50 left-50 orbit-circle" style="animation-delay: -1.25s;"></div>
+        <div class="pos-absolute top-50 left-50 orbit-circle" style="animation-delay: -2.5s;"></div>
+        <div class="pos-absolute top-50 left-50 orbit-circle" style="animation-delay: -3.75s;"></div>
+        <div class="pos-absolute top-50 left-50 orbit-circle" style="animation-delay: -5s;"></div>
+        <div class="pos-absolute top-50 left-50 orbit-circle" style="animation-delay: -6.25s;"></div>
 
         <!-- Center Cloud Icon -->
         <div
@@ -116,168 +119,34 @@
           </svg>
         </div>
 
-        <!-- Floating Cards -->
-        <div class="pos-absolute card-offset-1 z-1">
-          <div class="bubble-animation-x" style="animation-duration: 2.5s;">
-          <div
-            class="box is-shadowless shadow-custom br-12 has-background-white is-flex is-align-items-center py-2 px-3">
-            <span class="has-background-white-bis has-text-grey mr-3 br-8 w-36">
+        <!-- Floating Cards — data from data/homepage/hero_cards.json -->
+        {{ $cards := (index site.Data.homepage.hero_cards "cards") }}
+        {{ range $i, $card := $cards }}
+        {{ $idx := add $i 1 }}
+        <div class="pos-absolute card-offset-{{ $idx }} z-1">
+          <div class="bubble-animation-x" style="animation-duration: {{ $card.wobble_duration }};">
+          <div class="box is-shadowless shadow-custom {{ $card.border_class }} br-12 has-background-white is-flex is-align-items-center py-2 px-3">
+            <span class="{{ $card.icon_bg }} {{ $card.icon_color }} mr-3 br-8 w-36">
               <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
-                <line x1="18" y1="20" x2="18" y2="10" />
-                <line x1="12" y1="20" x2="12" y2="4" />
-                <line x1="6" y1="20" x2="6" y2="14" />
+                {{ $card.svg | safeHTML }}
               </svg>
             </span>
             <div>
-              <p class="has-text-grey has-text-weight-bold is-uppercase text-tiny">SERVICE</p>
-              <p class="text-sm-bold mb-0">Observability</p>
+              <p class="{{ $card.label_color }} has-text-weight-bold is-uppercase text-tiny">{{ $card.label }}</p>
+              <p class="text-sm-bold mb-0">{{ $card.name }}</p>
             </div>
           </div>
           </div>
         </div>
+        {{ end }}
 
-        <div class="pos-absolute card-offset-2 z-1">
-          <div class="bubble-animation-x" style="animation-duration: 2.8s;">
-          <div
-            class="box is-shadowless shadow-custom border-blue br-12 has-background-white is-flex is-align-items-center py-2 px-3">
-            <span class="has-background-link-light has-text-link mr-3 br-8 w-36">
-              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <ellipse cx="12" cy="5" rx="9" ry="3" />
-                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
-                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
-              </svg>
-            </span>
-            <div>
-              <p class="has-text-link has-text-weight-bold is-uppercase text-tiny">PRODUCT</p>
-              <p class="text-sm-bold mb-0">KubeDB</p>
-            </div>
-          </div>
-          </div>
-        </div>
-
-        <div class="pos-absolute card-offset-3 z-30">
-          <div class="bubble-animation-x" style="animation-duration: 2.2s;">
-          <div
-            class="box is-shadowless shadow-custom border-green br-12 has-background-white is-flex is-align-items-center py-2 px-3">
-            <span class="has-background-success-light has-text-success mr-3 br-8 w-36">
-              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-                <path d="M3 3v5h5" />
-              </svg>
-            </span>
-            <div>
-              <p class="has-text-success has-text-weight-bold is-uppercase text-tiny">SERVICE</p>
-              <p class="text-sm-bold mb-0">Managed Stash</p>
-            </div>
-          </div>
-          </div>
-        </div>
-
-        <div class="pos-absolute card-offset-4 z-1">
-          <div class="bubble-animation-x" style="animation-duration: 2.6s;">
-          <div
-            class="box is-shadowless shadow-custom br-12 has-background-white is-flex is-align-items-center py-2 px-3">
-            <span class="has-background-primary-light has-text-primary mr-3 br-8 w-36">
-              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                <line x1="3" y1="9" x2="21" y2="9" />
-                <line x1="9" y1="21" x2="9" y2="9" />
-              </svg>
-            </span>
-            <div>
-              <p class="has-text-primary has-text-weight-bold is-uppercase text-tiny">SERVICE</p>
-              <p class="text-sm-bold mb-0">App Modernization</p>
-            </div>
-          </div>
-          </div>
-        </div>
-
-        <div class="pos-absolute card-offset-5 z-20">
-          <div class="bubble-animation-x" style="animation-duration: 2.4s;">
-          <div
-            class="box is-shadowless shadow-custom border-orange br-12 has-background-white is-flex is-align-items-center py-2 px-3">
-            <span class="has-background-warning-light has-text-warning mr-3 br-8 w-36">
-              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
-              </svg>
-            </span>
-            <div>
-              <p class="has-text-warning has-text-weight-bold is-uppercase text-tiny">PRODUCT</p>
-              <p class="text-sm-bold mb-0">ACE Platform</p>
-            </div>
-          </div>
-          </div>
-        </div>
-
-        <div class="pos-absolute card-offset-6 z-10">
-          <div class="bubble-animation-x" style="animation-duration: 3.1s;">
-          <div
-            class="box is-shadowless shadow-custom border-pink br-12 has-background-white is-flex is-align-items-center py-2 px-3">
-            <span class="has-background-danger-light has-text-danger mr-3 br-8 w-36">
-              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="18" cy="18" r="3"></circle>
-                <circle cx="6" cy="6" r="3"></circle>
-                <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
-                <line x1="6" y1="9" x2="6" y2="21"></line>
-              </svg>
-            </span>
-            <div>
-              <p class="has-text-danger has-text-weight-bold is-uppercase text-tiny">PRODUCT</p>
-              <p class="text-sm-bold mb-0">Voyager</p>
-            </div>
-          </div>
-          </div>
-        </div>
-
-        <div class="pos-absolute card-offset-7 z-30">
-          <div class="bubble-animation-x" style="animation-duration: 1.9s;">
-          <div
-            class="box is-shadowless shadow-custom border-blue br-12 has-background-white is-flex is-align-items-center py-2 px-3">
-            <span class="has-background-info-light has-text-info mr-3 br-8 w-36">
-              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-              </svg>
-            </span>
-            <div>
-              <p class="has-text-info has-text-weight-bold is-uppercase text-tiny">SERVICE</p>
-              <p class="text-sm-bold mb-0">Managed Data</p>
-            </div>
-          </div>
-          </div>
-        </div>
-
-        <div class="pos-absolute card-offset-8 z-20">
-          <div class="bubble-animation-x" style="animation-duration: 2.7s;">
-          <div
-            class="box is-shadowless shadow-custom border-teal br-12 has-background-white is-flex is-align-items-center py-2 px-3">
-            <span class="has-background-primary-light has-text-primary mr-3 br-8 w-36">
-              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-            </span>
-            <div>
-              <p class="has-text-primary has-text-weight-bold is-uppercase text-tiny">PRODUCT</p>
-              <p class="text-sm-bold mb-0">KubeVault</p>
-            </div>
-          </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
+      </div><!-- end right column -->
+    </div><!-- end columns -->
+  </div><!-- end container -->
+</section><!-- end hero-area-2026 -->
 <!--==================== hero-area end 2026 ====================-->
+
 
 <!--==================== trusted logo area start  ====================-->
 <section class="section-padding trusted-companies-area">

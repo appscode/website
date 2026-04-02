@@ -342,7 +342,7 @@ button.ac-button,
 }
 
 .left-50 {
-  left: 65% !important;
+  left: 55% !important;
 
   @include touch {
     left: 50% !important;
@@ -370,10 +370,20 @@ button.ac-button,
 }
 
 // Orbit ring sizes
+@keyframes ripplePulse {
+  0% { transform: translate(-50%, -50%) scale(0.1); opacity: 0.8; }
+  100% { transform: translate(-50%, -50%) scale(2.2); opacity: 0; }
+}
+
 .orbit-circle {
-  border: 1px solid rgba(0, 165, 80, 0.12);
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(0, 165, 80, 0.4);
   border-radius: 50%;
   pointer-events: none;
+  animation: ripplePulse 7.5s cubic-bezier(0.25, 0.8, 0.5, 1) infinite;
+  animation-fill-mode: both;
+  z-index: 1;
 }
 
 .w-450 {
@@ -418,7 +428,7 @@ button.ac-button,
 
 .shadow-custom {
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06) !important;
-  border: 1px solid rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
   backdrop-filter: blur(8px) !important;
 }
 
@@ -448,134 +458,162 @@ button.ac-button,
   font-size: 0.6rem !important;
   letter-spacing: 0.05em;
   margin-bottom: 2px !important;
+  white-space: nowrap !important;
 }
 
 .text-sm-bold {
   font-size: 0.85rem !important;
   font-weight: 700 !important;
   color: $color-text-dark;
+  white-space: nowrap !important;
 }
 
 // Floating card positions
 .card-offset-1 {
-  animation: bubbleOut1 8s linear infinite -0s;
+  animation: bubbleOut1 9.6s linear infinite -7.2s;
   animation-fill-mode: both;
-  @include touch {
-    display: none;
-  }
+  @include touch { display: none; }
 }
-
 .card-offset-2 {
-  animation: bubbleOut2 8s linear infinite -1s;
+  animation: bubbleOut2 9.6s linear infinite -1.6s;
   animation-fill-mode: both;
-  @include touch {
-    display: none;
-  }
+  @include touch { display: none; }
 }
-
 .card-offset-3 {
-  animation: bubbleOut3 8s linear infinite -2s;
+  animation: bubbleOut3 9.6s linear infinite -5.6s;
   animation-fill-mode: both;
-  @include touch {
-    display: none;
-  }
+  @include touch { display: none; }
 }
-
 .card-offset-4 {
-  animation: bubbleOut4 8s linear infinite -3s;
+  animation: bubbleOut4 9.6s linear infinite -0s;
   animation-fill-mode: both;
-  @include touch {
-    display: none;
-  }
+  @include touch { display: none; }
 }
-
 .card-offset-5 {
-  animation: bubbleOut5 8s linear infinite -4s;
+  animation: bubbleOut5 9.6s linear infinite -4s;
   animation-fill-mode: both;
-  @include touch {
-    display: none;
-  }
+  @include touch { display: none; }
 }
-
 .card-offset-6 {
-  animation: bubbleOut6 8s linear infinite -5s;
+  animation: bubbleOut6 9.6s linear infinite -8s;
   animation-fill-mode: both;
-  @include touch {
-    display: none;
-  }
+  @include touch { display: none; }
 }
-
 .card-offset-7 {
-  animation: bubbleOut7 8s linear infinite -6s;
+  animation: bubbleOut7 9.6s linear infinite -2.4s;
   animation-fill-mode: both;
-  @include touch {
-    display: none;
-  }
+  @include touch { display: none; }
 }
-
 .card-offset-8 {
-  animation: bubbleOut8 8s linear infinite -7s;
+  animation: bubbleOut8 9.6s linear infinite -6.4s;
   animation-fill-mode: both;
-  @include touch {
-    display: none;
-  }
+  @include touch { display: none; }
+}
+.card-offset-9 {
+  animation: bubbleOut9 9.6s linear infinite -0.8s;
+  animation-fill-mode: both;
+  @include touch { display: none; }
+}
+.card-offset-10 {
+  animation: bubbleOut10 9.6s linear infinite -4.8s;
+  animation-fill-mode: both;
+  @include touch { display: none; }
+}
+.card-offset-11 {
+  animation: bubbleOut11 9.6s linear infinite -8.8s;
+  animation-fill-mode: both;
+  @include touch { display: none; }
+}
+.card-offset-12 {
+  animation: bubbleOut12 9.6s linear infinite -3.2s;
+  animation-fill-mode: both;
+  @include touch { display: none; }
+}
+.card-offset-13 {
+  animation: bubbleOut13 9.6s linear infinite -9.2s;
+  animation-fill-mode: both;
+  @include touch { display: none; }
 }
 
-// Center of gravity is at top: 50%, left: 65% (defined by .left-50 token)
+// Center of gravity is at top: 50%, left: 55% (defined by .left-50 token)
+// Travel trajectories mapped strictly to a 12-point compass (30-degree intervals)
 @keyframes bubbleOut1 {
-  0% { top: 50%; left: 65%; opacity: 0; transform: translateX(-20%) scale(0.2); }
-  15% { opacity: 1; top: 42.4%; left: 64.4%; transform: translateX(-20%) scale(1); }
-  75% { opacity: 1; top: 12%; left: 62%; transform: translateX(-20%) scale(1); }
-  100% { top: -0.6%; left: 61%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
+  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  100% { top: -5%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.8); }
 }
-
 @keyframes bubbleOut2 {
-  0% { top: 50%; left: 65%; opacity: 0; transform: translateX(-20%) scale(0.2); }
-  15% { opacity: 1; top: 47.6%; left: 67%; transform: translateX(-20%) scale(1); }
-  75% { opacity: 1; top: 38%; left: 75%; transform: translateX(-20%) scale(1); }
-  100% { top: 34%; left: 78.3%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
+  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  100% { top: 2.4%; left: 82.5%; opacity: 0; transform: translateX(-20%) scale(0.8); }
 }
-
 @keyframes bubbleOut3 {
-  0% { top: 50%; left: 65%; opacity: 0; transform: translateX(-20%) scale(0.2); }
-  15% { opacity: 1; top: 52.4%; left: 61%; transform: translateX(-20%) scale(1); }
-  75% { opacity: 1; top: 62%; left: 45%; transform: translateX(-20%) scale(1); }
-  100% { top: 66%; left: 38.4%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
+  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  100% { top: 22.5%; left: 102.6%; opacity: 0; transform: translateX(-20%) scale(0.8); }
 }
-
 @keyframes bubbleOut4 {
-  0% { top: 50%; left: 65%; opacity: 0; transform: translateX(-20%) scale(0.2); }
-  15% { opacity: 1; top: 56.4%; left: 65.6%; transform: translateX(-20%) scale(1); }
-  75% { opacity: 1; top: 82%; left: 68%; transform: translateX(-20%) scale(1); }
-  100% { top: 92.5%; left: 69%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
+  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  100% { top: 50%; left: 110%; opacity: 0; transform: translateX(-20%) scale(0.8); }
 }
-
 @keyframes bubbleOut5 {
-  0% { top: 50%; left: 65%; opacity: 0; transform: translateX(-20%) scale(0.2); }
-  15% { opacity: 1; top: 45%; left: 62.4%; transform: translateX(-20%) scale(1); }
-  75% { opacity: 1; top: 25%; left: 52%; transform: translateX(-20%) scale(1); }
-  100% { top: 16.7%; left: 47.7%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
+  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  100% { top: 77.5%; left: 102.6%; opacity: 0; transform: translateX(-20%) scale(0.8); }
 }
-
 @keyframes bubbleOut6 {
-  0% { top: 50%; left: 65%; opacity: 0; transform: translateX(-20%) scale(0.2); }
-  15% { opacity: 1; top: 50%; left: 69.6%; transform: translateX(-20%) scale(1); }
-  75% { opacity: 1; top: 50%; left: 88%; transform: translateX(-20%) scale(1); }
-  100% { top: 50%; left: 95.6%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
+  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  100% { top: 97.6%; left: 82.5%; opacity: 0; transform: translateX(-20%) scale(0.8); }
 }
-
 @keyframes bubbleOut7 {
-  0% { top: 50%; left: 65%; opacity: 0; transform: translateX(-20%) scale(0.2); }
-  15% { opacity: 1; top: 49%; left: 59%; transform: translateX(-20%) scale(1); }
-  75% { opacity: 1; top: 45%; left: 35%; transform: translateX(-20%) scale(1); }
-  100% { top: 43.3%; left: 25%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
+  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  100% { top: 105%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.8); }
 }
-
 @keyframes bubbleOut8 {
-  0% { top: 50%; left: 65%; opacity: 0; transform: translateX(-20%) scale(0.2); }
-  15% { opacity: 1; top: 58%; left: 63%; transform: translateX(-20%) scale(1); }
-  75% { opacity: 1; top: 90%; left: 55%; transform: translateX(-20%) scale(1); }
-  100% { top: 103.2%; left: 51.7%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
+  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  100% { top: 97.6%; left: 27.5%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+}
+@keyframes bubbleOut9 {
+  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
+  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  100% { top: 77.5%; left: 7.4%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+}
+@keyframes bubbleOut10 {
+  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
+  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  100% { top: 50%; left: 0%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+}
+@keyframes bubbleOut11 {
+  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
+  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  100% { top: 22.5%; left: 7.4%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+}
+@keyframes bubbleOut12 {
+  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
+  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  100% { top: 2.4%; left: 27.5%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+}
+@keyframes bubbleOut13 {
+  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
+  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
+  100% { top: 3%; left: 72%; opacity: 0; transform: translateX(-20%) scale(0.8); }
 }
 
 @keyframes bubbleXAnimFrames {
