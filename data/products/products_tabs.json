@@ -1,12 +1,12 @@
 {
-  "productsMenu": [
+  "productsTabs": [
     {
       "key": "kubedb",
       "title": "KubeDB",
       "tagline": "Production-grade database operator for Kubernetes",
       "description": "KubeDB simplifies and automates routine database tasks such as provisioning, monitoring, backup, recovery, failure detection, and repair for various popular databases on private and public clouds.",
       "lucide_icon": "lucide:database",
-      "logo": "https://cdn.appscode.com/images/logo/kubedb/github-moscot.png",
+      "logo": "/assets/images/products/kubedb/kubedb-512x512_1.svg",
       "website_url": "https://kubedb.com",
       "docs_url": "https://kubedb.com/docs",
       "github_url": "https://github.com/kubedb",
@@ -25,9 +25,18 @@
         "Production Workloads"
       ],
       "stats": [
-        { "value": "30+", "label": "DATABASES" },
-        { "value": "500+", "label": "ENTERPRISES" },
-        { "value": "10K+", "label": "DEPLOYMENTS" }
+        {
+          "value": "30+",
+          "label": "DATABASES"
+        },
+        {
+          "value": "500+",
+          "label": "ENTERPRISES"
+        },
+        {
+          "value": "10K+",
+          "label": "DEPLOYMENTS"
+        }
       ]
     },
     {
@@ -36,7 +45,7 @@
       "tagline": "Kubernetes native disaster recovery solution",
       "description": "KubeStash is a cloud-native data backup and recovery solution for Kubernetes workloads, volumes, and databases. It uses Kubernetes Custom Resources to define backup and restore operations in a declarative way.",
       "lucide_icon": "lucide:archive",
-      "logo": "/assets/images/products/kubestash/kubestash.png",
+      "logo": "/assets/images/products/kubestash/kubestash-512x512.png",
       "website_url": "https://kubestash.com",
       "docs_url": "https://kubestash.com/docs",
       "github_url": "https://github.com/kubestash",
@@ -55,9 +64,18 @@
         "Testing & Development"
       ],
       "stats": [
-        { "value": "1M+", "label": "BACKUPS" },
-        { "value": "Multi-Cloud", "label": "STORAGE" },
-        { "value": "Minutes", "label": "RECOVERY" }
+        {
+          "value": "1M+",
+          "label": "BACKUPS"
+        },
+        {
+          "value": "Multi-Cloud",
+          "label": "STORAGE"
+        },
+        {
+          "value": "Minutes",
+          "label": "RECOVERY"
+        }
       ]
     },
     {
@@ -66,7 +84,7 @@
       "tagline": "Secure HAProxy Ingress Controller",
       "description": "Voyager is a HAProxy-backed secure Ingress Controller for Kubernetes. It provides L7 and L4 load balancing, SSL termination, and advanced traffic management capabilities with a cloud-native API.",
       "lucide_icon": "lucide:network",
-      "logo": "/assets/images/products/voyager/voyager.png",
+      "logo": "/assets/images/products/voyager/voyager-512x512.svg",
       "website_url": "https://voyagermesh.com/",
       "docs_url": "https://voyagermesh.com/docs",
       "github_url": "https://github.com/voyagermesh",
@@ -85,9 +103,18 @@
         "Multi-tenant Apps"
       ],
       "stats": [
-        { "value": "40Gbps+", "label": "THROUGHPUT" },
-        { "value": "99.99%", "label": "UPTIME" },
-        { "value": "1B+/day", "label": "REQUESTS" }
+        {
+          "value": "40Gbps+",
+          "label": "THROUGHPUT"
+        },
+        {
+          "value": "99.99%",
+          "label": "UPTIME"
+        },
+        {
+          "value": "1B+/day",
+          "label": "REQUESTS"
+        }
       ]
     },
     {
@@ -96,7 +123,7 @@
       "tagline": "Kubernetes native secrets management",
       "description": "KubeVault is a Kubernetes operator for HashiCorp Vault. It provides a secure and automated way to manage secrets, tokens, passwords, certificates, and encryption keys for your Kubernetes applications.",
       "lucide_icon": "lucide:shield-check",
-      "logo": "/assets/images/products/kubevault/kubevault.png",
+      "logo": "/assets/images/products/kubevault/kubevault-512x512.svg",
       "website_url": "https://kubevault.com",
       "docs_url": "https://kubevault.com/docs",
       "github_url": "https://github.com/kubevault",
@@ -115,9 +142,18 @@
         "Compliance"
       ],
       "stats": [
-        { "value": "100K+", "label": "SECRETS" },
-        { "value": "Automated", "label": "ROTATION" },
-        { "value": "SOC 2", "label": "COMPLIANCE" }
+        {
+          "value": "100K+",
+          "label": "SECRETS"
+        },
+        {
+          "value": "Automated",
+          "label": "ROTATION"
+        },
+        {
+          "value": "SOC 2",
+          "label": "COMPLIANCE"
+        }
       ]
     },
     {
@@ -126,7 +162,7 @@
       "tagline": "Complete Database as a Service Platform",
       "description": "AppsCode Container Engine (ACE) is a complete DBaaS platform that enables you to deploy, manage, and scale databases across any cloud. Built on top of KubeDB, it provides a self-service portal for database provisioning.",
       "lucide_icon": "lucide:layout-dashboard",
-      "logo": "/assets/images/products/appscode/appscode.svg",
+      "logo": "/assets/images/products/appscode/appscode-512x512.svg",
       "website_url": "https://appscode.com",
       "docs_url": "https://appscode.com/docs",
       "github_url": "https://github.com/appscode",
@@ -145,9 +181,18 @@
         "SaaS Platforms"
       ],
       "stats": [
-        { "value": "Multi-Cloud", "label": "CLOUDS" },
-        { "value": "Unlimited", "label": "INSTANCES" },
-        { "value": "24/7", "label": "SUPPORT" }
+        {
+          "value": "Multi-Cloud",
+          "label": "CLOUDS"
+        },
+        {
+          "value": "Unlimited",
+          "label": "INSTANCES"
+        },
+        {
+          "value": "24/7",
+          "label": "SUPPORT"
+        }
       ]
     }
   ]

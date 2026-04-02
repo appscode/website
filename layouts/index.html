@@ -244,8 +244,9 @@
     <!-- tabs start  -->
     <div class="tabs is-centered is-medium">
       <ul class="is-marginless">
-        {{ range $index, $prod := site.Data.products.products_menu.productsMenu }}
-        <li class="prod-nav-btn is-prod-{{ $prod.key }} {{ if eq $index 0 }}is-active{{ end }}" data-target="prod-{{ $prod.key }}">
+        {{ range $index, $prod := site.Data.products.products_tabs.productsTabs }}
+        <li class="prod-nav-btn is-prod-{{ $prod.key }} {{ if eq $index 0 }}is-active{{ end }}"
+          data-target="prod-{{ $prod.key }}">
           <a
             class="{{ if eq $index 0 }}has-text-primary has-text-weight-bold{{ else }}has-text-grey font-medium{{ end }}">
             <span class="icon is-small">
@@ -262,8 +263,9 @@
 
     <!-- product cards start  -->
     <div class="product-cards-container">
-      {{ range $index, $prod := site.Data.products.products_menu.productsMenu }}
-      <div class="product-card is-prod-{{ $prod.key }} prod-content {{ if ne $index 0 }}is-hidden{{ else }}is-active{{ end }}"
+      {{ range $index, $prod := site.Data.products.products_tabs.productsTabs }}
+      <div
+        class="product-card is-prod-{{ $prod.key }} prod-content {{ if ne $index 0 }}is-hidden{{ else }}is-active{{ end }}"
         id="prod-{{ $prod.key }}">
         <div class="product-header">
           <div class="columns is-vcentered">
@@ -490,8 +492,10 @@
                 <p class="is-size-7 has-text-grey">Connect with our experts to discuss your requirements</p>
               </div>
               <div class="buttons">
-                <a href="{{ site.Params.domain_appscode }}/contact" class="button ac-button is-primary is-small">Schedule Consultation</a>
-                <a href="{{ site.Params.docs_url }}" class="button ac-button is-small service-cta-outline-btn">Documentation</a>
+                <a href="{{ site.Params.domain_appscode }}/contact"
+                  class="button ac-button is-primary is-small">Schedule Consultation</a>
+                <a href="{{ site.Params.docs_url }}"
+                  class="button ac-button is-small service-cta-outline-btn">Documentation</a>
               </div>
             </div>
           </div>
