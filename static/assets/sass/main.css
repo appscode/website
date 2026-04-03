@@ -16832,7 +16832,8 @@ a.nav-link.active:after {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 46px; }
+    height: 46px;
+    gap: 4px; }
     @media screen and (max-width: 768px) {
       .button.ac-button {
         height: 44px; } }
