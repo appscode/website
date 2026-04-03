@@ -1480,6 +1480,11 @@ button.ac-button,
     border-right: 1px solid $color-border-light;
     border-radius: 14px 0 0 14px;
 
+    @include desktop-only {
+      width: 268px;
+      min-width: 268px;
+    }
+
     @include touch {
       width: 100%;
       min-width: 100%;
@@ -1803,10 +1808,7 @@ button.ac-button,
         margin-bottom: 0;
         gap: 8px;
 
-        @include desktop-only {
-          flex-direction: column;
-          align-items: end;
-        }
+        
         @include touch {
           flex-direction: column;
           align-items: end;
