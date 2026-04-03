@@ -21010,7 +21010,7 @@ button.ac-button,
         line-height: 24px; }
       .services-wrapper .service-content-body .single-offering p {
         color: #4a5565;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 22px;
         flex: 1;
@@ -21046,7 +21046,11 @@ button.ac-button,
         flex-shrink: 0;
         margin-bottom: 0;
         gap: 8px; }
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 1024px) and (max-width: 1215px) {
+          .services-wrapper .service-content-body .service-cta-bar .buttons {
+            flex-direction: column;
+            align-items: end; } }
+        @media screen and (max-width: 1023px) {
           .services-wrapper .service-content-body .service-cta-bar .buttons {
             flex-direction: column;
             align-items: end; } }
