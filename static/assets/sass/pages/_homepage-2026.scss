@@ -371,8 +371,15 @@ button.ac-button,
 
 // Orbit ring sizes
 @keyframes ripplePulse {
-  0% { transform: translate(-50%, -50%) scale(0.1); opacity: 0.8; }
-  100% { transform: translate(-50%, -50%) scale(2.2); opacity: 0; }
+  0% {
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(2.2);
+    opacity: 0;
+  }
 }
 
 .orbit-circle {
@@ -472,153 +479,468 @@ button.ac-button,
 .card-offset-1 {
   animation: bubbleOut1 9.6s linear infinite -7.2s;
   animation-fill-mode: both;
-  @include touch { display: none; }
+
+  @include touch {
+    display: none;
+  }
 }
+
 .card-offset-2 {
   animation: bubbleOut2 9.6s linear infinite -1.6s;
   animation-fill-mode: both;
-  @include touch { display: none; }
+
+  @include touch {
+    display: none;
+  }
 }
+
 .card-offset-3 {
   animation: bubbleOut3 9.6s linear infinite -5.6s;
   animation-fill-mode: both;
-  @include touch { display: none; }
+
+  @include touch {
+    display: none;
+  }
 }
+
 .card-offset-4 {
   animation: bubbleOut4 9.6s linear infinite -0s;
   animation-fill-mode: both;
-  @include touch { display: none; }
+
+  @include touch {
+    display: none;
+  }
 }
+
 .card-offset-5 {
   animation: bubbleOut5 9.6s linear infinite -4s;
   animation-fill-mode: both;
-  @include touch { display: none; }
+
+  @include touch {
+    display: none;
+  }
 }
+
 .card-offset-6 {
   animation: bubbleOut6 9.6s linear infinite -8s;
   animation-fill-mode: both;
-  @include touch { display: none; }
+
+  @include touch {
+    display: none;
+  }
 }
+
 .card-offset-7 {
   animation: bubbleOut7 9.6s linear infinite -2.4s;
   animation-fill-mode: both;
-  @include touch { display: none; }
+
+  @include touch {
+    display: none;
+  }
 }
+
 .card-offset-8 {
   animation: bubbleOut8 9.6s linear infinite -6.4s;
   animation-fill-mode: both;
-  @include touch { display: none; }
+
+  @include touch {
+    display: none;
+  }
 }
+
 .card-offset-9 {
   animation: bubbleOut9 9.6s linear infinite -0.8s;
   animation-fill-mode: both;
-  @include touch { display: none; }
+
+  @include touch {
+    display: none;
+  }
 }
+
 .card-offset-10 {
   animation: bubbleOut10 9.6s linear infinite -4.8s;
   animation-fill-mode: both;
-  @include touch { display: none; }
+
+  @include touch {
+    display: none;
+  }
 }
+
 .card-offset-11 {
   animation: bubbleOut11 9.6s linear infinite -8.8s;
   animation-fill-mode: both;
-  @include touch { display: none; }
+
+  @include touch {
+    display: none;
+  }
 }
+
 .card-offset-12 {
   animation: bubbleOut12 9.6s linear infinite -3.2s;
   animation-fill-mode: both;
-  @include touch { display: none; }
+
+  @include touch {
+    display: none;
+  }
 }
+
 .card-offset-13 {
   animation: bubbleOut13 9.6s linear infinite -9.2s;
   animation-fill-mode: both;
-  @include touch { display: none; }
+
+  @include touch {
+    display: none;
+  }
 }
 
 // Center of gravity is at top: 50%, left: 55% (defined by .left-50 token)
 // Travel trajectories mapped strictly to a 12-point compass (30-degree intervals)
 @keyframes bubbleOut1 {
-  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
-  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  100% { top: -5%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: -5%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
 }
+
 @keyframes bubbleOut2 {
-  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
-  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  100% { top: 2.4%; left: 82.5%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 2.4%;
+    left: 82.5%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
 }
+
 @keyframes bubbleOut3 {
-  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
-  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  100% { top: 22.5%; left: 102.6%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 22.5%;
+    left: 102.6%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
 }
+
 @keyframes bubbleOut4 {
-  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
-  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  100% { top: 50%; left: 110%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 50%;
+    left: 110%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
 }
+
 @keyframes bubbleOut5 {
-  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
-  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  100% { top: 77.5%; left: 102.6%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 77.5%;
+    left: 102.6%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
 }
+
 @keyframes bubbleOut6 {
-  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
-  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  100% { top: 97.6%; left: 82.5%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 97.6%;
+    left: 82.5%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
 }
+
 @keyframes bubbleOut7 {
-  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
-  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  100% { top: 105%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 105%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
 }
+
 @keyframes bubbleOut8 {
-  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
-  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  100% { top: 97.6%; left: 27.5%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 97.6%;
+    left: 27.5%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
 }
+
 @keyframes bubbleOut9 {
-  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
-  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  100% { top: 77.5%; left: 7.4%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 77.5%;
+    left: 7.4%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
 }
+
 @keyframes bubbleOut10 {
-  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
-  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  100% { top: 50%; left: 0%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 50%;
+    left: 0%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
 }
+
 @keyframes bubbleOut11 {
-  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
-  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  100% { top: 22.5%; left: 7.4%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 22.5%;
+    left: 7.4%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
 }
+
 @keyframes bubbleOut12 {
-  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
-  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  100% { top: 2.4%; left: 27.5%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 2.4%;
+    left: 27.5%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
 }
+
 @keyframes bubbleOut13 {
-  0%   { top: 50%; left: 55%; opacity: 0; transform: translateX(-20%) scale(0.4); }
-  20%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  90%  { opacity: 1; transform: translateX(-20%) scale(1); }
-  100% { top: 3%; left: 72%; opacity: 0; transform: translateX(-20%) scale(0.8); }
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 3%;
+    left: 72%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
 }
 
 @keyframes bubbleXAnimFrames {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(25px); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(25px);
+  }
 }
 
 .bubble-animation-x {
@@ -629,6 +951,7 @@ button.ac-button,
 }
 
 @keyframes float-center {
+
   0%,
   100% {
     transform: translate(-50%, -50%);
@@ -821,7 +1144,7 @@ button.ac-button,
       align-items: center;
       gap: 10px;
       color: $color-text-dark;
-      font-size: $ac-size-5;
+      font-size: $ac-size-6;
       font-weight: 700;
       margin-bottom: 20px;
 
@@ -864,7 +1187,8 @@ button.ac-button,
 
     .common-use-cases-wrapper h4 {
       color: $color-text-dark;
-      @include text-20-700-28;
+      font-size: $ac-size-6;
+      font-weight: 700;
       margin-bottom: 16px;
     }
 
@@ -1574,8 +1898,17 @@ button.ac-button,
     display: none;
   }
 
+  .final-cta-container {
+    position: relative;
+    z-index: 1;
+  }
+
   .section-title {
     margin-bottom: 0;
+
+    .tag.section-tag iconify-icon {
+      margin-right: 6px;
+    }
 
     h2.title {
       @include text-48-900-54;
@@ -1645,6 +1978,13 @@ button.ac-button,
       }
     }
   }
+
+  .cta-social-proof {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
 }
 
 
@@ -1679,30 +2019,34 @@ $prod-theme-colors: (
       }
     }
 
-    .key-features h4 .icon {
-      background: rgba($color, 0.1);
-      color: $color;
-    }
+    .key-features {
+      h4 .icon {
+        background: rgba($color, 0.1);
+        color: $color;
+      }
 
-    .feature-item .feature-icon {
-      color: $color;
-      opacity: 1;
-    }
-
-    .use-case-item {
-      color: $color;
-      background: rgba($color, 0.03);
-      border-color: rgba($color, 0.12);
-
-      &:hover {
-        background: #fff;
-        border-color: rgba($color, 0.3);
-        box-shadow: 0 4px 12px rgba($color, 0.1);
+      .features-grid .feature-item .feature-icon {
+        color: $color;
+        opacity: 1;
       }
     }
 
-    .stat-value {
-      color: $color;
+    .use-case-numbers-wrapper {
+      .use-cases-grid .use-case-item {
+        color: $color;
+        background: rgba($color, 0.03);
+        border-color: rgba($color, 0.12);
+
+        &:hover {
+          background: #fff;
+          border-color: rgba($color, 0.3);
+          box-shadow: 0 4px 12px rgba($color, 0.1);
+        }
+      }
+
+      .stats-grid .stat-item .stat-value {
+        color: $color;
+      }
     }
 
     .ac-button.is-primary {
