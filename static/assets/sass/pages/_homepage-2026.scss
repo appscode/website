@@ -12,7 +12,7 @@ $hp-primary-bg: rgba(0, 165, 80, 0.1);
 // Semantic shared colors
 $color-bg-light-surface: hsla(210, 20%, 98%, 1); // sidebar, neutral cards
 $color-hp-success-glow: hsla(149, 47%, 92%, 1); // success backgrounds
-$color-accent-blue-soft: #f8faff;              // product header background
+$color-accent-blue-soft: #f8faff; // product header background
 
 
 // =============================================================================
@@ -289,10 +289,10 @@ button.ac-button,
     border-top: 1px solid $color-border-light;
     padding-top: 32px;
 
-    @include touch {
-      flex-direction: column;
+    @include mobile {
+      // flex-direction: column;
       gap: 20px;
-      padding-top: 24px;
+      // padding-top: 24px;
       width: 100%;
     }
   }
@@ -316,6 +316,7 @@ button.ac-button,
       font-size: 20px;
       font-weight: 900;
       line-height: 28px;
+      text-wrap: nowrap;
     }
 
     p {
@@ -325,6 +326,7 @@ button.ac-button,
       line-height: 16px;
       letter-spacing: 0.6px;
       text-transform: uppercase;
+      text-align: left;
     }
   }
 }

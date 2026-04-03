@@ -19937,11 +19937,9 @@ button.ac-button,
     gap: 48px;
     border-top: 1px solid #e5e7eb;
     padding-top: 32px; }
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 768px) {
       .hero-area-2026 .data-show-case-wrapper {
-        flex-direction: column;
         gap: 20px;
-        padding-top: 24px;
         width: 100%; } }
   .hero-area-2026 .data-show-case {
     display: flex;
@@ -19965,14 +19963,16 @@ button.ac-button,
       color: #081419;
       font-size: 20px;
       font-weight: 900;
-      line-height: 28px; }
+      line-height: 28px;
+      text-wrap: nowrap; }
     .hero-area-2026 .data-show-case p {
       color: #6a7282;
       font-size: 12px;
       font-weight: 700;
       line-height: 16px;
       letter-spacing: 0.6px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-align: left; }
 
 .h-600 {
   min-height: 550px !important; }

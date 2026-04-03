@@ -11,7 +11,7 @@
   <div class="container">
     <div class="columns is-vcentered is-variable is-8">
       <!-- Left Side -->
-      <div class="column is-6">
+      <div class="column is-6 is-full-touch">
         <div class="left-content">
           <div class="tag">
             <span class="circle-dot"></span>
@@ -100,7 +100,7 @@
         </div>
       </div>
       <!-- Right Side -->
-      <div class="column is-6 is-hidden-mobile pos-relative h-600">
+      <div class="column is-6 is-hidden-touch pos-relative h-600">
 
         <!-- Concentric circles -->
         <div class="pos-absolute top-50 left-50 orbit-circle" style="animation-delay: -0s;"></div>
@@ -125,18 +125,19 @@
         {{ $idx := add $i 1 }}
         <div class="pos-absolute card-offset-{{ $idx }} z-1">
           <div class="bubble-animation-x" style="animation-duration: {{ $card.wobble_duration }};">
-          <div class="box is-shadowless shadow-custom {{ $card.border_class }} br-12 has-background-white is-flex is-align-items-center py-2 px-3">
-            <span class="{{ $card.icon_bg }} {{ $card.icon_color }} mr-3 br-8 w-36">
-              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                {{ $card.svg | safeHTML }}
-              </svg>
-            </span>
-            <div>
-              <p class="{{ $card.label_color }} has-text-weight-bold is-uppercase text-tiny">{{ $card.label }}</p>
-              <p class="text-sm-bold mb-0">{{ $card.name }}</p>
+            <div
+              class="box is-shadowless shadow-custom {{ $card.border_class }} br-12 has-background-white is-flex is-align-items-center py-2 px-3">
+              <span class="{{ $card.icon_bg }} {{ $card.icon_color }} mr-3 br-8 w-36">
+                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  {{ $card.svg | safeHTML }}
+                </svg>
+              </span>
+              <div>
+                <p class="{{ $card.label_color }} has-text-weight-bold is-uppercase text-tiny">{{ $card.label }}</p>
+                <p class="text-sm-bold mb-0">{{ $card.name }}</p>
+              </div>
             </div>
-          </div>
           </div>
         </div>
         {{ end }}
