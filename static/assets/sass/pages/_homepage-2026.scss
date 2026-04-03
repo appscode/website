@@ -195,10 +195,11 @@ button.ac-button,
   min-height: 100vh;
   display: flex;
   align-items: center;
+  overflow: hidden;
+  padding-top: 80px;
 
   @include touch {
-    padding-top: 100px;
-    padding-bottom: 60px;
+    padding-top: 130px;
     text-align: center;
   }
 
@@ -206,6 +207,10 @@ button.ac-button,
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    @include desktop-only {
+      gap: 16px;
+    }
 
     @include touch {
       align-items: center;
@@ -228,6 +233,11 @@ button.ac-button,
       color: $ac-primary;
       @include text-14-700-20;
 
+      @include touch {
+        width: 100%;
+        justify-content: center;
+      }
+
       .circle-dot {
         width: 8px;
         height: 8px;
@@ -244,6 +254,14 @@ button.ac-button,
       font-weight: 900;
       line-height: 105%;
       letter-spacing: -1.8px;
+
+      @include widescreen-only {
+        font-size: 58px;
+      }
+
+      @include desktop-only {
+        font-size: 48px;
+      }
 
       @include touch {
         font-size: 42px;
@@ -290,9 +308,8 @@ button.ac-button,
     padding-top: 32px;
 
     @include mobile {
-      // flex-direction: column;
+      flex-direction: column;
       gap: 20px;
-      // padding-top: 24px;
       width: 100%;
     }
   }
@@ -304,6 +321,10 @@ button.ac-button,
     @include touch {
       width: 100%;
       justify-content: center;
+    }
+
+    @include mobile {
+      justify-content: flex-start;
     }
 
     .icon {
@@ -995,6 +1016,10 @@ button.ac-button,
     @include touch {
       font-size: 24px;
     }
+
+    @include mobile {
+      margin-bottom: 8px;
+    }
   }
 }
 
@@ -1120,6 +1145,10 @@ button.ac-button,
 
         @include touch {
           margin: 0 auto 16px;
+        }
+
+        @include mobile {
+          display: none;
         }
       }
 
@@ -1340,6 +1369,10 @@ button.ac-button,
   border: 1px solid $hp-primary-border;
   background-color: hsla(240, 33%, 99%, 1);
 
+  @include desktop-only {
+    padding: 32px;
+  }
+
   @include touch {
     padding: 32px 20px;
   }
@@ -1352,6 +1385,11 @@ button.ac-button,
     line-height: 40px;
     letter-spacing: -0.9px;
     margin-bottom: 16px;
+
+    @include desktop-only {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
 
     @include touch {
       font-size: $ac-size-3;
@@ -1399,6 +1437,10 @@ button.ac-button,
     background: radial-gradient(circle at top right, rgba(0, 165, 80, 0.08) 0%, transparent 60%);
     pointer-events: none;
     z-index: -1;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   .service-shape-1 {
@@ -1412,6 +1454,10 @@ button.ac-button,
     transform: rotate(-12deg);
     pointer-events: none;
     z-index: -1;
+
+    @include touch {
+      display: none;
+    }
   }
 }
 
@@ -1734,6 +1780,8 @@ button.ac-button,
       border: 1px solid $color-border-light;
       background: #fff;
 
+
+
       @include touch {
         flex-direction: column;
         text-align: center;
@@ -1755,6 +1803,11 @@ button.ac-button,
         flex-shrink: 0;
         margin-bottom: 0;
         gap: 8px;
+
+        @include desktop {
+          flex-direction: column;
+          align-items: end;
+        }
 
         @include touch {
           width: 100%;
@@ -1863,6 +1916,11 @@ button.ac-button,
     radial-gradient(ellipse 50% 50% at 100% 100%, rgba(0, 165, 80, 0.07) 0%, transparent 100%),
     #fff;
 
+
+  @include desktop-only {
+    padding: 50px 0;
+  }
+
   @include touch {
     padding: 60px 0;
   }
@@ -1877,6 +1935,10 @@ button.ac-button,
     border: 2px solid rgba(0, 165, 80, 0.18);
     background: transparent;
     pointer-events: none;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   .cta-shape-circle-bottom {
@@ -1944,6 +2006,10 @@ button.ac-button,
 
     @include touch {
       gap: 32px;
+    }
+
+    @include mobile {
+      gap: 16px;
     }
 
     .benefit-item {

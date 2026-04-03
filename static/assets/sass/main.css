@@ -16865,6 +16865,16 @@ a.nav-link.active:after {
       font-size: 18px;
       padding-left: 45px;
       padding-right: 45px; }
+      @media screen and (min-width: 1024px) {
+        .button.ac-button.is-medium {
+          height: 48px;
+          padding-left: 24px;
+          padding-right: 24px; } }
+      @media screen and (max-width: 1023px) {
+        .button.ac-button.is-medium {
+          height: 48px;
+          padding-left: 24px;
+          padding-right: 24px; } }
     .button.ac-button.is-transparent {
       padding: 0;
       height: auto;
@@ -19865,16 +19875,20 @@ button.ac-button,
 .hero-area-2026 {
   min-height: 100vh;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden;
+  padding-top: 80px; }
   @media screen and (max-width: 1023px) {
     .hero-area-2026 {
-      padding-top: 100px;
-      padding-bottom: 60px;
+      padding-top: 130px;
       text-align: center; } }
   .hero-area-2026 .left-content {
     display: flex;
     flex-direction: column;
     gap: 32px; }
+    @media screen and (min-width: 1024px) and (max-width: 1215px) {
+      .hero-area-2026 .left-content {
+        gap: 16px; } }
     @media screen and (max-width: 1023px) {
       .hero-area-2026 .left-content {
         align-items: center;
@@ -19895,6 +19909,10 @@ button.ac-button,
       font-size: 14px;
       font-weight: 700;
       line-height: 20px; }
+      @media screen and (max-width: 1023px) {
+        .hero-area-2026 .left-content .tag {
+          width: 100%;
+          justify-content: center; } }
       .hero-area-2026 .left-content .tag .circle-dot {
         width: 8px;
         height: 8px;
@@ -19908,6 +19926,12 @@ button.ac-button,
       font-weight: 900;
       line-height: 105%;
       letter-spacing: -1.8px; }
+      @media screen and (min-width: 1216px) and (max-width: 1407px) {
+        .hero-area-2026 .left-content h1 {
+          font-size: 58px; } }
+      @media screen and (min-width: 1024px) and (max-width: 1215px) {
+        .hero-area-2026 .left-content h1 {
+          font-size: 48px; } }
       @media screen and (max-width: 1023px) {
         .hero-area-2026 .left-content h1 {
           font-size: 42px;
@@ -19939,6 +19963,7 @@ button.ac-button,
     padding-top: 32px; }
     @media screen and (max-width: 768px) {
       .hero-area-2026 .data-show-case-wrapper {
+        flex-direction: column;
         gap: 20px;
         width: 100%; } }
   .hero-area-2026 .data-show-case {
@@ -19948,6 +19973,9 @@ button.ac-button,
       .hero-area-2026 .data-show-case {
         width: 100%;
         justify-content: center; } }
+    @media screen and (max-width: 768px) {
+      .hero-area-2026 .data-show-case {
+        justify-content: flex-start; } }
     .hero-area-2026 .data-show-case .icon {
       display: flex;
       justify-content: center;
@@ -20446,6 +20474,9 @@ button.ac-button,
     @media screen and (max-width: 1023px) {
       .trusted-companies-area h2.title {
         font-size: 24px; } }
+    @media screen and (max-width: 768px) {
+      .trusted-companies-area h2.title {
+        margin-bottom: 8px; } }
 
 .products-area .tabs {
   border-bottom: 1px solid #e5e7eb;
@@ -20533,6 +20564,9 @@ button.ac-button,
       @media screen and (max-width: 1023px) {
         .products-area .product-card .product-header .product-logo-box {
           margin: 0 auto 16px; } }
+      @media screen and (max-width: 768px) {
+        .products-area .product-card .product-header .product-logo-box {
+          display: none; } }
     @media screen and (max-width: 1023px) {
       .products-area .product-card .product-header .is-flex-direction-column {
         align-items: center; } }
@@ -20686,6 +20720,9 @@ button.ac-button,
   border-radius: 14px;
   border: 1px solid rgba(0, 165, 80, 0.2);
   background-color: #fcfcfd; }
+  @media screen and (min-width: 1024px) and (max-width: 1215px) {
+    .cta-container {
+      padding: 32px; } }
   @media screen and (max-width: 1023px) {
     .cta-container {
       padding: 32px 20px; } }
@@ -20697,6 +20734,10 @@ button.ac-button,
     line-height: 40px;
     letter-spacing: -0.9px;
     margin-bottom: 16px; }
+    @media screen and (min-width: 1024px) and (max-width: 1215px) {
+      .cta-container h3 {
+        font-size: 28px;
+        margin-bottom: 8px; } }
     @media screen and (max-width: 1023px) {
       .cta-container h3 {
         font-size: 28px;
@@ -20728,6 +20769,9 @@ button.ac-button,
     background: radial-gradient(circle at top right, rgba(0, 165, 80, 0.08) 0%, transparent 60%);
     pointer-events: none;
     z-index: -1; }
+    @media screen and (max-width: 768px) {
+      .services-section .services-bg-glow {
+        display: none; } }
   .services-section .service-shape-1 {
     position: absolute;
     top: -20px;
@@ -20739,6 +20783,9 @@ button.ac-button,
     transform: rotate(-12deg);
     pointer-events: none;
     z-index: -1; }
+    @media screen and (max-width: 1023px) {
+      .services-section .service-shape-1 {
+        display: none; } }
 
 .services-wrapper {
   display: flex;
@@ -20999,6 +21046,10 @@ button.ac-button,
         flex-shrink: 0;
         margin-bottom: 0;
         gap: 8px; }
+        @media screen and (min-width: 1024px) {
+          .services-wrapper .service-content-body .service-cta-bar .buttons {
+            flex-direction: column;
+            align-items: end; } }
         @media screen and (max-width: 1023px) {
           .services-wrapper .service-content-body .service-cta-bar .buttons {
             width: 100%; }
@@ -21078,6 +21129,9 @@ button.ac-button,
   overflow: hidden;
   padding: 100px 0;
   background: radial-gradient(ellipse 60% 60% at 0% 0%, rgba(0, 165, 80, 0.1) 0%, transparent 100%), radial-gradient(ellipse 50% 50% at 100% 100%, rgba(0, 165, 80, 0.07) 0%, transparent 100%), #fff; }
+  @media screen and (min-width: 1024px) and (max-width: 1215px) {
+    .final-cta-section {
+      padding: 50px 0; } }
   @media screen and (max-width: 1023px) {
     .final-cta-section {
       padding: 60px 0; } }
@@ -21091,6 +21145,9 @@ button.ac-button,
     border: 2px solid rgba(0, 165, 80, 0.18);
     background: transparent;
     pointer-events: none; }
+    @media screen and (max-width: 768px) {
+      .final-cta-section .cta-shape-rect-top {
+        display: none; } }
   .final-cta-section .cta-shape-circle-bottom {
     position: absolute;
     bottom: -48px;
@@ -21141,6 +21198,9 @@ button.ac-button,
     @media screen and (max-width: 1023px) {
       .final-cta-section .cta-benefits {
         gap: 32px; } }
+    @media screen and (max-width: 768px) {
+      .final-cta-section .cta-benefits {
+        gap: 16px; } }
     .final-cta-section .cta-benefits .benefit-item {
       display: flex;
       flex-direction: column;
