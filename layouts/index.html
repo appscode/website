@@ -96,7 +96,7 @@
         </div>
 
         <!-- Floating Cards — data from data/homepage/hero_cards.json -->
-        {{ $cards := (index site.Data.homepage.hero_cards "cards") }}
+        {{ $cards := (index site.Data.products.appscode.hero_cards "cards") }}
         {{ range $i, $card := $cards }}
         {{ $idx := add $i 1 }}
         <div class="pos-absolute card-offset-{{ $idx }} z-1">
@@ -172,7 +172,7 @@
     <!-- tabs start  -->
     <div class="tabs is-centered is-medium">
       <ul class="is-marginless">
-        {{ range $index, $prod := site.Data.products.products_tabs.productsTabs }}
+        {{ range $index, $prod := site.Data.products.appscode.products_tabs.productsTabs }}
         <li class="prod-nav-btn is-prod-{{ $prod.key }} {{ if eq $index 0 }}is-active{{ end }}"
           data-target="prod-{{ $prod.key }}">
           <a
@@ -191,7 +191,7 @@
 
     <!-- product cards start  -->
     <div class="product-cards-container">
-      {{ range $index, $prod := site.Data.products.products_tabs.productsTabs }}
+      {{ range $index, $prod := site.Data.products.appscode.products_tabs.productsTabs }}
       <div
         class="product-card is-prod-{{ $prod.key }} prod-content {{ if ne $index 0 }}is-hidden{{ else }}is-active{{ end }}"
         id="prod-{{ $prod.key }}">
