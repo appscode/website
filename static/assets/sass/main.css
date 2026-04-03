@@ -19956,10 +19956,11 @@ button.ac-button,
       align-items: center;
       width: 40px;
       height: 40px;
-      padding: 0 9px;
       border-radius: 10px;
       border: 1px solid rgba(0, 165, 80, 0.2);
-      background: rgba(0, 165, 80, 0.1); }
+      background: rgba(0, 165, 80, 0.1);
+      color: var(--ac-primary);
+      padding: 0 9px; }
     .hero-area-2026 .data-show-case p.strong {
       color: #081419;
       font-size: 20px;
@@ -21028,8 +21029,9 @@ button.ac-button,
     width: 48px;
     height: 48px;
     border-radius: 14px;
-    background: rgba(0, 165, 80, 0.1);
-    color: #00a550;
+    border: 1px solid rgba(0, 165, 80, 0.25);
+    background: rgba(0, 165, 80, 0.08);
+    color: var(--ac-primary);
     margin: 0 auto 8px; }
     .simple-stats-wrapper .icon-box.stat-icon-neutral {
       background: #f3f4f6;
@@ -21139,13 +21141,13 @@ button.ac-button,
     @media screen and (max-width: 1023px) {
       .final-cta-section .cta-benefits {
         gap: 32px; } }
-    .final-cta-section .cta-benefits .benifit-item {
+    .final-cta-section .cta-benefits .benefit-item {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 12px; }
-      .final-cta-section .cta-benefits .benifit-item .feature-icon-box {
+      .final-cta-section .cta-benefits .benefit-item .feature-icon-box {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -21154,9 +21156,9 @@ button.ac-button,
         border-radius: 16px;
         border: 1px solid rgba(0, 165, 80, 0.25);
         background: rgba(0, 165, 80, 0.08);
-        box-shadow: 0 2px 12px rgba(0, 165, 80, 0.08);
-        color: var(--ac-primary); }
-      .final-cta-section .cta-benefits .benifit-item .subtext {
+        color: var(--ac-primary);
+        box-shadow: 0 2px 12px rgba(0, 165, 80, 0.08); }
+      .final-cta-section .cta-benefits .benefit-item .subtext {
         color: #081419;
         text-align: center;
         font-size: 14px;

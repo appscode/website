@@ -9,6 +9,11 @@ $hp-primary-border: rgba(0, 165, 80, 0.2);
 $hp-primary-border-strong: rgba(0, 165, 80, 0.3);
 $hp-primary-bg: rgba(0, 165, 80, 0.1);
 
+// Semantic shared colors
+$color-bg-light-surface: hsla(210, 20%, 98%, 1); // sidebar, neutral cards
+$color-hp-success-glow: hsla(149, 47%, 92%, 1); // success backgrounds
+$color-accent-blue-soft: #f8faff;              // product header background
+
 
 // =============================================================================
 // Mixins
@@ -29,6 +34,16 @@ $hp-primary-bg: rgba(0, 165, 80, 0.1);
   font-size: $size;
   font-weight: $weight;
   line-height: $line-height;
+}
+
+@mixin icon-box($size, $radius: 16px, $bg: rgba(0, 165, 80, 0.08), $border: 1px solid rgba(0, 165, 80, 0.25)) {
+  @include flex-center;
+  width: $size;
+  height: $size;
+  border-radius: $radius;
+  border: $border;
+  background: $bg;
+  color: $ac-primary;
 }
 
 // Named text-style shortcuts using _initial-variable.scss font-size tokens
@@ -292,13 +307,8 @@ button.ac-button,
     }
 
     .icon {
-      @include flex-center;
-      width: 40px;
-      height: 40px;
+      @include icon-box(40px, 10px, $hp-primary-bg, 1px solid $hp-primary-border);
       padding: 0 9px;
-      border-radius: 10px;
-      border: 1px solid $hp-primary-border;
-      background: $hp-primary-bg;
     }
 
     p.strong {
@@ -1419,7 +1429,7 @@ button.ac-button,
     width: 288px;
     min-width: 288px;
     padding: 20px 16px;
-    background-color: hsla(210, 20%, 98%, 1);
+    background-color: $color-bg-light-surface;
     border-right: 1px solid $color-border-light;
     border-radius: 14px 0 0 14px;
 
@@ -1545,7 +1555,7 @@ button.ac-button,
 
     .content-header {
       padding: 32px 40px;
-      background-color: hsla(149, 47%, 92%, 1);
+      background-color: $color-hp-success-glow;
       border-radius: 0 14px 0 0;
       position: relative;
       overflow: hidden;
@@ -1785,12 +1795,7 @@ button.ac-button,
   }
 
   .icon-box {
-    @include flex-center;
-    width: 48px;
-    height: 48px;
-    border-radius: 14px;
-    background: $hp-primary-bg;
-    color: #00a550;
+    @include icon-box(48px, 14px);
     margin: 0 auto 8px;
 
     &.stat-icon-neutral {
@@ -1939,7 +1944,7 @@ button.ac-button,
       gap: 32px;
     }
 
-    .benifit-item {
+    .benefit-item {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1947,14 +1952,8 @@ button.ac-button,
       gap: 12px;
 
       .feature-icon-box {
-        @include flex-center;
-        width: 64px;
-        height: 64px;
-        border-radius: 16px;
-        border: 1px solid rgba(0, 165, 80, 0.25);
-        background: rgba(0, 165, 80, 0.08);
+        @include icon-box(64px, 16px);
         box-shadow: 0 2px 12px rgba(0, 165, 80, 0.08);
-        color: $ac-primary;
       }
 
       .subtext {
