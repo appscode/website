@@ -328,7 +328,7 @@
                         {{ range $index, $service := site.Data.services.services_menu.servicesMenu }}
                           <a class="single-product {{ if eq $index 0 }} is-active {{ end }}" href="#" data-service-id="{{ $service.title | urlize }}">
                             <div class="product-logo">
-                              <img src="{{ $service.icon }}" alt="{{ $service.title }}"/>
+                              <iconify-icon {{ printf "icon=%s" $service.lucide_icon | safeHTMLAttr }} width="24" height="24"></iconify-icon>
                             </div>
                             <div class="product-info">
                               <h2 class="is-size-6 is-flex">{{ $service.title }}</h2>

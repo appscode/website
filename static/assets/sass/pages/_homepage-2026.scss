@@ -1,0 +1,2134 @@
+// =============================================================================
+// Homepage 2026 — Design Tokens
+// Colours: $color-* from _initial-variable.scss (auto-available via main.scss import)
+// Local: primary alpha variants for borders, glows, and backgrounds
+// =============================================================================
+
+// Primary alpha variants
+$hp-primary-border: rgba(0, 165, 80, 0.2);
+$hp-primary-border-strong: rgba(0, 165, 80, 0.3);
+$hp-primary-bg: rgba(0, 165, 80, 0.1);
+
+// Semantic shared colors
+$color-bg-light-surface: hsla(210, 20%, 98%, 1); // sidebar, neutral cards
+$color-hp-success-glow: hsla(149, 47%, 92%, 1); // success backgrounds
+$color-accent-blue-soft: #f8faff; // product header background
+
+
+// =============================================================================
+// Mixins
+// =============================================================================
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin square($size) {
+  width: $size !important;
+  height: $size !important;
+}
+
+@mixin text-style($size, $weight, $line-height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+}
+
+@mixin icon-box($size, $radius: 16px, $bg: rgba(0, 165, 80, 0.08), $border: 1px solid rgba(0, 165, 80, 0.25)) {
+  @include flex-center;
+  width: $size;
+  height: $size;
+  border-radius: $radius;
+  border: $border;
+  background: $bg;
+  color: $ac-primary;
+}
+
+// Named text-style shortcuts using _initial-variable.scss font-size tokens
+@mixin text-30-700-36 {
+  @include text-style(30px, 700, 36px);
+}
+
+@mixin text-20-700-28 {
+  @include text-style(20px, 700, 28px);
+}
+
+@mixin text-16-700-24 {
+  @include text-style($ac-size-6, 700, 24px);
+}
+
+@mixin text-14-700-20 {
+  @include text-style($font-size-normal, 700, 20px);
+}
+
+@mixin text-48-900-54 {
+  @include text-style(48px, 900, 54px);
+}
+
+
+// =============================================================================
+// Global Button Overrides (2026 Homepage)
+// =============================================================================
+
+button.ac-button,
+.button.ac-button {
+  border-radius: 4px !important;
+  font-weight: 700 !important;
+  font-size: $font-size-normal !important; // 14px
+  letter-spacing: 0 !important;
+  text-transform: uppercase !important;
+  transition: all 0.2s ease !important;
+
+  iconify-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px;
+  }
+
+  &.is-primary {
+    background: #00a550 !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(0, 165, 80, 0.2) !important;
+
+    &:hover {
+      background: darken(#00a550, 6%) !important;
+      transform: translateY(-1px) !important;
+      box-shadow: 0 6px 16px rgba(0, 165, 80, 0.3) !important;
+    }
+  }
+
+  &.is-white {
+    background: #fff !important;
+    border: 1px solid #e2e8f0 !important;
+    color: #334155 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02) !important;
+
+    &:hover {
+      background: $color-surface-light !important;
+      border-color: #cbd5e1 !important;
+      color: #0f172a !important;
+      transform: translateY(-1px) !important;
+    }
+  }
+
+  &.is-black {
+    background: $color-heading-deep !important;
+    color: #fff !important;
+
+    &:hover {
+      background: #000 !important;
+      transform: translateY(-1px) !important;
+    }
+  }
+}
+
+
+// =============================================================================
+// Section Tag & Title (shared across all sections)
+// =============================================================================
+
+.tag.section-tag {
+  display: inline-flex;
+  height: 42px;
+  padding: 9px 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid $hp-primary-border;
+  background: $hp-primary-bg;
+  color: $ac-primary;
+  font-size: $ac-size-6;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  h2 {
+    color: $color-heading-deep;
+    text-align: center;
+    font-size: $ac-size-2;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -1.2px;
+
+    @include touch {
+      font-size: $ac-size-3; // 28px
+      letter-spacing: -0.5px;
+    }
+  }
+
+  p {
+    margin-top: 16px;
+    color: $color-text-medium;
+    text-align: center;
+    font-size: $ac-size-5;
+    font-weight: 400;
+    line-height: 28px;
+
+    @include touch {
+      font-size: $ac-size-6; // 16px
+      line-height: 24px;
+    }
+  }
+}
+
+
+// =============================================================================
+// Hero Section
+// =============================================================================
+
+.bg-hero-gradient {
+  background:
+    radial-gradient(ellipse at top left, rgba(0, 165, 80, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at bottom right, rgba(0, 165, 80, 0.05) 0%, transparent 50%),
+    #fff;
+}
+
+.hero-area-2026 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 80px;
+
+  @include touch {
+    padding-top: 130px;
+    text-align: center;
+  }
+
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @include desktop-only {
+      gap: 16px;
+    }
+
+    @include touch {
+      align-items: center;
+      gap: 24px;
+    }
+
+    // Hero pill tag
+    .tag {
+      display: inline-flex;
+      width: fit-content;
+      height: 38px;
+      padding: 10px 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 9999px;
+      border: 1px solid $hp-primary-border-strong;
+      background: $hp-primary-bg;
+      box-shadow: 0 2px 8px rgba(0, 165, 80, 0.1);
+      color: $ac-primary;
+      @include text-14-700-20;
+
+      @include touch {
+        justify-content: center;
+      }
+
+      .circle-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $ac-primary;
+        display: inline-block;
+        margin-right: 8px;
+      }
+    }
+
+    h1 {
+      color: $color-heading-deep;
+      font-size: 72px;
+      font-weight: 900;
+      line-height: 105%;
+      letter-spacing: -1.8px;
+
+      @include widescreen-only {
+        font-size: 58px;
+      }
+
+      @include desktop-only {
+        font-size: 48px;
+      }
+
+      @include touch {
+        font-size: 42px;
+        letter-spacing: -0.8px;
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    p {
+      color: $color-text-slate;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 170%;
+
+      @include touch {
+        font-size: $ac-size-6;
+        line-height: 160%;
+      }
+    }
+
+    .buttons {
+      @include touch {
+        justify-content: center;
+        width: 100%;
+
+        .ac-button {
+          width: 100%;
+          margin-right: 0 !important;
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+
+  // Stats row below hero copy
+  .data-show-case-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    border-top: 1px solid $color-border-light;
+    padding-top: 32px;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+  }
+
+  .data-show-case {
+    display: flex;
+    gap: 12px;
+
+    @include touch {
+      width: 100%;
+      justify-content: center;
+    }
+
+    @include mobile {
+      justify-content: flex-start;
+    }
+
+    .icon {
+      @include icon-box(40px, 10px, $hp-primary-bg, 1px solid $hp-primary-border);
+      padding: 0 9px;
+    }
+
+    p.strong {
+      color: $color-heading-deep;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 28px;
+      text-wrap: nowrap;
+    }
+
+    p {
+      color: $color-text-muted;
+      font-size: $font-size-extra-small;
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      text-align: left;
+    }
+  }
+}
+
+// Hero right-side graphic utilities
+.h-600 {
+  min-height: 550px !important;
+
+  @include touch {
+    min-height: 350px !important;
+    margin-top: 40px;
+  }
+}
+
+.pos-relative {
+  position: relative !important;
+}
+
+.pos-absolute {
+  position: absolute !important;
+}
+
+.top-50 {
+  top: 50% !important;
+}
+
+.left-50 {
+  left: 55% !important;
+
+  @include touch {
+    left: 50% !important;
+  }
+}
+
+.translate-center {
+  transform: translate(-50%, -50%) !important;
+}
+
+.z-1 {
+  z-index: 1 !important;
+}
+
+.z-10 {
+  z-index: 10 !important;
+}
+
+.z-20 {
+  z-index: 20 !important;
+}
+
+.p-32 {
+  padding: 32px !important;
+}
+
+// Orbit ring sizes
+@keyframes ripplePulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(2.2);
+    opacity: 0;
+  }
+}
+
+.orbit-circle {
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(0, 165, 80, 0.4);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: ripplePulse 7.5s cubic-bezier(0.25, 0.8, 0.5, 1) infinite;
+  animation-fill-mode: both;
+  z-index: 1;
+}
+
+.w-450 {
+  @include square(460px);
+
+  @include touch {
+    @include square(320px);
+  }
+}
+
+.w-350 {
+  @include square(340px);
+
+  @include touch {
+    @include square(240px);
+  }
+}
+
+.w-250 {
+  @include square(220px);
+
+  @include touch {
+    @include square(160px);
+  }
+}
+
+.w-96 {
+  @include square(110px);
+}
+
+.w-36 {
+  @include square(36px);
+  @include flex-center;
+  display: flex !important;
+}
+
+// Floating card visuals
+.icon-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.shadow-custom {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.border-blue {
+  border: 1px solid #dbeafe !important;
+  box-shadow: 0 12px 35px rgba(50, 100, 255, 0.08) !important;
+}
+
+.border-green {
+  border: 1px solid #bbf7d0 !important;
+  box-shadow: 0 12px 35px rgba(0, 165, 80, 0.08) !important;
+}
+
+.br-16 {
+  border-radius: 16px !important;
+}
+
+.br-12 {
+  border-radius: 12px !important;
+}
+
+.br-8 {
+  border-radius: 8px !important;
+}
+
+.text-tiny {
+  font-size: 0.6rem !important;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px !important;
+  white-space: nowrap !important;
+}
+
+.text-sm-bold {
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  color: $color-text-dark;
+  white-space: nowrap !important;
+}
+
+// Floating card positions
+.card-offset-1 {
+  animation: bubbleOut1 9.6s linear infinite -7.2s;
+  animation-fill-mode: both;
+
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-2 {
+  animation: bubbleOut2 9.6s linear infinite -1.6s;
+  animation-fill-mode: both;
+
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-3 {
+  animation: bubbleOut3 9.6s linear infinite -5.6s;
+  animation-fill-mode: both;
+
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-4 {
+  animation: bubbleOut4 9.6s linear infinite -0s;
+  animation-fill-mode: both;
+
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-5 {
+  animation: bubbleOut5 9.6s linear infinite -4s;
+  animation-fill-mode: both;
+
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-6 {
+  animation: bubbleOut6 9.6s linear infinite -8s;
+  animation-fill-mode: both;
+
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-7 {
+  animation: bubbleOut7 9.6s linear infinite -2.4s;
+  animation-fill-mode: both;
+
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-8 {
+  animation: bubbleOut8 9.6s linear infinite -6.4s;
+  animation-fill-mode: both;
+
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-9 {
+  animation: bubbleOut9 9.6s linear infinite -0.8s;
+  animation-fill-mode: both;
+
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-10 {
+  animation: bubbleOut10 9.6s linear infinite -4.8s;
+  animation-fill-mode: both;
+
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-11 {
+  animation: bubbleOut11 9.6s linear infinite -8.8s;
+  animation-fill-mode: both;
+
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-12 {
+  animation: bubbleOut12 9.6s linear infinite -3.2s;
+  animation-fill-mode: both;
+
+  @include touch {
+    display: none;
+  }
+}
+
+.card-offset-13 {
+  animation: bubbleOut13 9.6s linear infinite -9.2s;
+  animation-fill-mode: both;
+
+  @include touch {
+    display: none;
+  }
+}
+
+// Center of gravity is at top: 50%, left: 55% (defined by .left-50 token)
+// Travel trajectories mapped strictly to a 12-point compass (30-degree intervals)
+@keyframes bubbleOut1 {
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: -5%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
+}
+
+@keyframes bubbleOut2 {
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 2.4%;
+    left: 82.5%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
+}
+
+@keyframes bubbleOut3 {
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 22.5%;
+    left: 102.6%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
+}
+
+@keyframes bubbleOut4 {
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 50%;
+    left: 110%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
+}
+
+@keyframes bubbleOut5 {
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 77.5%;
+    left: 102.6%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
+}
+
+@keyframes bubbleOut6 {
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 97.6%;
+    left: 82.5%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
+}
+
+@keyframes bubbleOut7 {
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 105%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
+}
+
+@keyframes bubbleOut8 {
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 97.6%;
+    left: 27.5%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
+}
+
+@keyframes bubbleOut9 {
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 77.5%;
+    left: 7.4%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
+}
+
+@keyframes bubbleOut10 {
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 50%;
+    left: 0%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
+}
+
+@keyframes bubbleOut11 {
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 22.5%;
+    left: 7.4%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
+}
+
+@keyframes bubbleOut12 {
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 2.4%;
+    left: 27.5%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
+}
+
+@keyframes bubbleOut13 {
+  0% {
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.4);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-20%) scale(1);
+  }
+
+  100% {
+    top: 3%;
+    left: 72%;
+    opacity: 0;
+    transform: translateX(-20%) scale(0.8);
+  }
+}
+
+@keyframes bubbleXAnimFrames {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(25px);
+  }
+}
+
+.bubble-animation-x {
+  animation-iteration-count: infinite;
+  animation-name: bubbleXAnimFrames;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes float-center {
+
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  50% {
+    transform: translate(-50%, calc(-50% - 12px));
+  }
+}
+
+.anim-float-center {
+  animation: float-center 6s ease-in-out infinite;
+}
+
+
+// =============================================================================
+// Trusted Companies
+// =============================================================================
+
+.trusted-companies-area {
+  background: #fbfbfb;
+
+  h2.title {
+    color: $color-heading-deep;
+    text-align: center;
+    @include text-30-700-36;
+    letter-spacing: -0.75px;
+
+    @include touch {
+      font-size: 24px;
+    }
+
+    @include mobile {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+
+// =============================================================================
+// Our Products Section
+// =============================================================================
+
+.products-area {
+
+  // Tab navigation
+  .tabs {
+    border-bottom: 1px solid $color-border-light;
+    margin-bottom: 32px;
+
+    @include touch {
+      overflow-x: auto;
+      white-space: nowrap;
+      justify-content: flex-start !important;
+      -webkit-overflow-scrolling: touch;
+      margin-left: -1.5rem;
+      margin-right: -1.5rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    ul {
+      justify-content: flex-start;
+      border-bottom: none;
+
+      @include touch {
+        border-bottom: 2px solid $color-border-light;
+        width: max-content;
+      }
+
+      li.prod-nav-btn {
+        margin: 0;
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 12px 24px;
+          font-size: $ac-size-6;
+          font-weight: 700;
+          color: $color-text-muted;
+          background: transparent;
+          border-radius: 0;
+          border-bottom: 2px solid transparent;
+          transition: all 0.2s ease;
+
+          span.icon {
+            margin: 0;
+          }
+
+          &:hover {
+            color: $ac-primary;
+            border-bottom-color: $color-border-light;
+          }
+        }
+
+        &.is-active a {
+          color: $ac-primary !important;
+          border-bottom: 2px solid $ac-primary !important;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  // Cards container
+  .product-cards-container {
+    position: relative;
+    min-height: 500px;
+  }
+
+  .product-card {
+    border-radius: 12px;
+    border: 1px solid #eef0f2;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+
+    &.is-active {
+      display: block !important;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    // Card header band
+    .product-header {
+      padding: 40px;
+      position: relative;
+      background: #f8faff;
+
+      @include touch {
+        padding: 24px;
+        text-align: center;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, transparent 50%, rgba(73, 73, 162, 0.05) 100%);
+        pointer-events: none;
+      }
+
+      .columns {
+        @include touch {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      .product-logo-box {
+        @include flex-center;
+        width: 64px;
+        height: 64px;
+        border-radius: 12px;
+        background: #f4f5f7;
+        border: 1px solid #e2e8f0;
+
+        @include touch {
+          margin: 0 auto 16px;
+        }
+
+        @include mobile {
+          display: none;
+        }
+      }
+
+      .is-flex-direction-column {
+        @include touch {
+          align-items: center;
+        }
+      }
+
+      .description {
+        color: #4b5563;
+        font-size: 14.5px;
+        line-height: 1.6;
+        max-width: 580px;
+
+        @include touch {
+          margin: 0 auto;
+        }
+      }
+
+      .column.is-narrow {
+        @include touch {
+          width: 100%;
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+
+  // Key features column
+  .key-features {
+    h4 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: $color-text-dark;
+      font-size: $ac-size-6;
+      font-weight: 700;
+      margin-bottom: 20px;
+
+      .icon {
+        @include flex-center;
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        background: rgba(73, 73, 162, 0.08);
+        color: #4949a2;
+      }
+    }
+
+    .features-grid {
+      display: grid;
+      gap: 12px;
+
+      .feature-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        font-size: $font-size-normal;
+        color: #4b5563;
+        line-height: 1.5;
+
+        .feature-icon {
+          color: #4949a2;
+          margin-top: 2px;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  // Use cases + stats column
+  .use-case-numbers-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .common-use-cases-wrapper h4 {
+      color: $color-text-dark;
+      font-size: $ac-size-6;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .use-cases-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+
+      @include touch {
+        grid-template-columns: 1fr;
+      }
+
+      .use-case-item {
+        @include flex-center;
+        padding: 16px;
+        background: #fdfdfe;
+        border: 1px solid #f2f4f7;
+        border-radius: 8px;
+        font-size: 14.5px;
+        font-weight: 600;
+        color: #4949a2;
+        text-align: center;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background: #fff;
+          border-color: rgba(73, 73, 162, 0.2);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+        }
+      }
+    }
+
+    .numbers-wrapper h4 {
+      color: $color-text-dark;
+      font-size: $ac-size-6;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+
+      @include touch {
+        grid-template-columns: 1fr;
+      }
+
+      .stat-item {
+        @include flex-center;
+        flex-direction: column;
+        padding: 24px 12px;
+        background: #fff;
+        border: 1px solid #f0f2f5;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+
+        .stat-value {
+          color: #4949a2;
+          font-size: 24px;
+          font-weight: 800;
+          line-height: 1;
+          margin-bottom: 8px;
+        }
+
+        .stat-label {
+          color: $color-text-muted;
+          font-size: $font-size-tiny;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.8px;
+        }
+      }
+    }
+  }
+
+  // In-card CTA banner
+  .cta-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+    border-radius: 12px;
+    background: #f8f9ff;
+    border: 1px solid #eef0fd;
+
+    @include touch {
+      flex-direction: column;
+      gap: 24px;
+      text-align: center;
+    }
+
+    .cta-banner-text {
+      h4 {
+        color: $color-text-dark;
+        font-size: $ac-size-6;
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+
+      p {
+        color: #4b5563;
+        font-size: $font-size-normal;
+      }
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 12px;
+
+      @include touch {
+        flex-direction: column;
+        width: 100%;
+
+        .ac-button {
+          width: 100%;
+        }
+      }
+
+      .ac-button {
+        height: 44px;
+        font-size: $font-size-semi-normal;
+      }
+    }
+  }
+}
+
+
+// =============================================================================
+// Small CTA Container (Enterprise Support)
+// =============================================================================
+
+.cta-container {
+  padding: 48px;
+  border-radius: 14px;
+  border: 1px solid $hp-primary-border;
+  background-color: hsla(240, 33%, 99%, 1);
+
+  @include desktop-only {
+    padding: 32px;
+  }
+
+  @include touch {
+    padding: 32px 20px;
+  }
+
+  h3 {
+    color: $color-heading-deep;
+    text-align: center;
+    font-size: $ac-size-2;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: -0.9px;
+    margin-bottom: 16px;
+
+    @include desktop-only {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    @include touch {
+      font-size: $ac-size-3;
+      line-height: 1.2;
+    }
+  }
+
+  p {
+    color: $color-text-slate;
+    text-align: center;
+    font-size: $ac-size-5;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 32px;
+    text-wrap: balance;
+
+    @include touch {
+      font-size: $ac-size-6;
+    }
+  }
+
+  .ac-button {
+    @include touch {
+      width: 100%;
+    }
+  }
+}
+
+
+// =============================================================================
+// Our Services Section
+// =============================================================================
+
+.services-section {
+  position: relative;
+  z-index: 1;
+
+  // Decorative elements
+  .services-bg-glow {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle at top right, rgba(0, 165, 80, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: -1;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .service-shape-1 {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+    border: 2px solid rgba(0, 165, 80, 0.2);
+    transform: rotate(-12deg);
+    pointer-events: none;
+    z-index: -1;
+
+    @include touch {
+      display: none;
+    }
+  }
+}
+
+.services-wrapper {
+  display: flex;
+  border-radius: 14px;
+  border: 1px solid $color-border-light;
+  background: #fff;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+
+  @include touch {
+    flex-direction: column;
+  }
+
+  // Left sidebar navigation
+  .services-sidebar {
+    width: 288px;
+    min-width: 288px;
+    padding: 20px 16px;
+    background-color: $color-bg-light-surface;
+    border-right: 1px solid $color-border-light;
+    border-radius: 14px 0 0 14px;
+
+    @include desktop-only {
+      width: 268px;
+      min-width: 268px;
+    }
+
+    @include touch {
+      width: 100%;
+      min-width: 100%;
+      border-right: none;
+      border-bottom: 1px solid $color-border-light;
+      border-radius: 14px 14px 0 0;
+      padding: 12px;
+    }
+
+    p {
+      color: $color-text-muted;
+      font-size: $font-size-tiny;
+      font-weight: 600;
+      line-height: 16px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 0 4px;
+    }
+
+    ul.services-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+
+      @include touch {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 8px;
+
+        &::-webkit-scrollbar {
+          height: 0;
+        }
+      }
+
+      li {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        border-left: 3px solid transparent;
+        transition: all 0.15s ease;
+
+        @include touch {
+          border-left: none;
+          border-bottom: 3px solid transparent;
+          flex-shrink: 0;
+          white-space: nowrap;
+        }
+
+        &.is-active,
+        &:hover {
+          border-left: 3px solid #00a550;
+          background: #fff;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px -1px rgba(0, 0, 0, 0.08);
+
+          @include touch {
+            border-left: none;
+            border-bottom: 3px solid #00a550;
+          }
+
+          .svc-icon {
+            background: $hp-primary-bg;
+            color: $ac-primary;
+          }
+
+          span:last-child {
+            color: $color-text-dark;
+          }
+        }
+
+        span:last-child {
+          color: $color-text-medium;
+          font-size: $font-size-normal;
+          font-weight: 500;
+          line-height: 20px;
+        }
+
+        .svc-icon {
+          display: flex;
+          width: 30px;
+          height: 30px;
+          min-width: 30px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 8px;
+          background: $color-border-light;
+          color: $color-text-muted;
+          transition: all 0.15s ease;
+
+          iconify-icon {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  // Right content area
+  .services-content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &.is-active {
+      display: flex !important;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    &.is-hidden {
+      display: none !important;
+    }
+
+    .content-header {
+      padding: 32px 40px;
+      background-color: $color-hp-success-glow;
+      border-radius: 0 14px 0 0;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+
+      @include touch {
+        padding: 24px;
+        border-radius: 0;
+      }
+
+      .service-shape-2 {
+        position: absolute;
+        top: -10px;
+        right: 40px;
+        width: 100px;
+        height: 100px;
+        border-radius: 18px;
+        border: 2px solid rgba(0, 165, 80, 0.15);
+        transform: rotate(15deg);
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      .header-icon-wrapper {
+        position: relative;
+        display: inline-flex;
+        flex-shrink: 0;
+      }
+
+      .is-gap-16 {
+        @include touch {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+
+      .header-icon {
+        @include flex-center;
+        width: 64px;
+        height: 64px;
+        border-radius: 16px;
+        border: 2px solid #f3f4f6;
+        background: #fff;
+        color: $ac-primary;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.08);
+
+        iconify-icon {
+          display: block;
+        }
+      }
+
+      .header-icon-badge {
+        @include flex-center;
+        position: absolute;
+        bottom: -4px;
+        right: -4px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: #fff;
+        color: $ac-primary;
+        border: 1.5px solid #fff;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+      }
+
+      h3 {
+        color: $color-heading-deep;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: -0.75px;
+      }
+
+      p {
+        color: $color-text-slate;
+        font-size: $ac-size-6;
+        font-weight: 500;
+        line-height: 26px;
+      }
+    }
+  }
+
+  .service-content-body {
+    padding: 28px 32px;
+    flex: 1;
+
+    @include touch {
+      padding: 20px;
+    }
+
+    h4 {
+      @include text-16-700-24;
+      color: $color-heading-deep;
+      position: relative;
+      padding-left: 12px;
+      margin-bottom: 16px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background-color: $ac-primary;
+        border-radius: 10px;
+      }
+    }
+
+    .columns .column.is-6 {
+      @include touch {
+        width: 100%;
+      }
+    }
+
+    .single-offering {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 24px;
+      height: 100%;
+      border-radius: 12px;
+      border: 1.5px solid $color-border-light;
+      background: $color-surface-subtle;
+      transition: all 0.2s ease;
+      text-decoration: none !important;
+
+      &:hover {
+        border-color: $ac-primary;
+        background: $hp-primary-bg;
+        box-shadow: 0 4px 20px rgba(0, 165, 80, 0.08);
+        transform: translateY(-2px);
+      }
+
+      .offering-check {
+        color: $ac-primary;
+        display: flex;
+        line-height: 1;
+      }
+
+      h3 {
+        color: $color-heading-deep;
+        font-size: $font-size-normal;
+        font-weight: 700;
+        line-height: 24px;
+      }
+
+      p {
+        color: $color-text-medium;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        flex: 1;
+        margin-bottom: 8px;
+      }
+
+      // Learn more indicator
+      .has-text-success {
+        color: $ac-primary !important;
+        font-size: $font-size-tiny;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    .service-cta-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 24px;
+      padding: 18px 20px;
+      border-radius: 10px;
+      border: 1px solid $color-border-light;
+      background: #fff;
+
+
+
+      @include touch {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      p:first-child {
+        color: $color-text-dark;
+        font-size: $font-size-normal;
+        font-weight: 600;
+      }
+
+      p:last-child {
+        color: #6b7280;
+        font-size: $font-size-extra-small;
+        margin-top: 2px;
+      }
+
+      .buttons {
+        flex-shrink: 0;
+        margin-bottom: 0;
+        gap: 8px;
+
+        
+        @include touch {
+          flex-direction: column;
+          align-items: end;
+        }
+
+        @include touch {
+          width: 100%;
+
+          .ac-button {
+            width: 100%;
+          }
+        }
+      }
+
+      .service-cta-outline-btn {
+        border: 1.5px solid #d1d5db;
+        color: #374151;
+        background: #fff;
+
+        &:hover {
+          border-color: #9ca3af;
+        }
+      }
+    }
+  }
+}
+
+// Services section stats row
+.simple-stats-wrapper {
+  margin-top: 48px;
+
+  .column {
+    @include touch {
+      margin-bottom: 16px;
+    }
+  }
+
+  .stat-card {
+    padding: 24px;
+    border-radius: 14px;
+    border: 1px solid $color-border-light;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  .icon-box {
+    @include icon-box(48px, 14px);
+    margin: 0 auto 8px;
+
+    &.stat-icon-neutral {
+      background: #f3f4f6;
+      color: $color-text-muted;
+    }
+  }
+
+  .strong {
+    color: $color-heading-deep;
+    text-align: center;
+    @include text-30-700-36;
+  }
+
+  .subtext {
+    color: $color-text-medium;
+    text-align: center;
+    font-size: $font-size-normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+
+
+// =============================================================================
+// Final CTA Section
+// =============================================================================
+
+.headline-accent {
+  color: $ac-primary;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 12' preserveAspectRatio='none'%3E%3Cpath d='M0,8 Q50,2 100,7 Q150,12 200,6 Q250,0 300,6 Q350,12 400,5' stroke='%2300A550' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.dot-pulse {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $ac-primary;
+  flex-shrink: 0;
+}
+
+.final-cta-section {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+  background:
+    radial-gradient(ellipse 60% 60% at 0% 0%, rgba(0, 165, 80, 0.1) 0%, transparent 100%),
+    radial-gradient(ellipse 50% 50% at 100% 100%, rgba(0, 165, 80, 0.07) 0%, transparent 100%),
+    #fff;
+
+
+  @include desktop-only {
+    padding: 50px 0;
+  }
+
+  @include touch {
+    padding: 60px 0;
+  }
+
+  .cta-shape-rect-top {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 130px;
+    height: 90px;
+    border-radius: 18px;
+    border: 2px solid rgba(0, 165, 80, 0.18);
+    background: transparent;
+    pointer-events: none;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .cta-shape-circle-bottom {
+    position: absolute;
+    bottom: -48px;
+    left: -48px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 165, 80, 0.14);
+    background: transparent;
+    pointer-events: none;
+  }
+
+  .cta-bg-glow-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: radial-gradient(ellipse at top left, rgba(0, 165, 80, 0.07) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  .cta-bg-glow-right {
+    display: none;
+  }
+
+  .final-cta-container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-title {
+    margin-bottom: 0;
+
+    .tag.section-tag iconify-icon {
+      margin-right: 6px;
+    }
+
+    h2.title {
+      @include text-48-900-54;
+      margin-bottom: 20px;
+      line-height: 1.15;
+
+      @include touch {
+        font-size: 32px !important;
+      }
+    }
+
+    p.subtitle {
+      max-width: 580px;
+      margin: 16px auto 0;
+    }
+  }
+
+  .cta-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+    margin-top: 52px;
+    margin-bottom: 52px;
+
+    @include touch {
+      gap: 32px;
+    }
+
+    @include mobile {
+      gap: 16px;
+    }
+
+    .benefit-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      .feature-icon-box {
+        @include icon-box(64px, 16px);
+        box-shadow: 0 2px 12px rgba(0, 165, 80, 0.08);
+      }
+
+      .subtext {
+        color: $color-heading-deep;
+        text-align: center;
+        @include text-14-700-20;
+      }
+    }
+  }
+
+  .buttons.is-centered {
+    gap: 12px;
+    margin-bottom: 32px !important;
+
+    @include touch {
+      flex-direction: column;
+
+      .ac-button {
+        width: 100%;
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  .cta-social-proof {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+
+// =============================================================================
+// Product-Specific Color Theming — Our Products Section
+// =============================================================================
+
+$prod-theme-colors: (
+  "kubedb": $kubedb-primary,
+  // #4d4dcb — from _themes.scss
+  "kubestash": $stash-primary,
+  // #5e2dea — from _themes.scss
+  "voyager": $voyager-primary,
+  // #2d2a78 — from _themes.scss
+  "kubevault": $kubevault-primary,
+  // #326ce5 — from _themes.scss
+  "ace-platform": #00a651 // matches :root --ac-primary in _themes.scss
+);
+
+@each $key, $color in $prod-theme-colors {
+  li.prod-nav-btn.is-prod-#{$key}.is-active a {
+    color: $color !important;
+    border-bottom-color: $color !important;
+  }
+
+  .product-card.is-prod-#{$key} {
+    .product-header {
+      background: rgba($color, 0.04);
+
+      &::after {
+        background: linear-gradient(135deg, transparent 50%, rgba($color, 0.07) 100%);
+      }
+    }
+
+    .key-features {
+      h4 .icon {
+        background: rgba($color, 0.1);
+        color: $color;
+      }
+
+      .features-grid .feature-item .feature-icon {
+        color: $color;
+        opacity: 1;
+      }
+    }
+
+    .use-case-numbers-wrapper {
+      .use-cases-grid .use-case-item {
+        color: $color;
+        background: rgba($color, 0.03);
+        border-color: rgba($color, 0.12);
+
+        &:hover {
+          background: #fff;
+          border-color: rgba($color, 0.3);
+          box-shadow: 0 4px 12px rgba($color, 0.1);
+        }
+      }
+
+      .stats-grid .stat-item .stat-value {
+        color: $color;
+      }
+    }
+
+    .ac-button.is-primary {
+      background: $color !important;
+      box-shadow: 0 4px 12px rgba($color, 0.25) !important;
+
+      &:hover {
+        background: darken($color, 8%) !important;
+        box-shadow: 0 6px 16px rgba($color, 0.35) !important;
+      }
+    }
+  }
+}
