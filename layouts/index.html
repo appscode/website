@@ -33,19 +33,13 @@
             <a href="#products-area" class="button ac-button is-primary is-medium">
               Explore Products
               <span class="icon is-small ml-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="1.5" d="M18.5 12H5m8 6s6-4.419 6-6s-6-6-6-6" />
-                </svg>
+                <iconify-icon icon="lucide:arrow-right" width="24" height="24"></iconify-icon>
               </span>
             </a>
             <a href="#services-section" class="button ac-button is-white is-medium">
               View Services
               <span class="icon is-small ml-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="1.5" d="M18.5 12H5m8 6s6-4.419 6-6s-6-6-6-6" />
-                </svg>
+                <iconify-icon icon="lucide:arrow-right" width="24" height="24"></iconify-icon>
               </span>
             </a>
           </div>
@@ -53,10 +47,7 @@
           <div class="data-show-case-wrapper">
             <div class="data-show-case">
               <span class="icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                </svg>
+                <iconify-icon icon="lucide:activity" width="20" height="20" style="color: #22c55e"></iconify-icon>
               </span>
               <div>
                 <p class="strong">99.99%</p>
@@ -66,13 +57,7 @@
 
             <div class="data-show-case">
               <span class="icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
-                </svg>
+                <iconify-icon icon="lucide:server" width="20" height="20" style="color: #4b5563"></iconify-icon>
               </span>
               <div>
                 <p class="strong">10K+</p>
@@ -82,13 +67,7 @@
 
             <div class="data-show-case">
               <span class="icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="2" y1="12" x2="22" y2="12"></line>
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
-                  </path>
-                </svg>
+                <iconify-icon icon="lucide:globe" width="20" height="20" style="color: #22c55e"></iconify-icon>
               </span>
               <div>
                 <p class="strong">Multi-Cloud</p>
@@ -113,10 +92,7 @@
         <!-- Center Cloud Icon -->
         <div
           class="pos-absolute top-50 left-50 anim-float-center z-1 box is-shadowless shadow-custom br-16 has-background-white is-flex is-align-items-center is-justify-content-center w-96">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#00A550" stroke-width="2.5"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
-          </svg>
+          <iconify-icon icon="lucide:cloud" width="48" height="48" style="color: #00A550"></iconify-icon>
         </div>
 
         <!-- Floating Cards — data from data/homepage/hero_cards.json -->
@@ -128,10 +104,7 @@
             <div
               class="box is-shadowless shadow-custom {{ $card.border_class }} br-12 has-background-white is-flex is-align-items-center py-2 px-3">
               <span class="{{ $card.icon_bg }} {{ $card.icon_color }} mr-3 br-8 w-36">
-                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  {{ $card.svg | safeHTML }}
-                </svg>
+                <iconify-icon class="icon-svg" {{ printf "icon=%s" $card.lucide_icon | safeHTMLAttr }} width="20" height="20"></iconify-icon>
               </span>
               <div>
                 <p class="{{ $card.label_color }} has-text-weight-bold is-uppercase text-tiny">{{ $card.label }}</p>
