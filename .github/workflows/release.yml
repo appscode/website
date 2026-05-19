@@ -61,11 +61,6 @@ jobs:
             url."https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com".insteadOf \
             "https://github.com"
 
-      - name: Install GitHub CLI
-        run: |
-          curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
-          sudo mv bin/hub /usr/local/bin
-
       - name: Install yq
         run: |
           curl -fsSL -o yqq https://github.com/mikefarah/yq/releases/download/3.3.0/yq_linux_amd64
