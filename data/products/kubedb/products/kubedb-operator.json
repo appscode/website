@@ -8,11 +8,11 @@
   "orb_align": "left",
   "hero_title_1": "Run Production Databases",
   "hero_title_2": "Natively on Kubernetes",
-  "hero_description": "KubeDB Operator extends Kubernetes with database-aware automation, enabling teams to run production databases using declarative APIs.",
-  "primary_action_text": "Get Started Free",
+  "hero_description": "KubeDB Operator extends Kubernetes with database-aware automation,<br> enabling teams to run production databases using declarative APIs.",
+  "primary_action_text": "Try Now Free",
   "primary_action_url": "/docs/latest/setup/",
-  "secondary_action_text": "View Documentation",
-  "secondary_action_url": "/docs/latest/welcome/",
+  "secondary_action_text": "Schedule Demo",
+  "secondary_action_url": "https://x.appscode.com/_/kubedb_inquiry",
   "stats": [
     {
       "value": "25+",
@@ -23,12 +23,12 @@
       "label": "Production Deployments"
     },
     {
-      "value": "<5 min",
+      "value": "<1 min",
       "label": "Time to Deploy"
     },
     {
-      "value": "99.99%",
-      "label": "Uptime SLA"
+      "value": "99.9%",
+      "label": "Response SLA"
     }
   ],
   "benefits_title": "Why KubeDB Operator?",
@@ -159,7 +159,7 @@
     }
   ],
   "how_it_works_title": "How It Works?",
-  "how_it_works_subtitle": "You bring the infrastructure. We bring the software that transforms it into a DBaaS platform.",
+  "how_it_works_subtitle": "You bring the infrastructure. We bring the software that transforms it<br> into a DBaaS platform.",
   "how_it_works_infra": {
     "title": "You Bring:",
     "items": [
@@ -239,20 +239,22 @@
     }
   ],
   "comparison_title": "Operator vs Platform: What's the Difference?",
-  "comparison_subtitle": "KubeDB Operator provides database automation inside a single cluster, while KubeDB Platform extends this into a centralized DBaaS across clusters, teams and environments.",
+  "comparison_subtitle": "KubeDB Operator provides database automation inside a single kubernetes cluster, while KubeDB Platform extends this into a centralized DBaaS across clusters, teams and environments.",
   "comparison_analogy": "The Operator is the engine. The Platform is the car.",
   "comparison_analogy_heading": "Think of it this way:",
-  "comparison_analogy_image": "/assets/images/products/kubedb/kubedb-hero.png",
+  "comparison_analogy_image": "/assets/images/products/kubedb/stack-diagram/generic.png",
   "comparison_analogy_image_alt": "Architecture Diagram",
   "comparison_analogy_explanation": "The Platform provides centralized control and governance, orchestrating multiple Operator instances across different clusters and environments.",
+  "comparison_active_col": "operator",
   "comparison_summary_cards": [
     {
       "title": "KubeDB Operator",
       "icon": "lucide:container",
       "icon_color": "#c084fc",
       "check_color": "#c084fc",
-      "bg": "rgba(88, 28, 135, 0.15)",
+      "bg": "rgba(88, 28, 135, 0.25)",
       "border": "#a855f7",
+      "active": true,
       "description": "Best for teams that want to run and automate databases inside a Kubernetes cluster using declarative APIs.",
       "items": [
         "Single cluster deployment",
@@ -265,8 +267,9 @@
       "icon": "lucide:cloud",
       "icon_color": "#60a5fa",
       "check_color": "#4ade80",
-      "bg": "rgba(30, 41, 59, 0.6)",
+      "bg": "rgba(30, 41, 59, 0.4)",
       "border": "#475569",
+      "active": false,
       "description": "Designed for organizations that need to deliver a standardized, self-service DBaaS across multiple clusters, teams, and environments with centralized control and governance.",
       "items": [
         "Multi-cluster control plane",
@@ -305,7 +308,7 @@
       [
         "Multi-tenancy",
         "Basic (K8s namespaces)",
-        "Advanced RBAC + isolation"
+        "Advanced RBAC + tenant isolation"
       ],
       [
         "Visibility",
@@ -324,7 +327,7 @@
       ],
       [
         "Branding",
-        "Use as KubeDB or internal tool",
+        "Use as internal tool",
         "Complete white-labeling"
       ],
       [
@@ -381,15 +384,15 @@
   ],
   "cta_badge": "Get Started Today",
   "cta_title": "Ready to Automate Your <br><span style='color: #818cf8;'>Database Operations?</span>",
-  "cta_description": "Join thousands of teams running production databases on Kubernetes with KubeDB Operator",
+  "cta_description": "Join thousands of teams running production databases on<br> Kubernetes with KubeDB Operator",
   "cta_checklist": [
     "Free 30-day trial",
-    "Enterprise support & 99.9% uptime SLA",
+    "Enterprise support & 99.9% response SLA",
     "Deploy in minutes • Cancel anytime"
   ],
   "final_cta_metrics": [
-    { "icon": "lucide:trending-up", "value": "10K+", "label": "Active Users", "gradient": "linear-gradient(135deg, #60a5fa, #06b6d4)" },
-    { "icon": "lucide:shield-check", "value": "99.9%", "label": "Uptime SLA", "gradient": "linear-gradient(135deg, #4ade80, #10b981)" },
+    { "icon": "lucide:trending-up", "value": "10K+", "label": "Active Databases", "gradient": "linear-gradient(135deg, #60a5fa, #06b6d4)" },
+    { "icon": "lucide:shield-check", "value": "99.9%", "label": "Response SLA", "gradient": "linear-gradient(135deg, #4ade80, #10b981)" },
     { "icon": "lucide:database", "value": "25+", "label": "Databases", "gradient": "linear-gradient(135deg, #c084fc, #ec4899)" },
     { "icon": "lucide:check-circle", "value": "24/7", "label": "Support", "gradient": "linear-gradient(135deg, #fb923c, #ef4444)" }
   ],
