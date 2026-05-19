@@ -20,12 +20,11 @@ jobs:
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
-          fetch-depth: 1
-          fetch-tags: true
+          fetch-depth: 0
 
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          node-version: '20'
+          node-version: '22'
           check-latest: true
 
       - name: Set up Python
@@ -85,15 +84,17 @@ jobs:
           chmod +x hugo-tools
           sudo mv hugo-tools /usr/local/bin/hugo-tools
 
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@4907a6ddec9925e35a0a9e82d7399ccc52663121 # v4.1.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Publish to GitHub Container Registry
         env:
           REGISTRY: ghcr.io/appscode
-          DOCKER_TOKEN: ${{ secrets.LGTM_GITHUB_TOKEN }}
-          USERNAME: 1gtm
-          GITHUB_USER: ${{ github.actor }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          docker login ghcr.io --username ${USERNAME} --password ${DOCKER_TOKEN}
           npm install
           make release
 
