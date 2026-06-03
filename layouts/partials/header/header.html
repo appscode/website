@@ -61,12 +61,6 @@
 
                     <!-- ac-grid-container -->
                     <div class="mega-menu-inner container">
-                      <button class="button ac-button inline-button back-button">
-                        <span class="icon p-0">
-                          <iconify-icon icon="heroicons:arrow-uturn-left"></iconify-icon>
-                        </span>
-                        <span>Back</span>
-                      </button>
                       <!-- product start  -->
                       <div class="product-menu">
                         {{ range $item := $.Site.Data.config.productMenu.c0 }}
@@ -316,12 +310,6 @@
                     <div class="mega-menu-inner container">
 
                       <!-- Back Button -->
-                      <button class="button ac-button inline-button back-button" type="button">
-                        <span class="icon p-0">
-                          <iconify-icon icon="heroicons:arrow-uturn-left"></iconify-icon>
-                        </span>
-                        <span>Back</span>
-                      </button>
 
                       <!-- Services Grid -->
                       <div class="product-menu services-grid" id="servicesGrid">
@@ -396,33 +384,7 @@
                   <div class="mega-menu-wrapper">
                     <div class="mega-menu-inner container">
 
-                      <button class="button ac-button inline-button back-button" type="button">
-                        <span class="icon p-0"><iconify-icon icon="heroicons:arrow-uturn-left"></iconify-icon></span>
-                        <span>Back</span>
-                      </button>
-
-                      <div class="resources-single-list">
-                        <a href="{{.Site.Params.blog_url}}" class="resources-single-item">
-                          <div class="resources-single-icon"><iconify-icon icon="heroicons:pencil-square" width="16" height="16"></iconify-icon></div>
-                          <span>Blog</span>
-                        </a>
-                        <a href="{{.Site.Params.docs_url}}" class="resources-single-item">
-                          <div class="resources-single-icon"><iconify-icon icon="heroicons:book-open" width="16" height="16"></iconify-icon></div>
-                          <span>Docs</span>
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=4lkBt5UUEAQ&list=PLoiT1Gv2KR1hAtDDW7fHEi-s2y2H3DOgx" target="_blank" class="resources-single-item">
-                          <div class="resources-single-icon"><iconify-icon icon="heroicons:video-camera" width="16" height="16"></iconify-icon></div>
-                          <span>Webinars</span>
-                        </a>
-                        <a href="{{.Site.Params.learn_url}}" class="resources-single-item">
-                          <div class="resources-single-icon"><iconify-icon icon="heroicons:academic-cap" width="16" height="16"></iconify-icon></div>
-                          <span>Learn</span>
-                        </a>
-                        <a href="{{.Site.Params.youtube_url}}" target="_blank" class="resources-single-item">
-                          <div class="resources-single-icon"><iconify-icon icon="heroicons:play-circle" width="16" height="16"></iconify-icon></div>
-                          <span>Demos</span>
-                        </a>
-                      </div>
+                      {{ partial "menu/resources-nav.html" (dict "page" . "site" .Site) }}
 
                     </div>
                   </div>
@@ -612,13 +574,6 @@
 
               <!-- ac-grid-container -->
               <div class="mega-menu-inner container">
-                <button class="button ac-button inline-button back-button">
-                  <span
-                    class="icon p-0">
-                      <iconify-icon icon="heroicons:arrow-uturn-left"></iconify-icon>
-                    </span>
-                    <span>Back</span>
-                </button>
                 <!-- product start  -->
                 <div class="product-menu database-list">
                   {{ range .Children }}

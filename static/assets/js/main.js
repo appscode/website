@@ -54,16 +54,6 @@ navbarItems.forEach((navbarItem) => {
   });
 });
 
-// Responsive menu back button
-const backButtonAll = document.querySelectorAll(".back-button");
-// create click event for all back button	
-Array.from(backButtonAll).forEach((el) => {
-  el.addEventListener("click", () => {
-    // closeset nav item ancestor	
-    const activeNavElement = el.closest(".nav-item.is-active");
-    if (activeNavElement) activeNavElement.classList.remove("is-active");
-  })
-});
 // navbar area JS v.2022 end
 
 // responsive navbar area
@@ -87,16 +77,6 @@ Array.from(responsiveMenus).forEach((menu, idx) => {
       // toggle active menu class
       toggleElement.classList.toggle(toggleClassesForResponsiveMenu[idx]);
       if (toggleElement.classList.contains(toggleClassesForResponsiveMenu[idx])) {
-        const backButtonElement = toggleElement.querySelector(".back-button");
-
-        function handleClick() {
-          toggleElement.classList.remove(toggleClassesForResponsiveMenu[idx]);
-          // remove event listener on back button click
-          backButtonElement.removeEventListener("click", handleClick);
-        }
-
-        backButtonElement.addEventListener("click", handleClick);
-
       }
     }
 

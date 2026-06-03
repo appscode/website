@@ -1,63 +1,176 @@
 {{ $site := .site }}
 
+{{/* Fetch webinar data */}}
+{{ $webinars := slice }}
+{{ with resources.GetRemote "https://x.appscode.com/_/playlists/PLoiT1Gv2KR1hAtDDW7fHEi-s2y2H3DOgx" }}
+  {{ with .Err }}
+    {{ warnf "webinar fetch error: %s" . }}
+  {{ else }}
+    {{ $webinars = first 4 (.Content | transform.Unmarshal) }}
+  {{ end }}
+{{ end }}
+
 {{ $tabs := slice
-  (dict "id" "blog"     "title" "Blog"     "desc" "Articles, tutorials & insights"    "icon" "heroicons:pencil-square"  "url" $site.Params.blog_url    "cta" "Visit Blog"        "blurb" "Stay up to date with the latest AppsCode news, product updates, and engineering deep-dives.")
-  (dict "id" "docs"     "title" "Docs"     "desc" "Guides, references & API docs"     "icon" "heroicons:book-open"      "url" $site.Params.docs_url    "cta" "Open Docs"         "blurb" "Complete documentation for all AppsCode products — setup guides, API references, and operational runbooks.")
-  (dict "id" "webinars" "title" "Webinars" "desc" "Live & on-demand sessions"         "icon" "heroicons:video-camera"   "url" "https://www.youtube.com/watch?v=4lkBt5UUEAQ&list=PLoiT1Gv2KR1hAtDDW7fHEi-s2y2H3DOgx" "cta" "Watch Webinars" "blurb" "Join live or watch on-demand webinars covering Kubernetes, databases, GitOps, and cloud-native best practices." "external" true)
-  (dict "id" "learn"    "title" "Learn"    "desc" "Hands-on learning paths"           "icon" "heroicons:academic-cap"   "url" $site.Params.learn_url   "cta" "Start Learning"    "blurb" "Structured learning paths to help your team master AppsCode tools and Kubernetes.")
-  (dict "id" "demos"    "title" "Demos"    "desc" "Tutorials, demos & walkthroughs"   "icon" "heroicons:play-circle"    "url" $site.Params.youtube_url "cta" "Watch on YouTube"  "blurb" "Watch product demos and video walkthroughs on the AppsCode YouTube channel." "external" true)
+  (dict "id" "blog"     "title" "Blog"     "tabDesc" "Articles, tutorials & insights")
+  (dict "id" "docs"     "title" "Docs"     "tabDesc" "Guides, references & API docs")
+  (dict "id" "webinars" "title" "Webinars" "tabDesc" "Live & on-demand sessions")
+  (dict "id" "learn"    "title" "Learn"    "tabDesc" "Hands-on learning paths")
+  (dict "id" "videos"   "title" "Videos"   "tabDesc" "Tutorials, demos & walkthroughs")
 }}
 
-<!-- Left: tab list -->
-<div class="resources-nav-list" id="resourcesNav">
-  {{ range $i, $tab := $tabs }}
-  <a class="resource-nav-item{{ if eq $i 0 }} is-active{{ end }}" data-resource-id="{{ $tab.id }}">
-    <div class="resource-nav-icon">
-      <iconify-icon icon="{{ $tab.icon }}" width="16" height="16"></iconify-icon>
-    </div>
-    <div class="resource-nav-info">
-      <span class="resource-nav-title">{{ $tab.title }}</span>
-      <span class="resource-nav-desc">{{ $tab.desc }}</span>
-    </div>
-  </a>
-  {{ end }}
-</div>
+<div class="resource-menu columns is-variable is-0 is-gapless">
 
-<!-- Right: detail panels -->
-<div class="resources-detail-panel">
-  {{ range $i, $tab := $tabs }}
-  <div class="resource-detail{{ if eq $i 0 }} is-active{{ end }}" id="resource-{{ $tab.id }}">
-
-    <!-- Content cards -->
-    <div class="resource-cards-list">
-      {{ partial "menu/resource-card.html" (dict "url" $tab.url "title" $tab.cta "desc" $tab.blurb "icon" $tab.icon "external" (default false $tab.external)) }}
+  {{/* Left: tabs */}}
+  <div class="column is-5">
+    <div class="resource-menu-nav" id="acResourceNav">
+      {{ range $i, $tab := $tabs }}
+      <button type="button"
+        class="resource-menu-tab{{ if eq $i 0 }} is-active{{ end }}"
+        data-resource-target="{{ $tab.id }}">
+        <span class="resource-menu-tab-title">{{ $tab.title }}</span>
+        <span class="resource-menu-tab-desc">{{ $tab.tabDesc }}</span>
+      </button>
+      {{ end }}
     </div>
-
-    <!-- Footer -->
-    <div class="resource-panel-footer">
-      <p class="resource-panel-blurb">{{ $tab.blurb }}</p>
-      <a href="{{ $tab.url }}" class="resource-panel-cta"{{ if default false $tab.external }} target="_blank" rel="noopener"{{ end }}>
-        {{ $tab.cta }}
-        <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
-      </a>
-    </div>
-
   </div>
-  {{ end }}
+
+  {{/* Right: panels */}}
+  <div class="column is-7">
+    <div class="resource-menu-panels" id="acResourcePanels">
+
+      {{/* ── Blog ── */}}
+      <div class="resource-menu-panel is-active" data-resource-panel="blog">
+        <div class="resource-panel-cards">
+          <a href="{{ $site.Params.blog_url }}" class="resource-panel-card">
+            <div class="resource-panel-card-icon">
+              <iconify-icon icon="heroicons:pencil-square" width="18" height="18"></iconify-icon>
+            </div>
+            <div class="resource-panel-card-info">
+              <span class="resource-panel-card-title">Engineering Blog</span>
+              <span class="resource-panel-card-desc">Deep-dives, tutorials, and product updates from the AppsCode engineering team.</span>
+            </div>
+          </a>
+        </div>
+        <div class="resource-menu-panel-footer">
+          <p>Stay up to date with guides, tutorials, and best practices.</p>
+          <a href="{{ $site.Params.blog_url }}" class="resource-menu-view-all">
+            Visit the Blog
+            <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
+          </a>
+        </div>
+      </div>
+
+      {{/* ── Docs ── */}}
+      <div class="resource-menu-panel" data-resource-panel="docs">
+        <div class="resource-panel-cards">
+          <a href="{{ $site.Params.docs_url }}" class="resource-panel-card">
+            <div class="resource-panel-card-icon">
+              <iconify-icon icon="heroicons:book-open" width="18" height="18"></iconify-icon>
+            </div>
+            <div class="resource-panel-card-info">
+              <span class="resource-panel-card-title">Documentation Hub</span>
+              <span class="resource-panel-card-desc">Setup guides, API references, and operational runbooks for all AppsCode products.</span>
+            </div>
+          </a>
+        </div>
+        <div class="resource-menu-panel-footer">
+          <p>Everything you need to deploy and manage databases on Kubernetes.</p>
+          <a href="{{ $site.Params.docs_url }}" class="resource-menu-view-all">
+            Open Docs
+            <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
+          </a>
+        </div>
+      </div>
+
+      {{/* ── Webinars ── */}}
+      <div class="resource-menu-panel" data-resource-panel="webinars">
+        <div class="resource-panel-cards">
+          {{ range $webinars }}
+          {{ $videoId := .contentDetails.videoId }}
+          {{ $title   := .snippet.title }}
+          {{ $desc    := .snippet.description | plainify | truncate 80 }}
+          <a href="https://www.youtube.com/watch?v={{ $videoId }}" target="_blank" rel="noopener" class="resource-panel-card">
+            <div class="resource-panel-card-icon">
+              <iconify-icon icon="heroicons:video-camera" width="18" height="18"></iconify-icon>
+            </div>
+            <div class="resource-panel-card-info">
+              <span class="resource-panel-card-title">{{ $title | truncate 55 }}</span>
+              <span class="resource-panel-card-desc">{{ $desc }}</span>
+            </div>
+          </a>
+          {{ end }}
+        </div>
+        <div class="resource-menu-panel-footer">
+          <p>Tune in for live demos, deep-dives, and expert database sessions.</p>
+          <a href="https://appscode.com/webinar/" rel="noopener" class="resource-menu-view-all">
+            All Webinars
+            <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
+          </a>
+        </div>
+      </div>
+
+      {{/* ── Learn ── */}}
+      <div class="resource-menu-panel" data-resource-panel="learn">
+        <div class="resource-panel-cards">
+          <a href="{{ $site.Params.learn_url }}" class="resource-panel-card">
+            <div class="resource-panel-card-icon">
+              <iconify-icon icon="heroicons:academic-cap" width="18" height="18"></iconify-icon>
+            </div>
+            <div class="resource-panel-card-info">
+              <span class="resource-panel-card-title">Learning Paths</span>
+              <span class="resource-panel-card-desc">Structured paths to master Kubernetes, databases, and cloud-native tools.</span>
+            </div>
+          </a>
+        </div>
+        <div class="resource-menu-panel-footer">
+          <p>Hands-on learning paths to help your team get productive with AppsCode tools.</p>
+          <a href="{{ $site.Params.learn_url }}" class="resource-menu-view-all">
+            Start Learning
+            <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
+          </a>
+        </div>
+      </div>
+
+      {{/* ── Videos ── */}}
+      <div class="resource-menu-panel" data-resource-panel="videos">
+        <div class="resource-panel-cards">
+          <a href="{{ $site.Params.youtube_url }}" target="_blank" rel="noopener" class="resource-panel-card">
+            <div class="resource-panel-card-icon">
+              <iconify-icon icon="heroicons:play-circle" width="18" height="18"></iconify-icon>
+            </div>
+            <div class="resource-panel-card-info">
+              <span class="resource-panel-card-title">YouTube Channel</span>
+              <span class="resource-panel-card-desc">Product demos, tutorials, and live session recordings on the AppsCode YouTube channel.</span>
+            </div>
+          </a>
+        </div>
+        <div class="resource-menu-panel-footer">
+          <p>Explore tutorials, product demos, and live session recordings.</p>
+          <a href="{{ $site.Params.youtube_url }}" target="_blank" rel="noopener" class="resource-menu-view-all">
+            Watch on YouTube
+            <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </div>
 
 <script>
-  (function() {
-    var tabs = document.querySelectorAll('#resourcesNav .resource-nav-item');
-    tabs.forEach(function(tab) {
-      tab.addEventListener('mouseenter', function() {
-        var id = this.getAttribute('data-resource-id');
-        tabs.forEach(function(t) { t.classList.remove('is-active'); });
-        document.querySelectorAll('.resource-detail').forEach(function(p) { p.classList.remove('is-active'); });
-        this.classList.add('is-active');
-        var panel = document.getElementById('resource-' + id);
-        if (panel) panel.classList.add('is-active');
-      });
+(function() {
+  var tabs   = document.querySelectorAll('#acResourceNav .resource-menu-tab');
+  var panels = document.querySelectorAll('#acResourcePanels .resource-menu-panel');
+  tabs.forEach(function(tab) {
+    tab.addEventListener('mouseenter', function() {
+      var target = this.getAttribute('data-resource-target');
+      tabs.forEach(function(t)   { t.classList.remove('is-active'); });
+      panels.forEach(function(p) { p.classList.remove('is-active'); });
+      this.classList.add('is-active');
+      var panel = document.querySelector('[data-resource-panel="' + target + '"]');
+      if (panel) panel.classList.add('is-active');
     });
-  })();
+  });
+})();
 </script>
