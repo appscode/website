@@ -1,37 +1,40 @@
 // navbar area JS v.2022 start
 const navItems = document.querySelectorAll(".navbar-appscode .nav-item");
 
+const isTouchDevice = () => window.matchMedia("(max-width: 1023px)").matches;
+
 navItems.forEach(navItem => {
   const item = navItem.querySelector('.link');
-  item.addEventListener('click', function (el) {
 
-    // to remove active class from previously selected navItem
+  function openNav() {
     const selectedNav = document.querySelector(".nav-item.is-active");
-    if (selectedNav && selectedNav !== item.parentElement) {
-      selectedNav.classList.toggle('is-active')
+    if (selectedNav && selectedNav !== navItem) {
+      selectedNav.classList.remove('is-active');
     }
+    navItem.classList.add('is-active');
+  }
 
-    // handle selected navItem class
-    const hasActiveClass = navItem.classList.contains("is-active");
-    navItem.classList.toggle('is-active')
+  function closeNav() {
+    navItem.classList.remove('is-active');
+  }
 
-    // handle background dark-shadow of navItem
-    const darkBodyEl = document.querySelector(".modal-backdrop");
+  // Desktop: hover to open/close
+  navItem.addEventListener('mouseenter', function () {
+    if (!isTouchDevice()) openNav();
+  });
+  navItem.addEventListener('mouseleave', function () {
+    if (!isTouchDevice()) closeNav();
+  });
 
-    function handleDarkBodyClickEvent(el) {
-      el.target.classList.remove('is-show')
-      const selectedNavItem = document.querySelector(".nav-item.is-active");
-      selectedNavItem ? selectedNavItem.classList.toggle('is-active') : null;
+  // Mobile/touch: keep click behaviour
+  item.addEventListener('click', function () {
+    if (!isTouchDevice()) return;
+    if (navItem.classList.contains("is-active")) {
+      closeNav();
+    } else {
+      openNav();
     }
-
-    if (hasActiveClass && darkBodyEl.classList.contains("is-show")) {
-      darkBodyEl.classList.toggle("is-show");
-      darkBodyEl.removeEventListener('click', handleDarkBodyClickEvent);
-    } else if (!hasActiveClass && !darkBodyEl.classList.contains("is-show") && !!navItem.querySelector('.mega-menu-wrapper')) {
-      darkBodyEl.classList.toggle("is-show");
-      darkBodyEl.addEventListener('click', handleDarkBodyClickEvent);
-    }
-  })
+  });
 })
 
 // mega menu active class
@@ -97,11 +100,7 @@ Array.from(responsiveMenus).forEach((menu, idx) => {
       }
     }
 
-    const modalBackdropElement = document.querySelector(".modal-backdrop.is-show");
-    // if modal backdrop element is visible then hide it
-    if (modalBackdropElement) {
-      modalBackdropElement.classList.remove("is-show")
-    }
+
 
     const navItem = document.querySelector(".nav-item.is-active");
     // if modal backdrop element is visible then hide it

@@ -371,30 +371,23 @@
                 </li>
 
                <script>
-                  document.querySelectorAll('.product-menu .single-product').forEach(item => {
+                  document.querySelectorAll('#servicesGrid .single-product').forEach(item => {
                     item.addEventListener('mouseenter', function(e) {
-                      e.preventDefault();
                       const serviceId = this.getAttribute('data-service-id');
-                      showOfferings(serviceId);
+                      if (!serviceId) return;
 
-                      // Update is-active class
-                      document.querySelectorAll('.product-menu .single-product').forEach(el => {
+                      document.querySelectorAll('#servicesGrid .single-product').forEach(el => {
                         el.classList.remove('is-active');
                       });
                       this.classList.add('is-active');
+
+                      document.querySelectorAll('.offering-content').forEach(el => {
+                        el.classList.remove('is-block');
+                      });
+                      const panel = document.getElementById('offerings-' + serviceId);
+                      if (panel) panel.classList.add('is-block');
                     });
                   });
-
-                  function showOfferings(serviceId) {
-                    document.querySelectorAll('.product-description.offering-content').forEach(el => {
-                      el.classList.remove('is-block');
-                    });
-
-                    const el = document.getElementById('offerings-' + serviceId);
-                    if (el) {
-                      el.classList.add('is-block');
-                    }
-                  }
                 </script>
                 <!-- services end -->
                  
