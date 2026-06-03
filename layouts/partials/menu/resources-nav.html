@@ -1,0 +1,63 @@
+{{ $site := .site }}
+
+{{ $tabs := slice
+  (dict "id" "blog"     "title" "Blog"     "desc" "Articles, tutorials & insights"    "icon" "heroicons:pencil-square"  "url" $site.Params.blog_url    "cta" "Visit Blog"        "blurb" "Stay up to date with the latest AppsCode news, product updates, and engineering deep-dives.")
+  (dict "id" "docs"     "title" "Docs"     "desc" "Guides, references & API docs"     "icon" "heroicons:book-open"      "url" $site.Params.docs_url    "cta" "Open Docs"         "blurb" "Complete documentation for all AppsCode products — setup guides, API references, and operational runbooks.")
+  (dict "id" "webinars" "title" "Webinars" "desc" "Live & on-demand sessions"         "icon" "heroicons:video-camera"   "url" "https://www.youtube.com/watch?v=4lkBt5UUEAQ&list=PLoiT1Gv2KR1hAtDDW7fHEi-s2y2H3DOgx" "cta" "Watch Webinars" "blurb" "Join live or watch on-demand webinars covering Kubernetes, databases, GitOps, and cloud-native best practices." "external" true)
+  (dict "id" "learn"    "title" "Learn"    "desc" "Hands-on learning paths"           "icon" "heroicons:academic-cap"   "url" $site.Params.learn_url   "cta" "Start Learning"    "blurb" "Structured learning paths to help your team master AppsCode tools and Kubernetes.")
+  (dict "id" "demos"    "title" "Demos"    "desc" "Tutorials, demos & walkthroughs"   "icon" "heroicons:play-circle"    "url" $site.Params.youtube_url "cta" "Watch on YouTube"  "blurb" "Watch product demos and video walkthroughs on the AppsCode YouTube channel." "external" true)
+}}
+
+<!-- Left: tab list -->
+<div class="resources-nav-list" id="resourcesNav">
+  {{ range $i, $tab := $tabs }}
+  <a class="resource-nav-item{{ if eq $i 0 }} is-active{{ end }}" data-resource-id="{{ $tab.id }}">
+    <div class="resource-nav-icon">
+      <iconify-icon icon="{{ $tab.icon }}" width="16" height="16"></iconify-icon>
+    </div>
+    <div class="resource-nav-info">
+      <span class="resource-nav-title">{{ $tab.title }}</span>
+      <span class="resource-nav-desc">{{ $tab.desc }}</span>
+    </div>
+  </a>
+  {{ end }}
+</div>
+
+<!-- Right: detail panels -->
+<div class="resources-detail-panel">
+  {{ range $i, $tab := $tabs }}
+  <div class="resource-detail{{ if eq $i 0 }} is-active{{ end }}" id="resource-{{ $tab.id }}">
+
+    <!-- Content cards -->
+    <div class="resource-cards-list">
+      {{ partial "menu/resource-card.html" (dict "url" $tab.url "title" $tab.cta "desc" $tab.blurb "icon" $tab.icon "external" (default false $tab.external)) }}
+    </div>
+
+    <!-- Footer -->
+    <div class="resource-panel-footer">
+      <p class="resource-panel-blurb">{{ $tab.blurb }}</p>
+      <a href="{{ $tab.url }}" class="resource-panel-cta"{{ if default false $tab.external }} target="_blank" rel="noopener"{{ end }}>
+        {{ $tab.cta }}
+        <iconify-icon icon="heroicons:arrow-up-right" width="14" height="14"></iconify-icon>
+      </a>
+    </div>
+
+  </div>
+  {{ end }}
+</div>
+
+<script>
+  (function() {
+    var tabs = document.querySelectorAll('#resourcesNav .resource-nav-item');
+    tabs.forEach(function(tab) {
+      tab.addEventListener('mouseenter', function() {
+        var id = this.getAttribute('data-resource-id');
+        tabs.forEach(function(t) { t.classList.remove('is-active'); });
+        document.querySelectorAll('.resource-detail').forEach(function(p) { p.classList.remove('is-active'); });
+        this.classList.add('is-active');
+        var panel = document.getElementById('resource-' + id);
+        if (panel) panel.classList.add('is-active');
+      });
+    });
+  })();
+</script>

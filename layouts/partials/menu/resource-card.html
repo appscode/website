@@ -1,0 +1,23 @@
+{{ $url      := .url      | default "#" }}
+{{ $title    := .title    | default "" }}
+{{ $desc     := .desc     | default "" }}
+{{ $icon     := .icon     | default "lucide:box" }}
+{{ $iconImg  := .iconImg  | default "" }}
+{{ $external := .external | default false }}
+
+<a href="{{ $url }}" class="resource-card"{{ if $external }} target="_blank" rel="noopener"{{ end }}>
+  <div class="resource-card-icon">
+    {{ if $iconImg }}
+      <img src="{{ $iconImg }}" alt="{{ $title }}" loading="lazy">
+    {{ else }}
+      <iconify-icon icon="{{ $icon }}" width="18" height="18"></iconify-icon>
+    {{ end }}
+  </div>
+  <div class="resource-card-info">
+    <span class="resource-card-title">{{ $title }}</span>
+    {{ if $desc }}<span class="resource-card-desc">{{ $desc }}</span>{{ end }}
+  </div>
+  <span class="resource-card-arrow">
+    <iconify-icon icon="heroicons:arrow-up-right" width="13" height="13"></iconify-icon>
+  </span>
+</a>
