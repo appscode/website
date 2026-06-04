@@ -82,7 +82,7 @@ jobs:
           if [ "$CLUSTER" = "prod" ]; then
             linode-cli lke kubeconfig-view 326609 --json | jq -r .[0].kubeconfig | base64 -d > ~/.kube/config
           else
-            echo ${NINJA_KUBECONFIG} > ~/.kube/config
+            echo "${NINJA_KUBECONFIG}" > ~/.kube/config
           fi
           kubectl get nodes
           echo "deploy docker image"

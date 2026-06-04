@@ -94,6 +94,6 @@ jobs:
         run: |
           echo "connect to cluster"
           mkdir -p ~/.kube
-          echo ${NINJA_KUBECONFIG} > ~/.kube/config
+          echo "${NINJA_KUBECONFIG}" > ~/.kube/config
           kubectl get nodes
           make deploy-to-linode
