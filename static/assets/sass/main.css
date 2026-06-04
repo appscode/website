@@ -18147,102 +18147,46 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 :root {
   --ac-primary: #00a651;
-  --menu-icon-bg: #edf7f1;
-  --menu-hover-bg: #f0faf4;
-  --menu-icon-active: #c8ecd6;
-  --menu-sidebar-bg: #f5faf7;
 }
 
 body.guard {
   --ac-primary: #d84e27;
-  --menu-icon-bg: #fdf0ec;
-  --menu-hover-bg: #fef5f2;
-  --menu-icon-active: #f8cfc4;
-  --menu-sidebar-bg: #fef8f6;
 }
 body.kubedb {
   --ac-primary: #4d4dcb;
-  --menu-icon-bg: #ededfb;
-  --menu-hover-bg: #f3f3fd;
-  --menu-icon-active: #c5c5f0;
-  --menu-sidebar-bg: #f7f7fe;
 }
 body.kubeci {
   --ac-primary: #2c3e50;
-  --menu-icon-bg: #e8ebee;
-  --menu-hover-bg: #f0f2f4;
-  --menu-icon-active: #bec7cf;
-  --menu-sidebar-bg: #f5f6f8;
 }
 body.kubed {
   --ac-primary: #1c7bd4;
-  --menu-icon-bg: #e8f3fc;
-  --menu-hover-bg: #f0f7fd;
-  --menu-icon-active: #bcd9f5;
-  --menu-sidebar-bg: #f5fafe;
 }
 body.kubesheild {
   --ac-primary: #2516c7;
-  --menu-icon-bg: #eae9fb;
-  --menu-hover-bg: #f2f2fd;
-  --menu-icon-active: #bfbbf4;
-  --menu-sidebar-bg: #f6f6fe;
 }
 body.kubevault {
   --ac-primary: #326ce5;
-  --menu-icon-bg: #e8eefb;
-  --menu-hover-bg: #f0f4fd;
-  --menu-icon-active: #bccef5;
-  --menu-sidebar-bg: #f5f7fe;
 }
 body.kubeform {
   --ac-primary: #592217;
-  --menu-icon-bg: #f0eae9;
-  --menu-hover-bg: #f6f2f1;
-  --menu-icon-active: #d9bcb9;
-  --menu-sidebar-bg: #f9f6f5;
 }
 body.searchlight {
   --ac-primary: #111738;
-  --menu-icon-bg: #e7e8ec;
-  --menu-hover-bg: #eff0f3;
-  --menu-icon-active: #bcbfca;
-  --menu-sidebar-bg: #f4f5f7;
 }
 body.pharmer {
   --ac-primary: #8e44ad;
-  --menu-icon-bg: #f3edf7;
-  --menu-hover-bg: #f8f3fb;
-  --menu-icon-active: #dcc2ea;
-  --menu-sidebar-bg: #faf7fc;
 }
 body.service-broker {
   --ac-primary: #29b4a2;
-  --menu-icon-bg: #e8f8f6;
-  --menu-hover-bg: #f0fbfa;
-  --menu-icon-active: #bceae5;
-  --menu-sidebar-bg: #f4fdfb;
 }
 body.stash {
   --ac-primary: #5e2dea;
-  --menu-icon-bg: #eeebfc;
-  --menu-hover-bg: #f4f2fd;
-  --menu-icon-active: #cfc5f6;
-  --menu-sidebar-bg: #f8f7fe;
 }
 body.swift {
   --ac-primary: #3f51b6;
-  --menu-icon-bg: #eaecf8;
-  --menu-hover-bg: #f1f2fb;
-  --menu-icon-active: #c0c5ee;
-  --menu-sidebar-bg: #f5f6fc;
 }
 body.voyager {
   --ac-primary: #2d2a78;
-  --menu-icon-bg: #eaeaf5;
-  --menu-hover-bg: #f1f1f9;
-  --menu-icon-active: #bfbfe3;
-  --menu-sidebar-bg: #f5f5fb;
 }
 
 html,
@@ -21280,7 +21224,7 @@ Responsive Classes
   text-decoration: none;
 }
 .mega-menu-wrapper .mega-menu-inner .product-menu .single-product:hover {
-  background-color: var(--menu-hover-bg);
+  background-color: #f0faf4;
 }
 .mega-menu-wrapper .mega-menu-inner .product-menu .single-product:hover .product-logo {
   background: #ffffff;
@@ -21297,7 +21241,7 @@ Responsive Classes
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--menu-icon-bg);
+  background: #edf7f1;
   border-radius: 8px;
   flex-shrink: 0;
   color: var(--ac-primary);
@@ -21366,7 +21310,7 @@ Responsive Classes
   display: flex !important;
   flex-direction: column;
   gap: 2px;
-  background: var(--menu-sidebar-bg);
+  background: #f5faf7;
   border-radius: 8px;
   padding: 0.375rem;
   overflow: hidden;
@@ -21391,7 +21335,7 @@ Responsive Classes
   min-width: 40px;
   max-width: 40px;
   flex-shrink: 0;
-  background: var(--menu-icon-bg);
+  background: #edf7f1;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -21422,13 +21366,13 @@ Responsive Classes
   display: none !important;
 }
 .services-menu .mega-menu-wrapper .mega-menu-inner .product-menu.services-grid .single-product:hover {
-  background-color: var(--menu-hover-bg);
+  background-color: #f0faf4;
 }
 .services-menu .mega-menu-wrapper .mega-menu-inner .product-menu.services-grid .single-product:hover .product-info h2 {
   color: #171B1C;
 }
 .services-menu .mega-menu-wrapper .mega-menu-inner .product-menu.services-grid .single-product.is-active .product-logo {
-  background: var(--menu-icon-active);
+  background: #c8ecd6;
 }
 .services-menu .mega-menu-wrapper .mega-menu-inner .product-menu.services-grid .single-product.is-active .product-info h2 {
   font-weight: 600;
@@ -21511,7 +21455,7 @@ Responsive Classes
   display: none !important;
 }
 .services-menu .mega-menu-wrapper .mega-menu-inner .offering-description-container .product-description.offering-content a.single-product:hover {
-  background-color: var(--menu-hover-bg);
+  background-color: #f0faf4;
 }
 .services-menu .mega-menu-wrapper .mega-menu-inner .offering-description-container .product-description.offering-content a.single-product:hover .product-info h2 {
   color: var(--ac-primary);
@@ -21914,7 +21858,7 @@ Responsive Classes
     height: 40px;
     width: 40px;
     border-radius: 10px;
-    background: var(--menu-icon-bg) !important;
+    background: #edf7f1 !important;
   }
   .mega-menu-wrapper .mega-menu-inner .product-menu .single-product .product-logo img {
     height: 24px;
@@ -21937,7 +21881,7 @@ Responsive Classes
     color: var(--ac-primary);
   }
   .mega-menu-wrapper .mega-menu-inner .product-menu .single-product:hover, .mega-menu-wrapper .mega-menu-inner .product-menu .single-product.is-active {
-    background-color: var(--menu-hover-bg);
+    background-color: #f0faf4;
   }
   .mega-menu-wrapper .mega-menu-inner .product-menu .single-product:hover .product-logo, .mega-menu-wrapper .mega-menu-inner .product-menu .single-product.is-active .product-logo {
     background: #ffffff !important;
@@ -21978,7 +21922,7 @@ Responsive Classes
     width: 100% !important;
     max-width: 100% !important;
     flex: unset !important;
-    background: var(--menu-sidebar-bg);
+    background: #f5faf7;
     margin-bottom: 8px;
   }
   .services-menu .mega-menu-wrapper .mega-menu-inner .offering-description-container {

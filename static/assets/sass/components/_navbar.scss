@@ -1,3 +1,9 @@
+// Menu item interaction
+$menu-hover-bg:       #f0faf4;  // row hover background
+$menu-icon-bg:        #edf7f1;  // icon container resting fill
+$menu-icon-bg-active: #c8ecd6;  // icon container active/selected fill
+$menu-sidebar-bg:     #f5faf7;  // services left-panel background
+
 // Shared transitions
 $t-fast:    0.13s ease;   // micro-interactions (hover, opacity)
 $t-medium:  0.2s ease;    // chevron rotate, menu reveal
@@ -403,7 +409,7 @@ $menu-letter-sp:  -0.01em; // heading letter-spacing
         text-decoration: none;
 
         &:hover {
-          background-color: var(--menu-hover-bg);
+          background-color: $menu-hover-bg;
 
           .product-logo {
             background: $ac-white;
@@ -423,7 +429,7 @@ $menu-letter-sp:  -0.01em; // heading letter-spacing
           display: flex;
           align-items: center;
           justify-content: center;
-          background: var(--menu-icon-bg);
+          background: $menu-icon-bg;
           border-radius: $menu-icon-radius;
           flex-shrink: 0;
           color: $ac-primary;
@@ -502,7 +508,7 @@ $menu-letter-sp:  -0.01em; // heading letter-spacing
       display: flex !important;
       flex-direction: column;
       gap: 2px;
-      background: var(--menu-sidebar-bg);
+      background: $menu-sidebar-bg;
       border-radius: $menu-icon-radius;
       padding: 0.375rem;
       overflow: hidden;
@@ -527,7 +533,7 @@ $menu-letter-sp:  -0.01em; // heading letter-spacing
           min-width: $menu-icon-size;
           max-width: $menu-icon-size;
           flex-shrink: 0;
-          background: var(--menu-icon-bg);
+          background: $menu-icon-bg;
           border-radius: $menu-icon-radius;
           display: flex;
           align-items: center;
@@ -556,12 +562,12 @@ $menu-letter-sp:  -0.01em; // heading letter-spacing
         .navigate-icon { display: none !important; }
 
         &:hover {
-          background-color: var(--menu-hover-bg);
+          background-color: $menu-hover-bg;
           .product-info h2 { color: $ac-color-heading; }
         }
 
         &.is-active {
-          .product-logo { background: var(--menu-icon-active); }
+          .product-logo { background: $menu-icon-bg-active; }
           .product-info h2 { font-weight: 600; color: $ac-color-heading; }
         }
       }
@@ -644,7 +650,7 @@ $menu-letter-sp:  -0.01em; // heading letter-spacing
           .navigate-icon { display: none !important; }
 
           &:hover {
-            background-color: var(--menu-hover-bg);
+            background-color: $menu-hover-bg;
 
             .product-info h2 {
               color: $ac-primary;
@@ -1051,7 +1057,7 @@ $menu-letter-sp:  -0.01em; // heading letter-spacing
             height: $menu-icon-size;
             width: $menu-icon-size;
             border-radius: 10px;
-            background: var(--menu-icon-bg) !important;
+            background: $menu-icon-bg !important;
 
             img { height: 24px; width: 24px; }
           }
@@ -1070,7 +1076,7 @@ $menu-letter-sp:  -0.01em; // heading letter-spacing
 
           &:hover,
           &.is-active {
-            background-color: var(--menu-hover-bg);
+            background-color: $menu-hover-bg;
             .product-logo { background: $ac-white !important; }
             .navigate-icon .icon { opacity: 1; visibility: visible; }
           }
@@ -1109,7 +1115,7 @@ $menu-letter-sp:  -0.01em; // heading letter-spacing
       width: 100% !important;
       max-width: 100% !important;
       flex: unset !important;
-      background: var(--menu-sidebar-bg);
+      background: $menu-sidebar-bg;
       margin-bottom: 8px;
     }
 

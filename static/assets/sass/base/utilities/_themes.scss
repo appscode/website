@@ -1,11 +1,5 @@
 :root {
-  --ac-primary:        #00a651;
-
-  // Navbar menu tints — derived from --ac-primary, overridden per product below
-  --menu-icon-bg:      #edf7f1;  // icon container resting fill  (primary ~8% opacity)
-  --menu-hover-bg:     #f0faf4;  // row hover background         (primary ~5% opacity)
-  --menu-icon-active:  #c8ecd6;  // icon container active state  (primary ~22% opacity)
-  --menu-sidebar-bg:   #f5faf7;  // services left-panel tint     (primary ~3% opacity)
+  --ac-primary: #00a651;
 }
 $ac-primary: var(--ac-primary);
 
@@ -29,106 +23,54 @@ body {
   // --ac-primary: #{$ac-primary};
 
   &.guard {
-    --ac-primary:       #{$guard-primary};
-    --menu-icon-bg:     #fdf0ec;
-    --menu-hover-bg:    #fef5f2;
-    --menu-icon-active: #f8cfc4;
-    --menu-sidebar-bg:  #fef8f6;
+    --ac-primary: #{$guard-primary};
   }
 
   &.kubedb {
-    --ac-primary:       #{$kubedb-primary};
-    --menu-icon-bg:     #ededfb;
-    --menu-hover-bg:    #f3f3fd;
-    --menu-icon-active: #c5c5f0;
-    --menu-sidebar-bg:  #f7f7fe;
+    --ac-primary: #{$kubedb-primary};
   }
 
   &.kubeci {
-    --ac-primary:       #{$kubeci-primary};
-    --menu-icon-bg:     #e8ebee;
-    --menu-hover-bg:    #f0f2f4;
-    --menu-icon-active: #bec7cf;
-    --menu-sidebar-bg:  #f5f6f8;
+    --ac-primary: #{$kubeci-primary};
   }
 
   &.kubed {
-    --ac-primary:       #{$kubed-primary};
-    --menu-icon-bg:     #e8f3fc;
-    --menu-hover-bg:    #f0f7fd;
-    --menu-icon-active: #bcd9f5;
-    --menu-sidebar-bg:  #f5fafe;
+    --ac-primary: #{$kubed-primary};
   }
 
   &.kubesheild {
-    --ac-primary:       #{$kubesheild-primary};
-    --menu-icon-bg:     #eae9fb;
-    --menu-hover-bg:    #f2f2fd;
-    --menu-icon-active: #bfbbf4;
-    --menu-sidebar-bg:  #f6f6fe;
+    --ac-primary: #{$kubesheild-primary};
   }
 
   &.kubevault {
-    --ac-primary:       #{$kubevault-primary};
-    --menu-icon-bg:     #e8eefb;
-    --menu-hover-bg:    #f0f4fd;
-    --menu-icon-active: #bccef5;
-    --menu-sidebar-bg:  #f5f7fe;
+    --ac-primary: #{$kubevault-primary};
   }
 
   &.kubeform {
-    --ac-primary:       #{$kubeform-primary};
-    --menu-icon-bg:     #f0eae9;
-    --menu-hover-bg:    #f6f2f1;
-    --menu-icon-active: #d9bcb9;
-    --menu-sidebar-bg:  #f9f6f5;
+    --ac-primary: #{$kubeform-primary};
   }
 
   &.searchlight {
-    --ac-primary:       #{$searchlight-primary};
-    --menu-icon-bg:     #e7e8ec;
-    --menu-hover-bg:    #eff0f3;
-    --menu-icon-active: #bcbfca;
-    --menu-sidebar-bg:  #f4f5f7;
+    --ac-primary: #{$searchlight-primary};
   }
 
   &.pharmer {
-    --ac-primary:       #{$pharmer-primary};
-    --menu-icon-bg:     #f3edf7;
-    --menu-hover-bg:    #f8f3fb;
-    --menu-icon-active: #dcc2ea;
-    --menu-sidebar-bg:  #faf7fc;
+    --ac-primary: #{$pharmer-primary};
   }
 
   &.service-broker {
-    --ac-primary:       #{$service-broker-primary};
-    --menu-icon-bg:     #e8f8f6;
-    --menu-hover-bg:    #f0fbfa;
-    --menu-icon-active: #bceae5;
-    --menu-sidebar-bg:  #f4fdfb;
+    --ac-primary: #{$service-broker-primary};
   }
 
   &.stash {
-    --ac-primary:       #{$stash-primary};
-    --menu-icon-bg:     #eeebfc;
-    --menu-hover-bg:    #f4f2fd;
-    --menu-icon-active: #cfc5f6;
-    --menu-sidebar-bg:  #f8f7fe;
+    --ac-primary: #{$stash-primary};
   }
 
   &.swift {
-    --ac-primary:       #{$swift-primary};
-    --menu-icon-bg:     #eaecf8;
-    --menu-hover-bg:    #f1f2fb;
-    --menu-icon-active: #c0c5ee;
-    --menu-sidebar-bg:  #f5f6fc;
+    --ac-primary: #{$swift-primary};
   }
 
   &.voyager {
-    --ac-primary:       #{$voyager-primary};
-    --menu-icon-bg:     #eaeaf5;
-    --menu-hover-bg:    #f1f1f9;
-    --menu-icon-active: #bfbfe3;
-    --menu-sidebar-bg:  #f5f5fb;
+    --ac-primary: #{$voyager-primary};
   }
 }
