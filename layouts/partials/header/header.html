@@ -72,7 +72,7 @@
                             <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}" loading="lazy">
                           </div>
                           <div class="product-info">
-                            <h2 class="is-size-6 is-flex">{{ $p.name }}
+                            <h2 class="is-flex">{{ $p.name }}
                               {{ if eq ($p.name) "KubeStash" }}
                               <span class="whats-new is-relative is-block" style="right: -2px; top: -12px;">New</span>
                               {{ end }}
@@ -97,7 +97,7 @@
                             <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}" loading="lazy">
                           </div>
                           <div class="product-info">
-                            <h2 class="is-size-6">{{ $p.name }}</h2>
+                            <h2>{{ $p.name }}</h2>
                             <p>{{ $p.tagline | plainify }}</p>
                           </div>
                           <div class="navigate-icon">
@@ -118,7 +118,7 @@
                             <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}" loading="lazy">
                           </div>
                           <div class="product-info">
-                            <h2 class="is-size-6">{{ $p.name }}</h2>
+                            <h2>{{ $p.name }}</h2>
                             <p>{{ $p.tagline | plainify }}</p>
                           </div>
                           <div class="navigate-icon">
@@ -139,7 +139,7 @@
                             <img src="{{ $p.icon.src }}" alt="{{ $p.icon.alt }}" loading="lazy">
                           </div>
                           <div class="product-info">
-                            <h2 class="is-size-6">{{ $p.name }}</h2>
+                            <h2>{{ $p.name }}</h2>
                             <p>{{ $p.tagline | plainify }}</p>
                           </div>
                           <div class="navigate-icon">
@@ -319,7 +319,7 @@
                               <iconify-icon {{ printf "icon=%s" $service.lucide_icon | safeHTMLAttr }} width="24" height="24"></iconify-icon>
                             </div>
                             <div class="product-info">
-                              <h2 class="is-size-6 is-flex">{{ $service.title }}</h2>
+                              <h2>{{ $service.title }}</h2>
                               <p>{{ $service.description }}</p>
                             </div>
                             <!-- <div class="navigate-icon">
@@ -343,7 +343,7 @@
                                   {{ end }}
                                 </div> -->
                                 <div class="product-info">
-                                  <h2 class="is-size-6 is-flex is-align-items-center gap-8">{{ $offering.title }} <span class="arrow-right icon">
+                                  <h2 class="is-flex is-align-items-center gap-8">{{ $offering.title }} <span class="arrow-right icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.5 12H5m8 6s6-4.419 6-6s-6-6-6-6"/></svg>
                                   </span></h2>
                                   <p>{{ $offering.description }}</p>
@@ -389,9 +389,9 @@
                     </div>
                   </div>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a href="/webinar" class="link">Webinar <span class="whats-new">New</span></a>
-                </li>
+                </li> -->
               </ul>
               <!-- navbar items end -->
               <!-- if webinar exist script  -->
