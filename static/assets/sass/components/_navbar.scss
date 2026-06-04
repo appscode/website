@@ -873,6 +873,9 @@ $menu-letter-sp:  -0.01em; // heading letter-spacing
       justify-content: flex-start;
       border-top: 1px solid $ac-white-light;
       gap: 0;
+      @include touch {
+        top: 100px;
+      }
 
       &.is-visible { display: flex; }
 

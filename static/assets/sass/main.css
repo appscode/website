@@ -21670,6 +21670,13 @@ Responsive Classes
     border-top: 1px solid #e7e7e7;
     gap: 0;
   }
+}
+@media screen and (max-width: 1023px) and (max-width: 1023px) {
+  .navbar-appscode .navbar-right {
+    top: 100px;
+  }
+}
+@media screen and (max-width: 1023px) {
   .navbar-appscode .navbar-right.is-visible {
     display: flex;
   }
