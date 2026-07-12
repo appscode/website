@@ -157,8 +157,24 @@
       "show": true
     },
     {
+      "version": "v2026.7.10",
+      "hostDocs": true,
+      "info": {
+        "autoscaler": "v0.51.0",
+        "cli": "v0.66.0",
+        "dashboard": "v0.42.0",
+        "installer": "v2026.7.10",
+        "ops-manager": "v0.53.0",
+        "provisioner": "v0.66.0",
+        "schema-manager": "v0.42.0",
+        "ui-server": "v0.42.0",
+        "webhook-server": "v0.42.0"
+      }
+    },
+    {
       "version": "v2026.6.19",
       "hostDocs": true,
+      "show": true,
       "info": {
         "autoscaler": "v0.50.0",
         "cli": "v0.65.0",
@@ -173,7 +189,7 @@
     },
     {
       "version": "v2026.6.18-rc.2",
-      "hostDocs": true,
+      "hostDocs": false,
       "info": {
         "autoscaler": "v0.50.0-rc.2",
         "cli": "v0.65.0-rc.2",
@@ -188,7 +204,7 @@
     },
     {
       "version": "v2026.6.5-rc.1",
-      "hostDocs": true,
+      "hostDocs": false,
       "info": {
         "autoscaler": "v0.50.0-rc.1",
         "cli": "v0.65.0-rc.1",
@@ -203,7 +219,7 @@
     },
     {
       "version": "v2026.5.18-rc.0",
-      "hostDocs": true,
+      "hostDocs": false,
       "info": {
         "autoscaler": "v0.50.0-rc.0",
         "cli": "v0.65.0-rc.0",
@@ -1560,7 +1576,7 @@
       "hostDocs": false
     }
   ],
-  "latestVersion": "v2026.4.27",
+  "latestVersion": "v2026.6.19",
   "socialLinks": {
     "facebook": "https://facebook.com/appscode",
     "github": "https://github.com/kubedb",
