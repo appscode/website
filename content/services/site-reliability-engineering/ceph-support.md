@@ -1,7 +1,7 @@
 ---
 id: ceph-support
 title: Ceph Support and Consulting Services
-description: Get help operating, troubleshooting, and improving Ceph storage with AppsCode's support and consulting services.
+description: Design, deploy, operate, and troubleshoot Ceph storage with AppsCode's support and consulting services.
 layout: services
 url: '/services/ceph-support'
 data: 'data/services/site-reliability-engineering/ceph_support.json'

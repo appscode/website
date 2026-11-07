@@ -10,13 +10,13 @@
     }
   },
   "title_with_small_cards": {
-    "title": "Support Across the Ceph Lifecycle",
-    "subtitle": "Work with AppsCode on the issues and projects that matter to your team.",
+    "title": "Storage for Diverse Workloads",
+    "subtitle": "Support for Ceph storage interfaces and Kubernetes applications across the cluster lifecycle.",
     "areas": [
-      { "icon": "fa fa-medkit", "title": "Incident Troubleshooting" },
-      { "icon": "fa fa-heartbeat", "title": "Cluster Health" },
-      { "icon": "fa fa-refresh", "title": "Upgrades and Changes" },
-      { "icon": "fa fa-line-chart", "title": "Performance and Capacity" }
+      { "icon": "fa fa-database", "title": "Block Storage with RBD" },
+      { "icon": "fa fa-folder-open", "title": "Shared Files with CephFS" },
+      { "icon": "fa fa-cloud", "title": "Object Storage with RGW" },
+      { "icon": "fa fa-cubes", "title": "Kubernetes Persistent Storage" }
     ]
   },
   "cards": {
@@ -56,9 +56,29 @@
     ]
   },
   "service_details": {
-    "title": "Support That Meets You Where You Are",
-    "subtitle": "Start with a specific challenge or discuss an ongoing engagement.",
+    "title": "From Architecture to Operations",
+    "subtitle": "Build a new storage platform or get help with an existing cluster.",
     "sections": [
+      {
+        "title": "Design and Sizing",
+        "description": "Start with your capacity, performance, and availability requirements. We help evaluate the trade-offs before choosing a cluster design.",
+        "offerings": [
+          "Assess workloads, storage interfaces, and growth projections.",
+          "Plan hardware, networking, failure domains, and capacity headroom.",
+          "Evaluate replication and erasure coding for appropriate workloads."
+        ],
+        "image": "/assets/images/services/strategic-consulting-architecture-design.png"
+      },
+      {
+        "title": "Deployment and Integration",
+        "description": "Plan and implement Ceph for your infrastructure and the applications that depend on it.",
+        "offerings": [
+          "Discuss deployment with cephadm or Rook on Kubernetes.",
+          "Configure RBD, CephFS, and the RADOS Gateway as appropriate.",
+          "Integrate Kubernetes workloads using Ceph CSI and storage classes."
+        ],
+        "image": "/assets/images/services/integration-deployment.png"
+      },
       {
         "title": "Existing and New Clusters",
         "description": "Discuss your current deployment, planned infrastructure, or a specific storage problem. We can scope an engagement around your environment and priorities.",
@@ -98,11 +118,15 @@
       {
         "icon": "fa fa-cubes",
         "title": "Design and Implementation",
-        "description": "Planning a new platform? Explore our <a href=\"/services/ceph-storage-solutions\">Ceph storage solutions</a> for architecture, deployment, and integration."
+        "description": "Plan a new Ceph platform with assistance for architecture, deployment, and integration."
       }
     ]
   },
   "faq": [
+    {
+      "question": "What is Ceph?",
+      "answer": "Ceph is an open-source distributed storage platform that provides block, file, and object storage from a cluster of storage nodes."
+    },
     {
       "question": "Can you help with an existing Ceph cluster?",
       "answer": "Yes. Tell us how your cluster was deployed, which Ceph version you run, and the issue or outcome you want to address so we can discuss the scope."
@@ -118,6 +142,14 @@
     {
       "question": "Can AppsCode help with an urgent issue?",
       "answer": "Contact us with the symptoms, impact, and your cluster details. We will discuss availability and the scope of assistance for your incident."
+    },
+    {
+      "question": "Can we use existing hardware?",
+      "answer": "Existing hardware may be suitable, depending on its capacity, performance, networking, and reliability. We can review it against your workload and availability requirements."
+    },
+    {
+      "question": "How much usable capacity will we need?",
+      "answer": "Usable capacity depends on the protection scheme, failure domains, workload, and operational headroom. We can help size the cluster for your requirements."
     },
     {
       "question": "Is Ceph replication a replacement for backup?",
