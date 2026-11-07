@@ -1,0 +1,126 @@
+{
+  "hero": {
+    "title": "Build a Storage Platform with Ceph",
+    "subtitle": "Bring block, file, and object storage together on an open-source distributed platform, designed around your workloads and operational needs.",
+    "cta_text": "Discuss Your Storage Needs",
+    "cta_url": "/contact/",
+    "illustration": {
+      "src": "/assets/images/services/bare-metal-provisioning-consulting-hero.png",
+      "alt": "Distributed storage infrastructure"
+    }
+  },
+  "title_with_small_cards": {
+    "title": "Storage for Diverse Workloads",
+    "subtitle": "Choose the interfaces and deployment model that fit your applications.",
+    "areas": [
+      { "icon": "fa fa-database", "title": "Block Storage with RBD" },
+      { "icon": "fa fa-folder-open", "title": "Shared Files with CephFS" },
+      { "icon": "fa fa-cloud", "title": "Object Storage with RGW" },
+      { "icon": "fa fa-cubes", "title": "Kubernetes Persistent Storage" }
+    ]
+  },
+  "service_details": {
+    "title": "From Architecture to Operations",
+    "subtitle": "Build a Ceph environment that accounts for your applications, infrastructure, and team.",
+    "sections": [
+      {
+        "title": "Design and Sizing",
+        "description": "Start with your capacity, performance, and availability requirements. We help evaluate the trade-offs before choosing a cluster design.",
+        "offerings": [
+          "Assess workloads, storage interfaces, and growth projections.",
+          "Plan hardware, networking, failure domains, and capacity headroom.",
+          "Evaluate replication and erasure coding for appropriate workloads."
+        ],
+        "image": "/assets/images/services/strategic-consulting-architecture-design.png"
+      },
+      {
+        "title": "Deployment and Integration",
+        "description": "Plan and implement Ceph for your infrastructure and the applications that depend on it.",
+        "offerings": [
+          "Discuss deployment with cephadm or Rook on Kubernetes.",
+          "Configure RBD, CephFS, and the RADOS Gateway as appropriate.",
+          "Integrate Kubernetes workloads using Ceph CSI and storage classes."
+        ],
+        "image": "/assets/images/services/integration-deployment.png"
+      },
+      {
+        "title": "Operate and Evolve",
+        "description": "Prepare your team to maintain the platform as workloads and capacity requirements change.",
+        "offerings": [
+          "Establish monitoring, alerting, and maintenance procedures.",
+          "Plan upgrades, expansion, and recovery exercises.",
+          "Review backup and disaster recovery requirements separately from cluster redundancy."
+        ],
+        "image": "/assets/images/services/platform-support-maintenance.png"
+      }
+    ]
+  },
+  "cards": {
+    "title": "One Platform, Multiple Use Cases",
+    "subtitle": "Ceph can serve different storage needs while letting you choose how and where to deploy it.",
+    "items": [
+      {
+        "icon": "fa fa-cubes",
+        "title": "Kubernetes Applications",
+        "description": "Provide persistent volumes for stateful applications using RBD or CephFS and Ceph CSI."
+      },
+      {
+        "icon": "fa fa-server",
+        "title": "Infrastructure and Virtual Machines",
+        "description": "Use distributed block storage for infrastructure workloads where integration and performance requirements are a fit."
+      },
+      {
+        "icon": "fa fa-cloud",
+        "title": "Object and Shared Data",
+        "description": "Serve S3-compatible object workloads through the RADOS Gateway or shared files through CephFS."
+      }
+    ]
+  },
+  "cards2": {
+    "title": "Keep Your Storage Moving",
+    "subtitle": "A successful platform needs both a sound design and an operational plan.",
+    "items": [
+      {
+        "icon": "fa fa-sitemap",
+        "title": "Architecture",
+        "description": "Make informed choices about capacity, resilience, performance, and infrastructure."
+      },
+      {
+        "icon": "fa fa-cogs",
+        "title": "Implementation",
+        "description": "Turn the design into a deployable platform integrated with your workloads."
+      },
+      {
+        "icon": "fa fa-life-ring",
+        "title": "Ongoing Support",
+        "description": "Need help with an existing cluster? Explore our <a href=\"/services/ceph-support\">Ceph support services</a> for troubleshooting, upgrades, and operations."
+      }
+    ]
+  },
+  "faq": [
+    {
+      "question": "What is Ceph?",
+      "answer": "Ceph is an open-source distributed storage platform that provides block, file, and object storage from a cluster of storage nodes."
+    },
+    {
+      "question": "Can Ceph work with Kubernetes?",
+      "answer": "Yes. Rook can orchestrate Ceph on Kubernetes, and Ceph CSI can provide persistent volumes backed by RBD or CephFS."
+    },
+    {
+      "question": "Can we use existing hardware?",
+      "answer": "Existing hardware may be suitable, depending on its capacity, performance, networking, and reliability. We can review it against your workload and availability requirements."
+    },
+    {
+      "question": "How much usable capacity will we need?",
+      "answer": "Usable capacity depends on the protection scheme, failure domains, workload, and operational headroom. We can help size the cluster for your requirements."
+    },
+    {
+      "question": "Does Ceph eliminate the need for backups?",
+      "answer": "No. Cluster redundancy helps protect against certain failures, but independent backups and tested recovery plans remain important."
+    }
+  ],
+  "final_cta": {
+    "title": "Plan Your Ceph Storage Platform",
+    "subtitle": "Share your workloads, capacity goals, and infrastructure plans with AppsCode."
+  }
+}
